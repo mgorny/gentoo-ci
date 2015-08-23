@@ -27,8 +27,8 @@ media-libs/alure
 media-libs/aubio
   NonExistentDeps: version 0.3.2-r2: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
   NonExistentDeps: version 0.3.2-r2: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
-  DeprecatedEAPI: version 0.3.2-r2: uses deprecated EAPI: 3
   DeprecatedEclass: version 0.3.2-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.3.2-r2: uses deprecated EAPI: 3
 
 media-libs/avidemux-core
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
@@ -129,11 +129,13 @@ media-libs/gluon
 media-libs/gst-plugins-base
   DroppedKeywordWarning: version 0.10.36-r2: keywords dropped: arm64
 
+media-libs/gstreamer-editing-services
+  WhitespaceFound: version 1.2.1: ebuild has leading whitespace on line 51
+
 media-libs/gstreamer
   DroppedKeywordWarning: version 1.2.4-r2: keywords dropped: arm64
 
 media-libs/gstreamer-editing-services
-  WhitespaceFound: version 1.2.1: ebuild has leading whitespace on line 51
   WhitespaceFound: version 1.4.0: ebuild has leading whitespace on line 50
 
 media-libs/guilib
@@ -271,8 +273,8 @@ media-libs/libipod
   MissingChksum: version 0.1: "libipod-0.1.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-libs/libiptcdata
-  DeprecatedEAPI: version 1.0.4: uses deprecated EAPI: 3
   DeprecatedEclass: version 1.0.4: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.0.4: uses deprecated EAPI: 3
 
 media-libs/libjackasyn
   DeprecatedEAPI: version 0.13: uses deprecated EAPI: 0
@@ -370,8 +372,8 @@ media-libs/mash
   MissingChksum: version 0.2.0-r1: "mash-0.2.0.tar.xz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-libs/mesa
-  DeprecatedEAPI: version 7.10.3: uses deprecated EAPI: 3
   DeprecatedEclass: version 7.10.3: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 7.10.3: uses deprecated EAPI: 3
   SizeViolation: "files/mesa-10.3.7-format_utils.c.patch" exceeds 20k in size; 34839 bytes total
 
 media-libs/ming
@@ -415,10 +417,10 @@ media-libs/oyranos
   SizeViolation: "files/oyranos-0.9.4-fix-typos-and-grammar.patch" exceeds 20k in size; 43847 bytes total
 
 media-libs/phat
-  DeprecatedEAPI: version 0.4.1: uses deprecated EAPI: 2
   MetadataError: version 0.4.1: attr(fetchables): error- Metadata Exception: pkg ebuild src: media-libs/phat-0.4.1, attr fetchables
 error: mirror://berlios/phat/phat-0.4.1.tar.gz is unparseable
 flagged token- uri mirror://berlios/phat/phat-0.4.1.tar.gz isn't a known mirror tier
+  DeprecatedEAPI: version 0.4.1: uses deprecated EAPI: 2
 
 media-libs/plotutils
   DeprecatedEAPI: version 2.6: uses deprecated EAPI: 3
@@ -429,8 +431,8 @@ media-libs/portmidi
   DeprecatedEclass: version 217: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 media-libs/pymemphis
-  DeprecatedEAPI: version 0.2.1: uses deprecated EAPI: 3
   DeprecatedEclass: version 0.2.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.2.1: uses deprecated EAPI: 3
   MissingChksum: version 0.2.1: "pymemphis-0.2.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-libs/qt-gstreamer
@@ -487,8 +489,8 @@ media-libs/stops
   MissingChksum: version 0.3.0: "stops-0.3.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-libs/sublib
-  DeprecatedEAPI: version 0.9: uses deprecated EAPI: 0
   DeprecatedEclass: version 0.9: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 0.9: uses deprecated EAPI: 0
   MissingChksum: version 0.9: "sublib-0.9.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-libs/tiff
@@ -509,10 +511,10 @@ media-libs/varconf
   MissingChksum: version 0.6.7: "varconf-0.6.7.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-libs/vips
-  DeprecatedEAPI: version 7.26.3: uses deprecated EAPI: 3
   DeprecatedEclass: version 7.26.3: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 7.26.7: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 7.26.3: uses deprecated EAPI: 3
   DeprecatedEclass: version 7.26.7: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 7.26.7: uses deprecated EAPI: 3
   MissingChksum: version 7.26.3: "vips-7.26.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 7.26.7: "vips-7.26.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
@@ -668,8 +670,8 @@ dev-lang/mono
   DeprecatedEclass: version 2.10.9-r2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
 
 dev-lang/mono-basic
-  DeprecatedEAPI: version 2.10: uses deprecated EAPI: 2
   DeprecatedEclass: version 2.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 2.10: uses deprecated EAPI: 2
 
 dev-lang/mozart
   DeprecatedEAPI: version 1.4.0-r2: uses deprecated EAPI: 2
@@ -1402,8 +1404,8 @@ dev-embedded/jal
 
 dev-embedded/libftdi
   DeprecatedEAPI: version 0.19: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.20: uses deprecated EAPI: 2
   DeprecatedEclass: version 0.20: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.20: uses deprecated EAPI: 2
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
 dev-embedded/openocd
@@ -1551,8 +1553,8 @@ sci-electronics/geda-suite
   DeprecatedEAPI: version 20110427: uses deprecated EAPI: 0
 
 sci-electronics/geda-xgsch2pcb
-  DeprecatedEAPI: version 0.1.3-r2: uses deprecated EAPI: 3
   DeprecatedEclass: version 0.1.3-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.1.3-r2: uses deprecated EAPI: 3
 
 sci-electronics/ghdl
   DeprecatedEAPI: version 0.29: uses deprecated EAPI: 3
@@ -1568,8 +1570,8 @@ sci-electronics/gplcver
 sci-electronics/gresistor
   NonExistentDeps: version 0.0.1: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
   NonExistentDeps: version 0.0.1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
-  DeprecatedEAPI: version 0.0.1: uses deprecated EAPI: 3
   DeprecatedEclass: version 0.0.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.0.1: uses deprecated EAPI: 3
   NonExistentDeps: version 0.0.1-r1: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
   NonExistentDeps: version 0.0.1-r1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
   DeprecatedEclass: version 0.0.1-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
@@ -1650,8 +1652,8 @@ dev-tcltk/snack
   DeprecatedEclass: version 2.2.10-r5: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-tcltk/tcllib
-  DroppedKeywordWarning: version 1.16: keywords dropped: ia64, ppc64, s390, sparc
   SizeViolation: "files/tcllib-1.15-XSS-vuln.patch" exceeds 20k in size; 29465 bytes total
+  DroppedKeywordWarning: version 1.16: keywords dropped: ia64, ppc64, s390, sparc
 
 dev-tcltk/tkcon
   DeprecatedEAPI: version 2.5: uses deprecated EAPI: 0
@@ -1725,10 +1727,14 @@ dev-lisp/gentoo-init
 dev-lisp/hyperspec
   DeprecatedEAPI: version 7.0: uses deprecated EAPI: 0
   DeprecatedEAPI: version 7.0-r1: uses deprecated EAPI: 0
-  MissingChksum: version 7.0-r1: "HyperSpec-7-0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 dev-lisp/sbcl
   WhitespaceFound: version 1.0.55-r1: ebuild has leading whitespace on lines 50, 62
+
+dev-lisp/hyperspec
+  MissingChksum: version 7.0-r1: "HyperSpec-7-0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+dev-lisp/sbcl
   DeprecatedEAPI: version 1.0.55-r1: uses deprecated EAPI: 3
   NonExistentDeps: version 1.1.18: depset rdepends: nonexistent atoms [ <sys-libs/glibc-2.6 ]
   NonExistentDeps: version 1.2.2: depset rdepends: nonexistent atoms [ <sys-libs/glibc-2.6 ]
