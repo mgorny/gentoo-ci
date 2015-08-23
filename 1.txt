@@ -1,0 +1,2245 @@
++ JOB=1
++ NO_JOBS=16
++ [[ ! -n 1 ]]
++ [[ ! -n 16 ]]
++ [[ 1 == global ]]
++ set +x
++ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-python/*' 'app-misc/*' 'x11-plugins/*' 'app-arch/*' 'games-fps/*' 'net-irc/*' 'sci-physics/*' 'sys-freebsd/*' 'sci-astronomy/*' 'games-engines/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
+/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:99: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
+  "disabling GLSA checks due to no glsa source "
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+
+dev-python/Kivy
+  SizeViolation: "files/Kivy-1.9.0-cython-0.22-backport.patch" exceeds 20k in size; 24701 bytes total
+
+dev-python/PyQtMobility
+  DeprecatedEclass: version 1.0.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+dev-python/SchemaObject
+  NonExistentDeps: version 0.5.3: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  NonExistentDeps: version 0.5.3: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 0.5.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+dev-python/autobahn
+  DroppedKeywordWarning: version 0.10.4: keywords dropped: arm
+
+dev-python/autopep8
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+dev-python/bcrypt
+  DroppedKeywordWarning: version 2.0.0: keywords dropped: ia64
+
+dev-python/beaker
+  DroppedKeywordWarning: version 1.7.0-r1: keywords dropped: ia64, sparc
+
+dev-python/beautifulsoup
+  NonExistentDeps: version 4.1.3: depset depends: nonexistent atoms [ =dev-lang/python-2.6*, =dev-lang/python-3.1*, =dev-lang/python-3.2* ]
+  NonExistentDeps: version 4.1.3: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6*, =dev-lang/python-3.1*, =dev-lang/python-3.2* ]
+  DeprecatedEclass: version 4.1.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DroppedKeywordWarning: version 4.1.3: keywords dropped: arm64
+  SizeViolation: "files/beautifulsoup-3.1.0.1-python-3.patch" exceeds 20k in size; 42319 bytes total
+
+dev-python/bicyclerepair
+  DeprecatedEAPI: version 0.9-r2: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.9-r2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+dev-python/bsddb3
+  DroppedKeywordWarning: version 6.1.0: keywords dropped: hppa
+
+dev-python/cddb-py
+  DeprecatedEAPI: version 1.4: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.4: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+dev-python/cffi
+  DroppedKeywordWarning: version 0.9.2: keywords dropped: alpha, sparc
+
+dev-python/cov-core
+  DroppedKeywordWarning: version 1.15.0: keywords dropped: alpha, sparc
+
+dev-python/cryptography
+  DroppedKeywordWarning: version 0.7.1-r1: keywords dropped: sparc
+  DroppedKeywordWarning: version 0.9.2: keywords dropped: alpha, arm64, ia64, m68k, mips, ppc, s390, sh
+
+dev-python/cryptography-vectors
+  DroppedKeywordWarning: version 0.7: keywords dropped: sparc
+
+dev-python/ctypesgen
+  NonExistentDeps: version 0_p72: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  NonExistentDeps: version 0_p72: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  DeprecatedEAPI: version 0_p72: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0_p72: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+dev-python/cvxopt
+  SizeViolation: "files/cvxopt-1.1.6-glpk.patch" exceeds 20k in size; 32201 bytes total
+  SizeViolation: "files/cvxopt-1.1.6-glpk449.patch" exceeds 20k in size; 39362 bytes total
+
+dev-python/demjson
+  DeprecatedEAPI: version 1.6: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.6: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+dev-python/django
+  DroppedKeywordWarning: version 1.5.12: keywords dropped: amd64, ia64, ppc, ppc64, sparc, x86
+
+dev-python/editobj
+  DeprecatedEAPI: version 0.5.7-r1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.5.7-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+dev-python/enzyme
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+dev-python/flask
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+dev-python/foolscap
+  DroppedKeywordWarning: version 0.8.0: keywords dropped: sparc
+
+dev-python/formencode
+  DeprecatedEAPI: version 1.2.4: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.2.4: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+dev-python/gdata
+  DeprecatedEclass: version 2.0.14: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+dev-python/graph-tool
+  WhitespaceFound: version 2.2.40: ebuild has trailing whitespace on line 25
+  WhitespaceFound: version 2.2.42: ebuild has trailing whitespace on line 25
+  WhitespaceFound: version 2.2.43: ebuild has trailing whitespace on line 25
+  WhitespaceFound: version 2.2.44: ebuild has trailing whitespace on line 25
+
+dev-python/hacking
+  DroppedKeywordWarning: version 0.9.6: keywords dropped: alpha
+
+dev-python/hiredis
+  DroppedKeywordWarning: version 0.2.0: keywords dropped: arm
+
+dev-python/iconvcodec
+  MetadataError: version 1.1.2-r1: attr(fetchables): error- Metadata Exception: pkg ebuild src: dev-python/iconvcodec-1.1.2-r1, attr fetchables
+error: mirror://berlios/cjkpython/iconvcodec-1.1.2.tar.gz is unparseable
+flagged token- uri mirror://berlios/cjkpython/iconvcodec-1.1.2.tar.gz isn't a known mirror tier
+
+dev-python/id3-py
+  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+dev-python/ipython
+  WhitespaceFound: version 3.2.1: ebuild has trailing whitespace on line 110
+
+dev-python/jsonrpclib
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+dev-python/kaa-display
+  NonExistentDeps: version 0.1.0: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  NonExistentDeps: version 0.1.0: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  DeprecatedEAPI: version 0.1.0: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.1.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+dev-python/kaa-imlib2
+  NonExistentDeps: version 0.2.3-r1: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  NonExistentDeps: version 0.2.3-r1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  DeprecatedEAPI: version 0.2.3-r1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.2.3-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+dev-python/kombu
+  WhitespaceFound: version 3.0.26: ebuild has trailing whitespace on line 88
+
+dev-python/lockfile
+  DroppedKeywordWarning: version 0.10.2: keywords dropped: sparc
+
+dev-python/louie
+  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+dev-python/mechanize
+  DeprecatedEAPI: version 0.2.5: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.2.5: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+dev-python/mistune
+  DroppedKeywordWarning: version 0.6-r1: keywords dropped: arm
+
+dev-python/mock
+  DroppedKeywordWarning: version 1.2.0: keywords dropped: alpha, arm, ia64, ppc, ppc64, sparc, x86
+
+dev-python/morbid
+  DeprecatedEAPI: version 0.8.7.3: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.8.7.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+dev-python/mwlib
+  BadInsIntoDir: version 0.15.15: ebuild uses insinto /etc/cron.d on line 118
+
+dev-python/natsort
+  DroppedKeywordWarning: version 4.0.3: keywords dropped: ia64
+
+dev-python/nautilus-python
+  DeprecatedEclass: version 1.1-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+dev-python/ndg-httpsclient
+  DroppedKeywordWarning: version 0.4.0: keywords dropped: sparc
+
+dev-python/nose
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+dev-python/os-diskconfig-python-novaclient-ext
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+dev-python/oslo-sphinx
+  DroppedKeywordWarning: version 2.5.0: keywords dropped: alpha
+
+dev-python/paisley
+  DeprecatedEAPI: version 0.3.1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.3.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+dev-python/paramiko
+  DroppedKeywordWarning: version 1.12.2: keywords dropped: ppc, ppc64, s390
+
+dev-python/paste
+  SizeViolation: "files/paste-1.7.5.1-unbundle-stdlib.patch" exceeds 20k in size; 42645 bytes total
+  SizeViolation: "files/paste-1.7.5.1-unbundle-tempita.patch" exceeds 20k in size; 59786 bytes total
+
+dev-python/pbr
+  DroppedKeywordWarning: version 1.4.0: keywords dropped: alpha, amd64, arm, hppa, ia64, ppc, ppc64, x86
+
+dev-python/pexpect
+  DeprecatedEAPI: version 2.4: uses deprecated EAPI: 2
+  DeprecatedEclass: version 2.4: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+dev-python/piddle
+  DeprecatedEAPI: version 1.0.15: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.0.15: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+dev-python/pillow
+  DroppedKeywordWarning: version 2.9.0: keywords dropped: alpha, ia64, sparc
+
+dev-python/ply
+  DroppedKeywordWarning: version 3.6-r1: keywords dropped: sparc
+
+dev-python/polygon
+  DeprecatedEAPI: version 2.0.4: uses deprecated EAPI: 3
+  DeprecatedEclass: version 2.0.4: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+dev-python/py-smbpasswd
+  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.0.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 1.0.1-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+dev-python/py-xmlrpc
+  DeprecatedEAPI: version 0.8.8.3-r1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.8.8.3-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+dev-python/pyGPG
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+dev-python/pyamazon
+  DeprecatedEAPI: version 0.65: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.65: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+dev-python/pyao
+  DeprecatedEAPI: version 0.82-r2: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.82-r2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+dev-python/pychm
+  DeprecatedEAPI: version 0.8.4: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.8.4: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+dev-python/pycipher
+  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+dev-python/pyclamav
+  DeprecatedEAPI: version 0.4.1-r1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.4.1-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+dev-python/pyclimate
+  DeprecatedEAPI: version 1.2.2-r1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.2.2-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+dev-python/pycollada
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+dev-python/pycparser
+  DroppedKeywordWarning: version 2.12: keywords dropped: sparc
+
+dev-python/pydb
+  DeprecatedEclass: version 1.26-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+dev-python/pyfits
+  DeprecatedEAPI: version 2.4.0: uses deprecated EAPI: 2
+  DeprecatedEclass: version 2.4.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+dev-python/pygresql
+  NonExistentDeps: version 4.1.1: depset depends: nonexistent atoms [ dev-db/postgresql:8.4, dev-db/postgresql:8.3 ]
+  NonExistentDeps: version 4.1.1: depset rdepends: nonexistent atoms [ dev-db/postgresql:8.4, dev-db/postgresql:8.3 ]
+
+dev-python/pygsl
+  DeprecatedEclass: version 0.9.5: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+dev-python/pygtkhelpers
+  NonExistentDeps: version 0.4.3: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 0.4.3: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEAPI: version 0.4.3: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.4.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+dev-python/pyid3lib
+  DeprecatedEAPI: version 0.5.1-r1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.5.1-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+dev-python/pylibpcap
+  DeprecatedEclass: version 0.6.4: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+dev-python/pyltxml
+  DeprecatedEAPI: version 1.3-r1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.3-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+dev-python/pymad
+  DeprecatedEAPI: version 0.6: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.6: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+dev-python/pyndex
+  DeprecatedEAPI: version 0.3.2a: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.3.2a: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+dev-python/pynut
+  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+dev-python/pyopencl
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+dev-python/pyopenssl
+  DroppedKeywordWarning: version 0.15.1: keywords dropped: sparc
+
+dev-python/pyosd
+  DeprecatedEAPI: version 0.2.14: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.2.14: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+dev-python/pyparsing
+  DeprecatedEAPI: version 1.5.6: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.5.6: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+dev-python/pypgsql
+  DeprecatedEAPI: version 2.5.1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 2.5.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+dev-python/pyquery
+  DroppedKeywordWarning: version 1.2.9-r1: keywords dropped: sparc
+  DroppedKeywordWarning: version 1.2.9: keywords dropped: ia64, s390, sh
+
+dev-python/pytest-cov
+  DroppedKeywordWarning: version 1.8.1: keywords dropped: alpha, sparc
+
+dev-python/python-cdb
+  DeprecatedEAPI: version 0.34: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.34: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+dev-python/python-distutils-extra
+  DeprecatedEAPI: version 2.33: uses deprecated EAPI: 3
+  DeprecatedEclass: version 2.33: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+dev-python/python-docs
+  DeprecatedEAPI: version 2.7.3: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.2.5: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.3.2: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.3.3: uses deprecated EAPI: 3
+  DroppedKeywordWarning: version 3.2.5: keywords dropped: arm64
+
+dev-python/python-ldap
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+dev-python/python-linux-procfs
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+dev-python/python-sqlparse
+  DroppedKeywordWarning: version 0.1.14: keywords dropped: sparc
+
+dev-python/python-xlib
+  DeprecatedEAPI: version 0.15_rc1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.15_rc1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+dev-python/pyusb
+  DeprecatedEAPI: version 0.4.3: uses deprecated EAPI: 2
+  DeprecatedEclass: version 0.4.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+dev-python/pywavelets
+  WhitespaceFound: version 0.3.0: ebuild has leading whitespace on lines 38, 39
+  DoubleEmptyLine: version 0.3.0: ebuild has unneeded empty line 42
+
+dev-python/pyxattr
+  DroppedKeywordWarning: version 0.5.5: keywords dropped: alpha, ia64, ppc, sparc
+
+dev-python/pyzmq
+  DroppedKeywordWarning: version 14.7.0: keywords dropped: ppc
+
+dev-python/pyzor
+  DeprecatedEAPI: version 0.5.0-r2: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.5.0-r2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DroppedKeywordWarning: version 0.7.0: keywords dropped: ppc, ppc64
+  DroppedKeywordWarning: version 1.0.0: keywords dropped: ia64, sparc
+
+dev-python/rackspace-auth-openstack
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+dev-python/rdflib
+  DroppedKeywordWarning: version 4.1.2: keywords dropped: ia64, sparc
+
+dev-python/remoteobjects
+  DeprecatedEclass: version 99999999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+dev-python/rlcompleter2
+  DeprecatedEAPI: version 0.98: uses deprecated EAPI: 2
+  DeprecatedEclass: version 0.98: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+dev-python/rtslib
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+dev-python/sancho
+  DeprecatedEAPI: version 2.4: uses deprecated EAPI: 3
+  DeprecatedEclass: version 2.4: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+dev-python/scientificpython
+  DeprecatedEAPI: version 2.9.1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 2.9.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+dev-python/simpleparse
+  DeprecatedEAPI: version 2.1.1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 2.1.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+dev-python/soappy
+  DroppedKeywordWarning: version 0.12.22: keywords dropped: ia64, ppc, s390, sh, sparc
+
+dev-python/sparql-wrapper
+  DroppedKeywordWarning: version 1.6.1: keywords dropped: ia64, sparc
+  DroppedKeywordWarning: version 1.6.2: keywords dropped: alpha
+
+dev-python/sphinx
+  DroppedKeywordWarning: version 1.3.1: keywords dropped: arm64, ia64, mips, ppc, s390, sh, sparc
+
+dev-python/sqlalchemy
+  NonExistentDeps: version 0.7.10: depset depends: nonexistent atoms [ dev-python/kinterbasdb ]
+  NonExistentDeps: version 0.7.10: depset rdepends: nonexistent atoms [ dev-python/kinterbasdb ]
+
+dev-python/sqlalchemy-migrate
+  DroppedKeywordWarning: version 0.9.1: keywords dropped: s390, sh, sparc
+  DroppedKeywordWarning: version 0.9.6: keywords dropped: alpha, hppa, ia64, ppc, ppc64
+
+dev-python/ssl-fetch
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+dev-python/subunit
+  DeprecatedEAPI: version 0.0.6: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.0.6: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DroppedKeywordWarning: version 0.0.16: keywords dropped: s390, sh, sparc
+
+dev-python/tagpy
+  DeprecatedEclass: version 0.94.8-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+dev-python/testtools
+  DroppedKeywordWarning: version 1.7.1: keywords dropped: arm64, ia64, mips, ppc, s390, sh, sparc, x86
+
+dev-python/twisted-conch
+  DroppedKeywordWarning: version 15.1.0: keywords dropped: alpha, sparc
+
+dev-python/twisted-core
+  DroppedKeywordWarning: version 14.0.1: keywords dropped: mips, sparc
+
+dev-python/twisted-lore
+  DroppedKeywordWarning: version 15.1.0: keywords dropped: alpha, sparc
+
+dev-python/twisted-mail
+  DroppedKeywordWarning: version 15.1.0: keywords dropped: alpha, sparc
+
+dev-python/twisted-names
+  DroppedKeywordWarning: version 15.1.0: keywords dropped: alpha, sparc
+
+dev-python/twisted-news
+  DroppedKeywordWarning: version 15.1.0: keywords dropped: alpha, sparc
+
+dev-python/twisted-runner
+  DroppedKeywordWarning: version 15.1.0: keywords dropped: alpha, sparc
+
+dev-python/twisted-web
+  DroppedKeywordWarning: version 15.1.0: keywords dropped: alpha, sparc
+
+dev-python/twisted-words
+  DroppedKeywordWarning: version 15.1.0: keywords dropped: alpha, sparc
+
+dev-python/unittest2
+  DroppedKeywordWarning: version 1.0.1-r1: keywords dropped: arm64, ia64, mips, ppc, s390, sh, sparc, x86
+
+dev-python/urllib3
+  DroppedKeywordWarning: version 1.10: keywords dropped: alpha
+
+dev-python/urwid
+  DroppedKeywordWarning: version 1.3.0: keywords dropped: arm64
+
+dev-python/utidylib
+  MetadataError: version 0.2-r2: attr(fetchables): error- Metadata Exception: pkg ebuild src: dev-python/utidylib-0.2-r2, attr fetchables
+error: mirror://berlios/utidylib/uTidylib-0.2.zip is unparseable
+flagged token- uri mirror://berlios/utidylib/uTidylib-0.2.zip isn't a known mirror tier
+
+dev-python/visual
+  DeprecatedEclass: version 5.74: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+dev-python/webpy
+  DeprecatedEAPI: version 0.37: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.37: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+dev-python/webtest
+  DroppedKeywordWarning: version 2.0.16: keywords dropped: ia64, s390, sh, sparc
+  DroppedKeywordWarning: version 2.0.18: keywords dropped: alpha
+
+dev-python/webut
+  DeprecatedEAPI: version 0.1.0.2: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.1.0.2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+dev-python/winpdb
+  DeprecatedEAPI: version 1.4.8: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.4.8: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+dev-python/ws4py
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+dev-python/wsgiproxy2
+  DroppedKeywordWarning: version 0.4.2: keywords dropped: alpha
+
+dev-python/xlwt
+  DroppedKeywordWarning: version 1.0.0: keywords dropped: ppc
+
+dev-python/xmpppy
+  DeprecatedEAPI: version 0.5.0_rc1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.5.0_rc1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+
+app-misc/abook
+  DeprecatedEAPI: version 0.6.0_pre2: uses deprecated EAPI: 3
+
+app-misc/astrolog-ephemeris
+  DeprecatedEAPI: version 5.40: uses deprecated EAPI: 0
+
+app-misc/away
+  DeprecatedEAPI: version 0.9.5-r1: uses deprecated EAPI: 0
+
+app-misc/beanstalkd
+  DeprecatedEAPI: version 1.4.6-r1: uses deprecated EAPI: 3
+
+app-misc/beep
+  DeprecatedEAPI: version 1.2.2-r1: uses deprecated EAPI: 0
+
+app-misc/bfm
+  DeprecatedEAPI: version 1.2-r1: uses deprecated EAPI: 0
+
+app-misc/binclock
+  DeprecatedEAPI: version 1.5: uses deprecated EAPI: 2
+
+app-misc/birthday
+  DeprecatedEAPI: version 1.6.2: uses deprecated EAPI: 0
+
+app-misc/bottlerocket
+  DeprecatedEAPI: version 0.04c-r1: uses deprecated EAPI: 2
+
+app-misc/ca-certificates
+  NonExistentDeps: version 20090709: depset depends: nonexistent atoms [ sys-apps/mktemp ]
+  NonExistentDeps: version 20090709: depset rdepends: nonexistent atoms [ sys-apps/mktemp ]
+  DeprecatedEAPI: version 20090709: uses deprecated EAPI: 0
+  NonExistentDeps: version 20110421: depset depends: nonexistent atoms [ sys-apps/mktemp ]
+  NonExistentDeps: version 20110421: depset rdepends: nonexistent atoms [ sys-apps/mktemp ]
+  DeprecatedEAPI: version 20110421: uses deprecated EAPI: 0
+  NonExistentDeps: version 20110502: depset depends: nonexistent atoms [ sys-apps/mktemp ]
+  NonExistentDeps: version 20110502: depset rdepends: nonexistent atoms [ sys-apps/mktemp ]
+  DeprecatedEAPI: version 20110502: uses deprecated EAPI: 0
+  NonExistentDeps: version 20110502-r1: depset depends: nonexistent atoms [ sys-apps/mktemp ]
+  NonExistentDeps: version 20110502-r1: depset rdepends: nonexistent atoms [ sys-apps/mktemp ]
+  DeprecatedEAPI: version 20110502-r1: uses deprecated EAPI: 0
+  NonExistentDeps: version 20110502-r2: depset depends: nonexistent atoms [ sys-apps/mktemp ]
+  NonExistentDeps: version 20110502-r2: depset rdepends: nonexistent atoms [ sys-apps/mktemp ]
+  DeprecatedEAPI: version 20110502-r2: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 20110502-r3: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 20110502-r4: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 20111025: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 20120212: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 20120623: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 20121114: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 20130119: uses deprecated EAPI: 3
+
+app-misc/cadubi
+  DeprecatedEAPI: version 1.3: uses deprecated EAPI: 0
+
+app-misc/calendar
+  DeprecatedEAPI: version 0.9.1: uses deprecated EAPI: 0
+
+app-misc/cbrpager
+  DeprecatedEAPI: version 0.9.20: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 0.9.22: uses deprecated EAPI: 3
+
+app-misc/cbview
+  DeprecatedEAPI: version 0.06: uses deprecated EAPI: 0
+
+app-misc/cdcat
+  DeprecatedEAPI: version 0.3: uses deprecated EAPI: 0
+
+app-misc/cdctl
+  DeprecatedEAPI: version 0.15: uses deprecated EAPI: 0
+
+app-misc/cdircmp
+  DeprecatedEAPI: version 0.3-r1: uses deprecated EAPI: 2
+
+app-misc/cdspeed
+  DeprecatedEAPI: version 0.4-r1: uses deprecated EAPI: 2
+
+app-misc/cmatrix
+  DeprecatedEAPI: version 1.2a-r1: uses deprecated EAPI: 0
+
+app-misc/color
+  DeprecatedEAPI: version 1.2-r1: uses deprecated EAPI: 3
+
+app-misc/countrycodes
+  DeprecatedEAPI: version 1.0.5-r1: uses deprecated EAPI: 3
+
+app-misc/cstream
+  DeprecatedEAPI: version 3.0.0: uses deprecated EAPI: 2
+
+app-misc/dailystrips
+  DeprecatedEAPI: version 1.0.28-r2: uses deprecated EAPI: 0
+
+app-misc/datovka
+  DeprecatedEclass: version 3.0.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+app-misc/detachtty
+  DeprecatedEAPI: version 9: uses deprecated EAPI: 0
+
+app-misc/dnetc
+  DeprecatedEAPI: version 2.9011.496-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.9015.504: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.9103.509: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 2.9107.516: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 2.9108.517: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 2.9109.518: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 2.9110.519: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 2.9110.519b: uses deprecated EAPI: 2
+  DroppedKeywordWarning: version 2.9110.519b: keywords dropped: x86
+  DroppedKeywordWarning: version 2.9110.519: keywords dropped: amd64, ppc
+  DroppedKeywordWarning: version 2.9108.517: keywords dropped: sparc
+
+app-misc/dvorakng
+  DeprecatedEAPI: version 0.6.0: uses deprecated EAPI: 0
+
+app-misc/dvtm
+  DeprecatedEAPI: version 0.8: uses deprecated EAPI: 3
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+app-misc/egads
+  DeprecatedEAPI: version 0.9.5: uses deprecated EAPI: 0
+
+app-misc/enum
+  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 2
+
+app-misc/fdutils
+  DeprecatedEAPI: version 5.4.20020222-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 5.5-r2: uses deprecated EAPI: 0
+
+app-misc/fslint
+  DeprecatedEclass: version 2.42: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+app-misc/fujiplay
+  DeprecatedEAPI: version 1.33: uses deprecated EAPI: 0
+
+app-misc/g15composer
+  DeprecatedEAPI: version 3.1: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 3.2: uses deprecated EAPI: 2
+
+app-misc/g15daemon
+  DeprecatedEclass: version 1.9.5.3-r11: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 1.9.5.3-r12: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DroppedKeywordWarning: version 1.9.5.3-r12: keywords dropped: amd64, ppc, ppc64, x86
+
+app-misc/g15message
+  DeprecatedEAPI: version 1.0.0: uses deprecated EAPI: 0
+
+app-misc/geekcode
+  DeprecatedEAPI: version 1.7.3-r1: uses deprecated EAPI: 2
+
+app-misc/getopt
+  DeprecatedEAPI: version 1.1.4: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 1.1.5: uses deprecated EAPI: 3
+
+app-misc/glimpse
+  DeprecatedEAPI: version 4.18.5: uses deprecated EAPI: 0
+
+app-misc/golly
+  DeprecatedEclass: version 2.4: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+app-misc/gramps
+  DroppedKeywordWarning: version 3.4.9: keywords dropped: ppc
+
+app-misc/granule
+  DeprecatedEAPI: version 1.4.0: uses deprecated EAPI: 2
+
+app-misc/graphlcd-base
+  DeprecatedEAPI: version 0.1.5-r1: uses deprecated EAPI: 0
+
+app-misc/hexcompare
+  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 3
+
+app-misc/hilite
+  DeprecatedEAPI: version 1.5: uses deprecated EAPI: 0
+
+app-misc/ifp-line
+  DeprecatedEAPI: version 0.3: uses deprecated EAPI: 2
+
+app-misc/iguanaIR
+  NonExistentDeps: version 0.93: depset depends: nonexistent atoms [ dev-lang/python:2.6 ]
+  DeprecatedEclass: version 0.93: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 1.0.1: depset depends: nonexistent atoms [ dev-lang/python:2.6 ]
+  DeprecatedEclass: version 1.0.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+app-misc/inputlircd
+  DeprecatedEAPI: version 0.0.1_pre11: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.0.1_pre11-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.0.1_pre15: uses deprecated EAPI: 0
+
+app-misc/interceptty
+  DeprecatedEAPI: version 0.6: uses deprecated EAPI: 0
+
+app-misc/irtrans-irclient
+  DeprecatedEAPI: version 6.01.05: uses deprecated EAPI: 2
+
+app-misc/jdictionary
+  DeprecatedEAPI: version 1.8-r2: uses deprecated EAPI: 0
+
+app-misc/jot
+  DeprecatedEAPI: version 9.0: uses deprecated EAPI: 0
+
+app-misc/joy2key
+  DeprecatedEAPI: version 1.6.3: uses deprecated EAPI: 0
+
+app-misc/ktoblzcheck
+  NonExistentDeps: version 1.39: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 1.39: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 1.39: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+app-misc/lcd-stuff
+  DeprecatedEAPI: version 0.1.6: uses deprecated EAPI: 2
+  MetadataError: version 0.1.6: attr(fetchables): error- Metadata Exception: pkg ebuild src: app-misc/lcd-stuff-0.1.6, attr fetchables
+error: mirror://berlios/lcd-stuff/lcd-stuff-0.1.6.tar.bz2 is unparseable
+flagged token- uri mirror://berlios/lcd-stuff/lcd-stuff-0.1.6.tar.bz2 isn't a known mirror tier
+
+app-misc/lcdproc
+  DeprecatedEAPI: version 0.5.2-r1: uses deprecated EAPI: 0
+
+app-misc/leave
+  DeprecatedEAPI: version 20100918: uses deprecated EAPI: 3
+
+app-misc/linuxspa
+  DeprecatedEAPI: version 0.7.1: uses deprecated EAPI: 0
+
+app-misc/livecd-tools
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+app-misc/logserial
+  DeprecatedEAPI: version 0.4.2: uses deprecated EAPI: 2
+
+app-misc/lsx
+  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 0
+
+app-misc/lxsplit
+  DeprecatedEAPI: version 0.2.4: uses deprecated EAPI: 0
+
+app-misc/matew
+  DeprecatedEAPI: version 1.9: uses deprecated EAPI: 0
+
+app-misc/mc
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+app-misc/mencal
+  DeprecatedEAPI: version 2.3: uses deprecated EAPI: 0
+
+app-misc/mepl
+  DeprecatedEAPI: version 0.45: uses deprecated EAPI: 0
+
+app-misc/mime-types
+  DeprecatedEAPI: version 9: uses deprecated EAPI: 0
+
+app-misc/misterhouse
+  DeprecatedEAPI: version 2.103: uses deprecated EAPI: 0
+
+app-misc/mmv
+  DeprecatedEAPI: version 1.01b_p15: uses deprecated EAPI: 3
+
+app-misc/mouseremote
+  DeprecatedEAPI: version 0.90-r1: uses deprecated EAPI: 0
+
+app-misc/mtail
+  DeprecatedEAPI: version 1.1.1-r2: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.1.1-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+app-misc/mvcase
+  DeprecatedEAPI: version 0.1-r1: uses deprecated EAPI: 2
+
+app-misc/nullmodem
+  DeprecatedEAPI: version 0.0.6: uses deprecated EAPI: 2
+
+app-misc/ompload
+  DeprecatedEAPI: version 20101220: uses deprecated EAPI: 3
+
+app-misc/ondir
+  DeprecatedEAPI: version 0.2.2-r1: uses deprecated EAPI: 3
+
+app-misc/perltrash
+  DeprecatedEAPI: version 0.3: uses deprecated EAPI: 0
+
+app-misc/pipeworks
+  DeprecatedEAPI: version 0.4: uses deprecated EAPI: 0
+
+app-misc/plod
+  DeprecatedEAPI: version 1.9: uses deprecated EAPI: 0
+
+app-misc/ps3pf_utils
+  DeprecatedEAPI: version 2.1.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.2.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.3: uses deprecated EAPI: 0
+
+app-misc/pysmssend
+  NonExistentDeps: version 1.48: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  NonExistentDeps: version 1.48: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  DeprecatedEAPI: version 1.48: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.48: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 9999: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  NonExistentDeps: version 9999: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), git-2 (migrate to git-r3), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+app-misc/pystopwatch
+  DeprecatedEclass: version 2012.12.24.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+app-misc/razertool
+  DeprecatedEAPI: version 0.0.7-r3: uses deprecated EAPI: 2
+
+app-misc/recoll
+  DeprecatedEclass: version 1.17.3-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 1.19.5: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+app-misc/rl
+  DeprecatedEAPI: version 0.2.7: uses deprecated EAPI: 0
+
+app-misc/rlwrap
+  DeprecatedEAPI: version 0.37: uses deprecated EAPI: 3
+
+app-misc/rox-filer
+  BadInsIntoDir: version 2.11: ebuild uses insinto /usr/share/applications on line 69
+
+app-misc/run-mailcap
+  DeprecatedEAPI: version 3.39_p1: uses deprecated EAPI: 0
+
+app-misc/screen
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+app-misc/screenfetch
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+app-misc/screenie
+  DeprecatedEAPI: version 1.30.0-r1: uses deprecated EAPI: 2
+
+app-misc/sleepyhead
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+app-misc/sphinx
+  DeprecatedEAPI: version 0.9.9: uses deprecated EAPI: 2
+
+app-misc/splitvt
+  DeprecatedEAPI: version 1.6.6-r2: uses deprecated EAPI: 3
+
+app-misc/subsurface
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+app-misc/supercat
+  DeprecatedEAPI: version 0.5.5-r1: uses deprecated EAPI: 3
+
+app-misc/symlinks
+  DeprecatedEAPI: version 1.4: uses deprecated EAPI: 0
+
+app-misc/tablix
+  NonExistentDeps: version 0.3.5-r1: depset depends: nonexistent atoms [ sys-cluster/pvm ]
+  NonExistentDeps: version 0.3.5-r1: depset rdepends: nonexistent atoms [ sys-cluster/pvm ]
+  DeprecatedEAPI: version 0.3.5-r1: uses deprecated EAPI: 2
+
+app-misc/tasque
+  DeprecatedEclass: version 0.1.11: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEclass: version 0.1.12: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+
+app-misc/timestamp
+  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 0
+
+app-misc/tmux-mem-cpu-load
+  DeprecatedEAPI: version 2.1.0: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 2.2.1: uses deprecated EAPI: 3
+
+app-misc/tomboy
+  DeprecatedEclass: version 1.14.1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+
+app-misc/towitoko
+  DeprecatedEAPI: version 2.0.7-r2: uses deprecated EAPI: 0
+
+app-misc/tpconfig
+  DeprecatedEAPI: version 3.1.3: uses deprecated EAPI: 0
+
+app-misc/tpipe
+  DeprecatedEAPI: version 1.6: uses deprecated EAPI: 0
+
+app-misc/tracker
+  NonExistentDeps: version 1.2.5: depset depends: nonexistent atoms [ <mail-client/evolution-3.5.3, <gnome-extra/evolution-data-server-3.5.3 ]
+  NonExistentDeps: version 1.2.5: depset rdepends: nonexistent atoms [ <mail-client/evolution-3.5.3, <gnome-extra/evolution-data-server-3.5.3 ]
+  NonExistentDeps: version 1.2.6: depset depends: nonexistent atoms [ <mail-client/evolution-3.5.3, <gnome-extra/evolution-data-server-3.5.3 ]
+  NonExistentDeps: version 1.2.6: depset rdepends: nonexistent atoms [ <mail-client/evolution-3.5.3, <gnome-extra/evolution-data-server-3.5.3 ]
+  NonExistentDeps: version 1.4.0: depset depends: nonexistent atoms [ <mail-client/evolution-3.5.3, <gnome-extra/evolution-data-server-3.5.3 ]
+  NonExistentDeps: version 1.4.0: depset rdepends: nonexistent atoms [ <mail-client/evolution-3.5.3, <gnome-extra/evolution-data-server-3.5.3 ]
+
+app-misc/usbirboy
+  DeprecatedEAPI: version 0.2.1-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.3.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.3.1-r1: uses deprecated EAPI: 0
+
+app-misc/utimer
+  DeprecatedEAPI: version 0.4: uses deprecated EAPI: 2
+
+app-misc/vcp
+  DeprecatedEAPI: version 2.2-r1: uses deprecated EAPI: 2
+
+app-misc/webcomics-collector
+  DeprecatedEAPI: version 0.7.3: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.7.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+app-misc/wipe
+  DeprecatedEAPI: version 2.2.20050509: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.2.20050509-r1: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 2.3.1: uses deprecated EAPI: 3
+
+app-misc/wyrd
+  DeprecatedEAPI: version 1.4.4: uses deprecated EAPI: 2
+
+app-misc/xmind
+  WhitespaceFound: version 3.4.1.201401221918: ebuild has leading whitespace on line 49
+  WhitespaceFound: version 3.5.1.201411201906: ebuild has leading whitespace on line 49
+  WhitespaceFound: version 3.5.3.201506180105: ebuild has leading whitespace on line 49
+
+app-misc/yagtd
+  DeprecatedEAPI: version 0.3.4: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.3.4: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+app-misc/zisofs-tools
+  DeprecatedEAPI: version 1.0.6: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0.8: uses deprecated EAPI: 0
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+
+x11-plugins/allin1
+  DeprecatedEAPI: version 0.5.0: uses deprecated EAPI: 0
+
+x11-plugins/asclock
+  DeprecatedEAPI: version 2.0.12-r1: uses deprecated EAPI: 3
+  MissingChksum: version 2.0.12-r1: "asclock-2.0.12.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/ascpu
+  DeprecatedEAPI: version 1.11: uses deprecated EAPI: 0
+  MissingChksum: version 1.11: "ascpu-1.11.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/asmem
+  DeprecatedEAPI: version 1.12: uses deprecated EAPI: 0
+  MissingChksum: version 1.12: "asmem-1.12.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/asmon
+  DeprecatedEAPI: version 0.71: uses deprecated EAPI: 0
+  MissingChksum: version 0.71: "asmon-0.71.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/astime
+  DeprecatedEAPI: version 2.8-r1: uses deprecated EAPI: 0
+  MissingChksum: version 2.8-r1: "astime-2.8.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/bubblemon
+  MissingChksum: version 1.46-r2: "bubblemon-dockapp-1.46.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-plugins/compiz-plugins-main
+  MissingChksum: version 0.8.8: "compiz-plugins-main-0.8.8.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/cputnik
+  DeprecatedEAPI: version 0.2.0: uses deprecated EAPI: 0
+
+x11-plugins/desklet-Genesis
+  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 0
+  DeprecatedEclass: version 0.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  MissingChksum: version 0.2: "Genesis-0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/desklet-ImageSlideShow
+  DeprecatedEAPI: version 0.8-r1: uses deprecated EAPI: 2
+  DeprecatedEclass: version 0.8-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+x11-plugins/desklet-Mouse
+  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 0
+  DeprecatedEclass: version 0.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  MissingChksum: version 0.1: "Mouse-0.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/desklet-SlideShow
+  DeprecatedEAPI: version 0.9: uses deprecated EAPI: 0
+  DeprecatedEclass: version 0.9: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  MissingChksum: version 0.9: "SlideShow-0.9.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/desklet-WeeklyCalendar
+  DeprecatedEAPI: version 0.60: uses deprecated EAPI: 0
+  DeprecatedEclass: version 0.60: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  MissingChksum: version 0.60: "WeeklyCalendar-0.60.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/desklet-ftb
+  DeprecatedEAPI: version 0.3.2: uses deprecated EAPI: 0
+  DeprecatedEclass: version 0.3.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  MissingChksum: version 0.3.2: "FTB-0.3.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/desklet-iCalendarEvent
+  DeprecatedEAPI: version 0.5: uses deprecated EAPI: 2
+  DeprecatedEclass: version 0.5: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  MissingChksum: version 0.5: "iCalendarEvent-0.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/desklet-justanicon
+  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 0
+  DeprecatedEclass: version 0.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  MissingChksum: version 0.2: "JustAnIcon-0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/docker
+  DeprecatedEAPI: version 1.5: uses deprecated EAPI: 0
+
+x11-plugins/epplets
+  DeprecatedEAPI: version 0.12: uses deprecated EAPI: 0
+
+x11-plugins/gkrellaclock
+  DeprecatedEAPI: version 0.3.4: uses deprecated EAPI: 0
+  MissingChksum: version 0.3.4: "gkrellaclock-0.3.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/gkrellfire
+  DeprecatedEAPI: version 0.4.2: uses deprecated EAPI: 0
+
+x11-plugins/gkrellm-bluez
+  DeprecatedEAPI: version 0.2-r1: uses deprecated EAPI: 0
+  MissingChksum: version 0.2-r1: "gkrellm-bluez-0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/gkrellm-countdown
+  DeprecatedEAPI: version 0.1.2: uses deprecated EAPI: 0
+  MissingChksum: version 0.1.2: "gkrellm-countdown-0.1.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/gkrellm-imonc
+  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 0
+  MissingChksum: version 0.2: "gkrellm-imonc-src-0.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/gkrellm-leds
+  DeprecatedEAPI: version 0.8.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.8.2: uses deprecated EAPI: 3
+  MissingChksum: version 0.8.1: "gkleds-0.8.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.8.2: "gkleds-0.8.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/gkrellm-mailwatch
+  DeprecatedEAPI: version 2.4.3-r1: uses deprecated EAPI: 3
+  MissingChksum: version 2.4.3-r1: "gkrellm-mailwatch-2.4.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/gkrellm-plugins
+  DeprecatedEAPI: version 2.0: uses deprecated EAPI: 0
+
+x11-plugins/gkrellm-radio
+  DeprecatedEAPI: version 2.0.4: uses deprecated EAPI: 0
+  MissingChksum: version 2.0.4: "gkrellm-radio-2.0.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/gkrellm-trayicons
+  DeprecatedEAPI: version 1.03: uses deprecated EAPI: 0
+  MissingChksum: version 1.03: "gkrellm-trayicons-1.03.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/gkrellm-vaiobright
+  DeprecatedEAPI: version 2.5-r1: uses deprecated EAPI: 0
+  MissingChksum: version 2.5-r1: "vaiobright-2.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/gkrellm-volume
+  DeprecatedEAPI: version 2.1.13: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.1.13-r2: uses deprecated EAPI: 3
+  MissingChksum: version 2.1.13: "gkrellm-volume-2.1.13.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/gkrellm-xkb
+  DeprecatedEAPI: version 1.05: uses deprecated EAPI: 0
+  MissingChksum: version 1.05: "gkrellm-xkb-1.05.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/gkrellmoon
+  DeprecatedEAPI: version 0.6-r1: uses deprecated EAPI: 0
+  MissingChksum: version 0.6-r1: "gkrellmoon-0.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/gkrellmss
+  MissingChksum: version 2.6: "gkrellmss-2.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/gkrellmwireless
+  DeprecatedEAPI: version 2.0.3: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.0.3-r1: uses deprecated EAPI: 2
+  MissingChksum: version 2.0.3: "gkrellmwireless-2.0.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/gkrellshoot
+  MissingChksum: version 0.4.4: "gkrellshoot-0.4.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/gkrellsun
+  DeprecatedEAPI: version 1.0.0-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0.0-r2: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 1.0.0-r3: uses deprecated EAPI: 3
+  MissingChksum: version 1.0.0-r1: "gkrellsun-1.0.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/gkwebmon
+  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 0
+  MissingChksum: version 0.2: "gkwebmon-0.2.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/guifications
+  DeprecatedEAPI: version 2.16: uses deprecated EAPI: 2
+  MissingChksum: version 2.16: "pidgin-guifications-2.16.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-plugins/i8krellm
+  DeprecatedEAPI: version 2.5: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.5-r1: uses deprecated EAPI: 3
+  MissingChksum: version 2.5: "i8krellm-2.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/matchbox-applet-input-manager
+  DeprecatedEAPI: version 0.6: uses deprecated EAPI: 0
+  MissingChksum: version 0.6: "mb-applet-input-manager-0.6.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/matchbox-applet-startup-monitor
+  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 0
+  MissingChksum: version 0.1: "mb-applet-startup-monitor-0.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/matchbox-applet-volume
+  MissingChksum: version 0.1: "mb-applet-volume-0.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/matchbox-desktop-image-browser
+  DeprecatedEAPI: version 0.2-r1: uses deprecated EAPI: 0
+  MissingChksum: version 0.2-r1: "mb-desktop-image-browser-0.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/matchbox-desktop-xine
+  DeprecatedEAPI: version 0.4: uses deprecated EAPI: 0
+  MissingChksum: version 0.4: "mb-desktop-xine-0.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/pidgin-bot-sentry
+  DeprecatedEAPI: version 1.3.0: uses deprecated EAPI: 3
+  MissingChksum: version 1.3.0: "bot-sentry-1.3.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/pidgin-encryption
+  MissingChksum: version 3.1: "pidgin-encryption-3.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/pidgin-extprefs
+  DeprecatedEAPI: version 0.7-r1: uses deprecated EAPI: 2
+
+x11-plugins/pidgin-hotkeys
+  DeprecatedEAPI: version 0.2.4: uses deprecated EAPI: 2
+  MissingChksum: version 0.2.4: "pidgin-hotkeys-0.2.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/pidgin-led-notification
+  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 3
+  MissingChksum: version 0.1: "led-notification-0.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/pidgin-libnotify
+  DeprecatedEAPI: version 0.14-r1: uses deprecated EAPI: 2
+
+x11-plugins/pidgin-mbpurple
+  DeprecatedEAPI: version 0.3.0-r2: uses deprecated EAPI: 2
+  MissingChksum: version 0.3.0-r2: "mbpurple-0.3.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/pidgin-mpris
+  DeprecatedEAPI: version 0.2.6: uses deprecated EAPI: 2
+  MissingChksum: version 0.2.6: "pidgin-mpris-0.2.6.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-plugins/pidgin-musictracker
+  DeprecatedEAPI: version 0.4.22: uses deprecated EAPI: 2
+  MissingChksum: version 0.4.22: "pidgin-musictracker-0.4.22.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/pidgin-privacy-please
+  DeprecatedEAPI: version 0.7.1: uses deprecated EAPI: 2
+
+x11-plugins/pidgin-rhythmbox
+  DeprecatedEAPI: version 2.0: uses deprecated EAPI: 2
+  MissingChksum: version 2.0: "pidgin-rhythmbox-2.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/pidgintex
+  DeprecatedEAPI: version 1.1.1: uses deprecated EAPI: 2
+  MissingChksum: version 1.1.1: "pidginTeX-1.1.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/qled
+  NonExistentDeps: version 0.6.2: depset depends: nonexistent atoms [ <dev-qt/qtgui-4.8.5:4 ]
+  NonExistentDeps: version 0.6.2: depset rdepends: nonexistent atoms [ <dev-qt/qtgui-4.8.5:4 ]
+  DeprecatedEAPI: version 0.6.2: uses deprecated EAPI: 3
+
+x11-plugins/thinkhdaps
+  DeprecatedEAPI: version 0.2.1: uses deprecated EAPI: 2
+  DeprecatedEclass: version 0.2.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  MissingChksum: version 0.2.1: "thinkhdaps-0.2.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-plugins/tomboy-reminder
+  DeprecatedEAPI: version 0.9.2: uses deprecated EAPI: 2
+  DeprecatedEclass: version 0.9.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  MissingChksum: version 0.9.2: "tomboy-reminder-0.9.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-plugins/vicious
+  DeprecatedEAPI: version 2.0.3: uses deprecated EAPI: 3
+
+x11-plugins/wmCalClock
+  DeprecatedEAPI: version 1.25-r2: uses deprecated EAPI: 0
+  MissingChksum: version 1.25-r2: "wmCalClock-1.25.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmDownload
+  DeprecatedEAPI: version 0.1.2a-r1: uses deprecated EAPI: 0
+  MissingChksum: version 0.1.2a-r1: "wmDownload-0.1.2a.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmMatrix
+  DeprecatedEAPI: version 0.2-r1: uses deprecated EAPI: 0
+  MissingChksum: version 0.2-r1: "wmMatrix-0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmMoonClock
+  DeprecatedEAPI: version 1.27-r1: uses deprecated EAPI: 0
+  MissingChksum: version 1.27-r1: "wmMoonClock-1.27.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmSMPmon
+  DeprecatedEAPI: version 3.1-r1: uses deprecated EAPI: 0
+  MissingChksum: version 3.1-r1: "wmSMPmon-3.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-plugins/wmSpaceWeather
+  DeprecatedEAPI: version 1.04_p19: uses deprecated EAPI: 0
+  MissingChksum: version 1.04_p19: "wmspaceweather_1.04.orig.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.04_p19: "wmspaceweather_1.04-19.diff.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmSun
+  DeprecatedEAPI: version 1.03-r1: uses deprecated EAPI: 0
+  MissingChksum: version 1.03-r1: "wmSun-1.03.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-plugins/wmXName
+  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 0
+  MissingChksum: version 0.1: "wmXName-0.01.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-plugins/wmacpi
+  DeprecatedEAPI: version 1.34: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.2_rc1: uses deprecated EAPI: 0
+  MissingChksum: version 1.34: "wmacpi-1.34.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 2.2_rc1: "wmacpi-2.2rc1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmacpiload-ac
+  DeprecatedEAPI: version 0.2.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.2.0-r1: uses deprecated EAPI: 2
+
+x11-plugins/wmacpimon
+  DeprecatedEAPI: version 0.2.1: uses deprecated EAPI: 2
+  MissingChksum: version 0.2.1: "wmacpimon-0.2.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmail
+  DeprecatedEAPI: version 2.0-r3: uses deprecated EAPI: 0
+  MissingChksum: version 2.0-r3: "wmail-2.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-plugins/wmapm
+  DeprecatedEAPI: version 3.1-r1: uses deprecated EAPI: 0
+  MissingChksum: version 3.1-r1: "wmapm-3.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-plugins/wmapmload
+  DeprecatedEAPI: version 0.3.4: uses deprecated EAPI: 3
+  MissingChksum: version 0.3.4: "wmapmload-0.3.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmappl
+  DeprecatedEAPI: version 0.71: uses deprecated EAPI: 0
+
+x11-plugins/wmbatteries
+  DeprecatedEAPI: version 0.1.3: uses deprecated EAPI: 0
+
+x11-plugins/wmbinclock
+  DeprecatedEAPI: version 0.5: uses deprecated EAPI: 0
+  MissingChksum: version 0.5: "wmbinclock-0.5.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmbio
+  DeprecatedEAPI: version 1.02: uses deprecated EAPI: 2
+  MissingChksum: version 1.02: "wmbio-1.02.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-plugins/wmblob
+  MissingChksum: version 1.0.3: "wmblob_1.0.3.orig.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmbluecpu
+  DeprecatedEAPI: version 0.6: uses deprecated EAPI: 0
+  MissingChksum: version 0.6: "wmbluecpu-0.6.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmbutton
+  DeprecatedEAPI: version 0.6.1: uses deprecated EAPI: 0
+  MissingChksum: version 0.6.1: "wmbutton-0.6.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmcalc
+  DeprecatedEAPI: version 0.4: uses deprecated EAPI: 0
+  MissingChksum: version 0.4: "wmcalc-0.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmcdplay
+  DeprecatedEAPI: version 1.0_beta1: uses deprecated EAPI: 0
+  MissingChksum: version 1.0_beta1: "wmcdplay-1.0-beta1.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmclock
+  DeprecatedEAPI: version 1.0.13: uses deprecated EAPI: 3
+  MissingChksum: version 1.0.13: "wmclock-1.0.13.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmclockmon
+  MissingChksum: version 0.8.1: "wmclockmon_0.8.1-1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmcms
+  DeprecatedEAPI: version 0.3.5-r1: uses deprecated EAPI: 0
+  MissingChksum: version 0.3.5-r1: "wmcms-0.3.5.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmcoincoin
+  MissingChksum: version 2.5.1f: "wmcoincoin-2.5.1f.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmcp
+  DeprecatedEAPI: version 1.2.8: uses deprecated EAPI: 0
+  MissingChksum: version 1.2.8: "wmcp-1.2.8.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-plugins/wmcpu
+  DeprecatedEAPI: version 1.4: uses deprecated EAPI: 3
+  MissingChksum: version 1.4: "wmcpu-1.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-plugins/wmcpuload
+  DeprecatedEAPI: version 1.1.0_pre5: uses deprecated EAPI: 0
+  MissingChksum: version 1.1.0_pre5: "wmcpuload-1.1.0pre5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmcube
+  DeprecatedEAPI: version 0.98: uses deprecated EAPI: 3
+  MissingChksum: version 0.98: "wmcube-0.98.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-plugins/wmdate
+  DeprecatedEAPI: version 0.7: uses deprecated EAPI: 0
+  MissingChksum: version 0.7: "wmdate-0.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmdf
+  DeprecatedEAPI: version 0.1.6-r1: uses deprecated EAPI: 0
+
+x11-plugins/wmdiskmon
+  DeprecatedEAPI: version 0.0.1: uses deprecated EAPI: 0
+  MissingChksum: version 0.0.1: "wmdiskmon-0.0.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmdl
+  DeprecatedEAPI: version 1.4.1: uses deprecated EAPI: 0
+  MissingChksum: version 1.4.1: "wmdl-1.4.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-plugins/wmdots
+  DeprecatedEAPI: version 0.2_beta: uses deprecated EAPI: 0
+  MissingChksum: version 0.2_beta: "wmdots-0.2beta.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-plugins/wmdrawer
+  MissingChksum: version 0.10.5-r2: "wmdrawer-0.10.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmfire
+  MissingChksum: version 1.2.4-r2: "wmfire-1.2.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmforkplop
+  MissingChksum: version 0.9.3: "wmforkplop-0.9.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmfortune
+  DeprecatedEAPI: version 0.241: uses deprecated EAPI: 0
+
+x11-plugins/wmfrog
+  DeprecatedEAPI: version 0.2.0-r1: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.3.1: uses deprecated EAPI: 2
+  MissingChksum: version 0.2.0-r1: "wmfrog-0.2.0.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.3.1: "wmfrog-0.3.1.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmfsm
+  DeprecatedEAPI: version 0.34-r1: uses deprecated EAPI: 0
+
+x11-plugins/wmget
+  DeprecatedEAPI: version 0.6.0: uses deprecated EAPI: 0
+  MissingChksum: version 0.6.0: "wmget-0.6.0-src.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmgrabimage
+  DeprecatedEAPI: version 0.72-r1: uses deprecated EAPI: 0
+
+x11-plugins/wmgtemp
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+  MissingChksum: version 1.0: "wmgtemp-1.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-plugins/wmhdplop
+  DeprecatedEAPI: version 0.9.9-r2: uses deprecated EAPI: 2
+  MissingChksum: version 0.9.9-r2: "wmhdplop-0.9.9.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmifinfo
+  DeprecatedEAPI: version 0.09: uses deprecated EAPI: 0
+  MissingChksum: version 0.09: "wmifinfo-0.09.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmifs
+  DeprecatedEAPI: version 1.3_beta1-r2: uses deprecated EAPI: 0
+  MissingChksum: version 1.3_beta1-r2: "wmifs-1.3b1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.3_beta1-r2: "wmifs_1.3b1-11.diff.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wminet
+  DeprecatedEAPI: version 3.0.0: uses deprecated EAPI: 0
+  MissingChksum: version 3.0.0: "wminet-3.0.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmitime
+  DeprecatedEAPI: version 0.3: uses deprecated EAPI: 0
+  MissingChksum: version 0.3: "wmitime-0.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmium
+  DeprecatedEAPI: version 1.0.9b-r1: uses deprecated EAPI: 2
+  MissingChksum: version 1.0.9b-r1: "wmium-1.0.9b.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-plugins/wmix
+  DeprecatedEAPI: version 3.1-r1: uses deprecated EAPI: 0
+  MissingChksum: version 3.1-r1: "wmix-3.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmjsql
+  DeprecatedEAPI: version 0.5: uses deprecated EAPI: 2
+  MissingChksum: version 0.5: "wmjsql-0.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmlaptop
+  DeprecatedEAPI: version 1.3: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.4: uses deprecated EAPI: 0
+  MissingChksum: version 1.3: "wmlaptop-1.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.4: "wmlaptop-1.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmload
+  DeprecatedEAPI: version 0.9.2: uses deprecated EAPI: 3
+
+x11-plugins/wmlongrun
+  DeprecatedEAPI: version 0.2.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.3.0_pre1: uses deprecated EAPI: 0
+  MissingChksum: version 0.2.0: "wmlongrun-0.2.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 0.3.0_pre1: "wmlongrun-0.3.0pre1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-plugins/wmlpq
+  DeprecatedEAPI: version 0.2.1-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.2.1-r2: uses deprecated EAPI: 0
+  MissingChksum: version 0.2.1-r1: "wmlpq_0.2.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmmand
+  DeprecatedEAPI: version 1.3.2: uses deprecated EAPI: 0
+  MissingChksum: version 1.3.2: "wmMand-1.3.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmmemfree
+  DeprecatedEAPI: version 0.7-r2: uses deprecated EAPI: 3
+  MissingChksum: version 0.7-r2: "wmmemfree-0.7.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmmemload
+  DeprecatedEAPI: version 0.1.6: uses deprecated EAPI: 0
+  MissingChksum: version 0.1.6: "wmmemload-0.1.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmmemmon
+  DeprecatedEAPI: version 1.0.2_pre2: uses deprecated EAPI: 0
+  MissingChksum: version 1.0.2_pre2: "wmmemmon-1.0.2pre2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmmenu
+  DeprecatedEAPI: version 1.2-r1: uses deprecated EAPI: 0
+  MissingChksum: version 1.2-r1: "wmmenu-1.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmmisc
+  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 0
+  MissingChksum: version 1.1: "wmmisc_1.1.orig.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmmon
+  DeprecatedEAPI: version 1.0_beta2-r3: uses deprecated EAPI: 0
+  MissingChksum: version 1.0_beta2-r3: "wmmon-1_0b2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 1.2_beta1: "wmmon-1.2b1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-plugins/wmmp
+  DeprecatedEAPI: version 0.10.0-r1: uses deprecated EAPI: 2
+  MissingChksum: version 0.10.0-r1: "WMmp-0.10.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmmp3
+  DeprecatedEAPI: version 0.12: uses deprecated EAPI: 0
+
+x11-plugins/wmmsg
+  MissingChksum: version 1.0.1: "wmmsg-1.0.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmnet
+  DeprecatedEAPI: version 1.06-r1: uses deprecated EAPI: 0
+  MissingChksum: version 1.06-r1: "wmnet-1.06.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 1.06-r1: "wmnet-1.06-misc.patch.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-plugins/wmnetload
+  DeprecatedEAPI: version 1.3-r3: uses deprecated EAPI: 0
+
+x11-plugins/wmnetselect
+  DeprecatedEAPI: version 0.8-r1: uses deprecated EAPI: 0
+  MissingChksum: version 0.8-r1: "wmnetselect-0.8.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmpager
+  DeprecatedEAPI: version 1.2-r1: uses deprecated EAPI: 2
+  MissingChksum: version 1.2-r1: "wmpager-1.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmpeople
+  DeprecatedEAPI: version 1.3: uses deprecated EAPI: 0
+
+x11-plugins/wmpiki
+  DeprecatedEAPI: version 0.2.1: uses deprecated EAPI: 2
+  MissingChksum: version 0.2.1: "wmpiki-0.2.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmpinboard
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+  MissingChksum: version 1.0: "wmpinboard-1.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmpop3
+  DeprecatedEAPI: version 0.5.6a: uses deprecated EAPI: 0
+  MissingChksum: version 0.5.6a: "WMPop3-0.5.6a.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-plugins/wmpop3lb
+  DeprecatedEAPI: version 2.4.2-r2: uses deprecated EAPI: 2
+  MissingChksum: version 2.4.2-r2: "wmpop3lb2.4.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-plugins/wmpower
+  DeprecatedEAPI: version 0.4.3: uses deprecated EAPI: 0
+
+x11-plugins/wmppp
+  DeprecatedEAPI: version 1.3.0: uses deprecated EAPI: 3
+  MissingChksum: version 1.3.0: "wmppp-1.3.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-plugins/wmrack
+  DeprecatedEAPI: version 1.3: uses deprecated EAPI: 0
+  MissingChksum: version 1.3: "wmrack-1.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmrecord
+  DeprecatedEAPI: version 1.0.5.3-r1: uses deprecated EAPI: 0
+  MissingChksum: version 1.0.5.3-r1: "wmrecord-1.0.5_20040218_0029.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmsmixer
+  DeprecatedEAPI: version 0.5.1: uses deprecated EAPI: 0
+  MissingChksum: version 0.5.1: "wmsmixer-0.5.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-plugins/wmsound
+  MissingChksum: version 0.9.5: "wmsound-0.9.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-plugins/wmstickynotes
+  MissingChksum: version 0.2: "wmstickynotes-0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmsvencd
+  DeprecatedEAPI: version 0.5.0: uses deprecated EAPI: 0
+  MissingChksum: version 0.5.0: "wmsvencd-0.5.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmsysmon
+  DeprecatedEAPI: version 0.7.7: uses deprecated EAPI: 0
+  MissingChksum: version 0.7.7: "wmsysmon-0.7.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.7.7: "wmsysmon-0.7.7-s4t4n.patch.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmsystray
+  DeprecatedEAPI: version 0.1.1: uses deprecated EAPI: 0
+  MissingChksum: version 0.1.1: "wmsystray-0.1.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmtime
+  DeprecatedEAPI: version 1.0_beta2_p9: uses deprecated EAPI: 0
+  MissingChksum: version 1.0_beta2_p9: "wmtime_1.0b2.orig.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.0_beta2_p9: "wmtime_1.0b2-9.diff.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.0_beta2_p10: "wmtime_1.0b2-10.diff.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmtimer
+  MissingChksum: version 2.92: "wmtimer-2.92.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmtop
+  MissingChksum: version 0.9.0-r1: "wmtop-0.9.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmtz
+  DeprecatedEAPI: version 0.7: uses deprecated EAPI: 3
+  MissingChksum: version 0.7: "wmtz-0.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmudmount
+  MissingChksum: version 1.11: "wmudmount-1.11.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmupmon
+  DeprecatedEAPI: version 0.1.3-r1: uses deprecated EAPI: 0
+
+x11-plugins/wmwave
+  DeprecatedEAPI: version 0.4: uses deprecated EAPI: 3
+  MissingChksum: version 0.4: "wmwave-0-4.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmweather
+  DeprecatedEAPI: version 2.4.4: uses deprecated EAPI: 0
+  MissingChksum: version 2.4.4: "wmweather_2.4.4.orig.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmweather+
+  MissingChksum: version 2.13: "wmweather+-2.13.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmwifi
+  DeprecatedEAPI: version 0.6: uses deprecated EAPI: 0
+  MissingChksum: version 0.6: "wmwifi-0.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-plugins/wmwork
+  DeprecatedEAPI: version 0.2.5: uses deprecated EAPI: 0
+  MissingChksum: version 0.2.5: "wmwork-0.2.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmxkb
+  DeprecatedEAPI: version 1.2.2: uses deprecated EAPI: 2
+  MissingChksum: version 1.2.2: "wmxkb-1.2.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-plugins/wmxres
+  MissingChksum: version 1.2: "wmxres-1.1-0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+
+app-arch/afio
+  DeprecatedEAPI: version 2.5: uses deprecated EAPI: 0
+
+app-arch/arc
+  DeprecatedEAPI: version 5.21p: uses deprecated EAPI: 2
+
+app-arch/arj
+  DeprecatedEAPI: version 3.10.22-r3: uses deprecated EAPI: 3
+
+app-arch/bsdsfv
+  DeprecatedEAPI: version 1.18-r1: uses deprecated EAPI: 3
+
+app-arch/bzip2
+  DeprecatedEAPI: version 1.0.6: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0.6-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0.6-r2: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 1.0.6-r3: uses deprecated EAPI: 2
+
+app-arch/cfv
+  DeprecatedEAPI: version 1.18.2: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.18.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+app-arch/cksfv
+  DeprecatedEAPI: version 1.3.12: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.3.13: uses deprecated EAPI: 0
+
+app-arch/cpio
+  DeprecatedEAPI: version 2.11: uses deprecated EAPI: 2
+
+app-arch/engrampa
+  NonExistentDeps: version 1.8.0: depset depends: nonexistent atoms [ >=mate-base/mate-file-manager-1.6:0 ]
+  NonExistentDeps: version 1.8.0: depset rdepends: nonexistent atoms [ >=mate-base/mate-file-manager-1.6:0 ]
+
+app-arch/funzix
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+
+app-arch/gzip
+  DeprecatedEAPI: version 1.4: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.5: uses deprecated EAPI: 0
+
+app-arch/lzma
+  DeprecatedEAPI: version 9.20: uses deprecated EAPI: 0
+
+app-arch/lzop
+  DeprecatedEAPI: version 1.03: uses deprecated EAPI: 2
+
+app-arch/makeself
+  DeprecatedEAPI: version 2.1.5-r2: uses deprecated EAPI: 0
+
+app-arch/mt-st
+  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 2
+
+app-arch/ncompress
+  DeprecatedEAPI: version 4.2.4.3: uses deprecated EAPI: 0
+
+app-arch/par
+  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 2
+
+app-arch/pixz
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+app-arch/ppmd
+  DeprecatedEAPI: version 9.1_p14: uses deprecated EAPI: 3
+
+app-arch/pure-sfv
+  DeprecatedEAPI: version 0.3-r1: uses deprecated EAPI: 2
+
+app-arch/pxz
+  DeprecatedEAPI: version 5.0_pre20110811: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+app-arch/rzip
+  DeprecatedEAPI: version 2.1-r2: uses deprecated EAPI: 2
+
+app-arch/stuffit
+  DeprecatedEAPI: version 5.2.0.611: uses deprecated EAPI: 0
+
+app-arch/tapeutils
+  DeprecatedEAPI: version 0.4: uses deprecated EAPI: 0
+
+app-arch/tar
+  DeprecatedEAPI: version 1.26-r1: uses deprecated EAPI: 3
+  SizeViolation: "files/tar-1.26-xattr.patch" exceeds 20k in size; 29828 bytes total
+
+app-arch/torrentzip
+  DeprecatedEAPI: version 0.2-r1: uses deprecated EAPI: 0
+
+app-arch/unadf
+  DeprecatedEAPI: version 0.7.9b: uses deprecated EAPI: 0
+
+app-arch/unarj
+  DeprecatedEAPI: version 2.65: uses deprecated EAPI: 0
+
+app-arch/undms
+  DeprecatedEAPI: version 1.3-r1: uses deprecated EAPI: 0
+
+app-arch/unlzx
+  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 0
+
+app-arch/unmakeself
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 2
+
+app-arch/unp
+  DeprecatedEAPI: version 2.0_pre7: uses deprecated EAPI: 2
+
+app-arch/unzip
+  DeprecatedEAPI: version 5.52-r2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 6.0-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 6.0-r2: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 6.0-r3: uses deprecated EAPI: 2
+  DroppedKeywordWarning: version 6.0-r1: keywords dropped: mips
+
+app-arch/xdms
+  DeprecatedEAPI: version 1.3.2: uses deprecated EAPI: 0
+
+app-arch/xz-utils
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+app-arch/zip
+  DeprecatedEAPI: version 2.32-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 3.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 3.0-r1: uses deprecated EAPI: 2
+
+app-arch/zoo
+  DeprecatedEAPI: version 2.10-r4: uses deprecated EAPI: 0
+
+app-arch/zpaq-extras
+  DeprecatedEAPI: version 2: uses deprecated EAPI: 3
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+
+games-fps/aaut
+  DeprecatedEAPI: version 1: uses deprecated EAPI: 0
+
+games-fps/alienarena
+  DeprecatedEAPI: version 20120629: uses deprecated EAPI: 2
+
+games-fps/darkplaces
+  DeprecatedEAPI: version 20110628: uses deprecated EAPI: 2
+
+games-fps/doom3-cdoom
+  DeprecatedEAPI: version 1.3.1: uses deprecated EAPI: 2
+  MissingChksum: version 1.3.1: "classic_doom_3_131.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+games-fps/doom3-chextrek
+  DeprecatedEAPI: version 0.52: uses deprecated EAPI: 2
+  MissingChksum: version 0.52: "chextrek_beta_052.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+games-fps/doom3-data
+  DeprecatedEAPI: version 1.1.1282-r1: uses deprecated EAPI: 0
+
+games-fps/doom3-ducttape
+  DeprecatedEAPI: version 0006-r1: uses deprecated EAPI: 2
+  MissingChksum: version 0006-r1: "ducttape0006.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+games-fps/doom3-eventhorizon
+  DeprecatedEAPI: version 1.3: uses deprecated EAPI: 2
+
+games-fps/doom3-hellcampaign
+  DeprecatedEAPI: version 1-r1: uses deprecated EAPI: 2
+  MissingChksum: version 1-r1: "sp_hc_final.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1-r1: "hardcorehellcampaign_patch.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+games-fps/doom3-inhell
+  DeprecatedEAPI: version 1.1-r1: uses deprecated EAPI: 2
+  MissingChksum: version 1.1-r1: "in_hell_v11.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+games-fps/doom3-lms
+  DeprecatedEAPI: version 4: uses deprecated EAPI: 2
+  MissingChksum: version 4: "LastManStandingCoop4Multiplatform.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+games-fps/doom3-mitm
+  DeprecatedEAPI: version 20070129: uses deprecated EAPI: 2
+  MissingChksum: version 20070129: "mitm_4.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 20070129: "mitm5.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+games-fps/doom3-roe
+  DeprecatedEAPI: version 1: uses deprecated EAPI: 0
+
+games-fps/duke3d
+  DeprecatedEAPI: version 20040817-r2: uses deprecated EAPI: 2
+
+games-fps/duke3d-data
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+  MissingUri: version 1.0-r2: file gog_duke_nukem_3d_1.0.0.7.tar.gz is unfetchable- no URI available, and RESTRICT=fetch isn't set
+
+games-fps/enemy-territory-etpro
+  DeprecatedEAPI: version 3.2.6-r1: uses deprecated EAPI: 2
+
+games-fps/enemy-territory-omnibot
+  DeprecatedEAPI: version 0.82: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.83.1: uses deprecated EAPI: 2
+
+games-fps/enemy-territory-truecombat
+  DeprecatedEAPI: version 0.49b: uses deprecated EAPI: 2
+
+games-fps/etqw-data
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+
+games-fps/imaze
+  DeprecatedEAPI: version 1.4: uses deprecated EAPI: 0
+  MissingChksum: version 1.4: "imaze-1.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+games-fps/industri
+  DeprecatedEAPI: version 1.01: uses deprecated EAPI: 2
+  MissingChksum: version 1.01: "industri_BIN-1.01-src.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.01: "industri-1.00.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+games-fps/lsdldoom
+  DeprecatedEAPI: version 1.4.4.4-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.5: uses deprecated EAPI: 2
+  MissingChksum: version 1.4.4.4-r1: "lsdldoom-1.4.4.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.5: "lsdldoom-1.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  DroppedKeywordWarning: version 1.5: keywords dropped: sparc
+
+games-fps/quake1-data
+  DeprecatedEAPI: version 2.40: uses deprecated EAPI: 2
+
+games-fps/quake1-movies
+  DeprecatedEAPI: version 0: uses deprecated EAPI: 0
+
+games-fps/quake2-data
+  DeprecatedEAPI: version 3.20: uses deprecated EAPI: 2
+  MissingChksum: version 3.20: "q2-3.20-x86-full-ctf.exe" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+games-fps/quake3
+  DeprecatedEAPI: version 1.36-r1: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 2
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+games-fps/quake3-alliance
+  DeprecatedEAPI: version 3.3-r1: uses deprecated EAPI: 2
+  MissingChksum: version 3.3-r1: "alliance30.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 3.3-r1: "alliance30-33.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+games-fps/quake3-alternatefire
+  DeprecatedEAPI: version 2.0-r1: uses deprecated EAPI: 2
+  MissingChksum: version 2.0-r1: "alternatefire-2.0.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+games-fps/quake3-bfp
+  DeprecatedEAPI: version 1.2-r1: uses deprecated EAPI: 2
+  MissingChksum: version 1.2-r1: "bidforpower1-2.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+games-fps/quake3-cpma
+  DeprecatedEAPI: version 1.48: uses deprecated EAPI: 2
+
+games-fps/quake3-defrag
+  DeprecatedEAPI: version 1.91.20: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 1.91.21: uses deprecated EAPI: 2
+  MissingChksum: version 1.91.20: "defrag_1.91.20.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.91.20: "defragcpmpak01.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.91.20: "df-extras002.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.91.20: "defragpak1.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.91.20: "defragpak2.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.91.20: "defragpak3.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.91.20: "defragpak4.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.91.20: "defragpak5.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.91.20: "defragpak7.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.91.20: "defragpak8.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.91.20: "defragpak9.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.91.20: "defragpak10.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.91.20: "defragpak11.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+games-fps/quake3-excessiveplus
+  DeprecatedEAPI: version 2.2b: uses deprecated EAPI: 2
+
+games-fps/quake3-lrctf
+  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 2
+  MissingChksum: version 1.1: "LRCTF_Q3A_v1.1_full.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+games-fps/quake3-matrix
+  DeprecatedEAPI: version 2.4_beta-r1: uses deprecated EAPI: 2
+  MissingChksum: version 2.4_beta-r1: "matrix24.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+games-fps/quake3-nsco
+  DeprecatedEAPI: version 1.93-r1: uses deprecated EAPI: 2
+  MissingChksum: version 1.93-r1: "nsco_beta191a.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 1.93-r1: "nsco_beta193upd.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+games-fps/quake3-osp
+  DeprecatedEAPI: version 1.03a-r1: uses deprecated EAPI: 2
+  MissingChksum: version 1.03a-r1: "osp-Quake3-1.03a_full.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+games-fps/quake3-ra3
+  DeprecatedEAPI: version 1.76-r1: uses deprecated EAPI: 2
+
+games-fps/quake3-reaction
+  DeprecatedEAPI: version 3.2: uses deprecated EAPI: 2
+
+games-fps/quake3-ruinhunters
+  DeprecatedEAPI: version 1.0a-r1: uses deprecated EAPI: 2
+  MissingChksum: version 1.0a-r1: "ruin_hunters_v10a_patch.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.0a-r1: "ruin_hunters_v10.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+games-fps/quake3-threewave
+  DeprecatedEAPI: version 1.7-r1: uses deprecated EAPI: 2
+  MissingChksum: version 1.7-r1: "threewave_16_full.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 1.7-r1: "threewave_17_update.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+games-fps/quake4-data
+  DeprecatedEAPI: version 1.0.2147.12: uses deprecated EAPI: 0
+
+games-fps/quakeforge
+  DeprecatedEAPI: version 0.5.5-r2: uses deprecated EAPI: 2
+
+games-fps/red-blue-quake2
+  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 2
+  MissingChksum: version 0.1: "q2source-3.21.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 0.1: "red-blue-quake2-0.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+games-fps/rott
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+
+games-fps/tenebrae
+  DeprecatedEAPI: version 1.04: uses deprecated EAPI: 2
+  MissingChksum: version 1.04: "tenebraedata.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.04: "tenebrae-1.04.tbz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+games-fps/transfusion-bin
+  DeprecatedEAPI: version 1.01: uses deprecated EAPI: 0
+  MissingChksum: version 1.01: "transfusion-1.0-linux.i386.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.01: "transfusion-patch-1.01-linux.i386.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.01: "transfusion.png" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+games-fps/tribes2
+  DeprecatedEAPI: version 25034: uses deprecated EAPI: 0
+  MissingChksum: version 25034: "tribes2-25034-cdrom-x86.run" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+games-fps/unreal-tournament-bonuspacks
+  DeprecatedEAPI: version 436: uses deprecated EAPI: 0
+
+games-fps/unreal-tournament-strikeforce
+  DeprecatedEAPI: version 1.81: uses deprecated EAPI: 0
+
+games-fps/ut2003-bonuspack-cm
+  DeprecatedEAPI: version 1: uses deprecated EAPI: 0
+  MissingChksum: version 1: "cbp2003.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+games-fps/ut2003-bonuspack-de
+  DeprecatedEAPI: version 1: uses deprecated EAPI: 0
+  MissingChksum: version 1: "debonus.ut2mod.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+games-fps/ut2003-bonuspack-epic
+  DeprecatedEAPI: version 1: uses deprecated EAPI: 0
+  MissingChksum: version 1: "UT2003-epicbonuspackone.exe" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+games-fps/ut2003-data
+  DeprecatedEAPI: version 2107: uses deprecated EAPI: 0
+  MissingChksum: version 2107: "UT2003CrashFix.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+games-fps/ut2004-action
+  DeprecatedEAPI: version 1: uses deprecated EAPI: 2
+  MissingChksum: version 1: "aut-r1-msuc.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+games-fps/ut2004-airbuccaneers
+  DeprecatedEAPI: version 1.6-r2: uses deprecated EAPI: 2
+  MissingChksum: version 1.6-r2: "airbuccaneers1_6_zipinstall.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+games-fps/ut2004-alienswarm
+  DeprecatedEAPI: version 1.32: uses deprecated EAPI: 2
+  MissingChksum: version 1.32: "AlienSwarm-v13.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 1.32: "phalanxaswcampaign10.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 1.32: "TelicCampaign_1_1.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 1.32: "AlienSwarm_13_or_131_to_132_Patch.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+games-fps/ut2004-bonuspack-cbp1
+  DeprecatedEAPI: version 1-r2: uses deprecated EAPI: 2
+
+games-fps/ut2004-bonuspack-cbp2
+  DeprecatedEAPI: version 1-r2: uses deprecated EAPI: 2
+  MissingChksum: version 1-r2: "cbp2-volume1_zip.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 1-r2: "cbp2-volume2_zip.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+games-fps/ut2004-bonuspack-ece
+  DeprecatedEAPI: version 1-r3: uses deprecated EAPI: 2
+  MissingChksum: version 1-r3: "ut2004megapack-linux.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+games-fps/ut2004-bonuspack-mega
+  DeprecatedEAPI: version 1-r2: uses deprecated EAPI: 2
+  MissingChksum: version 1-r2: "ut2004megapack-linux.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+games-fps/ut2004-cor
+  DeprecatedEAPI: version 1.01-r1: uses deprecated EAPI: 2
+  MissingChksum: version 1.01-r1: "COR_Beta_v1.0.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 1.01-r1: "COR_Patch_B1.0_to_B1.01.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+games-fps/ut2004-crossfire
+  DeprecatedEAPI: version 1.95: uses deprecated EAPI: 2
+  MissingChksum: version 1.95: "TOCrossfire_beta_1.95_full.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+games-fps/ut2004-data
+  DeprecatedEAPI: version 3186-r4: uses deprecated EAPI: 0
+
+games-fps/ut2004-deathball
+  DeprecatedEAPI: version 2.4w: uses deprecated EAPI: 2
+  MissingChksum: version 2.4w: "deathball24w.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+games-fps/ut2004-fragops
+  DeprecatedEAPI: version 2.20: uses deprecated EAPI: 2
+  MissingChksum: version 2.20: "FragOps_v220_FullLMW.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+games-fps/ut2004-hamsterbash
+  DeprecatedEAPI: version 1: uses deprecated EAPI: 2
+  MissingChksum: version 1: "HamsterBashFinal.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+games-fps/ut2004-muralis
+  DeprecatedEAPI: version 1.15: uses deprecated EAPI: 2
+  MissingChksum: version 1.15: "muralis-v1.15-zip.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+games-fps/ut2004-strikeforce
+  DeprecatedEAPI: version 4.1: uses deprecated EAPI: 2
+  MissingChksum: version 4.1: "StrikeForce-CE-V4.1.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+games-fps/ut2004-troopers
+  DeprecatedEAPI: version 6.0: uses deprecated EAPI: 2
+  MissingChksum: version 6.0: "troopersversion60zip.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+games-fps/ut2004-ultraduel
+  DeprecatedEAPI: version 2.1: uses deprecated EAPI: 2
+  MissingChksum: version 2.1: "1on1-Ultra-Duel-2K4.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 2.1: "1on1-Ultra-Duel-2K4_Patch21.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+games-fps/ut2004-unwheel
+  DeprecatedEAPI: version 0_beta5: uses deprecated EAPI: 2
+  MissingChksum: version 0_beta5: "unwheel_r5.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0_beta5: "UnWheel-R5_BonusPack-Volume_1.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+games-fps/wolfgl
+  DeprecatedEAPI: version 0.93-r1: uses deprecated EAPI: 2
+  MissingChksum: version 0.93-r1: "wolfgl-0.93.tbz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.93-r1: "wolfdata.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.93-r1: "sdmdata.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+
+net-irc/asuka
+  DeprecatedEAPI: version 1.2.1: uses deprecated EAPI: 0
+
+net-irc/atheme-services
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+net-irc/bip
+  DeprecatedEAPI: version 0.8.8-r1: uses deprecated EAPI: 2
+
+net-irc/bnc
+  DeprecatedEAPI: version 2.9.4: uses deprecated EAPI: 0
+
+net-irc/dccserver
+  DeprecatedEAPI: version 0.5: uses deprecated EAPI: 0
+
+net-irc/dircproxy
+  DeprecatedEAPI: version 1.2.0_rc1: uses deprecated EAPI: 0
+
+net-irc/hexchat
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+net-irc/iip
+  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 2
+
+net-irc/irc-client
+  DeprecatedEAPI: version 2.10.3_p7: uses deprecated EAPI: 0
+  MetadataError: version 2.10.3_p7: attr(rdepends): blocks itself
+
+net-irc/irc-server
+  DeprecatedEAPI: version 2.11.1_p1-r2: uses deprecated EAPI: 0
+
+net-irc/ircmap
+  DeprecatedEAPI: version 0.99: uses deprecated EAPI: 0
+
+net-irc/irker
+  DeprecatedEclass: version 1.19: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 1.20: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+net-irc/irssi-otr
+  NonExistentDeps: version 0.2: depset depends: nonexistent atoms [ net-irc/irssi-svn ]
+  NonExistentDeps: version 0.2: depset rdepends: nonexistent atoms [ net-irc/irssi-svn ]
+  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 2
+
+net-irc/irssistats
+  DeprecatedEAPI: version 0.75: uses deprecated EAPI: 0
+
+net-irc/jircii
+  DeprecatedEAPI: version 41: uses deprecated EAPI: 0
+
+net-irc/kvirc
+  DeprecatedEclass: version 4.4_pre6250: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+net-irc/miau
+  DeprecatedEAPI: version 0.6.6: uses deprecated EAPI: 0
+
+net-irc/muh
+  DeprecatedEAPI: version 2.2a: uses deprecated EAPI: 0
+
+net-irc/ninja
+  DeprecatedEAPI: version 1.5.9_pre14: uses deprecated EAPI: 0
+
+net-irc/onis
+  DeprecatedEAPI: version 0.8.2: uses deprecated EAPI: 0
+
+net-irc/psybnc
+  DeprecatedEAPI: version 2.3.2.9-r2: uses deprecated EAPI: 2
+
+net-irc/ptlink-opm
+  DeprecatedEAPI: version 1.3.1: uses deprecated EAPI: 0
+
+net-irc/rhapsody
+  DeprecatedEAPI: version 0.28b: uses deprecated EAPI: 0
+
+net-irc/smuxi
+  DeprecatedEclass: version 0.8.10.1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+
+net-irc/srvx
+  DeprecatedEAPI: version 1.3.1: uses deprecated EAPI: 0
+
+net-irc/xchat-otr
+  NonExistentDeps: version 0.3: depset depends: nonexistent atoms [ net-irc/xchat ]
+  NonExistentDeps: version 0.3: depset rdepends: nonexistent atoms [ net-irc/xchat ]
+  DeprecatedEAPI: version 0.3: uses deprecated EAPI: 2
+
+net-irc/znc
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+
+sci-physics/clhep
+  DeprecatedEAPI: version 2.0.4.6: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 2.1.0.1: uses deprecated EAPI: 2
+  MissingChksum: version 2.0.4.6: "clhep-2.0.4.6.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-physics/geant
+  DeprecatedEAPI: version 3.21.14-r2: uses deprecated EAPI: 2
+
+sci-physics/hepmc
+  DeprecatedEAPI: version 2.06.03: uses deprecated EAPI: 2
+  MissingChksum: version 2.06.03: "HepMC-2.06.03.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-physics/herwig
+  DeprecatedEAPI: version 6.5.10: uses deprecated EAPI: 2
+
+sci-physics/lhapdf
+  DeprecatedEAPI: version 5.8.4: uses deprecated EAPI: 2
+  MissingChksum: version 5.8.4: "lhapdf-5.8.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 5.8.4: "wrapheragrid.f" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 5.8.4: "wrapheragrid-lite.f" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-physics/meep
+  DeprecatedEAPI: version 1.1.1: uses deprecated EAPI: 2
+
+sci-physics/root
+  DeprecatedEclass: version 5.32.03-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+sci-physics/sassena
+  MissingChksum: version 1.4.1: "sassena-v1.4.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+sci-physics/xfoil
+  MissingChksum: version 6.97: "dataflow.pdf" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+
+sys-freebsd/boot0
+  DeprecatedEAPI: version 8.2: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 9.1: uses deprecated EAPI: 2
+
+sys-freebsd/freebsd-bin
+  DeprecatedEAPI: version 8.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.1: uses deprecated EAPI: 0
+
+sys-freebsd/freebsd-cddl
+  DeprecatedEAPI: version 8.2: uses deprecated EAPI: 0
+
+sys-freebsd/freebsd-contrib
+  DeprecatedEAPI: version 8.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.1: uses deprecated EAPI: 0
+
+sys-freebsd/freebsd-lib
+  WhitespaceFound: version 8.2-r1: ebuild has leading whitespace on lines 368, 369, 370, 371, 372
+  DeprecatedEAPI: version 8.2-r1: uses deprecated EAPI: 2
+  WhitespaceFound: version 9.1-r10: ebuild has leading whitespace on lines 413, 414, 415, 416, 417, 441, 442, 443, 446, 448, 450
+  WhitespaceFound: version 9.1-r11: ebuild has leading whitespace on lines 415, 416, 417, 418, 419, 443, 444, 445, 448, 450, 452
+  WhitespaceFound: version 10.1-r1: ebuild has leading whitespace on lines 425, 426, 427, 428, 429, 453, 454, 455, 458, 460, 462
+  WhitespaceFound: version 10.2: ebuild has leading whitespace on lines 421, 422, 423, 424, 425, 449, 450, 451, 454, 456, 458
+
+sys-freebsd/freebsd-libexec
+  DeprecatedEAPI: version 8.2: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 8.2-r1: uses deprecated EAPI: 2
+
+sys-freebsd/freebsd-mk-defs
+  DeprecatedEAPI: version 8.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.1: uses deprecated EAPI: 3
+
+sys-freebsd/freebsd-pam-modules
+  DeprecatedEAPI: version 8.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.1-r1: uses deprecated EAPI: 0
+
+sys-freebsd/freebsd-pf
+  DeprecatedEAPI: version 8.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.1: uses deprecated EAPI: 0
+
+sys-freebsd/freebsd-rescue
+  DeprecatedEAPI: version 8.2: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 9.1: uses deprecated EAPI: 2
+
+sys-freebsd/freebsd-sbin
+  BadInsIntoDir: version 8.2-r1: ebuild uses insinto /etc/cron.d on line 78
+  DeprecatedEAPI: version 8.2-r1: uses deprecated EAPI: 2
+  BadInsIntoDir: version 9.1: ebuild uses insinto /etc/cron.d on line 79
+  DeprecatedEAPI: version 9.1: uses deprecated EAPI: 2
+  BadInsIntoDir: version 10.1-r1: ebuild uses insinto /etc/cron.d on line 88
+  BadInsIntoDir: version 10.2: ebuild uses insinto /etc/cron.d on line 83
+
+sys-freebsd/freebsd-share
+  DeprecatedEAPI: version 8.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.1: uses deprecated EAPI: 0
+
+sys-freebsd/freebsd-sources
+  DeprecatedEAPI: version 8.2-r2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.1-r3: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.1-r9: uses deprecated EAPI: 0
+
+sys-freebsd/freebsd-ubin
+  DeprecatedEAPI: version 8.2-r1: uses deprecated EAPI: 2
+
+sys-freebsd/freebsd-usbin
+  DeprecatedEAPI: version 8.2-r2: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 9.1-r1: uses deprecated EAPI: 2
+
+sys-freebsd/virtio-kmod
+  MissingChksum: version 0.228301-r1: "virtio-0.228301.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+
+sci-astronomy/swarp
+  MissingChksum: version 2.19.1: "swarp-2.19.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
