@@ -31,7 +31,7 @@
             <p>Warnings:</p>
             <ol>
                 <li><a href="#l618">618</a></li>
-                <li><a href="#l1048">1048</a></li>
+                <li><a href="#l1049">1049</a></li>
             </ol>
         </div>
 
@@ -52,7 +52,7 @@
 </pre></td></tr>
             <tr class="" id="l7"><td><a href="#l7"><span>7</span></a></td><td><pre>+ exec pkgcheck -r gentoo --reporter FancyReporter 'net-misc/*' 'x11-libs/*' 'dev-ml/*' 'sci-mathematics/*' 'dev-tex/*' 'sys-process/*' 'net-print/*' 'lxqt-base/*' 'sci-calculators/*' 'net-voip/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 </pre></td></tr>
-            <tr class="" id="l8"><td><a href="#l8"><span>8</span></a></td><td><pre>/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:99: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
+            <tr class="" id="l8"><td><a href="#l8"><span>8</span></a></td><td><pre>/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
 </pre></td></tr>
             <tr class="" id="l9"><td><a href="#l9"><span>9</span></a></td><td><pre>  "disabling GLSA checks due to no glsa source "
 </pre></td></tr>
@@ -2084,9 +2084,9 @@
 </pre></td></tr>
             <tr class="" id="l1023"><td><a href="#l1023"><span>1023</span></a></td><td><pre>  DeprecatedEAPI: version 2.3.5: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l1024"><td><a href="#l1024"><span>1024</span></a></td><td><pre>  MissingChksum: version 2.5.0-r3: "pari-2.5.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+            <tr class="" id="l1024"><td><a href="#l1024"><span>1024</span></a></td><td><pre>  SizeViolation: "files/pari-2.5.4-polred.patch" exceeds 20k in size; 23409 bytes total
 </pre></td></tr>
-            <tr class="" id="l1025"><td><a href="#l1025"><span>1025</span></a></td><td><pre>  SizeViolation: "files/pari-2.5.4-polred.patch" exceeds 20k in size; 23409 bytes total
+            <tr class="" id="l1025"><td><a href="#l1025"><span>1025</span></a></td><td><pre>  MissingChksum: version 2.5.0-r3: "pari-2.5.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
             <tr class="" id="l1026"><td><a href="#l1026"><span>1026</span></a></td><td><pre>
 </pre></td></tr>
@@ -2132,13 +2132,13 @@
 </pre></td></tr>
             <tr class="" id="l1047"><td><a href="#l1047"><span>1047</span></a></td><td><pre>  DeprecatedEAPI: version 4.2-r8: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="warn" id="l1048"><td><a href="#l1048"><span>1048</span></a></td><td><pre>  MetadataError: version 4.2-r8: attr(fetchables): error- Metadata Exception: pkg ebuild src: sci-mathematics/snns-4.2-r8, attr fetchables
+            <tr class="" id="l1048"><td><a href="#l1048"><span>1048</span></a></td><td><pre>  DeprecatedEclass: version 4.2-r8: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+</pre></td></tr>
+            <tr class="warn" id="l1049"><td><a href="#l1049"><span>1049</span></a></td><td><pre>  MetadataError: version 4.2-r8: attr(fetchables): error- Metadata Exception: pkg ebuild src: sci-mathematics/snns-4.2-r8, attr fetchables
 </pre></td><td>[WARN]</td></tr>
-            <tr class="" id="l1049"><td><a href="#l1049"><span>1049</span></a></td><td><pre>error: http://www-ra.informatik.uni-tuebingen.de/downloads/SNNS/SNNSv4.2.tar.gz mirror://berlios/snns-dev/snns-4.2-20040227.patch.gz doc? ( http://www-ra.informatik.uni-tuebingen.de/downloads/SNNS/SNNSv4.2.Manual.pdf ) python? ( mirror://berlios/snns-dev/PySNNS-20040605.tar.gz mirror://berlios/snns-dev/PythonFunctionSupport-20050210.patch.gz ) is unparseable
+            <tr class="" id="l1050"><td><a href="#l1050"><span>1050</span></a></td><td><pre>error: http://www-ra.informatik.uni-tuebingen.de/downloads/SNNS/SNNSv4.2.tar.gz mirror://berlios/snns-dev/snns-4.2-20040227.patch.gz doc? ( http://www-ra.informatik.uni-tuebingen.de/downloads/SNNS/SNNSv4.2.Manual.pdf ) python? ( mirror://berlios/snns-dev/PySNNS-20040605.tar.gz mirror://berlios/snns-dev/PythonFunctionSupport-20050210.patch.gz ) is unparseable
 </pre></td></tr>
-            <tr class="" id="l1050"><td><a href="#l1050"><span>1050</span></a></td><td><pre>flagged token- uri mirror://berlios/snns-dev/snns-4.2-20040227.patch.gz isn't a known mirror tier
-</pre></td></tr>
-            <tr class="" id="l1051"><td><a href="#l1051"><span>1051</span></a></td><td><pre>  DeprecatedEclass: version 4.2-r8: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l1051"><td><a href="#l1051"><span>1051</span></a></td><td><pre>flagged token- uri mirror://berlios/snns-dev/snns-4.2-20040227.patch.gz isn't a known mirror tier
 </pre></td></tr>
             <tr class="" id="l1052"><td><a href="#l1052"><span>1052</span></a></td><td><pre>  DeprecatedEAPI: version 4.2-r9: uses deprecated EAPI: 3
 </pre></td></tr>
@@ -3135,6 +3135,6 @@
 
         </table>
 
-        <address>Generated based on results from 2015-08-23 18:05:51 UTC</address>
+        <address>Generated based on results from 2015-08-23 19:25:02 UTC</address>
     </body>
 </html>

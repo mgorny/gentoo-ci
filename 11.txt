@@ -5,7 +5,7 @@
 + [[ 11 == global ]]
 + set +x
 + exec pkgcheck -r gentoo --reporter FancyReporter 'sys-apps/*' 'virtual/*' 'app-emacs/*' 'gnome-extra/*' 'net-p2p/*' 'gnome-base/*' 'games-rpg/*' 'x11-proto/*' 'www-plugins/*' 'mate-extra/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
-/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:99: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
+/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
@@ -396,8 +396,8 @@ sys-apps/stroke
   MissingChksum: version 0.1.3: "stroke-0.1.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 sys-apps/superiotool
-  MissingChksum: version 6637: "superiotool-6637.tar.xz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   ExecutableFile: "files/make-tarball.sh" has unnecessary executable bit
+  MissingChksum: version 6637: "superiotool-6637.tar.xz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 sys-apps/syscriptor
   DeprecatedEAPI: version 1.5.15: uses deprecated EAPI: 0
