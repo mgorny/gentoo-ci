@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 12 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'app-text/*' 'dev-php/*' 'www-apps/*' 'kde-misc/*' 'xfce-extra/*' 'app-cdr/*' 'dev-scheme/*' 'sys-infiniband/*' 'app-laptop/*' 'games-mud/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'app-text/*' 'dev-php/*' 'www-apps/*' 'www-client/*' 'xfce-extra/*' 'app-cdr/*' 'dev-scheme/*' 'sys-infiniband/*' 'app-laptop/*' 'games-mud/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -942,71 +942,45 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-kde-misc/gx-mail-notify
-  MissingChksum: version 0.4.4: "99617-gx_mail_notify-0.4.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+www-client/ck4up
+  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 0
+  MissingChksum: version 1.2: "ck4up-1.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-kde-misc/hdaps_monitor
-  MissingChksum: version 0.3-r1: "103481-hdaps_monitor-0.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+www-client/fetch
+  DeprecatedEAPI: version 1.0-r1: uses deprecated EAPI: 0
 
-kde-misc/kcaldav
-  MissingChksum: version 1.2.0: "kcaldav-1.2.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+www-client/jumanji
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-kde-misc/kdesudo
-  MissingChksum: version 3.4.2.4-r1: "kdesudo-3.4.2.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+www-client/luakit
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-kde-misc/kdmthemegenerator
-  MissingChksum: version 0.8: "102760-KdmThemeGenerator.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+www-client/opera
+  DroppedKeywordWarning: version 31.0.1889.99: keywords dropped: x86
 
-kde-misc/kfilebox
-  MissingChksum: version 0.4.9: "kfilebox_0.4.9.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+www-client/surf
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-kde-misc/kgrubeditor
-  MissingChksum: version 0.8.5: "KGRUBEditor-0.8.5-src.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+www-client/uget
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-kde-misc/kio-locate
-  MissingChksum: version 0.5.3: "120965-kio-locate-0.5.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+www-client/uzbl
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-kde-misc/kio-slp
-  MissingChksum: version 0_p20120621: "kio-slp-0_p20120621.tar.xz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+www-client/w3m
+  NonExistentDeps: version 0.5.3-r5: depset depends: nonexistent atoms [ >=app-text/migemo-0.40 ]
+  NonExistentDeps: version 0.5.3-r5: depset rdepends: nonexistent atoms [ >=app-text/migemo-0.40 ]
 
-kde-misc/kio_gopher
-  MissingChksum: version 0.1.4: "kio-gopher-0.1.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+www-client/w3mmee
+  DeprecatedEAPI: version 0.3.2_p24-r7: uses deprecated EAPI: 0
 
-kde-misc/kookie
-  MissingChksum: version 0.1.1: "kookie-0.1.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+www-client/weboob
+  DeprecatedEclass: version 9998: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DroppedKeywordWarning: version 9998: keywords dropped: amd64, x86
 
-kde-misc/kopete-antispam
-  MissingChksum: version 0.5: "kopete-antispam-kde4-0.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-kde-misc/kopete-thinklight
-  MissingChksum: version 0.50: "100537-kopete-thinklight-0.50.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-kde-misc/kprayertime
-  MissingChksum: version 4.01: "kprayertime4.01.src.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-kde-misc/krunner-kopete-contacts
-  MissingChksum: version 0.4: "105263-krunner-kopete-contacts-0.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-kde-misc/ktrafficanalyzer
-  MissingChksum: version 0.5.4.1: "KTrafficAnalyzer-0.5.4.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-kde-misc/kvkbd
-  MissingChksum: version 0.6-r1: "94374-kvkbd-0.6.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-kde-misc/plasmatvgr
-  MissingChksum: version 0.47: "75728-plasmatvgr047.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-kde-misc/serverstatuswidget
-  MissingChksum: version 1.5.1: "101336-serverstatuswidget-1.5.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-kde-misc/smooth-tasks
-  MissingChksum: version 0_p20120130: "smooth-tasks-0_p20120130.tar.xz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-kde-misc/steamcompanion
-  MissingChksum: version 0.5.4-r1: "steamcompanion-0.5.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-kde-misc/takeoff
-  MissingChksum: version 1.0: "takeoff-1.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+www-client/xombrero
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
