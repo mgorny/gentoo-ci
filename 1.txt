@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 1 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-python/*' 'app-misc/*' 'x11-plugins/*' 'app-arch/*' 'games-fps/*' 'net-irc/*' 'sci-physics/*' 'sys-freebsd/*' 'sci-astronomy/*' 'games-engines/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-python/*' 'app-misc/*' 'x11-plugins/*' 'app-arch/*' 'games-fps/*' 'mail-filter/*' 'sci-physics/*' 'sys-freebsd/*' 'sci-astronomy/*' 'games-engines/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -2017,93 +2017,129 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-net-irc/asuka
-  DeprecatedEAPI: version 1.2.1: uses deprecated EAPI: 0
+mail-filter/MailScanner
+  DeprecatedEAPI: version 4.84.5.2: uses deprecated EAPI: 0
 
-net-irc/atheme-services
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+mail-filter/amavisd-new
+  DroppedKeywordWarning: version 2.10.1-r1: keywords dropped: ppc
 
-net-irc/bip
-  DeprecatedEAPI: version 0.8.8-r1: uses deprecated EAPI: 2
+mail-filter/ask
+  DeprecatedEAPI: version 2.4.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.5.3: uses deprecated EAPI: 0
+  MissingChksum: version 2.4.1: "ask-2.4.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 2.5.3: "ask-2.5.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-irc/bnc
-  DeprecatedEAPI: version 2.9.4: uses deprecated EAPI: 0
+mail-filter/assp
+  DeprecatedEAPI: version 1.8.5.9: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.9.4.7: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.9.4.8: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.9.4.9: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.9.8.13030: uses deprecated EAPI: 0
+  MissingChksum: version 1.8.5.9: "ASSP_1.8.5.9-Install.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-irc/dccserver
-  DeprecatedEAPI: version 0.5: uses deprecated EAPI: 0
+mail-filter/bmf
+  MissingChksum: version 0.9.4-r2: "bmf-0.9.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-irc/dircproxy
-  DeprecatedEAPI: version 1.2.0_rc1: uses deprecated EAPI: 0
+mail-filter/clamassassin
+  DeprecatedEAPI: version 1.2.4: uses deprecated EAPI: 0
+  MissingChksum: version 1.2.4: "clamassassin-1.2.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-irc/hexchat
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+mail-filter/clamsmtp
+  DeprecatedEAPI: version 1.10: uses deprecated EAPI: 0
+  MissingChksum: version 1.10: "clamsmtp-1.10.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-net-irc/iip
-  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 2
+mail-filter/couriersrs
+  DeprecatedEAPI: version 0.1.2: uses deprecated EAPI: 2
+  MissingChksum: version 0.1.2: "couriersrs-0.1.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-irc/irc-client
-  DeprecatedEAPI: version 2.10.3_p7: uses deprecated EAPI: 0
-  MetadataError: version 2.10.3_p7: attr(rdepends): blocks itself
+mail-filter/dcc
+  DeprecatedEAPI: version 1.3.140-r1: uses deprecated EAPI: 2
 
-net-irc/irc-server
-  DeprecatedEAPI: version 2.11.1_p1-r2: uses deprecated EAPI: 0
+mail-filter/disspam
+  DeprecatedEAPI: version 0.14: uses deprecated EAPI: 0
 
-net-irc/ircmap
-  DeprecatedEAPI: version 0.99: uses deprecated EAPI: 0
+mail-filter/isbg
+  DeprecatedEAPI: version 0.99-r1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.99-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-net-irc/irker
-  DeprecatedEclass: version 1.19: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEclass: version 1.20: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+mail-filter/libmilter
+  DeprecatedEAPI: version 1.0.2: uses deprecated EAPI: 2
 
-net-irc/irssi-otr
-  NonExistentDeps: version 0.2: depset depends: nonexistent atoms [ net-irc/irssi-svn ]
-  NonExistentDeps: version 0.2: depset rdepends: nonexistent atoms [ net-irc/irssi-svn ]
-  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 2
+mail-filter/libsieve
+  DeprecatedEAPI: version 2.2.7: uses deprecated EAPI: 0
+  MissingChksum: version 2.2.7: "libsieve-2.2.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-irc/irssistats
-  DeprecatedEAPI: version 0.75: uses deprecated EAPI: 0
+mail-filter/libsrs_alt
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+  MissingChksum: version 1.0: "libsrs_alt-1.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-irc/jircii
-  DeprecatedEAPI: version 41: uses deprecated EAPI: 0
+mail-filter/mailfilter
+  DeprecatedEAPI: version 0.8.2: uses deprecated EAPI: 2
 
-net-irc/kvirc
-  DeprecatedEclass: version 4.4_pre6250: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+mail-filter/normalizemime
+  DeprecatedEAPI: version 1.19: uses deprecated EAPI: 0
+  MissingChksum: version 1.19: "normalizemime-1.19.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-net-irc/miau
-  DeprecatedEAPI: version 0.6.6: uses deprecated EAPI: 0
+mail-filter/opendmarc
+  DroppedKeywordWarning: version 1.3.0: keywords dropped: ppc, ppc64, sparc
 
-net-irc/muh
-  DeprecatedEAPI: version 2.2a: uses deprecated EAPI: 0
+mail-filter/p3scan
+  DeprecatedEAPI: version 2.3.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.3.2-r1: uses deprecated EAPI: 2
+  MissingChksum: version 2.3.1: "p3scan-2.3.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-irc/ninja
-  DeprecatedEAPI: version 1.5.9_pre14: uses deprecated EAPI: 0
+mail-filter/policyd
+  DeprecatedEAPI: version 1.82-r1: uses deprecated EAPI: 0
+  MissingChksum: version 1.82-r1: "policyd-1.82.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-net-irc/onis
-  DeprecatedEAPI: version 0.8.2: uses deprecated EAPI: 0
+mail-filter/procmail
+  DeprecatedEAPI: version 3.22-r10: uses deprecated EAPI: 0
 
-net-irc/psybnc
-  DeprecatedEAPI: version 2.3.2.9-r2: uses deprecated EAPI: 2
+mail-filter/procmail-lib
+  DeprecatedEAPI: version 20081108: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 20091202: uses deprecated EAPI: 0
 
-net-irc/ptlink-opm
-  DeprecatedEAPI: version 1.3.1: uses deprecated EAPI: 0
+mail-filter/pypolicyd-spf
+  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-net-irc/rhapsody
-  DeprecatedEAPI: version 0.28b: uses deprecated EAPI: 0
+mail-filter/qmail-scanner
+  DeprecatedEAPI: version 1.25-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.05: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.06: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 2.08: uses deprecated EAPI: 2
+  MissingChksum: version 1.25-r1: "qmail-scanner-1.25.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.25-r1: "q-s-1.25st-20050406.patch.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 2.05: "qmail-scanner-2.05.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 2.05: "q-s-2.05st-20080728.patch.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 2.06: "qmail-scanner-2.06.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 2.06: "q-s-2.06st-20090419.patch.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 2.08: "qmail-scanner-2.08.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 2.08: "q-s-2.08st-20091012.patch.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-irc/smuxi
-  DeprecatedEclass: version 0.8.10.1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+mail-filter/rblcheck
+  DeprecatedEAPI: version 1.5-r1: uses deprecated EAPI: 2
 
-net-irc/srvx
-  DeprecatedEAPI: version 1.3.1: uses deprecated EAPI: 0
+mail-filter/scmail
+  MissingChksum: version 1.3: "scmail-1.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-irc/xchat-otr
-  NonExistentDeps: version 0.3: depset depends: nonexistent atoms [ net-irc/xchat ]
-  NonExistentDeps: version 0.3: depset rdepends: nonexistent atoms [ net-irc/xchat ]
-  DeprecatedEAPI: version 0.3: uses deprecated EAPI: 2
+mail-filter/spamdyke
+  DeprecatedEAPI: version 4.3.0: uses deprecated EAPI: 2
+  MissingChksum: version 4.3.0: "spamdyke-4.3.0.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-net-irc/znc
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+mail-filter/spampd
+  DeprecatedEAPI: version 2.30: uses deprecated EAPI: 0
+
+mail-filter/spamprobe
+  DeprecatedEAPI: version 1.4d: uses deprecated EAPI: 2
+
+mail-filter/sqlgrey
+  DeprecatedEAPI: version 1.7.6-r1: uses deprecated EAPI: 0
+
+mail-filter/tmda
+  DeprecatedEAPI: version 1.1.12: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.1.12: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  MissingChksum: version 1.1.12: "tmda-1.1.12.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
