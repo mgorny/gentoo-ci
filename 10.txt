@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 10 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'media-sound/*' 'sys-fs/*' 'dev-vcs/*' 'x11-drivers/*' 'games-puzzle/*' 'app-eselect/*' 'games-rpg/*' 'net-ftp/*' 'x11-base/*' 'games-sports/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'media-sound/*' 'sys-fs/*' 'dev-ml/*' 'x11-drivers/*' 'games-puzzle/*' 'app-eselect/*' 'games-rpg/*' 'net-ftp/*' 'x11-base/*' 'games-sports/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1176,202 +1176,26 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-dev-vcs/archway
-  DeprecatedEAPI: version 0.2.1: uses deprecated EAPI: 3
+dev-ml/dose3
+  DroppedKeywordWarning: version 4.0_rc3: keywords dropped: amd64
 
-dev-vcs/bzr
-  NonExistentDeps: version 2.4.2: depset depends: nonexistent atoms [ dev-lang/python:2.6, =dev-lang/python-2.6* ]
-  NonExistentDeps: version 2.4.2: depset rdepends: nonexistent atoms [ dev-lang/python:2.6, =dev-lang/python-2.6* ]
-  DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 3
-  DeprecatedEclass: version 2.4.2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  NonExistentDeps: version 2.5.1: depset depends: nonexistent atoms [ dev-lang/python:2.6, =dev-lang/python-2.6* ]
-  NonExistentDeps: version 2.5.1: depset rdepends: nonexistent atoms [ dev-lang/python:2.6, =dev-lang/python-2.6* ]
-  DeprecatedEclass: version 2.5.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+dev-ml/lwt
+  DroppedKeywordWarning: version 2.4.6: keywords dropped: x86
 
-dev-vcs/bzr-explorer
-  DeprecatedEAPI: version 1.3.0: uses deprecated EAPI: 3
-  DeprecatedEclass: version 1.3.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+dev-ml/ocaml-autoconf
+  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 2
 
-dev-vcs/bzr-git
-  DeprecatedEAPI: version 0.6.8: uses deprecated EAPI: 3
-  DeprecatedEclass: version 0.6.8: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+dev-ml/ocaml-doc
+  DeprecatedEAPI: version 3.12: uses deprecated EAPI: 0
 
-dev-vcs/bzr-gtk
-  DeprecatedEAPI: version 0.103.0: uses deprecated EAPI: 3
-  DeprecatedEclass: version 0.103.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.104.0: uses deprecated EAPI: 3
-  DeprecatedEclass: version 0.104.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+dev-ml/ocurl
+  DroppedKeywordWarning: version 0.7.4: keywords dropped: ppc
 
-dev-vcs/bzr-xmloutput
-  DeprecatedEAPI: version 0.8.8-r1: uses deprecated EAPI: 3
-  DeprecatedEclass: version 0.8.8-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+dev-ml/pcre-ocaml
+  DeprecatedEAPI: version 6.2.5: uses deprecated EAPI: 2
 
-dev-vcs/bzrtools
-  DeprecatedEAPI: version 2.4.1: uses deprecated EAPI: 3
-  DeprecatedEclass: version 2.4.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-
-dev-vcs/colorcvs
-  DeprecatedEAPI: version 1.4-r1: uses deprecated EAPI: 3
-
-dev-vcs/colorsvn
-  DeprecatedEAPI: version 0.3.2-r2: uses deprecated EAPI: 3
-
-dev-vcs/cvs
-  DeprecatedEAPI: version 1.11.23: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 1.12.12-r6: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.12.12-r7: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 1.12.12-r8: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 1.12.12-r9: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 1.12.12-r10: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 1.12.13-r1: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 1.12.13-r2: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 1.12.13.1: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 1.12.13.1-r1: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 1.12.13.1-r2: uses deprecated EAPI: 3
-
-dev-vcs/cvs2cl
-  DeprecatedEAPI: version 2.71: uses deprecated EAPI: 0
-
-dev-vcs/cvs2svn
-  DeprecatedEAPI: version 1.5.0: uses deprecated EAPI: 2
-  DeprecatedEclass: version 1.5.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 1.5.1: uses deprecated EAPI: 2
-  DeprecatedEclass: version 1.5.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 2.0.1: uses deprecated EAPI: 2
-  DeprecatedEclass: version 2.0.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 2.1.0: uses deprecated EAPI: 2
-  DeprecatedEclass: version 2.1.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 2.1.1: uses deprecated EAPI: 2
-  DeprecatedEclass: version 2.1.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 2.2.0: uses deprecated EAPI: 2
-  DeprecatedEclass: version 2.2.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 2.3.0: uses deprecated EAPI: 2
-  DeprecatedEclass: version 2.3.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 2.4.0: uses deprecated EAPI: 2
-  DeprecatedEclass: version 2.4.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-
-dev-vcs/cvsd
-  DeprecatedEAPI: version 1.0.7: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.0.17: uses deprecated EAPI: 0
-
-dev-vcs/cvsgraph
-  DeprecatedEAPI: version 1.6.1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.7.0: uses deprecated EAPI: 0
-
-dev-vcs/cvsps
-  DeprecatedEAPI: version 2.1-r1: uses deprecated EAPI: 0
-
-dev-vcs/cvsq
-  DeprecatedEAPI: version 0.4.4: uses deprecated EAPI: 0
-
-dev-vcs/cvsutils
-  DeprecatedEAPI: version 0.2.5: uses deprecated EAPI: 0
-  MissingChksum: version 0.2.5: "cvsutils-0.2.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-dev-vcs/darcs
-  DroppedKeywordWarning: version 2.10.0-r1: keywords dropped: alpha, ia64, ppc, ppc64, sparc
-
-dev-vcs/easygit
-  DeprecatedEAPI: version 1.6.5.5: uses deprecated EAPI: 2
-
-dev-vcs/git
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DeprecatedEclass: version 9999-r1: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DeprecatedEclass: version 9999-r2: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DeprecatedEclass: version 9999-r3: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DroppedKeywordWarning: version 1.9.5: keywords dropped: arm64
-
-dev-vcs/git-bz
-  DeprecatedEclass: version 0.12.04.26: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-
-dev-vcs/git-bzr-ng
-  DeprecatedEclass: version 0_pre20120130: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEclass: version 0_pre20120822: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-
-dev-vcs/gitolite
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-dev-vcs/gitolite-gentoo
-  MetadataError: version 3.6.1-r1: attr(rdepends): blocks itself
-  MetadataError: version 3.6.2.1: attr(rdepends): blocks itself
-  MetadataError: version 3.6.2.2: attr(rdepends): blocks itself
-  MetadataError: version 3.6.2.3: attr(rdepends): blocks itself
-  MetadataError: version 3.6.2.4: attr(rdepends): blocks itself
-  MetadataError: version 3.6.3: attr(rdepends): blocks itself
-  MetadataError: version 3.6.3.2: attr(rdepends): blocks itself
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  MetadataError: version 9999: attr(rdepends): blocks itself
-
-dev-vcs/gitstats
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-dev-vcs/gti
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-dev-vcs/guilt
-  DeprecatedEAPI: version 0.32: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.34: uses deprecated EAPI: 0
-
-dev-vcs/hgsubversion
-  DeprecatedEAPI: version 1.4: uses deprecated EAPI: 3
-  DeprecatedEclass: version 1.4: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-
-dev-vcs/mercurial-server
-  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 3
-  DeprecatedEclass: version 1.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 3
-  DeprecatedEclass: version 1.2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-
-dev-vcs/monotone
-  SizeViolation: "files/monotone-1.0-botan-1.10-v2.patch" exceeds 20k in size; 26290 bytes total
-
-dev-vcs/qbzr
-  DeprecatedEAPI: version 0.23.0: uses deprecated EAPI: 3
-  DeprecatedEclass: version 0.23.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-
-dev-vcs/rabbitvcs
-  DeprecatedEclass: version 0.15.2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEclass: version 0.15.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEclass: version 0.16: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-
-dev-vcs/rsvndump
-  DeprecatedEAPI: version 0.6: uses deprecated EAPI: 2
-
-dev-vcs/statcvs
-  DeprecatedEAPI: version 0.5.0: uses deprecated EAPI: 2
-
-dev-vcs/statsvn
-  DeprecatedEAPI: version 0.5.0: uses deprecated EAPI: 2
-
-dev-vcs/subversion
-  NonExistentDeps: version 1.7.20: depset depends: nonexistent atoms [ >=dev-lang/ruby-1.8.2:1.8 ]
-  NonExistentDeps: version 1.7.20: depset rdepends: nonexistent atoms [ >=dev-lang/ruby-1.8.2:1.8 ]
-  NonExistentDeps: version 1.7.21: depset depends: nonexistent atoms [ >=dev-lang/ruby-1.8.2:1.8 ]
-  NonExistentDeps: version 1.7.21: depset rdepends: nonexistent atoms [ >=dev-lang/ruby-1.8.2:1.8 ]
-  SizeViolation: "files/subversion-1.8.5-swig-python-no-gnome-keyring.patch" exceeds 20k in size; 39439 bytes total
-
-dev-vcs/svn2cl
-  DeprecatedEAPI: version 0.12: uses deprecated EAPI: 0
-
-dev-vcs/svn2git
-  DeprecatedEAPI: version 0_pre20100303: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0_pre20100324: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0_pre20100327: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0_pre20101008: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0_pre20101101: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 1.0.2.1: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 1.0.3_p1: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 1.0.4: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 1.0.5: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 1.0.6: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 1.0.8-r1: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 1.0.10: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 2
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+dev-ml/react
+  DroppedKeywordWarning: version 1.2.0: keywords dropped: x86
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
