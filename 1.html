@@ -8,14 +8,14 @@
     <body>
         <ol class="menu">
             <li class="good"><a href="global.html">global</a></li>
-            <li class="err"><a href="0.html">0</a></li>
+            <li class="good"><a href="0.html">0</a></li>
             <li class="warn"><a href="1.html">1</a></li>
-            <li class="err"><a href="2.html">2</a></li>
+            <li class="warn"><a href="2.html">2</a></li>
             <li class="warn"><a href="3.html">3</a></li>
             <li class="good"><a href="4.html">4</a></li>
             <li class="warn"><a href="5.html">5</a></li>
             <li class="warn"><a href="6.html">6</a></li>
-            <li class="err"><a href="7.html">7</a></li>
+            <li class="warn"><a href="7.html">7</a></li>
             <li class="warn"><a href="8.html">8</a></li>
             <li class="warn"><a href="9.html">9</a></li>
             <li class="warn"><a href="10.html">10</a></li>
@@ -51,7 +51,7 @@
 </pre></td></tr>
             <tr class="" id="l6"><td><a href="#l6"><span>6</span></a></td><td><pre>+ set +x
 </pre></td></tr>
-            <tr class="" id="l7"><td><a href="#l7"><span>7</span></a></td><td><pre>+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-python/*' 'app-misc/*' 'x11-plugins/*' 'app-arch/*' 'games-fps/*' 'mail-filter/*' 'sci-physics/*' 'sys-freebsd/*' 'sci-astronomy/*' 'games-engines/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
+            <tr class="" id="l7"><td><a href="#l7"><span>7</span></a></td><td><pre>+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-python/*' 'app-misc/*' 'x11-plugins/*' 'app-arch/*' 'games-fps/*' 'mail-filter/*' 'sci-physics/*' 'sys-freebsd/*' 'sci-astronomy/*' 'sci-misc/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 </pre></td></tr>
             <tr class="" id="l8"><td><a href="#l8"><span>8</span></a></td><td><pre>/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
 </pre></td></tr>
@@ -4587,9 +4587,69 @@
 </pre></td></tr>
             <tr class="" id="l2274"><td><a href="#l2274"><span>2274</span></a></td><td><pre>               : refetch
 </pre></td></tr>
+            <tr class="" id="l2275"><td><a href="#l2275"><span>2275</span></a></td><td><pre>
+</pre></td></tr>
+            <tr class="" id="l2276"><td><a href="#l2276"><span>2276</span></a></td><td><pre>sci-misc/flashdot
+</pre></td></tr>
+            <tr class="" id="l2277"><td><a href="#l2277"><span>2277</span></a></td><td><pre>  DeprecatedEAPI: version 1.1.4: uses deprecated EAPI: 2
+</pre></td></tr>
+            <tr class="" id="l2278"><td><a href="#l2278"><span>2278</span></a></td><td><pre>  MissingChksum: version 1.1.4: "flashdot-1.1.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+</pre></td></tr>
+            <tr class="" id="l2279"><td><a href="#l2279"><span>2279</span></a></td><td><pre>
+</pre></td></tr>
+            <tr class="" id="l2280"><td><a href="#l2280"><span>2280</span></a></td><td><pre>sci-misc/gato
+</pre></td></tr>
+            <tr class="" id="l2281"><td><a href="#l2281"><span>2281</span></a></td><td><pre>  DeprecatedEclass: version 1.1.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+</pre></td></tr>
+            <tr class="" id="l2282"><td><a href="#l2282"><span>2282</span></a></td><td><pre>
+</pre></td></tr>
+            <tr class="" id="l2283"><td><a href="#l2283"><span>2283</span></a></td><td><pre>sci-misc/gt-itm
+</pre></td></tr>
+            <tr class="" id="l2284"><td><a href="#l2284"><span>2284</span></a></td><td><pre>  DeprecatedEAPI: version 19961004-r1: uses deprecated EAPI: 0
+</pre></td></tr>
+            <tr class="" id="l2285"><td><a href="#l2285"><span>2285</span></a></td><td><pre>
+</pre></td></tr>
+            <tr class="" id="l2286"><td><a href="#l2286"><span>2286</span></a></td><td><pre>sci-misc/lttoolbox
+</pre></td></tr>
+            <tr class="" id="l2287"><td><a href="#l2287"><span>2287</span></a></td><td><pre>  MissingChksum: version 3.1.0: "lttoolbox-3.1.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+</pre></td></tr>
+            <tr class="" id="l2288"><td><a href="#l2288"><span>2288</span></a></td><td><pre>  MissingChksum: version 3.2.0: "lttoolbox-3.2.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+</pre></td></tr>
+            <tr class="" id="l2289"><td><a href="#l2289"><span>2289</span></a></td><td><pre>
+</pre></td></tr>
+            <tr class="" id="l2290"><td><a href="#l2290"><span>2290</span></a></td><td><pre>sci-misc/nco
+</pre></td></tr>
+            <tr class="" id="l2291"><td><a href="#l2291"><span>2291</span></a></td><td><pre>  DeprecatedEAPI: version 3.9.9: uses deprecated EAPI: 2
+</pre></td></tr>
+            <tr class="" id="l2292"><td><a href="#l2292"><span>2292</span></a></td><td><pre>  MissingChksum: version 3.9.9: "nco-3.9.9.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+</pre></td></tr>
+            <tr class="" id="l2293"><td><a href="#l2293"><span>2293</span></a></td><td><pre>
+</pre></td></tr>
+            <tr class="" id="l2294"><td><a href="#l2294"><span>2294</span></a></td><td><pre>sci-misc/netlogo-bin
+</pre></td></tr>
+            <tr class="" id="l2295"><td><a href="#l2295"><span>2295</span></a></td><td><pre>  DeprecatedEAPI: version 3.0.2: uses deprecated EAPI: 0
+</pre></td></tr>
+            <tr class="" id="l2296"><td><a href="#l2296"><span>2296</span></a></td><td><pre>  MissingChksum: version 3.0.2: "netlogo-3.0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+</pre></td></tr>
+            <tr class="" id="l2297"><td><a href="#l2297"><span>2297</span></a></td><td><pre>
+</pre></td></tr>
+            <tr class="" id="l2298"><td><a href="#l2298"><span>2298</span></a></td><td><pre>sci-misc/repsnapper
+</pre></td></tr>
+            <tr class="" id="l2299"><td><a href="#l2299"><span>2299</span></a></td><td><pre>  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+</pre></td></tr>
+            <tr class="" id="l2300"><td><a href="#l2300"><span>2300</span></a></td><td><pre>
+</pre></td></tr>
+            <tr class="" id="l2301"><td><a href="#l2301"><span>2301</span></a></td><td><pre>sci-misc/vitables
+</pre></td></tr>
+            <tr class="" id="l2302"><td><a href="#l2302"><span>2302</span></a></td><td><pre>  NonExistentDeps: version 2.1: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+</pre></td></tr>
+            <tr class="" id="l2303"><td><a href="#l2303"><span>2303</span></a></td><td><pre>  NonExistentDeps: version 2.1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+</pre></td></tr>
+            <tr class="" id="l2304"><td><a href="#l2304"><span>2304</span></a></td><td><pre>  DeprecatedEclass: version 2.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+</pre></td></tr>
 
         </table>
 
-        <address>Generated based on results from 2015-08-24 22:39:05 UTC</address>
+        <address>Generated based on results from 2015-08-24 23:01:43 UTC</address>
     </body>
 </html>

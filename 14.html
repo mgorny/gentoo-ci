@@ -8,14 +8,14 @@
     <body>
         <ol class="menu">
             <li class="good"><a href="global.html">global</a></li>
-            <li class="err"><a href="0.html">0</a></li>
+            <li class="good"><a href="0.html">0</a></li>
             <li class="warn"><a href="1.html">1</a></li>
-            <li class="err"><a href="2.html">2</a></li>
+            <li class="warn"><a href="2.html">2</a></li>
             <li class="warn"><a href="3.html">3</a></li>
             <li class="good"><a href="4.html">4</a></li>
             <li class="warn"><a href="5.html">5</a></li>
             <li class="warn"><a href="6.html">6</a></li>
-            <li class="err"><a href="7.html">7</a></li>
+            <li class="warn"><a href="7.html">7</a></li>
             <li class="warn"><a href="8.html">8</a></li>
             <li class="warn"><a href="9.html">9</a></li>
             <li class="warn"><a href="10.html">10</a></li>
@@ -43,7 +43,7 @@
 </pre></td></tr>
             <tr class="" id="l6"><td><a href="#l6"><span>6</span></a></td><td><pre>+ set +x
 </pre></td></tr>
-            <tr class="" id="l7"><td><a href="#l7"><span>7</span></a></td><td><pre>+ exec pkgcheck -r gentoo --reporter FancyReporter 'media-plugins/*' 'sys-devel/*' 'kde-apps/*' 'x11-apps/*' 'net-im/*' 'games-misc/*' 'sys-power/*' 'games-util/*' 'www-misc/*' 'games-server/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
+            <tr class="" id="l7"><td><a href="#l7"><span>7</span></a></td><td><pre>+ exec pkgcheck -r gentoo --reporter FancyReporter 'media-plugins/*' 'sys-devel/*' 'kde-apps/*' 'x11-apps/*' 'net-im/*' 'games-misc/*' 'sys-power/*' 'games-util/*' 'dev-go/*' 'games-server/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 </pre></td></tr>
             <tr class="" id="l8"><td><a href="#l8"><span>8</span></a></td><td><pre>/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
 </pre></td></tr>
@@ -1803,89 +1803,27 @@
 </pre></td></tr>
             <tr class="" id="l886"><td><a href="#l886"><span>886</span></a></td><td><pre>               : refetch
 </pre></td></tr>
-            <tr class="" id="l887"><td><a href="#l887"><span>887</span></a></td><td><pre>
+            <tr class="" id="l887"><td><a href="#l887"><span>887</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
 </pre></td></tr>
-            <tr class="" id="l888"><td><a href="#l888"><span>888</span></a></td><td><pre>www-misc/bookmarksync
+            <tr class="" id="l888"><td><a href="#l888"><span>888</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
 </pre></td></tr>
-            <tr class="" id="l889"><td><a href="#l889"><span>889</span></a></td><td><pre>  DeprecatedEAPI: version 0.3.4-r2: uses deprecated EAPI: 2
+            <tr class="" id="l889"><td><a href="#l889"><span>889</span></a></td><td><pre>               : refetch
 </pre></td></tr>
-            <tr class="" id="l890"><td><a href="#l890"><span>890</span></a></td><td><pre>
+            <tr class="" id="l890"><td><a href="#l890"><span>890</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
 </pre></td></tr>
-            <tr class="" id="l891"><td><a href="#l891"><span>891</span></a></td><td><pre>www-misc/fcgiwrap
+            <tr class="" id="l891"><td><a href="#l891"><span>891</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
 </pre></td></tr>
-            <tr class="" id="l892"><td><a href="#l892"><span>892</span></a></td><td><pre>  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+            <tr class="" id="l892"><td><a href="#l892"><span>892</span></a></td><td><pre>               : refetch
 </pre></td></tr>
             <tr class="" id="l893"><td><a href="#l893"><span>893</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l894"><td><a href="#l894"><span>894</span></a></td><td><pre>www-misc/htdig
+            <tr class="" id="l894"><td><a href="#l894"><span>894</span></a></td><td><pre>games-server/ut2004-ded
 </pre></td></tr>
-            <tr class="" id="l895"><td><a href="#l895"><span>895</span></a></td><td><pre>  DeprecatedEAPI: version 3.2.0_beta6-r3: uses deprecated EAPI: 0
-</pre></td></tr>
-            <tr class="" id="l896"><td><a href="#l896"><span>896</span></a></td><td><pre>
-</pre></td></tr>
-            <tr class="" id="l897"><td><a href="#l897"><span>897</span></a></td><td><pre>www-misc/log-toolkit
-</pre></td></tr>
-            <tr class="" id="l898"><td><a href="#l898"><span>898</span></a></td><td><pre>  DeprecatedEAPI: version 0.9.6: uses deprecated EAPI: 0
-</pre></td></tr>
-            <tr class="" id="l899"><td><a href="#l899"><span>899</span></a></td><td><pre>  MissingChksum: version 0.9.6: "log-toolkit-0.9.6.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-</pre></td></tr>
-            <tr class="" id="l900"><td><a href="#l900"><span>900</span></a></td><td><pre>
-</pre></td></tr>
-            <tr class="" id="l901"><td><a href="#l901"><span>901</span></a></td><td><pre>www-misc/reflector
-</pre></td></tr>
-            <tr class="" id="l902"><td><a href="#l902"><span>902</span></a></td><td><pre>  NonExistentDeps: version 2011.05.13.1: depset depends: nonexistent atoms [ =dev-lang/python-2.6*, =dev-lang/python-3.1*, =dev-lang/python-3.2* ]
-</pre></td></tr>
-            <tr class="" id="l903"><td><a href="#l903"><span>903</span></a></td><td><pre>  NonExistentDeps: version 2011.05.13.1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6*, =dev-lang/python-3.1*, =dev-lang/python-3.2* ]
-</pre></td></tr>
-            <tr class="" id="l904"><td><a href="#l904"><span>904</span></a></td><td><pre>  DeprecatedEAPI: version 2011.05.13.1: uses deprecated EAPI: 3
-</pre></td></tr>
-            <tr class="" id="l905"><td><a href="#l905"><span>905</span></a></td><td><pre>  DeprecatedEclass: version 2011.05.13.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-</pre></td></tr>
-            <tr class="" id="l906"><td><a href="#l906"><span>906</span></a></td><td><pre>  MissingChksum: version 2011.05.13.1: "reflector-2011.05.13.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-</pre></td></tr>
-            <tr class="" id="l907"><td><a href="#l907"><span>907</span></a></td><td><pre>
-</pre></td></tr>
-            <tr class="" id="l908"><td><a href="#l908"><span>908</span></a></td><td><pre>www-misc/visitors
-</pre></td></tr>
-            <tr class="" id="l909"><td><a href="#l909"><span>909</span></a></td><td><pre>  DeprecatedEAPI: version 0.7-r1: uses deprecated EAPI: 2
-</pre></td></tr>
-            <tr class="" id="l910"><td><a href="#l910"><span>910</span></a></td><td><pre>  MissingChksum: version 0.7-r1: "visitors-0.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-</pre></td></tr>
-            <tr class="" id="l911"><td><a href="#l911"><span>911</span></a></td><td><pre>
-</pre></td></tr>
-            <tr class="" id="l912"><td><a href="#l912"><span>912</span></a></td><td><pre>www-misc/wsmake
-</pre></td></tr>
-            <tr class="" id="l913"><td><a href="#l913"><span>913</span></a></td><td><pre>  DeprecatedEAPI: version 0.6.4: uses deprecated EAPI: 0
-</pre></td></tr>
-            <tr class="" id="l914"><td><a href="#l914"><span>914</span></a></td><td><pre>  MissingChksum: version 0.6.4: "wsmake-0.6.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-</pre></td></tr>
-            <tr class="" id="l915"><td><a href="#l915"><span>915</span></a></td><td><pre>
-</pre></td></tr>
-            <tr class="" id="l916"><td><a href="#l916"><span>916</span></a></td><td><pre>www-misc/xxv
-</pre></td></tr>
-            <tr class="" id="l917"><td><a href="#l917"><span>917</span></a></td><td><pre>  MissingChksum: version 1.6.1: "xxv-1.6.1.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-</pre></td></tr>
-            <tr class="" id="l918"><td><a href="#l918"><span>918</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
-</pre></td></tr>
-            <tr class="" id="l919"><td><a href="#l919"><span>919</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
-</pre></td></tr>
-            <tr class="" id="l920"><td><a href="#l920"><span>920</span></a></td><td><pre>               : refetch
-</pre></td></tr>
-            <tr class="" id="l921"><td><a href="#l921"><span>921</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
-</pre></td></tr>
-            <tr class="" id="l922"><td><a href="#l922"><span>922</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
-</pre></td></tr>
-            <tr class="" id="l923"><td><a href="#l923"><span>923</span></a></td><td><pre>               : refetch
-</pre></td></tr>
-            <tr class="" id="l924"><td><a href="#l924"><span>924</span></a></td><td><pre>
-</pre></td></tr>
-            <tr class="" id="l925"><td><a href="#l925"><span>925</span></a></td><td><pre>games-server/ut2004-ded
-</pre></td></tr>
-            <tr class="" id="l926"><td><a href="#l926"><span>926</span></a></td><td><pre>  MissingChksum: version 3369.3-r1: "dedicatedserver3339-bonuspack.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+            <tr class="" id="l895"><td><a href="#l895"><span>895</span></a></td><td><pre>  MissingChksum: version 3369.3-r1: "dedicatedserver3339-bonuspack.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
 
         </table>
 
-        <address>Generated based on results from 2015-08-24 22:39:05 UTC</address>
+        <address>Generated based on results from 2015-08-24 23:01:43 UTC</address>
     </body>
 </html>
