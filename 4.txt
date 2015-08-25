@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 4 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-ruby/*' 'net-libs/*' 'sci-biology/*' 'app-xemacs/*' 'app-portage/*' 'dev-cpp/*' 'net-dialup/*' 'app-pda/*' 'lxde-base/*' 'games-simulation/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-ruby/*' 'net-libs/*' 'sci-biology/*' 'app-xemacs/*' 'app-portage/*' 'sci-geosciences/*' 'net-dialup/*' 'app-pda/*' 'lxde-base/*' 'games-simulation/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1275,31 +1275,101 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-dev-cpp/asio
-  DeprecatedEAPI: version 1.4.5: uses deprecated EAPI: 2
-  SizeViolation: "files/asio-1.4.8_declarations.patch" exceeds 20k in size; 29773 bytes total
+sci-geosciences/bt747
+  MissingChksum: version 2.0.3: "BT747_2.0.3_full.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-dev-cpp/ctemplate
-  DeprecatedEclass: version 2.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+sci-geosciences/foxtrotgps
+  MissingChksum: version 1.1.0: "foxtrotgps-1.1.0.tar.xz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-dev-cpp/gtest
-  DeprecatedEclass: version 1.6.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEclass: version 1.6.0-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+sci-geosciences/gdal-grass
+  MissingChksum: version 1.4.3-r1: "gdal-grass-1.4.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-dev-cpp/libbackend-elements
-  DeprecatedEAPI: version 1.7.2: uses deprecated EAPI: 2
+sci-geosciences/gmt
+  MissingChksum: version 4.5.6: "GSHHS2.1.1_high.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-dev-cpp/libfrontend-elements
-  DeprecatedEAPI: version 1.1.4: uses deprecated EAPI: 2
+sci-geosciences/gpsbabel
+  MissingChksum: version 1.4.3: "gpsbabel.org-style3.css" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-dev-cpp/libmcpp
-  DeprecatedEAPI: version 2.7.2-r1: uses deprecated EAPI: 3
+sci-geosciences/gpscorrelate
+  MissingChksum: version 1.6.1: "gpscorrelate-1.6.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-dev-cpp/tree
-  DeprecatedEAPI: version 2.65-r1: uses deprecated EAPI: 2
+sci-geosciences/gpsd
+  NonExistentDeps: version 2.95-r1: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 2.95-r1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEAPI: version 2.95-r1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 2.95-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  MetadataError: version 2.95-r1: attr(fetchables): error- Metadata Exception: pkg ebuild src: sci-geosciences/gpsd-2.95-r1, attr fetchables
+error: mirror://berlios/gpsd/gpsd-2.95.tar.gz is unparseable
+flagged token- uri mirror://berlios/gpsd/gpsd-2.95.tar.gz isn't a known mirror tier
+  NonExistentDeps: version 2.96-r1: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 2.96-r1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEAPI: version 2.96-r1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 2.96-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  MetadataError: version 2.96-r1: attr(fetchables): error- Metadata Exception: pkg ebuild src: sci-geosciences/gpsd-2.96-r1, attr fetchables
+error: mirror://berlios/gpsd/gpsd-2.96bis.tar.gz is unparseable
+flagged token- uri mirror://berlios/gpsd/gpsd-2.96bis.tar.gz isn't a known mirror tier
+  NonExistentDeps: version 3.6: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 3.6: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 3.6: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 3.7: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 3.7: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 3.7: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 3.8: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 3.8: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 3.8: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 3.9: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 3.9: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 3.9: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 3.9-r1: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 3.9-r1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 3.9-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-dev-cpp/xsd
-  SizeViolation: "files/3.3.0-boost-filesystem-v2-deprecation.patch" exceeds 20k in size; 30894 bytes total
+sci-geosciences/grass
+  DeprecatedEclass: version 6.4.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+sci-geosciences/josm-plugins
+  DeprecatedEAPI: version 20101206: uses deprecated EAPI: 3
+  MissingChksum: version 20101206: "josm-plugins-20101206.tar.xz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-geosciences/mapnik
+  DeprecatedEclass: version 2.0.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 2.0.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 2.1.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+sci-geosciences/mapnik-world-boundaries
+  DeprecatedEAPI: version 20090514: uses deprecated EAPI: 2
+
+sci-geosciences/mapserver
+  DeprecatedEclass: version 6.0.1-r2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+sci-geosciences/mc2bsbh
+  MissingChksum: version 0.0.9: "mc2bsbh-beta09.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+sci-geosciences/mkgmap
+  MissingChksum: version 1995: "mkgmap-r1995-src.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+sci-geosciences/mtkbabel
+  MissingChksum: version 0.8.2: "mtkbabel-0.8.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-geosciences/osm2mp
+  MissingChksum: version 0.80: "osm2mp_v080.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+sci-geosciences/osm2pgsql
+  DeprecatedEclass: version 99999999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+sci-geosciences/osmosis
+  MissingChksum: version 0.35.1: "osmosis-0.35.1.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+sci-geosciences/qgis
+  DeprecatedEAPI: version 1.7.0: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.7.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+sci-geosciences/qlandkartegt-garmindev
+  MissingChksum: version 0.3.4: "garmindev-0.3.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-geosciences/readosm
+  MissingChksum: version 1.0.0: "readosm-1.0.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
