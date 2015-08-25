@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 14 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'media-plugins/*' 'sys-devel/*' 'kde-apps/*' 'x11-apps/*' 'net-im/*' 'games-misc/*' 'sys-power/*' 'games-util/*' 'dev-go/*' 'games-server/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'media-plugins/*' 'sys-devel/*' 'kde-apps/*' 'x11-apps/*' 'net-im/*' 'games-misc/*' 'x11-terms/*' 'media-radio/*' 'dev-go/*' 'games-server/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -803,68 +803,46 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-sys-power/acpi
-  MissingChksum: version 1.6: "acpi-1.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+x11-terms/aterm
+  DeprecatedEAPI: version 1.0.1-r2: uses deprecated EAPI: 3
 
-sys-power/acpi_call
+x11-terms/eterm
+  DeprecatedEAPI: version 0.9.5: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.9.6: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
+
+x11-terms/gnome-terminal
+  NonExistentDeps: version 3.14.2-r2: depset depends: nonexistent atoms [ <=x11-libs/gtk+-2.24.10:2 ]
+  SizeViolation: "files/gnome-terminal-3.16.2-restore-transparency.patch" exceeds 20k in size; 54792 bytes total
+
+x11-terms/hanterm
+  DeprecatedEAPI: version 3.1.6-r2: uses deprecated EAPI: 0
+
+x11-terms/mlterm
+  DeprecatedEAPI: version 3.0.11-r1: uses deprecated EAPI: 3
+
+x11-terms/root-tail
+  DeprecatedEAPI: version 1.2-r3: uses deprecated EAPI: 2
+  MissingChksum: version 1.2-r3: "root-tail-1.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-terms/roxterm
+  DeprecatedEclass: version 2.6.3: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 2.6.5: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 2.9.3: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DroppedKeywordWarning: version 2.9.3: keywords dropped: ppc
+
+x11-terms/terminator
+  DeprecatedEclass: version 0.96-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+x11-terms/terminology
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-sys-power/apcupsd
-  DeprecatedEAPI: version 3.14.8-r2: uses deprecated EAPI: 3
+x11-terms/xvt
+  DeprecatedEAPI: version 2.1-r3: uses deprecated EAPI: 2
 
-sys-power/athcool
-  DeprecatedEAPI: version 0.3.12: uses deprecated EAPI: 3
-  MissingChksum: version 0.3.12: "athcool-0.3.12.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-sys-power/cpudyn
-  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 0
-  MissingChksum: version 1.0.1: "cpudyn-1.0.1.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-sys-power/cpuspeedy
-  DeprecatedEAPI: version 0.4.1: uses deprecated EAPI: 3
-  DeprecatedEclass: version 0.4.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  MissingChksum: version 0.4.1: "cpuspeedy-0.4.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-sys-power/nvram-reboot
-  DeprecatedEAPI: version 2004.10.03: uses deprecated EAPI: 0
-
-sys-power/nvram-wakeup
-  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
-  MissingChksum: version 1.0: "nvram-wakup-1.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-sys-power/phc-intel
-  SizeViolation: "files/phc-intel-0.3.2-rev12-trailing-space-misc.patch" exceeds 20k in size; 33960 bytes total
-
-sys-power/phc-k8
-  MissingChksum: version 0.4.3: "phc-k8-0.4.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 0.4.4: "phc-k8-0.4.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-sys-power/phctool
-  DeprecatedEAPI: version 0.5.2.2-r1: uses deprecated EAPI: 2
-  DeprecatedEclass: version 0.5.2.2-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEclass: version 0.5.2.2-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  MissingChksum: version 0.5.2.2-r1: "phctool-0.5.2.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-sys-power/pm-quirks
-  DeprecatedEAPI: version 20100619: uses deprecated EAPI: 3
-  MissingChksum: version 20100619: "pm-quirks-20100619.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-sys-power/pmtools
-  DeprecatedEAPI: version 20071116: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 20110323: uses deprecated EAPI: 2
-  DroppedKeywordWarning: version 20110323: keywords dropped: ppc
-  MissingChksum: version 20071116: "pmtools-20071116.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-sys-power/powertop
-  DeprecatedEAPI: version 1.13: uses deprecated EAPI: 3
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-sys-power/sispmctl
-  DeprecatedEAPI: version 2.7: uses deprecated EAPI: 2
-
-sys-power/yacpi
-  DeprecatedEAPI: version 3.0.1: uses deprecated EAPI: 3
-  MissingChksum: version 3.0.1: "yacpi-3.0.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+x11-terms/yeahconsole
+  DeprecatedEAPI: version 0.3.4-r1: uses deprecated EAPI: 2
+  MissingChksum: version 0.3.4-r1: "yeahconsole-0.3.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
@@ -872,12 +850,12 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-games-util/dzip
-  DeprecatedEAPI: version 2.9-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.9-r2: uses deprecated EAPI: 2
+media-radio/KochMorse
+  DeprecatedEAPI: version 0.99.6: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.99.6: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-games-util/pyfa
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+media-radio/grig
+  MissingChksum: version 0.8.0: "grig-0.8.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch

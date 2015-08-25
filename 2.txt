@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 2 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-perl/*' 'x11-misc/*' 'app-vim/*' 'sys-cluster/*' 'dev-qt/*' 'net-irc/*' 'games-emulation/*' 'dev-dotnet/*' 'perl-core/*' 'games-engines/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-perl/*' 'x11-misc/*' 'app-vim/*' 'sys-cluster/*' 'dev-qt/*' 'net-irc/*' 'games-emulation/*' 'sys-freebsd/*' 'sci-astronomy/*' 'games-engines/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1272,191 +1272,84 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-dev-dotnet/art-sharp
-  DeprecatedEAPI: version 2.24.2: uses deprecated EAPI: 2
-  DeprecatedEclass: version 2.24.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+sys-freebsd/boot0
+  DeprecatedEAPI: version 8.2: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 9.1: uses deprecated EAPI: 2
 
-dev-dotnet/atk-sharp
-  DeprecatedEAPI: version 2.12.10: uses deprecated EAPI: 2
-  DeprecatedEclass: version 2.12.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+sys-freebsd/freebsd-bin
+  DeprecatedEAPI: version 8.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.1: uses deprecated EAPI: 0
 
-dev-dotnet/dbus-sharp
-  DeprecatedEclass: version 0.7.0-r1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+sys-freebsd/freebsd-cddl
+  DeprecatedEAPI: version 8.2: uses deprecated EAPI: 0
 
-dev-dotnet/dbus-sharp-glib
-  DeprecatedEclass: version 0.5.0: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+sys-freebsd/freebsd-contrib
+  DeprecatedEAPI: version 8.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.1: uses deprecated EAPI: 0
 
-dev-dotnet/flickrnet-bin
-  DeprecatedEAPI: version 2.2-r1: uses deprecated EAPI: 2
-  DeprecatedEclass: version 2.2-r1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+sys-freebsd/freebsd-lib
+  WhitespaceFound: version 8.2-r1: ebuild has leading whitespace on lines 368, 369, 370, 371, 372
+  DeprecatedEAPI: version 8.2-r1: uses deprecated EAPI: 2
+  WhitespaceFound: version 9.1-r10: ebuild has leading whitespace on lines 413, 414, 415, 416, 417, 441, 442, 443, 446, 448, 450
+  WhitespaceFound: version 9.1-r11: ebuild has leading whitespace on lines 415, 416, 417, 418, 419, 443, 444, 445, 448, 450, 452
+  WhitespaceFound: version 10.1-r1: ebuild has leading whitespace on lines 425, 426, 427, 428, 429, 453, 454, 455, 458, 460, 462
+  WhitespaceFound: version 10.2: ebuild has leading whitespace on lines 421, 422, 423, 424, 425, 449, 450, 451, 454, 456, 458
 
-dev-dotnet/gconf-sharp
-  DeprecatedEAPI: version 2.24.2: uses deprecated EAPI: 2
-  DeprecatedEclass: version 2.24.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+sys-freebsd/freebsd-libexec
+  DeprecatedEAPI: version 8.2: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 8.2-r1: uses deprecated EAPI: 2
 
-dev-dotnet/gdk-sharp
-  DeprecatedEAPI: version 2.12.10: uses deprecated EAPI: 2
-  DeprecatedEclass: version 2.12.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+sys-freebsd/freebsd-mk-defs
+  DeprecatedEAPI: version 8.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.1: uses deprecated EAPI: 3
 
-dev-dotnet/gio-sharp
-  DeprecatedEclass: version 0.3: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+sys-freebsd/freebsd-pam-modules
+  DeprecatedEAPI: version 8.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.1-r1: uses deprecated EAPI: 0
 
-dev-dotnet/gkeyfile-sharp
-  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 2
-  DeprecatedEclass: version 0.1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+sys-freebsd/freebsd-pf
+  DeprecatedEAPI: version 8.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.1: uses deprecated EAPI: 0
 
-dev-dotnet/glade-sharp
-  DeprecatedEAPI: version 2.12.10: uses deprecated EAPI: 2
-  DeprecatedEclass: version 2.12.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+sys-freebsd/freebsd-rescue
+  DeprecatedEAPI: version 8.2: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 9.1: uses deprecated EAPI: 2
 
-dev-dotnet/glib-sharp
-  DeprecatedEclass: version 2.12.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+sys-freebsd/freebsd-sbin
+  BadInsIntoDir: version 8.2-r1: ebuild uses insinto /etc/cron.d on line 78
+  DeprecatedEAPI: version 8.2-r1: uses deprecated EAPI: 2
+  BadInsIntoDir: version 9.1: ebuild uses insinto /etc/cron.d on line 79
+  DeprecatedEAPI: version 9.1: uses deprecated EAPI: 2
+  BadInsIntoDir: version 10.1-r1: ebuild uses insinto /etc/cron.d on line 88
+  BadInsIntoDir: version 10.2: ebuild uses insinto /etc/cron.d on line 83
 
-dev-dotnet/gnome-desktop-sharp
-  DeprecatedEAPI: version 2.26.0-r1: uses deprecated EAPI: 2
-  DeprecatedEclass: version 2.26.0-r1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+sys-freebsd/freebsd-share
+  DeprecatedEAPI: version 8.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.1: uses deprecated EAPI: 0
 
-dev-dotnet/gnome-keyring-sharp
-  DeprecatedEAPI: version 1.0.2: uses deprecated EAPI: 2
-  DeprecatedEclass: version 1.0.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+sys-freebsd/freebsd-sources
+  DeprecatedEAPI: version 8.2-r2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.1-r3: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.1-r9: uses deprecated EAPI: 0
 
-dev-dotnet/gnome-sharp
-  DeprecatedEAPI: version 2.24.2: uses deprecated EAPI: 2
-  DeprecatedEclass: version 2.24.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+sys-freebsd/freebsd-ubin
+  DeprecatedEAPI: version 8.2-r1: uses deprecated EAPI: 2
 
-dev-dotnet/gnomevfs-sharp
-  DeprecatedEAPI: version 2.24.2: uses deprecated EAPI: 2
-  DeprecatedEclass: version 2.24.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+sys-freebsd/freebsd-usbin
+  DeprecatedEAPI: version 8.2-r2: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 9.1-r1: uses deprecated EAPI: 2
 
-dev-dotnet/google-gdata-sharp
-  DeprecatedEAPI: version 1.4.0.2-r2: uses deprecated EAPI: 3
-  DeprecatedEclass: version 1.4.0.2-r2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-
-dev-dotnet/gsf-sharp
-  DeprecatedEAPI: version 0.8.1: uses deprecated EAPI: 0
-  DeprecatedEclass: version 0.8.1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-
-dev-dotnet/gtk-dotnet-sharp
-  DeprecatedEAPI: version 2.12.10: uses deprecated EAPI: 2
-  DeprecatedEclass: version 2.12.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-
-dev-dotnet/gtk-sharp
-  DeprecatedEAPI: version 2.12.10: uses deprecated EAPI: 2
-  DeprecatedEclass: version 2.12.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-
-dev-dotnet/gtk-sharp-beans
-  DeprecatedEAPI: version 2.14.0: uses deprecated EAPI: 2
-  DeprecatedEclass: version 2.14.0: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-
-dev-dotnet/gtk-sharp-docs
-  DeprecatedEAPI: version 2.12.10: uses deprecated EAPI: 2
-  DeprecatedEclass: version 2.12.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-
-dev-dotnet/gtk-sharp-gapi
-  DeprecatedEAPI: version 2.12.10: uses deprecated EAPI: 2
-  DeprecatedEclass: version 2.12.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-
-dev-dotnet/gtksourceview-sharp
-  DeprecatedEAPI: version 2.24.0-r10: uses deprecated EAPI: 2
-  DeprecatedEclass: version 2.24.0-r10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-
-dev-dotnet/gudev-sharp
-  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 2
-  DeprecatedEclass: version 0.1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-
-dev-dotnet/ikvm
-  DeprecatedEclass: version 0.46.0.1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DeprecatedEclass: version 0.46.0.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DeprecatedEclass: version 7.1.4532.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DroppedKeywordWarning: version 7.1.4532.2: keywords dropped: ppc
-
-dev-dotnet/ikvm-bin
-  DeprecatedEclass: version 0.46.0.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DeprecatedEclass: version 7.1.4532.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-
-dev-dotnet/libgdiplus
-  DeprecatedEAPI: version 2.10.9: uses deprecated EAPI: 2
-  DeprecatedEclass: version 2.10.9: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DeprecatedEclass: version 2.10.9-r1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DeprecatedEclass: version 2.10.9-r2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DroppedKeywordWarning: version 3.12: keywords dropped: arm
-
-dev-dotnet/log4net
-  DeprecatedEclass: version 1.2.11: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-
-dev-dotnet/mono-addins
-  DeprecatedEclass: version 0.6.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-
-dev-dotnet/mono-nat
-  DeprecatedEclass: version 1.1.0: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-
-dev-dotnet/mono-zeroconf
-  DeprecatedEAPI: version 0.9.0: uses deprecated EAPI: 2
-  DeprecatedEclass: version 0.9.0: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-
-dev-dotnet/monocalendar
-  DeprecatedEAPI: version 0.7.2: uses deprecated EAPI: 0
-  DeprecatedEclass: version 0.7.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-
-dev-dotnet/monotorrent
-  DeprecatedEAPI: version 0.80: uses deprecated EAPI: 2
-  DeprecatedEclass: version 0.80: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-
-dev-dotnet/nant
-  DeprecatedEclass: version 0.92: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-
-dev-dotnet/ndesk-dbus
-  DeprecatedEAPI: version 0.6.1a: uses deprecated EAPI: 0
-  DeprecatedEclass: version 0.6.1a: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-
-dev-dotnet/ndesk-dbus-glib
-  DeprecatedEAPI: version 0.4.1: uses deprecated EAPI: 3
-  DeprecatedEclass: version 0.4.1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-
-dev-dotnet/nini
-  DeprecatedEAPI: version 1.1.0-r2: uses deprecated EAPI: 2
-  DeprecatedEclass: version 1.1.0-r2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-
-dev-dotnet/notify-sharp
-  DeprecatedEclass: version 0.4.0_pre20090305: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-
-dev-dotnet/nuget
-  WhitespaceFound: version 2.8.3: ebuild has trailing whitespace on line 29
-
-dev-dotnet/pango-sharp
-  DeprecatedEAPI: version 2.12.10: uses deprecated EAPI: 2
-  DeprecatedEclass: version 2.12.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-
-dev-dotnet/rsvg-sharp
-  DeprecatedEAPI: version 2.24.0-r10: uses deprecated EAPI: 2
-  DeprecatedEclass: version 2.24.0-r10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-
-dev-dotnet/taglib-sharp
-  DeprecatedEclass: version 2.0.4.0: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DeprecatedEclass: version 2.1.0.0: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-
-dev-dotnet/vte-sharp
-  DeprecatedEAPI: version 2.24.0-r10: uses deprecated EAPI: 2
-  DeprecatedEclass: version 2.24.0-r10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-
-dev-dotnet/webkit-sharp
-  DeprecatedEclass: version 0.3-r1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-
-dev-dotnet/wnck-sharp
-  DeprecatedEAPI: version 2.24.0-r10: uses deprecated EAPI: 2
-  DeprecatedEclass: version 2.24.0-r10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-
-dev-dotnet/xsp
-  DeprecatedEclass: version 2.10.2-r2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-
-dev-dotnet/zeitgeist-sharp
-  DeprecatedEclass: version 0.8.0.0-r1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+sys-freebsd/virtio-kmod
+  MissingChksum: version 0.228301-r1: "virtio-0.228301.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
+
+sci-astronomy/swarp
+  MissingChksum: version 2.19.1: "swarp-2.19.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch

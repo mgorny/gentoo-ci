@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 9 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-util/*' 'app-admin/*' 'sys-kernel/*' 'app-office/*' 'net-dns/*' 'sys-boot/*' 'net-fs/*' 'lxqt-base/*' 'net-nntp/*' 'gnustep-libs/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-util/*' 'app-admin/*' 'sys-kernel/*' 'app-office/*' 'net-dns/*' 'sys-boot/*' 'net-print/*' 'net-ftp/*' 'net-nntp/*' 'gnustep-libs/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1001,20 +1001,82 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-net-fs/davfs2
-  DeprecatedEAPI: version 1.4.5-r1: uses deprecated EAPI: 2
+net-print/adobeps
+  MissingChksum: version 1.0.6-r1: "winstDan.exe" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.0.6-r1: "winstspa.exe" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.0.6-r1: "winstfin.exe" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.0.6-r1: "winstfre.exe" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.0.6-r1: "winstita.exe" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.0.6-r1: "winstjpn.exe" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.0.6-r1: "winstkor.exe" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.0.6-r1: "winstdut.exe" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.0.6-r1: "winstnor.exe" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.0.6-r1: "winstbrz.exe" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.0.6-r1: "winstswe.exe" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.0.6-r1: "Winstchs.exe" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-fs/libnfs
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DroppedKeywordWarning: version 1.9.7: keywords dropped: alpha
+net-print/apsfilter
+  DeprecatedEAPI: version 7.2.5: uses deprecated EAPI: 0
+  MissingChksum: version 7.2.5: "apsfilter-7.2.5.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-fs/samba
-  DroppedKeywordWarning: version 4.0.26: keywords dropped: alpha, arm, ia64, mips, ppc, ppc64, sparc
-  DroppedKeywordWarning: version 4.2.3: keywords dropped: arm64
-  DroppedKeywordWarning: version 3.6.25: keywords dropped: s390, sh
+net-print/cups-filters
+  WhitespaceFound: version 1.0.66: ebuild has leading whitespace on line 66
+  WrongIndentFound: version 1.0.66: ebuild has whitespace in indentation on line 66
+  WhitespaceFound: version 1.0.71: ebuild has leading whitespace on line 68
+  WrongIndentFound: version 1.0.71: ebuild has whitespace in indentation on line 68
+  WhitespaceFound: version 9999: ebuild has leading whitespace on line 66
+  WrongIndentFound: version 9999: ebuild has whitespace in indentation on line 66
 
-net-fs/wdfs
-  DeprecatedEAPI: version 1.4.2: uses deprecated EAPI: 0
+net-print/cups-pdf
+  MissingChksum: version 2.6.1: "cups-pdf_2.6.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+net-print/cups-windows
+  MissingChksum: version 6.0-r1: "cups-windows-6.0-source.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+net-print/gmso2
+  MissingChksum: version 0.1-r1: "gmso2-0.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+net-print/kyocera-mita-ppds
+  DeprecatedEAPI: version 8.4: uses deprecated EAPI: 0
+  MissingChksum: version 8.4: "Linux_PPDs_KSL8_4.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+net-print/libinklevel
+  DeprecatedEAPI: version 0.8.0-r1: uses deprecated EAPI: 2
+  MissingChksum: version 0.8.0-r1: "libinklevel-0.8.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+net-print/magicfilter
+  MissingChksum: version 2.3h: "magicfilter-2.3.h.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+net-print/mtink
+  MissingChksum: version 1.0.16-r1: "mtink-1.0.16.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+net-print/npadmin
+  DeprecatedEAPI: version 0.8.7: uses deprecated EAPI: 0
+  MissingChksum: version 0.8.7: "npadmin-0.8.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+net-print/pkpgcounter
+  DeprecatedEAPI: version 3.50-r1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 3.50-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+net-print/pnm2ppa
+  MissingChksum: version 1.13-r1: "pnm2ppa-1.13.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+net-print/poster
+  MissingChksum: version 20060221: "poster-20060221.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+net-print/pykota
+  DeprecatedEAPI: version 1.26: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.26: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+net-print/splix
+  MissingChksum: version 2.0.0_p20111206: "splix-2.0.0_p20111206.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+net-print/sshlpr
+  MissingChksum: version 1: "sshlpr-1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+net-print/xerox-drivers
+  DeprecatedEAPI: version 0_p20080123: uses deprecated EAPI: 2
+  MissingChksum: version 0_p20080123: "LinuxCupsPrinterPkg.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
@@ -1022,53 +1084,37 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-lxqt-base/liblxqt
-  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
+net-ftp/bareftp
+  DeprecatedEclass: version 0.3.9: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEclass: version 0.3.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  MissingChksum: version 0.3.9: "bareftp-0.3.9.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-lxqt-base/liblxqt-mount
-  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
+net-ftp/ftp
+  DeprecatedEAPI: version 0.17-r7: uses deprecated EAPI: 0
 
-lxqt-base/libsysstat
-  DroppedKeywordWarning: version 0.2.0: keywords dropped: arm
+net-ftp/ftpbase
+  DeprecatedEAPI: version 0.01-r2: uses deprecated EAPI: 0
 
-lxqt-base/lxqt-about
-  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
+net-ftp/netkit-ftpd
+  DeprecatedEAPI: version 0.17-r8: uses deprecated EAPI: 0
 
-lxqt-base/lxqt-common
-  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
+net-ftp/oftpd
+  DeprecatedEAPI: version 0.3.7-r7: uses deprecated EAPI: 2
 
-lxqt-base/lxqt-config
-  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
+net-ftp/oneclickftp
+  DeprecatedEAPI: version 0.5.1: uses deprecated EAPI: 2
+  MissingChksum: version 0.5.1: "oneclickftp-0.5.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-lxqt-base/lxqt-globalkeys
-  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
+net-ftp/scythia
+  DeprecatedEAPI: version 0.9.3_p2: uses deprecated EAPI: 3
+  MissingChksum: version 0.9.3_p2: "scythia_0.9.3-2-src.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-lxqt-base/lxqt-meta
-  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
+net-ftp/tlswrap
+  DeprecatedEAPI: version 1.04: uses deprecated EAPI: 0
+  MissingChksum: version 1.04: "tlswrap-1.04.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-lxqt-base/lxqt-notificationd
-  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
-
-lxqt-base/lxqt-openssh-askpass
-  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
-
-lxqt-base/lxqt-panel
-  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
-
-lxqt-base/lxqt-policykit
-  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
-
-lxqt-base/lxqt-powermanagement
-  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
-
-lxqt-base/lxqt-qtplugin
-  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
-
-lxqt-base/lxqt-runner
-  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
-
-lxqt-base/lxqt-session
-  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
+net-ftp/tnftp
+  DeprecatedEAPI: version 20100108: uses deprecated EAPI: 2
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch

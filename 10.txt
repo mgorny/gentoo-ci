@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 10 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'media-sound/*' 'sys-fs/*' 'dev-ml/*' 'x11-drivers/*' 'games-puzzle/*' 'app-eselect/*' 'games-rpg/*' 'app-benchmarks/*' 'x11-base/*' 'games-sports/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'media-sound/*' 'sys-fs/*' 'dev-ml/*' 'x11-drivers/*' 'games-puzzle/*' 'app-eselect/*' 'net-fs/*' 'lxqt-base/*' 'x11-base/*' 'games-sports/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -738,7 +738,7 @@ media-sound/sndfile-tools
 
 media-sound/sndpeek
   DeprecatedEAPI: version 1.3-r2: uses deprecated EAPI: 2
-  MissingChksum: version 1.3-r2: "sndpeek-1.3.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  DeprecatedEAPI: version 1.4: uses deprecated EAPI: 2
 
 media-sound/sooperlooper
   MissingChksum: version 1.6.17: "sooperlooper-1.6.17.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
@@ -1416,144 +1416,74 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-games-rpg/arx-fatalis-data
-  MissingUri: version 1.21-r2: file setup_arx_fatalis.exe is unfetchable- no URI available, and RESTRICT=fetch isn't set
-  MissingUri: version 1.21-r3: file setup_arx_fatalis_2.0.0.7.exe is unfetchable- no URI available, and RESTRICT=fetch isn't set
+net-fs/davfs2
+  DeprecatedEAPI: version 1.4.5-r1: uses deprecated EAPI: 2
 
-games-rpg/eternal-lands
-  DeprecatedEAPI: version 1.9.2: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 1.9.2-r1: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 1.9.3: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 1.9.3-r1: uses deprecated EAPI: 2
-  MissingChksum: version 1.9.2: "elc_1.9.2-20110618.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-games-rpg/eternal-lands-bloodsucker
-  DeprecatedEAPI: version 3.0: uses deprecated EAPI: 2
-  MissingChksum: version 3.0: "eternal-lands-bloodsucker-3.0.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-games-rpg/eternal-lands-data
-  DeprecatedEAPI: version 1.9.2-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.9.3: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.9.3-r1: uses deprecated EAPI: 2
-  MissingChksum: version 1.9.2-r1: "el_linux_192.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-games-rpg/lure
-  MissingChksum: version 1.1: "lure-es-1.1.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.1: "lure-fr-1.1.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.1: "lure-de-1.1.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-games-rpg/nwmovies
-  DeprecatedEAPI: version 20090223.080954: uses deprecated EAPI: 2
-
-games-rpg/nwn
-  MissingChksum: version 1.68-r5: "French_linuxclient168_orig.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.68-r5: "French_linuxclient168_xp1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.68-r5: "French_linuxclient168_xp2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.68-r5: "Italian_linuxclient168_orig.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.68-r5: "Italian_linuxclient168_xp1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.68-r5: "Italian_linuxclient168_xp2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.68-r5: "English_linuxclient168_orig.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.68-r5: "English_linuxclient168_xp1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.68-r5: "English_linuxclient168_xp2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.68-r5: "Spanish_linuxclient168_orig.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.68-r5: "Spanish_linuxclient168_xp1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.68-r5: "Spanish_linuxclient168_xp2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.68-r5: "German_linuxclient168_orig.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.68-r5: "German_linuxclient168_xp1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.68-r5: "German_linuxclient168_xp2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.69-r1: "English_linuxclient169_xp1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.69-r1: "English_linuxclient169_xp2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-games-rpg/nwn-cep
-  DeprecatedEAPI: version 1.68-r1: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 2.0: uses deprecated EAPI: 2
-
-games-rpg/nwn-data
-  MissingChksum: version 1.29-r5: "nwresources129.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.29-r5: "nwfrench129.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.29-r5: "nwitalian129.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.29-r5: "nwspanish129.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.29-r5: "nwgerman129.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-games-rpg/nwn-penultima
-  DeprecatedEAPI: version 1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1-r1: uses deprecated EAPI: 0
-
-games-rpg/nwn-penultimarerolled
-  DeprecatedEAPI: version 1: uses deprecated EAPI: 0
-  MissingChksum: version 1: "PR0_and_PR1_Penultima_ReRolled_Starter_Pack_v1.4.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1: "PR2_Below_the_R00t.v1.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1: "PR3_Homeland_Security.v1.4.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1: "PR4_Pastor_of_Muppets.v1.1.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1: "PR5_The_Saving_Throw.v1.1.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-games-rpg/nwn-shadowlordsdreamcatcherdemon
-  DeprecatedEAPI: version 1: uses deprecated EAPI: 0
-
-games-rpg/sacred-gold
-  MissingChksum: version 1.0.01: "sacred-1.0-1.0.01-x86.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-WARNING pkgcore: metadata.dtd cannot be opened from
-               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
-               : refetch
-WARNING pkgcore: metadata.dtd cannot be opened from
-               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
-               : refetch
-
-app-benchmarks/acovea
-  DeprecatedEAPI: version 5.1.1-r1: uses deprecated EAPI: 2
-
-app-benchmarks/bonnie
-  DeprecatedEAPI: version 2.0.6: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.0.6-r1: uses deprecated EAPI: 2
-
-app-benchmarks/bonnie++
-  DeprecatedEAPI: version 1.96: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.96-r1: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 1.97: uses deprecated EAPI: 2
-
-app-benchmarks/contest
-  DeprecatedEAPI: version 0.61: uses deprecated EAPI: 0
-
-app-benchmarks/filebench
-  DeprecatedEAPI: version 1.4.9.1: uses deprecated EAPI: 0
-
-app-benchmarks/forkbomb
-  DeprecatedEAPI: version 1.4: uses deprecated EAPI: 0
-
-app-benchmarks/iozone
-  DeprecatedEAPI: version 3.397: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 3.408: uses deprecated EAPI: 0
-
-app-benchmarks/jmeter
-  DeprecatedEAPI: version 2.0.1-r4: uses deprecated EAPI: 0
-
-app-benchmarks/nbench
-  DeprecatedEAPI: version 2.2.3-r1: uses deprecated EAPI: 2
-
-app-benchmarks/os-autoinst
+net-fs/libnfs
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DroppedKeywordWarning: version 1.9.7: keywords dropped: alpha
 
-app-benchmarks/piozone
-  DeprecatedEAPI: version 1.0-r3: uses deprecated EAPI: 2
+net-fs/samba
+  DroppedKeywordWarning: version 4.0.26: keywords dropped: alpha, arm, ia64, mips, ppc, ppc64, sparc
+  DroppedKeywordWarning: version 4.2.3: keywords dropped: arm64
+  DroppedKeywordWarning: version 3.6.25: keywords dropped: s390, sh
 
-app-benchmarks/pipebench
-  DeprecatedEAPI: version 0.40: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.40-r1: uses deprecated EAPI: 3
+net-fs/wdfs
+  DeprecatedEAPI: version 1.4.2: uses deprecated EAPI: 0
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
 
-app-benchmarks/stress
-  DeprecatedEAPI: version 0.18.6: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.0.0: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 0
+lxqt-base/liblxqt
+  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
 
-app-benchmarks/sysbench
-  DeprecatedEAPI: version 0.4.12-r1: uses deprecated EAPI: 2
+lxqt-base/liblxqt-mount
+  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
 
-app-benchmarks/tiobench
-  DeprecatedEAPI: version 0.3.3-r2: uses deprecated EAPI: 0
+lxqt-base/libsysstat
+  DroppedKeywordWarning: version 0.2.0: keywords dropped: arm
 
-app-benchmarks/volanomark
-  DeprecatedEAPI: version 2.5.0.9: uses deprecated EAPI: 0
+lxqt-base/lxqt-about
+  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
+
+lxqt-base/lxqt-common
+  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
+
+lxqt-base/lxqt-config
+  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
+
+lxqt-base/lxqt-globalkeys
+  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
+
+lxqt-base/lxqt-meta
+  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
+
+lxqt-base/lxqt-notificationd
+  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
+
+lxqt-base/lxqt-openssh-askpass
+  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
+
+lxqt-base/lxqt-panel
+  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
+
+lxqt-base/lxqt-policykit
+  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
+
+lxqt-base/lxqt-powermanagement
+  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
+
+lxqt-base/lxqt-qtplugin
+  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
+
+lxqt-base/lxqt-runner
+  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
+
+lxqt-base/lxqt-session
+  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch

@@ -52,7 +52,7 @@
 </pre></td></tr>
             <tr class="" id="l6"><td><a href="#l6"><span>6</span></a></td><td><pre>+ set +x
 </pre></td></tr>
-            <tr class="" id="l7"><td><a href="#l7"><span>7</span></a></td><td><pre>+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-java/*' 'media-video/*' 'media-fonts/*' 'net-mail/*' 'dev-embedded/*' 'mail-client/*' 'sci-visualization/*' 'sys-firmware/*' 'mail-mta/*' 'java-virtuals/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
+            <tr class="" id="l7"><td><a href="#l7"><span>7</span></a></td><td><pre>+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-java/*' 'media-video/*' 'media-fonts/*' 'net-mail/*' 'dev-embedded/*' 'mail-client/*' 'games-strategy/*' 'net-nds/*' 'mail-mta/*' 'java-virtuals/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 </pre></td></tr>
             <tr class="" id="l8"><td><a href="#l8"><span>8</span></a></td><td><pre>/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
 </pre></td></tr>
@@ -5698,257 +5698,351 @@
 </pre></td></tr>
             <tr class="" id="l2829"><td><a href="#l2829"><span>2829</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2830"><td><a href="#l2830"><span>2830</span></a></td><td><pre>sci-visualization/gcalc
+            <tr class="" id="l2830"><td><a href="#l2830"><span>2830</span></a></td><td><pre>games-strategy/attal
 </pre></td></tr>
-            <tr class="" id="l2831"><td><a href="#l2831"><span>2831</span></a></td><td><pre>  MissingChksum: version 3.1_rc1: "GCalc-3.1-rc1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+            <tr class="" id="l2831"><td><a href="#l2831"><span>2831</span></a></td><td><pre>  DeprecatedEAPI: version 0.10.1: uses deprecated EAPI: 2
 </pre></td></tr>
-            <tr class="" id="l2832"><td><a href="#l2832"><span>2832</span></a></td><td><pre>
+            <tr class="" id="l2832"><td><a href="#l2832"><span>2832</span></a></td><td><pre>  MissingChksum: version 0.10.1: "attal-src-0.10.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l2833"><td><a href="#l2833"><span>2833</span></a></td><td><pre>sci-visualization/ggobi
+            <tr class="" id="l2833"><td><a href="#l2833"><span>2833</span></a></td><td><pre>  MissingChksum: version 0.10.1: "themes-0.10.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l2834"><td><a href="#l2834"><span>2834</span></a></td><td><pre>  DeprecatedEAPI: version 2.1.8: uses deprecated EAPI: 2
+            <tr class="" id="l2834"><td><a href="#l2834"><span>2834</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2835"><td><a href="#l2835"><span>2835</span></a></td><td><pre>  MissingChksum: version 2.1.8: "ggobi-2.1.8.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+            <tr class="" id="l2835"><td><a href="#l2835"><span>2835</span></a></td><td><pre>games-strategy/coldwar
 </pre></td></tr>
-            <tr class="" id="l2836"><td><a href="#l2836"><span>2836</span></a></td><td><pre>
+            <tr class="" id="l2836"><td><a href="#l2836"><span>2836</span></a></td><td><pre>  MissingChksum: version 1.0.1-r1: "coldwar-1.0-1.0.1-x86.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l2837"><td><a href="#l2837"><span>2837</span></a></td><td><pre>sci-visualization/gri
+            <tr class="" id="l2837"><td><a href="#l2837"><span>2837</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2838"><td><a href="#l2838"><span>2838</span></a></td><td><pre>  DeprecatedEAPI: version 2.12.19: uses deprecated EAPI: 2
+            <tr class="" id="l2838"><td><a href="#l2838"><span>2838</span></a></td><td><pre>games-strategy/darwinia-demo
 </pre></td></tr>
-            <tr class="" id="l2839"><td><a href="#l2839"><span>2839</span></a></td><td><pre>
+            <tr class="" id="l2839"><td><a href="#l2839"><span>2839</span></a></td><td><pre>  MissingChksum: version 1.3.0: "darwinia-demo2-1.3.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l2840"><td><a href="#l2840"><span>2840</span></a></td><td><pre>sci-visualization/kst
+            <tr class="" id="l2840"><td><a href="#l2840"><span>2840</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2841"><td><a href="#l2841"><span>2841</span></a></td><td><pre>  NonExistentDeps: version 2.0.7: depset depends: nonexistent atoms [ &lt;dev-qt/qtgui-4.8.5:4 ]
+            <tr class="" id="l2841"><td><a href="#l2841"><span>2841</span></a></td><td><pre>games-strategy/heroes3
 </pre></td></tr>
-            <tr class="" id="l2842"><td><a href="#l2842"><span>2842</span></a></td><td><pre>  NonExistentDeps: version 2.0.7: depset rdepends: nonexistent atoms [ &lt;dev-qt/qtgui-4.8.5:4 ]
+            <tr class="" id="l2842"><td><a href="#l2842"><span>2842</span></a></td><td><pre>  MissingChksum: version 1.3.1a-r2: "heroes3-1.3.1a-cdrom-x86.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l2843"><td><a href="#l2843"><span>2843</span></a></td><td><pre>
+            <tr class="" id="l2843"><td><a href="#l2843"><span>2843</span></a></td><td><pre>  MissingChksum: version 1.3.1a-r2: "heroes3-1.3.1a-ppc.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l2844"><td><a href="#l2844"><span>2844</span></a></td><td><pre>sci-visualization/pyxplot
+            <tr class="" id="l2844"><td><a href="#l2844"><span>2844</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2845"><td><a href="#l2845"><span>2845</span></a></td><td><pre>  DeprecatedEAPI: version 0.7.1: uses deprecated EAPI: 2
+            <tr class="" id="l2845"><td><a href="#l2845"><span>2845</span></a></td><td><pre>games-strategy/knights-demo
 </pre></td></tr>
-            <tr class="" id="l2846"><td><a href="#l2846"><span>2846</span></a></td><td><pre>  DeprecatedEclass: version 0.7.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l2846"><td><a href="#l2846"><span>2846</span></a></td><td><pre>  MissingChksum: version 1.32-r1: "knights-demo-1.32.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l2847"><td><a href="#l2847"><span>2847</span></a></td><td><pre>  MissingChksum: version 0.7.1: "pyxplot_0.7.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+            <tr class="" id="l2847"><td><a href="#l2847"><span>2847</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2848"><td><a href="#l2848"><span>2848</span></a></td><td><pre>
+            <tr class="" id="l2848"><td><a href="#l2848"><span>2848</span></a></td><td><pre>games-strategy/openra
 </pre></td></tr>
-            <tr class="" id="l2849"><td><a href="#l2849"><span>2849</span></a></td><td><pre>sci-visualization/spyview
+            <tr class="" id="l2849"><td><a href="#l2849"><span>2849</span></a></td><td><pre>  DeprecatedEclass: version 20120630: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
 </pre></td></tr>
-            <tr class="" id="l2850"><td><a href="#l2850"><span>2850</span></a></td><td><pre>  DroppedKeywordWarning: version 20130823: keywords dropped: amd64
+            <tr class="" id="l2850"><td><a href="#l2850"><span>2850</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2851"><td><a href="#l2851"><span>2851</span></a></td><td><pre>
+            <tr class="" id="l2851"><td><a href="#l2851"><span>2851</span></a></td><td><pre>games-strategy/revenge-of-the-titans
 </pre></td></tr>
-            <tr class="" id="l2852"><td><a href="#l2852"><span>2852</span></a></td><td><pre>sci-visualization/veusz
+            <tr class="" id="l2852"><td><a href="#l2852"><span>2852</span></a></td><td><pre>  MissingChksum: version 1.80.12: "revenge-of-the-titans-1.80.12-amd64.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l2853"><td><a href="#l2853"><span>2853</span></a></td><td><pre>  DeprecatedEAPI: version 1.11: uses deprecated EAPI: 3
+            <tr class="" id="l2853"><td><a href="#l2853"><span>2853</span></a></td><td><pre>  MissingChksum: version 1.80.12: "revenge-of-the-titans-1.80.12-i386.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l2854"><td><a href="#l2854"><span>2854</span></a></td><td><pre>  DeprecatedEclass: version 1.11: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l2854"><td><a href="#l2854"><span>2854</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2855"><td><a href="#l2855"><span>2855</span></a></td><td><pre>  MissingChksum: version 1.11: "veusz-1.11.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+            <tr class="" id="l2855"><td><a href="#l2855"><span>2855</span></a></td><td><pre>games-strategy/xbattle
 </pre></td></tr>
-            <tr class="" id="l2856"><td><a href="#l2856"><span>2856</span></a></td><td><pre>
+            <tr class="" id="l2856"><td><a href="#l2856"><span>2856</span></a></td><td><pre>  MissingChksum: version 5.4.1: "xbattle-5.4.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l2857"><td><a href="#l2857"><span>2857</span></a></td><td><pre>sci-visualization/xds-viewer
+            <tr class="" id="l2857"><td><a href="#l2857"><span>2857</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2858"><td><a href="#l2858"><span>2858</span></a></td><td><pre>  MissingChksum: version 0.6: "xds-viewer-0.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+            <tr class="" id="l2858"><td><a href="#l2858"><span>2858</span></a></td><td><pre>games-strategy/xbattleai
 </pre></td></tr>
-            <tr class="" id="l2859"><td><a href="#l2859"><span>2859</span></a></td><td><pre>
+            <tr class="" id="l2859"><td><a href="#l2859"><span>2859</span></a></td><td><pre>  MissingChksum: version 1.2.2-r1: "xbattleai-1.2.2.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l2860"><td><a href="#l2860"><span>2860</span></a></td><td><pre>sci-visualization/xgraph
+            <tr class="" id="l2860"><td><a href="#l2860"><span>2860</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
 </pre></td></tr>
-            <tr class="" id="l2861"><td><a href="#l2861"><span>2861</span></a></td><td><pre>  DeprecatedEAPI: version 12.1-r2: uses deprecated EAPI: 3
+            <tr class="" id="l2861"><td><a href="#l2861"><span>2861</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
 </pre></td></tr>
-            <tr class="" id="l2862"><td><a href="#l2862"><span>2862</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
+            <tr class="" id="l2862"><td><a href="#l2862"><span>2862</span></a></td><td><pre>               : refetch
 </pre></td></tr>
-            <tr class="" id="l2863"><td><a href="#l2863"><span>2863</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+            <tr class="" id="l2863"><td><a href="#l2863"><span>2863</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
 </pre></td></tr>
-            <tr class="" id="l2864"><td><a href="#l2864"><span>2864</span></a></td><td><pre>               : refetch
+            <tr class="" id="l2864"><td><a href="#l2864"><span>2864</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
 </pre></td></tr>
-            <tr class="" id="l2865"><td><a href="#l2865"><span>2865</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
+            <tr class="" id="l2865"><td><a href="#l2865"><span>2865</span></a></td><td><pre>               : refetch
 </pre></td></tr>
-            <tr class="" id="l2866"><td><a href="#l2866"><span>2866</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+            <tr class="" id="l2866"><td><a href="#l2866"><span>2866</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2867"><td><a href="#l2867"><span>2867</span></a></td><td><pre>               : refetch
+            <tr class="" id="l2867"><td><a href="#l2867"><span>2867</span></a></td><td><pre>net-nds/389-admin
 </pre></td></tr>
-            <tr class="" id="l2868"><td><a href="#l2868"><span>2868</span></a></td><td><pre>
+            <tr class="" id="l2868"><td><a href="#l2868"><span>2868</span></a></td><td><pre>  NonExistentDeps: version 1.1.31: depset depends: nonexistent atoms [ &lt;=dev-libs/nspr-4.8.3-r3 ]
 </pre></td></tr>
-            <tr class="" id="l2869"><td><a href="#l2869"><span>2869</span></a></td><td><pre>sys-firmware/iwl1000-ucode
+            <tr class="" id="l2869"><td><a href="#l2869"><span>2869</span></a></td><td><pre>  NonExistentDeps: version 1.1.31: depset rdepends: nonexistent atoms [ &lt;=dev-libs/nspr-4.8.3-r3 ]
 </pre></td></tr>
-            <tr class="" id="l2870"><td><a href="#l2870"><span>2870</span></a></td><td><pre>  DroppedKeywordWarning: version 128.50.3.1: keywords dropped: amd64, x86
+            <tr class="" id="l2870"><td><a href="#l2870"><span>2870</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2871"><td><a href="#l2871"><span>2871</span></a></td><td><pre>  MissingChksum: version 128.50.3.1: "iwlwifi-1000-ucode-128.50.3.1.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+            <tr class="" id="l2871"><td><a href="#l2871"><span>2871</span></a></td><td><pre>net-nds/gosa-core
 </pre></td></tr>
-            <tr class="" id="l2872"><td><a href="#l2872"><span>2872</span></a></td><td><pre>
+            <tr class="" id="l2872"><td><a href="#l2872"><span>2872</span></a></td><td><pre>  DeprecatedEAPI: version 2.6.10: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l2873"><td><a href="#l2873"><span>2873</span></a></td><td><pre>sys-firmware/iwl6000-ucode
+            <tr class="" id="l2873"><td><a href="#l2873"><span>2873</span></a></td><td><pre>  DeprecatedEAPI: version 2.6.11: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l2874"><td><a href="#l2874"><span>2874</span></a></td><td><pre>  DeprecatedEAPI: version 9.221.4.1: uses deprecated EAPI: 0
+            <tr class="" id="l2874"><td><a href="#l2874"><span>2874</span></a></td><td><pre>  MissingChksum: version 2.6.10: "gosa-core-2.6.10.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l2875"><td><a href="#l2875"><span>2875</span></a></td><td><pre>
+            <tr class="" id="l2875"><td><a href="#l2875"><span>2875</span></a></td><td><pre>  MissingChksum: version 2.6.11: "gosa-core-2.6.11.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l2876"><td><a href="#l2876"><span>2876</span></a></td><td><pre>sys-firmware/iwl6005-ucode
+            <tr class="" id="l2876"><td><a href="#l2876"><span>2876</span></a></td><td><pre>  MissingChksum: version 2.6.12: "gosa-core-2.6.12.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l2877"><td><a href="#l2877"><span>2877</span></a></td><td><pre>  DeprecatedEAPI: version 17.168.5.3: uses deprecated EAPI: 0
+            <tr class="" id="l2877"><td><a href="#l2877"><span>2877</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2878"><td><a href="#l2878"><span>2878</span></a></td><td><pre>  DeprecatedEAPI: version 18.168.6.1: uses deprecated EAPI: 0
+            <tr class="" id="l2878"><td><a href="#l2878"><span>2878</span></a></td><td><pre>net-nds/gosa-plugin-mail
 </pre></td></tr>
-            <tr class="" id="l2879"><td><a href="#l2879"><span>2879</span></a></td><td><pre>
+            <tr class="" id="l2879"><td><a href="#l2879"><span>2879</span></a></td><td><pre>  DeprecatedEAPI: version 2.6.10: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l2880"><td><a href="#l2880"><span>2880</span></a></td><td><pre>sys-firmware/iwl6030-ucode
+            <tr class="" id="l2880"><td><a href="#l2880"><span>2880</span></a></td><td><pre>  DeprecatedEAPI: version 2.6.11: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l2881"><td><a href="#l2881"><span>2881</span></a></td><td><pre>  DeprecatedEAPI: version 17.168.5.2: uses deprecated EAPI: 0
+            <tr class="" id="l2881"><td><a href="#l2881"><span>2881</span></a></td><td><pre>  MissingChksum: version 2.6.10: "gosa-plugin-mail-2.6.10.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 </pre></td></tr>
-            <tr class="" id="l2882"><td><a href="#l2882"><span>2882</span></a></td><td><pre>  DeprecatedEAPI: version 18.168.6.1: uses deprecated EAPI: 0
+            <tr class="" id="l2882"><td><a href="#l2882"><span>2882</span></a></td><td><pre>  MissingChksum: version 2.6.11: "gosa-plugin-mail-2.6.11.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 </pre></td></tr>
-            <tr class="" id="l2883"><td><a href="#l2883"><span>2883</span></a></td><td><pre>  MissingChksum: version 17.168.5.2: "iwlwifi-6000g2b-ucode-17.168.5.2.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+            <tr class="" id="l2883"><td><a href="#l2883"><span>2883</span></a></td><td><pre>  MissingChksum: version 2.6.12: "gosa-plugins-mail-2.6.12.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 </pre></td></tr>
-            <tr class="" id="l2884"><td><a href="#l2884"><span>2884</span></a></td><td><pre>  MissingChksum: version 18.168.6.1: "iwlwifi-6000g2b-ucode-18.168.6.1.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+            <tr class="" id="l2884"><td><a href="#l2884"><span>2884</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2885"><td><a href="#l2885"><span>2885</span></a></td><td><pre>
+            <tr class="" id="l2885"><td><a href="#l2885"><span>2885</span></a></td><td><pre>net-nds/gosa-plugin-samba
 </pre></td></tr>
-            <tr class="" id="l2886"><td><a href="#l2886"><span>2886</span></a></td><td><pre>sys-firmware/iwl6050-ucode
+            <tr class="" id="l2886"><td><a href="#l2886"><span>2886</span></a></td><td><pre>  DeprecatedEAPI: version 2.6.10: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l2887"><td><a href="#l2887"><span>2887</span></a></td><td><pre>  DeprecatedEAPI: version 9.201.4.1: uses deprecated EAPI: 0
+            <tr class="" id="l2887"><td><a href="#l2887"><span>2887</span></a></td><td><pre>  DeprecatedEAPI: version 2.6.11: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l2888"><td><a href="#l2888"><span>2888</span></a></td><td><pre>  DeprecatedEAPI: version 41.28.5.1: uses deprecated EAPI: 0
+            <tr class="" id="l2888"><td><a href="#l2888"><span>2888</span></a></td><td><pre>  MissingChksum: version 2.6.10: "gosa-plugin-samba-2.6.10.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 </pre></td></tr>
-            <tr class="" id="l2889"><td><a href="#l2889"><span>2889</span></a></td><td><pre>  MissingChksum: version 9.201.4.1: "iwlwifi-6050-ucode-9.201.4.1.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+            <tr class="" id="l2889"><td><a href="#l2889"><span>2889</span></a></td><td><pre>  MissingChksum: version 2.6.11: "gosa-plugin-samba-2.6.11.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 </pre></td></tr>
-            <tr class="" id="l2890"><td><a href="#l2890"><span>2890</span></a></td><td><pre>  MissingChksum: version 41.28.5.1: "iwlwifi-6050-ucode-41.28.5.1.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+            <tr class="" id="l2890"><td><a href="#l2890"><span>2890</span></a></td><td><pre>  MissingChksum: version 2.6.12: "gosa-plugins-samba-2.6.12.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 </pre></td></tr>
             <tr class="" id="l2891"><td><a href="#l2891"><span>2891</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2892"><td><a href="#l2892"><span>2892</span></a></td><td><pre>sys-firmware/sigrok-firmware-fx2lafw
+            <tr class="" id="l2892"><td><a href="#l2892"><span>2892</span></a></td><td><pre>net-nds/gosa-plugin-systems
 </pre></td></tr>
-            <tr class="" id="l2893"><td><a href="#l2893"><span>2893</span></a></td><td><pre>  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+            <tr class="" id="l2893"><td><a href="#l2893"><span>2893</span></a></td><td><pre>  DeprecatedEAPI: version 2.6.10: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l2894"><td><a href="#l2894"><span>2894</span></a></td><td><pre>
+            <tr class="" id="l2894"><td><a href="#l2894"><span>2894</span></a></td><td><pre>  DeprecatedEAPI: version 2.6.11: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l2895"><td><a href="#l2895"><span>2895</span></a></td><td><pre>sys-firmware/vgabios
+            <tr class="" id="l2895"><td><a href="#l2895"><span>2895</span></a></td><td><pre>  MissingChksum: version 2.6.10: "gosa-plugin-systems-2.6.10.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 </pre></td></tr>
-            <tr class="" id="l2896"><td><a href="#l2896"><span>2896</span></a></td><td><pre>  DroppedKeywordWarning: version 0.7a: keywords dropped: ppc, ppc64
+            <tr class="" id="l2896"><td><a href="#l2896"><span>2896</span></a></td><td><pre>  MissingChksum: version 2.6.11: "gosa-plugin-systems-2.6.11.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 </pre></td></tr>
-            <tr class="" id="l2897"><td><a href="#l2897"><span>2897</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
+            <tr class="" id="l2897"><td><a href="#l2897"><span>2897</span></a></td><td><pre>  MissingChksum: version 2.6.12: "gosa-plugins-systems-2.6.12.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 </pre></td></tr>
-            <tr class="" id="l2898"><td><a href="#l2898"><span>2898</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+            <tr class="" id="l2898"><td><a href="#l2898"><span>2898</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2899"><td><a href="#l2899"><span>2899</span></a></td><td><pre>               : refetch
+            <tr class="" id="l2899"><td><a href="#l2899"><span>2899</span></a></td><td><pre>net-nds/jxplorer
 </pre></td></tr>
-            <tr class="" id="l2900"><td><a href="#l2900"><span>2900</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
+            <tr class="" id="l2900"><td><a href="#l2900"><span>2900</span></a></td><td><pre>  DeprecatedEAPI: version 3.2: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l2901"><td><a href="#l2901"><span>2901</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+            <tr class="" id="l2901"><td><a href="#l2901"><span>2901</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2902"><td><a href="#l2902"><span>2902</span></a></td><td><pre>               : refetch
+            <tr class="" id="l2902"><td><a href="#l2902"><span>2902</span></a></td><td><pre>net-nds/lat
 </pre></td></tr>
-            <tr class="" id="l2903"><td><a href="#l2903"><span>2903</span></a></td><td><pre>
+            <tr class="" id="l2903"><td><a href="#l2903"><span>2903</span></a></td><td><pre>  DeprecatedEclass: version 1.2.3: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
 </pre></td></tr>
-            <tr class="" id="l2904"><td><a href="#l2904"><span>2904</span></a></td><td><pre>mail-mta/courier
+            <tr class="" id="l2904"><td><a href="#l2904"><span>2904</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2905"><td><a href="#l2905"><span>2905</span></a></td><td><pre>  DeprecatedEAPI: version 0.71: uses deprecated EAPI: 0
+            <tr class="" id="l2905"><td><a href="#l2905"><span>2905</span></a></td><td><pre>net-nds/ldapvi
 </pre></td></tr>
-            <tr class="" id="l2906"><td><a href="#l2906"><span>2906</span></a></td><td><pre>  DeprecatedEAPI: version 0.74.0: uses deprecated EAPI: 0
+            <tr class="" id="l2906"><td><a href="#l2906"><span>2906</span></a></td><td><pre>  DeprecatedEAPI: version 1.7-r1: uses deprecated EAPI: 2
 </pre></td></tr>
-            <tr class="" id="l2907"><td><a href="#l2907"><span>2907</span></a></td><td><pre>  DeprecatedEAPI: version 0.74.1: uses deprecated EAPI: 0
+            <tr class="" id="l2907"><td><a href="#l2907"><span>2907</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2908"><td><a href="#l2908"><span>2908</span></a></td><td><pre>  DeprecatedEAPI: version 0.74.1-r1: uses deprecated EAPI: 0
+            <tr class="" id="l2908"><td><a href="#l2908"><span>2908</span></a></td><td><pre>net-nds/led
 </pre></td></tr>
-            <tr class="" id="l2909"><td><a href="#l2909"><span>2909</span></a></td><td><pre>  DroppedKeywordWarning: version 0.74.0: keywords dropped: alpha, ia64, ppc, sparc
+            <tr class="" id="l2909"><td><a href="#l2909"><span>2909</span></a></td><td><pre>  DeprecatedEAPI: version 1.111: uses deprecated EAPI: 0
 </pre></td></tr>
             <tr class="" id="l2910"><td><a href="#l2910"><span>2910</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2911"><td><a href="#l2911"><span>2911</span></a></td><td><pre>mail-mta/esmtp
+            <tr class="" id="l2911"><td><a href="#l2911"><span>2911</span></a></td><td><pre>net-nds/nsscache
 </pre></td></tr>
-            <tr class="" id="l2912"><td><a href="#l2912"><span>2912</span></a></td><td><pre>  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 0
+            <tr class="" id="l2912"><td><a href="#l2912"><span>2912</span></a></td><td><pre>  DeprecatedEAPI: version 0.8.8: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l2913"><td><a href="#l2913"><span>2913</span></a></td><td><pre>  MissingChksum: version 1.2: "esmtp-1.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+            <tr class="" id="l2913"><td><a href="#l2913"><span>2913</span></a></td><td><pre>  DeprecatedEclass: version 0.8.8: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
-            <tr class="" id="l2914"><td><a href="#l2914"><span>2914</span></a></td><td><pre>
+            <tr class="" id="l2914"><td><a href="#l2914"><span>2914</span></a></td><td><pre>  DeprecatedEAPI: version 0.21.14: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l2915"><td><a href="#l2915"><span>2915</span></a></td><td><pre>mail-mta/mini-qmail
+            <tr class="" id="l2915"><td><a href="#l2915"><span>2915</span></a></td><td><pre>  DeprecatedEclass: version 0.21.14: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
-            <tr class="" id="l2916"><td><a href="#l2916"><span>2916</span></a></td><td><pre>  DeprecatedEAPI: version 1.05: uses deprecated EAPI: 0
+            <tr class="" id="l2916"><td><a href="#l2916"><span>2916</span></a></td><td><pre>  DeprecatedEclass: version 0.23: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
-            <tr class="" id="l2917"><td><a href="#l2917"><span>2917</span></a></td><td><pre>  DeprecatedEAPI: version 1.05-r1: uses deprecated EAPI: 0
+            <tr class="" id="l2917"><td><a href="#l2917"><span>2917</span></a></td><td><pre>  MissingChksum: version 0.8.8: "nsscache-0.8.8.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l2918"><td><a href="#l2918"><span>2918</span></a></td><td><pre>  DeprecatedEAPI: version 1.06: uses deprecated EAPI: 0
+            <tr class="" id="l2918"><td><a href="#l2918"><span>2918</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2919"><td><a href="#l2919"><span>2919</span></a></td><td><pre>
+            <tr class="" id="l2919"><td><a href="#l2919"><span>2919</span></a></td><td><pre>net-nds/openldap
 </pre></td></tr>
-            <tr class="" id="l2920"><td><a href="#l2920"><span>2920</span></a></td><td><pre>mail-mta/msmtp
+            <tr class="" id="l2920"><td><a href="#l2920"><span>2920</span></a></td><td><pre>  NonExistentDeps: version 2.3.43-r3: depset depends: nonexistent atoms [ &lt;dev-lang/perl-5.16 ]
 </pre></td></tr>
-            <tr class="" id="l2921"><td><a href="#l2921"><span>2921</span></a></td><td><pre>  DeprecatedEclass: version 1.4.31-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l2921"><td><a href="#l2921"><span>2921</span></a></td><td><pre>  NonExistentDeps: version 2.3.43-r3: depset rdepends: nonexistent atoms [ &lt;dev-lang/perl-5.16 ]
 </pre></td></tr>
-            <tr class="" id="l2922"><td><a href="#l2922"><span>2922</span></a></td><td><pre>
+            <tr class="" id="l2922"><td><a href="#l2922"><span>2922</span></a></td><td><pre>  DeprecatedEAPI: version 2.3.43-r3: uses deprecated EAPI: 2
 </pre></td></tr>
-            <tr class="" id="l2923"><td><a href="#l2923"><span>2923</span></a></td><td><pre>mail-mta/netqmail
+            <tr class="" id="l2923"><td><a href="#l2923"><span>2923</span></a></td><td><pre>  NonExistentDeps: version 2.3.43-r4: depset depends: nonexistent atoms [ &lt;dev-lang/perl-5.16 ]
 </pre></td></tr>
-            <tr class="" id="l2924"><td><a href="#l2924"><span>2924</span></a></td><td><pre>  DeprecatedEAPI: version 1.06: uses deprecated EAPI: 0
+            <tr class="" id="l2924"><td><a href="#l2924"><span>2924</span></a></td><td><pre>  NonExistentDeps: version 2.3.43-r4: depset rdepends: nonexistent atoms [ &lt;dev-lang/perl-5.16 ]
 </pre></td></tr>
-            <tr class="" id="l2925"><td><a href="#l2925"><span>2925</span></a></td><td><pre>
+            <tr class="" id="l2925"><td><a href="#l2925"><span>2925</span></a></td><td><pre>  DeprecatedEAPI: version 2.3.43-r4: uses deprecated EAPI: 2
 </pre></td></tr>
-            <tr class="" id="l2926"><td><a href="#l2926"><span>2926</span></a></td><td><pre>mail-mta/postfix
+            <tr class="" id="l2926"><td><a href="#l2926"><span>2926</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2927"><td><a href="#l2927"><span>2927</span></a></td><td><pre>  DroppedKeywordWarning: version 2.11.6: keywords dropped: mips, s390
+            <tr class="" id="l2927"><td><a href="#l2927"><span>2927</span></a></td><td><pre>net-nds/phpldapadmin
 </pre></td></tr>
-            <tr class="" id="l2928"><td><a href="#l2928"><span>2928</span></a></td><td><pre>
+            <tr class="" id="l2928"><td><a href="#l2928"><span>2928</span></a></td><td><pre>  NonExistentDeps: version 1.2.3: depset rdepends: nonexistent atoms [ &lt;dev-lang/php-5.3 ]
 </pre></td></tr>
-            <tr class="" id="l2929"><td><a href="#l2929"><span>2929</span></a></td><td><pre>mail-mta/qmail-ldap
+            <tr class="" id="l2929"><td><a href="#l2929"><span>2929</span></a></td><td><pre>  NonExistentDeps: version 1.2.3-r1: depset rdepends: nonexistent atoms [ &lt;dev-lang/php-5.3 ]
 </pre></td></tr>
-            <tr class="" id="l2930"><td><a href="#l2930"><span>2930</span></a></td><td><pre>  DeprecatedEAPI: version 1.03-r8: uses deprecated EAPI: 0
+            <tr class="" id="l2930"><td><a href="#l2930"><span>2930</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2931"><td><a href="#l2931"><span>2931</span></a></td><td><pre>  MissingChksum: version 1.03-r8: "qmail-1.03.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+            <tr class="" id="l2931"><td><a href="#l2931"><span>2931</span></a></td><td><pre>net-nds/portmap
 </pre></td></tr>
-            <tr class="" id="l2932"><td><a href="#l2932"><span>2932</span></a></td><td><pre>  MissingChksum: version 1.03-r8: "genqmail-20080406.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+            <tr class="" id="l2932"><td><a href="#l2932"><span>2932</span></a></td><td><pre>  DeprecatedEAPI: version 6.0: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l2933"><td><a href="#l2933"><span>2933</span></a></td><td><pre>  MissingChksum: version 1.03-r8: "qmail-ldap-1.03-20060201.patch.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+            <tr class="" id="l2933"><td><a href="#l2933"><span>2933</span></a></td><td><pre>  DeprecatedEAPI: version 9999: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l2934"><td><a href="#l2934"><span>2934</span></a></td><td><pre>  MissingChksum: version 1.03-r8: "qmail-ldap-1.03-20060201-controls20060401d.patch" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+            <tr class="" id="l2934"><td><a href="#l2934"><span>2934</span></a></td><td><pre>  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 </pre></td></tr>
-            <tr class="" id="l2935"><td><a href="#l2935"><span>2935</span></a></td><td><pre>  MissingChksum: version 1.03-r8: "qmail-ldap-1.03-queue-custom-error.patch" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+            <tr class="" id="l2935"><td><a href="#l2935"><span>2935</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2936"><td><a href="#l2936"><span>2936</span></a></td><td><pre>  MissingChksum: version 1.03-r8: "qmail-spp-0.42.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+            <tr class="" id="l2936"><td><a href="#l2936"><span>2936</span></a></td><td><pre>net-nds/rpcbind
 </pre></td></tr>
-            <tr class="" id="l2937"><td><a href="#l2937"><span>2937</span></a></td><td><pre>  MissingChksum: version 1.03-r8: "qmail-ldap-1.03-spp-0.42.patch" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+            <tr class="" id="l2937"><td><a href="#l2937"><span>2937</span></a></td><td><pre>  DeprecatedEAPI: version 0.2.0-r1: uses deprecated EAPI: 2
 </pre></td></tr>
             <tr class="" id="l2938"><td><a href="#l2938"><span>2938</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2939"><td><a href="#l2939"><span>2939</span></a></td><td><pre>mail-mta/qpsmtpd
+            <tr class="" id="l2939"><td><a href="#l2939"><span>2939</span></a></td><td><pre>net-nds/smbldap-tools
 </pre></td></tr>
-            <tr class="" id="l2940"><td><a href="#l2940"><span>2940</span></a></td><td><pre>  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+            <tr class="" id="l2940"><td><a href="#l2940"><span>2940</span></a></td><td><pre>  MissingChksum: version 0.9.8: "smbldap-tools-0.9.8.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l2941"><td><a href="#l2941"><span>2941</span></a></td><td><pre>  DroppedKeywordWarning: version 0.95: keywords dropped: amd64, x86
+            <tr class="" id="l2941"><td><a href="#l2941"><span>2941</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2942"><td><a href="#l2942"><span>2942</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
+            <tr class="" id="l2942"><td><a href="#l2942"><span>2942</span></a></td><td><pre>net-nds/ypserv
 </pre></td></tr>
-            <tr class="" id="l2943"><td><a href="#l2943"><span>2943</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+            <tr class="" id="l2943"><td><a href="#l2943"><span>2943</span></a></td><td><pre>  MissingChksum: version 2.26: "ypserv-2.26.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 </pre></td></tr>
-            <tr class="" id="l2944"><td><a href="#l2944"><span>2944</span></a></td><td><pre>               : refetch
+            <tr class="" id="l2944"><td><a href="#l2944"><span>2944</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
 </pre></td></tr>
-            <tr class="" id="l2945"><td><a href="#l2945"><span>2945</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
+            <tr class="" id="l2945"><td><a href="#l2945"><span>2945</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
 </pre></td></tr>
-            <tr class="" id="l2946"><td><a href="#l2946"><span>2946</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+            <tr class="" id="l2946"><td><a href="#l2946"><span>2946</span></a></td><td><pre>               : refetch
 </pre></td></tr>
-            <tr class="" id="l2947"><td><a href="#l2947"><span>2947</span></a></td><td><pre>               : refetch
+            <tr class="" id="l2947"><td><a href="#l2947"><span>2947</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
 </pre></td></tr>
-            <tr class="" id="l2948"><td><a href="#l2948"><span>2948</span></a></td><td><pre>
+            <tr class="" id="l2948"><td><a href="#l2948"><span>2948</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
 </pre></td></tr>
-            <tr class="" id="l2949"><td><a href="#l2949"><span>2949</span></a></td><td><pre>java-virtuals/javamail
+            <tr class="" id="l2949"><td><a href="#l2949"><span>2949</span></a></td><td><pre>               : refetch
 </pre></td></tr>
-            <tr class="" id="l2950"><td><a href="#l2950"><span>2950</span></a></td><td><pre>  DeprecatedEAPI: version 1.0-r1: uses deprecated EAPI: 0
+            <tr class="" id="l2950"><td><a href="#l2950"><span>2950</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2951"><td><a href="#l2951"><span>2951</span></a></td><td><pre>
+            <tr class="" id="l2951"><td><a href="#l2951"><span>2951</span></a></td><td><pre>mail-mta/courier
 </pre></td></tr>
-            <tr class="" id="l2952"><td><a href="#l2952"><span>2952</span></a></td><td><pre>java-virtuals/servlet-api
+            <tr class="" id="l2952"><td><a href="#l2952"><span>2952</span></a></td><td><pre>  DeprecatedEAPI: version 0.71: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l2953"><td><a href="#l2953"><span>2953</span></a></td><td><pre>  DroppedKeywordWarning: version 3.0-r1: keywords dropped: arm
+            <tr class="" id="l2953"><td><a href="#l2953"><span>2953</span></a></td><td><pre>  DeprecatedEAPI: version 0.74.0: uses deprecated EAPI: 0
+</pre></td></tr>
+            <tr class="" id="l2954"><td><a href="#l2954"><span>2954</span></a></td><td><pre>  DeprecatedEAPI: version 0.74.1: uses deprecated EAPI: 0
+</pre></td></tr>
+            <tr class="" id="l2955"><td><a href="#l2955"><span>2955</span></a></td><td><pre>  DeprecatedEAPI: version 0.74.1-r1: uses deprecated EAPI: 0
+</pre></td></tr>
+            <tr class="" id="l2956"><td><a href="#l2956"><span>2956</span></a></td><td><pre>  DroppedKeywordWarning: version 0.74.0: keywords dropped: alpha, ia64, ppc, sparc
+</pre></td></tr>
+            <tr class="" id="l2957"><td><a href="#l2957"><span>2957</span></a></td><td><pre>
+</pre></td></tr>
+            <tr class="" id="l2958"><td><a href="#l2958"><span>2958</span></a></td><td><pre>mail-mta/esmtp
+</pre></td></tr>
+            <tr class="" id="l2959"><td><a href="#l2959"><span>2959</span></a></td><td><pre>  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 0
+</pre></td></tr>
+            <tr class="" id="l2960"><td><a href="#l2960"><span>2960</span></a></td><td><pre>  MissingChksum: version 1.2: "esmtp-1.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+</pre></td></tr>
+            <tr class="" id="l2961"><td><a href="#l2961"><span>2961</span></a></td><td><pre>
+</pre></td></tr>
+            <tr class="" id="l2962"><td><a href="#l2962"><span>2962</span></a></td><td><pre>mail-mta/mini-qmail
+</pre></td></tr>
+            <tr class="" id="l2963"><td><a href="#l2963"><span>2963</span></a></td><td><pre>  DeprecatedEAPI: version 1.05: uses deprecated EAPI: 0
+</pre></td></tr>
+            <tr class="" id="l2964"><td><a href="#l2964"><span>2964</span></a></td><td><pre>  DeprecatedEAPI: version 1.05-r1: uses deprecated EAPI: 0
+</pre></td></tr>
+            <tr class="" id="l2965"><td><a href="#l2965"><span>2965</span></a></td><td><pre>  DeprecatedEAPI: version 1.06: uses deprecated EAPI: 0
+</pre></td></tr>
+            <tr class="" id="l2966"><td><a href="#l2966"><span>2966</span></a></td><td><pre>
+</pre></td></tr>
+            <tr class="" id="l2967"><td><a href="#l2967"><span>2967</span></a></td><td><pre>mail-mta/msmtp
+</pre></td></tr>
+            <tr class="" id="l2968"><td><a href="#l2968"><span>2968</span></a></td><td><pre>  DeprecatedEclass: version 1.4.31-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+</pre></td></tr>
+            <tr class="" id="l2969"><td><a href="#l2969"><span>2969</span></a></td><td><pre>
+</pre></td></tr>
+            <tr class="" id="l2970"><td><a href="#l2970"><span>2970</span></a></td><td><pre>mail-mta/netqmail
+</pre></td></tr>
+            <tr class="" id="l2971"><td><a href="#l2971"><span>2971</span></a></td><td><pre>  DeprecatedEAPI: version 1.06: uses deprecated EAPI: 0
+</pre></td></tr>
+            <tr class="" id="l2972"><td><a href="#l2972"><span>2972</span></a></td><td><pre>
+</pre></td></tr>
+            <tr class="" id="l2973"><td><a href="#l2973"><span>2973</span></a></td><td><pre>mail-mta/postfix
+</pre></td></tr>
+            <tr class="" id="l2974"><td><a href="#l2974"><span>2974</span></a></td><td><pre>  DroppedKeywordWarning: version 2.11.6: keywords dropped: mips, s390
+</pre></td></tr>
+            <tr class="" id="l2975"><td><a href="#l2975"><span>2975</span></a></td><td><pre>
+</pre></td></tr>
+            <tr class="" id="l2976"><td><a href="#l2976"><span>2976</span></a></td><td><pre>mail-mta/qmail-ldap
+</pre></td></tr>
+            <tr class="" id="l2977"><td><a href="#l2977"><span>2977</span></a></td><td><pre>  DeprecatedEAPI: version 1.03-r8: uses deprecated EAPI: 0
+</pre></td></tr>
+            <tr class="" id="l2978"><td><a href="#l2978"><span>2978</span></a></td><td><pre>  MissingChksum: version 1.03-r8: "qmail-1.03.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+</pre></td></tr>
+            <tr class="" id="l2979"><td><a href="#l2979"><span>2979</span></a></td><td><pre>  MissingChksum: version 1.03-r8: "genqmail-20080406.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+</pre></td></tr>
+            <tr class="" id="l2980"><td><a href="#l2980"><span>2980</span></a></td><td><pre>  MissingChksum: version 1.03-r8: "qmail-ldap-1.03-20060201.patch.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+</pre></td></tr>
+            <tr class="" id="l2981"><td><a href="#l2981"><span>2981</span></a></td><td><pre>  MissingChksum: version 1.03-r8: "qmail-ldap-1.03-20060201-controls20060401d.patch" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+</pre></td></tr>
+            <tr class="" id="l2982"><td><a href="#l2982"><span>2982</span></a></td><td><pre>  MissingChksum: version 1.03-r8: "qmail-ldap-1.03-queue-custom-error.patch" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+</pre></td></tr>
+            <tr class="" id="l2983"><td><a href="#l2983"><span>2983</span></a></td><td><pre>  MissingChksum: version 1.03-r8: "qmail-spp-0.42.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+</pre></td></tr>
+            <tr class="" id="l2984"><td><a href="#l2984"><span>2984</span></a></td><td><pre>  MissingChksum: version 1.03-r8: "qmail-ldap-1.03-spp-0.42.patch" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+</pre></td></tr>
+            <tr class="" id="l2985"><td><a href="#l2985"><span>2985</span></a></td><td><pre>
+</pre></td></tr>
+            <tr class="" id="l2986"><td><a href="#l2986"><span>2986</span></a></td><td><pre>mail-mta/qpsmtpd
+</pre></td></tr>
+            <tr class="" id="l2987"><td><a href="#l2987"><span>2987</span></a></td><td><pre>  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+</pre></td></tr>
+            <tr class="" id="l2988"><td><a href="#l2988"><span>2988</span></a></td><td><pre>  DroppedKeywordWarning: version 0.95: keywords dropped: amd64, x86
+</pre></td></tr>
+            <tr class="" id="l2989"><td><a href="#l2989"><span>2989</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
+</pre></td></tr>
+            <tr class="" id="l2990"><td><a href="#l2990"><span>2990</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+</pre></td></tr>
+            <tr class="" id="l2991"><td><a href="#l2991"><span>2991</span></a></td><td><pre>               : refetch
+</pre></td></tr>
+            <tr class="" id="l2992"><td><a href="#l2992"><span>2992</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
+</pre></td></tr>
+            <tr class="" id="l2993"><td><a href="#l2993"><span>2993</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+</pre></td></tr>
+            <tr class="" id="l2994"><td><a href="#l2994"><span>2994</span></a></td><td><pre>               : refetch
+</pre></td></tr>
+            <tr class="" id="l2995"><td><a href="#l2995"><span>2995</span></a></td><td><pre>
+</pre></td></tr>
+            <tr class="" id="l2996"><td><a href="#l2996"><span>2996</span></a></td><td><pre>java-virtuals/javamail
+</pre></td></tr>
+            <tr class="" id="l2997"><td><a href="#l2997"><span>2997</span></a></td><td><pre>  DeprecatedEAPI: version 1.0-r1: uses deprecated EAPI: 0
+</pre></td></tr>
+            <tr class="" id="l2998"><td><a href="#l2998"><span>2998</span></a></td><td><pre>
+</pre></td></tr>
+            <tr class="" id="l2999"><td><a href="#l2999"><span>2999</span></a></td><td><pre>java-virtuals/servlet-api
+</pre></td></tr>
+            <tr class="" id="l3000"><td><a href="#l3000"><span>3000</span></a></td><td><pre>  DroppedKeywordWarning: version 3.0-r1: keywords dropped: arm
 </pre></td></tr>
 
         </table>
 
-        <address>Generated based on results from 2015-08-25 13:59:04 UTC</address>
+        <address>Generated based on results from 2015-08-25 14:14:00 UTC</address>
     </body>
 </html>

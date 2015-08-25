@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 11 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'sys-apps/*' 'virtual/*' 'www-apps/*' 'gnome-extra/*' 'net-p2p/*' 'gnome-base/*' 'gnustep-apps/*' 'x11-proto/*' 'www-plugins/*' 'mate-extra/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'sys-apps/*' 'virtual/*' 'www-apps/*' 'gnome-extra/*' 'net-p2p/*' 'gnome-base/*' 'games-rpg/*' 'app-benchmarks/*' 'www-plugins/*' 'mate-extra/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1476,137 +1476,144 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-gnustep-apps/aclock
-  MissingChksum: version 0.4.0: "AClock-0.4.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+games-rpg/arx-fatalis-data
+  MissingUri: version 1.21-r2: file setup_arx_fatalis.exe is unfetchable- no URI available, and RESTRICT=fetch isn't set
+  MissingUri: version 1.21-r3: file setup_arx_fatalis_2.0.0.7.exe is unfetchable- no URI available, and RESTRICT=fetch isn't set
 
-gnustep-apps/addresses
-  DeprecatedEAPI: version 0.4.7: uses deprecated EAPI: 0
+games-rpg/eternal-lands
+  DeprecatedEAPI: version 1.9.2: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 1.9.2-r1: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 1.9.3: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 1.9.3-r1: uses deprecated EAPI: 2
+  MissingChksum: version 1.9.2: "elc_1.9.2-20110618.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-gnustep-apps/affiche
-  DeprecatedEAPI: version 0.6.0-r3: uses deprecated EAPI: 0
-  MissingChksum: version 0.6.0-r3: "Affiche-0.6.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+games-rpg/eternal-lands-bloodsucker
+  DeprecatedEAPI: version 3.0: uses deprecated EAPI: 2
+  MissingChksum: version 3.0: "eternal-lands-bloodsucker-3.0.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-gnustep-apps/camera
-  DeprecatedEAPI: version 0.8-r1: uses deprecated EAPI: 0
+games-rpg/eternal-lands-data
+  DeprecatedEAPI: version 1.9.2-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.9.3: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.9.3-r1: uses deprecated EAPI: 2
+  MissingChksum: version 1.9.2-r1: "el_linux_192.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-gnustep-apps/cenon
-  MissingChksum: version 3.9.5: "Cenon-3.9.5.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+games-rpg/lure
+  MissingChksum: version 1.1: "lure-es-1.1.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.1: "lure-fr-1.1.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.1: "lure-de-1.1.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-gnustep-apps/clipbook
-  DeprecatedEAPI: version 0.6.0.8.3-r1: uses deprecated EAPI: 0
-  MissingChksum: version 0.6.0.8.3-r1: "gworkspace-0.8.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+games-rpg/nwmovies
+  DeprecatedEAPI: version 20090223.080954: uses deprecated EAPI: 2
 
-gnustep-apps/displaycalibrator
-  DeprecatedEAPI: version 0.7: uses deprecated EAPI: 0
-  MissingChksum: version 0.7: "displaycalibrator-0.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+games-rpg/nwn
+  MissingChksum: version 1.68-r5: "French_linuxclient168_orig.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.68-r5: "French_linuxclient168_xp1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.68-r5: "French_linuxclient168_xp2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.68-r5: "Italian_linuxclient168_orig.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.68-r5: "Italian_linuxclient168_xp1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.68-r5: "Italian_linuxclient168_xp2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.68-r5: "English_linuxclient168_orig.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.68-r5: "English_linuxclient168_xp1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.68-r5: "English_linuxclient168_xp2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.68-r5: "Spanish_linuxclient168_orig.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.68-r5: "Spanish_linuxclient168_xp1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.68-r5: "Spanish_linuxclient168_xp2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.68-r5: "German_linuxclient168_orig.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.68-r5: "German_linuxclient168_xp1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.68-r5: "German_linuxclient168_xp2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.69-r1: "English_linuxclient169_xp1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.69-r1: "English_linuxclient169_xp2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-gnustep-apps/easydiff
-  DeprecatedEAPI: version 0.4.0: uses deprecated EAPI: 0
-  MissingChksum: version 0.4.0: "EasyDiff-0.4.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+games-rpg/nwn-cep
+  DeprecatedEAPI: version 1.68-r1: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 2.0: uses deprecated EAPI: 2
 
-gnustep-apps/gemas
-  MissingChksum: version 0.3: "Gemas-0.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+games-rpg/nwn-data
+  MissingChksum: version 1.29-r5: "nwresources129.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.29-r5: "nwfrench129.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.29-r5: "nwitalian129.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.29-r5: "nwspanish129.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.29-r5: "nwgerman129.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-gnustep-apps/gmines
-  DeprecatedEAPI: version 0.1-r2: uses deprecated EAPI: 0
-  MissingChksum: version 0.2: "GMines-0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+games-rpg/nwn-penultima
+  DeprecatedEAPI: version 1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1-r1: uses deprecated EAPI: 0
 
-gnustep-apps/gorm
-  MissingChksum: version 1.2.16: "gorm-1.2.16.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+games-rpg/nwn-penultimarerolled
+  DeprecatedEAPI: version 1: uses deprecated EAPI: 0
+  MissingChksum: version 1: "PR0_and_PR1_Penultima_ReRolled_Starter_Pack_v1.4.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1: "PR2_Below_the_R00t.v1.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1: "PR3_Homeland_Security.v1.4.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1: "PR4_Pastor_of_Muppets.v1.1.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1: "PR5_The_Saving_Throw.v1.1.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-gnustep-apps/graphos
-  MissingChksum: version 0.2: "Graphos-0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 0.3: "Graphos-0.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+games-rpg/nwn-shadowlordsdreamcatcherdemon
+  DeprecatedEAPI: version 1: uses deprecated EAPI: 0
 
-gnustep-apps/gshisen
-  DeprecatedEAPI: version 1.3.0: uses deprecated EAPI: 0
-  MissingChksum: version 1.3.0: "GShisen-1.3.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+games-rpg/sacred-gold
+  MissingChksum: version 1.0.01: "sacred-1.0-1.0.01-x86.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
 
-gnustep-apps/gspdf
-  DeprecatedEAPI: version 0.4: uses deprecated EAPI: 0
-  MissingChksum: version 0.4: "GSPdf-0.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 0.5: "GSPdf-0.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+app-benchmarks/acovea
+  DeprecatedEAPI: version 5.1.1-r1: uses deprecated EAPI: 2
 
-gnustep-apps/gwnet
-  DeprecatedEAPI: version 0.1.0.8.2: uses deprecated EAPI: 0
-  MissingChksum: version 0.1.0.8.2: "gworkspace-0.8.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+app-benchmarks/bonnie
+  DeprecatedEAPI: version 2.0.6: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.0.6-r1: uses deprecated EAPI: 2
 
-gnustep-apps/gworkspace
-  DeprecatedEAPI: version 0.9.1: uses deprecated EAPI: 3
+app-benchmarks/bonnie++
+  DeprecatedEAPI: version 1.96: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.96-r1: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 1.97: uses deprecated EAPI: 2
 
-gnustep-apps/lapispuzzle
-  MissingChksum: version 1.2: "LapisPuzzle-1.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+app-benchmarks/contest
+  DeprecatedEAPI: version 0.61: uses deprecated EAPI: 0
 
-gnustep-apps/laternamagica
-  MissingChksum: version 0.4: "LaternaMagica-0.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+app-benchmarks/filebench
+  DeprecatedEAPI: version 1.4.9.1: uses deprecated EAPI: 0
 
-gnustep-apps/pictureframe
+app-benchmarks/forkbomb
+  DeprecatedEAPI: version 1.4: uses deprecated EAPI: 0
+
+app-benchmarks/iozone
+  DeprecatedEAPI: version 3.397: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 3.408: uses deprecated EAPI: 0
+
+app-benchmarks/jmeter
+  DeprecatedEAPI: version 2.0.1-r4: uses deprecated EAPI: 0
+
+app-benchmarks/nbench
+  DeprecatedEAPI: version 2.2.3-r1: uses deprecated EAPI: 2
+
+app-benchmarks/os-autoinst
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+app-benchmarks/piozone
+  DeprecatedEAPI: version 1.0-r3: uses deprecated EAPI: 2
+
+app-benchmarks/pipebench
+  DeprecatedEAPI: version 0.40: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.40-r1: uses deprecated EAPI: 3
+
+app-benchmarks/stress
+  DeprecatedEAPI: version 0.18.6: uses deprecated EAPI: 0
   DeprecatedEAPI: version 1.0.0: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.1.2: uses deprecated EAPI: 0
-  MissingChksum: version 1.0.0: "PictureFrame-1.0.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 1.1.2: "PictureFrame-1.1.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 1.1.3: "PictureFrame-1.1.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 0
 
-gnustep-apps/preferences
-  DeprecatedEAPI: version 1.3.0_pre20061204-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.3.0_pre20100523: uses deprecated EAPI: 3
-  MissingChksum: version 1.3.0_pre20061204-r1: "preferences-1.3.0_pre20061204.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.3.0_pre20100523: "preferences-1.3.0_pre20100523.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-benchmarks/sysbench
+  DeprecatedEAPI: version 0.4.12-r1: uses deprecated EAPI: 2
 
-gnustep-apps/preview
-  DeprecatedEAPI: version 0.8.5-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.9: uses deprecated EAPI: 3
+app-benchmarks/tiobench
+  DeprecatedEAPI: version 0.3.3-r2: uses deprecated EAPI: 0
 
-gnustep-apps/price
-  MissingChksum: version 1.1.0: "PRICE-1.1.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-gnustep-apps/remotedesk
-  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 0
-  MissingChksum: version 0.1: "RemoteDesk-0.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-gnustep-apps/stepulator
-  DeprecatedEAPI: version 1.0-r2: uses deprecated EAPI: 0
-  MissingChksum: version 1.0-r2: "stepulator-gs-1.0.tar.Z" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-gnustep-apps/sudoku
-  DeprecatedEAPI: version 0.7: uses deprecated EAPI: 0
-  MissingChksum: version 0.7: "Sudoku-0.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-gnustep-apps/systempreferences
-  DeprecatedEAPI: version 1.0.2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.1.0: uses deprecated EAPI: 0
-  MissingChksum: version 1.0.2: "SystemPreferences-1.0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.1.0: "SystemPreferences-1.1.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-gnustep-apps/terminal
-  DeprecatedEAPI: version 0.9.7: uses deprecated EAPI: 2
-
-gnustep-apps/textedit
-  DeprecatedEAPI: version 0.95_pre20100427: uses deprecated EAPI: 3
-
-gnustep-apps/zipper
-  DeprecatedEAPI: version 1.3: uses deprecated EAPI: 0
-  MissingChksum: version 1.3: "Zipper-1.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-WARNING pkgcore: metadata.dtd cannot be opened from
-               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
-               : refetch
-WARNING pkgcore: metadata.dtd cannot be opened from
-               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
-               : refetch
-
-x11-proto/dmxproto
-  DeprecatedEAPI: version 2.3.1: uses deprecated EAPI: 3
-  MissingChksum: version 2.3.1: "dmxproto-2.3.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-x11-proto/evieext
-  DeprecatedEAPI: version 1.1.1: uses deprecated EAPI: 3
-  MissingChksum: version 1.1.1: "evieext-1.1.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-x11-proto/fontcacheproto
-  MissingChksum: version 0.1.3: "fontcacheproto-0.1.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-x11-proto/inputproto
-  DroppedKeywordWarning: version 2.3.1: keywords dropped: arm64, m68k
+app-benchmarks/volanomark
+  DeprecatedEAPI: version 2.5.0.9: uses deprecated EAPI: 0
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch

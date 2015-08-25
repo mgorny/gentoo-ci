@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 5 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-libs/*' 'sci-libs/*' 'app-leechcraft/*' 'net-wireless/*' 'sys-block/*' 'dev-cpp/*' 'games-strategy/*' 'net-nds/*' 'kde-plasma/*' 'games-roguelike/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-libs/*' 'sci-libs/*' 'app-leechcraft/*' 'net-wireless/*' 'sys-block/*' 'dev-cpp/*' 'net-dialup/*' 'app-pda/*' 'lxde-base/*' 'games-roguelike/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1402,36 +1402,111 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-games-strategy/attal
-  DeprecatedEAPI: version 0.10.1: uses deprecated EAPI: 2
-  MissingChksum: version 0.10.1: "attal-src-0.10.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 0.10.1: "themes-0.10.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+net-dialup/capidivert
+  DeprecatedEAPI: version 0.0.2: uses deprecated EAPI: 0
 
-games-strategy/coldwar
-  MissingChksum: version 1.0.1-r1: "coldwar-1.0-1.0.1-x86.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+net-dialup/capifwd
+  DeprecatedEAPI: version 0.6.3-r1: uses deprecated EAPI: 0
+  MissingChksum: version 0.6.3-r1: "capifwd-0.6.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-games-strategy/darwinia-demo
-  MissingChksum: version 1.3.0: "darwinia-demo2-1.3.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+net-dialup/cistronradius
+  MissingChksum: version 1.6.8-r1: "radiusd-cistron-1.6.8.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-games-strategy/heroes3
-  MissingChksum: version 1.3.1a-r2: "heroes3-1.3.1a-cdrom-x86.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.3.1a-r2: "heroes3-1.3.1a-ppc.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+net-dialup/dgcmodem
+  DeprecatedEAPI: version 1.10: uses deprecated EAPI: 0
+  MissingChksum: version 1.10: "dgcmodem-1.10.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-games-strategy/knights-demo
-  MissingChksum: version 1.32-r1: "knights-demo-1.32.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+net-dialup/dial
+  DeprecatedEAPI: version 1.2-r1: uses deprecated EAPI: 2
+  MissingChksum: version 1.2-r1: "dial-1.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-games-strategy/openra
-  DeprecatedEclass: version 20120630: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+net-dialup/diald
+  DeprecatedEAPI: version 1.0-r2: uses deprecated EAPI: 0
+  MissingChksum: version 1.0-r2: "diald-1.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-games-strategy/revenge-of-the-titans
-  MissingChksum: version 1.80.12: "revenge-of-the-titans-1.80.12-amd64.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.80.12: "revenge-of-the-titans-1.80.12-i386.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+net-dialup/drdsl
+  DeprecatedEAPI: version 1.2.0: uses deprecated EAPI: 0
+  MissingChksum: version 1.2.0: "drdsl-1.0-1.i586.rpm" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 1.2.0: "drdsl-1.0-1.x86_64.rpm" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-games-strategy/xbattle
-  MissingChksum: version 5.4.1: "xbattle-5.4.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+net-dialup/dwun
+  DeprecatedEAPI: version 0.96e-r2: uses deprecated EAPI: 2
 
-games-strategy/xbattleai
-  MissingChksum: version 1.2.2-r1: "xbattleai-1.2.2.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+net-dialup/freeradius
+  DroppedKeywordWarning: version 3.0.3: keywords dropped: amd64, ppc, ppc64, sparc, x86
+
+net-dialup/freeradius-client
+  DeprecatedEAPI: version 1.1.6: uses deprecated EAPI: 2
+  MissingChksum: version 1.1.6: "freeradius-client-1.1.6.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+net-dialup/globespan-adsl
+  DeprecatedEAPI: version 0.11-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.12: uses deprecated EAPI: 0
+  MissingChksum: version 0.11-r1: "eciadsl-usermode-0.11.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.12: "eciadsl-usermode-0.12.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+net-dialup/hcfpcimodem
+  DeprecatedEAPI: version 1.20: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.21: uses deprecated EAPI: 2
+
+net-dialup/intel-536ep
+  DeprecatedEAPI: version 4.71: uses deprecated EAPI: 0
+  MissingChksum: version 4.71: "intel-536ep-4.71.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+net-dialup/itund
+  DeprecatedEAPI: version 0.3.1: uses deprecated EAPI: 0
+  MissingChksum: version 0.3.1: "itund-0.3.1.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+net-dialup/linux-atm
+  DeprecatedEAPI: version 2.5.0: uses deprecated EAPI: 0
+
+net-dialup/lrzsz
+  DeprecatedEAPI: version 0.12.20-r3: uses deprecated EAPI: 2
+
+net-dialup/mingetty
+  DeprecatedEAPI: version 1.08: uses deprecated EAPI: 0
+  MissingChksum: version 1.08: "mingetty-1.08.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+net-dialup/mwavem
+  DeprecatedEAPI: version 2.0-r1: uses deprecated EAPI: 2
+
+net-dialup/neocon
+  MissingChksum: version 20110228: "neocon-20110228.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+net-dialup/ppp
+  DeprecatedEAPI: version 2.4.4-r25: uses deprecated EAPI: 2
+
+net-dialup/pppconfig
+  DeprecatedEAPI: version 2.3.17-r1: uses deprecated EAPI: 0
+
+net-dialup/qtwvdialer
+  DeprecatedEAPI: version 0.4.4_p20091228: uses deprecated EAPI: 2
+  MissingChksum: version 0.4.4_p20091228: "qtwvdialer-0.4.4_p20091228.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+net-dialup/radiusclient
+  DeprecatedEAPI: version 0.3.2: uses deprecated EAPI: 0
+
+net-dialup/rp-pppoe
+  DeprecatedEAPI: version 3.8-r2: uses deprecated EAPI: 0
+
+net-dialup/sercd
+  MissingChksum: version 3.0.0-r1: "sercd-3.0.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+net-dialup/speedtouch-usb
+  DeprecatedEAPI: version 3.0.1.2-r3: uses deprecated EAPI: 0
+  MissingChksum: version 3.0.1.2-r3: "SpeedTouch330_firmware_3012.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+net-dialup/ueagle-atm
+  DeprecatedEAPI: version 1.1-r3: uses deprecated EAPI: 2
+  MissingChksum: version 1.1-r3: "ueagle-data-src-1.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+net-dialup/ueagle4-atm
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 2
+  MissingChksum: version 1.0: "ueagle4-data-1.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+net-dialup/wvdial
+  DeprecatedEAPI: version 1.61: uses deprecated EAPI: 3
+  MissingChksum: version 1.61: "wvdial-1.61.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
@@ -1439,83 +1514,96 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-net-nds/389-admin
-  NonExistentDeps: version 1.1.31: depset depends: nonexistent atoms [ <=dev-libs/nspr-4.8.3-r3 ]
-  NonExistentDeps: version 1.1.31: depset rdepends: nonexistent atoms [ <=dev-libs/nspr-4.8.3-r3 ]
+app-pda/iripdb
+  DeprecatedEAPI: version 0.1.3b: uses deprecated EAPI: 0
 
-net-nds/gosa-core
-  DeprecatedEAPI: version 2.6.10: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 2.6.11: uses deprecated EAPI: 3
-  MissingChksum: version 2.6.10: "gosa-core-2.6.10.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 2.6.11: "gosa-core-2.6.11.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 2.6.12: "gosa-core-2.6.12.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-pda/jpilot
+  DeprecatedEAPI: version 1.8.0: uses deprecated EAPI: 2
 
-net-nds/gosa-plugin-mail
-  DeprecatedEAPI: version 2.6.10: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 2.6.11: uses deprecated EAPI: 3
-  MissingChksum: version 2.6.10: "gosa-plugin-mail-2.6.10.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 2.6.11: "gosa-plugin-mail-2.6.11.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 2.6.12: "gosa-plugins-mail-2.6.12.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+app-pda/jpilot-backup
+  DeprecatedEAPI: version 0.60: uses deprecated EAPI: 2
 
-net-nds/gosa-plugin-samba
-  DeprecatedEAPI: version 2.6.10: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 2.6.11: uses deprecated EAPI: 3
-  MissingChksum: version 2.6.10: "gosa-plugin-samba-2.6.10.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 2.6.11: "gosa-plugin-samba-2.6.11.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 2.6.12: "gosa-plugins-samba-2.6.12.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+app-pda/jpilot-mail
+  DeprecatedEAPI: version 0.1.7: uses deprecated EAPI: 2
 
-net-nds/gosa-plugin-systems
-  DeprecatedEAPI: version 2.6.10: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 2.6.11: uses deprecated EAPI: 3
-  MissingChksum: version 2.6.10: "gosa-plugin-systems-2.6.10.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 2.6.11: "gosa-plugin-systems-2.6.11.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 2.6.12: "gosa-plugins-systems-2.6.12.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+app-pda/jpilot-plucker
+  DeprecatedEAPI: version 0.02: uses deprecated EAPI: 2
 
-net-nds/jxplorer
-  DeprecatedEAPI: version 3.2: uses deprecated EAPI: 0
+app-pda/jpilot-syncmal
+  DeprecatedEAPI: version 0.81: uses deprecated EAPI: 2
 
-net-nds/lat
-  DeprecatedEclass: version 1.2.3: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+app-pda/libopensync
+  DeprecatedEAPI: version 0.22: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.22-r1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.22-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.36-r2: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.36-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.39-r1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.39-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-net-nds/ldapvi
-  DeprecatedEAPI: version 1.7-r1: uses deprecated EAPI: 2
+app-pda/libopensync-plugin-file
+  DeprecatedEAPI: version 0.22: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 0.36: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 0.39: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
 
-net-nds/led
-  DeprecatedEAPI: version 1.111: uses deprecated EAPI: 0
+app-pda/libopensync-plugin-gnokii
+  DeprecatedEAPI: version 0.22: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.36: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 2
 
-net-nds/nsscache
-  DeprecatedEAPI: version 0.8.8: uses deprecated EAPI: 3
-  DeprecatedEclass: version 0.8.8: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.21.14: uses deprecated EAPI: 3
-  DeprecatedEclass: version 0.21.14: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEclass: version 0.23: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  MissingChksum: version 0.8.8: "nsscache-0.8.8.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-pda/libopensync-plugin-gpe
+  DeprecatedEAPI: version 0.22: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.36: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 2
 
-net-nds/openldap
-  NonExistentDeps: version 2.3.43-r3: depset depends: nonexistent atoms [ <dev-lang/perl-5.16 ]
-  NonExistentDeps: version 2.3.43-r3: depset rdepends: nonexistent atoms [ <dev-lang/perl-5.16 ]
-  DeprecatedEAPI: version 2.3.43-r3: uses deprecated EAPI: 2
-  NonExistentDeps: version 2.3.43-r4: depset depends: nonexistent atoms [ <dev-lang/perl-5.16 ]
-  NonExistentDeps: version 2.3.43-r4: depset rdepends: nonexistent atoms [ <dev-lang/perl-5.16 ]
-  DeprecatedEAPI: version 2.3.43-r4: uses deprecated EAPI: 2
+app-pda/libopensync-plugin-moto
+  NonExistentDeps: version 0.22: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 0.22: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEAPI: version 0.22: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.22: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-net-nds/phpldapadmin
-  NonExistentDeps: version 1.2.3: depset rdepends: nonexistent atoms [ <dev-lang/php-5.3 ]
-  NonExistentDeps: version 1.2.3-r1: depset rdepends: nonexistent atoms [ <dev-lang/php-5.3 ]
+app-pda/libopensync-plugin-palm
+  DeprecatedEAPI: version 0.22: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
 
-net-nds/portmap
-  DeprecatedEAPI: version 6.0: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 0
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+app-pda/libopensync-plugin-python
+  NonExistentDeps: version 0.22: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  NonExistentDeps: version 0.22: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  DeprecatedEAPI: version 0.22: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.22: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 9999: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  NonExistentDeps: version 9999: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-net-nds/rpcbind
-  DeprecatedEAPI: version 0.2.0-r1: uses deprecated EAPI: 2
+app-pda/libopensync-plugin-sunbird
+  DeprecatedEAPI: version 0.22: uses deprecated EAPI: 3
 
-net-nds/smbldap-tools
-  MissingChksum: version 0.9.8: "smbldap-tools-0.9.8.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-pda/libopensync-plugin-vformat
+  DeprecatedEAPI: version 0.39: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
 
-net-nds/ypserv
-  MissingChksum: version 2.26: "ypserv-2.26.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+app-pda/msynctool
+  DeprecatedEAPI: version 0.22: uses deprecated EAPI: 3
+
+app-pda/osynctool
+  DeprecatedEAPI: version 0.39: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
+
+app-pda/p3nfs
+  DeprecatedEAPI: version 5.19-r2: uses deprecated EAPI: 2
+
+app-pda/pilot-link
+  SizeViolation: "files/pilot-link-0.12.5-perl514.patch" exceeds 20k in size; 22730 bytes total
+
+app-pda/synce-core
+  DeprecatedEclass: version 0.16-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+app-pda/synce-sync-engine
+  DeprecatedEclass: version 0.15.1-r3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
@@ -1523,12 +1611,26 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-kde-plasma/plasma-desktop
-  NonExistentDeps: version 5.3.2: depset rdepends: nonexistent atoms [ >=kde-apps/kio-extras-14.12.0:5 ]
+lxde-base/lxde-meta
+  DeprecatedEAPI: version 0.5.5-r4: uses deprecated EAPI: 2
 
-kde-plasma/plasma-workspace
-  NonExistentDeps: version 5.3.2: depset depends: nonexistent atoms [ media-libs/prison:5 ]
-  NonExistentDeps: version 5.3.2: depset rdepends: nonexistent atoms [ media-libs/prison:5 ]
+lxde-base/lxdm
+  DeprecatedEAPI: version 0.4.1-r9: uses deprecated EAPI: 2
+
+lxde-base/lxpanel
+  DroppedKeywordWarning: version 0.8.1: keywords dropped: alpha
+
+lxde-base/lxpolkit
+  MissingChksum: version 0.1.0-r1: "lxpolkit-0.1.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+lxde-base/lxsession
+  DroppedKeywordWarning: version 0.4.9.2: keywords dropped: arm64
+
+lxde-base/lxtask
+  DroppedKeywordWarning: version 0.1.6: keywords dropped: arm64
+
+lxde-base/lxterminal
+  DroppedKeywordWarning: version 0.2.0: keywords dropped: arm64
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
