@@ -1029,7 +1029,7 @@ sys-cluster/openmpi
   DroppedKeywordWarning: version 1.8.7-r1: keywords dropped: alpha, sparc
 
 sys-cluster/openstack-meta
-  NonExistentDeps: version 2014.2.9999: depset rdepends: nonexistent atoms [ ~sys-cluster/neutron-2014.2.9999, ~app-admin/glance-2014.2.9999, ~sys-cluster/nova-2014.2.9999, ~sys-cluster/cinder-2014.2.9999, ~sys-auth/keystone-2014.2.9999 ]
+  NonExistentDeps: version 2014.2.9999: depset rdepends: nonexistent atoms [ ~sys-auth/keystone-2014.2.9999, ~sys-cluster/nova-2014.2.9999, ~sys-cluster/swift-2.2.2, ~app-admin/glance-2014.2.9999, ~sys-cluster/cinder-2014.2.9999, ~sys-cluster/neutron-2014.2.9999 ]
 
 sys-cluster/osc-mpiexec
   DeprecatedEAPI: version 0.83: uses deprecated EAPI: 0
@@ -1056,8 +1056,9 @@ sys-cluster/rgmanager-agents
   MissingChksum: version 3.9.2: "rgmanager-agents-3.9.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 sys-cluster/swift
-  WhitespaceFound: version 2.2.2-r1: ebuild has leading whitespace on line 95
   WhitespaceFound: version 2.3.0: ebuild has leading whitespace on line 96
+  WhitespaceFound: version 2.3.0-r1: ebuild has leading whitespace on line 97
+  SizeViolation: "files/cve-2015-5223-stable-kilo.patch" exceeds 20k in size; 38075 bytes total
 
 sys-cluster/util-vserver
   NonExistentDeps: version 0.30.216_pre3025: depset depends: nonexistent atoms [ sys-apps/mktemp ]
