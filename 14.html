@@ -12,7 +12,7 @@
             <li class="warn"><a href="1.html">1</a></li>
             <li class="warn"><a href="2.html">2</a></li>
             <li class="warn"><a href="3.html">3</a></li>
-            <li class="err"><a href="4.html">4</a></li>
+            <li class="warn"><a href="4.html">4</a></li>
             <li class="warn"><a href="5.html">5</a></li>
             <li class="warn"><a href="6.html">6</a></li>
             <li class="warn"><a href="7.html">7</a></li>
@@ -49,7 +49,7 @@
 </pre></td></tr>
             <tr class="" id="l6"><td><a href="#l6"><span>6</span></a></td><td><pre>+ set +x
 </pre></td></tr>
-            <tr class="" id="l7"><td><a href="#l7"><span>7</span></a></td><td><pre>+ exec pkgcheck -r gentoo --reporter FancyReporter 'media-plugins/*' 'sys-devel/*' 'app-i18n/*' 'x11-apps/*' 'net-im/*' 'games-misc/*' 'dev-scheme/*' 'media-radio/*' 'dev-go/*' 'games-server/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
+            <tr class="" id="l7"><td><a href="#l7"><span>7</span></a></td><td><pre>+ exec pkgcheck -r gentoo --reporter FancyReporter 'media-plugins/*' 'sys-devel/*' 'app-i18n/*' 'x11-apps/*' 'net-im/*' 'games-misc/*' 'dev-scheme/*' 'media-radio/*' 'gnustep-base/*' 'games-server/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 </pre></td></tr>
             <tr class="" id="l8"><td><a href="#l8"><span>8</span></a></td><td><pre>/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
 </pre></td></tr>
@@ -2375,27 +2375,41 @@
 </pre></td></tr>
             <tr class="" id="l1169"><td><a href="#l1169"><span>1169</span></a></td><td><pre>               : refetch
 </pre></td></tr>
-            <tr class="" id="l1170"><td><a href="#l1170"><span>1170</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
+            <tr class="" id="l1170"><td><a href="#l1170"><span>1170</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1171"><td><a href="#l1171"><span>1171</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+            <tr class="" id="l1171"><td><a href="#l1171"><span>1171</span></a></td><td><pre>gnustep-base/gnustep-updater
 </pre></td></tr>
-            <tr class="" id="l1172"><td><a href="#l1172"><span>1172</span></a></td><td><pre>               : refetch
+            <tr class="" id="l1172"><td><a href="#l1172"><span>1172</span></a></td><td><pre>  MissingChksum: version 0.2: "gnustep-updater-0.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l1173"><td><a href="#l1173"><span>1173</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
+            <tr class="" id="l1173"><td><a href="#l1173"><span>1173</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1174"><td><a href="#l1174"><span>1174</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+            <tr class="" id="l1174"><td><a href="#l1174"><span>1174</span></a></td><td><pre>gnustep-base/mknfonts
 </pre></td></tr>
-            <tr class="" id="l1175"><td><a href="#l1175"><span>1175</span></a></td><td><pre>               : refetch
+            <tr class="" id="l1175"><td><a href="#l1175"><span>1175</span></a></td><td><pre>  DeprecatedEAPI: version 0.5-r1: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l1176"><td><a href="#l1176"><span>1176</span></a></td><td><pre>
+            <tr class="" id="l1176"><td><a href="#l1176"><span>1176</span></a></td><td><pre>  MissingChksum: version 0.5-r1: "mknfonts.tool_0.5.orig.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l1177"><td><a href="#l1177"><span>1177</span></a></td><td><pre>games-server/ut2004-ded
+            <tr class="" id="l1177"><td><a href="#l1177"><span>1177</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
 </pre></td></tr>
-            <tr class="" id="l1178"><td><a href="#l1178"><span>1178</span></a></td><td><pre>  MissingChksum: version 3369.3-r1: "dedicatedserver3339-bonuspack.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+            <tr class="" id="l1178"><td><a href="#l1178"><span>1178</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+</pre></td></tr>
+            <tr class="" id="l1179"><td><a href="#l1179"><span>1179</span></a></td><td><pre>               : refetch
+</pre></td></tr>
+            <tr class="" id="l1180"><td><a href="#l1180"><span>1180</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
+</pre></td></tr>
+            <tr class="" id="l1181"><td><a href="#l1181"><span>1181</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+</pre></td></tr>
+            <tr class="" id="l1182"><td><a href="#l1182"><span>1182</span></a></td><td><pre>               : refetch
+</pre></td></tr>
+            <tr class="" id="l1183"><td><a href="#l1183"><span>1183</span></a></td><td><pre>
+</pre></td></tr>
+            <tr class="" id="l1184"><td><a href="#l1184"><span>1184</span></a></td><td><pre>games-server/ut2004-ded
+</pre></td></tr>
+            <tr class="" id="l1185"><td><a href="#l1185"><span>1185</span></a></td><td><pre>  MissingChksum: version 3369.3-r1: "dedicatedserver3339-bonuspack.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
 
         </table>
 
-        <address>Generated based on results from 2015-08-26 15:59:48 UTC</address>
+        <address>Generated based on results from 2015-08-26 19:39:28 UTC</address>
     </body>
 </html>
