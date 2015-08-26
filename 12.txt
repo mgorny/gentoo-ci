@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 12 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'app-text/*' 'dev-php/*' 'app-emacs/*' 'gnome-extra/*' 'www-apache/*' 'media-tv/*' 'gnustep-apps/*' 'x11-proto/*' 'app-laptop/*' 'games-mud/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'app-text/*' 'dev-php/*' 'kde-apps/*' 'gnome-extra/*' 'www-apache/*' 'media-tv/*' 'gnustep-apps/*' 'x11-proto/*' 'app-laptop/*' 'games-mud/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -627,59 +627,70 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-app-emacs/cmail
-  DeprecatedEAPI: version 2.62-r1: uses deprecated EAPI: 0
+kde-apps/audiocd-kio
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
 
-app-emacs/ddskk
-  DeprecatedEAPI: version 14.3: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 14.4: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 15.1: uses deprecated EAPI: 3
+kde-apps/dragon
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
 
-app-emacs/emacs-wiki-blog
-  DeprecatedEAPI: version 0.5: uses deprecated EAPI: 0
+kde-apps/ffmpegthumbs
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
 
-app-emacs/javascript
-  DeprecatedEAPI: version 2.0_beta8: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.2.1: uses deprecated EAPI: 0
+kde-apps/juk
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
 
-app-emacs/navi2ch
-  DeprecatedEAPI: version 1.8.3-r1: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 1.8.4: uses deprecated EAPI: 3
+kde-apps/kde-base-artwork
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
 
-app-emacs/prom-wl
-  DeprecatedEAPI: version 2.7.0-r1: uses deprecated EAPI: 0
+kde-apps/kde-wallpapers
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
 
-app-emacs/pymacs
-  DeprecatedEAPI: version 0.23-r1: uses deprecated EAPI: 3
-  DeprecatedEclass: version 0.23-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+kde-apps/kdemultimedia-meta
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
 
-app-emacs/python-mode
-  DeprecatedEAPI: version 5.2.0: uses deprecated EAPI: 3
+kde-apps/kdenetwork-filesharing
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
 
-app-emacs/rnc-mode
-  DeprecatedEAPI: version 1.0_beta3: uses deprecated EAPI: 0
+kde-apps/kdenlive
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: ppc
 
-app-emacs/slime
-  DeprecatedEAPI: version 2.0_p20080731: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.0_p20080731-r1: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 2.0_p20101103: uses deprecated EAPI: 3
+kde-apps/kget
+  NonExistentDeps: version 15.08.0: depset depends: nonexistent atoms [ >=kde-apps/gpgmepp-4.14.3:4 ]
+  NonExistentDeps: version 15.08.0: depset rdepends: nonexistent atoms [ >=kde-apps/gpgmepp-4.14.3:4 ]
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
 
-app-emacs/sumibi
-  DeprecatedEAPI: version 0.5.2: uses deprecated EAPI: 0
+kde-apps/kmix
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
 
-app-emacs/tdtd
-  DeprecatedEAPI: version 0.7.1-r1: uses deprecated EAPI: 0
+kde-apps/kopete
+  DroppedKeywordWarning: version 4.14.3-r1: keywords dropped: ppc64
 
-app-emacs/twittering-mode
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+kde-apps/kppp
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: ppc, ppc64
 
-app-emacs/yasnippet
-  DeprecatedEAPI: version 0.5.10: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.6.0c: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.6.1c: uses deprecated EAPI: 0
+kde-apps/krdc
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
 
-app-emacs/yc
-  DeprecatedEAPI: version 4.0.13: uses deprecated EAPI: 3
+kde-apps/krfb
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
+
+kde-apps/kscd
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
+
+kde-apps/kwalletd
+  SizeViolation: "files/kwalletd-4.14.3-CVE-2013-7252.patch" exceeds 20k in size; 21806 bytes total
+
+kde-apps/libkcddb
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
+
+kde-apps/libkcompactdisc
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
+
+kde-apps/mplayerthumbs
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
+
+kde-apps/oxygen-icons
+  DroppedKeywordWarning: version 15.04.3: keywords dropped: arm, arm64, ppc, ppc64
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
