@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 12 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'app-text/*' 'dev-php/*' 'kde-apps/*' 'gnome-extra/*' 'www-apache/*' 'media-tv/*' 'gnustep-apps/*' 'x11-proto/*' 'app-laptop/*' 'games-mud/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'app-text/*' 'dev-php/*' 'sys-kernel/*' 'gnome-extra/*' 'www-apache/*' 'media-tv/*' 'gnustep-apps/*' 'x11-proto/*' 'app-laptop/*' 'games-mud/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -627,81 +627,58 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-kde-apps/audiocd-kio
-  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
+sys-kernel/genkernel
+  DeprecatedEAPI: version 3.4.45.1: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.4.48: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.4.49.2: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.4.50: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.4.51.4: uses deprecated EAPI: 3
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DroppedKeywordWarning: version 3.4.50: keywords dropped: sh
 
-kde-apps/baloo-widgets
-  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
+sys-kernel/genkernel-next
+  DroppedKeywordWarning: version 60: keywords dropped: ppc, ppc64
+  DroppedKeywordWarning: version 55: keywords dropped: alpha
 
-kde-apps/dolphin
-  NonExistentDeps: version 15.08.0: depset rdepends: nonexistent atoms [ >=kde-apps/thumbnailers-5.9999:5, >=kde-apps/ffmpegthumbs-5.9999:5 ]
-  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
+sys-kernel/kccmp
+  MissingChksum: version 0.3: "kccmp-0.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-kde-apps/dragon
-  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
+sys-kernel/linux-firmware
+  DeprecatedEclass: version 99999999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-kde-apps/ffmpegthumbs
-  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
+sys-kernel/linux-headers
+  DeprecatedEAPI: version 3.1: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.2-r1: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.3: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.4: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.4-r1: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.4-r2: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.5: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.6: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.7: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.8: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.9: uses deprecated EAPI: 3
 
-kde-apps/juk
-  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
+sys-kernel/raspberrypi-image
+  DeprecatedEclass: version 3.10.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-kde-apps/kde-base-artwork
-  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
+sys-kernel/raspberrypi-sources
+  DeprecatedEclass: version 3.10.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEclass: version 3.12.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEclass: version 3.14.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEclass: version 3.18.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEclass: version 3.19.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-kde-apps/kde-wallpapers
-  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
+sys-kernel/spl
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-kde-apps/kdemultimedia-meta
-  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
-
-kde-apps/kdenetwork-filesharing
-  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
-
-kde-apps/kdenlive
-  DroppedKeywordWarning: version 15.08.0: keywords dropped: ppc
-
-kde-apps/kget
-  NonExistentDeps: version 15.08.0: depset depends: nonexistent atoms [ >=kde-apps/gpgmepp-4.14.3:4 ]
-  NonExistentDeps: version 15.08.0: depset rdepends: nonexistent atoms [ >=kde-apps/gpgmepp-4.14.3:4 ]
-  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
-
-kde-apps/kmix
-  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
-
-kde-apps/kopete
-  DroppedKeywordWarning: version 4.14.3-r1: keywords dropped: ppc64
-  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc
-
-kde-apps/kppp
-  DroppedKeywordWarning: version 15.08.0: keywords dropped: ppc, ppc64
-
-kde-apps/krdc
-  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
-
-kde-apps/krfb
-  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
-
-kde-apps/kscd
-  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
-
-kde-apps/kwalletd
-  SizeViolation: "files/kwalletd-4.14.3-CVE-2013-7252.patch" exceeds 20k in size; 21806 bytes total
-
-kde-apps/libkcddb
-  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
-
-kde-apps/libkcompactdisc
-  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
-
-kde-apps/mplayerthumbs
-  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
-
-kde-apps/oxygen-icons
-  DroppedKeywordWarning: version 15.04.3: keywords dropped: arm, arm64, ppc, ppc64
-
-kde-apps/zeroconf-ioslave
-  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
+sys-kernel/zen-sources
+  DeprecatedEclass: version 3.8.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEclass: version 3.9.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEclass: version 3.10.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEclass: version 3.11.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEclass: version 3.12.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEclass: version 3.13.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
