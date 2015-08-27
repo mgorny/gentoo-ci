@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 0 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'sec-policy/*' 'dev-texlive/*' 'dev-db/*' 'app-crypt/*' 'sys-auth/*' 'app-shells/*' 'games-board/*' 'net-proxy/*' 'app-mobilephone/*' 'dev-ada/*' 'app-antivirus/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'sec-policy/*' 'dev-texlive/*' 'kde-apps/*' 'app-crypt/*' 'sys-auth/*' 'app-shells/*' 'games-board/*' 'net-proxy/*' 'app-mobilephone/*' 'dev-ada/*' 'app-antivirus/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -146,116 +146,216 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-dev-db/4store
-  DeprecatedEAPI: version 1.1.5: uses deprecated EAPI: 2
+kde-apps/attica
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
 
-dev-db/SchemaSync
-  NonExistentDeps: version 0.9.2: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
-  NonExistentDeps: version 0.9.2: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
-  DeprecatedEclass: version 0.9.2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+kde-apps/audiocd-kio
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
 
-dev-db/cdb
-  DeprecatedEAPI: version 0.75-r3: uses deprecated EAPI: 3
+kde-apps/baloo-widgets
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
 
-dev-db/ctdb
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+kde-apps/dolphin
+  NonExistentDeps: version 15.08.0: depset rdepends: nonexistent atoms [ >=kde-apps/thumbnailers-5.9999:5, >=kde-apps/ffmpegthumbs-5.9999:5 ]
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
 
-dev-db/db-je
-  DeprecatedEAPI: version 3.3.75: uses deprecated EAPI: 0
+kde-apps/dragon
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
 
-dev-db/dbmodel
-  DeprecatedEAPI: version 0.3: uses deprecated EAPI: 2
+kde-apps/drkonqi
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
 
-dev-db/drizzle
-  NonExistentDeps: version 7.2.4: depset depends: nonexistent atoms [ dev-lang/v8 ]
-  NonExistentDeps: version 7.2.4: depset rdepends: nonexistent atoms [ dev-lang/v8 ]
-  DeprecatedEclass: version 7.2.4: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+kde-apps/ffmpegthumbs
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
 
-dev-db/haildb
-  DeprecatedEAPI: version 2.3.2: uses deprecated EAPI: 2
+kde-apps/juk
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
 
-dev-db/henplus
-  DeprecatedEAPI: version 0.9.8: uses deprecated EAPI: 2
+kde-apps/kcmshell
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
 
-dev-db/m17n-db
-  DeprecatedEAPI: version 1.5.2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.5.5: uses deprecated EAPI: 0
+kde-apps/kcontrol
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
 
-dev-db/octopus
-  DeprecatedEAPI: version 3.0.1-r3: uses deprecated EAPI: 2
+kde-apps/kde-base-artwork
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
 
-dev-db/odbtp
-  DeprecatedEAPI: version 1.1.4: uses deprecated EAPI: 0
+kde-apps/kde-wallpapers
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
 
-dev-db/opendbx
-  DroppedKeywordWarning: version 1.5.0-r1: keywords dropped: amd64, x86
+kde-apps/kdebase-data
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
 
-dev-db/oracle-instantclient-basic
-  DeprecatedEAPI: version 10.2.0.3-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 11.2.0.2: uses deprecated EAPI: 0
-  MissingChksum: version 10.2.0.3-r1: "instantclient-basic-linux-x86-64-10.2.0.3-20070103.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 10.2.0.3-r1: "instantclient-basic-linux32-10.2.0.3-20061115.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 10.2.0.3-r1: "instantclient-sdk-linux32-10.2.0.3-20061115.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 11.2.0.2: "instantclient-basic-linux32-11.2.0.2.0.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 11.2.0.2: "instantclient-sdk-linux32-11.2.0.2.0.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 11.2.0.2: "instantclient-basic-linux-x86-64-11.2.0.2.0.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 11.2.0.2: "instantclient-sdk-linux-x86-64-11.2.0.2.0.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+kde-apps/kdebase-desktoptheme
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
 
-dev-db/oracle-instantclient-jdbc
-  DeprecatedEAPI: version 10.2.0.3: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 11.2.0.2: uses deprecated EAPI: 0
-  MissingChksum: version 10.2.0.3: "instantclient-jdbc-linux-x86-64-10.2.0.3-20070103.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 10.2.0.3: "instantclient-jdbc-linux32-10.2.0.3-20061115.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 11.2.0.2: "instantclient-jdbc-linux32-11.2.0.2.0.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 11.2.0.2: "instantclient-jdbc-linux-x86-64-11.2.0.2.0.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 11.2.0.3: "instantclient-jdbc-linux-11.2.0.3.0.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 11.2.0.3: "instantclient-jdbc-linux.x64-11.2.0.3.0.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+kde-apps/kdebase-kioslaves
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
 
-dev-db/oracle-instantclient-odbc
-  DeprecatedEAPI: version 11.2.0.2-r1: uses deprecated EAPI: 0
-  MissingChksum: version 11.2.0.2-r1: "instantclient-odbc-linux32-11.2.0.2.0.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 11.2.0.2-r1: "instantclient-odbc-linux-x86-64-11.2.0.2.0.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 11.2.0.3: "instantclient-odbc-linux-11.2.0.3.0.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 11.2.0.3: "instantclient-odbc-linux.x64-11.2.0.3.0.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+kde-apps/kdebase-menu
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
 
-dev-db/oracle-instantclient-sqlplus
-  DeprecatedEAPI: version 10.2.0.3: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 11.2.0.2: uses deprecated EAPI: 0
-  MissingChksum: version 10.2.0.3: "instantclient-sqlplus-linux32-10.2.0.3-20061115.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 11.2.0.2: "instantclient-sqlplus-linux32-11.2.0.2.0.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 11.2.0.2: "instantclient-sqlplus-linux-x86-64-11.2.0.2.0.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+kde-apps/kdebase-menu-icons
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
 
-dev-db/phppgadmin
-  NonExistentDeps: version 5.1: depset rdepends: nonexistent atoms [ <dev-lang/php-5.3 ]
-  NonExistentDeps: version 9999: depset rdepends: nonexistent atoms [ <dev-lang/php-5.3 ]
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 2
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+kde-apps/kdebugdialog
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
 
-dev-db/postgis
-  NonExistentDeps: version 2.0.3: depset depends: nonexistent atoms [ dev-db/postgresql:8.4 ]
-  NonExistentDeps: version 2.0.3: depset rdepends: nonexistent atoms [ dev-db/postgresql:8.4 ]
-  NonExistentDeps: version 2.0.6: depset depends: nonexistent atoms [ dev-db/postgresql:8.4 ]
-  NonExistentDeps: version 2.0.6: depset rdepends: nonexistent atoms [ dev-db/postgresql:8.4 ]
+kde-apps/kdemultimedia-meta
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
 
-dev-db/postgresql
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DroppedKeywordWarning: version 9.5_alpha1: keywords dropped: alpha, amd64, arm, hppa, ia64, mips, ppc, ppc64, s390, sh, sparc, x86
+kde-apps/kdenetwork-filesharing
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
 
-dev-db/sqldeveloper
-  DeprecatedEAPI: version 3.2.20.09.87: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 4.0.2.15.21: uses deprecated EAPI: 2
+kde-apps/kdenlive
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: ppc
 
-dev-db/sqlite
-  DeprecatedEAPI: version 2.8.16-r5: uses deprecated EAPI: 0
+kde-apps/kdepasswd
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
 
-dev-db/sqliteman
-  DeprecatedEAPI: version 1.2.2: uses deprecated EAPI: 3
+kde-apps/kdesu
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
 
-dev-db/tokyocabinet
-  DeprecatedEAPI: version 1.4.48: uses deprecated EAPI: 2
+kde-apps/kdialog
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
 
-dev-db/vbisam
-  DeprecatedEAPI: version 2.0: uses deprecated EAPI: 0
+kde-apps/kdontchangethehostname
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
+
+kde-apps/keditbookmarks
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
+
+kde-apps/keditfiletype
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
+
+kde-apps/kfile
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
+
+kde-apps/kfind
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
+
+kde-apps/kfmclient
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
+
+kde-apps/kget
+  NonExistentDeps: version 15.08.0: depset depends: nonexistent atoms [ >=kde-apps/gpgmepp-4.14.3:4 ]
+  NonExistentDeps: version 15.08.0: depset rdepends: nonexistent atoms [ >=kde-apps/gpgmepp-4.14.3:4 ]
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
+
+kde-apps/kglobalaccel
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
+
+kde-apps/kiconfinder
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
+
+kde-apps/kimgio
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
+
+kde-apps/kioclient
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
+
+kde-apps/kmimetypefinder
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
+
+kde-apps/kmix
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
+
+kde-apps/knetattach
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
+
+kde-apps/knewstuff
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
+
+kde-apps/knotify
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
+
+kde-apps/konq-plugins
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
+
+kde-apps/konqueror
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
+
+kde-apps/kopete
+  DroppedKeywordWarning: version 4.14.3-r1: keywords dropped: ppc64
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc
+
+kde-apps/kpasswdserver
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
+
+kde-apps/kppp
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: ppc, ppc64
+
+kde-apps/kquitapp
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
+
+kde-apps/krdc
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
+
+kde-apps/kreadconfig
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
+
+kde-apps/krfb
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
+
+kde-apps/kscd
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
+
+kde-apps/kstart
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
+
+kde-apps/ktimezoned
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
+
+kde-apps/ktraderclient
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
+
+kde-apps/kuiserver
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
+
+kde-apps/kurifilter-plugins
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
+
+kde-apps/kwalletd
+  NonExistentDeps: version 15.08.0: depset depends: nonexistent atoms [ >=kde-apps/gpgmepp-4.14.3:4 ]
+  NonExistentDeps: version 15.08.0: depset rdepends: nonexistent atoms [ >=kde-apps/gpgmepp-4.14.3:4 ]
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
+  SizeViolation: "files/kwalletd-4.14.3-CVE-2013-7252.patch" exceeds 20k in size; 21806 bytes total
+
+kde-apps/libkcddb
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
+
+kde-apps/libkcompactdisc
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
+
+kde-apps/libkonq
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
+
+kde-apps/mplayerthumbs
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
+
+kde-apps/nsplugins
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
+
+kde-apps/oxygen-icons
+  DroppedKeywordWarning: version 15.04.3: keywords dropped: arm, arm64, ppc, ppc64
+
+kde-apps/phonon-kde
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
+
+kde-apps/plasma-apps
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
+
+kde-apps/plasma-runtime
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
+
+kde-apps/renamedlg-plugins
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
+
+kde-apps/solid-runtime
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
+
+kde-apps/zeroconf-ioslave
+  DroppedKeywordWarning: version 15.08.0: keywords dropped: arm, ppc, ppc64
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
