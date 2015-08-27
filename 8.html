@@ -50,7 +50,7 @@
 </pre></td></tr>
             <tr class="" id="l6"><td><a href="#l6"><span>6</span></a></td><td><pre>+ set +x
 </pre></td></tr>
-            <tr class="" id="l7"><td><a href="#l7"><span>7</span></a></td><td><pre>+ exec pkgcheck -r gentoo --reporter FancyReporter 'net-misc/*' 'app-admin/*' 'kde-base/*' 'sci-mathematics/*' 'dev-tex/*' 'sys-process/*' 'dev-tcltk/*' 'dev-lisp/*' 'xfce-base/*' 'net-voip/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
+            <tr class="" id="l7"><td><a href="#l7"><span>7</span></a></td><td><pre>+ exec pkgcheck -r gentoo --reporter FancyReporter 'net-misc/*' 'app-admin/*' 'kde-base/*' 'sci-mathematics/*' 'dev-tex/*' 'sys-process/*' 'sci-visualization/*' 'dev-lisp/*' 'xfce-base/*' 'net-voip/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 </pre></td></tr>
             <tr class="" id="l8"><td><a href="#l8"><span>8</span></a></td><td><pre>/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
 </pre></td></tr>
@@ -2842,287 +2842,247 @@
 </pre></td></tr>
             <tr class="" id="l1402"><td><a href="#l1402"><span>1402</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1403"><td><a href="#l1403"><span>1403</span></a></td><td><pre>dev-tcltk/blt
+            <tr class="" id="l1403"><td><a href="#l1403"><span>1403</span></a></td><td><pre>sci-visualization/gcalc
 </pre></td></tr>
-            <tr class="" id="l1404"><td><a href="#l1404"><span>1404</span></a></td><td><pre>  DeprecatedEAPI: version 2.4z-r10: uses deprecated EAPI: 3
+            <tr class="" id="l1404"><td><a href="#l1404"><span>1404</span></a></td><td><pre>  MissingChksum: version 3.1_rc1: "GCalc-3.1-rc1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 </pre></td></tr>
             <tr class="" id="l1405"><td><a href="#l1405"><span>1405</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1406"><td><a href="#l1406"><span>1406</span></a></td><td><pre>dev-tcltk/expect
+            <tr class="" id="l1406"><td><a href="#l1406"><span>1406</span></a></td><td><pre>sci-visualization/ggobi
 </pre></td></tr>
-            <tr class="" id="l1407"><td><a href="#l1407"><span>1407</span></a></td><td><pre>  DeprecatedEAPI: version 5.44.1.15: uses deprecated EAPI: 3
+            <tr class="" id="l1407"><td><a href="#l1407"><span>1407</span></a></td><td><pre>  DeprecatedEAPI: version 2.1.8: uses deprecated EAPI: 2
 </pre></td></tr>
-            <tr class="" id="l1408"><td><a href="#l1408"><span>1408</span></a></td><td><pre>
+            <tr class="" id="l1408"><td><a href="#l1408"><span>1408</span></a></td><td><pre>  MissingChksum: version 2.1.8: "ggobi-2.1.8.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l1409"><td><a href="#l1409"><span>1409</span></a></td><td><pre>dev-tcltk/expect-lite
+            <tr class="" id="l1409"><td><a href="#l1409"><span>1409</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1410"><td><a href="#l1410"><span>1410</span></a></td><td><pre>  DeprecatedEAPI: version 4.0.3: uses deprecated EAPI: 0
+            <tr class="" id="l1410"><td><a href="#l1410"><span>1410</span></a></td><td><pre>sci-visualization/gri
 </pre></td></tr>
-            <tr class="" id="l1411"><td><a href="#l1411"><span>1411</span></a></td><td><pre>  DeprecatedEAPI: version 4.1.0: uses deprecated EAPI: 0
+            <tr class="" id="l1411"><td><a href="#l1411"><span>1411</span></a></td><td><pre>  DeprecatedEAPI: version 2.12.19: uses deprecated EAPI: 2
 </pre></td></tr>
-            <tr class="" id="l1412"><td><a href="#l1412"><span>1412</span></a></td><td><pre>  DeprecatedEAPI: version 4.1.2: uses deprecated EAPI: 0
+            <tr class="" id="l1412"><td><a href="#l1412"><span>1412</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1413"><td><a href="#l1413"><span>1413</span></a></td><td><pre>  DeprecatedEAPI: version 4.2.0: uses deprecated EAPI: 0
+            <tr class="" id="l1413"><td><a href="#l1413"><span>1413</span></a></td><td><pre>sci-visualization/kst
 </pre></td></tr>
-            <tr class="" id="l1414"><td><a href="#l1414"><span>1414</span></a></td><td><pre>  DeprecatedEAPI: version 4.2.1: uses deprecated EAPI: 0
+            <tr class="" id="l1414"><td><a href="#l1414"><span>1414</span></a></td><td><pre>  NonExistentDeps: version 2.0.7: depset depends: nonexistent atoms [ &lt;dev-qt/qtgui-4.8.5:4 ]
 </pre></td></tr>
-            <tr class="" id="l1415"><td><a href="#l1415"><span>1415</span></a></td><td><pre>  DeprecatedEAPI: version 4.2.2: uses deprecated EAPI: 0
+            <tr class="" id="l1415"><td><a href="#l1415"><span>1415</span></a></td><td><pre>  NonExistentDeps: version 2.0.7: depset rdepends: nonexistent atoms [ &lt;dev-qt/qtgui-4.8.5:4 ]
 </pre></td></tr>
-            <tr class="" id="l1416"><td><a href="#l1416"><span>1416</span></a></td><td><pre>  DeprecatedEAPI: version 4.3.0: uses deprecated EAPI: 0
+            <tr class="" id="l1416"><td><a href="#l1416"><span>1416</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1417"><td><a href="#l1417"><span>1417</span></a></td><td><pre>  DeprecatedEAPI: version 4.3.1: uses deprecated EAPI: 0
+            <tr class="" id="l1417"><td><a href="#l1417"><span>1417</span></a></td><td><pre>sci-visualization/pyxplot
 </pre></td></tr>
-            <tr class="" id="l1418"><td><a href="#l1418"><span>1418</span></a></td><td><pre>  DeprecatedEAPI: version 4.3.2: uses deprecated EAPI: 0
+            <tr class="" id="l1418"><td><a href="#l1418"><span>1418</span></a></td><td><pre>  DeprecatedEAPI: version 0.7.1: uses deprecated EAPI: 2
 </pre></td></tr>
-            <tr class="" id="l1419"><td><a href="#l1419"><span>1419</span></a></td><td><pre>  DeprecatedEAPI: version 4.3.3: uses deprecated EAPI: 0
+            <tr class="" id="l1419"><td><a href="#l1419"><span>1419</span></a></td><td><pre>  DeprecatedEclass: version 0.7.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
-            <tr class="" id="l1420"><td><a href="#l1420"><span>1420</span></a></td><td><pre>  DeprecatedEAPI: version 4.4.0: uses deprecated EAPI: 0
+            <tr class="" id="l1420"><td><a href="#l1420"><span>1420</span></a></td><td><pre>  MissingChksum: version 0.7.1: "pyxplot_0.7.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l1421"><td><a href="#l1421"><span>1421</span></a></td><td><pre>  DeprecatedEAPI: version 4.4.1: uses deprecated EAPI: 0
+            <tr class="" id="l1421"><td><a href="#l1421"><span>1421</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1422"><td><a href="#l1422"><span>1422</span></a></td><td><pre>  DeprecatedEAPI: version 4.5.0: uses deprecated EAPI: 0
+            <tr class="" id="l1422"><td><a href="#l1422"><span>1422</span></a></td><td><pre>sci-visualization/spyview
 </pre></td></tr>
-            <tr class="" id="l1423"><td><a href="#l1423"><span>1423</span></a></td><td><pre>  DeprecatedEAPI: version 4.6.0: uses deprecated EAPI: 0
+            <tr class="" id="l1423"><td><a href="#l1423"><span>1423</span></a></td><td><pre>  DroppedKeywordWarning: version 20130823: keywords dropped: amd64
 </pre></td></tr>
-            <tr class="" id="l1424"><td><a href="#l1424"><span>1424</span></a></td><td><pre>  DeprecatedEAPI: version 4.6.1: uses deprecated EAPI: 0
+            <tr class="" id="l1424"><td><a href="#l1424"><span>1424</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1425"><td><a href="#l1425"><span>1425</span></a></td><td><pre>  DeprecatedEAPI: version 4.6.2: uses deprecated EAPI: 0
+            <tr class="" id="l1425"><td><a href="#l1425"><span>1425</span></a></td><td><pre>sci-visualization/veusz
 </pre></td></tr>
-            <tr class="" id="l1426"><td><a href="#l1426"><span>1426</span></a></td><td><pre>  DeprecatedEAPI: version 4.7.2: uses deprecated EAPI: 0
+            <tr class="" id="l1426"><td><a href="#l1426"><span>1426</span></a></td><td><pre>  DeprecatedEAPI: version 1.11: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l1427"><td><a href="#l1427"><span>1427</span></a></td><td><pre>
+            <tr class="" id="l1427"><td><a href="#l1427"><span>1427</span></a></td><td><pre>  DeprecatedEclass: version 1.11: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
-            <tr class="" id="l1428"><td><a href="#l1428"><span>1428</span></a></td><td><pre>dev-tcltk/iwidgets
+            <tr class="" id="l1428"><td><a href="#l1428"><span>1428</span></a></td><td><pre>  MissingChksum: version 1.11: "veusz-1.11.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l1429"><td><a href="#l1429"><span>1429</span></a></td><td><pre>  DeprecatedEAPI: version 4.0.1: uses deprecated EAPI: 0
+            <tr class="" id="l1429"><td><a href="#l1429"><span>1429</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1430"><td><a href="#l1430"><span>1430</span></a></td><td><pre>
+            <tr class="" id="l1430"><td><a href="#l1430"><span>1430</span></a></td><td><pre>sci-visualization/xds-viewer
 </pre></td></tr>
-            <tr class="" id="l1431"><td><a href="#l1431"><span>1431</span></a></td><td><pre>dev-tcltk/scwoop
+            <tr class="" id="l1431"><td><a href="#l1431"><span>1431</span></a></td><td><pre>  MissingChksum: version 0.6: "xds-viewer-0.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l1432"><td><a href="#l1432"><span>1432</span></a></td><td><pre>  DeprecatedEAPI: version 4.1: uses deprecated EAPI: 0
+            <tr class="" id="l1432"><td><a href="#l1432"><span>1432</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1433"><td><a href="#l1433"><span>1433</span></a></td><td><pre>
+            <tr class="" id="l1433"><td><a href="#l1433"><span>1433</span></a></td><td><pre>sci-visualization/xgraph
 </pre></td></tr>
-            <tr class="" id="l1434"><td><a href="#l1434"><span>1434</span></a></td><td><pre>dev-tcltk/snack
+            <tr class="" id="l1434"><td><a href="#l1434"><span>1434</span></a></td><td><pre>  DeprecatedEAPI: version 12.1-r2: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l1435"><td><a href="#l1435"><span>1435</span></a></td><td><pre>  DeprecatedEclass: version 2.2.10-r5: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l1435"><td><a href="#l1435"><span>1435</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
 </pre></td></tr>
-            <tr class="" id="l1436"><td><a href="#l1436"><span>1436</span></a></td><td><pre>
+            <tr class="" id="l1436"><td><a href="#l1436"><span>1436</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
 </pre></td></tr>
-            <tr class="" id="l1437"><td><a href="#l1437"><span>1437</span></a></td><td><pre>dev-tcltk/tcllib
+            <tr class="" id="l1437"><td><a href="#l1437"><span>1437</span></a></td><td><pre>               : refetch
 </pre></td></tr>
-            <tr class="" id="l1438"><td><a href="#l1438"><span>1438</span></a></td><td><pre>  DroppedKeywordWarning: version 1.16: keywords dropped: ia64, ppc64, s390, sparc
+            <tr class="" id="l1438"><td><a href="#l1438"><span>1438</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
 </pre></td></tr>
-            <tr class="" id="l1439"><td><a href="#l1439"><span>1439</span></a></td><td><pre>  SizeViolation: "files/tcllib-1.15-XSS-vuln.patch" exceeds 20k in size; 29465 bytes total
+            <tr class="" id="l1439"><td><a href="#l1439"><span>1439</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
 </pre></td></tr>
-            <tr class="" id="l1440"><td><a href="#l1440"><span>1440</span></a></td><td><pre>
+            <tr class="" id="l1440"><td><a href="#l1440"><span>1440</span></a></td><td><pre>               : refetch
 </pre></td></tr>
-            <tr class="" id="l1441"><td><a href="#l1441"><span>1441</span></a></td><td><pre>dev-tcltk/tkcon
+            <tr class="" id="l1441"><td><a href="#l1441"><span>1441</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1442"><td><a href="#l1442"><span>1442</span></a></td><td><pre>  DeprecatedEAPI: version 2.5: uses deprecated EAPI: 0
+            <tr class="" id="l1442"><td><a href="#l1442"><span>1442</span></a></td><td><pre>dev-lisp/abcl
 </pre></td></tr>
-            <tr class="" id="l1443"><td><a href="#l1443"><span>1443</span></a></td><td><pre>
+            <tr class="" id="l1443"><td><a href="#l1443"><span>1443</span></a></td><td><pre>  DeprecatedEAPI: version 0.0.9-r1: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l1444"><td><a href="#l1444"><span>1444</span></a></td><td><pre>dev-tcltk/tkpiechart
+            <tr class="" id="l1444"><td><a href="#l1444"><span>1444</span></a></td><td><pre>  DeprecatedEAPI: version 0.20.0: uses deprecated EAPI: 2
 </pre></td></tr>
-            <tr class="" id="l1445"><td><a href="#l1445"><span>1445</span></a></td><td><pre>  DeprecatedEAPI: version 6.5-r1: uses deprecated EAPI: 0
+            <tr class="" id="l1445"><td><a href="#l1445"><span>1445</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1446"><td><a href="#l1446"><span>1446</span></a></td><td><pre>
+            <tr class="" id="l1446"><td><a href="#l1446"><span>1446</span></a></td><td><pre>dev-lisp/asdf
 </pre></td></tr>
-            <tr class="" id="l1447"><td><a href="#l1447"><span>1447</span></a></td><td><pre>dev-tcltk/tktable
+            <tr class="" id="l1447"><td><a href="#l1447"><span>1447</span></a></td><td><pre>  DeprecatedEAPI: version 1.86-r1: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l1448"><td><a href="#l1448"><span>1448</span></a></td><td><pre>  DeprecatedEAPI: version 2.10: uses deprecated EAPI: 2
+            <tr class="" id="l1448"><td><a href="#l1448"><span>1448</span></a></td><td><pre>  DeprecatedEAPI: version 1.89: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l1449"><td><a href="#l1449"><span>1449</span></a></td><td><pre>
+            <tr class="" id="l1449"><td><a href="#l1449"><span>1449</span></a></td><td><pre>  DroppedKeywordWarning: version 3.0.3: keywords dropped: alpha, ia64, mips, ppc64, s390
 </pre></td></tr>
-            <tr class="" id="l1450"><td><a href="#l1450"><span>1450</span></a></td><td><pre>dev-tcltk/tktreectrl
+            <tr class="" id="l1450"><td><a href="#l1450"><span>1450</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1451"><td><a href="#l1451"><span>1451</span></a></td><td><pre>  DeprecatedEAPI: version 2.2.9: uses deprecated EAPI: 3
+            <tr class="" id="l1451"><td><a href="#l1451"><span>1451</span></a></td><td><pre>dev-lisp/asdf-binary-locations
 </pre></td></tr>
-            <tr class="" id="l1452"><td><a href="#l1452"><span>1452</span></a></td><td><pre>
+            <tr class="" id="l1452"><td><a href="#l1452"><span>1452</span></a></td><td><pre>  DeprecatedEAPI: version 20061018: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l1453"><td><a href="#l1453"><span>1453</span></a></td><td><pre>dev-tcltk/vtcl
+            <tr class="" id="l1453"><td><a href="#l1453"><span>1453</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1454"><td><a href="#l1454"><span>1454</span></a></td><td><pre>  DeprecatedEAPI: version 1.6.0-r1: uses deprecated EAPI: 0
+            <tr class="" id="l1454"><td><a href="#l1454"><span>1454</span></a></td><td><pre>dev-lisp/cl-clx
 </pre></td></tr>
-            <tr class="" id="l1455"><td><a href="#l1455"><span>1455</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
+            <tr class="" id="l1455"><td><a href="#l1455"><span>1455</span></a></td><td><pre>  DeprecatedEAPI: version 0.7.1: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l1456"><td><a href="#l1456"><span>1456</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+            <tr class="" id="l1456"><td><a href="#l1456"><span>1456</span></a></td><td><pre>  DeprecatedEAPI: version 0.7.2: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l1457"><td><a href="#l1457"><span>1457</span></a></td><td><pre>               : refetch
+            <tr class="" id="l1457"><td><a href="#l1457"><span>1457</span></a></td><td><pre>  DeprecatedEAPI: version 0.7.3: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l1458"><td><a href="#l1458"><span>1458</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
+            <tr class="" id="l1458"><td><a href="#l1458"><span>1458</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1459"><td><a href="#l1459"><span>1459</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+            <tr class="" id="l1459"><td><a href="#l1459"><span>1459</span></a></td><td><pre>dev-lisp/cl-ppcre
 </pre></td></tr>
-            <tr class="" id="l1460"><td><a href="#l1460"><span>1460</span></a></td><td><pre>               : refetch
+            <tr class="" id="l1460"><td><a href="#l1460"><span>1460</span></a></td><td><pre>  DeprecatedEAPI: version 1.2.10: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l1461"><td><a href="#l1461"><span>1461</span></a></td><td><pre>
+            <tr class="" id="l1461"><td><a href="#l1461"><span>1461</span></a></td><td><pre>  DeprecatedEAPI: version 1.2.11: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l1462"><td><a href="#l1462"><span>1462</span></a></td><td><pre>dev-lisp/abcl
+            <tr class="" id="l1462"><td><a href="#l1462"><span>1462</span></a></td><td><pre>  DeprecatedEAPI: version 1.2.12: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l1463"><td><a href="#l1463"><span>1463</span></a></td><td><pre>  DeprecatedEAPI: version 0.0.9-r1: uses deprecated EAPI: 0
+            <tr class="" id="l1463"><td><a href="#l1463"><span>1463</span></a></td><td><pre>  DeprecatedEAPI: version 1.2.13: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l1464"><td><a href="#l1464"><span>1464</span></a></td><td><pre>  DeprecatedEAPI: version 0.20.0: uses deprecated EAPI: 2
+            <tr class="" id="l1464"><td><a href="#l1464"><span>1464</span></a></td><td><pre>  DeprecatedEAPI: version 1.2.14: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l1465"><td><a href="#l1465"><span>1465</span></a></td><td><pre>
+            <tr class="" id="l1465"><td><a href="#l1465"><span>1465</span></a></td><td><pre>  DeprecatedEAPI: version 1.2.15: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l1466"><td><a href="#l1466"><span>1466</span></a></td><td><pre>dev-lisp/asdf
+            <tr class="" id="l1466"><td><a href="#l1466"><span>1466</span></a></td><td><pre>  DeprecatedEAPI: version 1.2.16: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l1467"><td><a href="#l1467"><span>1467</span></a></td><td><pre>  DeprecatedEAPI: version 1.86-r1: uses deprecated EAPI: 3
+            <tr class="" id="l1467"><td><a href="#l1467"><span>1467</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1468"><td><a href="#l1468"><span>1468</span></a></td><td><pre>  DeprecatedEAPI: version 1.89: uses deprecated EAPI: 3
+            <tr class="" id="l1468"><td><a href="#l1468"><span>1468</span></a></td><td><pre>dev-lisp/clisp
 </pre></td></tr>
-            <tr class="" id="l1469"><td><a href="#l1469"><span>1469</span></a></td><td><pre>  DroppedKeywordWarning: version 3.0.3: keywords dropped: alpha, ia64, mips, ppc64, s390
+            <tr class="" id="l1469"><td><a href="#l1469"><span>1469</span></a></td><td><pre>  DeprecatedEAPI: version 2.48-r1: uses deprecated EAPI: 2
 </pre></td></tr>
-            <tr class="" id="l1470"><td><a href="#l1470"><span>1470</span></a></td><td><pre>
+            <tr class="" id="l1470"><td><a href="#l1470"><span>1470</span></a></td><td><pre>  DeprecatedEAPI: version 2.48-r2: uses deprecated EAPI: 2
 </pre></td></tr>
-            <tr class="" id="l1471"><td><a href="#l1471"><span>1471</span></a></td><td><pre>dev-lisp/asdf-binary-locations
+            <tr class="" id="l1471"><td><a href="#l1471"><span>1471</span></a></td><td><pre>  DroppedKeywordWarning: version 2.49-r8: keywords dropped: alpha, ia64
 </pre></td></tr>
-            <tr class="" id="l1472"><td><a href="#l1472"><span>1472</span></a></td><td><pre>  DeprecatedEAPI: version 20061018: uses deprecated EAPI: 3
+            <tr class="" id="l1472"><td><a href="#l1472"><span>1472</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1473"><td><a href="#l1473"><span>1473</span></a></td><td><pre>
+            <tr class="" id="l1473"><td><a href="#l1473"><span>1473</span></a></td><td><pre>dev-lisp/clx
 </pre></td></tr>
-            <tr class="" id="l1474"><td><a href="#l1474"><span>1474</span></a></td><td><pre>dev-lisp/cl-clx
+            <tr class="" id="l1474"><td><a href="#l1474"><span>1474</span></a></td><td><pre>  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 </pre></td></tr>
-            <tr class="" id="l1475"><td><a href="#l1475"><span>1475</span></a></td><td><pre>  DeprecatedEAPI: version 0.7.1: uses deprecated EAPI: 0
+            <tr class="" id="l1475"><td><a href="#l1475"><span>1475</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1476"><td><a href="#l1476"><span>1476</span></a></td><td><pre>  DeprecatedEAPI: version 0.7.2: uses deprecated EAPI: 0
+            <tr class="" id="l1476"><td><a href="#l1476"><span>1476</span></a></td><td><pre>dev-lisp/common-lisp-controller
 </pre></td></tr>
-            <tr class="" id="l1477"><td><a href="#l1477"><span>1477</span></a></td><td><pre>  DeprecatedEAPI: version 0.7.3: uses deprecated EAPI: 0
+            <tr class="" id="l1477"><td><a href="#l1477"><span>1477</span></a></td><td><pre>  DeprecatedEAPI: version 4.27: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l1478"><td><a href="#l1478"><span>1478</span></a></td><td><pre>
+            <tr class="" id="l1478"><td><a href="#l1478"><span>1478</span></a></td><td><pre>  DeprecatedEAPI: version 5.13-r1: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l1479"><td><a href="#l1479"><span>1479</span></a></td><td><pre>dev-lisp/cl-ppcre
+            <tr class="" id="l1479"><td><a href="#l1479"><span>1479</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1480"><td><a href="#l1480"><span>1480</span></a></td><td><pre>  DeprecatedEAPI: version 1.2.10: uses deprecated EAPI: 0
+            <tr class="" id="l1480"><td><a href="#l1480"><span>1480</span></a></td><td><pre>dev-lisp/ecls
 </pre></td></tr>
-            <tr class="" id="l1481"><td><a href="#l1481"><span>1481</span></a></td><td><pre>  DeprecatedEAPI: version 1.2.11: uses deprecated EAPI: 0
+            <tr class="" id="l1481"><td><a href="#l1481"><span>1481</span></a></td><td><pre>  DeprecatedEAPI: version 9.12.3: uses deprecated EAPI: 2
 </pre></td></tr>
-            <tr class="" id="l1482"><td><a href="#l1482"><span>1482</span></a></td><td><pre>  DeprecatedEAPI: version 1.2.12: uses deprecated EAPI: 0
+            <tr class="" id="l1482"><td><a href="#l1482"><span>1482</span></a></td><td><pre>  DeprecatedEAPI: version 10.4.1: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l1483"><td><a href="#l1483"><span>1483</span></a></td><td><pre>  DeprecatedEAPI: version 1.2.13: uses deprecated EAPI: 0
+            <tr class="" id="l1483"><td><a href="#l1483"><span>1483</span></a></td><td><pre>  DeprecatedEAPI: version 11.1.1-r1: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l1484"><td><a href="#l1484"><span>1484</span></a></td><td><pre>  DeprecatedEAPI: version 1.2.14: uses deprecated EAPI: 0
+            <tr class="" id="l1484"><td><a href="#l1484"><span>1484</span></a></td><td><pre>  DeprecatedEAPI: version 12.2.1: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l1485"><td><a href="#l1485"><span>1485</span></a></td><td><pre>  DeprecatedEAPI: version 1.2.15: uses deprecated EAPI: 0
+            <tr class="" id="l1485"><td><a href="#l1485"><span>1485</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1486"><td><a href="#l1486"><span>1486</span></a></td><td><pre>  DeprecatedEAPI: version 1.2.16: uses deprecated EAPI: 0
+            <tr class="" id="l1486"><td><a href="#l1486"><span>1486</span></a></td><td><pre>dev-lisp/gentoo-init
 </pre></td></tr>
-            <tr class="" id="l1487"><td><a href="#l1487"><span>1487</span></a></td><td><pre>
+            <tr class="" id="l1487"><td><a href="#l1487"><span>1487</span></a></td><td><pre>  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l1488"><td><a href="#l1488"><span>1488</span></a></td><td><pre>dev-lisp/clisp
+            <tr class="" id="l1488"><td><a href="#l1488"><span>1488</span></a></td><td><pre>  DroppedKeywordWarning: version 1.0: keywords dropped: alpha, ia64, ppc64
 </pre></td></tr>
-            <tr class="" id="l1489"><td><a href="#l1489"><span>1489</span></a></td><td><pre>  DeprecatedEAPI: version 2.48-r1: uses deprecated EAPI: 2
+            <tr class="" id="l1489"><td><a href="#l1489"><span>1489</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1490"><td><a href="#l1490"><span>1490</span></a></td><td><pre>  DeprecatedEAPI: version 2.48-r2: uses deprecated EAPI: 2
+            <tr class="" id="l1490"><td><a href="#l1490"><span>1490</span></a></td><td><pre>dev-lisp/hyperspec
 </pre></td></tr>
-            <tr class="" id="l1491"><td><a href="#l1491"><span>1491</span></a></td><td><pre>  DroppedKeywordWarning: version 2.49-r8: keywords dropped: alpha, ia64
+            <tr class="" id="l1491"><td><a href="#l1491"><span>1491</span></a></td><td><pre>  DeprecatedEAPI: version 7.0: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l1492"><td><a href="#l1492"><span>1492</span></a></td><td><pre>
+            <tr class="" id="l1492"><td><a href="#l1492"><span>1492</span></a></td><td><pre>  DeprecatedEAPI: version 7.0-r1: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l1493"><td><a href="#l1493"><span>1493</span></a></td><td><pre>dev-lisp/clx
+            <tr class="" id="l1493"><td><a href="#l1493"><span>1493</span></a></td><td><pre>  MissingChksum: version 7.0-r1: "HyperSpec-7-0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 </pre></td></tr>
-            <tr class="" id="l1494"><td><a href="#l1494"><span>1494</span></a></td><td><pre>  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+            <tr class="" id="l1494"><td><a href="#l1494"><span>1494</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1495"><td><a href="#l1495"><span>1495</span></a></td><td><pre>
+            <tr class="" id="l1495"><td><a href="#l1495"><span>1495</span></a></td><td><pre>dev-lisp/sbcl
 </pre></td></tr>
-            <tr class="" id="l1496"><td><a href="#l1496"><span>1496</span></a></td><td><pre>dev-lisp/common-lisp-controller
+            <tr class="" id="l1496"><td><a href="#l1496"><span>1496</span></a></td><td><pre>  WhitespaceFound: version 1.0.55-r1: ebuild has leading whitespace on lines 50, 62
 </pre></td></tr>
-            <tr class="" id="l1497"><td><a href="#l1497"><span>1497</span></a></td><td><pre>  DeprecatedEAPI: version 4.27: uses deprecated EAPI: 0
+            <tr class="" id="l1497"><td><a href="#l1497"><span>1497</span></a></td><td><pre>  DeprecatedEAPI: version 1.0.55-r1: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l1498"><td><a href="#l1498"><span>1498</span></a></td><td><pre>  DeprecatedEAPI: version 5.13-r1: uses deprecated EAPI: 3
+            <tr class="" id="l1498"><td><a href="#l1498"><span>1498</span></a></td><td><pre>  NonExistentDeps: version 1.1.18: depset rdepends: nonexistent atoms [ &lt;sys-libs/glibc-2.6 ]
 </pre></td></tr>
-            <tr class="" id="l1499"><td><a href="#l1499"><span>1499</span></a></td><td><pre>
+            <tr class="" id="l1499"><td><a href="#l1499"><span>1499</span></a></td><td><pre>  NonExistentDeps: version 1.2.2: depset rdepends: nonexistent atoms [ &lt;sys-libs/glibc-2.6 ]
 </pre></td></tr>
-            <tr class="" id="l1500"><td><a href="#l1500"><span>1500</span></a></td><td><pre>dev-lisp/ecls
+            <tr class="" id="l1500"><td><a href="#l1500"><span>1500</span></a></td><td><pre>  NonExistentDeps: version 1.2.4: depset rdepends: nonexistent atoms [ &lt;sys-libs/glibc-2.6 ]
 </pre></td></tr>
-            <tr class="" id="l1501"><td><a href="#l1501"><span>1501</span></a></td><td><pre>  DeprecatedEAPI: version 9.12.3: uses deprecated EAPI: 2
+            <tr class="" id="l1501"><td><a href="#l1501"><span>1501</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
 </pre></td></tr>
-            <tr class="" id="l1502"><td><a href="#l1502"><span>1502</span></a></td><td><pre>  DeprecatedEAPI: version 10.4.1: uses deprecated EAPI: 3
+            <tr class="" id="l1502"><td><a href="#l1502"><span>1502</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
 </pre></td></tr>
-            <tr class="" id="l1503"><td><a href="#l1503"><span>1503</span></a></td><td><pre>  DeprecatedEAPI: version 11.1.1-r1: uses deprecated EAPI: 3
+            <tr class="" id="l1503"><td><a href="#l1503"><span>1503</span></a></td><td><pre>               : refetch
 </pre></td></tr>
-            <tr class="" id="l1504"><td><a href="#l1504"><span>1504</span></a></td><td><pre>  DeprecatedEAPI: version 12.2.1: uses deprecated EAPI: 3
+            <tr class="" id="l1504"><td><a href="#l1504"><span>1504</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
 </pre></td></tr>
-            <tr class="" id="l1505"><td><a href="#l1505"><span>1505</span></a></td><td><pre>
+            <tr class="" id="l1505"><td><a href="#l1505"><span>1505</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
 </pre></td></tr>
-            <tr class="" id="l1506"><td><a href="#l1506"><span>1506</span></a></td><td><pre>dev-lisp/gentoo-init
+            <tr class="" id="l1506"><td><a href="#l1506"><span>1506</span></a></td><td><pre>               : refetch
 </pre></td></tr>
-            <tr class="" id="l1507"><td><a href="#l1507"><span>1507</span></a></td><td><pre>  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 3
+            <tr class="" id="l1507"><td><a href="#l1507"><span>1507</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1508"><td><a href="#l1508"><span>1508</span></a></td><td><pre>  DroppedKeywordWarning: version 1.0: keywords dropped: alpha, ia64, ppc64
+            <tr class="" id="l1508"><td><a href="#l1508"><span>1508</span></a></td><td><pre>xfce-base/xfce4-session
 </pre></td></tr>
-            <tr class="" id="l1509"><td><a href="#l1509"><span>1509</span></a></td><td><pre>
+            <tr class="" id="l1509"><td><a href="#l1509"><span>1509</span></a></td><td><pre>  NonExistentDeps: version 4.10.1-r2: depset rdepends: nonexistent atoms [ gnome-extra/gnome-screensaver ]
 </pre></td></tr>
-            <tr class="" id="l1510"><td><a href="#l1510"><span>1510</span></a></td><td><pre>dev-lisp/hyperspec
+            <tr class="" id="l1510"><td><a href="#l1510"><span>1510</span></a></td><td><pre>  NonExistentDeps: version 4.12.1: depset rdepends: nonexistent atoms [ gnome-extra/gnome-screensaver ]
 </pre></td></tr>
-            <tr class="" id="l1511"><td><a href="#l1511"><span>1511</span></a></td><td><pre>  DeprecatedEAPI: version 7.0: uses deprecated EAPI: 0
+            <tr class="" id="l1511"><td><a href="#l1511"><span>1511</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
 </pre></td></tr>
-            <tr class="" id="l1512"><td><a href="#l1512"><span>1512</span></a></td><td><pre>  DeprecatedEAPI: version 7.0-r1: uses deprecated EAPI: 0
+            <tr class="" id="l1512"><td><a href="#l1512"><span>1512</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
 </pre></td></tr>
-            <tr class="" id="l1513"><td><a href="#l1513"><span>1513</span></a></td><td><pre>  MissingChksum: version 7.0-r1: "HyperSpec-7-0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+            <tr class="" id="l1513"><td><a href="#l1513"><span>1513</span></a></td><td><pre>               : refetch
 </pre></td></tr>
-            <tr class="" id="l1514"><td><a href="#l1514"><span>1514</span></a></td><td><pre>
+            <tr class="" id="l1514"><td><a href="#l1514"><span>1514</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
 </pre></td></tr>
-            <tr class="" id="l1515"><td><a href="#l1515"><span>1515</span></a></td><td><pre>dev-lisp/sbcl
+            <tr class="" id="l1515"><td><a href="#l1515"><span>1515</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
 </pre></td></tr>
-            <tr class="" id="l1516"><td><a href="#l1516"><span>1516</span></a></td><td><pre>  WhitespaceFound: version 1.0.55-r1: ebuild has leading whitespace on lines 50, 62
+            <tr class="" id="l1516"><td><a href="#l1516"><span>1516</span></a></td><td><pre>               : refetch
 </pre></td></tr>
-            <tr class="" id="l1517"><td><a href="#l1517"><span>1517</span></a></td><td><pre>  DeprecatedEAPI: version 1.0.55-r1: uses deprecated EAPI: 3
+            <tr class="" id="l1517"><td><a href="#l1517"><span>1517</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1518"><td><a href="#l1518"><span>1518</span></a></td><td><pre>  NonExistentDeps: version 1.1.18: depset rdepends: nonexistent atoms [ &lt;sys-libs/glibc-2.6 ]
+            <tr class="" id="l1518"><td><a href="#l1518"><span>1518</span></a></td><td><pre>net-voip/homer
 </pre></td></tr>
-            <tr class="" id="l1519"><td><a href="#l1519"><span>1519</span></a></td><td><pre>  NonExistentDeps: version 1.2.2: depset rdepends: nonexistent atoms [ &lt;sys-libs/glibc-2.6 ]
+            <tr class="" id="l1519"><td><a href="#l1519"><span>1519</span></a></td><td><pre>  NonExistentDeps: version 0.24.1-r1: depset depends: nonexistent atoms [ &lt;media-video/ffmpeg-2 ]
 </pre></td></tr>
-            <tr class="" id="l1520"><td><a href="#l1520"><span>1520</span></a></td><td><pre>  NonExistentDeps: version 1.2.4: depset rdepends: nonexistent atoms [ &lt;sys-libs/glibc-2.6 ]
+            <tr class="" id="l1520"><td><a href="#l1520"><span>1520</span></a></td><td><pre>  NonExistentDeps: version 0.24.1-r1: depset rdepends: nonexistent atoms [ &lt;media-video/ffmpeg-2 ]
 </pre></td></tr>
-            <tr class="" id="l1521"><td><a href="#l1521"><span>1521</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
-</pre></td></tr>
-            <tr class="" id="l1522"><td><a href="#l1522"><span>1522</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
-</pre></td></tr>
-            <tr class="" id="l1523"><td><a href="#l1523"><span>1523</span></a></td><td><pre>               : refetch
-</pre></td></tr>
-            <tr class="" id="l1524"><td><a href="#l1524"><span>1524</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
-</pre></td></tr>
-            <tr class="" id="l1525"><td><a href="#l1525"><span>1525</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
-</pre></td></tr>
-            <tr class="" id="l1526"><td><a href="#l1526"><span>1526</span></a></td><td><pre>               : refetch
-</pre></td></tr>
-            <tr class="" id="l1527"><td><a href="#l1527"><span>1527</span></a></td><td><pre>
-</pre></td></tr>
-            <tr class="" id="l1528"><td><a href="#l1528"><span>1528</span></a></td><td><pre>xfce-base/xfce4-session
-</pre></td></tr>
-            <tr class="" id="l1529"><td><a href="#l1529"><span>1529</span></a></td><td><pre>  NonExistentDeps: version 4.10.1-r2: depset rdepends: nonexistent atoms [ gnome-extra/gnome-screensaver ]
-</pre></td></tr>
-            <tr class="" id="l1530"><td><a href="#l1530"><span>1530</span></a></td><td><pre>  NonExistentDeps: version 4.12.1: depset rdepends: nonexistent atoms [ gnome-extra/gnome-screensaver ]
-</pre></td></tr>
-            <tr class="" id="l1531"><td><a href="#l1531"><span>1531</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
-</pre></td></tr>
-            <tr class="" id="l1532"><td><a href="#l1532"><span>1532</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
-</pre></td></tr>
-            <tr class="" id="l1533"><td><a href="#l1533"><span>1533</span></a></td><td><pre>               : refetch
-</pre></td></tr>
-            <tr class="" id="l1534"><td><a href="#l1534"><span>1534</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
-</pre></td></tr>
-            <tr class="" id="l1535"><td><a href="#l1535"><span>1535</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
-</pre></td></tr>
-            <tr class="" id="l1536"><td><a href="#l1536"><span>1536</span></a></td><td><pre>               : refetch
-</pre></td></tr>
-            <tr class="" id="l1537"><td><a href="#l1537"><span>1537</span></a></td><td><pre>
-</pre></td></tr>
-            <tr class="" id="l1538"><td><a href="#l1538"><span>1538</span></a></td><td><pre>net-voip/homer
-</pre></td></tr>
-            <tr class="" id="l1539"><td><a href="#l1539"><span>1539</span></a></td><td><pre>  NonExistentDeps: version 0.24.1-r1: depset depends: nonexistent atoms [ &lt;media-video/ffmpeg-2 ]
-</pre></td></tr>
-            <tr class="" id="l1540"><td><a href="#l1540"><span>1540</span></a></td><td><pre>  NonExistentDeps: version 0.24.1-r1: depset rdepends: nonexistent atoms [ &lt;media-video/ffmpeg-2 ]
-</pre></td></tr>
-            <tr class="" id="l1541"><td><a href="#l1541"><span>1541</span></a></td><td><pre>  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+            <tr class="" id="l1521"><td><a href="#l1521"><span>1521</span></a></td><td><pre>  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 </pre></td></tr>
 
         </table>
 
-        <address>Generated based on results from 2015-08-27 17:58:50 UTC</address>
+        <address>Generated based on results from 2015-08-27 18:13:54 UTC</address>
     </body>
 </html>
