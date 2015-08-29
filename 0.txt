@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 0 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'sec-policy/*' 'dev-texlive/*' 'app-doc/*' 'app-crypt/*' 'sys-auth/*' 'app-shells/*' 'games-board/*' 'net-proxy/*' 'app-mobilephone/*' 'dev-ada/*' 'app-antivirus/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'sec-policy/*' 'dev-texlive/*' 'app-doc/*' 'app-crypt/*' 'sys-auth/*' 'app-backup/*' 'games-board/*' 'net-proxy/*' 'app-mobilephone/*' 'dev-ada/*' 'app-antivirus/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -489,64 +489,88 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-app-shells/bash
-  DeprecatedEAPI: version 4.3_p39_pre0: uses deprecated EAPI: 2
-  DroppedKeywordWarning: version 4.4_alpha-r1: keywords dropped: alpha, amd64, arm, arm64, hppa, ia64, m68k, mips, ppc, ppc64, s390, sh, sparc, x86
+app-backup/amanda
+  BadInsIntoDir: version 3.3.3: ebuild uses insinto /etc/cron.daily on line 332
+  BadInsIntoDir: version 3.3.3-r1: ebuild uses insinto /etc/cron.daily on line 338
+  BadInsIntoDir: version 3.3.5: ebuild uses insinto /etc/cron.daily on line 338
+  BadInsIntoDir: version 3.3.7: ebuild uses insinto /etc/cron.daily on line 335
 
-app-shells/bash-completion
-  NonExistentDeps: version 1.3-r2: depset rdepends: nonexistent atoms [ <app-admin/eselect-1.3.7 ]
-  DeprecatedEAPI: version 1.3-r2: uses deprecated EAPI: 3
-  NonExistentDeps: version 2.1: depset rdepends: nonexistent atoms [ <app-admin/eselect-1.3.7 ]
-  NonExistentDeps: version 2.1-r2: depset rdepends: nonexistent atoms [ <app-admin/eselect-1.3.7 ]
+app-backup/backup-manager
+  DeprecatedEAPI: version 0.7.5: uses deprecated EAPI: 0
 
-app-shells/bashdb
-  DeprecatedEAPI: version 4.1.0.4: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.2.0.6: uses deprecated EAPI: 0
+app-backup/backuppc
+  SizeViolation: "files/02-fix-config.pl-formatting.patch" exceeds 20k in size; 23353 bytes total
 
-app-shells/dsh
-  DeprecatedEAPI: version 0.25.10: uses deprecated EAPI: 3
+app-backup/bareos
+  DroppedKeywordWarning: version 14.2.1: keywords dropped: amd64, x86
 
-app-shells/heirloom-sh
-  DeprecatedEAPI: version 050706: uses deprecated EAPI: 0
+app-backup/boxbackup
+  DeprecatedEAPI: version 0.11.1: uses deprecated EAPI: 2
 
-app-shells/localshell
-  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 0
+app-backup/burp
+  DroppedKeywordWarning: version 1.4.34: keywords dropped: x86
+
+app-backup/ccollect
+  DeprecatedEAPI: version 0.5.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.7.1: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.8: uses deprecated EAPI: 2
+
+app-backup/cdbackup
+  DeprecatedEAPI: version 0.7.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.7.1: uses deprecated EAPI: 0
+
+app-backup/cdbkup
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0-r1: uses deprecated EAPI: 0
+
+app-backup/cpdup
+  DeprecatedEAPI: version 1.18: uses deprecated EAPI: 0
+
+app-backup/dar
+  DeprecatedEAPI: version 2.3.8: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 2.4.9: uses deprecated EAPI: 3
+
+app-backup/dirvish
+  DeprecatedEAPI: version 1.2.1: uses deprecated EAPI: 0
+
+app-backup/flexbackup
+  DeprecatedEAPI: version 1.2.1-r12: uses deprecated EAPI: 0
+
+app-backup/hdup
+  DeprecatedEAPI: version 2.0.14: uses deprecated EAPI: 0
+
+app-backup/mirdir
+  DeprecatedEAPI: version 2.1-r1: uses deprecated EAPI: 3
+
+app-backup/mylvmbackup
+  DeprecatedEAPI: version 0.11: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.13: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.14: uses deprecated EAPI: 0
+
+app-backup/rdiff-backup
+  DeprecatedEAPI: version 1.2.8-r1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.2.8-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.3.3: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.3.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+app-backup/reoback
+  BadInsIntoDir: version 1.0_p3-r1: ebuild uses insinto /etc/cron.daily on line 36
+
+app-backup/rsnapshot
   DeprecatedEAPI: version 1.3.1: uses deprecated EAPI: 0
 
-app-shells/pdsh
-  DeprecatedEAPI: version 2.18-r1: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 2.26: uses deprecated EAPI: 2
+app-backup/sarab
+  DeprecatedEAPI: version 1.0.0: uses deprecated EAPI: 0
 
-app-shells/posh
-  DeprecatedEAPI: version 0.10.2: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 0.11: uses deprecated EAPI: 3
+app-backup/simplebackup
+  DeprecatedEAPI: version 1.8.1: uses deprecated EAPI: 0
 
-app-shells/rc
-  DeprecatedEAPI: version 1.7.2: uses deprecated EAPI: 2
+app-backup/tsm
+  DroppedKeywordWarning: version 6.3.0.5-r2: keywords dropped: x86
 
-app-shells/rrs
-  DeprecatedEAPI: version 1.70: uses deprecated EAPI: 0
-
-app-shells/scsh
-  DeprecatedEAPI: version 0.6.7: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.6.7-r1: uses deprecated EAPI: 2
-
-app-shells/scsh-install-lib
-  DeprecatedEAPI: version 1.3.0: uses deprecated EAPI: 0
-
-app-shells/soapbox
-  DeprecatedEAPI: version 0.3.1-r1: uses deprecated EAPI: 2
-
-app-shells/squirrelsh
-  DeprecatedEAPI: version 1.2.3-r1: uses deprecated EAPI: 2
-
-app-shells/tcsh
-  DeprecatedEAPI: version 6.17-r1: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 6.17.06: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 6.18.01: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 6.18.01-r2: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 6.18.01-r3: uses deprecated EAPI: 3
+app-backup/vzdump
+  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 2
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
