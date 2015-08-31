@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 15 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'media-gfx/*' 'kde-apps/*' 'sci-chemistry/*' 'x11-wm/*' 'net-im/*' 'games-misc/*' 'sys-power/*' 'games-util/*' 'www-misc/*' 'games-kids/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'media-gfx/*' 'kde-apps/*' 'sci-chemistry/*' 'x11-wm/*' 'app-backup/*' 'games-misc/*' 'sys-power/*' 'games-util/*' 'www-misc/*' 'games-kids/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1318,66 +1318,88 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-net-im/ayttm
-  MissingChksum: version 0.6.3: "ayttm-0.6.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-backup/amanda
+  BadInsIntoDir: version 3.3.3: ebuild uses insinto /etc/cron.daily on line 332
+  BadInsIntoDir: version 3.3.3-r1: ebuild uses insinto /etc/cron.daily on line 338
+  BadInsIntoDir: version 3.3.5: ebuild uses insinto /etc/cron.daily on line 338
+  BadInsIntoDir: version 3.3.7: ebuild uses insinto /etc/cron.daily on line 335
 
-net-im/bitlbee-steam
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+app-backup/backup-manager
+  DeprecatedEAPI: version 0.7.5: uses deprecated EAPI: 0
 
-net-im/centerim
-  DeprecatedEAPI: version 4.22.10: uses deprecated EAPI: 2
+app-backup/backuppc
+  SizeViolation: "files/02-fix-config.pl-formatting.patch" exceeds 20k in size; 23353 bytes total
 
-net-im/coccinella
-  MissingChksum: version 0.96.20: "Coccinella-0.96.20Src.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-backup/bareos
+  DroppedKeywordWarning: version 14.2.1: keywords dropped: amd64, x86
 
-net-im/gg-transport
-  DeprecatedEAPI: version 2.2.4: uses deprecated EAPI: 0
-  MissingChksum: version 2.2.4: "jggtrans-2.2.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-backup/boxbackup
+  DeprecatedEAPI: version 0.11.1: uses deprecated EAPI: 2
 
-net-im/jabber-base
-  DeprecatedEAPI: version 0.01: uses deprecated EAPI: 0
+app-backup/burp
+  DroppedKeywordWarning: version 1.4.40: keywords dropped: x86
 
-net-im/kadu
-  DroppedKeywordWarning: version 2.1: keywords dropped: ppc
+app-backup/ccollect
+  DeprecatedEAPI: version 0.5.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.7.1: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.8: uses deprecated EAPI: 2
 
-net-im/librvp
-  DeprecatedEAPI: version 0.9.6: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.9.7: uses deprecated EAPI: 2
-  MissingChksum: version 0.9.6: "librvp-0.9.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 0.9.7: "librvp-0.9.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-backup/cdbackup
+  DeprecatedEAPI: version 0.7.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.7.1: uses deprecated EAPI: 0
 
-net-im/mu-conference
-  DeprecatedEAPI: version 0.7: uses deprecated EAPI: 0
+app-backup/cdbkup
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0-r1: uses deprecated EAPI: 0
 
-net-im/psi
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+app-backup/cpdup
+  DeprecatedEAPI: version 1.18: uses deprecated EAPI: 0
 
-net-im/psimedia
-  MissingChksum: version 1.0.3-r3: "psimedia-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-backup/dar
+  DeprecatedEAPI: version 2.3.8: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 2.4.9: uses deprecated EAPI: 3
 
-net-im/qwit
-  DeprecatedEAPI: version 1.1_pre2: uses deprecated EAPI: 2
+app-backup/dirvish
+  DeprecatedEAPI: version 1.2.1: uses deprecated EAPI: 0
 
-net-im/reaim
-  MissingChksum: version 0.8-r1: "reaim-0.8.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-backup/flexbackup
+  DeprecatedEAPI: version 1.2.1-r12: uses deprecated EAPI: 0
 
-net-im/silc-toolkit
-  MissingChksum: version 1.1.10: "silc-toolkit-1.1.10.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-backup/hdup
+  DeprecatedEAPI: version 2.0.14: uses deprecated EAPI: 0
 
-net-im/simpserver-bin
-  DeprecatedEAPI: version 2.1.0: uses deprecated EAPI: 0
-  MissingChksum: version 2.1.0: "simpserver-2.1.0-linux-x86.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-backup/mirdir
+  DeprecatedEAPI: version 2.1-r1: uses deprecated EAPI: 3
 
-net-im/skypetab-ng
-  NonExistentDeps: version 0.5.2: depset rdepends: nonexistent atoms [ <net-im/skype-4.1 ]
-  NonExistentDeps: version 9999: depset rdepends: nonexistent atoms [ <net-im/skype-4.1 ]
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+app-backup/mylvmbackup
+  DeprecatedEAPI: version 0.11: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.13: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.14: uses deprecated EAPI: 0
 
-net-im/tkabber
-  MissingChksum: version 0.11.1-r1: "tkabber-plugins-0.11.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-backup/rdiff-backup
+  DeprecatedEAPI: version 1.2.8-r1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.2.8-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.3.3: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.3.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-net-im/ysm
-  MissingChksum: version 2.9.9.1: "ysmv7_2_9_9_1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-backup/reoback
+  BadInsIntoDir: version 1.0_p3-r1: ebuild uses insinto /etc/cron.daily on line 36
+
+app-backup/rsnapshot
+  DeprecatedEAPI: version 1.3.1: uses deprecated EAPI: 0
+
+app-backup/sarab
+  DeprecatedEAPI: version 1.0.0: uses deprecated EAPI: 0
+
+app-backup/simplebackup
+  DeprecatedEAPI: version 1.8.1: uses deprecated EAPI: 0
+
+app-backup/tsm
+  DroppedKeywordWarning: version 6.3.0.5-r2: keywords dropped: x86
+
+app-backup/vzdump
+  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 2
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
