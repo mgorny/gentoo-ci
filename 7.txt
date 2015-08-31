@@ -370,6 +370,8 @@ media-libs/mash
   MissingChksum: version 0.2.0-r1: "mash-0.2.0.tar.xz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-libs/mesa
+  NonExistentDeps: version 7.10.3: depset depends: nonexistent atoms [ <x11-libs/libdrm-2.4.34 ]
+  NonExistentDeps: version 7.10.3: depset rdepends: nonexistent atoms [ <x11-libs/libdrm-2.4.34 ]
   DeprecatedEAPI: version 7.10.3: uses deprecated EAPI: 3
   DeprecatedEclass: version 7.10.3: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   SizeViolation: "files/mesa-10.3.7-format_utils.c.patch" exceeds 20k in size; 34839 bytes total
