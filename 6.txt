@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 6 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-java/*' 'dev-lang/*' 'app-leechcraft/*' 'net-mail/*' 'dev-embedded/*' 'mail-client/*' 'net-dialup/*' 'dev-lisp/*' 'www-plugins/*' 'java-virtuals/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-java/*' 'dev-lang/*' 'app-leechcraft/*' 'net-mail/*' 'dev-embedded/*' 'mail-client/*' 'kde-plasma/*' 'dev-lisp/*' 'www-plugins/*' 'java-virtuals/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -2146,111 +2146,9 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-net-dialup/capidivert
-  DeprecatedEAPI: version 0.0.2: uses deprecated EAPI: 0
-
-net-dialup/capifwd
-  DeprecatedEAPI: version 0.6.3-r1: uses deprecated EAPI: 0
-  MissingChksum: version 0.6.3-r1: "capifwd-0.6.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-net-dialup/cistronradius
-  MissingChksum: version 1.6.8-r1: "radiusd-cistron-1.6.8.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-net-dialup/dgcmodem
-  DeprecatedEAPI: version 1.10: uses deprecated EAPI: 0
-  MissingChksum: version 1.10: "dgcmodem-1.10.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-net-dialup/dial
-  DeprecatedEAPI: version 1.2-r1: uses deprecated EAPI: 2
-  MissingChksum: version 1.2-r1: "dial-1.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-net-dialup/diald
-  DeprecatedEAPI: version 1.0-r2: uses deprecated EAPI: 0
-  MissingChksum: version 1.0-r2: "diald-1.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-net-dialup/drdsl
-  DeprecatedEAPI: version 1.2.0: uses deprecated EAPI: 0
-  MissingChksum: version 1.2.0: "drdsl-1.0-1.i586.rpm" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 1.2.0: "drdsl-1.0-1.x86_64.rpm" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-net-dialup/dwun
-  DeprecatedEAPI: version 0.96e-r2: uses deprecated EAPI: 2
-
-net-dialup/freeradius
-  DroppedKeywordWarning: version 3.0.3: keywords dropped: amd64, ppc, ppc64, sparc, x86
-
-net-dialup/freeradius-client
-  DeprecatedEAPI: version 1.1.6: uses deprecated EAPI: 2
-  MissingChksum: version 1.1.6: "freeradius-client-1.1.6.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-net-dialup/globespan-adsl
-  DeprecatedEAPI: version 0.11-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.12: uses deprecated EAPI: 0
-  MissingChksum: version 0.11-r1: "eciadsl-usermode-0.11.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 0.12: "eciadsl-usermode-0.12.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-net-dialup/hcfpcimodem
-  DeprecatedEAPI: version 1.20: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.21: uses deprecated EAPI: 2
-
-net-dialup/intel-536ep
-  DeprecatedEAPI: version 4.71: uses deprecated EAPI: 0
-  MissingChksum: version 4.71: "intel-536ep-4.71.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-net-dialup/itund
-  DeprecatedEAPI: version 0.3.1: uses deprecated EAPI: 0
-  MissingChksum: version 0.3.1: "itund-0.3.1.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-net-dialup/linux-atm
-  DeprecatedEAPI: version 2.5.0: uses deprecated EAPI: 0
-
-net-dialup/lrzsz
-  DeprecatedEAPI: version 0.12.20-r3: uses deprecated EAPI: 2
-
-net-dialup/mingetty
-  DeprecatedEAPI: version 1.08: uses deprecated EAPI: 0
-  MissingChksum: version 1.08: "mingetty-1.08.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-net-dialup/mwavem
-  DeprecatedEAPI: version 2.0-r1: uses deprecated EAPI: 2
-
-net-dialup/neocon
-  MissingChksum: version 20110228: "neocon-20110228.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-net-dialup/ppp
-  DeprecatedEAPI: version 2.4.4-r25: uses deprecated EAPI: 2
-
-net-dialup/pppconfig
-  DeprecatedEAPI: version 2.3.17-r1: uses deprecated EAPI: 0
-
-net-dialup/qtwvdialer
-  DeprecatedEAPI: version 0.4.4_p20091228: uses deprecated EAPI: 2
-  MissingChksum: version 0.4.4_p20091228: "qtwvdialer-0.4.4_p20091228.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-net-dialup/radiusclient
-  DeprecatedEAPI: version 0.3.2: uses deprecated EAPI: 0
-
-net-dialup/rp-pppoe
-  DeprecatedEAPI: version 3.8-r2: uses deprecated EAPI: 0
-
-net-dialup/sercd
-  MissingChksum: version 3.0.0-r1: "sercd-3.0.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-net-dialup/speedtouch-usb
-  DeprecatedEAPI: version 3.0.1.2-r3: uses deprecated EAPI: 0
-  MissingChksum: version 3.0.1.2-r3: "SpeedTouch330_firmware_3012.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-net-dialup/ueagle-atm
-  DeprecatedEAPI: version 1.1-r3: uses deprecated EAPI: 2
-  MissingChksum: version 1.1-r3: "ueagle-data-src-1.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-net-dialup/ueagle4-atm
-  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 2
-  MissingChksum: version 1.0: "ueagle4-data-1.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-net-dialup/wvdial
-  DeprecatedEAPI: version 1.61: uses deprecated EAPI: 3
-  MissingChksum: version 1.61: "wvdial-1.61.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+kde-plasma/plasma-workspace
+  NonExistentDeps: version 5.4.0: depset depends: nonexistent atoms [ media-libs/prison:5 ]
+  NonExistentDeps: version 5.4.0: depset rdepends: nonexistent atoms [ media-libs/prison:5 ]
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
