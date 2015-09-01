@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 6 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-java/*' 'dev-lang/*' 'app-leechcraft/*' 'net-mail/*' 'dev-embedded/*' 'mail-client/*' 'kde-plasma/*' 'sys-firmware/*' 'www-plugins/*' 'java-virtuals/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-java/*' 'dev-lang/*' 'app-leechcraft/*' 'net-mail/*' 'dev-embedded/*' 'mail-client/*' 'kde-plasma/*' 'app-pda/*' 'www-plugins/*' 'java-virtuals/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -2156,34 +2156,96 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-sys-firmware/iwl1000-ucode
-  DroppedKeywordWarning: version 128.50.3.1: keywords dropped: amd64, x86
-  MissingChksum: version 128.50.3.1: "iwlwifi-1000-ucode-128.50.3.1.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-pda/iripdb
+  DeprecatedEAPI: version 0.1.3b: uses deprecated EAPI: 0
 
-sys-firmware/iwl6000-ucode
-  DeprecatedEAPI: version 9.221.4.1: uses deprecated EAPI: 0
+app-pda/jpilot
+  DeprecatedEAPI: version 1.8.0: uses deprecated EAPI: 2
 
-sys-firmware/iwl6005-ucode
-  DeprecatedEAPI: version 17.168.5.3: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 18.168.6.1: uses deprecated EAPI: 0
+app-pda/jpilot-backup
+  DeprecatedEAPI: version 0.60: uses deprecated EAPI: 2
 
-sys-firmware/iwl6030-ucode
-  DeprecatedEAPI: version 17.168.5.2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 18.168.6.1: uses deprecated EAPI: 0
-  MissingChksum: version 17.168.5.2: "iwlwifi-6000g2b-ucode-17.168.5.2.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 18.168.6.1: "iwlwifi-6000g2b-ucode-18.168.6.1.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-pda/jpilot-mail
+  DeprecatedEAPI: version 0.1.7: uses deprecated EAPI: 2
 
-sys-firmware/iwl6050-ucode
-  DeprecatedEAPI: version 9.201.4.1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 41.28.5.1: uses deprecated EAPI: 0
-  MissingChksum: version 9.201.4.1: "iwlwifi-6050-ucode-9.201.4.1.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 41.28.5.1: "iwlwifi-6050-ucode-41.28.5.1.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-pda/jpilot-plucker
+  DeprecatedEAPI: version 0.02: uses deprecated EAPI: 2
 
-sys-firmware/sigrok-firmware-fx2lafw
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+app-pda/jpilot-syncmal
+  DeprecatedEAPI: version 0.81: uses deprecated EAPI: 2
 
-sys-firmware/vgabios
-  DroppedKeywordWarning: version 0.7a: keywords dropped: ppc, ppc64
+app-pda/libopensync
+  DeprecatedEAPI: version 0.22: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.22-r1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.22-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.36-r2: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.36-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.39-r1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.39-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+app-pda/libopensync-plugin-file
+  DeprecatedEAPI: version 0.22: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 0.36: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 0.39: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
+
+app-pda/libopensync-plugin-gnokii
+  DeprecatedEAPI: version 0.22: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.36: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 2
+
+app-pda/libopensync-plugin-gpe
+  DeprecatedEAPI: version 0.22: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.36: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 2
+
+app-pda/libopensync-plugin-moto
+  NonExistentDeps: version 0.22: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 0.22: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEAPI: version 0.22: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.22: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+app-pda/libopensync-plugin-palm
+  DeprecatedEAPI: version 0.22: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
+
+app-pda/libopensync-plugin-python
+  NonExistentDeps: version 0.22: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  NonExistentDeps: version 0.22: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  DeprecatedEAPI: version 0.22: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.22: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 9999: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  NonExistentDeps: version 9999: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+app-pda/libopensync-plugin-sunbird
+  DeprecatedEAPI: version 0.22: uses deprecated EAPI: 3
+
+app-pda/libopensync-plugin-vformat
+  DeprecatedEAPI: version 0.39: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
+
+app-pda/msynctool
+  DeprecatedEAPI: version 0.22: uses deprecated EAPI: 3
+
+app-pda/osynctool
+  DeprecatedEAPI: version 0.39: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
+
+app-pda/p3nfs
+  DeprecatedEAPI: version 5.19-r2: uses deprecated EAPI: 2
+
+app-pda/pilot-link
+  SizeViolation: "files/pilot-link-0.12.5-perl514.patch" exceeds 20k in size; 22730 bytes total
+
+app-pda/synce-core
+  DeprecatedEclass: version 0.16-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+app-pda/synce-sync-engine
+  DeprecatedEclass: version 0.15.1-r3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
