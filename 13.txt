@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 13 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'app-emulation/*' 'app-dicts/*' 'app-emacs/*' 'kde-misc/*' 'xfce-extra/*' 'media-tv/*' 'gnustep-apps/*' 'sys-infiniband/*' 'dev-go/*' 'app-officeext/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'app-emulation/*' 'sys-devel/*' 'app-emacs/*' 'kde-misc/*' 'xfce-extra/*' 'media-tv/*' 'gnustep-apps/*' 'sys-infiniband/*' 'dev-go/*' 'app-officeext/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -145,360 +145,219 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-app-dicts/aspell-af
-  DeprecatedEAPI: version 0.50.0: uses deprecated EAPI: 0
+sys-devel/autoconf
+  DeprecatedEAPI: version 2.69: uses deprecated EAPI: 3
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-app-dicts/aspell-be
-  DeprecatedEAPI: version 0.01-r1: uses deprecated EAPI: 0
+sys-devel/autoconf-wrapper
+  DeprecatedEAPI: version 13: uses deprecated EAPI: 0
 
-app-dicts/aspell-bg
-  DeprecatedEAPI: version 4.1.0: uses deprecated EAPI: 0
+sys-devel/automake
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-app-dicts/aspell-br
-  DeprecatedEAPI: version 0.50.2: uses deprecated EAPI: 0
+sys-devel/automake-wrapper
+  DeprecatedEAPI: version 9: uses deprecated EAPI: 0
 
-app-dicts/aspell-ca
-  DeprecatedEAPI: version 2.1.5.1: uses deprecated EAPI: 0
+sys-devel/bc
+  DeprecatedEAPI: version 1.06.95: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.06.95-r1: uses deprecated EAPI: 2
 
-app-dicts/aspell-cs
-  DeprecatedEAPI: version 0.60.20040614: uses deprecated EAPI: 0
+sys-devel/binutils
+  DeprecatedEAPI: version 2.24-r3: uses deprecated EAPI: 0
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-app-dicts/aspell-cy
-  DeprecatedEAPI: version 0.50.3: uses deprecated EAPI: 0
+sys-devel/binutils-apple
+  BadInsIntoDir: version 3.1.2: ebuild uses insinto /etc/env.d on line 203
+  DeprecatedEAPI: version 3.1.2: uses deprecated EAPI: 3
+  BadInsIntoDir: version 3.2: ebuild uses insinto /etc/env.d on line 223
+  DeprecatedEAPI: version 3.2: uses deprecated EAPI: 3
+  BadInsIntoDir: version 3.2.6: ebuild uses insinto /etc/env.d on line 243
+  DeprecatedEAPI: version 3.2.6: uses deprecated EAPI: 3
+  BadInsIntoDir: version 4.2: ebuild uses insinto /etc/env.d on line 301
+  DeprecatedEAPI: version 4.2: uses deprecated EAPI: 3
+  BadInsIntoDir: version 4.2-r1: ebuild uses insinto /etc/env.d on line 317
+  DeprecatedEAPI: version 4.2-r1: uses deprecated EAPI: 3
+  BadInsIntoDir: version 4.3: ebuild uses insinto /etc/env.d on line 298
+  DeprecatedEAPI: version 4.3: uses deprecated EAPI: 3
+  BadInsIntoDir: version 4.3-r1: ebuild uses insinto /etc/env.d on line 305
+  DeprecatedEAPI: version 4.3-r1: uses deprecated EAPI: 3
+  BadInsIntoDir: version 5.1: ebuild uses insinto /etc/env.d on line 345
+  DeprecatedEAPI: version 5.1: uses deprecated EAPI: 3
+  BadInsIntoDir: version 6.1: ebuild uses insinto /etc/env.d on line 344
+  DeprecatedEAPI: version 6.1: uses deprecated EAPI: 3
+  BadInsIntoDir: version 6.3: ebuild uses insinto /etc/env.d on line 336
+  SizeViolation: "files/ld64-236.3-gcc.patch" exceeds 20k in size; 41867 bytes total
+  SizeViolation: "files/ld64-236.3-noarm.patch" exceeds 20k in size; 37310 bytes total
+  SizeViolation: "files/ld64-236.3-nosnapshots.patch" exceeds 20k in size; 23030 bytes total
+  SizeViolation: "files/ld64-241.9-gcc.patch" exceeds 20k in size; 40446 bytes total
+  SizeViolation: "files/ld64-241.9-noarm.patch" exceeds 20k in size; 39659 bytes total
+  SizeViolation: "files/ld64-241.9-nosnapshots.patch" exceeds 20k in size; 23156 bytes total
+  SizeViolation: "files/ld64-242-gcc.patch" exceeds 20k in size; 40987 bytes total
+  SizeViolation: "files/ld64-242-noarm.patch" exceeds 20k in size; 37257 bytes total
 
-app-dicts/aspell-da
-  DeprecatedEAPI: version 1.7.42: uses deprecated EAPI: 0
+sys-devel/binutils-config
+  DeprecatedEAPI: version 1.9-r4: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 3-r3: uses deprecated EAPI: 0
 
-app-dicts/aspell-de
-  DeprecatedEAPI: version 0.60_pre20030222: uses deprecated EAPI: 0
+sys-devel/bison
+  DeprecatedEAPI: version 1.875d: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.4.3: uses deprecated EAPI: 2
+  SizeViolation: "files/bison-3.0.4-optional-perl.patch" exceeds 20k in size; 21963 bytes total
 
-app-dicts/aspell-de-alt
-  DeprecatedEAPI: version 2.1.1-r1: uses deprecated EAPI: 0
+sys-devel/bmake
+  DeprecatedEAPI: version 20140214: uses deprecated EAPI: 3
 
-app-dicts/aspell-el
-  DeprecatedEAPI: version 0.50.3: uses deprecated EAPI: 0
+sys-devel/byfl
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-app-dicts/aspell-en
-  DeprecatedEAPI: version 7.1.0: uses deprecated EAPI: 0
+sys-devel/clang
+  DeprecatedEAPI: version 2.8-r3: uses deprecated EAPI: 3
+  DeprecatedEclass: version 2.8-r3: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 2.9-r1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 2.9-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 3.0-r4: uses deprecated EAPI: 3
+  DeprecatedEclass: version 3.0-r4: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 3.1-r5: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  MissingChksum: version 2.8-r3: "clang-2.8.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-app-dicts/aspell-eo
-  DeprecatedEAPI: version 2.1.20000225.2: uses deprecated EAPI: 0
+sys-devel/cons
+  DeprecatedEAPI: version 2.2.0: uses deprecated EAPI: 0
+  MissingChksum: version 2.2.0: "cons-2.2.0.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-app-dicts/aspell-es
-  DeprecatedEAPI: version 1.9a: uses deprecated EAPI: 0
+sys-devel/crossdev
+  DeprecatedEAPI: version 20100814: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 20101011: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 20110310: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 20110705: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 20110819: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 20111011: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 20111018: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 20111118: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 20111221: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 20120214: uses deprecated EAPI: 3
+  DeprecatedEclass: version 99999999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-app-dicts/aspell-et
-  DeprecatedEAPI: version 0.1.21.1: uses deprecated EAPI: 0
+sys-devel/flex
+  DeprecatedEAPI: version 2.5.35: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.5.35_p10: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 2.5.37: uses deprecated EAPI: 3
 
-app-dicts/aspell-fi
-  DeprecatedEAPI: version 0.7.0: uses deprecated EAPI: 0
+sys-devel/gcc
+  DroppedKeywordWarning: version 5.1.0: keywords dropped: alpha, amd64, arm, arm64, hppa, ia64, m68k, mips, ppc, ppc64, s390, sh, sparc, x86
 
-app-dicts/aspell-fo
-  DeprecatedEAPI: version 0.51.0: uses deprecated EAPI: 0
+sys-devel/gcc-apple
+  DeprecatedEAPI: version 4.0.1_p5493: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 4.2.1_p5664: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 4.2.1_p5666-r1: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 4.2.1_p5666-r2: uses deprecated EAPI: 3
+  SizeViolation: "files/gcc-apple-4.2.1_p5646-gfortran.patch" exceeds 20k in size; 38284 bytes total
 
-app-dicts/aspell-fr
-  DeprecatedEAPI: version 0.60: uses deprecated EAPI: 0
-
-app-dicts/aspell-ga
-  DeprecatedEAPI: version 0.50.4: uses deprecated EAPI: 0
-
-app-dicts/aspell-gl
-  DeprecatedEAPI: version 0.5.2: uses deprecated EAPI: 0
-
-app-dicts/aspell-he
-  DeprecatedEAPI: version 1.0.0: uses deprecated EAPI: 0
-
-app-dicts/aspell-hr
-  DeprecatedEAPI: version 0.51.0: uses deprecated EAPI: 0
-
-app-dicts/aspell-hu
-  DeprecatedEAPI: version 0.99.4.2: uses deprecated EAPI: 0
-
-app-dicts/aspell-hy
-  DeprecatedEAPI: version 0.10.0: uses deprecated EAPI: 0
-
-app-dicts/aspell-is
-  DeprecatedEAPI: version 0.51.1.0: uses deprecated EAPI: 0
-
-app-dicts/aspell-it
-  DeprecatedEAPI: version 2.4.20070901: uses deprecated EAPI: 0
-
-app-dicts/aspell-la
-  DeprecatedEAPI: version 6.0.20020503.0: uses deprecated EAPI: 0
-
-app-dicts/aspell-lt
-  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 0
-
-app-dicts/aspell-nl
-  DeprecatedEAPI: version 0.50.2: uses deprecated EAPI: 0
-
-app-dicts/aspell-no
-  DeprecatedEAPI: version 0.50.2: uses deprecated EAPI: 0
-
-app-dicts/aspell-pl
-  DeprecatedEAPI: version 6.0.20120418.0: uses deprecated EAPI: 0
-
-app-dicts/aspell-pt
-  DeprecatedEAPI: version 0.50.2-r1: uses deprecated EAPI: 0
-
-app-dicts/aspell-pt-br
-  DeprecatedEAPI: version 6.0.20090702: uses deprecated EAPI: 0
-
-app-dicts/aspell-ro
-  DeprecatedEAPI: version 3.3.2: uses deprecated EAPI: 0
-
-app-dicts/aspell-ru
-  DeprecatedEAPI: version 0.99.1-r1: uses deprecated EAPI: 0
-
-app-dicts/aspell-sk
-  DeprecatedEAPI: version 2.01.2: uses deprecated EAPI: 0
-
-app-dicts/aspell-sl
-  DeprecatedEAPI: version 0.50.0: uses deprecated EAPI: 0
-
-app-dicts/aspell-sr
-  DeprecatedEAPI: version 0.60: uses deprecated EAPI: 0
-
-app-dicts/aspell-sv
-  DeprecatedEAPI: version 0.51.0: uses deprecated EAPI: 0
-
-app-dicts/aspell-uk
-  DeprecatedEAPI: version 1.4.0.0: uses deprecated EAPI: 0
-
-app-dicts/aspell-vi
-  DeprecatedEAPI: version 0.01.1.1: uses deprecated EAPI: 0
-
-app-dicts/bookview
-  DeprecatedEAPI: version 3.2.1: uses deprecated EAPI: 0
-
-app-dicts/canna-2ch
-  DeprecatedEAPI: version 20030827: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 20040519: uses deprecated EAPI: 0
-
-app-dicts/canna-cannadic
-  DeprecatedEAPI: version 0.95c: uses deprecated EAPI: 0
-
-app-dicts/dictd-devils
-  DeprecatedEAPI: version 0-r1: uses deprecated EAPI: 0
-
-app-dicts/dictd-dicts
-  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
-
-app-dicts/dictd-elements
-  DeprecatedEAPI: version 2000.22.07-r1: uses deprecated EAPI: 0
-
-app-dicts/dictd-foldoc
-  DeprecatedEAPI: version 2001.03.13-r1: uses deprecated EAPI: 0
-
-app-dicts/dictd-gazetteer
-  DeprecatedEAPI: version 1.2-r1: uses deprecated EAPI: 0
-
-app-dicts/dictd-jargon
-  DeprecatedEAPI: version 4.2.3-r1: uses deprecated EAPI: 0
-
-app-dicts/dictd-misc
-  DeprecatedEAPI: version 1.5b-r1: uses deprecated EAPI: 0
-
-app-dicts/dictd-web1913
-  DeprecatedEAPI: version 1.4-r1: uses deprecated EAPI: 0
-
-app-dicts/dictd-wn
+sys-devel/gcc-config
+  DeprecatedEAPI: version 1.4.1-r1: uses deprecated EAPI: 0
   DeprecatedEAPI: version 1.5-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.0: uses deprecated EAPI: 0
-
-app-dicts/duali-data
-  DeprecatedEAPI: version 0.1b: uses deprecated EAPI: 0
-
-app-dicts/edictionary
-  DeprecatedEAPI: version 2.6: uses deprecated EAPI: 3
-
-app-dicts/freedict-deu-eng
-  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
-
-app-dicts/freedict-eng-fra
-  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
-
-app-dicts/freedict-eng-ita
-  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
-
-app-dicts/freedict-eng-swe
-  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
-
-app-dicts/freedict-fra-eng
-  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
-
-app-dicts/freedict-ita-eng
-  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
-
-app-dicts/migemo-dict
-  DeprecatedEAPI: version 200812: uses deprecated EAPI: 0
-
-app-dicts/myspell-cy
-  DeprecatedEAPI: version 20060316: uses deprecated EAPI: 0
-
-app-dicts/myspell-en
-  DeprecatedEAPI: version 20081002: uses deprecated EAPI: 0
-
-app-dicts/myspell-ga
-  DeprecatedEAPI: version 20060316: uses deprecated EAPI: 0
-
-app-dicts/myspell-gl
-  DeprecatedEAPI: version 20060316: uses deprecated EAPI: 0
-
-app-dicts/myspell-hr
-  DeprecatedEAPI: version 20060316: uses deprecated EAPI: 0
-
-app-dicts/myspell-ia
-  DeprecatedEAPI: version 20060316: uses deprecated EAPI: 0
-
-app-dicts/myspell-mi
-  DeprecatedEAPI: version 20060316: uses deprecated EAPI: 0
-
-app-dicts/myspell-mk
-  DeprecatedEAPI: version 20060316: uses deprecated EAPI: 0
-
-app-dicts/myspell-ms
-  DeprecatedEAPI: version 20060316: uses deprecated EAPI: 0
-
-app-dicts/myspell-ru
-  DeprecatedEAPI: version 20060316: uses deprecated EAPI: 0
-
-app-dicts/myspell-sw
-  DeprecatedEAPI: version 20060316: uses deprecated EAPI: 0
-
-app-dicts/myspell-tn
-  DeprecatedEAPI: version 20060316: uses deprecated EAPI: 0
-
-app-dicts/myspell-zu
-  DeprecatedEAPI: version 20060316: uses deprecated EAPI: 0
-
-app-dicts/qvortaro
-  MetadataError: version 0.4.1: attr(fetchables): error- Metadata Exception: pkg ebuild src: app-dicts/qvortaro-0.4.1, attr fetchables
-error: mirror://berlios/qvortaro/qvortaro-0.4.1.tar.gz is unparseable
-flagged token- uri mirror://berlios/qvortaro/qvortaro-0.4.1.tar.gz isn't a known mirror tier
-
-app-dicts/stardict-cdict-en-zh-big5
-  DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
-
-app-dicts/stardict-cdict-en-zh-gb
-  DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
-
-app-dicts/stardict-cedict-zh-en-big5
-  DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
-
-app-dicts/stardict-cedict-zh-en-gb
-  DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
-
-app-dicts/stardict-dictd-devils
-  DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
-
-app-dicts/stardict-freedict-eng-deu
-  DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
-
-app-dicts/stardict-freedict-eng-fra
-  DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
-
-app-dicts/stardict-freedict-eng-ita
-  DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
-
-app-dicts/stardict-freedict-eng-lat
-  DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
-
-app-dicts/stardict-freedict-eng-rus
-  DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
-
-app-dicts/stardict-freedict-eng-spa
-  DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
-
-app-dicts/stardict-freedict-eng-swe
-  DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
-
-app-dicts/stardict-freedict-eng-tur
-  DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
-
-app-dicts/stardict-freedict-tur-deu
-  DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
-
-app-dicts/stardict-freedict-tur-eng
-  DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
-
-app-dicts/stardict-hnd-de-vi
-  DeprecatedEAPI: version 20050917: uses deprecated EAPI: 0
-
-app-dicts/stardict-hnd-en-vi
-  DeprecatedEAPI: version 20050917: uses deprecated EAPI: 0
-
-app-dicts/stardict-hnd-fr-vi
-  DeprecatedEAPI: version 20050917: uses deprecated EAPI: 0
-
-app-dicts/stardict-hnd-ru-vi
-  DeprecatedEAPI: version 20050917: uses deprecated EAPI: 0
-
-app-dicts/stardict-hnd-vi-de
-  DeprecatedEAPI: version 20050917: uses deprecated EAPI: 0
-
-app-dicts/stardict-hnd-vi-en
-  DeprecatedEAPI: version 20050917: uses deprecated EAPI: 0
-
-app-dicts/stardict-hnd-vi-fr
-  DeprecatedEAPI: version 20050917: uses deprecated EAPI: 0
-
-app-dicts/stardict-hnd-vi-vi
-  DeprecatedEAPI: version 20050917: uses deprecated EAPI: 0
-
-app-dicts/stardict-jmdict-en-ja
-  DeprecatedEAPI: version 2.4.2-r1: uses deprecated EAPI: 0
-
-app-dicts/stardict-jmdict-ja-en
-  DeprecatedEAPI: version 2.4.2-r1: uses deprecated EAPI: 0
-
-app-dicts/stardict-langdao-en-zh-gb
-  DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
-
-app-dicts/stardict-langdao-zh-en-gb
-  DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
-
-app-dicts/stardict-mova-smiley
-  DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
-
-app-dicts/stardict-oxford-en-zh-gb
-  DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
-
-app-dicts/stardict-quick-eng-fra
-  DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
-
-app-dicts/stardict-quick-eng-jpn
-  DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
-
-app-dicts/stardict-quick-jpn-eng
-  DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
-
-app-dicts/stardict-quick-ru-en
-  DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
-
-app-dicts/stardict-xdict-en-zh-big5
-  DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
-
-app-dicts/stardict-xdict-en-zh-gb
-  DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
-
-app-dicts/stardict-xdict-zh-en-big5
-  DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
-
-app-dicts/stardict-xdict-zh-en-gb
-  DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
-
-app-dicts/sword-ab
-  DeprecatedEAPI: version 1.3: uses deprecated EAPI: 0
-
-app-dicts/sword-abbott
-  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 0
-
-app-dicts/sword-klviklingon_en
-  DeprecatedEAPI: version 2.1: uses deprecated EAPI: 0
-
-app-dicts/wnn-ldic
-  DeprecatedEAPI: version 1.04: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.5-r2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.5.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.5.1-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.6: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.7: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.7.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.7.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.7.3: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.8: uses deprecated EAPI: 0
+  SizeViolation: "files/gcc-config-1.4.1" exceeds 20k in size; 21603 bytes total
+  SizeViolation: "files/gcc-config-1.5.1" exceeds 20k in size; 20907 bytes total
+
+sys-devel/gdb
+  DeprecatedEAPI: version 7.6.2: uses deprecated EAPI: 3
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+sys-devel/gdb-apple
+  DeprecatedEAPI: version 563: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 768-r1: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 960: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 962: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 966: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 1344: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 1346: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 1461: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 1518: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 1705: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 1708: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 1752: uses deprecated EAPI: 3
+  MissingChksum: version 563: "gdb-563.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 768-r1: "gdb-768.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 960: "gdb-960.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 962: "gdb-962.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 966: "gdb-966.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1344: "gdb-1344.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1346: "gdb-1346.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1461: "gdb-1461.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1518: "gdb-1518.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1705: "gdb-1705.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1708: "gdb-1708.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1752: "gdb-1752.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sys-devel/gnuconfig
+  DeprecatedEAPI: version 20130516: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 20131128: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 20140212: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 20140728: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 20150304: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 20150308: uses deprecated EAPI: 2
+  DeprecatedEclass: version 99999999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+sys-devel/kgcc64
+  DroppedKeywordWarning: version 4.3.5: keywords dropped: ppc, s390
+  DroppedKeywordWarning: version 4.8.1: keywords dropped: mips
+  DroppedKeywordWarning: version 4.9.1: keywords dropped: sparc
+
+sys-devel/libtool
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+sys-devel/llvm
+  DeprecatedEclass: version 3.0-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 3.1-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+sys-devel/m4
+  DeprecatedEAPI: version 1.4.16: uses deprecated EAPI: 3
+
+sys-devel/make
+  DeprecatedEAPI: version 3.80-r4: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 3.81-r2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 3.82-r4: uses deprecated EAPI: 2
+  MissingChksum: version 3.80-r4: "make-3.80.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sys-devel/native-cctools
+  BadInsIntoDir: version 1: ebuild uses insinto /etc/env.d on line 96
+  DeprecatedEAPI: version 1: uses deprecated EAPI: 3
+  BadInsIntoDir: version 2: ebuild uses insinto /etc/env.d on line 96
+  DeprecatedEAPI: version 2: uses deprecated EAPI: 3
+  BadInsIntoDir: version 4: ebuild uses insinto /etc/env.d on line 99
+  DeprecatedEAPI: version 4: uses deprecated EAPI: 3
+
+sys-devel/parity
+  MissingChksum: version 1.2.4: "parity-1.2.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sys-devel/qconf
+  DeprecatedEAPI: version 1.5_pre717-r1: uses deprecated EAPI: 2
+  MissingChksum: version 1.5_pre717-r1: "qconf-1.5_pre717.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sys-devel/remake
+  DeprecatedEAPI: version 3.81.0.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 3.81.0.3: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 3.82.0.4: uses deprecated EAPI: 0
+  MissingChksum: version 3.81.0.2: "remake-3.81+dbg-0.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sys-devel/smatch
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+sys-devel/sparse
+  DeprecatedEAPI: version 0.4.3: uses deprecated EAPI: 2
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+sys-devel/ucpp
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
