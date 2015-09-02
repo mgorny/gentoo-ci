@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 5 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-libs/*' 'sci-libs/*' 'sci-biology/*' 'net-wireless/*' 'sys-block/*' 'dev-cpp/*' 'net-fs/*' 'sys-firmware/*' 'lxde-base/*' 'games-roguelike/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-libs/*' 'sci-libs/*' 'sci-biology/*' 'net-wireless/*' 'sys-block/*' 'dev-cpp/*' 'net-fs/*' 'sys-firmware/*' 'www-plugins/*' 'games-roguelike/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1541,26 +1541,11 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-lxde-base/lxde-meta
-  DeprecatedEAPI: version 0.5.5-r4: uses deprecated EAPI: 2
+www-plugins/kaffeine-mozilla-plugin
+  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 0
 
-lxde-base/lxdm
-  DeprecatedEAPI: version 0.4.1-r9: uses deprecated EAPI: 2
-
-lxde-base/lxpanel
-  DroppedKeywordWarning: version 0.8.1: keywords dropped: alpha
-
-lxde-base/lxpolkit
-  MissingChksum: version 0.1.0-r1: "lxpolkit-0.1.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-lxde-base/lxsession
-  DroppedKeywordWarning: version 0.4.9.2: keywords dropped: arm64
-
-lxde-base/lxtask
-  DroppedKeywordWarning: version 0.1.6: keywords dropped: arm64
-
-lxde-base/lxterminal
-  DroppedKeywordWarning: version 0.2.0: keywords dropped: arm64
+www-plugins/pipelight
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
