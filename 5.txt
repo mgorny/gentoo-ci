@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 5 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-libs/*' 'sci-libs/*' 'sci-biology/*' 'net-wireless/*' 'sys-block/*' 'dev-cpp/*' 'net-fs/*' 'sys-firmware/*' 'dev-lua/*' 'games-roguelike/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-libs/*' 'sci-libs/*' 'sci-biology/*' 'net-wireless/*' 'sys-block/*' 'dev-cpp/*' 'net-fs/*' 'sys-firmware/*' 'dev-lua/*' 'games-simulation/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1567,8 +1567,3 @@ WARNING pkgcore: metadata.dtd cannot be opened from
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
-
-games-roguelike/slashem
-  DeprecatedEAPI: version 0.0.772: uses deprecated EAPI: 0
-  MissingChksum: version 0.0.772: "se007e7f2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 0.0.772: "conf12s.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
