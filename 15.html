@@ -34,7 +34,6 @@
                 <li><a href="#l436">436</a></li>
                 <li><a href="#l443">443</a></li>
                 <li><a href="#l446">446</a></li>
-                <li><a href="#l1364">1364</a></li>
             </ol>
         </div>
 
@@ -53,7 +52,7 @@
 </pre></td></tr>
             <tr class="" id="l6"><td><a href="#l6"><span>6</span></a></td><td><pre>+ set +x
 </pre></td></tr>
-            <tr class="" id="l7"><td><a href="#l7"><span>7</span></a></td><td><pre>+ exec pkgcheck -r gentoo --reporter FancyReporter 'media-gfx/*' 'kde-apps/*' 'sci-chemistry/*' 'x11-wm/*' 'www-servers/*' 'games-misc/*' 'sys-power/*' 'games-util/*' 'www-misc/*' 'games-kids/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
+            <tr class="" id="l7"><td><a href="#l7"><span>7</span></a></td><td><pre>+ exec pkgcheck -r gentoo --reporter FancyReporter 'media-gfx/*' 'kde-apps/*' 'sci-chemistry/*' 'x11-wm/*' 'app-shells/*' 'games-misc/*' 'sys-power/*' 'games-util/*' 'www-misc/*' 'games-kids/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 </pre></td></tr>
             <tr class="" id="l8"><td><a href="#l8"><span>8</span></a></td><td><pre>/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
 </pre></td></tr>
@@ -2693,407 +2692,423 @@
 </pre></td></tr>
             <tr class="" id="l1326"><td><a href="#l1326"><span>1326</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1327"><td><a href="#l1327"><span>1327</span></a></td><td><pre>www-servers/fnord
+            <tr class="" id="l1327"><td><a href="#l1327"><span>1327</span></a></td><td><pre>app-shells/bash
 </pre></td></tr>
-            <tr class="" id="l1328"><td><a href="#l1328"><span>1328</span></a></td><td><pre>  DeprecatedEAPI: version 1.10-r2: uses deprecated EAPI: 3
+            <tr class="" id="l1328"><td><a href="#l1328"><span>1328</span></a></td><td><pre>  DeprecatedEAPI: version 4.3_p39_pre0: uses deprecated EAPI: 2
 </pre></td></tr>
-            <tr class="" id="l1329"><td><a href="#l1329"><span>1329</span></a></td><td><pre>  DeprecatedEAPI: version 1.11: uses deprecated EAPI: 3
+            <tr class="" id="l1329"><td><a href="#l1329"><span>1329</span></a></td><td><pre>  DroppedKeywordWarning: version 4.4_alpha-r1: keywords dropped: alpha, amd64, arm, arm64, hppa, ia64, m68k, mips, ppc, ppc64, s390, sh, sparc, x86
 </pre></td></tr>
-            <tr class="" id="l1330"><td><a href="#l1330"><span>1330</span></a></td><td><pre>  MissingChksum: version 1.10-r2: "fnord-1.10.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+            <tr class="" id="l1330"><td><a href="#l1330"><span>1330</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1331"><td><a href="#l1331"><span>1331</span></a></td><td><pre>
+            <tr class="" id="l1331"><td><a href="#l1331"><span>1331</span></a></td><td><pre>app-shells/bash-completion
 </pre></td></tr>
-            <tr class="" id="l1332"><td><a href="#l1332"><span>1332</span></a></td><td><pre>www-servers/gatling
+            <tr class="" id="l1332"><td><a href="#l1332"><span>1332</span></a></td><td><pre>  NonExistentDeps: version 1.3-r2: depset rdepends: nonexistent atoms [ &lt;app-admin/eselect-1.3.7 ]
 </pre></td></tr>
-            <tr class="" id="l1333"><td><a href="#l1333"><span>1333</span></a></td><td><pre>  MissingChksum: version 0.12-r2: "gatling-0.12.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+            <tr class="" id="l1333"><td><a href="#l1333"><span>1333</span></a></td><td><pre>  DeprecatedEAPI: version 1.3-r2: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l1334"><td><a href="#l1334"><span>1334</span></a></td><td><pre>
+            <tr class="" id="l1334"><td><a href="#l1334"><span>1334</span></a></td><td><pre>  NonExistentDeps: version 2.1: depset rdepends: nonexistent atoms [ &lt;app-admin/eselect-1.3.7 ]
 </pre></td></tr>
-            <tr class="" id="l1335"><td><a href="#l1335"><span>1335</span></a></td><td><pre>www-servers/lighttpd
+            <tr class="" id="l1335"><td><a href="#l1335"><span>1335</span></a></td><td><pre>  NonExistentDeps: version 2.1-r2: depset rdepends: nonexistent atoms [ &lt;app-admin/eselect-1.3.7 ]
 </pre></td></tr>
-            <tr class="" id="l1336"><td><a href="#l1336"><span>1336</span></a></td><td><pre>  SizeViolation: "files/lighttpd-1.4.29-mod_uploadprogress.patch" exceeds 20k in size; 22472 bytes total
+            <tr class="" id="l1336"><td><a href="#l1336"><span>1336</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1337"><td><a href="#l1337"><span>1337</span></a></td><td><pre>
+            <tr class="" id="l1337"><td><a href="#l1337"><span>1337</span></a></td><td><pre>app-shells/dsh
 </pre></td></tr>
-            <tr class="" id="l1338"><td><a href="#l1338"><span>1338</span></a></td><td><pre>www-servers/monkeyd
+            <tr class="" id="l1338"><td><a href="#l1338"><span>1338</span></a></td><td><pre>  DeprecatedEAPI: version 0.25.10: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l1339"><td><a href="#l1339"><span>1339</span></a></td><td><pre>  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+            <tr class="" id="l1339"><td><a href="#l1339"><span>1339</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1340"><td><a href="#l1340"><span>1340</span></a></td><td><pre>
+            <tr class="" id="l1340"><td><a href="#l1340"><span>1340</span></a></td><td><pre>app-shells/heirloom-sh
 </pre></td></tr>
-            <tr class="" id="l1341"><td><a href="#l1341"><span>1341</span></a></td><td><pre>www-servers/pound
+            <tr class="" id="l1341"><td><a href="#l1341"><span>1341</span></a></td><td><pre>  DeprecatedEAPI: version 050706: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l1342"><td><a href="#l1342"><span>1342</span></a></td><td><pre>  DeprecatedEAPI: version 2.6: uses deprecated EAPI: 2
+            <tr class="" id="l1342"><td><a href="#l1342"><span>1342</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1343"><td><a href="#l1343"><span>1343</span></a></td><td><pre>  MissingChksum: version 2.6: "Pound-2.6.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+            <tr class="" id="l1343"><td><a href="#l1343"><span>1343</span></a></td><td><pre>app-shells/pdsh
 </pre></td></tr>
-            <tr class="" id="l1344"><td><a href="#l1344"><span>1344</span></a></td><td><pre>
+            <tr class="" id="l1344"><td><a href="#l1344"><span>1344</span></a></td><td><pre>  DeprecatedEAPI: version 2.18-r1: uses deprecated EAPI: 2
 </pre></td></tr>
-            <tr class="" id="l1345"><td><a href="#l1345"><span>1345</span></a></td><td><pre>www-servers/servefile
+            <tr class="" id="l1345"><td><a href="#l1345"><span>1345</span></a></td><td><pre>  DeprecatedEAPI: version 2.26: uses deprecated EAPI: 2
 </pre></td></tr>
-            <tr class="" id="l1346"><td><a href="#l1346"><span>1346</span></a></td><td><pre>  NonExistentDeps: version 0.4.2: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+            <tr class="" id="l1346"><td><a href="#l1346"><span>1346</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1347"><td><a href="#l1347"><span>1347</span></a></td><td><pre>  NonExistentDeps: version 0.4.2: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+            <tr class="" id="l1347"><td><a href="#l1347"><span>1347</span></a></td><td><pre>app-shells/posh
 </pre></td></tr>
-            <tr class="" id="l1348"><td><a href="#l1348"><span>1348</span></a></td><td><pre>  DeprecatedEclass: version 0.4.2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l1348"><td><a href="#l1348"><span>1348</span></a></td><td><pre>  DeprecatedEAPI: version 0.10.2: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l1349"><td><a href="#l1349"><span>1349</span></a></td><td><pre>  NonExistentDeps: version 0.4.3: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+            <tr class="" id="l1349"><td><a href="#l1349"><span>1349</span></a></td><td><pre>  DeprecatedEAPI: version 0.11: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l1350"><td><a href="#l1350"><span>1350</span></a></td><td><pre>  NonExistentDeps: version 0.4.3: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+            <tr class="" id="l1350"><td><a href="#l1350"><span>1350</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1351"><td><a href="#l1351"><span>1351</span></a></td><td><pre>  DeprecatedEclass: version 0.4.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l1351"><td><a href="#l1351"><span>1351</span></a></td><td><pre>app-shells/rc
 </pre></td></tr>
-            <tr class="" id="l1352"><td><a href="#l1352"><span>1352</span></a></td><td><pre>
+            <tr class="" id="l1352"><td><a href="#l1352"><span>1352</span></a></td><td><pre>  DeprecatedEAPI: version 1.7.2: uses deprecated EAPI: 2
 </pre></td></tr>
-            <tr class="" id="l1353"><td><a href="#l1353"><span>1353</span></a></td><td><pre>www-servers/thttpd
+            <tr class="" id="l1353"><td><a href="#l1353"><span>1353</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1354"><td><a href="#l1354"><span>1354</span></a></td><td><pre>  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+            <tr class="" id="l1354"><td><a href="#l1354"><span>1354</span></a></td><td><pre>app-shells/rrs
 </pre></td></tr>
-            <tr class="" id="l1355"><td><a href="#l1355"><span>1355</span></a></td><td><pre>
+            <tr class="" id="l1355"><td><a href="#l1355"><span>1355</span></a></td><td><pre>  DeprecatedEAPI: version 1.70: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l1356"><td><a href="#l1356"><span>1356</span></a></td><td><pre>www-servers/tomcat
+            <tr class="" id="l1356"><td><a href="#l1356"><span>1356</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1357"><td><a href="#l1357"><span>1357</span></a></td><td><pre>  DroppedKeywordWarning: version 8.0.23-r2: keywords dropped: ppc, ppc64
+            <tr class="" id="l1357"><td><a href="#l1357"><span>1357</span></a></td><td><pre>app-shells/scsh
 </pre></td></tr>
-            <tr class="" id="l1358"><td><a href="#l1358"><span>1358</span></a></td><td><pre>
+            <tr class="" id="l1358"><td><a href="#l1358"><span>1358</span></a></td><td><pre>  DeprecatedEAPI: version 0.6.7: uses deprecated EAPI: 2
 </pre></td></tr>
-            <tr class="" id="l1359"><td><a href="#l1359"><span>1359</span></a></td><td><pre>www-servers/tornado
+            <tr class="" id="l1359"><td><a href="#l1359"><span>1359</span></a></td><td><pre>  DeprecatedEAPI: version 0.6.7-r1: uses deprecated EAPI: 2
 </pre></td></tr>
-            <tr class="" id="l1360"><td><a href="#l1360"><span>1360</span></a></td><td><pre>  DroppedKeywordWarning: version 4.2.1: keywords dropped: ppc
+            <tr class="" id="l1360"><td><a href="#l1360"><span>1360</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1361"><td><a href="#l1361"><span>1361</span></a></td><td><pre>
+            <tr class="" id="l1361"><td><a href="#l1361"><span>1361</span></a></td><td><pre>app-shells/scsh-install-lib
 </pre></td></tr>
-            <tr class="" id="l1362"><td><a href="#l1362"><span>1362</span></a></td><td><pre>www-servers/xsp
+            <tr class="" id="l1362"><td><a href="#l1362"><span>1362</span></a></td><td><pre>  DeprecatedEAPI: version 1.3.0: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l1363"><td><a href="#l1363"><span>1363</span></a></td><td><pre>  WhitespaceFound: version 2014.12-r2014120900: ebuild has trailing whitespace on lines 82, 84
+            <tr class="" id="l1363"><td><a href="#l1363"><span>1363</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="warn" id="l1364"><td><a href="#l1364"><span>1364</span></a></td><td><pre>  MetadataError: version 2014.12-r2014120900: attr(iuse): iuse unknown flags: [ net40, net35, net45 ]
-</pre></td><td>[WARN]</td></tr>
-            <tr class="" id="l1365"><td><a href="#l1365"><span>1365</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
+            <tr class="" id="l1364"><td><a href="#l1364"><span>1364</span></a></td><td><pre>app-shells/squirrelsh
 </pre></td></tr>
-            <tr class="" id="l1366"><td><a href="#l1366"><span>1366</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+            <tr class="" id="l1365"><td><a href="#l1365"><span>1365</span></a></td><td><pre>  DeprecatedEAPI: version 1.2.3-r1: uses deprecated EAPI: 2
 </pre></td></tr>
-            <tr class="" id="l1367"><td><a href="#l1367"><span>1367</span></a></td><td><pre>               : refetch
+            <tr class="" id="l1366"><td><a href="#l1366"><span>1366</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1368"><td><a href="#l1368"><span>1368</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
+            <tr class="" id="l1367"><td><a href="#l1367"><span>1367</span></a></td><td><pre>app-shells/tcsh
 </pre></td></tr>
-            <tr class="" id="l1369"><td><a href="#l1369"><span>1369</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+            <tr class="" id="l1368"><td><a href="#l1368"><span>1368</span></a></td><td><pre>  DeprecatedEAPI: version 6.17-r1: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l1370"><td><a href="#l1370"><span>1370</span></a></td><td><pre>               : refetch
+            <tr class="" id="l1369"><td><a href="#l1369"><span>1369</span></a></td><td><pre>  DeprecatedEAPI: version 6.17.06: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l1371"><td><a href="#l1371"><span>1371</span></a></td><td><pre>
+            <tr class="" id="l1370"><td><a href="#l1370"><span>1370</span></a></td><td><pre>  DeprecatedEAPI: version 6.18.01: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l1372"><td><a href="#l1372"><span>1372</span></a></td><td><pre>games-misc/fortune-mod-flashrider
+            <tr class="" id="l1371"><td><a href="#l1371"><span>1371</span></a></td><td><pre>  DeprecatedEAPI: version 6.18.01-r2: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l1373"><td><a href="#l1373"><span>1373</span></a></td><td><pre>  DeprecatedEAPI: version 0.25: uses deprecated EAPI: 2
+            <tr class="" id="l1372"><td><a href="#l1372"><span>1372</span></a></td><td><pre>  DeprecatedEAPI: version 6.18.01-r3: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l1374"><td><a href="#l1374"><span>1374</span></a></td><td><pre>  DeprecatedEAPI: version 0.80: uses deprecated EAPI: 3
+            <tr class="" id="l1373"><td><a href="#l1373"><span>1373</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
 </pre></td></tr>
-            <tr class="" id="l1375"><td><a href="#l1375"><span>1375</span></a></td><td><pre>  DeprecatedEAPI: version 0.90: uses deprecated EAPI: 3
+            <tr class="" id="l1374"><td><a href="#l1374"><span>1374</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
 </pre></td></tr>
-            <tr class="" id="l1376"><td><a href="#l1376"><span>1376</span></a></td><td><pre>  DeprecatedEAPI: version 1.00: uses deprecated EAPI: 3
+            <tr class="" id="l1375"><td><a href="#l1375"><span>1375</span></a></td><td><pre>               : refetch
 </pre></td></tr>
-            <tr class="" id="l1377"><td><a href="#l1377"><span>1377</span></a></td><td><pre>  MissingChksum: version 0.25: "fortunes-prolinux-0.25.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+            <tr class="" id="l1376"><td><a href="#l1376"><span>1376</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
 </pre></td></tr>
-            <tr class="" id="l1378"><td><a href="#l1378"><span>1378</span></a></td><td><pre>  MissingChksum: version 0.80: "fortunes-flashrider-0.80.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+            <tr class="" id="l1377"><td><a href="#l1377"><span>1377</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
 </pre></td></tr>
-            <tr class="" id="l1379"><td><a href="#l1379"><span>1379</span></a></td><td><pre>  MissingChksum: version 0.90: "fortunes-flashrider-0.90-BB-Styles-Edition.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+            <tr class="" id="l1378"><td><a href="#l1378"><span>1378</span></a></td><td><pre>               : refetch
 </pre></td></tr>
-            <tr class="" id="l1380"><td><a href="#l1380"><span>1380</span></a></td><td><pre>
+            <tr class="" id="l1379"><td><a href="#l1379"><span>1379</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1381"><td><a href="#l1381"><span>1381</span></a></td><td><pre>games-misc/fortune-mod-gentoo-dev
+            <tr class="" id="l1380"><td><a href="#l1380"><span>1380</span></a></td><td><pre>games-misc/fortune-mod-flashrider
 </pre></td></tr>
-            <tr class="" id="l1382"><td><a href="#l1382"><span>1382</span></a></td><td><pre>  DeprecatedEAPI: version 20061115: uses deprecated EAPI: 0
+            <tr class="" id="l1381"><td><a href="#l1381"><span>1381</span></a></td><td><pre>  DeprecatedEAPI: version 0.25: uses deprecated EAPI: 2
 </pre></td></tr>
-            <tr class="" id="l1383"><td><a href="#l1383"><span>1383</span></a></td><td><pre>  MissingChksum: version 20061115: "gentoo-dev-20061115.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+            <tr class="" id="l1382"><td><a href="#l1382"><span>1382</span></a></td><td><pre>  DeprecatedEAPI: version 0.80: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l1384"><td><a href="#l1384"><span>1384</span></a></td><td><pre>
+            <tr class="" id="l1383"><td><a href="#l1383"><span>1383</span></a></td><td><pre>  DeprecatedEAPI: version 0.90: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l1385"><td><a href="#l1385"><span>1385</span></a></td><td><pre>games-misc/fortune-mod-gentoo-ru
+            <tr class="" id="l1384"><td><a href="#l1384"><span>1384</span></a></td><td><pre>  DeprecatedEAPI: version 1.00: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l1386"><td><a href="#l1386"><span>1386</span></a></td><td><pre>  MissingChksum: version 0.25: "gentoo-ru-0.25.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+            <tr class="" id="l1385"><td><a href="#l1385"><span>1385</span></a></td><td><pre>  MissingChksum: version 0.25: "fortunes-prolinux-0.25.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l1387"><td><a href="#l1387"><span>1387</span></a></td><td><pre>  MissingChksum: version 0.26: "gentoo-ru-0.26.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+            <tr class="" id="l1386"><td><a href="#l1386"><span>1386</span></a></td><td><pre>  MissingChksum: version 0.80: "fortunes-flashrider-0.80.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+</pre></td></tr>
+            <tr class="" id="l1387"><td><a href="#l1387"><span>1387</span></a></td><td><pre>  MissingChksum: version 0.90: "fortunes-flashrider-0.90-BB-Styles-Edition.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
             <tr class="" id="l1388"><td><a href="#l1388"><span>1388</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1389"><td><a href="#l1389"><span>1389</span></a></td><td><pre>games-misc/fortune-mod-scriptures
+            <tr class="" id="l1389"><td><a href="#l1389"><span>1389</span></a></td><td><pre>games-misc/fortune-mod-gentoo-dev
 </pre></td></tr>
-            <tr class="" id="l1390"><td><a href="#l1390"><span>1390</span></a></td><td><pre>  MissingChksum: version 1.1.0: "fortune-mod-scriptures-1.1.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+            <tr class="" id="l1390"><td><a href="#l1390"><span>1390</span></a></td><td><pre>  DeprecatedEAPI: version 20061115: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l1391"><td><a href="#l1391"><span>1391</span></a></td><td><pre>
+            <tr class="" id="l1391"><td><a href="#l1391"><span>1391</span></a></td><td><pre>  MissingChksum: version 20061115: "gentoo-dev-20061115.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l1392"><td><a href="#l1392"><span>1392</span></a></td><td><pre>games-misc/fortune-mod-sp-fortunes
+            <tr class="" id="l1392"><td><a href="#l1392"><span>1392</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1393"><td><a href="#l1393"><span>1393</span></a></td><td><pre>  MissingChksum: version 0.2: "SP-0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+            <tr class="" id="l1393"><td><a href="#l1393"><span>1393</span></a></td><td><pre>games-misc/fortune-mod-gentoo-ru
 </pre></td></tr>
-            <tr class="" id="l1394"><td><a href="#l1394"><span>1394</span></a></td><td><pre>
+            <tr class="" id="l1394"><td><a href="#l1394"><span>1394</span></a></td><td><pre>  MissingChksum: version 0.25: "gentoo-ru-0.25.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l1395"><td><a href="#l1395"><span>1395</span></a></td><td><pre>games-misc/ggencoder
+            <tr class="" id="l1395"><td><a href="#l1395"><span>1395</span></a></td><td><pre>  MissingChksum: version 0.26: "gentoo-ru-0.26.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l1396"><td><a href="#l1396"><span>1396</span></a></td><td><pre>  MissingChksum: version 0.91a: "ggencoder-0.91a.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+            <tr class="" id="l1396"><td><a href="#l1396"><span>1396</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1397"><td><a href="#l1397"><span>1397</span></a></td><td><pre>
+            <tr class="" id="l1397"><td><a href="#l1397"><span>1397</span></a></td><td><pre>games-misc/fortune-mod-scriptures
 </pre></td></tr>
-            <tr class="" id="l1398"><td><a href="#l1398"><span>1398</span></a></td><td><pre>games-misc/xcowsay
+            <tr class="" id="l1398"><td><a href="#l1398"><span>1398</span></a></td><td><pre>  MissingChksum: version 1.1.0: "fortune-mod-scriptures-1.1.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l1399"><td><a href="#l1399"><span>1399</span></a></td><td><pre>  DeprecatedEAPI: version 1.3: uses deprecated EAPI: 2
+            <tr class="" id="l1399"><td><a href="#l1399"><span>1399</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1400"><td><a href="#l1400"><span>1400</span></a></td><td><pre>  MissingChksum: version 1.3: "xcowsay-1.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+            <tr class="" id="l1400"><td><a href="#l1400"><span>1400</span></a></td><td><pre>games-misc/fortune-mod-sp-fortunes
 </pre></td></tr>
-            <tr class="" id="l1401"><td><a href="#l1401"><span>1401</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
+            <tr class="" id="l1401"><td><a href="#l1401"><span>1401</span></a></td><td><pre>  MissingChksum: version 0.2: "SP-0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l1402"><td><a href="#l1402"><span>1402</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+            <tr class="" id="l1402"><td><a href="#l1402"><span>1402</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1403"><td><a href="#l1403"><span>1403</span></a></td><td><pre>               : refetch
+            <tr class="" id="l1403"><td><a href="#l1403"><span>1403</span></a></td><td><pre>games-misc/ggencoder
 </pre></td></tr>
-            <tr class="" id="l1404"><td><a href="#l1404"><span>1404</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
+            <tr class="" id="l1404"><td><a href="#l1404"><span>1404</span></a></td><td><pre>  MissingChksum: version 0.91a: "ggencoder-0.91a.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l1405"><td><a href="#l1405"><span>1405</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+            <tr class="" id="l1405"><td><a href="#l1405"><span>1405</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1406"><td><a href="#l1406"><span>1406</span></a></td><td><pre>               : refetch
+            <tr class="" id="l1406"><td><a href="#l1406"><span>1406</span></a></td><td><pre>games-misc/xcowsay
 </pre></td></tr>
-            <tr class="" id="l1407"><td><a href="#l1407"><span>1407</span></a></td><td><pre>
+            <tr class="" id="l1407"><td><a href="#l1407"><span>1407</span></a></td><td><pre>  DeprecatedEAPI: version 1.3: uses deprecated EAPI: 2
 </pre></td></tr>
-            <tr class="" id="l1408"><td><a href="#l1408"><span>1408</span></a></td><td><pre>sys-power/acpi
+            <tr class="" id="l1408"><td><a href="#l1408"><span>1408</span></a></td><td><pre>  MissingChksum: version 1.3: "xcowsay-1.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 </pre></td></tr>
-            <tr class="" id="l1409"><td><a href="#l1409"><span>1409</span></a></td><td><pre>  MissingChksum: version 1.6: "acpi-1.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+            <tr class="" id="l1409"><td><a href="#l1409"><span>1409</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
 </pre></td></tr>
-            <tr class="" id="l1410"><td><a href="#l1410"><span>1410</span></a></td><td><pre>
+            <tr class="" id="l1410"><td><a href="#l1410"><span>1410</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
 </pre></td></tr>
-            <tr class="" id="l1411"><td><a href="#l1411"><span>1411</span></a></td><td><pre>sys-power/acpi_call
+            <tr class="" id="l1411"><td><a href="#l1411"><span>1411</span></a></td><td><pre>               : refetch
 </pre></td></tr>
-            <tr class="" id="l1412"><td><a href="#l1412"><span>1412</span></a></td><td><pre>  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+            <tr class="" id="l1412"><td><a href="#l1412"><span>1412</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
 </pre></td></tr>
-            <tr class="" id="l1413"><td><a href="#l1413"><span>1413</span></a></td><td><pre>
+            <tr class="" id="l1413"><td><a href="#l1413"><span>1413</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
 </pre></td></tr>
-            <tr class="" id="l1414"><td><a href="#l1414"><span>1414</span></a></td><td><pre>sys-power/apcupsd
+            <tr class="" id="l1414"><td><a href="#l1414"><span>1414</span></a></td><td><pre>               : refetch
 </pre></td></tr>
-            <tr class="" id="l1415"><td><a href="#l1415"><span>1415</span></a></td><td><pre>  DeprecatedEAPI: version 3.14.8-r2: uses deprecated EAPI: 3
+            <tr class="" id="l1415"><td><a href="#l1415"><span>1415</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1416"><td><a href="#l1416"><span>1416</span></a></td><td><pre>
+            <tr class="" id="l1416"><td><a href="#l1416"><span>1416</span></a></td><td><pre>sys-power/acpi
 </pre></td></tr>
-            <tr class="" id="l1417"><td><a href="#l1417"><span>1417</span></a></td><td><pre>sys-power/athcool
+            <tr class="" id="l1417"><td><a href="#l1417"><span>1417</span></a></td><td><pre>  MissingChksum: version 1.6: "acpi-1.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l1418"><td><a href="#l1418"><span>1418</span></a></td><td><pre>  DeprecatedEAPI: version 0.3.12: uses deprecated EAPI: 3
+            <tr class="" id="l1418"><td><a href="#l1418"><span>1418</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1419"><td><a href="#l1419"><span>1419</span></a></td><td><pre>  MissingChksum: version 0.3.12: "athcool-0.3.12.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+            <tr class="" id="l1419"><td><a href="#l1419"><span>1419</span></a></td><td><pre>sys-power/acpi_call
 </pre></td></tr>
-            <tr class="" id="l1420"><td><a href="#l1420"><span>1420</span></a></td><td><pre>
+            <tr class="" id="l1420"><td><a href="#l1420"><span>1420</span></a></td><td><pre>  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 </pre></td></tr>
-            <tr class="" id="l1421"><td><a href="#l1421"><span>1421</span></a></td><td><pre>sys-power/cpudyn
+            <tr class="" id="l1421"><td><a href="#l1421"><span>1421</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1422"><td><a href="#l1422"><span>1422</span></a></td><td><pre>  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 0
+            <tr class="" id="l1422"><td><a href="#l1422"><span>1422</span></a></td><td><pre>sys-power/apcupsd
 </pre></td></tr>
-            <tr class="" id="l1423"><td><a href="#l1423"><span>1423</span></a></td><td><pre>  MissingChksum: version 1.0.1: "cpudyn-1.0.1.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+            <tr class="" id="l1423"><td><a href="#l1423"><span>1423</span></a></td><td><pre>  DeprecatedEAPI: version 3.14.8-r2: uses deprecated EAPI: 3
 </pre></td></tr>
             <tr class="" id="l1424"><td><a href="#l1424"><span>1424</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1425"><td><a href="#l1425"><span>1425</span></a></td><td><pre>sys-power/cpuspeedy
+            <tr class="" id="l1425"><td><a href="#l1425"><span>1425</span></a></td><td><pre>sys-power/athcool
 </pre></td></tr>
-            <tr class="" id="l1426"><td><a href="#l1426"><span>1426</span></a></td><td><pre>  DeprecatedEAPI: version 0.4.1: uses deprecated EAPI: 3
+            <tr class="" id="l1426"><td><a href="#l1426"><span>1426</span></a></td><td><pre>  DeprecatedEAPI: version 0.3.12: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l1427"><td><a href="#l1427"><span>1427</span></a></td><td><pre>  DeprecatedEclass: version 0.4.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l1427"><td><a href="#l1427"><span>1427</span></a></td><td><pre>  MissingChksum: version 0.3.12: "athcool-0.3.12.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l1428"><td><a href="#l1428"><span>1428</span></a></td><td><pre>  MissingChksum: version 0.4.1: "cpuspeedy-0.4.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+            <tr class="" id="l1428"><td><a href="#l1428"><span>1428</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1429"><td><a href="#l1429"><span>1429</span></a></td><td><pre>
+            <tr class="" id="l1429"><td><a href="#l1429"><span>1429</span></a></td><td><pre>sys-power/cpudyn
 </pre></td></tr>
-            <tr class="" id="l1430"><td><a href="#l1430"><span>1430</span></a></td><td><pre>sys-power/nvram-reboot
+            <tr class="" id="l1430"><td><a href="#l1430"><span>1430</span></a></td><td><pre>  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l1431"><td><a href="#l1431"><span>1431</span></a></td><td><pre>  DeprecatedEAPI: version 2004.10.03: uses deprecated EAPI: 0
+            <tr class="" id="l1431"><td><a href="#l1431"><span>1431</span></a></td><td><pre>  MissingChksum: version 1.0.1: "cpudyn-1.0.1.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
             <tr class="" id="l1432"><td><a href="#l1432"><span>1432</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1433"><td><a href="#l1433"><span>1433</span></a></td><td><pre>sys-power/nvram-wakeup
+            <tr class="" id="l1433"><td><a href="#l1433"><span>1433</span></a></td><td><pre>sys-power/cpuspeedy
 </pre></td></tr>
-            <tr class="" id="l1434"><td><a href="#l1434"><span>1434</span></a></td><td><pre>  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+            <tr class="" id="l1434"><td><a href="#l1434"><span>1434</span></a></td><td><pre>  DeprecatedEAPI: version 0.4.1: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l1435"><td><a href="#l1435"><span>1435</span></a></td><td><pre>  MissingChksum: version 1.0: "nvram-wakup-1.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+            <tr class="" id="l1435"><td><a href="#l1435"><span>1435</span></a></td><td><pre>  DeprecatedEclass: version 0.4.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
-            <tr class="" id="l1436"><td><a href="#l1436"><span>1436</span></a></td><td><pre>
+            <tr class="" id="l1436"><td><a href="#l1436"><span>1436</span></a></td><td><pre>  MissingChksum: version 0.4.1: "cpuspeedy-0.4.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l1437"><td><a href="#l1437"><span>1437</span></a></td><td><pre>sys-power/phc-intel
+            <tr class="" id="l1437"><td><a href="#l1437"><span>1437</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1438"><td><a href="#l1438"><span>1438</span></a></td><td><pre>  SizeViolation: "files/phc-intel-0.3.2-rev12-trailing-space-misc.patch" exceeds 20k in size; 33960 bytes total
+            <tr class="" id="l1438"><td><a href="#l1438"><span>1438</span></a></td><td><pre>sys-power/nvram-reboot
 </pre></td></tr>
-            <tr class="" id="l1439"><td><a href="#l1439"><span>1439</span></a></td><td><pre>
+            <tr class="" id="l1439"><td><a href="#l1439"><span>1439</span></a></td><td><pre>  DeprecatedEAPI: version 2004.10.03: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l1440"><td><a href="#l1440"><span>1440</span></a></td><td><pre>sys-power/phc-k8
+            <tr class="" id="l1440"><td><a href="#l1440"><span>1440</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1441"><td><a href="#l1441"><span>1441</span></a></td><td><pre>  MissingChksum: version 0.4.3: "phc-k8-0.4.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+            <tr class="" id="l1441"><td><a href="#l1441"><span>1441</span></a></td><td><pre>sys-power/nvram-wakeup
 </pre></td></tr>
-            <tr class="" id="l1442"><td><a href="#l1442"><span>1442</span></a></td><td><pre>  MissingChksum: version 0.4.4: "phc-k8-0.4.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+            <tr class="" id="l1442"><td><a href="#l1442"><span>1442</span></a></td><td><pre>  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l1443"><td><a href="#l1443"><span>1443</span></a></td><td><pre>
+            <tr class="" id="l1443"><td><a href="#l1443"><span>1443</span></a></td><td><pre>  MissingChksum: version 1.0: "nvram-wakup-1.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l1444"><td><a href="#l1444"><span>1444</span></a></td><td><pre>sys-power/phctool
+            <tr class="" id="l1444"><td><a href="#l1444"><span>1444</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1445"><td><a href="#l1445"><span>1445</span></a></td><td><pre>  DeprecatedEAPI: version 0.5.2.2-r1: uses deprecated EAPI: 2
+            <tr class="" id="l1445"><td><a href="#l1445"><span>1445</span></a></td><td><pre>sys-power/phc-intel
 </pre></td></tr>
-            <tr class="" id="l1446"><td><a href="#l1446"><span>1446</span></a></td><td><pre>  DeprecatedEclass: version 0.5.2.2-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l1446"><td><a href="#l1446"><span>1446</span></a></td><td><pre>  SizeViolation: "files/phc-intel-0.3.2-rev12-trailing-space-misc.patch" exceeds 20k in size; 33960 bytes total
 </pre></td></tr>
-            <tr class="" id="l1447"><td><a href="#l1447"><span>1447</span></a></td><td><pre>  DeprecatedEclass: version 0.5.2.2-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l1447"><td><a href="#l1447"><span>1447</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1448"><td><a href="#l1448"><span>1448</span></a></td><td><pre>  MissingChksum: version 0.5.2.2-r1: "phctool-0.5.2.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+            <tr class="" id="l1448"><td><a href="#l1448"><span>1448</span></a></td><td><pre>sys-power/phc-k8
 </pre></td></tr>
-            <tr class="" id="l1449"><td><a href="#l1449"><span>1449</span></a></td><td><pre>
+            <tr class="" id="l1449"><td><a href="#l1449"><span>1449</span></a></td><td><pre>  MissingChksum: version 0.4.3: "phc-k8-0.4.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l1450"><td><a href="#l1450"><span>1450</span></a></td><td><pre>sys-power/pm-quirks
+            <tr class="" id="l1450"><td><a href="#l1450"><span>1450</span></a></td><td><pre>  MissingChksum: version 0.4.4: "phc-k8-0.4.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l1451"><td><a href="#l1451"><span>1451</span></a></td><td><pre>  DeprecatedEAPI: version 20100619: uses deprecated EAPI: 3
+            <tr class="" id="l1451"><td><a href="#l1451"><span>1451</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1452"><td><a href="#l1452"><span>1452</span></a></td><td><pre>  MissingChksum: version 20100619: "pm-quirks-20100619.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+            <tr class="" id="l1452"><td><a href="#l1452"><span>1452</span></a></td><td><pre>sys-power/phctool
 </pre></td></tr>
-            <tr class="" id="l1453"><td><a href="#l1453"><span>1453</span></a></td><td><pre>
+            <tr class="" id="l1453"><td><a href="#l1453"><span>1453</span></a></td><td><pre>  DeprecatedEAPI: version 0.5.2.2-r1: uses deprecated EAPI: 2
 </pre></td></tr>
-            <tr class="" id="l1454"><td><a href="#l1454"><span>1454</span></a></td><td><pre>sys-power/pmtools
+            <tr class="" id="l1454"><td><a href="#l1454"><span>1454</span></a></td><td><pre>  DeprecatedEclass: version 0.5.2.2-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
-            <tr class="" id="l1455"><td><a href="#l1455"><span>1455</span></a></td><td><pre>  DeprecatedEAPI: version 20071116: uses deprecated EAPI: 0
+            <tr class="" id="l1455"><td><a href="#l1455"><span>1455</span></a></td><td><pre>  DeprecatedEclass: version 0.5.2.2-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
-            <tr class="" id="l1456"><td><a href="#l1456"><span>1456</span></a></td><td><pre>  DeprecatedEAPI: version 20110323: uses deprecated EAPI: 2
+            <tr class="" id="l1456"><td><a href="#l1456"><span>1456</span></a></td><td><pre>  MissingChksum: version 0.5.2.2-r1: "phctool-0.5.2.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 </pre></td></tr>
-            <tr class="" id="l1457"><td><a href="#l1457"><span>1457</span></a></td><td><pre>  DroppedKeywordWarning: version 20110323: keywords dropped: ppc
+            <tr class="" id="l1457"><td><a href="#l1457"><span>1457</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1458"><td><a href="#l1458"><span>1458</span></a></td><td><pre>  MissingChksum: version 20071116: "pmtools-20071116.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+            <tr class="" id="l1458"><td><a href="#l1458"><span>1458</span></a></td><td><pre>sys-power/pm-quirks
 </pre></td></tr>
-            <tr class="" id="l1459"><td><a href="#l1459"><span>1459</span></a></td><td><pre>
+            <tr class="" id="l1459"><td><a href="#l1459"><span>1459</span></a></td><td><pre>  DeprecatedEAPI: version 20100619: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l1460"><td><a href="#l1460"><span>1460</span></a></td><td><pre>sys-power/powertop
+            <tr class="" id="l1460"><td><a href="#l1460"><span>1460</span></a></td><td><pre>  MissingChksum: version 20100619: "pm-quirks-20100619.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 </pre></td></tr>
-            <tr class="" id="l1461"><td><a href="#l1461"><span>1461</span></a></td><td><pre>  DeprecatedEAPI: version 1.13: uses deprecated EAPI: 3
+            <tr class="" id="l1461"><td><a href="#l1461"><span>1461</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1462"><td><a href="#l1462"><span>1462</span></a></td><td><pre>  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+            <tr class="" id="l1462"><td><a href="#l1462"><span>1462</span></a></td><td><pre>sys-power/pmtools
 </pre></td></tr>
-            <tr class="" id="l1463"><td><a href="#l1463"><span>1463</span></a></td><td><pre>
+            <tr class="" id="l1463"><td><a href="#l1463"><span>1463</span></a></td><td><pre>  DeprecatedEAPI: version 20071116: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l1464"><td><a href="#l1464"><span>1464</span></a></td><td><pre>sys-power/sispmctl
+            <tr class="" id="l1464"><td><a href="#l1464"><span>1464</span></a></td><td><pre>  DeprecatedEAPI: version 20110323: uses deprecated EAPI: 2
 </pre></td></tr>
-            <tr class="" id="l1465"><td><a href="#l1465"><span>1465</span></a></td><td><pre>  DeprecatedEAPI: version 2.7: uses deprecated EAPI: 2
+            <tr class="" id="l1465"><td><a href="#l1465"><span>1465</span></a></td><td><pre>  DroppedKeywordWarning: version 20110323: keywords dropped: ppc
 </pre></td></tr>
-            <tr class="" id="l1466"><td><a href="#l1466"><span>1466</span></a></td><td><pre>
+            <tr class="" id="l1466"><td><a href="#l1466"><span>1466</span></a></td><td><pre>  MissingChksum: version 20071116: "pmtools-20071116.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l1467"><td><a href="#l1467"><span>1467</span></a></td><td><pre>sys-power/yacpi
+            <tr class="" id="l1467"><td><a href="#l1467"><span>1467</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1468"><td><a href="#l1468"><span>1468</span></a></td><td><pre>  DeprecatedEAPI: version 3.0.1: uses deprecated EAPI: 3
+            <tr class="" id="l1468"><td><a href="#l1468"><span>1468</span></a></td><td><pre>sys-power/powertop
 </pre></td></tr>
-            <tr class="" id="l1469"><td><a href="#l1469"><span>1469</span></a></td><td><pre>  MissingChksum: version 3.0.1: "yacpi-3.0.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+            <tr class="" id="l1469"><td><a href="#l1469"><span>1469</span></a></td><td><pre>  DeprecatedEAPI: version 1.13: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l1470"><td><a href="#l1470"><span>1470</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
+            <tr class="" id="l1470"><td><a href="#l1470"><span>1470</span></a></td><td><pre>  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 </pre></td></tr>
-            <tr class="" id="l1471"><td><a href="#l1471"><span>1471</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+            <tr class="" id="l1471"><td><a href="#l1471"><span>1471</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1472"><td><a href="#l1472"><span>1472</span></a></td><td><pre>               : refetch
+            <tr class="" id="l1472"><td><a href="#l1472"><span>1472</span></a></td><td><pre>sys-power/sispmctl
 </pre></td></tr>
-            <tr class="" id="l1473"><td><a href="#l1473"><span>1473</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
+            <tr class="" id="l1473"><td><a href="#l1473"><span>1473</span></a></td><td><pre>  DeprecatedEAPI: version 2.7: uses deprecated EAPI: 2
 </pre></td></tr>
-            <tr class="" id="l1474"><td><a href="#l1474"><span>1474</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+            <tr class="" id="l1474"><td><a href="#l1474"><span>1474</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1475"><td><a href="#l1475"><span>1475</span></a></td><td><pre>               : refetch
+            <tr class="" id="l1475"><td><a href="#l1475"><span>1475</span></a></td><td><pre>sys-power/yacpi
 </pre></td></tr>
-            <tr class="" id="l1476"><td><a href="#l1476"><span>1476</span></a></td><td><pre>
+            <tr class="" id="l1476"><td><a href="#l1476"><span>1476</span></a></td><td><pre>  DeprecatedEAPI: version 3.0.1: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l1477"><td><a href="#l1477"><span>1477</span></a></td><td><pre>games-util/dzip
+            <tr class="" id="l1477"><td><a href="#l1477"><span>1477</span></a></td><td><pre>  MissingChksum: version 3.0.1: "yacpi-3.0.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l1478"><td><a href="#l1478"><span>1478</span></a></td><td><pre>  DeprecatedEAPI: version 2.9-r1: uses deprecated EAPI: 0
+            <tr class="" id="l1478"><td><a href="#l1478"><span>1478</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
 </pre></td></tr>
-            <tr class="" id="l1479"><td><a href="#l1479"><span>1479</span></a></td><td><pre>  DeprecatedEAPI: version 2.9-r2: uses deprecated EAPI: 2
+            <tr class="" id="l1479"><td><a href="#l1479"><span>1479</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
 </pre></td></tr>
-            <tr class="" id="l1480"><td><a href="#l1480"><span>1480</span></a></td><td><pre>
+            <tr class="" id="l1480"><td><a href="#l1480"><span>1480</span></a></td><td><pre>               : refetch
 </pre></td></tr>
-            <tr class="" id="l1481"><td><a href="#l1481"><span>1481</span></a></td><td><pre>games-util/pyfa
+            <tr class="" id="l1481"><td><a href="#l1481"><span>1481</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
 </pre></td></tr>
-            <tr class="" id="l1482"><td><a href="#l1482"><span>1482</span></a></td><td><pre>  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+            <tr class="" id="l1482"><td><a href="#l1482"><span>1482</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
 </pre></td></tr>
-            <tr class="" id="l1483"><td><a href="#l1483"><span>1483</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
+            <tr class="" id="l1483"><td><a href="#l1483"><span>1483</span></a></td><td><pre>               : refetch
 </pre></td></tr>
-            <tr class="" id="l1484"><td><a href="#l1484"><span>1484</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+            <tr class="" id="l1484"><td><a href="#l1484"><span>1484</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1485"><td><a href="#l1485"><span>1485</span></a></td><td><pre>               : refetch
+            <tr class="" id="l1485"><td><a href="#l1485"><span>1485</span></a></td><td><pre>games-util/dzip
 </pre></td></tr>
-            <tr class="" id="l1486"><td><a href="#l1486"><span>1486</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
+            <tr class="" id="l1486"><td><a href="#l1486"><span>1486</span></a></td><td><pre>  DeprecatedEAPI: version 2.9-r1: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l1487"><td><a href="#l1487"><span>1487</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+            <tr class="" id="l1487"><td><a href="#l1487"><span>1487</span></a></td><td><pre>  DeprecatedEAPI: version 2.9-r2: uses deprecated EAPI: 2
 </pre></td></tr>
-            <tr class="" id="l1488"><td><a href="#l1488"><span>1488</span></a></td><td><pre>               : refetch
+            <tr class="" id="l1488"><td><a href="#l1488"><span>1488</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1489"><td><a href="#l1489"><span>1489</span></a></td><td><pre>
+            <tr class="" id="l1489"><td><a href="#l1489"><span>1489</span></a></td><td><pre>games-util/pyfa
 </pre></td></tr>
-            <tr class="" id="l1490"><td><a href="#l1490"><span>1490</span></a></td><td><pre>www-misc/bookmarksync
+            <tr class="" id="l1490"><td><a href="#l1490"><span>1490</span></a></td><td><pre>  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 </pre></td></tr>
-            <tr class="" id="l1491"><td><a href="#l1491"><span>1491</span></a></td><td><pre>  DeprecatedEAPI: version 0.3.4-r2: uses deprecated EAPI: 2
+            <tr class="" id="l1491"><td><a href="#l1491"><span>1491</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
 </pre></td></tr>
-            <tr class="" id="l1492"><td><a href="#l1492"><span>1492</span></a></td><td><pre>
+            <tr class="" id="l1492"><td><a href="#l1492"><span>1492</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
 </pre></td></tr>
-            <tr class="" id="l1493"><td><a href="#l1493"><span>1493</span></a></td><td><pre>www-misc/fcgiwrap
+            <tr class="" id="l1493"><td><a href="#l1493"><span>1493</span></a></td><td><pre>               : refetch
 </pre></td></tr>
-            <tr class="" id="l1494"><td><a href="#l1494"><span>1494</span></a></td><td><pre>  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+            <tr class="" id="l1494"><td><a href="#l1494"><span>1494</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
 </pre></td></tr>
-            <tr class="" id="l1495"><td><a href="#l1495"><span>1495</span></a></td><td><pre>
+            <tr class="" id="l1495"><td><a href="#l1495"><span>1495</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
 </pre></td></tr>
-            <tr class="" id="l1496"><td><a href="#l1496"><span>1496</span></a></td><td><pre>www-misc/htdig
+            <tr class="" id="l1496"><td><a href="#l1496"><span>1496</span></a></td><td><pre>               : refetch
 </pre></td></tr>
-            <tr class="" id="l1497"><td><a href="#l1497"><span>1497</span></a></td><td><pre>  DeprecatedEAPI: version 3.2.0_beta6-r3: uses deprecated EAPI: 0
+            <tr class="" id="l1497"><td><a href="#l1497"><span>1497</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1498"><td><a href="#l1498"><span>1498</span></a></td><td><pre>
+            <tr class="" id="l1498"><td><a href="#l1498"><span>1498</span></a></td><td><pre>www-misc/bookmarksync
 </pre></td></tr>
-            <tr class="" id="l1499"><td><a href="#l1499"><span>1499</span></a></td><td><pre>www-misc/log-toolkit
+            <tr class="" id="l1499"><td><a href="#l1499"><span>1499</span></a></td><td><pre>  DeprecatedEAPI: version 0.3.4-r2: uses deprecated EAPI: 2
 </pre></td></tr>
-            <tr class="" id="l1500"><td><a href="#l1500"><span>1500</span></a></td><td><pre>  DeprecatedEAPI: version 0.9.6: uses deprecated EAPI: 0
+            <tr class="" id="l1500"><td><a href="#l1500"><span>1500</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1501"><td><a href="#l1501"><span>1501</span></a></td><td><pre>  MissingChksum: version 0.9.6: "log-toolkit-0.9.6.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+            <tr class="" id="l1501"><td><a href="#l1501"><span>1501</span></a></td><td><pre>www-misc/fcgiwrap
 </pre></td></tr>
-            <tr class="" id="l1502"><td><a href="#l1502"><span>1502</span></a></td><td><pre>
+            <tr class="" id="l1502"><td><a href="#l1502"><span>1502</span></a></td><td><pre>  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 </pre></td></tr>
-            <tr class="" id="l1503"><td><a href="#l1503"><span>1503</span></a></td><td><pre>www-misc/reflector
+            <tr class="" id="l1503"><td><a href="#l1503"><span>1503</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1504"><td><a href="#l1504"><span>1504</span></a></td><td><pre>  NonExistentDeps: version 2011.05.13.1: depset depends: nonexistent atoms [ =dev-lang/python-2.6*, =dev-lang/python-3.1*, =dev-lang/python-3.2* ]
+            <tr class="" id="l1504"><td><a href="#l1504"><span>1504</span></a></td><td><pre>www-misc/htdig
 </pre></td></tr>
-            <tr class="" id="l1505"><td><a href="#l1505"><span>1505</span></a></td><td><pre>  NonExistentDeps: version 2011.05.13.1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6*, =dev-lang/python-3.1*, =dev-lang/python-3.2* ]
+            <tr class="" id="l1505"><td><a href="#l1505"><span>1505</span></a></td><td><pre>  DeprecatedEAPI: version 3.2.0_beta6-r3: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l1506"><td><a href="#l1506"><span>1506</span></a></td><td><pre>  DeprecatedEAPI: version 2011.05.13.1: uses deprecated EAPI: 3
+            <tr class="" id="l1506"><td><a href="#l1506"><span>1506</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1507"><td><a href="#l1507"><span>1507</span></a></td><td><pre>  DeprecatedEclass: version 2011.05.13.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l1507"><td><a href="#l1507"><span>1507</span></a></td><td><pre>www-misc/log-toolkit
 </pre></td></tr>
-            <tr class="" id="l1508"><td><a href="#l1508"><span>1508</span></a></td><td><pre>  MissingChksum: version 2011.05.13.1: "reflector-2011.05.13.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+            <tr class="" id="l1508"><td><a href="#l1508"><span>1508</span></a></td><td><pre>  DeprecatedEAPI: version 0.9.6: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l1509"><td><a href="#l1509"><span>1509</span></a></td><td><pre>
+            <tr class="" id="l1509"><td><a href="#l1509"><span>1509</span></a></td><td><pre>  MissingChksum: version 0.9.6: "log-toolkit-0.9.6.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l1510"><td><a href="#l1510"><span>1510</span></a></td><td><pre>www-misc/visitors
+            <tr class="" id="l1510"><td><a href="#l1510"><span>1510</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1511"><td><a href="#l1511"><span>1511</span></a></td><td><pre>  DeprecatedEAPI: version 0.7-r1: uses deprecated EAPI: 2
+            <tr class="" id="l1511"><td><a href="#l1511"><span>1511</span></a></td><td><pre>www-misc/reflector
 </pre></td></tr>
-            <tr class="" id="l1512"><td><a href="#l1512"><span>1512</span></a></td><td><pre>  MissingChksum: version 0.7-r1: "visitors-0.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+            <tr class="" id="l1512"><td><a href="#l1512"><span>1512</span></a></td><td><pre>  NonExistentDeps: version 2011.05.13.1: depset depends: nonexistent atoms [ =dev-lang/python-2.6*, =dev-lang/python-3.1*, =dev-lang/python-3.2* ]
 </pre></td></tr>
-            <tr class="" id="l1513"><td><a href="#l1513"><span>1513</span></a></td><td><pre>
+            <tr class="" id="l1513"><td><a href="#l1513"><span>1513</span></a></td><td><pre>  NonExistentDeps: version 2011.05.13.1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6*, =dev-lang/python-3.1*, =dev-lang/python-3.2* ]
 </pre></td></tr>
-            <tr class="" id="l1514"><td><a href="#l1514"><span>1514</span></a></td><td><pre>www-misc/wsmake
+            <tr class="" id="l1514"><td><a href="#l1514"><span>1514</span></a></td><td><pre>  DeprecatedEAPI: version 2011.05.13.1: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l1515"><td><a href="#l1515"><span>1515</span></a></td><td><pre>  DeprecatedEAPI: version 0.6.4: uses deprecated EAPI: 0
+            <tr class="" id="l1515"><td><a href="#l1515"><span>1515</span></a></td><td><pre>  DeprecatedEclass: version 2011.05.13.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
-            <tr class="" id="l1516"><td><a href="#l1516"><span>1516</span></a></td><td><pre>  MissingChksum: version 0.6.4: "wsmake-0.6.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+            <tr class="" id="l1516"><td><a href="#l1516"><span>1516</span></a></td><td><pre>  MissingChksum: version 2011.05.13.1: "reflector-2011.05.13.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
             <tr class="" id="l1517"><td><a href="#l1517"><span>1517</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1518"><td><a href="#l1518"><span>1518</span></a></td><td><pre>www-misc/xxv
+            <tr class="" id="l1518"><td><a href="#l1518"><span>1518</span></a></td><td><pre>www-misc/visitors
 </pre></td></tr>
-            <tr class="" id="l1519"><td><a href="#l1519"><span>1519</span></a></td><td><pre>  MissingChksum: version 1.6.1: "xxv-1.6.1.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+            <tr class="" id="l1519"><td><a href="#l1519"><span>1519</span></a></td><td><pre>  DeprecatedEAPI: version 0.7-r1: uses deprecated EAPI: 2
 </pre></td></tr>
-            <tr class="" id="l1520"><td><a href="#l1520"><span>1520</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
+            <tr class="" id="l1520"><td><a href="#l1520"><span>1520</span></a></td><td><pre>  MissingChksum: version 0.7-r1: "visitors-0.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 </pre></td></tr>
-            <tr class="" id="l1521"><td><a href="#l1521"><span>1521</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+            <tr class="" id="l1521"><td><a href="#l1521"><span>1521</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1522"><td><a href="#l1522"><span>1522</span></a></td><td><pre>               : refetch
+            <tr class="" id="l1522"><td><a href="#l1522"><span>1522</span></a></td><td><pre>www-misc/wsmake
 </pre></td></tr>
-            <tr class="" id="l1523"><td><a href="#l1523"><span>1523</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
+            <tr class="" id="l1523"><td><a href="#l1523"><span>1523</span></a></td><td><pre>  DeprecatedEAPI: version 0.6.4: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l1524"><td><a href="#l1524"><span>1524</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+            <tr class="" id="l1524"><td><a href="#l1524"><span>1524</span></a></td><td><pre>  MissingChksum: version 0.6.4: "wsmake-0.6.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 </pre></td></tr>
-            <tr class="" id="l1525"><td><a href="#l1525"><span>1525</span></a></td><td><pre>               : refetch
+            <tr class="" id="l1525"><td><a href="#l1525"><span>1525</span></a></td><td><pre>
+</pre></td></tr>
+            <tr class="" id="l1526"><td><a href="#l1526"><span>1526</span></a></td><td><pre>www-misc/xxv
+</pre></td></tr>
+            <tr class="" id="l1527"><td><a href="#l1527"><span>1527</span></a></td><td><pre>  MissingChksum: version 1.6.1: "xxv-1.6.1.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+</pre></td></tr>
+            <tr class="" id="l1528"><td><a href="#l1528"><span>1528</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
+</pre></td></tr>
+            <tr class="" id="l1529"><td><a href="#l1529"><span>1529</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+</pre></td></tr>
+            <tr class="" id="l1530"><td><a href="#l1530"><span>1530</span></a></td><td><pre>               : refetch
+</pre></td></tr>
+            <tr class="" id="l1531"><td><a href="#l1531"><span>1531</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
+</pre></td></tr>
+            <tr class="" id="l1532"><td><a href="#l1532"><span>1532</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+</pre></td></tr>
+            <tr class="" id="l1533"><td><a href="#l1533"><span>1533</span></a></td><td><pre>               : refetch
 </pre></td></tr>
 
         </table>
 
-        <address>Generated based on results from 2015-09-03 16:00:58 UTC</address>
+        <address>Generated based on results from 2015-09-03 16:57:55 UTC</address>
     </body>
 </html>
