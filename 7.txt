@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 7 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'media-libs/*' 'media-video/*' 'sys-kernel/*' 'www-client/*' 'kde-frameworks/*' 'sci-electronics/*' 'net-dialup/*' 'dev-lisp/*' 'lxde-base/*' 'mate-base/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'media-libs/*' 'media-video/*' 'sys-kernel/*' 'www-client/*' 'kde-frameworks/*' 'sci-electronics/*' 'net-dialup/*' 'app-pda/*' 'lxde-base/*' 'mate-base/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1314,56 +1314,96 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-dev-lisp/abcl
-  DeprecatedEAPI: version 0.0.9-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.20.0: uses deprecated EAPI: 2
+app-pda/iripdb
+  DeprecatedEAPI: version 0.1.3b: uses deprecated EAPI: 0
 
-dev-lisp/asdf
-  DeprecatedEAPI: version 1.86-r1: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 1.89: uses deprecated EAPI: 3
-  DroppedKeywordWarning: version 3.0.3: keywords dropped: alpha, ia64, mips, ppc64, s390
+app-pda/jpilot
+  DeprecatedEAPI: version 1.8.0: uses deprecated EAPI: 2
 
-dev-lisp/asdf-binary-locations
-  DeprecatedEAPI: version 20061018: uses deprecated EAPI: 3
+app-pda/jpilot-backup
+  DeprecatedEAPI: version 0.60: uses deprecated EAPI: 2
 
-dev-lisp/cl-clx
-  DeprecatedEAPI: version 0.7.1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.7.2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.7.3: uses deprecated EAPI: 0
+app-pda/jpilot-mail
+  DeprecatedEAPI: version 0.1.7: uses deprecated EAPI: 2
 
-dev-lisp/cl-ppcre
-  DeprecatedEAPI: version 1.2.10: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.2.11: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.2.12: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.2.13: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.2.14: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.2.15: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.2.16: uses deprecated EAPI: 0
+app-pda/jpilot-plucker
+  DeprecatedEAPI: version 0.02: uses deprecated EAPI: 2
 
-dev-lisp/clisp
-  DeprecatedEAPI: version 2.48-r1: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 2.48-r2: uses deprecated EAPI: 2
-  DroppedKeywordWarning: version 2.49-r8: keywords dropped: alpha, ia64
+app-pda/jpilot-syncmal
+  DeprecatedEAPI: version 0.81: uses deprecated EAPI: 2
 
-dev-lisp/clx
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+app-pda/libopensync
+  DeprecatedEAPI: version 0.22: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.22-r1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.22-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.36-r2: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.36-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.39-r1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.39-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-dev-lisp/common-lisp-controller
-  DeprecatedEAPI: version 4.27: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 5.13-r1: uses deprecated EAPI: 3
+app-pda/libopensync-plugin-file
+  DeprecatedEAPI: version 0.22: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 0.36: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 0.39: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
 
-dev-lisp/gentoo-init
-  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 3
-  DroppedKeywordWarning: version 1.0: keywords dropped: alpha, ia64, ppc64
+app-pda/libopensync-plugin-gnokii
+  DeprecatedEAPI: version 0.22: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.36: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 2
 
-dev-lisp/hyperspec
-  DeprecatedEAPI: version 7.0: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 7.0-r1: uses deprecated EAPI: 0
-  MissingChksum: version 7.0-r1: "HyperSpec-7-0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+app-pda/libopensync-plugin-gpe
+  DeprecatedEAPI: version 0.22: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.36: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 2
 
-dev-lisp/sbcl
-  NonExistentDeps: version 1.1.18: depset rdepends: nonexistent atoms [ <sys-libs/glibc-2.6 ]
-  UnusedLocalFlags: metadata.xml unused local use flags: [ asdf, ldb ]
+app-pda/libopensync-plugin-moto
+  NonExistentDeps: version 0.22: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 0.22: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEAPI: version 0.22: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.22: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+app-pda/libopensync-plugin-palm
+  DeprecatedEAPI: version 0.22: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
+
+app-pda/libopensync-plugin-python
+  NonExistentDeps: version 0.22: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  NonExistentDeps: version 0.22: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  DeprecatedEAPI: version 0.22: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.22: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 9999: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  NonExistentDeps: version 9999: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+app-pda/libopensync-plugin-sunbird
+  DeprecatedEAPI: version 0.22: uses deprecated EAPI: 3
+
+app-pda/libopensync-plugin-vformat
+  DeprecatedEAPI: version 0.39: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
+
+app-pda/msynctool
+  DeprecatedEAPI: version 0.22: uses deprecated EAPI: 3
+
+app-pda/osynctool
+  DeprecatedEAPI: version 0.39: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
+
+app-pda/p3nfs
+  DeprecatedEAPI: version 5.19-r2: uses deprecated EAPI: 2
+
+app-pda/pilot-link
+  SizeViolation: "files/pilot-link-0.12.5-perl514.patch" exceeds 20k in size; 22730 bytes total
+
+app-pda/synce-core
+  DeprecatedEclass: version 0.16-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+app-pda/synce-sync-engine
+  DeprecatedEclass: version 0.15.1-r3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
