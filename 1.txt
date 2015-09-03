@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 1 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'sec-policy/*' 'app-misc/*' 'dev-db/*' 'app-arch/*' 'games-fps/*' 'www-servers/*' 'games-emulation/*' 'app-forensics/*' 'dev-games/*' 'sci-misc/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'sec-policy/*' 'app-misc/*' 'dev-db/*' 'app-arch/*' 'games-fps/*' 'net-im/*' 'games-emulation/*' 'app-forensics/*' 'dev-games/*' 'sci-misc/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -971,49 +971,66 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-www-servers/fnord
-  DeprecatedEAPI: version 1.10-r2: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 1.11: uses deprecated EAPI: 3
-  MissingChksum: version 1.10-r2: "fnord-1.10.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+net-im/ayttm
+  MissingChksum: version 0.6.3: "ayttm-0.6.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-www-servers/gatling
-  MissingChksum: version 0.12-r2: "gatling-0.12.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-www-servers/lighttpd
-  SizeViolation: "files/lighttpd-1.4.29-mod_uploadprogress.patch" exceeds 20k in size; 22472 bytes total
-
-www-servers/monkeyd
+net-im/bitlbee-steam
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-www-servers/pound
-  DeprecatedEAPI: version 2.6: uses deprecated EAPI: 2
-  MissingChksum: version 2.6: "Pound-2.6.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+net-im/centerim
+  DeprecatedEAPI: version 4.22.10: uses deprecated EAPI: 2
 
-www-servers/servefile
-  NonExistentDeps: version 0.4.2: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
-  NonExistentDeps: version 0.4.2: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
-  DeprecatedEclass: version 0.4.2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  NonExistentDeps: version 0.4.3: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
-  NonExistentDeps: version 0.4.3: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
-  DeprecatedEclass: version 0.4.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+net-im/coccinella
+  MissingChksum: version 0.96.20: "Coccinella-0.96.20Src.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-www-servers/skunkweb
-  DeprecatedEAPI: version 3.4.4: uses deprecated EAPI: 3
-  DeprecatedEclass: version 3.4.4: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  MissingChksum: version 3.4.4: "skunkweb-3.4.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+net-im/gg-transport
+  DeprecatedEAPI: version 2.2.4: uses deprecated EAPI: 0
+  MissingChksum: version 2.2.4: "jggtrans-2.2.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-www-servers/thttpd
+net-im/jabber-base
+  DeprecatedEAPI: version 0.01: uses deprecated EAPI: 0
+
+net-im/kadu
+  DroppedKeywordWarning: version 2.1: keywords dropped: ppc
+
+net-im/librvp
+  DeprecatedEAPI: version 0.9.6: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.9.7: uses deprecated EAPI: 2
+  MissingChksum: version 0.9.6: "librvp-0.9.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.9.7: "librvp-0.9.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+net-im/mu-conference
+  DeprecatedEAPI: version 0.7: uses deprecated EAPI: 0
+
+net-im/psi
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-www-servers/tomcat
-  DroppedKeywordWarning: version 8.0.23-r2: keywords dropped: ppc, ppc64
+net-im/psimedia
+  MissingChksum: version 1.0.3-r3: "psimedia-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-www-servers/tornado
-  DroppedKeywordWarning: version 4.2.1: keywords dropped: ppc
+net-im/qwit
+  DeprecatedEAPI: version 1.1_pre2: uses deprecated EAPI: 2
 
-www-servers/xsp
-  WhitespaceFound: version 2014.12-r2014120900: ebuild has trailing whitespace on lines 82, 84
-  MetadataError: version 2014.12-r2014120900: attr(iuse): iuse unknown flags: [ net40, net35, net45 ]
+net-im/reaim
+  MissingChksum: version 0.8-r1: "reaim-0.8.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+net-im/silc-toolkit
+  MissingChksum: version 1.1.10: "silc-toolkit-1.1.10.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+net-im/simpserver-bin
+  DeprecatedEAPI: version 2.1.0: uses deprecated EAPI: 0
+  MissingChksum: version 2.1.0: "simpserver-2.1.0-linux-x86.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+net-im/skypetab-ng
+  NonExistentDeps: version 0.5.2: depset rdepends: nonexistent atoms [ <net-im/skype-4.1 ]
+  NonExistentDeps: version 9999: depset rdepends: nonexistent atoms [ <net-im/skype-4.1 ]
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+net-im/tkabber
+  MissingChksum: version 0.11.1-r1: "tkabber-plugins-0.11.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+net-im/ysm
+  MissingChksum: version 2.9.9.1: "ysmv7_2_9_9_1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
