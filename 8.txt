@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 8 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'net-misc/*' 'app-admin/*' 'dev-vcs/*' 'net-mail/*' 'dev-tex/*' 'sys-process/*' 'games-strategy/*' 'net-nds/*' 'xfce-base/*' 'net-voip/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'net-misc/*' 'app-admin/*' 'dev-vcs/*' 'net-mail/*' 'dev-tex/*' 'sys-process/*' 'games-strategy/*' 'net-nds/*' 'mail-mta/*' 'net-voip/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1820,9 +1820,44 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-xfce-base/xfce4-session
-  NonExistentDeps: version 4.10.1-r2: depset rdepends: nonexistent atoms [ gnome-extra/gnome-screensaver ]
-  NonExistentDeps: version 4.12.1: depset rdepends: nonexistent atoms [ gnome-extra/gnome-screensaver ]
+mail-mta/courier
+  DeprecatedEAPI: version 0.71: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.74.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.74.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.74.1-r1: uses deprecated EAPI: 0
+  DroppedKeywordWarning: version 0.74.0: keywords dropped: alpha, ia64, ppc, sparc
+
+mail-mta/esmtp
+  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 0
+  MissingChksum: version 1.2: "esmtp-1.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+mail-mta/mini-qmail
+  DeprecatedEAPI: version 1.05: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.05-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.06: uses deprecated EAPI: 0
+
+mail-mta/msmtp
+  DeprecatedEclass: version 1.4.31-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+mail-mta/netqmail
+  DeprecatedEAPI: version 1.06: uses deprecated EAPI: 0
+
+mail-mta/postfix
+  DroppedKeywordWarning: version 2.11.6: keywords dropped: mips, s390
+
+mail-mta/qmail-ldap
+  DeprecatedEAPI: version 1.03-r8: uses deprecated EAPI: 0
+  MissingChksum: version 1.03-r8: "qmail-1.03.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.03-r8: "genqmail-20080406.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.03-r8: "qmail-ldap-1.03-20060201.patch.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.03-r8: "qmail-ldap-1.03-20060201-controls20060401d.patch" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.03-r8: "qmail-ldap-1.03-queue-custom-error.patch" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.03-r8: "qmail-spp-0.42.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.03-r8: "qmail-ldap-1.03-spp-0.42.patch" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+mail-mta/qpsmtpd
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DroppedKeywordWarning: version 0.95: keywords dropped: amd64, x86
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
