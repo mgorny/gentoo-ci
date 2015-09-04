@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 13 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'app-emulation/*' 'sys-devel/*' 'app-emacs/*' 'kde-misc/*' 'xfce-extra/*' 'app-cdr/*' 'gnustep-apps/*' 'sys-infiniband/*' 'dev-go/*' 'app-officeext/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'app-emulation/*' 'app-dicts/*' 'kde-base/*' 'www-client/*' 'app-backup/*' 'games-misc/*' 'x11-terms/*' 'games-util/*' 'dev-go/*' 'app-officeext/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -129,6 +129,63 @@ app-emulation/vmips-cross-bin
   DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
 
 app-emulation/vmware-modules
+  NonExistentDeps: version 279.6: depset depends: nonexistent atoms [ =app-emulation/vmware-workstation-10.0.6*, =app-emulation/vmware-player-6.0.6* ]
+  NonsolvableDeps: version 279.6: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0): solutions: [ =app-emulation/vmware-workstation-10.0.6*, =app-emulation/vmware-player-6.0.6* ]
+  NonsolvableDeps: version 279.6: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop): solutions: [ =app-emulation/vmware-workstation-10.0.6*, =app-emulation/vmware-player-6.0.6* ]
+  NonsolvableDeps: version 279.6: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/gnome): solutions: [ =app-emulation/vmware-workstation-10.0.6*, =app-emulation/vmware-player-6.0.6* ]
+  NonsolvableDeps: version 279.6: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/developer): solutions: [ =app-emulation/vmware-workstation-10.0.6*, =app-emulation/vmware-player-6.0.6* ]
+  NonsolvableDeps: version 279.6: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/gnome/systemd): solutions: [ =app-emulation/vmware-workstation-10.0.6*, =app-emulation/vmware-player-6.0.6* ]
+  NonsolvableDeps: version 279.6: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/kde): solutions: [ =app-emulation/vmware-workstation-10.0.6*, =app-emulation/vmware-player-6.0.6* ]
+  NonsolvableDeps: version 279.6: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/plasma): solutions: [ =app-emulation/vmware-workstation-10.0.6*, =app-emulation/vmware-player-6.0.6* ]
+  NonsolvableDeps: version 279.6: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/kde/systemd): solutions: [ =app-emulation/vmware-workstation-10.0.6*, =app-emulation/vmware-player-6.0.6* ]
+  NonsolvableDeps: version 279.6: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/plasma/systemd): solutions: [ =app-emulation/vmware-workstation-10.0.6*, =app-emulation/vmware-player-6.0.6* ]
+  NonsolvableDeps: version 279.6: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/systemd): solutions: [ =app-emulation/vmware-workstation-10.0.6*, =app-emulation/vmware-player-6.0.6* ]
+  NonsolvableDeps: version 279.6: nonsolvable depset(depends) keyword(~amd64) profile (hardened/linux/amd64): solutions: [ =app-emulation/vmware-workstation-10.0.6*, =app-emulation/vmware-player-6.0.6* ]
+  NonsolvableDeps: version 279.6: nonsolvable depset(depends) keyword(~amd64) profile (hardened/linux/amd64/no-multilib): solutions: [ =app-emulation/vmware-workstation-10.0.6*, =app-emulation/vmware-player-6.0.6* ]
+  NonsolvableDeps: version 279.6: nonsolvable depset(depends) keyword(~amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ =app-emulation/vmware-workstation-10.0.6*, =app-emulation/vmware-player-6.0.6* ]
+  NonsolvableDeps: version 279.6: nonsolvable depset(depends) keyword(~amd64) profile (hardened/linux/amd64/selinux): solutions: [ =app-emulation/vmware-workstation-10.0.6*, =app-emulation/vmware-player-6.0.6* ]
+  NonsolvableDeps: version 279.6: nonsolvable depset(depends) keyword(~x86) profile (default/linux/x86/13.0): solutions: [ =app-emulation/vmware-workstation-10.0.6*, =app-emulation/vmware-player-6.0.6* ]
+  NonsolvableDeps: version 279.6: nonsolvable depset(depends) keyword(~x86) profile (default/linux/x86/13.0/desktop): solutions: [ =app-emulation/vmware-workstation-10.0.6*, =app-emulation/vmware-player-6.0.6* ]
+  NonsolvableDeps: version 279.6: nonsolvable depset(depends) keyword(~x86) profile (default/linux/x86/13.0/desktop/gnome): solutions: [ =app-emulation/vmware-workstation-10.0.6*, =app-emulation/vmware-player-6.0.6* ]
+  NonsolvableDeps: version 279.6: nonsolvable depset(depends) keyword(~x86) profile (default/linux/x86/13.0/developer): solutions: [ =app-emulation/vmware-workstation-10.0.6*, =app-emulation/vmware-player-6.0.6* ]
+  NonsolvableDeps: version 279.6: nonsolvable depset(depends) keyword(~x86) profile (default/linux/x86/13.0/desktop/gnome/systemd): solutions: [ =app-emulation/vmware-workstation-10.0.6*, =app-emulation/vmware-player-6.0.6* ]
+  NonsolvableDeps: version 279.6: nonsolvable depset(depends) keyword(~x86) profile (default/linux/x86/13.0/desktop/kde): solutions: [ =app-emulation/vmware-workstation-10.0.6*, =app-emulation/vmware-player-6.0.6* ]
+  NonsolvableDeps: version 279.6: nonsolvable depset(depends) keyword(~x86) profile (default/linux/x86/13.0/desktop/plasma): solutions: [ =app-emulation/vmware-workstation-10.0.6*, =app-emulation/vmware-player-6.0.6* ]
+  NonsolvableDeps: version 279.6: nonsolvable depset(depends) keyword(~x86) profile (default/linux/x86/13.0/desktop/kde/systemd): solutions: [ =app-emulation/vmware-workstation-10.0.6*, =app-emulation/vmware-player-6.0.6* ]
+  NonsolvableDeps: version 279.6: nonsolvable depset(depends) keyword(~x86) profile (default/linux/x86/13.0/desktop/plasma/systemd): solutions: [ =app-emulation/vmware-workstation-10.0.6*, =app-emulation/vmware-player-6.0.6* ]
+  NonsolvableDeps: version 279.6: nonsolvable depset(depends) keyword(~x86) profile (hardened/linux/x86): solutions: [ =app-emulation/vmware-workstation-10.0.6*, =app-emulation/vmware-player-6.0.6* ]
+  NonsolvableDeps: version 279.6: nonsolvable depset(depends) keyword(~x86) profile (hardened/linux/x86/selinux): solutions: [ =app-emulation/vmware-workstation-10.0.6*, =app-emulation/vmware-player-6.0.6* ]
+  NonExistentDeps: version 304.0: depset depends: nonexistent atoms [ =app-emulation/vmware-player-7.1.0*, =app-emulation/vmware-workstation-11.1.0* ]
+  NonsolvableDeps: version 304.0: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0): solutions: [ =app-emulation/vmware-player-7.1.0*, =app-emulation/vmware-workstation-11.1.0* ]
+  NonsolvableDeps: version 304.0: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop): solutions: [ =app-emulation/vmware-player-7.1.0*, =app-emulation/vmware-workstation-11.1.0* ]
+  NonsolvableDeps: version 304.0: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/gnome): solutions: [ =app-emulation/vmware-player-7.1.0*, =app-emulation/vmware-workstation-11.1.0* ]
+  NonsolvableDeps: version 304.0: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/developer): solutions: [ =app-emulation/vmware-player-7.1.0*, =app-emulation/vmware-workstation-11.1.0* ]
+  NonsolvableDeps: version 304.0: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/gnome/systemd): solutions: [ =app-emulation/vmware-player-7.1.0*, =app-emulation/vmware-workstation-11.1.0* ]
+  NonsolvableDeps: version 304.0: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/kde): solutions: [ =app-emulation/vmware-player-7.1.0*, =app-emulation/vmware-workstation-11.1.0* ]
+  NonsolvableDeps: version 304.0: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/plasma): solutions: [ =app-emulation/vmware-player-7.1.0*, =app-emulation/vmware-workstation-11.1.0* ]
+  NonsolvableDeps: version 304.0: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/kde/systemd): solutions: [ =app-emulation/vmware-player-7.1.0*, =app-emulation/vmware-workstation-11.1.0* ]
+  NonsolvableDeps: version 304.0: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/plasma/systemd): solutions: [ =app-emulation/vmware-player-7.1.0*, =app-emulation/vmware-workstation-11.1.0* ]
+  NonsolvableDeps: version 304.0: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/systemd): solutions: [ =app-emulation/vmware-player-7.1.0*, =app-emulation/vmware-workstation-11.1.0* ]
+  NonsolvableDeps: version 304.0: nonsolvable depset(depends) keyword(~amd64) profile (hardened/linux/amd64): solutions: [ =app-emulation/vmware-player-7.1.0*, =app-emulation/vmware-workstation-11.1.0* ]
+  NonsolvableDeps: version 304.0: nonsolvable depset(depends) keyword(~amd64) profile (hardened/linux/amd64/no-multilib): solutions: [ =app-emulation/vmware-player-7.1.0*, =app-emulation/vmware-workstation-11.1.0* ]
+  NonsolvableDeps: version 304.0: nonsolvable depset(depends) keyword(~amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ =app-emulation/vmware-player-7.1.0*, =app-emulation/vmware-workstation-11.1.0* ]
+  NonsolvableDeps: version 304.0: nonsolvable depset(depends) keyword(~amd64) profile (hardened/linux/amd64/selinux): solutions: [ =app-emulation/vmware-player-7.1.0*, =app-emulation/vmware-workstation-11.1.0* ]
+  NonExistentDeps: version 304.2: depset depends: nonexistent atoms [ =app-emulation/vmware-workstation-11.1.2*, =app-emulation/vmware-player-7.1.2* ]
+  NonsolvableDeps: version 304.2: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0): solutions: [ =app-emulation/vmware-workstation-11.1.2*, =app-emulation/vmware-player-7.1.2* ]
+  NonsolvableDeps: version 304.2: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop): solutions: [ =app-emulation/vmware-workstation-11.1.2*, =app-emulation/vmware-player-7.1.2* ]
+  NonsolvableDeps: version 304.2: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/gnome): solutions: [ =app-emulation/vmware-workstation-11.1.2*, =app-emulation/vmware-player-7.1.2* ]
+  NonsolvableDeps: version 304.2: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/developer): solutions: [ =app-emulation/vmware-workstation-11.1.2*, =app-emulation/vmware-player-7.1.2* ]
+  NonsolvableDeps: version 304.2: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/gnome/systemd): solutions: [ =app-emulation/vmware-workstation-11.1.2*, =app-emulation/vmware-player-7.1.2* ]
+  NonsolvableDeps: version 304.2: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/kde): solutions: [ =app-emulation/vmware-workstation-11.1.2*, =app-emulation/vmware-player-7.1.2* ]
+  NonsolvableDeps: version 304.2: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/plasma): solutions: [ =app-emulation/vmware-workstation-11.1.2*, =app-emulation/vmware-player-7.1.2* ]
+  NonsolvableDeps: version 304.2: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/kde/systemd): solutions: [ =app-emulation/vmware-workstation-11.1.2*, =app-emulation/vmware-player-7.1.2* ]
+  NonsolvableDeps: version 304.2: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/plasma/systemd): solutions: [ =app-emulation/vmware-workstation-11.1.2*, =app-emulation/vmware-player-7.1.2* ]
+  NonsolvableDeps: version 304.2: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/systemd): solutions: [ =app-emulation/vmware-workstation-11.1.2*, =app-emulation/vmware-player-7.1.2* ]
+  NonsolvableDeps: version 304.2: nonsolvable depset(depends) keyword(~amd64) profile (hardened/linux/amd64): solutions: [ =app-emulation/vmware-workstation-11.1.2*, =app-emulation/vmware-player-7.1.2* ]
+  NonsolvableDeps: version 304.2: nonsolvable depset(depends) keyword(~amd64) profile (hardened/linux/amd64/no-multilib): solutions: [ =app-emulation/vmware-workstation-11.1.2*, =app-emulation/vmware-player-7.1.2* ]
+  NonsolvableDeps: version 304.2: nonsolvable depset(depends) keyword(~amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ =app-emulation/vmware-workstation-11.1.2*, =app-emulation/vmware-player-7.1.2* ]
+  NonsolvableDeps: version 304.2: nonsolvable depset(depends) keyword(~amd64) profile (hardened/linux/amd64/selinux): solutions: [ =app-emulation/vmware-workstation-11.1.2*, =app-emulation/vmware-player-7.1.2* ]
+  DroppedKeywordWarning: version 304.0: keywords dropped: x86
   SizeViolation: "files/271-3.10.0.patch" exceeds 20k in size; 23418 bytes total
 
 app-emulation/vmware-tools
@@ -145,523 +202,360 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-sys-devel/autoconf
-  DeprecatedEAPI: version 2.69: uses deprecated EAPI: 3
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+app-dicts/aspell-af
+  DeprecatedEAPI: version 0.50.0: uses deprecated EAPI: 0
 
-sys-devel/autoconf-wrapper
-  DeprecatedEAPI: version 13: uses deprecated EAPI: 0
+app-dicts/aspell-be
+  DeprecatedEAPI: version 0.01-r1: uses deprecated EAPI: 0
 
-sys-devel/automake
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+app-dicts/aspell-bg
+  DeprecatedEAPI: version 4.1.0: uses deprecated EAPI: 0
 
-sys-devel/automake-wrapper
-  DeprecatedEAPI: version 9: uses deprecated EAPI: 0
+app-dicts/aspell-br
+  DeprecatedEAPI: version 0.50.2: uses deprecated EAPI: 0
 
-sys-devel/bc
-  DeprecatedEAPI: version 1.06.95: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.06.95-r1: uses deprecated EAPI: 2
+app-dicts/aspell-ca
+  DeprecatedEAPI: version 2.1.5.1: uses deprecated EAPI: 0
 
-sys-devel/binutils
-  DeprecatedEAPI: version 2.24-r3: uses deprecated EAPI: 0
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+app-dicts/aspell-cs
+  DeprecatedEAPI: version 0.60.20040614: uses deprecated EAPI: 0
 
-sys-devel/binutils-apple
-  BadInsIntoDir: version 3.1.2: ebuild uses insinto /etc/env.d on line 203
-  DeprecatedEAPI: version 3.1.2: uses deprecated EAPI: 3
-  BadInsIntoDir: version 3.2: ebuild uses insinto /etc/env.d on line 223
-  DeprecatedEAPI: version 3.2: uses deprecated EAPI: 3
-  BadInsIntoDir: version 3.2.6: ebuild uses insinto /etc/env.d on line 243
-  DeprecatedEAPI: version 3.2.6: uses deprecated EAPI: 3
-  BadInsIntoDir: version 4.2: ebuild uses insinto /etc/env.d on line 301
-  DeprecatedEAPI: version 4.2: uses deprecated EAPI: 3
-  BadInsIntoDir: version 4.2-r1: ebuild uses insinto /etc/env.d on line 317
-  DeprecatedEAPI: version 4.2-r1: uses deprecated EAPI: 3
-  BadInsIntoDir: version 4.3: ebuild uses insinto /etc/env.d on line 298
-  DeprecatedEAPI: version 4.3: uses deprecated EAPI: 3
-  BadInsIntoDir: version 4.3-r1: ebuild uses insinto /etc/env.d on line 305
-  DeprecatedEAPI: version 4.3-r1: uses deprecated EAPI: 3
-  BadInsIntoDir: version 5.1: ebuild uses insinto /etc/env.d on line 345
-  DeprecatedEAPI: version 5.1: uses deprecated EAPI: 3
-  BadInsIntoDir: version 6.1: ebuild uses insinto /etc/env.d on line 344
-  DeprecatedEAPI: version 6.1: uses deprecated EAPI: 3
-  BadInsIntoDir: version 6.3: ebuild uses insinto /etc/env.d on line 336
-  SizeViolation: "files/ld64-236.3-gcc.patch" exceeds 20k in size; 41867 bytes total
-  SizeViolation: "files/ld64-236.3-noarm.patch" exceeds 20k in size; 37310 bytes total
-  SizeViolation: "files/ld64-236.3-nosnapshots.patch" exceeds 20k in size; 23030 bytes total
-  SizeViolation: "files/ld64-241.9-gcc.patch" exceeds 20k in size; 40446 bytes total
-  SizeViolation: "files/ld64-241.9-noarm.patch" exceeds 20k in size; 39659 bytes total
-  SizeViolation: "files/ld64-241.9-nosnapshots.patch" exceeds 20k in size; 23156 bytes total
-  SizeViolation: "files/ld64-242-gcc.patch" exceeds 20k in size; 40987 bytes total
-  SizeViolation: "files/ld64-242-noarm.patch" exceeds 20k in size; 37257 bytes total
+app-dicts/aspell-cy
+  DeprecatedEAPI: version 0.50.3: uses deprecated EAPI: 0
 
-sys-devel/binutils-config
-  DeprecatedEAPI: version 1.9-r4: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 3-r3: uses deprecated EAPI: 0
+app-dicts/aspell-da
+  DeprecatedEAPI: version 1.7.42: uses deprecated EAPI: 0
 
-sys-devel/bison
-  DeprecatedEAPI: version 1.875d: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.4.3: uses deprecated EAPI: 2
-  SizeViolation: "files/bison-3.0.4-optional-perl.patch" exceeds 20k in size; 21963 bytes total
+app-dicts/aspell-de
+  DeprecatedEAPI: version 0.60_pre20030222: uses deprecated EAPI: 0
 
-sys-devel/bmake
-  DeprecatedEAPI: version 20140214: uses deprecated EAPI: 3
+app-dicts/aspell-de-alt
+  DeprecatedEAPI: version 2.1.1-r1: uses deprecated EAPI: 0
 
-sys-devel/byfl
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+app-dicts/aspell-el
+  DeprecatedEAPI: version 0.50.3: uses deprecated EAPI: 0
 
-sys-devel/clang
-  DeprecatedEAPI: version 2.8-r3: uses deprecated EAPI: 3
-  DeprecatedEclass: version 2.8-r3: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 2.9-r1: uses deprecated EAPI: 3
-  DeprecatedEclass: version 2.9-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 3.0-r4: uses deprecated EAPI: 3
-  DeprecatedEclass: version 3.0-r4: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEclass: version 3.1-r5: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  MissingChksum: version 2.8-r3: "clang-2.8.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-dicts/aspell-en
+  DeprecatedEAPI: version 7.1.0: uses deprecated EAPI: 0
 
-sys-devel/cons
-  DeprecatedEAPI: version 2.2.0: uses deprecated EAPI: 0
-  MissingChksum: version 2.2.0: "cons-2.2.0.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+app-dicts/aspell-eo
+  DeprecatedEAPI: version 2.1.20000225.2: uses deprecated EAPI: 0
 
-sys-devel/crossdev
-  DeprecatedEAPI: version 20100814: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 20101011: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 20110310: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 20110705: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 20110819: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 20111011: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 20111018: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 20111118: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 20111221: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 20120214: uses deprecated EAPI: 3
-  DeprecatedEclass: version 99999999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+app-dicts/aspell-es
+  DeprecatedEAPI: version 1.9a: uses deprecated EAPI: 0
 
-sys-devel/flex
-  DeprecatedEAPI: version 2.5.35: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.5.35_p10: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 2.5.37: uses deprecated EAPI: 3
+app-dicts/aspell-et
+  DeprecatedEAPI: version 0.1.21.1: uses deprecated EAPI: 0
 
-sys-devel/gcc
-  DroppedKeywordWarning: version 5.1.0: keywords dropped: alpha, amd64, arm, arm64, hppa, ia64, m68k, mips, ppc, ppc64, s390, sh, sparc, x86
+app-dicts/aspell-fi
+  DeprecatedEAPI: version 0.7.0: uses deprecated EAPI: 0
 
-sys-devel/gcc-apple
-  DeprecatedEAPI: version 4.0.1_p5493: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 4.2.1_p5664: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 4.2.1_p5666-r1: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 4.2.1_p5666-r2: uses deprecated EAPI: 3
-  SizeViolation: "files/gcc-apple-4.2.1_p5646-gfortran.patch" exceeds 20k in size; 38284 bytes total
+app-dicts/aspell-fo
+  DeprecatedEAPI: version 0.51.0: uses deprecated EAPI: 0
 
-sys-devel/gcc-config
-  DeprecatedEAPI: version 1.4.1-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.5-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.5-r2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.5.1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.5.1-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.6: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.7: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.7.1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.7.2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.7.3: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.8: uses deprecated EAPI: 0
-  SizeViolation: "files/gcc-config-1.4.1" exceeds 20k in size; 21603 bytes total
-  SizeViolation: "files/gcc-config-1.5.1" exceeds 20k in size; 20907 bytes total
+app-dicts/aspell-fr
+  DeprecatedEAPI: version 0.60: uses deprecated EAPI: 0
 
-sys-devel/gdb
-  DeprecatedEAPI: version 7.6.2: uses deprecated EAPI: 3
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+app-dicts/aspell-ga
+  DeprecatedEAPI: version 0.50.4: uses deprecated EAPI: 0
 
-sys-devel/gdb-apple
-  DeprecatedEAPI: version 563: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 768-r1: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 960: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 962: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 966: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 1344: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 1346: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 1461: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 1518: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 1705: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 1708: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 1752: uses deprecated EAPI: 3
-  MissingChksum: version 563: "gdb-563.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 768-r1: "gdb-768.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 960: "gdb-960.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 962: "gdb-962.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 966: "gdb-966.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1344: "gdb-1344.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1346: "gdb-1346.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1461: "gdb-1461.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1518: "gdb-1518.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1705: "gdb-1705.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1708: "gdb-1708.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1752: "gdb-1752.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-sys-devel/gnuconfig
-  DeprecatedEAPI: version 20130516: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 20131128: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 20140212: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 20140728: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 20150304: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 20150308: uses deprecated EAPI: 2
-  DeprecatedEclass: version 99999999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-sys-devel/kgcc64
-  DroppedKeywordWarning: version 4.3.5: keywords dropped: ppc, s390
-  DroppedKeywordWarning: version 4.8.1: keywords dropped: mips
-  DroppedKeywordWarning: version 4.9.1: keywords dropped: sparc
-
-sys-devel/libtool
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-sys-devel/llvm
-  DeprecatedEclass: version 3.0-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEclass: version 3.1-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-
-sys-devel/m4
-  DeprecatedEAPI: version 1.4.16: uses deprecated EAPI: 3
-
-sys-devel/make
-  DeprecatedEAPI: version 3.80-r4: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 3.81-r2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 3.82-r4: uses deprecated EAPI: 2
-  MissingChksum: version 3.80-r4: "make-3.80.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-sys-devel/native-cctools
-  BadInsIntoDir: version 1: ebuild uses insinto /etc/env.d on line 96
-  DeprecatedEAPI: version 1: uses deprecated EAPI: 3
-  BadInsIntoDir: version 2: ebuild uses insinto /etc/env.d on line 96
-  DeprecatedEAPI: version 2: uses deprecated EAPI: 3
-  BadInsIntoDir: version 4: ebuild uses insinto /etc/env.d on line 99
-  DeprecatedEAPI: version 4: uses deprecated EAPI: 3
-
-sys-devel/parity
-  MissingChksum: version 1.2.4: "parity-1.2.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-sys-devel/qconf
-  DeprecatedEAPI: version 1.5_pre717-r1: uses deprecated EAPI: 2
-  MissingChksum: version 1.5_pre717-r1: "qconf-1.5_pre717.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-sys-devel/remake
-  DeprecatedEAPI: version 3.81.0.2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 3.81.0.3: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 3.82.0.4: uses deprecated EAPI: 0
-  MissingChksum: version 3.81.0.2: "remake-3.81+dbg-0.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-sys-devel/smatch
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-sys-devel/sparse
-  DeprecatedEAPI: version 0.4.3: uses deprecated EAPI: 2
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-sys-devel/ucpp
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-WARNING pkgcore: metadata.dtd cannot be opened from
-               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
-               : refetch
-WARNING pkgcore: metadata.dtd cannot be opened from
-               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
-               : refetch
-
-app-emacs/cmail
-  DeprecatedEAPI: version 2.62-r1: uses deprecated EAPI: 0
-
-app-emacs/ddskk
-  DeprecatedEAPI: version 14.3: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 14.4: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 15.1: uses deprecated EAPI: 3
-
-app-emacs/emacs-wiki-blog
-  DeprecatedEAPI: version 0.5: uses deprecated EAPI: 0
-
-app-emacs/javascript
-  DeprecatedEAPI: version 2.0_beta8: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.2.1: uses deprecated EAPI: 0
-
-app-emacs/navi2ch
-  DeprecatedEAPI: version 1.8.3-r1: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 1.8.4: uses deprecated EAPI: 3
-
-app-emacs/prom-wl
-  DeprecatedEAPI: version 2.7.0-r1: uses deprecated EAPI: 0
-
-app-emacs/pymacs
-  DeprecatedEAPI: version 0.23-r1: uses deprecated EAPI: 3
-  DeprecatedEclass: version 0.23-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-
-app-emacs/python-mode
-  DeprecatedEAPI: version 5.2.0: uses deprecated EAPI: 3
-
-app-emacs/rnc-mode
-  DeprecatedEAPI: version 1.0_beta3: uses deprecated EAPI: 0
-
-app-emacs/slime
-  DeprecatedEAPI: version 2.0_p20080731: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.0_p20080731-r1: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 2.0_p20101103: uses deprecated EAPI: 3
-
-app-emacs/sumibi
+app-dicts/aspell-gl
   DeprecatedEAPI: version 0.5.2: uses deprecated EAPI: 0
 
-app-emacs/tdtd
-  DeprecatedEAPI: version 0.7.1-r1: uses deprecated EAPI: 0
+app-dicts/aspell-he
+  DeprecatedEAPI: version 1.0.0: uses deprecated EAPI: 0
 
-app-emacs/twittering-mode
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+app-dicts/aspell-hr
+  DeprecatedEAPI: version 0.51.0: uses deprecated EAPI: 0
 
-app-emacs/yasnippet
-  DeprecatedEAPI: version 0.5.10: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.6.0c: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.6.1c: uses deprecated EAPI: 0
+app-dicts/aspell-hu
+  DeprecatedEAPI: version 0.99.4.2: uses deprecated EAPI: 0
 
-app-emacs/yc
-  DeprecatedEAPI: version 4.0.13: uses deprecated EAPI: 3
-WARNING pkgcore: metadata.dtd cannot be opened from
-               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
-               : refetch
-WARNING pkgcore: metadata.dtd cannot be opened from
-               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
-               : refetch
+app-dicts/aspell-hy
+  DeprecatedEAPI: version 0.10.0: uses deprecated EAPI: 0
 
-kde-misc/gx-mail-notify
-  MissingChksum: version 0.4.4: "99617-gx_mail_notify-0.4.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-dicts/aspell-is
+  DeprecatedEAPI: version 0.51.1.0: uses deprecated EAPI: 0
 
-kde-misc/hdaps_monitor
-  MissingChksum: version 0.3-r1: "103481-hdaps_monitor-0.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-dicts/aspell-it
+  DeprecatedEAPI: version 2.4.20070901: uses deprecated EAPI: 0
 
-kde-misc/kcaldav
-  MissingChksum: version 1.2.0: "kcaldav-1.2.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-dicts/aspell-la
+  DeprecatedEAPI: version 6.0.20020503.0: uses deprecated EAPI: 0
 
-kde-misc/kdesudo
-  MissingChksum: version 3.4.2.4-r1: "kdesudo-3.4.2.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-dicts/aspell-lt
+  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 0
 
-kde-misc/kdmthemegenerator
-  MissingChksum: version 0.8: "102760-KdmThemeGenerator.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-dicts/aspell-nl
+  DeprecatedEAPI: version 0.50.2: uses deprecated EAPI: 0
 
-kde-misc/kfilebox
-  MissingChksum: version 0.4.9: "kfilebox_0.4.9.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-dicts/aspell-no
+  DeprecatedEAPI: version 0.50.2: uses deprecated EAPI: 0
 
-kde-misc/kgrubeditor
-  MissingChksum: version 0.8.5: "KGRUBEditor-0.8.5-src.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-dicts/aspell-pl
+  DeprecatedEAPI: version 6.0.20120418.0: uses deprecated EAPI: 0
 
-kde-misc/kio-locate
-  MissingChksum: version 0.5.3: "120965-kio-locate-0.5.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-dicts/aspell-pt
+  DeprecatedEAPI: version 0.50.2-r1: uses deprecated EAPI: 0
 
-kde-misc/kio-slp
-  MissingChksum: version 0_p20120621: "kio-slp-0_p20120621.tar.xz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-dicts/aspell-pt-br
+  DeprecatedEAPI: version 6.0.20090702: uses deprecated EAPI: 0
 
-kde-misc/kio_gopher
-  MissingChksum: version 0.1.4: "kio-gopher-0.1.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-dicts/aspell-ro
+  DeprecatedEAPI: version 3.3.2: uses deprecated EAPI: 0
 
-kde-misc/kookie
-  MissingChksum: version 0.1.1: "kookie-0.1.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-dicts/aspell-ru
+  DeprecatedEAPI: version 0.99.1-r1: uses deprecated EAPI: 0
 
-kde-misc/kopete-antispam
-  MissingChksum: version 0.5: "kopete-antispam-kde4-0.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-dicts/aspell-sk
+  DeprecatedEAPI: version 2.01.2: uses deprecated EAPI: 0
 
-kde-misc/kopete-thinklight
-  MissingChksum: version 0.50: "100537-kopete-thinklight-0.50.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-dicts/aspell-sl
+  DeprecatedEAPI: version 0.50.0: uses deprecated EAPI: 0
 
-kde-misc/kprayertime
-  MissingChksum: version 4.01: "kprayertime4.01.src.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-dicts/aspell-sr
+  DeprecatedEAPI: version 0.60: uses deprecated EAPI: 0
 
-kde-misc/krunner-kopete-contacts
-  MissingChksum: version 0.4: "105263-krunner-kopete-contacts-0.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-dicts/aspell-sv
+  DeprecatedEAPI: version 0.51.0: uses deprecated EAPI: 0
 
-kde-misc/ktrafficanalyzer
-  MissingChksum: version 0.5.4.1: "KTrafficAnalyzer-0.5.4.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-dicts/aspell-uk
+  DeprecatedEAPI: version 1.4.0.0: uses deprecated EAPI: 0
 
-kde-misc/kvkbd
-  MissingChksum: version 0.6-r1: "94374-kvkbd-0.6.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-dicts/aspell-vi
+  DeprecatedEAPI: version 0.01.1.1: uses deprecated EAPI: 0
 
-kde-misc/plasmatvgr
-  MissingChksum: version 0.47: "75728-plasmatvgr047.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-kde-misc/serverstatuswidget
-  MissingChksum: version 1.5.1: "101336-serverstatuswidget-1.5.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-kde-misc/smooth-tasks
-  MissingChksum: version 0_p20120130: "smooth-tasks-0_p20120130.tar.xz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-kde-misc/steamcompanion
-  MissingChksum: version 0.5.4-r1: "steamcompanion-0.5.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-kde-misc/takeoff
-  MissingChksum: version 1.0: "takeoff-1.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-WARNING pkgcore: metadata.dtd cannot be opened from
-               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
-               : refetch
-WARNING pkgcore: metadata.dtd cannot be opened from
-               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
-               : refetch
-
-xfce-extra/eatmonkey
-  MissingChksum: version 0.1.4: "eatmonkey-0.1.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-xfce-extra/transd
-  MissingChksum: version 0_p20120503: "transd-0_p20120503.tar.xz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-xfce-extra/xfce4-gvfs-mount
-  MissingChksum: version 0.0.4: "xfce4-gvfs-mount-0.0.4-6d2684b.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-xfce-extra/xfce4-linelight-plugin
-  MissingChksum: version 0.1.7: "xfce4-linelight-plugin_0.1.7.orig.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-xfce-extra/xfce4-modemlights-plugin
-  MissingChksum: version 0.1.3.99: "xfce4-modemlights-plugin-0.1.3.99.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-xfce-extra/xfce4-taskmanager
-  DroppedKeywordWarning: version 1.1.0: keywords dropped: hppa
-
-xfce-extra/xfce4-volumed
-  MissingChksum: version 0.1.13: "xfce4-volumed-0.1.13.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-WARNING pkgcore: metadata.dtd cannot be opened from
-               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
-               : refetch
-WARNING pkgcore: metadata.dtd cannot be opened from
-               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
-               : refetch
-
-app-cdr/b5i2iso
-  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 0
-  MetadataError: version 0.2: attr(fetchables): error- Metadata Exception: pkg ebuild src: app-cdr/b5i2iso-0.2, attr fetchables
-error: mirror://berlios/b5i2iso/b5i2iso.tar.bz2 is unparseable: uri mirror://berlios/b5i2iso/b5i2iso.tar.bz2 isn't a known mirror tier
-flagged token- mirror://berlios/b5i2iso/b5i2iso.tar.bz2
-
-app-cdr/backlite
-  SizeViolation: "files/backlite-1.0.3-ffmpeg-0.11.patch" exceeds 20k in size; 23775 bytes total
-
-app-cdr/bchunk
-  DeprecatedEAPI: version 1.2.0-r1: uses deprecated EAPI: 0
-
-app-cdr/bin2iso
-  DeprecatedEAPI: version 19b-r2: uses deprecated EAPI: 0
-
-app-cdr/burn-cd
-  DeprecatedEAPI: version 1.7.4: uses deprecated EAPI: 0
-
-app-cdr/burncdda
-  DeprecatedEAPI: version 1.8.0: uses deprecated EAPI: 0
-
-app-cdr/burncenter
+app-dicts/bookview
   DeprecatedEAPI: version 3.2.1: uses deprecated EAPI: 0
 
-app-cdr/ccd2iso
-  DeprecatedEAPI: version 0.3: uses deprecated EAPI: 0
+app-dicts/canna-2ch
+  DeprecatedEAPI: version 20030827: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 20040519: uses deprecated EAPI: 0
 
-app-cdr/cdlabelgen
-  DeprecatedEAPI: version 4.0.0: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.1.0: uses deprecated EAPI: 2
+app-dicts/canna-cannadic
+  DeprecatedEAPI: version 0.95c: uses deprecated EAPI: 0
 
-app-cdr/cdrkit
-  DeprecatedEAPI: version 1.1.11: uses deprecated EAPI: 3
-  DroppedKeywordWarning: version 1.1.11-r2: keywords dropped: s390
+app-dicts/dictd-devils
+  DeprecatedEAPI: version 0-r1: uses deprecated EAPI: 0
 
-app-cdr/cue2toc
-  DeprecatedEAPI: version 0.4: uses deprecated EAPI: 0
-
-app-cdr/cuecue
-  MetadataError: version 0.2.2-r1: attr(fetchables): error- Metadata Exception: pkg ebuild src: app-cdr/cuecue-0.2.2-r1, attr fetchables
-error: mirror://berlios/cuecue/cuecue-0.2.2.tar.gz is unparseable
-flagged token- uri mirror://berlios/cuecue/cuecue-0.2.2.tar.gz isn't a known mirror tier
-
-app-cdr/cuegen
-  DeprecatedEAPI: version 1.2.0: uses deprecated EAPI: 2
-
-app-cdr/cuetools
-  DeprecatedEAPI: version 1.3.1: uses deprecated EAPI: 0
-  MetadataError: version 1.3.1: attr(fetchables): error- Metadata Exception: pkg ebuild src: app-cdr/cuetools-1.3.1, attr fetchables
-error: mirror://berlios/cuetools/cuetools-1.3.1.tar.gz mirror://gentoo/cuetools-1.3.1-debian.patch.bz2 is unparseable: uri mirror://berlios/cuetools/cuetools-1.3.1.tar.gz isn't a known mirror tier
-flagged token- mirror://berlios/cuetools/cuetools-1.3.1.tar.gz
-  MetadataError: version 1.3.1-r2: attr(fetchables): error- Metadata Exception: pkg ebuild src: app-cdr/cuetools-1.3.1-r2, attr fetchables
-error: mirror://berlios/cuetools/cuetools-1.3.1.tar.gz mirror://gentoo/cuetools-1.3.1-debian.patch.bz2 is unparseable
-flagged token- uri mirror://berlios/cuetools/cuetools-1.3.1.tar.gz isn't a known mirror tier
-  DroppedKeywordWarning: version 1.3.1-r2: keywords dropped: ppc
-
-app-cdr/daa2iso
-  DeprecatedEAPI: version 0.1.7e: uses deprecated EAPI: 2
-
-app-cdr/disc-cover
-  DeprecatedEAPI: version 1.5.6: uses deprecated EAPI: 0
-
-app-cdr/dvd+rw-tools
-  DeprecatedEAPI: version 7.1-r1: uses deprecated EAPI: 3
-
-app-cdr/dvd95
-  DeprecatedEAPI: version 1.6_p0: uses deprecated EAPI: 2
-
-app-cdr/dvdshrink
-  DeprecatedEAPI: version 2.6.1_p10: uses deprecated EAPI: 2
-
-app-cdr/extract-xiso
-  DeprecatedEAPI: version 2.5: uses deprecated EAPI: 0
-
-app-cdr/gaffitter
-  DeprecatedEAPI: version 0.6.0-r1: uses deprecated EAPI: 2
-
-app-cdr/gtkcdlabel
-  NonExistentDeps: version 1.12: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
-  NonExistentDeps: version 1.12: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
-  DeprecatedEAPI: version 1.12: uses deprecated EAPI: 3
-  DeprecatedEclass: version 1.12: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-
-app-cdr/iat
-  DeprecatedEAPI: version 0.1.7-r1: uses deprecated EAPI: 2
-  MetadataError: version 0.1.7-r1: attr(fetchables): error- Metadata Exception: pkg ebuild src: app-cdr/iat-0.1.7-r1, attr fetchables
-error: mirror://berlios/iat/iat-0.1.7.tar.bz2 is unparseable
-flagged token- uri mirror://berlios/iat/iat-0.1.7.tar.bz2 isn't a known mirror tier
-
-app-cdr/isomaster
-  DeprecatedEAPI: version 1.3.5: uses deprecated EAPI: 2
-
-app-cdr/k9copy
-  SizeViolation: "files/k9copy-2.3.8-ffmpeg-0.11.patch" exceeds 20k in size; 32790 bytes total
-
-app-cdr/mkcdtoc
+app-dicts/dictd-dicts
   DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
 
-app-cdr/mode2cdmaker
-  DeprecatedEAPI: version 1.5.1: uses deprecated EAPI: 0
+app-dicts/dictd-elements
+  DeprecatedEAPI: version 2000.22.07-r1: uses deprecated EAPI: 0
 
-app-cdr/multicd
-  DeprecatedEAPI: version 1.7.5-r1: uses deprecated EAPI: 0
+app-dicts/dictd-foldoc
+  DeprecatedEAPI: version 2001.03.13-r1: uses deprecated EAPI: 0
 
-app-cdr/mybashburn
-  DeprecatedEAPI: version 1.0.2: uses deprecated EAPI: 0
+app-dicts/dictd-gazetteer
+  DeprecatedEAPI: version 1.2-r1: uses deprecated EAPI: 0
 
-app-cdr/nrg2iso
-  DeprecatedEAPI: version 0.4-r1: uses deprecated EAPI: 0
+app-dicts/dictd-jargon
+  DeprecatedEAPI: version 4.2.3-r1: uses deprecated EAPI: 0
 
-app-cdr/poweriso
+app-dicts/dictd-misc
+  DeprecatedEAPI: version 1.5b-r1: uses deprecated EAPI: 0
+
+app-dicts/dictd-web1913
+  DeprecatedEAPI: version 1.4-r1: uses deprecated EAPI: 0
+
+app-dicts/dictd-wn
+  DeprecatedEAPI: version 1.5-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.0: uses deprecated EAPI: 0
+
+app-dicts/duali-data
+  DeprecatedEAPI: version 0.1b: uses deprecated EAPI: 0
+
+app-dicts/edictionary
+  DeprecatedEAPI: version 2.6: uses deprecated EAPI: 3
+
+app-dicts/freedict-deu-eng
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+
+app-dicts/freedict-eng-fra
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+
+app-dicts/freedict-eng-ita
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+
+app-dicts/freedict-eng-swe
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+
+app-dicts/freedict-fra-eng
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+
+app-dicts/freedict-ita-eng
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+
+app-dicts/migemo-dict
+  DeprecatedEAPI: version 200812: uses deprecated EAPI: 0
+
+app-dicts/myspell-cy
+  DeprecatedEAPI: version 20060316: uses deprecated EAPI: 0
+
+app-dicts/myspell-en
+  DeprecatedEAPI: version 20081002: uses deprecated EAPI: 0
+
+app-dicts/myspell-ga
+  DeprecatedEAPI: version 20060316: uses deprecated EAPI: 0
+
+app-dicts/myspell-gl
+  DeprecatedEAPI: version 20060316: uses deprecated EAPI: 0
+
+app-dicts/myspell-hr
+  DeprecatedEAPI: version 20060316: uses deprecated EAPI: 0
+
+app-dicts/myspell-ia
+  DeprecatedEAPI: version 20060316: uses deprecated EAPI: 0
+
+app-dicts/myspell-mi
+  DeprecatedEAPI: version 20060316: uses deprecated EAPI: 0
+
+app-dicts/myspell-mk
+  DeprecatedEAPI: version 20060316: uses deprecated EAPI: 0
+
+app-dicts/myspell-ms
+  DeprecatedEAPI: version 20060316: uses deprecated EAPI: 0
+
+app-dicts/myspell-ru
+  DeprecatedEAPI: version 20060316: uses deprecated EAPI: 0
+
+app-dicts/myspell-sw
+  DeprecatedEAPI: version 20060316: uses deprecated EAPI: 0
+
+app-dicts/myspell-tn
+  DeprecatedEAPI: version 20060316: uses deprecated EAPI: 0
+
+app-dicts/myspell-zu
+  DeprecatedEAPI: version 20060316: uses deprecated EAPI: 0
+
+app-dicts/qvortaro
+  MetadataError: version 0.4.1: attr(fetchables): error- Metadata Exception: pkg ebuild src: app-dicts/qvortaro-0.4.1, attr fetchables
+error: mirror://berlios/qvortaro/qvortaro-0.4.1.tar.gz is unparseable
+flagged token- uri mirror://berlios/qvortaro/qvortaro-0.4.1.tar.gz isn't a known mirror tier
+
+app-dicts/stardict-cdict-en-zh-big5
+  DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
+
+app-dicts/stardict-cdict-en-zh-gb
+  DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
+
+app-dicts/stardict-cedict-zh-en-big5
+  DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
+
+app-dicts/stardict-cedict-zh-en-gb
+  DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
+
+app-dicts/stardict-dictd-devils
+  DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
+
+app-dicts/stardict-freedict-eng-deu
+  DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
+
+app-dicts/stardict-freedict-eng-fra
+  DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
+
+app-dicts/stardict-freedict-eng-ita
+  DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
+
+app-dicts/stardict-freedict-eng-lat
+  DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
+
+app-dicts/stardict-freedict-eng-rus
+  DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
+
+app-dicts/stardict-freedict-eng-spa
+  DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
+
+app-dicts/stardict-freedict-eng-swe
+  DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
+
+app-dicts/stardict-freedict-eng-tur
+  DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
+
+app-dicts/stardict-freedict-tur-deu
+  DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
+
+app-dicts/stardict-freedict-tur-eng
+  DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
+
+app-dicts/stardict-hnd-de-vi
+  DeprecatedEAPI: version 20050917: uses deprecated EAPI: 0
+
+app-dicts/stardict-hnd-en-vi
+  DeprecatedEAPI: version 20050917: uses deprecated EAPI: 0
+
+app-dicts/stardict-hnd-fr-vi
+  DeprecatedEAPI: version 20050917: uses deprecated EAPI: 0
+
+app-dicts/stardict-hnd-ru-vi
+  DeprecatedEAPI: version 20050917: uses deprecated EAPI: 0
+
+app-dicts/stardict-hnd-vi-de
+  DeprecatedEAPI: version 20050917: uses deprecated EAPI: 0
+
+app-dicts/stardict-hnd-vi-en
+  DeprecatedEAPI: version 20050917: uses deprecated EAPI: 0
+
+app-dicts/stardict-hnd-vi-fr
+  DeprecatedEAPI: version 20050917: uses deprecated EAPI: 0
+
+app-dicts/stardict-hnd-vi-vi
+  DeprecatedEAPI: version 20050917: uses deprecated EAPI: 0
+
+app-dicts/stardict-jmdict-en-ja
+  DeprecatedEAPI: version 2.4.2-r1: uses deprecated EAPI: 0
+
+app-dicts/stardict-jmdict-ja-en
+  DeprecatedEAPI: version 2.4.2-r1: uses deprecated EAPI: 0
+
+app-dicts/stardict-langdao-en-zh-gb
+  DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
+
+app-dicts/stardict-langdao-zh-en-gb
+  DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
+
+app-dicts/stardict-mova-smiley
+  DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
+
+app-dicts/stardict-oxford-en-zh-gb
+  DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
+
+app-dicts/stardict-quick-eng-fra
+  DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
+
+app-dicts/stardict-quick-eng-jpn
+  DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
+
+app-dicts/stardict-quick-jpn-eng
+  DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
+
+app-dicts/stardict-quick-ru-en
+  DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
+
+app-dicts/stardict-xdict-en-zh-big5
+  DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
+
+app-dicts/stardict-xdict-en-zh-gb
+  DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
+
+app-dicts/stardict-xdict-zh-en-big5
+  DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
+
+app-dicts/stardict-xdict-zh-en-gb
+  DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
+
+app-dicts/sword-ab
   DeprecatedEAPI: version 1.3: uses deprecated EAPI: 0
 
-app-cdr/qmultirecord
-  DeprecatedEAPI: version 0.0.3: uses deprecated EAPI: 2
+app-dicts/sword-abbott
+  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 0
 
-app-cdr/recorder
-  DeprecatedEclass: version 1.4.5: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+app-dicts/sword-klviklingon_en
+  DeprecatedEAPI: version 2.1: uses deprecated EAPI: 0
 
-app-cdr/sync2cd
-  DeprecatedEAPI: version 1.3: uses deprecated EAPI: 3
-  DeprecatedEclass: version 1.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-
-app-cdr/uif2iso
-  DeprecatedEAPI: version 0.1.7c: uses deprecated EAPI: 0
-
-app-cdr/webcdwriter
-  DeprecatedEAPI: version 2.8.2-r2: uses deprecated EAPI: 0
-
-app-cdr/xbiso
-  DeprecatedEAPI: version 0.6.1: uses deprecated EAPI: 0
-
-app-cdr/xcdroast
-  DeprecatedEAPI: version 0.98_alpha16: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.98_alpha16-r1: uses deprecated EAPI: 2
-
-app-cdr/xdvdfs-tools
-  DeprecatedEAPI: version 2.1-r1: uses deprecated EAPI: 0
+app-dicts/wnn-ldic
+  DeprecatedEAPI: version 1.04: uses deprecated EAPI: 0
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
@@ -669,123 +563,243 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-gnustep-apps/aclock
-  MissingChksum: version 0.4.0: "AClock-0.4.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+kde-base/kdelibs
+  SizeViolation: "files/kdelibs-4.14.3-trim-crash.patch" exceeds 20k in size; 28725 bytes total
 
-gnustep-apps/addresses
-  DeprecatedEAPI: version 0.4.7: uses deprecated EAPI: 0
+kde-base/kinfocenter
+  NoFinalNewline: version 4.11.19: ebuild lacks an ending newline
+  NoFinalNewline: version 4.11.22: ebuild lacks an ending newline
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
 
-gnustep-apps/affiche
-  DeprecatedEAPI: version 0.6.0-r3: uses deprecated EAPI: 0
-  MissingChksum: version 0.6.0-r3: "Affiche-0.6.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+www-client/ck4up
+  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 0
+  MissingChksum: version 1.2: "ck4up-1.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-gnustep-apps/camera
-  DeprecatedEAPI: version 0.8-r1: uses deprecated EAPI: 0
+www-client/fetch
+  DeprecatedEAPI: version 1.0-r1: uses deprecated EAPI: 0
 
-gnustep-apps/cenon
-  MissingChksum: version 3.9.5: "Cenon-3.9.5.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+www-client/jumanji
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-gnustep-apps/clipbook
-  DeprecatedEAPI: version 0.6.0.8.3-r1: uses deprecated EAPI: 0
-  MissingChksum: version 0.6.0.8.3-r1: "gworkspace-0.8.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+www-client/luakit
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-gnustep-apps/displaycalibrator
-  DeprecatedEAPI: version 0.7: uses deprecated EAPI: 0
-  MissingChksum: version 0.7: "displaycalibrator-0.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+www-client/opera
+  DroppedKeywordWarning: version 31.0.1889.174: keywords dropped: x86
 
-gnustep-apps/easydiff
-  DeprecatedEAPI: version 0.4.0: uses deprecated EAPI: 0
-  MissingChksum: version 0.4.0: "EasyDiff-0.4.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+www-client/surf
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-gnustep-apps/gemas
-  MissingChksum: version 0.3: "Gemas-0.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+www-client/uget
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-gnustep-apps/gmines
-  DeprecatedEAPI: version 0.1-r2: uses deprecated EAPI: 0
-  MissingChksum: version 0.2: "GMines-0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+www-client/uzbl
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-gnustep-apps/gorm
-  MissingChksum: version 1.2.16: "gorm-1.2.16.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+www-client/w3m
+  NonExistentDeps: version 0.5.3-r5: depset depends: nonexistent atoms [ >=app-text/migemo-0.40 ]
+  NonExistentDeps: version 0.5.3-r5: depset rdepends: nonexistent atoms [ >=app-text/migemo-0.40 ]
 
-gnustep-apps/graphos
-  MissingChksum: version 0.2: "Graphos-0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 0.3: "Graphos-0.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+www-client/w3mmee
+  DeprecatedEAPI: version 0.3.2_p24-r7: uses deprecated EAPI: 0
 
-gnustep-apps/gshisen
-  DeprecatedEAPI: version 1.3.0: uses deprecated EAPI: 0
-  MissingChksum: version 1.3.0: "GShisen-1.3.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+www-client/weboob
+  DeprecatedEclass: version 9998: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DroppedKeywordWarning: version 9998: keywords dropped: amd64, x86
 
-gnustep-apps/gspdf
-  DeprecatedEAPI: version 0.4: uses deprecated EAPI: 0
-  MissingChksum: version 0.4: "GSPdf-0.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 0.5: "GSPdf-0.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+www-client/xombrero
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
 
-gnustep-apps/gwnet
-  DeprecatedEAPI: version 0.1.0.8.2: uses deprecated EAPI: 0
-  MissingChksum: version 0.1.0.8.2: "gworkspace-0.8.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+app-backup/amanda
+  BadInsIntoDir: version 3.3.3: ebuild uses insinto /etc/cron.daily on line 332
+  BadInsIntoDir: version 3.3.3-r1: ebuild uses insinto /etc/cron.daily on line 338
+  BadInsIntoDir: version 3.3.5: ebuild uses insinto /etc/cron.daily on line 338
+  BadInsIntoDir: version 3.3.7: ebuild uses insinto /etc/cron.daily on line 335
 
-gnustep-apps/gworkspace
-  DeprecatedEAPI: version 0.9.1: uses deprecated EAPI: 3
+app-backup/backup-manager
+  DeprecatedEAPI: version 0.7.5: uses deprecated EAPI: 0
 
-gnustep-apps/lapispuzzle
-  MissingChksum: version 1.2: "LapisPuzzle-1.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+app-backup/backuppc
+  SizeViolation: "files/02-fix-config.pl-formatting.patch" exceeds 20k in size; 23353 bytes total
 
-gnustep-apps/laternamagica
-  MissingChksum: version 0.4: "LaternaMagica-0.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+app-backup/bareos
+  DroppedKeywordWarning: version 14.2.1: keywords dropped: amd64, x86
 
-gnustep-apps/pictureframe
+app-backup/boxbackup
+  DeprecatedEAPI: version 0.11.1: uses deprecated EAPI: 2
+
+app-backup/burp
+  DroppedKeywordWarning: version 1.4.40: keywords dropped: x86
+
+app-backup/ccollect
+  DeprecatedEAPI: version 0.5.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.7.1: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.8: uses deprecated EAPI: 2
+
+app-backup/cdbackup
+  DeprecatedEAPI: version 0.7.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.7.1: uses deprecated EAPI: 0
+
+app-backup/cdbkup
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0-r1: uses deprecated EAPI: 0
+
+app-backup/cpdup
+  DeprecatedEAPI: version 1.18: uses deprecated EAPI: 0
+
+app-backup/dar
+  DeprecatedEAPI: version 2.3.8: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 2.4.9: uses deprecated EAPI: 3
+
+app-backup/dirvish
+  DeprecatedEAPI: version 1.2.1: uses deprecated EAPI: 0
+
+app-backup/flexbackup
+  DeprecatedEAPI: version 1.2.1-r12: uses deprecated EAPI: 0
+
+app-backup/hdup
+  DeprecatedEAPI: version 2.0.14: uses deprecated EAPI: 0
+
+app-backup/mirdir
+  DeprecatedEAPI: version 2.1-r1: uses deprecated EAPI: 3
+
+app-backup/mylvmbackup
+  DeprecatedEAPI: version 0.11: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.13: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.14: uses deprecated EAPI: 0
+
+app-backup/rdiff-backup
+  DeprecatedEAPI: version 1.2.8-r1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.2.8-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.3.3: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.3.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+app-backup/reoback
+  BadInsIntoDir: version 1.0_p3-r1: ebuild uses insinto /etc/cron.daily on line 36
+
+app-backup/rsnapshot
+  DeprecatedEAPI: version 1.3.1: uses deprecated EAPI: 0
+
+app-backup/sarab
   DeprecatedEAPI: version 1.0.0: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.1.2: uses deprecated EAPI: 0
-  MissingChksum: version 1.0.0: "PictureFrame-1.0.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 1.1.2: "PictureFrame-1.1.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 1.1.3: "PictureFrame-1.1.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-gnustep-apps/preferences
-  DeprecatedEAPI: version 1.3.0_pre20061204-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.3.0_pre20100523: uses deprecated EAPI: 3
-  MissingChksum: version 1.3.0_pre20061204-r1: "preferences-1.3.0_pre20061204.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.3.0_pre20100523: "preferences-1.3.0_pre20100523.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-backup/simplebackup
+  DeprecatedEAPI: version 1.8.1: uses deprecated EAPI: 0
 
-gnustep-apps/preview
-  DeprecatedEAPI: version 0.8.5-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.9: uses deprecated EAPI: 3
+app-backup/tsm
+  DroppedKeywordWarning: version 6.3.0.5-r2: keywords dropped: x86
 
-gnustep-apps/price
-  MissingChksum: version 1.1.0: "PRICE-1.1.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-gnustep-apps/remotedesk
-  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 0
-  MissingChksum: version 0.1: "RemoteDesk-0.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-gnustep-apps/stepulator
-  DeprecatedEAPI: version 1.0-r2: uses deprecated EAPI: 0
-  MissingChksum: version 1.0-r2: "stepulator-gs-1.0.tar.Z" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-gnustep-apps/sudoku
-  DeprecatedEAPI: version 0.7: uses deprecated EAPI: 0
-  MissingChksum: version 0.7: "Sudoku-0.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-gnustep-apps/systempreferences
-  DeprecatedEAPI: version 1.0.2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.1.0: uses deprecated EAPI: 0
-  MissingChksum: version 1.0.2: "SystemPreferences-1.0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.1.0: "SystemPreferences-1.1.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-gnustep-apps/terminal
-  DeprecatedEAPI: version 0.9.7: uses deprecated EAPI: 2
-
-gnustep-apps/textedit
-  DeprecatedEAPI: version 0.95_pre20100427: uses deprecated EAPI: 3
-
-gnustep-apps/zipper
-  DeprecatedEAPI: version 1.3: uses deprecated EAPI: 0
-  MissingChksum: version 1.3: "Zipper-1.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-backup/vzdump
+  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 2
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
+
+games-misc/fortune-mod-flashrider
+  DeprecatedEAPI: version 0.25: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.80: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 0.90: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 1.00: uses deprecated EAPI: 3
+  MissingChksum: version 0.25: "fortunes-prolinux-0.25.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.80: "fortunes-flashrider-0.80.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.90: "fortunes-flashrider-0.90-BB-Styles-Edition.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+games-misc/fortune-mod-gentoo-dev
+  DeprecatedEAPI: version 20061115: uses deprecated EAPI: 0
+  MissingChksum: version 20061115: "gentoo-dev-20061115.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+games-misc/fortune-mod-gentoo-ru
+  MissingChksum: version 0.25: "gentoo-ru-0.25.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.26: "gentoo-ru-0.26.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+games-misc/fortune-mod-scriptures
+  MissingChksum: version 1.1.0: "fortune-mod-scriptures-1.1.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+games-misc/fortune-mod-sp-fortunes
+  MissingChksum: version 0.2: "SP-0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+games-misc/ggencoder
+  MissingChksum: version 0.91a: "ggencoder-0.91a.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+games-misc/xcowsay
+  DeprecatedEAPI: version 1.3: uses deprecated EAPI: 2
+  MissingChksum: version 1.3: "xcowsay-1.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+
+x11-terms/aterm
+  DeprecatedEAPI: version 1.0.1-r2: uses deprecated EAPI: 3
+
+x11-terms/eterm
+  DeprecatedEAPI: version 0.9.5: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.9.6: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
+
+x11-terms/gnome-terminal
+  NonExistentDeps: version 3.14.2-r2: depset depends: nonexistent atoms [ <=x11-libs/gtk+-2.24.10:2 ]
+  SizeViolation: "files/gnome-terminal-3.16.2-restore-transparency.patch" exceeds 20k in size; 54792 bytes total
+
+x11-terms/hanterm
+  DeprecatedEAPI: version 3.1.6-r2: uses deprecated EAPI: 0
+
+x11-terms/mlterm
+  DeprecatedEAPI: version 3.0.11-r1: uses deprecated EAPI: 3
+
+x11-terms/root-tail
+  DeprecatedEAPI: version 1.2-r3: uses deprecated EAPI: 2
+  MissingChksum: version 1.2-r3: "root-tail-1.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-terms/roxterm
+  DeprecatedEclass: version 2.6.3: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 2.6.5: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 2.9.3: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DroppedKeywordWarning: version 2.9.3: keywords dropped: ppc
+
+x11-terms/terminator
+  DeprecatedEclass: version 0.96-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+x11-terms/terminology
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+x11-terms/xvt
+  DeprecatedEAPI: version 2.1-r3: uses deprecated EAPI: 2
+
+x11-terms/yeahconsole
+  DeprecatedEAPI: version 0.3.4-r1: uses deprecated EAPI: 2
+  MissingChksum: version 0.3.4-r1: "yeahconsole-0.3.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+
+games-util/dzip
+  DeprecatedEAPI: version 2.9-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.9-r2: uses deprecated EAPI: 2
+
+games-util/pyfa
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
