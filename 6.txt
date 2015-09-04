@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 6 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-java/*' 'media-video/*' 'dev-ml/*' 'sci-mathematics/*' 'dev-embedded/*' 'mail-client/*' 'dev-tcltk/*' 'net-nds/*' 'lxde-base/*' 'java-virtuals/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-java/*' 'media-video/*' 'dev-ml/*' 'sci-mathematics/*' 'dev-embedded/*' 'mail-client/*' 'dev-tcltk/*' 'net-nds/*' 'lxde-base/*' 'games-roguelike/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -305,6 +305,9 @@ dev-java/gnu-regexp
 dev-java/groovy
   DeprecatedEAPI: version 1.7.5: uses deprecated EAPI: 3
   DeprecatedEAPI: version 1.8.5-r1: uses deprecated EAPI: 3
+
+dev-java/guava
+  DroppedKeywordWarning: version 14.0.1: keywords dropped: ppc, ppc64
 
 dev-java/hamcrest-core
   DeprecatedEAPI: version 1.1: uses deprecated EAPI: 0
@@ -2201,8 +2204,7 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-java-virtuals/javamail
-  DeprecatedEAPI: version 1.0-r1: uses deprecated EAPI: 0
-
-java-virtuals/servlet-api
-  DroppedKeywordWarning: version 3.0-r1: keywords dropped: arm
+games-roguelike/slashem
+  DeprecatedEAPI: version 0.0.772: uses deprecated EAPI: 0
+  MissingChksum: version 0.0.772: "se007e7f2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.772: "conf12s.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
