@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 7 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'media-libs/*' 'dev-lang/*' 'app-emacs/*' 'x11-themes/*' 'dev-tex/*' 'sys-process/*' 'sci-visualization/*' 'net-ftp/*' 'mail-mta/*' 'mate-base/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'media-libs/*' 'dev-lang/*' 'app-emacs/*' 'x11-themes/*' 'dev-tex/*' 'sys-process/*' 'sci-visualization/*' 'net-ftp/*' 'mail-mta/*' 'net-voip/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1831,3 +1831,8 @@ WARNING pkgcore: metadata.dtd cannot be opened from
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
+
+net-voip/homer
+  NonExistentDeps: version 0.24.1-r1: depset depends: nonexistent atoms [ <media-video/ffmpeg-2 ]
+  NonExistentDeps: version 0.24.1-r1: depset rdepends: nonexistent atoms [ <media-video/ffmpeg-2 ]
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
