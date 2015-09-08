@@ -11,7 +11,7 @@
             <li class="warn"><a href="0.html">0</a></li>
             <li class="warn"><a href="1.html">1</a></li>
             <li class="good"><a href="2.html">2</a></li>
-            <li class="warn"><a href="3.html">3</a></li>
+            <li class="err"><a href="3.html">3</a></li>
             <li class="good"><a href="4.html">4</a></li>
             <li class="warn"><a href="5.html">5</a></li>
             <li class="warn"><a href="6.html">6</a></li>
@@ -37,6 +37,12 @@
                 <li><a href="#l968">968</a></li>
             </ol>
         </div>
+        <div class="lines err">
+            <p>Errors:</p>
+            <ol>
+                <li><a href="#l1225">1225-1228</a></li>
+            </ol>
+        </div>
 
 
         <table class="log">
@@ -53,7 +59,7 @@
 </pre></td></tr>
             <tr class="" id="l6"><td><a href="#l6"><span>6</span></a></td><td><pre>+ set +x
 </pre></td></tr>
-            <tr class="" id="l7"><td><a href="#l7"><span>7</span></a></td><td><pre>+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-haskell/*' 'app-misc/*' 'sys-libs/*' 'net-wireless/*' 'sys-block/*' 'dev-cpp/*' 'net-dialup/*' 'app-accessibility/*' 'kde-plasma/*' 'net-news/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
+            <tr class="" id="l7"><td><a href="#l7"><span>7</span></a></td><td><pre>+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-haskell/*' 'app-misc/*' 'sys-libs/*' 'net-wireless/*' 'sys-block/*' 'dev-cpp/*' 'net-fs/*' 'app-accessibility/*' 'kde-plasma/*' 'net-news/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 </pre></td></tr>
             <tr class="" id="l8"><td><a href="#l8"><span>8</span></a></td><td><pre>/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
 </pre></td></tr>
@@ -2473,395 +2479,221 @@
 </pre></td></tr>
             <tr class="" id="l1216"><td><a href="#l1216"><span>1216</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1217"><td><a href="#l1217"><span>1217</span></a></td><td><pre>net-dialup/capidivert
+            <tr class="" id="l1217"><td><a href="#l1217"><span>1217</span></a></td><td><pre>net-fs/davfs2
 </pre></td></tr>
-            <tr class="" id="l1218"><td><a href="#l1218"><span>1218</span></a></td><td><pre>  DeprecatedEAPI: version 0.0.2: uses deprecated EAPI: 0
+            <tr class="" id="l1218"><td><a href="#l1218"><span>1218</span></a></td><td><pre>  DeprecatedEAPI: version 1.4.5-r1: uses deprecated EAPI: 2
 </pre></td></tr>
             <tr class="" id="l1219"><td><a href="#l1219"><span>1219</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1220"><td><a href="#l1220"><span>1220</span></a></td><td><pre>net-dialup/capifwd
+            <tr class="" id="l1220"><td><a href="#l1220"><span>1220</span></a></td><td><pre>net-fs/libnfs
 </pre></td></tr>
-            <tr class="" id="l1221"><td><a href="#l1221"><span>1221</span></a></td><td><pre>  DeprecatedEAPI: version 0.6.3-r1: uses deprecated EAPI: 0
+            <tr class="" id="l1221"><td><a href="#l1221"><span>1221</span></a></td><td><pre>  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 </pre></td></tr>
-            <tr class="" id="l1222"><td><a href="#l1222"><span>1222</span></a></td><td><pre>  MissingChksum: version 0.6.3-r1: "capifwd-0.6.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+            <tr class="" id="l1222"><td><a href="#l1222"><span>1222</span></a></td><td><pre>  DroppedKeywordWarning: version 1.9.7: keywords dropped: alpha
 </pre></td></tr>
             <tr class="" id="l1223"><td><a href="#l1223"><span>1223</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1224"><td><a href="#l1224"><span>1224</span></a></td><td><pre>net-dialup/cistronradius
+            <tr class="" id="l1224"><td><a href="#l1224"><span>1224</span></a></td><td><pre>net-fs/samba
 </pre></td></tr>
-            <tr class="" id="l1225"><td><a href="#l1225"><span>1225</span></a></td><td><pre>  MissingChksum: version 1.6.8-r1: "radiusd-cistron-1.6.8.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+            <tr class="err" id="l1225"><td><a href="#l1225"><span>1225</span></a></td><td><pre>  NonsolvableDeps: version 4.2.3-r1: nonsolvable depset(depends) keyword(~hppa) profile (default/linux/hppa/13.0): solutions: [ &gt;=net-libs/socket_wrapper-1.1.2, &gt;=sys-libs/nss_wrapper-1.0.2, &gt;=sys-libs/uid_wrapper-1.0.1 ]
+</pre></td><td>[FATAL]</td></tr>
+            <tr class="err" id="l1226"><td><a href="#l1226"><span>1226</span></a></td><td><pre>  NonsolvableDeps: version 4.2.3-r1: nonsolvable depset(rdepends) keyword(~hppa) profile (default/linux/hppa/13.0): solutions: [ &gt;=net-libs/socket_wrapper-1.1.2, &gt;=sys-libs/nss_wrapper-1.0.2, &gt;=sys-libs/uid_wrapper-1.0.1 ]
+</pre></td><td>[FATAL]</td></tr>
+            <tr class="err" id="l1227"><td><a href="#l1227"><span>1227</span></a></td><td><pre>  NonsolvableDeps: version 4.2.4: nonsolvable depset(depends) keyword(~hppa) profile (default/linux/hppa/13.0): solutions: [ &gt;=net-libs/socket_wrapper-1.1.2, &gt;=sys-libs/nss_wrapper-1.0.2, &gt;=sys-libs/uid_wrapper-1.0.1 ]
+</pre></td><td>[FATAL]</td></tr>
+            <tr class="err" id="l1228"><td><a href="#l1228"><span>1228</span></a></td><td><pre>  NonsolvableDeps: version 4.2.4: nonsolvable depset(rdepends) keyword(~hppa) profile (default/linux/hppa/13.0): solutions: [ &gt;=net-libs/socket_wrapper-1.1.2, &gt;=sys-libs/nss_wrapper-1.0.2, &gt;=sys-libs/uid_wrapper-1.0.1 ]
+</pre></td><td>[FATAL]</td></tr>
+            <tr class="" id="l1229"><td><a href="#l1229"><span>1229</span></a></td><td><pre>  DroppedKeywordWarning: version 4.2.3-r1: keywords dropped: arm64
 </pre></td></tr>
-            <tr class="" id="l1226"><td><a href="#l1226"><span>1226</span></a></td><td><pre>
+            <tr class="" id="l1230"><td><a href="#l1230"><span>1230</span></a></td><td><pre>  DroppedKeywordWarning: version 3.6.25: keywords dropped: s390, sh
 </pre></td></tr>
-            <tr class="" id="l1227"><td><a href="#l1227"><span>1227</span></a></td><td><pre>net-dialup/dgcmodem
+            <tr class="" id="l1231"><td><a href="#l1231"><span>1231</span></a></td><td><pre>  DroppedKeywordWarning: version 4.0.26-r1: keywords dropped: alpha, arm, ia64, mips, ppc, ppc64, sparc
 </pre></td></tr>
-            <tr class="" id="l1228"><td><a href="#l1228"><span>1228</span></a></td><td><pre>  DeprecatedEAPI: version 1.10: uses deprecated EAPI: 0
+            <tr class="" id="l1232"><td><a href="#l1232"><span>1232</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1229"><td><a href="#l1229"><span>1229</span></a></td><td><pre>  MissingChksum: version 1.10: "dgcmodem-1.10.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+            <tr class="" id="l1233"><td><a href="#l1233"><span>1233</span></a></td><td><pre>net-fs/wdfs
 </pre></td></tr>
-            <tr class="" id="l1230"><td><a href="#l1230"><span>1230</span></a></td><td><pre>
+            <tr class="" id="l1234"><td><a href="#l1234"><span>1234</span></a></td><td><pre>  DeprecatedEAPI: version 1.4.2: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l1231"><td><a href="#l1231"><span>1231</span></a></td><td><pre>net-dialup/dial
+            <tr class="" id="l1235"><td><a href="#l1235"><span>1235</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
 </pre></td></tr>
-            <tr class="" id="l1232"><td><a href="#l1232"><span>1232</span></a></td><td><pre>  DeprecatedEAPI: version 1.2-r1: uses deprecated EAPI: 2
+            <tr class="" id="l1236"><td><a href="#l1236"><span>1236</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
 </pre></td></tr>
-            <tr class="" id="l1233"><td><a href="#l1233"><span>1233</span></a></td><td><pre>  MissingChksum: version 1.2-r1: "dial-1.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+            <tr class="" id="l1237"><td><a href="#l1237"><span>1237</span></a></td><td><pre>               : refetch
 </pre></td></tr>
-            <tr class="" id="l1234"><td><a href="#l1234"><span>1234</span></a></td><td><pre>
+            <tr class="" id="l1238"><td><a href="#l1238"><span>1238</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
 </pre></td></tr>
-            <tr class="" id="l1235"><td><a href="#l1235"><span>1235</span></a></td><td><pre>net-dialup/diald
+            <tr class="" id="l1239"><td><a href="#l1239"><span>1239</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
 </pre></td></tr>
-            <tr class="" id="l1236"><td><a href="#l1236"><span>1236</span></a></td><td><pre>  DeprecatedEAPI: version 1.0-r2: uses deprecated EAPI: 0
+            <tr class="" id="l1240"><td><a href="#l1240"><span>1240</span></a></td><td><pre>               : refetch
 </pre></td></tr>
-            <tr class="" id="l1237"><td><a href="#l1237"><span>1237</span></a></td><td><pre>  MissingChksum: version 1.0-r2: "diald-1.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+            <tr class="" id="l1241"><td><a href="#l1241"><span>1241</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1238"><td><a href="#l1238"><span>1238</span></a></td><td><pre>
+            <tr class="" id="l1242"><td><a href="#l1242"><span>1242</span></a></td><td><pre>app-accessibility/SphinxTrain
 </pre></td></tr>
-            <tr class="" id="l1239"><td><a href="#l1239"><span>1239</span></a></td><td><pre>net-dialup/drdsl
+            <tr class="" id="l1243"><td><a href="#l1243"><span>1243</span></a></td><td><pre>  DroppedKeywordWarning: version 1.0.8: keywords dropped: ppc
 </pre></td></tr>
-            <tr class="" id="l1240"><td><a href="#l1240"><span>1240</span></a></td><td><pre>  DeprecatedEAPI: version 1.2.0: uses deprecated EAPI: 0
+            <tr class="" id="l1244"><td><a href="#l1244"><span>1244</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1241"><td><a href="#l1241"><span>1241</span></a></td><td><pre>  MissingChksum: version 1.2.0: "drdsl-1.0-1.i586.rpm" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+            <tr class="" id="l1245"><td><a href="#l1245"><span>1245</span></a></td><td><pre>app-accessibility/espeakup
 </pre></td></tr>
-            <tr class="" id="l1242"><td><a href="#l1242"><span>1242</span></a></td><td><pre>  MissingChksum: version 1.2.0: "drdsl-1.0-1.x86_64.rpm" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+            <tr class="" id="l1246"><td><a href="#l1246"><span>1246</span></a></td><td><pre>  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 </pre></td></tr>
-            <tr class="" id="l1243"><td><a href="#l1243"><span>1243</span></a></td><td><pre>
+            <tr class="" id="l1247"><td><a href="#l1247"><span>1247</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1244"><td><a href="#l1244"><span>1244</span></a></td><td><pre>net-dialup/dwun
+            <tr class="" id="l1248"><td><a href="#l1248"><span>1248</span></a></td><td><pre>app-accessibility/festival
 </pre></td></tr>
-            <tr class="" id="l1245"><td><a href="#l1245"><span>1245</span></a></td><td><pre>  DeprecatedEAPI: version 0.96e-r2: uses deprecated EAPI: 2
+            <tr class="" id="l1249"><td><a href="#l1249"><span>1249</span></a></td><td><pre>  DeprecatedEAPI: version 2.1-r1: uses deprecated EAPI: 2
 </pre></td></tr>
-            <tr class="" id="l1246"><td><a href="#l1246"><span>1246</span></a></td><td><pre>
+            <tr class="" id="l1250"><td><a href="#l1250"><span>1250</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1247"><td><a href="#l1247"><span>1247</span></a></td><td><pre>net-dialup/freeradius
+            <tr class="" id="l1251"><td><a href="#l1251"><span>1251</span></a></td><td><pre>app-accessibility/festival-fi
 </pre></td></tr>
-            <tr class="" id="l1248"><td><a href="#l1248"><span>1248</span></a></td><td><pre>  DroppedKeywordWarning: version 3.0.3: keywords dropped: amd64, ppc, ppc64, sparc, x86
-</pre></td></tr>
-            <tr class="" id="l1249"><td><a href="#l1249"><span>1249</span></a></td><td><pre>
-</pre></td></tr>
-            <tr class="" id="l1250"><td><a href="#l1250"><span>1250</span></a></td><td><pre>net-dialup/freeradius-client
-</pre></td></tr>
-            <tr class="" id="l1251"><td><a href="#l1251"><span>1251</span></a></td><td><pre>  DeprecatedEAPI: version 1.1.6: uses deprecated EAPI: 2
-</pre></td></tr>
-            <tr class="" id="l1252"><td><a href="#l1252"><span>1252</span></a></td><td><pre>  MissingChksum: version 1.1.6: "freeradius-client-1.1.6.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+            <tr class="" id="l1252"><td><a href="#l1252"><span>1252</span></a></td><td><pre>  DeprecatedEAPI: version 20041119: uses deprecated EAPI: 2
 </pre></td></tr>
             <tr class="" id="l1253"><td><a href="#l1253"><span>1253</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1254"><td><a href="#l1254"><span>1254</span></a></td><td><pre>net-dialup/globespan-adsl
+            <tr class="" id="l1254"><td><a href="#l1254"><span>1254</span></a></td><td><pre>app-accessibility/festival-freebsoft-utils
 </pre></td></tr>
-            <tr class="" id="l1255"><td><a href="#l1255"><span>1255</span></a></td><td><pre>  DeprecatedEAPI: version 0.11-r1: uses deprecated EAPI: 0
+            <tr class="" id="l1255"><td><a href="#l1255"><span>1255</span></a></td><td><pre>  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l1256"><td><a href="#l1256"><span>1256</span></a></td><td><pre>  DeprecatedEAPI: version 0.12: uses deprecated EAPI: 0
+            <tr class="" id="l1256"><td><a href="#l1256"><span>1256</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1257"><td><a href="#l1257"><span>1257</span></a></td><td><pre>  MissingChksum: version 0.11-r1: "eciadsl-usermode-0.11.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+            <tr class="" id="l1257"><td><a href="#l1257"><span>1257</span></a></td><td><pre>app-accessibility/festival-hts
 </pre></td></tr>
-            <tr class="" id="l1258"><td><a href="#l1258"><span>1258</span></a></td><td><pre>  MissingChksum: version 0.12: "eciadsl-usermode-0.12.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+            <tr class="" id="l1258"><td><a href="#l1258"><span>1258</span></a></td><td><pre>  DeprecatedEAPI: version 2.1: uses deprecated EAPI: 2
 </pre></td></tr>
             <tr class="" id="l1259"><td><a href="#l1259"><span>1259</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1260"><td><a href="#l1260"><span>1260</span></a></td><td><pre>net-dialup/hcfpcimodem
+            <tr class="" id="l1260"><td><a href="#l1260"><span>1260</span></a></td><td><pre>app-accessibility/festival-ru
 </pre></td></tr>
-            <tr class="" id="l1261"><td><a href="#l1261"><span>1261</span></a></td><td><pre>  DeprecatedEAPI: version 1.20: uses deprecated EAPI: 0
+            <tr class="" id="l1261"><td><a href="#l1261"><span>1261</span></a></td><td><pre>  DeprecatedEAPI: version 0.5: uses deprecated EAPI: 2
 </pre></td></tr>
-            <tr class="" id="l1262"><td><a href="#l1262"><span>1262</span></a></td><td><pre>  DeprecatedEAPI: version 1.21: uses deprecated EAPI: 2
+            <tr class="" id="l1262"><td><a href="#l1262"><span>1262</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1263"><td><a href="#l1263"><span>1263</span></a></td><td><pre>
+            <tr class="" id="l1263"><td><a href="#l1263"><span>1263</span></a></td><td><pre>app-accessibility/freetts
 </pre></td></tr>
-            <tr class="" id="l1264"><td><a href="#l1264"><span>1264</span></a></td><td><pre>net-dialup/intel-536ep
+            <tr class="" id="l1264"><td><a href="#l1264"><span>1264</span></a></td><td><pre>  DeprecatedEAPI: version 1.2.1-r2: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l1265"><td><a href="#l1265"><span>1265</span></a></td><td><pre>  DeprecatedEAPI: version 4.71: uses deprecated EAPI: 0
+            <tr class="" id="l1265"><td><a href="#l1265"><span>1265</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1266"><td><a href="#l1266"><span>1266</span></a></td><td><pre>  MissingChksum: version 4.71: "intel-536ep-4.71.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+            <tr class="" id="l1266"><td><a href="#l1266"><span>1266</span></a></td><td><pre>app-accessibility/mbrola
 </pre></td></tr>
-            <tr class="" id="l1267"><td><a href="#l1267"><span>1267</span></a></td><td><pre>
+            <tr class="" id="l1267"><td><a href="#l1267"><span>1267</span></a></td><td><pre>  DeprecatedEAPI: version 3.0.1h-r6: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l1268"><td><a href="#l1268"><span>1268</span></a></td><td><pre>net-dialup/itund
+            <tr class="" id="l1268"><td><a href="#l1268"><span>1268</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1269"><td><a href="#l1269"><span>1269</span></a></td><td><pre>  DeprecatedEAPI: version 0.3.1: uses deprecated EAPI: 0
+            <tr class="" id="l1269"><td><a href="#l1269"><span>1269</span></a></td><td><pre>app-accessibility/nfbtrans
 </pre></td></tr>
-            <tr class="" id="l1270"><td><a href="#l1270"><span>1270</span></a></td><td><pre>  MissingChksum: version 0.3.1: "itund-0.3.1.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+            <tr class="" id="l1270"><td><a href="#l1270"><span>1270</span></a></td><td><pre>  DeprecatedEAPI: version 7.74: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l1271"><td><a href="#l1271"><span>1271</span></a></td><td><pre>
+            <tr class="" id="l1271"><td><a href="#l1271"><span>1271</span></a></td><td><pre>  DeprecatedEAPI: version 7.74-r1: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l1272"><td><a href="#l1272"><span>1272</span></a></td><td><pre>net-dialup/linux-atm
+            <tr class="" id="l1272"><td><a href="#l1272"><span>1272</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1273"><td><a href="#l1273"><span>1273</span></a></td><td><pre>  DeprecatedEAPI: version 2.5.0: uses deprecated EAPI: 0
+            <tr class="" id="l1273"><td><a href="#l1273"><span>1273</span></a></td><td><pre>app-accessibility/pidgin-festival
 </pre></td></tr>
-            <tr class="" id="l1274"><td><a href="#l1274"><span>1274</span></a></td><td><pre>
+            <tr class="" id="l1274"><td><a href="#l1274"><span>1274</span></a></td><td><pre>  DeprecatedEAPI: version 2.4: uses deprecated EAPI: 2
 </pre></td></tr>
-            <tr class="" id="l1275"><td><a href="#l1275"><span>1275</span></a></td><td><pre>net-dialup/lrzsz
+            <tr class="" id="l1275"><td><a href="#l1275"><span>1275</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1276"><td><a href="#l1276"><span>1276</span></a></td><td><pre>  DeprecatedEAPI: version 0.12.20-r3: uses deprecated EAPI: 2
+            <tr class="" id="l1276"><td><a href="#l1276"><span>1276</span></a></td><td><pre>app-accessibility/sound-icons
 </pre></td></tr>
-            <tr class="" id="l1277"><td><a href="#l1277"><span>1277</span></a></td><td><pre>
+            <tr class="" id="l1277"><td><a href="#l1277"><span>1277</span></a></td><td><pre>  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l1278"><td><a href="#l1278"><span>1278</span></a></td><td><pre>net-dialup/mingetty
+            <tr class="" id="l1278"><td><a href="#l1278"><span>1278</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1279"><td><a href="#l1279"><span>1279</span></a></td><td><pre>  DeprecatedEAPI: version 1.08: uses deprecated EAPI: 0
+            <tr class="" id="l1279"><td><a href="#l1279"><span>1279</span></a></td><td><pre>app-accessibility/speakup
 </pre></td></tr>
-            <tr class="" id="l1280"><td><a href="#l1280"><span>1280</span></a></td><td><pre>  MissingChksum: version 1.08: "mingetty-1.08.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+            <tr class="" id="l1280"><td><a href="#l1280"><span>1280</span></a></td><td><pre>  DeprecatedEAPI: version 3.1.6_p201011120508: uses deprecated EAPI: 2
 </pre></td></tr>
-            <tr class="" id="l1281"><td><a href="#l1281"><span>1281</span></a></td><td><pre>
+            <tr class="" id="l1281"><td><a href="#l1281"><span>1281</span></a></td><td><pre>  DeprecatedEAPI: version 9999: uses deprecated EAPI: 2
 </pre></td></tr>
-            <tr class="" id="l1282"><td><a href="#l1282"><span>1282</span></a></td><td><pre>net-dialup/mwavem
+            <tr class="" id="l1282"><td><a href="#l1282"><span>1282</span></a></td><td><pre>  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 </pre></td></tr>
-            <tr class="" id="l1283"><td><a href="#l1283"><span>1283</span></a></td><td><pre>  DeprecatedEAPI: version 2.0-r1: uses deprecated EAPI: 2
+            <tr class="" id="l1283"><td><a href="#l1283"><span>1283</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1284"><td><a href="#l1284"><span>1284</span></a></td><td><pre>
+            <tr class="" id="l1284"><td><a href="#l1284"><span>1284</span></a></td><td><pre>app-accessibility/speechd-up
 </pre></td></tr>
-            <tr class="" id="l1285"><td><a href="#l1285"><span>1285</span></a></td><td><pre>net-dialup/neocon
+            <tr class="" id="l1285"><td><a href="#l1285"><span>1285</span></a></td><td><pre>  DeprecatedEAPI: version 0.4-r3: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l1286"><td><a href="#l1286"><span>1286</span></a></td><td><pre>  MissingChksum: version 20110228: "neocon-20110228.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+            <tr class="" id="l1286"><td><a href="#l1286"><span>1286</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1287"><td><a href="#l1287"><span>1287</span></a></td><td><pre>
+            <tr class="" id="l1287"><td><a href="#l1287"><span>1287</span></a></td><td><pre>app-accessibility/sphinx2
 </pre></td></tr>
-            <tr class="" id="l1288"><td><a href="#l1288"><span>1288</span></a></td><td><pre>net-dialup/ppp
+            <tr class="" id="l1288"><td><a href="#l1288"><span>1288</span></a></td><td><pre>  DeprecatedEAPI: version 0.6: uses deprecated EAPI: 2
 </pre></td></tr>
-            <tr class="" id="l1289"><td><a href="#l1289"><span>1289</span></a></td><td><pre>  DeprecatedEAPI: version 2.4.4-r25: uses deprecated EAPI: 2
+            <tr class="" id="l1289"><td><a href="#l1289"><span>1289</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1290"><td><a href="#l1290"><span>1290</span></a></td><td><pre>
+            <tr class="" id="l1290"><td><a href="#l1290"><span>1290</span></a></td><td><pre>app-accessibility/sphinx3
 </pre></td></tr>
-            <tr class="" id="l1291"><td><a href="#l1291"><span>1291</span></a></td><td><pre>net-dialup/pppconfig
+            <tr class="" id="l1291"><td><a href="#l1291"><span>1291</span></a></td><td><pre>  DeprecatedEAPI: version 0.6.3: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l1292"><td><a href="#l1292"><span>1292</span></a></td><td><pre>  DeprecatedEAPI: version 2.3.17-r1: uses deprecated EAPI: 0
+            <tr class="" id="l1292"><td><a href="#l1292"><span>1292</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1293"><td><a href="#l1293"><span>1293</span></a></td><td><pre>
+            <tr class="" id="l1293"><td><a href="#l1293"><span>1293</span></a></td><td><pre>app-accessibility/yasr
 </pre></td></tr>
-            <tr class="" id="l1294"><td><a href="#l1294"><span>1294</span></a></td><td><pre>net-dialup/qtwvdialer
+            <tr class="" id="l1294"><td><a href="#l1294"><span>1294</span></a></td><td><pre>  DeprecatedEAPI: version 0.6.9-r1: uses deprecated EAPI: 2
 </pre></td></tr>
-            <tr class="" id="l1295"><td><a href="#l1295"><span>1295</span></a></td><td><pre>  DeprecatedEAPI: version 0.4.4_p20091228: uses deprecated EAPI: 2
+            <tr class="" id="l1295"><td><a href="#l1295"><span>1295</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
 </pre></td></tr>
-            <tr class="" id="l1296"><td><a href="#l1296"><span>1296</span></a></td><td><pre>  MissingChksum: version 0.4.4_p20091228: "qtwvdialer-0.4.4_p20091228.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+            <tr class="" id="l1296"><td><a href="#l1296"><span>1296</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
 </pre></td></tr>
-            <tr class="" id="l1297"><td><a href="#l1297"><span>1297</span></a></td><td><pre>
+            <tr class="" id="l1297"><td><a href="#l1297"><span>1297</span></a></td><td><pre>               : refetch
 </pre></td></tr>
-            <tr class="" id="l1298"><td><a href="#l1298"><span>1298</span></a></td><td><pre>net-dialup/radiusclient
+            <tr class="" id="l1298"><td><a href="#l1298"><span>1298</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
 </pre></td></tr>
-            <tr class="" id="l1299"><td><a href="#l1299"><span>1299</span></a></td><td><pre>  DeprecatedEAPI: version 0.3.2: uses deprecated EAPI: 0
+            <tr class="" id="l1299"><td><a href="#l1299"><span>1299</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
 </pre></td></tr>
-            <tr class="" id="l1300"><td><a href="#l1300"><span>1300</span></a></td><td><pre>
+            <tr class="" id="l1300"><td><a href="#l1300"><span>1300</span></a></td><td><pre>               : refetch
 </pre></td></tr>
-            <tr class="" id="l1301"><td><a href="#l1301"><span>1301</span></a></td><td><pre>net-dialup/rp-pppoe
+            <tr class="" id="l1301"><td><a href="#l1301"><span>1301</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1302"><td><a href="#l1302"><span>1302</span></a></td><td><pre>  DeprecatedEAPI: version 3.8-r2: uses deprecated EAPI: 0
+            <tr class="" id="l1302"><td><a href="#l1302"><span>1302</span></a></td><td><pre>kde-plasma/plasma-workspace
 </pre></td></tr>
-            <tr class="" id="l1303"><td><a href="#l1303"><span>1303</span></a></td><td><pre>
+            <tr class="" id="l1303"><td><a href="#l1303"><span>1303</span></a></td><td><pre>  NonExistentDeps: version 5.4.0: depset depends: nonexistent atoms [ media-libs/prison:5 ]
 </pre></td></tr>
-            <tr class="" id="l1304"><td><a href="#l1304"><span>1304</span></a></td><td><pre>net-dialup/sercd
+            <tr class="" id="l1304"><td><a href="#l1304"><span>1304</span></a></td><td><pre>  NonExistentDeps: version 5.4.0: depset rdepends: nonexistent atoms [ media-libs/prison:5 ]
 </pre></td></tr>
-            <tr class="" id="l1305"><td><a href="#l1305"><span>1305</span></a></td><td><pre>  MissingChksum: version 3.0.0-r1: "sercd-3.0.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+            <tr class="" id="l1305"><td><a href="#l1305"><span>1305</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
 </pre></td></tr>
-            <tr class="" id="l1306"><td><a href="#l1306"><span>1306</span></a></td><td><pre>
+            <tr class="" id="l1306"><td><a href="#l1306"><span>1306</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
 </pre></td></tr>
-            <tr class="" id="l1307"><td><a href="#l1307"><span>1307</span></a></td><td><pre>net-dialup/speedtouch-usb
+            <tr class="" id="l1307"><td><a href="#l1307"><span>1307</span></a></td><td><pre>               : refetch
 </pre></td></tr>
-            <tr class="" id="l1308"><td><a href="#l1308"><span>1308</span></a></td><td><pre>  DeprecatedEAPI: version 3.0.1.2-r3: uses deprecated EAPI: 0
+            <tr class="" id="l1308"><td><a href="#l1308"><span>1308</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
 </pre></td></tr>
-            <tr class="" id="l1309"><td><a href="#l1309"><span>1309</span></a></td><td><pre>  MissingChksum: version 3.0.1.2-r3: "SpeedTouch330_firmware_3012.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+            <tr class="" id="l1309"><td><a href="#l1309"><span>1309</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
 </pre></td></tr>
-            <tr class="" id="l1310"><td><a href="#l1310"><span>1310</span></a></td><td><pre>
+            <tr class="" id="l1310"><td><a href="#l1310"><span>1310</span></a></td><td><pre>               : refetch
 </pre></td></tr>
-            <tr class="" id="l1311"><td><a href="#l1311"><span>1311</span></a></td><td><pre>net-dialup/ueagle-atm
+            <tr class="" id="l1311"><td><a href="#l1311"><span>1311</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1312"><td><a href="#l1312"><span>1312</span></a></td><td><pre>  DeprecatedEAPI: version 1.1-r3: uses deprecated EAPI: 2
+            <tr class="" id="l1312"><td><a href="#l1312"><span>1312</span></a></td><td><pre>net-news/amphetadesk
 </pre></td></tr>
-            <tr class="" id="l1313"><td><a href="#l1313"><span>1313</span></a></td><td><pre>  MissingChksum: version 1.1-r3: "ueagle-data-src-1.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+            <tr class="" id="l1313"><td><a href="#l1313"><span>1313</span></a></td><td><pre>  DeprecatedEAPI: version 0.93.1: uses deprecated EAPI: 0
 </pre></td></tr>
             <tr class="" id="l1314"><td><a href="#l1314"><span>1314</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1315"><td><a href="#l1315"><span>1315</span></a></td><td><pre>net-dialup/ueagle4-atm
+            <tr class="" id="l1315"><td><a href="#l1315"><span>1315</span></a></td><td><pre>net-news/blam
 </pre></td></tr>
-            <tr class="" id="l1316"><td><a href="#l1316"><span>1316</span></a></td><td><pre>  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 2
+            <tr class="" id="l1316"><td><a href="#l1316"><span>1316</span></a></td><td><pre>  DeprecatedEclass: version 1.8.9: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
 </pre></td></tr>
-            <tr class="" id="l1317"><td><a href="#l1317"><span>1317</span></a></td><td><pre>  MissingChksum: version 1.0: "ueagle4-data-1.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+            <tr class="" id="l1317"><td><a href="#l1317"><span>1317</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1318"><td><a href="#l1318"><span>1318</span></a></td><td><pre>
+            <tr class="" id="l1318"><td><a href="#l1318"><span>1318</span></a></td><td><pre>net-news/liferea
 </pre></td></tr>
-            <tr class="" id="l1319"><td><a href="#l1319"><span>1319</span></a></td><td><pre>net-dialup/wvdial
+            <tr class="" id="l1319"><td><a href="#l1319"><span>1319</span></a></td><td><pre>  DroppedKeywordWarning: version 1.10.8: keywords dropped: ppc64
 </pre></td></tr>
-            <tr class="" id="l1320"><td><a href="#l1320"><span>1320</span></a></td><td><pre>  DeprecatedEAPI: version 1.61: uses deprecated EAPI: 3
+            <tr class="" id="l1320"><td><a href="#l1320"><span>1320</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1321"><td><a href="#l1321"><span>1321</span></a></td><td><pre>  MissingChksum: version 1.61: "wvdial-1.61.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+            <tr class="" id="l1321"><td><a href="#l1321"><span>1321</span></a></td><td><pre>net-news/yencode
 </pre></td></tr>
-            <tr class="" id="l1322"><td><a href="#l1322"><span>1322</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
-</pre></td></tr>
-            <tr class="" id="l1323"><td><a href="#l1323"><span>1323</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
-</pre></td></tr>
-            <tr class="" id="l1324"><td><a href="#l1324"><span>1324</span></a></td><td><pre>               : refetch
-</pre></td></tr>
-            <tr class="" id="l1325"><td><a href="#l1325"><span>1325</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
-</pre></td></tr>
-            <tr class="" id="l1326"><td><a href="#l1326"><span>1326</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
-</pre></td></tr>
-            <tr class="" id="l1327"><td><a href="#l1327"><span>1327</span></a></td><td><pre>               : refetch
-</pre></td></tr>
-            <tr class="" id="l1328"><td><a href="#l1328"><span>1328</span></a></td><td><pre>
-</pre></td></tr>
-            <tr class="" id="l1329"><td><a href="#l1329"><span>1329</span></a></td><td><pre>app-accessibility/SphinxTrain
-</pre></td></tr>
-            <tr class="" id="l1330"><td><a href="#l1330"><span>1330</span></a></td><td><pre>  DroppedKeywordWarning: version 1.0.8: keywords dropped: ppc
-</pre></td></tr>
-            <tr class="" id="l1331"><td><a href="#l1331"><span>1331</span></a></td><td><pre>
-</pre></td></tr>
-            <tr class="" id="l1332"><td><a href="#l1332"><span>1332</span></a></td><td><pre>app-accessibility/espeakup
-</pre></td></tr>
-            <tr class="" id="l1333"><td><a href="#l1333"><span>1333</span></a></td><td><pre>  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-</pre></td></tr>
-            <tr class="" id="l1334"><td><a href="#l1334"><span>1334</span></a></td><td><pre>
-</pre></td></tr>
-            <tr class="" id="l1335"><td><a href="#l1335"><span>1335</span></a></td><td><pre>app-accessibility/festival
-</pre></td></tr>
-            <tr class="" id="l1336"><td><a href="#l1336"><span>1336</span></a></td><td><pre>  DeprecatedEAPI: version 2.1-r1: uses deprecated EAPI: 2
-</pre></td></tr>
-            <tr class="" id="l1337"><td><a href="#l1337"><span>1337</span></a></td><td><pre>
-</pre></td></tr>
-            <tr class="" id="l1338"><td><a href="#l1338"><span>1338</span></a></td><td><pre>app-accessibility/festival-fi
-</pre></td></tr>
-            <tr class="" id="l1339"><td><a href="#l1339"><span>1339</span></a></td><td><pre>  DeprecatedEAPI: version 20041119: uses deprecated EAPI: 2
-</pre></td></tr>
-            <tr class="" id="l1340"><td><a href="#l1340"><span>1340</span></a></td><td><pre>
-</pre></td></tr>
-            <tr class="" id="l1341"><td><a href="#l1341"><span>1341</span></a></td><td><pre>app-accessibility/festival-freebsoft-utils
-</pre></td></tr>
-            <tr class="" id="l1342"><td><a href="#l1342"><span>1342</span></a></td><td><pre>  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 0
-</pre></td></tr>
-            <tr class="" id="l1343"><td><a href="#l1343"><span>1343</span></a></td><td><pre>
-</pre></td></tr>
-            <tr class="" id="l1344"><td><a href="#l1344"><span>1344</span></a></td><td><pre>app-accessibility/festival-hts
-</pre></td></tr>
-            <tr class="" id="l1345"><td><a href="#l1345"><span>1345</span></a></td><td><pre>  DeprecatedEAPI: version 2.1: uses deprecated EAPI: 2
-</pre></td></tr>
-            <tr class="" id="l1346"><td><a href="#l1346"><span>1346</span></a></td><td><pre>
-</pre></td></tr>
-            <tr class="" id="l1347"><td><a href="#l1347"><span>1347</span></a></td><td><pre>app-accessibility/festival-ru
-</pre></td></tr>
-            <tr class="" id="l1348"><td><a href="#l1348"><span>1348</span></a></td><td><pre>  DeprecatedEAPI: version 0.5: uses deprecated EAPI: 2
-</pre></td></tr>
-            <tr class="" id="l1349"><td><a href="#l1349"><span>1349</span></a></td><td><pre>
-</pre></td></tr>
-            <tr class="" id="l1350"><td><a href="#l1350"><span>1350</span></a></td><td><pre>app-accessibility/freetts
-</pre></td></tr>
-            <tr class="" id="l1351"><td><a href="#l1351"><span>1351</span></a></td><td><pre>  DeprecatedEAPI: version 1.2.1-r2: uses deprecated EAPI: 0
-</pre></td></tr>
-            <tr class="" id="l1352"><td><a href="#l1352"><span>1352</span></a></td><td><pre>
-</pre></td></tr>
-            <tr class="" id="l1353"><td><a href="#l1353"><span>1353</span></a></td><td><pre>app-accessibility/mbrola
-</pre></td></tr>
-            <tr class="" id="l1354"><td><a href="#l1354"><span>1354</span></a></td><td><pre>  DeprecatedEAPI: version 3.0.1h-r6: uses deprecated EAPI: 0
-</pre></td></tr>
-            <tr class="" id="l1355"><td><a href="#l1355"><span>1355</span></a></td><td><pre>
-</pre></td></tr>
-            <tr class="" id="l1356"><td><a href="#l1356"><span>1356</span></a></td><td><pre>app-accessibility/nfbtrans
-</pre></td></tr>
-            <tr class="" id="l1357"><td><a href="#l1357"><span>1357</span></a></td><td><pre>  DeprecatedEAPI: version 7.74: uses deprecated EAPI: 0
-</pre></td></tr>
-            <tr class="" id="l1358"><td><a href="#l1358"><span>1358</span></a></td><td><pre>  DeprecatedEAPI: version 7.74-r1: uses deprecated EAPI: 3
-</pre></td></tr>
-            <tr class="" id="l1359"><td><a href="#l1359"><span>1359</span></a></td><td><pre>
-</pre></td></tr>
-            <tr class="" id="l1360"><td><a href="#l1360"><span>1360</span></a></td><td><pre>app-accessibility/pidgin-festival
-</pre></td></tr>
-            <tr class="" id="l1361"><td><a href="#l1361"><span>1361</span></a></td><td><pre>  DeprecatedEAPI: version 2.4: uses deprecated EAPI: 2
-</pre></td></tr>
-            <tr class="" id="l1362"><td><a href="#l1362"><span>1362</span></a></td><td><pre>
-</pre></td></tr>
-            <tr class="" id="l1363"><td><a href="#l1363"><span>1363</span></a></td><td><pre>app-accessibility/sound-icons
-</pre></td></tr>
-            <tr class="" id="l1364"><td><a href="#l1364"><span>1364</span></a></td><td><pre>  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 0
-</pre></td></tr>
-            <tr class="" id="l1365"><td><a href="#l1365"><span>1365</span></a></td><td><pre>
-</pre></td></tr>
-            <tr class="" id="l1366"><td><a href="#l1366"><span>1366</span></a></td><td><pre>app-accessibility/speakup
-</pre></td></tr>
-            <tr class="" id="l1367"><td><a href="#l1367"><span>1367</span></a></td><td><pre>  DeprecatedEAPI: version 3.1.6_p201011120508: uses deprecated EAPI: 2
-</pre></td></tr>
-            <tr class="" id="l1368"><td><a href="#l1368"><span>1368</span></a></td><td><pre>  DeprecatedEAPI: version 9999: uses deprecated EAPI: 2
-</pre></td></tr>
-            <tr class="" id="l1369"><td><a href="#l1369"><span>1369</span></a></td><td><pre>  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-</pre></td></tr>
-            <tr class="" id="l1370"><td><a href="#l1370"><span>1370</span></a></td><td><pre>
-</pre></td></tr>
-            <tr class="" id="l1371"><td><a href="#l1371"><span>1371</span></a></td><td><pre>app-accessibility/speechd-up
-</pre></td></tr>
-            <tr class="" id="l1372"><td><a href="#l1372"><span>1372</span></a></td><td><pre>  DeprecatedEAPI: version 0.4-r3: uses deprecated EAPI: 0
-</pre></td></tr>
-            <tr class="" id="l1373"><td><a href="#l1373"><span>1373</span></a></td><td><pre>
-</pre></td></tr>
-            <tr class="" id="l1374"><td><a href="#l1374"><span>1374</span></a></td><td><pre>app-accessibility/sphinx2
-</pre></td></tr>
-            <tr class="" id="l1375"><td><a href="#l1375"><span>1375</span></a></td><td><pre>  DeprecatedEAPI: version 0.6: uses deprecated EAPI: 2
-</pre></td></tr>
-            <tr class="" id="l1376"><td><a href="#l1376"><span>1376</span></a></td><td><pre>
-</pre></td></tr>
-            <tr class="" id="l1377"><td><a href="#l1377"><span>1377</span></a></td><td><pre>app-accessibility/sphinx3
-</pre></td></tr>
-            <tr class="" id="l1378"><td><a href="#l1378"><span>1378</span></a></td><td><pre>  DeprecatedEAPI: version 0.6.3: uses deprecated EAPI: 0
-</pre></td></tr>
-            <tr class="" id="l1379"><td><a href="#l1379"><span>1379</span></a></td><td><pre>
-</pre></td></tr>
-            <tr class="" id="l1380"><td><a href="#l1380"><span>1380</span></a></td><td><pre>app-accessibility/yasr
-</pre></td></tr>
-            <tr class="" id="l1381"><td><a href="#l1381"><span>1381</span></a></td><td><pre>  DeprecatedEAPI: version 0.6.9-r1: uses deprecated EAPI: 2
-</pre></td></tr>
-            <tr class="" id="l1382"><td><a href="#l1382"><span>1382</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
-</pre></td></tr>
-            <tr class="" id="l1383"><td><a href="#l1383"><span>1383</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
-</pre></td></tr>
-            <tr class="" id="l1384"><td><a href="#l1384"><span>1384</span></a></td><td><pre>               : refetch
-</pre></td></tr>
-            <tr class="" id="l1385"><td><a href="#l1385"><span>1385</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
-</pre></td></tr>
-            <tr class="" id="l1386"><td><a href="#l1386"><span>1386</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
-</pre></td></tr>
-            <tr class="" id="l1387"><td><a href="#l1387"><span>1387</span></a></td><td><pre>               : refetch
-</pre></td></tr>
-            <tr class="" id="l1388"><td><a href="#l1388"><span>1388</span></a></td><td><pre>
-</pre></td></tr>
-            <tr class="" id="l1389"><td><a href="#l1389"><span>1389</span></a></td><td><pre>kde-plasma/plasma-workspace
-</pre></td></tr>
-            <tr class="" id="l1390"><td><a href="#l1390"><span>1390</span></a></td><td><pre>  NonExistentDeps: version 5.4.0: depset depends: nonexistent atoms [ media-libs/prison:5 ]
-</pre></td></tr>
-            <tr class="" id="l1391"><td><a href="#l1391"><span>1391</span></a></td><td><pre>  NonExistentDeps: version 5.4.0: depset rdepends: nonexistent atoms [ media-libs/prison:5 ]
-</pre></td></tr>
-            <tr class="" id="l1392"><td><a href="#l1392"><span>1392</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
-</pre></td></tr>
-            <tr class="" id="l1393"><td><a href="#l1393"><span>1393</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
-</pre></td></tr>
-            <tr class="" id="l1394"><td><a href="#l1394"><span>1394</span></a></td><td><pre>               : refetch
-</pre></td></tr>
-            <tr class="" id="l1395"><td><a href="#l1395"><span>1395</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
-</pre></td></tr>
-            <tr class="" id="l1396"><td><a href="#l1396"><span>1396</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
-</pre></td></tr>
-            <tr class="" id="l1397"><td><a href="#l1397"><span>1397</span></a></td><td><pre>               : refetch
-</pre></td></tr>
-            <tr class="" id="l1398"><td><a href="#l1398"><span>1398</span></a></td><td><pre>
-</pre></td></tr>
-            <tr class="" id="l1399"><td><a href="#l1399"><span>1399</span></a></td><td><pre>net-news/amphetadesk
-</pre></td></tr>
-            <tr class="" id="l1400"><td><a href="#l1400"><span>1400</span></a></td><td><pre>  DeprecatedEAPI: version 0.93.1: uses deprecated EAPI: 0
-</pre></td></tr>
-            <tr class="" id="l1401"><td><a href="#l1401"><span>1401</span></a></td><td><pre>
-</pre></td></tr>
-            <tr class="" id="l1402"><td><a href="#l1402"><span>1402</span></a></td><td><pre>net-news/blam
-</pre></td></tr>
-            <tr class="" id="l1403"><td><a href="#l1403"><span>1403</span></a></td><td><pre>  DeprecatedEclass: version 1.8.9: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-</pre></td></tr>
-            <tr class="" id="l1404"><td><a href="#l1404"><span>1404</span></a></td><td><pre>
-</pre></td></tr>
-            <tr class="" id="l1405"><td><a href="#l1405"><span>1405</span></a></td><td><pre>net-news/liferea
-</pre></td></tr>
-            <tr class="" id="l1406"><td><a href="#l1406"><span>1406</span></a></td><td><pre>  DroppedKeywordWarning: version 1.10.8: keywords dropped: ppc64
-</pre></td></tr>
-            <tr class="" id="l1407"><td><a href="#l1407"><span>1407</span></a></td><td><pre>
-</pre></td></tr>
-            <tr class="" id="l1408"><td><a href="#l1408"><span>1408</span></a></td><td><pre>net-news/yencode
-</pre></td></tr>
-            <tr class="" id="l1409"><td><a href="#l1409"><span>1409</span></a></td><td><pre>  DeprecatedEAPI: version 0.46: uses deprecated EAPI: 0
+            <tr class="" id="l1322"><td><a href="#l1322"><span>1322</span></a></td><td><pre>  DeprecatedEAPI: version 0.46: uses deprecated EAPI: 0
 </pre></td></tr>
 
         </table>
 
-        <address>Generated based on results from 2015-09-08 22:17:12 UTC</address>
+        <address>Generated based on results from 2015-09-08 22:29:37 UTC</address>
     </body>
 </html>
