@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 15 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'media-gfx/*' 'sys-devel/*' 'app-crypt/*' 'x11-apps/*' 'www-apache/*' 'sci-physics/*' 'net-proxy/*' 'dev-lisp/*' 'net-nntp/*' 'games-kids/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'media-gfx/*' 'sys-devel/*' 'sci-chemistry/*' 'x11-apps/*' 'www-apache/*' 'sci-physics/*' 'net-proxy/*' 'dev-lisp/*' 'net-nntp/*' 'games-kids/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -912,136 +912,231 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-app-crypt/aespipe
-  DeprecatedEAPI: version 2.3e: uses deprecated EAPI: 0
+sci-chemistry/PyMca
+  DeprecatedEclass: version 4.6.2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-app-crypt/aesutil
-  DeprecatedEAPI: version 1.0.7: uses deprecated EAPI: 0
+sci-chemistry/acpype
+  DeprecatedEAPI: version 366: uses deprecated EAPI: 3
+  DeprecatedEclass: version 366: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 374: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  NonExistentDeps: version 374: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 374: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  MissingChksum: version 366: "acpype-366.tar.xz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-app-crypt/asedriveiiie-serial
-  DeprecatedEAPI: version 3.5: uses deprecated EAPI: 0
+sci-chemistry/ambertools
+  MissingChksum: version 1.5-r1: "AmberTools-1.5.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.5-r1: "ambertools-1.5-bugfix_1-10.patch.xz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-app-crypt/asedriveiiie-usb
-  DeprecatedEAPI: version 3.5: uses deprecated EAPI: 0
+sci-chemistry/aqua
+  MissingChksum: version 3.2-r2: "aqua3.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 3.2-r2: "aqua-3.2-nmr_manual.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-app-crypt/bcrypt
-  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 0
+sci-chemistry/avogadro
+  DroppedKeywordWarning: version 1.1.0: keywords dropped: ppc
 
-app-crypt/bcwipe
-  DeprecatedEAPI: version 1.9.8: uses deprecated EAPI: 3
+sci-chemistry/azara
+  DeprecatedEAPI: version 2.8-r4: uses deprecated EAPI: 3
+  DeprecatedEclass: version 2.8-r4: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-app-crypt/bsign
-  DeprecatedEAPI: version 0.4.5: uses deprecated EAPI: 2
+sci-chemistry/balbes
+  DeprecatedEAPI: version 1.0.0_p100317-r2: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.0.0_p100317-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  MissingChksum: version 1.0.0_p100317-r2: "balbes-1.0.0_p100317.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.0.0_p100317-r2: "ccp4-6.1.3-core-src.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-app-crypt/cardpeek
-  DroppedKeywordWarning: version 0.8.2: keywords dropped: amd64
+sci-chemistry/ccp4-apps
+  SizeViolation: "files/6.1.3-lapack.patch" exceeds 20k in size; 21642 bytes total
 
-app-crypt/ccrypt
-  DeprecatedEAPI: version 1.9: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 1.10: uses deprecated EAPI: 3
+sci-chemistry/chemical-mime-data
+  DeprecatedEAPI: version 0.1.94: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.1.94-r1: uses deprecated EAPI: 2
 
-app-crypt/codegroup
-  DeprecatedEAPI: version 20080907-r1: uses deprecated EAPI: 2
+sci-chemistry/coot
+  DeprecatedEclass: version 0.7: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-app-crypt/coolkey
-  DeprecatedEAPI: version 1.1.0-r6: uses deprecated EAPI: 3
+sci-chemistry/elem
+  DeprecatedEAPI: version 1.0.3-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0.3-r2: uses deprecated EAPI: 0
+  MissingChksum: version 1.0.3-r1: "elem-src-1.0.3-Linux.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-app-crypt/dieharder
-  DeprecatedEAPI: version 2.28.1: uses deprecated EAPI: 2
+sci-chemistry/gamess
+  MissingChksum: version 20110811.1: "gamess-20110811.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 20110811.1: "tinker.tar.Z" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-app-crypt/eid-mw
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+sci-chemistry/gamessq
+  MissingChksum: version 1.2: "gamessq-1.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-app-crypt/elettra
-  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+sci-chemistry/ghemical
+  DeprecatedEAPI: version 2.99.2-r2: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.0.0: uses deprecated EAPI: 3
+  MissingChksum: version 2.99.2-r2: "ghemical-2.99.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-app-crypt/fcrackzip
-  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 3
+sci-chemistry/gopenmol
+  DeprecatedEclass: version 3.00-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-app-crypt/gifshuffle
-  DeprecatedEAPI: version 2.0: uses deprecated EAPI: 0
+sci-chemistry/icm-browser
+  MissingChksum: version 3.6.1i: "icm-browser-3.6-1i.i386.rpm" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-app-crypt/gnupg
-  DroppedKeywordWarning: version 2.1.6: keywords dropped: arm64, ia64, s390, sh, sparc
+sci-chemistry/massxpert
+  DeprecatedEAPI: version 2.0.5: uses deprecated EAPI: 2
 
-app-crypt/gpg-ringmgr
-  DeprecatedEAPI: version 1.12: uses deprecated EAPI: 0
+sci-chemistry/mead
+  DeprecatedEAPI: version 2.2.7: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.2.7-r1: uses deprecated EAPI: 0
+  MissingChksum: version 2.2.7: "mead-2.2.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-app-crypt/gpgstats
-  DeprecatedEAPI: version 0.5-r1: uses deprecated EAPI: 2
+sci-chemistry/mm-align
+  MissingChksum: version 20120321: "MM-align-20120321.tar.xz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-app-crypt/hashalot
-  DeprecatedEAPI: version 0.3-r2: uses deprecated EAPI: 0
+sci-chemistry/moldy
+  MissingChksum: version 2.16e-r2: "moldy-2.16e.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-app-crypt/ima-evm-utils
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+sci-chemistry/molmol
+  SizeViolation: "files/wild.patch" exceeds 20k in size; 50572 bytes total
 
-app-crypt/jacksum
-  DeprecatedEAPI: version 1.7.0: uses deprecated EAPI: 0
+sci-chemistry/molrep
+  MissingChksum: version 11.0.02: "molrep-11.0.02.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-app-crypt/keylookup
-  DeprecatedEAPI: version 2.2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.2-r9999: uses deprecated EAPI: 0
+sci-chemistry/mpqc
+  DeprecatedEAPI: version 2.3.1-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.3.1-r2: uses deprecated EAPI: 2
 
-app-crypt/mcrypt
-  DeprecatedEAPI: version 2.6.8-r2: uses deprecated EAPI: 2
+sci-chemistry/mrbump
+  DeprecatedEAPI: version 0.4.4: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.4.4: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  MissingChksum: version 0.4.4: "mrbump-0.4.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-app-crypt/mdcrack
-  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 2
+sci-chemistry/msms-bin
+  MissingChksum: version 2.6.1-r1: "msms_i86_64Linux2_2.6.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 2.6.1-r1: "msms_i86Linux2_2.6.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-app-crypt/nasty
-  DeprecatedEAPI: version 0.6-r1: uses deprecated EAPI: 2
+sci-chemistry/mustang
+  MissingChksum: version 3.2.1: "mustang_v3.2.1.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-app-crypt/nistp224
-  DeprecatedEAPI: version 0.75-r1: uses deprecated EAPI: 2
+sci-chemistry/ortep3
+  MissingChksum: version 1.0.3-r1: "ortep.f" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-app-crypt/onak
-  DeprecatedEAPI: version 0.4.0: uses deprecated EAPI: 2
+sci-chemistry/p3d
+  DeprecatedEAPI: version 0.4.3: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.4.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), git-2 (migrate to git-r3), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  MissingChksum: version 0.4.3: "p3d-0.4.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-app-crypt/ophcrack
-  DeprecatedEAPI: version 3.3.1: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 3.4.0: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 3.6.0: uses deprecated EAPI: 3
+sci-chemistry/pdb-extract
+  DeprecatedEAPI: version 3.004-r2: uses deprecated EAPI: 3
+  MissingChksum: version 3.004-r2: "pdb-extract-v3.004-prod-src.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 3.11: "pdb-extract-v3.11-prod-src.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-app-crypt/pius
-  DeprecatedEclass: version 2.0.9: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEclass: version 2.0.10: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+sci-chemistry/pdbcns
+  MissingChksum: version 2.0.010504: "pdbcns.2.0.010504.perl.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-app-crypt/qca
-  DeprecatedEAPI: version 2.0.3-r1: uses deprecated EAPI: 3
+sci-chemistry/phaser
+  MissingChksum: version 2.1.4: "ccp4-6.1.13-phaser-cctbx-src.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-app-crypt/qca-cyrus-sasl
-  DeprecatedEAPI: version 2.0.0_beta3: uses deprecated EAPI: 2
+sci-chemistry/platon
+  MissingChksum: version 20110126: "platon-20110126.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-app-crypt/qca-gnupg
-  DeprecatedEAPI: version 2.0.0_beta3: uses deprecated EAPI: 2
+sci-chemistry/pointless
+  DeprecatedEclass: version 1.6.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.6.14: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.6.14: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  MissingChksum: version 1.6.2: "pointless-1.6.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-app-crypt/qca-logger
-  DeprecatedEAPI: version 2.0.0_beta2: uses deprecated EAPI: 2
+sci-chemistry/prekin
+  DeprecatedEAPI: version 6.51.081122-r1: uses deprecated EAPI: 2
+  MissingChksum: version 6.51.081122-r1: "prekin.6.51.081122.src.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-app-crypt/qca-ossl
-  DeprecatedEAPI: version 2.0.0_beta3-r2: uses deprecated EAPI: 2
+sci-chemistry/procheck
+  MissingChksum: version 3.5.4-r1: "procheck-3.5.4-manual.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-app-crypt/qca-pkcs11
-  DeprecatedEAPI: version 2.0.0_beta2: uses deprecated EAPI: 2
+sci-chemistry/pymol-apbs-plugin
+  DeprecatedEAPI: version 0_p15: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0_p15: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0_p18: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0_p18: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 2.1_p24: uses deprecated EAPI: 3
+  DeprecatedEclass: version 2.1_p24: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  MissingChksum: version 0_p15: "pymol-apbs-plugin-0_p15.py" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0_p18: "pymol-apbs-plugin-0_p18.py" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-app-crypt/quickcrypt
-  DeprecatedEAPI: version 0.9.2b: uses deprecated EAPI: 0
+sci-chemistry/pymol-plugins-bni-tools
+  DeprecatedEAPI: version 0.25.1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.25.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-app-crypt/signing-party
-  DroppedKeywordWarning: version 1.1.11-r1: keywords dropped: ppc
+sci-chemistry/pymol-plugins-dssp
+  DeprecatedEAPI: version 110430: uses deprecated EAPI: 3
+  DeprecatedEclass: version 110430: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-app-crypt/ssh-multiadd
-  DeprecatedEclass: version 1.3.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+sci-chemistry/pymol-plugins-emovie
+  DeprecatedEAPI: version 1.0.4: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.0.4: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  MissingChksum: version 1.0.4: "eMovie_package.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-app-crypt/stan
-  DeprecatedEAPI: version 0.4.1: uses deprecated EAPI: 2
+sci-chemistry/pymol-plugins-msms
+  DeprecatedEAPI: version 100415: uses deprecated EAPI: 3
+  DeprecatedEclass: version 100415: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-app-crypt/truecrypt
-  DroppedKeywordWarning: version 7.2: keywords dropped: amd64, ppc, x86
+sci-chemistry/reduce
+  DeprecatedEAPI: version 3.13.080428-r1: uses deprecated EAPI: 3
+  MissingChksum: version 3.13.080428-r1: "reduce.3.13.080428.src.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-app-crypt/xor-analyze
-  DeprecatedEAPI: version 0.5: uses deprecated EAPI: 0
+sci-chemistry/solve-resolve-bin
+  MissingChksum: version 2.13: "solve-2.13-linux.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-chemistry/suitename
+  MissingChksum: version 0.3.070628: "suitename.0.3.070628.src.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-chemistry/surf
+  MissingChksum: version 1.0: "surf-1.0.tar.Z" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-chemistry/threeV
+  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 3
+  MissingChksum: version 1.2: "3v-1.2.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+sci-chemistry/viewmol
+  DeprecatedEAPI: version 2.4.1-r2: uses deprecated EAPI: 3
+  DeprecatedEclass: version 2.4.1-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  MissingChksum: version 2.4.1-r2: "viewmol-2.4.1.src.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-chemistry/votca-csg
+  NonExistentDeps: version 1.2.2: depset depends: nonexistent atoms [ <app-doc/doxygen-1.7.6.1 ]
+  NonExistentDeps: version 1.2.4-r1: depset depends: nonexistent atoms [ <app-doc/doxygen-1.7.6.1 ]
+  MissingChksum: version 1.2.2: "votca-csg-1.2.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.2.2: "votca-csg-manual-1.2.2.pdf" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.2.2: "votca-csg-tutorials-1.2.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-chemistry/votca-csgapps
+  MissingChksum: version 1.2.2: "votca-csgapps-1.2.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-chemistry/wxmacmolplt
+  MissingChksum: version 7.4.2: "wxmacmolplt-7.4.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-chemistry/xdsi
+  MissingChksum: version 0.92-r1: "xdsi_0.92.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-chemistry/xia2
+  DeprecatedEAPI: version 0.3.1.0: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.3.1.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.3.1.6: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.3.1.6: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.3.1.7: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.3.1.7: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.3.3.1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.3.3.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.3.3.3: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.3.3.3: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.3.4.0: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.3.4.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  MissingChksum: version 0.3.1.0: "xia2-0.3.1.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.3.1.6: "xia2-0.3.1.6.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.3.1.7: "xia2-0.3.1.7.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.3.3.1: "xia2-0.3.3.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.3.3.3: "xia2-0.3.3.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.3.4.0: "xia2-0.3.4.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-chemistry/xyza2pipe
+  DeprecatedEAPI: version 20101129: uses deprecated EAPI: 3
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
