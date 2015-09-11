@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 11 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'sys-apps/*' 'virtual/*' 'www-apps/*' 'gnome-extra/*' 'xfce-extra/*' 'gnome-base/*' 'kde-frameworks/*' 'sys-freebsd/*' 'dev-go/*' 'mate-extra/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'sys-apps/*' 'virtual/*' 'www-apps/*' 'gnome-extra/*' 'xfce-extra/*' 'games-action/*' 'kde-frameworks/*' 'sys-freebsd/*' 'dev-go/*' 'mate-extra/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1293,19 +1293,23 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-gnome-base/gnome-light
-  WhitespaceFound: version 3.16.0: ebuild has trailing whitespace on line 54
+games-action/descent3
+  MissingChksum: version 1.4.0b-r2: "descent3-1.4.0a-x86.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.4.0b-r2: "descent3-1.4.0b-x86.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-gnome-base/gnome-session
-  BadInsIntoDir: version 3.14.0-r1: ebuild uses insinto /usr/share/applications on line 102
-  BadInsIntoDir: version 3.14.0-r2: ebuild uses insinto /usr/share/applications on line 102
-  BadInsIntoDir: version 3.16.0: ebuild uses insinto /usr/share/applications on line 99
+games-action/heretic2
+  MissingChksum: version 1.06c-r1: "heretic2-1.06b-unified-x86.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.06c-r1: "heretic2-1.06c-unified-x86.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.06c-r1: "heretic2-maps-1.0.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-gnome-base/gvfs
-  NonExistentDeps: version 1.22.3: depset depends: nonexistent atoms [ <dev-libs/libcdio-0.90 ]
-  NonExistentDeps: version 1.22.3: depset rdepends: nonexistent atoms [ <dev-libs/libcdio-0.90 ]
-  NonExistentDeps: version 1.22.4: depset depends: nonexistent atoms [ <dev-libs/libcdio-0.90 ]
-  NonExistentDeps: version 1.22.4: depset rdepends: nonexistent atoms [ <dev-libs/libcdio-0.90 ]
+games-action/shadowgrounds-bin
+  MissingChksum: version 0_beta12-r1: "ShadowgroundsBeta12.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+games-action/shadowgrounds-survivor-bin
+  MissingChksum: version 0_beta11-r1: "SurvivorBeta11.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+games-action/trine-bin
+  MissingChksum: version 1.08: "Trine.64.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch

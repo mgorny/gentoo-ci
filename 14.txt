@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 14 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'media-plugins/*' 'kde-apps/*' 'sci-chemistry/*' 'kde-misc/*' 'mail-filter/*' 'sci-physics/*' 'net-proxy/*' 'app-mobilephone/*' 'www-misc/*' 'games-server/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'media-plugins/*' 'kde-apps/*' 'sci-chemistry/*' 'kde-misc/*' 'mail-filter/*' 'games-board/*' 'net-proxy/*' 'app-mobilephone/*' 'www-misc/*' 'games-server/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1003,39 +1003,6 @@ WARNING pkgcore: metadata.dtd cannot be opened from
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
-
-sci-physics/clhep
-  DeprecatedEAPI: version 2.0.4.6: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 2.1.0.1: uses deprecated EAPI: 2
-  MissingChksum: version 2.0.4.6: "clhep-2.0.4.6.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-sci-physics/geant
-  DeprecatedEAPI: version 3.21.14-r2: uses deprecated EAPI: 2
-
-sci-physics/hepmc
-  DeprecatedEAPI: version 2.06.03: uses deprecated EAPI: 2
-  MissingChksum: version 2.06.03: "HepMC-2.06.03.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-sci-physics/herwig
-  DeprecatedEAPI: version 6.5.10: uses deprecated EAPI: 2
-
-sci-physics/lhapdf
-  DeprecatedEAPI: version 5.8.4: uses deprecated EAPI: 2
-  MissingChksum: version 5.8.4: "lhapdf-5.8.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 5.8.4: "wrapheragrid.f" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 5.8.4: "wrapheragrid-lite.f" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-sci-physics/meep
-  DeprecatedEAPI: version 1.1.1: uses deprecated EAPI: 2
-
-sci-physics/root
-  DeprecatedEclass: version 5.32.03-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-
-sci-physics/sassena
-  MissingChksum: version 1.4.1: "sassena-v1.4.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-sci-physics/xfoil
-  MissingChksum: version 6.97: "dataflow.pdf" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch

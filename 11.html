@@ -49,7 +49,7 @@
 </pre></td></tr>
             <tr class="" id="l6"><td><a href="#l6"><span>6</span></a></td><td><pre>+ set +x
 </pre></td></tr>
-            <tr class="" id="l7"><td><a href="#l7"><span>7</span></a></td><td><pre>+ exec pkgcheck -r gentoo --reporter FancyReporter 'sys-apps/*' 'virtual/*' 'www-apps/*' 'gnome-extra/*' 'xfce-extra/*' 'gnome-base/*' 'kde-frameworks/*' 'sys-freebsd/*' 'dev-go/*' 'mate-extra/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
+            <tr class="" id="l7"><td><a href="#l7"><span>7</span></a></td><td><pre>+ exec pkgcheck -r gentoo --reporter FancyReporter 'sys-apps/*' 'virtual/*' 'www-apps/*' 'gnome-extra/*' 'xfce-extra/*' 'games-action/*' 'kde-frameworks/*' 'sys-freebsd/*' 'dev-go/*' 'mate-extra/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 </pre></td></tr>
             <tr class="" id="l8"><td><a href="#l8"><span>8</span></a></td><td><pre>/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
 </pre></td></tr>
@@ -2627,227 +2627,235 @@
 </pre></td></tr>
             <tr class="" id="l1295"><td><a href="#l1295"><span>1295</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1296"><td><a href="#l1296"><span>1296</span></a></td><td><pre>gnome-base/gnome-light
+            <tr class="" id="l1296"><td><a href="#l1296"><span>1296</span></a></td><td><pre>games-action/descent3
 </pre></td></tr>
-            <tr class="" id="l1297"><td><a href="#l1297"><span>1297</span></a></td><td><pre>  WhitespaceFound: version 3.16.0: ebuild has trailing whitespace on line 54
+            <tr class="" id="l1297"><td><a href="#l1297"><span>1297</span></a></td><td><pre>  MissingChksum: version 1.4.0b-r2: "descent3-1.4.0a-x86.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l1298"><td><a href="#l1298"><span>1298</span></a></td><td><pre>
+            <tr class="" id="l1298"><td><a href="#l1298"><span>1298</span></a></td><td><pre>  MissingChksum: version 1.4.0b-r2: "descent3-1.4.0b-x86.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l1299"><td><a href="#l1299"><span>1299</span></a></td><td><pre>gnome-base/gnome-session
+            <tr class="" id="l1299"><td><a href="#l1299"><span>1299</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1300"><td><a href="#l1300"><span>1300</span></a></td><td><pre>  BadInsIntoDir: version 3.14.0-r1: ebuild uses insinto /usr/share/applications on line 102
+            <tr class="" id="l1300"><td><a href="#l1300"><span>1300</span></a></td><td><pre>games-action/heretic2
 </pre></td></tr>
-            <tr class="" id="l1301"><td><a href="#l1301"><span>1301</span></a></td><td><pre>  BadInsIntoDir: version 3.14.0-r2: ebuild uses insinto /usr/share/applications on line 102
+            <tr class="" id="l1301"><td><a href="#l1301"><span>1301</span></a></td><td><pre>  MissingChksum: version 1.06c-r1: "heretic2-1.06b-unified-x86.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l1302"><td><a href="#l1302"><span>1302</span></a></td><td><pre>  BadInsIntoDir: version 3.16.0: ebuild uses insinto /usr/share/applications on line 99
+            <tr class="" id="l1302"><td><a href="#l1302"><span>1302</span></a></td><td><pre>  MissingChksum: version 1.06c-r1: "heretic2-1.06c-unified-x86.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l1303"><td><a href="#l1303"><span>1303</span></a></td><td><pre>
+            <tr class="" id="l1303"><td><a href="#l1303"><span>1303</span></a></td><td><pre>  MissingChksum: version 1.06c-r1: "heretic2-maps-1.0.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l1304"><td><a href="#l1304"><span>1304</span></a></td><td><pre>gnome-base/gvfs
+            <tr class="" id="l1304"><td><a href="#l1304"><span>1304</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1305"><td><a href="#l1305"><span>1305</span></a></td><td><pre>  NonExistentDeps: version 1.22.3: depset depends: nonexistent atoms [ &lt;dev-libs/libcdio-0.90 ]
+            <tr class="" id="l1305"><td><a href="#l1305"><span>1305</span></a></td><td><pre>games-action/shadowgrounds-bin
 </pre></td></tr>
-            <tr class="" id="l1306"><td><a href="#l1306"><span>1306</span></a></td><td><pre>  NonExistentDeps: version 1.22.3: depset rdepends: nonexistent atoms [ &lt;dev-libs/libcdio-0.90 ]
+            <tr class="" id="l1306"><td><a href="#l1306"><span>1306</span></a></td><td><pre>  MissingChksum: version 0_beta12-r1: "ShadowgroundsBeta12.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l1307"><td><a href="#l1307"><span>1307</span></a></td><td><pre>  NonExistentDeps: version 1.22.4: depset depends: nonexistent atoms [ &lt;dev-libs/libcdio-0.90 ]
+            <tr class="" id="l1307"><td><a href="#l1307"><span>1307</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1308"><td><a href="#l1308"><span>1308</span></a></td><td><pre>  NonExistentDeps: version 1.22.4: depset rdepends: nonexistent atoms [ &lt;dev-libs/libcdio-0.90 ]
+            <tr class="" id="l1308"><td><a href="#l1308"><span>1308</span></a></td><td><pre>games-action/shadowgrounds-survivor-bin
 </pre></td></tr>
-            <tr class="" id="l1309"><td><a href="#l1309"><span>1309</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
+            <tr class="" id="l1309"><td><a href="#l1309"><span>1309</span></a></td><td><pre>  MissingChksum: version 0_beta11-r1: "SurvivorBeta11.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l1310"><td><a href="#l1310"><span>1310</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+            <tr class="" id="l1310"><td><a href="#l1310"><span>1310</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1311"><td><a href="#l1311"><span>1311</span></a></td><td><pre>               : refetch
+            <tr class="" id="l1311"><td><a href="#l1311"><span>1311</span></a></td><td><pre>games-action/trine-bin
 </pre></td></tr>
-            <tr class="" id="l1312"><td><a href="#l1312"><span>1312</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
+            <tr class="" id="l1312"><td><a href="#l1312"><span>1312</span></a></td><td><pre>  MissingChksum: version 1.08: "Trine.64.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l1313"><td><a href="#l1313"><span>1313</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+            <tr class="" id="l1313"><td><a href="#l1313"><span>1313</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
 </pre></td></tr>
-            <tr class="" id="l1314"><td><a href="#l1314"><span>1314</span></a></td><td><pre>               : refetch
+            <tr class="" id="l1314"><td><a href="#l1314"><span>1314</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
 </pre></td></tr>
-            <tr class="" id="l1315"><td><a href="#l1315"><span>1315</span></a></td><td><pre>
+            <tr class="" id="l1315"><td><a href="#l1315"><span>1315</span></a></td><td><pre>               : refetch
 </pre></td></tr>
-            <tr class="" id="l1316"><td><a href="#l1316"><span>1316</span></a></td><td><pre>kde-frameworks/kwallet
+            <tr class="" id="l1316"><td><a href="#l1316"><span>1316</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
 </pre></td></tr>
-            <tr class="" id="l1317"><td><a href="#l1317"><span>1317</span></a></td><td><pre>  NonExistentDeps: version 5.13.0-r1: depset depends: nonexistent atoms [ &gt;=kde-apps/gpgmepp-14.12.0 ]
+            <tr class="" id="l1317"><td><a href="#l1317"><span>1317</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
 </pre></td></tr>
-            <tr class="" id="l1318"><td><a href="#l1318"><span>1318</span></a></td><td><pre>  NonExistentDeps: version 5.13.0-r1: depset rdepends: nonexistent atoms [ &gt;=kde-apps/gpgmepp-14.12.0 ]
+            <tr class="" id="l1318"><td><a href="#l1318"><span>1318</span></a></td><td><pre>               : refetch
 </pre></td></tr>
-            <tr class="" id="l1319"><td><a href="#l1319"><span>1319</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
+            <tr class="" id="l1319"><td><a href="#l1319"><span>1319</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1320"><td><a href="#l1320"><span>1320</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+            <tr class="" id="l1320"><td><a href="#l1320"><span>1320</span></a></td><td><pre>kde-frameworks/kwallet
 </pre></td></tr>
-            <tr class="" id="l1321"><td><a href="#l1321"><span>1321</span></a></td><td><pre>               : refetch
+            <tr class="" id="l1321"><td><a href="#l1321"><span>1321</span></a></td><td><pre>  NonExistentDeps: version 5.13.0-r1: depset depends: nonexistent atoms [ &gt;=kde-apps/gpgmepp-14.12.0 ]
 </pre></td></tr>
-            <tr class="" id="l1322"><td><a href="#l1322"><span>1322</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
+            <tr class="" id="l1322"><td><a href="#l1322"><span>1322</span></a></td><td><pre>  NonExistentDeps: version 5.13.0-r1: depset rdepends: nonexistent atoms [ &gt;=kde-apps/gpgmepp-14.12.0 ]
 </pre></td></tr>
-            <tr class="" id="l1323"><td><a href="#l1323"><span>1323</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+            <tr class="" id="l1323"><td><a href="#l1323"><span>1323</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
 </pre></td></tr>
-            <tr class="" id="l1324"><td><a href="#l1324"><span>1324</span></a></td><td><pre>               : refetch
+            <tr class="" id="l1324"><td><a href="#l1324"><span>1324</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
 </pre></td></tr>
-            <tr class="" id="l1325"><td><a href="#l1325"><span>1325</span></a></td><td><pre>
+            <tr class="" id="l1325"><td><a href="#l1325"><span>1325</span></a></td><td><pre>               : refetch
 </pre></td></tr>
-            <tr class="" id="l1326"><td><a href="#l1326"><span>1326</span></a></td><td><pre>sys-freebsd/boot0
+            <tr class="" id="l1326"><td><a href="#l1326"><span>1326</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
 </pre></td></tr>
-            <tr class="" id="l1327"><td><a href="#l1327"><span>1327</span></a></td><td><pre>  DeprecatedEAPI: version 8.2: uses deprecated EAPI: 2
+            <tr class="" id="l1327"><td><a href="#l1327"><span>1327</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
 </pre></td></tr>
-            <tr class="" id="l1328"><td><a href="#l1328"><span>1328</span></a></td><td><pre>  DeprecatedEAPI: version 9.1: uses deprecated EAPI: 2
+            <tr class="" id="l1328"><td><a href="#l1328"><span>1328</span></a></td><td><pre>               : refetch
 </pre></td></tr>
             <tr class="" id="l1329"><td><a href="#l1329"><span>1329</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1330"><td><a href="#l1330"><span>1330</span></a></td><td><pre>sys-freebsd/freebsd-bin
+            <tr class="" id="l1330"><td><a href="#l1330"><span>1330</span></a></td><td><pre>sys-freebsd/boot0
 </pre></td></tr>
-            <tr class="" id="l1331"><td><a href="#l1331"><span>1331</span></a></td><td><pre>  DeprecatedEAPI: version 8.2: uses deprecated EAPI: 0
+            <tr class="" id="l1331"><td><a href="#l1331"><span>1331</span></a></td><td><pre>  DeprecatedEAPI: version 8.2: uses deprecated EAPI: 2
 </pre></td></tr>
-            <tr class="" id="l1332"><td><a href="#l1332"><span>1332</span></a></td><td><pre>  DeprecatedEAPI: version 9.1: uses deprecated EAPI: 0
+            <tr class="" id="l1332"><td><a href="#l1332"><span>1332</span></a></td><td><pre>  DeprecatedEAPI: version 9.1: uses deprecated EAPI: 2
 </pre></td></tr>
             <tr class="" id="l1333"><td><a href="#l1333"><span>1333</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1334"><td><a href="#l1334"><span>1334</span></a></td><td><pre>sys-freebsd/freebsd-cddl
+            <tr class="" id="l1334"><td><a href="#l1334"><span>1334</span></a></td><td><pre>sys-freebsd/freebsd-bin
 </pre></td></tr>
             <tr class="" id="l1335"><td><a href="#l1335"><span>1335</span></a></td><td><pre>  DeprecatedEAPI: version 8.2: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l1336"><td><a href="#l1336"><span>1336</span></a></td><td><pre>
+            <tr class="" id="l1336"><td><a href="#l1336"><span>1336</span></a></td><td><pre>  DeprecatedEAPI: version 9.1: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l1337"><td><a href="#l1337"><span>1337</span></a></td><td><pre>sys-freebsd/freebsd-contrib
+            <tr class="" id="l1337"><td><a href="#l1337"><span>1337</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1338"><td><a href="#l1338"><span>1338</span></a></td><td><pre>  DeprecatedEAPI: version 8.2: uses deprecated EAPI: 0
+            <tr class="" id="l1338"><td><a href="#l1338"><span>1338</span></a></td><td><pre>sys-freebsd/freebsd-cddl
 </pre></td></tr>
-            <tr class="" id="l1339"><td><a href="#l1339"><span>1339</span></a></td><td><pre>  DeprecatedEAPI: version 9.1: uses deprecated EAPI: 0
+            <tr class="" id="l1339"><td><a href="#l1339"><span>1339</span></a></td><td><pre>  DeprecatedEAPI: version 8.2: uses deprecated EAPI: 0
 </pre></td></tr>
             <tr class="" id="l1340"><td><a href="#l1340"><span>1340</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1341"><td><a href="#l1341"><span>1341</span></a></td><td><pre>sys-freebsd/freebsd-lib
+            <tr class="" id="l1341"><td><a href="#l1341"><span>1341</span></a></td><td><pre>sys-freebsd/freebsd-contrib
 </pre></td></tr>
-            <tr class="" id="l1342"><td><a href="#l1342"><span>1342</span></a></td><td><pre>  WhitespaceFound: version 8.2-r1: ebuild has leading whitespace on lines 368, 369, 370, 371, 372
+            <tr class="" id="l1342"><td><a href="#l1342"><span>1342</span></a></td><td><pre>  DeprecatedEAPI: version 8.2: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l1343"><td><a href="#l1343"><span>1343</span></a></td><td><pre>  DeprecatedEAPI: version 8.2-r1: uses deprecated EAPI: 2
+            <tr class="" id="l1343"><td><a href="#l1343"><span>1343</span></a></td><td><pre>  DeprecatedEAPI: version 9.1: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l1344"><td><a href="#l1344"><span>1344</span></a></td><td><pre>  WhitespaceFound: version 9.1-r10: ebuild has leading whitespace on lines 413, 414, 415, 416, 417, 441, 442, 443, 446, 448, 450
+            <tr class="" id="l1344"><td><a href="#l1344"><span>1344</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1345"><td><a href="#l1345"><span>1345</span></a></td><td><pre>  WhitespaceFound: version 9.1-r11: ebuild has leading whitespace on lines 415, 416, 417, 418, 419, 443, 444, 445, 448, 450, 452
+            <tr class="" id="l1345"><td><a href="#l1345"><span>1345</span></a></td><td><pre>sys-freebsd/freebsd-lib
 </pre></td></tr>
-            <tr class="" id="l1346"><td><a href="#l1346"><span>1346</span></a></td><td><pre>  WhitespaceFound: version 10.2: ebuild has leading whitespace on lines 421, 422, 423, 424, 425, 449, 450, 451, 454, 456, 458
+            <tr class="" id="l1346"><td><a href="#l1346"><span>1346</span></a></td><td><pre>  WhitespaceFound: version 8.2-r1: ebuild has leading whitespace on lines 368, 369, 370, 371, 372
 </pre></td></tr>
-            <tr class="" id="l1347"><td><a href="#l1347"><span>1347</span></a></td><td><pre>
+            <tr class="" id="l1347"><td><a href="#l1347"><span>1347</span></a></td><td><pre>  DeprecatedEAPI: version 8.2-r1: uses deprecated EAPI: 2
 </pre></td></tr>
-            <tr class="" id="l1348"><td><a href="#l1348"><span>1348</span></a></td><td><pre>sys-freebsd/freebsd-libexec
+            <tr class="" id="l1348"><td><a href="#l1348"><span>1348</span></a></td><td><pre>  WhitespaceFound: version 9.1-r10: ebuild has leading whitespace on lines 413, 414, 415, 416, 417, 441, 442, 443, 446, 448, 450
 </pre></td></tr>
-            <tr class="" id="l1349"><td><a href="#l1349"><span>1349</span></a></td><td><pre>  DeprecatedEAPI: version 8.2: uses deprecated EAPI: 2
+            <tr class="" id="l1349"><td><a href="#l1349"><span>1349</span></a></td><td><pre>  WhitespaceFound: version 9.1-r11: ebuild has leading whitespace on lines 415, 416, 417, 418, 419, 443, 444, 445, 448, 450, 452
 </pre></td></tr>
-            <tr class="" id="l1350"><td><a href="#l1350"><span>1350</span></a></td><td><pre>  DeprecatedEAPI: version 8.2-r1: uses deprecated EAPI: 2
+            <tr class="" id="l1350"><td><a href="#l1350"><span>1350</span></a></td><td><pre>  WhitespaceFound: version 10.2: ebuild has leading whitespace on lines 421, 422, 423, 424, 425, 449, 450, 451, 454, 456, 458
 </pre></td></tr>
             <tr class="" id="l1351"><td><a href="#l1351"><span>1351</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1352"><td><a href="#l1352"><span>1352</span></a></td><td><pre>sys-freebsd/freebsd-mk-defs
+            <tr class="" id="l1352"><td><a href="#l1352"><span>1352</span></a></td><td><pre>sys-freebsd/freebsd-libexec
 </pre></td></tr>
-            <tr class="" id="l1353"><td><a href="#l1353"><span>1353</span></a></td><td><pre>  DeprecatedEAPI: version 8.2: uses deprecated EAPI: 0
+            <tr class="" id="l1353"><td><a href="#l1353"><span>1353</span></a></td><td><pre>  DeprecatedEAPI: version 8.2: uses deprecated EAPI: 2
 </pre></td></tr>
-            <tr class="" id="l1354"><td><a href="#l1354"><span>1354</span></a></td><td><pre>  DeprecatedEAPI: version 9.1: uses deprecated EAPI: 3
+            <tr class="" id="l1354"><td><a href="#l1354"><span>1354</span></a></td><td><pre>  DeprecatedEAPI: version 8.2-r1: uses deprecated EAPI: 2
 </pre></td></tr>
             <tr class="" id="l1355"><td><a href="#l1355"><span>1355</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1356"><td><a href="#l1356"><span>1356</span></a></td><td><pre>sys-freebsd/freebsd-pam-modules
+            <tr class="" id="l1356"><td><a href="#l1356"><span>1356</span></a></td><td><pre>sys-freebsd/freebsd-mk-defs
 </pre></td></tr>
             <tr class="" id="l1357"><td><a href="#l1357"><span>1357</span></a></td><td><pre>  DeprecatedEAPI: version 8.2: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l1358"><td><a href="#l1358"><span>1358</span></a></td><td><pre>  DeprecatedEAPI: version 9.1-r1: uses deprecated EAPI: 0
+            <tr class="" id="l1358"><td><a href="#l1358"><span>1358</span></a></td><td><pre>  DeprecatedEAPI: version 9.1: uses deprecated EAPI: 3
 </pre></td></tr>
             <tr class="" id="l1359"><td><a href="#l1359"><span>1359</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1360"><td><a href="#l1360"><span>1360</span></a></td><td><pre>sys-freebsd/freebsd-pf
+            <tr class="" id="l1360"><td><a href="#l1360"><span>1360</span></a></td><td><pre>sys-freebsd/freebsd-pam-modules
 </pre></td></tr>
             <tr class="" id="l1361"><td><a href="#l1361"><span>1361</span></a></td><td><pre>  DeprecatedEAPI: version 8.2: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l1362"><td><a href="#l1362"><span>1362</span></a></td><td><pre>  DeprecatedEAPI: version 9.1: uses deprecated EAPI: 0
+            <tr class="" id="l1362"><td><a href="#l1362"><span>1362</span></a></td><td><pre>  DeprecatedEAPI: version 9.1-r1: uses deprecated EAPI: 0
 </pre></td></tr>
             <tr class="" id="l1363"><td><a href="#l1363"><span>1363</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1364"><td><a href="#l1364"><span>1364</span></a></td><td><pre>sys-freebsd/freebsd-rescue
+            <tr class="" id="l1364"><td><a href="#l1364"><span>1364</span></a></td><td><pre>sys-freebsd/freebsd-pf
 </pre></td></tr>
-            <tr class="" id="l1365"><td><a href="#l1365"><span>1365</span></a></td><td><pre>  DeprecatedEAPI: version 8.2: uses deprecated EAPI: 2
+            <tr class="" id="l1365"><td><a href="#l1365"><span>1365</span></a></td><td><pre>  DeprecatedEAPI: version 8.2: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l1366"><td><a href="#l1366"><span>1366</span></a></td><td><pre>  DeprecatedEAPI: version 9.1: uses deprecated EAPI: 2
+            <tr class="" id="l1366"><td><a href="#l1366"><span>1366</span></a></td><td><pre>  DeprecatedEAPI: version 9.1: uses deprecated EAPI: 0
 </pre></td></tr>
             <tr class="" id="l1367"><td><a href="#l1367"><span>1367</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1368"><td><a href="#l1368"><span>1368</span></a></td><td><pre>sys-freebsd/freebsd-sbin
+            <tr class="" id="l1368"><td><a href="#l1368"><span>1368</span></a></td><td><pre>sys-freebsd/freebsd-rescue
 </pre></td></tr>
-            <tr class="" id="l1369"><td><a href="#l1369"><span>1369</span></a></td><td><pre>  BadInsIntoDir: version 8.2-r1: ebuild uses insinto /etc/cron.d on line 78
+            <tr class="" id="l1369"><td><a href="#l1369"><span>1369</span></a></td><td><pre>  DeprecatedEAPI: version 8.2: uses deprecated EAPI: 2
 </pre></td></tr>
-            <tr class="" id="l1370"><td><a href="#l1370"><span>1370</span></a></td><td><pre>  DeprecatedEAPI: version 8.2-r1: uses deprecated EAPI: 2
+            <tr class="" id="l1370"><td><a href="#l1370"><span>1370</span></a></td><td><pre>  DeprecatedEAPI: version 9.1: uses deprecated EAPI: 2
 </pre></td></tr>
-            <tr class="" id="l1371"><td><a href="#l1371"><span>1371</span></a></td><td><pre>  BadInsIntoDir: version 9.1: ebuild uses insinto /etc/cron.d on line 79
+            <tr class="" id="l1371"><td><a href="#l1371"><span>1371</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1372"><td><a href="#l1372"><span>1372</span></a></td><td><pre>  DeprecatedEAPI: version 9.1: uses deprecated EAPI: 2
+            <tr class="" id="l1372"><td><a href="#l1372"><span>1372</span></a></td><td><pre>sys-freebsd/freebsd-sbin
 </pre></td></tr>
-            <tr class="" id="l1373"><td><a href="#l1373"><span>1373</span></a></td><td><pre>  BadInsIntoDir: version 10.2: ebuild uses insinto /etc/cron.d on line 83
+            <tr class="" id="l1373"><td><a href="#l1373"><span>1373</span></a></td><td><pre>  BadInsIntoDir: version 8.2-r1: ebuild uses insinto /etc/cron.d on line 78
 </pre></td></tr>
-            <tr class="" id="l1374"><td><a href="#l1374"><span>1374</span></a></td><td><pre>
+            <tr class="" id="l1374"><td><a href="#l1374"><span>1374</span></a></td><td><pre>  DeprecatedEAPI: version 8.2-r1: uses deprecated EAPI: 2
 </pre></td></tr>
-            <tr class="" id="l1375"><td><a href="#l1375"><span>1375</span></a></td><td><pre>sys-freebsd/freebsd-share
+            <tr class="" id="l1375"><td><a href="#l1375"><span>1375</span></a></td><td><pre>  BadInsIntoDir: version 9.1: ebuild uses insinto /etc/cron.d on line 79
 </pre></td></tr>
-            <tr class="" id="l1376"><td><a href="#l1376"><span>1376</span></a></td><td><pre>  DeprecatedEAPI: version 8.2: uses deprecated EAPI: 0
+            <tr class="" id="l1376"><td><a href="#l1376"><span>1376</span></a></td><td><pre>  DeprecatedEAPI: version 9.1: uses deprecated EAPI: 2
 </pre></td></tr>
-            <tr class="" id="l1377"><td><a href="#l1377"><span>1377</span></a></td><td><pre>  DeprecatedEAPI: version 9.1: uses deprecated EAPI: 0
+            <tr class="" id="l1377"><td><a href="#l1377"><span>1377</span></a></td><td><pre>  BadInsIntoDir: version 10.2: ebuild uses insinto /etc/cron.d on line 83
 </pre></td></tr>
             <tr class="" id="l1378"><td><a href="#l1378"><span>1378</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1379"><td><a href="#l1379"><span>1379</span></a></td><td><pre>sys-freebsd/freebsd-sources
+            <tr class="" id="l1379"><td><a href="#l1379"><span>1379</span></a></td><td><pre>sys-freebsd/freebsd-share
 </pre></td></tr>
-            <tr class="" id="l1380"><td><a href="#l1380"><span>1380</span></a></td><td><pre>  DeprecatedEAPI: version 8.2-r2: uses deprecated EAPI: 0
+            <tr class="" id="l1380"><td><a href="#l1380"><span>1380</span></a></td><td><pre>  DeprecatedEAPI: version 8.2: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l1381"><td><a href="#l1381"><span>1381</span></a></td><td><pre>  DeprecatedEAPI: version 9.1-r3: uses deprecated EAPI: 0
+            <tr class="" id="l1381"><td><a href="#l1381"><span>1381</span></a></td><td><pre>  DeprecatedEAPI: version 9.1: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l1382"><td><a href="#l1382"><span>1382</span></a></td><td><pre>  DeprecatedEAPI: version 9.1-r9: uses deprecated EAPI: 0
+            <tr class="" id="l1382"><td><a href="#l1382"><span>1382</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1383"><td><a href="#l1383"><span>1383</span></a></td><td><pre>
+            <tr class="" id="l1383"><td><a href="#l1383"><span>1383</span></a></td><td><pre>sys-freebsd/freebsd-sources
 </pre></td></tr>
-            <tr class="" id="l1384"><td><a href="#l1384"><span>1384</span></a></td><td><pre>sys-freebsd/freebsd-ubin
+            <tr class="" id="l1384"><td><a href="#l1384"><span>1384</span></a></td><td><pre>  DeprecatedEAPI: version 8.2-r2: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l1385"><td><a href="#l1385"><span>1385</span></a></td><td><pre>  DeprecatedEAPI: version 8.2-r1: uses deprecated EAPI: 2
+            <tr class="" id="l1385"><td><a href="#l1385"><span>1385</span></a></td><td><pre>  DeprecatedEAPI: version 9.1-r3: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l1386"><td><a href="#l1386"><span>1386</span></a></td><td><pre>
+            <tr class="" id="l1386"><td><a href="#l1386"><span>1386</span></a></td><td><pre>  DeprecatedEAPI: version 9.1-r9: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l1387"><td><a href="#l1387"><span>1387</span></a></td><td><pre>sys-freebsd/freebsd-usbin
+            <tr class="" id="l1387"><td><a href="#l1387"><span>1387</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1388"><td><a href="#l1388"><span>1388</span></a></td><td><pre>  DeprecatedEAPI: version 8.2-r2: uses deprecated EAPI: 2
+            <tr class="" id="l1388"><td><a href="#l1388"><span>1388</span></a></td><td><pre>sys-freebsd/freebsd-ubin
 </pre></td></tr>
-            <tr class="" id="l1389"><td><a href="#l1389"><span>1389</span></a></td><td><pre>  DeprecatedEAPI: version 9.1-r1: uses deprecated EAPI: 2
+            <tr class="" id="l1389"><td><a href="#l1389"><span>1389</span></a></td><td><pre>  DeprecatedEAPI: version 8.2-r1: uses deprecated EAPI: 2
 </pre></td></tr>
             <tr class="" id="l1390"><td><a href="#l1390"><span>1390</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1391"><td><a href="#l1391"><span>1391</span></a></td><td><pre>sys-freebsd/virtio-kmod
+            <tr class="" id="l1391"><td><a href="#l1391"><span>1391</span></a></td><td><pre>sys-freebsd/freebsd-usbin
 </pre></td></tr>
-            <tr class="" id="l1392"><td><a href="#l1392"><span>1392</span></a></td><td><pre>  MissingChksum: version 0.228301-r1: "virtio-0.228301.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+            <tr class="" id="l1392"><td><a href="#l1392"><span>1392</span></a></td><td><pre>  DeprecatedEAPI: version 8.2-r2: uses deprecated EAPI: 2
 </pre></td></tr>
-            <tr class="" id="l1393"><td><a href="#l1393"><span>1393</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
+            <tr class="" id="l1393"><td><a href="#l1393"><span>1393</span></a></td><td><pre>  DeprecatedEAPI: version 9.1-r1: uses deprecated EAPI: 2
 </pre></td></tr>
-            <tr class="" id="l1394"><td><a href="#l1394"><span>1394</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+            <tr class="" id="l1394"><td><a href="#l1394"><span>1394</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1395"><td><a href="#l1395"><span>1395</span></a></td><td><pre>               : refetch
+            <tr class="" id="l1395"><td><a href="#l1395"><span>1395</span></a></td><td><pre>sys-freebsd/virtio-kmod
 </pre></td></tr>
-            <tr class="" id="l1396"><td><a href="#l1396"><span>1396</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
+            <tr class="" id="l1396"><td><a href="#l1396"><span>1396</span></a></td><td><pre>  MissingChksum: version 0.228301-r1: "virtio-0.228301.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l1397"><td><a href="#l1397"><span>1397</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+            <tr class="" id="l1397"><td><a href="#l1397"><span>1397</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
 </pre></td></tr>
-            <tr class="" id="l1398"><td><a href="#l1398"><span>1398</span></a></td><td><pre>               : refetch
+            <tr class="" id="l1398"><td><a href="#l1398"><span>1398</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
 </pre></td></tr>
-            <tr class="" id="l1399"><td><a href="#l1399"><span>1399</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
+            <tr class="" id="l1399"><td><a href="#l1399"><span>1399</span></a></td><td><pre>               : refetch
 </pre></td></tr>
-            <tr class="" id="l1400"><td><a href="#l1400"><span>1400</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+            <tr class="" id="l1400"><td><a href="#l1400"><span>1400</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
 </pre></td></tr>
-            <tr class="" id="l1401"><td><a href="#l1401"><span>1401</span></a></td><td><pre>               : refetch
+            <tr class="" id="l1401"><td><a href="#l1401"><span>1401</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
 </pre></td></tr>
-            <tr class="" id="l1402"><td><a href="#l1402"><span>1402</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
+            <tr class="" id="l1402"><td><a href="#l1402"><span>1402</span></a></td><td><pre>               : refetch
 </pre></td></tr>
-            <tr class="" id="l1403"><td><a href="#l1403"><span>1403</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+            <tr class="" id="l1403"><td><a href="#l1403"><span>1403</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
 </pre></td></tr>
-            <tr class="" id="l1404"><td><a href="#l1404"><span>1404</span></a></td><td><pre>               : refetch
+            <tr class="" id="l1404"><td><a href="#l1404"><span>1404</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+</pre></td></tr>
+            <tr class="" id="l1405"><td><a href="#l1405"><span>1405</span></a></td><td><pre>               : refetch
+</pre></td></tr>
+            <tr class="" id="l1406"><td><a href="#l1406"><span>1406</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
+</pre></td></tr>
+            <tr class="" id="l1407"><td><a href="#l1407"><span>1407</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+</pre></td></tr>
+            <tr class="" id="l1408"><td><a href="#l1408"><span>1408</span></a></td><td><pre>               : refetch
 </pre></td></tr>
 
         </table>
 
-        <address>Generated based on results from 2015-09-11 14:38:10 UTC</address>
+        <address>Generated based on results from 2015-09-11 14:51:09 UTC</address>
     </body>
 </html>
