@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 3 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-haskell/*' 'app-misc/*' 'sys-libs/*' 'net-wireless/*' 'sys-block/*' 'dev-cpp/*' 'net-fs/*' 'app-accessibility/*' 'kde-plasma/*' 'net-news/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-haskell/*' 'app-misc/*' 'sys-libs/*' 'app-office/*' 'sys-block/*' 'dev-cpp/*' 'net-dialup/*' 'app-pda/*' 'kde-plasma/*' 'net-news/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -849,132 +849,62 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-net-wireless/adm8211
-  DeprecatedEAPI: version 20060111: uses deprecated EAPI: 0
-  MissingChksum: version 20060111: "adm8211-20060111.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-office/eqe
+  DeprecatedEAPI: version 1.3.0: uses deprecated EAPI: 0
 
-net-wireless/airsnort
-  DeprecatedEAPI: version 0.2.7e: uses deprecated EAPI: 0
-  MissingChksum: version 0.2.7e: "airsnort-0.2.7e.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-office/gtimelog
+  DeprecatedEclass: version 0.8.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-net-wireless/ap-utils
-  DeprecatedEAPI: version 1.4: uses deprecated EAPI: 0
-  MissingChksum: version 1.4: "ap-utils-1.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-office/lyx
+  NonExistentDeps: version 1.6.10: depset rdepends: nonexistent atoms [ <dev-vcs/subversion-1.7.0 ]
+  DeprecatedEAPI: version 1.6.10: uses deprecated EAPI: 2
+  DeprecatedEclass: version 1.6.10: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 2.0.8.1: depset rdepends: nonexistent atoms [ <dev-vcs/subversion-1.7.0 ]
 
-net-wireless/b43-fwcutter
-  DeprecatedEAPI: version 018: uses deprecated EAPI: 0
+app-office/ooextras
+  DeprecatedEAPI: version 20060909: uses deprecated EAPI: 0
 
-net-wireless/bcm43xx-fwcutter
-  DeprecatedEAPI: version 005: uses deprecated EAPI: 0
-  MetadataError: version 005: attr(fetchables): error- Metadata Exception: pkg ebuild src: net-wireless/bcm43xx-fwcutter-005, attr fetchables
-error: mirror://berlios/bcm43xx/bcm43xx-fwcutter-005.tar.bz2 is unparseable: uri mirror://berlios/bcm43xx/bcm43xx-fwcutter-005.tar.bz2 isn't a known mirror tier
-flagged token- mirror://berlios/bcm43xx/bcm43xx-fwcutter-005.tar.bz2
-  DeprecatedEAPI: version 006: uses deprecated EAPI: 0
-  MetadataError: version 006: attr(fetchables): error- Metadata Exception: pkg ebuild src: net-wireless/bcm43xx-fwcutter-006, attr fetchables
-error: mirror://berlios/bcm43xx/bcm43xx-fwcutter-006.tar.bz2 is unparseable: uri mirror://berlios/bcm43xx/bcm43xx-fwcutter-006.tar.bz2 isn't a known mirror tier
-flagged token- mirror://berlios/bcm43xx/bcm43xx-fwcutter-006.tar.bz2
+app-office/openerp
+  DeprecatedEAPI: version 6.1.1-r1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 6.1.1-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 7.0.20130219-r5: uses deprecated EAPI: 3
+  DeprecatedEclass: version 7.0.20130219-r5: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DroppedKeywordWarning: version 8.0.20140125: keywords dropped: amd64, x86
 
-net-wireless/blueman
-  DeprecatedEclass: version 1.23-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DroppedKeywordWarning: version 2.0: keywords dropped: ppc
+app-office/qchartdiary
+  DeprecatedEAPI: version 0.6.4.1-r2: uses deprecated EAPI: 2
 
-net-wireless/bss
-  DeprecatedEAPI: version 0.8: uses deprecated EAPI: 2
-  MissingChksum: version 0.8: "bss-0.8.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+app-office/rubrica
+  MetadataError: version 2.1.6-r1: attr(fetchables): error- Metadata Exception: pkg ebuild src: app-office/rubrica-2.1.6-r1, attr fetchables
+error: mirror://berlios/rubrica/rubrica2-2.1.6.tar.bz2 mirror://gentoo/rubrica-2.1.6-hu.po.bz2 is unparseable
+flagged token- uri mirror://berlios/rubrica/rubrica2-2.1.6.tar.bz2 isn't a known mirror tier
 
-net-wireless/chillispot
-  DeprecatedEAPI: version 1.1.0: uses deprecated EAPI: 0
+app-office/scribus
+  DroppedKeywordWarning: version 1.5.0-r1: keywords dropped: hppa, ppc, ppc64, sparc
 
-net-wireless/cpyrit-cuda
-  NonExistentDeps: version 0.4.0: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
-  NonExistentDeps: version 0.4.0: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
-  DeprecatedEclass: version 0.4.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+app-office/skrooge
+  DroppedKeywordWarning: version 2.0.0: keywords dropped: x86
 
-net-wireless/cpyrit-opencl
-  NonExistentDeps: version 0.4.0: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
-  NonExistentDeps: version 0.4.0: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
-  DeprecatedEclass: version 0.4.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+app-office/taskcoach
+  DeprecatedEAPI: version 1.3.18: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.3.18: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.3.27: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.3.27: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.3.29: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.3.29: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.3.32: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.3.32: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-net-wireless/crda
-  DeprecatedEclass: version 1.1.2-r3: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEclass: version 1.1.2-r4: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEclass: version 1.1.3: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+app-office/tedia2sql
+  DeprecatedEAPI: version 1.2.12: uses deprecated EAPI: 0
 
-net-wireless/gobi_loader
-  DeprecatedEAPI: version 0.7-r2: uses deprecated EAPI: 2
-
-net-wireless/gr-iqbal
-  DeprecatedEclass: version 0.36.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-
-net-wireless/hackrf-tools
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-net-wireless/irda-utils
-  DeprecatedEAPI: version 0.9.18-r3: uses deprecated EAPI: 0
-
-net-wireless/kismet
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-net-wireless/madwifi-ng
-  DeprecatedEAPI: version 0.9.3.3: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.9.4: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.9.4-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.9.4.4119.20100201: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.9.4.4133.20100621: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.9.4.4165.20110816: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.9.4.4180.20120502: uses deprecated EAPI: 2
-  MissingChksum: version 0.9.3.3: "madwifi-0.9.3.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 0.9.4: "madwifi-0.9.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 0.9.4.4119.20100201: "madwifi-0.9.4-r4119-20100201.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 0.9.4.4133.20100621: "madwifi-0.9.4-r4133-20100621.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 0.9.4.4165.20110816: "madwifi-0.9.4-r4165-20110816.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 0.9.4.4180.20120502: "madwifi-0.9.4-r4180-20120502.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-net-wireless/madwifi-ng-tools
-  DeprecatedEAPI: version 0.9.3.3: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.9.4: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.9.4.4119.20100201: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.9.4.4133.20100621: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.9.4.4165.20110816: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.9.4.4180.20120502: uses deprecated EAPI: 2
-  MissingChksum: version 0.9.3.3: "madwifi-0.9.3.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 0.9.4: "madwifi-0.9.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 0.9.4.4119.20100201: "madwifi-0.9.4-r4119-20100201.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 0.9.4.4133.20100621: "madwifi-0.9.4-r4133-20100621.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-net-wireless/openbsc
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-net-wireless/openggsn
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-net-wireless/orinoco-fwutils
-  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.3: uses deprecated EAPI: 0
-  MissingChksum: version 0.1: "orinoco-fwutils-0.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-net-wireless/orinoco-usb
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 0
-
-net-wireless/osmobts
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-net-wireless/osmocom-bb
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-net-wireless/python-wifi
-  DeprecatedEAPI: version 0.5.0-r1: uses deprecated EAPI: 3
-  DeprecatedEclass: version 0.5.0-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  MetadataError: version 0.5.0-r1: attr(fetchables): error- Metadata Exception: pkg ebuild src: net-wireless/python-wifi-0.5.0-r1, attr fetchables
-error: mirror://berlios/pythonwifi/python-wifi-0.5.0.tar.bz2 is unparseable
-flagged token- uri mirror://berlios/pythonwifi/python-wifi-0.5.0.tar.bz2 isn't a known mirror tier
-
-net-wireless/rfswitch
-  DeprecatedEAPI: version 1.3: uses deprecated EAPI: 0
-
-net-wireless/rtl8180
-  DeprecatedEAPI: version 0.22_pre20050528: uses deprecated EAPI: 0
-  MissingChksum: version 0.22_pre20050528: "rtl8180-0.22_pre20050528.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-office/unoconv
+  DeprecatedEAPI: version 0.6: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.6: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.6.20131229: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.6.20131229: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 99999999: uses deprecated EAPI: 3
+  DeprecatedEclass: version 99999999: uses deprecated eclass(es): [ git-2 (migrate to git-r3), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
@@ -1214,20 +1144,111 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-net-fs/davfs2
-  DeprecatedEAPI: version 1.4.5-r1: uses deprecated EAPI: 2
+net-dialup/capidivert
+  DeprecatedEAPI: version 0.0.2: uses deprecated EAPI: 0
 
-net-fs/libnfs
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DroppedKeywordWarning: version 1.9.7: keywords dropped: alpha
+net-dialup/capifwd
+  DeprecatedEAPI: version 0.6.3-r1: uses deprecated EAPI: 0
+  MissingChksum: version 0.6.3-r1: "capifwd-0.6.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-fs/samba
-  DroppedKeywordWarning: version 3.6.25: keywords dropped: s390, sh
-  DroppedKeywordWarning: version 4.2.4-r1: keywords dropped: arm64, hppa
-  DroppedKeywordWarning: version 4.0.26-r1: keywords dropped: alpha, arm, ia64, mips, ppc, ppc64, sparc
+net-dialup/cistronradius
+  MissingChksum: version 1.6.8-r1: "radiusd-cistron-1.6.8.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-fs/wdfs
-  DeprecatedEAPI: version 1.4.2: uses deprecated EAPI: 0
+net-dialup/dgcmodem
+  DeprecatedEAPI: version 1.10: uses deprecated EAPI: 0
+  MissingChksum: version 1.10: "dgcmodem-1.10.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+net-dialup/dial
+  DeprecatedEAPI: version 1.2-r1: uses deprecated EAPI: 2
+  MissingChksum: version 1.2-r1: "dial-1.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+net-dialup/diald
+  DeprecatedEAPI: version 1.0-r2: uses deprecated EAPI: 0
+  MissingChksum: version 1.0-r2: "diald-1.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+net-dialup/drdsl
+  DeprecatedEAPI: version 1.2.0: uses deprecated EAPI: 0
+  MissingChksum: version 1.2.0: "drdsl-1.0-1.i586.rpm" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 1.2.0: "drdsl-1.0-1.x86_64.rpm" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+net-dialup/dwun
+  DeprecatedEAPI: version 0.96e-r2: uses deprecated EAPI: 2
+
+net-dialup/freeradius
+  DroppedKeywordWarning: version 3.0.3: keywords dropped: amd64, ppc, ppc64, sparc, x86
+
+net-dialup/freeradius-client
+  DeprecatedEAPI: version 1.1.6: uses deprecated EAPI: 2
+  MissingChksum: version 1.1.6: "freeradius-client-1.1.6.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+net-dialup/globespan-adsl
+  DeprecatedEAPI: version 0.11-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.12: uses deprecated EAPI: 0
+  MissingChksum: version 0.11-r1: "eciadsl-usermode-0.11.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.12: "eciadsl-usermode-0.12.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+net-dialup/hcfpcimodem
+  DeprecatedEAPI: version 1.20: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.21: uses deprecated EAPI: 2
+
+net-dialup/intel-536ep
+  DeprecatedEAPI: version 4.71: uses deprecated EAPI: 0
+  MissingChksum: version 4.71: "intel-536ep-4.71.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+net-dialup/itund
+  DeprecatedEAPI: version 0.3.1: uses deprecated EAPI: 0
+  MissingChksum: version 0.3.1: "itund-0.3.1.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+net-dialup/linux-atm
+  DeprecatedEAPI: version 2.5.0: uses deprecated EAPI: 0
+
+net-dialup/lrzsz
+  DeprecatedEAPI: version 0.12.20-r3: uses deprecated EAPI: 2
+
+net-dialup/mingetty
+  DeprecatedEAPI: version 1.08: uses deprecated EAPI: 0
+  MissingChksum: version 1.08: "mingetty-1.08.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+net-dialup/mwavem
+  DeprecatedEAPI: version 2.0-r1: uses deprecated EAPI: 2
+
+net-dialup/neocon
+  MissingChksum: version 20110228: "neocon-20110228.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+net-dialup/ppp
+  DeprecatedEAPI: version 2.4.4-r25: uses deprecated EAPI: 2
+
+net-dialup/pppconfig
+  DeprecatedEAPI: version 2.3.17-r1: uses deprecated EAPI: 0
+
+net-dialup/qtwvdialer
+  DeprecatedEAPI: version 0.4.4_p20091228: uses deprecated EAPI: 2
+  MissingChksum: version 0.4.4_p20091228: "qtwvdialer-0.4.4_p20091228.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+net-dialup/radiusclient
+  DeprecatedEAPI: version 0.3.2: uses deprecated EAPI: 0
+
+net-dialup/rp-pppoe
+  DeprecatedEAPI: version 3.8-r2: uses deprecated EAPI: 0
+
+net-dialup/sercd
+  MissingChksum: version 3.0.0-r1: "sercd-3.0.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+net-dialup/speedtouch-usb
+  DeprecatedEAPI: version 3.0.1.2-r3: uses deprecated EAPI: 0
+  MissingChksum: version 3.0.1.2-r3: "SpeedTouch330_firmware_3012.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+net-dialup/ueagle-atm
+  DeprecatedEAPI: version 1.1-r3: uses deprecated EAPI: 2
+  MissingChksum: version 1.1-r3: "ueagle-data-src-1.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+net-dialup/ueagle4-atm
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 2
+  MissingChksum: version 1.0: "ueagle4-data-1.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+net-dialup/wvdial
+  DeprecatedEAPI: version 1.61: uses deprecated EAPI: 3
+  MissingChksum: version 1.61: "wvdial-1.61.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
@@ -1235,59 +1256,96 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-app-accessibility/SphinxTrain
-  DroppedKeywordWarning: version 1.0.8: keywords dropped: ppc
+app-pda/iripdb
+  DeprecatedEAPI: version 0.1.3b: uses deprecated EAPI: 0
 
-app-accessibility/espeakup
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+app-pda/jpilot
+  DeprecatedEAPI: version 1.8.0: uses deprecated EAPI: 2
 
-app-accessibility/festival
-  DeprecatedEAPI: version 2.1-r1: uses deprecated EAPI: 2
+app-pda/jpilot-backup
+  DeprecatedEAPI: version 0.60: uses deprecated EAPI: 2
 
-app-accessibility/festival-fi
-  DeprecatedEAPI: version 20041119: uses deprecated EAPI: 2
+app-pda/jpilot-mail
+  DeprecatedEAPI: version 0.1.7: uses deprecated EAPI: 2
 
-app-accessibility/festival-freebsoft-utils
-  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 0
+app-pda/jpilot-plucker
+  DeprecatedEAPI: version 0.02: uses deprecated EAPI: 2
 
-app-accessibility/festival-hts
-  DeprecatedEAPI: version 2.1: uses deprecated EAPI: 2
+app-pda/jpilot-syncmal
+  DeprecatedEAPI: version 0.81: uses deprecated EAPI: 2
 
-app-accessibility/festival-ru
-  DeprecatedEAPI: version 0.5: uses deprecated EAPI: 2
+app-pda/libopensync
+  DeprecatedEAPI: version 0.22: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.22-r1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.22-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.36-r2: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.36-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.39-r1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.39-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-app-accessibility/freetts
-  DeprecatedEAPI: version 1.2.1-r2: uses deprecated EAPI: 0
+app-pda/libopensync-plugin-file
+  DeprecatedEAPI: version 0.22: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 0.36: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 0.39: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
 
-app-accessibility/mbrola
-  DeprecatedEAPI: version 3.0.1h-r6: uses deprecated EAPI: 0
-
-app-accessibility/nfbtrans
-  DeprecatedEAPI: version 7.74: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 7.74-r1: uses deprecated EAPI: 3
-
-app-accessibility/pidgin-festival
-  DeprecatedEAPI: version 2.4: uses deprecated EAPI: 2
-
-app-accessibility/sound-icons
-  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 0
-
-app-accessibility/speakup
-  DeprecatedEAPI: version 3.1.6_p201011120508: uses deprecated EAPI: 2
+app-pda/libopensync-plugin-gnokii
+  DeprecatedEAPI: version 0.22: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.36: uses deprecated EAPI: 2
   DeprecatedEAPI: version 9999: uses deprecated EAPI: 2
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-app-accessibility/speechd-up
-  DeprecatedEAPI: version 0.4-r3: uses deprecated EAPI: 0
+app-pda/libopensync-plugin-gpe
+  DeprecatedEAPI: version 0.22: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.36: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 2
 
-app-accessibility/sphinx2
-  DeprecatedEAPI: version 0.6: uses deprecated EAPI: 2
+app-pda/libopensync-plugin-moto
+  NonExistentDeps: version 0.22: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 0.22: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEAPI: version 0.22: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.22: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-app-accessibility/sphinx3
-  DeprecatedEAPI: version 0.6.3: uses deprecated EAPI: 0
+app-pda/libopensync-plugin-palm
+  DeprecatedEAPI: version 0.22: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
 
-app-accessibility/yasr
-  DeprecatedEAPI: version 0.6.9-r1: uses deprecated EAPI: 2
+app-pda/libopensync-plugin-python
+  NonExistentDeps: version 0.22: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  NonExistentDeps: version 0.22: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  DeprecatedEAPI: version 0.22: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.22: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 9999: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  NonExistentDeps: version 9999: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+app-pda/libopensync-plugin-sunbird
+  DeprecatedEAPI: version 0.22: uses deprecated EAPI: 3
+
+app-pda/libopensync-plugin-vformat
+  DeprecatedEAPI: version 0.39: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
+
+app-pda/msynctool
+  DeprecatedEAPI: version 0.22: uses deprecated EAPI: 3
+
+app-pda/osynctool
+  DeprecatedEAPI: version 0.39: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
+
+app-pda/p3nfs
+  DeprecatedEAPI: version 5.19-r2: uses deprecated EAPI: 2
+
+app-pda/pilot-link
+  SizeViolation: "files/pilot-link-0.12.5-perl514.patch" exceeds 20k in size; 22730 bytes total
+
+app-pda/synce-core
+  DeprecatedEclass: version 0.16-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+app-pda/synce-sync-engine
+  DeprecatedEclass: version 0.15.1-r3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch

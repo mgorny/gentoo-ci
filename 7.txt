@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 7 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'media-libs/*' 'dev-lang/*' 'app-emacs/*' 'x11-themes/*' 'net-dns/*' 'sys-process/*' 'dev-tcltk/*' 'net-ftp/*' 'mail-mta/*' 'net-voip/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'media-libs/*' 'dev-lang/*' 'app-emacs/*' 'x11-themes/*' 'net-dns/*' 'sys-process/*' 'dev-tcltk/*' 'lxqt-base/*' 'mail-mta/*' 'net-voip/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1662,37 +1662,53 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-net-ftp/bareftp
-  DeprecatedEclass: version 0.3.9: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DeprecatedEclass: version 0.3.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  MissingChksum: version 0.3.9: "bareftp-0.3.9.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+lxqt-base/liblxqt
+  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
 
-net-ftp/ftp
-  DeprecatedEAPI: version 0.17-r7: uses deprecated EAPI: 0
+lxqt-base/liblxqt-mount
+  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
 
-net-ftp/ftpbase
-  DeprecatedEAPI: version 0.01-r2: uses deprecated EAPI: 0
+lxqt-base/libsysstat
+  DroppedKeywordWarning: version 0.2.0: keywords dropped: arm
 
-net-ftp/netkit-ftpd
-  DeprecatedEAPI: version 0.17-r8: uses deprecated EAPI: 0
+lxqt-base/lxqt-about
+  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
 
-net-ftp/oftpd
-  DeprecatedEAPI: version 0.3.7-r7: uses deprecated EAPI: 2
+lxqt-base/lxqt-common
+  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
 
-net-ftp/oneclickftp
-  DeprecatedEAPI: version 0.5.1: uses deprecated EAPI: 2
-  MissingChksum: version 0.5.1: "oneclickftp-0.5.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+lxqt-base/lxqt-config
+  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
 
-net-ftp/scythia
-  DeprecatedEAPI: version 0.9.3_p2: uses deprecated EAPI: 3
-  MissingChksum: version 0.9.3_p2: "scythia_0.9.3-2-src.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+lxqt-base/lxqt-globalkeys
+  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
 
-net-ftp/tlswrap
-  DeprecatedEAPI: version 1.04: uses deprecated EAPI: 0
-  MissingChksum: version 1.04: "tlswrap-1.04.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+lxqt-base/lxqt-meta
+  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
 
-net-ftp/tnftp
-  DeprecatedEAPI: version 20100108: uses deprecated EAPI: 2
+lxqt-base/lxqt-notificationd
+  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
+
+lxqt-base/lxqt-openssh-askpass
+  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
+
+lxqt-base/lxqt-panel
+  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
+
+lxqt-base/lxqt-policykit
+  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
+
+lxqt-base/lxqt-powermanagement
+  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
+
+lxqt-base/lxqt-qtplugin
+  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
+
+lxqt-base/lxqt-runner
+  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
+
+lxqt-base/lxqt-session
+  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch

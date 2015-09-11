@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 1 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-python/*' 'x11-misc/*' 'x11-plugins/*' 'app-arch/*' 'games-arcade/*' 'net-irc/*' 'games-emulation/*' 'dev-dotnet/*' 'sci-astronomy/*' 'dev-ada/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-python/*' 'x11-misc/*' 'x11-plugins/*' 'app-arch/*' 'games-arcade/*' 'net-irc/*' 'games-emulation/*' 'dev-dotnet/*' 'sci-astronomy/*' 'sci-misc/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -2205,57 +2205,32 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-dev-ada/adadoc
-  DeprecatedEAPI: version 2.1: uses deprecated EAPI: 0
+sci-misc/flashdot
+  DeprecatedEAPI: version 1.1.4: uses deprecated EAPI: 2
+  MissingChksum: version 1.1.4: "flashdot-1.1.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-dev-ada/adasockets
-  DeprecatedEAPI: version 1.8.4.7: uses deprecated EAPI: 0
+sci-misc/gato
+  DeprecatedEclass: version 1.1.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-dev-ada/asis-gcc
-  DeprecatedEAPI: version 3.4.6: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.1.2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.1.2-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.2.2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.3.0_pre132166: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.3.1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.3.1-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.4: uses deprecated EAPI: 0
+sci-misc/gt-itm
+  DeprecatedEAPI: version 19961004-r1: uses deprecated EAPI: 0
 
-dev-ada/asis-gpl
-  DeprecatedEAPI: version 3.4.6.2006: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.1.3.2007-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.1.3.2007-r2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.1.3.2008: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.1.3.2008-r1: uses deprecated EAPI: 0
+sci-misc/lttoolbox
+  MissingChksum: version 3.1.0: "lttoolbox-3.1.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 3.2.0: "lttoolbox-3.2.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-dev-ada/aunit
-  DeprecatedEAPI: version 1.05: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.01: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.03: uses deprecated EAPI: 0
+sci-misc/nco
+  DeprecatedEAPI: version 3.9.9: uses deprecated EAPI: 2
+  MissingChksum: version 3.9.9: "nco-3.9.9.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-dev-ada/booch_components
-  DeprecatedEAPI: version 20051222-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 20070420: uses deprecated EAPI: 0
+sci-misc/netlogo-bin
+  DeprecatedEAPI: version 3.0.2: uses deprecated EAPI: 0
+  MissingChksum: version 3.0.2: "netlogo-3.0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-dev-ada/cbind
-  DeprecatedEAPI: version 6.0.1: uses deprecated EAPI: 0
+sci-misc/repsnapper
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-dev-ada/charles
-  DeprecatedEAPI: version 20050913: uses deprecated EAPI: 0
-
-dev-ada/florist
-  DeprecatedEAPI: version 2007.0: uses deprecated EAPI: 0
-
-dev-ada/glade
-  DeprecatedEAPI: version 2006.0: uses deprecated EAPI: 0
-
-dev-ada/gtkada
-  DeprecatedEAPI: version 2.10.0: uses deprecated EAPI: 0
-
-dev-ada/polyorb
-  DeprecatedEAPI: version 2.1.0: uses deprecated EAPI: 0
-
-dev-ada/xmlada
-  DeprecatedEAPI: version 1.0-r4: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.2.0: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.2.0-r1: uses deprecated EAPI: 0
+sci-misc/vitables
+  NonExistentDeps: version 2.1: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  NonExistentDeps: version 2.1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 2.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
