@@ -251,10 +251,10 @@ net-misc/goog-sitemapgen
   DeprecatedEclass: version 1.5: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 net-misc/googlecl
-  NonExistentDeps: version 0.9.14: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
-  NonExistentDeps: version 0.9.14: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
   DeprecatedEAPI: version 0.9.14: uses deprecated EAPI: 3
   DeprecatedEclass: version 0.9.14: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 0.9.14: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  NonExistentDeps: version 0.9.14: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
 
 net-misc/gsasl
   WhitespaceFound: version 1.8.0-r1: ebuild has leading whitespace on line 29
@@ -432,8 +432,8 @@ net-misc/netkit-bootpd
   MissingChksum: version 2.4-r1: "bootpd-2.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 net-misc/netkit-rsh
-  NonExistentDeps: version 0.17-r9: depset depends: nonexistent atoms [ app-arch/lzma-utils ]
   DeprecatedEAPI: version 0.17-r9: uses deprecated EAPI: 0
+  NonExistentDeps: version 0.17-r9: depset depends: nonexistent atoms [ app-arch/lzma-utils ]
   NonExistentDeps: version 0.17-r10: depset depends: nonexistent atoms [ app-arch/lzma-utils ]
 
 net-misc/netkit-rusers
@@ -562,10 +562,12 @@ net-misc/secpanel
 
 net-misc/sendfile
   DeprecatedEAPI: version 2.1b-r1: uses deprecated EAPI: 0
-  MissingChksum: version 2.1b-r1: "sendfile-2.1b.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 net-misc/ser
   WrongIndentFound: version 0.9.7-r1: ebuild has whitespace in indentation on line 22
+
+net-misc/sendfile
+  MissingChksum: version 2.1b-r1: "sendfile-2.1b.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 net-misc/shigofumi
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
@@ -692,8 +694,8 @@ net-misc/yaydl
 
 net-misc/youtube-viewer
   NonExistentDeps: version 3.1.1: depset rdepends: nonexistent atoms [ media-video/mplayer2 ]
-  NonExistentDeps: version 9999: depset rdepends: nonexistent atoms [ media-video/mplayer2 ]
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  NonExistentDeps: version 9999: depset rdepends: nonexistent atoms [ media-video/mplayer2 ]
 
 net-misc/zssh
   WhitespaceFound: version 1.5c-r1: ebuild has leading whitespace on line 38
@@ -1007,19 +1009,19 @@ sci-biology/goby
   MissingChksum: version 1.9.8.1: "goby_1.9.8.1-deps.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 sci-biology/goby-cpp
-  SizeViolation: "files/Alignments.proto" exceeds 20k in size; 26192 bytes total
   MissingChksum: version 1.9.7.3: "goby_1.9.7.3-cpp.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  SizeViolation: "files/Alignments.proto" exceeds 20k in size; 26192 bytes total
 
 sci-biology/hmmer
+  DeprecatedEAPI: version 2.3.2-r1: uses deprecated EAPI: 0
   NonExistentDeps: version 2.3.2-r1: depset depends: nonexistent atoms [ sys-cluster/pvm ]
   NonExistentDeps: version 2.3.2-r1: depset rdepends: nonexistent atoms [ sys-cluster/pvm ]
-  DeprecatedEAPI: version 2.3.2-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.3.2-r2: uses deprecated EAPI: 0
   NonExistentDeps: version 2.3.2-r2: depset depends: nonexistent atoms [ sys-cluster/pvm ]
   NonExistentDeps: version 2.3.2-r2: depset rdepends: nonexistent atoms [ sys-cluster/pvm ]
-  DeprecatedEAPI: version 2.3.2-r2: uses deprecated EAPI: 0
-  DroppedKeywordWarning: version 3.0: keywords dropped: alpha, ia64, ppc, ppc64, sparc
   MissingChksum: version 2.3.2-r1: "hmmer-2.3.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 3.0: "hmmer-3.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  DroppedKeywordWarning: version 3.0: keywords dropped: alpha, ia64, ppc, ppc64, sparc
 
 sci-biology/iedera
   DeprecatedEAPI: version 1.04: uses deprecated EAPI: 2
@@ -1132,10 +1134,10 @@ sci-biology/prosite
   MissingChksum: version 20.72: "prosite-20.72.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 sci-biology/psipred
-  NonExistentDeps: version 3.1: depset rdepends: nonexistent atoms [ sci-biology/ncbi-tools++ ]
   DeprecatedEAPI: version 3.1: uses deprecated EAPI: 3
-  NonExistentDeps: version 3.2: depset rdepends: nonexistent atoms [ sci-biology/ncbi-tools++ ]
+  NonExistentDeps: version 3.1: depset rdepends: nonexistent atoms [ sci-biology/ncbi-tools++ ]
   DeprecatedEAPI: version 3.2: uses deprecated EAPI: 3
+  NonExistentDeps: version 3.2: depset rdepends: nonexistent atoms [ sci-biology/ncbi-tools++ ]
   NonExistentDeps: version 3.2.1: depset rdepends: nonexistent atoms [ sci-biology/ncbi-tools++ ]
   NonExistentDeps: version 3.3: depset rdepends: nonexistent atoms [ sci-biology/ncbi-tools++ ]
   NonExistentDeps: version 3.4: depset rdepends: nonexistent atoms [ sci-biology/ncbi-tools++ ]
@@ -1211,9 +1213,9 @@ app-editors/cooledit
   DeprecatedEAPI: version 3.17.17-r1: uses deprecated EAPI: 0
 
 app-editors/editra
+  DeprecatedEclass: version 0.7.20: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 0.7.20: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
   NonExistentDeps: version 0.7.20: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
-  DeprecatedEclass: version 0.7.20: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 app-editors/gobby
   DeprecatedEAPI: version 0.4.94: uses deprecated EAPI: 2
@@ -1233,10 +1235,10 @@ app-editors/le
   DeprecatedEAPI: version 1.14.3: uses deprecated EAPI: 0
 
 app-editors/leo
-  NonExistentDeps: version 4.11: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
-  NonExistentDeps: version 4.11: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
   DeprecatedEAPI: version 4.11: uses deprecated EAPI: 3
   DeprecatedEclass: version 4.11: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 4.11: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 4.11: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
 
 app-editors/ng
   DeprecatedEAPI: version 1.5_beta1: uses deprecated EAPI: 0
@@ -1287,8 +1289,8 @@ dev-tex/csindex
   DeprecatedEAPI: version 2.11c-r1: uses deprecated EAPI: 3
 
 dev-tex/culmus-latex
-  NonExistentDeps: version 0.7: depset depends: nonexistent atoms [ <media-fonts/culmus-0.110 ]
   DeprecatedEAPI: version 0.7: uses deprecated EAPI: 2
+  NonExistentDeps: version 0.7: depset depends: nonexistent atoms [ <media-fonts/culmus-0.110 ]
 
 dev-tex/currvita
   DeprecatedEAPI: version 0.9i-r1: uses deprecated EAPI: 0
@@ -1410,10 +1412,10 @@ dev-tex/revtex
   DeprecatedEAPI: version 4.1_p2-r1: uses deprecated EAPI: 2
 
 dev-tex/rubber
-  NonExistentDeps: version 1.1_p20090819: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
-  NonExistentDeps: version 1.1_p20090819: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
   DeprecatedEAPI: version 1.1_p20090819: uses deprecated EAPI: 3
   DeprecatedEclass: version 1.1_p20090819: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 1.1_p20090819: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  NonExistentDeps: version 1.1_p20090819: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
 
 dev-tex/sketch
   DeprecatedEAPI: version 0.3.7: uses deprecated EAPI: 0

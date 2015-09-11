@@ -25,10 +25,10 @@ media-libs/alure
   MissingChksum: version 1.2: "alure-1.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-libs/aubio
-  NonExistentDeps: version 0.3.2-r2: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
-  NonExistentDeps: version 0.3.2-r2: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
   DeprecatedEAPI: version 0.3.2-r2: uses deprecated EAPI: 3
   DeprecatedEclass: version 0.3.2-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 0.3.2-r2: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 0.3.2-r2: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
 
 media-libs/avidemux-core
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
@@ -129,11 +129,13 @@ media-libs/gluon
 media-libs/gst-plugins-base
   DroppedKeywordWarning: version 0.10.36-r2: keywords dropped: arm64
 
+media-libs/gstreamer-editing-services
+  WhitespaceFound: version 1.2.1: ebuild has leading whitespace on line 51
+
 media-libs/gstreamer
   DroppedKeywordWarning: version 1.2.4-r2: keywords dropped: arm64
 
 media-libs/gstreamer-editing-services
-  WhitespaceFound: version 1.2.1: ebuild has leading whitespace on line 51
   WhitespaceFound: version 1.4.0: ebuild has leading whitespace on line 50
 
 media-libs/guilib
@@ -168,9 +170,9 @@ media-libs/libXcm
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
 media-libs/libcaca
+  DeprecatedEclass: version 0.99_beta18-r2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
   NonExistentDeps: version 0.99_beta18-r2: depset depends: nonexistent atoms [ =dev-lang/ruby-1.8* ]
   NonExistentDeps: version 0.99_beta18-r2: depset rdepends: nonexistent atoms [ =dev-lang/ruby-1.8* ]
-  DeprecatedEclass: version 0.99_beta18-r2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
 
 media-libs/libcdaudio
   DeprecatedEAPI: version 0.99.12-r1: uses deprecated EAPI: 0
@@ -370,21 +372,21 @@ media-libs/mash
   MissingChksum: version 0.2.0-r1: "mash-0.2.0.tar.xz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-libs/mesa
-  NonExistentDeps: version 7.10.3: depset depends: nonexistent atoms [ <x11-libs/libdrm-2.4.34 ]
-  NonExistentDeps: version 7.10.3: depset rdepends: nonexistent atoms [ <x11-libs/libdrm-2.4.34 ]
   DeprecatedEAPI: version 7.10.3: uses deprecated EAPI: 3
   DeprecatedEclass: version 7.10.3: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 7.10.3: depset depends: nonexistent atoms [ <x11-libs/libdrm-2.4.34 ]
+  NonExistentDeps: version 7.10.3: depset rdepends: nonexistent atoms [ <x11-libs/libdrm-2.4.34 ]
   SizeViolation: "files/mesa-10.3.7-format_utils.c.patch" exceeds 20k in size; 34839 bytes total
 
 media-libs/ming
+  DeprecatedEclass: version 0.4.4-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 0.4.4-r1: depset depends: nonexistent atoms [ dev-lang/php:5.3 ]
   NonExistentDeps: version 0.4.4-r1: depset rdepends: nonexistent atoms [ dev-lang/php:5.3 ]
-  DeprecatedEclass: version 0.4.4-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 media-libs/mlt
+  DeprecatedEclass: version 0.9.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 0.9.0: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
   NonExistentDeps: version 0.9.0: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
-  DeprecatedEclass: version 0.9.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DroppedKeywordWarning: version 0.9.8: keywords dropped: ppc, ppc64
 
 media-libs/musicbrainz
@@ -405,9 +407,9 @@ media-libs/opengl-apple
   DeprecatedEAPI: version 5: uses deprecated EAPI: 3
 
 media-libs/openimageio
+  DeprecatedEclass: version 1.1.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 1.1.1: depset depends: nonexistent atoms [ <media-libs/opencv-2.4.8 ]
   NonExistentDeps: version 1.1.1: depset rdepends: nonexistent atoms [ <media-libs/opencv-2.4.8 ]
-  DeprecatedEclass: version 1.1.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 1.1.7: depset depends: nonexistent atoms [ <media-libs/opencv-2.4.8 ]
   NonExistentDeps: version 1.1.7: depset rdepends: nonexistent atoms [ <media-libs/opencv-2.4.8 ]
   NonExistentDeps: version 1.3.5: depset depends: nonexistent atoms [ <media-libs/opencv-2.4.8 ]
@@ -426,9 +428,9 @@ media-libs/plotutils
   DeprecatedEAPI: version 2.6: uses deprecated EAPI: 3
 
 media-libs/portmidi
+  DeprecatedEclass: version 217: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 217: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
   NonExistentDeps: version 217: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
-  DeprecatedEclass: version 217: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 media-libs/pymemphis
   DeprecatedEAPI: version 0.2.1: uses deprecated EAPI: 3
@@ -472,8 +474,8 @@ media-libs/skstream
   DeprecatedEAPI: version 0.3.9: uses deprecated EAPI: 2
 
 media-libs/slv2
-  NonExistentDeps: version 0.6.6: depset depends: nonexistent atoms [ dev-lang/python:2.6 ]
   DeprecatedEclass: version 0.6.6: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 0.6.6: depset depends: nonexistent atoms [ dev-lang/python:2.6 ]
 
 media-libs/spandsp
   DeprecatedEAPI: version 0.0.6_pre12-r1: uses deprecated EAPI: 2
@@ -578,7 +580,6 @@ dev-lang/ghc
   DroppedKeywordWarning: version 7.10.2: keywords dropped: alpha, ia64, ppc, ppc64, sparc
 
 dev-lang/gnat-gcc
-  DroppedKeywordWarning: version 4.4.7: keywords dropped: ppc
   MissingChksum: version 3.4.6: "gcc-core-3.4.6.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 3.4.6: "gcc-ada-3.4.6.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 3.4.6: "gnatboot-3.4-ppc.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
@@ -591,6 +592,7 @@ dev-lang/gnat-gcc
   MissingChksum: version 4.2.3: "gcc-core-4.2.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 4.2.3: "gcc-ada-4.2.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 4.3.5: "gnatboot-4.3-sparc.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  DroppedKeywordWarning: version 4.4.7: keywords dropped: ppc
 
 dev-lang/gnat-gpl
   DeprecatedEAPI: version 3.4.5.2005: uses deprecated EAPI: 0
@@ -739,8 +741,8 @@ dev-lang/tuprolog
   DeprecatedEAPI: version 2.7.0: uses deprecated EAPI: 3
   DeprecatedEAPI: version 2.7.2: uses deprecated EAPI: 3
   DeprecatedEAPI: version 2.9.0: uses deprecated EAPI: 3
-  DroppedKeywordWarning: version 2.6.0: keywords dropped: ppc
   MissingChksum: version 2.5.0: "tuprolog-2.5.0.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  DroppedKeywordWarning: version 2.6.0: keywords dropped: ppc
 
 dev-lang/ucblogo
   DeprecatedEAPI: version 5.5: uses deprecated EAPI: 0
@@ -1503,14 +1505,14 @@ sys-process/atop
 sys-process/audit
   DeprecatedEAPI: version 1.7.18: uses deprecated EAPI: 3
   DeprecatedEclass: version 1.7.18: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  NonExistentDeps: version 2.0.5: depset depends: nonexistent atoms [ dev-libs/libprelude ]
-  NonExistentDeps: version 2.0.5: depset rdepends: nonexistent atoms [ dev-libs/libprelude ]
   DeprecatedEAPI: version 2.0.5: uses deprecated EAPI: 3
   DeprecatedEclass: version 2.0.5: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  NonExistentDeps: version 2.1.3-r1: depset depends: nonexistent atoms [ dev-libs/libprelude ]
-  NonExistentDeps: version 2.1.3-r1: depset rdepends: nonexistent atoms [ dev-libs/libprelude ]
+  NonExistentDeps: version 2.0.5: depset depends: nonexistent atoms [ dev-libs/libprelude ]
+  NonExistentDeps: version 2.0.5: depset rdepends: nonexistent atoms [ dev-libs/libprelude ]
   DeprecatedEAPI: version 2.1.3-r1: uses deprecated EAPI: 3
   DeprecatedEclass: version 2.1.3-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 2.1.3-r1: depset depends: nonexistent atoms [ dev-libs/libprelude ]
+  NonExistentDeps: version 2.1.3-r1: depset rdepends: nonexistent atoms [ dev-libs/libprelude ]
   NonExistentDeps: version 2.2.2-r2: depset depends: nonexistent atoms [ dev-libs/libprelude ]
   NonExistentDeps: version 2.2.2-r2: depset rdepends: nonexistent atoms [ dev-libs/libprelude ]
   NonExistentDeps: version 2.2.2-r3: depset depends: nonexistent atoms [ dev-libs/libprelude ]
@@ -1523,6 +1525,12 @@ sys-process/bcron
 
 sys-process/cronbase
   DeprecatedEAPI: version 0.3.3: uses deprecated EAPI: 0
+
+sys-process/cronie
+  BadInsIntoDir: version 1.5.0: ebuild uses insinto /etc/conf.d on line 52
+  BadInsIntoDir: version 1.5.0: ebuild uses insinto /etc/cron.hourly on line 75
+
+sys-process/cronbase
   ExecutableFile: "files/run-crons-0.3.3" has unnecessary executable bit
   ExecutableFile: "files/run-crons-0.3.4" has unnecessary executable bit
   ExecutableFile: "files/run-crons-0.3.5" has unnecessary executable bit
@@ -1530,8 +1538,6 @@ sys-process/cronbase
   ExecutableFile: "files/run-crons-0.3.7" has unnecessary executable bit
 
 sys-process/cronie
-  BadInsIntoDir: version 1.5.0: ebuild uses insinto /etc/conf.d on line 52
-  BadInsIntoDir: version 1.5.0: ebuild uses insinto /etc/cron.hourly on line 75
   BadInsIntoDir: version 1.5.0-r1: ebuild uses insinto /etc/conf.d on line 52
   BadInsIntoDir: version 1.5.0-r1: ebuild uses insinto /etc/cron.hourly on line 75
 
