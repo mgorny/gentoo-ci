@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 0 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'sec-policy/*' 'dev-texlive/*' 'app-doc/*' 'sys-kernel/*' 'games-fps/*' 'sci-geosciences/*' 'media-tv/*' 'app-forensics/*' 'dev-games/*' 'dev-ada/*' 'app-antivirus/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'sec-policy/*' 'dev-texlive/*' 'app-doc/*' 'sys-kernel/*' 'games-fps/*' 'sci-geosciences/*' 'media-tv/*' 'dev-dotnet/*' 'dev-games/*' 'dev-ada/*' 'app-antivirus/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -745,40 +745,185 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-app-forensics/afflib
-  DeprecatedEclass: version 3.7.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+dev-dotnet/art-sharp
+  DeprecatedEAPI: version 2.24.2: uses deprecated EAPI: 2
+  DeprecatedEclass: version 2.24.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
 
-app-forensics/aide
-  DeprecatedEAPI: version 0.13.1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.13.1-r3: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.13.1-r5: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.14.2: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 0.15.1: uses deprecated EAPI: 3
+dev-dotnet/atk-sharp
+  DeprecatedEAPI: version 2.12.10: uses deprecated EAPI: 2
+  DeprecatedEclass: version 2.12.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
 
-app-forensics/chkrootkit
-  DeprecatedEAPI: version 0.48-r1: uses deprecated EAPI: 0
+dev-dotnet/dbus-sharp
+  DeprecatedEclass: version 0.7.0-r1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
 
-app-forensics/foremost
-  DeprecatedEAPI: version 0.69: uses deprecated EAPI: 0
+dev-dotnet/dbus-sharp-glib
+  DeprecatedEclass: version 0.5.0: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
 
-app-forensics/galleta
-  DeprecatedEAPI: version 20040505_p1: uses deprecated EAPI: 0
+dev-dotnet/flickrnet-bin
+  DeprecatedEAPI: version 2.2-r1: uses deprecated EAPI: 2
+  DeprecatedEclass: version 2.2-r1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
 
-app-forensics/libbfio
-  DroppedKeywordWarning: version 0.0.20130609_alpha: keywords dropped: hppa
+dev-dotnet/gconf-sharp
+  DeprecatedEAPI: version 2.24.2: uses deprecated EAPI: 2
+  DeprecatedEclass: version 2.24.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
 
-app-forensics/openscap
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+dev-dotnet/gdk-sharp
+  DeprecatedEAPI: version 2.12.10: uses deprecated EAPI: 2
+  DeprecatedEclass: version 2.12.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
 
-app-forensics/ovaldi
-  DeprecatedEAPI: version 5.9.1: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 5.10.1.2: uses deprecated EAPI: 3
+dev-dotnet/gio-sharp
+  DeprecatedEclass: version 0.3: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
 
-app-forensics/pasco
-  DeprecatedEAPI: version 20040505_p1: uses deprecated EAPI: 0
+dev-dotnet/gkeyfile-sharp
+  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 2
+  DeprecatedEclass: version 0.1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
 
-app-forensics/rifiuti
-  DeprecatedEAPI: version 20040505_p1: uses deprecated EAPI: 0
+dev-dotnet/glade-sharp
+  DeprecatedEAPI: version 2.12.10: uses deprecated EAPI: 2
+  DeprecatedEclass: version 2.12.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+
+dev-dotnet/glib-sharp
+  DeprecatedEclass: version 2.12.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+
+dev-dotnet/gnome-desktop-sharp
+  DeprecatedEAPI: version 2.26.0-r1: uses deprecated EAPI: 2
+  DeprecatedEclass: version 2.26.0-r1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+
+dev-dotnet/gnome-keyring-sharp
+  DeprecatedEAPI: version 1.0.2: uses deprecated EAPI: 2
+  DeprecatedEclass: version 1.0.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+
+dev-dotnet/gnome-sharp
+  DeprecatedEAPI: version 2.24.2: uses deprecated EAPI: 2
+  DeprecatedEclass: version 2.24.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+
+dev-dotnet/gnomevfs-sharp
+  DeprecatedEAPI: version 2.24.2: uses deprecated EAPI: 2
+  DeprecatedEclass: version 2.24.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+
+dev-dotnet/google-gdata-sharp
+  DeprecatedEAPI: version 1.4.0.2-r2: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.4.0.2-r2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+
+dev-dotnet/gsf-sharp
+  DeprecatedEAPI: version 0.8.1: uses deprecated EAPI: 0
+  DeprecatedEclass: version 0.8.1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+
+dev-dotnet/gtk-dotnet-sharp
+  DeprecatedEAPI: version 2.12.10: uses deprecated EAPI: 2
+  DeprecatedEclass: version 2.12.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+
+dev-dotnet/gtk-sharp
+  DeprecatedEAPI: version 2.12.10: uses deprecated EAPI: 2
+  DeprecatedEclass: version 2.12.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+
+dev-dotnet/gtk-sharp-beans
+  DeprecatedEAPI: version 2.14.0: uses deprecated EAPI: 2
+  DeprecatedEclass: version 2.14.0: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+
+dev-dotnet/gtk-sharp-docs
+  DeprecatedEAPI: version 2.12.10: uses deprecated EAPI: 2
+  DeprecatedEclass: version 2.12.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+
+dev-dotnet/gtk-sharp-gapi
+  DeprecatedEAPI: version 2.12.10: uses deprecated EAPI: 2
+  DeprecatedEclass: version 2.12.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+
+dev-dotnet/gtksourceview-sharp
+  DeprecatedEAPI: version 2.24.0-r10: uses deprecated EAPI: 2
+  DeprecatedEclass: version 2.24.0-r10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+
+dev-dotnet/gudev-sharp
+  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 2
+  DeprecatedEclass: version 0.1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+
+dev-dotnet/ikvm
+  DeprecatedEclass: version 0.46.0.1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEclass: version 0.46.0.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEclass: version 7.1.4532.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DroppedKeywordWarning: version 7.1.4532.2: keywords dropped: ppc
+
+dev-dotnet/ikvm-bin
+  DeprecatedEclass: version 0.46.0.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEclass: version 7.1.4532.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+
+dev-dotnet/libgdiplus
+  DeprecatedEAPI: version 2.10.9: uses deprecated EAPI: 2
+  DeprecatedEclass: version 2.10.9: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEclass: version 2.10.9-r1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEclass: version 2.10.9-r2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DroppedKeywordWarning: version 3.12: keywords dropped: arm
+
+dev-dotnet/log4net
+  DeprecatedEclass: version 1.2.11: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+
+dev-dotnet/mono-addins
+  DeprecatedEclass: version 0.6.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+
+dev-dotnet/mono-nat
+  DeprecatedEclass: version 1.1.0: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+
+dev-dotnet/mono-zeroconf
+  DeprecatedEAPI: version 0.9.0: uses deprecated EAPI: 2
+  DeprecatedEclass: version 0.9.0: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+
+dev-dotnet/monocalendar
+  DeprecatedEAPI: version 0.7.2: uses deprecated EAPI: 0
+  DeprecatedEclass: version 0.7.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+
+dev-dotnet/monotorrent
+  DeprecatedEAPI: version 0.80: uses deprecated EAPI: 2
+  DeprecatedEclass: version 0.80: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+
+dev-dotnet/nant
+  DeprecatedEclass: version 0.92: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+
+dev-dotnet/ndesk-dbus
+  DeprecatedEAPI: version 0.6.1a: uses deprecated EAPI: 0
+  DeprecatedEclass: version 0.6.1a: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+
+dev-dotnet/ndesk-dbus-glib
+  DeprecatedEAPI: version 0.4.1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.4.1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+
+dev-dotnet/nini
+  DeprecatedEAPI: version 1.1.0-r2: uses deprecated EAPI: 2
+  DeprecatedEclass: version 1.1.0-r2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+
+dev-dotnet/notify-sharp
+  DeprecatedEclass: version 0.4.0_pre20090305: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+
+dev-dotnet/nuget
+  WhitespaceFound: version 2.8.3: ebuild has trailing whitespace on line 29
+
+dev-dotnet/pango-sharp
+  DeprecatedEAPI: version 2.12.10: uses deprecated EAPI: 2
+  DeprecatedEclass: version 2.12.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+
+dev-dotnet/rsvg-sharp
+  DeprecatedEAPI: version 2.24.0-r10: uses deprecated EAPI: 2
+  DeprecatedEclass: version 2.24.0-r10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+
+dev-dotnet/taglib-sharp
+  DeprecatedEclass: version 2.0.4.0: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEclass: version 2.1.0.0: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+
+dev-dotnet/vte-sharp
+  DeprecatedEAPI: version 2.24.0-r10: uses deprecated EAPI: 2
+  DeprecatedEclass: version 2.24.0-r10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+
+dev-dotnet/webkit-sharp
+  DeprecatedEclass: version 0.3-r1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+
+dev-dotnet/wnck-sharp
+  DeprecatedEAPI: version 2.24.0-r10: uses deprecated EAPI: 2
+  DeprecatedEclass: version 2.24.0-r10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+
+dev-dotnet/xsp
+  DeprecatedEclass: version 2.10.2-r2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+
+dev-dotnet/zeitgeist-sharp
+  DeprecatedEclass: version 0.8.0.0-r1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
