@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 12 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'app-text/*' 'dev-php/*' 'kde-base/*' 'x11-wm/*' 'net-im/*' 'games-misc/*' 'dev-scheme/*' 'media-radio/*' 'www-plugins/*' 'games-mud/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'app-text/*' 'dev-php/*' 'kde-base/*' 'x11-wm/*' 'xfce-extra/*' 'games-action/*' 'dev-scheme/*' 'media-radio/*' 'www-plugins/*' 'games-mud/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -783,66 +783,26 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-net-im/ayttm
-  MissingChksum: version 0.6.3: "ayttm-0.6.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+xfce-extra/eatmonkey
+  MissingChksum: version 0.1.4: "eatmonkey-0.1.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-im/bitlbee-steam
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+xfce-extra/transd
+  MissingChksum: version 0_p20120503: "transd-0_p20120503.tar.xz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-im/centerim
-  DeprecatedEAPI: version 4.22.10: uses deprecated EAPI: 2
+xfce-extra/xfce4-gvfs-mount
+  MissingChksum: version 0.0.4: "xfce4-gvfs-mount-0.0.4-6d2684b.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-im/coccinella
-  MissingChksum: version 0.96.20: "Coccinella-0.96.20Src.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+xfce-extra/xfce4-linelight-plugin
+  MissingChksum: version 0.1.7: "xfce4-linelight-plugin_0.1.7.orig.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-im/gg-transport
-  DeprecatedEAPI: version 2.2.4: uses deprecated EAPI: 0
-  MissingChksum: version 2.2.4: "jggtrans-2.2.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+xfce-extra/xfce4-modemlights-plugin
+  MissingChksum: version 0.1.3.99: "xfce4-modemlights-plugin-0.1.3.99.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-im/jabber-base
-  DeprecatedEAPI: version 0.01: uses deprecated EAPI: 0
+xfce-extra/xfce4-taskmanager
+  DroppedKeywordWarning: version 1.1.0: keywords dropped: hppa
 
-net-im/kadu
-  DroppedKeywordWarning: version 2.1: keywords dropped: ppc
-
-net-im/librvp
-  DeprecatedEAPI: version 0.9.6: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.9.7: uses deprecated EAPI: 2
-  MissingChksum: version 0.9.6: "librvp-0.9.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 0.9.7: "librvp-0.9.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-net-im/mu-conference
-  DeprecatedEAPI: version 0.7: uses deprecated EAPI: 0
-
-net-im/psi
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-net-im/psimedia
-  MissingChksum: version 1.0.3-r3: "psimedia-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-net-im/qwit
-  DeprecatedEAPI: version 1.1_pre2: uses deprecated EAPI: 2
-
-net-im/reaim
-  MissingChksum: version 0.8-r1: "reaim-0.8.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-net-im/silc-toolkit
-  MissingChksum: version 1.1.10: "silc-toolkit-1.1.10.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-net-im/simpserver-bin
-  DeprecatedEAPI: version 2.1.0: uses deprecated EAPI: 0
-  MissingChksum: version 2.1.0: "simpserver-2.1.0-linux-x86.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-net-im/skypetab-ng
-  NonExistentDeps: version 0.5.2: depset rdepends: nonexistent atoms [ <net-im/skype-4.1 ]
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  NonExistentDeps: version 9999: depset rdepends: nonexistent atoms [ <net-im/skype-4.1 ]
-
-net-im/tkabber
-  MissingChksum: version 0.11.1-r1: "tkabber-plugins-0.11.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-net-im/ysm
-  MissingChksum: version 2.9.9.1: "ysmv7_2_9_9_1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+xfce-extra/xfce4-volumed
+  MissingChksum: version 0.1.13: "xfce4-volumed-0.1.13.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
@@ -850,35 +810,23 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-games-misc/fortune-mod-flashrider
-  DeprecatedEAPI: version 0.25: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.80: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 0.90: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 1.00: uses deprecated EAPI: 3
-  MissingChksum: version 0.25: "fortunes-prolinux-0.25.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 0.80: "fortunes-flashrider-0.80.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 0.90: "fortunes-flashrider-0.90-BB-Styles-Edition.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+games-action/descent3
+  MissingChksum: version 1.4.0b-r2: "descent3-1.4.0a-x86.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.4.0b-r2: "descent3-1.4.0b-x86.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-games-misc/fortune-mod-gentoo-dev
-  DeprecatedEAPI: version 20061115: uses deprecated EAPI: 0
-  MissingChksum: version 20061115: "gentoo-dev-20061115.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+games-action/heretic2
+  MissingChksum: version 1.06c-r1: "heretic2-1.06b-unified-x86.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.06c-r1: "heretic2-1.06c-unified-x86.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.06c-r1: "heretic2-maps-1.0.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-games-misc/fortune-mod-gentoo-ru
-  MissingChksum: version 0.25: "gentoo-ru-0.25.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 0.26: "gentoo-ru-0.26.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+games-action/shadowgrounds-bin
+  MissingChksum: version 0_beta12-r1: "ShadowgroundsBeta12.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-games-misc/fortune-mod-scriptures
-  MissingChksum: version 1.1.0: "fortune-mod-scriptures-1.1.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+games-action/shadowgrounds-survivor-bin
+  MissingChksum: version 0_beta11-r1: "SurvivorBeta11.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-games-misc/fortune-mod-sp-fortunes
-  MissingChksum: version 0.2: "SP-0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-games-misc/ggencoder
-  MissingChksum: version 0.91a: "ggencoder-0.91a.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-games-misc/xcowsay
-  DeprecatedEAPI: version 1.3: uses deprecated EAPI: 2
-  MissingChksum: version 1.3: "xcowsay-1.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+games-action/trine-bin
+  MissingChksum: version 1.08: "Trine.64.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch

@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 7 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'media-libs/*' 'dev-lang/*' 'app-emacs/*' 'x11-themes/*' 'net-dns/*' 'sys-process/*' 'dev-tcltk/*' 'lxqt-base/*' 'mail-mta/*' 'net-voip/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'media-libs/*' 'dev-lang/*' 'app-emacs/*' 'x11-themes/*' 'dev-embedded/*' 'www-servers/*' 'net-fs/*' 'lxqt-base/*' 'mail-mta/*' 'net-voip/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1415,193 +1415,150 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-net-dns/avahi
-  DroppedKeywordWarning: version 0.6.31-r7: keywords dropped: m68k
+dev-embedded/avr-libc
+  DeprecatedEAPI: version 1.6.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.6.4: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.6.8: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.7.0: uses deprecated EAPI: 2
 
-net-dns/bind-dns-keygen
-  DeprecatedEAPI: version 9.3.2.39-r1: uses deprecated EAPI: 0
-
-net-dns/c-ares
-  DeprecatedEAPI: version 1.7.4: uses deprecated EAPI: 2
-  DroppedKeywordWarning: version 1.10.0: keywords dropped: arm64
-
-net-dns/cagibi
-  MissingChksum: version 0.2.0: "cagibi-0.2.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-net-dns/dnrd
-  DeprecatedEAPI: version 2.20.3-r1: uses deprecated EAPI: 0
-  MissingChksum: version 2.20.3-r1: "dnrd-2.20.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-net-dns/dnssec-check
-  DroppedKeywordWarning: version 2.1: keywords dropped: amd64, x86
-
-net-dns/dnssec-root
-  DeprecatedEAPI: version 20100715: uses deprecated EAPI: 0
-  WhitespaceFound: version 20150403: ebuild has trailing whitespace on line 13
-
-net-dns/hesinfo
-  DeprecatedEAPI: version 3.1.0: uses deprecated EAPI: 2
-  MissingChksum: version 3.1.0: "hesinfo-3.1.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-net-dns/hesiod
-  DeprecatedEAPI: version 3.1.0: uses deprecated EAPI: 2
-  MissingChksum: version 3.1.0: "hesiod-3.1.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 3.1.0: "hesiod-3.1.0-patches.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-net-dns/host
-  DeprecatedEAPI: version 20070128-r1: uses deprecated EAPI: 2
-
-net-dns/knot
-  DroppedKeywordWarning: version 2.0.0_beta: keywords dropped: amd64, x86
-
-net-dns/ldns-utils
-  DeprecatedEAPI: version 1.6.12: uses deprecated EAPI: 3
-
-net-dns/ndu
-  DeprecatedEAPI: version 0.4-r4: uses deprecated EAPI: 0
-  MissingChksum: version 0.4-r4: "ndu-0.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-net-dns/odsclient
-  DeprecatedEAPI: version 1.03-r1: uses deprecated EAPI: 2
-
-net-dns/rbldnsd
-  DeprecatedEAPI: version 0.996b: uses deprecated EAPI: 0
-
-net-dns/tinystats
-  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 0
-  MissingChksum: version 1.1: "tinystats-1.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-net-dns/totd
-  MissingChksum: version 1.5.1: "totd-1.5.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-net-dns/unbound
-  DroppedKeywordWarning: version 1.5.1-r2: keywords dropped: ia64, m68k, mips, s390, sh, sparc
-  DroppedKeywordWarning: version 1.5.4: keywords dropped: alpha
-
-net-dns/updatedd
-  DeprecatedEAPI: version 2.6: uses deprecated EAPI: 0
-  MissingChksum: version 2.6: "updatedd_2.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-net-dns/valtz
-  DeprecatedEAPI: version 0.7: uses deprecated EAPI: 0
-  MissingChksum: version 0.7: "valtz.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-WARNING pkgcore: metadata.dtd cannot be opened from
-               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
-               : refetch
-WARNING pkgcore: metadata.dtd cannot be opened from
-               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
-               : refetch
-
-sys-process/acct
-  DeprecatedEAPI: version 6.5.5-r3: uses deprecated EAPI: 3
-
-sys-process/anacron
-  DeprecatedEAPI: version 2.3-r2: uses deprecated EAPI: 0
-  ExecutableFile: "files/anacron.rc6" has unnecessary executable bit
-
-sys-process/atop
-  DeprecatedEAPI: version 1.27_p3: uses deprecated EAPI: 3
-
-sys-process/audit
-  DeprecatedEAPI: version 1.7.18: uses deprecated EAPI: 3
-  DeprecatedEclass: version 1.7.18: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 2.0.5: uses deprecated EAPI: 3
-  DeprecatedEclass: version 2.0.5: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  NonExistentDeps: version 2.0.5: depset depends: nonexistent atoms [ dev-libs/libprelude ]
-  NonExistentDeps: version 2.0.5: depset rdepends: nonexistent atoms [ dev-libs/libprelude ]
-  DeprecatedEAPI: version 2.1.3-r1: uses deprecated EAPI: 3
-  DeprecatedEclass: version 2.1.3-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  NonExistentDeps: version 2.1.3-r1: depset depends: nonexistent atoms [ dev-libs/libprelude ]
-  NonExistentDeps: version 2.1.3-r1: depset rdepends: nonexistent atoms [ dev-libs/libprelude ]
-  NonExistentDeps: version 2.2.2-r2: depset depends: nonexistent atoms [ dev-libs/libprelude ]
-  NonExistentDeps: version 2.2.2-r2: depset rdepends: nonexistent atoms [ dev-libs/libprelude ]
-  NonExistentDeps: version 2.2.2-r3: depset depends: nonexistent atoms [ dev-libs/libprelude ]
-  NonExistentDeps: version 2.2.2-r3: depset rdepends: nonexistent atoms [ dev-libs/libprelude ]
-
-sys-process/bcron
-  DeprecatedEAPI: version 0.09: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.09-r2: uses deprecated EAPI: 2
-  MissingChksum: version 0.09: "bcron-0.09.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-sys-process/cronbase
-  DeprecatedEAPI: version 0.3.3: uses deprecated EAPI: 0
-
-sys-process/cronie
-  BadInsIntoDir: version 1.5.0: ebuild uses insinto /etc/conf.d on line 52
-  BadInsIntoDir: version 1.5.0: ebuild uses insinto /etc/cron.hourly on line 75
-
-sys-process/cronbase
-  ExecutableFile: "files/run-crons-0.3.3" has unnecessary executable bit
-  ExecutableFile: "files/run-crons-0.3.4" has unnecessary executable bit
-  ExecutableFile: "files/run-crons-0.3.5" has unnecessary executable bit
-  ExecutableFile: "files/run-crons-0.3.6" has unnecessary executable bit
-  ExecutableFile: "files/run-crons-0.3.7" has unnecessary executable bit
-
-sys-process/cronie
-  BadInsIntoDir: version 1.5.0-r1: ebuild uses insinto /etc/conf.d on line 52
-  BadInsIntoDir: version 1.5.0-r1: ebuild uses insinto /etc/cron.hourly on line 75
-
-sys-process/daemontools
-  DeprecatedEAPI: version 0.76-r7: uses deprecated EAPI: 0
-  MissingChksum: version 0.76-r7: "daemontools-0.76.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 0.76-r7: "daemontools-0.76-man-20020131.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-sys-process/dcron
-  BadInsIntoDir: version 4.5-r1: ebuild uses insinto /etc/cron.d on line 38
-
-sys-process/fuser-bsd
-  DeprecatedEAPI: version 1142334561: uses deprecated EAPI: 2
-  MissingChksum: version 1142334561: "fuser-1142334561.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 1142334561: "fuser-bsd-patches-1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-sys-process/latencytop
-  DeprecatedEAPI: version 0.5: uses deprecated EAPI: 0
-
-sys-process/minit
-  DeprecatedEAPI: version 0.9.1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.10: uses deprecated EAPI: 0
-  MissingChksum: version 0.9.1: "minit-0.9.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 0.10: "minit-0.10.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-sys-process/numad
+dev-embedded/bitbake
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-sys-process/pidof-bsd
-  DeprecatedEAPI: version 20050501-r4: uses deprecated EAPI: 0
-  MissingChksum: version 20050501-r4: "pidof-bsd-20050501.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+dev-embedded/gnap
+  DeprecatedEAPI: version 2.0: uses deprecated EAPI: 0
 
-sys-process/pkill-darwin
-  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 3
-  MissingChksum: version 1.0: "pkill-darwin-1.0.tar.xz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+dev-embedded/gnap-dev
+  DeprecatedEAPI: version 2.0: uses deprecated EAPI: 0
 
-sys-process/prll
-  MissingChksum: version 0.6.2: "prll-0.6.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+dev-embedded/gnap-ext
+  DeprecatedEAPI: version 2.0: uses deprecated EAPI: 0
 
-sys-process/psinfo
-  MissingChksum: version 0.12: "psinfo-0.12.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+dev-embedded/gputils
+  DeprecatedEAPI: version 0.13.6-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.13.7: uses deprecated EAPI: 2
 
-sys-process/runit
-  BadInsIntoDir: version 2.1.1-r1: ebuild uses insinto /etc/env.d on line 61
-  DeprecatedEAPI: version 2.1.1-r1: uses deprecated EAPI: 3
-  BadInsIntoDir: version 2.1.2: ebuild uses insinto /etc/env.d on line 71
+dev-embedded/jal
+  DeprecatedEAPI: version 0.4.60: uses deprecated EAPI: 0
 
-sys-process/supervise-scripts
-  DeprecatedEAPI: version 4.0: uses deprecated EAPI: 2
-  MissingChksum: version 4.0: "supervise-scripts-4.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+dev-embedded/libftdi
+  DeprecatedEAPI: version 0.19: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.20: uses deprecated EAPI: 2
+  DeprecatedEclass: version 0.20: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-sys-process/top-apple
-  MissingChksum: version 73: "top-73.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 73: "libutil-11-top-73.h" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+dev-embedded/openocd
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-sys-process/unixtop
-  DeprecatedEAPI: version 3.8_beta1-r3: uses deprecated EAPI: 0
+dev-embedded/parapin
+  DeprecatedEAPI: version 1.0.0: uses deprecated EAPI: 0
 
-sys-process/vixie-cron
-  DeprecatedEAPI: version 4.1-r14: uses deprecated EAPI: 0
+dev-embedded/pista
+  DeprecatedEAPI: version 0.70: uses deprecated EAPI: 0
 
-sys-process/watchpid
-  DeprecatedEAPI: version 0.1-r1: uses deprecated EAPI: 0
-  MissingChksum: version 0.1-r1: "watchpid_0.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+dev-embedded/scratchbox
+  DeprecatedEAPI: version 1.0.19: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0.20: uses deprecated EAPI: 0
+
+dev-embedded/scratchbox-devkit-apt-https
+  DeprecatedEAPI: version 1.0.10: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0.11: uses deprecated EAPI: 0
+
+dev-embedded/scratchbox-devkit-cputransp
+  DeprecatedEAPI: version 1.0.7: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0.9: uses deprecated EAPI: 0
+
+dev-embedded/scratchbox-devkit-debian
+  DeprecatedEAPI: version 1.0.10: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0.11: uses deprecated EAPI: 0
+
+dev-embedded/scratchbox-devkit-debian-squeeze
+  DeprecatedEAPI: version 1.0.4: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0.5: uses deprecated EAPI: 0
+
+dev-embedded/scratchbox-devkit-doctools
+  DeprecatedEAPI: version 1.0.9: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0.13: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0.14: uses deprecated EAPI: 0
+
+dev-embedded/scratchbox-devkit-git
+  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0.2: uses deprecated EAPI: 0
+
+dev-embedded/scratchbox-devkit-maemo3
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 0
+
+dev-embedded/scratchbox-devkit-perl
+  DeprecatedEAPI: version 1.0.4: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0.5: uses deprecated EAPI: 0
+
+dev-embedded/scratchbox-devkit-qemu
+  DeprecatedEAPI: version 0.10.0.0.10: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.11.50.0.5: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.12.50.0.3: uses deprecated EAPI: 0
+
+dev-embedded/scratchbox-devkit-svn
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+
+dev-embedded/scratchbox-toolchain-cs2005q3_2-glibc2_5
+  DeprecatedEAPI: version 1.0.7: uses deprecated EAPI: 0
+
+dev-embedded/scratchbox-toolchain-cs2007q3-glibc2_5
+  DeprecatedEAPI: version 1.0.12: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0.14: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0.14-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0.16: uses deprecated EAPI: 0
+
+dev-embedded/scratchbox-toolchain-cs2009q1-203sb1
+  DeprecatedEAPI: version 1.0.13: uses deprecated EAPI: 0
+
+dev-embedded/scratchbox-toolchain-cs2009q1-eglibc2_8
+  DeprecatedEAPI: version 1.0.17: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0.19: uses deprecated EAPI: 0
+
+dev-embedded/scratchbox-toolchain-cs2009q3-eglibc2_10
+  DeprecatedEAPI: version 1.0.17-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0.18: uses deprecated EAPI: 0
+
+dev-embedded/scratchbox2
+  DeprecatedEAPI: version 2.0-r1: uses deprecated EAPI: 2
+
+dev-embedded/sdcc
+  DeprecatedEAPI: version 2.5.0_p20060502: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.6.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.7.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.8.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.9.0: uses deprecated EAPI: 2
+
+dev-embedded/sgpp-lite-arm-eabi-bin
+  DeprecatedEAPI: version 2010.09.51: uses deprecated EAPI: 0
+
+dev-embedded/sgpp-lite-arm-linux-bin
+  DeprecatedEAPI: version 2010.09.50: uses deprecated EAPI: 0
+
+dev-embedded/sgpp-lite-arm-uclinux-bin
+  DeprecatedEAPI: version 2010.09.58: uses deprecated EAPI: 0
+
+dev-embedded/tavrasm
+  DeprecatedEAPI: version 1.22-r1: uses deprecated EAPI: 2
+
+dev-embedded/tigcc
+  DeprecatedEAPI: version 0.96_beta7: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.96_beta8-r1: uses deprecated EAPI: 0
+
+dev-embedded/upslug2
+  DeprecatedEAPI: version 11: uses deprecated EAPI: 0
+
+dev-embedded/urjtag
+  DeprecatedEAPI: version 0.10: uses deprecated EAPI: 0
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+dev-embedded/usbprog
+  MetadataError: version 0.2.0: attr(fetchables): error- Metadata Exception: pkg ebuild src: dev-embedded/usbprog-0.2.0, attr fetchables
+error: mirror://berlios/usbprog/usbprog-0.2.0.tar.bz2 is unparseable
+flagged token- uri mirror://berlios/usbprog/usbprog-0.2.0.tar.bz2 isn't a known mirror tier
+
+dev-embedded/zmac
+  DeprecatedEAPI: version 1.3: uses deprecated EAPI: 0
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
@@ -1609,58 +1566,65 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-dev-tcltk/blt
-  DeprecatedEAPI: version 2.4z-r10: uses deprecated EAPI: 3
+www-servers/fnord
+  DeprecatedEAPI: version 1.10-r2: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 1.11: uses deprecated EAPI: 3
+  MissingChksum: version 1.10-r2: "fnord-1.10.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-dev-tcltk/expect
-  DeprecatedEAPI: version 5.44.1.15: uses deprecated EAPI: 3
+www-servers/gatling
+  MissingChksum: version 0.12-r2: "gatling-0.12.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-dev-tcltk/expect-lite
-  DeprecatedEAPI: version 4.0.3: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.1.0: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.1.2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.2.0: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.2.1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.2.2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.3.0: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.3.1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.3.2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.3.3: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.4.0: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.4.1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.5.0: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.6.0: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.6.1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.6.2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.7.2: uses deprecated EAPI: 0
+www-servers/lighttpd
+  SizeViolation: "files/lighttpd-1.4.29-mod_uploadprogress.patch" exceeds 20k in size; 22472 bytes total
 
-dev-tcltk/iwidgets
-  DeprecatedEAPI: version 4.0.1: uses deprecated EAPI: 0
+www-servers/monkeyd
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-dev-tcltk/scwoop
-  DeprecatedEAPI: version 4.1: uses deprecated EAPI: 0
+www-servers/pound
+  DeprecatedEAPI: version 2.6: uses deprecated EAPI: 2
+  MissingChksum: version 2.6: "Pound-2.6.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-dev-tcltk/snack
-  DeprecatedEclass: version 2.2.10-r5: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+www-servers/servefile
+  DeprecatedEclass: version 0.4.2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 0.4.2: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 0.4.2: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 0.4.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 0.4.3: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 0.4.3: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
 
-dev-tcltk/tcllib
-  DroppedKeywordWarning: version 1.16: keywords dropped: ia64, ppc64, s390, sparc
-  SizeViolation: "files/tcllib-1.15-XSS-vuln.patch" exceeds 20k in size; 29465 bytes total
+www-servers/thttpd
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-dev-tcltk/tkcon
-  DeprecatedEAPI: version 2.5: uses deprecated EAPI: 0
+www-servers/tomcat
+  DroppedKeywordWarning: version 8.0.23-r2: keywords dropped: ppc, ppc64
 
-dev-tcltk/tkpiechart
-  DeprecatedEAPI: version 6.5-r1: uses deprecated EAPI: 0
+www-servers/tornado
+  DroppedKeywordWarning: version 4.2.1: keywords dropped: ppc
 
-dev-tcltk/tktable
-  DeprecatedEAPI: version 2.10: uses deprecated EAPI: 2
+www-servers/xsp
+  WhitespaceFound: version 2014.12-r2014120900: ebuild has trailing whitespace on lines 82, 84
+  MetadataError: version 2014.12-r2014120900: attr(iuse): iuse unknown flags: [ net40, net35, net45 ]
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
 
-dev-tcltk/tktreectrl
-  DeprecatedEAPI: version 2.2.9: uses deprecated EAPI: 3
+net-fs/davfs2
+  DeprecatedEAPI: version 1.4.5-r1: uses deprecated EAPI: 2
 
-dev-tcltk/vtcl
-  DeprecatedEAPI: version 1.6.0-r1: uses deprecated EAPI: 0
+net-fs/libnfs
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DroppedKeywordWarning: version 1.9.7: keywords dropped: alpha
+
+net-fs/samba
+  DroppedKeywordWarning: version 3.6.25: keywords dropped: s390, sh
+  DroppedKeywordWarning: version 4.2.4-r1: keywords dropped: arm64, hppa
+  DroppedKeywordWarning: version 4.0.26-r1: keywords dropped: alpha, arm, ia64, mips, ppc, ppc64, sparc
+
+net-fs/wdfs
+  DeprecatedEAPI: version 1.4.2: uses deprecated EAPI: 0
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch

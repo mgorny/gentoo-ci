@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 14 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'media-plugins/*' 'kde-apps/*' 'app-crypt/*' 'kde-misc/*' 'mail-filter/*' 'games-board/*' 'net-proxy/*' 'app-mobilephone/*' 'www-misc/*' 'games-server/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'media-plugins/*' 'kde-apps/*' 'app-crypt/*' 'kde-misc/*' 'app-backup/*' 'sci-physics/*' 'net-proxy/*' 'app-mobilephone/*' 'www-misc/*' 'games-server/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -779,135 +779,127 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-mail-filter/MailScanner
-  DeprecatedEAPI: version 4.84.5.2: uses deprecated EAPI: 0
+app-backup/amanda
+  BadInsIntoDir: version 3.3.3: ebuild uses insinto /etc/cron.daily on line 332
+  BadInsIntoDir: version 3.3.3-r1: ebuild uses insinto /etc/cron.daily on line 338
+  BadInsIntoDir: version 3.3.5: ebuild uses insinto /etc/cron.daily on line 338
+  BadInsIntoDir: version 3.3.7: ebuild uses insinto /etc/cron.daily on line 335
 
-mail-filter/amavisd-new
-  DroppedKeywordWarning: version 2.10.1-r1: keywords dropped: ppc
+app-backup/backup-manager
+  DeprecatedEAPI: version 0.7.5: uses deprecated EAPI: 0
 
-mail-filter/ask
-  DeprecatedEAPI: version 2.4.1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.5.3: uses deprecated EAPI: 0
-  MissingChksum: version 2.4.1: "ask-2.4.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 2.5.3: "ask-2.5.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-backup/backuppc
+  SizeViolation: "files/02-fix-config.pl-formatting.patch" exceeds 20k in size; 23353 bytes total
 
-mail-filter/assp
-  DeprecatedEAPI: version 1.8.5.9: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.9.4.7: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.9.4.8: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.9.4.9: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.9.8.13030: uses deprecated EAPI: 0
-  MissingChksum: version 1.8.5.9: "ASSP_1.8.5.9-Install.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-backup/bareos
+  DroppedKeywordWarning: version 14.2.1: keywords dropped: amd64, x86
 
-mail-filter/bmf
-  MissingChksum: version 0.9.4-r2: "bmf-0.9.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-backup/boxbackup
+  DeprecatedEAPI: version 0.11.1: uses deprecated EAPI: 2
 
-mail-filter/clamassassin
-  DeprecatedEAPI: version 1.2.4: uses deprecated EAPI: 0
-  MissingChksum: version 1.2.4: "clamassassin-1.2.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-backup/burp
+  DroppedKeywordWarning: version 1.4.40: keywords dropped: x86
 
-mail-filter/clamsmtp
-  DeprecatedEAPI: version 1.10: uses deprecated EAPI: 0
-  MissingChksum: version 1.10: "clamsmtp-1.10.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+app-backup/ccollect
+  DeprecatedEAPI: version 0.5.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.7.1: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.8: uses deprecated EAPI: 2
 
-mail-filter/couriersrs
-  DeprecatedEAPI: version 0.1.2: uses deprecated EAPI: 2
-  MissingChksum: version 0.1.2: "couriersrs-0.1.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-backup/cdbackup
+  DeprecatedEAPI: version 0.7.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.7.1: uses deprecated EAPI: 0
 
-mail-filter/dcc
-  DeprecatedEAPI: version 1.3.140-r1: uses deprecated EAPI: 2
+app-backup/cdbkup
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0-r1: uses deprecated EAPI: 0
 
-mail-filter/disspam
+app-backup/cpdup
+  DeprecatedEAPI: version 1.18: uses deprecated EAPI: 0
+
+app-backup/dar
+  DeprecatedEAPI: version 2.3.8: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 2.4.9: uses deprecated EAPI: 3
+
+app-backup/dirvish
+  DeprecatedEAPI: version 1.2.1: uses deprecated EAPI: 0
+
+app-backup/flexbackup
+  DeprecatedEAPI: version 1.2.1-r12: uses deprecated EAPI: 0
+
+app-backup/hdup
+  DeprecatedEAPI: version 2.0.14: uses deprecated EAPI: 0
+
+app-backup/mirdir
+  DeprecatedEAPI: version 2.1-r1: uses deprecated EAPI: 3
+
+app-backup/mylvmbackup
+  DeprecatedEAPI: version 0.11: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.13: uses deprecated EAPI: 0
   DeprecatedEAPI: version 0.14: uses deprecated EAPI: 0
 
-mail-filter/isbg
-  DeprecatedEAPI: version 0.99-r1: uses deprecated EAPI: 3
-  DeprecatedEclass: version 0.99-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+app-backup/rdiff-backup
+  DeprecatedEAPI: version 1.2.8-r1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.2.8-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.3.3: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.3.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-mail-filter/libmilter
-  DeprecatedEAPI: version 1.0.2: uses deprecated EAPI: 2
+app-backup/reoback
+  BadInsIntoDir: version 1.0_p3-r1: ebuild uses insinto /etc/cron.daily on line 36
 
-mail-filter/libsieve
-  DeprecatedEAPI: version 2.2.7: uses deprecated EAPI: 0
-  MissingChksum: version 2.2.7: "libsieve-2.2.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-backup/rsnapshot
+  DeprecatedEAPI: version 1.3.1: uses deprecated EAPI: 0
 
-mail-filter/libsrs_alt
-  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
-  MissingChksum: version 1.0: "libsrs_alt-1.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-backup/sarab
+  DeprecatedEAPI: version 1.0.0: uses deprecated EAPI: 0
 
-mail-filter/mailfilter
-  DeprecatedEAPI: version 0.8.2: uses deprecated EAPI: 2
+app-backup/simplebackup
+  DeprecatedEAPI: version 1.8.1: uses deprecated EAPI: 0
 
-mail-filter/normalizemime
-  DeprecatedEAPI: version 1.19: uses deprecated EAPI: 0
-  MissingChksum: version 1.19: "normalizemime-1.19.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+app-backup/tsm
+  DroppedKeywordWarning: version 6.3.0.5-r2: keywords dropped: x86
 
-mail-filter/opendmarc
-  DroppedKeywordWarning: version 1.3.0: keywords dropped: ppc, ppc64, sparc
-
-mail-filter/p3scan
-  DeprecatedEAPI: version 2.3.1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.3.2-r1: uses deprecated EAPI: 2
-  MissingChksum: version 2.3.1: "p3scan-2.3.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-mail-filter/policyd
-  DeprecatedEAPI: version 1.82-r1: uses deprecated EAPI: 0
-  MissingChksum: version 1.82-r1: "policyd-1.82.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-mail-filter/procmail
-  DeprecatedEAPI: version 3.22-r10: uses deprecated EAPI: 0
-
-mail-filter/procmail-lib
-  DeprecatedEAPI: version 20081108: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 20091202: uses deprecated EAPI: 0
-
-mail-filter/pypolicyd-spf
-  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 3
-  DeprecatedEclass: version 1.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-
-mail-filter/qmail-scanner
-  DeprecatedEAPI: version 1.25-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.05: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.06: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 2.08: uses deprecated EAPI: 2
-  MissingChksum: version 1.25-r1: "qmail-scanner-1.25.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.25-r1: "q-s-1.25st-20050406.patch.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 2.05: "qmail-scanner-2.05.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 2.05: "q-s-2.05st-20080728.patch.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 2.06: "qmail-scanner-2.06.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 2.06: "q-s-2.06st-20090419.patch.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 2.08: "qmail-scanner-2.08.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 2.08: "q-s-2.08st-20091012.patch.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-mail-filter/rblcheck
-  DeprecatedEAPI: version 1.5-r1: uses deprecated EAPI: 2
-
-mail-filter/scmail
-  MissingChksum: version 1.3: "scmail-1.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-mail-filter/spamdyke
-  DeprecatedEAPI: version 4.3.0: uses deprecated EAPI: 2
-  MissingChksum: version 4.3.0: "spamdyke-4.3.0.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-mail-filter/spampd
-  DeprecatedEAPI: version 2.30: uses deprecated EAPI: 0
-
-mail-filter/spamprobe
-  DeprecatedEAPI: version 1.4d: uses deprecated EAPI: 2
-
-mail-filter/sqlgrey
-  DeprecatedEAPI: version 1.7.6-r1: uses deprecated EAPI: 0
-
-mail-filter/tmda
-  DeprecatedEAPI: version 1.1.12: uses deprecated EAPI: 3
-  DeprecatedEclass: version 1.1.12: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  MissingChksum: version 1.1.12: "tmda-1.1.12.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-backup/vzdump
+  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 2
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
+
+sci-physics/clhep
+  DeprecatedEAPI: version 2.0.4.6: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 2.1.0.1: uses deprecated EAPI: 2
+  MissingChksum: version 2.0.4.6: "clhep-2.0.4.6.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-physics/geant
+  DeprecatedEAPI: version 3.21.14-r2: uses deprecated EAPI: 2
+
+sci-physics/hepmc
+  DeprecatedEAPI: version 2.06.03: uses deprecated EAPI: 2
+  MissingChksum: version 2.06.03: "HepMC-2.06.03.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-physics/herwig
+  DeprecatedEAPI: version 6.5.10: uses deprecated EAPI: 2
+
+sci-physics/lhapdf
+  DeprecatedEAPI: version 5.8.4: uses deprecated EAPI: 2
+  MissingChksum: version 5.8.4: "lhapdf-5.8.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 5.8.4: "wrapheragrid.f" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 5.8.4: "wrapheragrid-lite.f" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-physics/meep
+  DeprecatedEAPI: version 1.1.1: uses deprecated EAPI: 2
+
+sci-physics/root
+  DeprecatedEclass: version 5.32.03-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+sci-physics/sassena
+  MissingChksum: version 1.4.1: "sassena-v1.4.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+sci-physics/xfoil
+  MissingChksum: version 6.97: "dataflow.pdf" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
