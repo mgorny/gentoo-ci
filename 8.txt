@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 8 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'net-misc/*' 'app-admin/*' 'sci-biology/*' 'app-editors/*' 'net-dns/*' 'sys-process/*' 'dev-tcltk/*' 'app-benchmarks/*' 'xfce-base/*' 'mate-base/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'net-misc/*' 'app-admin/*' 'sci-biology/*' 'app-editors/*' 'net-dns/*' 'sys-process/*' 'net-fs/*' 'lxqt-base/*' 'xfce-base/*' 'mate-base/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1460,117 +1460,74 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-dev-tcltk/blt
-  DeprecatedEAPI: version 2.4z-r10: uses deprecated EAPI: 3
+net-fs/davfs2
+  DeprecatedEAPI: version 1.4.5-r1: uses deprecated EAPI: 2
 
-dev-tcltk/expect
-  DeprecatedEAPI: version 5.44.1.15: uses deprecated EAPI: 3
-
-dev-tcltk/expect-lite
-  DeprecatedEAPI: version 4.0.3: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.1.0: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.1.2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.2.0: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.2.1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.2.2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.3.0: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.3.1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.3.2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.3.3: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.4.0: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.4.1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.5.0: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.6.0: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.6.1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.6.2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.7.2: uses deprecated EAPI: 0
-
-dev-tcltk/iwidgets
-  DeprecatedEAPI: version 4.0.1: uses deprecated EAPI: 0
-
-dev-tcltk/scwoop
-  DeprecatedEAPI: version 4.1: uses deprecated EAPI: 0
-
-dev-tcltk/snack
-  DeprecatedEclass: version 2.2.10-r5: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-
-dev-tcltk/tcllib
-  DroppedKeywordWarning: version 1.16: keywords dropped: ia64, ppc64, s390, sparc
-  SizeViolation: "files/tcllib-1.15-XSS-vuln.patch" exceeds 20k in size; 29465 bytes total
-
-dev-tcltk/tkcon
-  DeprecatedEAPI: version 2.5: uses deprecated EAPI: 0
-
-dev-tcltk/tkpiechart
-  DeprecatedEAPI: version 6.5-r1: uses deprecated EAPI: 0
-
-dev-tcltk/tktable
-  DeprecatedEAPI: version 2.10: uses deprecated EAPI: 2
-
-dev-tcltk/tktreectrl
-  DeprecatedEAPI: version 2.2.9: uses deprecated EAPI: 3
-
-dev-tcltk/vtcl
-  DeprecatedEAPI: version 1.6.0-r1: uses deprecated EAPI: 0
-WARNING pkgcore: metadata.dtd cannot be opened from
-               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
-               : refetch
-WARNING pkgcore: metadata.dtd cannot be opened from
-               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
-               : refetch
-
-app-benchmarks/acovea
-  DeprecatedEAPI: version 5.1.1-r1: uses deprecated EAPI: 2
-
-app-benchmarks/bonnie
-  DeprecatedEAPI: version 2.0.6: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.0.6-r1: uses deprecated EAPI: 2
-
-app-benchmarks/bonnie++
-  DeprecatedEAPI: version 1.96: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.96-r1: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 1.97: uses deprecated EAPI: 2
-
-app-benchmarks/contest
-  DeprecatedEAPI: version 0.61: uses deprecated EAPI: 0
-
-app-benchmarks/filebench
-  DeprecatedEAPI: version 1.4.9.1: uses deprecated EAPI: 0
-
-app-benchmarks/forkbomb
-  DeprecatedEAPI: version 1.4: uses deprecated EAPI: 0
-
-app-benchmarks/iozone
-  DeprecatedEAPI: version 3.397: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 3.408: uses deprecated EAPI: 0
-
-app-benchmarks/jmeter
-  DeprecatedEAPI: version 2.0.1-r4: uses deprecated EAPI: 0
-
-app-benchmarks/nbench
-  DeprecatedEAPI: version 2.2.3-r1: uses deprecated EAPI: 2
-
-app-benchmarks/os-autoinst
+net-fs/libnfs
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DroppedKeywordWarning: version 1.9.7: keywords dropped: alpha
 
-app-benchmarks/piozone
-  DeprecatedEAPI: version 1.0-r3: uses deprecated EAPI: 2
+net-fs/samba
+  DroppedKeywordWarning: version 3.6.25: keywords dropped: s390, sh
+  DroppedKeywordWarning: version 4.2.4-r1: keywords dropped: arm64, hppa
+  DroppedKeywordWarning: version 4.0.26-r1: keywords dropped: alpha, arm, ia64, mips, ppc, ppc64, sparc
 
-app-benchmarks/pipebench
-  DeprecatedEAPI: version 0.40: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.40-r1: uses deprecated EAPI: 3
+net-fs/wdfs
+  DeprecatedEAPI: version 1.4.2: uses deprecated EAPI: 0
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
 
-app-benchmarks/stress
-  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 0
+lxqt-base/liblxqt
+  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
 
-app-benchmarks/sysbench
-  DeprecatedEAPI: version 0.4.12-r1: uses deprecated EAPI: 2
+lxqt-base/liblxqt-mount
+  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
 
-app-benchmarks/tiobench
-  DeprecatedEAPI: version 0.3.3-r2: uses deprecated EAPI: 0
+lxqt-base/libsysstat
+  DroppedKeywordWarning: version 0.2.0: keywords dropped: arm
 
-app-benchmarks/volanomark
-  DeprecatedEAPI: version 2.5.0.9: uses deprecated EAPI: 0
+lxqt-base/lxqt-about
+  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
+
+lxqt-base/lxqt-common
+  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
+
+lxqt-base/lxqt-config
+  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
+
+lxqt-base/lxqt-globalkeys
+  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
+
+lxqt-base/lxqt-meta
+  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
+
+lxqt-base/lxqt-notificationd
+  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
+
+lxqt-base/lxqt-openssh-askpass
+  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
+
+lxqt-base/lxqt-panel
+  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
+
+lxqt-base/lxqt-policykit
+  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
+
+lxqt-base/lxqt-powermanagement
+  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
+
+lxqt-base/lxqt-qtplugin
+  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
+
+lxqt-base/lxqt-runner
+  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
+
+lxqt-base/lxqt-session
+  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch

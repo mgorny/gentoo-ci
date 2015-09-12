@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 12 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'app-text/*' 'dev-php/*' 'kde-base/*' 'x11-wm/*' 'xfce-extra/*' 'games-action/*' 'dev-scheme/*' 'media-radio/*' 'www-plugins/*' 'games-mud/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'app-text/*' 'dev-php/*' 'kde-base/*' 'x11-wm/*' 'xfce-extra/*' 'games-action/*' 'gnustep-apps/*' 'sys-freebsd/*' 'www-plugins/*' 'games-mud/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -834,106 +834,117 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-dev-scheme/bigloo
-  DeprecatedEAPI: version 3.0c_p4: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 3.4a_p3: uses deprecated EAPI: 3
-  MissingChksum: version 3.0c_p4: "bigloo3.0c-4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 3.4a_p3: "bigloo-3.4a-patchset-1.tbz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 3.4a_p3: "bigloo3.4a-3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 3.6a: "bigloo3.6a.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+gnustep-apps/aclock
+  MissingChksum: version 0.4.0: "AClock-0.4.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-dev-scheme/chicken
-  DeprecatedEAPI: version 4.8.0.3-r1: uses deprecated EAPI: 3
+gnustep-apps/addresses
+  DeprecatedEAPI: version 0.4.7: uses deprecated EAPI: 0
 
-dev-scheme/gauche
-  MissingChksum: version 0.9.3.3: "Gauche-0.9.3.3.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+gnustep-apps/affiche
+  DeprecatedEAPI: version 0.6.0-r3: uses deprecated EAPI: 0
+  MissingChksum: version 0.6.0-r3: "Affiche-0.6.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-dev-scheme/gauche-gtk
-  MissingChksum: version 0.6_pre1: "Gauche-gtk-0.6_pre1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+gnustep-apps/camera
+  DeprecatedEAPI: version 0.8-r1: uses deprecated EAPI: 0
 
-dev-scheme/gauche-kakasi
+gnustep-apps/cenon
+  MissingChksum: version 3.9.5: "Cenon-3.9.5.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+gnustep-apps/clipbook
+  DeprecatedEAPI: version 0.6.0.8.3-r1: uses deprecated EAPI: 0
+  MissingChksum: version 0.6.0.8.3-r1: "gworkspace-0.8.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+gnustep-apps/displaycalibrator
+  DeprecatedEAPI: version 0.7: uses deprecated EAPI: 0
+  MissingChksum: version 0.7: "displaycalibrator-0.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+gnustep-apps/easydiff
+  DeprecatedEAPI: version 0.4.0: uses deprecated EAPI: 0
+  MissingChksum: version 0.4.0: "EasyDiff-0.4.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+gnustep-apps/gemas
+  MissingChksum: version 0.3: "Gemas-0.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+gnustep-apps/gmines
+  DeprecatedEAPI: version 0.1-r2: uses deprecated EAPI: 0
+  MissingChksum: version 0.2: "GMines-0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+gnustep-apps/gorm
+  MissingChksum: version 1.2.16: "gorm-1.2.16.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+gnustep-apps/graphos
+  MissingChksum: version 0.2: "Graphos-0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.3: "Graphos-0.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+gnustep-apps/gshisen
+  DeprecatedEAPI: version 1.3.0: uses deprecated EAPI: 0
+  MissingChksum: version 1.3.0: "GShisen-1.3.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+gnustep-apps/gspdf
+  DeprecatedEAPI: version 0.4: uses deprecated EAPI: 0
+  MissingChksum: version 0.4: "GSPdf-0.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 0.5: "GSPdf-0.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+gnustep-apps/gwnet
+  DeprecatedEAPI: version 0.1.0.8.2: uses deprecated EAPI: 0
+  MissingChksum: version 0.1.0.8.2: "gworkspace-0.8.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+gnustep-apps/gworkspace
+  DeprecatedEAPI: version 0.9.1: uses deprecated EAPI: 3
+
+gnustep-apps/lapispuzzle
+  MissingChksum: version 1.2: "LapisPuzzle-1.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+gnustep-apps/laternamagica
+  MissingChksum: version 0.4: "LaternaMagica-0.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+gnustep-apps/pictureframe
+  DeprecatedEAPI: version 1.0.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.1.2: uses deprecated EAPI: 0
+  MissingChksum: version 1.0.0: "PictureFrame-1.0.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 1.1.2: "PictureFrame-1.1.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 1.1.3: "PictureFrame-1.1.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+gnustep-apps/preferences
+  DeprecatedEAPI: version 1.3.0_pre20061204-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.3.0_pre20100523: uses deprecated EAPI: 3
+  MissingChksum: version 1.3.0_pre20061204-r1: "preferences-1.3.0_pre20061204.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.3.0_pre20100523: "preferences-1.3.0_pre20100523.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+gnustep-apps/preview
+  DeprecatedEAPI: version 0.8.5-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.9: uses deprecated EAPI: 3
+
+gnustep-apps/price
+  MissingChksum: version 1.1.0: "PRICE-1.1.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+gnustep-apps/remotedesk
   DeprecatedEAPI: version 0.1: uses deprecated EAPI: 0
-  MissingChksum: version 0.1: "Gauche-kakasi-0.1.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.1: "RemoteDesk-0.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-dev-scheme/goosh
+gnustep-apps/stepulator
+  DeprecatedEAPI: version 1.0-r2: uses deprecated EAPI: 0
+  MissingChksum: version 1.0-r2: "stepulator-gs-1.0.tar.Z" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+gnustep-apps/sudoku
+  DeprecatedEAPI: version 0.7: uses deprecated EAPI: 0
+  MissingChksum: version 0.7: "Sudoku-0.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+gnustep-apps/systempreferences
+  DeprecatedEAPI: version 1.0.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.1.0: uses deprecated EAPI: 0
+  MissingChksum: version 1.0.2: "SystemPreferences-1.0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.1.0: "SystemPreferences-1.1.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+gnustep-apps/terminal
+  DeprecatedEAPI: version 0.9.7: uses deprecated EAPI: 2
+
+gnustep-apps/textedit
+  DeprecatedEAPI: version 0.95_pre20100427: uses deprecated EAPI: 3
+
+gnustep-apps/zipper
   DeprecatedEAPI: version 1.3: uses deprecated EAPI: 0
-  MissingChksum: version 1.3: "goosh-1.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-dev-scheme/greg
-  DeprecatedEAPI: version 2.0.0: uses deprecated EAPI: 3
-
-dev-scheme/guile
-  DeprecatedEAPI: version 2.0.0: uses deprecated EAPI: 3
-  DroppedKeywordWarning: version 2.0.0: keywords dropped: alpha, arm, arm64, hppa, ia64, m68k, mips, ppc, ppc64, s390, sh, sparc, x86
-
-dev-scheme/guile-cairo
-  DeprecatedEAPI: version 1.4.0: uses deprecated EAPI: 2
-
-dev-scheme/guile-gnome-platform
-  DeprecatedEAPI: version 2.16.1: uses deprecated EAPI: 3
-
-dev-scheme/guile-gui
-  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 0
-  MissingChksum: version 0.2: "guile-gui-0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-dev-scheme/guile-lib
-  DeprecatedEAPI: version 0.1.9: uses deprecated EAPI: 3
-
-dev-scheme/hop
-  DeprecatedEAPI: version 2.0.1: uses deprecated EAPI: 2
-  MissingChksum: version 2.0.1: "hop-2.0.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-dev-scheme/ikarus
-  DeprecatedEAPI: version 0.0.3_p1870: uses deprecated EAPI: 3
-  MissingChksum: version 0.0.3_p1870: "ikarus-scheme-r1870.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-dev-scheme/jscheme
-  DeprecatedEAPI: version 7.2: uses deprecated EAPI: 3
-
-dev-scheme/kawa
-  DeprecatedEAPI: version 1.10: uses deprecated EAPI: 3
-  MissingChksum: version 1.10: "XQTS_1_0_2.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-dev-scheme/net-http
-  DeprecatedEAPI: version 0.3.1: uses deprecated EAPI: 0
-  MissingChksum: version 0.3.1: "net-http-0.3.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-dev-scheme/racket
-  MissingChksum: version 5.1.2: "racket-5.1.2-src-unix.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  DroppedKeywordWarning: version 6.0.1: keywords dropped: ppc, ppc64
-
-dev-scheme/schemik
-  DeprecatedEAPI: version 1.2.40.0: uses deprecated EAPI: 2
-  MissingChksum: version 1.2.40.0: "schemik-1.2.40.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-dev-scheme/schoca
-  DeprecatedEAPI: version 0.3.0: uses deprecated EAPI: 3
-  MissingChksum: version 0.3.0: "schoca-0.3.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-dev-scheme/scm
-  DeprecatedEAPI: version 5.5.6: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 5.5.6-r1: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 5.5.6-r2: uses deprecated EAPI: 3
-
-dev-scheme/scmxlate
-  DeprecatedEAPI: version 20090410: uses deprecated EAPI: 3
-
-dev-scheme/sigscheme
-  DeprecatedEAPI: version 0.8.5: uses deprecated EAPI: 3
-  MissingChksum: version 0.8.5: "sigscheme-0.8.5.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-dev-scheme/slib
-  DeprecatedEAPI: version 3.1.5-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 3.2.1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 3.2.2: uses deprecated EAPI: 3
-
-dev-scheme/stklos
-  DeprecatedEAPI: version 1.10: uses deprecated EAPI: 3
-  MissingChksum: version 1.10: "stklos-1.10.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-dev-scheme/termite
-  DeprecatedEAPI: version 0.15: uses deprecated EAPI: 3
-  MissingChksum: version 0.15: "termite-0.15.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 1.3: "Zipper-1.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
@@ -941,12 +952,73 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-media-radio/KochMorse
-  DeprecatedEAPI: version 0.99.6: uses deprecated EAPI: 3
-  DeprecatedEclass: version 0.99.6: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+sys-freebsd/boot0
+  DeprecatedEAPI: version 8.2: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 9.1: uses deprecated EAPI: 2
 
-media-radio/grig
-  MissingChksum: version 0.8.0: "grig-0.8.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+sys-freebsd/freebsd-bin
+  DeprecatedEAPI: version 8.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.1: uses deprecated EAPI: 0
+
+sys-freebsd/freebsd-cddl
+  DeprecatedEAPI: version 8.2: uses deprecated EAPI: 0
+
+sys-freebsd/freebsd-contrib
+  DeprecatedEAPI: version 8.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.1: uses deprecated EAPI: 0
+
+sys-freebsd/freebsd-lib
+  WhitespaceFound: version 8.2-r1: ebuild has leading whitespace on lines 368, 369, 370, 371, 372
+  DeprecatedEAPI: version 8.2-r1: uses deprecated EAPI: 2
+  WhitespaceFound: version 9.1-r10: ebuild has leading whitespace on lines 413, 414, 415, 416, 417, 441, 442, 443, 446, 448, 450
+  WhitespaceFound: version 9.1-r11: ebuild has leading whitespace on lines 415, 416, 417, 418, 419, 443, 444, 445, 448, 450, 452
+  WhitespaceFound: version 10.2: ebuild has leading whitespace on lines 421, 422, 423, 424, 425, 449, 450, 451, 454, 456, 458
+
+sys-freebsd/freebsd-libexec
+  DeprecatedEAPI: version 8.2: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 8.2-r1: uses deprecated EAPI: 2
+
+sys-freebsd/freebsd-mk-defs
+  DeprecatedEAPI: version 8.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.1: uses deprecated EAPI: 3
+
+sys-freebsd/freebsd-pam-modules
+  DeprecatedEAPI: version 8.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.1-r1: uses deprecated EAPI: 0
+
+sys-freebsd/freebsd-pf
+  DeprecatedEAPI: version 8.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.1: uses deprecated EAPI: 0
+
+sys-freebsd/freebsd-rescue
+  DeprecatedEAPI: version 8.2: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 9.1: uses deprecated EAPI: 2
+
+sys-freebsd/freebsd-sbin
+  BadInsIntoDir: version 8.2-r1: ebuild uses insinto /etc/cron.d on line 78
+  DeprecatedEAPI: version 8.2-r1: uses deprecated EAPI: 2
+  BadInsIntoDir: version 9.1: ebuild uses insinto /etc/cron.d on line 79
+  DeprecatedEAPI: version 9.1: uses deprecated EAPI: 2
+  BadInsIntoDir: version 10.2: ebuild uses insinto /etc/cron.d on line 83
+
+sys-freebsd/freebsd-share
+  DeprecatedEAPI: version 8.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.1: uses deprecated EAPI: 0
+
+sys-freebsd/freebsd-sources
+  DeprecatedEAPI: version 8.2-r2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.1-r3: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.1-r9: uses deprecated EAPI: 0
+
+sys-freebsd/freebsd-ubin
+  DeprecatedEAPI: version 8.2-r1: uses deprecated EAPI: 2
+
+sys-freebsd/freebsd-usbin
+  DeprecatedEAPI: version 8.2-r2: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 9.1-r1: uses deprecated EAPI: 2
+
+sys-freebsd/virtio-kmod
+  MissingChksum: version 0.228301-r1: "virtio-0.228301.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
