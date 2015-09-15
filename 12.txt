@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 12 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'app-text/*' 'dev-php/*' 'kde-base/*' 'x11-wm/*' 'xfce-extra/*' 'sci-physics/*' 'gnustep-apps/*' 'sys-freebsd/*' 'www-plugins/*' 'games-mud/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'app-text/*' 'dev-php/*' 'kde-base/*' 'www-client/*' 'xfce-extra/*' 'sci-physics/*' 'gnustep-apps/*' 'sys-freebsd/*' 'www-plugins/*' 'games-mud/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -640,142 +640,45 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-x11-wm/aewm++
-  DeprecatedEAPI: version 1.1.5-r1: uses deprecated EAPI: 2
-  MissingChksum: version 1.1.5-r1: "aewm++-1.1.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+www-client/ck4up
+  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 0
+  MissingChksum: version 1.2: "ck4up-1.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-x11-wm/afterstep
-  MissingChksum: version 2.2.9: "AfterStep-2.2.9.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+www-client/fetch
+  DeprecatedEAPI: version 1.0-r1: uses deprecated EAPI: 0
 
-x11-wm/amiwm
-  MissingChksum: version 0.21_p2: "amiwm0.21pl2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-x11-wm/awesome
-  DeprecatedEAPI: version 3.4.15: uses deprecated EAPI: 3
-  NonExistentDeps: version 3.4.15: depset depends: nonexistent atoms [ <x11-libs/libX11-1.3.99.901 ]
-  NonExistentDeps: version 3.4.15: depset rdepends: nonexistent atoms [ <x11-libs/libX11-1.3.99.901 ]
-  NonExistentDeps: version 3.5.2: depset depends: nonexistent atoms [ <x11-libs/libX11-1.3.99.901 ]
-  NonExistentDeps: version 3.5.2: depset rdepends: nonexistent atoms [ <x11-libs/libX11-1.3.99.901 ]
-  NonExistentDeps: version 3.5.2-r1: depset depends: nonexistent atoms [ <x11-libs/libX11-1.3.99.901 ]
-  NonExistentDeps: version 3.5.2-r1: depset rdepends: nonexistent atoms [ <x11-libs/libX11-1.3.99.901 ]
-  NonExistentDeps: version 3.5.3: depset depends: nonexistent atoms [ <x11-libs/libX11-1.3.99.901 ]
-  NonExistentDeps: version 3.5.3: depset rdepends: nonexistent atoms [ <x11-libs/libX11-1.3.99.901 ]
-  NonExistentDeps: version 3.5.4: depset depends: nonexistent atoms [ <x11-libs/libX11-1.3.99.901 ]
-  NonExistentDeps: version 3.5.4: depset rdepends: nonexistent atoms [ <x11-libs/libX11-1.3.99.901 ]
-  NonExistentDeps: version 3.5.5: depset depends: nonexistent atoms [ <x11-libs/libX11-1.3.99.901 ]
-  NonExistentDeps: version 3.5.5: depset rdepends: nonexistent atoms [ <x11-libs/libX11-1.3.99.901 ]
-  NonExistentDeps: version 3.5.5-r1: depset depends: nonexistent atoms [ <x11-libs/libX11-1.3.99.901 ]
-  NonExistentDeps: version 3.5.5-r1: depset rdepends: nonexistent atoms [ <x11-libs/libX11-1.3.99.901 ]
-  NonExistentDeps: version 3.5.6: depset depends: nonexistent atoms [ <x11-libs/libX11-1.3.99.901 ]
-  NonExistentDeps: version 3.5.6: depset rdepends: nonexistent atoms [ <x11-libs/libX11-1.3.99.901 ]
-
-x11-wm/blackbox
-  DeprecatedEAPI: version 0.70.1: uses deprecated EAPI: 0
-
-x11-wm/compiz-fusion
-  DeprecatedEAPI: version 0.8.8: uses deprecated EAPI: 0
-
-x11-wm/ctwm
-  DeprecatedEAPI: version 3.7: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 3.8a-r1: uses deprecated EAPI: 2
-  MissingChksum: version 3.7: "ctwm-3.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 3.8a-r1: "ctwm-3.8a.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-x11-wm/cwm
+www-client/jumanji
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-x11-wm/echinus
-  MissingChksum: version 0.4.9: "echinus-0.4.9.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-x11-wm/enlightenment
-  DeprecatedEclass: version 0.17.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DeprecatedEAPI: version 1.0.2: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 1.0.6: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 1.0.7: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 1.0.8: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 1.0.9: uses deprecated EAPI: 2
-
-x11-wm/evilwm
-  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 1.1.0: uses deprecated EAPI: 3
-  DroppedKeywordWarning: version 1.1.0: keywords dropped: alpha, amd64, ppc, sparc, x86
-  MissingChksum: version 1.0.1: "evilwm-1.0.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.1.0: "evilwm-1.1.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-x11-wm/fluxbox
+www-client/luakit
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-x11-wm/i3
+www-client/opera
+  DroppedKeywordWarning: version 31.0.1889.174: keywords dropped: x86
+
+www-client/surf
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-x11-wm/icewm
-  DroppedKeywordWarning: version 1.3.9: keywords dropped: alpha, ppc64, sparc
-
-x11-wm/jwm
-  MissingChksum: version 2.1.0: "jwm-2.1.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-x11-wm/larswm
-  DeprecatedEAPI: version 7.5.3-r1: uses deprecated EAPI: 2
-  MissingChksum: version 7.5.3-r1: "larswm-7.5.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-x11-wm/lwm
-  DeprecatedEAPI: version 1.2.1: uses deprecated EAPI: 0
-  MissingChksum: version 1.2.1: "lwm-1.2.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-x11-wm/matchbox
-  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
-
-x11-wm/matchbox-common
-  DeprecatedEAPI: version 0.9.1-r2: uses deprecated EAPI: 0
-  MissingChksum: version 0.9.1-r2: "matchbox-common-0.9.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-x11-wm/matchbox-desktop
-  DeprecatedEAPI: version 0.9.1: uses deprecated EAPI: 0
-
-x11-wm/matchbox-panel
-  DeprecatedEAPI: version 0.9.3-r1: uses deprecated EAPI: 0
-
-x11-wm/matchbox-window-manager
-  WrongIndentFound: version 1.2-r1: ebuild has whitespace in indentation on line 39
-
-x11-wm/matwm2
-  MissingChksum: version 0.1.1: "matwm2-0.1.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-x11-wm/openbox
+www-client/uget
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-x11-wm/oroborus
-  MissingChksum: version 2.0.20: "oroborus_2.0.20.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-x11-wm/plwm
-  DeprecatedEAPI: version 2.5-r1: uses deprecated EAPI: 0
-  DeprecatedEclass: version 2.5-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 2.7_rc1: uses deprecated EAPI: 3
-  DeprecatedEclass: version 2.7_rc1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  MissingChksum: version 2.5-r1: "plwm-2.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-x11-wm/stumpwm
+www-client/uzbl
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-x11-wm/treewm
-  DeprecatedEAPI: version 0.4.5: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.4.5-r1: uses deprecated EAPI: 2
-  MissingChksum: version 0.4.5: "treewm-0.4.5.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+www-client/w3m
+  NonExistentDeps: version 0.5.3-r5: depset depends: nonexistent atoms [ >=app-text/migemo-0.40 ]
+  NonExistentDeps: version 0.5.3-r5: depset rdepends: nonexistent atoms [ >=app-text/migemo-0.40 ]
 
-x11-wm/vtwm
-  DeprecatedEAPI: version 5.4.6a: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 5.4.7-r1: uses deprecated EAPI: 2
-  MissingChksum: version 5.4.6a: "vtwm-5.4.6a.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 5.4.7-r1: "vtwm-5.4.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+www-client/w3mmee
+  DeprecatedEAPI: version 0.3.2_p24-r7: uses deprecated EAPI: 0
 
-x11-wm/windowlab
-  DeprecatedEAPI: version 1.34: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.40: uses deprecated EAPI: 2
-  MissingChksum: version 1.34: "windowlab-1.34.tar" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.40: "windowlab-1.40.tar" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+www-client/weboob
+  DeprecatedEclass: version 9998: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DroppedKeywordWarning: version 9998: keywords dropped: amd64, x86
 
-x11-wm/windowmaker
-  DeprecatedEAPI: version 0.92.0-r11: uses deprecated EAPI: 3
+www-client/xombrero
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
