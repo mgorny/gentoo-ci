@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 6 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-java/*' 'media-video/*' 'dev-ml/*' 'net-wireless/*' 'app-portage/*' 'sci-electronics/*' 'net-dialup/*' 'net-nds/*' 'lxde-base/*' 'games-roguelike/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-java/*' 'media-video/*' 'media-fonts/*' 'net-wireless/*' 'app-portage/*' 'sci-electronics/*' 'net-dialup/*' 'net-nds/*' 'lxde-base/*' 'games-roguelike/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1199,6 +1199,9 @@ media-video/chaplin
 media-video/cheese
   DroppedKeywordWarning: version 3.14.2: keywords dropped: alpha, sparc
 
+media-video/cinelerra
+  SizeViolation: "files/cinelerra-ffmpeg29.patch" exceeds 20k in size; 22007 bytes total
+
 media-video/coherence
   DeprecatedEclass: version 0.6.6.2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.6.6.2: uses deprecated EAPI: 2
@@ -1251,7 +1254,7 @@ media-video/dvdimagecmp
 media-video/dvdstyler
   WrongIndentFound: version 2.7.2: ebuild has whitespace in indentation on line 58
   WrongIndentFound: version 2.9.2: ebuild has whitespace in indentation on line 58
-  WrongIndentFound: version 2.9.3: ebuild has whitespace in indentation on line 58
+  WrongIndentFound: version 2.9.3: ebuild has whitespace in indentation on line 59
 
 media-video/dvgrab
   DeprecatedEAPI: version 3.5: uses deprecated EAPI: 0
@@ -1596,26 +1599,599 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-dev-ml/dose3
-  DroppedKeywordWarning: version 4.0_rc3: keywords dropped: amd64
+media-fonts/acroread-asianfonts
+  MissingChksum: version 9.1: "FontPack910_xtd_i486-linux.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 9.1: "FontPack910_jpn_i486-linux.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 9.1: "FontPack910_kor_i486-linux.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 9.1: "FontPack910_chs_i486-linux.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 9.1: "FontPack910_cht_i486-linux.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-dev-ml/lwt
-  DroppedKeywordWarning: version 2.4.6: keywords dropped: x86
+media-fonts/alee-fonts
+  DeprecatedEAPI: version 13: uses deprecated EAPI: 0
 
-dev-ml/ocaml-autoconf
-  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 2
+media-fonts/aquafont
+  DeprecatedEAPI: version 2.7-r4: uses deprecated EAPI: 0
+  MissingChksum: version 2.7-r4: "aqua2_7.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-dev-ml/ocaml-doc
-  DeprecatedEAPI: version 3.12: uses deprecated EAPI: 0
+media-fonts/aquapfont
+  DeprecatedEAPI: version 2.6-r2: uses deprecated EAPI: 0
+  MissingChksum: version 2.6-r2: "aquap2_6.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-dev-ml/ocurl
-  DroppedKeywordWarning: version 0.7.4: keywords dropped: ppc
+media-fonts/arabeyes-fonts
+  DeprecatedEAPI: version 2.0: uses deprecated EAPI: 0
+  MissingChksum: version 2.0: "ae_fonts_2.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-dev-ml/pcre-ocaml
-  DeprecatedEAPI: version 6.2.5: uses deprecated EAPI: 2
+media-fonts/arkpandora
+  MissingChksum: version 2.04: "ttf-arkpandora-2.04.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-dev-ml/react
-  DroppedKeywordWarning: version 1.2.0: keywords dropped: x86
+media-fonts/artwiz-aleczapka-en
+  DeprecatedEAPI: version 1.3: uses deprecated EAPI: 0
+
+media-fonts/artwiz-latin1
+  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 0
+  MissingChksum: version 1.1: "artwiz-latin1-1.1.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-fonts/baekmuk-fonts
+  DeprecatedEAPI: version 2.2-r2: uses deprecated EAPI: 0
+  MissingChksum: version 2.2-r2: "baekmuk-ttf-2.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 2.2-r2: "baekmuk-bdf-2.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 2.2-r2: "20020418.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-fonts/bitstream-cyberbit
+  DeprecatedEAPI: version 2.0: uses deprecated EAPI: 2
+
+media-fonts/cardo
+  DeprecatedEAPI: version 1.04: uses deprecated EAPI: 0
+  MissingChksum: version 1.04: "cardo104.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-fonts/cheapskatefonts
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+  MissingChksum: version 1.0: "Domestic_Manners.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 1.0: "PenguinAttack.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 1.0: "Dustismo.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 1.0: "El_Abogado_Loco.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 1.0: "Progenisis.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 1.0: "flatline.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 1.0: "MarkedFool.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 1.0: "ItWasntMe.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 1.0: "balker.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 1.0: "Swift.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 1.0: "Wargames.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 1.0: "Winks.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-fonts/cm-unicode
+  DeprecatedEAPI: version 0.7.0: uses deprecated EAPI: 3
+  MissingChksum: version 0.7.0: "cm-unicode-0.7.0-ttf.tar.xz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-fonts/cronyx-fonts
+  DeprecatedEAPI: version 2.3.1-r2: uses deprecated EAPI: 0
+
+media-fonts/culmus
+  DeprecatedEAPI: version 0.120-r4: uses deprecated EAPI: 2
+
+media-fonts/dina
+  DeprecatedEAPI: version 2.89: uses deprecated EAPI: 0
+
+media-fonts/efont-unicode
+  DeprecatedEAPI: version 0.4.2-r1: uses deprecated EAPI: 0
+  MissingChksum: version 0.4.2-r1: "efont-unicode-bdf-0.4.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-fonts/ekushey-bangla-fonts
+  DeprecatedEAPI: version 20070420: uses deprecated EAPI: 0
+  MissingChksum: version 20070420: "Lohit_14-04-2007.ttf" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 20070420: "Mohua_07-09-05.ttf" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 20070420: "Godhuli_03-09-2005.ttf" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 20070420: "Puja-17-06-2006.ttf" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 20070420: "Durga_03-09-2005.ttf" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 20070420: "Saraswatii_03-09-2005.ttf" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 20070420: "Sharifa_03-09-2005.ttf" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 20070420: "Sumit_03-09-2005.ttf" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 20070420: "Punarbhaba_27-02-2006.ttf" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 20070420: "SolaimanLipi_20-04-07.ttf" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 20070420: "Rupali_01-02-2007.ttf" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-fonts/encodings
+  DeprecatedEAPI: version 1.0.4: uses deprecated EAPI: 3
+
+media-fonts/exljbris-free
+  DeprecatedEAPI: version 20100320: uses deprecated EAPI: 0
+  MissingChksum: version 20100320: "delicious-123.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 20100320: "Diavlo_II_37b2.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 20100320: "fontin2_pc.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 20100320: "FontinSans_49.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 20100320: "tallys_15b2.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-fonts/farsi-fonts
+  DeprecatedEAPI: version 0.4: uses deprecated EAPI: 0
+  MissingChksum: version 0.4: "farsifonts-0.4.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-fonts/fgdc-emergency
+  DeprecatedEAPI: version 2.20: uses deprecated EAPI: 0
+
+media-fonts/font-adobe-100dpi
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
+  MissingChksum: version 1.0.3: "font-adobe-100dpi-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-fonts/font-adobe-75dpi
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
+  MissingChksum: version 1.0.3: "font-adobe-75dpi-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-fonts/font-adobe-utopia-100dpi
+  DeprecatedEAPI: version 1.0.4: uses deprecated EAPI: 3
+  MissingChksum: version 1.0.4: "font-adobe-utopia-100dpi-1.0.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-fonts/font-adobe-utopia-75dpi
+  DeprecatedEAPI: version 1.0.4: uses deprecated EAPI: 3
+  MissingChksum: version 1.0.4: "font-adobe-utopia-75dpi-1.0.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-fonts/font-adobe-utopia-type1
+  DeprecatedEAPI: version 1.0.4: uses deprecated EAPI: 3
+  MissingChksum: version 1.0.4: "font-adobe-utopia-type1-1.0.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-fonts/font-alias
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
+  DroppedKeywordWarning: version 1.0.3-r1: keywords dropped: arm64
+
+media-fonts/font-arabic-misc
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
+  MissingChksum: version 1.0.3: "font-arabic-misc-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-fonts/font-bh-100dpi
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
+
+media-fonts/font-bh-75dpi
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
+
+media-fonts/font-bh-lucidatypewriter-100dpi
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
+
+media-fonts/font-bh-lucidatypewriter-75dpi
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
+
+media-fonts/font-bh-ttf
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
+  MissingChksum: version 1.0.3: "font-bh-ttf-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-fonts/font-bh-type1
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
+  MissingChksum: version 1.0.3: "font-bh-type1-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-fonts/font-bitstream-100dpi
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
+  MissingChksum: version 1.0.3: "font-bitstream-100dpi-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-fonts/font-bitstream-75dpi
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
+  MissingChksum: version 1.0.3: "font-bitstream-75dpi-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-fonts/font-bitstream-speedo
+  DeprecatedEAPI: version 1.0.2: uses deprecated EAPI: 3
+  MissingChksum: version 1.0.2: "font-bitstream-speedo-1.0.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-fonts/font-bitstream-type1
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
+  MissingChksum: version 1.0.3: "font-bitstream-type1-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-fonts/font-cronyx-cyrillic
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
+  MissingChksum: version 1.0.3: "font-cronyx-cyrillic-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-fonts/font-cursor-misc
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
+
+media-fonts/font-daewoo-misc
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
+  MissingChksum: version 1.0.3: "font-daewoo-misc-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-fonts/font-dec-misc
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
+  MissingChksum: version 1.0.3: "font-dec-misc-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-fonts/font-ibm-type1
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
+  MissingChksum: version 1.0.3: "font-ibm-type1-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-fonts/font-isas-misc
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
+  MissingChksum: version 1.0.3: "font-isas-misc-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-fonts/font-jis-misc
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
+  MissingChksum: version 1.0.3: "font-jis-misc-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-fonts/font-micro-misc
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
+  MissingChksum: version 1.0.3: "font-micro-misc-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-fonts/font-misc-cyrillic
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
+  MissingChksum: version 1.0.3: "font-misc-cyrillic-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-fonts/font-misc-ethiopic
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
+  MissingChksum: version 1.0.3: "font-misc-ethiopic-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-fonts/font-misc-meltho
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
+  MissingChksum: version 1.0.3: "font-misc-meltho-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-fonts/font-misc-misc
+  DeprecatedEAPI: version 1.1.2: uses deprecated EAPI: 3
+
+media-fonts/font-mutt-misc
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
+  MissingChksum: version 1.0.3: "font-mutt-misc-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-fonts/font-schumacher-misc
+  DeprecatedEAPI: version 1.1.2: uses deprecated EAPI: 3
+  MissingChksum: version 1.1.2: "font-schumacher-misc-1.1.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-fonts/font-screen-cyrillic
+  DeprecatedEAPI: version 1.0.4: uses deprecated EAPI: 3
+  MissingChksum: version 1.0.4: "font-screen-cyrillic-1.0.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-fonts/font-sony-misc
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
+  MissingChksum: version 1.0.3: "font-sony-misc-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-fonts/font-sun-misc
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
+  MissingChksum: version 1.0.3: "font-sun-misc-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-fonts/font-winitzki-cyrillic
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
+  MissingChksum: version 1.0.3: "font-winitzki-cyrillic-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-fonts/font-xfree86-type1
+  DeprecatedEAPI: version 1.0.4: uses deprecated EAPI: 3
+  MissingChksum: version 1.0.4: "font-xfree86-type1-1.0.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-fonts/free-bangla-font
+  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 0
+  MissingChksum: version 0.2: "Akaash-0.8.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 0.2: "Ani.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 0.2: "Likhan-0.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 0.2: "MuktiNarrow-0.94.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-fonts/freefonts
+  DeprecatedEAPI: version 0.10-r3: uses deprecated EAPI: 0
+  MissingChksum: version 0.10-r3: "freefonts-0.10.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-fonts/fs-fonts
+  DeprecatedEAPI: version 0.1_alpha3: uses deprecated EAPI: 0
+
+media-fonts/heuristica
+  DeprecatedEAPI: version 0.2.1: uses deprecated EAPI: 3
+  MissingChksum: version 0.2.1: "heuristica-ttf-0.2.1.tar.xz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 0.2.1: "heuristica-otf-0.2.1.tar.xz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 0.2.1: "heuristica-pfb-0.2.1.tar.xz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-fonts/hkscs-ming
+  DeprecatedEAPI: version 1.0_pre20030919-r2: uses deprecated EAPI: 0
+
+media-fonts/hunkyfonts
+  DeprecatedEAPI: version 0.3.1: uses deprecated EAPI: 0
+
+media-fonts/inconsolata
+  DeprecatedEAPI: version 20090222: uses deprecated EAPI: 0
+  MissingChksum: version 20090222: "inconsolata-20090222.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-fonts/intlfonts
+  DeprecatedEAPI: version 1.2.1: uses deprecated EAPI: 0
+  MissingChksum: version 1.2.1: "intlfonts-1.2.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-fonts/ipamonafont
+  DeprecatedEAPI: version 1.0.8: uses deprecated EAPI: 0
+  MissingChksum: version 1.0.8: "opfc-ModuleHP-1.1.1_withIPAMonaFonts-1.0.8.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-fonts/ja-ipafonts
+  MissingChksum: version 003.03: "IPAfont00303.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-fonts/jisx0213-fonts
+  DeprecatedEAPI: version 20040425-r2: uses deprecated EAPI: 0
+  MissingChksum: version 20040425-r2: "jiskan16-2004-1.bdf.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 20040425-r2: "jiskan16-2000-1.bdf.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 20040425-r2: "jiskan16-2000-2.bdf.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 20040425-r2: "K14-2004-1.bdf.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 20040425-r2: "K14-2000-1.bdf.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 20040425-r2: "K14-2000-2.bdf.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 20040425-r2: "K12-1.bdf.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 20040425-r2: "K12-2.bdf.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 20040425-r2: "A14.bdf.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 20040425-r2: "A12.bdf.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 20040425-r2: "jiskan24-2000-1.bdf.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 20040425-r2: "jiskan24-2000-2.bdf.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-fonts/jsmath
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+
+media-fonts/jsmath-extra-dark
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+  MissingChksum: version 1.0: "jsmath-extra-dark-1.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-fonts/jsmath-extra-light
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+  MissingChksum: version 1.0: "jsmath-extra-light-1.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-fonts/kacst-fonts
+  DeprecatedEAPI: version 1.6.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.0: uses deprecated EAPI: 0
+  MissingChksum: version 1.6.2: "kacst_fonts_1.6.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 2.0: "kacst_fonts_2.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-fonts/kanjistrokeorders
+  DeprecatedEAPI: version 2.012: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.016: uses deprecated EAPI: 0
+  MissingChksum: version 2.012: "KanjiStrokeOrders_v2.012.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 2.016: "KanjiStrokeOrders_v2.016.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-fonts/khmer
+  DeprecatedEAPI: version 5.0-r1: uses deprecated EAPI: 0
+  MissingChksum: version 5.0-r1: "All_KhmerOS_5.0.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-fonts/kochi-substitute
+  DeprecatedEAPI: version 20030809-r3: uses deprecated EAPI: 0
+  MissingChksum: version 20030809-r3: "kochi-substitute-20030809.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-fonts/konfont
+  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 0
+  MissingChksum: version 0.1: "konfont_0.1.orig.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-fonts/lfpfonts-fix
+  DeprecatedEAPI: version 0.83-r2: uses deprecated EAPI: 0
+  MissingChksum: version 0.83-r2: "lfpfonts-fix-src-0.83.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-fonts/lfpfonts-var
+  DeprecatedEAPI: version 0.84: uses deprecated EAPI: 0
+  MissingChksum: version 0.84: "lfpfonts-var-src-0.84.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-fonts/liberation-fonts
+  DroppedKeywordWarning: version 2.00.1-r1: keywords dropped: alpha, ppc64, sparc
+
+media-fonts/libertine
+  DeprecatedEAPI: version 4.7.5: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 5.1.3.20110615: uses deprecated EAPI: 0
+
+media-fonts/lohit-fonts
+  DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
+
+media-fonts/mathematica-fonts
+  DeprecatedEAPI: version 7.0: uses deprecated EAPI: 0
+  MissingChksum: version 7.0: "MathematicaV7FontsLinux.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-fonts/mgopen
+  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 0
+  MissingChksum: version 1.1: "mgopen-1.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-fonts/mikachan-font-otf
+  DeprecatedEAPI: version 9.1-r1: uses deprecated EAPI: 0
+  MissingChksum: version 9.1-r1: "mikachan-font-otf-9.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-fonts/mikachan-font-ttc
+  DeprecatedEAPI: version 9.1: uses deprecated EAPI: 0
+  MissingChksum: version 9.1: "mikachan-font-9.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-fonts/mikachan-font-ttf
+  DeprecatedEAPI: version 8.9-r2: uses deprecated EAPI: 0
+  MissingChksum: version 8.9-r2: "mikachanfont-8.9.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 8.9-r2: "mikachanfontP-8.9.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 8.9-r2: "mikachanfontPB-8.9.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 8.9-r2: "mikachanfontPS-8.9.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-fonts/mix-mplus-ipa
+  MissingChksum: version 20110825: "MigMix-1M-20110825.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 20110825: "MigMix-1P-20110825.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 20110825: "MigMix-2M-20110825.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 20110825: "MigMix-2P-20110825.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 20110825: "Migu-1C-20110825.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 20110825: "Migu-1M-20110825.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 20110825: "Migu-1VS-20110825.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 20110825: "Migu-2DS-20110825.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 20110825: "Migu-2M-20110825.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 20111002: "migmix-1m-20111002.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 20111002: "migmix-1p-20111002.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 20111002: "migmix-2m-20111002.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 20111002: "migmix-2p-20111002.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 20111002: "migu-1p-20111002.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 20111002: "migu-1c-20111002.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 20111002: "migu-1m-20111002.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 20111002: "migu-2m-20111002.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 20120411_p2: "migmix-1m-20120411-2.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 20120411_p2: "migmix-1p-20120411-2.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 20120411_p2: "migmix-2m-20120411-2.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 20120411_p2: "migmix-2p-20120411-2.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 20120411_p2: "migu-1p-20120411-2.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 20120411_p2: "migu-1c-20120411-2.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 20120411_p2: "migu-1m-20120411-2.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 20120411_p2: "migu-2m-20120411-2.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-fonts/monafont
+  DeprecatedEAPI: version 2.90-r2: uses deprecated EAPI: 0
+  MissingChksum: version 2.90-r2: "monafont-2.90.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 2.90-r2: "monafont-ttf-2.90.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-fonts/montecarlo
+  MissingChksum: version 0: "MonteCarlo-PCF.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0: "MonteCarlo-BDF.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-fonts/mplus-fonts
+  DeprecatedEAPI: version 2.2.4: uses deprecated EAPI: 0
+  MissingChksum: version 2.2.4: "mplus_bitmap_fonts-2.2.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-fonts/nanumfont
+  DeprecatedEAPI: version 2.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.0-r1: uses deprecated EAPI: 2
+  MissingChksum: version 2.0: "NanumGothicCoding-2.0.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-fonts/nepali-fonts
+  DeprecatedEAPI: version 1-r1: uses deprecated EAPI: 0
+  MissingChksum: version 1-r1: "nepali-fonts-1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-fonts/oldstandard
+  DeprecatedEAPI: version 2.2: uses deprecated EAPI: 0
+  MissingChksum: version 2.2: "oldstandard-2.2.otf.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 2.2: "oldstandard-2.2.ttf.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-fonts/opendesktop-fonts
+  DeprecatedEAPI: version 1.4.2: uses deprecated EAPI: 0
+  MissingChksum: version 1.4.2: "opendesktop-fonts-1.4.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-fonts/oto
+  DeprecatedEAPI: version 0.5: uses deprecated EAPI: 0
+
+media-fonts/pcf2bdf
+  DeprecatedEAPI: version 1.04-r1: uses deprecated EAPI: 0
+  MissingChksum: version 1.04-r1: "pcf2bdf-1.04.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-fonts/pigiarniq
+  DeprecatedEAPI: version 1: uses deprecated EAPI: 0
+  MissingChksum: version 1: "pigiarniq.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-fonts/pothana2k
+  DeprecatedEAPI: version 2006-r1: uses deprecated EAPI: 0
+  MissingChksum: version 2006-r1: "pothana2k-2006.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-fonts/proggy-fonts
+  DeprecatedEAPI: version 1: uses deprecated EAPI: 0
+  MissingChksum: version 1: "proggy-fonts-1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-fonts/ricty
+  MissingChksum: version 3.2.0: "Ricty-3.2.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-fonts/roboto
+  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 0
+
+media-fonts/sazanami
+  DeprecatedEAPI: version 20040629: uses deprecated EAPI: 0
+  MissingChksum: version 20040629: "sazanami-20040629.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-fonts/sgi-fonts
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+  MissingChksum: version 1.0: "sgi-fonts-1.0-705.noarch.rpm" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-fonts/shinonome
+  DeprecatedEAPI: version 0.9.11: uses deprecated EAPI: 0
+  MissingChksum: version 0.9.11: "shinonome-0.9.11.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-fonts/sil-abyssinica
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+  MissingChksum: version 1.0: "ttf-sil-abyssinica-1.0.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 1.200: "AbyssinicaSIL1.200.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-fonts/sil-arabicfonts
+  MissingChksum: version 1.005: "ScheherazadeRegOT-1.005.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 1.005: "LateefRegOT_1.001.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-fonts/sil-charis
+  MissingChksum: version 4.110: "CharisSIL-4.110.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 4.110: "CharisSILCompact-4.110.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-fonts/sil-doulos
+  DeprecatedEAPI: version 4.106: uses deprecated EAPI: 0
+  MissingChksum: version 4.106: "DoulosSIL4.106.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 4.110: "DoulosSIL-4.110.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-fonts/sil-ezra
+  DeprecatedEAPI: version 2.51: uses deprecated EAPI: 0
+  MissingChksum: version 2.51: "EzraSIL251.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-fonts/sil-galatia
+  DeprecatedEAPI: version 2.1: uses deprecated EAPI: 0
+  MissingChksum: version 2.1: "GalSIL21.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-fonts/sil-padauk
+  MissingChksum: version 2.8: "padauk-2.8.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-fonts/stix-fonts
+  DeprecatedEAPI: version 1.0.0-r1: uses deprecated EAPI: 0
+
+media-fonts/takao-fonts
+  DeprecatedEAPI: version 003.02.01: uses deprecated EAPI: 0
+
+media-fonts/tengwar-fonts
+  DeprecatedEAPI: version 1.9d: uses deprecated EAPI: 0
+  MissingChksum: version 1.9d: "tengq19d.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 1.9d: "tengs19d.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 1.9d: "tengn19d.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 1.9d: "parmaite12b.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 1.9d: "tcurs100.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-fonts/terminus-font
+  DeprecatedEAPI: version 4.36: uses deprecated EAPI: 3
+
+media-fonts/texcm-ttf
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+  MissingChksum: version 1.0: "texcm-ttf.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-fonts/tibetan-machine-font
+  DeprecatedEAPI: version 1.901: uses deprecated EAPI: 0
+  MissingChksum: version 1.901: "TibetanMachineUnicodeFont-1.901.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-fonts/ttf-bitstream-vera
+  DeprecatedEAPI: version 1.10-r3: uses deprecated EAPI: 0
+
+media-fonts/ubuntu-font-family
+  MissingChksum: version 0.71.2: "ubuntu-font-family-0.71.2.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.80: "ubuntu-font-family-0.80.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-fonts/unfonts
+  DeprecatedEAPI: version 1.0.2_pre080608-r1: uses deprecated EAPI: 0
+  MissingChksum: version 1.0.2_pre080608-r1: "un-fonts-core-1.0.2-080608-r1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-fonts/unfonts-extra
+  DeprecatedEAPI: version 1.0.2_pre080608-r1: uses deprecated EAPI: 0
+  MissingChksum: version 1.0.2_pre080608-r1: "un-fonts-extra-1.0.2-080608-r1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-fonts/unifont
+  DeprecatedEAPI: version 5.1.20080914: uses deprecated EAPI: 0
+  DroppedKeywordWarning: version 7.0.01: keywords dropped: alpha
+
+media-fonts/urw-fonts
+  DeprecatedEAPI: version 2.4.9: uses deprecated EAPI: 0
+
+media-fonts/urwvn-fonts
+  MissingChksum: version 3.05: "urwvn-3.05-ttf.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-fonts/vc-fonts
+  DeprecatedEAPI: version 20020207-r2: uses deprecated EAPI: 0
+  MissingChksum: version 20020207-r2: "vc-fonts-20020207.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 20020207-r2: "bleed3.bdf.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-fonts/vdrsymbols-ttf
+  DeprecatedEAPI: version 20100612: uses deprecated EAPI: 0
+  MissingChksum: version 20100612: "vdrsymbols-ttf-20100612.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-fonts/vlgothic
+  DeprecatedEAPI: version 20110722: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 20141206: uses deprecated EAPI: 0
+  MissingChksum: version 20110722: "VLGothic-20110722.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-fonts/vollkorn
+  DeprecatedEAPI: version 2.1: uses deprecated EAPI: 0
+
+media-fonts/webby-fonts
+  DeprecatedEAPI: version 1: uses deprecated EAPI: 0
+  MissingChksum: version 1: "webby-fonts-1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-fonts/wqy-bitmapfont
+  DeprecatedEAPI: version 1.0.0_rc1: uses deprecated EAPI: 0
+
+media-fonts/wqy-microhei
+  DeprecatedEAPI: version 0.2.0_beta: uses deprecated EAPI: 0
+  DroppedKeywordWarning: version 0.2.0_beta-r1: keywords dropped: arm
+
+media-fonts/wqy-unibit
+  DeprecatedEAPI: version 1.1.0_p1: uses deprecated EAPI: 0
+  MissingChksum: version 1.1.0_p1: "wqy-unibit-bdf-1.1.0-1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-fonts/x11fonts-jmk
+  DeprecatedEAPI: version 3.0-r1: uses deprecated EAPI: 0
+  MissingChksum: version 3.0-r1: "jmk-x11-fonts-3.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-fonts/zh-kcfonts
+  DeprecatedEAPI: version 1.05-r3: uses deprecated EAPI: 0
+  MissingChksum: version 1.05-r3: "kcfonts-1.05.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.05-r3: "kcfonts-1.05-freebsd-aa_ad.patch.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
