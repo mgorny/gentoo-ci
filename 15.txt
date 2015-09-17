@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 15 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'media-gfx/*' 'sys-devel/*' 'sci-chemistry/*' 'kde-misc/*' 'www-apache/*' 'games-board/*' 'net-proxy/*' 'app-mobilephone/*' 'net-nntp/*' 'games-kids/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'media-gfx/*' 'sys-devel/*' 'sci-chemistry/*' 'kde-misc/*' 'www-apache/*' 'games-board/*' 'sys-power/*' 'app-mobilephone/*' 'net-nntp/*' 'games-kids/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1377,58 +1377,68 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-net-proxy/3proxy
-  DeprecatedEAPI: version 0.5.3k: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.6.1: uses deprecated EAPI: 2
-  MissingChksum: version 0.5.3k: "3proxy-0.5.3k.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 0.6.1: "3proxy-0.6.1.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+sys-power/acpi
+  MissingChksum: version 1.6: "acpi-1.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-proxy/dante
-  DeprecatedEAPI: version 1.1.19-r4: uses deprecated EAPI: 0
-
-net-proxy/haproxy
+sys-power/acpi_call
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-net-proxy/http-replicator
-  DeprecatedEclass: version 3.0-r4: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+sys-power/apcupsd
+  DeprecatedEAPI: version 3.14.8-r2: uses deprecated EAPI: 3
 
-net-proxy/httpush
-  DeprecatedEAPI: version 0.9_beta11-r1: uses deprecated EAPI: 0
-  MissingChksum: version 0.9_beta11-r1: "httpush-0.9b11.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+sys-power/athcool
+  DeprecatedEAPI: version 0.3.12: uses deprecated EAPI: 3
+  MissingChksum: version 0.3.12: "athcool-0.3.12.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-proxy/ntlmaps
-  MissingChksum: version 0.9.9-r2: "ntlmaps-0.9.9.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+sys-power/cpudyn
+  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 0
+  MissingChksum: version 1.0.1: "cpudyn-1.0.1.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-proxy/oops
-  DeprecatedEAPI: version 1.5.24_pre20050503-r4: uses deprecated EAPI: 2
+sys-power/cpuspeedy
+  DeprecatedEclass: version 0.4.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.4.1: uses deprecated EAPI: 3
+  MissingChksum: version 0.4.1: "cpuspeedy-0.4.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-proxy/piper
-  DeprecatedEAPI: version 1.14: uses deprecated EAPI: 0
-  MissingChksum: version 1.14: "piper-1.14.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+sys-power/nvram-reboot
+  DeprecatedEAPI: version 2004.10.03: uses deprecated EAPI: 0
 
-net-proxy/ratproxy
-  DeprecatedEAPI: version 1.58: uses deprecated EAPI: 0
-  MissingChksum: version 1.58: "ratproxy-1.58.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+sys-power/nvram-wakeup
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+  MissingChksum: version 1.0: "nvram-wakup-1.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-proxy/squidguard
-  DeprecatedEAPI: version 1.4-r4: uses deprecated EAPI: 2
-  MissingChksum: version 1.4-r4: "squidGuard-1.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+sys-power/phc-intel
+  SizeViolation: "files/phc-intel-0.3.2-rev12-trailing-space-misc.patch" exceeds 20k in size; 33960 bytes total
 
-net-proxy/tayga
-  DeprecatedEAPI: version 0.9.2: uses deprecated EAPI: 3
-  MissingChksum: version 0.9.2: "tayga-0.9.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+sys-power/phc-k8
+  MissingChksum: version 0.4.3: "phc-k8-0.4.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.4.4: "phc-k8-0.4.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-proxy/tsocks
-  MissingChksum: version 1.8_beta5-r5: "tsocks-1.8b5-tordns1-gentoo-r1.patch.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+sys-power/phctool
+  DeprecatedEclass: version 0.5.2.2-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.5.2.2-r1: uses deprecated EAPI: 2
+  DeprecatedEclass: version 0.5.2.2-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  MissingChksum: version 0.5.2.2-r1: "phctool-0.5.2.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-net-proxy/ufdbguard
-  DeprecatedEAPI: version 1.24-r1: uses deprecated EAPI: 2
-  MissingChksum: version 1.24-r1: "ufdbGuard-1.24.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.24-r1: "ufdbguard-1.24-manual.pdf" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+sys-power/pm-quirks
+  DeprecatedEAPI: version 20100619: uses deprecated EAPI: 3
+  MissingChksum: version 20100619: "pm-quirks-20100619.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-net-proxy/webscarab
-  DeprecatedEAPI: version 20070504: uses deprecated EAPI: 0
-  MissingChksum: version 20070504: "webscarab-selfcontained-20070504-1631.jar" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+sys-power/pmtools
+  DeprecatedEAPI: version 20071116: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 20110323: uses deprecated EAPI: 2
+  MissingChksum: version 20071116: "pmtools-20071116.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  DroppedKeywordWarning: version 20110323: keywords dropped: ppc
+
+sys-power/powertop
+  DeprecatedEAPI: version 1.13: uses deprecated EAPI: 3
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+sys-power/sispmctl
+  DeprecatedEAPI: version 2.7: uses deprecated EAPI: 2
+
+sys-power/yacpi
+  DeprecatedEAPI: version 3.0.1: uses deprecated EAPI: 3
+  MissingChksum: version 3.0.1: "yacpi-3.0.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch

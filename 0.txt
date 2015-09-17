@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 0 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'sec-policy/*' 'dev-texlive/*' 'app-doc/*' 'sys-kernel/*' 'games-fps/*' 'sci-geosciences/*' 'games-emulation/*' 'x11-terms/*' 'dev-lisp/*' 'dev-ada/*' 'app-antivirus/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'sec-policy/*' 'dev-texlive/*' 'app-doc/*' 'sys-kernel/*' 'games-fps/*' 'sci-geosciences/*' 'games-emulation/*' 'net-proxy/*' 'dev-lisp/*' 'dev-ada/*' 'app-antivirus/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -700,42 +700,58 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-x11-terms/aterm
-  DeprecatedEAPI: version 1.0.1-r2: uses deprecated EAPI: 3
+net-proxy/3proxy
+  DeprecatedEAPI: version 0.5.3k: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.6.1: uses deprecated EAPI: 2
+  MissingChksum: version 0.5.3k: "3proxy-0.5.3k.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.6.1: "3proxy-0.6.1.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-x11-terms/eterm
-  DeprecatedEAPI: version 0.9.5: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.9.6: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
+net-proxy/dante
+  DeprecatedEAPI: version 1.1.19-r4: uses deprecated EAPI: 0
 
-x11-terms/gnome-terminal
-  NonExistentDeps: version 3.14.2-r2: depset depends: nonexistent atoms [ <=x11-libs/gtk+-2.24.10:2 ]
-  SizeViolation: "files/gnome-terminal-3.16.2-restore-transparency.patch" exceeds 20k in size; 54792 bytes total
-
-x11-terms/hanterm
-  DeprecatedEAPI: version 3.1.6-r2: uses deprecated EAPI: 0
-
-x11-terms/root-tail
-  DeprecatedEAPI: version 1.2-r3: uses deprecated EAPI: 2
-  MissingChksum: version 1.2-r3: "root-tail-1.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-x11-terms/roxterm
-  DeprecatedEclass: version 2.6.3: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEclass: version 2.6.5: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DroppedKeywordWarning: version 2.9.3-r1: keywords dropped: ppc
-
-x11-terms/terminator
-  DeprecatedEclass: version 0.96-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-
-x11-terms/terminology
+net-proxy/haproxy
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-x11-terms/xvt
-  DeprecatedEAPI: version 2.1-r3: uses deprecated EAPI: 2
+net-proxy/http-replicator
+  DeprecatedEclass: version 3.0-r4: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-x11-terms/yeahconsole
-  DeprecatedEAPI: version 0.3.4-r1: uses deprecated EAPI: 2
-  MissingChksum: version 0.3.4-r1: "yeahconsole-0.3.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+net-proxy/httpush
+  DeprecatedEAPI: version 0.9_beta11-r1: uses deprecated EAPI: 0
+  MissingChksum: version 0.9_beta11-r1: "httpush-0.9b11.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+net-proxy/ntlmaps
+  MissingChksum: version 0.9.9-r2: "ntlmaps-0.9.9.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+net-proxy/oops
+  DeprecatedEAPI: version 1.5.24_pre20050503-r4: uses deprecated EAPI: 2
+
+net-proxy/piper
+  DeprecatedEAPI: version 1.14: uses deprecated EAPI: 0
+  MissingChksum: version 1.14: "piper-1.14.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+net-proxy/ratproxy
+  DeprecatedEAPI: version 1.58: uses deprecated EAPI: 0
+  MissingChksum: version 1.58: "ratproxy-1.58.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+net-proxy/squidguard
+  DeprecatedEAPI: version 1.4-r4: uses deprecated EAPI: 2
+  MissingChksum: version 1.4-r4: "squidGuard-1.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+net-proxy/tayga
+  DeprecatedEAPI: version 0.9.2: uses deprecated EAPI: 3
+  MissingChksum: version 0.9.2: "tayga-0.9.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+net-proxy/tsocks
+  MissingChksum: version 1.8_beta5-r5: "tsocks-1.8b5-tordns1-gentoo-r1.patch.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+net-proxy/ufdbguard
+  DeprecatedEAPI: version 1.24-r1: uses deprecated EAPI: 2
+  MissingChksum: version 1.24-r1: "ufdbGuard-1.24.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.24-r1: "ufdbguard-1.24-manual.pdf" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+net-proxy/webscarab
+  DeprecatedEAPI: version 20070504: uses deprecated EAPI: 0
+  MissingChksum: version 20070504: "webscarab-selfcontained-20070504-1631.jar" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
