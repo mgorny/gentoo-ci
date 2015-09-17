@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 13 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'app-emulation/*' 'app-dicts/*' 'kde-base/*' 'x11-apps/*' 'net-im/*' 'games-action/*' 'dev-scheme/*' 'media-radio/*' 'gnustep-base/*' 'app-officeext/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'app-emulation/*' 'app-dicts/*' 'kde-base/*' 'x11-apps/*' 'net-im/*' 'games-misc/*' 'dev-scheme/*' 'media-radio/*' 'gnustep-base/*' 'app-officeext/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -701,23 +701,35 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-games-action/descent3
-  MissingChksum: version 1.4.0b-r2: "descent3-1.4.0a-x86.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.4.0b-r2: "descent3-1.4.0b-x86.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+games-misc/fortune-mod-flashrider
+  DeprecatedEAPI: version 0.25: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.80: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 0.90: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 1.00: uses deprecated EAPI: 3
+  MissingChksum: version 0.25: "fortunes-prolinux-0.25.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.80: "fortunes-flashrider-0.80.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.90: "fortunes-flashrider-0.90-BB-Styles-Edition.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-games-action/heretic2
-  MissingChksum: version 1.06c-r1: "heretic2-1.06b-unified-x86.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.06c-r1: "heretic2-1.06c-unified-x86.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.06c-r1: "heretic2-maps-1.0.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+games-misc/fortune-mod-gentoo-dev
+  DeprecatedEAPI: version 20061115: uses deprecated EAPI: 0
+  MissingChksum: version 20061115: "gentoo-dev-20061115.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-games-action/shadowgrounds-bin
-  MissingChksum: version 0_beta12-r1: "ShadowgroundsBeta12.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+games-misc/fortune-mod-gentoo-ru
+  MissingChksum: version 0.25: "gentoo-ru-0.25.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.26: "gentoo-ru-0.26.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-games-action/shadowgrounds-survivor-bin
-  MissingChksum: version 0_beta11-r1: "SurvivorBeta11.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+games-misc/fortune-mod-scriptures
+  MissingChksum: version 1.1.0: "fortune-mod-scriptures-1.1.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-games-action/trine-bin
-  MissingChksum: version 1.08: "Trine.64.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+games-misc/fortune-mod-sp-fortunes
+  MissingChksum: version 0.2: "SP-0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+games-misc/ggencoder
+  MissingChksum: version 0.91a: "ggencoder-0.91a.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+games-misc/xcowsay
+  DeprecatedEAPI: version 1.3: uses deprecated EAPI: 2
+  MissingChksum: version 1.3: "xcowsay-1.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
