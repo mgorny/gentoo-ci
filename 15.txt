@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 15 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'media-gfx/*' 'sys-devel/*' 'sci-chemistry/*' 'kde-misc/*' 'www-apache/*' 'games-board/*' 'sys-power/*' 'app-mobilephone/*' 'net-nntp/*' 'games-kids/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'media-gfx/*' 'sys-devel/*' 'sci-chemistry/*' 'kde-misc/*' 'sci-geosciences/*' 'games-board/*' 'sys-power/*' 'app-mobilephone/*' 'net-nntp/*' 'games-kids/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1206,161 +1206,101 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-www-apache/anyterm
-  DeprecatedEAPI: version 1.1.29: uses deprecated EAPI: 2
-  MissingChksum: version 1.1.29: "anyterm-1.1.29.tbz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+sci-geosciences/bt747
+  MissingChksum: version 2.0.3: "BT747_2.0.3_full.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-www-apache/mod_auth_cookie_mysql2
-  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+sci-geosciences/foxtrotgps
+  MissingChksum: version 1.1.0: "foxtrotgps-1.1.0.tar.xz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-www-apache/mod_auth_imap2
-  DeprecatedEAPI: version 2.2.0: uses deprecated EAPI: 0
-  MissingChksum: version 2.2.0: "mod_auth_imap2-2.2.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+sci-geosciences/gdal-grass
+  MissingChksum: version 1.4.3-r1: "gdal-grass-1.4.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-www-apache/mod_auth_kerb
-  DeprecatedEAPI: version 5.3: uses deprecated EAPI: 0
-  MissingChksum: version 5.3: "mod_auth_kerb-5.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  SizeViolation: "files/mod_auth_kerb-5.4-s4u2proxy-r3.patch" exceeds 20k in size; 21037 bytes total
+sci-geosciences/gmt
+  MissingChksum: version 4.5.6: "GSHHS2.1.1_high.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-www-apache/mod_auth_mysql
-  DeprecatedEAPI: version 3.0.0-r3: uses deprecated EAPI: 2
+sci-geosciences/gpsbabel
+  MissingChksum: version 1.4.3: "gpsbabel.org-style3.css" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-www-apache/mod_auth_nufw
-  DeprecatedEAPI: version 2.2.2: uses deprecated EAPI: 2
-  MissingChksum: version 2.2.2: "mod_auth_nufw-2.2.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+sci-geosciences/gpscorrelate
+  MissingChksum: version 1.6.1: "gpscorrelate-1.6.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-www-apache/mod_auth_pgsql
-  DeprecatedEAPI: version 2.0.3-r1: uses deprecated EAPI: 0
-
-www-apache/mod_auth_token
-  DeprecatedEAPI: version 1.0.6_beta: uses deprecated EAPI: 3
-  MissingChksum: version 1.0.6_beta: "mod_auth_token-1.0.6-beta.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-www-apache/mod_authn_sasl
-  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 0
-
-www-apache/mod_authnz_external
-  DeprecatedEAPI: version 3.2.6: uses deprecated EAPI: 0
-  MissingChksum: version 3.2.6: "mod_authnz_external-3.2.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-www-apache/mod_caucho
-  DeprecatedEAPI: version 4.0.26: uses deprecated EAPI: 2
-
-www-apache/mod_cband
-  DeprecatedEAPI: version 0.9.7.5: uses deprecated EAPI: 0
-
-www-apache/mod_common_redirect
-  MissingChksum: version 0.1.1: "mod_common_redirect-0.1.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-www-apache/mod_depends
-  DeprecatedEAPI: version 0.7.0_p200702041: uses deprecated EAPI: 0
-  MissingChksum: version 0.7.0_p200702041: "mod_depends-0.7.0_p200702041.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-www-apache/mod_diagnostics
-  DeprecatedEAPI: version 0.0.1: uses deprecated EAPI: 0
-  MissingChksum: version 0.0.1: "mod_diagnostics-0.0.1.c" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-www-apache/mod_dnsbl_lookup
-  DeprecatedEAPI: version 0.91: uses deprecated EAPI: 0
-  MissingChksum: version 0.91: "mod_dnsbl_lookup-0.91.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-www-apache/mod_extract_forwarded
-  DeprecatedEAPI: version 2.0.2: uses deprecated EAPI: 3
-
-www-apache/mod_fastcgi
-  DeprecatedEAPI: version 2.4.7_pre0910052141: uses deprecated EAPI: 0
-
-www-apache/mod_fastcgi_handler
-  DeprecatedEAPI: version 0.6: uses deprecated EAPI: 3
-  MissingChksum: version 0.6: "mod_fastcgi_handler-0.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-www-apache/mod_fcgid
-  DeprecatedEAPI: version 2.3.9: uses deprecated EAPI: 0
-
-www-apache/mod_flvx
-  DeprecatedEAPI: version 0.0.1-r1: uses deprecated EAPI: 0
-  MissingChksum: version 0.0.1-r1: "mod_flvx-0.0.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-www-apache/mod_ftpd
-  DeprecatedEAPI: version 0.14-r1: uses deprecated EAPI: 2
-  MissingChksum: version 0.14-r1: "mod_ftpd-0.14.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-www-apache/mod_geoip2
-  DeprecatedEAPI: version 1.2.7-r1: uses deprecated EAPI: 0
-
-www-apache/mod_h2
+sci-geosciences/gpsd
+  DeprecatedEclass: version 2.95-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 2.95-r1: uses deprecated EAPI: 3
+  NonExistentDeps: version 2.95-r1: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 2.95-r1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  MetadataError: version 2.95-r1: attr(fetchables): error- Metadata Exception: pkg ebuild src: sci-geosciences/gpsd-2.95-r1, attr fetchables
+error: mirror://berlios/gpsd/gpsd-2.95.tar.gz is unparseable
+flagged token- uri mirror://berlios/gpsd/gpsd-2.95.tar.gz isn't a known mirror tier
+  DeprecatedEclass: version 2.96-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 2.96-r1: uses deprecated EAPI: 3
+  NonExistentDeps: version 2.96-r1: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 2.96-r1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  MetadataError: version 2.96-r1: attr(fetchables): error- Metadata Exception: pkg ebuild src: sci-geosciences/gpsd-2.96-r1, attr fetchables
+error: mirror://berlios/gpsd/gpsd-2.96bis.tar.gz is unparseable
+flagged token- uri mirror://berlios/gpsd/gpsd-2.96bis.tar.gz isn't a known mirror tier
+  DeprecatedEclass: version 3.6: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 3.6: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 3.6: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 3.7: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 3.7: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 3.7: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 3.8: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 3.8: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 3.8: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 3.9: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 3.9: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 3.9: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 3.9-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 3.9-r1: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 3.9-r1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-www-apache/mod_jk
-  DeprecatedEAPI: version 1.2.37: uses deprecated EAPI: 2
+sci-geosciences/grass
+  DeprecatedEclass: version 6.4.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-www-apache/mod_layout
-  DeprecatedEAPI: version 5.1: uses deprecated EAPI: 0
+sci-geosciences/josm-plugins
+  DeprecatedEAPI: version 20101206: uses deprecated EAPI: 3
+  MissingChksum: version 20101206: "josm-plugins-20101206.tar.xz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-www-apache/mod_limitipconn
-  DeprecatedEAPI: version 0.24: uses deprecated EAPI: 0
+sci-geosciences/mapnik
+  DeprecatedEclass: version 2.0.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 2.0.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 2.1.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-www-apache/mod_loadavg
-  DeprecatedEAPI: version 0.0.1: uses deprecated EAPI: 0
+sci-geosciences/mapnik-world-boundaries
+  DeprecatedEAPI: version 20090514: uses deprecated EAPI: 2
 
-www-apache/mod_log_rotate
-  DeprecatedEAPI: version 1.00: uses deprecated EAPI: 0
+sci-geosciences/mapserver
+  DeprecatedEclass: version 6.0.1-r2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-www-apache/mod_log_sql
-  DeprecatedEAPI: version 1.101-r1: uses deprecated EAPI: 0
+sci-geosciences/mc2bsbh
+  MissingChksum: version 0.0.9: "mc2bsbh-beta09.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-www-apache/mod_macro
-  DeprecatedEAPI: version 1.1.10: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.2.1: uses deprecated EAPI: 0
-  MissingChksum: version 1.1.10: "mod_macro-1.1.10.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.2.1: "mod_macro-1.2.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+sci-geosciences/mkgmap
+  MissingChksum: version 1995: "mkgmap-r1995-src.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-www-apache/mod_mono
-  DeprecatedEclass: version 2.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+sci-geosciences/mtkbabel
+  MissingChksum: version 0.8.2: "mtkbabel-0.8.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-www-apache/mod_pcgi2
-  DeprecatedEAPI: version 2.0.2: uses deprecated EAPI: 0
-  MissingChksum: version 2.0.2: "mod_pcgi2-2.0.2-src.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+sci-geosciences/osm2mp
+  MissingChksum: version 0.80: "osm2mp_v080.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-www-apache/mod_proxy_fcgi
-  DeprecatedEAPI: version 0_p816361: uses deprecated EAPI: 0
-
-www-apache/mod_proxy_html
-  DeprecatedEAPI: version 3.1.2: uses deprecated EAPI: 0
-
-www-apache/mod_rpaf
-  DeprecatedEAPI: version 0.6: uses deprecated EAPI: 0
-
-www-apache/mod_scgi
-  DeprecatedEAPI: version 1.14: uses deprecated EAPI: 3
-
-www-apache/mod_slotlimit
-  DeprecatedEAPI: version 1.3: uses deprecated EAPI: 3
-
-www-apache/mod_spdy
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  ExecutableFile: "files/make-snapshot.sh" has unnecessary executable bit
-
-www-apache/mod_tcl
-  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 0
-
-www-apache/mod_tidy
-  DeprecatedEAPI: version 0.5.5-r1: uses deprecated EAPI: 2
-  MissingChksum: version 0.5.5-r1: "mod_tidy-0.5.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-www-apache/mod_umask
-  DeprecatedEAPI: version 0.1.0: uses deprecated EAPI: 0
-  MissingChksum: version 0.1.0: "mod_umask-0.1.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-www-apache/mod_vdbh
-  DeprecatedEAPI: version 1.0.3-r1: uses deprecated EAPI: 0
-  MissingChksum: version 1.0.3-r1: "mod_vdbh-1.0.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-www-apache/mod_xml2enc
-  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 0
-
-www-apache/modsec-flameeyes
+sci-geosciences/osm2pgsql
   DeprecatedEclass: version 99999999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+sci-geosciences/osmosis
+  MissingChksum: version 0.35.1: "osmosis-0.35.1.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+sci-geosciences/qgis
+  DeprecatedEclass: version 1.7.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.7.0: uses deprecated EAPI: 3
+
+sci-geosciences/qlandkartegt-garmindev
+  MissingChksum: version 0.3.4: "garmindev-0.3.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-geosciences/readosm
+  MissingChksum: version 1.0.0: "readosm-1.0.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
