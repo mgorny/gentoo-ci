@@ -13,7 +13,7 @@
             <li class="good"><a href="2.html">2</a></li>
             <li class="warn"><a href="3.html">3</a></li>
             <li class="good"><a href="4.html">4</a></li>
-            <li class="warn"><a href="5.html">5</a></li>
+            <li class="err"><a href="5.html">5</a></li>
             <li class="warn"><a href="6.html">6</a></li>
             <li class="warn"><a href="7.html">7</a></li>
             <li class="warn"><a href="8.html">8</a></li>
@@ -57,7 +57,7 @@
 </pre></td></tr>
             <tr class="" id="l6"><td><a href="#l6"><span>6</span></a></td><td><pre>+ set +x
 </pre></td></tr>
-            <tr class="" id="l7"><td><a href="#l7"><span>7</span></a></td><td><pre>+ exec pkgcheck -r gentoo --reporter FancyReporter 'sys-apps/*' 'virtual/*' 'www-apps/*' 'gnome-extra/*' 'net-p2p/*' 'gnome-base/*' 'sci-visualization/*' 'sys-infiniband/*' 'dev-go/*' 'mate-extra/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
+            <tr class="" id="l7"><td><a href="#l7"><span>7</span></a></td><td><pre>+ exec pkgcheck -r gentoo --reporter FancyReporter 'sys-apps/*' 'virtual/*' 'www-apps/*' 'gnome-extra/*' 'net-p2p/*' 'gnome-base/*' 'games-rpg/*' 'sys-infiniband/*' 'dev-go/*' 'mate-extra/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 </pre></td></tr>
             <tr class="" id="l8"><td><a href="#l8"><span>8</span></a></td><td><pre>/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
 </pre></td></tr>
@@ -3013,109 +3013,197 @@
 </pre></td></tr>
             <tr class="" id="l1484"><td><a href="#l1484"><span>1484</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1485"><td><a href="#l1485"><span>1485</span></a></td><td><pre>sci-visualization/gcalc
+            <tr class="" id="l1485"><td><a href="#l1485"><span>1485</span></a></td><td><pre>games-rpg/arx-fatalis-data
 </pre></td></tr>
-            <tr class="" id="l1486"><td><a href="#l1486"><span>1486</span></a></td><td><pre>  MissingChksum: version 3.1_rc1: "GCalc-3.1-rc1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+            <tr class="" id="l1486"><td><a href="#l1486"><span>1486</span></a></td><td><pre>  MissingUri: version 1.21-r2: file setup_arx_fatalis.exe is unfetchable- no URI available, and RESTRICT=fetch isn't set
 </pre></td></tr>
-            <tr class="" id="l1487"><td><a href="#l1487"><span>1487</span></a></td><td><pre>
+            <tr class="" id="l1487"><td><a href="#l1487"><span>1487</span></a></td><td><pre>  MissingUri: version 1.21-r3: file setup_arx_fatalis_2.0.0.7.exe is unfetchable- no URI available, and RESTRICT=fetch isn't set
 </pre></td></tr>
-            <tr class="" id="l1488"><td><a href="#l1488"><span>1488</span></a></td><td><pre>sci-visualization/ggobi
+            <tr class="" id="l1488"><td><a href="#l1488"><span>1488</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1489"><td><a href="#l1489"><span>1489</span></a></td><td><pre>  DeprecatedEAPI: version 2.1.8: uses deprecated EAPI: 2
+            <tr class="" id="l1489"><td><a href="#l1489"><span>1489</span></a></td><td><pre>games-rpg/eternal-lands
 </pre></td></tr>
-            <tr class="" id="l1490"><td><a href="#l1490"><span>1490</span></a></td><td><pre>  MissingChksum: version 2.1.8: "ggobi-2.1.8.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+            <tr class="" id="l1490"><td><a href="#l1490"><span>1490</span></a></td><td><pre>  DeprecatedEAPI: version 1.9.2: uses deprecated EAPI: 2
 </pre></td></tr>
-            <tr class="" id="l1491"><td><a href="#l1491"><span>1491</span></a></td><td><pre>
+            <tr class="" id="l1491"><td><a href="#l1491"><span>1491</span></a></td><td><pre>  DeprecatedEAPI: version 1.9.2-r1: uses deprecated EAPI: 2
 </pre></td></tr>
-            <tr class="" id="l1492"><td><a href="#l1492"><span>1492</span></a></td><td><pre>sci-visualization/gri
+            <tr class="" id="l1492"><td><a href="#l1492"><span>1492</span></a></td><td><pre>  DeprecatedEAPI: version 1.9.3: uses deprecated EAPI: 2
 </pre></td></tr>
-            <tr class="" id="l1493"><td><a href="#l1493"><span>1493</span></a></td><td><pre>  DeprecatedEAPI: version 2.12.19: uses deprecated EAPI: 2
+            <tr class="" id="l1493"><td><a href="#l1493"><span>1493</span></a></td><td><pre>  DeprecatedEAPI: version 1.9.3-r1: uses deprecated EAPI: 2
 </pre></td></tr>
-            <tr class="" id="l1494"><td><a href="#l1494"><span>1494</span></a></td><td><pre>
+            <tr class="" id="l1494"><td><a href="#l1494"><span>1494</span></a></td><td><pre>  MissingChksum: version 1.9.2: "elc_1.9.2-20110618.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l1495"><td><a href="#l1495"><span>1495</span></a></td><td><pre>sci-visualization/kst
+            <tr class="" id="l1495"><td><a href="#l1495"><span>1495</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1496"><td><a href="#l1496"><span>1496</span></a></td><td><pre>  NonExistentDeps: version 2.0.7: depset depends: nonexistent atoms [ &lt;dev-qt/qtgui-4.8.5:4 ]
+            <tr class="" id="l1496"><td><a href="#l1496"><span>1496</span></a></td><td><pre>games-rpg/eternal-lands-bloodsucker
 </pre></td></tr>
-            <tr class="" id="l1497"><td><a href="#l1497"><span>1497</span></a></td><td><pre>  NonExistentDeps: version 2.0.7: depset rdepends: nonexistent atoms [ &lt;dev-qt/qtgui-4.8.5:4 ]
+            <tr class="" id="l1497"><td><a href="#l1497"><span>1497</span></a></td><td><pre>  DeprecatedEAPI: version 3.0: uses deprecated EAPI: 2
 </pre></td></tr>
-            <tr class="" id="l1498"><td><a href="#l1498"><span>1498</span></a></td><td><pre>
+            <tr class="" id="l1498"><td><a href="#l1498"><span>1498</span></a></td><td><pre>  MissingChksum: version 3.0: "eternal-lands-bloodsucker-3.0.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l1499"><td><a href="#l1499"><span>1499</span></a></td><td><pre>sci-visualization/pyxplot
+            <tr class="" id="l1499"><td><a href="#l1499"><span>1499</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1500"><td><a href="#l1500"><span>1500</span></a></td><td><pre>  DeprecatedEclass: version 0.7.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l1500"><td><a href="#l1500"><span>1500</span></a></td><td><pre>games-rpg/eternal-lands-data
 </pre></td></tr>
-            <tr class="" id="l1501"><td><a href="#l1501"><span>1501</span></a></td><td><pre>  DeprecatedEAPI: version 0.7.1: uses deprecated EAPI: 2
+            <tr class="" id="l1501"><td><a href="#l1501"><span>1501</span></a></td><td><pre>  DeprecatedEAPI: version 1.9.2-r1: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l1502"><td><a href="#l1502"><span>1502</span></a></td><td><pre>  MissingChksum: version 0.7.1: "pyxplot_0.7.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+            <tr class="" id="l1502"><td><a href="#l1502"><span>1502</span></a></td><td><pre>  DeprecatedEAPI: version 1.9.3: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l1503"><td><a href="#l1503"><span>1503</span></a></td><td><pre>
+            <tr class="" id="l1503"><td><a href="#l1503"><span>1503</span></a></td><td><pre>  DeprecatedEAPI: version 1.9.3-r1: uses deprecated EAPI: 2
 </pre></td></tr>
-            <tr class="" id="l1504"><td><a href="#l1504"><span>1504</span></a></td><td><pre>sci-visualization/spyview
+            <tr class="" id="l1504"><td><a href="#l1504"><span>1504</span></a></td><td><pre>  MissingChksum: version 1.9.2-r1: "el_linux_192.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l1505"><td><a href="#l1505"><span>1505</span></a></td><td><pre>  DroppedKeywordWarning: version 20130823: keywords dropped: amd64
+            <tr class="" id="l1505"><td><a href="#l1505"><span>1505</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1506"><td><a href="#l1506"><span>1506</span></a></td><td><pre>
+            <tr class="" id="l1506"><td><a href="#l1506"><span>1506</span></a></td><td><pre>games-rpg/lure
 </pre></td></tr>
-            <tr class="" id="l1507"><td><a href="#l1507"><span>1507</span></a></td><td><pre>sci-visualization/veusz
+            <tr class="" id="l1507"><td><a href="#l1507"><span>1507</span></a></td><td><pre>  MissingChksum: version 1.1: "lure-es-1.1.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l1508"><td><a href="#l1508"><span>1508</span></a></td><td><pre>  DeprecatedEclass: version 1.11: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l1508"><td><a href="#l1508"><span>1508</span></a></td><td><pre>  MissingChksum: version 1.1: "lure-fr-1.1.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l1509"><td><a href="#l1509"><span>1509</span></a></td><td><pre>  DeprecatedEAPI: version 1.11: uses deprecated EAPI: 3
+            <tr class="" id="l1509"><td><a href="#l1509"><span>1509</span></a></td><td><pre>  MissingChksum: version 1.1: "lure-de-1.1.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l1510"><td><a href="#l1510"><span>1510</span></a></td><td><pre>  MissingChksum: version 1.11: "veusz-1.11.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+            <tr class="" id="l1510"><td><a href="#l1510"><span>1510</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1511"><td><a href="#l1511"><span>1511</span></a></td><td><pre>
+            <tr class="" id="l1511"><td><a href="#l1511"><span>1511</span></a></td><td><pre>games-rpg/nwmovies
 </pre></td></tr>
-            <tr class="" id="l1512"><td><a href="#l1512"><span>1512</span></a></td><td><pre>sci-visualization/xds-viewer
+            <tr class="" id="l1512"><td><a href="#l1512"><span>1512</span></a></td><td><pre>  DeprecatedEAPI: version 20090223.080954: uses deprecated EAPI: 2
 </pre></td></tr>
-            <tr class="" id="l1513"><td><a href="#l1513"><span>1513</span></a></td><td><pre>  MissingChksum: version 0.6: "xds-viewer-0.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+            <tr class="" id="l1513"><td><a href="#l1513"><span>1513</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1514"><td><a href="#l1514"><span>1514</span></a></td><td><pre>
+            <tr class="" id="l1514"><td><a href="#l1514"><span>1514</span></a></td><td><pre>games-rpg/nwn
 </pre></td></tr>
-            <tr class="" id="l1515"><td><a href="#l1515"><span>1515</span></a></td><td><pre>sci-visualization/xgraph
+            <tr class="" id="l1515"><td><a href="#l1515"><span>1515</span></a></td><td><pre>  MissingChksum: version 1.68-r5: "French_linuxclient168_orig.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l1516"><td><a href="#l1516"><span>1516</span></a></td><td><pre>  DeprecatedEAPI: version 12.1-r2: uses deprecated EAPI: 3
+            <tr class="" id="l1516"><td><a href="#l1516"><span>1516</span></a></td><td><pre>  MissingChksum: version 1.68-r5: "French_linuxclient168_xp1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l1517"><td><a href="#l1517"><span>1517</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
+            <tr class="" id="l1517"><td><a href="#l1517"><span>1517</span></a></td><td><pre>  MissingChksum: version 1.68-r5: "French_linuxclient168_xp2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l1518"><td><a href="#l1518"><span>1518</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+            <tr class="" id="l1518"><td><a href="#l1518"><span>1518</span></a></td><td><pre>  MissingChksum: version 1.68-r5: "Italian_linuxclient168_orig.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l1519"><td><a href="#l1519"><span>1519</span></a></td><td><pre>               : refetch
+            <tr class="" id="l1519"><td><a href="#l1519"><span>1519</span></a></td><td><pre>  MissingChksum: version 1.68-r5: "Italian_linuxclient168_xp1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l1520"><td><a href="#l1520"><span>1520</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
+            <tr class="" id="l1520"><td><a href="#l1520"><span>1520</span></a></td><td><pre>  MissingChksum: version 1.68-r5: "Italian_linuxclient168_xp2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l1521"><td><a href="#l1521"><span>1521</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+            <tr class="" id="l1521"><td><a href="#l1521"><span>1521</span></a></td><td><pre>  MissingChksum: version 1.68-r5: "English_linuxclient168_orig.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l1522"><td><a href="#l1522"><span>1522</span></a></td><td><pre>               : refetch
+            <tr class="" id="l1522"><td><a href="#l1522"><span>1522</span></a></td><td><pre>  MissingChksum: version 1.68-r5: "English_linuxclient168_xp1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l1523"><td><a href="#l1523"><span>1523</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
+            <tr class="" id="l1523"><td><a href="#l1523"><span>1523</span></a></td><td><pre>  MissingChksum: version 1.68-r5: "English_linuxclient168_xp2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l1524"><td><a href="#l1524"><span>1524</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+            <tr class="" id="l1524"><td><a href="#l1524"><span>1524</span></a></td><td><pre>  MissingChksum: version 1.68-r5: "Spanish_linuxclient168_orig.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l1525"><td><a href="#l1525"><span>1525</span></a></td><td><pre>               : refetch
+            <tr class="" id="l1525"><td><a href="#l1525"><span>1525</span></a></td><td><pre>  MissingChksum: version 1.68-r5: "Spanish_linuxclient168_xp1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l1526"><td><a href="#l1526"><span>1526</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
+            <tr class="" id="l1526"><td><a href="#l1526"><span>1526</span></a></td><td><pre>  MissingChksum: version 1.68-r5: "Spanish_linuxclient168_xp2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l1527"><td><a href="#l1527"><span>1527</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+            <tr class="" id="l1527"><td><a href="#l1527"><span>1527</span></a></td><td><pre>  MissingChksum: version 1.68-r5: "German_linuxclient168_orig.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l1528"><td><a href="#l1528"><span>1528</span></a></td><td><pre>               : refetch
+            <tr class="" id="l1528"><td><a href="#l1528"><span>1528</span></a></td><td><pre>  MissingChksum: version 1.68-r5: "German_linuxclient168_xp1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l1529"><td><a href="#l1529"><span>1529</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
+            <tr class="" id="l1529"><td><a href="#l1529"><span>1529</span></a></td><td><pre>  MissingChksum: version 1.68-r5: "German_linuxclient168_xp2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l1530"><td><a href="#l1530"><span>1530</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+            <tr class="" id="l1530"><td><a href="#l1530"><span>1530</span></a></td><td><pre>  MissingChksum: version 1.69-r1: "English_linuxclient169_xp1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l1531"><td><a href="#l1531"><span>1531</span></a></td><td><pre>               : refetch
+            <tr class="" id="l1531"><td><a href="#l1531"><span>1531</span></a></td><td><pre>  MissingChksum: version 1.69-r1: "English_linuxclient169_xp2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l1532"><td><a href="#l1532"><span>1532</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
+            <tr class="" id="l1532"><td><a href="#l1532"><span>1532</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1533"><td><a href="#l1533"><span>1533</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+            <tr class="" id="l1533"><td><a href="#l1533"><span>1533</span></a></td><td><pre>games-rpg/nwn-cep
 </pre></td></tr>
-            <tr class="" id="l1534"><td><a href="#l1534"><span>1534</span></a></td><td><pre>               : refetch
+            <tr class="" id="l1534"><td><a href="#l1534"><span>1534</span></a></td><td><pre>  DeprecatedEAPI: version 1.68-r1: uses deprecated EAPI: 2
+</pre></td></tr>
+            <tr class="" id="l1535"><td><a href="#l1535"><span>1535</span></a></td><td><pre>  DeprecatedEAPI: version 2.0: uses deprecated EAPI: 2
+</pre></td></tr>
+            <tr class="" id="l1536"><td><a href="#l1536"><span>1536</span></a></td><td><pre>
+</pre></td></tr>
+            <tr class="" id="l1537"><td><a href="#l1537"><span>1537</span></a></td><td><pre>games-rpg/nwn-data
+</pre></td></tr>
+            <tr class="" id="l1538"><td><a href="#l1538"><span>1538</span></a></td><td><pre>  MissingChksum: version 1.29-r5: "nwresources129.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+</pre></td></tr>
+            <tr class="" id="l1539"><td><a href="#l1539"><span>1539</span></a></td><td><pre>  MissingChksum: version 1.29-r5: "nwfrench129.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+</pre></td></tr>
+            <tr class="" id="l1540"><td><a href="#l1540"><span>1540</span></a></td><td><pre>  MissingChksum: version 1.29-r5: "nwitalian129.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+</pre></td></tr>
+            <tr class="" id="l1541"><td><a href="#l1541"><span>1541</span></a></td><td><pre>  MissingChksum: version 1.29-r5: "nwspanish129.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+</pre></td></tr>
+            <tr class="" id="l1542"><td><a href="#l1542"><span>1542</span></a></td><td><pre>  MissingChksum: version 1.29-r5: "nwgerman129.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+</pre></td></tr>
+            <tr class="" id="l1543"><td><a href="#l1543"><span>1543</span></a></td><td><pre>
+</pre></td></tr>
+            <tr class="" id="l1544"><td><a href="#l1544"><span>1544</span></a></td><td><pre>games-rpg/nwn-penultima
+</pre></td></tr>
+            <tr class="" id="l1545"><td><a href="#l1545"><span>1545</span></a></td><td><pre>  DeprecatedEAPI: version 1: uses deprecated EAPI: 0
+</pre></td></tr>
+            <tr class="" id="l1546"><td><a href="#l1546"><span>1546</span></a></td><td><pre>  DeprecatedEAPI: version 1-r1: uses deprecated EAPI: 0
+</pre></td></tr>
+            <tr class="" id="l1547"><td><a href="#l1547"><span>1547</span></a></td><td><pre>
+</pre></td></tr>
+            <tr class="" id="l1548"><td><a href="#l1548"><span>1548</span></a></td><td><pre>games-rpg/nwn-penultimarerolled
+</pre></td></tr>
+            <tr class="" id="l1549"><td><a href="#l1549"><span>1549</span></a></td><td><pre>  DeprecatedEAPI: version 1: uses deprecated EAPI: 0
+</pre></td></tr>
+            <tr class="" id="l1550"><td><a href="#l1550"><span>1550</span></a></td><td><pre>  MissingChksum: version 1: "PR0_and_PR1_Penultima_ReRolled_Starter_Pack_v1.4.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+</pre></td></tr>
+            <tr class="" id="l1551"><td><a href="#l1551"><span>1551</span></a></td><td><pre>  MissingChksum: version 1: "PR2_Below_the_R00t.v1.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+</pre></td></tr>
+            <tr class="" id="l1552"><td><a href="#l1552"><span>1552</span></a></td><td><pre>  MissingChksum: version 1: "PR3_Homeland_Security.v1.4.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+</pre></td></tr>
+            <tr class="" id="l1553"><td><a href="#l1553"><span>1553</span></a></td><td><pre>  MissingChksum: version 1: "PR4_Pastor_of_Muppets.v1.1.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+</pre></td></tr>
+            <tr class="" id="l1554"><td><a href="#l1554"><span>1554</span></a></td><td><pre>  MissingChksum: version 1: "PR5_The_Saving_Throw.v1.1.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+</pre></td></tr>
+            <tr class="" id="l1555"><td><a href="#l1555"><span>1555</span></a></td><td><pre>
+</pre></td></tr>
+            <tr class="" id="l1556"><td><a href="#l1556"><span>1556</span></a></td><td><pre>games-rpg/nwn-shadowlordsdreamcatcherdemon
+</pre></td></tr>
+            <tr class="" id="l1557"><td><a href="#l1557"><span>1557</span></a></td><td><pre>  DeprecatedEAPI: version 1: uses deprecated EAPI: 0
+</pre></td></tr>
+            <tr class="" id="l1558"><td><a href="#l1558"><span>1558</span></a></td><td><pre>
+</pre></td></tr>
+            <tr class="" id="l1559"><td><a href="#l1559"><span>1559</span></a></td><td><pre>games-rpg/sacred-gold
+</pre></td></tr>
+            <tr class="" id="l1560"><td><a href="#l1560"><span>1560</span></a></td><td><pre>  MissingChksum: version 1.0.01: "sacred-1.0-1.0.01-x86.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+</pre></td></tr>
+            <tr class="" id="l1561"><td><a href="#l1561"><span>1561</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
+</pre></td></tr>
+            <tr class="" id="l1562"><td><a href="#l1562"><span>1562</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+</pre></td></tr>
+            <tr class="" id="l1563"><td><a href="#l1563"><span>1563</span></a></td><td><pre>               : refetch
+</pre></td></tr>
+            <tr class="" id="l1564"><td><a href="#l1564"><span>1564</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
+</pre></td></tr>
+            <tr class="" id="l1565"><td><a href="#l1565"><span>1565</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+</pre></td></tr>
+            <tr class="" id="l1566"><td><a href="#l1566"><span>1566</span></a></td><td><pre>               : refetch
+</pre></td></tr>
+            <tr class="" id="l1567"><td><a href="#l1567"><span>1567</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
+</pre></td></tr>
+            <tr class="" id="l1568"><td><a href="#l1568"><span>1568</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+</pre></td></tr>
+            <tr class="" id="l1569"><td><a href="#l1569"><span>1569</span></a></td><td><pre>               : refetch
+</pre></td></tr>
+            <tr class="" id="l1570"><td><a href="#l1570"><span>1570</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
+</pre></td></tr>
+            <tr class="" id="l1571"><td><a href="#l1571"><span>1571</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+</pre></td></tr>
+            <tr class="" id="l1572"><td><a href="#l1572"><span>1572</span></a></td><td><pre>               : refetch
+</pre></td></tr>
+            <tr class="" id="l1573"><td><a href="#l1573"><span>1573</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
+</pre></td></tr>
+            <tr class="" id="l1574"><td><a href="#l1574"><span>1574</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+</pre></td></tr>
+            <tr class="" id="l1575"><td><a href="#l1575"><span>1575</span></a></td><td><pre>               : refetch
+</pre></td></tr>
+            <tr class="" id="l1576"><td><a href="#l1576"><span>1576</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
+</pre></td></tr>
+            <tr class="" id="l1577"><td><a href="#l1577"><span>1577</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+</pre></td></tr>
+            <tr class="" id="l1578"><td><a href="#l1578"><span>1578</span></a></td><td><pre>               : refetch
 </pre></td></tr>
 
         </table>
 
-        <address>Generated based on results from 2015-09-20 02:07:53 UTC</address>
+        <address>Generated based on results from 2015-09-20 03:04:09 UTC</address>
     </body>
 </html>
