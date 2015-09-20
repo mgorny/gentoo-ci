@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 13 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'app-emulation/*' 'app-dicts/*' 'kde-base/*' 'www-client/*' 'net-im/*' 'media-tv/*' 'gnustep-apps/*' 'media-radio/*' 'www-plugins/*' 'app-officeext/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'app-emulation/*' 'app-dicts/*' 'kde-base/*' 'www-client/*' 'net-im/*' 'media-tv/*' 'gnustep-apps/*' 'media-radio/*' 'gnustep-base/*' 'app-officeext/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -850,11 +850,12 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-www-plugins/kaffeine-mozilla-plugin
-  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 0
+gnustep-base/gnustep-updater
+  MissingChksum: version 0.2: "gnustep-updater-0.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-www-plugins/pipelight
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+gnustep-base/mknfonts
+  DeprecatedEAPI: version 0.5-r1: uses deprecated EAPI: 0
+  MissingChksum: version 0.5-r1: "mknfonts.tool_0.5.orig.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
