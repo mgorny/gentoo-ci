@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 6 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-java/*' 'media-video/*' 'app-emacs/*' 'net-wireless/*' 'app-portage/*' 'sci-electronics/*' 'net-dialup/*' 'net-nds/*' 'lxde-base/*' 'games-roguelike/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-java/*' 'media-video/*' 'app-emacs/*' 'x11-themes/*' 'app-portage/*' 'sci-electronics/*' 'net-dialup/*' 'net-nds/*' 'lxde-base/*' 'games-roguelike/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1659,132 +1659,587 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-net-wireless/adm8211
-  DeprecatedEAPI: version 20060111: uses deprecated EAPI: 0
-  MissingChksum: version 20060111: "adm8211-20060111.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+x11-themes/Tulliana
+  DeprecatedEAPI: version 2.0: uses deprecated EAPI: 0
+  MissingChksum: version 2.0: "Tulliana-2.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-net-wireless/airsnort
-  DeprecatedEAPI: version 0.2.7e: uses deprecated EAPI: 0
-  MissingChksum: version 0.2.7e: "airsnort-0.2.7e.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+x11-themes/audacious-themes
+  DeprecatedEAPI: version 0.0.4: uses deprecated EAPI: 0
+  MissingChksum: version 0.0.4: "AbsoluteE_Xmms.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "Absolute_Blue-XMMS.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "AdamAmp.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "Apple_Platinum_Amp.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "Aqua.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "BlackXMMS.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "BlueIce.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "BlueSteel.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "BlueSteel_xmms.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "BrushedMetal_Xmms.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "CX2.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "ConceptX-Gold.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "Concept_X.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "Covenant.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "Cyrus-XMMS.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "FB_1.2.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "FB_2.1.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "FreeBSD.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "Freshmeat_Amp.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "GTK+.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "Ghost-10.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "HeliXMMS.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "Inverse.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "Marble.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "NeXTAmp2-1.0pre1.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "NeXTAmp2.4.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "OmniAMP-1.3.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "Panic.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "Plume-XMMS-v1.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "SuedE.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "Ultrafina-pw.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "Ultrafina.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "Ultrafina2000.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "UltrafinaSE.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "UltrafinaSEM.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "Vegetal_Blues.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "Vegetali_1-1.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "Vulcan.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "Vulcan21.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "WoodPanel.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "X-Tra.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "XMMS-AfterStep.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "XMMS-Green.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "XawMMS.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "arctic_Xmms.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "blackstar.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "blueHeart-xmms-20.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "blueHeart_Xmms.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "bmXmms.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "cart0onix.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "chaos_XMMS.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "cherry.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "cracked.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "detone_blue.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "detone_green.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "eMac-XMMS.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "eMac_Xmms_color_schemes.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "fyre.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "gLaNDAmp-2.0.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "minEguE-xmms-v2.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "myway.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "nuance-2.0.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "nuance-green-2.0.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "sinistar.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "spiffMEDIA.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "titanium.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "xmms-256.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "Cobalt-Obscura.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "ColderXMMS.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "Coolblue.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "Eclipse.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "LinuxDotCom.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "MarbleX.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "NoerdAmp-SE.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "Winamp_X_XMMS_1.01.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "cherry_best.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "fiRe.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "m2n.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "maXMMS.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "nixamp2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "sword.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "xmmearth.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "7947-plastik.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "Raj._I.O._Amp_in_2000.wsz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "bluemetal.wsz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "atlantis_-_meridian.wsz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "ace.wsz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "wale_sub_contact.wsz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "wale_crobial_hypothesis.wsz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "wale_media_monks.wsz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "wale_atmosphere.wsz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "wale_RLH.wsz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "wale_poopshingles.wsz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "14870-Winamp5-XMMS.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.4: "Nucleo_AlienMind_v5.wsz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-wireless/ap-utils
-  DeprecatedEAPI: version 1.4: uses deprecated EAPI: 0
-  MissingChksum: version 1.4: "ap-utils-1.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+x11-themes/blueglass-xcursors
+  DeprecatedEAPI: version 0.4: uses deprecated EAPI: 0
+  MissingChksum: version 0.4: "5532-BlueGlass-XCursors-3D-0.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-wireless/b43-fwcutter
-  DeprecatedEAPI: version 018: uses deprecated EAPI: 0
+x11-themes/chameleon-xcursors
+  DeprecatedEAPI: version 0.5: uses deprecated EAPI: 3
+  MissingChksum: version 0.5: "Chameleon-Anthracite-0.5.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.5: "Chameleon-DarkSkyBlue-0.5.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.5: "Chameleon-SkyBlue-0.5.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.5: "Chameleon-Pearl-0.5.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.5: "Chameleon-White-0.5.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-wireless/bcm43xx-fwcutter
-  DeprecatedEAPI: version 005: uses deprecated EAPI: 0
-  MetadataError: version 005: attr(fetchables): error- Metadata Exception: pkg ebuild src: net-wireless/bcm43xx-fwcutter-005, attr fetchables
-error: mirror://berlios/bcm43xx/bcm43xx-fwcutter-005.tar.bz2 is unparseable: uri mirror://berlios/bcm43xx/bcm43xx-fwcutter-005.tar.bz2 isn't a known mirror tier
-flagged token- mirror://berlios/bcm43xx/bcm43xx-fwcutter-005.tar.bz2
-  DeprecatedEAPI: version 006: uses deprecated EAPI: 0
-  MetadataError: version 006: attr(fetchables): error- Metadata Exception: pkg ebuild src: net-wireless/bcm43xx-fwcutter-006, attr fetchables
-error: mirror://berlios/bcm43xx/bcm43xx-fwcutter-006.tar.bz2 is unparseable: uri mirror://berlios/bcm43xx/bcm43xx-fwcutter-006.tar.bz2 isn't a known mirror tier
-flagged token- mirror://berlios/bcm43xx/bcm43xx-fwcutter-006.tar.bz2
+x11-themes/claws-mail-themes
+  DeprecatedEAPI: version 20120129: uses deprecated EAPI: 0
 
-net-wireless/blueman
-  DeprecatedEclass: version 1.23-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DroppedKeywordWarning: version 2.0: keywords dropped: ppc
-
-net-wireless/bss
-  DeprecatedEAPI: version 0.8: uses deprecated EAPI: 2
-  MissingChksum: version 0.8: "bss-0.8.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-net-wireless/chillispot
-  DeprecatedEAPI: version 1.1.0: uses deprecated EAPI: 0
-
-net-wireless/cpyrit-cuda
-  DeprecatedEclass: version 0.4.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  NonExistentDeps: version 0.4.0: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
-  NonExistentDeps: version 0.4.0: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
-
-net-wireless/cpyrit-opencl
-  DeprecatedEclass: version 0.4.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  NonExistentDeps: version 0.4.0: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
-  NonExistentDeps: version 0.4.0: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
-
-net-wireless/crda
-  DeprecatedEclass: version 1.1.2-r3: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEclass: version 1.1.2-r4: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEclass: version 1.1.3: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-
-net-wireless/gobi_loader
-  DeprecatedEAPI: version 0.7-r2: uses deprecated EAPI: 2
-
-net-wireless/gr-iqbal
-  DeprecatedEclass: version 0.36.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-
-net-wireless/hackrf-tools
+x11-themes/clearlooks-phenix
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-net-wireless/irda-utils
-  DeprecatedEAPI: version 0.9.18-r3: uses deprecated EAPI: 0
+x11-themes/commonbox-styles
+  DeprecatedEAPI: version 0.6: uses deprecated EAPI: 0
+  MissingChksum: version 0.6: "commonbox-styles-0.6.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-wireless/kismet
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+x11-themes/commonbox-styles-extra
+  DeprecatedEAPI: version 0.2-r2: uses deprecated EAPI: 0
+  MissingChksum: version 0.2-r2: "commonbox-styles-extra-0.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-wireless/madwifi-ng
-  DeprecatedEAPI: version 0.9.3.3: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.9.4: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.9.4-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.9.4.4119.20100201: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.9.4.4133.20100621: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.9.4.4165.20110816: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.9.4.4180.20120502: uses deprecated EAPI: 2
-  MissingChksum: version 0.9.3.3: "madwifi-0.9.3.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 0.9.4: "madwifi-0.9.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 0.9.4.4119.20100201: "madwifi-0.9.4-r4119-20100201.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 0.9.4.4133.20100621: "madwifi-0.9.4-r4133-20100621.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 0.9.4.4165.20110816: "madwifi-0.9.4-r4165-20110816.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 0.9.4.4180.20120502: "madwifi-0.9.4-r4180-20120502.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+x11-themes/constantine-backgrounds
+  DeprecatedEAPI: version 12.1.1.4: uses deprecated EAPI: 3
+  MissingChksum: version 12.1.1.4: "constantine-backgrounds-12.1.1-4.fc15.src.rpm" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-wireless/madwifi-ng-tools
-  DeprecatedEAPI: version 0.9.3.3: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.9.4: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.9.4.4119.20100201: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.9.4.4133.20100621: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.9.4.4165.20110816: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.9.4.4180.20120502: uses deprecated EAPI: 2
-  MissingChksum: version 0.9.3.3: "madwifi-0.9.3.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 0.9.4: "madwifi-0.9.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 0.9.4.4119.20100201: "madwifi-0.9.4-r4119-20100201.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 0.9.4.4133.20100621: "madwifi-0.9.4-r4133-20100621.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+x11-themes/echo-icon-theme
+  DeprecatedEAPI: version 0.3.89.0_pre20081031: uses deprecated EAPI: 2
+  MissingChksum: version 0.3.89.0_pre20081031: "echo-icon-theme-0.3.89.0_pre20081031.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-wireless/openbsc
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+x11-themes/ethemes
+  DeprecatedEAPI: version 0.16.8.0.3: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 0
+  MissingChksum: version 0.16.8.0.3: "e16-themes-0.16.8.0.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.0.0: "e16-themes-1.0.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.0.1: "e16-themes-1.0.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-wireless/openggsn
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+x11-themes/experience
+  DeprecatedEAPI: version 3.04: uses deprecated EAPI: 0
+  MissingChksum: version 3.04: "experience-gtk-3.04.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-wireless/orinoco-fwutils
-  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 0
+x11-themes/flatsvg
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+  MissingChksum: version 1.0: "flatSVG1.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-themes/fluxbox-styles-fluxmod
+  DeprecatedEAPI: version 20050128-r1: uses deprecated EAPI: 2
+  MissingChksum: version 20050128-r1: "fluxbox-styles-fluxmod-20050128.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-themes/fvwm-themes
+  DeprecatedEAPI: version 0.7.0: uses deprecated EAPI: 2
+  MissingChksum: version 0.7.0: "fvwm-themes-0.7.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-themes/fvwm-themes-extra
+  DeprecatedEAPI: version 0.7.0: uses deprecated EAPI: 0
+  MissingChksum: version 0.7.0: "fvwm-themes-extra-0.7.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-themes/fvwm_icons
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+  MissingChksum: version 1.0: "fvwm_icons.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-themes/fvwm_sounds
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+  MissingChksum: version 1.0: "fvwm_sounds.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-themes/gargantuan-icon-theme
+  DeprecatedEAPI: version 1.7: uses deprecated EAPI: 0
+  MissingChksum: version 1.7: "gargantuan-icon-theme-1.7.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-themes/gartoon
+  DeprecatedEAPI: version 0.5-r2: uses deprecated EAPI: 2
+  MissingChksum: version 0.5-r2: "gartoon-0.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-themes/gartoon-redux
+  DeprecatedEAPI: version 1.10: uses deprecated EAPI: 2
+  MissingChksum: version 1.10: "gartoon-redux-1.10.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-themes/gentoo-artwork
+  MissingChksum: version 0.4.2-r1: "gentoo-artwork-0.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.4.2-r1: "gentoo-artwork-0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.4.2-r1: "gentoo-artwork-0.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.4.2-r1: "gentoo-artwork-0.4.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.4.2-r1: "gentoo-artwork-0.4.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.4.2-r1: "gentoo-bubble-icons-20060811.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-themes/gentoo-artwork-livecd
+  DeprecatedEAPI: version 2006.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2007.0: uses deprecated EAPI: 0
+  MissingChksum: version 2006.1: "gentoo-artwork-livecd-2006.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 2007.0: "gentoo-artwork-livecd-2007.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-themes/gentoo-xcursors
+  DeprecatedEAPI: version 0.3.1: uses deprecated EAPI: 0
+  MissingChksum: version 0.3.1: "gentoo-cursors-tad-0.3.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-themes/gentoo10-backgrounds
+  MissingChksum: version 20110309: "gentoo10-backgrounds-20110309.tar.xz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-themes/geramik
+  DeprecatedEAPI: version 0.27-r1: uses deprecated EAPI: 0
+  MissingChksum: version 0.27-r1: "3952-Geramik-0.27.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-themes/gnome-colors-common
+  DeprecatedEAPI: version 5.5.1: uses deprecated EAPI: 2
+  MissingChksum: version 5.5.1: "gnome-colors-5.5.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-themes/gnome-colors-themes
+  DeprecatedEAPI: version 5.5.1: uses deprecated EAPI: 2
+  MissingChksum: version 5.5.1: "gnome-colors-5.5.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 5.5.1: "gnome-gentoo-5.5.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-themes/gnustep-silver-theme
+  MissingChksum: version 2.5: "silver.theme-2.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-themes/goddard-backgrounds
+  DeprecatedEAPI: version 13.0.0.3: uses deprecated EAPI: 3
+  MissingChksum: version 13.0.0.3: "goddard-backgrounds-13.0.0-3.fc15.src.rpm" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-themes/golden-xcursors
+  DeprecatedEAPI: version 0.8: uses deprecated EAPI: 0
+  MissingChksum: version 0.8: "5507-Golden-XCursors-3D-0.8.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-themes/gtk-chtheme
+  DeprecatedEAPI: version 0.3.1-r2: uses deprecated EAPI: 3
+  MissingChksum: version 0.3.1-r2: "gtk-chtheme-0.3.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-themes/gtk-engines-aurora
+  MissingChksum: version 1.5.1: "56438-aurora-1.5.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-themes/gtk-engines-candido
+  MissingChksum: version 0.9.1: "candido-engine-0.9.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-themes/gtk-engines-experience
+  DeprecatedEAPI: version 0.10.4: uses deprecated EAPI: 3
+
+x11-themes/gtk-engines-nodoka
+  MissingChksum: version 0.7.5: "gtk-nodoka-engine-0.7.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-themes/gtk-engines-quartz
+  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 3
+  MissingChksum: version 0.2: "gtk-quartz-engine-0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-themes/gtk-engines-ubuntulooks
+  MissingChksum: version 0.9.12-r3: "ubuntulooks_0.9.12.orig.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 0.9.12-r3: "ubuntulooks_0.9.12-12.diff.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-themes/gtk-engines-xfce
+  DroppedKeywordWarning: version 3.2.0-r300: keywords dropped: arm64
+
+x11-themes/gtk-theme-switch
+  DeprecatedEAPI: version 2.1.0: uses deprecated EAPI: 2
+  MissingChksum: version 2.1.0: "gtk-theme-switch_2.1.0.orig.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-themes/haematite-xcursors
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+  MissingChksum: version 1.0: "19594-haematite-1.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-themes/human-icon-theme
+  MissingChksum: version 0.36: "human-icon-theme_0.36.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-themes/iceicons
+  DeprecatedEAPI: version 0.10.0: uses deprecated EAPI: 0
+
+x11-themes/icewm-themes
+  DeprecatedEAPI: version 0.0.1-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.0.2: uses deprecated EAPI: 0
+  MissingChksum: version 0.0.1-r1: "icecrack-default-2.0.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.1-r1: "icebox-red-default-1.2.13.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.1-r1: "cyrusicewm-1.0.0.tar" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.1-r1: "greyscaled-stable.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.1-r1: "ufosightings-1.0.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.1-r1: "1in1-xp-default.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.2: "1in1-xp-default-1.1.tar" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.2: "theme-winclassic-1.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.2: "elberg-icewm-default-1.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.2: "gertplastik-default-20051225.tar" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.2: "qnx_icewm-default-1.0.tar" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.2: "truecurve-default-1.0.4.tar" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.2: "miggy4-default-0.2.tar" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.2: "axxlite-default-1.0.tar" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.2: "phaaba-1.0.7.tar" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.2: "icequa-default-1.0.2.tar" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.2: "bluecrux-default-1.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.2: "cruxteal-default-1.0.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.2: "kliin-default-0.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.2: "SilverXP-1.2.17-single-1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-themes/korilla
+  DeprecatedEAPI: version 1.3.5: uses deprecated EAPI: 0
+  MissingChksum: version 1.3.5: "Korilla_Icons-v1.3.5.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-themes/larry-backgrounds
+  DeprecatedEAPI: version 20110822: uses deprecated EAPI: 3
+
+x11-themes/laughlin-backgrounds
+  DeprecatedEAPI: version 14.1.0.3: uses deprecated EAPI: 3
+  MissingChksum: version 14.1.0.3: "laughlin-backgrounds-14.1.0-3.fc15.src.rpm" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-themes/leonidas-backgrounds
+  DeprecatedEAPI: version 11.0.0.2: uses deprecated EAPI: 3
+  MissingChksum: version 11.0.0.2: "leonidas-backgrounds-11.0.0-2.fc12.src.rpm" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-themes/lovelock-backgrounds
+  DeprecatedEAPI: version 14.91.1.1: uses deprecated EAPI: 3
+  MissingChksum: version 14.91.1.1: "lovelock-backgrounds-14.91.1-1.fc15.src.rpm" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-themes/lush
+  DeprecatedEAPI: version 0.1.0-r2: uses deprecated EAPI: 0
+  MissingChksum: version 0.1.0-r2: "lush-0.1.0dave.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-themes/matchbox-themes-extra
   DeprecatedEAPI: version 0.3: uses deprecated EAPI: 0
-  MissingChksum: version 0.1: "orinoco-fwutils-0.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.3: "matchbox-themes-extra-0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-net-wireless/orinoco-usb
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 0
+x11-themes/murrine-themes
+  DeprecatedEAPI: version 0.98.0: uses deprecated EAPI: 2
 
-net-wireless/osmobts
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+x11-themes/nimbus
+  MissingChksum: version 0.1.7-r1: "nimbus-0.1.7.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-wireless/osmocom-bb
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+x11-themes/nitrogen
+  MissingChksum: version 3.3.3: "99551-kde4-windeco-nitrogen-3.3.3-Source.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-wireless/python-wifi
-  DeprecatedEclass: version 0.5.0-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.5.0-r1: uses deprecated EAPI: 3
-  MetadataError: version 0.5.0-r1: attr(fetchables): error- Metadata Exception: pkg ebuild src: net-wireless/python-wifi-0.5.0-r1, attr fetchables
-error: mirror://berlios/pythonwifi/python-wifi-0.5.0.tar.bz2 is unparseable
-flagged token- uri mirror://berlios/pythonwifi/python-wifi-0.5.0.tar.bz2 isn't a known mirror tier
+x11-themes/noia
+  DeprecatedEAPI: version 1.0-r1: uses deprecated EAPI: 0
+  MissingChksum: version 1.0-r1: "kde-icons-noia_1.0.orig.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-net-wireless/rfswitch
-  DeprecatedEAPI: version 1.3: uses deprecated EAPI: 0
+x11-themes/notify-osd-icons
+  DeprecatedEAPI: version 0.7: uses deprecated EAPI: 2
+  MissingChksum: version 0.7: "notify-osd-icons_0.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-wireless/rtl8180
-  DeprecatedEAPI: version 0.22_pre20050528: uses deprecated EAPI: 0
-  MissingChksum: version 0.22_pre20050528: "rtl8180-0.22_pre20050528.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+x11-themes/nou-icon-theme
+  DeprecatedEAPI: version 09.02.08: uses deprecated EAPI: 0
+  MissingChksum: version 09.02.08: "Nou-090208.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-themes/nuovo-icon-theme
+  DeprecatedEAPI: version 0.5: uses deprecated EAPI: 0
+  MissingChksum: version 0.5: "dlg-nuovo-0.5.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-themes/nuvola
+  DeprecatedEAPI: version 1.0-r1: uses deprecated EAPI: 0
+  MissingChksum: version 1.0-r1: "nuvola-1.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-themes/nuvox
+  MissingChksum: version 07.1: "nuvoX_07.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-themes/obsidian-xcursors
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+  MissingChksum: version 1.0: "73135-Obsidian.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-themes/oxygen-molecule
+  DeprecatedEAPI: version 3.2: uses deprecated EAPI: 0
+  MissingChksum: version 3.2: "103741-Oxygen-Molecule_3.2_theme.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-themes/pearlgrey-xcursors
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+  MissingChksum: version 1.0: "11313-pearlgrey-1.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-themes/psi-themes
+  DeprecatedEAPI: version 0.9.3_p1-r2: uses deprecated EAPI: 2
+  MissingChksum: version 0.9.3_p1-r2: "emots-main-1.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 0.9.3_p1-r2: "gadu-gadu-1.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 0.9.3_p1-r2: "emots-crystal-0.5.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 0.9.3_p1-r2: "emots-netflint-1.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-themes/pulse-glass
+  DeprecatedEAPI: version 20100616: uses deprecated EAPI: 0
+  MissingChksum: version 20100616: "124442-Pulse-Glass.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-themes/sawfish-themes
+  DeprecatedEAPI: version 0.0.1-r3: uses deprecated EAPI: 0
+  MissingChksum: version 0.0.1-r3: "absolutedarkness-0.30.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 0.0.1-r3: "adaptblue-0.30.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 0.0.1-r3: "ampullacu-0.30.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 0.0.1-r3: "antarctic_-0.30.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 0.0.1-r3: "aquagraphite_-0.30.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 0.0.1-r3: "aquaified-0.30.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 0.0.1-r3: "aquax-0.30.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 0.0.1-r3: "arctic___-0.30.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 0.0.1-r3: "bedoon_ism_bordered-0.30.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 0.0.1-r3: "blueberry-0.30.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 0.0.1-r3: "c2h8-0.30.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 0.0.1-r3: "circles-0.30.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 0.0.1-r3: "clean__-0.30.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 0.0.1-r3: "coral-0.30.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 0.0.1-r3: "cyrus__-0.30.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 0.0.1-r3: "dirtchamber-0.30.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 0.0.1-r3: "doublehelix-0.30.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 0.0.1-r3: "dragdome-0.30.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 0.0.1-r3: "eazel-0.30.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 0.0.1-r3: "eazelblue-0.30.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 0.0.1-r3: "flatgnome-0.30.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 0.0.1-r3: "flatsaw-0.30.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 0.0.1-r3: "friday-0.30.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 0.0.1-r3: "gets-0.30.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 0.0.1-r3: "glass__-0.30.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 0.0.1-r3: "gleam-0.30.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 0.0.1-r3: "greyneon-0.30.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 0.0.1-r3: "latem-0.30.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 0.0.1-r3: "lines_-0.30.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 0.0.1-r3: "liquidgraphite-0.30.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 0.0.1-r3: "lunatic-0.30.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 0.0.1-r3: "marble___-0.30.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 0.0.1-r3: "moonice_-0.30.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 0.0.1-r3: "mozillamodern_-0.30.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 0.0.1-r3: "omonster-0.30.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 0.0.1-r3: "openstep-0.30.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 0.0.1-r3: "origami-0.30.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 0.0.1-r3: "platinum_-0.30.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 0.0.1-r3: "qnx11-0.30.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 0.0.1-r3: "roman_-0.30.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 0.0.1-r3: "sawbench-0.30.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 0.0.1-r3: "shinyfusion-0.30.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 0.0.1-r3: "simpleelegant_-0.30.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 0.0.1-r3: "stirling-0.30.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 0.0.1-r3: "stpflat-0.30.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 0.0.1-r3: "surgical-0.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 0.0.1-r3: "titanium__-0.30.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 0.0.1-r3: "triangle-0.30.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 0.0.1-r3: "twm-0.30.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 0.0.1-r3: "ultraclean-0.30.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 0.0.1-r3: "whistlerk_-0.30.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 0.0.1-r3: "win98-0.30.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-themes/shiki-colors
+  NonExistentDeps: version 4.6: depset rdepends: nonexistent atoms [ x11-wm/metacity ]
+
+x11-themes/silver-xcursors
+  DeprecatedEAPI: version 0.4: uses deprecated EAPI: 0
+  MissingChksum: version 0.4: "5533-Silver-XCursors-3D-0.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-themes/skinenigmang-logos
+  DeprecatedEAPI: version 20070214-r1: uses deprecated EAPI: 2
+  MissingChksum: version 20070214-r1: "skinenigmang-logos-xpm-lo-20070214.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-themes/slim-themes
+  DeprecatedEAPI: version 1.2.3a-r6: uses deprecated EAPI: 2
+
+x11-themes/smaragd
+  MissingChksum: version 0.0.7: "125162-smaragd-0.0.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-themes/solar-backgrounds
+  DeprecatedEAPI: version 0.92.0.5: uses deprecated EAPI: 3
+  MissingChksum: version 0.92.0.5: "solar-backgrounds-0.92.0-5.fc15.src.rpm" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-themes/tactile
+  MissingChksum: version 0_pre20060612: "40771-Tactile.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-themes/tactile3
+  MissingChksum: version 3.1: "111845-Tactile3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-themes/tangerine-icon-theme
+  MissingChksum: version 0.27: "tangerine-icon-theme_0.27.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-themes/vanilla-dmz-aa-xcursors
+  DeprecatedEAPI: version 0.4: uses deprecated EAPI: 0
+  MissingChksum: version 0.4: "vanilla-dmz-aa-0.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-themes/vanilla-dmz-xcursors
+  DeprecatedEAPI: version 0.4: uses deprecated EAPI: 0
+  MissingChksum: version 0.4: "vanilla-dmz-0.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-themes/vdr-channel-logos
+  MissingChksum: version 0.2: "logos-0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-themes/vdrgraphtft-avp
+  NonExistentDeps: version 0.3.1: depset rdepends: nonexistent atoms [ media-plugins/vdr-graphtftng ]
+
+x11-themes/vdrgraphtft-deepblue
+  NonExistentDeps: version 0.3.1: depset rdepends: nonexistent atoms [ media-plugins/vdr-graphtftng ]
+
+x11-themes/vdrgraphtft-deeppurple
+  DeprecatedEAPI: version 0.3.2: uses deprecated EAPI: 2
+  MissingChksum: version 0.3.2: "DeepPurple.0.3.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-themes/vdrgraphtft-poetter
+  DeprecatedEAPI: version 0.3.2: uses deprecated EAPI: 0
+  MissingChksum: version 0.3.2: "poetter.0.3.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-themes/verne-backgrounds
+  DeprecatedEAPI: version 15.91.0.1: uses deprecated EAPI: 3
+  MissingChksum: version 15.91.0.1: "verne-backgrounds-15.91.0-1.fc16.src.rpm" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-themes/windowmaker-themes
+  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 0
+  MissingChksum: version 0.1: "3white.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.1: "AM.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.1: "Alpha.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.1: "Amiga.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.1: "Anguish.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.1: "ArtworkEye.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.1: "Aurora.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.1: "BBChaos.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.1: "BackandBlue.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.1: "BadtzDark.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.1: "BadtzLight.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.1: "Bathroom.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.1: "Brijach.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.1: "ChiasaAonuma.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.1: "Cold.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.1: "Crave.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.1: "Cyrus-Hds.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.1: "DarwinsiMac.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.1: "DigitalGirls.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.1: "Edify.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.1: "Electron.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.1: "Estranged.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.1: "FunkMapping.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.1: "G4Blue.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.1: "G4Grey.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.1: "G4_Blue.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.1: "G4_Grey.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.1: "GraveSite.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.1: "ImacgirlGrape.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.1: "Intrigue.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.1: "Latest.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.1: "Lichen.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.1: "Midnight.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.1: "MidoriLinux.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.1: "Monday.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.1: "RainGutter.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.1: "Rain_Gutter.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.1: "RedDot.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.1: "Sunken.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.1: "TauCetiCentral.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.1: "Tiger-T.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.1: "WMFlare.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.1: "WMFrost.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.1: "WMSecksy.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.1: "WO.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.1: "Weep.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.1: "YesterdayIdied.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.1: "arrownomoreconcepts-default-0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.1: "artworkeye.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.1: "asleep.net-1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.1: "asleep.net-2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.1: "ataglance-default-0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.1: "bathroom.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.1: "bluecobra-default.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.1: "blueflowerdark-default-0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.1: "bluemotion-default.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.1: "darwin.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.1: "el_roacho-default-0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.1: "fauna-default.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.1: "funkmapping.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.1: "giraffe-default-0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.1: "grassaftertherain-default-0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.1: "heavyDV.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.1: "imacgirlgrape.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.1: "ladybird-default-0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.1: "lordsofacid.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.1: "midori.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.1: "reddot.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.1: "redslip.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.1: "thefuzzyhornet-default.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.1: "where-default-0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.1: "wmfrost.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.1: "yondo.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-themes/wm-icons
+  DeprecatedEAPI: version 0.4.0_pre1-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.4.0: uses deprecated EAPI: 0
+  MissingChksum: version 0.4.0: "wm-icons-0.4.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-themes/xcursor-neutral
+  DeprecatedEAPI: version 1.20: uses deprecated EAPI: 0
+
+x11-themes/xfce-gant-icon-theme
+  DeprecatedEAPI: version 3.9_p6: uses deprecated EAPI: 0
+  MissingChksum: version 3.9_p6: "icons-xfce-gant-3.9-6.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-themes/yasis-icon-theme
+  DeprecatedEAPI: version 0.4.2: uses deprecated EAPI: 0
+  MissingChksum: version 0.4.2: "yasis-0.4.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
