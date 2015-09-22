@@ -50,7 +50,7 @@
 </pre></td></tr>
             <tr class="" id="l6"><td><a href="#l6"><span>6</span></a></td><td><pre>+ set +x
 </pre></td></tr>
-            <tr class="" id="l7"><td><a href="#l7"><span>7</span></a></td><td><pre>+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-python/*' 'x11-misc/*' 'x11-plugins/*' 'app-xemacs/*' 'dev-qt/*' 'mail-filter/*' 'sci-physics/*' 'app-forensics/*' 'dev-games/*' 'sci-misc/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
+            <tr class="" id="l7"><td><a href="#l7"><span>7</span></a></td><td><pre>+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-python/*' 'x11-misc/*' 'x11-plugins/*' 'app-xemacs/*' 'dev-qt/*' 'mail-filter/*' 'sci-physics/*' 'app-forensics/*' 'dev-games/*' 'sci-misc/*' 'app-antivirus/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 </pre></td></tr>
             <tr class="" id="l8"><td><a href="#l8"><span>8</span></a></td><td><pre>/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
 </pre></td></tr>
@@ -84,11 +84,11 @@
 </pre></td></tr>
             <tr class="" id="l23"><td><a href="#l23"><span>23</span></a></td><td><pre>dev-python/SchemaObject
 </pre></td></tr>
-            <tr class="" id="l24"><td><a href="#l24"><span>24</span></a></td><td><pre>  DeprecatedEclass: version 0.5.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l24"><td><a href="#l24"><span>24</span></a></td><td><pre>  NonExistentDeps: version 0.5.3: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
 </pre></td></tr>
-            <tr class="" id="l25"><td><a href="#l25"><span>25</span></a></td><td><pre>  NonExistentDeps: version 0.5.3: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+            <tr class="" id="l25"><td><a href="#l25"><span>25</span></a></td><td><pre>  NonExistentDeps: version 0.5.3: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
 </pre></td></tr>
-            <tr class="" id="l26"><td><a href="#l26"><span>26</span></a></td><td><pre>  NonExistentDeps: version 0.5.3: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+            <tr class="" id="l26"><td><a href="#l26"><span>26</span></a></td><td><pre>  DeprecatedEclass: version 0.5.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
             <tr class="" id="l27"><td><a href="#l27"><span>27</span></a></td><td><pre>
 </pre></td></tr>
@@ -118,11 +118,11 @@
 </pre></td></tr>
             <tr class="" id="l40"><td><a href="#l40"><span>40</span></a></td><td><pre>dev-python/beautifulsoup
 </pre></td></tr>
-            <tr class="" id="l41"><td><a href="#l41"><span>41</span></a></td><td><pre>  DeprecatedEclass: version 4.1.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l41"><td><a href="#l41"><span>41</span></a></td><td><pre>  NonExistentDeps: version 4.1.3: depset depends: nonexistent atoms [ =dev-lang/python-2.6*, =dev-lang/python-3.1*, =dev-lang/python-3.2* ]
 </pre></td></tr>
-            <tr class="" id="l42"><td><a href="#l42"><span>42</span></a></td><td><pre>  NonExistentDeps: version 4.1.3: depset depends: nonexistent atoms [ =dev-lang/python-2.6*, =dev-lang/python-3.1*, =dev-lang/python-3.2* ]
+            <tr class="" id="l42"><td><a href="#l42"><span>42</span></a></td><td><pre>  NonExistentDeps: version 4.1.3: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6*, =dev-lang/python-3.1*, =dev-lang/python-3.2* ]
 </pre></td></tr>
-            <tr class="" id="l43"><td><a href="#l43"><span>43</span></a></td><td><pre>  NonExistentDeps: version 4.1.3: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6*, =dev-lang/python-3.1*, =dev-lang/python-3.2* ]
+            <tr class="" id="l43"><td><a href="#l43"><span>43</span></a></td><td><pre>  DeprecatedEclass: version 4.1.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
             <tr class="" id="l44"><td><a href="#l44"><span>44</span></a></td><td><pre>  SizeViolation: "files/beautifulsoup-3.1.0.1-python-3.patch" exceeds 20k in size; 42319 bytes total
 </pre></td></tr>
@@ -138,9 +138,9 @@
 </pre></td></tr>
             <tr class="" id="l50"><td><a href="#l50"><span>50</span></a></td><td><pre>dev-python/cddb-py
 </pre></td></tr>
-            <tr class="" id="l51"><td><a href="#l51"><span>51</span></a></td><td><pre>  DeprecatedEclass: version 1.4: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l51"><td><a href="#l51"><span>51</span></a></td><td><pre>  DeprecatedEAPI: version 1.4: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l52"><td><a href="#l52"><span>52</span></a></td><td><pre>  DeprecatedEAPI: version 1.4: uses deprecated EAPI: 3
+            <tr class="" id="l52"><td><a href="#l52"><span>52</span></a></td><td><pre>  DeprecatedEclass: version 1.4: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
             <tr class="" id="l53"><td><a href="#l53"><span>53</span></a></td><td><pre>
 </pre></td></tr>
@@ -174,13 +174,13 @@
 </pre></td></tr>
             <tr class="" id="l68"><td><a href="#l68"><span>68</span></a></td><td><pre>dev-python/ctypesgen
 </pre></td></tr>
-            <tr class="" id="l69"><td><a href="#l69"><span>69</span></a></td><td><pre>  DeprecatedEclass: version 0_p72: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l69"><td><a href="#l69"><span>69</span></a></td><td><pre>  NonExistentDeps: version 0_p72: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
 </pre></td></tr>
-            <tr class="" id="l70"><td><a href="#l70"><span>70</span></a></td><td><pre>  DeprecatedEAPI: version 0_p72: uses deprecated EAPI: 3
+            <tr class="" id="l70"><td><a href="#l70"><span>70</span></a></td><td><pre>  NonExistentDeps: version 0_p72: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
 </pre></td></tr>
-            <tr class="" id="l71"><td><a href="#l71"><span>71</span></a></td><td><pre>  NonExistentDeps: version 0_p72: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+            <tr class="" id="l71"><td><a href="#l71"><span>71</span></a></td><td><pre>  DeprecatedEAPI: version 0_p72: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l72"><td><a href="#l72"><span>72</span></a></td><td><pre>  NonExistentDeps: version 0_p72: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+            <tr class="" id="l72"><td><a href="#l72"><span>72</span></a></td><td><pre>  DeprecatedEclass: version 0_p72: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
             <tr class="" id="l73"><td><a href="#l73"><span>73</span></a></td><td><pre>
 </pre></td></tr>
@@ -200,9 +200,9 @@
 </pre></td></tr>
             <tr class="" id="l81"><td><a href="#l81"><span>81</span></a></td><td><pre>dev-python/editobj
 </pre></td></tr>
-            <tr class="" id="l82"><td><a href="#l82"><span>82</span></a></td><td><pre>  DeprecatedEclass: version 0.5.7-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l82"><td><a href="#l82"><span>82</span></a></td><td><pre>  DeprecatedEAPI: version 0.5.7-r1: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l83"><td><a href="#l83"><span>83</span></a></td><td><pre>  DeprecatedEAPI: version 0.5.7-r1: uses deprecated EAPI: 3
+            <tr class="" id="l83"><td><a href="#l83"><span>83</span></a></td><td><pre>  DeprecatedEclass: version 0.5.7-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
             <tr class="" id="l84"><td><a href="#l84"><span>84</span></a></td><td><pre>
 </pre></td></tr>
@@ -226,9 +226,9 @@
 </pre></td></tr>
             <tr class="" id="l94"><td><a href="#l94"><span>94</span></a></td><td><pre>dev-python/formencode
 </pre></td></tr>
-            <tr class="" id="l95"><td><a href="#l95"><span>95</span></a></td><td><pre>  DeprecatedEclass: version 1.2.4: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l95"><td><a href="#l95"><span>95</span></a></td><td><pre>  DeprecatedEAPI: version 1.2.4: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l96"><td><a href="#l96"><span>96</span></a></td><td><pre>  DeprecatedEAPI: version 1.2.4: uses deprecated EAPI: 3
+            <tr class="" id="l96"><td><a href="#l96"><span>96</span></a></td><td><pre>  DeprecatedEclass: version 1.2.4: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
             <tr class="" id="l97"><td><a href="#l97"><span>97</span></a></td><td><pre>
 </pre></td></tr>
@@ -268,9 +268,9 @@
 </pre></td></tr>
             <tr class="" id="l115"><td><a href="#l115"><span>115</span></a></td><td><pre>dev-python/id3-py
 </pre></td></tr>
-            <tr class="" id="l116"><td><a href="#l116"><span>116</span></a></td><td><pre>  DeprecatedEclass: version 1.2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l116"><td><a href="#l116"><span>116</span></a></td><td><pre>  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l117"><td><a href="#l117"><span>117</span></a></td><td><pre>  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 3
+            <tr class="" id="l117"><td><a href="#l117"><span>117</span></a></td><td><pre>  DeprecatedEclass: version 1.2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
             <tr class="" id="l118"><td><a href="#l118"><span>118</span></a></td><td><pre>
 </pre></td></tr>
@@ -296,25 +296,25 @@
 </pre></td></tr>
             <tr class="" id="l129"><td><a href="#l129"><span>129</span></a></td><td><pre>dev-python/kaa-display
 </pre></td></tr>
-            <tr class="" id="l130"><td><a href="#l130"><span>130</span></a></td><td><pre>  DeprecatedEclass: version 0.1.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l130"><td><a href="#l130"><span>130</span></a></td><td><pre>  NonExistentDeps: version 0.1.0: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
 </pre></td></tr>
-            <tr class="" id="l131"><td><a href="#l131"><span>131</span></a></td><td><pre>  DeprecatedEAPI: version 0.1.0: uses deprecated EAPI: 3
+            <tr class="" id="l131"><td><a href="#l131"><span>131</span></a></td><td><pre>  NonExistentDeps: version 0.1.0: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
 </pre></td></tr>
-            <tr class="" id="l132"><td><a href="#l132"><span>132</span></a></td><td><pre>  NonExistentDeps: version 0.1.0: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+            <tr class="" id="l132"><td><a href="#l132"><span>132</span></a></td><td><pre>  DeprecatedEAPI: version 0.1.0: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l133"><td><a href="#l133"><span>133</span></a></td><td><pre>  NonExistentDeps: version 0.1.0: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+            <tr class="" id="l133"><td><a href="#l133"><span>133</span></a></td><td><pre>  DeprecatedEclass: version 0.1.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
             <tr class="" id="l134"><td><a href="#l134"><span>134</span></a></td><td><pre>
 </pre></td></tr>
             <tr class="" id="l135"><td><a href="#l135"><span>135</span></a></td><td><pre>dev-python/kaa-imlib2
 </pre></td></tr>
-            <tr class="" id="l136"><td><a href="#l136"><span>136</span></a></td><td><pre>  DeprecatedEclass: version 0.2.3-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l136"><td><a href="#l136"><span>136</span></a></td><td><pre>  NonExistentDeps: version 0.2.3-r1: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
 </pre></td></tr>
-            <tr class="" id="l137"><td><a href="#l137"><span>137</span></a></td><td><pre>  DeprecatedEAPI: version 0.2.3-r1: uses deprecated EAPI: 3
+            <tr class="" id="l137"><td><a href="#l137"><span>137</span></a></td><td><pre>  NonExistentDeps: version 0.2.3-r1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
 </pre></td></tr>
-            <tr class="" id="l138"><td><a href="#l138"><span>138</span></a></td><td><pre>  NonExistentDeps: version 0.2.3-r1: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+            <tr class="" id="l138"><td><a href="#l138"><span>138</span></a></td><td><pre>  DeprecatedEAPI: version 0.2.3-r1: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l139"><td><a href="#l139"><span>139</span></a></td><td><pre>  NonExistentDeps: version 0.2.3-r1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+            <tr class="" id="l139"><td><a href="#l139"><span>139</span></a></td><td><pre>  DeprecatedEclass: version 0.2.3-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
             <tr class="" id="l140"><td><a href="#l140"><span>140</span></a></td><td><pre>
 </pre></td></tr>
@@ -332,9 +332,9 @@
 </pre></td></tr>
             <tr class="" id="l147"><td><a href="#l147"><span>147</span></a></td><td><pre>dev-python/louie
 </pre></td></tr>
-            <tr class="" id="l148"><td><a href="#l148"><span>148</span></a></td><td><pre>  DeprecatedEclass: version 1.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l148"><td><a href="#l148"><span>148</span></a></td><td><pre>  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l149"><td><a href="#l149"><span>149</span></a></td><td><pre>  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 3
+            <tr class="" id="l149"><td><a href="#l149"><span>149</span></a></td><td><pre>  DeprecatedEclass: version 1.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
             <tr class="" id="l150"><td><a href="#l150"><span>150</span></a></td><td><pre>
 </pre></td></tr>
@@ -354,9 +354,9 @@
 </pre></td></tr>
             <tr class="" id="l158"><td><a href="#l158"><span>158</span></a></td><td><pre>dev-python/morbid
 </pre></td></tr>
-            <tr class="" id="l159"><td><a href="#l159"><span>159</span></a></td><td><pre>  DeprecatedEclass: version 0.8.7.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l159"><td><a href="#l159"><span>159</span></a></td><td><pre>  DeprecatedEAPI: version 0.8.7.3: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l160"><td><a href="#l160"><span>160</span></a></td><td><pre>  DeprecatedEAPI: version 0.8.7.3: uses deprecated EAPI: 3
+            <tr class="" id="l160"><td><a href="#l160"><span>160</span></a></td><td><pre>  DeprecatedEclass: version 0.8.7.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
             <tr class="" id="l161"><td><a href="#l161"><span>161</span></a></td><td><pre>
 </pre></td></tr>
@@ -410,9 +410,9 @@
 </pre></td></tr>
             <tr class="" id="l186"><td><a href="#l186"><span>186</span></a></td><td><pre>dev-python/paisley
 </pre></td></tr>
-            <tr class="" id="l187"><td><a href="#l187"><span>187</span></a></td><td><pre>  DeprecatedEclass: version 0.3.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l187"><td><a href="#l187"><span>187</span></a></td><td><pre>  DeprecatedEAPI: version 0.3.1: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l188"><td><a href="#l188"><span>188</span></a></td><td><pre>  DeprecatedEAPI: version 0.3.1: uses deprecated EAPI: 3
+            <tr class="" id="l188"><td><a href="#l188"><span>188</span></a></td><td><pre>  DeprecatedEclass: version 0.3.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
             <tr class="" id="l189"><td><a href="#l189"><span>189</span></a></td><td><pre>
 </pre></td></tr>
@@ -438,17 +438,17 @@
 </pre></td></tr>
             <tr class="" id="l200"><td><a href="#l200"><span>200</span></a></td><td><pre>dev-python/pexpect
 </pre></td></tr>
-            <tr class="" id="l201"><td><a href="#l201"><span>201</span></a></td><td><pre>  DeprecatedEclass: version 2.4: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l201"><td><a href="#l201"><span>201</span></a></td><td><pre>  DeprecatedEAPI: version 2.4: uses deprecated EAPI: 2
 </pre></td></tr>
-            <tr class="" id="l202"><td><a href="#l202"><span>202</span></a></td><td><pre>  DeprecatedEAPI: version 2.4: uses deprecated EAPI: 2
+            <tr class="" id="l202"><td><a href="#l202"><span>202</span></a></td><td><pre>  DeprecatedEclass: version 2.4: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
             <tr class="" id="l203"><td><a href="#l203"><span>203</span></a></td><td><pre>
 </pre></td></tr>
             <tr class="" id="l204"><td><a href="#l204"><span>204</span></a></td><td><pre>dev-python/piddle
 </pre></td></tr>
-            <tr class="" id="l205"><td><a href="#l205"><span>205</span></a></td><td><pre>  DeprecatedEclass: version 1.0.15: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l205"><td><a href="#l205"><span>205</span></a></td><td><pre>  DeprecatedEAPI: version 1.0.15: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l206"><td><a href="#l206"><span>206</span></a></td><td><pre>  DeprecatedEAPI: version 1.0.15: uses deprecated EAPI: 3
+            <tr class="" id="l206"><td><a href="#l206"><span>206</span></a></td><td><pre>  DeprecatedEclass: version 1.0.15: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
             <tr class="" id="l207"><td><a href="#l207"><span>207</span></a></td><td><pre>
 </pre></td></tr>
@@ -472,17 +472,17 @@
 </pre></td></tr>
             <tr class="" id="l217"><td><a href="#l217"><span>217</span></a></td><td><pre>dev-python/polygon
 </pre></td></tr>
-            <tr class="" id="l218"><td><a href="#l218"><span>218</span></a></td><td><pre>  DeprecatedEclass: version 2.0.4: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l218"><td><a href="#l218"><span>218</span></a></td><td><pre>  DeprecatedEAPI: version 2.0.4: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l219"><td><a href="#l219"><span>219</span></a></td><td><pre>  DeprecatedEAPI: version 2.0.4: uses deprecated EAPI: 3
+            <tr class="" id="l219"><td><a href="#l219"><span>219</span></a></td><td><pre>  DeprecatedEclass: version 2.0.4: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
             <tr class="" id="l220"><td><a href="#l220"><span>220</span></a></td><td><pre>
 </pre></td></tr>
             <tr class="" id="l221"><td><a href="#l221"><span>221</span></a></td><td><pre>dev-python/py-smbpasswd
 </pre></td></tr>
-            <tr class="" id="l222"><td><a href="#l222"><span>222</span></a></td><td><pre>  DeprecatedEclass: version 1.0.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l222"><td><a href="#l222"><span>222</span></a></td><td><pre>  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l223"><td><a href="#l223"><span>223</span></a></td><td><pre>  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 3
+            <tr class="" id="l223"><td><a href="#l223"><span>223</span></a></td><td><pre>  DeprecatedEclass: version 1.0.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
             <tr class="" id="l224"><td><a href="#l224"><span>224</span></a></td><td><pre>  DeprecatedEclass: version 1.0.1-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
@@ -490,9 +490,9 @@
 </pre></td></tr>
             <tr class="" id="l226"><td><a href="#l226"><span>226</span></a></td><td><pre>dev-python/py-xmlrpc
 </pre></td></tr>
-            <tr class="" id="l227"><td><a href="#l227"><span>227</span></a></td><td><pre>  DeprecatedEclass: version 0.8.8.3-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l227"><td><a href="#l227"><span>227</span></a></td><td><pre>  DeprecatedEAPI: version 0.8.8.3-r1: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l228"><td><a href="#l228"><span>228</span></a></td><td><pre>  DeprecatedEAPI: version 0.8.8.3-r1: uses deprecated EAPI: 3
+            <tr class="" id="l228"><td><a href="#l228"><span>228</span></a></td><td><pre>  DeprecatedEclass: version 0.8.8.3-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
             <tr class="" id="l229"><td><a href="#l229"><span>229</span></a></td><td><pre>
 </pre></td></tr>
@@ -504,41 +504,41 @@
 </pre></td></tr>
             <tr class="" id="l233"><td><a href="#l233"><span>233</span></a></td><td><pre>dev-python/pyamazon
 </pre></td></tr>
-            <tr class="" id="l234"><td><a href="#l234"><span>234</span></a></td><td><pre>  DeprecatedEclass: version 0.65: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l234"><td><a href="#l234"><span>234</span></a></td><td><pre>  DeprecatedEAPI: version 0.65: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l235"><td><a href="#l235"><span>235</span></a></td><td><pre>  DeprecatedEAPI: version 0.65: uses deprecated EAPI: 3
+            <tr class="" id="l235"><td><a href="#l235"><span>235</span></a></td><td><pre>  DeprecatedEclass: version 0.65: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
             <tr class="" id="l236"><td><a href="#l236"><span>236</span></a></td><td><pre>
 </pre></td></tr>
             <tr class="" id="l237"><td><a href="#l237"><span>237</span></a></td><td><pre>dev-python/pyao
 </pre></td></tr>
-            <tr class="" id="l238"><td><a href="#l238"><span>238</span></a></td><td><pre>  DeprecatedEclass: version 0.82-r2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l238"><td><a href="#l238"><span>238</span></a></td><td><pre>  DeprecatedEAPI: version 0.82-r2: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l239"><td><a href="#l239"><span>239</span></a></td><td><pre>  DeprecatedEAPI: version 0.82-r2: uses deprecated EAPI: 3
+            <tr class="" id="l239"><td><a href="#l239"><span>239</span></a></td><td><pre>  DeprecatedEclass: version 0.82-r2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
             <tr class="" id="l240"><td><a href="#l240"><span>240</span></a></td><td><pre>
 </pre></td></tr>
             <tr class="" id="l241"><td><a href="#l241"><span>241</span></a></td><td><pre>dev-python/pychm
 </pre></td></tr>
-            <tr class="" id="l242"><td><a href="#l242"><span>242</span></a></td><td><pre>  DeprecatedEclass: version 0.8.4: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l242"><td><a href="#l242"><span>242</span></a></td><td><pre>  DeprecatedEAPI: version 0.8.4: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l243"><td><a href="#l243"><span>243</span></a></td><td><pre>  DeprecatedEAPI: version 0.8.4: uses deprecated EAPI: 3
+            <tr class="" id="l243"><td><a href="#l243"><span>243</span></a></td><td><pre>  DeprecatedEclass: version 0.8.4: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
             <tr class="" id="l244"><td><a href="#l244"><span>244</span></a></td><td><pre>
 </pre></td></tr>
             <tr class="" id="l245"><td><a href="#l245"><span>245</span></a></td><td><pre>dev-python/pycipher
 </pre></td></tr>
-            <tr class="" id="l246"><td><a href="#l246"><span>246</span></a></td><td><pre>  DeprecatedEclass: version 0.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l246"><td><a href="#l246"><span>246</span></a></td><td><pre>  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l247"><td><a href="#l247"><span>247</span></a></td><td><pre>  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 3
+            <tr class="" id="l247"><td><a href="#l247"><span>247</span></a></td><td><pre>  DeprecatedEclass: version 0.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
             <tr class="" id="l248"><td><a href="#l248"><span>248</span></a></td><td><pre>
 </pre></td></tr>
             <tr class="" id="l249"><td><a href="#l249"><span>249</span></a></td><td><pre>dev-python/pyclimate
 </pre></td></tr>
-            <tr class="" id="l250"><td><a href="#l250"><span>250</span></a></td><td><pre>  DeprecatedEclass: version 1.2.2-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l250"><td><a href="#l250"><span>250</span></a></td><td><pre>  DeprecatedEAPI: version 1.2.2-r1: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l251"><td><a href="#l251"><span>251</span></a></td><td><pre>  DeprecatedEAPI: version 1.2.2-r1: uses deprecated EAPI: 3
+            <tr class="" id="l251"><td><a href="#l251"><span>251</span></a></td><td><pre>  DeprecatedEclass: version 1.2.2-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
             <tr class="" id="l252"><td><a href="#l252"><span>252</span></a></td><td><pre>
 </pre></td></tr>
@@ -568,9 +568,9 @@
 </pre></td></tr>
             <tr class="" id="l265"><td><a href="#l265"><span>265</span></a></td><td><pre>dev-python/pyfits
 </pre></td></tr>
-            <tr class="" id="l266"><td><a href="#l266"><span>266</span></a></td><td><pre>  DeprecatedEclass: version 2.4.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l266"><td><a href="#l266"><span>266</span></a></td><td><pre>  DeprecatedEAPI: version 2.4.0: uses deprecated EAPI: 2
 </pre></td></tr>
-            <tr class="" id="l267"><td><a href="#l267"><span>267</span></a></td><td><pre>  DeprecatedEAPI: version 2.4.0: uses deprecated EAPI: 2
+            <tr class="" id="l267"><td><a href="#l267"><span>267</span></a></td><td><pre>  DeprecatedEclass: version 2.4.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
             <tr class="" id="l268"><td><a href="#l268"><span>268</span></a></td><td><pre>
 </pre></td></tr>
@@ -596,21 +596,21 @@
 </pre></td></tr>
             <tr class="" id="l279"><td><a href="#l279"><span>279</span></a></td><td><pre>dev-python/pygtkhelpers
 </pre></td></tr>
-            <tr class="" id="l280"><td><a href="#l280"><span>280</span></a></td><td><pre>  DeprecatedEclass: version 0.4.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l280"><td><a href="#l280"><span>280</span></a></td><td><pre>  NonExistentDeps: version 0.4.3: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
 </pre></td></tr>
-            <tr class="" id="l281"><td><a href="#l281"><span>281</span></a></td><td><pre>  DeprecatedEAPI: version 0.4.3: uses deprecated EAPI: 3
+            <tr class="" id="l281"><td><a href="#l281"><span>281</span></a></td><td><pre>  NonExistentDeps: version 0.4.3: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
 </pre></td></tr>
-            <tr class="" id="l282"><td><a href="#l282"><span>282</span></a></td><td><pre>  NonExistentDeps: version 0.4.3: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+            <tr class="" id="l282"><td><a href="#l282"><span>282</span></a></td><td><pre>  DeprecatedEAPI: version 0.4.3: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l283"><td><a href="#l283"><span>283</span></a></td><td><pre>  NonExistentDeps: version 0.4.3: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+            <tr class="" id="l283"><td><a href="#l283"><span>283</span></a></td><td><pre>  DeprecatedEclass: version 0.4.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
             <tr class="" id="l284"><td><a href="#l284"><span>284</span></a></td><td><pre>
 </pre></td></tr>
             <tr class="" id="l285"><td><a href="#l285"><span>285</span></a></td><td><pre>dev-python/pyid3lib
 </pre></td></tr>
-            <tr class="" id="l286"><td><a href="#l286"><span>286</span></a></td><td><pre>  DeprecatedEclass: version 0.5.1-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l286"><td><a href="#l286"><span>286</span></a></td><td><pre>  DeprecatedEAPI: version 0.5.1-r1: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l287"><td><a href="#l287"><span>287</span></a></td><td><pre>  DeprecatedEAPI: version 0.5.1-r1: uses deprecated EAPI: 3
+            <tr class="" id="l287"><td><a href="#l287"><span>287</span></a></td><td><pre>  DeprecatedEclass: version 0.5.1-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
             <tr class="" id="l288"><td><a href="#l288"><span>288</span></a></td><td><pre>
 </pre></td></tr>
@@ -622,33 +622,33 @@
 </pre></td></tr>
             <tr class="" id="l292"><td><a href="#l292"><span>292</span></a></td><td><pre>dev-python/pyltxml
 </pre></td></tr>
-            <tr class="" id="l293"><td><a href="#l293"><span>293</span></a></td><td><pre>  DeprecatedEclass: version 1.3-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l293"><td><a href="#l293"><span>293</span></a></td><td><pre>  DeprecatedEAPI: version 1.3-r1: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l294"><td><a href="#l294"><span>294</span></a></td><td><pre>  DeprecatedEAPI: version 1.3-r1: uses deprecated EAPI: 3
+            <tr class="" id="l294"><td><a href="#l294"><span>294</span></a></td><td><pre>  DeprecatedEclass: version 1.3-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
             <tr class="" id="l295"><td><a href="#l295"><span>295</span></a></td><td><pre>
 </pre></td></tr>
             <tr class="" id="l296"><td><a href="#l296"><span>296</span></a></td><td><pre>dev-python/pymad
 </pre></td></tr>
-            <tr class="" id="l297"><td><a href="#l297"><span>297</span></a></td><td><pre>  DeprecatedEclass: version 0.6: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l297"><td><a href="#l297"><span>297</span></a></td><td><pre>  DeprecatedEAPI: version 0.6: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l298"><td><a href="#l298"><span>298</span></a></td><td><pre>  DeprecatedEAPI: version 0.6: uses deprecated EAPI: 3
+            <tr class="" id="l298"><td><a href="#l298"><span>298</span></a></td><td><pre>  DeprecatedEclass: version 0.6: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
             <tr class="" id="l299"><td><a href="#l299"><span>299</span></a></td><td><pre>
 </pre></td></tr>
             <tr class="" id="l300"><td><a href="#l300"><span>300</span></a></td><td><pre>dev-python/pyndex
 </pre></td></tr>
-            <tr class="" id="l301"><td><a href="#l301"><span>301</span></a></td><td><pre>  DeprecatedEclass: version 0.3.2a: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l301"><td><a href="#l301"><span>301</span></a></td><td><pre>  DeprecatedEAPI: version 0.3.2a: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l302"><td><a href="#l302"><span>302</span></a></td><td><pre>  DeprecatedEAPI: version 0.3.2a: uses deprecated EAPI: 3
+            <tr class="" id="l302"><td><a href="#l302"><span>302</span></a></td><td><pre>  DeprecatedEclass: version 0.3.2a: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
             <tr class="" id="l303"><td><a href="#l303"><span>303</span></a></td><td><pre>
 </pre></td></tr>
             <tr class="" id="l304"><td><a href="#l304"><span>304</span></a></td><td><pre>dev-python/pynut
 </pre></td></tr>
-            <tr class="" id="l305"><td><a href="#l305"><span>305</span></a></td><td><pre>  DeprecatedEclass: version 1.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l305"><td><a href="#l305"><span>305</span></a></td><td><pre>  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l306"><td><a href="#l306"><span>306</span></a></td><td><pre>  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 3
+            <tr class="" id="l306"><td><a href="#l306"><span>306</span></a></td><td><pre>  DeprecatedEclass: version 1.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
             <tr class="" id="l307"><td><a href="#l307"><span>307</span></a></td><td><pre>
 </pre></td></tr>
@@ -666,17 +666,17 @@
 </pre></td></tr>
             <tr class="" id="l314"><td><a href="#l314"><span>314</span></a></td><td><pre>dev-python/pyosd
 </pre></td></tr>
-            <tr class="" id="l315"><td><a href="#l315"><span>315</span></a></td><td><pre>  DeprecatedEclass: version 0.2.14: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l315"><td><a href="#l315"><span>315</span></a></td><td><pre>  DeprecatedEAPI: version 0.2.14: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l316"><td><a href="#l316"><span>316</span></a></td><td><pre>  DeprecatedEAPI: version 0.2.14: uses deprecated EAPI: 3
+            <tr class="" id="l316"><td><a href="#l316"><span>316</span></a></td><td><pre>  DeprecatedEclass: version 0.2.14: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
             <tr class="" id="l317"><td><a href="#l317"><span>317</span></a></td><td><pre>
 </pre></td></tr>
             <tr class="" id="l318"><td><a href="#l318"><span>318</span></a></td><td><pre>dev-python/pyparsing
 </pre></td></tr>
-            <tr class="" id="l319"><td><a href="#l319"><span>319</span></a></td><td><pre>  DeprecatedEclass: version 1.5.6: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l319"><td><a href="#l319"><span>319</span></a></td><td><pre>  DeprecatedEAPI: version 1.5.6: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l320"><td><a href="#l320"><span>320</span></a></td><td><pre>  DeprecatedEAPI: version 1.5.6: uses deprecated EAPI: 3
+            <tr class="" id="l320"><td><a href="#l320"><span>320</span></a></td><td><pre>  DeprecatedEclass: version 1.5.6: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
             <tr class="" id="l321"><td><a href="#l321"><span>321</span></a></td><td><pre>
 </pre></td></tr>
@@ -688,9 +688,9 @@
 </pre></td></tr>
             <tr class="" id="l325"><td><a href="#l325"><span>325</span></a></td><td><pre>dev-python/pypgsql
 </pre></td></tr>
-            <tr class="" id="l326"><td><a href="#l326"><span>326</span></a></td><td><pre>  DeprecatedEclass: version 2.5.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l326"><td><a href="#l326"><span>326</span></a></td><td><pre>  DeprecatedEAPI: version 2.5.1: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l327"><td><a href="#l327"><span>327</span></a></td><td><pre>  DeprecatedEAPI: version 2.5.1: uses deprecated EAPI: 3
+            <tr class="" id="l327"><td><a href="#l327"><span>327</span></a></td><td><pre>  DeprecatedEclass: version 2.5.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
             <tr class="" id="l328"><td><a href="#l328"><span>328</span></a></td><td><pre>
 </pre></td></tr>
@@ -718,17 +718,17 @@
 </pre></td></tr>
             <tr class="" id="l340"><td><a href="#l340"><span>340</span></a></td><td><pre>dev-python/python-cdb
 </pre></td></tr>
-            <tr class="" id="l341"><td><a href="#l341"><span>341</span></a></td><td><pre>  DeprecatedEclass: version 0.34: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l341"><td><a href="#l341"><span>341</span></a></td><td><pre>  DeprecatedEAPI: version 0.34: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l342"><td><a href="#l342"><span>342</span></a></td><td><pre>  DeprecatedEAPI: version 0.34: uses deprecated EAPI: 3
+            <tr class="" id="l342"><td><a href="#l342"><span>342</span></a></td><td><pre>  DeprecatedEclass: version 0.34: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
             <tr class="" id="l343"><td><a href="#l343"><span>343</span></a></td><td><pre>
 </pre></td></tr>
             <tr class="" id="l344"><td><a href="#l344"><span>344</span></a></td><td><pre>dev-python/python-distutils-extra
 </pre></td></tr>
-            <tr class="" id="l345"><td><a href="#l345"><span>345</span></a></td><td><pre>  DeprecatedEclass: version 2.33: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l345"><td><a href="#l345"><span>345</span></a></td><td><pre>  DeprecatedEAPI: version 2.33: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l346"><td><a href="#l346"><span>346</span></a></td><td><pre>  DeprecatedEAPI: version 2.33: uses deprecated EAPI: 3
+            <tr class="" id="l346"><td><a href="#l346"><span>346</span></a></td><td><pre>  DeprecatedEclass: version 2.33: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
             <tr class="" id="l347"><td><a href="#l347"><span>347</span></a></td><td><pre>
 </pre></td></tr>
@@ -768,17 +768,17 @@
 </pre></td></tr>
             <tr class="" id="l365"><td><a href="#l365"><span>365</span></a></td><td><pre>dev-python/python-xlib
 </pre></td></tr>
-            <tr class="" id="l366"><td><a href="#l366"><span>366</span></a></td><td><pre>  DeprecatedEclass: version 0.15_rc1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l366"><td><a href="#l366"><span>366</span></a></td><td><pre>  DeprecatedEAPI: version 0.15_rc1: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l367"><td><a href="#l367"><span>367</span></a></td><td><pre>  DeprecatedEAPI: version 0.15_rc1: uses deprecated EAPI: 3
+            <tr class="" id="l367"><td><a href="#l367"><span>367</span></a></td><td><pre>  DeprecatedEclass: version 0.15_rc1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
             <tr class="" id="l368"><td><a href="#l368"><span>368</span></a></td><td><pre>
 </pre></td></tr>
             <tr class="" id="l369"><td><a href="#l369"><span>369</span></a></td><td><pre>dev-python/pyusb
 </pre></td></tr>
-            <tr class="" id="l370"><td><a href="#l370"><span>370</span></a></td><td><pre>  DeprecatedEclass: version 0.4.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l370"><td><a href="#l370"><span>370</span></a></td><td><pre>  DeprecatedEAPI: version 0.4.3: uses deprecated EAPI: 2
 </pre></td></tr>
-            <tr class="" id="l371"><td><a href="#l371"><span>371</span></a></td><td><pre>  DeprecatedEAPI: version 0.4.3: uses deprecated EAPI: 2
+            <tr class="" id="l371"><td><a href="#l371"><span>371</span></a></td><td><pre>  DeprecatedEclass: version 0.4.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
             <tr class="" id="l372"><td><a href="#l372"><span>372</span></a></td><td><pre>
 </pre></td></tr>
@@ -796,9 +796,9 @@
 </pre></td></tr>
             <tr class="" id="l379"><td><a href="#l379"><span>379</span></a></td><td><pre>dev-python/pyzor
 </pre></td></tr>
-            <tr class="" id="l380"><td><a href="#l380"><span>380</span></a></td><td><pre>  DeprecatedEclass: version 0.5.0-r2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l380"><td><a href="#l380"><span>380</span></a></td><td><pre>  DeprecatedEAPI: version 0.5.0-r2: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l381"><td><a href="#l381"><span>381</span></a></td><td><pre>  DeprecatedEAPI: version 0.5.0-r2: uses deprecated EAPI: 3
+            <tr class="" id="l381"><td><a href="#l381"><span>381</span></a></td><td><pre>  DeprecatedEclass: version 0.5.0-r2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
             <tr class="" id="l382"><td><a href="#l382"><span>382</span></a></td><td><pre>  DroppedKeywordWarning: version 0.7.0: keywords dropped: ppc, ppc64
 </pre></td></tr>
@@ -832,17 +832,17 @@
 </pre></td></tr>
             <tr class="" id="l397"><td><a href="#l397"><span>397</span></a></td><td><pre>dev-python/sancho
 </pre></td></tr>
-            <tr class="" id="l398"><td><a href="#l398"><span>398</span></a></td><td><pre>  DeprecatedEclass: version 2.4: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l398"><td><a href="#l398"><span>398</span></a></td><td><pre>  DeprecatedEAPI: version 2.4: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l399"><td><a href="#l399"><span>399</span></a></td><td><pre>  DeprecatedEAPI: version 2.4: uses deprecated EAPI: 3
+            <tr class="" id="l399"><td><a href="#l399"><span>399</span></a></td><td><pre>  DeprecatedEclass: version 2.4: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
             <tr class="" id="l400"><td><a href="#l400"><span>400</span></a></td><td><pre>
 </pre></td></tr>
             <tr class="" id="l401"><td><a href="#l401"><span>401</span></a></td><td><pre>dev-python/scientificpython
 </pre></td></tr>
-            <tr class="" id="l402"><td><a href="#l402"><span>402</span></a></td><td><pre>  DeprecatedEclass: version 2.9.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l402"><td><a href="#l402"><span>402</span></a></td><td><pre>  DeprecatedEAPI: version 2.9.1: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l403"><td><a href="#l403"><span>403</span></a></td><td><pre>  DeprecatedEAPI: version 2.9.1: uses deprecated EAPI: 3
+            <tr class="" id="l403"><td><a href="#l403"><span>403</span></a></td><td><pre>  DeprecatedEclass: version 2.9.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
             <tr class="" id="l404"><td><a href="#l404"><span>404</span></a></td><td><pre>
 </pre></td></tr>
@@ -854,9 +854,9 @@
 </pre></td></tr>
             <tr class="" id="l408"><td><a href="#l408"><span>408</span></a></td><td><pre>dev-python/simpleparse
 </pre></td></tr>
-            <tr class="" id="l409"><td><a href="#l409"><span>409</span></a></td><td><pre>  DeprecatedEclass: version 2.1.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l409"><td><a href="#l409"><span>409</span></a></td><td><pre>  DeprecatedEAPI: version 2.1.1: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l410"><td><a href="#l410"><span>410</span></a></td><td><pre>  DeprecatedEAPI: version 2.1.1: uses deprecated EAPI: 3
+            <tr class="" id="l410"><td><a href="#l410"><span>410</span></a></td><td><pre>  DeprecatedEclass: version 2.1.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
             <tr class="" id="l411"><td><a href="#l411"><span>411</span></a></td><td><pre>
 </pre></td></tr>
@@ -904,9 +904,9 @@
 </pre></td></tr>
             <tr class="" id="l433"><td><a href="#l433"><span>433</span></a></td><td><pre>dev-python/subunit
 </pre></td></tr>
-            <tr class="" id="l434"><td><a href="#l434"><span>434</span></a></td><td><pre>  DeprecatedEclass: version 0.0.6: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l434"><td><a href="#l434"><span>434</span></a></td><td><pre>  DeprecatedEAPI: version 0.0.6: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l435"><td><a href="#l435"><span>435</span></a></td><td><pre>  DeprecatedEAPI: version 0.0.6: uses deprecated EAPI: 3
+            <tr class="" id="l435"><td><a href="#l435"><span>435</span></a></td><td><pre>  DeprecatedEclass: version 0.0.6: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
             <tr class="" id="l436"><td><a href="#l436"><span>436</span></a></td><td><pre>  DroppedKeywordWarning: version 0.0.16: keywords dropped: s390, sh, sparc
 </pre></td></tr>
@@ -1022,9 +1022,9 @@
 </pre></td></tr>
             <tr class="" id="l492"><td><a href="#l492"><span>492</span></a></td><td><pre>dev-python/webpy
 </pre></td></tr>
-            <tr class="" id="l493"><td><a href="#l493"><span>493</span></a></td><td><pre>  DeprecatedEclass: version 0.37: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l493"><td><a href="#l493"><span>493</span></a></td><td><pre>  DeprecatedEAPI: version 0.37: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l494"><td><a href="#l494"><span>494</span></a></td><td><pre>  DeprecatedEAPI: version 0.37: uses deprecated EAPI: 3
+            <tr class="" id="l494"><td><a href="#l494"><span>494</span></a></td><td><pre>  DeprecatedEclass: version 0.37: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
             <tr class="" id="l495"><td><a href="#l495"><span>495</span></a></td><td><pre>
 </pre></td></tr>
@@ -1038,17 +1038,17 @@
 </pre></td></tr>
             <tr class="" id="l500"><td><a href="#l500"><span>500</span></a></td><td><pre>dev-python/webut
 </pre></td></tr>
-            <tr class="" id="l501"><td><a href="#l501"><span>501</span></a></td><td><pre>  DeprecatedEclass: version 0.1.0.2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l501"><td><a href="#l501"><span>501</span></a></td><td><pre>  DeprecatedEAPI: version 0.1.0.2: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l502"><td><a href="#l502"><span>502</span></a></td><td><pre>  DeprecatedEAPI: version 0.1.0.2: uses deprecated EAPI: 3
+            <tr class="" id="l502"><td><a href="#l502"><span>502</span></a></td><td><pre>  DeprecatedEclass: version 0.1.0.2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
             <tr class="" id="l503"><td><a href="#l503"><span>503</span></a></td><td><pre>
 </pre></td></tr>
             <tr class="" id="l504"><td><a href="#l504"><span>504</span></a></td><td><pre>dev-python/winpdb
 </pre></td></tr>
-            <tr class="" id="l505"><td><a href="#l505"><span>505</span></a></td><td><pre>  DeprecatedEclass: version 1.4.8: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l505"><td><a href="#l505"><span>505</span></a></td><td><pre>  DeprecatedEAPI: version 1.4.8: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l506"><td><a href="#l506"><span>506</span></a></td><td><pre>  DeprecatedEAPI: version 1.4.8: uses deprecated EAPI: 3
+            <tr class="" id="l506"><td><a href="#l506"><span>506</span></a></td><td><pre>  DeprecatedEclass: version 1.4.8: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
             <tr class="" id="l507"><td><a href="#l507"><span>507</span></a></td><td><pre>
 </pre></td></tr>
@@ -1072,9 +1072,9 @@
 </pre></td></tr>
             <tr class="" id="l517"><td><a href="#l517"><span>517</span></a></td><td><pre>dev-python/xmpppy
 </pre></td></tr>
-            <tr class="" id="l518"><td><a href="#l518"><span>518</span></a></td><td><pre>  DeprecatedEclass: version 0.5.0_rc1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l518"><td><a href="#l518"><span>518</span></a></td><td><pre>  DeprecatedEAPI: version 0.5.0_rc1: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l519"><td><a href="#l519"><span>519</span></a></td><td><pre>  DeprecatedEAPI: version 0.5.0_rc1: uses deprecated EAPI: 3
+            <tr class="" id="l519"><td><a href="#l519"><span>519</span></a></td><td><pre>  DeprecatedEclass: version 0.5.0_rc1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
             <tr class="" id="l520"><td><a href="#l520"><span>520</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
 </pre></td></tr>
@@ -1276,13 +1276,13 @@
 </pre></td></tr>
             <tr class="" id="l619"><td><a href="#l619"><span>619</span></a></td><td><pre>x11-misc/denu
 </pre></td></tr>
-            <tr class="" id="l620"><td><a href="#l620"><span>620</span></a></td><td><pre>  DeprecatedEclass: version 2.3.2-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l620"><td><a href="#l620"><span>620</span></a></td><td><pre>  NonExistentDeps: version 2.3.2-r1: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
 </pre></td></tr>
-            <tr class="" id="l621"><td><a href="#l621"><span>621</span></a></td><td><pre>  DeprecatedEAPI: version 2.3.2-r1: uses deprecated EAPI: 3
+            <tr class="" id="l621"><td><a href="#l621"><span>621</span></a></td><td><pre>  NonExistentDeps: version 2.3.2-r1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
 </pre></td></tr>
-            <tr class="" id="l622"><td><a href="#l622"><span>622</span></a></td><td><pre>  NonExistentDeps: version 2.3.2-r1: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+            <tr class="" id="l622"><td><a href="#l622"><span>622</span></a></td><td><pre>  DeprecatedEAPI: version 2.3.2-r1: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l623"><td><a href="#l623"><span>623</span></a></td><td><pre>  NonExistentDeps: version 2.3.2-r1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+            <tr class="" id="l623"><td><a href="#l623"><span>623</span></a></td><td><pre>  DeprecatedEclass: version 2.3.2-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
             <tr class="" id="l624"><td><a href="#l624"><span>624</span></a></td><td><pre>  MissingChksum: version 2.3.2-r1: "denu-2.3.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
@@ -1306,9 +1306,9 @@
 </pre></td></tr>
             <tr class="" id="l634"><td><a href="#l634"><span>634</span></a></td><td><pre>x11-misc/driconf
 </pre></td></tr>
-            <tr class="" id="l635"><td><a href="#l635"><span>635</span></a></td><td><pre>  DeprecatedEclass: version 0.9.1-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l635"><td><a href="#l635"><span>635</span></a></td><td><pre>  DeprecatedEAPI: version 0.9.1-r1: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l636"><td><a href="#l636"><span>636</span></a></td><td><pre>  DeprecatedEAPI: version 0.9.1-r1: uses deprecated EAPI: 3
+            <tr class="" id="l636"><td><a href="#l636"><span>636</span></a></td><td><pre>  DeprecatedEclass: version 0.9.1-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
             <tr class="" id="l637"><td><a href="#l637"><span>637</span></a></td><td><pre>  MissingChksum: version 0.9.1-r1: "driconf-0.9.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
@@ -1316,9 +1316,9 @@
 </pre></td></tr>
             <tr class="" id="l639"><td><a href="#l639"><span>639</span></a></td><td><pre>x11-misc/dsx
 </pre></td></tr>
-            <tr class="" id="l640"><td><a href="#l640"><span>640</span></a></td><td><pre>  DeprecatedEclass: version 0.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l640"><td><a href="#l640"><span>640</span></a></td><td><pre>  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 2
 </pre></td></tr>
-            <tr class="" id="l641"><td><a href="#l641"><span>641</span></a></td><td><pre>  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 2
+            <tr class="" id="l641"><td><a href="#l641"><span>641</span></a></td><td><pre>  DeprecatedEclass: version 0.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
             <tr class="" id="l642"><td><a href="#l642"><span>642</span></a></td><td><pre>
 </pre></td></tr>
@@ -1344,11 +1344,11 @@
 </pre></td></tr>
             <tr class="" id="l653"><td><a href="#l653"><span>653</span></a></td><td><pre>x11-misc/evolvotron
 </pre></td></tr>
-            <tr class="" id="l654"><td><a href="#l654"><span>654</span></a></td><td><pre>  DeprecatedEclass: version 0.6.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l654"><td><a href="#l654"><span>654</span></a></td><td><pre>  NonExistentDeps: version 0.6.2: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
 </pre></td></tr>
-            <tr class="" id="l655"><td><a href="#l655"><span>655</span></a></td><td><pre>  NonExistentDeps: version 0.6.2: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+            <tr class="" id="l655"><td><a href="#l655"><span>655</span></a></td><td><pre>  NonExistentDeps: version 0.6.2: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
 </pre></td></tr>
-            <tr class="" id="l656"><td><a href="#l656"><span>656</span></a></td><td><pre>  NonExistentDeps: version 0.6.2: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+            <tr class="" id="l656"><td><a href="#l656"><span>656</span></a></td><td><pre>  DeprecatedEclass: version 0.6.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
             <tr class="" id="l657"><td><a href="#l657"><span>657</span></a></td><td><pre>
 </pre></td></tr>
@@ -1406,13 +1406,13 @@
 </pre></td></tr>
             <tr class="" id="l684"><td><a href="#l684"><span>684</span></a></td><td><pre>x11-misc/googsystray
 </pre></td></tr>
-            <tr class="" id="l685"><td><a href="#l685"><span>685</span></a></td><td><pre>  DeprecatedEclass: version 1.3.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l685"><td><a href="#l685"><span>685</span></a></td><td><pre>  NonExistentDeps: version 1.3.1: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
 </pre></td></tr>
-            <tr class="" id="l686"><td><a href="#l686"><span>686</span></a></td><td><pre>  DeprecatedEAPI: version 1.3.1: uses deprecated EAPI: 3
+            <tr class="" id="l686"><td><a href="#l686"><span>686</span></a></td><td><pre>  NonExistentDeps: version 1.3.1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
 </pre></td></tr>
-            <tr class="" id="l687"><td><a href="#l687"><span>687</span></a></td><td><pre>  NonExistentDeps: version 1.3.1: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+            <tr class="" id="l687"><td><a href="#l687"><span>687</span></a></td><td><pre>  DeprecatedEAPI: version 1.3.1: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l688"><td><a href="#l688"><span>688</span></a></td><td><pre>  NonExistentDeps: version 1.3.1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+            <tr class="" id="l688"><td><a href="#l688"><span>688</span></a></td><td><pre>  DeprecatedEclass: version 1.3.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
             <tr class="" id="l689"><td><a href="#l689"><span>689</span></a></td><td><pre>  MissingChksum: version 1.3.1: "googsystray-1.3.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
@@ -1464,9 +1464,9 @@
 </pre></td></tr>
             <tr class="" id="l713"><td><a href="#l713"><span>713</span></a></td><td><pre>x11-misc/icewmcp
 </pre></td></tr>
-            <tr class="" id="l714"><td><a href="#l714"><span>714</span></a></td><td><pre>  DeprecatedEclass: version 3.2-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l714"><td><a href="#l714"><span>714</span></a></td><td><pre>  DeprecatedEAPI: version 3.2-r2: uses deprecated EAPI: 2
 </pre></td></tr>
-            <tr class="" id="l715"><td><a href="#l715"><span>715</span></a></td><td><pre>  DeprecatedEAPI: version 3.2-r2: uses deprecated EAPI: 2
+            <tr class="" id="l715"><td><a href="#l715"><span>715</span></a></td><td><pre>  DeprecatedEclass: version 3.2-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
             <tr class="" id="l716"><td><a href="#l716"><span>716</span></a></td><td><pre>
 </pre></td></tr>
@@ -1566,9 +1566,9 @@
 </pre></td></tr>
             <tr class="" id="l764"><td><a href="#l764"><span>764</span></a></td><td><pre>x11-misc/menumaker
 </pre></td></tr>
-            <tr class="" id="l765"><td><a href="#l765"><span>765</span></a></td><td><pre>  DeprecatedEclass: version 0.99.7: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l765"><td><a href="#l765"><span>765</span></a></td><td><pre>  DeprecatedEAPI: version 0.99.7: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l766"><td><a href="#l766"><span>766</span></a></td><td><pre>  DeprecatedEAPI: version 0.99.7: uses deprecated EAPI: 3
+            <tr class="" id="l766"><td><a href="#l766"><span>766</span></a></td><td><pre>  DeprecatedEclass: version 0.99.7: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
             <tr class="" id="l767"><td><a href="#l767"><span>767</span></a></td><td><pre>  MissingChksum: version 0.99.7: "menumaker-0.99.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
@@ -1590,17 +1590,17 @@
 </pre></td></tr>
             <tr class="" id="l776"><td><a href="#l776"><span>776</span></a></td><td><pre>  DeprecatedEAPI: version 2.0.3_p20111019: uses deprecated EAPI: 2
 </pre></td></tr>
-            <tr class="" id="l777"><td><a href="#l777"><span>777</span></a></td><td><pre>  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+            <tr class="" id="l777"><td><a href="#l777"><span>777</span></a></td><td><pre>  DeprecatedEAPI: version 9999: uses deprecated EAPI: 2
 </pre></td></tr>
-            <tr class="" id="l778"><td><a href="#l778"><span>778</span></a></td><td><pre>  DeprecatedEAPI: version 9999: uses deprecated EAPI: 2
+            <tr class="" id="l778"><td><a href="#l778"><span>778</span></a></td><td><pre>  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 </pre></td></tr>
             <tr class="" id="l779"><td><a href="#l779"><span>779</span></a></td><td><pre>
 </pre></td></tr>
             <tr class="" id="l780"><td><a href="#l780"><span>780</span></a></td><td><pre>x11-misc/obmenu
 </pre></td></tr>
-            <tr class="" id="l781"><td><a href="#l781"><span>781</span></a></td><td><pre>  DeprecatedEclass: version 1.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l781"><td><a href="#l781"><span>781</span></a></td><td><pre>  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l782"><td><a href="#l782"><span>782</span></a></td><td><pre>  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 3
+            <tr class="" id="l782"><td><a href="#l782"><span>782</span></a></td><td><pre>  DeprecatedEclass: version 1.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
             <tr class="" id="l783"><td><a href="#l783"><span>783</span></a></td><td><pre>
 </pre></td></tr>
@@ -1664,9 +1664,9 @@
 </pre></td></tr>
             <tr class="" id="l813"><td><a href="#l813"><span>813</span></a></td><td><pre>x11-misc/pypanel
 </pre></td></tr>
-            <tr class="" id="l814"><td><a href="#l814"><span>814</span></a></td><td><pre>  DeprecatedEclass: version 2.4-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l814"><td><a href="#l814"><span>814</span></a></td><td><pre>  DeprecatedEAPI: version 2.4-r1: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l815"><td><a href="#l815"><span>815</span></a></td><td><pre>  DeprecatedEAPI: version 2.4-r1: uses deprecated EAPI: 3
+            <tr class="" id="l815"><td><a href="#l815"><span>815</span></a></td><td><pre>  DeprecatedEclass: version 2.4-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
             <tr class="" id="l816"><td><a href="#l816"><span>816</span></a></td><td><pre>  MissingChksum: version 2.4-r1: "PyPanel-2.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
@@ -1692,9 +1692,9 @@
 </pre></td></tr>
             <tr class="" id="l827"><td><a href="#l827"><span>827</span></a></td><td><pre>x11-misc/rednotebook
 </pre></td></tr>
-            <tr class="" id="l828"><td><a href="#l828"><span>828</span></a></td><td><pre>  DeprecatedEclass: version 1.4.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l828"><td><a href="#l828"><span>828</span></a></td><td><pre>  DeprecatedEAPI: version 1.4.0: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l829"><td><a href="#l829"><span>829</span></a></td><td><pre>  DeprecatedEAPI: version 1.4.0: uses deprecated EAPI: 3
+            <tr class="" id="l829"><td><a href="#l829"><span>829</span></a></td><td><pre>  DeprecatedEclass: version 1.4.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
             <tr class="" id="l830"><td><a href="#l830"><span>830</span></a></td><td><pre>
 </pre></td></tr>
@@ -1776,9 +1776,9 @@
 </pre></td></tr>
             <tr class="" id="l869"><td><a href="#l869"><span>869</span></a></td><td><pre>x11-misc/tintwizard
 </pre></td></tr>
-            <tr class="" id="l870"><td><a href="#l870"><span>870</span></a></td><td><pre>  DeprecatedEclass: version 0.3.4-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l870"><td><a href="#l870"><span>870</span></a></td><td><pre>  DeprecatedEAPI: version 0.3.4-r1: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l871"><td><a href="#l871"><span>871</span></a></td><td><pre>  DeprecatedEAPI: version 0.3.4-r1: uses deprecated EAPI: 3
+            <tr class="" id="l871"><td><a href="#l871"><span>871</span></a></td><td><pre>  DeprecatedEclass: version 0.3.4-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
             <tr class="" id="l872"><td><a href="#l872"><span>872</span></a></td><td><pre>  MissingChksum: version 0.3.4-r1: "tintwizard-0.3.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
@@ -1818,11 +1818,11 @@
 </pre></td></tr>
             <tr class="" id="l890"><td><a href="#l890"><span>890</span></a></td><td><pre>x11-misc/wbarconf
 </pre></td></tr>
-            <tr class="" id="l891"><td><a href="#l891"><span>891</span></a></td><td><pre>  DeprecatedEclass: version 0.7.2.2-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l891"><td><a href="#l891"><span>891</span></a></td><td><pre>  NonExistentDeps: version 0.7.2.2-r1: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
 </pre></td></tr>
-            <tr class="" id="l892"><td><a href="#l892"><span>892</span></a></td><td><pre>  NonExistentDeps: version 0.7.2.2-r1: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+            <tr class="" id="l892"><td><a href="#l892"><span>892</span></a></td><td><pre>  NonExistentDeps: version 0.7.2.2-r1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
 </pre></td></tr>
-            <tr class="" id="l893"><td><a href="#l893"><span>893</span></a></td><td><pre>  NonExistentDeps: version 0.7.2.2-r1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+            <tr class="" id="l893"><td><a href="#l893"><span>893</span></a></td><td><pre>  DeprecatedEclass: version 0.7.2.2-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
             <tr class="" id="l894"><td><a href="#l894"><span>894</span></a></td><td><pre>
 </pre></td></tr>
@@ -2182,9 +2182,9 @@
 </pre></td></tr>
             <tr class="" id="l1072"><td><a href="#l1072"><span>1072</span></a></td><td><pre>x11-plugins/desklet-Genesis
 </pre></td></tr>
-            <tr class="" id="l1073"><td><a href="#l1073"><span>1073</span></a></td><td><pre>  DeprecatedEclass: version 0.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l1073"><td><a href="#l1073"><span>1073</span></a></td><td><pre>  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l1074"><td><a href="#l1074"><span>1074</span></a></td><td><pre>  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 0
+            <tr class="" id="l1074"><td><a href="#l1074"><span>1074</span></a></td><td><pre>  DeprecatedEclass: version 0.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
             <tr class="" id="l1075"><td><a href="#l1075"><span>1075</span></a></td><td><pre>  MissingChksum: version 0.2: "Genesis-0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
@@ -2192,17 +2192,17 @@
 </pre></td></tr>
             <tr class="" id="l1077"><td><a href="#l1077"><span>1077</span></a></td><td><pre>x11-plugins/desklet-ImageSlideShow
 </pre></td></tr>
-            <tr class="" id="l1078"><td><a href="#l1078"><span>1078</span></a></td><td><pre>  DeprecatedEclass: version 0.8-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l1078"><td><a href="#l1078"><span>1078</span></a></td><td><pre>  DeprecatedEAPI: version 0.8-r1: uses deprecated EAPI: 2
 </pre></td></tr>
-            <tr class="" id="l1079"><td><a href="#l1079"><span>1079</span></a></td><td><pre>  DeprecatedEAPI: version 0.8-r1: uses deprecated EAPI: 2
+            <tr class="" id="l1079"><td><a href="#l1079"><span>1079</span></a></td><td><pre>  DeprecatedEclass: version 0.8-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
             <tr class="" id="l1080"><td><a href="#l1080"><span>1080</span></a></td><td><pre>
 </pre></td></tr>
             <tr class="" id="l1081"><td><a href="#l1081"><span>1081</span></a></td><td><pre>x11-plugins/desklet-Mouse
 </pre></td></tr>
-            <tr class="" id="l1082"><td><a href="#l1082"><span>1082</span></a></td><td><pre>  DeprecatedEclass: version 0.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l1082"><td><a href="#l1082"><span>1082</span></a></td><td><pre>  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l1083"><td><a href="#l1083"><span>1083</span></a></td><td><pre>  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 0
+            <tr class="" id="l1083"><td><a href="#l1083"><span>1083</span></a></td><td><pre>  DeprecatedEclass: version 0.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
             <tr class="" id="l1084"><td><a href="#l1084"><span>1084</span></a></td><td><pre>  MissingChksum: version 0.1: "Mouse-0.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
@@ -2210,9 +2210,9 @@
 </pre></td></tr>
             <tr class="" id="l1086"><td><a href="#l1086"><span>1086</span></a></td><td><pre>x11-plugins/desklet-SlideShow
 </pre></td></tr>
-            <tr class="" id="l1087"><td><a href="#l1087"><span>1087</span></a></td><td><pre>  DeprecatedEclass: version 0.9: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l1087"><td><a href="#l1087"><span>1087</span></a></td><td><pre>  DeprecatedEAPI: version 0.9: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l1088"><td><a href="#l1088"><span>1088</span></a></td><td><pre>  DeprecatedEAPI: version 0.9: uses deprecated EAPI: 0
+            <tr class="" id="l1088"><td><a href="#l1088"><span>1088</span></a></td><td><pre>  DeprecatedEclass: version 0.9: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
             <tr class="" id="l1089"><td><a href="#l1089"><span>1089</span></a></td><td><pre>  MissingChksum: version 0.9: "SlideShow-0.9.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
@@ -2220,9 +2220,9 @@
 </pre></td></tr>
             <tr class="" id="l1091"><td><a href="#l1091"><span>1091</span></a></td><td><pre>x11-plugins/desklet-WeeklyCalendar
 </pre></td></tr>
-            <tr class="" id="l1092"><td><a href="#l1092"><span>1092</span></a></td><td><pre>  DeprecatedEclass: version 0.60: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l1092"><td><a href="#l1092"><span>1092</span></a></td><td><pre>  DeprecatedEAPI: version 0.60: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l1093"><td><a href="#l1093"><span>1093</span></a></td><td><pre>  DeprecatedEAPI: version 0.60: uses deprecated EAPI: 0
+            <tr class="" id="l1093"><td><a href="#l1093"><span>1093</span></a></td><td><pre>  DeprecatedEclass: version 0.60: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
             <tr class="" id="l1094"><td><a href="#l1094"><span>1094</span></a></td><td><pre>  MissingChksum: version 0.60: "WeeklyCalendar-0.60.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
@@ -2230,9 +2230,9 @@
 </pre></td></tr>
             <tr class="" id="l1096"><td><a href="#l1096"><span>1096</span></a></td><td><pre>x11-plugins/desklet-ftb
 </pre></td></tr>
-            <tr class="" id="l1097"><td><a href="#l1097"><span>1097</span></a></td><td><pre>  DeprecatedEclass: version 0.3.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l1097"><td><a href="#l1097"><span>1097</span></a></td><td><pre>  DeprecatedEAPI: version 0.3.2: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l1098"><td><a href="#l1098"><span>1098</span></a></td><td><pre>  DeprecatedEAPI: version 0.3.2: uses deprecated EAPI: 0
+            <tr class="" id="l1098"><td><a href="#l1098"><span>1098</span></a></td><td><pre>  DeprecatedEclass: version 0.3.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
             <tr class="" id="l1099"><td><a href="#l1099"><span>1099</span></a></td><td><pre>  MissingChksum: version 0.3.2: "FTB-0.3.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
@@ -2240,9 +2240,9 @@
 </pre></td></tr>
             <tr class="" id="l1101"><td><a href="#l1101"><span>1101</span></a></td><td><pre>x11-plugins/desklet-iCalendarEvent
 </pre></td></tr>
-            <tr class="" id="l1102"><td><a href="#l1102"><span>1102</span></a></td><td><pre>  DeprecatedEclass: version 0.5: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l1102"><td><a href="#l1102"><span>1102</span></a></td><td><pre>  DeprecatedEAPI: version 0.5: uses deprecated EAPI: 2
 </pre></td></tr>
-            <tr class="" id="l1103"><td><a href="#l1103"><span>1103</span></a></td><td><pre>  DeprecatedEAPI: version 0.5: uses deprecated EAPI: 2
+            <tr class="" id="l1103"><td><a href="#l1103"><span>1103</span></a></td><td><pre>  DeprecatedEclass: version 0.5: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
             <tr class="" id="l1104"><td><a href="#l1104"><span>1104</span></a></td><td><pre>  MissingChksum: version 0.5: "iCalendarEvent-0.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
@@ -2250,9 +2250,9 @@
 </pre></td></tr>
             <tr class="" id="l1106"><td><a href="#l1106"><span>1106</span></a></td><td><pre>x11-plugins/desklet-justanicon
 </pre></td></tr>
-            <tr class="" id="l1107"><td><a href="#l1107"><span>1107</span></a></td><td><pre>  DeprecatedEclass: version 0.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l1107"><td><a href="#l1107"><span>1107</span></a></td><td><pre>  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l1108"><td><a href="#l1108"><span>1108</span></a></td><td><pre>  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 0
+            <tr class="" id="l1108"><td><a href="#l1108"><span>1108</span></a></td><td><pre>  DeprecatedEclass: version 0.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
             <tr class="" id="l1109"><td><a href="#l1109"><span>1109</span></a></td><td><pre>  MissingChksum: version 0.2: "JustAnIcon-0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
@@ -2572,19 +2572,19 @@
 </pre></td></tr>
             <tr class="" id="l1267"><td><a href="#l1267"><span>1267</span></a></td><td><pre>x11-plugins/qled
 </pre></td></tr>
-            <tr class="" id="l1268"><td><a href="#l1268"><span>1268</span></a></td><td><pre>  DeprecatedEAPI: version 0.6.2: uses deprecated EAPI: 3
+            <tr class="" id="l1268"><td><a href="#l1268"><span>1268</span></a></td><td><pre>  NonExistentDeps: version 0.6.2: depset depends: nonexistent atoms [ &lt;dev-qt/qtgui-4.8.5:4 ]
 </pre></td></tr>
-            <tr class="" id="l1269"><td><a href="#l1269"><span>1269</span></a></td><td><pre>  NonExistentDeps: version 0.6.2: depset depends: nonexistent atoms [ &lt;dev-qt/qtgui-4.8.5:4 ]
+            <tr class="" id="l1269"><td><a href="#l1269"><span>1269</span></a></td><td><pre>  NonExistentDeps: version 0.6.2: depset rdepends: nonexistent atoms [ &lt;dev-qt/qtgui-4.8.5:4 ]
 </pre></td></tr>
-            <tr class="" id="l1270"><td><a href="#l1270"><span>1270</span></a></td><td><pre>  NonExistentDeps: version 0.6.2: depset rdepends: nonexistent atoms [ &lt;dev-qt/qtgui-4.8.5:4 ]
+            <tr class="" id="l1270"><td><a href="#l1270"><span>1270</span></a></td><td><pre>  DeprecatedEAPI: version 0.6.2: uses deprecated EAPI: 3
 </pre></td></tr>
             <tr class="" id="l1271"><td><a href="#l1271"><span>1271</span></a></td><td><pre>
 </pre></td></tr>
             <tr class="" id="l1272"><td><a href="#l1272"><span>1272</span></a></td><td><pre>x11-plugins/thinkhdaps
 </pre></td></tr>
-            <tr class="" id="l1273"><td><a href="#l1273"><span>1273</span></a></td><td><pre>  DeprecatedEclass: version 0.2.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l1273"><td><a href="#l1273"><span>1273</span></a></td><td><pre>  DeprecatedEAPI: version 0.2.1: uses deprecated EAPI: 2
 </pre></td></tr>
-            <tr class="" id="l1274"><td><a href="#l1274"><span>1274</span></a></td><td><pre>  DeprecatedEAPI: version 0.2.1: uses deprecated EAPI: 2
+            <tr class="" id="l1274"><td><a href="#l1274"><span>1274</span></a></td><td><pre>  DeprecatedEclass: version 0.2.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
             <tr class="" id="l1275"><td><a href="#l1275"><span>1275</span></a></td><td><pre>  MissingChksum: version 0.2.1: "thinkhdaps-0.2.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 </pre></td></tr>
@@ -2592,9 +2592,9 @@
 </pre></td></tr>
             <tr class="" id="l1277"><td><a href="#l1277"><span>1277</span></a></td><td><pre>x11-plugins/tomboy-reminder
 </pre></td></tr>
-            <tr class="" id="l1278"><td><a href="#l1278"><span>1278</span></a></td><td><pre>  DeprecatedEclass: version 0.9.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+            <tr class="" id="l1278"><td><a href="#l1278"><span>1278</span></a></td><td><pre>  DeprecatedEAPI: version 0.9.2: uses deprecated EAPI: 2
 </pre></td></tr>
-            <tr class="" id="l1279"><td><a href="#l1279"><span>1279</span></a></td><td><pre>  DeprecatedEAPI: version 0.9.2: uses deprecated EAPI: 2
+            <tr class="" id="l1279"><td><a href="#l1279"><span>1279</span></a></td><td><pre>  DeprecatedEclass: version 0.9.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
 </pre></td></tr>
             <tr class="" id="l1280"><td><a href="#l1280"><span>1280</span></a></td><td><pre>  MissingChksum: version 0.9.2: "tomboy-reminder-0.9.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 </pre></td></tr>
@@ -4526,9 +4526,9 @@
 </pre></td></tr>
             <tr class="" id="l2244"><td><a href="#l2244"><span>2244</span></a></td><td><pre>mail-filter/isbg
 </pre></td></tr>
-            <tr class="" id="l2245"><td><a href="#l2245"><span>2245</span></a></td><td><pre>  DeprecatedEclass: version 0.99-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l2245"><td><a href="#l2245"><span>2245</span></a></td><td><pre>  DeprecatedEAPI: version 0.99-r1: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l2246"><td><a href="#l2246"><span>2246</span></a></td><td><pre>  DeprecatedEAPI: version 0.99-r1: uses deprecated EAPI: 3
+            <tr class="" id="l2246"><td><a href="#l2246"><span>2246</span></a></td><td><pre>  DeprecatedEclass: version 0.99-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
             <tr class="" id="l2247"><td><a href="#l2247"><span>2247</span></a></td><td><pre>
 </pre></td></tr>
@@ -4608,9 +4608,9 @@
 </pre></td></tr>
             <tr class="" id="l2285"><td><a href="#l2285"><span>2285</span></a></td><td><pre>mail-filter/pypolicyd-spf
 </pre></td></tr>
-            <tr class="" id="l2286"><td><a href="#l2286"><span>2286</span></a></td><td><pre>  DeprecatedEclass: version 1.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l2286"><td><a href="#l2286"><span>2286</span></a></td><td><pre>  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l2287"><td><a href="#l2287"><span>2287</span></a></td><td><pre>  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 3
+            <tr class="" id="l2287"><td><a href="#l2287"><span>2287</span></a></td><td><pre>  DeprecatedEclass: version 1.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
             <tr class="" id="l2288"><td><a href="#l2288"><span>2288</span></a></td><td><pre>
 </pre></td></tr>
@@ -4682,9 +4682,9 @@
 </pre></td></tr>
             <tr class="" id="l2322"><td><a href="#l2322"><span>2322</span></a></td><td><pre>mail-filter/tmda
 </pre></td></tr>
-            <tr class="" id="l2323"><td><a href="#l2323"><span>2323</span></a></td><td><pre>  DeprecatedEclass: version 1.1.12: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l2323"><td><a href="#l2323"><span>2323</span></a></td><td><pre>  DeprecatedEAPI: version 1.1.12: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l2324"><td><a href="#l2324"><span>2324</span></a></td><td><pre>  DeprecatedEAPI: version 1.1.12: uses deprecated EAPI: 3
+            <tr class="" id="l2324"><td><a href="#l2324"><span>2324</span></a></td><td><pre>  DeprecatedEclass: version 1.1.12: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
             <tr class="" id="l2325"><td><a href="#l2325"><span>2325</span></a></td><td><pre>  MissingChksum: version 1.1.12: "tmda-1.1.12.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
@@ -4952,15 +4952,27 @@
 </pre></td></tr>
             <tr class="" id="l2457"><td><a href="#l2457"><span>2457</span></a></td><td><pre>sci-misc/vitables
 </pre></td></tr>
-            <tr class="" id="l2458"><td><a href="#l2458"><span>2458</span></a></td><td><pre>  DeprecatedEclass: version 2.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l2458"><td><a href="#l2458"><span>2458</span></a></td><td><pre>  NonExistentDeps: version 2.1: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
 </pre></td></tr>
-            <tr class="" id="l2459"><td><a href="#l2459"><span>2459</span></a></td><td><pre>  NonExistentDeps: version 2.1: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+            <tr class="" id="l2459"><td><a href="#l2459"><span>2459</span></a></td><td><pre>  NonExistentDeps: version 2.1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
 </pre></td></tr>
-            <tr class="" id="l2460"><td><a href="#l2460"><span>2460</span></a></td><td><pre>  NonExistentDeps: version 2.1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+            <tr class="" id="l2460"><td><a href="#l2460"><span>2460</span></a></td><td><pre>  DeprecatedEclass: version 2.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+</pre></td></tr>
+            <tr class="" id="l2461"><td><a href="#l2461"><span>2461</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
+</pre></td></tr>
+            <tr class="" id="l2462"><td><a href="#l2462"><span>2462</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+</pre></td></tr>
+            <tr class="" id="l2463"><td><a href="#l2463"><span>2463</span></a></td><td><pre>               : refetch
+</pre></td></tr>
+            <tr class="" id="l2464"><td><a href="#l2464"><span>2464</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
+</pre></td></tr>
+            <tr class="" id="l2465"><td><a href="#l2465"><span>2465</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+</pre></td></tr>
+            <tr class="" id="l2466"><td><a href="#l2466"><span>2466</span></a></td><td><pre>               : refetch
 </pre></td></tr>
 
         </table>
 
-        <address>Generated based on results from 2015-09-22 08:32:06 UTC</address>
+        <address>Generated based on results from 2015-09-22 08:57:23 UTC</address>
     </body>
 </html>

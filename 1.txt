@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 1 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-python/*' 'x11-misc/*' 'x11-plugins/*' 'app-xemacs/*' 'dev-qt/*' 'mail-filter/*' 'sci-physics/*' 'app-forensics/*' 'dev-games/*' 'sci-misc/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-python/*' 'x11-misc/*' 'x11-plugins/*' 'app-xemacs/*' 'dev-qt/*' 'mail-filter/*' 'sci-physics/*' 'app-forensics/*' 'dev-games/*' 'sci-misc/*' 'app-antivirus/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -21,9 +21,9 @@ dev-python/PyQtMobility
   DeprecatedEclass: version 1.0.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/SchemaObject
-  DeprecatedEclass: version 0.5.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 0.5.3: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
   NonExistentDeps: version 0.5.3: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 0.5.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/autobahn
   DroppedKeywordWarning: version 0.10.4: keywords dropped: arm
@@ -38,9 +38,9 @@ dev-python/beaker
   DroppedKeywordWarning: version 1.7.0-r1: keywords dropped: ia64, sparc
 
 dev-python/beautifulsoup
-  DeprecatedEclass: version 4.1.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 4.1.3: depset depends: nonexistent atoms [ =dev-lang/python-2.6*, =dev-lang/python-3.1*, =dev-lang/python-3.2* ]
   NonExistentDeps: version 4.1.3: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6*, =dev-lang/python-3.1*, =dev-lang/python-3.2* ]
+  DeprecatedEclass: version 4.1.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   SizeViolation: "files/beautifulsoup-3.1.0.1-python-3.patch" exceeds 20k in size; 42319 bytes total
   DroppedKeywordWarning: version 4.1.3: keywords dropped: arm64
 
@@ -48,8 +48,8 @@ dev-python/bsddb3
   DroppedKeywordWarning: version 6.1.0: keywords dropped: hppa
 
 dev-python/cddb-py
-  DeprecatedEclass: version 1.4: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 1.4: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.4: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/cffi
   DroppedKeywordWarning: version 0.9.2: keywords dropped: alpha, sparc
@@ -66,10 +66,10 @@ dev-python/cryptography-vectors
   DroppedKeywordWarning: version 0.7: keywords dropped: sparc
 
 dev-python/ctypesgen
-  DeprecatedEclass: version 0_p72: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0_p72: uses deprecated EAPI: 3
   NonExistentDeps: version 0_p72: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
   NonExistentDeps: version 0_p72: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  DeprecatedEAPI: version 0_p72: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0_p72: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/cvxopt
   SizeViolation: "files/cvxopt-1.1.6-glpk.patch" exceeds 20k in size; 32201 bytes total
@@ -79,8 +79,8 @@ dev-python/django
   DroppedKeywordWarning: version 1.5.12: keywords dropped: amd64, ia64, ppc, ppc64, sparc, x86
 
 dev-python/editobj
-  DeprecatedEclass: version 0.5.7-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.5.7-r1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.5.7-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/enzyme
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
@@ -92,8 +92,8 @@ dev-python/foolscap
   DroppedKeywordWarning: version 0.8.0: keywords dropped: sparc
 
 dev-python/formencode
-  DeprecatedEclass: version 1.2.4: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 1.2.4: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.2.4: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/gdata
   DeprecatedEclass: version 2.0.14: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
@@ -113,8 +113,8 @@ error: mirror://berlios/cjkpython/iconvcodec-1.1.2.tar.gz is unparseable
 flagged token- uri mirror://berlios/cjkpython/iconvcodec-1.1.2.tar.gz isn't a known mirror tier
 
 dev-python/id3-py
-  DeprecatedEclass: version 1.2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 1.2: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/ipython
   WhitespaceFound: version 3.2.1: ebuild has trailing whitespace on line 110
@@ -127,16 +127,16 @@ dev-python/jsonschema
   DroppedKeywordWarning: version 2.5.1: keywords dropped: arm
 
 dev-python/kaa-display
-  DeprecatedEclass: version 0.1.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.1.0: uses deprecated EAPI: 3
   NonExistentDeps: version 0.1.0: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
   NonExistentDeps: version 0.1.0: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  DeprecatedEAPI: version 0.1.0: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.1.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/kaa-imlib2
-  DeprecatedEclass: version 0.2.3-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.2.3-r1: uses deprecated EAPI: 3
   NonExistentDeps: version 0.2.3-r1: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
   NonExistentDeps: version 0.2.3-r1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  DeprecatedEAPI: version 0.2.3-r1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.2.3-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/kombu
   WhitespaceFound: version 3.0.26: ebuild has trailing whitespace on line 88
@@ -145,8 +145,8 @@ dev-python/lockfile
   DroppedKeywordWarning: version 0.10.2: keywords dropped: sparc
 
 dev-python/louie
-  DeprecatedEclass: version 1.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 1.1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/mistune
   DroppedKeywordWarning: version 0.6-r1: keywords dropped: arm
@@ -156,8 +156,8 @@ dev-python/mock
   DroppedKeywordWarning: version 1.2.0: keywords dropped: arm, ia64, ppc, ppc64, sparc, x86
 
 dev-python/morbid
-  DeprecatedEclass: version 0.8.7.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.8.7.3: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.8.7.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/mwlib
   BadInsIntoDir: version 0.15.15: ebuild uses insinto /etc/cron.d on line 118
@@ -184,8 +184,8 @@ dev-python/oslotest
   WrongIndentFound: version 1.10.0: ebuild has whitespace in indentation on line 49
 
 dev-python/paisley
-  DeprecatedEclass: version 0.3.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.3.1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.3.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/paramiko
   DroppedKeywordWarning: version 1.12.2: keywords dropped: ppc, ppc64, s390
@@ -198,12 +198,12 @@ dev-python/pbr
   DroppedKeywordWarning: version 1.6.0: keywords dropped: alpha, arm, ia64, ppc, ppc64
 
 dev-python/pexpect
-  DeprecatedEclass: version 2.4: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 2.4: uses deprecated EAPI: 2
+  DeprecatedEclass: version 2.4: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/piddle
-  DeprecatedEclass: version 1.0.15: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 1.0.15: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.0.15: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/pillow
   DroppedKeywordWarning: version 2.9.0: keywords dropped: ia64, sparc
@@ -215,40 +215,40 @@ dev-python/ply
   DroppedKeywordWarning: version 3.6-r1: keywords dropped: sparc
 
 dev-python/polygon
-  DeprecatedEclass: version 2.0.4: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 2.0.4: uses deprecated EAPI: 3
+  DeprecatedEclass: version 2.0.4: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/py-smbpasswd
-  DeprecatedEclass: version 1.0.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.0.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEclass: version 1.0.1-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/py-xmlrpc
-  DeprecatedEclass: version 0.8.8.3-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.8.8.3-r1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.8.8.3-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/pyGPG
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
 dev-python/pyamazon
-  DeprecatedEclass: version 0.65: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.65: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.65: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/pyao
-  DeprecatedEclass: version 0.82-r2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.82-r2: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.82-r2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/pychm
-  DeprecatedEclass: version 0.8.4: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.8.4: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.8.4: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/pycipher
-  DeprecatedEclass: version 0.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.2: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/pyclimate
-  DeprecatedEclass: version 1.2.2-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 1.2.2-r1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.2.2-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/pycollada
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
@@ -263,8 +263,8 @@ dev-python/pydecomp
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
 dev-python/pyfits
-  DeprecatedEclass: version 2.4.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 2.4.0: uses deprecated EAPI: 2
+  DeprecatedEclass: version 2.4.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/pygraphviz
   DroppedKeywordWarning: version 1.3.1: keywords dropped: ppc
@@ -277,33 +277,33 @@ dev-python/pygsl
   DeprecatedEclass: version 0.9.5: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/pygtkhelpers
-  DeprecatedEclass: version 0.4.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.4.3: uses deprecated EAPI: 3
   NonExistentDeps: version 0.4.3: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
   NonExistentDeps: version 0.4.3: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEAPI: version 0.4.3: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.4.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/pyid3lib
-  DeprecatedEclass: version 0.5.1-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.5.1-r1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.5.1-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/pylibpcap
   DeprecatedEclass: version 0.6.4: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/pyltxml
-  DeprecatedEclass: version 1.3-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 1.3-r1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.3-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/pymad
-  DeprecatedEclass: version 0.6: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.6: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.6: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/pyndex
-  DeprecatedEclass: version 0.3.2a: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.3.2a: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.3.2a: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/pynut
-  DeprecatedEclass: version 1.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 1.2: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/pyopencl
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
@@ -312,19 +312,19 @@ dev-python/pyopenssl
   DroppedKeywordWarning: version 0.15.1: keywords dropped: sparc
 
 dev-python/pyosd
-  DeprecatedEclass: version 0.2.14: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.2.14: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.2.14: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/pyparsing
-  DeprecatedEclass: version 1.5.6: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 1.5.6: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.5.6: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/pypax
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
 dev-python/pypgsql
-  DeprecatedEclass: version 2.5.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 2.5.1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 2.5.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/pyquery
   DroppedKeywordWarning: version 1.2.9-r1: keywords dropped: sparc
@@ -338,12 +338,12 @@ dev-python/pytest-cov
   DroppedKeywordWarning: version 2.1.0: keywords dropped: arm, arm64, hppa, ia64, m68k, ppc, ppc64, s390, sh
 
 dev-python/python-cdb
-  DeprecatedEclass: version 0.34: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.34: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.34: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/python-distutils-extra
-  DeprecatedEclass: version 2.33: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 2.33: uses deprecated EAPI: 3
+  DeprecatedEclass: version 2.33: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/python-docs
   DeprecatedEAPI: version 3.2.5: uses deprecated EAPI: 3
@@ -363,12 +363,12 @@ dev-python/python-sqlparse
   DroppedKeywordWarning: version 0.1.14: keywords dropped: sparc
 
 dev-python/python-xlib
-  DeprecatedEclass: version 0.15_rc1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.15_rc1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.15_rc1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/pyusb
-  DeprecatedEclass: version 0.4.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.4.3: uses deprecated EAPI: 2
+  DeprecatedEclass: version 0.4.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/pyxattr
   DroppedKeywordWarning: version 0.5.5: keywords dropped: alpha, ia64, ppc, sparc
@@ -377,8 +377,8 @@ dev-python/pyzmq
   DroppedKeywordWarning: version 14.7.0: keywords dropped: ppc
 
 dev-python/pyzor
-  DeprecatedEclass: version 0.5.0-r2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.5.0-r2: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.5.0-r2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DroppedKeywordWarning: version 0.7.0: keywords dropped: ppc, ppc64
   DroppedKeywordWarning: version 1.0.0: keywords dropped: ia64, sparc
 
@@ -395,19 +395,19 @@ dev-python/rtslib
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
 dev-python/sancho
-  DeprecatedEclass: version 2.4: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 2.4: uses deprecated EAPI: 3
+  DeprecatedEclass: version 2.4: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/scientificpython
-  DeprecatedEclass: version 2.9.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 2.9.1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 2.9.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/setuptools
   DroppedKeywordWarning: version 18.2-r3: keywords dropped: alpha, arm, arm64, hppa, ia64, m68k, ppc, ppc64, s390, sh, sparc
 
 dev-python/simpleparse
-  DeprecatedEclass: version 2.1.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 2.1.1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 2.1.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/soappy
   DroppedKeywordWarning: version 0.12.22: keywords dropped: ia64, ppc, s390, sh, sparc
@@ -431,8 +431,8 @@ dev-python/ssl-fetch
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
 dev-python/subunit
-  DeprecatedEclass: version 0.0.6: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.0.6: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.0.6: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DroppedKeywordWarning: version 0.0.16: keywords dropped: s390, sh, sparc
 
 dev-python/tagpy
@@ -490,20 +490,20 @@ dev-python/visual
   DeprecatedEclass: version 5.74: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/webpy
-  DeprecatedEclass: version 0.37: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.37: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.37: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/webtest
   DroppedKeywordWarning: version 2.0.16: keywords dropped: ia64, s390, sh, sparc
   DroppedKeywordWarning: version 2.0.18: keywords dropped: alpha
 
 dev-python/webut
-  DeprecatedEclass: version 0.1.0.2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.1.0.2: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.1.0.2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/winpdb
-  DeprecatedEclass: version 1.4.8: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 1.4.8: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.4.8: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/ws4py
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
@@ -515,8 +515,8 @@ dev-python/xlwt
   DroppedKeywordWarning: version 1.0.0: keywords dropped: ppc
 
 dev-python/xmpppy
-  DeprecatedEclass: version 0.5.0_rc1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.5.0_rc1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.5.0_rc1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
@@ -617,10 +617,10 @@ x11-misc/compton
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
 x11-misc/denu
-  DeprecatedEclass: version 2.3.2-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 2.3.2-r1: uses deprecated EAPI: 3
   NonExistentDeps: version 2.3.2-r1: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
   NonExistentDeps: version 2.3.2-r1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEAPI: version 2.3.2-r1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 2.3.2-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   MissingChksum: version 2.3.2-r1: "denu-2.3.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 x11-misc/devilspie
@@ -632,13 +632,13 @@ x11-misc/dragbox
   MissingChksum: version 0.4.0: "dragbox-0.4.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 x11-misc/driconf
-  DeprecatedEclass: version 0.9.1-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.9.1-r1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.9.1-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   MissingChksum: version 0.9.1-r1: "driconf-0.9.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 x11-misc/dsx
-  DeprecatedEclass: version 0.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.1: uses deprecated EAPI: 2
+  DeprecatedEclass: version 0.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 x11-misc/dxpc
   DeprecatedEAPI: version 3.9.2-r1: uses deprecated EAPI: 0
@@ -651,9 +651,9 @@ x11-misc/etm
   MissingChksum: version 696-r1: "etm-696.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 x11-misc/evolvotron
-  DeprecatedEclass: version 0.6.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 0.6.2: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
   NonExistentDeps: version 0.6.2: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 0.6.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 x11-misc/fbpager
   DeprecatedEAPI: version 20090221: uses deprecated EAPI: 2
@@ -682,10 +682,10 @@ x11-misc/genmenu
   MissingChksum: version 1.1.0: "genmenu-1.1.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 x11-misc/googsystray
-  DeprecatedEclass: version 1.3.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 1.3.1: uses deprecated EAPI: 3
   NonExistentDeps: version 1.3.1: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
   NonExistentDeps: version 1.3.1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEAPI: version 1.3.1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.3.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   MissingChksum: version 1.3.1: "googsystray-1.3.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 x11-misc/grabc
@@ -711,8 +711,8 @@ x11-misc/i855crt
   MissingChksum: version 0.4-r1: "i855crt-0.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 x11-misc/icewmcp
-  DeprecatedEclass: version 3.2-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 3.2-r2: uses deprecated EAPI: 2
+  DeprecatedEclass: version 3.2-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 x11-misc/icon-naming-utils
   DeprecatedEAPI: version 0.8.90: uses deprecated EAPI: 0
@@ -762,8 +762,8 @@ x11-misc/matchbox-panel-manager
   MissingChksum: version 0.1: "matchbox-panel-manager-0.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 x11-misc/menumaker
-  DeprecatedEclass: version 0.99.7: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.99.7: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.99.7: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   MissingChksum: version 0.99.7: "menumaker-0.99.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 x11-misc/mgm
@@ -774,12 +774,12 @@ x11-misc/mixer_app
 
 x11-misc/obconf
   DeprecatedEAPI: version 2.0.3_p20111019: uses deprecated EAPI: 2
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
   DeprecatedEAPI: version 9999: uses deprecated EAPI: 2
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
 x11-misc/obmenu
-  DeprecatedEclass: version 1.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 1.0: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 x11-misc/okindd
   MissingChksum: version 0.6.0: "okindd-0.6.0-49-20110113.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
@@ -811,8 +811,8 @@ x11-misc/peksystray
   MissingChksum: version 0.4.0: "peksystray-0.4.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 x11-misc/pypanel
-  DeprecatedEclass: version 2.4-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 2.4-r1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 2.4-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   MissingChksum: version 2.4-r1: "PyPanel-2.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 x11-misc/qps
@@ -825,8 +825,8 @@ x11-misc/read-edid
   DroppedKeywordWarning: version 3.0.1: keywords dropped: alpha, ppc, sparc
 
 x11-misc/rednotebook
-  DeprecatedEclass: version 1.4.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 1.4.0: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.4.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 x11-misc/rendercheck
   DeprecatedEAPI: version 1.4: uses deprecated EAPI: 3
@@ -867,8 +867,8 @@ x11-misc/stalonetray
   MissingChksum: version 0.8.1: "stalonetray-0.8.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 x11-misc/tintwizard
-  DeprecatedEclass: version 0.3.4-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.3.4-r1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.3.4-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   MissingChksum: version 0.3.4-r1: "tintwizard-0.3.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 x11-misc/touchcal
@@ -888,9 +888,9 @@ x11-misc/vnc2swf
   MissingChksum: version 0.5.0-r1: "vnc2swf-0.5.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 x11-misc/wbarconf
-  DeprecatedEclass: version 0.7.2.2-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 0.7.2.2-r1: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
   NonExistentDeps: version 0.7.2.2-r1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 0.7.2.2-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 x11-misc/wdm
   DeprecatedEAPI: version 1.28-r3: uses deprecated EAPI: 2
@@ -1070,42 +1070,42 @@ x11-plugins/cputnik
   DeprecatedEAPI: version 0.2.0: uses deprecated EAPI: 0
 
 x11-plugins/desklet-Genesis
-  DeprecatedEclass: version 0.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.2: uses deprecated EAPI: 0
+  DeprecatedEclass: version 0.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   MissingChksum: version 0.2: "Genesis-0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 x11-plugins/desklet-ImageSlideShow
-  DeprecatedEclass: version 0.8-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.8-r1: uses deprecated EAPI: 2
+  DeprecatedEclass: version 0.8-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 x11-plugins/desklet-Mouse
-  DeprecatedEclass: version 0.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.1: uses deprecated EAPI: 0
+  DeprecatedEclass: version 0.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   MissingChksum: version 0.1: "Mouse-0.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 x11-plugins/desklet-SlideShow
-  DeprecatedEclass: version 0.9: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.9: uses deprecated EAPI: 0
+  DeprecatedEclass: version 0.9: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   MissingChksum: version 0.9: "SlideShow-0.9.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 x11-plugins/desklet-WeeklyCalendar
-  DeprecatedEclass: version 0.60: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.60: uses deprecated EAPI: 0
+  DeprecatedEclass: version 0.60: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   MissingChksum: version 0.60: "WeeklyCalendar-0.60.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 x11-plugins/desklet-ftb
-  DeprecatedEclass: version 0.3.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.3.2: uses deprecated EAPI: 0
+  DeprecatedEclass: version 0.3.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   MissingChksum: version 0.3.2: "FTB-0.3.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 x11-plugins/desklet-iCalendarEvent
-  DeprecatedEclass: version 0.5: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.5: uses deprecated EAPI: 2
+  DeprecatedEclass: version 0.5: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   MissingChksum: version 0.5: "iCalendarEvent-0.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 x11-plugins/desklet-justanicon
-  DeprecatedEclass: version 0.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.2: uses deprecated EAPI: 0
+  DeprecatedEclass: version 0.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   MissingChksum: version 0.2: "JustAnIcon-0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 x11-plugins/docker
@@ -1265,18 +1265,18 @@ x11-plugins/pidgintex
   MissingChksum: version 1.1.1: "pidginTeX-1.1.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 x11-plugins/qled
-  DeprecatedEAPI: version 0.6.2: uses deprecated EAPI: 3
   NonExistentDeps: version 0.6.2: depset depends: nonexistent atoms [ <dev-qt/qtgui-4.8.5:4 ]
   NonExistentDeps: version 0.6.2: depset rdepends: nonexistent atoms [ <dev-qt/qtgui-4.8.5:4 ]
+  DeprecatedEAPI: version 0.6.2: uses deprecated EAPI: 3
 
 x11-plugins/thinkhdaps
-  DeprecatedEclass: version 0.2.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.2.1: uses deprecated EAPI: 2
+  DeprecatedEclass: version 0.2.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   MissingChksum: version 0.2.1: "thinkhdaps-0.2.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 x11-plugins/tomboy-reminder
-  DeprecatedEclass: version 0.9.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
   DeprecatedEAPI: version 0.9.2: uses deprecated EAPI: 2
+  DeprecatedEclass: version 0.9.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
   MissingChksum: version 0.9.2: "tomboy-reminder-0.9.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 x11-plugins/vicious
@@ -2242,8 +2242,8 @@ mail-filter/disspam
   DeprecatedEAPI: version 0.14: uses deprecated EAPI: 0
 
 mail-filter/isbg
-  DeprecatedEclass: version 0.99-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.99-r1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.99-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 mail-filter/libmilter
   DeprecatedEAPI: version 1.0.2: uses deprecated EAPI: 2
@@ -2283,8 +2283,8 @@ mail-filter/procmail-lib
   DeprecatedEAPI: version 20091202: uses deprecated EAPI: 0
 
 mail-filter/pypolicyd-spf
-  DeprecatedEclass: version 1.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 1.1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 mail-filter/qmail-scanner
   DeprecatedEAPI: version 1.25-r1: uses deprecated EAPI: 0
@@ -2320,8 +2320,8 @@ mail-filter/sqlgrey
   DeprecatedEAPI: version 1.7.6-r1: uses deprecated EAPI: 0
 
 mail-filter/tmda
-  DeprecatedEclass: version 1.1.12: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 1.1.12: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.1.12: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   MissingChksum: version 1.1.12: "tmda-1.1.12.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
@@ -2455,6 +2455,12 @@ sci-misc/repsnapper
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
 sci-misc/vitables
-  DeprecatedEclass: version 2.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 2.1: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
   NonExistentDeps: version 2.1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 2.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
