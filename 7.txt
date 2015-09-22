@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 7 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'media-libs/*' 'dev-lang/*' 'sci-biology/*' 'net-wireless/*' 'dev-embedded/*' 'sys-process/*' 'net-dialup/*' 'sys-firmware/*' 'lxde-base/*' 'games-roguelike/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'media-libs/*' 'dev-lang/*' 'sci-biology/*' 'net-wireless/*' 'app-portage/*' 'sci-electronics/*' 'net-dialup/*' 'sys-firmware/*' 'lxde-base/*' 'games-roguelike/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1207,150 +1207,98 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-dev-embedded/avr-libc
-  DeprecatedEAPI: version 1.6.2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.6.4: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.6.8: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.7.0: uses deprecated EAPI: 2
+app-portage/demerge
+  DeprecatedEAPI: version 0.047-r1: uses deprecated EAPI: 0
 
-dev-embedded/bitbake
+app-portage/distpatch
+  DeprecatedEclass: version 0.1.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.1.1: uses deprecated EAPI: 3
+  NonExistentDeps: version 0.1.1: depset depends: nonexistent atoms [ =dev-lang/python-2.6*, =dev-lang/python-3.1*, =dev-lang/python-3.2* ]
+  NonExistentDeps: version 0.1.1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6*, =dev-lang/python-3.1*, =dev-lang/python-3.2* ]
+
+app-portage/eclass-manpages
+  ExecutableFile: "files/eclass-to-manpage.sh" has unnecessary executable bit
+
+app-portage/epm
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-dev-embedded/gnap
-  DeprecatedEAPI: version 2.0: uses deprecated EAPI: 0
-
-dev-embedded/gnap-dev
-  DeprecatedEAPI: version 2.0: uses deprecated EAPI: 0
-
-dev-embedded/gnap-ext
-  DeprecatedEAPI: version 2.0: uses deprecated EAPI: 0
-
-dev-embedded/gputils
-  DeprecatedEAPI: version 0.13.6-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.13.7: uses deprecated EAPI: 2
-
-dev-embedded/jal
-  DeprecatedEAPI: version 0.4.60: uses deprecated EAPI: 0
-
-dev-embedded/libftdi
-  DeprecatedEAPI: version 0.19: uses deprecated EAPI: 2
-  DeprecatedEclass: version 0.20: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.20: uses deprecated EAPI: 2
+app-portage/esearch
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-dev-embedded/openocd
+app-portage/euscan
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-dev-embedded/parapin
-  DeprecatedEAPI: version 1.0.0: uses deprecated EAPI: 0
+app-portage/g-ctan
+  DeprecatedEAPI: version 2011.1: uses deprecated EAPI: 2
+  NonExistentDeps: version 2011.1: depset rdepends: nonexistent atoms [ ~app-text/texlive-2011 ]
 
-dev-embedded/pista
-  DeprecatedEAPI: version 0.70: uses deprecated EAPI: 0
+app-portage/g-octave
+  DeprecatedEclass: version 0.4.1-r4: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.4.1-r4: uses deprecated EAPI: 2
 
-dev-embedded/scratchbox
-  DeprecatedEAPI: version 1.0.19: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.0.20: uses deprecated EAPI: 0
+app-portage/g-sorcery
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DroppedKeywordWarning: version 0.2: keywords dropped: alpha, arm, ia64, ppc, ppc64, sparc
 
-dev-embedded/scratchbox-devkit-apt-https
-  DeprecatedEAPI: version 1.0.10: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.0.11: uses deprecated EAPI: 0
-
-dev-embedded/scratchbox-devkit-cputransp
-  DeprecatedEAPI: version 1.0.7: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.0.9: uses deprecated EAPI: 0
-
-dev-embedded/scratchbox-devkit-debian
-  DeprecatedEAPI: version 1.0.10: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.0.11: uses deprecated EAPI: 0
-
-dev-embedded/scratchbox-devkit-debian-squeeze
-  DeprecatedEAPI: version 1.0.4: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.0.5: uses deprecated EAPI: 0
-
-dev-embedded/scratchbox-devkit-doctools
-  DeprecatedEAPI: version 1.0.9: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.0.13: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.0.14: uses deprecated EAPI: 0
-
-dev-embedded/scratchbox-devkit-git
-  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.0.2: uses deprecated EAPI: 0
-
-dev-embedded/scratchbox-devkit-maemo3
-  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 0
-
-dev-embedded/scratchbox-devkit-perl
-  DeprecatedEAPI: version 1.0.4: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.0.5: uses deprecated EAPI: 0
-
-dev-embedded/scratchbox-devkit-qemu
-  DeprecatedEAPI: version 0.10.0.0.10: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.11.50.0.5: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.12.50.0.3: uses deprecated EAPI: 0
-
-dev-embedded/scratchbox-devkit-svn
-  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
-
-dev-embedded/scratchbox-toolchain-cs2005q3_2-glibc2_5
-  DeprecatedEAPI: version 1.0.7: uses deprecated EAPI: 0
-
-dev-embedded/scratchbox-toolchain-cs2007q3-glibc2_5
-  DeprecatedEAPI: version 1.0.12: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.0.14: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.0.14-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.0.16: uses deprecated EAPI: 0
-
-dev-embedded/scratchbox-toolchain-cs2009q1-203sb1
-  DeprecatedEAPI: version 1.0.13: uses deprecated EAPI: 0
-
-dev-embedded/scratchbox-toolchain-cs2009q1-eglibc2_8
-  DeprecatedEAPI: version 1.0.17: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.0.19: uses deprecated EAPI: 0
-
-dev-embedded/scratchbox-toolchain-cs2009q3-eglibc2_10
-  DeprecatedEAPI: version 1.0.17-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.0.18: uses deprecated EAPI: 0
-
-dev-embedded/scratchbox2
-  DeprecatedEAPI: version 2.0-r1: uses deprecated EAPI: 2
-
-dev-embedded/sdcc
-  DeprecatedEAPI: version 2.5.0_p20060502: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.6.0: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.7.0: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.8.0: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.9.0: uses deprecated EAPI: 2
-
-dev-embedded/sgpp-lite-arm-eabi-bin
-  DeprecatedEAPI: version 2010.09.51: uses deprecated EAPI: 0
-
-dev-embedded/sgpp-lite-arm-linux-bin
-  DeprecatedEAPI: version 2010.09.50: uses deprecated EAPI: 0
-
-dev-embedded/sgpp-lite-arm-uclinux-bin
-  DeprecatedEAPI: version 2010.09.58: uses deprecated EAPI: 0
-
-dev-embedded/tavrasm
-  DeprecatedEAPI: version 1.22-r1: uses deprecated EAPI: 2
-
-dev-embedded/tigcc
-  DeprecatedEAPI: version 0.96_beta7: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.96_beta8-r1: uses deprecated EAPI: 0
-
-dev-embedded/upslug2
-  DeprecatedEAPI: version 11: uses deprecated EAPI: 0
-
-dev-embedded/urjtag
-  DeprecatedEAPI: version 0.10: uses deprecated EAPI: 0
+app-portage/genlop
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-dev-embedded/usbprog
-  MetadataError: version 0.2.0: attr(fetchables): error- Metadata Exception: pkg ebuild src: dev-embedded/usbprog-0.2.0, attr fetchables
-error: mirror://berlios/usbprog/usbprog-0.2.0.tar.bz2 is unparseable
-flagged token- uri mirror://berlios/usbprog/usbprog-0.2.0.tar.bz2 isn't a known mirror tier
+app-portage/gpytage
+  DeprecatedEclass: version 0.3.0_rc1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.3.0_rc1: uses deprecated EAPI: 3
+  NonExistentDeps: version 0.3.0_rc1: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 0.3.0_rc1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
 
-dev-embedded/zmac
-  DeprecatedEAPI: version 1.3: uses deprecated EAPI: 0
+app-portage/grs
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+app-portage/gs-elpa
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+app-portage/gs-pypi
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+app-portage/layman
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DroppedKeywordWarning: version 2.3.0: keywords dropped: alpha, arm64, ia64, m68k, sh, sparc
+
+app-portage/layman-dbtools
+  DeprecatedEclass: version 0_p20100322: uses deprecated eclass(es): [ git-2 (migrate to git-r3), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0_p20100322: uses deprecated EAPI: 3
+
+app-portage/maintainer-helper
+  DeprecatedEclass: version 0.1.2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.1.2: uses deprecated EAPI: 3
+
+app-portage/mirrorselect
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DroppedKeywordWarning: version 2.2.2: keywords dropped: m68k, s390, sh
+
+app-portage/perl-info
+  DeprecatedEAPI: version 0.16: uses deprecated EAPI: 0
+
+app-portage/pms-test-suite
+  DeprecatedEclass: version 0.2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 0.2: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 0.2: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), git-2 (migrate to git-r3), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 9999: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 9999: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+
+app-portage/porthole
+  DeprecatedEclass: version 0.6.1-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.6.1-r1: uses deprecated EAPI: 2
+  DeprecatedEclass: version 0.6.1-r2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.6.1-r2: uses deprecated EAPI: 2
+  DeprecatedEclass: version 0.6.1-r3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.6.1-r3: uses deprecated EAPI: 2
+
+app-portage/prefix-chain-setup
+  DeprecatedEAPI: version 0.4-r5: uses deprecated EAPI: 0
+
+app-portage/repo-commit
+  NonExistentDeps: version 0.4.1: depset rdepends: nonexistent atoms [ <sys-apps/portage-2.2.0_alpha ]
+  NonExistentDeps: version 9999: depset rdepends: nonexistent atoms [ <sys-apps/portage-2.2.0_alpha ]
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
@@ -1358,116 +1306,79 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-sys-process/acct
-  DeprecatedEAPI: version 6.5.5-r3: uses deprecated EAPI: 3
+sci-electronics/drawtiming
+  DeprecatedEAPI: version 0.7.1: uses deprecated EAPI: 3
 
-sys-process/anacron
-  DeprecatedEAPI: version 2.3-r2: uses deprecated EAPI: 0
-  ExecutableFile: "files/anacron.rc6" has unnecessary executable bit
+sci-electronics/electric
+  DeprecatedEAPI: version 8.09: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 8.11: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.02: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.03: uses deprecated EAPI: 0
+  MissingChksum: version 8.09: "electricBinary-8.09.jar" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 8.11: "electricBinary-8.11.jar" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-sys-process/atop
-  DeprecatedEAPI: version 1.27_p3: uses deprecated EAPI: 3
-
-sys-process/audit
-  DeprecatedEclass: version 1.7.18: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 1.7.18: uses deprecated EAPI: 3
-  DeprecatedEclass: version 2.0.5: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 2.0.5: uses deprecated EAPI: 3
-  NonExistentDeps: version 2.0.5: depset depends: nonexistent atoms [ dev-libs/libprelude ]
-  NonExistentDeps: version 2.0.5: depset rdepends: nonexistent atoms [ dev-libs/libprelude ]
-  DeprecatedEclass: version 2.1.3-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 2.1.3-r1: uses deprecated EAPI: 3
-  NonExistentDeps: version 2.1.3-r1: depset depends: nonexistent atoms [ dev-libs/libprelude ]
-  NonExistentDeps: version 2.1.3-r1: depset rdepends: nonexistent atoms [ dev-libs/libprelude ]
-  NonExistentDeps: version 2.2.2-r2: depset depends: nonexistent atoms [ dev-libs/libprelude ]
-  NonExistentDeps: version 2.2.2-r2: depset rdepends: nonexistent atoms [ dev-libs/libprelude ]
-  NonExistentDeps: version 2.2.2-r3: depset depends: nonexistent atoms [ dev-libs/libprelude ]
-  NonExistentDeps: version 2.2.2-r3: depset rdepends: nonexistent atoms [ dev-libs/libprelude ]
-
-sys-process/bcron
-  DeprecatedEAPI: version 0.09: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.09-r2: uses deprecated EAPI: 2
-  MissingChksum: version 0.09: "bcron-0.09.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-sys-process/cronbase
-  DeprecatedEAPI: version 0.3.3: uses deprecated EAPI: 0
-
-sys-process/cronie
-  BadInsIntoDir: version 1.5.0: ebuild uses insinto /etc/conf.d on line 52
-  BadInsIntoDir: version 1.5.0: ebuild uses insinto /etc/cron.hourly on line 75
-
-sys-process/cronbase
-  ExecutableFile: "files/run-crons-0.3.3" has unnecessary executable bit
-  ExecutableFile: "files/run-crons-0.3.4" has unnecessary executable bit
-  ExecutableFile: "files/run-crons-0.3.5" has unnecessary executable bit
-  ExecutableFile: "files/run-crons-0.3.6" has unnecessary executable bit
-  ExecutableFile: "files/run-crons-0.3.7" has unnecessary executable bit
-
-sys-process/cronie
-  BadInsIntoDir: version 1.5.0-r1: ebuild uses insinto /etc/conf.d on line 52
-  BadInsIntoDir: version 1.5.0-r1: ebuild uses insinto /etc/cron.hourly on line 75
-
-sys-process/daemontools
-  DeprecatedEAPI: version 0.76-r7: uses deprecated EAPI: 0
-  MissingChksum: version 0.76-r7: "daemontools-0.76.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 0.76-r7: "daemontools-0.76-man-20020131.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-sys-process/dcron
-  BadInsIntoDir: version 4.5-r1: ebuild uses insinto /etc/cron.d on line 38
-
-sys-process/fuser-bsd
-  DeprecatedEAPI: version 1142334561: uses deprecated EAPI: 2
-  MissingChksum: version 1142334561: "fuser-1142334561.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 1142334561: "fuser-bsd-patches-1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-sys-process/latencytop
-  DeprecatedEAPI: version 0.5: uses deprecated EAPI: 0
-
-sys-process/minit
-  DeprecatedEAPI: version 0.9.1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.10: uses deprecated EAPI: 0
-  MissingChksum: version 0.9.1: "minit-0.9.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 0.10: "minit-0.10.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-sys-process/numad
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-sys-process/pidof-bsd
-  DeprecatedEAPI: version 20050501-r4: uses deprecated EAPI: 0
-  MissingChksum: version 20050501-r4: "pidof-bsd-20050501.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-sys-process/pkill-darwin
+sci-electronics/electronics-menu
   DeprecatedEAPI: version 1.0: uses deprecated EAPI: 3
-  MissingChksum: version 1.0: "pkill-darwin-1.0.tar.xz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-sys-process/prll
-  MissingChksum: version 0.6.2: "prll-0.6.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+sci-electronics/freehdl
+  DeprecatedEAPI: version 0.0.7: uses deprecated EAPI: 0
+  MissingChksum: version 0.0.7: "freehdl-0.0.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-sys-process/psinfo
-  MissingChksum: version 0.12: "psinfo-0.12.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+sci-electronics/geda-suite
+  DeprecatedEAPI: version 20110427: uses deprecated EAPI: 0
 
-sys-process/runit
-  BadInsIntoDir: version 2.1.1-r1: ebuild uses insinto /etc/env.d on line 61
-  DeprecatedEAPI: version 2.1.1-r1: uses deprecated EAPI: 3
-  BadInsIntoDir: version 2.1.2: ebuild uses insinto /etc/env.d on line 71
+sci-electronics/geda-xgsch2pcb
+  DeprecatedEclass: version 0.1.3-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.1.3-r2: uses deprecated EAPI: 3
 
-sys-process/supervise-scripts
-  DeprecatedEAPI: version 4.0: uses deprecated EAPI: 2
-  MissingChksum: version 4.0: "supervise-scripts-4.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+sci-electronics/ghdl
+  DeprecatedEAPI: version 0.29: uses deprecated EAPI: 3
 
-sys-process/top-apple
-  MissingChksum: version 73: "top-73.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 73: "libutil-11-top-73.h" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+sci-electronics/gnucap
+  DeprecatedEAPI: version 0.35.20091207: uses deprecated EAPI: 2
 
-sys-process/unixtop
-  DeprecatedEAPI: version 3.8_beta1-r3: uses deprecated EAPI: 0
+sci-electronics/gplcver
+  DeprecatedEAPI: version 2.11a: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.12a: uses deprecated EAPI: 0
+  MissingChksum: version 2.11a: "gplcver-2.11a.src.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-sys-process/vixie-cron
-  DeprecatedEAPI: version 4.1-r14: uses deprecated EAPI: 0
+sci-electronics/gresistor
+  DeprecatedEclass: version 0.0.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.0.1: uses deprecated EAPI: 3
+  NonExistentDeps: version 0.0.1: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  NonExistentDeps: version 0.0.1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 0.0.1-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 0.0.1-r1: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  NonExistentDeps: version 0.0.1-r1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
 
-sys-process/watchpid
-  DeprecatedEAPI: version 0.1-r1: uses deprecated EAPI: 0
-  MissingChksum: version 0.1-r1: "watchpid_0.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+sci-electronics/gspiceui
+  DeprecatedEAPI: version 0.9.99: uses deprecated EAPI: 2
+
+sci-electronics/ngspice
+  DeprecatedEAPI: version 26: uses deprecated EAPI: 3
+
+sci-electronics/osqoop
+  MissingChksum: version 1.1.1: "osqoop-1.1.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-electronics/plcedit
+  DeprecatedEAPI: version 2.2.1: uses deprecated EAPI: 2
+
+sci-electronics/puff
+  DeprecatedEAPI: version 20100127: uses deprecated EAPI: 2
+
+sci-electronics/pulseview
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+sci-electronics/sigrok-cli
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+sci-electronics/spice
+  DeprecatedEAPI: version 3.5.5-r1: uses deprecated EAPI: 0
+  MissingChksum: version 3.5.5-r1: "spice3f5sfix.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-electronics/vbs
+  DeprecatedEAPI: version 1.4.0: uses deprecated EAPI: 2
+  MissingChksum: version 1.4.0: "vbs-1.4.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch

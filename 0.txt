@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 0 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'sec-policy/*' 'dev-texlive/*' 'app-doc/*' 'sys-kernel/*' 'games-fps/*' 'net-irc/*' 'games-emulation/*' 'sys-power/*' 'app-mobilephone/*' 'net-nntp/*' 'games-kids/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'sec-policy/*' 'dev-texlive/*' 'app-doc/*' 'sys-kernel/*' 'kde-misc/*' 'sci-geosciences/*' 'games-board/*' 'sys-power/*' 'app-mobilephone/*' 'net-nntp/*' 'games-kids/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -255,433 +255,183 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-games-fps/aaut
-  DeprecatedEAPI: version 1: uses deprecated EAPI: 0
+kde-misc/eventlist
+  NonExistentDeps: version 0.6-r1: depset depends: nonexistent atoms [ >=kde-base/akonadi-4.4:4 ]
+  NonExistentDeps: version 0.6-r1: depset rdepends: nonexistent atoms [ >=kde-base/akonadi-4.4:4 ]
 
-games-fps/alienarena
-  DeprecatedEAPI: version 20120629: uses deprecated EAPI: 2
+kde-misc/gx-mail-notify
+  MissingChksum: version 0.4.4: "99617-gx_mail_notify-0.4.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-games-fps/darkplaces
-  DeprecatedEAPI: version 20110628: uses deprecated EAPI: 2
+kde-misc/hdaps_monitor
+  MissingChksum: version 0.3-r1: "103481-hdaps_monitor-0.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-games-fps/doom3-cdoom
-  DeprecatedEAPI: version 1.3.1: uses deprecated EAPI: 2
-  MissingChksum: version 1.3.1: "classic_doom_3_131.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+kde-misc/kcaldav
+  MissingChksum: version 1.2.0: "kcaldav-1.2.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-games-fps/doom3-chextrek
-  DeprecatedEAPI: version 0.52: uses deprecated EAPI: 2
-  MissingChksum: version 0.52: "chextrek_beta_052.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+kde-misc/kdesudo
+  MissingChksum: version 3.4.2.4-r1: "kdesudo-3.4.2.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-games-fps/doom3-data
-  DeprecatedEAPI: version 1.1.1282-r1: uses deprecated EAPI: 0
+kde-misc/kdmthemegenerator
+  MissingChksum: version 0.8: "102760-KdmThemeGenerator.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-games-fps/doom3-ducttape
-  DeprecatedEAPI: version 0006-r1: uses deprecated EAPI: 2
-  MissingChksum: version 0006-r1: "ducttape0006.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+kde-misc/kfilebox
+  MissingChksum: version 0.4.9: "kfilebox_0.4.9.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-games-fps/doom3-eventhorizon
-  DeprecatedEAPI: version 1.3: uses deprecated EAPI: 2
+kde-misc/kgrubeditor
+  MissingChksum: version 0.8.5: "KGRUBEditor-0.8.5-src.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-games-fps/doom3-hellcampaign
-  DeprecatedEAPI: version 1-r1: uses deprecated EAPI: 2
-  MissingChksum: version 1-r1: "sp_hc_final.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1-r1: "hardcorehellcampaign_patch.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+kde-misc/kio-locate
+  MissingChksum: version 0.5.3: "120965-kio-locate-0.5.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-games-fps/doom3-inhell
-  DeprecatedEAPI: version 1.1-r1: uses deprecated EAPI: 2
-  MissingChksum: version 1.1-r1: "in_hell_v11.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+kde-misc/kio-slp
+  MissingChksum: version 0_p20120621: "kio-slp-0_p20120621.tar.xz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-games-fps/doom3-lms
-  DeprecatedEAPI: version 4: uses deprecated EAPI: 2
-  MissingChksum: version 4: "LastManStandingCoop4Multiplatform.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+kde-misc/kio_gopher
+  MissingChksum: version 0.1.4: "kio-gopher-0.1.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-games-fps/doom3-mitm
-  DeprecatedEAPI: version 20070129: uses deprecated EAPI: 2
-  MissingChksum: version 20070129: "mitm_4.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 20070129: "mitm5.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+kde-misc/kookie
+  MissingChksum: version 0.1.1: "kookie-0.1.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-games-fps/doom3-roe
-  DeprecatedEAPI: version 1: uses deprecated EAPI: 0
+kde-misc/kopete-antispam
+  MissingChksum: version 0.5: "kopete-antispam-kde4-0.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-games-fps/duke3d
-  DeprecatedEAPI: version 20040817-r2: uses deprecated EAPI: 2
+kde-misc/kopete-thinklight
+  MissingChksum: version 0.50: "100537-kopete-thinklight-0.50.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-games-fps/duke3d-data
-  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
-  MissingUri: version 1.0-r3: file gog_duke_nukem_3d_atomic_edition_2.0.0.8.sh is unfetchable- no URI available, and RESTRICT=fetch isn't set
+kde-misc/kprayertime
+  MissingChksum: version 4.01: "kprayertime4.01.src.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-games-fps/enemy-territory-etpro
-  DeprecatedEAPI: version 3.2.6-r1: uses deprecated EAPI: 2
+kde-misc/krunner-kopete-contacts
+  MissingChksum: version 0.4: "105263-krunner-kopete-contacts-0.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-games-fps/enemy-territory-omnibot
-  DeprecatedEAPI: version 0.82: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.83.1: uses deprecated EAPI: 2
+kde-misc/ktrafficanalyzer
+  MissingChksum: version 0.5.4.1: "KTrafficAnalyzer-0.5.4.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-games-fps/enemy-territory-truecombat
-  DeprecatedEAPI: version 0.49b: uses deprecated EAPI: 2
+kde-misc/kvkbd
+  MissingChksum: version 0.6-r1: "94374-kvkbd-0.6.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-games-fps/etqw-data
-  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+kde-misc/plasmatvgr
+  MissingChksum: version 0.47: "75728-plasmatvgr047.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-games-fps/imaze
-  DeprecatedEAPI: version 1.4: uses deprecated EAPI: 0
-  MissingChksum: version 1.4: "imaze-1.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+kde-misc/serverstatuswidget
+  MissingChksum: version 1.5.1: "101336-serverstatuswidget-1.5.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-games-fps/industri
-  DeprecatedEAPI: version 1.01: uses deprecated EAPI: 2
-  MissingChksum: version 1.01: "industri_BIN-1.01-src.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.01: "industri-1.00.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+kde-misc/smooth-tasks
+  MissingChksum: version 0_p20120130: "smooth-tasks-0_p20120130.tar.xz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-games-fps/lsdldoom
-  DeprecatedEAPI: version 1.4.4.4-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.5: uses deprecated EAPI: 2
-  MissingChksum: version 1.4.4.4-r1: "lsdldoom-1.4.4.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.5: "lsdldoom-1.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  DroppedKeywordWarning: version 1.5: keywords dropped: sparc
+kde-misc/steamcompanion
+  MissingChksum: version 0.5.4-r1: "steamcompanion-0.5.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-games-fps/quake1-data
-  DeprecatedEAPI: version 2.40: uses deprecated EAPI: 2
+kde-misc/takeoff
+  MissingChksum: version 1.0: "takeoff-1.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
 
-games-fps/quake1-movies
-  DeprecatedEAPI: version 0: uses deprecated EAPI: 0
+sci-geosciences/bt747
+  MissingChksum: version 2.0.3: "BT747_2.0.3_full.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-games-fps/quake2-data
-  DeprecatedEAPI: version 3.20: uses deprecated EAPI: 2
-  MissingChksum: version 3.20: "q2-3.20-x86-full-ctf.exe" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+sci-geosciences/foxtrotgps
+  MissingChksum: version 1.1.0: "foxtrotgps-1.1.0.tar.xz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-games-fps/quake3
-  DeprecatedEAPI: version 1.36-r1: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 2
+sci-geosciences/gdal-grass
+  MissingChksum: version 1.4.3-r1: "gdal-grass-1.4.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+sci-geosciences/gmt
+  MissingChksum: version 4.5.6: "GSHHS2.1.1_high.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-geosciences/gpsbabel
+  MissingChksum: version 1.4.3: "gpsbabel.org-style3.css" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-geosciences/gpscorrelate
+  MissingChksum: version 1.6.1: "gpscorrelate-1.6.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+sci-geosciences/gpsd
+  MetadataError: version 2.95-r1: attr(fetchables): error- Metadata Exception: pkg ebuild src: sci-geosciences/gpsd-2.95-r1, attr fetchables
+error: mirror://berlios/gpsd/gpsd-2.95.tar.gz is unparseable
+flagged token- uri mirror://berlios/gpsd/gpsd-2.95.tar.gz isn't a known mirror tier
+  NonExistentDeps: version 2.95-r1: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 2.95-r1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEAPI: version 2.95-r1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 2.95-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  MetadataError: version 2.96-r1: attr(fetchables): error- Metadata Exception: pkg ebuild src: sci-geosciences/gpsd-2.96-r1, attr fetchables
+error: mirror://berlios/gpsd/gpsd-2.96bis.tar.gz is unparseable
+flagged token- uri mirror://berlios/gpsd/gpsd-2.96bis.tar.gz isn't a known mirror tier
+  NonExistentDeps: version 2.96-r1: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 2.96-r1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEAPI: version 2.96-r1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 2.96-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 3.6: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 3.6: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 3.6: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 3.7: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 3.7: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 3.7: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 3.8: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 3.8: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 3.8: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 3.9: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 3.9: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 3.9: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 3.9-r1: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 3.9-r1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 3.9-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-games-fps/quake3-alliance
-  DeprecatedEAPI: version 3.3-r1: uses deprecated EAPI: 2
-  MissingChksum: version 3.3-r1: "alliance30.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 3.3-r1: "alliance30-33.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+sci-geosciences/grass
+  DeprecatedEclass: version 6.4.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-games-fps/quake3-alternatefire
-  DeprecatedEAPI: version 2.0-r1: uses deprecated EAPI: 2
-  MissingChksum: version 2.0-r1: "alternatefire-2.0.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+sci-geosciences/josm-plugins
+  DeprecatedEAPI: version 20101206: uses deprecated EAPI: 3
+  MissingChksum: version 20101206: "josm-plugins-20101206.tar.xz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-games-fps/quake3-bfp
-  DeprecatedEAPI: version 1.2-r1: uses deprecated EAPI: 2
-  MissingChksum: version 1.2-r1: "bidforpower1-2.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+sci-geosciences/mapnik
+  DeprecatedEclass: version 2.0.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 2.0.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 2.1.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-games-fps/quake3-cpma
-  DeprecatedEAPI: version 1.48: uses deprecated EAPI: 2
+sci-geosciences/mapnik-world-boundaries
+  DeprecatedEAPI: version 20090514: uses deprecated EAPI: 2
 
-games-fps/quake3-defrag
-  DeprecatedEAPI: version 1.91.20: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 1.91.21: uses deprecated EAPI: 2
-  MissingChksum: version 1.91.20: "defrag_1.91.20.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.91.20: "defragcpmpak01.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.91.20: "df-extras002.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.91.20: "defragpak1.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.91.20: "defragpak2.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.91.20: "defragpak3.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.91.20: "defragpak4.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.91.20: "defragpak5.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.91.20: "defragpak7.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.91.20: "defragpak8.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.91.20: "defragpak9.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.91.20: "defragpak10.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.91.20: "defragpak11.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+sci-geosciences/mapserver
+  DeprecatedEclass: version 6.0.1-r2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-games-fps/quake3-excessiveplus
-  DeprecatedEAPI: version 2.2b: uses deprecated EAPI: 2
+sci-geosciences/mc2bsbh
+  MissingChksum: version 0.0.9: "mc2bsbh-beta09.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-games-fps/quake3-lrctf
-  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 2
-  MissingChksum: version 1.1: "LRCTF_Q3A_v1.1_full.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+sci-geosciences/mkgmap
+  MissingChksum: version 1995: "mkgmap-r1995-src.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-games-fps/quake3-matrix
-  DeprecatedEAPI: version 2.4_beta-r1: uses deprecated EAPI: 2
-  MissingChksum: version 2.4_beta-r1: "matrix24.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+sci-geosciences/mtkbabel
+  MissingChksum: version 0.8.2: "mtkbabel-0.8.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-games-fps/quake3-nsco
-  DeprecatedEAPI: version 1.93-r1: uses deprecated EAPI: 2
-  MissingChksum: version 1.93-r1: "nsco_beta191a.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 1.93-r1: "nsco_beta193upd.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+sci-geosciences/osm2mp
+  MissingChksum: version 0.80: "osm2mp_v080.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-games-fps/quake3-osp
-  DeprecatedEAPI: version 1.03a-r1: uses deprecated EAPI: 2
-  MissingChksum: version 1.03a-r1: "osp-Quake3-1.03a_full.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+sci-geosciences/osm2pgsql
+  DeprecatedEclass: version 99999999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-games-fps/quake3-ra3
-  DeprecatedEAPI: version 1.76-r1: uses deprecated EAPI: 2
+sci-geosciences/osmosis
+  MissingChksum: version 0.35.1: "osmosis-0.35.1.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-games-fps/quake3-reaction
-  DeprecatedEAPI: version 3.2: uses deprecated EAPI: 2
+sci-geosciences/qgis
+  DeprecatedEAPI: version 1.7.0: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.7.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-games-fps/quake3-ruinhunters
-  DeprecatedEAPI: version 1.0a-r1: uses deprecated EAPI: 2
-  MissingChksum: version 1.0a-r1: "ruin_hunters_v10a_patch.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.0a-r1: "ruin_hunters_v10.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+sci-geosciences/qlandkartegt-garmindev
+  MissingChksum: version 0.3.4: "garmindev-0.3.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-games-fps/quake3-threewave
-  DeprecatedEAPI: version 1.7-r1: uses deprecated EAPI: 2
-  MissingChksum: version 1.7-r1: "threewave_16_full.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 1.7-r1: "threewave_17_update.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-games-fps/quake4-data
-  DeprecatedEAPI: version 1.0.2147.12: uses deprecated EAPI: 0
-
-games-fps/quakeforge
-  DeprecatedEAPI: version 0.5.5-r2: uses deprecated EAPI: 2
-
-games-fps/red-blue-quake2
-  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 2
-  MissingChksum: version 0.1: "q2source-3.21.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 0.1: "red-blue-quake2-0.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-games-fps/rott
-  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
-
-games-fps/tenebrae
-  DeprecatedEAPI: version 1.04: uses deprecated EAPI: 2
-  MissingChksum: version 1.04: "tenebraedata.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.04: "tenebrae-1.04.tbz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-games-fps/transfusion-bin
-  DeprecatedEAPI: version 1.01: uses deprecated EAPI: 0
-  MissingChksum: version 1.01: "transfusion-1.0-linux.i386.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.01: "transfusion-patch-1.01-linux.i386.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.01: "transfusion.png" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-games-fps/tribes2
-  DeprecatedEAPI: version 25034: uses deprecated EAPI: 0
-  MissingChksum: version 25034: "tribes2-25034-cdrom-x86.run" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-games-fps/unreal-tournament-bonuspacks
-  DeprecatedEAPI: version 436: uses deprecated EAPI: 0
-
-games-fps/unreal-tournament-strikeforce
-  DeprecatedEAPI: version 1.81: uses deprecated EAPI: 0
-
-games-fps/ut2003-bonuspack-cm
-  DeprecatedEAPI: version 1: uses deprecated EAPI: 0
-  MissingChksum: version 1: "cbp2003.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-games-fps/ut2003-bonuspack-de
-  DeprecatedEAPI: version 1: uses deprecated EAPI: 0
-  MissingChksum: version 1: "debonus.ut2mod.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-games-fps/ut2003-bonuspack-epic
-  DeprecatedEAPI: version 1: uses deprecated EAPI: 0
-  MissingChksum: version 1: "UT2003-epicbonuspackone.exe" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-games-fps/ut2003-data
-  DeprecatedEAPI: version 2107: uses deprecated EAPI: 0
-  MissingChksum: version 2107: "UT2003CrashFix.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-games-fps/ut2004-action
-  DeprecatedEAPI: version 1: uses deprecated EAPI: 2
-  MissingChksum: version 1: "aut-r1-msuc.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-games-fps/ut2004-airbuccaneers
-  DeprecatedEAPI: version 1.6-r2: uses deprecated EAPI: 2
-  MissingChksum: version 1.6-r2: "airbuccaneers1_6_zipinstall.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-games-fps/ut2004-alienswarm
-  DeprecatedEAPI: version 1.32: uses deprecated EAPI: 2
-  MissingChksum: version 1.32: "AlienSwarm-v13.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 1.32: "phalanxaswcampaign10.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 1.32: "TelicCampaign_1_1.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 1.32: "AlienSwarm_13_or_131_to_132_Patch.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-games-fps/ut2004-bonuspack-cbp1
-  DeprecatedEAPI: version 1-r2: uses deprecated EAPI: 2
-
-games-fps/ut2004-bonuspack-cbp2
-  DeprecatedEAPI: version 1-r2: uses deprecated EAPI: 2
-  MissingChksum: version 1-r2: "cbp2-volume1_zip.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 1-r2: "cbp2-volume2_zip.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-games-fps/ut2004-bonuspack-ece
-  DeprecatedEAPI: version 1-r3: uses deprecated EAPI: 2
-  MissingChksum: version 1-r3: "ut2004megapack-linux.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-games-fps/ut2004-bonuspack-mega
-  DeprecatedEAPI: version 1-r2: uses deprecated EAPI: 2
-  MissingChksum: version 1-r2: "ut2004megapack-linux.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-games-fps/ut2004-cor
-  DeprecatedEAPI: version 1.01-r1: uses deprecated EAPI: 2
-  MissingChksum: version 1.01-r1: "COR_Beta_v1.0.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 1.01-r1: "COR_Patch_B1.0_to_B1.01.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-games-fps/ut2004-crossfire
-  DeprecatedEAPI: version 1.95: uses deprecated EAPI: 2
-  MissingChksum: version 1.95: "TOCrossfire_beta_1.95_full.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-games-fps/ut2004-data
-  DeprecatedEAPI: version 3186-r4: uses deprecated EAPI: 0
-
-games-fps/ut2004-deathball
-  DeprecatedEAPI: version 2.4w: uses deprecated EAPI: 2
-  MissingChksum: version 2.4w: "deathball24w.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-games-fps/ut2004-fragops
-  DeprecatedEAPI: version 2.20: uses deprecated EAPI: 2
-  MissingChksum: version 2.20: "FragOps_v220_FullLMW.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-games-fps/ut2004-hamsterbash
-  DeprecatedEAPI: version 1: uses deprecated EAPI: 2
-  MissingChksum: version 1: "HamsterBashFinal.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-games-fps/ut2004-muralis
-  DeprecatedEAPI: version 1.15: uses deprecated EAPI: 2
-  MissingChksum: version 1.15: "muralis-v1.15-zip.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-games-fps/ut2004-strikeforce
-  DeprecatedEAPI: version 4.1: uses deprecated EAPI: 2
-  MissingChksum: version 4.1: "StrikeForce-CE-V4.1.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-games-fps/ut2004-troopers
-  DeprecatedEAPI: version 6.0: uses deprecated EAPI: 2
-  MissingChksum: version 6.0: "troopersversion60zip.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-games-fps/ut2004-ultraduel
-  DeprecatedEAPI: version 2.1: uses deprecated EAPI: 2
-  MissingChksum: version 2.1: "1on1-Ultra-Duel-2K4.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 2.1: "1on1-Ultra-Duel-2K4_Patch21.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-games-fps/ut2004-unwheel
-  DeprecatedEAPI: version 0_beta5: uses deprecated EAPI: 2
-  MissingChksum: version 0_beta5: "unwheel_r5.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 0_beta5: "UnWheel-R5_BonusPack-Volume_1.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-games-fps/wolfgl
-  DeprecatedEAPI: version 0.93-r1: uses deprecated EAPI: 2
-  MissingChksum: version 0.93-r1: "wolfgl-0.93.tbz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 0.93-r1: "wolfdata.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 0.93-r1: "sdmdata.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+sci-geosciences/readosm
+  MissingChksum: version 1.0.0: "readosm-1.0.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
-
-net-irc/asuka
-  DeprecatedEAPI: version 1.2.1: uses deprecated EAPI: 0
-
-net-irc/atheme-services
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-net-irc/bip
-  DeprecatedEAPI: version 0.8.8-r1: uses deprecated EAPI: 2
-
-net-irc/bnc
-  DeprecatedEAPI: version 2.9.4: uses deprecated EAPI: 0
-
-net-irc/dccserver
-  DeprecatedEAPI: version 0.5: uses deprecated EAPI: 0
-
-net-irc/dircproxy
-  DeprecatedEAPI: version 1.2.0_rc1: uses deprecated EAPI: 0
-
-net-irc/hexchat
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-net-irc/iip
-  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 2
-
-net-irc/irc-client
-  DeprecatedEAPI: version 2.10.3_p7: uses deprecated EAPI: 0
-  MetadataError: version 2.10.3_p7: attr(rdepends): blocks itself
-
-net-irc/irc-server
-  DeprecatedEAPI: version 2.11.1_p1-r2: uses deprecated EAPI: 0
-
-net-irc/ircmap
-  DeprecatedEAPI: version 0.99: uses deprecated EAPI: 0
-
-net-irc/irker
-  DeprecatedEclass: version 1.19: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEclass: version 1.20: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-
-net-irc/irssi-otr
-  NonExistentDeps: version 0.2: depset depends: nonexistent atoms [ net-irc/irssi-svn ]
-  NonExistentDeps: version 0.2: depset rdepends: nonexistent atoms [ net-irc/irssi-svn ]
-  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 2
-
-net-irc/irssistats
-  DeprecatedEAPI: version 0.75: uses deprecated EAPI: 0
-
-net-irc/jircii
-  DeprecatedEAPI: version 41: uses deprecated EAPI: 0
-
-net-irc/kvirc
-  DeprecatedEclass: version 4.4_pre6250: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-
-net-irc/miau
-  DeprecatedEAPI: version 0.6.6: uses deprecated EAPI: 0
-
-net-irc/muh
-  DeprecatedEAPI: version 2.2a: uses deprecated EAPI: 0
-
-net-irc/ninja
-  DeprecatedEAPI: version 1.5.9_pre14: uses deprecated EAPI: 0
-
-net-irc/onis
-  DeprecatedEAPI: version 0.8.2: uses deprecated EAPI: 0
-
-net-irc/psybnc
-  DeprecatedEAPI: version 2.3.2.9-r2: uses deprecated EAPI: 2
-
-net-irc/ptlink-opm
-  DeprecatedEAPI: version 1.3.1: uses deprecated EAPI: 0
-
-net-irc/rhapsody
-  DeprecatedEAPI: version 0.28b: uses deprecated EAPI: 0
-
-net-irc/smuxi
-  DeprecatedEclass: version 0.8.10.1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-
-net-irc/srvx
-  DeprecatedEAPI: version 1.3.1: uses deprecated EAPI: 0
-
-net-irc/xchat-otr
-  NonExistentDeps: version 0.3: depset depends: nonexistent atoms [ net-irc/xchat ]
-  NonExistentDeps: version 0.3: depset rdepends: nonexistent atoms [ net-irc/xchat ]
-  DeprecatedEAPI: version 0.3: uses deprecated EAPI: 2
-WARNING pkgcore: metadata.dtd cannot be opened from
-               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
-               : refetch
-WARNING pkgcore: metadata.dtd cannot be opened from
-               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
-               : refetch
-
-games-emulation/desmume
-  DeprecatedEAPI: version 0.9.8: uses deprecated EAPI: 2
-  MissingChksum: version 0.9.8: "desmume-0.9.8.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-games-emulation/dolphin
-  WhitespaceFound: version 4.0-r2: ebuild has trailing whitespace on line 101
-  WhitespaceFound: version 4.0.2-r7: ebuild has trailing whitespace on line 102
-
-games-emulation/gnomeboyadvance
-  MetadataError: version 0.1: attr(fetchables): error- Metadata Exception: pkg ebuild src: games-emulation/gnomeboyadvance-0.1, attr fetchables
-error: mirror://berlios/gnomeboyadvance/gnomeboyadvance-0.1.tar.bz2 is unparseable
-flagged token- uri mirror://berlios/gnomeboyadvance/gnomeboyadvance-0.1.tar.bz2 isn't a known mirror tier
-  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 2
-  DeprecatedEclass: version 0.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-
-games-emulation/mekanix
-  DeprecatedEAPI: version 070: uses deprecated EAPI: 0
-  MissingChksum: version 070: "mekanix070.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-games-emulation/mupen64plus
-  DeprecatedEAPI: version 1.5-r1: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 1.5-r2: uses deprecated EAPI: 2
-
-games-emulation/nestopia
-  DroppedKeywordWarning: version 1.46.2: keywords dropped: ppc
-
-games-emulation/pcsx2
-  SizeViolation: "files/pcsx2-1.3.1-cflags.patch" exceeds 20k in size; 20865 bytes total
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch

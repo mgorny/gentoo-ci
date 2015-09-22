@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 13 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'app-emulation/*' 'dev-php/*' 'kde-base/*' 'www-client/*' 'net-im/*' 'media-tv/*' 'gnustep-apps/*' 'sys-freebsd/*' 'www-misc/*' 'games-mud/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'app-emulation/*' 'dev-php/*' 'kde-base/*' 'gnome-extra/*' 'xfce-extra/*' 'games-action/*' 'gnustep-apps/*' 'sys-freebsd/*' 'www-misc/*' 'games-mud/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -326,45 +326,31 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-www-client/ck4up
-  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 0
-  MissingChksum: version 1.2: "ck4up-1.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+gnome-extra/avant-window-navigator-extras
+  DeprecatedEclass: version 0.4.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 0.4.0: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 0.4.0: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  MissingChksum: version 0.4.0: "awn-extras-0.4.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-www-client/fetch
-  DeprecatedEAPI: version 1.0-r1: uses deprecated EAPI: 0
+gnome-extra/cameramonitor
+  DeprecatedEclass: version 0.3.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-www-client/jumanji
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+gnome-extra/docky
+  DeprecatedEclass: version 2.2.0: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
 
-www-client/luakit
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+gnome-extra/gnome-color-manager
+  DroppedKeywordWarning: version 3.14.2: keywords dropped: alpha, sparc
 
-www-client/opera
-  DroppedKeywordWarning: version 31.0.1889.174: keywords dropped: x86
+gnome-extra/gnome-dvb-daemon
+  DeprecatedEclass: version 0.2.10: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 0.2.10: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  NonExistentDeps: version 0.2.10: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
 
-www-client/surf
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+gnome-extra/gnome-power-manager
+  DroppedKeywordWarning: version 3.16.1: keywords dropped: alpha
 
-www-client/uget
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-www-client/uzbl
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-www-client/w3m
-  NonExistentDeps: version 0.5.3-r5: depset depends: nonexistent atoms [ >=app-text/migemo-0.40 ]
-  NonExistentDeps: version 0.5.3-r5: depset rdepends: nonexistent atoms [ >=app-text/migemo-0.40 ]
-
-www-client/w3mmee
-  DeprecatedEAPI: version 0.3.2_p24-r7: uses deprecated EAPI: 0
-
-www-client/weboob
-  DeprecatedEclass: version 9998: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DroppedKeywordWarning: version 9998: keywords dropped: amd64, x86
-
-www-client/xombrero
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+gnome-extra/nm-applet
+  DroppedKeywordWarning: version 1.0.2: keywords dropped: ia64
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
@@ -372,66 +358,26 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-net-im/ayttm
-  MissingChksum: version 0.6.3: "ayttm-0.6.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+xfce-extra/eatmonkey
+  MissingChksum: version 0.1.4: "eatmonkey-0.1.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-im/bitlbee-steam
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+xfce-extra/transd
+  MissingChksum: version 0_p20120503: "transd-0_p20120503.tar.xz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-im/centerim
-  DeprecatedEAPI: version 4.22.10: uses deprecated EAPI: 2
+xfce-extra/xfce4-gvfs-mount
+  MissingChksum: version 0.0.4: "xfce4-gvfs-mount-0.0.4-6d2684b.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-im/coccinella
-  MissingChksum: version 0.96.20: "Coccinella-0.96.20Src.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+xfce-extra/xfce4-linelight-plugin
+  MissingChksum: version 0.1.7: "xfce4-linelight-plugin_0.1.7.orig.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-im/gg-transport
-  DeprecatedEAPI: version 2.2.4: uses deprecated EAPI: 0
-  MissingChksum: version 2.2.4: "jggtrans-2.2.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+xfce-extra/xfce4-modemlights-plugin
+  MissingChksum: version 0.1.3.99: "xfce4-modemlights-plugin-0.1.3.99.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-im/jabber-base
-  DeprecatedEAPI: version 0.01: uses deprecated EAPI: 0
+xfce-extra/xfce4-taskmanager
+  DroppedKeywordWarning: version 1.1.0: keywords dropped: hppa
 
-net-im/kadu
-  DroppedKeywordWarning: version 2.1: keywords dropped: ppc
-
-net-im/librvp
-  DeprecatedEAPI: version 0.9.6: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.9.7: uses deprecated EAPI: 2
-  MissingChksum: version 0.9.6: "librvp-0.9.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 0.9.7: "librvp-0.9.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-net-im/mu-conference
-  DeprecatedEAPI: version 0.7: uses deprecated EAPI: 0
-
-net-im/psi
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-net-im/psimedia
-  MissingChksum: version 1.0.3-r3: "psimedia-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-net-im/qwit
-  DeprecatedEAPI: version 1.1_pre2: uses deprecated EAPI: 2
-
-net-im/reaim
-  MissingChksum: version 0.8-r1: "reaim-0.8.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-net-im/silc-toolkit
-  MissingChksum: version 1.1.10: "silc-toolkit-1.1.10.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-net-im/simpserver-bin
-  DeprecatedEAPI: version 2.1.0: uses deprecated EAPI: 0
-  MissingChksum: version 2.1.0: "simpserver-2.1.0-linux-x86.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-net-im/skypetab-ng
-  NonExistentDeps: version 0.5.2: depset rdepends: nonexistent atoms [ <net-im/skype-4.1 ]
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  NonExistentDeps: version 9999: depset rdepends: nonexistent atoms [ <net-im/skype-4.1 ]
-
-net-im/tkabber
-  MissingChksum: version 0.11.1-r1: "tkabber-plugins-0.11.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-net-im/ysm
-  MissingChksum: version 2.9.9.1: "ysmv7_2_9_9_1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+xfce-extra/xfce4-volumed
+  MissingChksum: version 0.1.13: "xfce4-volumed-0.1.13.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
@@ -439,79 +385,23 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-media-tv/dvbstream
-  DeprecatedEAPI: version 0.7_pre20080516: uses deprecated EAPI: 0
-  MissingChksum: version 0.7_pre20080516: "dvbstream-snapshot-20080302.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+games-action/descent3
+  MissingChksum: version 1.4.0b-r2: "descent3-1.4.0a-x86.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.4.0b-r2: "descent3-1.4.0b-x86.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-media-tv/dvbstreamer
-  DeprecatedEAPI: version 1.1-r1: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 2.0.0_rc1: uses deprecated EAPI: 2
-  MissingChksum: version 1.1-r1: "dvbstreamer-1.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 2.0.0_rc1: "dvbstreamer-2.0.0rc1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+games-action/heretic2
+  MissingChksum: version 1.06c-r1: "heretic2-1.06b-unified-x86.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.06c-r1: "heretic2-1.06c-unified-x86.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.06c-r1: "heretic2-maps-1.0.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-media-tv/freevo
-  DeprecatedEclass: version 1.9.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 1.9.0: uses deprecated EAPI: 3
-  NonExistentDeps: version 1.9.0: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
-  NonExistentDeps: version 1.9.0: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+games-action/shadowgrounds-bin
+  MissingChksum: version 0_beta12-r1: "ShadowgroundsBeta12.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-media-tv/ivtvplayer
-  WrongIndentFound: version 0.1.3-r1: ebuild has whitespace in indentation on line 18
+games-action/shadowgrounds-survivor-bin
+  MissingChksum: version 0_beta11-r1: "SurvivorBeta11.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-media-tv/ivtv-utils
-  MissingChksum: version 1.4.1: "ivtv-utils-1.4.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-media-tv/ivtvplayer
-  DeprecatedEAPI: version 0.1.3-r1: uses deprecated EAPI: 2
-  NonExistentDeps: version 0.1.3-r1: depset rdepends: nonexistent atoms [ media-tv/ivtv ]
-  MissingChksum: version 0.1.3-r1: "ivtvplayer-0.1.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-media-tv/kodi
-  ExecutableFile: "files/generate.sh" has unnecessary executable bit
-
-media-tv/linuxtv-dvb-firmware
-  DeprecatedEAPI: version 2009.07.06-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2009.09.19: uses deprecated EAPI: 0
-
-media-tv/mythtv
-  DeprecatedEclass: version 0.26.0_p20130922: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  NonExistentDeps: version 0.26.0_p20130922: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
-  NonExistentDeps: version 0.26.0_p20130922: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
-  DeprecatedEclass: version 0.27_p20140321: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  NonExistentDeps: version 0.27_p20140321: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
-  NonExistentDeps: version 0.27_p20140321: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
-  DeprecatedEclass: version 0.27.5_p20150627: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-
-media-tv/nvtv
-  DeprecatedEAPI: version 0.4.7-r1: uses deprecated EAPI: 2
-  MissingChksum: version 0.4.7-r1: "nvtv-0.4.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-media-tv/shoutcast2vdr
-  DeprecatedEAPI: version 0.0.8: uses deprecated EAPI: 0
-
-media-tv/tvbrowser
-  WhitespaceFound: version 9999: ebuild has trailing whitespace on line 111
-  SizeViolation: "files/tvbrowser-9999-build.xml" exceeds 20k in size; 37346 bytes total
-
-media-tv/tvheadend
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-media-tv/tvmovie2vdr
-  DeprecatedEAPI: version 0.5.13: uses deprecated EAPI: 0
-  MissingChksum: version 0.5.13: "tvmovie2vdr-0.5.13.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-media-tv/wis-go7007
-  DeprecatedEAPI: version 0.9.8-r3: uses deprecated EAPI: 0
-  MissingChksum: version 0.9.8-r3: "wis-go7007-linux-0.9.8.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-media-tv/xawtv
-  DeprecatedEAPI: version 3.95-r2: uses deprecated EAPI: 1
-
-media-tv/xbmc
-  DeprecatedEclass: version 11.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  NonExistentDeps: version 11.0: depset depends: nonexistent atoms [ =dev-lang/python-2.6*, <media-video/libav-0.8.2-r1 ]
-  NonExistentDeps: version 11.0: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6*, <media-video/libav-0.8.2-r1 ]
-  ExecutableFile: "files/generate.sh" has unnecessary executable bit
+games-action/trine-bin
+  MissingChksum: version 1.08: "Trine.64.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
