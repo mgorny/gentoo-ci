@@ -51,7 +51,7 @@
 </pre></td></tr>
             <tr class="" id="l6"><td><a href="#l6"><span>6</span></a></td><td><pre>+ set +x
 </pre></td></tr>
-            <tr class="" id="l7"><td><a href="#l7"><span>7</span></a></td><td><pre>+ exec pkgcheck -r gentoo --reporter FancyReporter 'media-gfx/*' 'sys-devel/*' 'sci-chemistry/*' 'x11-wm/*' 'app-backup/*' 'games-misc/*' 'dev-scheme/*' 'games-util/*' 'www-plugins/*' 'games-server/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
+            <tr class="" id="l7"><td><a href="#l7"><span>7</span></a></td><td><pre>+ exec pkgcheck -r gentoo --reporter FancyReporter 'media-gfx/*' 'sys-devel/*' 'sci-chemistry/*' 'x11-wm/*' 'app-backup/*' 'games-misc/*' 'dev-scheme/*' 'games-util/*' 'www-plugins/*' 'app-officeext/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 </pre></td></tr>
             <tr class="" id="l8"><td><a href="#l8"><span>8</span></a></td><td><pre>/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
 </pre></td></tr>
@@ -3087,13 +3087,91 @@
 </pre></td></tr>
             <tr class="" id="l1524"><td><a href="#l1524"><span>1524</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1525"><td><a href="#l1525"><span>1525</span></a></td><td><pre>games-server/ut2004-ded
+            <tr class="" id="l1525"><td><a href="#l1525"><span>1525</span></a></td><td><pre>app-officeext/barcode
 </pre></td></tr>
-            <tr class="" id="l1526"><td><a href="#l1526"><span>1526</span></a></td><td><pre>  MissingChksum: version 3369.3-r1: "dedicatedserver3339-bonuspack.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+            <tr class="" id="l1526"><td><a href="#l1526"><span>1526</span></a></td><td><pre>  NonExistentDeps: version 1.3.5.0-r1: depset depends: nonexistent atoms [ app-office/openoffice ]
+</pre></td></tr>
+            <tr class="" id="l1527"><td><a href="#l1527"><span>1527</span></a></td><td><pre>  NonExistentDeps: version 1.3.5.0-r1: depset rdepends: nonexistent atoms [ app-office/openoffice ]
+</pre></td></tr>
+            <tr class="" id="l1528"><td><a href="#l1528"><span>1528</span></a></td><td><pre>
+</pre></td></tr>
+            <tr class="" id="l1529"><td><a href="#l1529"><span>1529</span></a></td><td><pre>app-officeext/ct2n
+</pre></td></tr>
+            <tr class="" id="l1530"><td><a href="#l1530"><span>1530</span></a></td><td><pre>  NonExistentDeps: version 1.4.0-r1: depset depends: nonexistent atoms [ app-office/openoffice ]
+</pre></td></tr>
+            <tr class="" id="l1531"><td><a href="#l1531"><span>1531</span></a></td><td><pre>  NonExistentDeps: version 1.4.0-r1: depset rdepends: nonexistent atoms [ app-office/openoffice ]
+</pre></td></tr>
+            <tr class="" id="l1532"><td><a href="#l1532"><span>1532</span></a></td><td><pre>
+</pre></td></tr>
+            <tr class="" id="l1533"><td><a href="#l1533"><span>1533</span></a></td><td><pre>app-officeext/dmaths
+</pre></td></tr>
+            <tr class="" id="l1534"><td><a href="#l1534"><span>1534</span></a></td><td><pre>  NonExistentDeps: version 3.4.9.0-r1: depset depends: nonexistent atoms [ app-office/openoffice ]
+</pre></td></tr>
+            <tr class="" id="l1535"><td><a href="#l1535"><span>1535</span></a></td><td><pre>  NonExistentDeps: version 3.4.9.0-r1: depset rdepends: nonexistent atoms [ app-office/openoffice ]
+</pre></td></tr>
+            <tr class="" id="l1536"><td><a href="#l1536"><span>1536</span></a></td><td><pre>
+</pre></td></tr>
+            <tr class="" id="l1537"><td><a href="#l1537"><span>1537</span></a></td><td><pre>app-officeext/languagetool
+</pre></td></tr>
+            <tr class="" id="l1538"><td><a href="#l1538"><span>1538</span></a></td><td><pre>  NonExistentDeps: version 2.5: depset depends: nonexistent atoms [ app-office/openoffice ]
+</pre></td></tr>
+            <tr class="" id="l1539"><td><a href="#l1539"><span>1539</span></a></td><td><pre>  NonExistentDeps: version 2.5: depset rdepends: nonexistent atoms [ app-office/openoffice ]
+</pre></td></tr>
+            <tr class="" id="l1540"><td><a href="#l1540"><span>1540</span></a></td><td><pre>  NonExistentDeps: version 2.7: depset depends: nonexistent atoms [ app-office/openoffice ]
+</pre></td></tr>
+            <tr class="" id="l1541"><td><a href="#l1541"><span>1541</span></a></td><td><pre>  NonExistentDeps: version 2.7: depset rdepends: nonexistent atoms [ app-office/openoffice ]
+</pre></td></tr>
+            <tr class="" id="l1542"><td><a href="#l1542"><span>1542</span></a></td><td><pre>  NonExistentDeps: version 2.9: depset depends: nonexistent atoms [ app-office/openoffice ]
+</pre></td></tr>
+            <tr class="" id="l1543"><td><a href="#l1543"><span>1543</span></a></td><td><pre>  NonExistentDeps: version 2.9: depset rdepends: nonexistent atoms [ app-office/openoffice ]
+</pre></td></tr>
+            <tr class="" id="l1544"><td><a href="#l1544"><span>1544</span></a></td><td><pre>
+</pre></td></tr>
+            <tr class="" id="l1545"><td><a href="#l1545"><span>1545</span></a></td><td><pre>app-officeext/ooo2gd
+</pre></td></tr>
+            <tr class="" id="l1546"><td><a href="#l1546"><span>1546</span></a></td><td><pre>  NonExistentDeps: version 3.0.0-r1: depset depends: nonexistent atoms [ app-office/openoffice ]
+</pre></td></tr>
+            <tr class="" id="l1547"><td><a href="#l1547"><span>1547</span></a></td><td><pre>  NonExistentDeps: version 3.0.0-r1: depset rdepends: nonexistent atoms [ app-office/openoffice ]
+</pre></td></tr>
+            <tr class="" id="l1548"><td><a href="#l1548"><span>1548</span></a></td><td><pre>
+</pre></td></tr>
+            <tr class="" id="l1549"><td><a href="#l1549"><span>1549</span></a></td><td><pre>app-officeext/ooofbtools
+</pre></td></tr>
+            <tr class="" id="l1550"><td><a href="#l1550"><span>1550</span></a></td><td><pre>  NonExistentDeps: version 2.34: depset depends: nonexistent atoms [ app-office/openoffice ]
+</pre></td></tr>
+            <tr class="" id="l1551"><td><a href="#l1551"><span>1551</span></a></td><td><pre>  NonExistentDeps: version 2.34: depset rdepends: nonexistent atoms [ app-office/openoffice ]
+</pre></td></tr>
+            <tr class="" id="l1552"><td><a href="#l1552"><span>1552</span></a></td><td><pre>  NonExistentDeps: version 2.35: depset depends: nonexistent atoms [ app-office/openoffice ]
+</pre></td></tr>
+            <tr class="" id="l1553"><td><a href="#l1553"><span>1553</span></a></td><td><pre>  NonExistentDeps: version 2.35: depset rdepends: nonexistent atoms [ app-office/openoffice ]
+</pre></td></tr>
+            <tr class="" id="l1554"><td><a href="#l1554"><span>1554</span></a></td><td><pre>  NonExistentDeps: version 2.36: depset depends: nonexistent atoms [ app-office/openoffice ]
+</pre></td></tr>
+            <tr class="" id="l1555"><td><a href="#l1555"><span>1555</span></a></td><td><pre>  NonExistentDeps: version 2.36: depset rdepends: nonexistent atoms [ app-office/openoffice ]
+</pre></td></tr>
+            <tr class="" id="l1556"><td><a href="#l1556"><span>1556</span></a></td><td><pre>
+</pre></td></tr>
+            <tr class="" id="l1557"><td><a href="#l1557"><span>1557</span></a></td><td><pre>app-officeext/sun-templates
+</pre></td></tr>
+            <tr class="" id="l1558"><td><a href="#l1558"><span>1558</span></a></td><td><pre>  NonExistentDeps: version 1.0.0-r1: depset depends: nonexistent atoms [ app-office/openoffice ]
+</pre></td></tr>
+            <tr class="" id="l1559"><td><a href="#l1559"><span>1559</span></a></td><td><pre>  NonExistentDeps: version 1.0.0-r1: depset rdepends: nonexistent atoms [ app-office/openoffice ]
+</pre></td></tr>
+            <tr class="" id="l1560"><td><a href="#l1560"><span>1560</span></a></td><td><pre>
+</pre></td></tr>
+            <tr class="" id="l1561"><td><a href="#l1561"><span>1561</span></a></td><td><pre>app-officeext/texmaths
+</pre></td></tr>
+            <tr class="" id="l1562"><td><a href="#l1562"><span>1562</span></a></td><td><pre>  NonExistentDeps: version 0.37-r1: depset depends: nonexistent atoms [ app-office/openoffice ]
+</pre></td></tr>
+            <tr class="" id="l1563"><td><a href="#l1563"><span>1563</span></a></td><td><pre>  NonExistentDeps: version 0.37-r1: depset rdepends: nonexistent atoms [ app-office/openoffice ]
+</pre></td></tr>
+            <tr class="" id="l1564"><td><a href="#l1564"><span>1564</span></a></td><td><pre>  NonExistentDeps: version 0.41: depset depends: nonexistent atoms [ app-office/openoffice ]
+</pre></td></tr>
+            <tr class="" id="l1565"><td><a href="#l1565"><span>1565</span></a></td><td><pre>  NonExistentDeps: version 0.41: depset rdepends: nonexistent atoms [ app-office/openoffice ]
 </pre></td></tr>
 
         </table>
 
-        <address>Generated based on results from 2015-09-22 14:48:14 UTC</address>
+        <address>Generated based on results from 2015-09-22 15:17:24 UTC</address>
     </body>
 </html>

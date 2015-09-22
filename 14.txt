@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 14 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'media-plugins/*' 'app-dicts/*' 'app-crypt/*' 'www-client/*' 'net-im/*' 'media-tv/*' 'dev-tcltk/*' 'media-radio/*' 'gnustep-base/*' 'app-officeext/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'media-plugins/*' 'app-dicts/*' 'app-crypt/*' 'www-client/*' 'net-im/*' 'media-tv/*' 'dev-tcltk/*' 'media-radio/*' 'gnustep-base/*' 'games-mud/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1085,45 +1085,3 @@ WARNING pkgcore: metadata.dtd cannot be opened from
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
-
-app-officeext/barcode
-  NonExistentDeps: version 1.3.5.0-r1: depset depends: nonexistent atoms [ app-office/openoffice ]
-  NonExistentDeps: version 1.3.5.0-r1: depset rdepends: nonexistent atoms [ app-office/openoffice ]
-
-app-officeext/ct2n
-  NonExistentDeps: version 1.4.0-r1: depset depends: nonexistent atoms [ app-office/openoffice ]
-  NonExistentDeps: version 1.4.0-r1: depset rdepends: nonexistent atoms [ app-office/openoffice ]
-
-app-officeext/dmaths
-  NonExistentDeps: version 3.4.9.0-r1: depset depends: nonexistent atoms [ app-office/openoffice ]
-  NonExistentDeps: version 3.4.9.0-r1: depset rdepends: nonexistent atoms [ app-office/openoffice ]
-
-app-officeext/languagetool
-  NonExistentDeps: version 2.5: depset depends: nonexistent atoms [ app-office/openoffice ]
-  NonExistentDeps: version 2.5: depset rdepends: nonexistent atoms [ app-office/openoffice ]
-  NonExistentDeps: version 2.7: depset depends: nonexistent atoms [ app-office/openoffice ]
-  NonExistentDeps: version 2.7: depset rdepends: nonexistent atoms [ app-office/openoffice ]
-  NonExistentDeps: version 2.9: depset depends: nonexistent atoms [ app-office/openoffice ]
-  NonExistentDeps: version 2.9: depset rdepends: nonexistent atoms [ app-office/openoffice ]
-
-app-officeext/ooo2gd
-  NonExistentDeps: version 3.0.0-r1: depset depends: nonexistent atoms [ app-office/openoffice ]
-  NonExistentDeps: version 3.0.0-r1: depset rdepends: nonexistent atoms [ app-office/openoffice ]
-
-app-officeext/ooofbtools
-  NonExistentDeps: version 2.34: depset depends: nonexistent atoms [ app-office/openoffice ]
-  NonExistentDeps: version 2.34: depset rdepends: nonexistent atoms [ app-office/openoffice ]
-  NonExistentDeps: version 2.35: depset depends: nonexistent atoms [ app-office/openoffice ]
-  NonExistentDeps: version 2.35: depset rdepends: nonexistent atoms [ app-office/openoffice ]
-  NonExistentDeps: version 2.36: depset depends: nonexistent atoms [ app-office/openoffice ]
-  NonExistentDeps: version 2.36: depset rdepends: nonexistent atoms [ app-office/openoffice ]
-
-app-officeext/sun-templates
-  NonExistentDeps: version 1.0.0-r1: depset depends: nonexistent atoms [ app-office/openoffice ]
-  NonExistentDeps: version 1.0.0-r1: depset rdepends: nonexistent atoms [ app-office/openoffice ]
-
-app-officeext/texmaths
-  NonExistentDeps: version 0.37-r1: depset depends: nonexistent atoms [ app-office/openoffice ]
-  NonExistentDeps: version 0.37-r1: depset rdepends: nonexistent atoms [ app-office/openoffice ]
-  NonExistentDeps: version 0.41: depset depends: nonexistent atoms [ app-office/openoffice ]
-  NonExistentDeps: version 0.41: depset rdepends: nonexistent atoms [ app-office/openoffice ]
