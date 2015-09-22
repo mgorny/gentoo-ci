@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 3 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-haskell/*' 'app-misc/*' 'sys-libs/*' 'sys-cluster/*' 'sys-block/*' 'app-shells/*' 'kde-plasma/*' 'x11-terms/*' 'perl-core/*' 'net-news/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-haskell/*' 'app-misc/*' 'sys-libs/*' 'sys-cluster/*' 'sys-block/*' 'app-shells/*' 'kde-plasma/*' 'app-accessibility/*' 'sci-astronomy/*' 'games-engines/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1317,60 +1317,68 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-x11-terms/aterm
-  DeprecatedEAPI: version 1.0.1-r2: uses deprecated EAPI: 3
+app-accessibility/SphinxTrain
+  DroppedKeywordWarning: version 1.0.8: keywords dropped: ppc
 
-x11-terms/eterm
-  DeprecatedEAPI: version 0.9.5: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.9.6: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
-
-x11-terms/gnome-terminal
-  NonExistentDeps: version 3.14.2-r2: depset depends: nonexistent atoms [ <=x11-libs/gtk+-2.24.10:2 ]
-  SizeViolation: "files/gnome-terminal-3.16.2-restore-transparency.patch" exceeds 20k in size; 54792 bytes total
-
-x11-terms/hanterm
-  DeprecatedEAPI: version 3.1.6-r2: uses deprecated EAPI: 0
-
-x11-terms/root-tail
-  DeprecatedEAPI: version 1.2-r3: uses deprecated EAPI: 2
-  MissingChksum: version 1.2-r3: "root-tail-1.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-x11-terms/roxterm
-  DeprecatedEclass: version 2.6.3: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEclass: version 2.6.5: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DroppedKeywordWarning: version 2.9.3-r1: keywords dropped: ppc
-
-x11-terms/terminology
+app-accessibility/espeakup
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-x11-terms/xvt
-  DeprecatedEAPI: version 2.1-r3: uses deprecated EAPI: 2
+app-accessibility/festival
+  DeprecatedEAPI: version 2.1-r1: uses deprecated EAPI: 2
 
-x11-terms/yeahconsole
-  DeprecatedEAPI: version 0.3.4-r1: uses deprecated EAPI: 2
-  MissingChksum: version 0.3.4-r1: "yeahconsole-0.3.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+app-accessibility/festival-fi
+  DeprecatedEAPI: version 20041119: uses deprecated EAPI: 2
+
+app-accessibility/festival-freebsoft-utils
+  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 0
+
+app-accessibility/festival-hts
+  DeprecatedEAPI: version 2.1: uses deprecated EAPI: 2
+
+app-accessibility/festival-ru
+  DeprecatedEAPI: version 0.5: uses deprecated EAPI: 2
+
+app-accessibility/freetts
+  DeprecatedEAPI: version 1.2.1-r2: uses deprecated EAPI: 0
+
+app-accessibility/mbrola
+  DeprecatedEAPI: version 3.0.1h-r6: uses deprecated EAPI: 0
+
+app-accessibility/nfbtrans
+  DeprecatedEAPI: version 7.74: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 7.74-r1: uses deprecated EAPI: 3
+
+app-accessibility/pidgin-festival
+  DeprecatedEAPI: version 2.4: uses deprecated EAPI: 2
+
+app-accessibility/sound-icons
+  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 0
+
+app-accessibility/speakup
+  DeprecatedEAPI: version 3.1.6_p201011120508: uses deprecated EAPI: 2
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 2
+
+app-accessibility/speechd-up
+  DeprecatedEAPI: version 0.4-r3: uses deprecated EAPI: 0
+
+app-accessibility/sphinx2
+  DeprecatedEAPI: version 0.6: uses deprecated EAPI: 2
+
+app-accessibility/yasr
+  DeprecatedEAPI: version 0.6.9-r1: uses deprecated EAPI: 2
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
+
+sci-astronomy/swarp
+  MissingChksum: version 2.19.1: "swarp-2.19.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
-
-net-news/amphetadesk
-  DeprecatedEAPI: version 0.93.1: uses deprecated EAPI: 0
-
-net-news/blam
-  DeprecatedEclass: version 1.8.9: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-
-net-news/liferea
-  DroppedKeywordWarning: version 1.10.8: keywords dropped: ppc64
-
-net-news/yencode
-  DeprecatedEAPI: version 0.46: uses deprecated EAPI: 0
