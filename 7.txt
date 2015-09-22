@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 7 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'media-libs/*' 'dev-lang/*' 'dev-ros/*' 'x11-themes/*' 'app-portage/*' 'sci-electronics/*' 'net-dialup/*' 'sys-firmware/*' 'lxde-base/*' 'games-simulation/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'media-libs/*' 'dev-lang/*' 'app-emacs/*' 'x11-themes/*' 'app-portage/*' 'sci-electronics/*' 'net-dialup/*' 'sys-firmware/*' 'lxde-base/*' 'games-simulation/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -769,9 +769,59 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-dev-ros/roslaunch
-  ExecutableFile: "files/roscore.initd" has unnecessary executable bit
-  ExecutableFile: "files/roslaunch.initd" has unnecessary executable bit
+app-emacs/cmail
+  DeprecatedEAPI: version 2.62-r1: uses deprecated EAPI: 0
+
+app-emacs/ddskk
+  DeprecatedEAPI: version 14.3: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 14.4: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 15.1: uses deprecated EAPI: 3
+
+app-emacs/emacs-wiki-blog
+  DeprecatedEAPI: version 0.5: uses deprecated EAPI: 0
+
+app-emacs/javascript
+  DeprecatedEAPI: version 2.0_beta8: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.2.1: uses deprecated EAPI: 0
+
+app-emacs/navi2ch
+  DeprecatedEAPI: version 1.8.3-r1: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 1.8.4: uses deprecated EAPI: 3
+
+app-emacs/prom-wl
+  DeprecatedEAPI: version 2.7.0-r1: uses deprecated EAPI: 0
+
+app-emacs/pymacs
+  DeprecatedEclass: version 0.23-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.23-r1: uses deprecated EAPI: 3
+
+app-emacs/python-mode
+  DeprecatedEAPI: version 5.2.0: uses deprecated EAPI: 3
+
+app-emacs/rnc-mode
+  DeprecatedEAPI: version 1.0_beta3: uses deprecated EAPI: 0
+
+app-emacs/slime
+  DeprecatedEAPI: version 2.0_p20080731: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.0_p20080731-r1: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 2.0_p20101103: uses deprecated EAPI: 3
+
+app-emacs/sumibi
+  DeprecatedEAPI: version 0.5.2: uses deprecated EAPI: 0
+
+app-emacs/tdtd
+  DeprecatedEAPI: version 0.7.1-r1: uses deprecated EAPI: 0
+
+app-emacs/twittering-mode
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+app-emacs/yasnippet
+  DeprecatedEAPI: version 0.5.10: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.6.0c: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.6.1c: uses deprecated EAPI: 0
+
+app-emacs/yc
+  DeprecatedEAPI: version 4.0.13: uses deprecated EAPI: 3
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch

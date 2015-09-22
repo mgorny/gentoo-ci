@@ -52,7 +52,7 @@
 </pre></td></tr>
             <tr class="" id="l6"><td><a href="#l6"><span>6</span></a></td><td><pre>+ set +x
 </pre></td></tr>
-            <tr class="" id="l7"><td><a href="#l7"><span>7</span></a></td><td><pre>+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-python/*' 'x11-misc/*' 'x11-plugins/*' 'sys-kernel/*' 'games-fps/*' 'net-irc/*' 'games-emulation/*' 'net-proxy/*' 'dev-lisp/*' 'dev-ada/*' 'games-kids/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
+            <tr class="" id="l7"><td><a href="#l7"><span>7</span></a></td><td><pre>+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-python/*' 'x11-misc/*' 'x11-plugins/*' 'sys-kernel/*' 'games-fps/*' 'net-irc/*' 'games-emulation/*' 'sys-power/*' 'dev-lisp/*' 'dev-ada/*' 'games-kids/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 </pre></td></tr>
             <tr class="" id="l8"><td><a href="#l8"><span>8</span></a></td><td><pre>/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
 </pre></td></tr>
@@ -126,9 +126,9 @@
 </pre></td></tr>
             <tr class="" id="l43"><td><a href="#l43"><span>43</span></a></td><td><pre>  DeprecatedEclass: version 4.1.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
-            <tr class="" id="l44"><td><a href="#l44"><span>44</span></a></td><td><pre>  DroppedKeywordWarning: version 4.1.3: keywords dropped: arm64
+            <tr class="" id="l44"><td><a href="#l44"><span>44</span></a></td><td><pre>  SizeViolation: "files/beautifulsoup-3.1.0.1-python-3.patch" exceeds 20k in size; 42319 bytes total
 </pre></td></tr>
-            <tr class="" id="l45"><td><a href="#l45"><span>45</span></a></td><td><pre>  SizeViolation: "files/beautifulsoup-3.1.0.1-python-3.patch" exceeds 20k in size; 42319 bytes total
+            <tr class="" id="l45"><td><a href="#l45"><span>45</span></a></td><td><pre>  DroppedKeywordWarning: version 4.1.3: keywords dropped: arm64
 </pre></td></tr>
             <tr class="" id="l46"><td><a href="#l46"><span>46</span></a></td><td><pre>
 </pre></td></tr>
@@ -4336,359 +4336,379 @@
 </pre></td></tr>
             <tr class="" id="l2148"><td><a href="#l2148"><span>2148</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2149"><td><a href="#l2149"><span>2149</span></a></td><td><pre>net-proxy/3proxy
+            <tr class="" id="l2149"><td><a href="#l2149"><span>2149</span></a></td><td><pre>sys-power/acpi
 </pre></td></tr>
-            <tr class="" id="l2150"><td><a href="#l2150"><span>2150</span></a></td><td><pre>  DeprecatedEAPI: version 0.5.3k: uses deprecated EAPI: 0
+            <tr class="" id="l2150"><td><a href="#l2150"><span>2150</span></a></td><td><pre>  MissingChksum: version 1.6: "acpi-1.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l2151"><td><a href="#l2151"><span>2151</span></a></td><td><pre>  DeprecatedEAPI: version 0.6.1: uses deprecated EAPI: 2
+            <tr class="" id="l2151"><td><a href="#l2151"><span>2151</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2152"><td><a href="#l2152"><span>2152</span></a></td><td><pre>  MissingChksum: version 0.5.3k: "3proxy-0.5.3k.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+            <tr class="" id="l2152"><td><a href="#l2152"><span>2152</span></a></td><td><pre>sys-power/acpi_call
 </pre></td></tr>
-            <tr class="" id="l2153"><td><a href="#l2153"><span>2153</span></a></td><td><pre>  MissingChksum: version 0.6.1: "3proxy-0.6.1.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+            <tr class="" id="l2153"><td><a href="#l2153"><span>2153</span></a></td><td><pre>  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 </pre></td></tr>
             <tr class="" id="l2154"><td><a href="#l2154"><span>2154</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2155"><td><a href="#l2155"><span>2155</span></a></td><td><pre>net-proxy/dante
+            <tr class="" id="l2155"><td><a href="#l2155"><span>2155</span></a></td><td><pre>sys-power/apcupsd
 </pre></td></tr>
-            <tr class="" id="l2156"><td><a href="#l2156"><span>2156</span></a></td><td><pre>  DeprecatedEAPI: version 1.1.19-r4: uses deprecated EAPI: 0
+            <tr class="" id="l2156"><td><a href="#l2156"><span>2156</span></a></td><td><pre>  DeprecatedEAPI: version 3.14.8-r2: uses deprecated EAPI: 3
 </pre></td></tr>
             <tr class="" id="l2157"><td><a href="#l2157"><span>2157</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2158"><td><a href="#l2158"><span>2158</span></a></td><td><pre>net-proxy/haproxy
+            <tr class="" id="l2158"><td><a href="#l2158"><span>2158</span></a></td><td><pre>sys-power/athcool
 </pre></td></tr>
-            <tr class="" id="l2159"><td><a href="#l2159"><span>2159</span></a></td><td><pre>  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+            <tr class="" id="l2159"><td><a href="#l2159"><span>2159</span></a></td><td><pre>  DeprecatedEAPI: version 0.3.12: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l2160"><td><a href="#l2160"><span>2160</span></a></td><td><pre>
+            <tr class="" id="l2160"><td><a href="#l2160"><span>2160</span></a></td><td><pre>  MissingChksum: version 0.3.12: "athcool-0.3.12.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l2161"><td><a href="#l2161"><span>2161</span></a></td><td><pre>net-proxy/http-replicator
+            <tr class="" id="l2161"><td><a href="#l2161"><span>2161</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2162"><td><a href="#l2162"><span>2162</span></a></td><td><pre>  DeprecatedEclass: version 3.0-r4: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l2162"><td><a href="#l2162"><span>2162</span></a></td><td><pre>sys-power/cpudyn
 </pre></td></tr>
-            <tr class="" id="l2163"><td><a href="#l2163"><span>2163</span></a></td><td><pre>
+            <tr class="" id="l2163"><td><a href="#l2163"><span>2163</span></a></td><td><pre>  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l2164"><td><a href="#l2164"><span>2164</span></a></td><td><pre>net-proxy/httpush
+            <tr class="" id="l2164"><td><a href="#l2164"><span>2164</span></a></td><td><pre>  MissingChksum: version 1.0.1: "cpudyn-1.0.1.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l2165"><td><a href="#l2165"><span>2165</span></a></td><td><pre>  DeprecatedEAPI: version 0.9_beta11-r1: uses deprecated EAPI: 0
+            <tr class="" id="l2165"><td><a href="#l2165"><span>2165</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2166"><td><a href="#l2166"><span>2166</span></a></td><td><pre>  MissingChksum: version 0.9_beta11-r1: "httpush-0.9b11.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+            <tr class="" id="l2166"><td><a href="#l2166"><span>2166</span></a></td><td><pre>sys-power/cpuspeedy
 </pre></td></tr>
-            <tr class="" id="l2167"><td><a href="#l2167"><span>2167</span></a></td><td><pre>
+            <tr class="" id="l2167"><td><a href="#l2167"><span>2167</span></a></td><td><pre>  DeprecatedEAPI: version 0.4.1: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l2168"><td><a href="#l2168"><span>2168</span></a></td><td><pre>net-proxy/ntlmaps
+            <tr class="" id="l2168"><td><a href="#l2168"><span>2168</span></a></td><td><pre>  DeprecatedEclass: version 0.4.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
-            <tr class="" id="l2169"><td><a href="#l2169"><span>2169</span></a></td><td><pre>  MissingChksum: version 0.9.9-r2: "ntlmaps-0.9.9.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+            <tr class="" id="l2169"><td><a href="#l2169"><span>2169</span></a></td><td><pre>  MissingChksum: version 0.4.1: "cpuspeedy-0.4.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
             <tr class="" id="l2170"><td><a href="#l2170"><span>2170</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2171"><td><a href="#l2171"><span>2171</span></a></td><td><pre>net-proxy/oops
+            <tr class="" id="l2171"><td><a href="#l2171"><span>2171</span></a></td><td><pre>sys-power/nvram-reboot
 </pre></td></tr>
-            <tr class="" id="l2172"><td><a href="#l2172"><span>2172</span></a></td><td><pre>  DeprecatedEAPI: version 1.5.24_pre20050503-r4: uses deprecated EAPI: 2
+            <tr class="" id="l2172"><td><a href="#l2172"><span>2172</span></a></td><td><pre>  DeprecatedEAPI: version 2004.10.03: uses deprecated EAPI: 0
 </pre></td></tr>
             <tr class="" id="l2173"><td><a href="#l2173"><span>2173</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2174"><td><a href="#l2174"><span>2174</span></a></td><td><pre>net-proxy/piper
+            <tr class="" id="l2174"><td><a href="#l2174"><span>2174</span></a></td><td><pre>sys-power/nvram-wakeup
 </pre></td></tr>
-            <tr class="" id="l2175"><td><a href="#l2175"><span>2175</span></a></td><td><pre>  DeprecatedEAPI: version 1.14: uses deprecated EAPI: 0
+            <tr class="" id="l2175"><td><a href="#l2175"><span>2175</span></a></td><td><pre>  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l2176"><td><a href="#l2176"><span>2176</span></a></td><td><pre>  MissingChksum: version 1.14: "piper-1.14.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+            <tr class="" id="l2176"><td><a href="#l2176"><span>2176</span></a></td><td><pre>  MissingChksum: version 1.0: "nvram-wakup-1.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
             <tr class="" id="l2177"><td><a href="#l2177"><span>2177</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2178"><td><a href="#l2178"><span>2178</span></a></td><td><pre>net-proxy/ratproxy
+            <tr class="" id="l2178"><td><a href="#l2178"><span>2178</span></a></td><td><pre>sys-power/phc-intel
 </pre></td></tr>
-            <tr class="" id="l2179"><td><a href="#l2179"><span>2179</span></a></td><td><pre>  DeprecatedEAPI: version 1.58: uses deprecated EAPI: 0
+            <tr class="" id="l2179"><td><a href="#l2179"><span>2179</span></a></td><td><pre>  SizeViolation: "files/phc-intel-0.3.2-rev12-trailing-space-misc.patch" exceeds 20k in size; 33960 bytes total
 </pre></td></tr>
-            <tr class="" id="l2180"><td><a href="#l2180"><span>2180</span></a></td><td><pre>  MissingChksum: version 1.58: "ratproxy-1.58.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+            <tr class="" id="l2180"><td><a href="#l2180"><span>2180</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2181"><td><a href="#l2181"><span>2181</span></a></td><td><pre>
+            <tr class="" id="l2181"><td><a href="#l2181"><span>2181</span></a></td><td><pre>sys-power/phc-k8
 </pre></td></tr>
-            <tr class="" id="l2182"><td><a href="#l2182"><span>2182</span></a></td><td><pre>net-proxy/squidguard
+            <tr class="" id="l2182"><td><a href="#l2182"><span>2182</span></a></td><td><pre>  MissingChksum: version 0.4.3: "phc-k8-0.4.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l2183"><td><a href="#l2183"><span>2183</span></a></td><td><pre>  DeprecatedEAPI: version 1.4-r4: uses deprecated EAPI: 2
+            <tr class="" id="l2183"><td><a href="#l2183"><span>2183</span></a></td><td><pre>  MissingChksum: version 0.4.4: "phc-k8-0.4.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l2184"><td><a href="#l2184"><span>2184</span></a></td><td><pre>  MissingChksum: version 1.4-r4: "squidGuard-1.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+            <tr class="" id="l2184"><td><a href="#l2184"><span>2184</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2185"><td><a href="#l2185"><span>2185</span></a></td><td><pre>
+            <tr class="" id="l2185"><td><a href="#l2185"><span>2185</span></a></td><td><pre>sys-power/phctool
 </pre></td></tr>
-            <tr class="" id="l2186"><td><a href="#l2186"><span>2186</span></a></td><td><pre>net-proxy/tayga
+            <tr class="" id="l2186"><td><a href="#l2186"><span>2186</span></a></td><td><pre>  DeprecatedEAPI: version 0.5.2.2-r1: uses deprecated EAPI: 2
 </pre></td></tr>
-            <tr class="" id="l2187"><td><a href="#l2187"><span>2187</span></a></td><td><pre>  DeprecatedEAPI: version 0.9.2: uses deprecated EAPI: 3
+            <tr class="" id="l2187"><td><a href="#l2187"><span>2187</span></a></td><td><pre>  DeprecatedEclass: version 0.5.2.2-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
-            <tr class="" id="l2188"><td><a href="#l2188"><span>2188</span></a></td><td><pre>  MissingChksum: version 0.9.2: "tayga-0.9.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+            <tr class="" id="l2188"><td><a href="#l2188"><span>2188</span></a></td><td><pre>  DeprecatedEclass: version 0.5.2.2-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
-            <tr class="" id="l2189"><td><a href="#l2189"><span>2189</span></a></td><td><pre>
+            <tr class="" id="l2189"><td><a href="#l2189"><span>2189</span></a></td><td><pre>  MissingChksum: version 0.5.2.2-r1: "phctool-0.5.2.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 </pre></td></tr>
-            <tr class="" id="l2190"><td><a href="#l2190"><span>2190</span></a></td><td><pre>net-proxy/tsocks
+            <tr class="" id="l2190"><td><a href="#l2190"><span>2190</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2191"><td><a href="#l2191"><span>2191</span></a></td><td><pre>  MissingChksum: version 1.8_beta5-r5: "tsocks-1.8b5-tordns1-gentoo-r1.patch.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+            <tr class="" id="l2191"><td><a href="#l2191"><span>2191</span></a></td><td><pre>sys-power/pm-quirks
 </pre></td></tr>
-            <tr class="" id="l2192"><td><a href="#l2192"><span>2192</span></a></td><td><pre>
+            <tr class="" id="l2192"><td><a href="#l2192"><span>2192</span></a></td><td><pre>  DeprecatedEAPI: version 20100619: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l2193"><td><a href="#l2193"><span>2193</span></a></td><td><pre>net-proxy/ufdbguard
+            <tr class="" id="l2193"><td><a href="#l2193"><span>2193</span></a></td><td><pre>  MissingChksum: version 20100619: "pm-quirks-20100619.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 </pre></td></tr>
-            <tr class="" id="l2194"><td><a href="#l2194"><span>2194</span></a></td><td><pre>  DeprecatedEAPI: version 1.24-r1: uses deprecated EAPI: 2
+            <tr class="" id="l2194"><td><a href="#l2194"><span>2194</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2195"><td><a href="#l2195"><span>2195</span></a></td><td><pre>  MissingChksum: version 1.24-r1: "ufdbGuard-1.24.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+            <tr class="" id="l2195"><td><a href="#l2195"><span>2195</span></a></td><td><pre>sys-power/pmtools
 </pre></td></tr>
-            <tr class="" id="l2196"><td><a href="#l2196"><span>2196</span></a></td><td><pre>  MissingChksum: version 1.24-r1: "ufdbguard-1.24-manual.pdf" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+            <tr class="" id="l2196"><td><a href="#l2196"><span>2196</span></a></td><td><pre>  DeprecatedEAPI: version 20071116: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l2197"><td><a href="#l2197"><span>2197</span></a></td><td><pre>
+            <tr class="" id="l2197"><td><a href="#l2197"><span>2197</span></a></td><td><pre>  DeprecatedEAPI: version 20110323: uses deprecated EAPI: 2
 </pre></td></tr>
-            <tr class="" id="l2198"><td><a href="#l2198"><span>2198</span></a></td><td><pre>net-proxy/webscarab
+            <tr class="" id="l2198"><td><a href="#l2198"><span>2198</span></a></td><td><pre>  MissingChksum: version 20071116: "pmtools-20071116.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l2199"><td><a href="#l2199"><span>2199</span></a></td><td><pre>  DeprecatedEAPI: version 20070504: uses deprecated EAPI: 0
+            <tr class="" id="l2199"><td><a href="#l2199"><span>2199</span></a></td><td><pre>  DroppedKeywordWarning: version 20110323: keywords dropped: ppc
 </pre></td></tr>
-            <tr class="" id="l2200"><td><a href="#l2200"><span>2200</span></a></td><td><pre>  MissingChksum: version 20070504: "webscarab-selfcontained-20070504-1631.jar" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+            <tr class="" id="l2200"><td><a href="#l2200"><span>2200</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2201"><td><a href="#l2201"><span>2201</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
+            <tr class="" id="l2201"><td><a href="#l2201"><span>2201</span></a></td><td><pre>sys-power/powertop
 </pre></td></tr>
-            <tr class="" id="l2202"><td><a href="#l2202"><span>2202</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+            <tr class="" id="l2202"><td><a href="#l2202"><span>2202</span></a></td><td><pre>  DeprecatedEAPI: version 1.13: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l2203"><td><a href="#l2203"><span>2203</span></a></td><td><pre>               : refetch
+            <tr class="" id="l2203"><td><a href="#l2203"><span>2203</span></a></td><td><pre>  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 </pre></td></tr>
-            <tr class="" id="l2204"><td><a href="#l2204"><span>2204</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
+            <tr class="" id="l2204"><td><a href="#l2204"><span>2204</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2205"><td><a href="#l2205"><span>2205</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+            <tr class="" id="l2205"><td><a href="#l2205"><span>2205</span></a></td><td><pre>sys-power/sispmctl
 </pre></td></tr>
-            <tr class="" id="l2206"><td><a href="#l2206"><span>2206</span></a></td><td><pre>               : refetch
+            <tr class="" id="l2206"><td><a href="#l2206"><span>2206</span></a></td><td><pre>  DeprecatedEAPI: version 2.7: uses deprecated EAPI: 2
 </pre></td></tr>
             <tr class="" id="l2207"><td><a href="#l2207"><span>2207</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2208"><td><a href="#l2208"><span>2208</span></a></td><td><pre>dev-lisp/abcl
+            <tr class="" id="l2208"><td><a href="#l2208"><span>2208</span></a></td><td><pre>sys-power/yacpi
 </pre></td></tr>
-            <tr class="" id="l2209"><td><a href="#l2209"><span>2209</span></a></td><td><pre>  DeprecatedEAPI: version 0.0.9-r1: uses deprecated EAPI: 0
+            <tr class="" id="l2209"><td><a href="#l2209"><span>2209</span></a></td><td><pre>  DeprecatedEAPI: version 3.0.1: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l2210"><td><a href="#l2210"><span>2210</span></a></td><td><pre>  DeprecatedEAPI: version 0.20.0: uses deprecated EAPI: 2
+            <tr class="" id="l2210"><td><a href="#l2210"><span>2210</span></a></td><td><pre>  MissingChksum: version 3.0.1: "yacpi-3.0.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l2211"><td><a href="#l2211"><span>2211</span></a></td><td><pre>
+            <tr class="" id="l2211"><td><a href="#l2211"><span>2211</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
 </pre></td></tr>
-            <tr class="" id="l2212"><td><a href="#l2212"><span>2212</span></a></td><td><pre>dev-lisp/asdf
+            <tr class="" id="l2212"><td><a href="#l2212"><span>2212</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
 </pre></td></tr>
-            <tr class="" id="l2213"><td><a href="#l2213"><span>2213</span></a></td><td><pre>  DeprecatedEAPI: version 1.86-r1: uses deprecated EAPI: 3
+            <tr class="" id="l2213"><td><a href="#l2213"><span>2213</span></a></td><td><pre>               : refetch
 </pre></td></tr>
-            <tr class="" id="l2214"><td><a href="#l2214"><span>2214</span></a></td><td><pre>  DeprecatedEAPI: version 1.89: uses deprecated EAPI: 3
+            <tr class="" id="l2214"><td><a href="#l2214"><span>2214</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
 </pre></td></tr>
-            <tr class="" id="l2215"><td><a href="#l2215"><span>2215</span></a></td><td><pre>  DroppedKeywordWarning: version 3.0.3: keywords dropped: alpha, ia64, mips, ppc64, s390
+            <tr class="" id="l2215"><td><a href="#l2215"><span>2215</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
 </pre></td></tr>
-            <tr class="" id="l2216"><td><a href="#l2216"><span>2216</span></a></td><td><pre>
+            <tr class="" id="l2216"><td><a href="#l2216"><span>2216</span></a></td><td><pre>               : refetch
 </pre></td></tr>
-            <tr class="" id="l2217"><td><a href="#l2217"><span>2217</span></a></td><td><pre>dev-lisp/asdf-binary-locations
+            <tr class="" id="l2217"><td><a href="#l2217"><span>2217</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2218"><td><a href="#l2218"><span>2218</span></a></td><td><pre>  DeprecatedEAPI: version 20061018: uses deprecated EAPI: 3
+            <tr class="" id="l2218"><td><a href="#l2218"><span>2218</span></a></td><td><pre>dev-lisp/abcl
 </pre></td></tr>
-            <tr class="" id="l2219"><td><a href="#l2219"><span>2219</span></a></td><td><pre>
+            <tr class="" id="l2219"><td><a href="#l2219"><span>2219</span></a></td><td><pre>  DeprecatedEAPI: version 0.0.9-r1: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l2220"><td><a href="#l2220"><span>2220</span></a></td><td><pre>dev-lisp/cl-clx
+            <tr class="" id="l2220"><td><a href="#l2220"><span>2220</span></a></td><td><pre>  DeprecatedEAPI: version 0.20.0: uses deprecated EAPI: 2
 </pre></td></tr>
-            <tr class="" id="l2221"><td><a href="#l2221"><span>2221</span></a></td><td><pre>  DeprecatedEAPI: version 0.7.1: uses deprecated EAPI: 0
+            <tr class="" id="l2221"><td><a href="#l2221"><span>2221</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2222"><td><a href="#l2222"><span>2222</span></a></td><td><pre>  DeprecatedEAPI: version 0.7.2: uses deprecated EAPI: 0
+            <tr class="" id="l2222"><td><a href="#l2222"><span>2222</span></a></td><td><pre>dev-lisp/asdf
 </pre></td></tr>
-            <tr class="" id="l2223"><td><a href="#l2223"><span>2223</span></a></td><td><pre>  DeprecatedEAPI: version 0.7.3: uses deprecated EAPI: 0
+            <tr class="" id="l2223"><td><a href="#l2223"><span>2223</span></a></td><td><pre>  DeprecatedEAPI: version 1.86-r1: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l2224"><td><a href="#l2224"><span>2224</span></a></td><td><pre>
+            <tr class="" id="l2224"><td><a href="#l2224"><span>2224</span></a></td><td><pre>  DeprecatedEAPI: version 1.89: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l2225"><td><a href="#l2225"><span>2225</span></a></td><td><pre>dev-lisp/cl-ppcre
+            <tr class="" id="l2225"><td><a href="#l2225"><span>2225</span></a></td><td><pre>  DroppedKeywordWarning: version 3.0.3: keywords dropped: alpha, ia64, mips, ppc64, s390
 </pre></td></tr>
-            <tr class="" id="l2226"><td><a href="#l2226"><span>2226</span></a></td><td><pre>  DeprecatedEAPI: version 1.2.10: uses deprecated EAPI: 0
+            <tr class="" id="l2226"><td><a href="#l2226"><span>2226</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2227"><td><a href="#l2227"><span>2227</span></a></td><td><pre>  DeprecatedEAPI: version 1.2.11: uses deprecated EAPI: 0
+            <tr class="" id="l2227"><td><a href="#l2227"><span>2227</span></a></td><td><pre>dev-lisp/asdf-binary-locations
 </pre></td></tr>
-            <tr class="" id="l2228"><td><a href="#l2228"><span>2228</span></a></td><td><pre>  DeprecatedEAPI: version 1.2.12: uses deprecated EAPI: 0
+            <tr class="" id="l2228"><td><a href="#l2228"><span>2228</span></a></td><td><pre>  DeprecatedEAPI: version 20061018: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l2229"><td><a href="#l2229"><span>2229</span></a></td><td><pre>  DeprecatedEAPI: version 1.2.13: uses deprecated EAPI: 0
+            <tr class="" id="l2229"><td><a href="#l2229"><span>2229</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2230"><td><a href="#l2230"><span>2230</span></a></td><td><pre>  DeprecatedEAPI: version 1.2.14: uses deprecated EAPI: 0
+            <tr class="" id="l2230"><td><a href="#l2230"><span>2230</span></a></td><td><pre>dev-lisp/cl-clx
 </pre></td></tr>
-            <tr class="" id="l2231"><td><a href="#l2231"><span>2231</span></a></td><td><pre>  DeprecatedEAPI: version 1.2.15: uses deprecated EAPI: 0
+            <tr class="" id="l2231"><td><a href="#l2231"><span>2231</span></a></td><td><pre>  DeprecatedEAPI: version 0.7.1: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l2232"><td><a href="#l2232"><span>2232</span></a></td><td><pre>  DeprecatedEAPI: version 1.2.16: uses deprecated EAPI: 0
+            <tr class="" id="l2232"><td><a href="#l2232"><span>2232</span></a></td><td><pre>  DeprecatedEAPI: version 0.7.2: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l2233"><td><a href="#l2233"><span>2233</span></a></td><td><pre>
+            <tr class="" id="l2233"><td><a href="#l2233"><span>2233</span></a></td><td><pre>  DeprecatedEAPI: version 0.7.3: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l2234"><td><a href="#l2234"><span>2234</span></a></td><td><pre>dev-lisp/clisp
+            <tr class="" id="l2234"><td><a href="#l2234"><span>2234</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2235"><td><a href="#l2235"><span>2235</span></a></td><td><pre>  DeprecatedEAPI: version 2.48-r1: uses deprecated EAPI: 2
+            <tr class="" id="l2235"><td><a href="#l2235"><span>2235</span></a></td><td><pre>dev-lisp/cl-ppcre
 </pre></td></tr>
-            <tr class="" id="l2236"><td><a href="#l2236"><span>2236</span></a></td><td><pre>  DeprecatedEAPI: version 2.48-r2: uses deprecated EAPI: 2
+            <tr class="" id="l2236"><td><a href="#l2236"><span>2236</span></a></td><td><pre>  DeprecatedEAPI: version 1.2.10: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l2237"><td><a href="#l2237"><span>2237</span></a></td><td><pre>  DroppedKeywordWarning: version 2.49-r8: keywords dropped: alpha, ia64
+            <tr class="" id="l2237"><td><a href="#l2237"><span>2237</span></a></td><td><pre>  DeprecatedEAPI: version 1.2.11: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l2238"><td><a href="#l2238"><span>2238</span></a></td><td><pre>
+            <tr class="" id="l2238"><td><a href="#l2238"><span>2238</span></a></td><td><pre>  DeprecatedEAPI: version 1.2.12: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l2239"><td><a href="#l2239"><span>2239</span></a></td><td><pre>dev-lisp/clx
+            <tr class="" id="l2239"><td><a href="#l2239"><span>2239</span></a></td><td><pre>  DeprecatedEAPI: version 1.2.13: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l2240"><td><a href="#l2240"><span>2240</span></a></td><td><pre>  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+            <tr class="" id="l2240"><td><a href="#l2240"><span>2240</span></a></td><td><pre>  DeprecatedEAPI: version 1.2.14: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l2241"><td><a href="#l2241"><span>2241</span></a></td><td><pre>
+            <tr class="" id="l2241"><td><a href="#l2241"><span>2241</span></a></td><td><pre>  DeprecatedEAPI: version 1.2.15: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l2242"><td><a href="#l2242"><span>2242</span></a></td><td><pre>dev-lisp/common-lisp-controller
+            <tr class="" id="l2242"><td><a href="#l2242"><span>2242</span></a></td><td><pre>  DeprecatedEAPI: version 1.2.16: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l2243"><td><a href="#l2243"><span>2243</span></a></td><td><pre>  DeprecatedEAPI: version 4.27: uses deprecated EAPI: 0
+            <tr class="" id="l2243"><td><a href="#l2243"><span>2243</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2244"><td><a href="#l2244"><span>2244</span></a></td><td><pre>  DeprecatedEAPI: version 5.13-r1: uses deprecated EAPI: 3
+            <tr class="" id="l2244"><td><a href="#l2244"><span>2244</span></a></td><td><pre>dev-lisp/clisp
 </pre></td></tr>
-            <tr class="" id="l2245"><td><a href="#l2245"><span>2245</span></a></td><td><pre>
+            <tr class="" id="l2245"><td><a href="#l2245"><span>2245</span></a></td><td><pre>  DeprecatedEAPI: version 2.48-r1: uses deprecated EAPI: 2
 </pre></td></tr>
-            <tr class="" id="l2246"><td><a href="#l2246"><span>2246</span></a></td><td><pre>dev-lisp/gentoo-init
+            <tr class="" id="l2246"><td><a href="#l2246"><span>2246</span></a></td><td><pre>  DeprecatedEAPI: version 2.48-r2: uses deprecated EAPI: 2
 </pre></td></tr>
-            <tr class="" id="l2247"><td><a href="#l2247"><span>2247</span></a></td><td><pre>  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 3
+            <tr class="" id="l2247"><td><a href="#l2247"><span>2247</span></a></td><td><pre>  DroppedKeywordWarning: version 2.49-r8: keywords dropped: alpha, ia64
 </pre></td></tr>
-            <tr class="" id="l2248"><td><a href="#l2248"><span>2248</span></a></td><td><pre>  DroppedKeywordWarning: version 1.0: keywords dropped: alpha, ia64, ppc64
+            <tr class="" id="l2248"><td><a href="#l2248"><span>2248</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2249"><td><a href="#l2249"><span>2249</span></a></td><td><pre>
+            <tr class="" id="l2249"><td><a href="#l2249"><span>2249</span></a></td><td><pre>dev-lisp/clx
 </pre></td></tr>
-            <tr class="" id="l2250"><td><a href="#l2250"><span>2250</span></a></td><td><pre>dev-lisp/hyperspec
+            <tr class="" id="l2250"><td><a href="#l2250"><span>2250</span></a></td><td><pre>  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 </pre></td></tr>
-            <tr class="" id="l2251"><td><a href="#l2251"><span>2251</span></a></td><td><pre>  DeprecatedEAPI: version 7.0: uses deprecated EAPI: 0
+            <tr class="" id="l2251"><td><a href="#l2251"><span>2251</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2252"><td><a href="#l2252"><span>2252</span></a></td><td><pre>  DeprecatedEAPI: version 7.0-r1: uses deprecated EAPI: 0
+            <tr class="" id="l2252"><td><a href="#l2252"><span>2252</span></a></td><td><pre>dev-lisp/common-lisp-controller
 </pre></td></tr>
-            <tr class="" id="l2253"><td><a href="#l2253"><span>2253</span></a></td><td><pre>  MissingChksum: version 7.0-r1: "HyperSpec-7-0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+            <tr class="" id="l2253"><td><a href="#l2253"><span>2253</span></a></td><td><pre>  DeprecatedEAPI: version 4.27: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l2254"><td><a href="#l2254"><span>2254</span></a></td><td><pre>
+            <tr class="" id="l2254"><td><a href="#l2254"><span>2254</span></a></td><td><pre>  DeprecatedEAPI: version 5.13-r1: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l2255"><td><a href="#l2255"><span>2255</span></a></td><td><pre>dev-lisp/sbcl
+            <tr class="" id="l2255"><td><a href="#l2255"><span>2255</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2256"><td><a href="#l2256"><span>2256</span></a></td><td><pre>  NonExistentDeps: version 1.1.18: depset rdepends: nonexistent atoms [ &lt;sys-libs/glibc-2.6 ]
+            <tr class="" id="l2256"><td><a href="#l2256"><span>2256</span></a></td><td><pre>dev-lisp/gentoo-init
 </pre></td></tr>
-            <tr class="" id="l2257"><td><a href="#l2257"><span>2257</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
+            <tr class="" id="l2257"><td><a href="#l2257"><span>2257</span></a></td><td><pre>  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l2258"><td><a href="#l2258"><span>2258</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+            <tr class="" id="l2258"><td><a href="#l2258"><span>2258</span></a></td><td><pre>  DroppedKeywordWarning: version 1.0: keywords dropped: alpha, ia64, ppc64
 </pre></td></tr>
-            <tr class="" id="l2259"><td><a href="#l2259"><span>2259</span></a></td><td><pre>               : refetch
+            <tr class="" id="l2259"><td><a href="#l2259"><span>2259</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2260"><td><a href="#l2260"><span>2260</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
+            <tr class="" id="l2260"><td><a href="#l2260"><span>2260</span></a></td><td><pre>dev-lisp/hyperspec
 </pre></td></tr>
-            <tr class="" id="l2261"><td><a href="#l2261"><span>2261</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+            <tr class="" id="l2261"><td><a href="#l2261"><span>2261</span></a></td><td><pre>  DeprecatedEAPI: version 7.0: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l2262"><td><a href="#l2262"><span>2262</span></a></td><td><pre>               : refetch
+            <tr class="" id="l2262"><td><a href="#l2262"><span>2262</span></a></td><td><pre>  DeprecatedEAPI: version 7.0-r1: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l2263"><td><a href="#l2263"><span>2263</span></a></td><td><pre>
+            <tr class="" id="l2263"><td><a href="#l2263"><span>2263</span></a></td><td><pre>  MissingChksum: version 7.0-r1: "HyperSpec-7-0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 </pre></td></tr>
-            <tr class="" id="l2264"><td><a href="#l2264"><span>2264</span></a></td><td><pre>dev-ada/adadoc
+            <tr class="" id="l2264"><td><a href="#l2264"><span>2264</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2265"><td><a href="#l2265"><span>2265</span></a></td><td><pre>  DeprecatedEAPI: version 2.1: uses deprecated EAPI: 0
+            <tr class="" id="l2265"><td><a href="#l2265"><span>2265</span></a></td><td><pre>dev-lisp/sbcl
 </pre></td></tr>
-            <tr class="" id="l2266"><td><a href="#l2266"><span>2266</span></a></td><td><pre>
+            <tr class="" id="l2266"><td><a href="#l2266"><span>2266</span></a></td><td><pre>  NonExistentDeps: version 1.1.18: depset rdepends: nonexistent atoms [ &lt;sys-libs/glibc-2.6 ]
 </pre></td></tr>
-            <tr class="" id="l2267"><td><a href="#l2267"><span>2267</span></a></td><td><pre>dev-ada/adasockets
+            <tr class="" id="l2267"><td><a href="#l2267"><span>2267</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
 </pre></td></tr>
-            <tr class="" id="l2268"><td><a href="#l2268"><span>2268</span></a></td><td><pre>  DeprecatedEAPI: version 1.8.4.7: uses deprecated EAPI: 0
+            <tr class="" id="l2268"><td><a href="#l2268"><span>2268</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
 </pre></td></tr>
-            <tr class="" id="l2269"><td><a href="#l2269"><span>2269</span></a></td><td><pre>
+            <tr class="" id="l2269"><td><a href="#l2269"><span>2269</span></a></td><td><pre>               : refetch
 </pre></td></tr>
-            <tr class="" id="l2270"><td><a href="#l2270"><span>2270</span></a></td><td><pre>dev-ada/asis-gcc
+            <tr class="" id="l2270"><td><a href="#l2270"><span>2270</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
 </pre></td></tr>
-            <tr class="" id="l2271"><td><a href="#l2271"><span>2271</span></a></td><td><pre>  DeprecatedEAPI: version 3.4.6: uses deprecated EAPI: 0
+            <tr class="" id="l2271"><td><a href="#l2271"><span>2271</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
 </pre></td></tr>
-            <tr class="" id="l2272"><td><a href="#l2272"><span>2272</span></a></td><td><pre>  DeprecatedEAPI: version 4.1.2: uses deprecated EAPI: 0
+            <tr class="" id="l2272"><td><a href="#l2272"><span>2272</span></a></td><td><pre>               : refetch
 </pre></td></tr>
-            <tr class="" id="l2273"><td><a href="#l2273"><span>2273</span></a></td><td><pre>  DeprecatedEAPI: version 4.1.2-r1: uses deprecated EAPI: 0
+            <tr class="" id="l2273"><td><a href="#l2273"><span>2273</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2274"><td><a href="#l2274"><span>2274</span></a></td><td><pre>  DeprecatedEAPI: version 4.2.2: uses deprecated EAPI: 0
+            <tr class="" id="l2274"><td><a href="#l2274"><span>2274</span></a></td><td><pre>dev-ada/adadoc
 </pre></td></tr>
-            <tr class="" id="l2275"><td><a href="#l2275"><span>2275</span></a></td><td><pre>  DeprecatedEAPI: version 4.3.0_pre132166: uses deprecated EAPI: 0
+            <tr class="" id="l2275"><td><a href="#l2275"><span>2275</span></a></td><td><pre>  DeprecatedEAPI: version 2.1: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l2276"><td><a href="#l2276"><span>2276</span></a></td><td><pre>  DeprecatedEAPI: version 4.3.1: uses deprecated EAPI: 0
+            <tr class="" id="l2276"><td><a href="#l2276"><span>2276</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2277"><td><a href="#l2277"><span>2277</span></a></td><td><pre>  DeprecatedEAPI: version 4.3.1-r1: uses deprecated EAPI: 0
+            <tr class="" id="l2277"><td><a href="#l2277"><span>2277</span></a></td><td><pre>dev-ada/adasockets
 </pre></td></tr>
-            <tr class="" id="l2278"><td><a href="#l2278"><span>2278</span></a></td><td><pre>  DeprecatedEAPI: version 4.4: uses deprecated EAPI: 0
+            <tr class="" id="l2278"><td><a href="#l2278"><span>2278</span></a></td><td><pre>  DeprecatedEAPI: version 1.8.4.7: uses deprecated EAPI: 0
 </pre></td></tr>
             <tr class="" id="l2279"><td><a href="#l2279"><span>2279</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2280"><td><a href="#l2280"><span>2280</span></a></td><td><pre>dev-ada/asis-gpl
+            <tr class="" id="l2280"><td><a href="#l2280"><span>2280</span></a></td><td><pre>dev-ada/asis-gcc
 </pre></td></tr>
-            <tr class="" id="l2281"><td><a href="#l2281"><span>2281</span></a></td><td><pre>  DeprecatedEAPI: version 3.4.6.2006: uses deprecated EAPI: 0
+            <tr class="" id="l2281"><td><a href="#l2281"><span>2281</span></a></td><td><pre>  DeprecatedEAPI: version 3.4.6: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l2282"><td><a href="#l2282"><span>2282</span></a></td><td><pre>  DeprecatedEAPI: version 4.1.3.2007-r1: uses deprecated EAPI: 0
+            <tr class="" id="l2282"><td><a href="#l2282"><span>2282</span></a></td><td><pre>  DeprecatedEAPI: version 4.1.2: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l2283"><td><a href="#l2283"><span>2283</span></a></td><td><pre>  DeprecatedEAPI: version 4.1.3.2007-r2: uses deprecated EAPI: 0
+            <tr class="" id="l2283"><td><a href="#l2283"><span>2283</span></a></td><td><pre>  DeprecatedEAPI: version 4.1.2-r1: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l2284"><td><a href="#l2284"><span>2284</span></a></td><td><pre>  DeprecatedEAPI: version 4.1.3.2008: uses deprecated EAPI: 0
+            <tr class="" id="l2284"><td><a href="#l2284"><span>2284</span></a></td><td><pre>  DeprecatedEAPI: version 4.2.2: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l2285"><td><a href="#l2285"><span>2285</span></a></td><td><pre>  DeprecatedEAPI: version 4.1.3.2008-r1: uses deprecated EAPI: 0
+            <tr class="" id="l2285"><td><a href="#l2285"><span>2285</span></a></td><td><pre>  DeprecatedEAPI: version 4.3.0_pre132166: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l2286"><td><a href="#l2286"><span>2286</span></a></td><td><pre>
+            <tr class="" id="l2286"><td><a href="#l2286"><span>2286</span></a></td><td><pre>  DeprecatedEAPI: version 4.3.1: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l2287"><td><a href="#l2287"><span>2287</span></a></td><td><pre>dev-ada/aunit
+            <tr class="" id="l2287"><td><a href="#l2287"><span>2287</span></a></td><td><pre>  DeprecatedEAPI: version 4.3.1-r1: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l2288"><td><a href="#l2288"><span>2288</span></a></td><td><pre>  DeprecatedEAPI: version 1.05: uses deprecated EAPI: 0
+            <tr class="" id="l2288"><td><a href="#l2288"><span>2288</span></a></td><td><pre>  DeprecatedEAPI: version 4.4: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l2289"><td><a href="#l2289"><span>2289</span></a></td><td><pre>  DeprecatedEAPI: version 2.01: uses deprecated EAPI: 0
+            <tr class="" id="l2289"><td><a href="#l2289"><span>2289</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2290"><td><a href="#l2290"><span>2290</span></a></td><td><pre>  DeprecatedEAPI: version 2.03: uses deprecated EAPI: 0
+            <tr class="" id="l2290"><td><a href="#l2290"><span>2290</span></a></td><td><pre>dev-ada/asis-gpl
 </pre></td></tr>
-            <tr class="" id="l2291"><td><a href="#l2291"><span>2291</span></a></td><td><pre>
+            <tr class="" id="l2291"><td><a href="#l2291"><span>2291</span></a></td><td><pre>  DeprecatedEAPI: version 3.4.6.2006: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l2292"><td><a href="#l2292"><span>2292</span></a></td><td><pre>dev-ada/booch_components
+            <tr class="" id="l2292"><td><a href="#l2292"><span>2292</span></a></td><td><pre>  DeprecatedEAPI: version 4.1.3.2007-r1: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l2293"><td><a href="#l2293"><span>2293</span></a></td><td><pre>  DeprecatedEAPI: version 20051222-r1: uses deprecated EAPI: 0
+            <tr class="" id="l2293"><td><a href="#l2293"><span>2293</span></a></td><td><pre>  DeprecatedEAPI: version 4.1.3.2007-r2: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l2294"><td><a href="#l2294"><span>2294</span></a></td><td><pre>  DeprecatedEAPI: version 20070420: uses deprecated EAPI: 0
+            <tr class="" id="l2294"><td><a href="#l2294"><span>2294</span></a></td><td><pre>  DeprecatedEAPI: version 4.1.3.2008: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l2295"><td><a href="#l2295"><span>2295</span></a></td><td><pre>
+            <tr class="" id="l2295"><td><a href="#l2295"><span>2295</span></a></td><td><pre>  DeprecatedEAPI: version 4.1.3.2008-r1: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l2296"><td><a href="#l2296"><span>2296</span></a></td><td><pre>dev-ada/cbind
+            <tr class="" id="l2296"><td><a href="#l2296"><span>2296</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2297"><td><a href="#l2297"><span>2297</span></a></td><td><pre>  DeprecatedEAPI: version 6.0.1: uses deprecated EAPI: 0
+            <tr class="" id="l2297"><td><a href="#l2297"><span>2297</span></a></td><td><pre>dev-ada/aunit
 </pre></td></tr>
-            <tr class="" id="l2298"><td><a href="#l2298"><span>2298</span></a></td><td><pre>
+            <tr class="" id="l2298"><td><a href="#l2298"><span>2298</span></a></td><td><pre>  DeprecatedEAPI: version 1.05: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l2299"><td><a href="#l2299"><span>2299</span></a></td><td><pre>dev-ada/charles
+            <tr class="" id="l2299"><td><a href="#l2299"><span>2299</span></a></td><td><pre>  DeprecatedEAPI: version 2.01: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l2300"><td><a href="#l2300"><span>2300</span></a></td><td><pre>  DeprecatedEAPI: version 20050913: uses deprecated EAPI: 0
+            <tr class="" id="l2300"><td><a href="#l2300"><span>2300</span></a></td><td><pre>  DeprecatedEAPI: version 2.03: uses deprecated EAPI: 0
 </pre></td></tr>
             <tr class="" id="l2301"><td><a href="#l2301"><span>2301</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2302"><td><a href="#l2302"><span>2302</span></a></td><td><pre>dev-ada/florist
+            <tr class="" id="l2302"><td><a href="#l2302"><span>2302</span></a></td><td><pre>dev-ada/booch_components
 </pre></td></tr>
-            <tr class="" id="l2303"><td><a href="#l2303"><span>2303</span></a></td><td><pre>  DeprecatedEAPI: version 2007.0: uses deprecated EAPI: 0
+            <tr class="" id="l2303"><td><a href="#l2303"><span>2303</span></a></td><td><pre>  DeprecatedEAPI: version 20051222-r1: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l2304"><td><a href="#l2304"><span>2304</span></a></td><td><pre>
+            <tr class="" id="l2304"><td><a href="#l2304"><span>2304</span></a></td><td><pre>  DeprecatedEAPI: version 20070420: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l2305"><td><a href="#l2305"><span>2305</span></a></td><td><pre>dev-ada/glade
+            <tr class="" id="l2305"><td><a href="#l2305"><span>2305</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2306"><td><a href="#l2306"><span>2306</span></a></td><td><pre>  DeprecatedEAPI: version 2006.0: uses deprecated EAPI: 0
+            <tr class="" id="l2306"><td><a href="#l2306"><span>2306</span></a></td><td><pre>dev-ada/cbind
 </pre></td></tr>
-            <tr class="" id="l2307"><td><a href="#l2307"><span>2307</span></a></td><td><pre>
+            <tr class="" id="l2307"><td><a href="#l2307"><span>2307</span></a></td><td><pre>  DeprecatedEAPI: version 6.0.1: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l2308"><td><a href="#l2308"><span>2308</span></a></td><td><pre>dev-ada/gtkada
+            <tr class="" id="l2308"><td><a href="#l2308"><span>2308</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2309"><td><a href="#l2309"><span>2309</span></a></td><td><pre>  DeprecatedEAPI: version 2.10.0: uses deprecated EAPI: 0
+            <tr class="" id="l2309"><td><a href="#l2309"><span>2309</span></a></td><td><pre>dev-ada/charles
 </pre></td></tr>
-            <tr class="" id="l2310"><td><a href="#l2310"><span>2310</span></a></td><td><pre>
+            <tr class="" id="l2310"><td><a href="#l2310"><span>2310</span></a></td><td><pre>  DeprecatedEAPI: version 20050913: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l2311"><td><a href="#l2311"><span>2311</span></a></td><td><pre>dev-ada/polyorb
+            <tr class="" id="l2311"><td><a href="#l2311"><span>2311</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2312"><td><a href="#l2312"><span>2312</span></a></td><td><pre>  DeprecatedEAPI: version 2.1.0: uses deprecated EAPI: 0
+            <tr class="" id="l2312"><td><a href="#l2312"><span>2312</span></a></td><td><pre>dev-ada/florist
 </pre></td></tr>
-            <tr class="" id="l2313"><td><a href="#l2313"><span>2313</span></a></td><td><pre>
+            <tr class="" id="l2313"><td><a href="#l2313"><span>2313</span></a></td><td><pre>  DeprecatedEAPI: version 2007.0: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l2314"><td><a href="#l2314"><span>2314</span></a></td><td><pre>dev-ada/xmlada
+            <tr class="" id="l2314"><td><a href="#l2314"><span>2314</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2315"><td><a href="#l2315"><span>2315</span></a></td><td><pre>  DeprecatedEAPI: version 1.0-r4: uses deprecated EAPI: 0
+            <tr class="" id="l2315"><td><a href="#l2315"><span>2315</span></a></td><td><pre>dev-ada/glade
 </pre></td></tr>
-            <tr class="" id="l2316"><td><a href="#l2316"><span>2316</span></a></td><td><pre>  DeprecatedEAPI: version 2.2.0: uses deprecated EAPI: 0
+            <tr class="" id="l2316"><td><a href="#l2316"><span>2316</span></a></td><td><pre>  DeprecatedEAPI: version 2006.0: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l2317"><td><a href="#l2317"><span>2317</span></a></td><td><pre>  DeprecatedEAPI: version 2.2.0-r1: uses deprecated EAPI: 0
+            <tr class="" id="l2317"><td><a href="#l2317"><span>2317</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2318"><td><a href="#l2318"><span>2318</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
+            <tr class="" id="l2318"><td><a href="#l2318"><span>2318</span></a></td><td><pre>dev-ada/gtkada
 </pre></td></tr>
-            <tr class="" id="l2319"><td><a href="#l2319"><span>2319</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+            <tr class="" id="l2319"><td><a href="#l2319"><span>2319</span></a></td><td><pre>  DeprecatedEAPI: version 2.10.0: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l2320"><td><a href="#l2320"><span>2320</span></a></td><td><pre>               : refetch
+            <tr class="" id="l2320"><td><a href="#l2320"><span>2320</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2321"><td><a href="#l2321"><span>2321</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
+            <tr class="" id="l2321"><td><a href="#l2321"><span>2321</span></a></td><td><pre>dev-ada/polyorb
 </pre></td></tr>
-            <tr class="" id="l2322"><td><a href="#l2322"><span>2322</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+            <tr class="" id="l2322"><td><a href="#l2322"><span>2322</span></a></td><td><pre>  DeprecatedEAPI: version 2.1.0: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l2323"><td><a href="#l2323"><span>2323</span></a></td><td><pre>               : refetch
+            <tr class="" id="l2323"><td><a href="#l2323"><span>2323</span></a></td><td><pre>
+</pre></td></tr>
+            <tr class="" id="l2324"><td><a href="#l2324"><span>2324</span></a></td><td><pre>dev-ada/xmlada
+</pre></td></tr>
+            <tr class="" id="l2325"><td><a href="#l2325"><span>2325</span></a></td><td><pre>  DeprecatedEAPI: version 1.0-r4: uses deprecated EAPI: 0
+</pre></td></tr>
+            <tr class="" id="l2326"><td><a href="#l2326"><span>2326</span></a></td><td><pre>  DeprecatedEAPI: version 2.2.0: uses deprecated EAPI: 0
+</pre></td></tr>
+            <tr class="" id="l2327"><td><a href="#l2327"><span>2327</span></a></td><td><pre>  DeprecatedEAPI: version 2.2.0-r1: uses deprecated EAPI: 0
+</pre></td></tr>
+            <tr class="" id="l2328"><td><a href="#l2328"><span>2328</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
+</pre></td></tr>
+            <tr class="" id="l2329"><td><a href="#l2329"><span>2329</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+</pre></td></tr>
+            <tr class="" id="l2330"><td><a href="#l2330"><span>2330</span></a></td><td><pre>               : refetch
+</pre></td></tr>
+            <tr class="" id="l2331"><td><a href="#l2331"><span>2331</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
+</pre></td></tr>
+            <tr class="" id="l2332"><td><a href="#l2332"><span>2332</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+</pre></td></tr>
+            <tr class="" id="l2333"><td><a href="#l2333"><span>2333</span></a></td><td><pre>               : refetch
 </pre></td></tr>
 
         </table>
 
-        <address>Generated based on results from 2015-09-22 17:45:59 UTC</address>
+        <address>Generated based on results from 2015-09-22 18:57:06 UTC</address>
     </body>
 </html>
