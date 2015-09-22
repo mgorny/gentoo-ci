@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 2 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-perl/*' 'net-analyzer/*' 'dev-db/*' 'app-arch/*' 'games-arcade/*' 'www-apache/*' 'net-firewall/*' 'dev-ros/*' 'dev-games/*' 'sci-misc/*' 'ros-meta/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-perl/*' 'net-analyzer/*' 'dev-db/*' 'app-arch/*' 'games-arcade/*' 'www-apache/*' 'sci-physics/*' 'app-forensics/*' 'dev-games/*' 'sci-misc/*' 'app-antivirus/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -710,66 +710,79 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-net-firewall/arno-iptables-firewall
-  NonExistentDeps: version 2.0.1d-r2: depset rdepends: nonexistent atoms [ <sys-apps/coreutils-8.20 ]
-  NonExistentDeps: version 2.0.1e: depset rdepends: nonexistent atoms [ <sys-apps/coreutils-8.20 ]
+sci-physics/clhep
+  DeprecatedEAPI: version 2.0.4.6: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 2.1.0.1: uses deprecated EAPI: 2
+  MissingChksum: version 2.0.4.6: "clhep-2.0.4.6.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-firewall/arptables
-  DeprecatedEAPI: version 0.0.3.4-r2: uses deprecated EAPI: 2
-  MissingChksum: version 0.0.3.4-r2: "arptables-v0.0.3-4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+sci-physics/geant
+  DeprecatedEAPI: version 3.21.14-r2: uses deprecated EAPI: 2
 
-net-firewall/conntrack-tools
-  DroppedKeywordWarning: version 1.4.3: keywords dropped: alpha
+sci-physics/hepmc
+  DeprecatedEAPI: version 2.06.03: uses deprecated EAPI: 2
+  MissingChksum: version 2.06.03: "HepMC-2.06.03.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-firewall/dshieldpy
-  DeprecatedEclass: version 3.2-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  MissingChksum: version 3.2-r1: "dshieldpy-3.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+sci-physics/herwig
+  DeprecatedEAPI: version 6.5.10: uses deprecated EAPI: 2
 
-net-firewall/fwanalog
-  DeprecatedEAPI: version 0.6.4: uses deprecated EAPI: 0
+sci-physics/lhapdf
+  DeprecatedEAPI: version 5.8.4: uses deprecated EAPI: 2
+  MissingChksum: version 5.8.4: "lhapdf-5.8.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 5.8.4: "wrapheragrid.f" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 5.8.4: "wrapheragrid-lite.f" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-firewall/fwbuilder
-  MissingChksum: version 5.0.1.3592-r1: "fwbuilder-5.0.1.3592.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 5.1.0.3599: "fwbuilder-5.1.0.3599.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+sci-physics/meep
+  DeprecatedEAPI: version 1.1.1: uses deprecated EAPI: 2
 
-net-firewall/fwipsec
-  DeprecatedEAPI: version 0.4.2-r1: uses deprecated EAPI: 0
-  MissingChksum: version 0.4.2-r1: "fwipsec-0.4.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+sci-physics/root
+  DeprecatedEclass: version 5.32.03-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-net-firewall/ipkungfu
-  DeprecatedEAPI: version 0.5.2-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.6.1: uses deprecated EAPI: 0
-  MissingChksum: version 0.5.2-r1: "ipkungfu-0.5.2.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 0.6.1: "ipkungfu-0.6.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+sci-physics/sassena
+  MissingChksum: version 1.4.1: "sassena-v1.4.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-net-firewall/iptables
-  ExecutableFile: "files/iptables.init" has unnecessary executable bit
-
-net-firewall/nufw
-  NonExistentDeps: version 2.2.22-r1: depset depends: nonexistent atoms [ dev-libs/libprelude ]
-  NonExistentDeps: version 2.2.22-r1: depset rdepends: nonexistent atoms [ dev-libs/libprelude ]
-
-net-firewall/pftop
-  DeprecatedEAPI: version 0.5: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.7: uses deprecated EAPI: 0
-  MissingChksum: version 0.5: "pftop-0.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-net-firewall/quicktables
-  DeprecatedEAPI: version 2.3: uses deprecated EAPI: 0
-  MissingChksum: version 2.3: "quicktables-2.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-net-firewall/shapecfg
-  DeprecatedEAPI: version 36: uses deprecated EAPI: 0
-  MissingChksum: version 36: "shaper.36.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-net-firewall/xtables-addons
-  MissingChksum: version 1.37: "xtables-addons-1.37.tar.xz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+sci-physics/xfoil
+  MissingChksum: version 6.97: "dataflow.pdf" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
+
+app-forensics/afflib
+  DeprecatedEclass: version 3.7.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+app-forensics/aide
+  DeprecatedEAPI: version 0.13.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.13.1-r3: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.13.1-r5: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.14.2: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 0.15.1: uses deprecated EAPI: 3
+
+app-forensics/chkrootkit
+  DeprecatedEAPI: version 0.48-r1: uses deprecated EAPI: 0
+
+app-forensics/foremost
+  DeprecatedEAPI: version 0.69: uses deprecated EAPI: 0
+
+app-forensics/galleta
+  DeprecatedEAPI: version 20040505_p1: uses deprecated EAPI: 0
+
+app-forensics/libbfio
+  DroppedKeywordWarning: version 0.0.20130609_alpha: keywords dropped: hppa
+
+app-forensics/openscap
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+app-forensics/ovaldi
+  DeprecatedEAPI: version 5.9.1: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 5.10.1.2: uses deprecated EAPI: 3
+
+app-forensics/pasco
+  DeprecatedEAPI: version 20040505_p1: uses deprecated EAPI: 0
+
+app-forensics/rifiuti
+  DeprecatedEAPI: version 20040505_p1: uses deprecated EAPI: 0
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
