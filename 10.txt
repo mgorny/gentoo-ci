@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 10 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'media-sound/*' 'x11-libs/*' 'dev-vcs/*' 'x11-drivers/*' 'games-puzzle/*' 'app-cdr/*' 'games-rpg/*' 'x11-proto/*' 'app-laptop/*' 'games-sports/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'media-sound/*' 'x11-libs/*' 'dev-vcs/*' 'x11-drivers/*' 'games-puzzle/*' 'app-cdr/*' 'games-rpg/*' 'x11-proto/*' 'app-laptop/*' 'gnustep-libs/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1600,5 +1600,37 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-games-sports/speed-dreams
-  MissingChksum: version 1.4.0: "speed-dreams-1.4.0-r2307-src.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+gnustep-libs/camerakit
+  DeprecatedEAPI: version 0.0.1.20041011-r1: uses deprecated EAPI: 0
+
+gnustep-libs/cenonlibrary
+  MissingChksum: version 3.9.4: "CenonLibrary-3.9.4-1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+gnustep-libs/gsldap
+  DeprecatedEAPI: version 0.0.1_pre20070219: uses deprecated EAPI: 3
+  MissingChksum: version 0.0.1_pre20070219: "gsldap-0.0.1_pre20070219.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+gnustep-libs/highlighterkit
+  MissingChksum: version 0.1.2: "HighlighterKit-0.1.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+gnustep-libs/iconkit
+  DeprecatedEAPI: version 0.4.1: uses deprecated EAPI: 0
+  MissingChksum: version 0.4.1: "etoile-0.4.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+gnustep-libs/netclasses
+  DeprecatedEAPI: version 1.06-r1: uses deprecated EAPI: 0
+  MissingChksum: version 1.06-r1: "netclasses-1.06.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+gnustep-libs/pantomime
+  MissingChksum: version 1.2.0: "Pantomime-1.2.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+gnustep-libs/prefsmodule
+  DeprecatedEAPI: version 1.1.1_pre20061204-r1: uses deprecated EAPI: 0
+  MissingChksum: version 1.1.1_pre20061204-r1: "prefsmodule-1.1.1_pre20061204.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+gnustep-libs/renaissance
+  DeprecatedEAPI: version 0.9.0: uses deprecated EAPI: 0
+  MissingChksum: version 0.9.0: "Renaissance-0.9.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+gnustep-libs/smbkit
+  DeprecatedEAPI: version 0.0.1.20061010: uses deprecated EAPI: 0
