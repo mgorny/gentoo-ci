@@ -11,7 +11,7 @@
             <li class="warn"><a href="0.html">0</a></li>
             <li class="warn"><a href="1.html">1</a></li>
             <li class="good"><a href="2.html">2</a></li>
-            <li class="warn"><a href="3.html">3</a></li>
+            <li class="good"><a href="3.html">3</a></li>
             <li class="warn"><a href="4.html">4</a></li>
             <li class="warn"><a href="5.html">5</a></li>
             <li class="err"><a href="6.html">6</a></li>
@@ -55,7 +55,7 @@
 </pre></td></tr>
             <tr class="" id="l6"><td><a href="#l6"><span>6</span></a></td><td><pre>+ set +x
 </pre></td></tr>
-            <tr class="" id="l7"><td><a href="#l7"><span>7</span></a></td><td><pre>+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-java/*' 'sci-libs/*' 'media-fonts/*' 'sci-mathematics/*' 'kde-frameworks/*' 'dev-cpp/*' 'net-print/*' 'app-pda/*' 'dev-lua/*' 'java-virtuals/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
+            <tr class="" id="l7"><td><a href="#l7"><span>7</span></a></td><td><pre>+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-java/*' 'sci-libs/*' 'media-fonts/*' 'sci-mathematics/*' 'kde-frameworks/*' 'dev-cpp/*' 'net-print/*' 'net-nds/*' 'dev-lua/*' 'java-virtuals/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 </pre></td></tr>
             <tr class="" id="l8"><td><a href="#l8"><span>8</span></a></td><td><pre>/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
 </pre></td></tr>
@@ -4653,269 +4653,229 @@
 </pre></td></tr>
             <tr class="" id="l2305"><td><a href="#l2305"><span>2305</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2306"><td><a href="#l2306"><span>2306</span></a></td><td><pre>app-pda/iripdb
+            <tr class="" id="l2306"><td><a href="#l2306"><span>2306</span></a></td><td><pre>net-nds/389-admin
 </pre></td></tr>
-            <tr class="" id="l2307"><td><a href="#l2307"><span>2307</span></a></td><td><pre>  DeprecatedEAPI: version 0.1.3b: uses deprecated EAPI: 0
+            <tr class="" id="l2307"><td><a href="#l2307"><span>2307</span></a></td><td><pre>  NonExistentDeps: version 1.1.31: depset depends: nonexistent atoms [ &lt;=dev-libs/nspr-4.8.3-r3 ]
 </pre></td></tr>
-            <tr class="" id="l2308"><td><a href="#l2308"><span>2308</span></a></td><td><pre>
+            <tr class="" id="l2308"><td><a href="#l2308"><span>2308</span></a></td><td><pre>  NonExistentDeps: version 1.1.31: depset rdepends: nonexistent atoms [ &lt;=dev-libs/nspr-4.8.3-r3 ]
 </pre></td></tr>
-            <tr class="" id="l2309"><td><a href="#l2309"><span>2309</span></a></td><td><pre>app-pda/jpilot
+            <tr class="" id="l2309"><td><a href="#l2309"><span>2309</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2310"><td><a href="#l2310"><span>2310</span></a></td><td><pre>  DeprecatedEAPI: version 1.8.0: uses deprecated EAPI: 2
+            <tr class="" id="l2310"><td><a href="#l2310"><span>2310</span></a></td><td><pre>net-nds/gosa-core
 </pre></td></tr>
-            <tr class="" id="l2311"><td><a href="#l2311"><span>2311</span></a></td><td><pre>
+            <tr class="" id="l2311"><td><a href="#l2311"><span>2311</span></a></td><td><pre>  DeprecatedEAPI: version 2.6.10: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l2312"><td><a href="#l2312"><span>2312</span></a></td><td><pre>app-pda/jpilot-backup
+            <tr class="" id="l2312"><td><a href="#l2312"><span>2312</span></a></td><td><pre>  DeprecatedEAPI: version 2.6.11: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l2313"><td><a href="#l2313"><span>2313</span></a></td><td><pre>  DeprecatedEAPI: version 0.60: uses deprecated EAPI: 2
+            <tr class="" id="l2313"><td><a href="#l2313"><span>2313</span></a></td><td><pre>  MissingChksum: version 2.6.10: "gosa-core-2.6.10.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l2314"><td><a href="#l2314"><span>2314</span></a></td><td><pre>
+            <tr class="" id="l2314"><td><a href="#l2314"><span>2314</span></a></td><td><pre>  MissingChksum: version 2.6.11: "gosa-core-2.6.11.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l2315"><td><a href="#l2315"><span>2315</span></a></td><td><pre>app-pda/jpilot-mail
+            <tr class="" id="l2315"><td><a href="#l2315"><span>2315</span></a></td><td><pre>  MissingChksum: version 2.6.12: "gosa-core-2.6.12.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l2316"><td><a href="#l2316"><span>2316</span></a></td><td><pre>  DeprecatedEAPI: version 0.1.7: uses deprecated EAPI: 2
+            <tr class="" id="l2316"><td><a href="#l2316"><span>2316</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2317"><td><a href="#l2317"><span>2317</span></a></td><td><pre>
+            <tr class="" id="l2317"><td><a href="#l2317"><span>2317</span></a></td><td><pre>net-nds/gosa-plugin-mail
 </pre></td></tr>
-            <tr class="" id="l2318"><td><a href="#l2318"><span>2318</span></a></td><td><pre>app-pda/jpilot-plucker
+            <tr class="" id="l2318"><td><a href="#l2318"><span>2318</span></a></td><td><pre>  DeprecatedEAPI: version 2.6.10: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l2319"><td><a href="#l2319"><span>2319</span></a></td><td><pre>  DeprecatedEAPI: version 0.02: uses deprecated EAPI: 2
+            <tr class="" id="l2319"><td><a href="#l2319"><span>2319</span></a></td><td><pre>  DeprecatedEAPI: version 2.6.11: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l2320"><td><a href="#l2320"><span>2320</span></a></td><td><pre>
+            <tr class="" id="l2320"><td><a href="#l2320"><span>2320</span></a></td><td><pre>  MissingChksum: version 2.6.10: "gosa-plugin-mail-2.6.10.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 </pre></td></tr>
-            <tr class="" id="l2321"><td><a href="#l2321"><span>2321</span></a></td><td><pre>app-pda/jpilot-syncmal
+            <tr class="" id="l2321"><td><a href="#l2321"><span>2321</span></a></td><td><pre>  MissingChksum: version 2.6.11: "gosa-plugin-mail-2.6.11.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 </pre></td></tr>
-            <tr class="" id="l2322"><td><a href="#l2322"><span>2322</span></a></td><td><pre>  DeprecatedEAPI: version 0.81: uses deprecated EAPI: 2
+            <tr class="" id="l2322"><td><a href="#l2322"><span>2322</span></a></td><td><pre>  MissingChksum: version 2.6.12: "gosa-plugins-mail-2.6.12.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 </pre></td></tr>
             <tr class="" id="l2323"><td><a href="#l2323"><span>2323</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2324"><td><a href="#l2324"><span>2324</span></a></td><td><pre>app-pda/libopensync
+            <tr class="" id="l2324"><td><a href="#l2324"><span>2324</span></a></td><td><pre>net-nds/gosa-plugin-samba
 </pre></td></tr>
-            <tr class="" id="l2325"><td><a href="#l2325"><span>2325</span></a></td><td><pre>  DeprecatedEAPI: version 0.22: uses deprecated EAPI: 0
+            <tr class="" id="l2325"><td><a href="#l2325"><span>2325</span></a></td><td><pre>  DeprecatedEAPI: version 2.6.10: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l2326"><td><a href="#l2326"><span>2326</span></a></td><td><pre>  DeprecatedEclass: version 0.22-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l2326"><td><a href="#l2326"><span>2326</span></a></td><td><pre>  DeprecatedEAPI: version 2.6.11: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l2327"><td><a href="#l2327"><span>2327</span></a></td><td><pre>  DeprecatedEAPI: version 0.22-r1: uses deprecated EAPI: 3
+            <tr class="" id="l2327"><td><a href="#l2327"><span>2327</span></a></td><td><pre>  MissingChksum: version 2.6.10: "gosa-plugin-samba-2.6.10.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 </pre></td></tr>
-            <tr class="" id="l2328"><td><a href="#l2328"><span>2328</span></a></td><td><pre>  DeprecatedEclass: version 0.36-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l2328"><td><a href="#l2328"><span>2328</span></a></td><td><pre>  MissingChksum: version 2.6.11: "gosa-plugin-samba-2.6.11.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 </pre></td></tr>
-            <tr class="" id="l2329"><td><a href="#l2329"><span>2329</span></a></td><td><pre>  DeprecatedEAPI: version 0.36-r2: uses deprecated EAPI: 3
+            <tr class="" id="l2329"><td><a href="#l2329"><span>2329</span></a></td><td><pre>  MissingChksum: version 2.6.12: "gosa-plugins-samba-2.6.12.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 </pre></td></tr>
-            <tr class="" id="l2330"><td><a href="#l2330"><span>2330</span></a></td><td><pre>  DeprecatedEclass: version 0.39-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l2330"><td><a href="#l2330"><span>2330</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2331"><td><a href="#l2331"><span>2331</span></a></td><td><pre>  DeprecatedEAPI: version 0.39-r1: uses deprecated EAPI: 3
+            <tr class="" id="l2331"><td><a href="#l2331"><span>2331</span></a></td><td><pre>net-nds/gosa-plugin-systems
 </pre></td></tr>
-            <tr class="" id="l2332"><td><a href="#l2332"><span>2332</span></a></td><td><pre>  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l2332"><td><a href="#l2332"><span>2332</span></a></td><td><pre>  DeprecatedEAPI: version 2.6.10: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l2333"><td><a href="#l2333"><span>2333</span></a></td><td><pre>  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
+            <tr class="" id="l2333"><td><a href="#l2333"><span>2333</span></a></td><td><pre>  DeprecatedEAPI: version 2.6.11: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l2334"><td><a href="#l2334"><span>2334</span></a></td><td><pre>
+            <tr class="" id="l2334"><td><a href="#l2334"><span>2334</span></a></td><td><pre>  MissingChksum: version 2.6.10: "gosa-plugin-systems-2.6.10.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 </pre></td></tr>
-            <tr class="" id="l2335"><td><a href="#l2335"><span>2335</span></a></td><td><pre>app-pda/libopensync-plugin-file
+            <tr class="" id="l2335"><td><a href="#l2335"><span>2335</span></a></td><td><pre>  MissingChksum: version 2.6.11: "gosa-plugin-systems-2.6.11.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 </pre></td></tr>
-            <tr class="" id="l2336"><td><a href="#l2336"><span>2336</span></a></td><td><pre>  DeprecatedEAPI: version 0.22: uses deprecated EAPI: 3
+            <tr class="" id="l2336"><td><a href="#l2336"><span>2336</span></a></td><td><pre>  MissingChksum: version 2.6.12: "gosa-plugins-systems-2.6.12.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 </pre></td></tr>
-            <tr class="" id="l2337"><td><a href="#l2337"><span>2337</span></a></td><td><pre>  DeprecatedEAPI: version 0.36: uses deprecated EAPI: 3
+            <tr class="" id="l2337"><td><a href="#l2337"><span>2337</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2338"><td><a href="#l2338"><span>2338</span></a></td><td><pre>  DeprecatedEAPI: version 0.39: uses deprecated EAPI: 3
+            <tr class="" id="l2338"><td><a href="#l2338"><span>2338</span></a></td><td><pre>net-nds/jxplorer
 </pre></td></tr>
-            <tr class="" id="l2339"><td><a href="#l2339"><span>2339</span></a></td><td><pre>  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
+            <tr class="" id="l2339"><td><a href="#l2339"><span>2339</span></a></td><td><pre>  DeprecatedEAPI: version 3.2: uses deprecated EAPI: 0
 </pre></td></tr>
             <tr class="" id="l2340"><td><a href="#l2340"><span>2340</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2341"><td><a href="#l2341"><span>2341</span></a></td><td><pre>app-pda/libopensync-plugin-gnokii
+            <tr class="" id="l2341"><td><a href="#l2341"><span>2341</span></a></td><td><pre>net-nds/lat
 </pre></td></tr>
-            <tr class="" id="l2342"><td><a href="#l2342"><span>2342</span></a></td><td><pre>  DeprecatedEAPI: version 0.22: uses deprecated EAPI: 0
+            <tr class="" id="l2342"><td><a href="#l2342"><span>2342</span></a></td><td><pre>  DeprecatedEclass: version 1.2.3: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
 </pre></td></tr>
-            <tr class="" id="l2343"><td><a href="#l2343"><span>2343</span></a></td><td><pre>  DeprecatedEAPI: version 0.36: uses deprecated EAPI: 2
+            <tr class="" id="l2343"><td><a href="#l2343"><span>2343</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2344"><td><a href="#l2344"><span>2344</span></a></td><td><pre>  DeprecatedEAPI: version 9999: uses deprecated EAPI: 2
+            <tr class="" id="l2344"><td><a href="#l2344"><span>2344</span></a></td><td><pre>net-nds/ldapvi
 </pre></td></tr>
-            <tr class="" id="l2345"><td><a href="#l2345"><span>2345</span></a></td><td><pre>
+            <tr class="" id="l2345"><td><a href="#l2345"><span>2345</span></a></td><td><pre>  DeprecatedEAPI: version 1.7-r1: uses deprecated EAPI: 2
 </pre></td></tr>
-            <tr class="" id="l2346"><td><a href="#l2346"><span>2346</span></a></td><td><pre>app-pda/libopensync-plugin-gpe
+            <tr class="" id="l2346"><td><a href="#l2346"><span>2346</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2347"><td><a href="#l2347"><span>2347</span></a></td><td><pre>  DeprecatedEAPI: version 0.22: uses deprecated EAPI: 0
+            <tr class="" id="l2347"><td><a href="#l2347"><span>2347</span></a></td><td><pre>net-nds/led
 </pre></td></tr>
-            <tr class="" id="l2348"><td><a href="#l2348"><span>2348</span></a></td><td><pre>  DeprecatedEAPI: version 0.36: uses deprecated EAPI: 2
+            <tr class="" id="l2348"><td><a href="#l2348"><span>2348</span></a></td><td><pre>  DeprecatedEAPI: version 1.111: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l2349"><td><a href="#l2349"><span>2349</span></a></td><td><pre>  DeprecatedEAPI: version 9999: uses deprecated EAPI: 2
+            <tr class="" id="l2349"><td><a href="#l2349"><span>2349</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2350"><td><a href="#l2350"><span>2350</span></a></td><td><pre>
+            <tr class="" id="l2350"><td><a href="#l2350"><span>2350</span></a></td><td><pre>net-nds/nsscache
 </pre></td></tr>
-            <tr class="" id="l2351"><td><a href="#l2351"><span>2351</span></a></td><td><pre>app-pda/libopensync-plugin-moto
+            <tr class="" id="l2351"><td><a href="#l2351"><span>2351</span></a></td><td><pre>  DeprecatedEclass: version 0.23: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
-            <tr class="" id="l2352"><td><a href="#l2352"><span>2352</span></a></td><td><pre>  DeprecatedEclass: version 0.22: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l2352"><td><a href="#l2352"><span>2352</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2353"><td><a href="#l2353"><span>2353</span></a></td><td><pre>  DeprecatedEAPI: version 0.22: uses deprecated EAPI: 3
+            <tr class="" id="l2353"><td><a href="#l2353"><span>2353</span></a></td><td><pre>net-nds/openldap
 </pre></td></tr>
-            <tr class="" id="l2354"><td><a href="#l2354"><span>2354</span></a></td><td><pre>  NonExistentDeps: version 0.22: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+            <tr class="" id="l2354"><td><a href="#l2354"><span>2354</span></a></td><td><pre>  DeprecatedEAPI: version 2.3.43-r3: uses deprecated EAPI: 2
 </pre></td></tr>
-            <tr class="" id="l2355"><td><a href="#l2355"><span>2355</span></a></td><td><pre>  NonExistentDeps: version 0.22: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+            <tr class="" id="l2355"><td><a href="#l2355"><span>2355</span></a></td><td><pre>  NonExistentDeps: version 2.3.43-r3: depset depends: nonexistent atoms [ &lt;dev-lang/perl-5.16 ]
 </pre></td></tr>
-            <tr class="" id="l2356"><td><a href="#l2356"><span>2356</span></a></td><td><pre>
+            <tr class="" id="l2356"><td><a href="#l2356"><span>2356</span></a></td><td><pre>  NonExistentDeps: version 2.3.43-r3: depset rdepends: nonexistent atoms [ &lt;dev-lang/perl-5.16 ]
 </pre></td></tr>
-            <tr class="" id="l2357"><td><a href="#l2357"><span>2357</span></a></td><td><pre>app-pda/libopensync-plugin-palm
+            <tr class="" id="l2357"><td><a href="#l2357"><span>2357</span></a></td><td><pre>  DeprecatedEAPI: version 2.3.43-r4: uses deprecated EAPI: 2
 </pre></td></tr>
-            <tr class="" id="l2358"><td><a href="#l2358"><span>2358</span></a></td><td><pre>  DeprecatedEAPI: version 0.22: uses deprecated EAPI: 3
+            <tr class="" id="l2358"><td><a href="#l2358"><span>2358</span></a></td><td><pre>  NonExistentDeps: version 2.3.43-r4: depset depends: nonexistent atoms [ &lt;dev-lang/perl-5.16 ]
 </pre></td></tr>
-            <tr class="" id="l2359"><td><a href="#l2359"><span>2359</span></a></td><td><pre>  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
+            <tr class="" id="l2359"><td><a href="#l2359"><span>2359</span></a></td><td><pre>  NonExistentDeps: version 2.3.43-r4: depset rdepends: nonexistent atoms [ &lt;dev-lang/perl-5.16 ]
 </pre></td></tr>
             <tr class="" id="l2360"><td><a href="#l2360"><span>2360</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2361"><td><a href="#l2361"><span>2361</span></a></td><td><pre>app-pda/libopensync-plugin-python
+            <tr class="" id="l2361"><td><a href="#l2361"><span>2361</span></a></td><td><pre>net-nds/phpldapadmin
 </pre></td></tr>
-            <tr class="" id="l2362"><td><a href="#l2362"><span>2362</span></a></td><td><pre>  DeprecatedEclass: version 0.22: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l2362"><td><a href="#l2362"><span>2362</span></a></td><td><pre>  NonExistentDeps: version 1.2.3: depset rdepends: nonexistent atoms [ &lt;dev-lang/php-5.3 ]
 </pre></td></tr>
-            <tr class="" id="l2363"><td><a href="#l2363"><span>2363</span></a></td><td><pre>  DeprecatedEAPI: version 0.22: uses deprecated EAPI: 3
+            <tr class="" id="l2363"><td><a href="#l2363"><span>2363</span></a></td><td><pre>  NonExistentDeps: version 1.2.3-r1: depset rdepends: nonexistent atoms [ &lt;dev-lang/php-5.3 ]
 </pre></td></tr>
-            <tr class="" id="l2364"><td><a href="#l2364"><span>2364</span></a></td><td><pre>  NonExistentDeps: version 0.22: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+            <tr class="" id="l2364"><td><a href="#l2364"><span>2364</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2365"><td><a href="#l2365"><span>2365</span></a></td><td><pre>  NonExistentDeps: version 0.22: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+            <tr class="" id="l2365"><td><a href="#l2365"><span>2365</span></a></td><td><pre>net-nds/portmap
 </pre></td></tr>
-            <tr class="" id="l2366"><td><a href="#l2366"><span>2366</span></a></td><td><pre>  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l2366"><td><a href="#l2366"><span>2366</span></a></td><td><pre>  DeprecatedEAPI: version 6.0: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l2367"><td><a href="#l2367"><span>2367</span></a></td><td><pre>  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
+            <tr class="" id="l2367"><td><a href="#l2367"><span>2367</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2368"><td><a href="#l2368"><span>2368</span></a></td><td><pre>  NonExistentDeps: version 9999: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+            <tr class="" id="l2368"><td><a href="#l2368"><span>2368</span></a></td><td><pre>net-nds/rpcbind
 </pre></td></tr>
-            <tr class="" id="l2369"><td><a href="#l2369"><span>2369</span></a></td><td><pre>  NonExistentDeps: version 9999: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+            <tr class="" id="l2369"><td><a href="#l2369"><span>2369</span></a></td><td><pre>  DeprecatedEAPI: version 0.2.0-r1: uses deprecated EAPI: 2
 </pre></td></tr>
             <tr class="" id="l2370"><td><a href="#l2370"><span>2370</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2371"><td><a href="#l2371"><span>2371</span></a></td><td><pre>app-pda/libopensync-plugin-sunbird
+            <tr class="" id="l2371"><td><a href="#l2371"><span>2371</span></a></td><td><pre>net-nds/smbldap-tools
 </pre></td></tr>
-            <tr class="" id="l2372"><td><a href="#l2372"><span>2372</span></a></td><td><pre>  DeprecatedEAPI: version 0.22: uses deprecated EAPI: 3
+            <tr class="" id="l2372"><td><a href="#l2372"><span>2372</span></a></td><td><pre>  MissingChksum: version 0.9.8: "smbldap-tools-0.9.8.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
             <tr class="" id="l2373"><td><a href="#l2373"><span>2373</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2374"><td><a href="#l2374"><span>2374</span></a></td><td><pre>app-pda/libopensync-plugin-vformat
+            <tr class="" id="l2374"><td><a href="#l2374"><span>2374</span></a></td><td><pre>net-nds/ypserv
 </pre></td></tr>
-            <tr class="" id="l2375"><td><a href="#l2375"><span>2375</span></a></td><td><pre>  DeprecatedEAPI: version 0.39: uses deprecated EAPI: 3
+            <tr class="" id="l2375"><td><a href="#l2375"><span>2375</span></a></td><td><pre>  MissingChksum: version 2.26: "ypserv-2.26.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 </pre></td></tr>
-            <tr class="" id="l2376"><td><a href="#l2376"><span>2376</span></a></td><td><pre>  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
+            <tr class="" id="l2376"><td><a href="#l2376"><span>2376</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
 </pre></td></tr>
-            <tr class="" id="l2377"><td><a href="#l2377"><span>2377</span></a></td><td><pre>
+            <tr class="" id="l2377"><td><a href="#l2377"><span>2377</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
 </pre></td></tr>
-            <tr class="" id="l2378"><td><a href="#l2378"><span>2378</span></a></td><td><pre>app-pda/msynctool
+            <tr class="" id="l2378"><td><a href="#l2378"><span>2378</span></a></td><td><pre>               : refetch
 </pre></td></tr>
-            <tr class="" id="l2379"><td><a href="#l2379"><span>2379</span></a></td><td><pre>  DeprecatedEAPI: version 0.22: uses deprecated EAPI: 3
+            <tr class="" id="l2379"><td><a href="#l2379"><span>2379</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
 </pre></td></tr>
-            <tr class="" id="l2380"><td><a href="#l2380"><span>2380</span></a></td><td><pre>
+            <tr class="" id="l2380"><td><a href="#l2380"><span>2380</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
 </pre></td></tr>
-            <tr class="" id="l2381"><td><a href="#l2381"><span>2381</span></a></td><td><pre>app-pda/osynctool
+            <tr class="" id="l2381"><td><a href="#l2381"><span>2381</span></a></td><td><pre>               : refetch
 </pre></td></tr>
-            <tr class="" id="l2382"><td><a href="#l2382"><span>2382</span></a></td><td><pre>  DeprecatedEAPI: version 0.39: uses deprecated EAPI: 3
+            <tr class="" id="l2382"><td><a href="#l2382"><span>2382</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2383"><td><a href="#l2383"><span>2383</span></a></td><td><pre>  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
+            <tr class="" id="l2383"><td><a href="#l2383"><span>2383</span></a></td><td><pre>dev-lua/luadoc
 </pre></td></tr>
-            <tr class="" id="l2384"><td><a href="#l2384"><span>2384</span></a></td><td><pre>
+            <tr class="" id="l2384"><td><a href="#l2384"><span>2384</span></a></td><td><pre>  DeprecatedEAPI: version 3.0.1: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l2385"><td><a href="#l2385"><span>2385</span></a></td><td><pre>app-pda/p3nfs
+            <tr class="" id="l2385"><td><a href="#l2385"><span>2385</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2386"><td><a href="#l2386"><span>2386</span></a></td><td><pre>  DeprecatedEAPI: version 5.19-r2: uses deprecated EAPI: 2
+            <tr class="" id="l2386"><td><a href="#l2386"><span>2386</span></a></td><td><pre>dev-lua/luaexpat
 </pre></td></tr>
-            <tr class="" id="l2387"><td><a href="#l2387"><span>2387</span></a></td><td><pre>
+            <tr class="" id="l2387"><td><a href="#l2387"><span>2387</span></a></td><td><pre>  DroppedKeywordWarning: version 1.3.0: keywords dropped: mips
 </pre></td></tr>
-            <tr class="" id="l2388"><td><a href="#l2388"><span>2388</span></a></td><td><pre>app-pda/pilot-link
+            <tr class="" id="l2388"><td><a href="#l2388"><span>2388</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2389"><td><a href="#l2389"><span>2389</span></a></td><td><pre>  SizeViolation: "files/pilot-link-0.12.5-perl514.patch" exceeds 20k in size; 22730 bytes total
+            <tr class="" id="l2389"><td><a href="#l2389"><span>2389</span></a></td><td><pre>dev-lua/luafilesystem
 </pre></td></tr>
-            <tr class="" id="l2390"><td><a href="#l2390"><span>2390</span></a></td><td><pre>
+            <tr class="" id="l2390"><td><a href="#l2390"><span>2390</span></a></td><td><pre>  DroppedKeywordWarning: version 1.6.2: keywords dropped: sparc
 </pre></td></tr>
-            <tr class="" id="l2391"><td><a href="#l2391"><span>2391</span></a></td><td><pre>app-pda/synce-core
+            <tr class="" id="l2391"><td><a href="#l2391"><span>2391</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2392"><td><a href="#l2392"><span>2392</span></a></td><td><pre>  DeprecatedEclass: version 0.16-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l2392"><td><a href="#l2392"><span>2392</span></a></td><td><pre>dev-lua/luasec
 </pre></td></tr>
-            <tr class="" id="l2393"><td><a href="#l2393"><span>2393</span></a></td><td><pre>
+            <tr class="" id="l2393"><td><a href="#l2393"><span>2393</span></a></td><td><pre>  DeprecatedEAPI: version 0.4.1: uses deprecated EAPI: 2
 </pre></td></tr>
-            <tr class="" id="l2394"><td><a href="#l2394"><span>2394</span></a></td><td><pre>app-pda/synce-sync-engine
+            <tr class="" id="l2394"><td><a href="#l2394"><span>2394</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2395"><td><a href="#l2395"><span>2395</span></a></td><td><pre>  DeprecatedEclass: version 0.15.1-r3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l2395"><td><a href="#l2395"><span>2395</span></a></td><td><pre>dev-lua/luasocket
 </pre></td></tr>
-            <tr class="" id="l2396"><td><a href="#l2396"><span>2396</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
+            <tr class="" id="l2396"><td><a href="#l2396"><span>2396</span></a></td><td><pre>  DeprecatedEAPI: version 2.0.2: uses deprecated EAPI: 2
 </pre></td></tr>
-            <tr class="" id="l2397"><td><a href="#l2397"><span>2397</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+            <tr class="" id="l2397"><td><a href="#l2397"><span>2397</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2398"><td><a href="#l2398"><span>2398</span></a></td><td><pre>               : refetch
+            <tr class="" id="l2398"><td><a href="#l2398"><span>2398</span></a></td><td><pre>dev-lua/luvit
 </pre></td></tr>
-            <tr class="" id="l2399"><td><a href="#l2399"><span>2399</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
+            <tr class="" id="l2399"><td><a href="#l2399"><span>2399</span></a></td><td><pre>  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 </pre></td></tr>
-            <tr class="" id="l2400"><td><a href="#l2400"><span>2400</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+            <tr class="" id="l2400"><td><a href="#l2400"><span>2400</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2401"><td><a href="#l2401"><span>2401</span></a></td><td><pre>               : refetch
+            <tr class="" id="l2401"><td><a href="#l2401"><span>2401</span></a></td><td><pre>dev-lua/toluapp
 </pre></td></tr>
-            <tr class="" id="l2402"><td><a href="#l2402"><span>2402</span></a></td><td><pre>
+            <tr class="" id="l2402"><td><a href="#l2402"><span>2402</span></a></td><td><pre>  DeprecatedEAPI: version 1.0.93: uses deprecated EAPI: 2
 </pre></td></tr>
-            <tr class="" id="l2403"><td><a href="#l2403"><span>2403</span></a></td><td><pre>dev-lua/luadoc
+            <tr class="" id="l2403"><td><a href="#l2403"><span>2403</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
 </pre></td></tr>
-            <tr class="" id="l2404"><td><a href="#l2404"><span>2404</span></a></td><td><pre>  DeprecatedEAPI: version 3.0.1: uses deprecated EAPI: 0
+            <tr class="" id="l2404"><td><a href="#l2404"><span>2404</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
 </pre></td></tr>
-            <tr class="" id="l2405"><td><a href="#l2405"><span>2405</span></a></td><td><pre>
+            <tr class="" id="l2405"><td><a href="#l2405"><span>2405</span></a></td><td><pre>               : refetch
 </pre></td></tr>
-            <tr class="" id="l2406"><td><a href="#l2406"><span>2406</span></a></td><td><pre>dev-lua/luaexpat
+            <tr class="" id="l2406"><td><a href="#l2406"><span>2406</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
 </pre></td></tr>
-            <tr class="" id="l2407"><td><a href="#l2407"><span>2407</span></a></td><td><pre>  DroppedKeywordWarning: version 1.3.0: keywords dropped: mips
+            <tr class="" id="l2407"><td><a href="#l2407"><span>2407</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
 </pre></td></tr>
-            <tr class="" id="l2408"><td><a href="#l2408"><span>2408</span></a></td><td><pre>
+            <tr class="" id="l2408"><td><a href="#l2408"><span>2408</span></a></td><td><pre>               : refetch
 </pre></td></tr>
-            <tr class="" id="l2409"><td><a href="#l2409"><span>2409</span></a></td><td><pre>dev-lua/luafilesystem
+            <tr class="" id="l2409"><td><a href="#l2409"><span>2409</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2410"><td><a href="#l2410"><span>2410</span></a></td><td><pre>  DroppedKeywordWarning: version 1.6.2: keywords dropped: sparc
+            <tr class="" id="l2410"><td><a href="#l2410"><span>2410</span></a></td><td><pre>java-virtuals/javamail
 </pre></td></tr>
-            <tr class="" id="l2411"><td><a href="#l2411"><span>2411</span></a></td><td><pre>
+            <tr class="" id="l2411"><td><a href="#l2411"><span>2411</span></a></td><td><pre>  DeprecatedEAPI: version 1.0-r1: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l2412"><td><a href="#l2412"><span>2412</span></a></td><td><pre>dev-lua/luasec
+            <tr class="" id="l2412"><td><a href="#l2412"><span>2412</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2413"><td><a href="#l2413"><span>2413</span></a></td><td><pre>  DeprecatedEAPI: version 0.4.1: uses deprecated EAPI: 2
+            <tr class="" id="l2413"><td><a href="#l2413"><span>2413</span></a></td><td><pre>java-virtuals/servlet-api
 </pre></td></tr>
-            <tr class="" id="l2414"><td><a href="#l2414"><span>2414</span></a></td><td><pre>
+            <tr class="" id="l2414"><td><a href="#l2414"><span>2414</span></a></td><td><pre>  NonExistentDeps: version 2.5-r1: depset rdepends: nonexistent atoms [ dev-java/glassfish-servlet-api:2.5 ]
 </pre></td></tr>
-            <tr class="" id="l2415"><td><a href="#l2415"><span>2415</span></a></td><td><pre>dev-lua/luasocket
-</pre></td></tr>
-            <tr class="" id="l2416"><td><a href="#l2416"><span>2416</span></a></td><td><pre>  DeprecatedEAPI: version 2.0.2: uses deprecated EAPI: 2
-</pre></td></tr>
-            <tr class="" id="l2417"><td><a href="#l2417"><span>2417</span></a></td><td><pre>
-</pre></td></tr>
-            <tr class="" id="l2418"><td><a href="#l2418"><span>2418</span></a></td><td><pre>dev-lua/luvit
-</pre></td></tr>
-            <tr class="" id="l2419"><td><a href="#l2419"><span>2419</span></a></td><td><pre>  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-</pre></td></tr>
-            <tr class="" id="l2420"><td><a href="#l2420"><span>2420</span></a></td><td><pre>
-</pre></td></tr>
-            <tr class="" id="l2421"><td><a href="#l2421"><span>2421</span></a></td><td><pre>dev-lua/toluapp
-</pre></td></tr>
-            <tr class="" id="l2422"><td><a href="#l2422"><span>2422</span></a></td><td><pre>  DeprecatedEAPI: version 1.0.93: uses deprecated EAPI: 2
-</pre></td></tr>
-            <tr class="" id="l2423"><td><a href="#l2423"><span>2423</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
-</pre></td></tr>
-            <tr class="" id="l2424"><td><a href="#l2424"><span>2424</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
-</pre></td></tr>
-            <tr class="" id="l2425"><td><a href="#l2425"><span>2425</span></a></td><td><pre>               : refetch
-</pre></td></tr>
-            <tr class="" id="l2426"><td><a href="#l2426"><span>2426</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
-</pre></td></tr>
-            <tr class="" id="l2427"><td><a href="#l2427"><span>2427</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
-</pre></td></tr>
-            <tr class="" id="l2428"><td><a href="#l2428"><span>2428</span></a></td><td><pre>               : refetch
-</pre></td></tr>
-            <tr class="" id="l2429"><td><a href="#l2429"><span>2429</span></a></td><td><pre>
-</pre></td></tr>
-            <tr class="" id="l2430"><td><a href="#l2430"><span>2430</span></a></td><td><pre>java-virtuals/javamail
-</pre></td></tr>
-            <tr class="" id="l2431"><td><a href="#l2431"><span>2431</span></a></td><td><pre>  DeprecatedEAPI: version 1.0-r1: uses deprecated EAPI: 0
-</pre></td></tr>
-            <tr class="" id="l2432"><td><a href="#l2432"><span>2432</span></a></td><td><pre>
-</pre></td></tr>
-            <tr class="" id="l2433"><td><a href="#l2433"><span>2433</span></a></td><td><pre>java-virtuals/servlet-api
-</pre></td></tr>
-            <tr class="" id="l2434"><td><a href="#l2434"><span>2434</span></a></td><td><pre>  NonExistentDeps: version 2.5-r1: depset rdepends: nonexistent atoms [ dev-java/glassfish-servlet-api:2.5 ]
-</pre></td></tr>
-            <tr class="" id="l2435"><td><a href="#l2435"><span>2435</span></a></td><td><pre>  DroppedKeywordWarning: version 3.0-r1: keywords dropped: arm
+            <tr class="" id="l2415"><td><a href="#l2415"><span>2415</span></a></td><td><pre>  DroppedKeywordWarning: version 3.0-r1: keywords dropped: arm
 </pre></td></tr>
 
         </table>
 
-        <address>Generated based on results from 2015-09-23 11:52:23 UTC</address>
+        <address>Generated based on results from 2015-09-23 12:10:24 UTC</address>
     </body>
 </html>
