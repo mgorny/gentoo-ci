@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 12 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'app-text/*' 'virtual/*' 'www-apps/*' 'www-client/*' 'net-p2p/*' 'gnome-base/*' 'sci-visualization/*' 'sys-infiniband/*' 'ros-meta/*' 'games-sports/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'app-text/*' 'virtual/*' 'www-apps/*' 'www-client/*' 'net-p2p/*' 'gnome-base/*' 'sci-visualization/*' 'sys-infiniband/*' 'app-laptop/*' 'games-sports/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1508,6 +1508,28 @@ WARNING pkgcore: metadata.dtd cannot be opened from
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
+
+app-laptop/batti
+  DeprecatedEclass: version 0.3.8-r2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+app-laptop/hdapsd
+  WhitespaceFound: version 20141203: ebuild has leading whitespace on lines 66, 70
+
+app-laptop/lphdisk
+  DeprecatedEAPI: version 0.9.1-r2: uses deprecated EAPI: 2
+
+app-laptop/pbbuttonsd
+  DeprecatedEAPI: version 0.8.1-r3: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.8.1-r4: uses deprecated EAPI: 0
+
+app-laptop/powerprefs
+  DeprecatedEAPI: version 0.8.0: uses deprecated EAPI: 2
+
+app-laptop/prey
+  BadInsIntoDir: version 0.5.4-r1: ebuild uses insinto /etc/cron.d on line 136
+
+app-laptop/tpacpi-bat
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch

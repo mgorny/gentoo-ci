@@ -58,7 +58,7 @@
 </pre></td></tr>
             <tr class="" id="l6"><td><a href="#l6"><span>6</span></a></td><td><pre>+ set +x
 </pre></td></tr>
-            <tr class="" id="l7"><td><a href="#l7"><span>7</span></a></td><td><pre>+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-util/*' 'app-admin/*' 'dev-ml/*' 'app-editors/*' 'net-dns/*' 'mail-client/*' 'net-fs/*' 'lxqt-base/*' 'sci-calculators/*' 'net-voip/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
+            <tr class="" id="l7"><td><a href="#l7"><span>7</span></a></td><td><pre>+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-util/*' 'app-admin/*' 'dev-ml/*' 'app-editors/*' 'net-dns/*' 'mail-client/*' 'net-fs/*' 'lxqt-base/*' 'xfce-base/*' 'net-voip/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 </pre></td></tr>
             <tr class="" id="l8"><td><a href="#l8"><span>8</span></a></td><td><pre>/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
 </pre></td></tr>
@@ -2154,73 +2154,37 @@
 </pre></td></tr>
             <tr class="" id="l1054"><td><a href="#l1054"><span>1054</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1055"><td><a href="#l1055"><span>1055</span></a></td><td><pre>sci-calculators/grpn
+            <tr class="" id="l1055"><td><a href="#l1055"><span>1055</span></a></td><td><pre>xfce-base/xfce4-session
 </pre></td></tr>
-            <tr class="" id="l1056"><td><a href="#l1056"><span>1056</span></a></td><td><pre>  MissingChksum: version 1.3.4: "grpn_1.3.4-1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+            <tr class="" id="l1056"><td><a href="#l1056"><span>1056</span></a></td><td><pre>  NonExistentDeps: version 4.10.1-r2: depset rdepends: nonexistent atoms [ gnome-extra/gnome-screensaver ]
 </pre></td></tr>
-            <tr class="" id="l1057"><td><a href="#l1057"><span>1057</span></a></td><td><pre>
+            <tr class="" id="l1057"><td><a href="#l1057"><span>1057</span></a></td><td><pre>  NonExistentDeps: version 4.12.1: depset rdepends: nonexistent atoms [ gnome-extra/gnome-screensaver ]
 </pre></td></tr>
-            <tr class="" id="l1058"><td><a href="#l1058"><span>1058</span></a></td><td><pre>sci-calculators/hcalc
+            <tr class="" id="l1058"><td><a href="#l1058"><span>1058</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
 </pre></td></tr>
-            <tr class="" id="l1059"><td><a href="#l1059"><span>1059</span></a></td><td><pre>  MissingChksum: version 1.0-r1: "hcalc.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+            <tr class="" id="l1059"><td><a href="#l1059"><span>1059</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
 </pre></td></tr>
-            <tr class="" id="l1060"><td><a href="#l1060"><span>1060</span></a></td><td><pre>
+            <tr class="" id="l1060"><td><a href="#l1060"><span>1060</span></a></td><td><pre>               : refetch
 </pre></td></tr>
-            <tr class="" id="l1061"><td><a href="#l1061"><span>1061</span></a></td><td><pre>sci-calculators/orpie
+            <tr class="" id="l1061"><td><a href="#l1061"><span>1061</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
 </pre></td></tr>
-            <tr class="" id="l1062"><td><a href="#l1062"><span>1062</span></a></td><td><pre>  DeprecatedEAPI: version 1.5.1: uses deprecated EAPI: 0
+            <tr class="" id="l1062"><td><a href="#l1062"><span>1062</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
 </pre></td></tr>
-            <tr class="" id="l1063"><td><a href="#l1063"><span>1063</span></a></td><td><pre>
+            <tr class="" id="l1063"><td><a href="#l1063"><span>1063</span></a></td><td><pre>               : refetch
 </pre></td></tr>
-            <tr class="" id="l1064"><td><a href="#l1064"><span>1064</span></a></td><td><pre>sci-calculators/pcalc
+            <tr class="" id="l1064"><td><a href="#l1064"><span>1064</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1065"><td><a href="#l1065"><span>1065</span></a></td><td><pre>  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 0
+            <tr class="" id="l1065"><td><a href="#l1065"><span>1065</span></a></td><td><pre>net-voip/homer
 </pre></td></tr>
-            <tr class="" id="l1066"><td><a href="#l1066"><span>1066</span></a></td><td><pre>  DeprecatedEAPI: version 1.3: uses deprecated EAPI: 0
+            <tr class="" id="l1066"><td><a href="#l1066"><span>1066</span></a></td><td><pre>  NonExistentDeps: version 0.24.1-r1: depset depends: nonexistent atoms [ &lt;media-video/ffmpeg-2 ]
 </pre></td></tr>
-            <tr class="" id="l1067"><td><a href="#l1067"><span>1067</span></a></td><td><pre>  MissingChksum: version 1.2: "pcalc-1.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+            <tr class="" id="l1067"><td><a href="#l1067"><span>1067</span></a></td><td><pre>  NonExistentDeps: version 0.24.1-r1: depset rdepends: nonexistent atoms [ &lt;media-video/ffmpeg-2 ]
 </pre></td></tr>
-            <tr class="" id="l1068"><td><a href="#l1068"><span>1068</span></a></td><td><pre>  MissingChksum: version 1.3: "pcalc-1.3.tar.lzma" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-</pre></td></tr>
-            <tr class="" id="l1069"><td><a href="#l1069"><span>1069</span></a></td><td><pre>
-</pre></td></tr>
-            <tr class="" id="l1070"><td><a href="#l1070"><span>1070</span></a></td><td><pre>sci-calculators/qalculator
-</pre></td></tr>
-            <tr class="" id="l1071"><td><a href="#l1071"><span>1071</span></a></td><td><pre>  MissingChksum: version 0.4b: "101326-qalculator-0.4b-src.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-</pre></td></tr>
-            <tr class="" id="l1072"><td><a href="#l1072"><span>1072</span></a></td><td><pre>
-</pre></td></tr>
-            <tr class="" id="l1073"><td><a href="#l1073"><span>1073</span></a></td><td><pre>sci-calculators/wcalc
-</pre></td></tr>
-            <tr class="" id="l1074"><td><a href="#l1074"><span>1074</span></a></td><td><pre>  MissingChksum: version 2.2.1: "Wcalc-2.2.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-</pre></td></tr>
-            <tr class="" id="l1075"><td><a href="#l1075"><span>1075</span></a></td><td><pre>  MissingChksum: version 2.4: "wcalc-2.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-</pre></td></tr>
-            <tr class="" id="l1076"><td><a href="#l1076"><span>1076</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
-</pre></td></tr>
-            <tr class="" id="l1077"><td><a href="#l1077"><span>1077</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
-</pre></td></tr>
-            <tr class="" id="l1078"><td><a href="#l1078"><span>1078</span></a></td><td><pre>               : refetch
-</pre></td></tr>
-            <tr class="" id="l1079"><td><a href="#l1079"><span>1079</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
-</pre></td></tr>
-            <tr class="" id="l1080"><td><a href="#l1080"><span>1080</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
-</pre></td></tr>
-            <tr class="" id="l1081"><td><a href="#l1081"><span>1081</span></a></td><td><pre>               : refetch
-</pre></td></tr>
-            <tr class="" id="l1082"><td><a href="#l1082"><span>1082</span></a></td><td><pre>
-</pre></td></tr>
-            <tr class="" id="l1083"><td><a href="#l1083"><span>1083</span></a></td><td><pre>net-voip/homer
-</pre></td></tr>
-            <tr class="" id="l1084"><td><a href="#l1084"><span>1084</span></a></td><td><pre>  NonExistentDeps: version 0.24.1-r1: depset depends: nonexistent atoms [ &lt;media-video/ffmpeg-2 ]
-</pre></td></tr>
-            <tr class="" id="l1085"><td><a href="#l1085"><span>1085</span></a></td><td><pre>  NonExistentDeps: version 0.24.1-r1: depset rdepends: nonexistent atoms [ &lt;media-video/ffmpeg-2 ]
-</pre></td></tr>
-            <tr class="" id="l1086"><td><a href="#l1086"><span>1086</span></a></td><td><pre>  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+            <tr class="" id="l1068"><td><a href="#l1068"><span>1068</span></a></td><td><pre>  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 </pre></td></tr>
 
         </table>
 
-        <address>Generated based on results from 2015-09-23 09:33:26 UTC</address>
+        <address>Generated based on results from 2015-09-23 09:44:15 UTC</address>
     </body>
 </html>
