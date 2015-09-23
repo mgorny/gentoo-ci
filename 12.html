@@ -13,8 +13,8 @@
             <li class="good"><a href="2.html">2</a></li>
             <li class="warn"><a href="3.html">3</a></li>
             <li class="warn"><a href="4.html">4</a></li>
-            <li class="err"><a href="5.html">5</a></li>
-            <li class="warn"><a href="6.html">6</a></li>
+            <li class="warn"><a href="5.html">5</a></li>
+            <li class="err"><a href="6.html">6</a></li>
             <li class="warn"><a href="7.html">7</a></li>
             <li class="warn"><a href="8.html">8</a></li>
             <li class="warn"><a href="9.html">9</a></li>
@@ -51,7 +51,7 @@
 </pre></td></tr>
             <tr class="" id="l6"><td><a href="#l6"><span>6</span></a></td><td><pre>+ set +x
 </pre></td></tr>
-            <tr class="" id="l7"><td><a href="#l7"><span>7</span></a></td><td><pre>+ exec pkgcheck -r gentoo --reporter FancyReporter 'app-text/*' 'sys-fs/*' 'www-apps/*' 'www-client/*' 'net-p2p/*' 'gnome-base/*' 'sci-visualization/*' 'sys-infiniband/*' 'app-laptop/*' 'games-sports/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
+            <tr class="" id="l7"><td><a href="#l7"><span>7</span></a></td><td><pre>+ exec pkgcheck -r gentoo --reporter FancyReporter 'app-text/*' 'sys-fs/*' 'www-apps/*' 'www-client/*' 'net-p2p/*' 'gnome-base/*' 'sci-visualization/*' 'x11-proto/*' 'app-laptop/*' 'games-sports/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 </pre></td></tr>
             <tr class="" id="l8"><td><a href="#l8"><span>8</span></a></td><td><pre>/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
 </pre></td></tr>
@@ -2667,83 +2667,111 @@
 </pre></td></tr>
             <tr class="" id="l1314"><td><a href="#l1314"><span>1314</span></a></td><td><pre>               : refetch
 </pre></td></tr>
-            <tr class="" id="l1315"><td><a href="#l1315"><span>1315</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
+            <tr class="" id="l1315"><td><a href="#l1315"><span>1315</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1316"><td><a href="#l1316"><span>1316</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+            <tr class="" id="l1316"><td><a href="#l1316"><span>1316</span></a></td><td><pre>x11-proto/dmxproto
 </pre></td></tr>
-            <tr class="" id="l1317"><td><a href="#l1317"><span>1317</span></a></td><td><pre>               : refetch
+            <tr class="" id="l1317"><td><a href="#l1317"><span>1317</span></a></td><td><pre>  DeprecatedEAPI: version 2.3.1: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l1318"><td><a href="#l1318"><span>1318</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
+            <tr class="" id="l1318"><td><a href="#l1318"><span>1318</span></a></td><td><pre>  MissingChksum: version 2.3.1: "dmxproto-2.3.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 </pre></td></tr>
-            <tr class="" id="l1319"><td><a href="#l1319"><span>1319</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+            <tr class="" id="l1319"><td><a href="#l1319"><span>1319</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1320"><td><a href="#l1320"><span>1320</span></a></td><td><pre>               : refetch
+            <tr class="" id="l1320"><td><a href="#l1320"><span>1320</span></a></td><td><pre>x11-proto/evieext
 </pre></td></tr>
-            <tr class="" id="l1321"><td><a href="#l1321"><span>1321</span></a></td><td><pre>
+            <tr class="" id="l1321"><td><a href="#l1321"><span>1321</span></a></td><td><pre>  DeprecatedEAPI: version 1.1.1: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l1322"><td><a href="#l1322"><span>1322</span></a></td><td><pre>app-laptop/batti
+            <tr class="" id="l1322"><td><a href="#l1322"><span>1322</span></a></td><td><pre>  MissingChksum: version 1.1.1: "evieext-1.1.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 </pre></td></tr>
-            <tr class="" id="l1323"><td><a href="#l1323"><span>1323</span></a></td><td><pre>  DeprecatedEclass: version 0.3.8-r2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l1323"><td><a href="#l1323"><span>1323</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1324"><td><a href="#l1324"><span>1324</span></a></td><td><pre>
+            <tr class="" id="l1324"><td><a href="#l1324"><span>1324</span></a></td><td><pre>x11-proto/fontcacheproto
 </pre></td></tr>
-            <tr class="" id="l1325"><td><a href="#l1325"><span>1325</span></a></td><td><pre>app-laptop/hdapsd
+            <tr class="" id="l1325"><td><a href="#l1325"><span>1325</span></a></td><td><pre>  MissingChksum: version 0.1.3: "fontcacheproto-0.1.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 </pre></td></tr>
-            <tr class="" id="l1326"><td><a href="#l1326"><span>1326</span></a></td><td><pre>  WhitespaceFound: version 20141203: ebuild has leading whitespace on lines 66, 70
+            <tr class="" id="l1326"><td><a href="#l1326"><span>1326</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1327"><td><a href="#l1327"><span>1327</span></a></td><td><pre>
+            <tr class="" id="l1327"><td><a href="#l1327"><span>1327</span></a></td><td><pre>x11-proto/inputproto
 </pre></td></tr>
-            <tr class="" id="l1328"><td><a href="#l1328"><span>1328</span></a></td><td><pre>app-laptop/lphdisk
+            <tr class="" id="l1328"><td><a href="#l1328"><span>1328</span></a></td><td><pre>  DroppedKeywordWarning: version 2.3.1: keywords dropped: arm64, m68k
 </pre></td></tr>
-            <tr class="" id="l1329"><td><a href="#l1329"><span>1329</span></a></td><td><pre>  DeprecatedEAPI: version 0.9.1-r2: uses deprecated EAPI: 2
+            <tr class="" id="l1329"><td><a href="#l1329"><span>1329</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
 </pre></td></tr>
-            <tr class="" id="l1330"><td><a href="#l1330"><span>1330</span></a></td><td><pre>
+            <tr class="" id="l1330"><td><a href="#l1330"><span>1330</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
 </pre></td></tr>
-            <tr class="" id="l1331"><td><a href="#l1331"><span>1331</span></a></td><td><pre>app-laptop/pbbuttonsd
+            <tr class="" id="l1331"><td><a href="#l1331"><span>1331</span></a></td><td><pre>               : refetch
 </pre></td></tr>
-            <tr class="" id="l1332"><td><a href="#l1332"><span>1332</span></a></td><td><pre>  DeprecatedEAPI: version 0.8.1-r3: uses deprecated EAPI: 0
+            <tr class="" id="l1332"><td><a href="#l1332"><span>1332</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
 </pre></td></tr>
-            <tr class="" id="l1333"><td><a href="#l1333"><span>1333</span></a></td><td><pre>  DeprecatedEAPI: version 0.8.1-r4: uses deprecated EAPI: 0
+            <tr class="" id="l1333"><td><a href="#l1333"><span>1333</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
 </pre></td></tr>
-            <tr class="" id="l1334"><td><a href="#l1334"><span>1334</span></a></td><td><pre>
+            <tr class="" id="l1334"><td><a href="#l1334"><span>1334</span></a></td><td><pre>               : refetch
 </pre></td></tr>
-            <tr class="" id="l1335"><td><a href="#l1335"><span>1335</span></a></td><td><pre>app-laptop/powerprefs
+            <tr class="" id="l1335"><td><a href="#l1335"><span>1335</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1336"><td><a href="#l1336"><span>1336</span></a></td><td><pre>  DeprecatedEAPI: version 0.8.0: uses deprecated EAPI: 2
+            <tr class="" id="l1336"><td><a href="#l1336"><span>1336</span></a></td><td><pre>app-laptop/batti
 </pre></td></tr>
-            <tr class="" id="l1337"><td><a href="#l1337"><span>1337</span></a></td><td><pre>
+            <tr class="" id="l1337"><td><a href="#l1337"><span>1337</span></a></td><td><pre>  DeprecatedEclass: version 0.3.8-r2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
-            <tr class="" id="l1338"><td><a href="#l1338"><span>1338</span></a></td><td><pre>app-laptop/prey
+            <tr class="" id="l1338"><td><a href="#l1338"><span>1338</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1339"><td><a href="#l1339"><span>1339</span></a></td><td><pre>  BadInsIntoDir: version 0.5.4-r1: ebuild uses insinto /etc/cron.d on line 136
+            <tr class="" id="l1339"><td><a href="#l1339"><span>1339</span></a></td><td><pre>app-laptop/hdapsd
 </pre></td></tr>
-            <tr class="" id="l1340"><td><a href="#l1340"><span>1340</span></a></td><td><pre>
+            <tr class="" id="l1340"><td><a href="#l1340"><span>1340</span></a></td><td><pre>  WhitespaceFound: version 20141203: ebuild has leading whitespace on lines 66, 70
 </pre></td></tr>
-            <tr class="" id="l1341"><td><a href="#l1341"><span>1341</span></a></td><td><pre>app-laptop/tpacpi-bat
+            <tr class="" id="l1341"><td><a href="#l1341"><span>1341</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1342"><td><a href="#l1342"><span>1342</span></a></td><td><pre>  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+            <tr class="" id="l1342"><td><a href="#l1342"><span>1342</span></a></td><td><pre>app-laptop/lphdisk
 </pre></td></tr>
-            <tr class="" id="l1343"><td><a href="#l1343"><span>1343</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
+            <tr class="" id="l1343"><td><a href="#l1343"><span>1343</span></a></td><td><pre>  DeprecatedEAPI: version 0.9.1-r2: uses deprecated EAPI: 2
 </pre></td></tr>
-            <tr class="" id="l1344"><td><a href="#l1344"><span>1344</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+            <tr class="" id="l1344"><td><a href="#l1344"><span>1344</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1345"><td><a href="#l1345"><span>1345</span></a></td><td><pre>               : refetch
+            <tr class="" id="l1345"><td><a href="#l1345"><span>1345</span></a></td><td><pre>app-laptop/pbbuttonsd
 </pre></td></tr>
-            <tr class="" id="l1346"><td><a href="#l1346"><span>1346</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
+            <tr class="" id="l1346"><td><a href="#l1346"><span>1346</span></a></td><td><pre>  DeprecatedEAPI: version 0.8.1-r3: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l1347"><td><a href="#l1347"><span>1347</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+            <tr class="" id="l1347"><td><a href="#l1347"><span>1347</span></a></td><td><pre>  DeprecatedEAPI: version 0.8.1-r4: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l1348"><td><a href="#l1348"><span>1348</span></a></td><td><pre>               : refetch
+            <tr class="" id="l1348"><td><a href="#l1348"><span>1348</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1349"><td><a href="#l1349"><span>1349</span></a></td><td><pre>
+            <tr class="" id="l1349"><td><a href="#l1349"><span>1349</span></a></td><td><pre>app-laptop/powerprefs
 </pre></td></tr>
-            <tr class="" id="l1350"><td><a href="#l1350"><span>1350</span></a></td><td><pre>games-sports/speed-dreams
+            <tr class="" id="l1350"><td><a href="#l1350"><span>1350</span></a></td><td><pre>  DeprecatedEAPI: version 0.8.0: uses deprecated EAPI: 2
 </pre></td></tr>
-            <tr class="" id="l1351"><td><a href="#l1351"><span>1351</span></a></td><td><pre>  MissingChksum: version 1.4.0: "speed-dreams-1.4.0-r2307-src.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+            <tr class="" id="l1351"><td><a href="#l1351"><span>1351</span></a></td><td><pre>
+</pre></td></tr>
+            <tr class="" id="l1352"><td><a href="#l1352"><span>1352</span></a></td><td><pre>app-laptop/prey
+</pre></td></tr>
+            <tr class="" id="l1353"><td><a href="#l1353"><span>1353</span></a></td><td><pre>  BadInsIntoDir: version 0.5.4-r1: ebuild uses insinto /etc/cron.d on line 136
+</pre></td></tr>
+            <tr class="" id="l1354"><td><a href="#l1354"><span>1354</span></a></td><td><pre>
+</pre></td></tr>
+            <tr class="" id="l1355"><td><a href="#l1355"><span>1355</span></a></td><td><pre>app-laptop/tpacpi-bat
+</pre></td></tr>
+            <tr class="" id="l1356"><td><a href="#l1356"><span>1356</span></a></td><td><pre>  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+</pre></td></tr>
+            <tr class="" id="l1357"><td><a href="#l1357"><span>1357</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
+</pre></td></tr>
+            <tr class="" id="l1358"><td><a href="#l1358"><span>1358</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+</pre></td></tr>
+            <tr class="" id="l1359"><td><a href="#l1359"><span>1359</span></a></td><td><pre>               : refetch
+</pre></td></tr>
+            <tr class="" id="l1360"><td><a href="#l1360"><span>1360</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
+</pre></td></tr>
+            <tr class="" id="l1361"><td><a href="#l1361"><span>1361</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+</pre></td></tr>
+            <tr class="" id="l1362"><td><a href="#l1362"><span>1362</span></a></td><td><pre>               : refetch
+</pre></td></tr>
+            <tr class="" id="l1363"><td><a href="#l1363"><span>1363</span></a></td><td><pre>
+</pre></td></tr>
+            <tr class="" id="l1364"><td><a href="#l1364"><span>1364</span></a></td><td><pre>games-sports/speed-dreams
+</pre></td></tr>
+            <tr class="" id="l1365"><td><a href="#l1365"><span>1365</span></a></td><td><pre>  MissingChksum: version 1.4.0: "speed-dreams-1.4.0-r2307-src.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
 
         </table>
 
-        <address>Generated based on results from 2015-09-23 10:38:57 UTC</address>
+        <address>Generated based on results from 2015-09-23 10:57:09 UTC</address>
     </body>
 </html>

@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 12 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'app-text/*' 'sys-fs/*' 'www-apps/*' 'www-client/*' 'net-p2p/*' 'gnome-base/*' 'sci-visualization/*' 'sys-infiniband/*' 'app-laptop/*' 'games-sports/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'app-text/*' 'sys-fs/*' 'www-apps/*' 'www-client/*' 'net-p2p/*' 'gnome-base/*' 'sci-visualization/*' 'x11-proto/*' 'app-laptop/*' 'games-sports/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1312,6 +1312,20 @@ WARNING pkgcore: metadata.dtd cannot be opened from
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
+
+x11-proto/dmxproto
+  DeprecatedEAPI: version 2.3.1: uses deprecated EAPI: 3
+  MissingChksum: version 2.3.1: "dmxproto-2.3.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-proto/evieext
+  DeprecatedEAPI: version 1.1.1: uses deprecated EAPI: 3
+  MissingChksum: version 1.1.1: "evieext-1.1.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-proto/fontcacheproto
+  MissingChksum: version 0.1.3: "fontcacheproto-0.1.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-proto/inputproto
+  DroppedKeywordWarning: version 2.3.1: keywords dropped: arm64, m68k
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
