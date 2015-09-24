@@ -56,7 +56,7 @@
 </pre></td></tr>
             <tr class="" id="l6"><td><a href="#l6"><span>6</span></a></td><td><pre>+ set +x
 </pre></td></tr>
-            <tr class="" id="l7"><td><a href="#l7"><span>7</span></a></td><td><pre>+ exec pkgcheck -r gentoo --reporter FancyReporter 'sys-apps/*' 'x11-libs/*' 'dev-vcs/*' 'x11-drivers/*' 'games-puzzle/*' 'app-cdr/*' 'dev-dotnet/*' 'app-benchmarks/*' 'mail-mta/*' 'gnustep-libs/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
+            <tr class="" id="l7"><td><a href="#l7"><span>7</span></a></td><td><pre>+ exec pkgcheck -r gentoo --reporter FancyReporter 'sys-apps/*' 'x11-libs/*' 'dev-vcs/*' 'x11-drivers/*' 'games-puzzle/*' 'app-cdr/*' 'dev-dotnet/*' 'app-benchmarks/*' 'sci-calculators/*' 'gnustep-libs/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 </pre></td></tr>
             <tr class="" id="l8"><td><a href="#l8"><span>8</span></a></td><td><pre>/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
 </pre></td></tr>
@@ -2330,123 +2330,75 @@
 </pre></td></tr>
             <tr class="" id="l1143"><td><a href="#l1143"><span>1143</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1144"><td><a href="#l1144"><span>1144</span></a></td><td><pre>mail-mta/courier
+            <tr class="" id="l1144"><td><a href="#l1144"><span>1144</span></a></td><td><pre>sci-calculators/orpie
 </pre></td></tr>
-            <tr class="" id="l1145"><td><a href="#l1145"><span>1145</span></a></td><td><pre>  DeprecatedEAPI: version 0.71: uses deprecated EAPI: 0
+            <tr class="" id="l1145"><td><a href="#l1145"><span>1145</span></a></td><td><pre>  DeprecatedEAPI: version 1.5.1: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l1146"><td><a href="#l1146"><span>1146</span></a></td><td><pre>  DeprecatedEAPI: version 0.74.0: uses deprecated EAPI: 0
+            <tr class="" id="l1146"><td><a href="#l1146"><span>1146</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1147"><td><a href="#l1147"><span>1147</span></a></td><td><pre>  DeprecatedEAPI: version 0.74.1: uses deprecated EAPI: 0
+            <tr class="" id="l1147"><td><a href="#l1147"><span>1147</span></a></td><td><pre>sci-calculators/pcalc
 </pre></td></tr>
-            <tr class="" id="l1148"><td><a href="#l1148"><span>1148</span></a></td><td><pre>  DeprecatedEAPI: version 0.74.1-r1: uses deprecated EAPI: 0
+            <tr class="" id="l1148"><td><a href="#l1148"><span>1148</span></a></td><td><pre>  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l1149"><td><a href="#l1149"><span>1149</span></a></td><td><pre>  DroppedKeywordWarning: version 0.74.0: keywords dropped: alpha, ia64, ppc, sparc
+            <tr class="" id="l1149"><td><a href="#l1149"><span>1149</span></a></td><td><pre>  DeprecatedEAPI: version 1.3: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l1150"><td><a href="#l1150"><span>1150</span></a></td><td><pre>
+            <tr class="" id="l1150"><td><a href="#l1150"><span>1150</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
 </pre></td></tr>
-            <tr class="" id="l1151"><td><a href="#l1151"><span>1151</span></a></td><td><pre>mail-mta/esmtp
+            <tr class="" id="l1151"><td><a href="#l1151"><span>1151</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
 </pre></td></tr>
-            <tr class="" id="l1152"><td><a href="#l1152"><span>1152</span></a></td><td><pre>  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 0
+            <tr class="" id="l1152"><td><a href="#l1152"><span>1152</span></a></td><td><pre>               : refetch
 </pre></td></tr>
-            <tr class="" id="l1153"><td><a href="#l1153"><span>1153</span></a></td><td><pre>
+            <tr class="" id="l1153"><td><a href="#l1153"><span>1153</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
 </pre></td></tr>
-            <tr class="" id="l1154"><td><a href="#l1154"><span>1154</span></a></td><td><pre>mail-mta/mini-qmail
+            <tr class="" id="l1154"><td><a href="#l1154"><span>1154</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
 </pre></td></tr>
-            <tr class="" id="l1155"><td><a href="#l1155"><span>1155</span></a></td><td><pre>  DeprecatedEAPI: version 1.05: uses deprecated EAPI: 0
+            <tr class="" id="l1155"><td><a href="#l1155"><span>1155</span></a></td><td><pre>               : refetch
 </pre></td></tr>
-            <tr class="" id="l1156"><td><a href="#l1156"><span>1156</span></a></td><td><pre>  DeprecatedEAPI: version 1.05-r1: uses deprecated EAPI: 0
+            <tr class="" id="l1156"><td><a href="#l1156"><span>1156</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1157"><td><a href="#l1157"><span>1157</span></a></td><td><pre>  DeprecatedEAPI: version 1.06: uses deprecated EAPI: 0
+            <tr class="" id="l1157"><td><a href="#l1157"><span>1157</span></a></td><td><pre>gnustep-libs/camerakit
 </pre></td></tr>
-            <tr class="" id="l1158"><td><a href="#l1158"><span>1158</span></a></td><td><pre>
+            <tr class="" id="l1158"><td><a href="#l1158"><span>1158</span></a></td><td><pre>  DeprecatedEAPI: version 0.0.1.20041011-r1: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l1159"><td><a href="#l1159"><span>1159</span></a></td><td><pre>mail-mta/msmtp
+            <tr class="" id="l1159"><td><a href="#l1159"><span>1159</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1160"><td><a href="#l1160"><span>1160</span></a></td><td><pre>  DeprecatedEclass: version 1.4.31-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l1160"><td><a href="#l1160"><span>1160</span></a></td><td><pre>gnustep-libs/gsldap
 </pre></td></tr>
-            <tr class="" id="l1161"><td><a href="#l1161"><span>1161</span></a></td><td><pre>
+            <tr class="" id="l1161"><td><a href="#l1161"><span>1161</span></a></td><td><pre>  DeprecatedEAPI: version 0.0.1_pre20070219: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l1162"><td><a href="#l1162"><span>1162</span></a></td><td><pre>mail-mta/netqmail
+            <tr class="" id="l1162"><td><a href="#l1162"><span>1162</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1163"><td><a href="#l1163"><span>1163</span></a></td><td><pre>  DeprecatedEAPI: version 1.06: uses deprecated EAPI: 0
+            <tr class="" id="l1163"><td><a href="#l1163"><span>1163</span></a></td><td><pre>gnustep-libs/iconkit
 </pre></td></tr>
-            <tr class="" id="l1164"><td><a href="#l1164"><span>1164</span></a></td><td><pre>
+            <tr class="" id="l1164"><td><a href="#l1164"><span>1164</span></a></td><td><pre>  DeprecatedEAPI: version 0.4.1: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l1165"><td><a href="#l1165"><span>1165</span></a></td><td><pre>mail-mta/postfix
+            <tr class="" id="l1165"><td><a href="#l1165"><span>1165</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1166"><td><a href="#l1166"><span>1166</span></a></td><td><pre>  DroppedKeywordWarning: version 2.11.6: keywords dropped: mips, s390
+            <tr class="" id="l1166"><td><a href="#l1166"><span>1166</span></a></td><td><pre>gnustep-libs/netclasses
 </pre></td></tr>
-            <tr class="" id="l1167"><td><a href="#l1167"><span>1167</span></a></td><td><pre>
+            <tr class="" id="l1167"><td><a href="#l1167"><span>1167</span></a></td><td><pre>  DeprecatedEAPI: version 1.06-r1: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l1168"><td><a href="#l1168"><span>1168</span></a></td><td><pre>mail-mta/qmail-ldap
+            <tr class="" id="l1168"><td><a href="#l1168"><span>1168</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1169"><td><a href="#l1169"><span>1169</span></a></td><td><pre>  DeprecatedEAPI: version 1.03-r8: uses deprecated EAPI: 0
+            <tr class="" id="l1169"><td><a href="#l1169"><span>1169</span></a></td><td><pre>gnustep-libs/prefsmodule
 </pre></td></tr>
-            <tr class="" id="l1170"><td><a href="#l1170"><span>1170</span></a></td><td><pre>
+            <tr class="" id="l1170"><td><a href="#l1170"><span>1170</span></a></td><td><pre>  DeprecatedEAPI: version 1.1.1_pre20061204-r1: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l1171"><td><a href="#l1171"><span>1171</span></a></td><td><pre>mail-mta/qpsmtpd
+            <tr class="" id="l1171"><td><a href="#l1171"><span>1171</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1172"><td><a href="#l1172"><span>1172</span></a></td><td><pre>  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+            <tr class="" id="l1172"><td><a href="#l1172"><span>1172</span></a></td><td><pre>gnustep-libs/renaissance
 </pre></td></tr>
-            <tr class="" id="l1173"><td><a href="#l1173"><span>1173</span></a></td><td><pre>  DroppedKeywordWarning: version 0.95: keywords dropped: amd64, x86
+            <tr class="" id="l1173"><td><a href="#l1173"><span>1173</span></a></td><td><pre>  DeprecatedEAPI: version 0.9.0: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l1174"><td><a href="#l1174"><span>1174</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
+            <tr class="" id="l1174"><td><a href="#l1174"><span>1174</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1175"><td><a href="#l1175"><span>1175</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+            <tr class="" id="l1175"><td><a href="#l1175"><span>1175</span></a></td><td><pre>gnustep-libs/smbkit
 </pre></td></tr>
-            <tr class="" id="l1176"><td><a href="#l1176"><span>1176</span></a></td><td><pre>               : refetch
-</pre></td></tr>
-            <tr class="" id="l1177"><td><a href="#l1177"><span>1177</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
-</pre></td></tr>
-            <tr class="" id="l1178"><td><a href="#l1178"><span>1178</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
-</pre></td></tr>
-            <tr class="" id="l1179"><td><a href="#l1179"><span>1179</span></a></td><td><pre>               : refetch
-</pre></td></tr>
-            <tr class="" id="l1180"><td><a href="#l1180"><span>1180</span></a></td><td><pre>
-</pre></td></tr>
-            <tr class="" id="l1181"><td><a href="#l1181"><span>1181</span></a></td><td><pre>gnustep-libs/camerakit
-</pre></td></tr>
-            <tr class="" id="l1182"><td><a href="#l1182"><span>1182</span></a></td><td><pre>  DeprecatedEAPI: version 0.0.1.20041011-r1: uses deprecated EAPI: 0
-</pre></td></tr>
-            <tr class="" id="l1183"><td><a href="#l1183"><span>1183</span></a></td><td><pre>
-</pre></td></tr>
-            <tr class="" id="l1184"><td><a href="#l1184"><span>1184</span></a></td><td><pre>gnustep-libs/gsldap
-</pre></td></tr>
-            <tr class="" id="l1185"><td><a href="#l1185"><span>1185</span></a></td><td><pre>  DeprecatedEAPI: version 0.0.1_pre20070219: uses deprecated EAPI: 3
-</pre></td></tr>
-            <tr class="" id="l1186"><td><a href="#l1186"><span>1186</span></a></td><td><pre>
-</pre></td></tr>
-            <tr class="" id="l1187"><td><a href="#l1187"><span>1187</span></a></td><td><pre>gnustep-libs/iconkit
-</pre></td></tr>
-            <tr class="" id="l1188"><td><a href="#l1188"><span>1188</span></a></td><td><pre>  DeprecatedEAPI: version 0.4.1: uses deprecated EAPI: 0
-</pre></td></tr>
-            <tr class="" id="l1189"><td><a href="#l1189"><span>1189</span></a></td><td><pre>
-</pre></td></tr>
-            <tr class="" id="l1190"><td><a href="#l1190"><span>1190</span></a></td><td><pre>gnustep-libs/netclasses
-</pre></td></tr>
-            <tr class="" id="l1191"><td><a href="#l1191"><span>1191</span></a></td><td><pre>  DeprecatedEAPI: version 1.06-r1: uses deprecated EAPI: 0
-</pre></td></tr>
-            <tr class="" id="l1192"><td><a href="#l1192"><span>1192</span></a></td><td><pre>
-</pre></td></tr>
-            <tr class="" id="l1193"><td><a href="#l1193"><span>1193</span></a></td><td><pre>gnustep-libs/prefsmodule
-</pre></td></tr>
-            <tr class="" id="l1194"><td><a href="#l1194"><span>1194</span></a></td><td><pre>  DeprecatedEAPI: version 1.1.1_pre20061204-r1: uses deprecated EAPI: 0
-</pre></td></tr>
-            <tr class="" id="l1195"><td><a href="#l1195"><span>1195</span></a></td><td><pre>
-</pre></td></tr>
-            <tr class="" id="l1196"><td><a href="#l1196"><span>1196</span></a></td><td><pre>gnustep-libs/renaissance
-</pre></td></tr>
-            <tr class="" id="l1197"><td><a href="#l1197"><span>1197</span></a></td><td><pre>  DeprecatedEAPI: version 0.9.0: uses deprecated EAPI: 0
-</pre></td></tr>
-            <tr class="" id="l1198"><td><a href="#l1198"><span>1198</span></a></td><td><pre>
-</pre></td></tr>
-            <tr class="" id="l1199"><td><a href="#l1199"><span>1199</span></a></td><td><pre>gnustep-libs/smbkit
-</pre></td></tr>
-            <tr class="" id="l1200"><td><a href="#l1200"><span>1200</span></a></td><td><pre>  DeprecatedEAPI: version 0.0.1.20061010: uses deprecated EAPI: 0
+            <tr class="" id="l1176"><td><a href="#l1176"><span>1176</span></a></td><td><pre>  DeprecatedEAPI: version 0.0.1.20061010: uses deprecated EAPI: 0
 </pre></td></tr>
 
         </table>
 
-        <address>Generated based on results from 2015-09-24 16:50:38 UTC</address>
+        <address>Generated based on results from 2015-09-24 17:33:29 UTC</address>
     </body>
 </html>
