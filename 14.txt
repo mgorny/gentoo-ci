@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 14 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'media-plugins/*' 'dev-php/*' 'kde-base/*' 'gnome-extra/*' 'net-im/*' 'media-tv/*' 'gnustep-apps/*' 'sys-freebsd/*' 'www-misc/*' 'games-mud/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'media-plugins/*' 'dev-php/*' 'app-crypt/*' 'gnome-extra/*' 'net-im/*' 'media-tv/*' 'gnustep-apps/*' 'sys-freebsd/*' 'www-misc/*' 'games-mud/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -314,12 +314,136 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-kde-base/kdelibs
-  SizeViolation: "files/kdelibs-4.14.3-trim-crash.patch" exceeds 20k in size; 28725 bytes total
+app-crypt/aespipe
+  DeprecatedEAPI: version 2.3e: uses deprecated EAPI: 0
 
-kde-base/kinfocenter
-  NoFinalNewline: version 4.11.19: ebuild lacks an ending newline
-  NoFinalNewline: version 4.11.22: ebuild lacks an ending newline
+app-crypt/aesutil
+  DeprecatedEAPI: version 1.0.7: uses deprecated EAPI: 0
+
+app-crypt/asedriveiiie-serial
+  DeprecatedEAPI: version 3.5: uses deprecated EAPI: 0
+
+app-crypt/asedriveiiie-usb
+  DeprecatedEAPI: version 3.5: uses deprecated EAPI: 0
+
+app-crypt/bcrypt
+  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 0
+
+app-crypt/bcwipe
+  DeprecatedEAPI: version 1.9.8: uses deprecated EAPI: 3
+
+app-crypt/bsign
+  DeprecatedEAPI: version 0.4.5: uses deprecated EAPI: 2
+
+app-crypt/cardpeek
+  DroppedKeywordWarning: version 0.8.2: keywords dropped: amd64
+
+app-crypt/ccrypt
+  DeprecatedEAPI: version 1.9: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 1.10: uses deprecated EAPI: 3
+
+app-crypt/codegroup
+  DeprecatedEAPI: version 20080907-r1: uses deprecated EAPI: 2
+
+app-crypt/coolkey
+  DeprecatedEAPI: version 1.1.0-r6: uses deprecated EAPI: 3
+
+app-crypt/dieharder
+  DeprecatedEAPI: version 2.28.1: uses deprecated EAPI: 2
+
+app-crypt/eid-mw
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+app-crypt/elettra
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+
+app-crypt/fcrackzip
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 3
+
+app-crypt/gifshuffle
+  DeprecatedEAPI: version 2.0: uses deprecated EAPI: 0
+
+app-crypt/gnupg
+  DroppedKeywordWarning: version 2.1.6: keywords dropped: arm64, ia64, s390, sh, sparc
+
+app-crypt/gpg-ringmgr
+  DeprecatedEAPI: version 1.12: uses deprecated EAPI: 0
+
+app-crypt/gpgstats
+  DeprecatedEAPI: version 0.5-r1: uses deprecated EAPI: 2
+
+app-crypt/hashalot
+  DeprecatedEAPI: version 0.3-r2: uses deprecated EAPI: 0
+
+app-crypt/ima-evm-utils
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+app-crypt/jacksum
+  DeprecatedEAPI: version 1.7.0: uses deprecated EAPI: 0
+
+app-crypt/keylookup
+  DeprecatedEAPI: version 2.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.2-r9999: uses deprecated EAPI: 0
+
+app-crypt/mcrypt
+  DeprecatedEAPI: version 2.6.8-r2: uses deprecated EAPI: 2
+
+app-crypt/mdcrack
+  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 2
+
+app-crypt/nasty
+  DeprecatedEAPI: version 0.6-r1: uses deprecated EAPI: 2
+
+app-crypt/nistp224
+  DeprecatedEAPI: version 0.75-r1: uses deprecated EAPI: 2
+
+app-crypt/onak
+  DeprecatedEAPI: version 0.4.0: uses deprecated EAPI: 2
+
+app-crypt/ophcrack
+  DeprecatedEAPI: version 3.3.1: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.4.0: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.6.0: uses deprecated EAPI: 3
+
+app-crypt/pius
+  DeprecatedEclass: version 2.0.9: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 2.0.10: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+app-crypt/qca
+  DeprecatedEAPI: version 2.0.3-r1: uses deprecated EAPI: 3
+
+app-crypt/qca-cyrus-sasl
+  DeprecatedEAPI: version 2.0.0_beta3: uses deprecated EAPI: 2
+
+app-crypt/qca-gnupg
+  DeprecatedEAPI: version 2.0.0_beta3: uses deprecated EAPI: 2
+
+app-crypt/qca-logger
+  DeprecatedEAPI: version 2.0.0_beta2: uses deprecated EAPI: 2
+
+app-crypt/qca-ossl
+  DeprecatedEAPI: version 2.0.0_beta3-r2: uses deprecated EAPI: 2
+
+app-crypt/qca-pkcs11
+  DeprecatedEAPI: version 2.0.0_beta2: uses deprecated EAPI: 2
+
+app-crypt/quickcrypt
+  DeprecatedEAPI: version 0.9.2b: uses deprecated EAPI: 0
+
+app-crypt/signing-party
+  DroppedKeywordWarning: version 1.1.11-r1: keywords dropped: ppc
+
+app-crypt/ssh-multiadd
+  DeprecatedEclass: version 1.3.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+app-crypt/stan
+  DeprecatedEAPI: version 0.4.1: uses deprecated EAPI: 2
+
+app-crypt/truecrypt
+  DroppedKeywordWarning: version 7.2: keywords dropped: amd64, ppc, x86
+
+app-crypt/xor-analyze
+  DeprecatedEAPI: version 0.5: uses deprecated EAPI: 0
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
