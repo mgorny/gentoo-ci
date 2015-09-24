@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 7 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'media-libs/*' 'media-video/*' 'app-emacs/*' 'app-editors/*' 'app-portage/*' 'sci-electronics/*' 'net-dialup/*' 'app-pda/*' 'x11-base/*' 'games-simulation/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'media-libs/*' 'media-video/*' 'app-emacs/*' 'app-editors/*' 'app-portage/*' 'sci-electronics/*' 'net-print/*' 'app-pda/*' 'x11-base/*' 'games-simulation/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1047,85 +1047,43 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-net-dialup/capidivert
-  DeprecatedEAPI: version 0.0.2: uses deprecated EAPI: 0
+net-print/apsfilter
+  DeprecatedEAPI: version 7.2.5: uses deprecated EAPI: 0
 
-net-dialup/capifwd
-  DeprecatedEAPI: version 0.6.3-r1: uses deprecated EAPI: 0
+net-print/cups-filters
+  WhitespaceFound: version 1.0.71: ebuild has leading whitespace on line 68
+  WrongIndentFound: version 1.0.71: ebuild has whitespace in indentation on line 68
+  WhitespaceFound: version 1.0.73: ebuild has leading whitespace on line 66
+  WrongIndentFound: version 1.0.73: ebuild has whitespace in indentation on line 66
+  WhitespaceFound: version 1.0.74: ebuild has leading whitespace on line 66
+  WrongIndentFound: version 1.0.74: ebuild has whitespace in indentation on line 66
+  WhitespaceFound: version 1.0.75: ebuild has leading whitespace on line 66
+  WrongIndentFound: version 1.0.75: ebuild has whitespace in indentation on line 66
+  WhitespaceFound: version 1.0.76: ebuild has leading whitespace on line 66
+  WrongIndentFound: version 1.0.76: ebuild has whitespace in indentation on line 66
+  WhitespaceFound: version 9999: ebuild has leading whitespace on line 66
+  WrongIndentFound: version 9999: ebuild has whitespace in indentation on line 66
 
-net-dialup/dgcmodem
-  DeprecatedEAPI: version 1.10: uses deprecated EAPI: 0
+net-print/kyocera-mita-ppds
+  DeprecatedEAPI: version 8.4: uses deprecated EAPI: 0
+  MissingChksum: version 8.4: "Linux_PPDs_KSL8_4.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-net-dialup/dial
-  DeprecatedEAPI: version 1.2-r1: uses deprecated EAPI: 2
+net-print/libinklevel
+  DeprecatedEAPI: version 0.8.0-r1: uses deprecated EAPI: 2
 
-net-dialup/diald
-  DeprecatedEAPI: version 1.0-r2: uses deprecated EAPI: 0
+net-print/npadmin
+  DeprecatedEAPI: version 0.8.7: uses deprecated EAPI: 0
 
-net-dialup/drdsl
-  DeprecatedEAPI: version 1.2.0: uses deprecated EAPI: 0
+net-print/pkpgcounter
+  DeprecatedEclass: version 3.50-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 3.50-r1: uses deprecated EAPI: 3
 
-net-dialup/dwun
-  DeprecatedEAPI: version 0.96e-r2: uses deprecated EAPI: 2
+net-print/pykota
+  DeprecatedEclass: version 1.26: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.26: uses deprecated EAPI: 3
 
-net-dialup/freeradius
-  DroppedKeywordWarning: version 3.0.3: keywords dropped: amd64, ppc, ppc64, sparc, x86
-
-net-dialup/freeradius-client
-  DeprecatedEAPI: version 1.1.6: uses deprecated EAPI: 2
-
-net-dialup/globespan-adsl
-  DeprecatedEAPI: version 0.11-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.12: uses deprecated EAPI: 0
-
-net-dialup/hcfpcimodem
-  DeprecatedEAPI: version 1.20: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.21: uses deprecated EAPI: 2
-
-net-dialup/intel-536ep
-  DeprecatedEAPI: version 4.71: uses deprecated EAPI: 0
-
-net-dialup/itund
-  DeprecatedEAPI: version 0.3.1: uses deprecated EAPI: 0
-
-net-dialup/linux-atm
-  DeprecatedEAPI: version 2.5.0: uses deprecated EAPI: 0
-
-net-dialup/lrzsz
-  DeprecatedEAPI: version 0.12.20-r3: uses deprecated EAPI: 2
-
-net-dialup/mingetty
-  DeprecatedEAPI: version 1.08: uses deprecated EAPI: 0
-
-net-dialup/mwavem
-  DeprecatedEAPI: version 2.0-r1: uses deprecated EAPI: 2
-
-net-dialup/ppp
-  DeprecatedEAPI: version 2.4.4-r25: uses deprecated EAPI: 2
-
-net-dialup/pppconfig
-  DeprecatedEAPI: version 2.3.17-r1: uses deprecated EAPI: 0
-
-net-dialup/qtwvdialer
-  DeprecatedEAPI: version 0.4.4_p20091228: uses deprecated EAPI: 2
-
-net-dialup/radiusclient
-  DeprecatedEAPI: version 0.3.2: uses deprecated EAPI: 0
-
-net-dialup/rp-pppoe
-  DeprecatedEAPI: version 3.8-r2: uses deprecated EAPI: 0
-
-net-dialup/speedtouch-usb
-  DeprecatedEAPI: version 3.0.1.2-r3: uses deprecated EAPI: 0
-
-net-dialup/ueagle-atm
-  DeprecatedEAPI: version 1.1-r3: uses deprecated EAPI: 2
-
-net-dialup/ueagle4-atm
-  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 2
-
-net-dialup/wvdial
-  DeprecatedEAPI: version 1.61: uses deprecated EAPI: 3
+net-print/xerox-drivers
+  DeprecatedEAPI: version 0_p20080123: uses deprecated EAPI: 2
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch

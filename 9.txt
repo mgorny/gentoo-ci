@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 9 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-util/*' 'kde-apps/*' 'dev-ml/*' 'net-wireless/*' 'net-dns/*' 'mail-client/*' 'net-fs/*' 'net-ftp/*' 'xfce-base/*' 'net-voip/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-util/*' 'kde-apps/*' 'dev-ml/*' 'net-wireless/*' 'net-dns/*' 'mail-client/*' 'games-strategy/*' 'net-ftp/*' 'xfce-base/*' 'net-voip/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1037,19 +1037,18 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-net-fs/davfs2
-  DeprecatedEAPI: version 1.4.5-r1: uses deprecated EAPI: 2
+games-strategy/attal
+  DeprecatedEAPI: version 0.10.1: uses deprecated EAPI: 2
 
-net-fs/libnfs
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+games-strategy/coldwar
+  MissingChksum: version 1.0.1-r1: "coldwar-1.0-1.0.1-x86.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-fs/samba
-  DroppedKeywordWarning: version 3.6.25: keywords dropped: s390, sh
-  DroppedKeywordWarning: version 4.2.4-r1: keywords dropped: arm64, hppa
-  DroppedKeywordWarning: version 4.0.26-r1: keywords dropped: alpha, arm, ia64, mips, ppc, ppc64, sparc
+games-strategy/openra
+  DeprecatedEclass: version 20120630: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
 
-net-fs/wdfs
-  DeprecatedEAPI: version 1.4.2: uses deprecated EAPI: 0
+games-strategy/revenge-of-the-titans
+  MissingChksum: version 1.80.12: "revenge-of-the-titans-1.80.12-amd64.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.80.12: "revenge-of-the-titans-1.80.12-i386.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
