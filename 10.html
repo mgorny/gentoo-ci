@@ -51,7 +51,7 @@
 </pre></td></tr>
             <tr class="" id="l6"><td><a href="#l6"><span>6</span></a></td><td><pre>+ set +x
 </pre></td></tr>
-            <tr class="" id="l7"><td><a href="#l7"><span>7</span></a></td><td><pre>+ exec pkgcheck -r gentoo --reporter FancyReporter 'media-sound/*' 'app-admin/*' 'app-i18n/*' 'net-mail/*' 'dev-tex/*' 'sys-boot/*' 'net-fs/*' 'lxqt-base/*' 'mail-mta/*' 'mate-base/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
+            <tr class="" id="l7"><td><a href="#l7"><span>7</span></a></td><td><pre>+ exec pkgcheck -r gentoo --reporter FancyReporter 'media-sound/*' 'app-admin/*' 'app-i18n/*' 'net-mail/*' 'dev-tex/*' 'sys-boot/*' 'net-fs/*' 'lxqt-base/*' 'x11-base/*' 'mate-base/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 </pre></td></tr>
             <tr class="" id="l8"><td><a href="#l8"><span>8</span></a></td><td><pre>/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
 </pre></td></tr>
@@ -3295,81 +3295,25 @@
 </pre></td></tr>
             <tr class="" id="l1628"><td><a href="#l1628"><span>1628</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1629"><td><a href="#l1629"><span>1629</span></a></td><td><pre>mail-mta/courier
+            <tr class="" id="l1629"><td><a href="#l1629"><span>1629</span></a></td><td><pre>x11-base/xorg-x11
 </pre></td></tr>
-            <tr class="" id="l1630"><td><a href="#l1630"><span>1630</span></a></td><td><pre>  DeprecatedEAPI: version 0.71: uses deprecated EAPI: 0
+            <tr class="" id="l1630"><td><a href="#l1630"><span>1630</span></a></td><td><pre>  DeprecatedEAPI: version 7.4-r2: uses deprecated EAPI: 2
 </pre></td></tr>
-            <tr class="" id="l1631"><td><a href="#l1631"><span>1631</span></a></td><td><pre>  DeprecatedEAPI: version 0.74.0: uses deprecated EAPI: 0
+            <tr class="" id="l1631"><td><a href="#l1631"><span>1631</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
 </pre></td></tr>
-            <tr class="" id="l1632"><td><a href="#l1632"><span>1632</span></a></td><td><pre>  DeprecatedEAPI: version 0.74.1: uses deprecated EAPI: 0
+            <tr class="" id="l1632"><td><a href="#l1632"><span>1632</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
 </pre></td></tr>
-            <tr class="" id="l1633"><td><a href="#l1633"><span>1633</span></a></td><td><pre>  DeprecatedEAPI: version 0.74.1-r1: uses deprecated EAPI: 0
+            <tr class="" id="l1633"><td><a href="#l1633"><span>1633</span></a></td><td><pre>               : refetch
 </pre></td></tr>
-            <tr class="" id="l1634"><td><a href="#l1634"><span>1634</span></a></td><td><pre>  DroppedKeywordWarning: version 0.74.0: keywords dropped: alpha, ia64, ppc, sparc
+            <tr class="" id="l1634"><td><a href="#l1634"><span>1634</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
 </pre></td></tr>
-            <tr class="" id="l1635"><td><a href="#l1635"><span>1635</span></a></td><td><pre>
+            <tr class="" id="l1635"><td><a href="#l1635"><span>1635</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
 </pre></td></tr>
-            <tr class="" id="l1636"><td><a href="#l1636"><span>1636</span></a></td><td><pre>mail-mta/esmtp
-</pre></td></tr>
-            <tr class="" id="l1637"><td><a href="#l1637"><span>1637</span></a></td><td><pre>  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 0
-</pre></td></tr>
-            <tr class="" id="l1638"><td><a href="#l1638"><span>1638</span></a></td><td><pre>
-</pre></td></tr>
-            <tr class="" id="l1639"><td><a href="#l1639"><span>1639</span></a></td><td><pre>mail-mta/mini-qmail
-</pre></td></tr>
-            <tr class="" id="l1640"><td><a href="#l1640"><span>1640</span></a></td><td><pre>  DeprecatedEAPI: version 1.05: uses deprecated EAPI: 0
-</pre></td></tr>
-            <tr class="" id="l1641"><td><a href="#l1641"><span>1641</span></a></td><td><pre>  DeprecatedEAPI: version 1.05-r1: uses deprecated EAPI: 0
-</pre></td></tr>
-            <tr class="" id="l1642"><td><a href="#l1642"><span>1642</span></a></td><td><pre>  DeprecatedEAPI: version 1.06: uses deprecated EAPI: 0
-</pre></td></tr>
-            <tr class="" id="l1643"><td><a href="#l1643"><span>1643</span></a></td><td><pre>
-</pre></td></tr>
-            <tr class="" id="l1644"><td><a href="#l1644"><span>1644</span></a></td><td><pre>mail-mta/msmtp
-</pre></td></tr>
-            <tr class="" id="l1645"><td><a href="#l1645"><span>1645</span></a></td><td><pre>  DeprecatedEclass: version 1.4.31-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-</pre></td></tr>
-            <tr class="" id="l1646"><td><a href="#l1646"><span>1646</span></a></td><td><pre>
-</pre></td></tr>
-            <tr class="" id="l1647"><td><a href="#l1647"><span>1647</span></a></td><td><pre>mail-mta/netqmail
-</pre></td></tr>
-            <tr class="" id="l1648"><td><a href="#l1648"><span>1648</span></a></td><td><pre>  DeprecatedEAPI: version 1.06: uses deprecated EAPI: 0
-</pre></td></tr>
-            <tr class="" id="l1649"><td><a href="#l1649"><span>1649</span></a></td><td><pre>
-</pre></td></tr>
-            <tr class="" id="l1650"><td><a href="#l1650"><span>1650</span></a></td><td><pre>mail-mta/postfix
-</pre></td></tr>
-            <tr class="" id="l1651"><td><a href="#l1651"><span>1651</span></a></td><td><pre>  DroppedKeywordWarning: version 2.11.6: keywords dropped: mips, s390
-</pre></td></tr>
-            <tr class="" id="l1652"><td><a href="#l1652"><span>1652</span></a></td><td><pre>
-</pre></td></tr>
-            <tr class="" id="l1653"><td><a href="#l1653"><span>1653</span></a></td><td><pre>mail-mta/qmail-ldap
-</pre></td></tr>
-            <tr class="" id="l1654"><td><a href="#l1654"><span>1654</span></a></td><td><pre>  DeprecatedEAPI: version 1.03-r8: uses deprecated EAPI: 0
-</pre></td></tr>
-            <tr class="" id="l1655"><td><a href="#l1655"><span>1655</span></a></td><td><pre>
-</pre></td></tr>
-            <tr class="" id="l1656"><td><a href="#l1656"><span>1656</span></a></td><td><pre>mail-mta/qpsmtpd
-</pre></td></tr>
-            <tr class="" id="l1657"><td><a href="#l1657"><span>1657</span></a></td><td><pre>  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-</pre></td></tr>
-            <tr class="" id="l1658"><td><a href="#l1658"><span>1658</span></a></td><td><pre>  DroppedKeywordWarning: version 0.95: keywords dropped: amd64, x86
-</pre></td></tr>
-            <tr class="" id="l1659"><td><a href="#l1659"><span>1659</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
-</pre></td></tr>
-            <tr class="" id="l1660"><td><a href="#l1660"><span>1660</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
-</pre></td></tr>
-            <tr class="" id="l1661"><td><a href="#l1661"><span>1661</span></a></td><td><pre>               : refetch
-</pre></td></tr>
-            <tr class="" id="l1662"><td><a href="#l1662"><span>1662</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
-</pre></td></tr>
-            <tr class="" id="l1663"><td><a href="#l1663"><span>1663</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
-</pre></td></tr>
-            <tr class="" id="l1664"><td><a href="#l1664"><span>1664</span></a></td><td><pre>               : refetch
+            <tr class="" id="l1636"><td><a href="#l1636"><span>1636</span></a></td><td><pre>               : refetch
 </pre></td></tr>
 
         </table>
 
-        <address>Generated based on results from 2015-09-25 17:13:42 UTC</address>
+        <address>Generated based on results from 2015-09-25 17:54:33 UTC</address>
     </body>
 </html>

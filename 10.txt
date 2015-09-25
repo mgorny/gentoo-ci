@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 10 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'media-sound/*' 'app-admin/*' 'app-i18n/*' 'net-mail/*' 'dev-tex/*' 'sys-boot/*' 'net-fs/*' 'lxqt-base/*' 'mail-mta/*' 'mate-base/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'media-sound/*' 'app-admin/*' 'app-i18n/*' 'net-mail/*' 'dev-tex/*' 'sys-boot/*' 'net-fs/*' 'lxqt-base/*' 'x11-base/*' 'mate-base/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1626,36 +1626,8 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-mail-mta/courier
-  DeprecatedEAPI: version 0.71: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.74.0: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.74.1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.74.1-r1: uses deprecated EAPI: 0
-  DroppedKeywordWarning: version 0.74.0: keywords dropped: alpha, ia64, ppc, sparc
-
-mail-mta/esmtp
-  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 0
-
-mail-mta/mini-qmail
-  DeprecatedEAPI: version 1.05: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.05-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.06: uses deprecated EAPI: 0
-
-mail-mta/msmtp
-  DeprecatedEclass: version 1.4.31-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-
-mail-mta/netqmail
-  DeprecatedEAPI: version 1.06: uses deprecated EAPI: 0
-
-mail-mta/postfix
-  DroppedKeywordWarning: version 2.11.6: keywords dropped: mips, s390
-
-mail-mta/qmail-ldap
-  DeprecatedEAPI: version 1.03-r8: uses deprecated EAPI: 0
-
-mail-mta/qpsmtpd
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DroppedKeywordWarning: version 0.95: keywords dropped: amd64, x86
+x11-base/xorg-x11
+  DeprecatedEAPI: version 7.4-r2: uses deprecated EAPI: 2
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
