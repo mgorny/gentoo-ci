@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 14 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'media-plugins/*' 'dev-php/*' 'app-crypt/*' 'gnome-extra/*' 'net-im/*' 'games-misc/*' 'games-rpg/*' 'sys-freebsd/*' 'www-misc/*' 'games-mud/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'media-plugins/*' 'dev-php/*' 'app-crypt/*' 'gnome-extra/*' 'app-backup/*' 'games-board/*' 'dev-tcltk/*' 'games-util/*' 'www-misc/*' 'games-mud/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -482,174 +482,163 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-net-im/bitlbee-steam
+app-backup/amanda
+  BadInsIntoDir: version 3.3.3: ebuild uses insinto /etc/cron.daily on line 332
+  BadInsIntoDir: version 3.3.3-r1: ebuild uses insinto /etc/cron.daily on line 338
+  BadInsIntoDir: version 3.3.5: ebuild uses insinto /etc/cron.daily on line 338
+  BadInsIntoDir: version 3.3.7: ebuild uses insinto /etc/cron.daily on line 335
+
+app-backup/backup-manager
+  DeprecatedEAPI: version 0.7.5: uses deprecated EAPI: 0
+
+app-backup/backuppc
+  SizeViolation: "files/02-fix-config.pl-formatting.patch" exceeds 20k in size; 23353 bytes total
+
+app-backup/bareos
+  DroppedKeywordWarning: version 15.2.1: keywords dropped: amd64, x86
+
+app-backup/boxbackup
+  DeprecatedEAPI: version 0.11.1: uses deprecated EAPI: 2
+
+app-backup/burp
+  DroppedKeywordWarning: version 1.4.40: keywords dropped: x86
+
+app-backup/ccollect
+  DeprecatedEAPI: version 0.5.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.7.1: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.8: uses deprecated EAPI: 2
+
+app-backup/cdbackup
+  DeprecatedEAPI: version 0.7.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.7.1: uses deprecated EAPI: 0
+
+app-backup/cdbkup
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0-r1: uses deprecated EAPI: 0
+
+app-backup/cpdup
+  DeprecatedEAPI: version 1.18: uses deprecated EAPI: 0
+
+app-backup/dar
+  DeprecatedEAPI: version 2.3.8: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 2.4.9: uses deprecated EAPI: 3
+
+app-backup/dirvish
+  DeprecatedEAPI: version 1.2.1: uses deprecated EAPI: 0
+
+app-backup/flexbackup
+  DeprecatedEAPI: version 1.2.1-r12: uses deprecated EAPI: 0
+
+app-backup/hdup
+  DeprecatedEAPI: version 2.0.14: uses deprecated EAPI: 0
+
+app-backup/mirdir
+  DeprecatedEAPI: version 2.1-r1: uses deprecated EAPI: 3
+
+app-backup/mylvmbackup
+  DeprecatedEAPI: version 0.11: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.13: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.14: uses deprecated EAPI: 0
+
+app-backup/rdiff-backup
+  DeprecatedEclass: version 1.2.8-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.2.8-r1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.3.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.3.3: uses deprecated EAPI: 3
+
+app-backup/reoback
+  BadInsIntoDir: version 1.0_p3-r1: ebuild uses insinto /etc/cron.daily on line 36
+
+app-backup/rsnapshot
+  DeprecatedEAPI: version 1.3.1: uses deprecated EAPI: 0
+
+app-backup/sarab
+  DeprecatedEAPI: version 1.0.0: uses deprecated EAPI: 0
+
+app-backup/simplebackup
+  DeprecatedEAPI: version 1.8.1: uses deprecated EAPI: 0
+
+app-backup/tsm
+  DroppedKeywordWarning: version 6.3.0.5-r2: keywords dropped: x86
+
+app-backup/vzdump
+  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 2
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+
+dev-tcltk/expect
+  DeprecatedEAPI: version 5.44.1.15: uses deprecated EAPI: 3
+
+dev-tcltk/expect-lite
+  DeprecatedEAPI: version 4.0.3: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.1.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.1.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.2.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.2.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.2.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.3.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.3.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.3.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.3.3: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.4.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.4.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.5.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.6.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.6.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.6.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.7.2: uses deprecated EAPI: 0
+
+dev-tcltk/iwidgets
+  DeprecatedEAPI: version 4.0.1: uses deprecated EAPI: 0
+
+dev-tcltk/scwoop
+  DeprecatedEAPI: version 4.1: uses deprecated EAPI: 0
+
+dev-tcltk/snack
+  DeprecatedEclass: version 2.2.10-r5: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+dev-tcltk/tcllib
+  SizeViolation: "files/tcllib-1.15-XSS-vuln.patch" exceeds 20k in size; 29465 bytes total
+  DroppedKeywordWarning: version 1.16: keywords dropped: ia64, ppc64, s390, sparc
+
+dev-tcltk/tkcon
+  DeprecatedEAPI: version 2.5: uses deprecated EAPI: 0
+
+dev-tcltk/tkpiechart
+  DeprecatedEAPI: version 6.5-r1: uses deprecated EAPI: 0
+
+dev-tcltk/tktable
+  DeprecatedEAPI: version 2.10: uses deprecated EAPI: 2
+
+dev-tcltk/tktreectrl
+  DeprecatedEAPI: version 2.2.9: uses deprecated EAPI: 3
+
+dev-tcltk/vtcl
+  DeprecatedEAPI: version 1.6.0-r1: uses deprecated EAPI: 0
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+
+games-util/dzip
+  DeprecatedEAPI: version 2.9-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.9-r2: uses deprecated EAPI: 2
+
+games-util/pyfa
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-net-im/centerim
-  DeprecatedEAPI: version 4.22.10: uses deprecated EAPI: 2
-
-net-im/gg-transport
-  DeprecatedEAPI: version 2.2.4: uses deprecated EAPI: 0
-
-net-im/jabber-base
-  DeprecatedEAPI: version 0.01: uses deprecated EAPI: 0
-
-net-im/kadu
-  DroppedKeywordWarning: version 2.1: keywords dropped: ppc
-
-net-im/librvp
-  DeprecatedEAPI: version 0.9.6: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.9.7: uses deprecated EAPI: 2
-
-net-im/mu-conference
-  DeprecatedEAPI: version 0.7: uses deprecated EAPI: 0
-
-net-im/psi
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-net-im/qwit
-  DeprecatedEAPI: version 1.1_pre2: uses deprecated EAPI: 2
-
-net-im/simpserver-bin
-  DeprecatedEAPI: version 2.1.0: uses deprecated EAPI: 0
-
-net-im/skypetab-ng
-  NonExistentDeps: version 0.5.2: depset rdepends: nonexistent atoms [ <net-im/skype-4.1 ]
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  NonExistentDeps: version 9999: depset rdepends: nonexistent atoms [ <net-im/skype-4.1 ]
-WARNING pkgcore: metadata.dtd cannot be opened from
-               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
-               : refetch
-WARNING pkgcore: metadata.dtd cannot be opened from
-               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
-               : refetch
-
-games-misc/fortune-mod-flashrider
-  DeprecatedEAPI: version 0.25: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.80: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 0.90: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 1.00: uses deprecated EAPI: 3
-
-games-misc/fortune-mod-gentoo-dev
-  DeprecatedEAPI: version 20061115: uses deprecated EAPI: 0
-
-games-misc/xcowsay
-  DeprecatedEAPI: version 1.3: uses deprecated EAPI: 2
-WARNING pkgcore: metadata.dtd cannot be opened from
-               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
-               : refetch
-WARNING pkgcore: metadata.dtd cannot be opened from
-               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
-               : refetch
-
-games-rpg/arx-fatalis-data
-  MissingUri: version 1.21-r2: file setup_arx_fatalis.exe is unfetchable- no URI available, and RESTRICT=fetch isn't set
-  MissingUri: version 1.21-r3: file setup_arx_fatalis_2.0.0.7.exe is unfetchable- no URI available, and RESTRICT=fetch isn't set
-
-games-rpg/eternal-lands
-  DeprecatedEAPI: version 1.9.2: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 1.9.2-r1: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 1.9.3: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 1.9.3-r1: uses deprecated EAPI: 2
-
-games-rpg/eternal-lands-bloodsucker
-  DeprecatedEAPI: version 3.0: uses deprecated EAPI: 2
-
-games-rpg/eternal-lands-data
-  DeprecatedEAPI: version 1.9.2-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.9.3: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.9.3-r1: uses deprecated EAPI: 2
-
-games-rpg/nwmovies
-  DeprecatedEAPI: version 20090223.080954: uses deprecated EAPI: 2
-
-games-rpg/nwn-cep
-  DeprecatedEAPI: version 1.68-r1: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 2.0: uses deprecated EAPI: 2
-
-games-rpg/nwn-penultima
-  DeprecatedEAPI: version 1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1-r1: uses deprecated EAPI: 0
-
-games-rpg/nwn-penultimarerolled
-  DeprecatedEAPI: version 1: uses deprecated EAPI: 0
-
-games-rpg/nwn-shadowlordsdreamcatcherdemon
-  DeprecatedEAPI: version 1: uses deprecated EAPI: 0
-
-games-rpg/sacred-gold
-  MissingChksum: version 1.0.01: "sacred-1.0-1.0.01-x86.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-WARNING pkgcore: metadata.dtd cannot be opened from
-               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
-               : refetch
-WARNING pkgcore: metadata.dtd cannot be opened from
-               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
-               : refetch
-
-sys-freebsd/boot0
-  DeprecatedEAPI: version 8.2: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 9.1: uses deprecated EAPI: 2
-
-sys-freebsd/freebsd-bin
-  DeprecatedEAPI: version 8.2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 9.1: uses deprecated EAPI: 0
-
-sys-freebsd/freebsd-cddl
-  DeprecatedEAPI: version 8.2: uses deprecated EAPI: 0
-
-sys-freebsd/freebsd-contrib
-  DeprecatedEAPI: version 8.2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 9.1: uses deprecated EAPI: 0
-
-sys-freebsd/freebsd-lib
-  WhitespaceFound: version 8.2-r1: ebuild has leading whitespace on lines 368, 369, 370, 371, 372
-  DeprecatedEAPI: version 8.2-r1: uses deprecated EAPI: 2
-  WhitespaceFound: version 9.1-r10: ebuild has leading whitespace on lines 413, 414, 415, 416, 417, 441, 442, 443, 446, 448, 450
-  WhitespaceFound: version 9.1-r11: ebuild has leading whitespace on lines 415, 416, 417, 418, 419, 443, 444, 445, 448, 450, 452
-  WhitespaceFound: version 10.2-r1: ebuild has leading whitespace on lines 424, 425, 426, 427, 428, 452, 453, 454, 457, 459, 461
-
-sys-freebsd/freebsd-libexec
-  DeprecatedEAPI: version 8.2: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 8.2-r1: uses deprecated EAPI: 2
-
-sys-freebsd/freebsd-mk-defs
-  DeprecatedEAPI: version 8.2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 9.1: uses deprecated EAPI: 3
-
-sys-freebsd/freebsd-pam-modules
-  DeprecatedEAPI: version 8.2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 9.1-r1: uses deprecated EAPI: 0
-
-sys-freebsd/freebsd-pf
-  DeprecatedEAPI: version 8.2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 9.1: uses deprecated EAPI: 0
-
-sys-freebsd/freebsd-rescue
-  DeprecatedEAPI: version 8.2: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 9.1: uses deprecated EAPI: 2
-
-sys-freebsd/freebsd-sbin
-  BadInsIntoDir: version 8.2-r1: ebuild uses insinto /etc/cron.d on line 78
-  DeprecatedEAPI: version 8.2-r1: uses deprecated EAPI: 2
-  BadInsIntoDir: version 9.1: ebuild uses insinto /etc/cron.d on line 79
-  DeprecatedEAPI: version 9.1: uses deprecated EAPI: 2
-  BadInsIntoDir: version 10.2: ebuild uses insinto /etc/cron.d on line 83
-
-sys-freebsd/freebsd-share
-  DeprecatedEAPI: version 8.2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 9.1: uses deprecated EAPI: 0
-
-sys-freebsd/freebsd-sources
-  DeprecatedEAPI: version 8.2-r2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 9.1-r3: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 9.1-r9: uses deprecated EAPI: 0
-
-sys-freebsd/freebsd-ubin
-  DeprecatedEAPI: version 8.2-r1: uses deprecated EAPI: 2
-
-sys-freebsd/freebsd-usbin
-  DeprecatedEAPI: version 8.2-r2: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 9.1-r1: uses deprecated EAPI: 2
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch

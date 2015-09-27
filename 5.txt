@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 5 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-libs/*' 'sci-libs/*' 'app-leechcraft/*' 'sci-mathematics/*' 'sys-auth/*' 'www-servers/*' 'kde-plasma/*' 'x11-terms/*' 'perl-core/*' 'net-news/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-libs/*' 'sci-libs/*' 'app-leechcraft/*' 'sci-mathematics/*' 'sys-auth/*' 'dev-cpp/*' 'net-print/*' 'net-nds/*' 'kde-plasma/*' 'net-news/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1197,39 +1197,134 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-www-servers/fnord
-  DeprecatedEAPI: version 1.10-r2: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 1.11: uses deprecated EAPI: 3
+dev-cpp/asio
+  DeprecatedEAPI: version 1.4.5: uses deprecated EAPI: 2
+  SizeViolation: "files/asio-1.4.8_declarations.patch" exceeds 20k in size; 29773 bytes total
 
-www-servers/lighttpd
-  SizeViolation: "files/lighttpd-1.4.29-mod_uploadprogress.patch" exceeds 20k in size; 22472 bytes total
+dev-cpp/ctemplate
+  DeprecatedEclass: version 2.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-www-servers/monkeyd
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+dev-cpp/gtest
+  DeprecatedEclass: version 1.6.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 1.6.0-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-www-servers/pound
-  DeprecatedEAPI: version 2.6: uses deprecated EAPI: 2
+dev-cpp/libbackend-elements
+  DeprecatedEAPI: version 1.7.2: uses deprecated EAPI: 2
 
-www-servers/servefile
-  DeprecatedEclass: version 0.4.2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  NonExistentDeps: version 0.4.2: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
-  NonExistentDeps: version 0.4.2: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
-  DeprecatedEclass: version 0.4.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  NonExistentDeps: version 0.4.3: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
-  NonExistentDeps: version 0.4.3: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+dev-cpp/libfrontend-elements
+  DeprecatedEAPI: version 1.1.4: uses deprecated EAPI: 2
 
-www-servers/thttpd
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+dev-cpp/libmcpp
+  DeprecatedEAPI: version 2.7.2-r1: uses deprecated EAPI: 3
 
-www-servers/tomcat
-  DroppedKeywordWarning: version 8.0.23-r2: keywords dropped: ppc, ppc64
+dev-cpp/tree
+  DeprecatedEAPI: version 2.65-r1: uses deprecated EAPI: 2
 
-www-servers/tornado
-  DroppedKeywordWarning: version 4.2.1: keywords dropped: ppc
+dev-cpp/xsd
+  SizeViolation: "files/3.3.0-boost-filesystem-v2-deprecation.patch" exceeds 20k in size; 30894 bytes total
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
 
-www-servers/xsp
-  WhitespaceFound: version 2014.12-r2014120900: ebuild has trailing whitespace on lines 82, 84
-  MetadataError: version 2014.12-r2014120900: attr(iuse): iuse unknown flags: [ net40, net35, net45 ]
+net-print/apsfilter
+  DeprecatedEAPI: version 7.2.5: uses deprecated EAPI: 0
+
+net-print/cups-filters
+  WhitespaceFound: version 1.0.71: ebuild has leading whitespace on line 68
+  WrongIndentFound: version 1.0.71: ebuild has whitespace in indentation on line 68
+  WhitespaceFound: version 1.0.73: ebuild has leading whitespace on line 68
+  WrongIndentFound: version 1.0.73: ebuild has whitespace in indentation on line 68
+  WhitespaceFound: version 1.0.74: ebuild has leading whitespace on line 68
+  WrongIndentFound: version 1.0.74: ebuild has whitespace in indentation on line 68
+  WhitespaceFound: version 1.0.75: ebuild has leading whitespace on line 68
+  WrongIndentFound: version 1.0.75: ebuild has whitespace in indentation on line 68
+  WhitespaceFound: version 1.0.76: ebuild has leading whitespace on line 68
+  WrongIndentFound: version 1.0.76: ebuild has whitespace in indentation on line 68
+  WhitespaceFound: version 9999: ebuild has leading whitespace on line 68
+  WrongIndentFound: version 9999: ebuild has whitespace in indentation on line 68
+
+net-print/kyocera-mita-ppds
+  DeprecatedEAPI: version 8.4: uses deprecated EAPI: 0
+  MissingChksum: version 8.4: "Linux_PPDs_KSL8_4.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+net-print/libinklevel
+  DeprecatedEAPI: version 0.8.0-r1: uses deprecated EAPI: 2
+
+net-print/npadmin
+  DeprecatedEAPI: version 0.8.7: uses deprecated EAPI: 0
+
+net-print/pkpgcounter
+  DeprecatedEclass: version 3.50-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 3.50-r1: uses deprecated EAPI: 3
+
+net-print/pykota
+  DeprecatedEclass: version 1.26: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.26: uses deprecated EAPI: 3
+
+net-print/xerox-drivers
+  DeprecatedEAPI: version 0_p20080123: uses deprecated EAPI: 2
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+
+net-nds/389-admin
+  NonExistentDeps: version 1.1.31: depset depends: nonexistent atoms [ <=dev-libs/nspr-4.8.3-r3 ]
+  NonExistentDeps: version 1.1.31: depset rdepends: nonexistent atoms [ <=dev-libs/nspr-4.8.3-r3 ]
+
+net-nds/gosa-core
+  DeprecatedEAPI: version 2.6.10: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 2.6.11: uses deprecated EAPI: 3
+
+net-nds/gosa-plugin-mail
+  DeprecatedEAPI: version 2.6.10: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 2.6.11: uses deprecated EAPI: 3
+
+net-nds/gosa-plugin-samba
+  DeprecatedEAPI: version 2.6.10: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 2.6.11: uses deprecated EAPI: 3
+
+net-nds/gosa-plugin-systems
+  DeprecatedEAPI: version 2.6.10: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 2.6.11: uses deprecated EAPI: 3
+
+net-nds/jxplorer
+  DeprecatedEAPI: version 3.2: uses deprecated EAPI: 0
+
+net-nds/lat
+  DeprecatedEclass: version 1.2.3: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+
+net-nds/ldapvi
+  DeprecatedEAPI: version 1.7-r1: uses deprecated EAPI: 2
+
+net-nds/led
+  DeprecatedEAPI: version 1.111: uses deprecated EAPI: 0
+
+net-nds/nsscache
+  DeprecatedEclass: version 0.23: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+net-nds/openldap
+  DeprecatedEAPI: version 2.3.43-r3: uses deprecated EAPI: 2
+  NonExistentDeps: version 2.3.43-r3: depset depends: nonexistent atoms [ <dev-lang/perl-5.16 ]
+  NonExistentDeps: version 2.3.43-r3: depset rdepends: nonexistent atoms [ <dev-lang/perl-5.16 ]
+  DeprecatedEAPI: version 2.3.43-r4: uses deprecated EAPI: 2
+  NonExistentDeps: version 2.3.43-r4: depset depends: nonexistent atoms [ <dev-lang/perl-5.16 ]
+  NonExistentDeps: version 2.3.43-r4: depset rdepends: nonexistent atoms [ <dev-lang/perl-5.16 ]
+
+net-nds/phpldapadmin
+  NonExistentDeps: version 1.2.3: depset rdepends: nonexistent atoms [ <dev-lang/php-5.3 ]
+  NonExistentDeps: version 1.2.3-r1: depset rdepends: nonexistent atoms [ <dev-lang/php-5.3 ]
+
+net-nds/portmap
+  DeprecatedEAPI: version 6.0: uses deprecated EAPI: 0
+
+net-nds/rpcbind
+  DeprecatedEAPI: version 0.2.0-r1: uses deprecated EAPI: 2
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
@@ -1238,54 +1333,8 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : refetch
 
 kde-plasma/plasma-workspace
-  NonExistentDeps: version 5.4.0: depset depends: nonexistent atoms [ media-libs/prison:5 ]
-  NonExistentDeps: version 5.4.0: depset rdepends: nonexistent atoms [ media-libs/prison:5 ]
   NonExistentDeps: version 5.4.1: depset depends: nonexistent atoms [ media-libs/prison:5 ]
   NonExistentDeps: version 5.4.1: depset rdepends: nonexistent atoms [ media-libs/prison:5 ]
-WARNING pkgcore: metadata.dtd cannot be opened from
-               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
-               : refetch
-WARNING pkgcore: metadata.dtd cannot be opened from
-               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
-               : refetch
-
-x11-terms/aterm
-  DeprecatedEAPI: version 1.0.1-r2: uses deprecated EAPI: 3
-
-x11-terms/eterm
-  DeprecatedEAPI: version 0.9.5: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.9.6: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
-
-x11-terms/gnome-terminal
-  NonExistentDeps: version 3.14.2-r2: depset depends: nonexistent atoms [ <=x11-libs/gtk+-2.24.10:2 ]
-  SizeViolation: "files/gnome-terminal-3.16.2-restore-transparency.patch" exceeds 20k in size; 54792 bytes total
-
-x11-terms/hanterm
-  DeprecatedEAPI: version 3.1.6-r2: uses deprecated EAPI: 0
-
-x11-terms/root-tail
-  DeprecatedEAPI: version 1.2-r3: uses deprecated EAPI: 2
-
-x11-terms/roxterm
-  DeprecatedEclass: version 2.6.3: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEclass: version 2.6.5: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DroppedKeywordWarning: version 2.9.3-r1: keywords dropped: ppc
-
-x11-terms/terminology
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-x11-terms/xvt
-  DeprecatedEAPI: version 2.1-r3: uses deprecated EAPI: 2
-
-x11-terms/yeahconsole
-  DeprecatedEAPI: version 0.3.4-r1: uses deprecated EAPI: 2
-WARNING pkgcore: metadata.dtd cannot be opened from
-               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
-               : refetch
-WARNING pkgcore: metadata.dtd cannot be opened from
-               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
-               : refetch
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch

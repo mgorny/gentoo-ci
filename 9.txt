@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 9 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-util/*' 'kde-apps/*' 'dev-ml/*' 'net-wireless/*' 'net-dns/*' 'mail-client/*' 'games-strategy/*' 'net-ftp/*' 'mail-mta/*' 'net-voip/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-util/*' 'kde-apps/*' 'dev-ml/*' 'net-wireless/*' 'dev-tex/*' 'sys-boot/*' 'dev-dotnet/*' 'lxqt-base/*' 'mail-mta/*' 'net-voip/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -875,62 +875,269 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-net-dns/avahi
-  DroppedKeywordWarning: version 0.6.31-r8: keywords dropped: m68k
+dev-tex/aastex
+  DeprecatedEAPI: version 5.2: uses deprecated EAPI: 0
 
-net-dns/bind-dns-keygen
-  DeprecatedEAPI: version 9.3.2.39-r1: uses deprecated EAPI: 0
+dev-tex/abntex
+  DeprecatedEAPI: version 0.9_beta2: uses deprecated EAPI: 3
 
-net-dns/c-ares
-  DeprecatedEAPI: version 1.7.4: uses deprecated EAPI: 2
-  DroppedKeywordWarning: version 1.10.0: keywords dropped: arm64
+dev-tex/bera
+  DeprecatedEAPI: version 20040930: uses deprecated EAPI: 0
 
-net-dns/dnrd
-  DeprecatedEAPI: version 2.20.3-r1: uses deprecated EAPI: 0
+dev-tex/cdcover
+  DeprecatedEAPI: version 1.3b: uses deprecated EAPI: 0
 
-net-dns/dnssec-check
-  DroppedKeywordWarning: version 2.1: keywords dropped: amd64, x86
+dev-tex/cpp2latex
+  DeprecatedEAPI: version 2.3-r1: uses deprecated EAPI: 0
 
-net-dns/dnssec-root
-  DeprecatedEAPI: version 20100715: uses deprecated EAPI: 0
-  WhitespaceFound: version 20150403: ebuild has trailing whitespace on line 13
+dev-tex/crosstex
+  DeprecatedEclass: version 0.6: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.6: uses deprecated EAPI: 3
 
-net-dns/hesinfo
-  DeprecatedEAPI: version 3.1.0: uses deprecated EAPI: 2
+dev-tex/csindex
+  DeprecatedEAPI: version 2.11c-r1: uses deprecated EAPI: 3
 
-net-dns/hesiod
-  DeprecatedEAPI: version 3.1.0: uses deprecated EAPI: 2
+dev-tex/culmus-latex
+  DeprecatedEAPI: version 0.7: uses deprecated EAPI: 2
+  NonExistentDeps: version 0.7: depset depends: nonexistent atoms [ <media-fonts/culmus-0.110 ]
 
-net-dns/host
-  DeprecatedEAPI: version 20070128-r1: uses deprecated EAPI: 2
+dev-tex/currvita
+  DeprecatedEAPI: version 0.9i-r1: uses deprecated EAPI: 0
 
-net-dns/knot
-  DroppedKeywordWarning: version 2.0.0_beta: keywords dropped: amd64, x86
+dev-tex/curve
+  DeprecatedEAPI: version 1.16: uses deprecated EAPI: 2
 
-net-dns/ldns-utils
-  DeprecatedEAPI: version 1.6.12: uses deprecated EAPI: 3
+dev-tex/detex
+  DeprecatedEAPI: version 2.8-r1: uses deprecated EAPI: 0
 
-net-dns/ndu
-  DeprecatedEAPI: version 0.4-r4: uses deprecated EAPI: 0
+dev-tex/dot2tex
+  DeprecatedEclass: version 2.8.7: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 2.8.7: uses deprecated EAPI: 3
 
-net-dns/odsclient
-  DeprecatedEAPI: version 1.03-r1: uses deprecated EAPI: 2
+dev-tex/dot2texi
+  DeprecatedEAPI: version 3.0: uses deprecated EAPI: 0
 
-net-dns/rbldnsd
-  DeprecatedEAPI: version 0.996b: uses deprecated EAPI: 0
+dev-tex/dvi2gr
+  DeprecatedEAPI: version 0.4: uses deprecated EAPI: 2
 
-net-dns/tinystats
+dev-tex/dvipost
+  DeprecatedEAPI: version 1.1-r2: uses deprecated EAPI: 2
+
+dev-tex/ellipsis
+  DeprecatedEAPI: version 1.6: uses deprecated EAPI: 0
+
+dev-tex/envlab
+  DeprecatedEAPI: version 1.2-r1: uses deprecated EAPI: 0
+
+dev-tex/europecv
+  DeprecatedEAPI: version 20060424-r1: uses deprecated EAPI: 0
+
+dev-tex/floatflt
+  DeprecatedEAPI: version 1.31a: uses deprecated EAPI: 3
+
+dev-tex/foiltex
+  DeprecatedEAPI: version 2.1.4b: uses deprecated EAPI: 0
+
+dev-tex/fundus
+  DeprecatedEAPI: version 19970826: uses deprecated EAPI: 0
+
+dev-tex/g-brief
+  DeprecatedEAPI: version 4.0.2: uses deprecated EAPI: 0
+
+dev-tex/glossaries
+  DroppedKeywordWarning: version 4.12-r1: keywords dropped: ia64, sparc
+
+dev-tex/harvard
+  DeprecatedEAPI: version 2.0.5: uses deprecated EAPI: 0
+
+dev-tex/herm-pic
+  DeprecatedEAPI: version 1.0.2: uses deprecated EAPI: 0
+
+dev-tex/hlatex
+  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 3
+
+dev-tex/hyphen_show
+  DeprecatedEAPI: version 20000425: uses deprecated EAPI: 0
+
+dev-tex/isotope
+  DeprecatedEAPI: version 20040401: uses deprecated EAPI: 0
+
+dev-tex/ivritex
+  DeprecatedEAPI: version 1.1.2: uses deprecated EAPI: 0
+
+dev-tex/latex-calendar
+  DeprecatedEAPI: version 3.1: uses deprecated EAPI: 0
+
+dev-tex/latex-unicode
+  DeprecatedEAPI: version 20041017: uses deprecated EAPI: 0
+
+dev-tex/latex2html
+  DeprecatedEAPI: version 2008: uses deprecated EAPI: 0
+
+dev-tex/latexdiff
+  DeprecatedEAPI: version 0.5: uses deprecated EAPI: 0
+
+dev-tex/lazylist
+  DeprecatedEAPI: version 1.0a: uses deprecated EAPI: 0
+
+dev-tex/leaflet
+  DeprecatedEAPI: version 20041222: uses deprecated EAPI: 0
+
+dev-tex/lgrind
+  DeprecatedEAPI: version 3.67-r3: uses deprecated EAPI: 0
+
+dev-tex/newlfm
+  DeprecatedEAPI: version 8.3-r1: uses deprecated EAPI: 0
+
+dev-tex/notoccite
+  DeprecatedEAPI: version 20000720: uses deprecated EAPI: 0
+
+dev-tex/oesch
+  DeprecatedEAPI: version 20080712: uses deprecated EAPI: 0
+
+dev-tex/pdfannotextractor
+  DeprecatedEAPI: version 0.1l: uses deprecated EAPI: 3
+
+dev-tex/pgf
+  DeprecatedEAPI: version 2.10: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 3.0.0: uses deprecated EAPI: 0
+
+dev-tex/polytable
+  DeprecatedEAPI: version 0.8.2: uses deprecated EAPI: 0
+
+dev-tex/ppower4
+  DeprecatedEAPI: version 0.9.6: uses deprecated EAPI: 0
+
+dev-tex/prosper
+  DeprecatedEAPI: version 1.5-r1: uses deprecated EAPI: 0
+
+dev-tex/quotchap
+  DeprecatedEAPI: version 0.9f: uses deprecated EAPI: 0
+
+dev-tex/rcsinfo
+  DeprecatedEAPI: version 1.9: uses deprecated EAPI: 0
+
+dev-tex/revtex
+  DeprecatedEAPI: version 4.1_p2-r1: uses deprecated EAPI: 2
+
+dev-tex/rubber
+  DeprecatedEclass: version 1.1_p20090819: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.1_p20090819: uses deprecated EAPI: 3
+  NonExistentDeps: version 1.1_p20090819: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  NonExistentDeps: version 1.1_p20090819: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+
+dev-tex/sketch
+  DeprecatedEAPI: version 0.3.7: uses deprecated EAPI: 0
+
+dev-tex/slatex
+  DeprecatedEAPI: version 20090928: uses deprecated EAPI: 3
+
+dev-tex/svninfo
+  DeprecatedEAPI: version 0.7.4: uses deprecated EAPI: 0
+
+dev-tex/texamator
+  DeprecatedEclass: version 1.7.5: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+dev-tex/texmfind
+  DeprecatedEAPI: version 2010.1: uses deprecated EAPI: 0
+
+dev-tex/texpower
+  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 0
+
+dev-tex/tipa
+  DeprecatedEAPI: version 1.3: uses deprecated EAPI: 0
+
+dev-tex/translator
+  DeprecatedEAPI: version 1.00: uses deprecated EAPI: 0
+
+dev-tex/xcolor
+  DeprecatedEAPI: version 2.11: uses deprecated EAPI: 0
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+
+sys-boot/aboot
+  DeprecatedEAPI: version 1.0_pre20040408-r3: uses deprecated EAPI: 0
+
+sys-boot/bootcreator
   DeprecatedEAPI: version 1.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 0
 
-net-dns/unbound
-  DroppedKeywordWarning: version 1.5.1-r2: keywords dropped: ia64, m68k, mips, s390, sh, sparc
-  DroppedKeywordWarning: version 1.5.4: keywords dropped: alpha
+sys-boot/colo
+  DeprecatedEAPI: version 1.22: uses deprecated EAPI: 0
 
-net-dns/updatedd
-  DeprecatedEAPI: version 2.6: uses deprecated EAPI: 0
+sys-boot/cromwell-bin
+  DeprecatedEAPI: version 2.31: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.40: uses deprecated EAPI: 0
 
-net-dns/valtz
-  DeprecatedEAPI: version 0.7: uses deprecated EAPI: 0
+sys-boot/efibootmgr
+  DeprecatedEAPI: version 0.5.4: uses deprecated EAPI: 0
+
+sys-boot/elilo
+  DeprecatedEAPI: version 3.6_p20060314: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 3.10: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 3.12: uses deprecated EAPI: 0
+
+sys-boot/gnu-efi
+  DeprecatedEAPI: version 3.0a-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 3.0g: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 3.0i: uses deprecated EAPI: 0
+
+sys-boot/grub-static
+  DeprecatedEAPI: version 0.96-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.97: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.97-r6: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.97-r9: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.97-r10: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.97-r12: uses deprecated EAPI: 0
+
+sys-boot/lilo
+  DeprecatedEAPI: version 22.8-r2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 23.2-r1: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 23.2-r2: uses deprecated EAPI: 2
+
+sys-boot/makebootfat
+  DeprecatedEAPI: version 1.4: uses deprecated EAPI: 0
+
+sys-boot/mbr
+  DeprecatedEAPI: version 1.1.11: uses deprecated EAPI: 0
+
+sys-boot/mbr-gpt
+  DeprecatedEAPI: version 0.0.1: uses deprecated EAPI: 0
+
+sys-boot/milo
+  DeprecatedEAPI: version 2.4.18: uses deprecated EAPI: 0
+
+sys-boot/netboot
+  DeprecatedEAPI: version 0.10.2: uses deprecated EAPI: 2
+
+sys-boot/nettrom
+  DeprecatedEAPI: version 2.3.3: uses deprecated EAPI: 0
+
+sys-boot/psoload
+  DeprecatedEAPI: version 2.0: uses deprecated EAPI: 0
+
+sys-boot/quik
+  DeprecatedEAPI: version 2.1.6: uses deprecated EAPI: 0
+
+sys-boot/raincoat
+  DeprecatedEAPI: version 0.5: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.11: uses deprecated EAPI: 0
+
+sys-boot/shlilo-lantank
+  DeprecatedEAPI: version 20040408: uses deprecated EAPI: 0
+
+sys-boot/silo
+  DeprecatedEAPI: version 1.4.14_p20100228: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.4.14_p20120226: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.4.14_p20120819: uses deprecated EAPI: 0
+
+sys-boot/syslinux
+  DeprecatedEAPI: version 3.86: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.07: uses deprecated EAPI: 0
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
@@ -938,96 +1145,185 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-mail-client/biabam
-  DeprecatedEAPI: version 0.9.7: uses deprecated EAPI: 0
+dev-dotnet/art-sharp
+  DeprecatedEclass: version 2.24.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 2.24.2: uses deprecated EAPI: 2
 
-mail-client/claws-mail-acpi-notifier
-  DeprecatedEAPI: version 1.0.28: uses deprecated EAPI: 0
+dev-dotnet/atk-sharp
+  DeprecatedEclass: version 2.12.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 2.12.10: uses deprecated EAPI: 2
 
-mail-client/claws-mail-address_keeper
-  DeprecatedEAPI: version 1.0.7: uses deprecated EAPI: 0
+dev-dotnet/dbus-sharp
+  DeprecatedEclass: version 0.7.0-r1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
 
-mail-client/claws-mail-archive
-  DeprecatedEAPI: version 0.6.13: uses deprecated EAPI: 0
+dev-dotnet/dbus-sharp-glib
+  DeprecatedEclass: version 0.5.0: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
 
-mail-client/claws-mail-att-remover
-  DeprecatedEAPI: version 1.0.15: uses deprecated EAPI: 0
+dev-dotnet/flickrnet-bin
+  DeprecatedEclass: version 2.2-r1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 2.2-r1: uses deprecated EAPI: 2
 
-mail-client/claws-mail-attachwarner
-  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+dev-dotnet/gconf-sharp
+  DeprecatedEclass: version 2.24.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 2.24.2: uses deprecated EAPI: 2
 
-mail-client/claws-mail-clamd
-  DeprecatedEAPI: version 3.5.5: uses deprecated EAPI: 0
+dev-dotnet/gdk-sharp
+  DeprecatedEclass: version 2.12.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 2.12.10: uses deprecated EAPI: 2
 
-mail-client/claws-mail-fancy
-  DeprecatedEAPI: version 0.9.17: uses deprecated EAPI: 3
+dev-dotnet/gio-sharp
+  DeprecatedEclass: version 0.3: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
 
-mail-client/claws-mail-fetchinfo
-  DeprecatedEAPI: version 0.4.25: uses deprecated EAPI: 0
+dev-dotnet/gkeyfile-sharp
+  DeprecatedEclass: version 0.1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 2
 
-mail-client/claws-mail-gtkhtml
-  DeprecatedEAPI: version 0.34: uses deprecated EAPI: 0
+dev-dotnet/glade-sharp
+  DeprecatedEclass: version 2.12.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 2.12.10: uses deprecated EAPI: 2
 
-mail-client/claws-mail-mailmbox
-  DeprecatedEAPI: version 1.15: uses deprecated EAPI: 0
+dev-dotnet/glib-sharp
+  DeprecatedEclass: version 2.12.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
 
-mail-client/claws-mail-newmail
-  DeprecatedEAPI: version 0.0.16: uses deprecated EAPI: 0
+dev-dotnet/gnome-desktop-sharp
+  DeprecatedEclass: version 2.26.0-r1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 2.26.0-r1: uses deprecated EAPI: 2
 
-mail-client/claws-mail-perl
-  DeprecatedEAPI: version 0.9.20: uses deprecated EAPI: 0
+dev-dotnet/gnome-keyring-sharp
+  DeprecatedEclass: version 1.0.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 1.0.2: uses deprecated EAPI: 2
 
-mail-client/clawsker
-  DeprecatedEAPI: version 0.7.8: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.7.10: uses deprecated EAPI: 0
+dev-dotnet/gnome-sharp
+  DeprecatedEclass: version 2.24.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 2.24.2: uses deprecated EAPI: 2
 
-mail-client/drac
-  DeprecatedEAPI: version 1.12-r1: uses deprecated EAPI: 0
+dev-dotnet/gnomevfs-sharp
+  DeprecatedEclass: version 2.24.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 2.24.2: uses deprecated EAPI: 2
 
-mail-client/etpan-ng
-  DeprecatedEAPI: version 0.7.1-r1: uses deprecated EAPI: 0
+dev-dotnet/google-gdata-sharp
+  DeprecatedEclass: version 1.4.0.2-r2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 1.4.0.2-r2: uses deprecated EAPI: 3
 
-mail-client/evolution
-  DroppedKeywordWarning: version 3.16.4: keywords dropped: alpha, arm, ia64, ppc, ppc64, sparc
+dev-dotnet/gsf-sharp
+  DeprecatedEclass: version 0.8.1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 0.8.1: uses deprecated EAPI: 0
 
-mail-client/mail-notification
-  SizeViolation: "files/mail-notification-aarch64.patch" exceeds 20k in size; 49364 bytes total
+dev-dotnet/gtk-dotnet-sharp
+  DeprecatedEclass: version 2.12.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 2.12.10: uses deprecated EAPI: 2
 
-mail-client/mailx
-  DeprecatedEAPI: version 8.1.2.20050715-r6: uses deprecated EAPI: 0
+dev-dotnet/gtk-sharp
+  DeprecatedEclass: version 2.12.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 2.12.10: uses deprecated EAPI: 2
 
-mail-client/mailx-support
-  DeprecatedEAPI: version 20060102-r1: uses deprecated EAPI: 0
+dev-dotnet/gtk-sharp-beans
+  DeprecatedEclass: version 2.14.0: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 2.14.0: uses deprecated EAPI: 2
 
-mail-client/mutt
-  MetadataError: version 1.5.23-r5: attr(fetchables): error- Metadata Exception: pkg ebuild src: mail-client/mutt-1.5.23-r5, attr fetchables
-error: mirror://sourceforge/mutt/mutt-1.5.23.tar.gz mirror://bitbucket/mutt/mutt/downloads/mutt-1.5.23.tar.gz ftp://ftp.mutt.org/mutt/devel/mutt-1.5.23.tar.gz mirror://gentoo/mutt-1.5.23-gentoo-patches-r5.tar.bz2 https://dev.gentoo.org/~grobian/distfiles/mutt-1.5.23-gentoo-patches-r5.tar.bz2 is unparseable
-flagged token- uri mirror://bitbucket/mutt/mutt/downloads/mutt-1.5.23.tar.gz isn't a known mirror tier
-  MetadataError: version 1.5.23-r7: attr(fetchables): error- Metadata Exception: pkg ebuild src: mail-client/mutt-1.5.23-r7, attr fetchables
-error: mirror://sourceforge/mutt/mutt-1.5.23.tar.gz mirror://bitbucket/mutt/mutt/downloads/mutt-1.5.23.tar.gz ftp://ftp.mutt.org/mutt/devel/mutt-1.5.23.tar.gz mirror://gentoo/mutt-1.5.23-gentoo-patches-r7.tar.bz2 https://dev.gentoo.org/~grobian/distfiles/mutt-1.5.23-gentoo-patches-r7.tar.bz2 is unparseable
-flagged token- uri mirror://bitbucket/mutt/mutt/downloads/mutt-1.5.23.tar.gz isn't a known mirror tier
-  MetadataError: version 1.5.23-r8: attr(fetchables): error- Metadata Exception: pkg ebuild src: mail-client/mutt-1.5.23-r8, attr fetchables
-error: mirror://sourceforge/mutt/mutt-1.5.23.tar.gz mirror://bitbucket/mutt/mutt/downloads/mutt-1.5.23.tar.gz ftp://ftp.mutt.org/mutt/devel/mutt-1.5.23.tar.gz mirror://gentoo/mutt-1.5.23-gentoo-patches-r8.tar.bz2 https://dev.gentoo.org/~grobian/distfiles/mutt-1.5.23-gentoo-patches-r8.tar.bz2 is unparseable
-flagged token- uri mirror://bitbucket/mutt/mutt/downloads/mutt-1.5.23.tar.gz isn't a known mirror tier
-  MetadataError: version 1.5.24-r1: attr(fetchables): error- Metadata Exception: pkg ebuild src: mail-client/mutt-1.5.24-r1, attr fetchables
-error: mirror://sourceforge/mutt/mutt-1.5.24.tar.gz mirror://bitbucket/mutt/mutt/downloads/mutt-1.5.24.tar.gz ftp://ftp.mutt.org/pub/mutt/mutt-1.5.24.tar.gz mirror://gentoo/mutt-1.5.24-gentoo-patches-r1.tar.bz2 https://dev.gentoo.org/~grobian/distfiles/mutt-1.5.24-gentoo-patches-r1.tar.bz2 is unparseable
-flagged token- uri mirror://bitbucket/mutt/mutt/downloads/mutt-1.5.24.tar.gz isn't a known mirror tier
+dev-dotnet/gtk-sharp-docs
+  DeprecatedEclass: version 2.12.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 2.12.10: uses deprecated EAPI: 2
 
-mail-client/nail
-  DeprecatedEAPI: version 12.4: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 12.4-r2: uses deprecated EAPI: 3
+dev-dotnet/gtk-sharp-gapi
+  DeprecatedEclass: version 2.12.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 2.12.10: uses deprecated EAPI: 2
 
-mail-client/nmh
-  DeprecatedEAPI: version 1.3-r3: uses deprecated EAPI: 2
+dev-dotnet/gtksourceview-sharp
+  DeprecatedEclass: version 2.24.0-r10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 2.24.0-r10: uses deprecated EAPI: 2
 
-mail-client/pinepgp
-  DeprecatedEAPI: version 0.18.0-r1: uses deprecated EAPI: 0
-  NonExistentDeps: version 0.18.0-r1: depset depends: nonexistent atoms [ mail-client/pine ]
-  NonExistentDeps: version 0.18.0-r1: depset rdepends: nonexistent atoms [ mail-client/pine ]
+dev-dotnet/gudev-sharp
+  DeprecatedEclass: version 0.1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 2
 
-mail-client/trojita
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DroppedKeywordWarning: version 0.5: keywords dropped: ppc
+dev-dotnet/ikvm
+  DeprecatedEclass: version 0.46.0.1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEclass: version 0.46.0.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEclass: version 7.1.4532.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DroppedKeywordWarning: version 7.1.4532.2: keywords dropped: ppc
+
+dev-dotnet/ikvm-bin
+  DeprecatedEclass: version 0.46.0.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEclass: version 7.1.4532.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+
+dev-dotnet/libgdiplus
+  DeprecatedEclass: version 2.10.9: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 2.10.9: uses deprecated EAPI: 2
+  DeprecatedEclass: version 2.10.9-r1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEclass: version 2.10.9-r2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DroppedKeywordWarning: version 3.12: keywords dropped: arm
+
+dev-dotnet/log4net
+  DeprecatedEclass: version 1.2.11: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+
+dev-dotnet/mono-addins
+  DeprecatedEclass: version 0.6.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+
+dev-dotnet/mono-nat
+  DeprecatedEclass: version 1.1.0: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+
+dev-dotnet/mono-zeroconf
+  DeprecatedEclass: version 0.9.0: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 0.9.0: uses deprecated EAPI: 2
+
+dev-dotnet/monocalendar
+  DeprecatedEclass: version 0.7.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 0.7.2: uses deprecated EAPI: 0
+
+dev-dotnet/monotorrent
+  DeprecatedEclass: version 0.80: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 0.80: uses deprecated EAPI: 2
+
+dev-dotnet/nant
+  DeprecatedEclass: version 0.92: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+
+dev-dotnet/ndesk-dbus
+  DeprecatedEclass: version 0.6.1a: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 0.6.1a: uses deprecated EAPI: 0
+
+dev-dotnet/ndesk-dbus-glib
+  DeprecatedEclass: version 0.4.1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 0.4.1: uses deprecated EAPI: 3
+
+dev-dotnet/nini
+  DeprecatedEclass: version 1.1.0-r2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 1.1.0-r2: uses deprecated EAPI: 2
+
+dev-dotnet/notify-sharp
+  DeprecatedEclass: version 0.4.0_pre20090305: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+
+dev-dotnet/nuget
+  WhitespaceFound: version 2.8.3: ebuild has trailing whitespace on line 29
+
+dev-dotnet/pango-sharp
+  DeprecatedEclass: version 2.12.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 2.12.10: uses deprecated EAPI: 2
+
+dev-dotnet/rsvg-sharp
+  DeprecatedEclass: version 2.24.0-r10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 2.24.0-r10: uses deprecated EAPI: 2
+
+dev-dotnet/taglib-sharp
+  DeprecatedEclass: version 2.0.4.0: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEclass: version 2.1.0.0: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+
+dev-dotnet/vte-sharp
+  DeprecatedEclass: version 2.24.0-r10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 2.24.0-r10: uses deprecated EAPI: 2
+
+dev-dotnet/webkit-sharp
+  DeprecatedEclass: version 0.3-r1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+
+dev-dotnet/wnck-sharp
+  DeprecatedEclass: version 2.24.0-r10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 2.24.0-r10: uses deprecated EAPI: 2
+
+dev-dotnet/xsp
+  DeprecatedEclass: version 2.10.2-r2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+
+dev-dotnet/zeitgeist-sharp
+  DeprecatedEclass: version 0.8.0.0-r1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
@@ -1035,52 +1331,53 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-games-strategy/attal
-  DeprecatedEAPI: version 0.10.1: uses deprecated EAPI: 2
+lxqt-base/liblxqt
+  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
 
-games-strategy/coldwar
-  MissingChksum: version 1.0.1-r1: "coldwar-1.0-1.0.1-x86.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+lxqt-base/liblxqt-mount
+  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
 
-games-strategy/openra
-  DeprecatedEclass: version 20120630: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+lxqt-base/libsysstat
+  DroppedKeywordWarning: version 0.2.0: keywords dropped: arm
 
-games-strategy/revenge-of-the-titans
-  MissingChksum: version 1.80.12: "revenge-of-the-titans-1.80.12-amd64.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.80.12: "revenge-of-the-titans-1.80.12-i386.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-WARNING pkgcore: metadata.dtd cannot be opened from
-               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
-               : refetch
-WARNING pkgcore: metadata.dtd cannot be opened from
-               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
-               : refetch
+lxqt-base/lxqt-about
+  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
 
-net-ftp/bareftp
-  DeprecatedEclass: version 0.3.9: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DeprecatedEclass: version 0.3.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+lxqt-base/lxqt-common
+  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
 
-net-ftp/ftp
-  DeprecatedEAPI: version 0.17-r7: uses deprecated EAPI: 0
+lxqt-base/lxqt-config
+  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
 
-net-ftp/ftpbase
-  DeprecatedEAPI: version 0.01-r2: uses deprecated EAPI: 0
+lxqt-base/lxqt-globalkeys
+  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
 
-net-ftp/netkit-ftpd
-  DeprecatedEAPI: version 0.17-r8: uses deprecated EAPI: 0
+lxqt-base/lxqt-meta
+  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
 
-net-ftp/oftpd
-  DeprecatedEAPI: version 0.3.7-r7: uses deprecated EAPI: 2
+lxqt-base/lxqt-notificationd
+  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
 
-net-ftp/oneclickftp
-  DeprecatedEAPI: version 0.5.1: uses deprecated EAPI: 2
+lxqt-base/lxqt-openssh-askpass
+  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
 
-net-ftp/scythia
-  DeprecatedEAPI: version 0.9.3_p2: uses deprecated EAPI: 3
+lxqt-base/lxqt-panel
+  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
 
-net-ftp/tlswrap
-  DeprecatedEAPI: version 1.04: uses deprecated EAPI: 0
+lxqt-base/lxqt-policykit
+  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
 
-net-ftp/tnftp
-  DeprecatedEAPI: version 20100108: uses deprecated EAPI: 2
+lxqt-base/lxqt-powermanagement
+  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
+
+lxqt-base/lxqt-qtplugin
+  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
+
+lxqt-base/lxqt-runner
+  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
+
+lxqt-base/lxqt-session
+  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch

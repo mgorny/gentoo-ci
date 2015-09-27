@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 10 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'media-sound/*' 'app-admin/*' 'www-apps/*' 'net-mail/*' 'dev-tex/*' 'sys-boot/*' 'net-fs/*' 'lxqt-base/*' 'x11-base/*' 'mate-base/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'media-sound/*' 'app-admin/*' 'www-apps/*' 'net-mail/*' 'games-puzzle/*' 'app-cdr/*' 'sci-visualization/*' 'app-benchmarks/*' 'x11-base/*' 'mate-base/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1215,183 +1215,157 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-dev-tex/aastex
-  DeprecatedEAPI: version 5.2: uses deprecated EAPI: 0
+games-puzzle/kiki
+  DeprecatedEclass: version 1.0.2-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-dev-tex/abntex
-  DeprecatedEAPI: version 0.9_beta2: uses deprecated EAPI: 3
+games-puzzle/neverball
+  DeprecatedEAPI: version 1.5.4: uses deprecated EAPI: 2
+  DroppedKeywordWarning: version 1.6.0: keywords dropped: ppc
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
 
-dev-tex/bera
-  DeprecatedEAPI: version 20040930: uses deprecated EAPI: 0
+app-cdr/b5i2iso
+  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 0
+  MetadataError: version 0.2: attr(fetchables): error- Metadata Exception: pkg ebuild src: app-cdr/b5i2iso-0.2, attr fetchables
+error: mirror://berlios/b5i2iso/b5i2iso.tar.bz2 is unparseable: uri mirror://berlios/b5i2iso/b5i2iso.tar.bz2 isn't a known mirror tier
+flagged token- mirror://berlios/b5i2iso/b5i2iso.tar.bz2
 
-dev-tex/cdcover
-  DeprecatedEAPI: version 1.3b: uses deprecated EAPI: 0
+app-cdr/backlite
+  SizeViolation: "files/backlite-1.0.3-ffmpeg-0.11.patch" exceeds 20k in size; 23775 bytes total
 
-dev-tex/cpp2latex
-  DeprecatedEAPI: version 2.3-r1: uses deprecated EAPI: 0
+app-cdr/bchunk
+  DeprecatedEAPI: version 1.2.0-r1: uses deprecated EAPI: 0
 
-dev-tex/crosstex
-  DeprecatedEclass: version 0.6: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.6: uses deprecated EAPI: 3
+app-cdr/bin2iso
+  DeprecatedEAPI: version 19b-r2: uses deprecated EAPI: 0
 
-dev-tex/csindex
-  DeprecatedEAPI: version 2.11c-r1: uses deprecated EAPI: 3
+app-cdr/burn-cd
+  DeprecatedEAPI: version 1.7.4: uses deprecated EAPI: 0
 
-dev-tex/culmus-latex
-  DeprecatedEAPI: version 0.7: uses deprecated EAPI: 2
-  NonExistentDeps: version 0.7: depset depends: nonexistent atoms [ <media-fonts/culmus-0.110 ]
+app-cdr/burncdda
+  DeprecatedEAPI: version 1.8.0: uses deprecated EAPI: 0
 
-dev-tex/currvita
-  DeprecatedEAPI: version 0.9i-r1: uses deprecated EAPI: 0
+app-cdr/burncenter
+  DeprecatedEAPI: version 3.2.1: uses deprecated EAPI: 0
 
-dev-tex/curve
-  DeprecatedEAPI: version 1.16: uses deprecated EAPI: 2
+app-cdr/ccd2iso
+  DeprecatedEAPI: version 0.3: uses deprecated EAPI: 0
 
-dev-tex/detex
-  DeprecatedEAPI: version 2.8-r1: uses deprecated EAPI: 0
+app-cdr/cdlabelgen
+  DeprecatedEAPI: version 4.0.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.1.0: uses deprecated EAPI: 2
 
-dev-tex/dot2tex
-  DeprecatedEclass: version 2.8.7: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 2.8.7: uses deprecated EAPI: 3
+app-cdr/cdrkit
+  DeprecatedEAPI: version 1.1.11: uses deprecated EAPI: 3
+  DroppedKeywordWarning: version 1.1.11-r2: keywords dropped: s390
 
-dev-tex/dot2texi
-  DeprecatedEAPI: version 3.0: uses deprecated EAPI: 0
+app-cdr/cue2toc
+  DeprecatedEAPI: version 0.4: uses deprecated EAPI: 0
 
-dev-tex/dvi2gr
-  DeprecatedEAPI: version 0.4: uses deprecated EAPI: 2
+app-cdr/cuecue
+  MetadataError: version 0.2.2-r1: attr(fetchables): error- Metadata Exception: pkg ebuild src: app-cdr/cuecue-0.2.2-r1, attr fetchables
+error: mirror://berlios/cuecue/cuecue-0.2.2.tar.gz is unparseable
+flagged token- uri mirror://berlios/cuecue/cuecue-0.2.2.tar.gz isn't a known mirror tier
 
-dev-tex/dvipost
-  DeprecatedEAPI: version 1.1-r2: uses deprecated EAPI: 2
+app-cdr/cuegen
+  DeprecatedEAPI: version 1.2.0: uses deprecated EAPI: 2
 
-dev-tex/ellipsis
-  DeprecatedEAPI: version 1.6: uses deprecated EAPI: 0
+app-cdr/cuetools
+  DeprecatedEAPI: version 1.3.1: uses deprecated EAPI: 0
+  MetadataError: version 1.3.1: attr(fetchables): error- Metadata Exception: pkg ebuild src: app-cdr/cuetools-1.3.1, attr fetchables
+error: mirror://berlios/cuetools/cuetools-1.3.1.tar.gz mirror://gentoo/cuetools-1.3.1-debian.patch.bz2 is unparseable: uri mirror://berlios/cuetools/cuetools-1.3.1.tar.gz isn't a known mirror tier
+flagged token- mirror://berlios/cuetools/cuetools-1.3.1.tar.gz
+  MetadataError: version 1.3.1-r2: attr(fetchables): error- Metadata Exception: pkg ebuild src: app-cdr/cuetools-1.3.1-r2, attr fetchables
+error: mirror://berlios/cuetools/cuetools-1.3.1.tar.gz mirror://gentoo/cuetools-1.3.1-debian.patch.bz2 is unparseable
+flagged token- uri mirror://berlios/cuetools/cuetools-1.3.1.tar.gz isn't a known mirror tier
+  DroppedKeywordWarning: version 1.3.1-r2: keywords dropped: ppc
 
-dev-tex/envlab
-  DeprecatedEAPI: version 1.2-r1: uses deprecated EAPI: 0
+app-cdr/daa2iso
+  DeprecatedEAPI: version 0.1.7e: uses deprecated EAPI: 2
 
-dev-tex/europecv
-  DeprecatedEAPI: version 20060424-r1: uses deprecated EAPI: 0
+app-cdr/disc-cover
+  DeprecatedEAPI: version 1.5.6: uses deprecated EAPI: 0
 
-dev-tex/floatflt
-  DeprecatedEAPI: version 1.31a: uses deprecated EAPI: 3
+app-cdr/dvd+rw-tools
+  DeprecatedEAPI: version 7.1-r1: uses deprecated EAPI: 3
 
-dev-tex/foiltex
-  DeprecatedEAPI: version 2.1.4b: uses deprecated EAPI: 0
+app-cdr/dvd95
+  DeprecatedEAPI: version 1.6_p0: uses deprecated EAPI: 2
 
-dev-tex/fundus
-  DeprecatedEAPI: version 19970826: uses deprecated EAPI: 0
+app-cdr/dvdshrink
+  DeprecatedEAPI: version 2.6.1_p10: uses deprecated EAPI: 2
 
-dev-tex/g-brief
-  DeprecatedEAPI: version 4.0.2: uses deprecated EAPI: 0
+app-cdr/extract-xiso
+  DeprecatedEAPI: version 2.5: uses deprecated EAPI: 0
 
-dev-tex/glossaries
-  DroppedKeywordWarning: version 4.12-r1: keywords dropped: ia64, sparc
+app-cdr/gaffitter
+  DeprecatedEAPI: version 0.6.0-r1: uses deprecated EAPI: 2
 
-dev-tex/harvard
-  DeprecatedEAPI: version 2.0.5: uses deprecated EAPI: 0
+app-cdr/gtkcdlabel
+  DeprecatedEclass: version 1.12: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.12: uses deprecated EAPI: 3
+  NonExistentDeps: version 1.12: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 1.12: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
 
-dev-tex/herm-pic
+app-cdr/iat
+  DeprecatedEAPI: version 0.1.7-r1: uses deprecated EAPI: 2
+  MetadataError: version 0.1.7-r1: attr(fetchables): error- Metadata Exception: pkg ebuild src: app-cdr/iat-0.1.7-r1, attr fetchables
+error: mirror://berlios/iat/iat-0.1.7.tar.bz2 is unparseable
+flagged token- uri mirror://berlios/iat/iat-0.1.7.tar.bz2 isn't a known mirror tier
+
+app-cdr/isomaster
+  DeprecatedEAPI: version 1.3.5: uses deprecated EAPI: 2
+
+app-cdr/k9copy
+  SizeViolation: "files/k9copy-2.3.8-ffmpeg-0.11.patch" exceeds 20k in size; 32790 bytes total
+
+app-cdr/mkcdtoc
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+
+app-cdr/mode2cdmaker
+  DeprecatedEAPI: version 1.5.1: uses deprecated EAPI: 0
+
+app-cdr/multicd
+  DeprecatedEAPI: version 1.7.5-r1: uses deprecated EAPI: 0
+
+app-cdr/mybashburn
   DeprecatedEAPI: version 1.0.2: uses deprecated EAPI: 0
 
-dev-tex/hlatex
-  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 3
+app-cdr/nrg2iso
+  DeprecatedEAPI: version 0.4-r1: uses deprecated EAPI: 0
 
-dev-tex/hyphen_show
-  DeprecatedEAPI: version 20000425: uses deprecated EAPI: 0
-
-dev-tex/isotope
-  DeprecatedEAPI: version 20040401: uses deprecated EAPI: 0
-
-dev-tex/ivritex
-  DeprecatedEAPI: version 1.1.2: uses deprecated EAPI: 0
-
-dev-tex/latex-calendar
-  DeprecatedEAPI: version 3.1: uses deprecated EAPI: 0
-
-dev-tex/latex-unicode
-  DeprecatedEAPI: version 20041017: uses deprecated EAPI: 0
-
-dev-tex/latex2html
-  DeprecatedEAPI: version 2008: uses deprecated EAPI: 0
-
-dev-tex/latexdiff
-  DeprecatedEAPI: version 0.5: uses deprecated EAPI: 0
-
-dev-tex/lazylist
-  DeprecatedEAPI: version 1.0a: uses deprecated EAPI: 0
-
-dev-tex/leaflet
-  DeprecatedEAPI: version 20041222: uses deprecated EAPI: 0
-
-dev-tex/lgrind
-  DeprecatedEAPI: version 3.67-r3: uses deprecated EAPI: 0
-
-dev-tex/newlfm
-  DeprecatedEAPI: version 8.3-r1: uses deprecated EAPI: 0
-
-dev-tex/notoccite
-  DeprecatedEAPI: version 20000720: uses deprecated EAPI: 0
-
-dev-tex/oesch
-  DeprecatedEAPI: version 20080712: uses deprecated EAPI: 0
-
-dev-tex/pdfannotextractor
-  DeprecatedEAPI: version 0.1l: uses deprecated EAPI: 3
-
-dev-tex/pgf
-  DeprecatedEAPI: version 2.10: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 3.0.0: uses deprecated EAPI: 0
-
-dev-tex/polytable
-  DeprecatedEAPI: version 0.8.2: uses deprecated EAPI: 0
-
-dev-tex/ppower4
-  DeprecatedEAPI: version 0.9.6: uses deprecated EAPI: 0
-
-dev-tex/prosper
-  DeprecatedEAPI: version 1.5-r1: uses deprecated EAPI: 0
-
-dev-tex/quotchap
-  DeprecatedEAPI: version 0.9f: uses deprecated EAPI: 0
-
-dev-tex/rcsinfo
-  DeprecatedEAPI: version 1.9: uses deprecated EAPI: 0
-
-dev-tex/revtex
-  DeprecatedEAPI: version 4.1_p2-r1: uses deprecated EAPI: 2
-
-dev-tex/rubber
-  DeprecatedEclass: version 1.1_p20090819: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 1.1_p20090819: uses deprecated EAPI: 3
-  NonExistentDeps: version 1.1_p20090819: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
-  NonExistentDeps: version 1.1_p20090819: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
-
-dev-tex/sketch
-  DeprecatedEAPI: version 0.3.7: uses deprecated EAPI: 0
-
-dev-tex/slatex
-  DeprecatedEAPI: version 20090928: uses deprecated EAPI: 3
-
-dev-tex/svninfo
-  DeprecatedEAPI: version 0.7.4: uses deprecated EAPI: 0
-
-dev-tex/texamator
-  DeprecatedEclass: version 1.7.5: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-
-dev-tex/texmfind
-  DeprecatedEAPI: version 2010.1: uses deprecated EAPI: 0
-
-dev-tex/texpower
-  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 0
-
-dev-tex/tipa
+app-cdr/poweriso
   DeprecatedEAPI: version 1.3: uses deprecated EAPI: 0
 
-dev-tex/translator
-  DeprecatedEAPI: version 1.00: uses deprecated EAPI: 0
+app-cdr/qmultirecord
+  DeprecatedEAPI: version 0.0.3: uses deprecated EAPI: 2
 
-dev-tex/xcolor
-  DeprecatedEAPI: version 2.11: uses deprecated EAPI: 0
+app-cdr/recorder
+  DeprecatedEclass: version 1.4.5: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+app-cdr/sync2cd
+  DeprecatedEclass: version 1.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.3: uses deprecated EAPI: 3
+
+app-cdr/uif2iso
+  DeprecatedEAPI: version 0.1.7c: uses deprecated EAPI: 0
+
+app-cdr/webcdwriter
+  DeprecatedEAPI: version 2.8.2-r2: uses deprecated EAPI: 0
+
+app-cdr/xbiso
+  DeprecatedEAPI: version 0.6.1: uses deprecated EAPI: 0
+
+app-cdr/xcdroast
+  DeprecatedEAPI: version 0.98_alpha16: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.98_alpha16-r1: uses deprecated EAPI: 2
+
+app-cdr/xdvdfs-tools
+  DeprecatedEAPI: version 2.1-r1: uses deprecated EAPI: 0
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
@@ -1399,159 +1373,84 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-sys-boot/aboot
-  DeprecatedEAPI: version 1.0_pre20040408-r3: uses deprecated EAPI: 0
+sci-visualization/ggobi
+  DeprecatedEAPI: version 2.1.8: uses deprecated EAPI: 2
 
-sys-boot/bootcreator
-  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 0
+sci-visualization/gri
+  DeprecatedEAPI: version 2.12.19: uses deprecated EAPI: 2
 
-sys-boot/colo
-  DeprecatedEAPI: version 1.22: uses deprecated EAPI: 0
+sci-visualization/kst
+  NonExistentDeps: version 2.0.7: depset depends: nonexistent atoms [ <dev-qt/qtgui-4.8.5:4 ]
+  NonExistentDeps: version 2.0.7: depset rdepends: nonexistent atoms [ <dev-qt/qtgui-4.8.5:4 ]
 
-sys-boot/cromwell-bin
-  DeprecatedEAPI: version 2.31: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.40: uses deprecated EAPI: 0
+sci-visualization/spyview
+  DroppedKeywordWarning: version 20130823: keywords dropped: amd64
 
-sys-boot/efibootmgr
-  DeprecatedEAPI: version 0.5.4: uses deprecated EAPI: 0
+sci-visualization/veusz
+  DeprecatedEclass: version 1.11: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.11: uses deprecated EAPI: 3
 
-sys-boot/elilo
-  DeprecatedEAPI: version 3.6_p20060314: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 3.10: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 3.12: uses deprecated EAPI: 0
+sci-visualization/xgraph
+  DeprecatedEAPI: version 12.1-r2: uses deprecated EAPI: 3
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
 
-sys-boot/gnu-efi
-  DeprecatedEAPI: version 3.0a-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 3.0g: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 3.0i: uses deprecated EAPI: 0
+app-benchmarks/acovea
+  DeprecatedEAPI: version 5.1.1-r1: uses deprecated EAPI: 2
 
-sys-boot/grub-static
-  DeprecatedEAPI: version 0.96-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.97: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.97-r6: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.97-r9: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.97-r10: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.97-r12: uses deprecated EAPI: 0
+app-benchmarks/bonnie
+  DeprecatedEAPI: version 2.0.6: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.0.6-r1: uses deprecated EAPI: 2
 
-sys-boot/lilo
-  DeprecatedEAPI: version 22.8-r2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 23.2-r1: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 23.2-r2: uses deprecated EAPI: 2
+app-benchmarks/bonnie++
+  DeprecatedEAPI: version 1.96: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.96-r1: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 1.97: uses deprecated EAPI: 2
 
-sys-boot/makebootfat
+app-benchmarks/contest
+  DeprecatedEAPI: version 0.61: uses deprecated EAPI: 0
+
+app-benchmarks/filebench
+  DeprecatedEAPI: version 1.4.9.1: uses deprecated EAPI: 0
+
+app-benchmarks/forkbomb
   DeprecatedEAPI: version 1.4: uses deprecated EAPI: 0
 
-sys-boot/mbr
-  DeprecatedEAPI: version 1.1.11: uses deprecated EAPI: 0
+app-benchmarks/iozone
+  DeprecatedEAPI: version 3.397: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 3.408: uses deprecated EAPI: 0
 
-sys-boot/mbr-gpt
-  DeprecatedEAPI: version 0.0.1: uses deprecated EAPI: 0
+app-benchmarks/jmeter
+  DeprecatedEAPI: version 2.0.1-r4: uses deprecated EAPI: 0
 
-sys-boot/milo
-  DeprecatedEAPI: version 2.4.18: uses deprecated EAPI: 0
+app-benchmarks/nbench
+  DeprecatedEAPI: version 2.2.3-r1: uses deprecated EAPI: 2
 
-sys-boot/netboot
-  DeprecatedEAPI: version 0.10.2: uses deprecated EAPI: 2
-
-sys-boot/nettrom
-  DeprecatedEAPI: version 2.3.3: uses deprecated EAPI: 0
-
-sys-boot/psoload
-  DeprecatedEAPI: version 2.0: uses deprecated EAPI: 0
-
-sys-boot/quik
-  DeprecatedEAPI: version 2.1.6: uses deprecated EAPI: 0
-
-sys-boot/raincoat
-  DeprecatedEAPI: version 0.5: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.11: uses deprecated EAPI: 0
-
-sys-boot/shlilo-lantank
-  DeprecatedEAPI: version 20040408: uses deprecated EAPI: 0
-
-sys-boot/silo
-  DeprecatedEAPI: version 1.4.14_p20100228: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.4.14_p20120226: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.4.14_p20120819: uses deprecated EAPI: 0
-
-sys-boot/syslinux
-  DeprecatedEAPI: version 3.86: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.07: uses deprecated EAPI: 0
-WARNING pkgcore: metadata.dtd cannot be opened from
-               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
-               : refetch
-WARNING pkgcore: metadata.dtd cannot be opened from
-               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
-               : refetch
-
-net-fs/davfs2
-  DeprecatedEAPI: version 1.4.5-r1: uses deprecated EAPI: 2
-
-net-fs/libnfs
+app-benchmarks/os-autoinst
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-net-fs/samba
-  DroppedKeywordWarning: version 3.6.25: keywords dropped: s390, sh
-  DroppedKeywordWarning: version 4.2.4-r1: keywords dropped: arm64, hppa
-  DroppedKeywordWarning: version 4.0.26-r1: keywords dropped: alpha, arm, ia64, mips, ppc, ppc64, sparc
+app-benchmarks/piozone
+  DeprecatedEAPI: version 1.0-r3: uses deprecated EAPI: 2
 
-net-fs/wdfs
-  DeprecatedEAPI: version 1.4.2: uses deprecated EAPI: 0
-WARNING pkgcore: metadata.dtd cannot be opened from
-               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
-               : refetch
-WARNING pkgcore: metadata.dtd cannot be opened from
-               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
-               : refetch
+app-benchmarks/pipebench
+  DeprecatedEAPI: version 0.40: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.40-r1: uses deprecated EAPI: 3
 
-lxqt-base/liblxqt
-  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
+app-benchmarks/stress
+  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 0
 
-lxqt-base/liblxqt-mount
-  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
+app-benchmarks/sysbench
+  DeprecatedEAPI: version 0.4.12-r1: uses deprecated EAPI: 2
 
-lxqt-base/libsysstat
-  DroppedKeywordWarning: version 0.2.0: keywords dropped: arm
+app-benchmarks/tiobench
+  DeprecatedEAPI: version 0.3.3-r2: uses deprecated EAPI: 0
 
-lxqt-base/lxqt-about
-  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
-
-lxqt-base/lxqt-common
-  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
-
-lxqt-base/lxqt-config
-  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
-
-lxqt-base/lxqt-globalkeys
-  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
-
-lxqt-base/lxqt-meta
-  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
-
-lxqt-base/lxqt-notificationd
-  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
-
-lxqt-base/lxqt-openssh-askpass
-  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
-
-lxqt-base/lxqt-panel
-  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
-
-lxqt-base/lxqt-policykit
-  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
-
-lxqt-base/lxqt-powermanagement
-  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
-
-lxqt-base/lxqt-qtplugin
-  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
-
-lxqt-base/lxqt-runner
-  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
-
-lxqt-base/lxqt-session
-  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
+app-benchmarks/volanomark
+  DeprecatedEAPI: version 2.5.0.9: uses deprecated EAPI: 0
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
