@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 15 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-ros/*' 'app-dicts/*' 'kde-base/*' 'kde-misc/*' 'sci-geosciences/*' 'games-emulation/*' 'dev-scheme/*' 'app-mobilephone/*' 'gnustep-base/*' 'app-officeext/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'media-plugins/*' 'app-dicts/*' 'kde-base/*' 'kde-misc/*' 'sci-geosciences/*' 'games-emulation/*' 'dev-scheme/*' 'app-mobilephone/*' 'gnustep-base/*' 'app-officeext/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -14,9 +14,138 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-dev-ros/roslaunch
-  ExecutableFile: "files/roscore.initd" has unnecessary executable bit
-  ExecutableFile: "files/roslaunch.initd" has unnecessary executable bit
+media-plugins/amb-plugins
+  DeprecatedEAPI: version 0.8.1: uses deprecated EAPI: 3
+
+media-plugins/audacious-plugins
+  DeprecatedEAPI: version 2.4.4-r1: uses deprecated EAPI: 3
+  DroppedKeywordWarning: version 3.6.2-r1: keywords dropped: alpha, ppc, sparc
+
+media-plugins/banshee-community-extensions
+  DeprecatedEclass: version 2.2.0: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEclass: version 2.4.0: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEclass: version 2.4.0-r1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+
+media-plugins/emotion_generic_players
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+media-plugins/evas_generic_loaders
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+media-plugins/fil-plugins
+  DeprecatedEAPI: version 0.3.0: uses deprecated EAPI: 0
+
+media-plugins/gimp-resynthesizer
+  DeprecatedEAPI: version 0.16: uses deprecated EAPI: 2
+
+media-plugins/gkrellmpc
+  DeprecatedEAPI: version 0.1_beta9-r1: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.1_beta10: uses deprecated EAPI: 2
+
+media-plugins/gmpc-discogs
+  DeprecatedEAPI: version 0.20.0: uses deprecated EAPI: 3
+
+media-plugins/gmpc-extraplaylist
+  DeprecatedEAPI: version 0.20.0: uses deprecated EAPI: 3
+
+media-plugins/gmpc-last-fm
+  DeprecatedEAPI: version 0.20.0: uses deprecated EAPI: 3
+
+media-plugins/gmpc-mdcover
+  DeprecatedEAPI: version 0.20.0: uses deprecated EAPI: 3
+
+media-plugins/gmpc-playlistsort
+  DeprecatedEAPI: version 0.20.0: uses deprecated EAPI: 3
+
+media-plugins/gmpc-shout
+  DeprecatedEAPI: version 0.20.0: uses deprecated EAPI: 3
+
+media-plugins/grilo-plugins
+  DroppedKeywordWarning: version 0.2.14: keywords dropped: alpha
+  DroppedKeywordWarning: version 0.2.13: keywords dropped: arm, ia64, sparc
+
+media-plugins/gst-plugins-dts
+  DroppedKeywordWarning: version 1.2.4-r1: keywords dropped: arm
+
+media-plugins/gst-plugins-dv
+  DroppedKeywordWarning: version 1.2.4-r1: keywords dropped: arm
+
+media-plugins/gst-plugins-ffmpeg
+  WhitespaceFound: version 0.10.13_p201211-r4: ebuild has trailing whitespace on line 63
+
+media-plugins/gst-plugins-libvisual
+  DroppedKeywordWarning: version 1.2.4-r1: keywords dropped: arm
+
+media-plugins/gst-plugins-meta
+  DroppedKeywordWarning: version 1.0-r3: keywords dropped: arm64
+
+media-plugins/gst-plugins-mplex
+  DroppedKeywordWarning: version 1.2.4-r1: keywords dropped: arm
+
+media-plugins/gst-plugins-shout2
+  DroppedKeywordWarning: version 1.2.4-r1: keywords dropped: sh
+
+media-plugins/gst-plugins-wavpack
+  DroppedKeywordWarning: version 1.2.4-r1: keywords dropped: arm
+
+media-plugins/imlib2_loaders
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+media-plugins/ir_lv2
+  DeprecatedEAPI: version 1.3: uses deprecated EAPI: 3
+
+media-plugins/kipi-plugins
+  NonExistentDeps: version 4.12.0: depset depends: nonexistent atoms [ >=kde-apps/libkgeomap-14.12.0:4 ]
+  NonExistentDeps: version 4.12.0: depset rdepends: nonexistent atoms [ >=kde-apps/libkgeomap-14.12.0:4 ]
+
+media-plugins/ladspa-bs2b
+  DeprecatedEAPI: version 0.9.1: uses deprecated EAPI: 0
+
+media-plugins/live
+  DeprecatedEAPI: version 2012.01.07: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 2012.09.13: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 2013.02.11: uses deprecated EAPI: 3
+
+media-plugins/mythplugins
+  DeprecatedEclass: version 0.26.0_p20130922: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 0.26.0_p20130922: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 0.26.0_p20130922: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 0.27_p20140321: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 0.27_p20140321: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 0.27_p20140321: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+
+media-plugins/npapi-vlc
+  DeprecatedEAPI: version 2.0.0: uses deprecated EAPI: 3
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
+
+media-plugins/rev-plugins
+  DeprecatedEAPI: version 0.3.1-r1: uses deprecated EAPI: 2
+
+media-plugins/swh-lv2
+  DeprecatedEAPI: version 1.0.15: uses deprecated EAPI: 2
+
+media-plugins/swh-plugins
+  SizeViolation: "files/swh-plugins-0.4.15-glibc-2.10.patch" exceeds 20k in size; 27458 bytes total
+
+media-plugins/vamp-aubio-plugins
+  DeprecatedEAPI: version 0.3.2c: uses deprecated EAPI: 0
+
+media-plugins/vamp-libxtract-plugins
+  DeprecatedEAPI: version 0.6.6.20121204: uses deprecated EAPI: 2
+
+media-plugins/vdr-streamdev
+  BadInsIntoDir: version 0.6.1: ebuild uses insinto /etc/conf.d on line 60
+
+media-plugins/vdr-xvdr
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+media-plugins/xbmc-addon-xvdr
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+media-plugins/xsynth-dssi
+  DeprecatedEAPI: version 0.9.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.9.4: uses deprecated EAPI: 0
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
