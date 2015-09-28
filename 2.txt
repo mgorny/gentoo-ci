@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 2 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-perl/*' 'x11-misc/*' 'x11-plugins/*' 'app-xemacs/*' 'games-arcade/*' 'mail-filter/*' 'net-firewall/*' 'app-forensics/*' 'dev-games/*' 'dev-ada/*' 'app-antivirus/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-perl/*' 'x11-misc/*' 'x11-plugins/*' 'app-xemacs/*' 'games-arcade/*' 'mail-filter/*' 'ros-meta/*' 'app-forensics/*' 'dev-games/*' 'dev-ada/*' 'app-antivirus/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1461,46 +1461,6 @@ WARNING pkgcore: metadata.dtd cannot be opened from
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
-
-net-firewall/arno-iptables-firewall
-  NonExistentDeps: version 2.0.1d-r2: depset rdepends: nonexistent atoms [ <sys-apps/coreutils-8.20 ]
-  NonExistentDeps: version 2.0.1e: depset rdepends: nonexistent atoms [ <sys-apps/coreutils-8.20 ]
-
-net-firewall/arptables
-  DeprecatedEAPI: version 0.0.3.4-r2: uses deprecated EAPI: 2
-
-net-firewall/conntrack-tools
-  DroppedKeywordWarning: version 1.4.3: keywords dropped: alpha
-
-net-firewall/dshieldpy
-  DeprecatedEclass: version 3.2-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-
-net-firewall/fwanalog
-  DeprecatedEAPI: version 0.6.4: uses deprecated EAPI: 0
-
-net-firewall/fwipsec
-  DeprecatedEAPI: version 0.4.2-r1: uses deprecated EAPI: 0
-
-net-firewall/ipkungfu
-  DeprecatedEAPI: version 0.5.2-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.6.1: uses deprecated EAPI: 0
-
-net-firewall/iptables
-  ExecutableFile: "files/iptables.init" has unnecessary executable bit
-
-net-firewall/nufw
-  NonExistentDeps: version 2.2.22-r1: depset depends: nonexistent atoms [ dev-libs/libprelude ]
-  NonExistentDeps: version 2.2.22-r1: depset rdepends: nonexistent atoms [ dev-libs/libprelude ]
-
-net-firewall/pftop
-  DeprecatedEAPI: version 0.5: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.7: uses deprecated EAPI: 0
-
-net-firewall/quicktables
-  DeprecatedEAPI: version 2.3: uses deprecated EAPI: 0
-
-net-firewall/shapecfg
-  DeprecatedEAPI: version 36: uses deprecated EAPI: 0
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
