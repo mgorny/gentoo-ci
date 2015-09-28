@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 8 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'net-misc/*' 'dev-lang/*' 'sci-biology/*' 'app-editors/*' 'dev-tex/*' 'mail-client/*' 'net-fs/*' 'net-ftp/*' 'xfce-base/*' 'games-roguelike/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'net-misc/*' 'dev-lang/*' 'dev-ml/*' 'app-editors/*' 'dev-tex/*' 'mail-client/*' 'net-fs/*' 'net-ftp/*' 'xfce-base/*' 'games-roguelike/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -671,221 +671,29 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-sci-biology/aaindex
-  DeprecatedEAPI: version 9.1: uses deprecated EAPI: 0
+dev-ml/dose3
+  DroppedKeywordWarning: version 4.0_rc3: keywords dropped: amd64
 
-sci-biology/amap
-  DeprecatedEAPI: version 2.2-r2: uses deprecated EAPI: 2
+dev-ml/extlib
+  DroppedKeywordWarning: version 1.7.0-r1: keywords dropped: ppc, x86
 
-sci-biology/arb
-  DeprecatedEAPI: version 5.1-r1: uses deprecated EAPI: 2
+dev-ml/lwt
+  DroppedKeywordWarning: version 2.4.6: keywords dropped: x86
 
-sci-biology/ariadne
-  DeprecatedEAPI: version 1.3-r1: uses deprecated EAPI: 0
+dev-ml/ocaml-autoconf
+  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 2
 
-sci-biology/beast-mcmc
-  DeprecatedEAPI: version 1.5.2: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 2
+dev-ml/ocaml-doc
+  DeprecatedEAPI: version 3.12: uses deprecated EAPI: 0
 
-sci-biology/biogrep
-  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.0-r1: uses deprecated EAPI: 3
+dev-ml/ocurl
+  DroppedKeywordWarning: version 0.7.4: keywords dropped: ppc
 
-sci-biology/biojava
-  DeprecatedEAPI: version 1.6: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 1.7: uses deprecated EAPI: 2
+dev-ml/pcre-ocaml
+  DeprecatedEAPI: version 6.2.5: uses deprecated EAPI: 2
 
-sci-biology/bioperl
-  DeprecatedEclass: version 9999-r1: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-sci-biology/bioperl-db
-  DeprecatedEclass: version 9999-r1: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-sci-biology/bioperl-network
-  DeprecatedEclass: version 9999-r1: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-sci-biology/bioperl-run
-  DeprecatedEclass: version 9999-r1: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-sci-biology/bioruby
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-sci-biology/biosql
-  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 0
-
-sci-biology/blat
-  DeprecatedEAPI: version 34: uses deprecated EAPI: 0
-
-sci-biology/blossoc
-  DeprecatedEAPI: version 1.4.0: uses deprecated EAPI: 2
-
-sci-biology/cd-hit
-  DeprecatedEAPI: version 4.5.1: uses deprecated EAPI: 3
-
-sci-biology/clustalw
-  DroppedKeywordWarning: version 2.1: keywords dropped: alpha, ppc, ppc64, sparc
-
-sci-biology/consed
-  DeprecatedEAPI: version 19-r2: uses deprecated EAPI: 3
-  MissingChksum: version 19-r2: "consed-19-sources.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 19-r2: "consed-19-linux.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-sci-biology/cufflinks
-  SizeViolation: "files/cufflinks-1.3.0-boost.patch" exceeds 20k in size; 52005 bytes total
-
-sci-biology/elph
-  DeprecatedEAPI: version 0.1.5: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 0
-
-sci-biology/fasta
-  DeprecatedEAPI: version 35.4.10: uses deprecated EAPI: 2
-
-sci-biology/gatk
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-sci-biology/gmap
-  DeprecatedEAPI: version 2011.10.07: uses deprecated EAPI: 2
-
-sci-biology/goby-cpp
-  SizeViolation: "files/Alignments.proto" exceeds 20k in size; 26192 bytes total
-
-sci-biology/hmmer
-  DeprecatedEAPI: version 2.3.2-r1: uses deprecated EAPI: 0
-  NonExistentDeps: version 2.3.2-r1: depset depends: nonexistent atoms [ sys-cluster/pvm ]
-  NonExistentDeps: version 2.3.2-r1: depset rdepends: nonexistent atoms [ sys-cluster/pvm ]
-  DeprecatedEAPI: version 2.3.2-r2: uses deprecated EAPI: 0
-  NonExistentDeps: version 2.3.2-r2: depset depends: nonexistent atoms [ sys-cluster/pvm ]
-  NonExistentDeps: version 2.3.2-r2: depset rdepends: nonexistent atoms [ sys-cluster/pvm ]
-  DroppedKeywordWarning: version 3.0: keywords dropped: alpha, ia64, ppc, ppc64, sparc
-
-sci-biology/iedera
-  DeprecatedEAPI: version 1.04: uses deprecated EAPI: 2
-
-sci-biology/iqpnni
-  DeprecatedEAPI: version 3.2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 3.3.1: uses deprecated EAPI: 0
-
-sci-biology/kalign
-  DeprecatedEAPI: version 2.03: uses deprecated EAPI: 0
-
-sci-biology/lagan
-  DeprecatedEAPI: version 2.0-r1: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 2.0-r2: uses deprecated EAPI: 2
-
-sci-biology/mammoth
-  MissingChksum: version 1.0-r1: "mammoth-1.0-src.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-sci-biology/maq
-  DeprecatedEAPI: version 0.7.1: uses deprecated EAPI: 0
-
-sci-biology/mauve
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 2
-
-sci-biology/mauvealigner
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 2
-
-sci-biology/meme
-  DeprecatedEclass: version 4.8.1-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-
-sci-biology/mosaik
-  DeprecatedEAPI: version 1.0.1367: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 1.0.1388: uses deprecated EAPI: 2
-
-sci-biology/mummer
-  DeprecatedEAPI: version 3.20: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 3.21: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 3.22-r1: uses deprecated EAPI: 3
-
-sci-biology/newick-utils
-  DeprecatedEAPI: version 1.3.0: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 1.5.0: uses deprecated EAPI: 2
-
-sci-biology/njplot
-  DeprecatedEAPI: version 2.3: uses deprecated EAPI: 2
-
-sci-biology/pals
-  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 2
-
-sci-biology/phrap
-  MissingChksum: version 1.080812-r1: "phrap-1.080812-distrib.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-sci-biology/phred
-  DeprecatedEAPI: version 071220: uses deprecated EAPI: 0
-  MissingChksum: version 071220: "phred-dist-071220.b-acd.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-sci-biology/phyml
-  DeprecatedEAPI: version 2.4.5-r2: uses deprecated EAPI: 2
-
-sci-biology/piler
-  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 2
-
-sci-biology/prints
-  DeprecatedEAPI: version 39.0: uses deprecated EAPI: 0
-
-sci-biology/prodigal
-  DeprecatedEAPI: version 2.50: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 2.60: uses deprecated EAPI: 2
-
-sci-biology/prosite
-  DeprecatedEAPI: version 19.36: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 20.36: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 20.52: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 20.72: uses deprecated EAPI: 0
-
-sci-biology/psipred
-  DeprecatedEAPI: version 3.1: uses deprecated EAPI: 3
-  NonExistentDeps: version 3.1: depset rdepends: nonexistent atoms [ sci-biology/ncbi-tools++ ]
-  DeprecatedEAPI: version 3.2: uses deprecated EAPI: 3
-  NonExistentDeps: version 3.2: depset rdepends: nonexistent atoms [ sci-biology/ncbi-tools++ ]
-  NonExistentDeps: version 3.2.1: depset rdepends: nonexistent atoms [ sci-biology/ncbi-tools++ ]
-  NonExistentDeps: version 3.3: depset rdepends: nonexistent atoms [ sci-biology/ncbi-tools++ ]
-  NonExistentDeps: version 3.4: depset rdepends: nonexistent atoms [ sci-biology/ncbi-tools++ ]
-  NonExistentDeps: version 3.5: depset rdepends: nonexistent atoms [ sci-biology/ncbi-tools++ ]
-
-sci-biology/rmblast
-  SizeViolation: "files/rmblast-1.2-gcc47.patch" exceeds 20k in size; 31795 bytes total
-
-sci-biology/rnaview
-  DeprecatedEAPI: version 20040713: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 20040713-r2: uses deprecated EAPI: 2
-
-sci-biology/samtools
-  DeprecatedEAPI: version 0.1.12: uses deprecated EAPI: 2
-
-sci-biology/sim4
-  DeprecatedEAPI: version 20030921: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 20030921-r1: uses deprecated EAPI: 0
-
-sci-biology/snpfile
-  DeprecatedEAPI: version 2.0.1: uses deprecated EAPI: 2
-
-sci-biology/tophat
-  DeprecatedEAPI: version 1.0.12: uses deprecated EAPI: 2
-
-sci-biology/transfac
-  DeprecatedEAPI: version 3.2: uses deprecated EAPI: 0
-
-sci-biology/treeviewx
-  DeprecatedEAPI: version 0.5.1-r2: uses deprecated EAPI: 2
-
-sci-biology/trnascan-se
-  DeprecatedEAPI: version 1.23-r2: uses deprecated EAPI: 3
-
-sci-biology/unafold
-  DeprecatedEAPI: version 3.8: uses deprecated EAPI: 3
-
-sci-biology/wgs-assembler
-  DeprecatedEAPI: version 5.4: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 6.1: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 7.0: uses deprecated EAPI: 2
-  DeprecatedEclass: version 7.0-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-
-sci-biology/wise
-  SizeViolation: "files/wise-2.4.0_alpha-cflags.patch" exceeds 20k in size; 27241 bytes total
-
-sci-biology/yass
-  DeprecatedEAPI: version 1.14: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 1.14-r1: uses deprecated EAPI: 2
+dev-ml/react
+  DroppedKeywordWarning: version 1.2.0: keywords dropped: x86
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
