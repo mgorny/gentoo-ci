@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 10 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'media-sound/*' 'app-admin/*' 'www-apps/*' 'net-mail/*' 'games-puzzle/*' 'gnome-base/*' 'sci-visualization/*' 'app-benchmarks/*' 'x11-base/*' 'mate-base/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'media-sound/*' 'app-admin/*' 'www-apps/*' 'net-mail/*' 'games-puzzle/*' 'gnome-base/*' 'games-rpg/*' 'app-benchmarks/*' 'x11-base/*' 'mate-base/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1251,25 +1251,43 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-sci-visualization/ggobi
-  DeprecatedEAPI: version 2.1.8: uses deprecated EAPI: 2
+games-rpg/arx-fatalis-data
+  MissingUri: version 1.21-r2: file setup_arx_fatalis.exe is unfetchable- no URI available, and RESTRICT=fetch isn't set
+  MissingUri: version 1.21-r3: file setup_arx_fatalis_2.0.0.7.exe is unfetchable- no URI available, and RESTRICT=fetch isn't set
 
-sci-visualization/gri
-  DeprecatedEAPI: version 2.12.19: uses deprecated EAPI: 2
+games-rpg/eternal-lands
+  DeprecatedEAPI: version 1.9.2: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 1.9.2-r1: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 1.9.3: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 1.9.3-r1: uses deprecated EAPI: 2
 
-sci-visualization/kst
-  NonExistentDeps: version 2.0.7: depset depends: nonexistent atoms [ <dev-qt/qtgui-4.8.5:4 ]
-  NonExistentDeps: version 2.0.7: depset rdepends: nonexistent atoms [ <dev-qt/qtgui-4.8.5:4 ]
+games-rpg/eternal-lands-bloodsucker
+  DeprecatedEAPI: version 3.0: uses deprecated EAPI: 2
 
-sci-visualization/spyview
-  DroppedKeywordWarning: version 20130823: keywords dropped: amd64
+games-rpg/eternal-lands-data
+  DeprecatedEAPI: version 1.9.2-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.9.3: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.9.3-r1: uses deprecated EAPI: 2
 
-sci-visualization/veusz
-  DeprecatedEclass: version 1.11: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 1.11: uses deprecated EAPI: 3
+games-rpg/nwmovies
+  DeprecatedEAPI: version 20090223.080954: uses deprecated EAPI: 2
 
-sci-visualization/xgraph
-  DeprecatedEAPI: version 12.1-r2: uses deprecated EAPI: 3
+games-rpg/nwn-cep
+  DeprecatedEAPI: version 1.68-r1: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 2.0: uses deprecated EAPI: 2
+
+games-rpg/nwn-penultima
+  DeprecatedEAPI: version 1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1-r1: uses deprecated EAPI: 0
+
+games-rpg/nwn-penultimarerolled
+  DeprecatedEAPI: version 1: uses deprecated EAPI: 0
+
+games-rpg/nwn-shadowlordsdreamcatcherdemon
+  DeprecatedEAPI: version 1: uses deprecated EAPI: 0
+
+games-rpg/sacred-gold
+  MissingChksum: version 1.0.01: "sacred-1.0-1.0.01-x86.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
