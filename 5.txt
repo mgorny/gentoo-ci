@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 5 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-libs/*' 'sci-libs/*' 'app-leechcraft/*' 'sci-mathematics/*' 'sys-auth/*' 'dev-cpp/*' 'net-dialup/*' 'net-nds/*' 'kde-plasma/*' 'net-news/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-libs/*' 'sci-libs/*' 'sys-libs/*' 'sci-mathematics/*' 'sys-auth/*' 'dev-cpp/*' 'net-dialup/*' 'net-nds/*' 'kde-plasma/*' 'net-news/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -757,221 +757,192 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-app-leechcraft/laretz
+sys-libs/csu
+  DeprecatedEAPI: version 79: uses deprecated EAPI: 3
+
+sys-libs/db
+  DeprecatedEAPI: version 1.85-r3: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 3.2.9_p2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.2.52_p5-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.3.29_p1-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.4.20_p4-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.5.20_p2-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.6.21_p4: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.7.25_p4: uses deprecated EAPI: 0
+  DroppedKeywordWarning: version 4.4.20_p4-r1: keywords dropped: alpha, hppa
+  DroppedKeywordWarning: version 5.1.29-r1: keywords dropped: mips
+
+sys-libs/e2fsprogs-libs
+  DeprecatedEAPI: version 1.41.7: uses deprecated EAPI: 2
+
+sys-libs/fortify-headers
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+sys-libs/gdbm
+  DeprecatedEAPI: version 1.8.3-r3: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.8.3-r4: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.9.1-r2: uses deprecated EAPI: 3
+
+sys-libs/glibc
+  DeprecatedEAPI: version 2.13-r4: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.14.1-r3: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.15-r3: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.16.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.17: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.18-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.19: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.19-r1: uses deprecated EAPI: 0
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DroppedKeywordWarning: version 2.22: keywords dropped: alpha, amd64, arm, arm64, hppa, ia64, m68k, mips, ppc, ppc64, s390, sh, sparc, x86
 
-app-leechcraft/lc-advancednotifications
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-app-leechcraft/lc-aggregator
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-app-leechcraft/lc-anhero
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-app-leechcraft/lc-auscrie
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-app-leechcraft/lc-azoth
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  NonExistentDeps: version 9999: depset depends: nonexistent atoms [ net-libs/tox ]
-  NonExistentDeps: version 9999: depset rdepends: nonexistent atoms [ net-libs/tox ]
-
-app-leechcraft/lc-bittorrent
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-app-leechcraft/lc-blasq
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-app-leechcraft/lc-blogique
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-app-leechcraft/lc-certmgr
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-app-leechcraft/lc-core
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-app-leechcraft/lc-cpuload
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-app-leechcraft/lc-cstp
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-app-leechcraft/lc-dbusmanager
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-app-leechcraft/lc-deadlyrics
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-app-leechcraft/lc-devmon
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-app-leechcraft/lc-dolozhee
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-app-leechcraft/lc-eleeminator
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-app-leechcraft/lc-fenet
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-app-leechcraft/lc-gacts
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-app-leechcraft/lc-glance
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-app-leechcraft/lc-gmailnotifier
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-app-leechcraft/lc-historyholder
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-app-leechcraft/lc-hotsensors
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-app-leechcraft/lc-hotstreams
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-app-leechcraft/lc-htthare
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-app-leechcraft/lc-imgaste
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-app-leechcraft/lc-intermutko
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-app-leechcraft/lc-kbswitch
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+sys-libs/gpm
+  DeprecatedEAPI: version 1.20.6: uses deprecated EAPI: 2
 
-app-leechcraft/lc-kinotify
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-app-leechcraft/lc-knowhow
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-app-leechcraft/lc-krigstask
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-app-leechcraft/lc-lackman
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-app-leechcraft/lc-lastfmscrobble
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-app-leechcraft/lc-laughty
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-app-leechcraft/lc-launchy
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-app-leechcraft/lc-lemon
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-app-leechcraft/lc-lhtr
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-app-leechcraft/lc-liznoo
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-app-leechcraft/lc-lmp
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-app-leechcraft/lc-mellonetray
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-app-leechcraft/lc-monocle
-  NonExistentDeps: version 0.6.60: depset depends: nonexistent atoms [ <app-text/ghostscript-gpl-9.07 ]
-  NonExistentDeps: version 0.6.60: depset rdepends: nonexistent atoms [ <app-text/ghostscript-gpl-9.07 ]
-  NonExistentDeps: version 0.6.65: depset depends: nonexistent atoms [ <app-text/ghostscript-gpl-9.07 ]
-  NonExistentDeps: version 0.6.65: depset rdepends: nonexistent atoms [ <app-text/ghostscript-gpl-9.07 ]
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-app-leechcraft/lc-musiczombie
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-app-leechcraft/lc-nacheku
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-app-leechcraft/lc-netstoremanager
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-app-leechcraft/lc-networkmonitor
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-app-leechcraft/lc-newlife
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+sys-libs/itx-bind
+  DeprecatedEAPI: version 0.1-r2: uses deprecated EAPI: 2
 
-app-leechcraft/lc-ooronee
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-app-leechcraft/lc-otlozhu
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+sys-libs/ldb
+  DeprecatedEclass: version 1.1.12: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 1.1.15: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DroppedKeywordWarning: version 1.1.17-r1: keywords dropped: sparc
 
-app-leechcraft/lc-pintab
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+sys-libs/libaal
+  DeprecatedEAPI: version 1.0.5: uses deprecated EAPI: 0
 
-app-leechcraft/lc-pogooglue
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+sys-libs/libacpi
+  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 2
+
+sys-libs/libavc1394
+  DeprecatedEAPI: version 0.5.3: uses deprecated EAPI: 0
+
+sys-libs/libcap-ng
+  DeprecatedEclass: version 0.6.6: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 0.7.3: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+sys-libs/libchipcard
+  DeprecatedEAPI: version 5.0.2: uses deprecated EAPI: 2
+
+sys-libs/libcxx
+  WhitespaceFound: version 0.0_p20130725: ebuild has leading whitespace on line 113
+  WhitespaceFound: version 0.0_p20131222: ebuild has leading whitespace on line 114
+  WhitespaceFound: version 0.0_p20140322: ebuild has leading whitespace on line 114
+  WhitespaceFound: version 3.6.0: ebuild has leading whitespace on line 115
+  WhitespaceFound: version 3.6.1: ebuild has leading whitespace on line 115
+  WhitespaceFound: version 3.6.2: ebuild has leading whitespace on line 115
+  WhitespaceFound: version 3.7.0: ebuild has leading whitespace on line 115
+  WhitespaceFound: version 9999: ebuild has leading whitespace on line 115
+  ExecutableFile: "files/prepare_snapshot.sh" has unnecessary executable bit
+
+sys-libs/libcxxrt
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  ExecutableFile: "files/prepare_snapshot.sh" has unnecessary executable bit
+
+sys-libs/libfreevec
+  DeprecatedEAPI: version 1.0.4: uses deprecated EAPI: 0
+
+sys-libs/libieee1284
+  DeprecatedEclass: version 0.2.11-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.2.11-r1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.2.11-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.2.11-r2: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.2.11-r3: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+sys-libs/librtas
+  DeprecatedEAPI: version 1.3.3: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.3.5: uses deprecated EAPI: 0
+
+sys-libs/libservicelog
+  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.1.11: uses deprecated EAPI: 0
+
+sys-libs/libspe2
+  DeprecatedEAPI: version 2.2.80_p95-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.3.0_p135: uses deprecated EAPI: 0
 
-app-leechcraft/lc-popishu
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+sys-libs/libstdc++-v3
+  DeprecatedEAPI: version 3.3.6: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 3.3.6-r1: uses deprecated EAPI: 0
 
-app-leechcraft/lc-poshuku
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+sys-libs/libstdc++-v3-bin
+  DeprecatedEAPI: version 3.3.6: uses deprecated EAPI: 0
 
-app-leechcraft/lc-qrosp
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+sys-libs/libtermcap-compat
+  DeprecatedEAPI: version 2.0.8-r2: uses deprecated EAPI: 0
 
-app-leechcraft/lc-rosenthal
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+sys-libs/libutempter
+  DeprecatedEAPI: version 1.1.5: uses deprecated EAPI: 0
 
-app-leechcraft/lc-sb2
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+sys-libs/libxcrypt
+  DeprecatedEAPI: version 2.0: uses deprecated EAPI: 0
 
-app-leechcraft/lc-scroblibre
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+sys-libs/lrmi
+  DeprecatedEAPI: version 0.10-r1: uses deprecated EAPI: 0
 
-app-leechcraft/lc-secman
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+sys-libs/lwp
+  DeprecatedEAPI: version 2.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.5: uses deprecated EAPI: 0
 
-app-leechcraft/lc-seekthru
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+sys-libs/mars
+  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 0
 
-app-leechcraft/lc-summary
+sys-libs/musl
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-app-leechcraft/lc-sysnotify
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+sys-libs/ncurses
+  MetadataError: version 5.9-r4: attr(rdepends): blocks itself
+  DoubleEmptyLine: version 5.9-r101: ebuild has unneeded empty line 172
 
-app-leechcraft/lc-tabsessmanager
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+sys-libs/newlib
+  DeprecatedEAPI: version 1.18.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.19.0: uses deprecated EAPI: 0
+  DroppedKeywordWarning: version 2.2.0.20150423: keywords dropped: arm, hppa, m68k, mips, ppc, ppc64, sh, sparc, x86
 
-app-leechcraft/lc-tabslist
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+sys-libs/nss-db
+  DeprecatedEAPI: version 2.2.3_pre1-r2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.2.3_pre1-r3: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.2.3_pre1-r4: uses deprecated EAPI: 0
 
-app-leechcraft/lc-touchstreams
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+sys-libs/openhpi
+  DeprecatedEAPI: version 2.12.0: uses deprecated EAPI: 0
 
-app-leechcraft/lc-tpi
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+sys-libs/openipmi
+  DeprecatedEAPI: version 1.3.18: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.4.12: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.4.14: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.4.28: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.0.11: uses deprecated EAPI: 0
+  DeprecatedEclass: version 2.0.16: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 2.0.16: uses deprecated EAPI: 0
+  DeprecatedEclass: version 2.0.16-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 2.0.16-r1: uses deprecated EAPI: 0
+  DeprecatedEclass: version 2.0.18: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 2.0.18: uses deprecated EAPI: 0
+  DroppedKeywordWarning: version 1.4.12: keywords dropped: amd64
 
-app-leechcraft/lc-vgrabber
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+sys-libs/readline
+  DeprecatedEAPI: version 4.3_p5: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 5.2_p14: uses deprecated EAPI: 0
+  DroppedKeywordWarning: version 7.0_alpha: keywords dropped: alpha, amd64, arm, arm64, hppa, ia64, m68k, mips, ppc, ppc64, s390, sh, sparc, x86
 
-app-leechcraft/lc-vrooby
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+sys-libs/rvm
+  DeprecatedEAPI: version 1.12: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.16: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.17: uses deprecated EAPI: 2
 
-app-leechcraft/lc-xproxy
+sys-libs/suacomp
+  DeprecatedEAPI: version 0.6.13: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 0.6.14: uses deprecated EAPI: 3
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-app-leechcraft/lc-xtazy
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+sys-libs/system-config-base
+  DeprecatedEAPI: version 1-r1: uses deprecated EAPI: 0
 
-app-leechcraft/liblaretz
+sys-libs/uclibc
+  DeprecatedEAPI: version 0.9.33.2-r15: uses deprecated EAPI: 0
+  DeprecatedEclass: version 0.9.33.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEAPI: version 0.9.33.9999: uses deprecated EAPI: 0
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 0
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
