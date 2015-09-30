@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 6 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-java/*' 'sci-libs/*' 'media-fonts/*' 'app-office/*' 'app-portage/*' 'sci-electronics/*' 'games-strategy/*' 'app-pda/*' 'kde-plasma/*' 'java-virtuals/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-java/*' 'sci-libs/*' 'media-fonts/*' 'app-office/*' 'app-portage/*' 'dev-cpp/*' 'games-strategy/*' 'app-pda/*' 'kde-plasma/*' 'java-virtuals/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1804,70 +1804,31 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-sci-electronics/drawtiming
-  DeprecatedEAPI: version 0.7.1: uses deprecated EAPI: 3
+dev-cpp/asio
+  DeprecatedEAPI: version 1.4.5: uses deprecated EAPI: 2
+  SizeViolation: "files/asio-1.4.8_declarations.patch" exceeds 20k in size; 29773 bytes total
 
-sci-electronics/electric
-  DeprecatedEAPI: version 8.09: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 8.11: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 9.02: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 9.03: uses deprecated EAPI: 0
+dev-cpp/ctemplate
+  DeprecatedEclass: version 2.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-sci-electronics/electronics-menu
-  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 3
+dev-cpp/gtest
+  DeprecatedEclass: version 1.6.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 1.6.0-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-sci-electronics/freehdl
-  DeprecatedEAPI: version 0.0.7: uses deprecated EAPI: 0
+dev-cpp/libbackend-elements
+  DeprecatedEAPI: version 1.7.2: uses deprecated EAPI: 2
 
-sci-electronics/geda-suite
-  DeprecatedEAPI: version 20110427: uses deprecated EAPI: 0
+dev-cpp/libfrontend-elements
+  DeprecatedEAPI: version 1.1.4: uses deprecated EAPI: 2
 
-sci-electronics/geda-xgsch2pcb
-  DeprecatedEclass: version 0.1.3-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.1.3-r2: uses deprecated EAPI: 3
+dev-cpp/libmcpp
+  DeprecatedEAPI: version 2.7.2-r1: uses deprecated EAPI: 3
 
-sci-electronics/ghdl
-  DeprecatedEAPI: version 0.29: uses deprecated EAPI: 3
+dev-cpp/tree
+  DeprecatedEAPI: version 2.65-r1: uses deprecated EAPI: 2
 
-sci-electronics/gnucap
-  DeprecatedEAPI: version 0.35.20091207: uses deprecated EAPI: 2
-
-sci-electronics/gplcver
-  DeprecatedEAPI: version 2.11a: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.12a: uses deprecated EAPI: 0
-
-sci-electronics/gresistor
-  DeprecatedEclass: version 0.0.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.0.1: uses deprecated EAPI: 3
-  NonExistentDeps: version 0.0.1: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
-  NonExistentDeps: version 0.0.1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
-  DeprecatedEclass: version 0.0.1-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  NonExistentDeps: version 0.0.1-r1: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
-  NonExistentDeps: version 0.0.1-r1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
-
-sci-electronics/gspiceui
-  DeprecatedEAPI: version 0.9.99: uses deprecated EAPI: 2
-
-sci-electronics/ngspice
-  DeprecatedEAPI: version 26: uses deprecated EAPI: 3
-
-sci-electronics/plcedit
-  DeprecatedEAPI: version 2.2.1: uses deprecated EAPI: 2
-
-sci-electronics/puff
-  DeprecatedEAPI: version 20100127: uses deprecated EAPI: 2
-
-sci-electronics/pulseview
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-sci-electronics/sigrok-cli
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-sci-electronics/spice
-  DeprecatedEAPI: version 3.5.5-r1: uses deprecated EAPI: 0
-
-sci-electronics/vbs
-  DeprecatedEAPI: version 1.4.0: uses deprecated EAPI: 2
+dev-cpp/xsd
+  SizeViolation: "files/3.3.0-boost-filesystem-v2-deprecation.patch" exceeds 20k in size; 30894 bytes total
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch

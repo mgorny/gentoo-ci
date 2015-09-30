@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 8 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'net-misc/*' 'dev-lang/*' 'dev-ml/*' 'app-editors/*' 'dev-tex/*' 'mail-client/*' 'net-fs/*' 'net-ftp/*' 'lxde-base/*' 'games-roguelike/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'net-misc/*' 'dev-lang/*' 'dev-ml/*' 'app-editors/*' 'dev-tex/*' 'sys-process/*' 'net-fs/*' 'net-ftp/*' 'lxde-base/*' 'games-roguelike/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -959,96 +959,95 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-mail-client/biabam
-  DeprecatedEAPI: version 0.9.7: uses deprecated EAPI: 0
+sys-process/acct
+  DeprecatedEAPI: version 6.5.5-r3: uses deprecated EAPI: 3
 
-mail-client/claws-mail-acpi-notifier
-  DeprecatedEAPI: version 1.0.28: uses deprecated EAPI: 0
+sys-process/anacron
+  DeprecatedEAPI: version 2.3-r2: uses deprecated EAPI: 0
+  ExecutableFile: "files/anacron.rc6" has unnecessary executable bit
 
-mail-client/claws-mail-address_keeper
-  DeprecatedEAPI: version 1.0.7: uses deprecated EAPI: 0
+sys-process/atop
+  DeprecatedEAPI: version 1.27_p3: uses deprecated EAPI: 3
 
-mail-client/claws-mail-archive
-  DeprecatedEAPI: version 0.6.13: uses deprecated EAPI: 0
+sys-process/audit
+  DeprecatedEclass: version 1.7.18: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.7.18: uses deprecated EAPI: 3
+  DeprecatedEclass: version 2.0.5: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 2.0.5: uses deprecated EAPI: 3
+  NonExistentDeps: version 2.0.5: depset depends: nonexistent atoms [ dev-libs/libprelude ]
+  NonExistentDeps: version 2.0.5: depset rdepends: nonexistent atoms [ dev-libs/libprelude ]
+  DeprecatedEclass: version 2.1.3-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 2.1.3-r1: uses deprecated EAPI: 3
+  NonExistentDeps: version 2.1.3-r1: depset depends: nonexistent atoms [ dev-libs/libprelude ]
+  NonExistentDeps: version 2.1.3-r1: depset rdepends: nonexistent atoms [ dev-libs/libprelude ]
+  NonExistentDeps: version 2.2.2-r2: depset depends: nonexistent atoms [ dev-libs/libprelude ]
+  NonExistentDeps: version 2.2.2-r2: depset rdepends: nonexistent atoms [ dev-libs/libprelude ]
+  NonExistentDeps: version 2.2.2-r3: depset depends: nonexistent atoms [ dev-libs/libprelude ]
+  NonExistentDeps: version 2.2.2-r3: depset rdepends: nonexistent atoms [ dev-libs/libprelude ]
 
-mail-client/claws-mail-att-remover
-  DeprecatedEAPI: version 1.0.15: uses deprecated EAPI: 0
+sys-process/bcron
+  DeprecatedEAPI: version 0.09: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.09-r2: uses deprecated EAPI: 2
 
-mail-client/claws-mail-attachwarner
-  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+sys-process/cronbase
+  DeprecatedEAPI: version 0.3.3: uses deprecated EAPI: 0
 
-mail-client/claws-mail-clamd
-  DeprecatedEAPI: version 3.5.5: uses deprecated EAPI: 0
+sys-process/cronie
+  BadInsIntoDir: version 1.5.0: ebuild uses insinto /etc/conf.d on line 52
+  BadInsIntoDir: version 1.5.0: ebuild uses insinto /etc/cron.hourly on line 75
 
-mail-client/claws-mail-fancy
-  DeprecatedEAPI: version 0.9.17: uses deprecated EAPI: 3
+sys-process/cronbase
+  ExecutableFile: "files/run-crons-0.3.3" has unnecessary executable bit
+  ExecutableFile: "files/run-crons-0.3.4" has unnecessary executable bit
+  ExecutableFile: "files/run-crons-0.3.5" has unnecessary executable bit
+  ExecutableFile: "files/run-crons-0.3.6" has unnecessary executable bit
+  ExecutableFile: "files/run-crons-0.3.7" has unnecessary executable bit
 
-mail-client/claws-mail-fetchinfo
-  DeprecatedEAPI: version 0.4.25: uses deprecated EAPI: 0
+sys-process/cronie
+  BadInsIntoDir: version 1.5.0-r1: ebuild uses insinto /etc/conf.d on line 52
+  BadInsIntoDir: version 1.5.0-r1: ebuild uses insinto /etc/cron.hourly on line 75
 
-mail-client/claws-mail-gtkhtml
-  DeprecatedEAPI: version 0.34: uses deprecated EAPI: 0
+sys-process/daemontools
+  DeprecatedEAPI: version 0.76-r7: uses deprecated EAPI: 0
 
-mail-client/claws-mail-mailmbox
-  DeprecatedEAPI: version 1.15: uses deprecated EAPI: 0
+sys-process/dcron
+  BadInsIntoDir: version 4.5-r1: ebuild uses insinto /etc/cron.d on line 38
 
-mail-client/claws-mail-newmail
-  DeprecatedEAPI: version 0.0.16: uses deprecated EAPI: 0
+sys-process/fuser-bsd
+  DeprecatedEAPI: version 1142334561: uses deprecated EAPI: 2
 
-mail-client/claws-mail-perl
-  DeprecatedEAPI: version 0.9.20: uses deprecated EAPI: 0
+sys-process/latencytop
+  DeprecatedEAPI: version 0.5: uses deprecated EAPI: 0
 
-mail-client/clawsker
-  DeprecatedEAPI: version 0.7.8: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.7.10: uses deprecated EAPI: 0
+sys-process/minit
+  DeprecatedEAPI: version 0.9.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.10: uses deprecated EAPI: 0
 
-mail-client/drac
-  DeprecatedEAPI: version 1.12-r1: uses deprecated EAPI: 0
-
-mail-client/etpan-ng
-  DeprecatedEAPI: version 0.7.1-r1: uses deprecated EAPI: 0
-
-mail-client/evolution
-  DroppedKeywordWarning: version 3.16.4: keywords dropped: alpha, arm, ia64, ppc, ppc64, sparc
-
-mail-client/mail-notification
-  SizeViolation: "files/mail-notification-aarch64.patch" exceeds 20k in size; 49364 bytes total
-
-mail-client/mailx
-  DeprecatedEAPI: version 8.1.2.20050715-r6: uses deprecated EAPI: 0
-
-mail-client/mailx-support
-  DeprecatedEAPI: version 20060102-r1: uses deprecated EAPI: 0
-
-mail-client/mutt
-  MetadataError: version 1.5.23-r5: attr(fetchables): error- Metadata Exception: pkg ebuild src: mail-client/mutt-1.5.23-r5, attr fetchables
-error: mirror://sourceforge/mutt/mutt-1.5.23.tar.gz mirror://bitbucket/mutt/mutt/downloads/mutt-1.5.23.tar.gz ftp://ftp.mutt.org/mutt/devel/mutt-1.5.23.tar.gz mirror://gentoo/mutt-1.5.23-gentoo-patches-r5.tar.bz2 https://dev.gentoo.org/~grobian/distfiles/mutt-1.5.23-gentoo-patches-r5.tar.bz2 is unparseable
-flagged token- uri mirror://bitbucket/mutt/mutt/downloads/mutt-1.5.23.tar.gz isn't a known mirror tier
-  MetadataError: version 1.5.23-r7: attr(fetchables): error- Metadata Exception: pkg ebuild src: mail-client/mutt-1.5.23-r7, attr fetchables
-error: mirror://sourceforge/mutt/mutt-1.5.23.tar.gz mirror://bitbucket/mutt/mutt/downloads/mutt-1.5.23.tar.gz ftp://ftp.mutt.org/mutt/devel/mutt-1.5.23.tar.gz mirror://gentoo/mutt-1.5.23-gentoo-patches-r7.tar.bz2 https://dev.gentoo.org/~grobian/distfiles/mutt-1.5.23-gentoo-patches-r7.tar.bz2 is unparseable
-flagged token- uri mirror://bitbucket/mutt/mutt/downloads/mutt-1.5.23.tar.gz isn't a known mirror tier
-  MetadataError: version 1.5.23-r8: attr(fetchables): error- Metadata Exception: pkg ebuild src: mail-client/mutt-1.5.23-r8, attr fetchables
-error: mirror://sourceforge/mutt/mutt-1.5.23.tar.gz mirror://bitbucket/mutt/mutt/downloads/mutt-1.5.23.tar.gz ftp://ftp.mutt.org/mutt/devel/mutt-1.5.23.tar.gz mirror://gentoo/mutt-1.5.23-gentoo-patches-r8.tar.bz2 https://dev.gentoo.org/~grobian/distfiles/mutt-1.5.23-gentoo-patches-r8.tar.bz2 is unparseable
-flagged token- uri mirror://bitbucket/mutt/mutt/downloads/mutt-1.5.23.tar.gz isn't a known mirror tier
-  MetadataError: version 1.5.24-r1: attr(fetchables): error- Metadata Exception: pkg ebuild src: mail-client/mutt-1.5.24-r1, attr fetchables
-error: mirror://sourceforge/mutt/mutt-1.5.24.tar.gz mirror://bitbucket/mutt/mutt/downloads/mutt-1.5.24.tar.gz ftp://ftp.mutt.org/pub/mutt/mutt-1.5.24.tar.gz mirror://gentoo/mutt-1.5.24-gentoo-patches-r1.tar.bz2 https://dev.gentoo.org/~grobian/distfiles/mutt-1.5.24-gentoo-patches-r1.tar.bz2 is unparseable
-flagged token- uri mirror://bitbucket/mutt/mutt/downloads/mutt-1.5.24.tar.gz isn't a known mirror tier
-
-mail-client/nail
-  DeprecatedEAPI: version 12.4: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 12.4-r2: uses deprecated EAPI: 3
-
-mail-client/nmh
-  DeprecatedEAPI: version 1.3-r3: uses deprecated EAPI: 2
-
-mail-client/pinepgp
-  DeprecatedEAPI: version 0.18.0-r1: uses deprecated EAPI: 0
-  NonExistentDeps: version 0.18.0-r1: depset depends: nonexistent atoms [ mail-client/pine ]
-  NonExistentDeps: version 0.18.0-r1: depset rdepends: nonexistent atoms [ mail-client/pine ]
-
-mail-client/trojita
+sys-process/numad
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DroppedKeywordWarning: version 0.5: keywords dropped: ppc
+
+sys-process/pidof-bsd
+  DeprecatedEAPI: version 20050501-r4: uses deprecated EAPI: 0
+
+sys-process/pkill-darwin
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 3
+
+sys-process/runit
+  BadInsIntoDir: version 2.1.1-r1: ebuild uses insinto /etc/env.d on line 61
+  DeprecatedEAPI: version 2.1.1-r1: uses deprecated EAPI: 3
+  BadInsIntoDir: version 2.1.2: ebuild uses insinto /etc/env.d on line 71
+
+sys-process/supervise-scripts
+  DeprecatedEAPI: version 4.0: uses deprecated EAPI: 2
+
+sys-process/unixtop
+  DeprecatedEAPI: version 3.8_beta1-r3: uses deprecated EAPI: 0
+
+sys-process/vixie-cron
+  DeprecatedEAPI: version 4.1-r14: uses deprecated EAPI: 0
+
+sys-process/watchpid
+  DeprecatedEAPI: version 0.1-r1: uses deprecated EAPI: 0
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
