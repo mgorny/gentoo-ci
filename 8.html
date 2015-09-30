@@ -54,7 +54,7 @@
 </pre></td></tr>
             <tr class="" id="l6"><td><a href="#l6"><span>6</span></a></td><td><pre>+ set +x
 </pre></td></tr>
-            <tr class="" id="l7"><td><a href="#l7"><span>7</span></a></td><td><pre>+ exec pkgcheck -r gentoo --reporter FancyReporter 'net-misc/*' 'dev-lang/*' 'dev-ml/*' 'app-editors/*' 'dev-tex/*' 'mail-client/*' 'net-fs/*' 'net-ftp/*' 'xfce-base/*' 'games-roguelike/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
+            <tr class="" id="l7"><td><a href="#l7"><span>7</span></a></td><td><pre>+ exec pkgcheck -r gentoo --reporter FancyReporter 'net-misc/*' 'dev-lang/*' 'dev-ml/*' 'app-editors/*' 'dev-tex/*' 'mail-client/*' 'net-fs/*' 'net-ftp/*' 'lxde-base/*' 'games-roguelike/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 </pre></td></tr>
             <tr class="" id="l8"><td><a href="#l8"><span>8</span></a></td><td><pre>/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
 </pre></td></tr>
@@ -2266,33 +2266,55 @@
 </pre></td></tr>
             <tr class="" id="l1112"><td><a href="#l1112"><span>1112</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1113"><td><a href="#l1113"><span>1113</span></a></td><td><pre>xfce-base/xfce4-session
+            <tr class="" id="l1113"><td><a href="#l1113"><span>1113</span></a></td><td><pre>lxde-base/lxde-meta
 </pre></td></tr>
-            <tr class="" id="l1114"><td><a href="#l1114"><span>1114</span></a></td><td><pre>  NonExistentDeps: version 4.10.1-r2: depset rdepends: nonexistent atoms [ gnome-extra/gnome-screensaver ]
+            <tr class="" id="l1114"><td><a href="#l1114"><span>1114</span></a></td><td><pre>  DeprecatedEAPI: version 0.5.5-r4: uses deprecated EAPI: 2
 </pre></td></tr>
-            <tr class="" id="l1115"><td><a href="#l1115"><span>1115</span></a></td><td><pre>  NonExistentDeps: version 4.12.1: depset rdepends: nonexistent atoms [ gnome-extra/gnome-screensaver ]
+            <tr class="" id="l1115"><td><a href="#l1115"><span>1115</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1116"><td><a href="#l1116"><span>1116</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
+            <tr class="" id="l1116"><td><a href="#l1116"><span>1116</span></a></td><td><pre>lxde-base/lxdm
 </pre></td></tr>
-            <tr class="" id="l1117"><td><a href="#l1117"><span>1117</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+            <tr class="" id="l1117"><td><a href="#l1117"><span>1117</span></a></td><td><pre>  DeprecatedEAPI: version 0.4.1-r9: uses deprecated EAPI: 2
 </pre></td></tr>
-            <tr class="" id="l1118"><td><a href="#l1118"><span>1118</span></a></td><td><pre>               : refetch
+            <tr class="" id="l1118"><td><a href="#l1118"><span>1118</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1119"><td><a href="#l1119"><span>1119</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
+            <tr class="" id="l1119"><td><a href="#l1119"><span>1119</span></a></td><td><pre>lxde-base/lxsession
 </pre></td></tr>
-            <tr class="" id="l1120"><td><a href="#l1120"><span>1120</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+            <tr class="" id="l1120"><td><a href="#l1120"><span>1120</span></a></td><td><pre>  DroppedKeywordWarning: version 0.4.9.2: keywords dropped: arm64
 </pre></td></tr>
-            <tr class="" id="l1121"><td><a href="#l1121"><span>1121</span></a></td><td><pre>               : refetch
+            <tr class="" id="l1121"><td><a href="#l1121"><span>1121</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1122"><td><a href="#l1122"><span>1122</span></a></td><td><pre>
+            <tr class="" id="l1122"><td><a href="#l1122"><span>1122</span></a></td><td><pre>lxde-base/lxtask
 </pre></td></tr>
-            <tr class="" id="l1123"><td><a href="#l1123"><span>1123</span></a></td><td><pre>games-roguelike/slashem
+            <tr class="" id="l1123"><td><a href="#l1123"><span>1123</span></a></td><td><pre>  DroppedKeywordWarning: version 0.1.6: keywords dropped: arm64
 </pre></td></tr>
-            <tr class="" id="l1124"><td><a href="#l1124"><span>1124</span></a></td><td><pre>  DeprecatedEAPI: version 0.0.772: uses deprecated EAPI: 0
+            <tr class="" id="l1124"><td><a href="#l1124"><span>1124</span></a></td><td><pre>
+</pre></td></tr>
+            <tr class="" id="l1125"><td><a href="#l1125"><span>1125</span></a></td><td><pre>lxde-base/lxterminal
+</pre></td></tr>
+            <tr class="" id="l1126"><td><a href="#l1126"><span>1126</span></a></td><td><pre>  DroppedKeywordWarning: version 0.2.0: keywords dropped: arm64
+</pre></td></tr>
+            <tr class="" id="l1127"><td><a href="#l1127"><span>1127</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
+</pre></td></tr>
+            <tr class="" id="l1128"><td><a href="#l1128"><span>1128</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+</pre></td></tr>
+            <tr class="" id="l1129"><td><a href="#l1129"><span>1129</span></a></td><td><pre>               : refetch
+</pre></td></tr>
+            <tr class="" id="l1130"><td><a href="#l1130"><span>1130</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
+</pre></td></tr>
+            <tr class="" id="l1131"><td><a href="#l1131"><span>1131</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+</pre></td></tr>
+            <tr class="" id="l1132"><td><a href="#l1132"><span>1132</span></a></td><td><pre>               : refetch
+</pre></td></tr>
+            <tr class="" id="l1133"><td><a href="#l1133"><span>1133</span></a></td><td><pre>
+</pre></td></tr>
+            <tr class="" id="l1134"><td><a href="#l1134"><span>1134</span></a></td><td><pre>games-roguelike/slashem
+</pre></td></tr>
+            <tr class="" id="l1135"><td><a href="#l1135"><span>1135</span></a></td><td><pre>  DeprecatedEAPI: version 0.0.772: uses deprecated EAPI: 0
 </pre></td></tr>
 
         </table>
 
-        <address>Generated based on results from 2015-09-30 11:10:20 UTC</address>
+        <address>Generated based on results from 2015-09-30 11:59:05 UTC</address>
     </body>
 </html>
