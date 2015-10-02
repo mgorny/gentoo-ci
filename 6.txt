@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 6 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-java/*' 'sci-libs/*' 'media-fonts/*' 'app-office/*' 'app-portage/*' 'dev-cpp/*' 'games-strategy/*' 'app-pda/*' 'kde-plasma/*' 'java-virtuals/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-java/*' 'sci-libs/*' 'media-fonts/*' 'app-office/*' 'app-portage/*' 'dev-cpp/*' 'games-strategy/*' 'app-pda/*' 'dev-lua/*' 'java-virtuals/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1938,9 +1938,26 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-kde-plasma/plasma-workspace
-  NonExistentDeps: version 5.4.1: depset depends: nonexistent atoms [ media-libs/prison:5 ]
-  NonExistentDeps: version 5.4.1: depset rdepends: nonexistent atoms [ media-libs/prison:5 ]
+dev-lua/luadoc
+  DeprecatedEAPI: version 3.0.1: uses deprecated EAPI: 0
+
+dev-lua/luaexpat
+  DroppedKeywordWarning: version 1.3.0: keywords dropped: mips
+
+dev-lua/luafilesystem
+  DroppedKeywordWarning: version 1.6.2: keywords dropped: sparc
+
+dev-lua/luasec
+  DeprecatedEAPI: version 0.4.1: uses deprecated EAPI: 2
+
+dev-lua/luasocket
+  DeprecatedEAPI: version 2.0.2: uses deprecated EAPI: 2
+
+dev-lua/luvit
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+dev-lua/toluapp
+  DeprecatedEAPI: version 1.0.93: uses deprecated EAPI: 2
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
