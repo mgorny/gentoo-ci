@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 7 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'media-libs/*' 'media-video/*' 'app-emacs/*' 'x11-themes/*' 'dev-embedded/*' 'sci-electronics/*' 'net-print/*' 'sys-firmware/*' 'mail-mta/*' 'games-simulation/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'media-libs/*' 'media-video/*' 'app-emacs/*' 'net-wireless/*' 'dev-embedded/*' 'sci-electronics/*' 'net-print/*' 'sys-firmware/*' 'mail-mta/*' 'games-simulation/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -817,226 +817,116 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-x11-themes/Tulliana
-  DeprecatedEAPI: version 2.0: uses deprecated EAPI: 0
+net-wireless/adm8211
+  DeprecatedEAPI: version 20060111: uses deprecated EAPI: 0
 
-x11-themes/audacious-themes
-  DeprecatedEAPI: version 0.0.4: uses deprecated EAPI: 0
+net-wireless/airsnort
+  DeprecatedEAPI: version 0.2.7e: uses deprecated EAPI: 0
 
-x11-themes/blueglass-xcursors
-  DeprecatedEAPI: version 0.4: uses deprecated EAPI: 0
+net-wireless/ap-utils
+  DeprecatedEAPI: version 1.4: uses deprecated EAPI: 0
 
-x11-themes/chameleon-xcursors
-  DeprecatedEAPI: version 0.5: uses deprecated EAPI: 3
+net-wireless/b43-fwcutter
+  DeprecatedEAPI: version 018: uses deprecated EAPI: 0
 
-x11-themes/claws-mail-themes
-  DeprecatedEAPI: version 20120129: uses deprecated EAPI: 0
+net-wireless/bcm43xx-fwcutter
+  DeprecatedEAPI: version 005: uses deprecated EAPI: 0
+  MetadataError: version 005: attr(fetchables): error- Metadata Exception: pkg ebuild src: net-wireless/bcm43xx-fwcutter-005, attr fetchables
+error: mirror://berlios/bcm43xx/bcm43xx-fwcutter-005.tar.bz2 is unparseable: uri mirror://berlios/bcm43xx/bcm43xx-fwcutter-005.tar.bz2 isn't a known mirror tier
+flagged token- mirror://berlios/bcm43xx/bcm43xx-fwcutter-005.tar.bz2
+  DeprecatedEAPI: version 006: uses deprecated EAPI: 0
+  MetadataError: version 006: attr(fetchables): error- Metadata Exception: pkg ebuild src: net-wireless/bcm43xx-fwcutter-006, attr fetchables
+error: mirror://berlios/bcm43xx/bcm43xx-fwcutter-006.tar.bz2 is unparseable: uri mirror://berlios/bcm43xx/bcm43xx-fwcutter-006.tar.bz2 isn't a known mirror tier
+flagged token- mirror://berlios/bcm43xx/bcm43xx-fwcutter-006.tar.bz2
 
-x11-themes/clearlooks-phenix
+net-wireless/blueman
+  DeprecatedEclass: version 1.23-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DroppedKeywordWarning: version 2.0: keywords dropped: ppc
+
+net-wireless/bss
+  DeprecatedEAPI: version 0.8: uses deprecated EAPI: 2
+
+net-wireless/chillispot
+  DeprecatedEAPI: version 1.1.0: uses deprecated EAPI: 0
+
+net-wireless/cpyrit-cuda
+  DeprecatedEclass: version 0.4.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 0.4.0: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  NonExistentDeps: version 0.4.0: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+
+net-wireless/cpyrit-opencl
+  DeprecatedEclass: version 0.4.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 0.4.0: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  NonExistentDeps: version 0.4.0: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+
+net-wireless/crda
+  DeprecatedEclass: version 1.1.2-r3: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 1.1.2-r4: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 1.1.3: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+net-wireless/gobi_loader
+  DeprecatedEAPI: version 0.7-r2: uses deprecated EAPI: 2
+
+net-wireless/gr-iqbal
+  DeprecatedEclass: version 0.36.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+net-wireless/hackrf-tools
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-x11-themes/commonbox-styles
-  DeprecatedEAPI: version 0.6: uses deprecated EAPI: 0
+net-wireless/irda-utils
+  DeprecatedEAPI: version 0.9.18-r3: uses deprecated EAPI: 0
 
-x11-themes/commonbox-styles-extra
-  DeprecatedEAPI: version 0.2-r2: uses deprecated EAPI: 0
+net-wireless/kismet
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-x11-themes/constantine-backgrounds
-  DeprecatedEAPI: version 12.1.1.4: uses deprecated EAPI: 3
+net-wireless/madwifi-ng
+  DeprecatedEAPI: version 0.9.3.3: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.9.4: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.9.4-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.9.4.4119.20100201: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.9.4.4133.20100621: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.9.4.4165.20110816: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.9.4.4180.20120502: uses deprecated EAPI: 2
 
-x11-themes/echo-icon-theme
-  DeprecatedEAPI: version 0.3.89.0_pre20081031: uses deprecated EAPI: 2
+net-wireless/madwifi-ng-tools
+  DeprecatedEAPI: version 0.9.3.3: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.9.4: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.9.4.4119.20100201: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.9.4.4133.20100621: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.9.4.4165.20110816: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.9.4.4180.20120502: uses deprecated EAPI: 2
 
-x11-themes/ethemes
-  DeprecatedEAPI: version 0.16.8.0.3: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.0.0: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 0
+net-wireless/openbsc
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-x11-themes/experience
-  DeprecatedEAPI: version 3.04: uses deprecated EAPI: 0
+net-wireless/openggsn
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-x11-themes/flatsvg
-  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
-
-x11-themes/fluxbox-styles-fluxmod
-  DeprecatedEAPI: version 20050128-r1: uses deprecated EAPI: 2
-
-x11-themes/fvwm-themes
-  DeprecatedEAPI: version 0.7.0: uses deprecated EAPI: 2
-
-x11-themes/fvwm-themes-extra
-  DeprecatedEAPI: version 0.7.0: uses deprecated EAPI: 0
-
-x11-themes/fvwm_icons
-  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
-
-x11-themes/fvwm_sounds
-  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
-
-x11-themes/gargantuan-icon-theme
-  DeprecatedEAPI: version 1.7: uses deprecated EAPI: 0
-
-x11-themes/gartoon
-  DeprecatedEAPI: version 0.5-r2: uses deprecated EAPI: 2
-
-x11-themes/gartoon-redux
-  DeprecatedEAPI: version 1.10: uses deprecated EAPI: 2
-
-x11-themes/gentoo-artwork-livecd
-  DeprecatedEAPI: version 2006.1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2007.0: uses deprecated EAPI: 0
-
-x11-themes/gentoo-xcursors
-  DeprecatedEAPI: version 0.3.1: uses deprecated EAPI: 0
-
-x11-themes/geramik
-  DeprecatedEAPI: version 0.27-r1: uses deprecated EAPI: 0
-
-x11-themes/gnome-colors-common
-  DeprecatedEAPI: version 5.5.1: uses deprecated EAPI: 2
-
-x11-themes/gnome-colors-themes
-  DeprecatedEAPI: version 5.5.1: uses deprecated EAPI: 2
-
-x11-themes/goddard-backgrounds
-  DeprecatedEAPI: version 13.0.0.3: uses deprecated EAPI: 3
-
-x11-themes/golden-xcursors
-  DeprecatedEAPI: version 0.8: uses deprecated EAPI: 0
-
-x11-themes/gtk-chtheme
-  DeprecatedEAPI: version 0.3.1-r2: uses deprecated EAPI: 3
-
-x11-themes/gtk-engines-experience
-  DeprecatedEAPI: version 0.10.4: uses deprecated EAPI: 3
-
-x11-themes/gtk-engines-quartz
-  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 3
-
-x11-themes/gtk-engines-xfce
-  DroppedKeywordWarning: version 3.2.0-r300: keywords dropped: arm64
-
-x11-themes/gtk-theme-switch
-  DeprecatedEAPI: version 2.1.0: uses deprecated EAPI: 2
-
-x11-themes/haematite-xcursors
-  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
-
-x11-themes/iceicons
-  DeprecatedEAPI: version 0.10.0: uses deprecated EAPI: 0
-
-x11-themes/icewm-themes
-  DeprecatedEAPI: version 0.0.1-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.0.2: uses deprecated EAPI: 0
-
-x11-themes/korilla
-  DeprecatedEAPI: version 1.3.5: uses deprecated EAPI: 0
-
-x11-themes/larry-backgrounds
-  DeprecatedEAPI: version 20110822: uses deprecated EAPI: 3
-
-x11-themes/laughlin-backgrounds
-  DeprecatedEAPI: version 14.1.0.3: uses deprecated EAPI: 3
-
-x11-themes/leonidas-backgrounds
-  DeprecatedEAPI: version 11.0.0.2: uses deprecated EAPI: 3
-
-x11-themes/lovelock-backgrounds
-  DeprecatedEAPI: version 14.91.1.1: uses deprecated EAPI: 3
-
-x11-themes/lush
-  DeprecatedEAPI: version 0.1.0-r2: uses deprecated EAPI: 0
-
-x11-themes/matchbox-themes-extra
+net-wireless/orinoco-fwutils
+  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 0
   DeprecatedEAPI: version 0.3: uses deprecated EAPI: 0
 
-x11-themes/murrine-themes
-  DeprecatedEAPI: version 0.98.0: uses deprecated EAPI: 2
+net-wireless/orinoco-usb
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 0
 
-x11-themes/noia
-  DeprecatedEAPI: version 1.0-r1: uses deprecated EAPI: 0
+net-wireless/osmobts
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-x11-themes/notify-osd-icons
-  DeprecatedEAPI: version 0.7: uses deprecated EAPI: 2
+net-wireless/osmocom-bb
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-x11-themes/nou-icon-theme
-  DeprecatedEAPI: version 09.02.08: uses deprecated EAPI: 0
+net-wireless/python-wifi
+  DeprecatedEclass: version 0.5.0-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.5.0-r1: uses deprecated EAPI: 3
+  MetadataError: version 0.5.0-r1: attr(fetchables): error- Metadata Exception: pkg ebuild src: net-wireless/python-wifi-0.5.0-r1, attr fetchables
+error: mirror://berlios/pythonwifi/python-wifi-0.5.0.tar.bz2 is unparseable
+flagged token- uri mirror://berlios/pythonwifi/python-wifi-0.5.0.tar.bz2 isn't a known mirror tier
 
-x11-themes/nuovo-icon-theme
-  DeprecatedEAPI: version 0.5: uses deprecated EAPI: 0
+net-wireless/rfswitch
+  DeprecatedEAPI: version 1.3: uses deprecated EAPI: 0
 
-x11-themes/nuvola
-  DeprecatedEAPI: version 1.0-r1: uses deprecated EAPI: 0
-
-x11-themes/obsidian-xcursors
-  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
-
-x11-themes/oxygen-molecule
-  DeprecatedEAPI: version 3.2: uses deprecated EAPI: 0
-
-x11-themes/pearlgrey-xcursors
-  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
-
-x11-themes/psi-themes
-  DeprecatedEAPI: version 0.9.3_p1-r2: uses deprecated EAPI: 2
-
-x11-themes/pulse-glass
-  DeprecatedEAPI: version 20100616: uses deprecated EAPI: 0
-
-x11-themes/sawfish-themes
-  DeprecatedEAPI: version 0.0.1-r3: uses deprecated EAPI: 0
-
-x11-themes/shiki-colors
-  NonExistentDeps: version 4.6: depset rdepends: nonexistent atoms [ x11-wm/metacity ]
-
-x11-themes/silver-xcursors
-  DeprecatedEAPI: version 0.4: uses deprecated EAPI: 0
-
-x11-themes/skinenigmang-logos
-  DeprecatedEAPI: version 20070214-r1: uses deprecated EAPI: 2
-
-x11-themes/slim-themes
-  DeprecatedEAPI: version 1.2.3a-r6: uses deprecated EAPI: 2
-
-x11-themes/solar-backgrounds
-  DeprecatedEAPI: version 0.92.0.5: uses deprecated EAPI: 3
-
-x11-themes/vanilla-dmz-aa-xcursors
-  DeprecatedEAPI: version 0.4: uses deprecated EAPI: 0
-
-x11-themes/vanilla-dmz-xcursors
-  DeprecatedEAPI: version 0.4: uses deprecated EAPI: 0
-
-x11-themes/vdrgraphtft-avp
-  NonExistentDeps: version 0.3.1: depset rdepends: nonexistent atoms [ media-plugins/vdr-graphtftng ]
-
-x11-themes/vdrgraphtft-deepblue
-  NonExistentDeps: version 0.3.1: depset rdepends: nonexistent atoms [ media-plugins/vdr-graphtftng ]
-
-x11-themes/vdrgraphtft-deeppurple
-  DeprecatedEAPI: version 0.3.2: uses deprecated EAPI: 2
-
-x11-themes/vdrgraphtft-poetter
-  DeprecatedEAPI: version 0.3.2: uses deprecated EAPI: 0
-
-x11-themes/verne-backgrounds
-  DeprecatedEAPI: version 15.91.0.1: uses deprecated EAPI: 3
-
-x11-themes/windowmaker-themes
-  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 0
-
-x11-themes/wm-icons
-  DeprecatedEAPI: version 0.4.0_pre1-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.4.0: uses deprecated EAPI: 0
-
-x11-themes/xcursor-neutral
-  DeprecatedEAPI: version 1.20: uses deprecated EAPI: 0
-
-x11-themes/xfce-gant-icon-theme
-  DeprecatedEAPI: version 3.9_p6: uses deprecated EAPI: 0
-
-x11-themes/yasis-icon-theme
-  DeprecatedEAPI: version 0.4.2: uses deprecated EAPI: 0
+net-wireless/rtl8180
+  DeprecatedEAPI: version 0.22_pre20050528: uses deprecated EAPI: 0
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
