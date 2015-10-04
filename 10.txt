@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 10 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'media-sound/*' 'app-admin/*' 'dev-vcs/*' 'net-mail/*' 'net-dns/*' 'gnome-base/*' 'games-rpg/*' 'app-benchmarks/*' 'x11-base/*' 'mate-base/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'media-sound/*' 'app-admin/*' 'dev-vcs/*' 'net-mail/*' 'games-puzzle/*' 'gnome-base/*' 'games-rpg/*' 'app-benchmarks/*' 'x11-base/*' 'mate-base/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1176,59 +1176,12 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-net-dns/avahi
-  DroppedKeywordWarning: version 0.6.31-r8: keywords dropped: m68k
+games-puzzle/kiki
+  DeprecatedEclass: version 1.0.2-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-net-dns/bind-dns-keygen
-  DeprecatedEAPI: version 9.3.2.39-r1: uses deprecated EAPI: 0
-
-net-dns/c-ares
-  DeprecatedEAPI: version 1.7.4: uses deprecated EAPI: 2
-  DroppedKeywordWarning: version 1.10.0: keywords dropped: arm64
-
-net-dns/dnrd
-  DeprecatedEAPI: version 2.20.3-r1: uses deprecated EAPI: 0
-
-net-dns/dnssec-check
-  DroppedKeywordWarning: version 2.1: keywords dropped: amd64, x86
-
-net-dns/dnssec-root
-  DeprecatedEAPI: version 20100715: uses deprecated EAPI: 0
-  WhitespaceFound: version 20150403: ebuild has trailing whitespace on line 13
-
-net-dns/hesinfo
-  DeprecatedEAPI: version 3.1.0: uses deprecated EAPI: 2
-
-net-dns/hesiod
-  DeprecatedEAPI: version 3.1.0: uses deprecated EAPI: 2
-
-net-dns/host
-  DeprecatedEAPI: version 20070128-r1: uses deprecated EAPI: 2
-
-net-dns/knot
-  DroppedKeywordWarning: version 2.0.0_beta: keywords dropped: amd64, x86
-
-net-dns/ldns-utils
-  DeprecatedEAPI: version 1.6.12: uses deprecated EAPI: 3
-
-net-dns/ndu
-  DeprecatedEAPI: version 0.4-r4: uses deprecated EAPI: 0
-
-net-dns/odsclient
-  DeprecatedEAPI: version 1.03-r1: uses deprecated EAPI: 2
-
-net-dns/tinystats
-  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 0
-
-net-dns/unbound
-  DroppedKeywordWarning: version 1.5.1-r2: keywords dropped: ia64, m68k, mips, s390, sh, sparc
-  DroppedKeywordWarning: version 1.5.4: keywords dropped: alpha
-
-net-dns/updatedd
-  DeprecatedEAPI: version 2.6: uses deprecated EAPI: 0
-
-net-dns/valtz
-  DeprecatedEAPI: version 0.7: uses deprecated EAPI: 0
+games-puzzle/neverball
+  DeprecatedEAPI: version 1.5.4: uses deprecated EAPI: 2
+  DroppedKeywordWarning: version 1.6.0: keywords dropped: ppc
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
