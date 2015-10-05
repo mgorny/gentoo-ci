@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 10 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'media-sound/*' 'app-admin/*' 'www-apps/*' 'x11-themes/*' 'games-puzzle/*' 'gnome-base/*' 'sci-visualization/*' 'app-benchmarks/*' 'x11-base/*' 'mate-base/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'media-sound/*' 'app-admin/*' 'www-apps/*' 'x11-themes/*' 'games-puzzle/*' 'gnome-base/*' 'dev-scheme/*' 'app-benchmarks/*' 'x11-base/*' 'mate-base/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1248,25 +1248,83 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-sci-visualization/ggobi
-  DeprecatedEAPI: version 2.1.8: uses deprecated EAPI: 2
+dev-scheme/bigloo
+  DeprecatedEAPI: version 3.0c_p4: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 3.4a_p3: uses deprecated EAPI: 3
 
-sci-visualization/gri
-  DeprecatedEAPI: version 2.12.19: uses deprecated EAPI: 2
+dev-scheme/chicken
+  DeprecatedEAPI: version 4.8.0.3-r1: uses deprecated EAPI: 3
 
-sci-visualization/kst
-  NonExistentDeps: version 2.0.7: depset depends: nonexistent atoms [ <dev-qt/qtgui-4.8.5:4 ]
-  NonExistentDeps: version 2.0.7: depset rdepends: nonexistent atoms [ <dev-qt/qtgui-4.8.5:4 ]
+dev-scheme/gauche-kakasi
+  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 0
 
-sci-visualization/spyview
-  DroppedKeywordWarning: version 20130823: keywords dropped: amd64
+dev-scheme/goosh
+  DeprecatedEAPI: version 1.3: uses deprecated EAPI: 0
 
-sci-visualization/veusz
-  DeprecatedEclass: version 1.11: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 1.11: uses deprecated EAPI: 3
+dev-scheme/greg
+  DeprecatedEAPI: version 2.0.0: uses deprecated EAPI: 3
 
-sci-visualization/xgraph
-  DeprecatedEAPI: version 12.1-r2: uses deprecated EAPI: 3
+dev-scheme/guile
+  DeprecatedEAPI: version 2.0.0: uses deprecated EAPI: 3
+  DroppedKeywordWarning: version 2.0.0: keywords dropped: alpha, arm, arm64, hppa, ia64, m68k, mips, ppc, ppc64, s390, sh, sparc, x86
+
+dev-scheme/guile-cairo
+  DeprecatedEAPI: version 1.4.0: uses deprecated EAPI: 2
+
+dev-scheme/guile-gnome-platform
+  DeprecatedEAPI: version 2.16.1: uses deprecated EAPI: 3
+
+dev-scheme/guile-gui
+  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 0
+
+dev-scheme/guile-lib
+  DeprecatedEAPI: version 0.1.9: uses deprecated EAPI: 3
+
+dev-scheme/hop
+  DeprecatedEAPI: version 2.0.1: uses deprecated EAPI: 2
+
+dev-scheme/ikarus
+  DeprecatedEAPI: version 0.0.3_p1870: uses deprecated EAPI: 3
+
+dev-scheme/jscheme
+  DeprecatedEAPI: version 7.2: uses deprecated EAPI: 3
+
+dev-scheme/kawa
+  DeprecatedEAPI: version 1.10: uses deprecated EAPI: 3
+
+dev-scheme/net-http
+  DeprecatedEAPI: version 0.3.1: uses deprecated EAPI: 0
+
+dev-scheme/racket
+  DroppedKeywordWarning: version 6.0.1: keywords dropped: ppc, ppc64
+
+dev-scheme/schemik
+  DeprecatedEAPI: version 1.2.40.0: uses deprecated EAPI: 2
+
+dev-scheme/schoca
+  DeprecatedEAPI: version 0.3.0: uses deprecated EAPI: 3
+
+dev-scheme/scm
+  DeprecatedEAPI: version 5.5.6: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 5.5.6-r1: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 5.5.6-r2: uses deprecated EAPI: 3
+
+dev-scheme/scmxlate
+  DeprecatedEAPI: version 20090410: uses deprecated EAPI: 3
+
+dev-scheme/sigscheme
+  DeprecatedEAPI: version 0.8.5: uses deprecated EAPI: 3
+
+dev-scheme/slib
+  DeprecatedEAPI: version 3.1.5-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 3.2.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 3.2.2: uses deprecated EAPI: 3
+
+dev-scheme/stklos
+  DeprecatedEAPI: version 1.10: uses deprecated EAPI: 3
+
+dev-scheme/termite
+  DeprecatedEAPI: version 0.15: uses deprecated EAPI: 3
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
