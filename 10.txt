@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 10 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'media-sound/*' 'app-admin/*' 'www-apps/*' 'net-mail/*' 'games-puzzle/*' 'gnome-base/*' 'sci-visualization/*' 'app-benchmarks/*' 'x11-base/*' 'mate-base/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'media-sound/*' 'app-admin/*' 'www-apps/*' 'x11-themes/*' 'games-puzzle/*' 'gnome-base/*' 'sci-visualization/*' 'app-benchmarks/*' 'x11-base/*' 'mate-base/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -988,217 +988,226 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-net-mail/Freemail
-  DeprecatedEclass: version 9999-r1: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+x11-themes/Tulliana
+  DeprecatedEAPI: version 2.0: uses deprecated EAPI: 0
 
-net-mail/altermime
-  DeprecatedEAPI: version 0.3.7: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.3.10: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.3.10-r1: uses deprecated EAPI: 2
+x11-themes/audacious-themes
+  DeprecatedEAPI: version 0.0.4: uses deprecated EAPI: 0
 
-net-mail/archivemail
-  DeprecatedEclass: version 0.9.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.9.0: uses deprecated EAPI: 3
+x11-themes/blueglass-xcursors
+  DeprecatedEAPI: version 0.4: uses deprecated EAPI: 0
 
-net-mail/asmail
-  DeprecatedEAPI: version 2.1: uses deprecated EAPI: 0
+x11-themes/chameleon-xcursors
+  DeprecatedEAPI: version 0.5: uses deprecated EAPI: 3
 
-net-mail/autorespond
-  DeprecatedEAPI: version 2.0.4: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.0.5: uses deprecated EAPI: 0
+x11-themes/claws-mail-themes
+  DeprecatedEAPI: version 20120129: uses deprecated EAPI: 0
 
-net-mail/bincimap
-  DeprecatedEAPI: version 1.2.13: uses deprecated EAPI: 0
+x11-themes/clearlooks-phenix
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-net-mail/checkpassword
-  DeprecatedEAPI: version 0.90-r2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.90-r3: uses deprecated EAPI: 0
+x11-themes/commonbox-styles
+  DeprecatedEAPI: version 0.6: uses deprecated EAPI: 0
 
-net-mail/checkpassword-pam
-  DeprecatedEAPI: version 0.99: uses deprecated EAPI: 0
+x11-themes/commonbox-styles-extra
+  DeprecatedEAPI: version 0.2-r2: uses deprecated EAPI: 0
 
-net-mail/checkpw
-  DeprecatedEAPI: version 1.02: uses deprecated EAPI: 0
+x11-themes/constantine-backgrounds
+  DeprecatedEAPI: version 12.1.1.4: uses deprecated EAPI: 3
 
-net-mail/cmd5checkpw
-  DeprecatedEAPI: version 0.30-r1: uses deprecated EAPI: 0
+x11-themes/echo-icon-theme
+  DeprecatedEAPI: version 0.3.89.0_pre20081031: uses deprecated EAPI: 2
 
-net-mail/courier-imap
-  DroppedKeywordWarning: version 4.16.0: keywords dropped: alpha, arm, ia64, mips, ppc, s390, sh, sparc
+x11-themes/ethemes
+  DeprecatedEAPI: version 0.16.8.0.3: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 0
 
-net-mail/courierpassd
-  DeprecatedEAPI: version 1.1.2: uses deprecated EAPI: 0
-  MissingChksum: version 1.1.2: "courierpassd-1.1.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+x11-themes/experience
+  DeprecatedEAPI: version 3.04: uses deprecated EAPI: 0
 
-net-mail/dot-forward
-  DeprecatedEAPI: version 0.71-r2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.71-r3: uses deprecated EAPI: 0
-
-net-mail/dovecot
-  DroppedKeywordWarning: version 2.2.16-r1: keywords dropped: mips, s390, sh, sparc
-
-net-mail/email
-  DeprecatedEAPI: version 2.5.0: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 3.0.5: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 3.1.2: uses deprecated EAPI: 0
-
-net-mail/eps
-  DeprecatedEAPI: version 1.7: uses deprecated EAPI: 3
-
-net-mail/ezmlm-idx
-  DeprecatedEAPI: version 6.0.0: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 7.0.0: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 7.0.0-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 7.0.0-r2: uses deprecated EAPI: 0
-
-net-mail/fastforward
-  DeprecatedEAPI: version 0.51-r1: uses deprecated EAPI: 0
-
-net-mail/gensig
-  DeprecatedEAPI: version 2.3: uses deprecated EAPI: 0
-
-net-mail/hotwayd
-  DeprecatedEAPI: version 0.8.4: uses deprecated EAPI: 0
-
-net-mail/libpst
-  DeprecatedEclass: version 0.6.55: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEclass: version 0.6.58: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEclass: version 0.6.59: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEclass: version 0.6.60: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEclass: version 0.6.61: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEclass: version 0.6.63: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEclass: version 0.6.64: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-
-net-mail/mailbase
-  DeprecatedEAPI: version 1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 0
-
-net-mail/mailfront
-  DeprecatedEAPI: version 0.88: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.98: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.12: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 1.16: uses deprecated EAPI: 2
-
-net-mail/mailman
-  DeprecatedEclass: version 2.1.20: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-
-net-mail/mailsync
-  DeprecatedEAPI: version 5.2.1: uses deprecated EAPI: 0
-
-net-mail/mailutils
-  DeprecatedEclass: version 2.99.98: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-
-net-mail/mlmmj
-  DeprecatedEAPI: version 1.2.17.1: uses deprecated EAPI: 0
-
-net-mail/mpack
-  DeprecatedEAPI: version 1.6-r3: uses deprecated EAPI: 3
-
-net-mail/nmzmail
-  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 2
-
-net-mail/pflogsumm
-  DeprecatedEAPI: version 1.1.5: uses deprecated EAPI: 0
-
-net-mail/popick
-  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 0
-
-net-mail/poppassd_ceti
-  DeprecatedEAPI: version 1.8.5-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.8.5-r2: uses deprecated EAPI: 0
-
-net-mail/qlogtools
-  DeprecatedEAPI: version 3.1: uses deprecated EAPI: 0
-
-net-mail/qmail-autoresponder
-  DeprecatedEAPI: version 0.97-r1: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.97-r2: uses deprecated EAPI: 2
-
-net-mail/qmail-lint
-  DeprecatedEAPI: version 0.55: uses deprecated EAPI: 0
-
-net-mail/qmail-notify
-  DeprecatedEAPI: version 0.93-r1: uses deprecated EAPI: 0
-
-net-mail/qmail-qfilter
-  DeprecatedEAPI: version 2.1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.1-r1: uses deprecated EAPI: 2
-
-net-mail/qmail-qsanity
-  DeprecatedEAPI: version 0.52: uses deprecated EAPI: 0
-
-net-mail/qmailadmin
-  DeprecatedEAPI: version 1.2.10: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.2.12: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.2.15: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.2.15-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.2.16: uses deprecated EAPI: 0
-  DroppedKeywordWarning: version 1.2.16: keywords dropped: ia64
-
-net-mail/qmailanalog
-  DeprecatedEAPI: version 0.70-r1: uses deprecated EAPI: 0
-
-net-mail/qmhandle
-  DeprecatedEAPI: version 1.2.0-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.3.2: uses deprecated EAPI: 0
-
-net-mail/qprint
+x11-themes/flatsvg
   DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
 
-net-mail/qtools
-  DeprecatedEAPI: version 0.56: uses deprecated EAPI: 0
+x11-themes/fluxbox-styles-fluxmod
+  DeprecatedEAPI: version 20050128-r1: uses deprecated EAPI: 2
 
-net-mail/queue-fix
-  DeprecatedEAPI: version 1.4-r2: uses deprecated EAPI: 0
+x11-themes/fvwm-themes
+  DeprecatedEAPI: version 0.7.0: uses deprecated EAPI: 2
 
-net-mail/queue-repair
-  DeprecatedEAPI: version 0.9.0: uses deprecated EAPI: 0
+x11-themes/fvwm-themes-extra
+  DeprecatedEAPI: version 0.7.0: uses deprecated EAPI: 0
 
-net-mail/randomsig
-  DeprecatedEAPI: version 1.10.0: uses deprecated EAPI: 0
+x11-themes/fvwm_icons
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
 
-net-mail/relay-ctrl
-  DeprecatedEAPI: version 3.1.1-r2: uses deprecated EAPI: 0
+x11-themes/fvwm_sounds
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
 
-net-mail/rss2email
-  DeprecatedEclass: version 2.71: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 2.71: uses deprecated EAPI: 2
+x11-themes/gargantuan-icon-theme
+  DeprecatedEAPI: version 1.7: uses deprecated EAPI: 0
 
-net-mail/safecat
-  DeprecatedEAPI: version 1.13: uses deprecated EAPI: 3
+x11-themes/gartoon
+  DeprecatedEAPI: version 0.5-r2: uses deprecated EAPI: 2
 
-net-mail/signify
-  DeprecatedEAPI: version 1.14: uses deprecated EAPI: 0
+x11-themes/gartoon-redux
+  DeprecatedEAPI: version 1.10: uses deprecated EAPI: 2
 
-net-mail/spamcup
-  DeprecatedEAPI: version 1.09: uses deprecated EAPI: 0
-  NonExistentDeps: version 1.09: depset depends: nonexistent atoms [ <dev-perl/libwww-perl-6 ]
-  NonExistentDeps: version 1.09: depset rdepends: nonexistent atoms [ <dev-perl/libwww-perl-6 ]
+x11-themes/gentoo-artwork-livecd
+  DeprecatedEAPI: version 2006.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2007.0: uses deprecated EAPI: 0
 
-net-mail/swaks
-  DeprecatedEAPI: version 20130209.0: uses deprecated EAPI: 0
+x11-themes/gentoo-xcursors
+  DeprecatedEAPI: version 0.3.1: uses deprecated EAPI: 0
 
-net-mail/vacation
-  DeprecatedEAPI: version 1.2.7.0: uses deprecated EAPI: 0
+x11-themes/geramik
+  DeprecatedEAPI: version 0.27-r1: uses deprecated EAPI: 0
 
-net-mail/vchkuser
-  DeprecatedEAPI: version 0.3.3: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.4: uses deprecated EAPI: 3
+x11-themes/gnome-colors-common
+  DeprecatedEAPI: version 5.5.1: uses deprecated EAPI: 2
 
-net-mail/vpopmail
-  BadInsIntoDir: version 5.4.16: ebuild uses insinto /etc/cron.hourly on line 167
-  DeprecatedEAPI: version 5.4.16: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 5.4.30-r1: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 5.4.30-r2: uses deprecated EAPI: 2
+x11-themes/gnome-colors-themes
+  DeprecatedEAPI: version 5.5.1: uses deprecated EAPI: 2
 
-net-mail/vqadmin
-  DeprecatedEAPI: version 2.3.6: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.3.7: uses deprecated EAPI: 0
+x11-themes/goddard-backgrounds
+  DeprecatedEAPI: version 13.0.0.3: uses deprecated EAPI: 3
 
-net-mail/yosucker
-  DeprecatedEAPI: version 73: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 75: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 77: uses deprecated EAPI: 0
+x11-themes/golden-xcursors
+  DeprecatedEAPI: version 0.8: uses deprecated EAPI: 0
+
+x11-themes/gtk-chtheme
+  DeprecatedEAPI: version 0.3.1-r2: uses deprecated EAPI: 3
+
+x11-themes/gtk-engines-experience
+  DeprecatedEAPI: version 0.10.4: uses deprecated EAPI: 3
+
+x11-themes/gtk-engines-quartz
+  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 3
+
+x11-themes/gtk-engines-xfce
+  DroppedKeywordWarning: version 3.2.0-r300: keywords dropped: arm64
+
+x11-themes/gtk-theme-switch
+  DeprecatedEAPI: version 2.1.0: uses deprecated EAPI: 2
+
+x11-themes/haematite-xcursors
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+
+x11-themes/iceicons
+  DeprecatedEAPI: version 0.10.0: uses deprecated EAPI: 0
+
+x11-themes/icewm-themes
+  DeprecatedEAPI: version 0.0.1-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.0.2: uses deprecated EAPI: 0
+
+x11-themes/korilla
+  DeprecatedEAPI: version 1.3.5: uses deprecated EAPI: 0
+
+x11-themes/larry-backgrounds
+  DeprecatedEAPI: version 20110822: uses deprecated EAPI: 3
+
+x11-themes/laughlin-backgrounds
+  DeprecatedEAPI: version 14.1.0.3: uses deprecated EAPI: 3
+
+x11-themes/leonidas-backgrounds
+  DeprecatedEAPI: version 11.0.0.2: uses deprecated EAPI: 3
+
+x11-themes/lovelock-backgrounds
+  DeprecatedEAPI: version 14.91.1.1: uses deprecated EAPI: 3
+
+x11-themes/lush
+  DeprecatedEAPI: version 0.1.0-r2: uses deprecated EAPI: 0
+
+x11-themes/matchbox-themes-extra
+  DeprecatedEAPI: version 0.3: uses deprecated EAPI: 0
+
+x11-themes/murrine-themes
+  DeprecatedEAPI: version 0.98.0: uses deprecated EAPI: 2
+
+x11-themes/noia
+  DeprecatedEAPI: version 1.0-r1: uses deprecated EAPI: 0
+
+x11-themes/notify-osd-icons
+  DeprecatedEAPI: version 0.7: uses deprecated EAPI: 2
+
+x11-themes/nou-icon-theme
+  DeprecatedEAPI: version 09.02.08: uses deprecated EAPI: 0
+
+x11-themes/nuovo-icon-theme
+  DeprecatedEAPI: version 0.5: uses deprecated EAPI: 0
+
+x11-themes/nuvola
+  DeprecatedEAPI: version 1.0-r1: uses deprecated EAPI: 0
+
+x11-themes/obsidian-xcursors
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+
+x11-themes/oxygen-molecule
+  DeprecatedEAPI: version 3.2: uses deprecated EAPI: 0
+
+x11-themes/pearlgrey-xcursors
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+
+x11-themes/psi-themes
+  DeprecatedEAPI: version 0.9.3_p1-r2: uses deprecated EAPI: 2
+
+x11-themes/pulse-glass
+  DeprecatedEAPI: version 20100616: uses deprecated EAPI: 0
+
+x11-themes/sawfish-themes
+  DeprecatedEAPI: version 0.0.1-r3: uses deprecated EAPI: 0
+
+x11-themes/shiki-colors
+  NonExistentDeps: version 4.6: depset rdepends: nonexistent atoms [ x11-wm/metacity ]
+
+x11-themes/silver-xcursors
+  DeprecatedEAPI: version 0.4: uses deprecated EAPI: 0
+
+x11-themes/skinenigmang-logos
+  DeprecatedEAPI: version 20070214-r1: uses deprecated EAPI: 2
+
+x11-themes/slim-themes
+  DeprecatedEAPI: version 1.2.3a-r6: uses deprecated EAPI: 2
+
+x11-themes/solar-backgrounds
+  DeprecatedEAPI: version 0.92.0.5: uses deprecated EAPI: 3
+
+x11-themes/vanilla-dmz-aa-xcursors
+  DeprecatedEAPI: version 0.4: uses deprecated EAPI: 0
+
+x11-themes/vanilla-dmz-xcursors
+  DeprecatedEAPI: version 0.4: uses deprecated EAPI: 0
+
+x11-themes/vdrgraphtft-avp
+  NonExistentDeps: version 0.3.1: depset rdepends: nonexistent atoms [ media-plugins/vdr-graphtftng ]
+
+x11-themes/vdrgraphtft-deepblue
+  NonExistentDeps: version 0.3.1: depset rdepends: nonexistent atoms [ media-plugins/vdr-graphtftng ]
+
+x11-themes/vdrgraphtft-deeppurple
+  DeprecatedEAPI: version 0.3.2: uses deprecated EAPI: 2
+
+x11-themes/vdrgraphtft-poetter
+  DeprecatedEAPI: version 0.3.2: uses deprecated EAPI: 0
+
+x11-themes/verne-backgrounds
+  DeprecatedEAPI: version 15.91.0.1: uses deprecated EAPI: 3
+
+x11-themes/windowmaker-themes
+  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 0
+
+x11-themes/wm-icons
+  DeprecatedEAPI: version 0.4.0_pre1-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.4.0: uses deprecated EAPI: 0
+
+x11-themes/xcursor-neutral
+  DeprecatedEAPI: version 1.20: uses deprecated EAPI: 0
+
+x11-themes/xfce-gant-icon-theme
+  DeprecatedEAPI: version 3.9_p6: uses deprecated EAPI: 0
+
+x11-themes/yasis-icon-theme
+  DeprecatedEAPI: version 0.4.2: uses deprecated EAPI: 0
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
