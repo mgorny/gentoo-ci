@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 5 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-libs/*' 'net-libs/*' 'sys-libs/*' 'app-office/*' 'sys-auth/*' 'dev-cpp/*' 'net-dialup/*' 'net-nds/*' 'mail-mta/*' 'net-news/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-libs/*' 'net-libs/*' 'sys-libs/*' 'app-office/*' 'sys-auth/*' 'www-servers/*' 'net-dialup/*' 'net-nds/*' 'mail-mta/*' 'net-news/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1125,31 +1125,39 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-dev-cpp/asio
-  DeprecatedEAPI: version 1.4.5: uses deprecated EAPI: 2
-  SizeViolation: "files/asio-1.4.8_declarations.patch" exceeds 20k in size; 29773 bytes total
+www-servers/fnord
+  DeprecatedEAPI: version 1.10-r2: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 1.11: uses deprecated EAPI: 3
 
-dev-cpp/ctemplate
-  DeprecatedEclass: version 2.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+www-servers/lighttpd
+  SizeViolation: "files/lighttpd-1.4.29-mod_uploadprogress.patch" exceeds 20k in size; 22472 bytes total
 
-dev-cpp/gtest
-  DeprecatedEclass: version 1.6.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEclass: version 1.6.0-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+www-servers/monkeyd
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-dev-cpp/libbackend-elements
-  DeprecatedEAPI: version 1.7.2: uses deprecated EAPI: 2
+www-servers/pound
+  DeprecatedEAPI: version 2.6: uses deprecated EAPI: 2
 
-dev-cpp/libfrontend-elements
-  DeprecatedEAPI: version 1.1.4: uses deprecated EAPI: 2
+www-servers/servefile
+  DeprecatedEclass: version 0.4.2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 0.4.2: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 0.4.2: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 0.4.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 0.4.3: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 0.4.3: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
 
-dev-cpp/libmcpp
-  DeprecatedEAPI: version 2.7.2-r1: uses deprecated EAPI: 3
+www-servers/thttpd
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-dev-cpp/tree
-  DeprecatedEAPI: version 2.65-r1: uses deprecated EAPI: 2
+www-servers/tomcat
+  DroppedKeywordWarning: version 8.0.23-r2: keywords dropped: ppc, ppc64
 
-dev-cpp/xsd
-  SizeViolation: "files/3.3.0-boost-filesystem-v2-deprecation.patch" exceeds 20k in size; 30894 bytes total
+www-servers/tornado
+  DroppedKeywordWarning: version 4.2.1: keywords dropped: ppc
+
+www-servers/xsp
+  WhitespaceFound: version 2014.12-r2014120900: ebuild has trailing whitespace on lines 82, 84
+  MetadataError: version 2014.12-r2014120900: attr(iuse): iuse unknown flags: [ net40, net35, net45 ]
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
