@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 12 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'app-text/*' 'x11-libs/*' 'app-crypt/*' 'www-client/*' 'xfce-extra/*' 'ros-meta/*' 'games-rpg/*' 'sys-infiniband/*' 'app-laptop/*' 'games-sports/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'app-text/*' 'x11-libs/*' 'app-crypt/*' 'x11-apps/*' 'xfce-extra/*' 'ros-meta/*' 'games-rpg/*' 'sys-infiniband/*' 'app-laptop/*' 'games-sports/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -736,47 +736,52 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-www-client/chromium
-  DroppedKeywordWarning: version 47.0.2522.1-r1: keywords dropped: arm
+x11-apps/bdftopcf
+  DroppedKeywordWarning: version 1.0.5: keywords dropped: arm64
 
-www-client/ck4up
-  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 0
+x11-apps/fusion-icon
+  DeprecatedEclass: version 0.1-r2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 0.1-r3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-www-client/fetch
-  DeprecatedEAPI: version 1.0-r1: uses deprecated EAPI: 0
+x11-apps/iceauth
+  DroppedKeywordWarning: version 1.0.7: keywords dropped: arm64
 
-www-client/jumanji
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+x11-apps/python-whiteboard
+  DeprecatedEclass: version 20101012: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 20101012: uses deprecated EAPI: 3
 
-www-client/luakit
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+x11-apps/scripts
+  DeprecatedEAPI: version 1.0.1-r1: uses deprecated EAPI: 3
 
-www-client/opera
-  DroppedKeywordWarning: version 32.0.1948.69: keywords dropped: x86
+x11-apps/spotlighter
+  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 3
 
-www-client/surf
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+x11-apps/xauth
+  DroppedKeywordWarning: version 1.0.9-r2: keywords dropped: arm64
 
-www-client/uget
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+x11-apps/xbiff
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
 
-www-client/uzbl
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+x11-apps/xdbedizzy
+  DeprecatedEAPI: version 1.1.0: uses deprecated EAPI: 3
 
-www-client/w3m
-  NonExistentDeps: version 0.5.3-r5: depset depends: nonexistent atoms [ >=app-text/migemo-0.40 ]
-  NonExistentDeps: version 0.5.3-r5: depset rdepends: nonexistent atoms [ >=app-text/migemo-0.40 ]
+x11-apps/xdriinfo
+  DeprecatedEAPI: version 1.0.4: uses deprecated EAPI: 3
 
-www-client/w3mmee
-  DeprecatedEAPI: version 0.3.2_p24-r7: uses deprecated EAPI: 0
+x11-apps/xeyes
+  DeprecatedEAPI: version 1.1.1: uses deprecated EAPI: 3
 
-www-client/weboob
-  DeprecatedEclass: version 9998: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DroppedKeywordWarning: version 9998: keywords dropped: amd64, x86
+x11-apps/xf86dga
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
 
-www-client/xombrero
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+x11-apps/xinit
+  DroppedKeywordWarning: version 1.3.4: keywords dropped: arm64
+
+x11-apps/xkbprint
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
+
+x11-apps/xmore
+  DeprecatedEAPI: version 1.0.2: uses deprecated EAPI: 3
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
