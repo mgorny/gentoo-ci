@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 8 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'net-misc/*' 'dev-lang/*' 'dev-ml/*' 'sci-mathematics/*' 'net-dns/*' 'sys-process/*' 'games-strategy/*' 'net-ftp/*' 'lxde-base/*' 'games-roguelike/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'net-misc/*' 'dev-lang/*' 'dev-ml/*' 'sci-mathematics/*' 'net-dns/*' 'sys-process/*' 'net-fs/*' 'sys-firmware/*' 'lxde-base/*' 'games-roguelike/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -966,18 +966,19 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-games-strategy/attal
-  DeprecatedEAPI: version 0.10.1: uses deprecated EAPI: 2
+net-fs/davfs2
+  DeprecatedEAPI: version 1.4.5-r1: uses deprecated EAPI: 2
 
-games-strategy/coldwar
-  MissingChksum: version 1.0.1-r1: "coldwar-1.0-1.0.1-x86.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+net-fs/libnfs
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-games-strategy/openra
-  DeprecatedEclass: version 20120630: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+net-fs/samba
+  DroppedKeywordWarning: version 3.6.25: keywords dropped: s390, sh
+  DroppedKeywordWarning: version 4.2.4-r1: keywords dropped: arm64, hppa
+  DroppedKeywordWarning: version 4.0.26-r1: keywords dropped: alpha, arm, ia64, mips, ppc, ppc64, sparc
 
-games-strategy/revenge-of-the-titans
-  MissingChksum: version 1.80.12: "revenge-of-the-titans-1.80.12-amd64.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.80.12: "revenge-of-the-titans-1.80.12-i386.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+net-fs/wdfs
+  DeprecatedEAPI: version 1.4.2: uses deprecated EAPI: 0
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
@@ -985,33 +986,29 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-net-ftp/bareftp
-  DeprecatedEclass: version 0.3.9: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DeprecatedEclass: version 0.3.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+sys-firmware/iwl1000-ucode
+  DroppedKeywordWarning: version 128.50.3.1: keywords dropped: amd64, x86
 
-net-ftp/ftp
-  DeprecatedEAPI: version 0.17-r7: uses deprecated EAPI: 0
+sys-firmware/iwl6000-ucode
+  DeprecatedEAPI: version 9.221.4.1: uses deprecated EAPI: 0
 
-net-ftp/ftpbase
-  DeprecatedEAPI: version 0.01-r2: uses deprecated EAPI: 0
+sys-firmware/iwl6005-ucode
+  DeprecatedEAPI: version 17.168.5.3: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 18.168.6.1: uses deprecated EAPI: 0
 
-net-ftp/netkit-ftpd
-  DeprecatedEAPI: version 0.17-r8: uses deprecated EAPI: 0
+sys-firmware/iwl6030-ucode
+  DeprecatedEAPI: version 17.168.5.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 18.168.6.1: uses deprecated EAPI: 0
 
-net-ftp/oftpd
-  DeprecatedEAPI: version 0.3.7-r7: uses deprecated EAPI: 2
+sys-firmware/iwl6050-ucode
+  DeprecatedEAPI: version 9.201.4.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 41.28.5.1: uses deprecated EAPI: 0
 
-net-ftp/oneclickftp
-  DeprecatedEAPI: version 0.5.1: uses deprecated EAPI: 2
+sys-firmware/sigrok-firmware-fx2lafw
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-net-ftp/scythia
-  DeprecatedEAPI: version 0.9.3_p2: uses deprecated EAPI: 3
-
-net-ftp/tlswrap
-  DeprecatedEAPI: version 1.04: uses deprecated EAPI: 0
-
-net-ftp/tnftp
-  DeprecatedEAPI: version 20100108: uses deprecated EAPI: 2
+sys-firmware/vgabios
+  DroppedKeywordWarning: version 0.7a: keywords dropped: ppc, ppc64
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
