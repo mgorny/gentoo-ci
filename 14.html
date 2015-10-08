@@ -49,7 +49,7 @@
 </pre></td></tr>
             <tr class="" id="l6"><td><a href="#l6"><span>6</span></a></td><td><pre>+ set +x
 </pre></td></tr>
-            <tr class="" id="l7"><td><a href="#l7"><span>7</span></a></td><td><pre>+ exec pkgcheck -r gentoo --reporter FancyReporter 'app-emulation/*' 'dev-php/*' 'app-i18n/*' 'www-client/*' 'app-backup/*' 'games-action/*' 'kde-frameworks/*' 'games-util/*' 'www-misc/*' 'games-mud/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
+            <tr class="" id="l7"><td><a href="#l7"><span>7</span></a></td><td><pre>+ exec pkgcheck -r gentoo --reporter FancyReporter 'app-emulation/*' 'dev-php/*' 'app-i18n/*' 'www-client/*' 'app-backup/*' 'games-action/*' 'kde-frameworks/*' 'games-util/*' 'www-plugins/*' 'games-mud/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 </pre></td></tr>
             <tr class="" id="l8"><td><a href="#l8"><span>8</span></a></td><td><pre>/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
 </pre></td></tr>
@@ -1513,67 +1513,31 @@
 </pre></td></tr>
             <tr class="" id="l738"><td><a href="#l738"><span>738</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l739"><td><a href="#l739"><span>739</span></a></td><td><pre>www-misc/bookmarksync
+            <tr class="" id="l739"><td><a href="#l739"><span>739</span></a></td><td><pre>www-plugins/kaffeine-mozilla-plugin
 </pre></td></tr>
-            <tr class="" id="l740"><td><a href="#l740"><span>740</span></a></td><td><pre>  DeprecatedEAPI: version 0.3.4-r2: uses deprecated EAPI: 2
+            <tr class="" id="l740"><td><a href="#l740"><span>740</span></a></td><td><pre>  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 0
 </pre></td></tr>
             <tr class="" id="l741"><td><a href="#l741"><span>741</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l742"><td><a href="#l742"><span>742</span></a></td><td><pre>www-misc/fcgiwrap
+            <tr class="" id="l742"><td><a href="#l742"><span>742</span></a></td><td><pre>www-plugins/pipelight
 </pre></td></tr>
             <tr class="" id="l743"><td><a href="#l743"><span>743</span></a></td><td><pre>  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 </pre></td></tr>
-            <tr class="" id="l744"><td><a href="#l744"><span>744</span></a></td><td><pre>
+            <tr class="" id="l744"><td><a href="#l744"><span>744</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
 </pre></td></tr>
-            <tr class="" id="l745"><td><a href="#l745"><span>745</span></a></td><td><pre>www-misc/htdig
+            <tr class="" id="l745"><td><a href="#l745"><span>745</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
 </pre></td></tr>
-            <tr class="" id="l746"><td><a href="#l746"><span>746</span></a></td><td><pre>  DeprecatedEAPI: version 3.2.0_beta6-r3: uses deprecated EAPI: 0
+            <tr class="" id="l746"><td><a href="#l746"><span>746</span></a></td><td><pre>               : refetch
 </pre></td></tr>
-            <tr class="" id="l747"><td><a href="#l747"><span>747</span></a></td><td><pre>
+            <tr class="" id="l747"><td><a href="#l747"><span>747</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
 </pre></td></tr>
-            <tr class="" id="l748"><td><a href="#l748"><span>748</span></a></td><td><pre>www-misc/log-toolkit
+            <tr class="" id="l748"><td><a href="#l748"><span>748</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
 </pre></td></tr>
-            <tr class="" id="l749"><td><a href="#l749"><span>749</span></a></td><td><pre>  DeprecatedEAPI: version 0.9.6: uses deprecated EAPI: 0
-</pre></td></tr>
-            <tr class="" id="l750"><td><a href="#l750"><span>750</span></a></td><td><pre>
-</pre></td></tr>
-            <tr class="" id="l751"><td><a href="#l751"><span>751</span></a></td><td><pre>www-misc/reflector
-</pre></td></tr>
-            <tr class="" id="l752"><td><a href="#l752"><span>752</span></a></td><td><pre>  DeprecatedEclass: version 2011.05.13.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-</pre></td></tr>
-            <tr class="" id="l753"><td><a href="#l753"><span>753</span></a></td><td><pre>  DeprecatedEAPI: version 2011.05.13.1: uses deprecated EAPI: 3
-</pre></td></tr>
-            <tr class="" id="l754"><td><a href="#l754"><span>754</span></a></td><td><pre>  NonExistentDeps: version 2011.05.13.1: depset depends: nonexistent atoms [ =dev-lang/python-2.6*, =dev-lang/python-3.1*, =dev-lang/python-3.2* ]
-</pre></td></tr>
-            <tr class="" id="l755"><td><a href="#l755"><span>755</span></a></td><td><pre>  NonExistentDeps: version 2011.05.13.1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6*, =dev-lang/python-3.1*, =dev-lang/python-3.2* ]
-</pre></td></tr>
-            <tr class="" id="l756"><td><a href="#l756"><span>756</span></a></td><td><pre>
-</pre></td></tr>
-            <tr class="" id="l757"><td><a href="#l757"><span>757</span></a></td><td><pre>www-misc/visitors
-</pre></td></tr>
-            <tr class="" id="l758"><td><a href="#l758"><span>758</span></a></td><td><pre>  DeprecatedEAPI: version 0.7-r1: uses deprecated EAPI: 2
-</pre></td></tr>
-            <tr class="" id="l759"><td><a href="#l759"><span>759</span></a></td><td><pre>
-</pre></td></tr>
-            <tr class="" id="l760"><td><a href="#l760"><span>760</span></a></td><td><pre>www-misc/wsmake
-</pre></td></tr>
-            <tr class="" id="l761"><td><a href="#l761"><span>761</span></a></td><td><pre>  DeprecatedEAPI: version 0.6.4: uses deprecated EAPI: 0
-</pre></td></tr>
-            <tr class="" id="l762"><td><a href="#l762"><span>762</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
-</pre></td></tr>
-            <tr class="" id="l763"><td><a href="#l763"><span>763</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
-</pre></td></tr>
-            <tr class="" id="l764"><td><a href="#l764"><span>764</span></a></td><td><pre>               : refetch
-</pre></td></tr>
-            <tr class="" id="l765"><td><a href="#l765"><span>765</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
-</pre></td></tr>
-            <tr class="" id="l766"><td><a href="#l766"><span>766</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
-</pre></td></tr>
-            <tr class="" id="l767"><td><a href="#l767"><span>767</span></a></td><td><pre>               : refetch
+            <tr class="" id="l749"><td><a href="#l749"><span>749</span></a></td><td><pre>               : refetch
 </pre></td></tr>
 
         </table>
 
-        <address>Generated based on results from 2015-10-07 23:17:29 UTC</address>
+        <address>Generated based on results from 2015-10-08 02:08:13 UTC</address>
     </body>
 </html>
