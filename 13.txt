@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 13 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-ros/*' 'virtual/*' 'app-i18n/*' 'gnome-extra/*' 'net-im/*' 'ros-meta/*' 'games-rpg/*' 'sys-infiniband/*' 'dev-go/*' 'mate-extra/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'app-text/*' 'virtual/*' 'app-i18n/*' 'gnome-extra/*' 'net-im/*' 'ros-meta/*' 'games-rpg/*' 'sys-infiniband/*' 'dev-go/*' 'mate-extra/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -14,9 +14,453 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-dev-ros/roslaunch
-  ExecutableFile: "files/roscore.initd" has unnecessary executable bit
-  ExecutableFile: "files/roslaunch.initd" has unnecessary executable bit
+app-text/7plus
+  DeprecatedEAPI: version 2.25: uses deprecated EAPI: 0
+
+app-text/acroread
+  NonExistentDeps: version 9.5.5-r3: depset rdepends: nonexistent atoms [ <x11-libs/pango-1.31 ]
+
+app-text/adiff
+  DeprecatedEAPI: version 1.4: uses deprecated EAPI: 0
+
+app-text/agrep
+  DeprecatedEAPI: version 2.04: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.04-r1: uses deprecated EAPI: 0
+
+app-text/aiksaurus
+  DeprecatedEAPI: version 1.2.1: uses deprecated EAPI: 2
+
+app-text/antixls
+  DeprecatedEAPI: version 0.3b: uses deprecated EAPI: 0
+
+app-text/asciidoc
+  DeprecatedEclass: version 8.6.5: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 8.6.5: uses deprecated EAPI: 3
+  NonExistentDeps: version 8.6.5: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  NonExistentDeps: version 8.6.5: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+
+app-text/bibclean
+  DeprecatedEAPI: version 2.11.4: uses deprecated EAPI: 0
+
+app-text/bibletime
+  DroppedKeywordWarning: version 2.10.1: keywords dropped: ppc
+
+app-text/bibus
+  DeprecatedEclass: version 1.5.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.5.1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.5.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+app-text/bibutils
+  DeprecatedEAPI: version 4.12: uses deprecated EAPI: 2
+
+app-text/binfind
+  DeprecatedEAPI: version 0.0.3: uses deprecated EAPI: 0
+
+app-text/chm2pdf
+  DeprecatedEclass: version 0.9.1-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.9.1-r1: uses deprecated EAPI: 2
+  NonExistentDeps: version 0.9.1-r1: depset rdepends: nonexistent atoms [ <dev-libs/chmlib-0.40-r1 ]
+
+app-text/clara
+  DeprecatedEAPI: version 20031214: uses deprecated EAPI: 0
+
+app-text/cmigemo
+  DeprecatedEAPI: version 1.3c: uses deprecated EAPI: 0
+  NonExistentDeps: version 1.3c: depset rdepends: nonexistent atoms [ >=app-text/migemo-0.40-r1 ]
+  DeprecatedEAPI: version 1.3c-r1: uses deprecated EAPI: 2
+  NonExistentDeps: version 1.3c-r1: depset rdepends: nonexistent atoms [ >=app-text/migemo-0.40-r1 ]
+  DeprecatedEAPI: version 1.3c-r2: uses deprecated EAPI: 2
+  NonExistentDeps: version 1.3c-r2: depset depends: nonexistent atoms [ net-misc/fetch ]
+  NonExistentDeps: version 1.3c-r2: depset rdepends: nonexistent atoms [ >=app-text/migemo-0.40-r1 ]
+
+app-text/code2html
+  DeprecatedEAPI: version 0.9.1-r1: uses deprecated EAPI: 3
+
+app-text/convertlit
+  DeprecatedEAPI: version 1.8-r1: uses deprecated EAPI: 0
+
+app-text/convmv
+  DeprecatedEAPI: version 1.15: uses deprecated EAPI: 3
+
+app-text/cook
+  WhitespaceFound: version 1.0.2-r1: ebuild has leading whitespace on lines 35, 37
+  DeprecatedEAPI: version 1.0.2-r1: uses deprecated EAPI: 0
+
+app-text/crf++
+  DeprecatedEAPI: version 0.54: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 0.58: uses deprecated EAPI: 3
+
+app-text/crm114
+  DeprecatedEAPI: version 20100106: uses deprecated EAPI: 2
+
+app-text/cwtext
+  DeprecatedEAPI: version 0.96: uses deprecated EAPI: 0
+
+app-text/ddir
+  DeprecatedEAPI: version 0_p20100323: uses deprecated EAPI: 0
+
+app-text/ding
+  DeprecatedEAPI: version 1.7: uses deprecated EAPI: 3
+
+app-text/docbook-dsssl-stylesheets
+  DeprecatedEAPI: version 1.79: uses deprecated EAPI: 3
+
+app-text/docbook-sgml
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+
+app-text/docbook-sgml-dtd
+  DeprecatedEAPI: version 3.0-r3: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 3.1-r3: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.0-r3: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.1-r3: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.2-r2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.3-r2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.4: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.5: uses deprecated EAPI: 0
+
+app-text/docbook-sgml-utils
+  DeprecatedEAPI: version 0.6.14-r1: uses deprecated EAPI: 3
+
+app-text/docbook-xml-dtd
+  DeprecatedEAPI: version 4.1.2-r6: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.2-r2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.3-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.4-r2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.5-r1: uses deprecated EAPI: 0
+
+app-text/docbook-xml-simple-dtd
+  DeprecatedEAPI: version 1.0-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0-r2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.1.2.4-r2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.1.2.4-r3: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.1.2.5-r2: uses deprecated EAPI: 0
+
+app-text/duali
+  DeprecatedEclass: version 0.2.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.2.0: uses deprecated EAPI: 3
+
+app-text/dvibook
+  DeprecatedEAPI: version 20001129: uses deprecated EAPI: 0
+
+app-text/dvipdfm
+  DeprecatedEAPI: version 0.13.2d-r1: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 0.13.2d-r2: uses deprecated EAPI: 3
+
+app-text/dvipdfmx
+  DeprecatedEAPI: version 20110311-r1: uses deprecated EAPI: 3
+
+app-text/dvipsk
+  DroppedKeywordWarning: version 5.994_p20140525: keywords dropped: ia64, sparc
+
+app-text/enscript
+  DeprecatedEAPI: version 1.6.6: uses deprecated EAPI: 2
+
+app-text/fbless
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+app-text/fdftk
+  DeprecatedEAPI: version 6.0-r1: uses deprecated EAPI: 0
+
+app-text/freepwing
+  DeprecatedEAPI: version 1.4.3: uses deprecated EAPI: 0
+
+app-text/gentoo-guide-xml-dtd
+  DeprecatedEAPI: version 2.1-r1: uses deprecated EAPI: 0
+
+app-text/gnopaster
+  DeprecatedEAPI: version 0.0.9: uses deprecated EAPI: 0
+
+app-text/gtranslator
+  NonExistentDeps: version 2.91.6: depset depends: nonexistent atoms [ =gnome-extra/gnome-utils-3.2* ]
+  NonExistentDeps: version 2.91.6: depset rdepends: nonexistent atoms [ =gnome-extra/gnome-utils-3.2* ]
+
+app-text/html401
+  DeprecatedEAPI: version 19991224-r2: uses deprecated EAPI: 3
+
+app-text/htmlinc
+  DeprecatedEAPI: version 1.0_beta1: uses deprecated EAPI: 0
+
+app-text/hyperestraier
+  DeprecatedEAPI: version 1.4.13: uses deprecated EAPI: 0
+
+app-text/info2html
+  DeprecatedEAPI: version 2.0: uses deprecated EAPI: 0
+
+app-text/jabref-bin
+  DroppedKeywordWarning: version 2.11_beta_rc2: keywords dropped: x86
+
+app-text/jmupdf
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+app-text/landslide
+  DeprecatedEclass: version 1.1.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.1.1: uses deprecated EAPI: 3
+
+app-text/lcdf-typetools
+  DeprecatedEAPI: version 2.97: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 2.104: uses deprecated EAPI: 2
+
+app-text/libabw
+  DroppedKeywordWarning: version 0.1.0: keywords dropped: ppc
+
+app-text/libebook
+  DroppedKeywordWarning: version 0.1.1: keywords dropped: ppc, ppc64
+
+app-text/libetonyek
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DroppedKeywordWarning: version 0.1.1: keywords dropped: ppc
+
+app-text/libmspub
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DroppedKeywordWarning: version 0.1.1: keywords dropped: ppc
+
+app-text/libmwaw
+  DroppedKeywordWarning: version 0.3.5: keywords dropped: ppc
+
+app-text/libodfgen
+  DroppedKeywordWarning: version 0.1.3: keywords dropped: ppc
+
+app-text/libwpd
+  DroppedKeywordWarning: version 0.10.0: keywords dropped: ia64, ppc, ppc64, sparc
+
+app-text/libwpg
+  DroppedKeywordWarning: version 0.3.0: keywords dropped: ia64, ppc, ppc64, sparc
+
+app-text/libwps
+  DroppedKeywordWarning: version 0.3.1: keywords dropped: ia64, ppc, ppc64, sparc
+
+app-text/llpp
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+app-text/lodgeit
+  DeprecatedEclass: version 0.3_p20120507: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 0.3_p20120618-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+app-text/lout
+  DeprecatedEAPI: version 3.38-r1: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.39: uses deprecated EAPI: 3
+
+app-text/manpager
+  BadInsIntoDir: version 1: ebuild uses insinto /etc/env.d on line 30
+
+app-text/mbtpdfasm
+  DeprecatedEAPI: version 1.0.28-r1: uses deprecated EAPI: 2
+
+app-text/mftrace
+  DeprecatedEclass: version 1.2.18: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+app-text/mht-rip
+  DeprecatedEAPI: version 0.8: uses deprecated EAPI: 0
+
+app-text/mpage
+  SizeViolation: "files/01_previous_changes.patch" exceeds 20k in size; 21005 bytes total
+
+app-text/mupdf
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+app-text/namazu
+  DroppedKeywordWarning: version 2.0.22_p1: keywords dropped: amd64, ppc, ppc64, x86
+
+app-text/nfoview
+  DeprecatedEclass: version 1.10: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.10: uses deprecated EAPI: 3
+  NonExistentDeps: version 1.10: depset depends: nonexistent atoms [ =dev-lang/python-3.2* ]
+  NonExistentDeps: version 1.10: depset rdepends: nonexistent atoms [ =dev-lang/python-3.2* ]
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+app-text/noweb
+  DeprecatedEAPI: version 2.11b-r4: uses deprecated EAPI: 3
+
+app-text/par
+  DeprecatedEAPI: version 1.52: uses deprecated EAPI: 0
+
+app-text/passivetex
+  DeprecatedEAPI: version 1.25: uses deprecated EAPI: 0
+
+app-text/pdfjam
+  DeprecatedEAPI: version 2.08: uses deprecated EAPI: 0
+
+app-text/pdfshuffler
+  DeprecatedEclass: version 0.6.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+app-text/pep
+  DeprecatedEAPI: version 2.8-r1: uses deprecated EAPI: 2
+
+app-text/ps2eps
+  DeprecatedEAPI: version 1.68: uses deprecated EAPI: 0
+
+app-text/ps2pkm
+  DroppedKeywordWarning: version 1.5_p20140525: keywords dropped: ia64, sparc
+
+app-text/pspresent
+  DeprecatedEAPI: version 1.3-r1: uses deprecated EAPI: 2
+
+app-text/pstotext
+  DeprecatedEAPI: version 1.9-r3: uses deprecated EAPI: 3
+
+app-text/psutils
+  DeprecatedEAPI: version 1.17-r2: uses deprecated EAPI: 3
+
+app-text/pybookreader
+  DeprecatedEclass: version 0.5.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.5.0: uses deprecated EAPI: 3
+
+app-text/pytextile
+  DroppedKeywordWarning: version 2.2.1: keywords dropped: ppc, sparc
+
+app-text/queequeg
+  DeprecatedEclass: version 0.91: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.91: uses deprecated EAPI: 3
+
+app-text/refbase
+  DeprecatedEAPI: version 0.9.5: uses deprecated EAPI: 2
+  NonExistentDeps: version 0.9.5: depset depends: nonexistent atoms [ <dev-lang/php-5.3 ]
+  NonExistentDeps: version 0.9.5: depset rdepends: nonexistent atoms [ <dev-lang/php-5.3 ]
+
+app-text/referencer
+  DeprecatedEclass: version 1.2.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 1.2.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+app-text/rhyme
+  DeprecatedEAPI: version 0.9-r1: uses deprecated EAPI: 2
+
+app-text/rnv
+  DroppedKeywordWarning: version 1.7.11-r1: keywords dropped: ppc
+  UnusedLocalFlags: metadata.xml unused local use flag: [ scheme ]
+
+app-text/rpl
+  DeprecatedEclass: version 1.5.5: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.5.5: uses deprecated EAPI: 3
+
+app-text/sablotron
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
+
+app-text/scrollkeeper
+  DeprecatedEAPI: version 9999-r1: uses deprecated EAPI: 0
+
+app-text/scrollkeeper-dtd
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 3
+
+app-text/sdcv
+  DeprecatedEAPI: version 0.4.2: uses deprecated EAPI: 0
+
+app-text/searchmonkey
+  DeprecatedEAPI: version 0.8.1: uses deprecated EAPI: 2
+
+app-text/sgml-common
+  DeprecatedEAPI: version 0.6.3-r5: uses deprecated EAPI: 3
+
+app-text/silvercity
+  DeprecatedEclass: version 0.9.7: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.9.7: uses deprecated EAPI: 3
+
+app-text/skribe
+  DeprecatedEAPI: version 1.2l: uses deprecated EAPI: 3
+
+app-text/t1utils
+  DeprecatedEAPI: version 1.39: uses deprecated EAPI: 0
+
+app-text/tabler
+  DeprecatedEAPI: version 2: uses deprecated EAPI: 0
+
+app-text/teckit
+  DeprecatedEAPI: version 2.5.1: uses deprecated EAPI: 2
+
+app-text/tesseract
+  DeprecatedEAPI: version 2.04-r1: uses deprecated EAPI: 2
+  DroppedKeywordWarning: version 3.03_rc1-r1: keywords dropped: mips
+
+app-text/texlive
+  DeprecatedEAPI: version 2012: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 2013: uses deprecated EAPI: 2
+  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+
+app-text/texlive-core
+  DeprecatedEAPI: version 2012: uses deprecated EAPI: 3
+
+app-text/tkinfo
+  DeprecatedEAPI: version 2.8: uses deprecated EAPI: 0
+
+app-text/tokyodystopia
+  DeprecatedEAPI: version 0.9.15: uses deprecated EAPI: 2
+
+app-text/trang
+  DeprecatedEAPI: version 20091111: uses deprecated EAPI: 2
+
+app-text/ttf2pk2
+  DroppedKeywordWarning: version 2.0_p20140525: keywords dropped: ia64, sparc
+
+app-text/tuxcards
+  DeprecatedEAPI: version 2.2.1: uses deprecated EAPI: 3
+
+app-text/txt2tags
+  DeprecatedEclass: version 2.6: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 2.6: uses deprecated EAPI: 2
+
+app-text/unpaper
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+app-text/uudeview
+  DeprecatedEAPI: version 0.5.20-r1: uses deprecated EAPI: 3
+
+app-text/vlna
+  DeprecatedEAPI: version 1.5: uses deprecated EAPI: 0
+
+app-text/winefish
+  DeprecatedEAPI: version 1.3.3-r1: uses deprecated EAPI: 3
+  MetadataError: version 1.3.3-r1: attr(fetchables): error- Metadata Exception: pkg ebuild src: app-text/winefish-1.3.3-r1, attr fetchables
+error: mirror://berlios/winefish/winefish-1.3.3.tgz is unparseable
+flagged token- uri mirror://berlios/winefish/winefish-1.3.3.tgz isn't a known mirror tier
+
+app-text/wklej
+  DeprecatedEclass: version 0.2.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.2.0: uses deprecated EAPI: 3
+  NonExistentDeps: version 0.2.0: depset depends: nonexistent atoms [ =dev-lang/python-2.6*, =dev-lang/python-3.1*, =dev-lang/python-3.2* ]
+  NonExistentDeps: version 0.2.0: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6*, =dev-lang/python-3.1*, =dev-lang/python-3.2* ]
+
+app-text/writerperfect
+  DroppedKeywordWarning: version 0.9.2: keywords dropped: ppc
+  DroppedKeywordWarning: version 0.9.3: keywords dropped: amd64, x86
+
+app-text/wv
+  DeprecatedEAPI: version 1.2.9-r1: uses deprecated EAPI: 3
+
+app-text/xapian-omega
+  DroppedKeywordWarning: version 1.3.2: keywords dropped: alpha, ia64, sparc
+
+app-text/xhtml1
+  DeprecatedEAPI: version 20020801-r4: uses deprecated EAPI: 3
+
+app-text/xindy
+  DeprecatedEAPI: version 2.4: uses deprecated EAPI: 3
+
+app-text/xmldiff
+  DeprecatedEclass: version 0.6.10: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.6.10: uses deprecated EAPI: 3
+
+app-text/xournal
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+app-text/zathura
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+app-text/zathura-cb
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+app-text/zathura-djvu
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+app-text/zathura-pdf-mupdf
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+app-text/zathura-pdf-poppler
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+app-text/zathura-ps
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+app-text/zemberek-server
+  DeprecatedEAPI: version 0.7.1: uses deprecated EAPI: 2
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
