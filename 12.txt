@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 12 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'app-emulation/*' 'sys-fs/*' 'app-crypt/*' 'x11-apps/*' 'xfce-extra/*' 'app-cdr/*' 'sci-visualization/*' 'x11-proto/*' 'app-laptop/*' 'games-sports/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'app-emulation/*' 'sys-fs/*' 'app-crypt/*' 'x11-apps/*' 'games-puzzle/*' 'games-action/*' 'dev-scheme/*' 'x11-proto/*' 'app-laptop/*' 'games-sports/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -532,8 +532,12 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-xfce-extra/xfce4-taskmanager
-  DroppedKeywordWarning: version 1.1.0: keywords dropped: hppa
+games-puzzle/kiki
+  DeprecatedEclass: version 1.0.2-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+games-puzzle/neverball
+  DeprecatedEAPI: version 1.5.4: uses deprecated EAPI: 2
+  DroppedKeywordWarning: version 1.6.0: keywords dropped: ppc
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
@@ -541,170 +545,98 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-app-cdr/b5i2iso
-  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 0
-  MetadataError: version 0.2: attr(fetchables): error- Metadata Exception: pkg ebuild src: app-cdr/b5i2iso-0.2, attr fetchables
-error: mirror://berlios/b5i2iso/b5i2iso.tar.bz2 is unparseable: uri mirror://berlios/b5i2iso/b5i2iso.tar.bz2 isn't a known mirror tier
-flagged token- mirror://berlios/b5i2iso/b5i2iso.tar.bz2
+games-action/shadowgrounds-bin
+  MissingChksum: version 0_beta12-r1: "ShadowgroundsBeta12.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-app-cdr/backlite
-  SizeViolation: "files/backlite-1.0.3-ffmpeg-0.11.patch" exceeds 20k in size; 23775 bytes total
+games-action/shadowgrounds-survivor-bin
+  MissingChksum: version 0_beta11-r1: "SurvivorBeta11.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-app-cdr/bchunk
-  DeprecatedEAPI: version 1.2.0-r1: uses deprecated EAPI: 0
+games-action/trine-bin
+  MissingChksum: version 1.08: "Trine.64.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
 
-app-cdr/bin2iso
-  DeprecatedEAPI: version 19b-r2: uses deprecated EAPI: 0
+dev-scheme/bigloo
+  DeprecatedEAPI: version 3.0c_p4: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 3.4a_p3: uses deprecated EAPI: 3
 
-app-cdr/burn-cd
-  DeprecatedEAPI: version 1.7.4: uses deprecated EAPI: 0
+dev-scheme/chicken
+  DeprecatedEAPI: version 4.8.0.3-r1: uses deprecated EAPI: 3
 
-app-cdr/burncdda
-  DeprecatedEAPI: version 1.8.0: uses deprecated EAPI: 0
+dev-scheme/gauche-kakasi
+  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 0
 
-app-cdr/burncenter
-  DeprecatedEAPI: version 3.2.1: uses deprecated EAPI: 0
-
-app-cdr/ccd2iso
-  DeprecatedEAPI: version 0.3: uses deprecated EAPI: 0
-
-app-cdr/cdlabelgen
-  DeprecatedEAPI: version 4.0.0: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.1.0: uses deprecated EAPI: 2
-
-app-cdr/cdrkit
-  DeprecatedEAPI: version 1.1.11: uses deprecated EAPI: 3
-  DroppedKeywordWarning: version 1.1.11-r2: keywords dropped: s390
-
-app-cdr/cue2toc
-  DeprecatedEAPI: version 0.4: uses deprecated EAPI: 0
-
-app-cdr/cuecue
-  MetadataError: version 0.2.2-r1: attr(fetchables): error- Metadata Exception: pkg ebuild src: app-cdr/cuecue-0.2.2-r1, attr fetchables
-error: mirror://berlios/cuecue/cuecue-0.2.2.tar.gz is unparseable
-flagged token- uri mirror://berlios/cuecue/cuecue-0.2.2.tar.gz isn't a known mirror tier
-
-app-cdr/cuegen
-  DeprecatedEAPI: version 1.2.0: uses deprecated EAPI: 2
-
-app-cdr/cuetools
-  DeprecatedEAPI: version 1.3.1: uses deprecated EAPI: 0
-  MetadataError: version 1.3.1: attr(fetchables): error- Metadata Exception: pkg ebuild src: app-cdr/cuetools-1.3.1, attr fetchables
-error: mirror://berlios/cuetools/cuetools-1.3.1.tar.gz mirror://gentoo/cuetools-1.3.1-debian.patch.bz2 is unparseable: uri mirror://berlios/cuetools/cuetools-1.3.1.tar.gz isn't a known mirror tier
-flagged token- mirror://berlios/cuetools/cuetools-1.3.1.tar.gz
-  MetadataError: version 1.3.1-r2: attr(fetchables): error- Metadata Exception: pkg ebuild src: app-cdr/cuetools-1.3.1-r2, attr fetchables
-error: mirror://berlios/cuetools/cuetools-1.3.1.tar.gz mirror://gentoo/cuetools-1.3.1-debian.patch.bz2 is unparseable
-flagged token- uri mirror://berlios/cuetools/cuetools-1.3.1.tar.gz isn't a known mirror tier
-  DroppedKeywordWarning: version 1.3.1-r2: keywords dropped: ppc
-
-app-cdr/daa2iso
-  DeprecatedEAPI: version 0.1.7e: uses deprecated EAPI: 2
-
-app-cdr/disc-cover
-  DeprecatedEAPI: version 1.5.6: uses deprecated EAPI: 0
-
-app-cdr/dvd+rw-tools
-  DeprecatedEAPI: version 7.1-r1: uses deprecated EAPI: 3
-
-app-cdr/dvd95
-  DeprecatedEAPI: version 1.6_p0: uses deprecated EAPI: 2
-
-app-cdr/dvdshrink
-  DeprecatedEAPI: version 2.6.1_p10: uses deprecated EAPI: 2
-
-app-cdr/extract-xiso
-  DeprecatedEAPI: version 2.5: uses deprecated EAPI: 0
-
-app-cdr/gaffitter
-  DeprecatedEAPI: version 0.6.0-r1: uses deprecated EAPI: 2
-
-app-cdr/gtkcdlabel
-  DeprecatedEclass: version 1.12: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 1.12: uses deprecated EAPI: 3
-  NonExistentDeps: version 1.12: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
-  NonExistentDeps: version 1.12: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
-
-app-cdr/iat
-  DeprecatedEAPI: version 0.1.7-r1: uses deprecated EAPI: 2
-  MetadataError: version 0.1.7-r1: attr(fetchables): error- Metadata Exception: pkg ebuild src: app-cdr/iat-0.1.7-r1, attr fetchables
-error: mirror://berlios/iat/iat-0.1.7.tar.bz2 is unparseable
-flagged token- uri mirror://berlios/iat/iat-0.1.7.tar.bz2 isn't a known mirror tier
-
-app-cdr/isomaster
-  DeprecatedEAPI: version 1.3.5: uses deprecated EAPI: 2
-
-app-cdr/k9copy
-  SizeViolation: "files/k9copy-2.3.8-ffmpeg-0.11.patch" exceeds 20k in size; 32790 bytes total
-
-app-cdr/mkcdtoc
-  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
-
-app-cdr/mode2cdmaker
-  DeprecatedEAPI: version 1.5.1: uses deprecated EAPI: 0
-
-app-cdr/multicd
-  DeprecatedEAPI: version 1.7.5-r1: uses deprecated EAPI: 0
-
-app-cdr/mybashburn
-  DeprecatedEAPI: version 1.0.2: uses deprecated EAPI: 0
-
-app-cdr/nrg2iso
-  DeprecatedEAPI: version 0.4-r1: uses deprecated EAPI: 0
-
-app-cdr/poweriso
+dev-scheme/goosh
   DeprecatedEAPI: version 1.3: uses deprecated EAPI: 0
 
-app-cdr/qmultirecord
-  DeprecatedEAPI: version 0.0.3: uses deprecated EAPI: 2
+dev-scheme/greg
+  DeprecatedEAPI: version 2.0.0: uses deprecated EAPI: 3
 
-app-cdr/recorder
-  DeprecatedEclass: version 1.4.5: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+dev-scheme/guile
+  DeprecatedEAPI: version 2.0.0: uses deprecated EAPI: 3
+  DroppedKeywordWarning: version 2.0.0: keywords dropped: alpha, arm, arm64, hppa, ia64, m68k, mips, ppc, ppc64, s390, sh, sparc, x86
 
-app-cdr/sync2cd
-  DeprecatedEclass: version 1.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 1.3: uses deprecated EAPI: 3
+dev-scheme/guile-cairo
+  DeprecatedEAPI: version 1.4.0: uses deprecated EAPI: 2
 
-app-cdr/uif2iso
-  DeprecatedEAPI: version 0.1.7c: uses deprecated EAPI: 0
+dev-scheme/guile-gnome-platform
+  DeprecatedEAPI: version 2.16.1: uses deprecated EAPI: 3
 
-app-cdr/webcdwriter
-  DeprecatedEAPI: version 2.8.2-r2: uses deprecated EAPI: 0
+dev-scheme/guile-gui
+  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 0
 
-app-cdr/xbiso
-  DeprecatedEAPI: version 0.6.1: uses deprecated EAPI: 0
+dev-scheme/guile-lib
+  DeprecatedEAPI: version 0.1.9: uses deprecated EAPI: 3
 
-app-cdr/xcdroast
-  DeprecatedEAPI: version 0.98_alpha16: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.98_alpha16-r1: uses deprecated EAPI: 2
+dev-scheme/hop
+  DeprecatedEAPI: version 2.0.1: uses deprecated EAPI: 2
 
-app-cdr/xdvdfs-tools
-  DeprecatedEAPI: version 2.1-r1: uses deprecated EAPI: 0
-WARNING pkgcore: metadata.dtd cannot be opened from
-               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
-               : refetch
-WARNING pkgcore: metadata.dtd cannot be opened from
-               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
-               : refetch
+dev-scheme/ikarus
+  DeprecatedEAPI: version 0.0.3_p1870: uses deprecated EAPI: 3
 
-sci-visualization/ggobi
-  DeprecatedEAPI: version 2.1.8: uses deprecated EAPI: 2
+dev-scheme/jscheme
+  DeprecatedEAPI: version 7.2: uses deprecated EAPI: 3
 
-sci-visualization/gri
-  DeprecatedEAPI: version 2.12.19: uses deprecated EAPI: 2
+dev-scheme/kawa
+  DeprecatedEAPI: version 1.10: uses deprecated EAPI: 3
 
-sci-visualization/kst
-  NonExistentDeps: version 2.0.7: depset depends: nonexistent atoms [ <dev-qt/qtgui-4.8.5:4 ]
-  NonExistentDeps: version 2.0.7: depset rdepends: nonexistent atoms [ <dev-qt/qtgui-4.8.5:4 ]
+dev-scheme/net-http
+  DeprecatedEAPI: version 0.3.1: uses deprecated EAPI: 0
 
-sci-visualization/spyview
-  DroppedKeywordWarning: version 20130823: keywords dropped: amd64
+dev-scheme/racket
+  DroppedKeywordWarning: version 6.0.1: keywords dropped: ppc, ppc64
 
-sci-visualization/veusz
-  DeprecatedEclass: version 1.11: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 1.11: uses deprecated EAPI: 3
+dev-scheme/schemik
+  DeprecatedEAPI: version 1.2.40.0: uses deprecated EAPI: 2
 
-sci-visualization/xgraph
-  DeprecatedEAPI: version 12.1-r2: uses deprecated EAPI: 3
+dev-scheme/schoca
+  DeprecatedEAPI: version 0.3.0: uses deprecated EAPI: 3
+
+dev-scheme/scm
+  DeprecatedEAPI: version 5.5.6: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 5.5.6-r1: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 5.5.6-r2: uses deprecated EAPI: 3
+
+dev-scheme/scmxlate
+  DeprecatedEAPI: version 20090410: uses deprecated EAPI: 3
+
+dev-scheme/sigscheme
+  DeprecatedEAPI: version 0.8.5: uses deprecated EAPI: 3
+
+dev-scheme/slib
+  DeprecatedEAPI: version 3.1.5-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 3.2.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 3.2.2: uses deprecated EAPI: 3
+
+dev-scheme/stklos
+  DeprecatedEAPI: version 1.10: uses deprecated EAPI: 3
+
+dev-scheme/termite
+  DeprecatedEAPI: version 0.15: uses deprecated EAPI: 3
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
