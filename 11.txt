@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 11 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-ros/*' 'x11-libs/*' 'dev-vcs/*' 'kde-base/*' 'net-p2p/*' 'ros-meta/*' 'dev-dotnet/*' 'app-benchmarks/*' 'sci-calculators/*' 'gnustep-libs/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-ros/*' 'x11-libs/*' 'dev-vcs/*' 'kde-base/*' 'net-p2p/*' 'sys-boot/*' 'dev-dotnet/*' 'app-benchmarks/*' 'sci-calculators/*' 'gnustep-libs/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -496,6 +496,86 @@ WARNING pkgcore: metadata.dtd cannot be opened from
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
+
+sys-boot/aboot
+  DeprecatedEAPI: version 1.0_pre20040408-r3: uses deprecated EAPI: 0
+
+sys-boot/bootcreator
+  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 0
+
+sys-boot/colo
+  DeprecatedEAPI: version 1.22: uses deprecated EAPI: 0
+
+sys-boot/cromwell-bin
+  DeprecatedEAPI: version 2.31: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.40: uses deprecated EAPI: 0
+
+sys-boot/efibootmgr
+  DeprecatedEAPI: version 0.5.4: uses deprecated EAPI: 0
+
+sys-boot/elilo
+  DeprecatedEAPI: version 3.6_p20060314: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 3.10: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 3.12: uses deprecated EAPI: 0
+
+sys-boot/gnu-efi
+  DeprecatedEAPI: version 3.0a-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 3.0g: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 3.0i: uses deprecated EAPI: 0
+
+sys-boot/grub-static
+  DeprecatedEAPI: version 0.96-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.97: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.97-r6: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.97-r9: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.97-r10: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.97-r12: uses deprecated EAPI: 0
+
+sys-boot/lilo
+  DeprecatedEAPI: version 22.8-r2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 23.2-r1: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 23.2-r2: uses deprecated EAPI: 2
+
+sys-boot/makebootfat
+  DeprecatedEAPI: version 1.4: uses deprecated EAPI: 0
+
+sys-boot/mbr
+  DeprecatedEAPI: version 1.1.11: uses deprecated EAPI: 0
+
+sys-boot/mbr-gpt
+  DeprecatedEAPI: version 0.0.1: uses deprecated EAPI: 0
+
+sys-boot/milo
+  DeprecatedEAPI: version 2.4.18: uses deprecated EAPI: 0
+
+sys-boot/netboot
+  DeprecatedEAPI: version 0.10.2: uses deprecated EAPI: 2
+
+sys-boot/nettrom
+  DeprecatedEAPI: version 2.3.3: uses deprecated EAPI: 0
+
+sys-boot/psoload
+  DeprecatedEAPI: version 2.0: uses deprecated EAPI: 0
+
+sys-boot/quik
+  DeprecatedEAPI: version 2.1.6: uses deprecated EAPI: 0
+
+sys-boot/raincoat
+  DeprecatedEAPI: version 0.5: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.11: uses deprecated EAPI: 0
+
+sys-boot/shlilo-lantank
+  DeprecatedEAPI: version 20040408: uses deprecated EAPI: 0
+
+sys-boot/silo
+  DeprecatedEAPI: version 1.4.14_p20100228: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.4.14_p20120226: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.4.14_p20120819: uses deprecated EAPI: 0
+
+sys-boot/syslinux
+  DeprecatedEAPI: version 3.86: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.07: uses deprecated EAPI: 0
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
