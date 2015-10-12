@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 5 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-libs/*' 'net-libs/*' 'sys-libs/*' 'net-wireless/*' 'dev-qt/*' 'www-apache/*' 'kde-plasma/*' 'app-accessibility/*' 'perl-core/*' 'net-news/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-libs/*' 'net-libs/*' 'media-fonts/*' 'net-wireless/*' 'dev-qt/*' 'www-apache/*' 'kde-plasma/*' 'app-accessibility/*' 'perl-core/*' 'net-news/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -746,192 +746,382 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-sys-libs/csu
-  DeprecatedEAPI: version 79: uses deprecated EAPI: 3
+media-fonts/alee-fonts
+  DeprecatedEAPI: version 13: uses deprecated EAPI: 0
 
-sys-libs/db
-  DeprecatedEAPI: version 1.85-r3: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 3.2.9_p2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.2.52_p5-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.3.29_p1-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.4.20_p4-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.5.20_p2-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.6.21_p4: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.7.25_p4: uses deprecated EAPI: 0
-  DroppedKeywordWarning: version 4.4.20_p4-r1: keywords dropped: alpha, hppa
-  DroppedKeywordWarning: version 5.1.29-r1: keywords dropped: mips
+media-fonts/aquafont
+  DeprecatedEAPI: version 2.7-r4: uses deprecated EAPI: 0
 
-sys-libs/e2fsprogs-libs
-  DeprecatedEAPI: version 1.41.7: uses deprecated EAPI: 2
+media-fonts/aquapfont
+  DeprecatedEAPI: version 2.6-r2: uses deprecated EAPI: 0
 
-sys-libs/fortify-headers
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-sys-libs/gdbm
-  DeprecatedEAPI: version 1.8.3-r3: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.8.3-r4: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.9.1-r2: uses deprecated EAPI: 3
-
-sys-libs/glibc
-  DeprecatedEAPI: version 2.13-r4: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.14.1-r3: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.15-r3: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.16.0: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.17: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.18-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.19: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.19-r1: uses deprecated EAPI: 0
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DroppedKeywordWarning: version 2.22: keywords dropped: alpha, amd64, arm, arm64, hppa, ia64, m68k, mips, ppc, ppc64, s390, sh, sparc, x86
-
-sys-libs/gpm
-  DeprecatedEAPI: version 1.20.6: uses deprecated EAPI: 2
-
-sys-libs/itx-bind
-  DeprecatedEAPI: version 0.1-r2: uses deprecated EAPI: 2
-
-sys-libs/ldb
-  DeprecatedEclass: version 1.1.12: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEclass: version 1.1.15: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DroppedKeywordWarning: version 1.1.17-r1: keywords dropped: sparc
-
-sys-libs/libaal
-  DeprecatedEAPI: version 1.0.5: uses deprecated EAPI: 0
-
-sys-libs/libacpi
-  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 2
-
-sys-libs/libavc1394
-  DeprecatedEAPI: version 0.5.3: uses deprecated EAPI: 0
-
-sys-libs/libcap-ng
-  DeprecatedEclass: version 0.6.6: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEclass: version 0.7.3: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-
-sys-libs/libchipcard
-  DeprecatedEAPI: version 5.0.2: uses deprecated EAPI: 2
-
-sys-libs/libcxx
-  WhitespaceFound: version 0.0_p20130725: ebuild has leading whitespace on line 113
-  WhitespaceFound: version 0.0_p20131222: ebuild has leading whitespace on line 114
-  WhitespaceFound: version 0.0_p20140322: ebuild has leading whitespace on line 114
-  WhitespaceFound: version 3.6.0: ebuild has leading whitespace on line 115
-  WhitespaceFound: version 3.6.1: ebuild has leading whitespace on line 115
-  WhitespaceFound: version 3.6.2: ebuild has leading whitespace on line 115
-  WhitespaceFound: version 3.7.0: ebuild has leading whitespace on line 115
-  WhitespaceFound: version 9999: ebuild has leading whitespace on line 115
-  ExecutableFile: "files/prepare_snapshot.sh" has unnecessary executable bit
-
-sys-libs/libcxxrt
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  ExecutableFile: "files/prepare_snapshot.sh" has unnecessary executable bit
-
-sys-libs/libfreevec
-  DeprecatedEAPI: version 1.0.4: uses deprecated EAPI: 0
-
-sys-libs/libieee1284
-  DeprecatedEclass: version 0.2.11-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.2.11-r1: uses deprecated EAPI: 3
-  DeprecatedEclass: version 0.2.11-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.2.11-r2: uses deprecated EAPI: 3
-  DeprecatedEclass: version 0.2.11-r3: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-
-sys-libs/librtas
-  DeprecatedEAPI: version 1.3.3: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.3.5: uses deprecated EAPI: 0
-
-sys-libs/libservicelog
-  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.1.11: uses deprecated EAPI: 0
-
-sys-libs/libspe2
-  DeprecatedEAPI: version 2.2.80_p95-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.3.0_p135: uses deprecated EAPI: 0
-
-sys-libs/libstdc++-v3
-  DeprecatedEAPI: version 3.3.6: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 3.3.6-r1: uses deprecated EAPI: 0
-
-sys-libs/libstdc++-v3-bin
-  DeprecatedEAPI: version 3.3.6: uses deprecated EAPI: 0
-
-sys-libs/libtermcap-compat
-  DeprecatedEAPI: version 2.0.8-r2: uses deprecated EAPI: 0
-
-sys-libs/libutempter
-  DeprecatedEAPI: version 1.1.5: uses deprecated EAPI: 0
-
-sys-libs/libxcrypt
+media-fonts/arabeyes-fonts
   DeprecatedEAPI: version 2.0: uses deprecated EAPI: 0
 
-sys-libs/lrmi
-  DeprecatedEAPI: version 0.10-r1: uses deprecated EAPI: 0
+media-fonts/artwiz-aleczapka-en
+  DeprecatedEAPI: version 1.3: uses deprecated EAPI: 0
 
-sys-libs/lwp
-  DeprecatedEAPI: version 2.2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.5: uses deprecated EAPI: 0
+media-fonts/artwiz-latin1
+  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 0
 
-sys-libs/mars
-  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 0
+media-fonts/baekmuk-fonts
+  DeprecatedEAPI: version 2.2-r2: uses deprecated EAPI: 0
 
-sys-libs/musl
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+media-fonts/bitstream-cyberbit
+  DeprecatedEAPI: version 2.0: uses deprecated EAPI: 2
 
-sys-libs/ncurses
-  MetadataError: version 5.9-r4: attr(rdepends): blocks itself
-  DoubleEmptyLine: version 5.9-r101: ebuild has unneeded empty line 172
+media-fonts/cardo
+  DeprecatedEAPI: version 1.04: uses deprecated EAPI: 0
 
-sys-libs/newlib
-  DeprecatedEAPI: version 1.18.0: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.19.0: uses deprecated EAPI: 0
-  DroppedKeywordWarning: version 2.2.0.20150423: keywords dropped: arm, hppa, m68k, mips, ppc, ppc64, sh, sparc, x86
+media-fonts/cheapskatefonts
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
 
-sys-libs/nss-db
-  DeprecatedEAPI: version 2.2.3_pre1-r2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.2.3_pre1-r3: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.2.3_pre1-r4: uses deprecated EAPI: 0
+media-fonts/cm-unicode
+  DeprecatedEAPI: version 0.7.0: uses deprecated EAPI: 3
 
-sys-libs/openhpi
-  DeprecatedEAPI: version 2.12.0: uses deprecated EAPI: 0
+media-fonts/cronyx-fonts
+  DeprecatedEAPI: version 2.3.1-r2: uses deprecated EAPI: 0
 
-sys-libs/openipmi
-  DeprecatedEAPI: version 1.3.18: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.4.12: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.4.14: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.4.28: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.0.11: uses deprecated EAPI: 0
-  DeprecatedEclass: version 2.0.16: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 2.0.16: uses deprecated EAPI: 0
-  DeprecatedEclass: version 2.0.16-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 2.0.16-r1: uses deprecated EAPI: 0
-  DeprecatedEclass: version 2.0.18: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 2.0.18: uses deprecated EAPI: 0
-  DroppedKeywordWarning: version 1.4.12: keywords dropped: amd64
+media-fonts/culmus
+  DeprecatedEAPI: version 0.120-r4: uses deprecated EAPI: 2
 
-sys-libs/readline
-  DeprecatedEAPI: version 4.3_p5: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 5.2_p14: uses deprecated EAPI: 0
-  DroppedKeywordWarning: version 7.0_alpha: keywords dropped: alpha, amd64, arm, arm64, hppa, ia64, m68k, mips, ppc, ppc64, s390, sh, sparc, x86
+media-fonts/dina
+  DeprecatedEAPI: version 2.89: uses deprecated EAPI: 0
 
-sys-libs/rvm
-  DeprecatedEAPI: version 1.12: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.16: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.17: uses deprecated EAPI: 2
+media-fonts/efont-unicode
+  DeprecatedEAPI: version 0.4.2-r1: uses deprecated EAPI: 0
 
-sys-libs/suacomp
-  DeprecatedEAPI: version 0.6.13: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 0.6.14: uses deprecated EAPI: 3
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+media-fonts/ekushey-bangla-fonts
+  DeprecatedEAPI: version 20070420: uses deprecated EAPI: 0
 
-sys-libs/system-config-base
+media-fonts/encodings
+  DeprecatedEAPI: version 1.0.4: uses deprecated EAPI: 3
+
+media-fonts/exljbris-free
+  DeprecatedEAPI: version 20100320: uses deprecated EAPI: 0
+
+media-fonts/farsi-fonts
+  DeprecatedEAPI: version 0.4: uses deprecated EAPI: 0
+
+media-fonts/fgdc-emergency
+  DeprecatedEAPI: version 2.20: uses deprecated EAPI: 0
+
+media-fonts/font-adobe-100dpi
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
+
+media-fonts/font-adobe-75dpi
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
+
+media-fonts/font-adobe-utopia-100dpi
+  DeprecatedEAPI: version 1.0.4: uses deprecated EAPI: 3
+
+media-fonts/font-adobe-utopia-75dpi
+  DeprecatedEAPI: version 1.0.4: uses deprecated EAPI: 3
+
+media-fonts/font-adobe-utopia-type1
+  DeprecatedEAPI: version 1.0.4: uses deprecated EAPI: 3
+
+media-fonts/font-alias
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
+  DroppedKeywordWarning: version 1.0.3-r1: keywords dropped: arm64
+
+media-fonts/font-arabic-misc
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
+
+media-fonts/font-bh-100dpi
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
+
+media-fonts/font-bh-75dpi
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
+
+media-fonts/font-bh-lucidatypewriter-100dpi
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
+
+media-fonts/font-bh-lucidatypewriter-75dpi
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
+
+media-fonts/font-bh-ttf
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
+
+media-fonts/font-bh-type1
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
+
+media-fonts/font-bitstream-100dpi
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
+
+media-fonts/font-bitstream-75dpi
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
+
+media-fonts/font-bitstream-speedo
+  DeprecatedEAPI: version 1.0.2: uses deprecated EAPI: 3
+
+media-fonts/font-bitstream-type1
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
+
+media-fonts/font-cronyx-cyrillic
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
+
+media-fonts/font-cursor-misc
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
+
+media-fonts/font-daewoo-misc
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
+
+media-fonts/font-dec-misc
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
+
+media-fonts/font-ibm-type1
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
+
+media-fonts/font-isas-misc
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
+
+media-fonts/font-jis-misc
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
+
+media-fonts/font-micro-misc
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
+
+media-fonts/font-misc-cyrillic
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
+
+media-fonts/font-misc-ethiopic
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
+
+media-fonts/font-misc-meltho
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
+
+media-fonts/font-misc-misc
+  DeprecatedEAPI: version 1.1.2: uses deprecated EAPI: 3
+
+media-fonts/font-mutt-misc
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
+
+media-fonts/font-schumacher-misc
+  DeprecatedEAPI: version 1.1.2: uses deprecated EAPI: 3
+
+media-fonts/font-screen-cyrillic
+  DeprecatedEAPI: version 1.0.4: uses deprecated EAPI: 3
+
+media-fonts/font-sony-misc
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
+
+media-fonts/font-sun-misc
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
+
+media-fonts/font-winitzki-cyrillic
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
+
+media-fonts/font-xfree86-type1
+  DeprecatedEAPI: version 1.0.4: uses deprecated EAPI: 3
+
+media-fonts/free-bangla-font
+  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 0
+
+media-fonts/freefonts
+  DeprecatedEAPI: version 0.10-r3: uses deprecated EAPI: 0
+
+media-fonts/fs-fonts
+  DeprecatedEAPI: version 0.1_alpha3: uses deprecated EAPI: 0
+
+media-fonts/heuristica
+  DeprecatedEAPI: version 0.2.1: uses deprecated EAPI: 3
+
+media-fonts/hkscs-ming
+  DeprecatedEAPI: version 1.0_pre20030919-r2: uses deprecated EAPI: 0
+
+media-fonts/hunkyfonts
+  DeprecatedEAPI: version 0.3.1: uses deprecated EAPI: 0
+
+media-fonts/inconsolata
+  DeprecatedEAPI: version 20090222: uses deprecated EAPI: 0
+
+media-fonts/intlfonts
+  DeprecatedEAPI: version 1.2.1: uses deprecated EAPI: 0
+
+media-fonts/ipamonafont
+  DeprecatedEAPI: version 1.0.8: uses deprecated EAPI: 0
+
+media-fonts/jisx0213-fonts
+  DeprecatedEAPI: version 20040425-r2: uses deprecated EAPI: 0
+
+media-fonts/jsmath
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+
+media-fonts/jsmath-extra-dark
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+
+media-fonts/jsmath-extra-light
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+
+media-fonts/kacst-fonts
+  DeprecatedEAPI: version 1.6.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.0: uses deprecated EAPI: 0
+
+media-fonts/kanjistrokeorders
+  DeprecatedEAPI: version 2.012: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.016: uses deprecated EAPI: 0
+
+media-fonts/khmer
+  DeprecatedEAPI: version 5.0-r1: uses deprecated EAPI: 0
+
+media-fonts/kochi-substitute
+  DeprecatedEAPI: version 20030809-r3: uses deprecated EAPI: 0
+
+media-fonts/konfont
+  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 0
+
+media-fonts/lfpfonts-fix
+  DeprecatedEAPI: version 0.83-r2: uses deprecated EAPI: 0
+
+media-fonts/lfpfonts-var
+  DeprecatedEAPI: version 0.84: uses deprecated EAPI: 0
+
+media-fonts/liberation-fonts
+  DroppedKeywordWarning: version 2.00.1-r1: keywords dropped: alpha, ppc64, sparc
+
+media-fonts/libertine
+  DeprecatedEAPI: version 4.7.5: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 5.1.3.20110615: uses deprecated EAPI: 0
+
+media-fonts/lohit-fonts
+  DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
+
+media-fonts/mgopen
+  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 0
+
+media-fonts/mikachan-font-otf
+  DeprecatedEAPI: version 9.1-r1: uses deprecated EAPI: 0
+
+media-fonts/mikachan-font-ttc
+  DeprecatedEAPI: version 9.1: uses deprecated EAPI: 0
+
+media-fonts/mikachan-font-ttf
+  DeprecatedEAPI: version 8.9-r2: uses deprecated EAPI: 0
+
+media-fonts/monafont
+  DeprecatedEAPI: version 2.90-r2: uses deprecated EAPI: 0
+
+media-fonts/mplus-fonts
+  DeprecatedEAPI: version 2.2.4: uses deprecated EAPI: 0
+
+media-fonts/nanumfont
+  DeprecatedEAPI: version 2.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.0-r1: uses deprecated EAPI: 2
+
+media-fonts/nepali-fonts
   DeprecatedEAPI: version 1-r1: uses deprecated EAPI: 0
 
-sys-libs/uclibc
-  DeprecatedEAPI: version 0.9.33.2-r15: uses deprecated EAPI: 0
-  DeprecatedEclass: version 0.9.33.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DeprecatedEAPI: version 0.9.33.9999: uses deprecated EAPI: 0
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 0
+media-fonts/oldstandard
+  DeprecatedEAPI: version 2.2: uses deprecated EAPI: 0
+
+media-fonts/opendesktop-fonts
+  DeprecatedEAPI: version 1.4.2: uses deprecated EAPI: 0
+
+media-fonts/oto
+  DeprecatedEAPI: version 0.5: uses deprecated EAPI: 0
+
+media-fonts/pcf2bdf
+  DeprecatedEAPI: version 1.04-r1: uses deprecated EAPI: 0
+
+media-fonts/pigiarniq
+  DeprecatedEAPI: version 1: uses deprecated EAPI: 0
+
+media-fonts/pothana2k
+  DeprecatedEAPI: version 2006-r1: uses deprecated EAPI: 0
+
+media-fonts/proggy-fonts
+  DeprecatedEAPI: version 1: uses deprecated EAPI: 0
+
+media-fonts/roboto
+  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 0
+
+media-fonts/sazanami
+  DeprecatedEAPI: version 20040629: uses deprecated EAPI: 0
+
+media-fonts/sgi-fonts
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+
+media-fonts/shinonome
+  DeprecatedEAPI: version 0.9.11: uses deprecated EAPI: 0
+
+media-fonts/sil-abyssinica
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+
+media-fonts/sil-doulos
+  DeprecatedEAPI: version 4.106: uses deprecated EAPI: 0
+
+media-fonts/sil-ezra
+  DeprecatedEAPI: version 2.51: uses deprecated EAPI: 0
+
+media-fonts/sil-galatia
+  DeprecatedEAPI: version 2.1: uses deprecated EAPI: 0
+
+media-fonts/stix-fonts
+  DeprecatedEAPI: version 1.0.0-r1: uses deprecated EAPI: 0
+
+media-fonts/takao-fonts
+  DeprecatedEAPI: version 003.02.01: uses deprecated EAPI: 0
+
+media-fonts/tengwar-fonts
+  DeprecatedEAPI: version 1.9d: uses deprecated EAPI: 0
+
+media-fonts/terminus-font
+  DeprecatedEAPI: version 4.36: uses deprecated EAPI: 3
+
+media-fonts/texcm-ttf
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+
+media-fonts/tibetan-machine-font
+  DeprecatedEAPI: version 1.901: uses deprecated EAPI: 0
+
+media-fonts/ttf-bitstream-vera
+  DeprecatedEAPI: version 1.10-r3: uses deprecated EAPI: 0
+
+media-fonts/unfonts
+  DeprecatedEAPI: version 1.0.2_pre080608-r1: uses deprecated EAPI: 0
+
+media-fonts/unfonts-extra
+  DeprecatedEAPI: version 1.0.2_pre080608-r1: uses deprecated EAPI: 0
+
+media-fonts/unifont
+  DeprecatedEAPI: version 5.1.20080914: uses deprecated EAPI: 0
+  DroppedKeywordWarning: version 7.0.01: keywords dropped: alpha
+
+media-fonts/urw-fonts
+  DeprecatedEAPI: version 2.4.9: uses deprecated EAPI: 0
+
+media-fonts/vc-fonts
+  DeprecatedEAPI: version 20020207-r2: uses deprecated EAPI: 0
+
+media-fonts/vdrsymbols-ttf
+  DeprecatedEAPI: version 20100612: uses deprecated EAPI: 0
+
+media-fonts/vlgothic
+  DeprecatedEAPI: version 20110722: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 20141206: uses deprecated EAPI: 0
+
+media-fonts/vollkorn
+  DeprecatedEAPI: version 2.1: uses deprecated EAPI: 0
+
+media-fonts/webby-fonts
+  DeprecatedEAPI: version 1: uses deprecated EAPI: 0
+
+media-fonts/wqy-bitmapfont
+  DeprecatedEAPI: version 1.0.0_rc1: uses deprecated EAPI: 0
+
+media-fonts/wqy-microhei
+  DeprecatedEAPI: version 0.2.0_beta: uses deprecated EAPI: 0
+  DroppedKeywordWarning: version 0.2.0_beta-r1: keywords dropped: arm
+
+media-fonts/wqy-unibit
+  DeprecatedEAPI: version 1.1.0_p1: uses deprecated EAPI: 0
+
+media-fonts/x11fonts-jmk
+  DeprecatedEAPI: version 3.0-r1: uses deprecated EAPI: 0
+
+media-fonts/zh-kcfonts
+  DeprecatedEAPI: version 1.05-r3: uses deprecated EAPI: 0
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
