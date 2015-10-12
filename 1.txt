@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 1 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-python/*' 'dev-texlive/*' 'app-doc/*' 'app-xemacs/*' 'games-fps/*' 'app-backup/*' 'games-emulation/*' 'net-proxy/*' 'app-mobilephone/*' 'gnustep-base/*' 'games-kids/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-python/*' 'media-gfx/*' 'app-doc/*' 'app-xemacs/*' 'games-fps/*' 'app-backup/*' 'games-emulation/*' 'net-proxy/*' 'app-mobilephone/*' 'gnustep-base/*' 'games-kids/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -650,125 +650,309 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-dev-texlive/texlive-basic
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+media-gfx/aoi
+  DeprecatedEAPI: version 2.5: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.7.2: uses deprecated EAPI: 0
 
-dev-texlive/texlive-bibtexextra
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+media-gfx/asymptote
+  DeprecatedEclass: version 2.21: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-dev-texlive/texlive-context
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+media-gfx/aview
+  DeprecatedEAPI: version 1.3.0_rc1-r1: uses deprecated EAPI: 0
 
-dev-texlive/texlive-fontsextra
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+media-gfx/bootsplash-themes
+  DeprecatedEAPI: version 20060913: uses deprecated EAPI: 0
 
-dev-texlive/texlive-fontsrecommended
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+media-gfx/brlcad
+  DeprecatedEAPI: version 7.18.4: uses deprecated EAPI: 3
 
-dev-texlive/texlive-fontutils
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+media-gfx/cellwriter
+  DeprecatedEAPI: version 1.3.4: uses deprecated EAPI: 2
 
-dev-texlive/texlive-formatsextra
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+media-gfx/cthumb
+  DeprecatedEAPI: version 4.2: uses deprecated EAPI: 0
 
-dev-texlive/texlive-games
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+media-gfx/dawn
+  DeprecatedEAPI: version 3.90b: uses deprecated EAPI: 2
 
-dev-texlive/texlive-genericextra
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+media-gfx/digikam
+  NonExistentDeps: version 4.4.0-r1: depset depends: nonexistent atoms [ kde-apps/libkface:4 ]
+  NonExistentDeps: version 4.4.0-r1: depset rdepends: nonexistent atoms [ kde-apps/libkface:4 ]
+  NonExistentDeps: version 4.7.0: depset depends: nonexistent atoms [ >=kde-apps/libkface-14.12.0:4 ]
+  NonExistentDeps: version 4.7.0: depset rdepends: nonexistent atoms [ >=kde-apps/libkface-14.12.0:4 ]
+  NonExistentDeps: version 4.10.0: depset depends: nonexistent atoms [ >=kde-apps/libkface-14.12.0:4 ]
+  NonExistentDeps: version 4.10.0: depset rdepends: nonexistent atoms [ >=kde-apps/libkface-14.12.0:4 ]
+  NonExistentDeps: version 4.12.0: depset depends: nonexistent atoms [ kde-apps/libkface:4, kde-apps/libkgeomap:4 ]
+  NonExistentDeps: version 4.12.0: depset rdepends: nonexistent atoms [ kde-apps/libkface:4, kde-apps/libkgeomap:4 ]
 
-dev-texlive/texlive-genericrecommended
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+media-gfx/dispcalgui
+  DeprecatedEAPI: version 1.2.7.0: uses deprecated EAPI: 2
+  DeprecatedEclass: version 1.2.7.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-dev-texlive/texlive-humanities
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+media-gfx/drqueue
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-dev-texlive/texlive-langafrican
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+media-gfx/ebdftopcf
+  DeprecatedEAPI: version 2: uses deprecated EAPI: 0
 
-dev-texlive/texlive-langarabic
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+media-gfx/exact-image
+  NonExistentDeps: version 0.8.1-r1: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  NonExistentDeps: version 0.8.1-r1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 0.8.1-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-dev-texlive/texlive-langcjk
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+media-gfx/exiftags
+  DeprecatedEAPI: version 1.01: uses deprecated EAPI: 0
 
-dev-texlive/texlive-langcyrillic
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+media-gfx/fblogo
+  DeprecatedEAPI: version 0.5.2: uses deprecated EAPI: 0
 
-dev-texlive/texlive-langczechslovak
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+media-gfx/figurine
+  DeprecatedEAPI: version 1.0.5: uses deprecated EAPI: 0
 
-dev-texlive/texlive-langenglish
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+media-gfx/flam3
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 2
 
-dev-texlive/texlive-langfrench
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+media-gfx/fontforge
+  DeprecatedEAPI: version 20110222-r1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 20110222-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 20120731: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-dev-texlive/texlive-langgerman
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+media-gfx/fontypython
+  NonExistentDeps: version 0.4.4-r1: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 0.4.4-r1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 0.4.4-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-dev-texlive/texlive-langgreek
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+media-gfx/fotowall
+  DeprecatedEAPI: version 0.9-r1: uses deprecated EAPI: 2
 
-dev-texlive/texlive-langindic
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+media-gfx/fr0st
+  DeprecatedEAPI: version 1.4-r1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.4-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-dev-texlive/texlive-langitalian
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+media-gfx/freecad
+  DeprecatedEclass: version 0.12.5284-r4: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-dev-texlive/texlive-langother
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+media-gfx/galleryadd
+  DeprecatedEAPI: version 2.30: uses deprecated EAPI: 0
 
-dev-texlive/texlive-langpolish
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+media-gfx/gliv
+  DeprecatedEAPI: version 1.9.6: uses deprecated EAPI: 2
 
-dev-texlive/texlive-langportuguese
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+media-gfx/gnofract4d
+  NonExistentDeps: version 3.13: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 3.13: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEAPI: version 3.13: uses deprecated EAPI: 3
+  DeprecatedEclass: version 3.13: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 3.14: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 3.14: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEAPI: version 3.14: uses deprecated EAPI: 3
+  DeprecatedEclass: version 3.14: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-dev-texlive/texlive-langspanish
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+media-gfx/gozer
+  DeprecatedEAPI: version 0.7-r2: uses deprecated EAPI: 2
 
-dev-texlive/texlive-latex
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+media-gfx/graphite2
+  DroppedKeywordWarning: version 1.2.4: keywords dropped: s390
 
-dev-texlive/texlive-latexextra
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+media-gfx/graphviz
+  DeprecatedEAPI: version 2.26.3-r4: uses deprecated EAPI: 3
+  DeprecatedEclass: version 2.26.3-r4: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-dev-texlive/texlive-latexrecommended
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+media-gfx/grub-splashes
+  DeprecatedEAPI: version 20091109: uses deprecated EAPI: 0
 
-dev-texlive/texlive-luatex
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+media-gfx/gthumb
+  UnusedLocalFlags: metadata.xml unused local use flag: [ libsecret ]
 
-dev-texlive/texlive-mathextra
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+media-gfx/icon-slicer
+  DeprecatedEAPI: version 0.3: uses deprecated EAPI: 2
 
-dev-texlive/texlive-metapost
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+media-gfx/igal
+  DeprecatedEAPI: version 2.0: uses deprecated EAPI: 2
 
-dev-texlive/texlive-music
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+media-gfx/imageworsener
+  DeprecatedEAPI: version 0.9.2: uses deprecated EAPI: 2
 
-dev-texlive/texlive-omega
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+media-gfx/iscan
+  DeprecatedEAPI: version 2.26.2: uses deprecated EAPI: 2
 
-dev-texlive/texlive-pictures
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+media-gfx/iscan-plugin-gt-f720
+  DeprecatedEAPI: version 0.0.1: uses deprecated EAPI: 2
 
-dev-texlive/texlive-plainextra
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+media-gfx/jigl
+  DeprecatedEAPI: version 2.0.1: uses deprecated EAPI: 0
 
-dev-texlive/texlive-pstricks
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+media-gfx/jp2a
+  DeprecatedEAPI: version 1.0.6-r1: uses deprecated EAPI: 2
 
-dev-texlive/texlive-publishers
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+media-gfx/jpeg2ps
+  DeprecatedEAPI: version 1.9-r1: uses deprecated EAPI: 0
 
-dev-texlive/texlive-science
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+media-gfx/jpegpixi
+  DeprecatedEAPI: version 1.1.1: uses deprecated EAPI: 2
 
-dev-texlive/texlive-xetex
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+media-gfx/jpegtoavi
+  DeprecatedEAPI: version 1.5: uses deprecated EAPI: 2
+
+media-gfx/k3d
+  DeprecatedEAPI: version 0.7.11.0-r1: uses deprecated EAPI: 2
+
+media-gfx/mirage
+  MetadataError: version 0.9.5.1: attr(fetchables): error- Metadata Exception: pkg ebuild src: media-gfx/mirage-0.9.5.1, attr fetchables
+error: mirror://berlios/mirageiv/mirage-0.9.5.1.tar.bz2 is unparseable
+flagged token- uri mirror://berlios/mirageiv/mirage-0.9.5.1.tar.bz2 isn't a known mirror tier
+  NonExistentDeps: version 0.9.5.1: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 0.9.5.1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEAPI: version 0.9.5.1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.9.5.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  MetadataError: version 0.9.5.2: attr(fetchables): error- Metadata Exception: pkg ebuild src: media-gfx/mirage-0.9.5.2, attr fetchables
+error: mirror://berlios/mirageiv/mirage-0.9.5.2.tar.bz2 is unparseable
+flagged token- uri mirror://berlios/mirageiv/mirage-0.9.5.2.tar.bz2 isn't a known mirror tier
+  NonExistentDeps: version 0.9.5.2: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 0.9.5.2: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEAPI: version 0.9.5.2: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.9.5.2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  MetadataError: version 0.9.5.2-r1: attr(fetchables): error- Metadata Exception: pkg ebuild src: media-gfx/mirage-0.9.5.2-r1, attr fetchables
+error: mirror://berlios/mirageiv/mirage-0.9.5.2.tar.bz2 is unparseable
+flagged token- uri mirror://berlios/mirageiv/mirage-0.9.5.2.tar.bz2 isn't a known mirror tier
+
+media-gfx/mkgallery
+  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 0
+
+media-gfx/mypaint
+  NonExistentDeps: version 1.0.0-r1: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  NonExistentDeps: version 1.0.0-r1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 1.0.0-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 1.1.0: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  NonExistentDeps: version 1.1.0: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 1.1.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 1.1.0-r1: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  NonExistentDeps: version 1.1.0-r1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 1.1.0-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+media-gfx/nip2
+  DeprecatedEAPI: version 7.26.4: uses deprecated EAPI: 2
+
+media-gfx/opcion
+  DeprecatedEAPI: version 1.1.1-r2: uses deprecated EAPI: 0
+
+media-gfx/openclipart
+  DeprecatedEAPI: version 0.20: uses deprecated EAPI: 2
+
+media-gfx/openexr_viewers
+  DeprecatedEAPI: version 1.0.2: uses deprecated EAPI: 2
+
+media-gfx/openmesh
+  DeprecatedEAPI: version 2.3.1: uses deprecated EAPI: 3
+
+media-gfx/optipng
+  DeprecatedEAPI: version 0.7.3: uses deprecated EAPI: 2
+
+media-gfx/paint-mono
+  DeprecatedEAPI: version 0.1.63: uses deprecated EAPI: 2
+  DeprecatedEclass: version 0.1.63: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+
+media-gfx/pencil
+  DeprecatedEAPI: version 0.4.4_beta: uses deprecated EAPI: 2
+
+media-gfx/peps
+  DeprecatedEAPI: version 2.0: uses deprecated EAPI: 2
+
+media-gfx/pictureflow
+  DeprecatedEAPI: version 0.1.0: uses deprecated EAPI: 2
+
+media-gfx/pinta
+  DeprecatedEclass: version 1.4: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEclass: version 1.5_pre20121118: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3), mono (migrate to mono-env) ]
+
+media-gfx/pixie
+  DeprecatedEAPI: version 2.2.6-r1: uses deprecated EAPI: 2
+
+media-gfx/pngcheck
+  DeprecatedEAPI: version 2.3.0: uses deprecated EAPI: 2
+
+media-gfx/pngrewrite
+  DeprecatedEAPI: version 1.3.0: uses deprecated EAPI: 0
+
+media-gfx/pqstego
+  DeprecatedEAPI: version 0.0.1: uses deprecated EAPI: 2
+
+media-gfx/propaganda
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+
+media-gfx/psftools
+  DeprecatedEAPI: version 1.0.7: uses deprecated EAPI: 0
+
+media-gfx/qingy-themes
+  DeprecatedEAPI: version 20050816: uses deprecated EAPI: 0
+
+media-gfx/qosmic
+  NonExistentDeps: version 1.5.0: depset depends: nonexistent atoms [ <dev-qt/qtgui-4.8.5:4 ]
+  NonExistentDeps: version 1.5.0: depset rdepends: nonexistent atoms [ <dev-qt/qtgui-4.8.5:4 ]
+
+media-gfx/quat
+  DeprecatedEAPI: version 1.20: uses deprecated EAPI: 0
+
+media-gfx/qvv
+  DeprecatedEAPI: version 4.02: uses deprecated EAPI: 2
+
+media-gfx/replicatorg
+  DeprecatedEAPI: version 37-r2: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 40-r1: uses deprecated EAPI: 3
+  DroppedKeywordWarning: version 40-r1: keywords dropped: amd64, x86
+
+media-gfx/rotoscope
+  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 2
+
+media-gfx/sane-frontends
+  DeprecatedEAPI: version 1.0.14: uses deprecated EAPI: 0
+
+media-gfx/skencil
+  DeprecatedEAPI: version 0.6.18_pre20080519: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.6.18_pre20080519: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.0_alpha784: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.0_alpha784: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+media-gfx/smile
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 2
+
+media-gfx/splash-themes-livecd
+  DeprecatedEAPI: version 2004.3: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2005.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2005.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2006.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2006.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2007.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2007.0-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2007.0-r2: uses deprecated EAPI: 2
+
+media-gfx/springgraph
+  DeprecatedEAPI: version 88: uses deprecated EAPI: 0
+
+media-gfx/transfig
+  SizeViolation: "files/transfig-3.2.5d-fig2mpdf-r1.patch" exceeds 20k in size; 41613 bytes total
+
+media-gfx/tuxpaint
+  DeprecatedEAPI: version 0.9.21-r1: uses deprecated EAPI: 2
+
+media-gfx/tuxpaint-stamps
+  DeprecatedEAPI: version 20090628: uses deprecated EAPI: 2
+
+media-gfx/viewer
+  DeprecatedEAPI: version 0.8.0: uses deprecated EAPI: 2
+
+media-gfx/wings
+  DeprecatedEAPI: version 1.1.1: uses deprecated EAPI: 2
+
+media-gfx/xloadimage
+  DeprecatedEAPI: version 4.1-r11: uses deprecated EAPI: 2
+
+media-gfx/xsvg
+  DeprecatedEAPI: version 0.2.1: uses deprecated EAPI: 2
+
+media-gfx/yafaray
+  DeprecatedEAPI: version 0.1.1: uses deprecated EAPI: 2
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
