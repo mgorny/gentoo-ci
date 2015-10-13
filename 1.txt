@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 1 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-python/*' 'media-gfx/*' 'app-doc/*' 'app-xemacs/*' 'games-fps/*' 'app-backup/*' 'games-emulation/*' 'net-proxy/*' 'app-mobilephone/*' 'gnustep-base/*' 'games-kids/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-python/*' 'media-gfx/*' 'app-doc/*' 'sys-cluster/*' 'sys-auth/*' 'app-backup/*' 'games-emulation/*' 'net-proxy/*' 'app-mobilephone/*' 'gnustep-base/*' 'games-kids/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -50,8 +50,8 @@ dev-python/beaker
   DroppedKeywordWarning: version 1.7.0-r1: keywords dropped: ia64, sparc
 
 dev-python/beautifulsoup
-  SizeViolation: "files/beautifulsoup-3.1.0.1-python-3.patch" exceeds 20k in size; 42319 bytes total
   DroppedKeywordWarning: version 4.3.2: keywords dropped: arm64
+  SizeViolation: "files/beautifulsoup-3.1.0.1-python-3.patch" exceeds 20k in size; 42319 bytes total
 
 dev-python/bsddb3
   DroppedKeywordWarning: version 6.1.0: keywords dropped: hppa
@@ -1023,729 +1023,266 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-app-xemacs/ada
-  DeprecatedEAPI: version 1.14: uses deprecated EAPI: 0
+sys-cluster/c3
+  DeprecatedEAPI: version 4.0.1: uses deprecated EAPI: 0
 
-app-xemacs/apel
-  DeprecatedEAPI: version 1.32: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.34: uses deprecated EAPI: 0
+sys-cluster/ccs
+  DeprecatedEAPI: version 2.03.09: uses deprecated EAPI: 0
 
-app-xemacs/auctex
-  DeprecatedEAPI: version 1.47: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.51: uses deprecated EAPI: 0
+sys-cluster/cinder
+  DeprecatedEclass: version 2015.1.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-app-xemacs/bbdb
-  DeprecatedEAPI: version 1.32: uses deprecated EAPI: 0
+sys-cluster/cman-lib
+  DeprecatedEAPI: version 2.03.09: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.03.09-r1: uses deprecated EAPI: 0
 
-app-xemacs/build
-  DeprecatedEAPI: version 1.14: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.15: uses deprecated EAPI: 0
+sys-cluster/corosync
+  DeprecatedEAPI: version 1.3.0: uses deprecated EAPI: 3
 
-app-xemacs/c-support
-  DeprecatedEAPI: version 1.22: uses deprecated EAPI: 0
+sys-cluster/dlm
+  DeprecatedEAPI: version 2.03.09: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.03.11: uses deprecated EAPI: 0
 
-app-xemacs/calc
-  DeprecatedEAPI: version 1.26: uses deprecated EAPI: 0
+sys-cluster/dlm-lib
+  DeprecatedEAPI: version 2.03.09: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.03.11: uses deprecated EAPI: 0
 
-app-xemacs/calendar
-  DeprecatedEAPI: version 1.32: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.38: uses deprecated EAPI: 0
+sys-cluster/drbd
+  DeprecatedEAPI: version 8.0.16: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 8.3.7: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 8.3.8.1: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 8.3.8.1-r1: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 8.3.10: uses deprecated EAPI: 2
 
-app-xemacs/cc-mode
-  DeprecatedEAPI: version 1.45: uses deprecated EAPI: 0
+sys-cluster/drbd-kernel
+  DeprecatedEAPI: version 8.0.16: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 8.3.6: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 8.3.8.1: uses deprecated EAPI: 2
 
-app-xemacs/cedet-common
-  DeprecatedEAPI: version 1.01: uses deprecated EAPI: 0
+sys-cluster/fake
+  DeprecatedEAPI: version 1.1.10: uses deprecated EAPI: 0
 
-app-xemacs/clearcase
-  DeprecatedEAPI: version 1.10: uses deprecated EAPI: 0
+sys-cluster/feedbackd-agent
+  DeprecatedEAPI: version 0.4: uses deprecated EAPI: 0
 
-app-xemacs/cogre
-  DeprecatedEAPI: version 1.02: uses deprecated EAPI: 0
+sys-cluster/feedbackd-master
+  DeprecatedEAPI: version 0.4: uses deprecated EAPI: 0
 
-app-xemacs/cookie
-  DeprecatedEAPI: version 1.15: uses deprecated EAPI: 0
+sys-cluster/ganglia
+  DeprecatedEAPI: version 3.5.0: uses deprecated EAPI: 3
+  DeprecatedEclass: version 3.5.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-app-xemacs/crisp
-  DeprecatedEAPI: version 1.15: uses deprecated EAPI: 0
+sys-cluster/gfs-kernel
+  DeprecatedEAPI: version 2.03.09: uses deprecated EAPI: 0
 
-app-xemacs/debug
-  DeprecatedEAPI: version 1.18: uses deprecated EAPI: 0
+sys-cluster/glusterfs
+  DeprecatedEAPI: version 3.1.2: uses deprecated EAPI: 3
+  SizeViolation: "files/glusterfs-3.4.0-build-shared-only.patch" exceeds 20k in size; 22147 bytes total
+  SizeViolation: "files/glusterfs-3.5.1-build-shared-only.patch" exceeds 20k in size; 25227 bytes total
+  SizeViolation: "files/glusterfs-3.6.5-build-shared-only.patch" exceeds 20k in size; 27261 bytes total
 
-app-xemacs/dictionary
-  DeprecatedEAPI: version 1.16: uses deprecated EAPI: 0
+sys-cluster/heartbeat
+  DeprecatedEAPI: version 3.0.5-r2: uses deprecated EAPI: 2
+  DeprecatedEclass: version 3.0.5-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-app-xemacs/dired
-  DeprecatedEAPI: version 1.17: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.19: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.20: uses deprecated EAPI: 0
-
-app-xemacs/docbookide
-  DeprecatedEAPI: version 0.08: uses deprecated EAPI: 0
-
-app-xemacs/easypg
-  DeprecatedEAPI: version 1.02: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.03-r1: uses deprecated EAPI: 0
-
-app-xemacs/ebuild-mode
-  DeprecatedEAPI: version 1.19: uses deprecated EAPI: 0
-
-app-xemacs/ecb
-  DeprecatedEAPI: version 1.22: uses deprecated EAPI: 0
-
-app-xemacs/ecrypto
-  DeprecatedEAPI: version 0.20: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.21: uses deprecated EAPI: 0
-
-app-xemacs/ede
-  DeprecatedEAPI: version 1.03-r1: uses deprecated EAPI: 0
-
-app-xemacs/edebug
-  DeprecatedEAPI: version 1.22: uses deprecated EAPI: 0
-
-app-xemacs/edict
-  DeprecatedEAPI: version 1.16: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.17: uses deprecated EAPI: 0
-
-app-xemacs/ediff
-  DeprecatedEAPI: version 1.68: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.77: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.81: uses deprecated EAPI: 0
-
-app-xemacs/edit-utils
-  DeprecatedEAPI: version 2.39: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.43: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.44: uses deprecated EAPI: 0
-
-app-xemacs/edt
-  DeprecatedEAPI: version 1.13: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.14: uses deprecated EAPI: 0
-
-app-xemacs/efs
-  DeprecatedEAPI: version 1.33: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.34: uses deprecated EAPI: 0
-
-app-xemacs/egg-its
-  DeprecatedEAPI: version 1.27: uses deprecated EAPI: 0
-
-app-xemacs/eieio
-  DeprecatedEAPI: version 1.05: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.07: uses deprecated EAPI: 0
-
-app-xemacs/elib
-  DeprecatedEAPI: version 1.11: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.13: uses deprecated EAPI: 0
-
-app-xemacs/emerge
-  DeprecatedEAPI: version 1.11: uses deprecated EAPI: 0
-
-app-xemacs/erc
-  DeprecatedEAPI: version 0.21: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.23: uses deprecated EAPI: 0
-
-app-xemacs/escreen
-  DeprecatedEAPI: version 1.01: uses deprecated EAPI: 0
-
-app-xemacs/eshell
-  DeprecatedEAPI: version 1.10: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.18: uses deprecated EAPI: 0
-
-app-xemacs/ess
-  DeprecatedEAPI: version 1.03: uses deprecated EAPI: 0
-
-app-xemacs/eudc
-  DeprecatedEAPI: version 1.39: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.40: uses deprecated EAPI: 0
-
-app-xemacs/footnote
-  DeprecatedEAPI: version 1.16: uses deprecated EAPI: 0
-
-app-xemacs/forms
-  DeprecatedEAPI: version 1.15: uses deprecated EAPI: 0
-
-app-xemacs/fortran-modes
-  DeprecatedEAPI: version 1.05: uses deprecated EAPI: 0
-
-app-xemacs/frame-icon
-  DeprecatedEAPI: version 1.11: uses deprecated EAPI: 0
-
-app-xemacs/fsf-compat
-  DeprecatedEAPI: version 1.15: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.19: uses deprecated EAPI: 0
-
-app-xemacs/games
-  DeprecatedEAPI: version 1.20: uses deprecated EAPI: 0
-
-app-xemacs/general-docs
-  DeprecatedEAPI: version 1.04: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.06: uses deprecated EAPI: 0
-
-app-xemacs/gnats
-  DeprecatedEAPI: version 1.17: uses deprecated EAPI: 0
-
-app-xemacs/gnus
-  DeprecatedEAPI: version 1.99: uses deprecated EAPI: 0
-
-app-xemacs/guided-tour
-  DeprecatedEAPI: version 0.52: uses deprecated EAPI: 0
-
-app-xemacs/haskell-mode
-  DeprecatedEAPI: version 1.11: uses deprecated EAPI: 0
-
-app-xemacs/hm-html-menus
-  DeprecatedEAPI: version 1.23: uses deprecated EAPI: 0
+sys-cluster/ipvsadm
+  DeprecatedEAPI: version 1.21-r1: uses deprecated EAPI: 0
   DeprecatedEAPI: version 1.24: uses deprecated EAPI: 0
+  DroppedKeywordWarning: version 1.24: keywords dropped: ppc
 
-app-xemacs/hyperbole
-  DeprecatedEAPI: version 1.16: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.17: uses deprecated EAPI: 0
-
-app-xemacs/ibuffer
-  DeprecatedEAPI: version 1.09: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.10: uses deprecated EAPI: 0
-
-app-xemacs/idlwave
-  DeprecatedEAPI: version 1.32: uses deprecated EAPI: 0
-
-app-xemacs/igrep
-  DeprecatedEAPI: version 1.14: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.16: uses deprecated EAPI: 0
-
-app-xemacs/ilisp
-  DeprecatedEAPI: version 1.34: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.36: uses deprecated EAPI: 0
-
-app-xemacs/jde
-  DeprecatedEAPI: version 1.51: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.52: uses deprecated EAPI: 0
-
-app-xemacs/latin-euro-standards
-  DeprecatedEAPI: version 1.07: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.09: uses deprecated EAPI: 0
-
-app-xemacs/latin-unity
-  DeprecatedEAPI: version 1.20: uses deprecated EAPI: 0
-
-app-xemacs/leim
-  DeprecatedEAPI: version 1.24: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.31: uses deprecated EAPI: 0
-
-app-xemacs/locale
-  DeprecatedEAPI: version 1.24: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.28: uses deprecated EAPI: 0
-
-app-xemacs/lookup
-  DeprecatedEAPI: version 1.15: uses deprecated EAPI: 0
-
-app-xemacs/mail-lib
-  DeprecatedEAPI: version 1.83: uses deprecated EAPI: 0
-
-app-xemacs/mailcrypt
-  DeprecatedEAPI: version 2.14: uses deprecated EAPI: 0
-
-app-xemacs/mew
-  DeprecatedEAPI: version 1.19: uses deprecated EAPI: 0
-
-app-xemacs/mh-e
-  DeprecatedEAPI: version 1.29: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.32: uses deprecated EAPI: 0
-
-app-xemacs/mine
-  DeprecatedEAPI: version 1.16: uses deprecated EAPI: 0
-
-app-xemacs/misc-games
-  DeprecatedEAPI: version 1.19: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.22: uses deprecated EAPI: 0
-
-app-xemacs/mmm-mode
-  DeprecatedEAPI: version 1.02: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.05: uses deprecated EAPI: 0
-
-app-xemacs/mule-base
-  DeprecatedEAPI: version 1.49-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.56: uses deprecated EAPI: 0
-
-app-xemacs/mule-ucs
-  DeprecatedEAPI: version 1.14: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.18: uses deprecated EAPI: 0
-
-app-xemacs/net-utils
-  DeprecatedEAPI: version 1.52: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.56: uses deprecated EAPI: 0
-
-app-xemacs/ocaml
-  DeprecatedEAPI: version 0.06: uses deprecated EAPI: 0
-
-app-xemacs/oo-browser
-  DeprecatedEAPI: version 1.04: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.05: uses deprecated EAPI: 0
-
-app-xemacs/os-utils
-  DeprecatedEAPI: version 1.39: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.41: uses deprecated EAPI: 0
-
-app-xemacs/pc
-  DeprecatedEAPI: version 1.28: uses deprecated EAPI: 0
-
-app-xemacs/pcl-cvs
-  DeprecatedEAPI: version 1.67: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.70: uses deprecated EAPI: 0
-
-app-xemacs/pcomplete
-  DeprecatedEAPI: version 1.04: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.06: uses deprecated EAPI: 0
-
-app-xemacs/perl-modes
-  DeprecatedEAPI: version 1.09: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.14: uses deprecated EAPI: 0
-
-app-xemacs/pgg
-  DeprecatedEAPI: version 1.06: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.07: uses deprecated EAPI: 0
-
-app-xemacs/prog-modes
-  DeprecatedEAPI: version 2.10: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.20: uses deprecated EAPI: 0
-
-app-xemacs/ps-print
-  DeprecatedEAPI: version 1.11: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.12: uses deprecated EAPI: 0
-
-app-xemacs/psgml
-  DeprecatedEAPI: version 1.44: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.45: uses deprecated EAPI: 0
-
-app-xemacs/psgml-dtds
-  DeprecatedEAPI: version 1.03: uses deprecated EAPI: 0
-
-app-xemacs/python-modes
-  DeprecatedEAPI: version 1.08: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.14: uses deprecated EAPI: 0
-
-app-xemacs/re-builder
-  DeprecatedEAPI: version 1.05: uses deprecated EAPI: 0
-
-app-xemacs/reftex
-  DeprecatedEAPI: version 1.34: uses deprecated EAPI: 0
-
-app-xemacs/riece
-  DeprecatedEAPI: version 1.23: uses deprecated EAPI: 0
-
-app-xemacs/rmail
-  DeprecatedEAPI: version 1.14: uses deprecated EAPI: 0
-
-app-xemacs/ruby-modes
-  DeprecatedEAPI: version 1.02: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.04: uses deprecated EAPI: 0
-
-app-xemacs/sasl
-  DeprecatedEAPI: version 1.16: uses deprecated EAPI: 0
-
-app-xemacs/scheme
-  DeprecatedEAPI: version 1.15: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.18: uses deprecated EAPI: 0
-
-app-xemacs/semantic
-  DeprecatedEAPI: version 1.20: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.21: uses deprecated EAPI: 0
-
-app-xemacs/sgml
-  DeprecatedEAPI: version 1.11: uses deprecated EAPI: 0
-
-app-xemacs/sh-script
-  DeprecatedEAPI: version 1.22: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.24: uses deprecated EAPI: 0
-
-app-xemacs/sieve
-  DeprecatedEAPI: version 1.18: uses deprecated EAPI: 0
-
-app-xemacs/skk
-  DeprecatedEAPI: version 1.23: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.24: uses deprecated EAPI: 0
-
-app-xemacs/slider
-  DeprecatedEAPI: version 1.15: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.16: uses deprecated EAPI: 0
-
-app-xemacs/sml-mode
-  DeprecatedEAPI: version 0.12: uses deprecated EAPI: 0
-
-app-xemacs/sounds-au
-  DeprecatedEAPI: version 1.12: uses deprecated EAPI: 0
-
-app-xemacs/sounds-wav
-  DeprecatedEAPI: version 1.12: uses deprecated EAPI: 0
-
-app-xemacs/speedbar
-  DeprecatedEAPI: version 1.28: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.29: uses deprecated EAPI: 0
-
-app-xemacs/strokes
-  DeprecatedEAPI: version 1.10: uses deprecated EAPI: 0
-
-app-xemacs/sun
-  DeprecatedEAPI: version 1.16: uses deprecated EAPI: 0
-
-app-xemacs/supercite
-  DeprecatedEAPI: version 1.21: uses deprecated EAPI: 0
-
-app-xemacs/texinfo
-  DeprecatedEAPI: version 1.30: uses deprecated EAPI: 0
-
-app-xemacs/text-modes
-  DeprecatedEAPI: version 1.92: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.98: uses deprecated EAPI: 0
-
-app-xemacs/textools
-  DeprecatedEAPI: version 1.15: uses deprecated EAPI: 0
-
-app-xemacs/time
-  DeprecatedEAPI: version 1.14: uses deprecated EAPI: 0
-
-app-xemacs/tm
-  DeprecatedEAPI: version 1.38: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.39: uses deprecated EAPI: 0
-
-app-xemacs/tooltalk
-  DeprecatedEAPI: version 1.15: uses deprecated EAPI: 0
-
-app-xemacs/tpu
-  DeprecatedEAPI: version 1.14: uses deprecated EAPI: 0
-
-app-xemacs/tramp
-  DeprecatedEAPI: version 1.52: uses deprecated EAPI: 0
-
-app-xemacs/vc
-  DeprecatedEAPI: version 1.41: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.48: uses deprecated EAPI: 0
-
-app-xemacs/vc-cc
-  DeprecatedEAPI: version 1.22: uses deprecated EAPI: 0
-
-app-xemacs/vhdl
-  DeprecatedEAPI: version 1.22: uses deprecated EAPI: 0
-
-app-xemacs/view-process
-  DeprecatedEAPI: version 1.13: uses deprecated EAPI: 0
-
-app-xemacs/viper
-  DeprecatedEAPI: version 1.55: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.67: uses deprecated EAPI: 0
-
-app-xemacs/vm
-  DeprecatedEAPI: version 7.22: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 8.08: uses deprecated EAPI: 0
-
-app-xemacs/w3
-  DeprecatedEAPI: version 1.33: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.35: uses deprecated EAPI: 0
-
-app-xemacs/x-symbol
-  DeprecatedEAPI: version 1.10: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.11: uses deprecated EAPI: 0
-
-app-xemacs/xemacs-base
-  DeprecatedEAPI: version 2.08: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.10-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.27: uses deprecated EAPI: 0
-
-app-xemacs/xemacs-devel
-  DeprecatedEAPI: version 1.75: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.80: uses deprecated EAPI: 0
-
-app-xemacs/xemacs-eterm
-  DeprecatedEAPI: version 1.17: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.18-r1: uses deprecated EAPI: 0
-
-app-xemacs/xemacs-ispell
-  DeprecatedEAPI: version 1.32: uses deprecated EAPI: 0
-
-app-xemacs/xemacs-packages-all
-  DeprecatedEAPI: version 2007.04.27-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2010.07.29: uses deprecated EAPI: 0
-
-app-xemacs/xetla
-  DeprecatedEAPI: version 1.01: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.02: uses deprecated EAPI: 0
-
-app-xemacs/xlib
-  DeprecatedEAPI: version 1.14: uses deprecated EAPI: 0
-
-app-xemacs/xslide
-  DeprecatedEAPI: version 1.09: uses deprecated EAPI: 0
-
-app-xemacs/xslt-process
-  DeprecatedEAPI: version 1.12: uses deprecated EAPI: 0
-
-app-xemacs/xwem
-  DeprecatedEAPI: version 1.22: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.23: uses deprecated EAPI: 0
-
-app-xemacs/zenirc
-  DeprecatedEAPI: version 1.16: uses deprecated EAPI: 0
-WARNING pkgcore: metadata.dtd cannot be opened from
-               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
-               : refetch
-WARNING pkgcore: metadata.dtd cannot be opened from
-               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
-               : refetch
-
-games-fps/aaut
-  DeprecatedEAPI: version 1: uses deprecated EAPI: 0
-
-games-fps/alienarena
-  DeprecatedEAPI: version 20120629: uses deprecated EAPI: 2
-
-games-fps/darkplaces
-  DeprecatedEAPI: version 20110628: uses deprecated EAPI: 2
-
-games-fps/doom3-cdoom
-  DeprecatedEAPI: version 1.3.1: uses deprecated EAPI: 2
-  MissingChksum: version 1.3.1: "classic_doom_3_131.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-games-fps/doom3-chextrek
-  DeprecatedEAPI: version 0.52: uses deprecated EAPI: 2
-  MissingChksum: version 0.52: "chextrek_beta_052.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-games-fps/doom3-data
-  DeprecatedEAPI: version 1.1.1282-r1: uses deprecated EAPI: 0
-
-games-fps/doom3-ducttape
-  DeprecatedEAPI: version 0006-r1: uses deprecated EAPI: 2
-
-games-fps/doom3-eventhorizon
-  DeprecatedEAPI: version 1.3: uses deprecated EAPI: 2
-
-games-fps/doom3-hellcampaign
-  DeprecatedEAPI: version 1-r1: uses deprecated EAPI: 2
-  MissingChksum: version 1-r1: "sp_hc_final.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1-r1: "hardcorehellcampaign_patch.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-games-fps/doom3-inhell
-  DeprecatedEAPI: version 1.1-r1: uses deprecated EAPI: 2
-  MissingChksum: version 1.1-r1: "in_hell_v11.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-games-fps/doom3-lms
-  DeprecatedEAPI: version 4: uses deprecated EAPI: 2
-  MissingChksum: version 4: "LastManStandingCoop4Multiplatform.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-games-fps/doom3-mitm
-  DeprecatedEAPI: version 20070129: uses deprecated EAPI: 2
-  MissingChksum: version 20070129: "mitm_4.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 20070129: "mitm5.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-games-fps/doom3-roe
-  DeprecatedEAPI: version 1: uses deprecated EAPI: 0
-
-games-fps/duke3d
-  DeprecatedEAPI: version 20040817-r2: uses deprecated EAPI: 2
-
-games-fps/duke3d-data
-  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
-  MissingUri: version 1.0-r3: file gog_duke_nukem_3d_atomic_edition_2.0.0.8.sh is unfetchable- no URI available, and RESTRICT=fetch isn't set
-
-games-fps/enemy-territory-etpro
-  DeprecatedEAPI: version 3.2.6-r1: uses deprecated EAPI: 2
-
-games-fps/enemy-territory-omnibot
-  DeprecatedEAPI: version 0.82: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.83.1: uses deprecated EAPI: 2
-
-games-fps/enemy-territory-truecombat
-  DeprecatedEAPI: version 0.49b: uses deprecated EAPI: 2
-
-games-fps/etqw-data
-  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
-
-games-fps/imaze
-  DeprecatedEAPI: version 1.4: uses deprecated EAPI: 0
-
-games-fps/industri
-  DeprecatedEAPI: version 1.01: uses deprecated EAPI: 2
-
-games-fps/lsdldoom
-  DeprecatedEAPI: version 1.4.4.4-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.5: uses deprecated EAPI: 2
-  DroppedKeywordWarning: version 1.5: keywords dropped: sparc
-
-games-fps/quake1-data
-  DeprecatedEAPI: version 2.40: uses deprecated EAPI: 2
-
-games-fps/quake1-movies
-  DeprecatedEAPI: version 0: uses deprecated EAPI: 0
-
-games-fps/quake2-data
-  DeprecatedEAPI: version 3.20: uses deprecated EAPI: 2
-
-games-fps/quake3
-  DeprecatedEAPI: version 1.36-r1: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 2
+sys-cluster/knem
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-games-fps/quake3-alliance
-  DeprecatedEAPI: version 3.3-r1: uses deprecated EAPI: 2
+sys-cluster/lspbs
+  DeprecatedEAPI: version 1.1-r1: uses deprecated EAPI: 0
 
-games-fps/quake3-alternatefire
-  DeprecatedEAPI: version 2.0-r1: uses deprecated EAPI: 2
+sys-cluster/maui
+  DeprecatedEAPI: version 3.2.6_p16: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 3.2.6_p21: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 3.2.6_p21-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 3.3: uses deprecated EAPI: 3
+  MissingChksum: version 3.2.6_p16: "maui-3.2.6p16.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 3.2.6_p21: "maui-3.2.6p21.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 3.3: "maui-3.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-games-fps/quake3-bfp
-  DeprecatedEAPI: version 1.2-r1: uses deprecated EAPI: 2
+sys-cluster/mpe2
+  DeprecatedEAPI: version 1.0.6_p1: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 1.0.6_p1-r1: uses deprecated EAPI: 2
 
-games-fps/quake3-cpma
-  DeprecatedEAPI: version 1.48: uses deprecated EAPI: 2
+sys-cluster/mvapich2
+  NonExistentDeps: version 1.6: depset depends: nonexistent atoms [ sys-infiniband/openib-userspace ]
+  NonExistentDeps: version 1.6: depset rdepends: nonexistent atoms [ sys-infiniband/openib-userspace ]
 
-games-fps/quake3-defrag
-  DeprecatedEAPI: version 1.91.20: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 1.91.21: uses deprecated EAPI: 2
+sys-cluster/native-mpi
+  DeprecatedEAPI: version 0: uses deprecated EAPI: 3
 
-games-fps/quake3-excessiveplus
-  DeprecatedEAPI: version 2.2b: uses deprecated EAPI: 2
+sys-cluster/neutron
+  DeprecatedEclass: version 2015.1.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-games-fps/quake3-lrctf
-  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 2
+sys-cluster/nova
+  DeprecatedEclass: version 2015.1.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-games-fps/quake3-matrix
-  DeprecatedEAPI: version 2.4_beta-r1: uses deprecated EAPI: 2
+sys-cluster/ocfs
+  DeprecatedEAPI: version 1.0.14: uses deprecated EAPI: 0
 
-games-fps/quake3-nsco
-  DeprecatedEAPI: version 1.93-r1: uses deprecated EAPI: 2
-  MissingChksum: version 1.93-r1: "nsco_beta191a.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 1.93-r1: "nsco_beta193upd.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+sys-cluster/onesis
+  DeprecatedEAPI: version 2.0.2: uses deprecated EAPI: 0
 
-games-fps/quake3-osp
-  DeprecatedEAPI: version 1.03a-r1: uses deprecated EAPI: 2
+sys-cluster/openais
+  DeprecatedEAPI: version 1.1.4-r1: uses deprecated EAPI: 2
 
-games-fps/quake3-ra3
-  DeprecatedEAPI: version 1.76-r1: uses deprecated EAPI: 2
+sys-cluster/openmpi
+  DroppedKeywordWarning: version 1.8.4-r4: keywords dropped: ia64
+  DroppedKeywordWarning: version 1.8.7-r1: keywords dropped: alpha, sparc
 
-games-fps/quake3-reaction
-  DeprecatedEAPI: version 3.2: uses deprecated EAPI: 2
+sys-cluster/osc-mpiexec
+  DeprecatedEAPI: version 0.83: uses deprecated EAPI: 0
 
-games-fps/quake3-ruinhunters
-  DeprecatedEAPI: version 1.0a-r1: uses deprecated EAPI: 2
+sys-cluster/pacemaker-gui
+  DeprecatedEclass: version 2.1.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-games-fps/quake3-threewave
-  DeprecatedEAPI: version 1.7-r1: uses deprecated EAPI: 2
+sys-cluster/pconsole
+  DeprecatedEAPI: version 1.0-r3: uses deprecated EAPI: 2
 
-games-fps/quake4-data
-  DeprecatedEAPI: version 1.0.2147.12: uses deprecated EAPI: 0
+sys-cluster/resource-agents
+  DeprecatedEAPI: version 1.0.4-r1: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 1.0.4-r2: uses deprecated EAPI: 2
 
-games-fps/quakeforge
-  DeprecatedEAPI: version 0.5.5-r2: uses deprecated EAPI: 2
+sys-cluster/rgmanager
+  DeprecatedEAPI: version 2.03.09: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.03.09-r1: uses deprecated EAPI: 2
 
-games-fps/red-blue-quake2
-  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 2
+sys-cluster/swift
+  WhitespaceFound: version 2.3.0-r1: ebuild has leading whitespace on line 97
+  WhitespaceFound: version 2.5.0: ebuild has leading whitespace on line 100
+  SizeViolation: "files/cve-2015-5223-stable-kilo.patch" exceeds 20k in size; 38075 bytes total
 
-games-fps/rott
+sys-cluster/wulfware
+  DeprecatedEAPI: version 2.6.0: uses deprecated EAPI: 0
+
+sys-cluster/xgridagent
   DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
 
-games-fps/tenebrae
-  DeprecatedEAPI: version 1.04: uses deprecated EAPI: 2
+sys-auth/bioapi
+  DeprecatedEAPI: version 1.2.3-r2: uses deprecated EAPI: 2
 
-games-fps/transfusion-bin
-  DeprecatedEAPI: version 1.01: uses deprecated EAPI: 0
+sys-auth/fingerprint-gui
+  WhitespaceFound: version 1.07: ebuild has leading whitespace on line 90
 
-games-fps/tribes2
-  DeprecatedEAPI: version 25034: uses deprecated EAPI: 0
+sys-auth/consolekit
+  DroppedKeywordWarning: version 1.0.0: keywords dropped: arm64, ia64, mips, ppc, s390, sh, sparc
 
-games-fps/unreal-tournament-bonuspacks
-  DeprecatedEAPI: version 436: uses deprecated EAPI: 0
+sys-auth/fprint_demo
+  DeprecatedEAPI: version 0.4: uses deprecated EAPI: 3
 
-games-fps/unreal-tournament-strikeforce
-  DeprecatedEAPI: version 1.81: uses deprecated EAPI: 0
+sys-auth/icmpdn
+  DeprecatedEAPI: version 0.4: uses deprecated EAPI: 0
 
-games-fps/ut2003-bonuspack-cm
-  DeprecatedEAPI: version 1: uses deprecated EAPI: 0
-  MissingChksum: version 1: "cbp2003.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+sys-auth/keystone
+  DeprecatedEclass: version 2015.1.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-games-fps/ut2003-bonuspack-de
-  DeprecatedEAPI: version 1: uses deprecated EAPI: 0
-  MissingChksum: version 1: "debonus.ut2mod.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+sys-auth/libfprint
+  DroppedKeywordWarning: version 0.5.0-r1: keywords dropped: arm, sparc
 
-games-fps/ut2003-bonuspack-epic
-  DeprecatedEAPI: version 1: uses deprecated EAPI: 0
-  MissingChksum: version 1: "UT2003-epicbonuspackone.exe" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+sys-auth/libnss-cache
+  DeprecatedEAPI: version 0.1-r1: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.10.1: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 0.10.2: uses deprecated EAPI: 3
 
-games-fps/ut2003-data
-  DeprecatedEAPI: version 2107: uses deprecated EAPI: 0
+sys-auth/libnss-mysql
+  DeprecatedEAPI: version 1.5_p20060915-r2: uses deprecated EAPI: 2
 
-games-fps/ut2004-action
-  DeprecatedEAPI: version 1: uses deprecated EAPI: 2
-  MissingChksum: version 1: "aut-r1-msuc.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+sys-auth/libnss-pgsql
+  DeprecatedEAPI: version 1.4.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.5.0_beta: uses deprecated EAPI: 0
 
-games-fps/ut2004-airbuccaneers
-  DeprecatedEAPI: version 1.6-r2: uses deprecated EAPI: 2
-  MissingChksum: version 1.6-r2: "airbuccaneers1_6_zipinstall.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+sys-auth/nss-pam-ldapd
+  DroppedKeywordWarning: version 0.9.6: keywords dropped: amd64, x86
 
-games-fps/ut2004-alienswarm
-  DeprecatedEAPI: version 1.32: uses deprecated EAPI: 2
-  MissingChksum: version 1.32: "AlienSwarm-v13.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 1.32: "phalanxaswcampaign10.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 1.32: "TelicCampaign_1_1.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 1.32: "AlienSwarm_13_or_131_to_132_Patch.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+sys-auth/nss_ldap
+  DeprecatedEAPI: version 258: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 259: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 261: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 262: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 264: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 264-r1: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 265: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 265-r1: uses deprecated EAPI: 2
 
-games-fps/ut2004-bonuspack-cbp1
-  DeprecatedEAPI: version 1-r2: uses deprecated EAPI: 2
+sys-auth/pam-afs-session
+  DeprecatedEAPI: version 1.3: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.5: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.6: uses deprecated EAPI: 0
 
-games-fps/ut2004-bonuspack-cbp2
-  DeprecatedEAPI: version 1-r2: uses deprecated EAPI: 2
-  MissingChksum: version 1-r2: "cbp2-volume1_zip.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 1-r2: "cbp2-volume2_zip.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+sys-auth/pam-pgsql
+  DeprecatedEAPI: version 0.7.3: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.7.3.1: uses deprecated EAPI: 2
 
-games-fps/ut2004-bonuspack-ece
-  DeprecatedEAPI: version 1-r3: uses deprecated EAPI: 2
+sys-auth/pam_abl
+  DeprecatedEAPI: version 0.4.1: uses deprecated EAPI: 2
 
-games-fps/ut2004-bonuspack-mega
-  DeprecatedEAPI: version 1-r2: uses deprecated EAPI: 2
+sys-auth/pam_bioapi
+  DeprecatedEAPI: version 0.4.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.4.0-r1: uses deprecated EAPI: 0
 
-games-fps/ut2004-cor
-  DeprecatedEAPI: version 1.01-r1: uses deprecated EAPI: 2
-  MissingChksum: version 1.01-r1: "COR_Beta_v1.0.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 1.01-r1: "COR_Patch_B1.0_to_B1.01.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+sys-auth/pam_blue
+  DeprecatedEAPI: version 0.9.0: uses deprecated EAPI: 0
 
-games-fps/ut2004-crossfire
-  DeprecatedEAPI: version 1.95: uses deprecated EAPI: 2
-  MissingChksum: version 1.95: "TOCrossfire_beta_1.95_full.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+sys-auth/pam_chroot
+  DeprecatedEAPI: version 0.9.2: uses deprecated EAPI: 0
 
-games-fps/ut2004-data
-  DeprecatedEAPI: version 3186-r4: uses deprecated EAPI: 0
+sys-auth/pam_dotfile
+  DeprecatedEAPI: version 0.7-r1: uses deprecated EAPI: 0
 
-games-fps/ut2004-deathball
-  DeprecatedEAPI: version 2.4w: uses deprecated EAPI: 2
-  MissingChksum: version 2.4w: "deathball24w.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+sys-auth/pam_fprint
+  DeprecatedEAPI: version 0.2-r1: uses deprecated EAPI: 3
 
-games-fps/ut2004-fragops
-  DeprecatedEAPI: version 2.20: uses deprecated EAPI: 2
-  MissingChksum: version 2.20: "FragOps_v220_FullLMW.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+sys-auth/pam_keystore
+  DeprecatedEAPI: version 0.1.3: uses deprecated EAPI: 0
 
-games-fps/ut2004-hamsterbash
-  DeprecatedEAPI: version 1: uses deprecated EAPI: 2
-  MissingChksum: version 1: "HamsterBashFinal.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+sys-auth/pam_ldap
+  DeprecatedEAPI: version 183: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 184: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 186: uses deprecated EAPI: 0
 
-games-fps/ut2004-muralis
-  DeprecatedEAPI: version 1.15: uses deprecated EAPI: 2
-  MissingChksum: version 1.15: "muralis-v1.15-zip.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+sys-auth/pam_mysql
+  DeprecatedEAPI: version 0.7_rc1-r4: uses deprecated EAPI: 2
 
-games-fps/ut2004-strikeforce
-  DeprecatedEAPI: version 4.1: uses deprecated EAPI: 2
-  MissingChksum: version 4.1: "StrikeForce-CE-V4.1.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+sys-auth/pam_p11
+  DeprecatedEAPI: version 0.1.5-r1: uses deprecated EAPI: 2
 
-games-fps/ut2004-troopers
-  DeprecatedEAPI: version 6.0: uses deprecated EAPI: 2
-  MissingChksum: version 6.0: "troopersversion60zip.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+sys-auth/pam_passwdqc
+  DeprecatedEAPI: version 1.0.4: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0.5: uses deprecated EAPI: 0
 
-games-fps/ut2004-ultraduel
-  DeprecatedEAPI: version 2.1: uses deprecated EAPI: 2
-  MissingChksum: version 2.1: "1on1-Ultra-Duel-2K4.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 2.1: "1on1-Ultra-Duel-2K4_Patch21.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+sys-auth/pam_require
+  DeprecatedEAPI: version 0.7: uses deprecated EAPI: 0
 
-games-fps/ut2004-unwheel
-  DeprecatedEAPI: version 0_beta5: uses deprecated EAPI: 2
-  MissingChksum: version 0_beta5: "unwheel_r5.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 0_beta5: "UnWheel-R5_BonusPack-Volume_1.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+sys-auth/pam_smb
+  DeprecatedEAPI: version 2.0.0_rc6-r1: uses deprecated EAPI: 0
 
-games-fps/wolfgl
-  DeprecatedEAPI: version 0.93-r1: uses deprecated EAPI: 2
+sys-auth/pam_ssh
+  DeprecatedEAPI: version 1.97-r1: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 1.97-r2: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 1.97-r3: uses deprecated EAPI: 2
+
+sys-auth/pambase
+  NonExistentDeps: version 20101024-r2: depset rdepends: nonexistent atoms [ sys-netbsd/netbsd-pam-modules ]
+  NonExistentDeps: version 20120417-r3: depset rdepends: nonexistent atoms [ sys-netbsd/netbsd-pam-modules ]
+  NonExistentDeps: version 20140313: depset rdepends: nonexistent atoms [ sys-netbsd/netbsd-pam-modules ]
+  NonExistentDeps: version 20150213: depset rdepends: nonexistent atoms [ sys-netbsd/netbsd-pam-modules ]
+
+sys-auth/realtime-base
+  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 3
+
+sys-auth/tfm-fingerprint
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch

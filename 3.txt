@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 3 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-haskell/*' 'net-analyzer/*' 'dev-db/*' 'sys-cluster/*' 'games-arcade/*' 'net-irc/*' 'media-tv/*' 'app-forensics/*' 'dev-games/*' 'sci-misc/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-haskell/*' 'net-analyzer/*' 'dev-db/*' 'app-arch/*' 'sys-block/*' 'net-irc/*' 'media-tv/*' 'app-forensics/*' 'dev-games/*' 'sci-misc/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -481,145 +481,126 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-sys-cluster/c3
-  DeprecatedEAPI: version 4.0.1: uses deprecated EAPI: 0
+app-arch/afio
+  DeprecatedEAPI: version 2.5: uses deprecated EAPI: 0
 
-sys-cluster/ccs
-  DeprecatedEAPI: version 2.03.09: uses deprecated EAPI: 0
+app-arch/arc
+  DeprecatedEAPI: version 5.21p: uses deprecated EAPI: 2
 
-sys-cluster/cinder
-  DeprecatedEclass: version 2015.1.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+app-arch/arj
+  DeprecatedEAPI: version 3.10.22-r3: uses deprecated EAPI: 3
 
-sys-cluster/cman-lib
-  DeprecatedEAPI: version 2.03.09: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.03.09-r1: uses deprecated EAPI: 0
+app-arch/bsdsfv
+  DeprecatedEAPI: version 1.18-r1: uses deprecated EAPI: 3
 
-sys-cluster/corosync
-  DeprecatedEAPI: version 1.3.0: uses deprecated EAPI: 3
+app-arch/bzip2
+  DeprecatedEAPI: version 1.0.6: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0.6-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0.6-r2: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 1.0.6-r3: uses deprecated EAPI: 2
 
-sys-cluster/dlm
-  DeprecatedEAPI: version 2.03.09: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.03.11: uses deprecated EAPI: 0
+app-arch/cfv
+  DeprecatedEclass: version 1.18.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.18.2: uses deprecated EAPI: 3
 
-sys-cluster/dlm-lib
-  DeprecatedEAPI: version 2.03.09: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.03.11: uses deprecated EAPI: 0
+app-arch/cksfv
+  DeprecatedEAPI: version 1.3.12: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.3.13: uses deprecated EAPI: 0
 
-sys-cluster/drbd
-  DeprecatedEAPI: version 8.0.16: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 8.3.7: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 8.3.8.1: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 8.3.8.1-r1: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 8.3.10: uses deprecated EAPI: 2
+app-arch/engrampa
+  NonExistentDeps: version 1.8.0: depset depends: nonexistent atoms [ >=mate-base/mate-file-manager-1.6:0 ]
+  NonExistentDeps: version 1.8.0: depset rdepends: nonexistent atoms [ >=mate-base/mate-file-manager-1.6:0 ]
 
-sys-cluster/drbd-kernel
-  DeprecatedEAPI: version 8.0.16: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 8.3.6: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 8.3.8.1: uses deprecated EAPI: 2
+app-arch/funzix
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
 
-sys-cluster/fake
-  DeprecatedEAPI: version 1.1.10: uses deprecated EAPI: 0
+app-arch/gzip
+  DeprecatedEAPI: version 1.4: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.5: uses deprecated EAPI: 0
 
-sys-cluster/feedbackd-agent
+app-arch/lzma
+  DeprecatedEAPI: version 9.20: uses deprecated EAPI: 0
+
+app-arch/lzop
+  DeprecatedEAPI: version 1.03: uses deprecated EAPI: 2
+
+app-arch/makeself
+  DeprecatedEAPI: version 2.1.5-r2: uses deprecated EAPI: 0
+
+app-arch/mt-st
+  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 2
+
+app-arch/par
+  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 2
+
+app-arch/ppmd
+  DeprecatedEAPI: version 9.1_p14: uses deprecated EAPI: 3
+
+app-arch/pure-sfv
+  DeprecatedEAPI: version 0.3-r1: uses deprecated EAPI: 2
+
+app-arch/pxz
+  DeprecatedEAPI: version 5.0_pre20110811: uses deprecated EAPI: 3
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
+
+app-arch/rzip
+  DeprecatedEAPI: version 2.1-r2: uses deprecated EAPI: 2
+
+app-arch/stuffit
+  DeprecatedEAPI: version 5.2.0.611: uses deprecated EAPI: 0
+
+app-arch/tapeutils
   DeprecatedEAPI: version 0.4: uses deprecated EAPI: 0
 
-sys-cluster/feedbackd-master
-  DeprecatedEAPI: version 0.4: uses deprecated EAPI: 0
+app-arch/tar
+  DeprecatedEAPI: version 1.26-r1: uses deprecated EAPI: 3
+  SizeViolation: "files/tar-1.26-xattr.patch" exceeds 20k in size; 29828 bytes total
 
-sys-cluster/ganglia
-  DeprecatedEclass: version 3.5.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 3.5.0: uses deprecated EAPI: 3
+app-arch/torrentzip
+  DeprecatedEAPI: version 0.2-r1: uses deprecated EAPI: 0
 
-sys-cluster/gfs-kernel
-  DeprecatedEAPI: version 2.03.09: uses deprecated EAPI: 0
+app-arch/unadf
+  DeprecatedEAPI: version 0.7.9b: uses deprecated EAPI: 0
 
-sys-cluster/glusterfs
-  DeprecatedEAPI: version 3.1.2: uses deprecated EAPI: 3
-  SizeViolation: "files/glusterfs-3.4.0-build-shared-only.patch" exceeds 20k in size; 22147 bytes total
-  SizeViolation: "files/glusterfs-3.5.1-build-shared-only.patch" exceeds 20k in size; 25227 bytes total
-  SizeViolation: "files/glusterfs-3.6.5-build-shared-only.patch" exceeds 20k in size; 27261 bytes total
+app-arch/unarj
+  DeprecatedEAPI: version 2.65: uses deprecated EAPI: 0
 
-sys-cluster/heartbeat
-  DeprecatedEclass: version 3.0.5-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 3.0.5-r2: uses deprecated EAPI: 2
+app-arch/undms
+  DeprecatedEAPI: version 1.3-r1: uses deprecated EAPI: 0
 
-sys-cluster/ipvsadm
-  DeprecatedEAPI: version 1.21-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.24: uses deprecated EAPI: 0
-  DroppedKeywordWarning: version 1.24: keywords dropped: ppc
+app-arch/unlzx
+  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 0
 
-sys-cluster/knem
+app-arch/unmakeself
+  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 2
+
+app-arch/unp
+  DeprecatedEAPI: version 2.0_pre7: uses deprecated EAPI: 2
+
+app-arch/unrar-gpl
+  NonExistentDeps: version 0.0.1_p20080417-r2: depset depends: nonexistent atoms [ dev-libs/argp ]
+
+app-arch/unzip
+  DeprecatedEAPI: version 5.52-r2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 6.0-r3: uses deprecated EAPI: 2
+
+app-arch/xdms
+  DeprecatedEAPI: version 1.3.2: uses deprecated EAPI: 0
+
+app-arch/xz-utils
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-sys-cluster/lspbs
-  DeprecatedEAPI: version 1.1-r1: uses deprecated EAPI: 0
+app-arch/zip
+  DeprecatedEAPI: version 2.32-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 3.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 3.0-r1: uses deprecated EAPI: 2
 
-sys-cluster/maui
-  DeprecatedEAPI: version 3.2.6_p16: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 3.2.6_p21: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 3.2.6_p21-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 3.3: uses deprecated EAPI: 3
-  MissingChksum: version 3.2.6_p16: "maui-3.2.6p16.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 3.2.6_p21: "maui-3.2.6p21.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 3.3: "maui-3.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-arch/zoo
+  DeprecatedEAPI: version 2.10-r4: uses deprecated EAPI: 0
 
-sys-cluster/mpe2
-  DeprecatedEAPI: version 1.0.6_p1: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 1.0.6_p1-r1: uses deprecated EAPI: 2
-
-sys-cluster/mvapich2
-  NonExistentDeps: version 1.6: depset depends: nonexistent atoms [ sys-infiniband/openib-userspace ]
-  NonExistentDeps: version 1.6: depset rdepends: nonexistent atoms [ sys-infiniband/openib-userspace ]
-
-sys-cluster/native-mpi
-  DeprecatedEAPI: version 0: uses deprecated EAPI: 3
-
-sys-cluster/neutron
-  DeprecatedEclass: version 2015.1.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-sys-cluster/nova
-  DeprecatedEclass: version 2015.1.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-sys-cluster/ocfs
-  DeprecatedEAPI: version 1.0.14: uses deprecated EAPI: 0
-
-sys-cluster/onesis
-  DeprecatedEAPI: version 2.0.2: uses deprecated EAPI: 0
-
-sys-cluster/openais
-  DeprecatedEAPI: version 1.1.4-r1: uses deprecated EAPI: 2
-
-sys-cluster/openmpi
-  DroppedKeywordWarning: version 1.8.4-r4: keywords dropped: ia64
-  DroppedKeywordWarning: version 1.8.7-r1: keywords dropped: alpha, sparc
-
-sys-cluster/osc-mpiexec
-  DeprecatedEAPI: version 0.83: uses deprecated EAPI: 0
-
-sys-cluster/pacemaker-gui
-  DeprecatedEclass: version 2.1.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-
-sys-cluster/pconsole
-  DeprecatedEAPI: version 1.0-r3: uses deprecated EAPI: 2
-
-sys-cluster/resource-agents
-  DeprecatedEAPI: version 1.0.4-r1: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 1.0.4-r2: uses deprecated EAPI: 2
-
-sys-cluster/rgmanager
-  DeprecatedEAPI: version 2.03.09: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.03.09-r1: uses deprecated EAPI: 2
-
-sys-cluster/swift
-  WhitespaceFound: version 2.3.0-r1: ebuild has leading whitespace on line 97
-  WhitespaceFound: version 2.5.0: ebuild has leading whitespace on line 100
-  SizeViolation: "files/cve-2015-5223-stable-kilo.patch" exceeds 20k in size; 38075 bytes total
-
-sys-cluster/wulfware
-  DeprecatedEAPI: version 2.6.0: uses deprecated EAPI: 0
-
-sys-cluster/xgridagent
-  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+app-arch/zpaq-extras
+  DeprecatedEAPI: version 2: uses deprecated EAPI: 3
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
@@ -627,18 +608,150 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-games-arcade/aquaria
-  MissingChksum: version 1.1.3-r1: "aquaria-lnx-humble-bundle.mojo.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+sys-block/afacli
+  DeprecatedEAPI: version 4.1: uses deprecated EAPI: 0
 
-games-arcade/opentyrian
-  DeprecatedEAPI: version 2.1.20130907: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 20090702: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 20091025: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 20110517: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 20110517-r1: uses deprecated EAPI: 0
+sys-block/btrace
+  DeprecatedEAPI: version 1.0.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0.1-r1: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 2
 
-games-arcade/tuxanci
-  DeprecatedEclass: version 99999999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+sys-block/dellmgr
+  DeprecatedEAPI: version 5.32-r1: uses deprecated EAPI: 0
+
+sys-block/devio
+  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 0
+
+sys-block/eject
+  DeprecatedEAPI: version 2.1.5-r2: uses deprecated EAPI: 3
+
+sys-block/eject-bsd
+  DeprecatedEAPI: version 1.5: uses deprecated EAPI: 0
+
+sys-block/endpoint
+  DeprecatedEAPI: version 0.1.0: uses deprecated EAPI: 0
+
+sys-block/fio
+  DeprecatedEAPI: version 1.17.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.99.10: uses deprecated EAPI: 2
+
+sys-block/gpart
+  DeprecatedEAPI: version 0.1h-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.1h-r2: uses deprecated EAPI: 0
+
+sys-block/iscsitarget
+  DeprecatedEAPI: version 0.4.17: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.4.19: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.4.20.2: uses deprecated EAPI: 0
+
+sys-block/lio-utils
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), git-2 (migrate to git-r3), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+sys-block/mbuffer
+  DeprecatedEAPI: version 20090113: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 20110724: uses deprecated EAPI: 0
+
+sys-block/megacli
+  MissingChksum: version 8.02.21: "8.02.21_MegaCLI.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sys-block/megactl
+  DeprecatedEAPI: version 0.4.1-r1: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.4.1-r2: uses deprecated EAPI: 2
+
+sys-block/megamgr
+  DeprecatedEAPI: version 5.20-r2: uses deprecated EAPI: 3
+  MissingChksum: version 5.20-r2: "ut_linux_mgr_5.20.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sys-block/megarc
+  DeprecatedEAPI: version 1.11-r1: uses deprecated EAPI: 3
+
+sys-block/mtx
+  DeprecatedEAPI: version 1.2.18: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.3.12: uses deprecated EAPI: 0
+
+sys-block/noflushd
+  DeprecatedEAPI: version 2.7.3: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.7.4: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.7.5: uses deprecated EAPI: 0
+
+sys-block/nwutil
+  DeprecatedEAPI: version 1.4: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.8: uses deprecated EAPI: 0
+
+sys-block/open-iscsi
+  DeprecatedEAPI: version 2.0.872-r2: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 2.0.872-r3: uses deprecated EAPI: 2
+
+sys-block/partimage
+  DeprecatedEAPI: version 0.6.8: uses deprecated EAPI: 3
+
+sys-block/qla-fc-firmware
+  DeprecatedEAPI: version 20071207-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 20080423: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 20101015: uses deprecated EAPI: 0
+
+sys-block/rtsadmin
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), git-2 (migrate to git-r3), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+sys-block/scsiadd
+  DeprecatedEAPI: version 1.97: uses deprecated EAPI: 2
+
+sys-block/scsiping
+  DeprecatedEAPI: version 0.0.1: uses deprecated EAPI: 0
+
+sys-block/scsirastools
+  DeprecatedEAPI: version 1.5.4: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.5.6: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.5.7: uses deprecated EAPI: 0
+
+sys-block/seekwatcher
+  DeprecatedEAPI: version 0.6: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.9: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.12: uses deprecated EAPI: 0
+  DeprecatedEclass: version 0.12_p20091015: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+sys-block/spindown
+  DeprecatedEAPI: version 0.4.0-r4: uses deprecated EAPI: 0
+
+sys-block/tapecat
+  DeprecatedEAPI: version 1.0.0: uses deprecated EAPI: 0
+
+sys-block/targetcli
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), git-2 (migrate to git-r3), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+sys-block/thin-provisioning-tools
+  NonExistentDeps: version 0.2.8-r1: depset depends: nonexistent atoms [ dev-lang/ruby:1.8, dev-lang/ruby:2.3, dev-lang/ruby:2.6, dev-lang/ruby:2.7, dev-lang/ruby:2.4, dev-lang/ruby:2.5, dev-lang/ruby:2.8, dev-lang/ruby:2.9 ]
+  NonExistentDeps: version 0.3.2-r1: depset depends: nonexistent atoms [ dev-lang/ruby:1.8, dev-lang/ruby:2.3, dev-lang/ruby:2.6, dev-lang/ruby:2.7, dev-lang/ruby:2.4, dev-lang/ruby:2.5, dev-lang/ruby:2.8, dev-lang/ruby:2.9 ]
+  NonExistentDeps: version 0.4.0: depset depends: nonexistent atoms [ dev-lang/ruby:1.8, dev-lang/ruby:2.3, dev-lang/ruby:2.6, dev-lang/ruby:2.7, dev-lang/ruby:2.4, dev-lang/ruby:2.5, dev-lang/ruby:2.8, dev-lang/ruby:2.9 ]
+  NonExistentDeps: version 0.4.1: depset depends: nonexistent atoms [ dev-lang/ruby:1.8, dev-lang/ruby:2.3, dev-lang/ruby:2.6, dev-lang/ruby:2.7, dev-lang/ruby:2.4, dev-lang/ruby:2.5, dev-lang/ruby:2.8, dev-lang/ruby:2.9 ]
+  NonExistentDeps: version 0.5.3: depset depends: nonexistent atoms [ dev-lang/ruby:2.3, dev-lang/ruby:2.6, dev-lang/ruby:2.7, dev-lang/ruby:2.4, dev-lang/ruby:2.5, dev-lang/ruby:2.8, dev-lang/ruby:2.9 ]
+
+sys-block/tw_cli
+  DeprecatedEAPI: version 9.2.1.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.3.0.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.3.0.3: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.3.0.4: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.4.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.4.0.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.4.1.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.4.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.5.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.5.0.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.5.1.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.5.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.5.3: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 10.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 10.2: uses deprecated EAPI: 2
+
+sys-block/vblade
+  DeprecatedEAPI: version 19: uses deprecated EAPI: 0
+
+sys-block/viaideinfo
+  DeprecatedEAPI: version 0.5: uses deprecated EAPI: 0
+
+sys-block/whdd
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
