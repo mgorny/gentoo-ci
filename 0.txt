@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 0 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'sec-policy/*' 'dev-texlive/*' 'sys-devel/*' 'sys-cluster/*' 'sys-auth/*' 'app-backup/*' 'games-misc/*' 'dev-tcltk/*' 'media-radio/*' 'net-nntp/*' 'games-server/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'sec-policy/*' 'dev-texlive/*' 'sys-devel/*' 'sys-cluster/*' 'sys-auth/*' 'www-servers/*' 'games-misc/*' 'dev-tcltk/*' 'media-radio/*' 'net-nntp/*' 'games-server/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -688,7 +688,7 @@ sys-cluster/c3
 sys-cluster/ccs
   DeprecatedEAPI: version 2.03.09: uses deprecated EAPI: 0
 ERROR root: check <pkgcheck.metadata_xml.PackageMetadataXmlCheck object at
-          : 0x7f45fa0f6ad0> raised
+          : 0x7fe490b05ad0> raised
 ERROR root: Traceback (most recent call last):
 ERROR root:   File
           : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/bas
@@ -1094,102 +1094,50 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-app-backup/amanda
-  BadInsIntoDir: version 3.3.3: ebuild uses insinto /etc/cron.daily on line 332
-  BadInsIntoDir: version 3.3.3-r1: ebuild uses insinto /etc/cron.daily on line 338
-  BadInsIntoDir: version 3.3.5: ebuild uses insinto /etc/cron.daily on line 338
-  BadInsIntoDir: version 3.3.7: ebuild uses insinto /etc/cron.daily on line 335
+www-servers/fnord
+  DeprecatedEAPI: version 1.10-r2: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 1.11: uses deprecated EAPI: 3
 
-app-backup/backup-manager
-  DeprecatedEAPI: version 0.7.5: uses deprecated EAPI: 0
+www-servers/gatling
+  DeprecatedEAPI: version 0.12-r2: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.13: uses deprecated EAPI: 4
 
-app-backup/backuppc
-  SizeViolation: "files/02-fix-config.pl-formatting.patch" exceeds 20k in size; 23353 bytes total
+www-servers/lighttpd
+  DeprecatedEAPI: version 1.4.35: uses deprecated EAPI: 4
+  SizeViolation: "files/lighttpd-1.4.29-mod_uploadprogress.patch" exceeds 20k in size; 22472 bytes total
 
-app-backup/bareos
-  DroppedKeywordWarning: version 15.2.1: keywords dropped: amd64, x86
+www-servers/monkeyd
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-app-backup/boxbackup
-  DeprecatedEAPI: version 0.11.1: uses deprecated EAPI: 2
+www-servers/pound
+  DeprecatedEAPI: version 2.6: uses deprecated EAPI: 2
 
-app-backup/burp
-  DroppedKeywordWarning: version 1.4.40: keywords dropped: x86
+www-servers/servefile
+  NonExistentDeps: version 0.4.2: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 0.4.2: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEAPI: version 0.4.2: uses deprecated EAPI: 4
+  DeprecatedEclass: version 0.4.2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 0.4.3: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 0.4.3: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEAPI: version 0.4.3: uses deprecated EAPI: 4
+  DeprecatedEclass: version 0.4.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-app-backup/ccollect
-  DeprecatedEAPI: version 0.5.1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.7.1: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.8: uses deprecated EAPI: 2
+www-servers/spawn-fcgi
+  DeprecatedEAPI: version 1.6.3-r1: uses deprecated EAPI: 4
 
-app-backup/cdbackup
-  DeprecatedEAPI: version 0.7.0: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.7.1: uses deprecated EAPI: 0
+www-servers/thttpd
+  DeprecatedEAPI: version 2.26.4-r3: uses deprecated EAPI: 4
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-app-backup/cdbkup
-  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.0-r1: uses deprecated EAPI: 0
+www-servers/tomcat
+  DroppedKeywordWarning: version 8.0.23-r2: keywords dropped: ppc, ppc64
 
-app-backup/cpdup
-  DeprecatedEAPI: version 1.18: uses deprecated EAPI: 0
+www-servers/tornado
+  DroppedKeywordWarning: version 4.1.0: keywords dropped: ppc
 
-app-backup/dar
-  DeprecatedEAPI: version 2.3.8: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 2.4.9: uses deprecated EAPI: 3
-
-app-backup/dirvish
-  DeprecatedEAPI: version 1.2.1: uses deprecated EAPI: 0
-
-app-backup/flexbackup
-  DeprecatedEAPI: version 1.2.1-r12: uses deprecated EAPI: 0
-
-app-backup/furball
-  DeprecatedEAPI: version 0.5: uses deprecated EAPI: 4
-
-app-backup/hdup
-  DeprecatedEAPI: version 2.0.14: uses deprecated EAPI: 0
-
-app-backup/luckybackup
-  DeprecatedEAPI: version 0.4.7-r1: uses deprecated EAPI: 4
-
-app-backup/mirdir
-  DeprecatedEAPI: version 2.1-r1: uses deprecated EAPI: 3
-
-app-backup/mylvmbackup
-  DeprecatedEAPI: version 0.11: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.13: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.14: uses deprecated EAPI: 0
-
-app-backup/obnam
-  NonExistentDeps: version 1.9: depset depends: nonexistent atoms [ <dev-python/paramiko-1.13.0 ]
-  NonExistentDeps: version 1.9: depset rdepends: nonexistent atoms [ <dev-python/paramiko-1.13.0 ]
-  NonExistentDeps: version 1.16: depset depends: nonexistent atoms [ <dev-python/paramiko-1.13.0 ]
-  NonExistentDeps: version 1.16: depset rdepends: nonexistent atoms [ <dev-python/paramiko-1.13.0 ]
-  NonExistentDeps: version 1.17: depset depends: nonexistent atoms [ <dev-python/paramiko-1.13.0 ]
-  NonExistentDeps: version 1.17: depset rdepends: nonexistent atoms [ <dev-python/paramiko-1.13.0 ]
-
-app-backup/rdiff-backup
-  DeprecatedEAPI: version 1.2.8-r1: uses deprecated EAPI: 3
-  DeprecatedEclass: version 1.2.8-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 1.3.3: uses deprecated EAPI: 3
-  DeprecatedEclass: version 1.3.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-
-app-backup/reoback
-  BadInsIntoDir: version 1.0_p3-r1: ebuild uses insinto /etc/cron.daily on line 36
-
-app-backup/sarab
-  DeprecatedEAPI: version 1.0.0: uses deprecated EAPI: 0
-
-app-backup/simplebackup
-  DeprecatedEAPI: version 1.8.1: uses deprecated EAPI: 0
-
-app-backup/tarsnap
-  DeprecatedEAPI: version 1.0.35: uses deprecated EAPI: 4
-
-app-backup/tsm
-  DroppedKeywordWarning: version 6.3.0.5-r2: keywords dropped: x86
-
-app-backup/vzdump
-  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 2
+www-servers/xsp
+  WhitespaceFound: version 2014.12-r2014120900: ebuild has trailing whitespace on lines 82, 84
+  MetadataError: version 2014.12-r2014120900: attr(iuse): iuse unknown flags: [ net40, net35, net45 ]
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
@@ -1267,8 +1215,8 @@ dev-tcltk/snack
   DeprecatedEclass: version 2.2.10-r5: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-tcltk/tcllib
-  SizeViolation: "files/tcllib-1.15-XSS-vuln.patch" exceeds 20k in size; 29465 bytes total
   DroppedKeywordWarning: version 1.16: keywords dropped: ia64, ppc64, s390, sparc
+  SizeViolation: "files/tcllib-1.15-XSS-vuln.patch" exceeds 20k in size; 29465 bytes total
 
 dev-tcltk/tkTheme
   DeprecatedEAPI: version 1.0-r2: uses deprecated EAPI: 4
