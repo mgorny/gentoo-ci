@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 14 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'app-text/*' 'dev-php/*' 'sys-cluster/*' 'www-client/*' 'net-im/*' 'app-cdr/*' 'games-rpg/*' 'games-util/*' 'dev-go/*' 'games-mud/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'app-text/*' 'dev-php/*' 'app-i18n/*' 'www-client/*' 'net-im/*' 'app-cdr/*' 'games-rpg/*' 'games-util/*' 'dev-go/*' 'games-mud/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1036,251 +1036,349 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-sys-cluster/c3
-  DeprecatedEAPI: version 4.0.1: uses deprecated EAPI: 0
+app-i18n/anthy
+  DeprecatedEAPI: version 9100h-r1: uses deprecated EAPI: 3
 
-sys-cluster/ccs
-  DeprecatedEAPI: version 2.03.09: uses deprecated EAPI: 0
-ERROR root: check <pkgcheck.metadata_xml.PackageMetadataXmlCheck object at
-          : 0x7f69057399d0> raised
-ERROR root: Traceback (most recent call last):
-ERROR root:   File
-          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/bas
-          : e.py", line 337, in feed
-ERROR root:     check.feed(item, reporter)
-ERROR root:   File
-          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/met
-          : adata_xml.py", line 239, in feed
-ERROR root:     reporter.add_report(ret(loc, pkg.category, pkg.package))
-ERROR root:   File
-          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/met
-          : adata_xml.py", line 86, in __init__
-ERROR root:     base.Result.__init__(self, filename, category, package=None)
-ERROR root: TypeError: object.__init__() takes no parameters
+app-i18n/anthy-ss
+  DeprecatedEAPI: version 9026: uses deprecated EAPI: 0
 
-sys-cluster/cinder
-  DeprecatedEclass: version 2015.1.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DeprecatedEclass: version 2015.2.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+app-i18n/bidiv
+  DeprecatedEAPI: version 1.5-r1: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.5_p4: uses deprecated EAPI: 4
 
-sys-cluster/classads
-  DeprecatedEAPI: version 1.0.10: uses deprecated EAPI: 4
+app-i18n/canfep
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 4
 
-sys-cluster/cluster-glue
-  DeprecatedEAPI: version 1.0.9-r1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.0.10: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.0.11: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.0.12: uses deprecated EAPI: 4
+app-i18n/canna
+  DeprecatedEAPI: version 3.7_p3-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 3.7_p3-r2: uses deprecated EAPI: 0
+  DroppedKeywordWarning: version 3.7_p3-r2: keywords dropped: ia64
 
-sys-cluster/cman
-  DeprecatedEAPI: version 3.1.5: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 3.1.5-r1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 3.2.0: uses deprecated EAPI: 4
+app-i18n/dbskkd-cdb
+  DeprecatedEAPI: version 2.00: uses deprecated EAPI: 2
 
-sys-cluster/cman-lib
-  DeprecatedEAPI: version 2.03.09: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.03.09-r1: uses deprecated EAPI: 0
+app-i18n/enca
+  DeprecatedEAPI: version 1.13-r3: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.14-r1: uses deprecated EAPI: 4
 
-sys-cluster/corosync
-  DeprecatedEAPI: version 1.3.0: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 1.3.5: uses deprecated EAPI: 4
+app-i18n/fbiterm
+  DeprecatedEAPI: version 0.5-r2: uses deprecated EAPI: 4
+
+app-i18n/freewnn
+  DeprecatedEAPI: version 1.1.1_alpha21-r1: uses deprecated EAPI: 0
+
+app-i18n/ibus-anthy
+  DeprecatedEclass: version 1.2.7-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.2.7-r1: uses deprecated EAPI: 3
+  NonExistentDeps: version 1.2.7-r1: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  NonExistentDeps: version 1.2.7-r1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+
+app-i18n/ibus-chewing
   DeprecatedEAPI: version 1.4.7: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 2.3.3: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 2.3.4-r1: uses deprecated EAPI: 4
 
-sys-cluster/dlm
-  DeprecatedEAPI: version 2.03.09: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.03.11: uses deprecated EAPI: 0
+app-i18n/ibus-fbterm
+  DeprecatedEAPI: version 0.9.1: uses deprecated EAPI: 4
 
-sys-cluster/dlm-lib
-  DeprecatedEAPI: version 2.03.09: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.03.11: uses deprecated EAPI: 0
+app-i18n/ibus-handwrite
+  DeprecatedEclass: version 2.1.4: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 2.1.4: uses deprecated EAPI: 4
 
-sys-cluster/drbd
-  DeprecatedEAPI: version 8.0.16: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 8.3.7: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 8.3.8.1: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 8.3.8.1-r1: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 8.3.10: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 8.3.11-r1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 8.3.12: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 8.3.13: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 8.3.15: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 8.4.0: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 8.4.2: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 8.4.3: uses deprecated EAPI: 4
+app-i18n/ibus-hangul
+  DeprecatedEclass: version 1.4.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.4.0: uses deprecated EAPI: 4
+  NonExistentDeps: version 1.4.0: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  NonExistentDeps: version 1.4.0: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 1.4.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.4.1: uses deprecated EAPI: 4
+  NonExistentDeps: version 1.4.1: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  NonExistentDeps: version 1.4.1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 1.4.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 1.4.2: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  NonExistentDeps: version 1.4.2: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
 
-sys-cluster/drbd-kernel
-  DeprecatedEAPI: version 8.0.16: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 8.3.6: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 8.3.8.1: uses deprecated EAPI: 2
+app-i18n/ibus-m17n
+  DeprecatedEAPI: version 1.3.2: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 1.3.3: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 1.3.4: uses deprecated EAPI: 3
 
-sys-cluster/fake
-  DeprecatedEAPI: version 1.1.10: uses deprecated EAPI: 0
+app-i18n/ibus-pinyin
+  DeprecatedEclass: version 1.4.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.4.0: uses deprecated EAPI: 4
+  NonExistentDeps: version 1.4.0: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  NonExistentDeps: version 1.4.0: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 1.4.0-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.4.0-r1: uses deprecated EAPI: 4
+  NonExistentDeps: version 1.4.0-r1: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  NonExistentDeps: version 1.4.0-r1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 1.5.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 1.5.0: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  NonExistentDeps: version 1.5.0: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 1.5.0-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 1.5.0-r1: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  NonExistentDeps: version 1.5.0-r1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
 
-sys-cluster/feedbackd-agent
-  DeprecatedEAPI: version 0.4: uses deprecated EAPI: 0
+app-i18n/ibus-skk
+  DeprecatedEclass: version 1.3.9: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.3.9: uses deprecated EAPI: 4
+  NonExistentDeps: version 1.3.9: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  NonExistentDeps: version 1.3.9: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 1.4.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.4.0: uses deprecated EAPI: 4
+  NonExistentDeps: version 1.4.0: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  NonExistentDeps: version 1.4.0: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 1.4.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.4.1: uses deprecated EAPI: 4
+  NonExistentDeps: version 1.4.1: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  NonExistentDeps: version 1.4.1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
 
-sys-cluster/feedbackd-master
-  DeprecatedEAPI: version 0.4: uses deprecated EAPI: 0
+app-i18n/ibus-sunpinyin
+  DeprecatedEclass: version 2.0.3-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 2.0.3-r2: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  NonExistentDeps: version 2.0.3-r2: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 2.0.4_pre20130108-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 2.0.4_pre20130108-r1: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  NonExistentDeps: version 2.0.4_pre20130108-r1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
 
-sys-cluster/ganglia
-  DeprecatedEclass: version 3.5.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 3.5.0: uses deprecated EAPI: 3
+app-i18n/ibus-table
+  DeprecatedEclass: version 1.2.0.20100111: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.2.0.20100111: uses deprecated EAPI: 3
+  NonExistentDeps: version 1.2.0.20100111: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  NonExistentDeps: version 1.2.0.20100111: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 1.3.0.20100621: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.3.0.20100621: uses deprecated EAPI: 3
+  NonExistentDeps: version 1.3.0.20100621: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  NonExistentDeps: version 1.3.0.20100621: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 1.3.9.20110827-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.3.9.20110827-r1: uses deprecated EAPI: 3
+  NonExistentDeps: version 1.3.9.20110827-r1: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  NonExistentDeps: version 1.3.9.20110827-r1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 1.5.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 1.5.0: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  NonExistentDeps: version 1.5.0: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
 
-sys-cluster/ganglia-web
-  DeprecatedEAPI: version 3.5.8-r1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 3.5.10-r1: uses deprecated EAPI: 4
+app-i18n/ibus-table-code
+  DeprecatedEAPI: version 1.2.0.20100305: uses deprecated EAPI: 0
 
-sys-cluster/gfs-kernel
-  DeprecatedEAPI: version 2.03.09: uses deprecated EAPI: 0
+app-i18n/ibus-table-cyrillic
+  DeprecatedEAPI: version 1.2.0.20100305: uses deprecated EAPI: 0
 
-sys-cluster/glusterfs
-  DeprecatedEAPI: version 3.1.2: uses deprecated EAPI: 3
-  SizeViolation: "files/glusterfs-3.4.0-build-shared-only.patch" exceeds 20k in size; 22147 bytes total
-  SizeViolation: "files/glusterfs-3.5.1-build-shared-only.patch" exceeds 20k in size; 25227 bytes total
-  SizeViolation: "files/glusterfs-3.6.5-build-shared-only.patch" exceeds 20k in size; 27261 bytes total
+app-i18n/ibus-table-latin
+  DeprecatedEAPI: version 1.2.0.20100305: uses deprecated EAPI: 0
 
-sys-cluster/heartbeat
-  DeprecatedEclass: version 3.0.5-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 3.0.5-r2: uses deprecated EAPI: 2
+app-i18n/ibus-table-tv
+  DeprecatedEAPI: version 1.2.0.20100305: uses deprecated EAPI: 0
 
-sys-cluster/hpl
-  DeprecatedEAPI: version 2.0-r3: uses deprecated EAPI: 4
+app-i18n/ibus-tutcode
+  DeprecatedEAPI: version 1.0.0: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.0.2: uses deprecated EAPI: 4
 
-sys-cluster/ipvsadm
-  DeprecatedEAPI: version 1.21-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.24: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.26-r2: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.27: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.27-r1: uses deprecated EAPI: 4
-  DroppedKeywordWarning: version 1.24: keywords dropped: ppc
+app-i18n/ibus-unikey
+  DeprecatedEAPI: version 0.6.1: uses deprecated EAPI: 4
 
-sys-cluster/keepalived
-  DeprecatedEAPI: version 1.2.2-r4: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.2.9: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.2.15: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.2.16: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.2.18: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.2.19: uses deprecated EAPI: 4
+app-i18n/im-canna
+  DeprecatedEAPI: version 0.3.2.2: uses deprecated EAPI: 4
 
-sys-cluster/knem
+app-i18n/im-freewnn
+  DeprecatedEAPI: version 0.0.2-r1: uses deprecated EAPI: 1
+
+app-i18n/imhangul
+  DeprecatedEAPI: version 2.0.0: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 2.1.0: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.1.1: uses deprecated EAPI: 3
+
+app-i18n/jfbterm
+  DeprecatedEAPI: version 0.4.7-r4: uses deprecated EAPI: 0
+
+app-i18n/kanjipad
+  DeprecatedEAPI: version 2.0.0: uses deprecated EAPI: 2
+
+app-i18n/kcc
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 4
+
+app-i18n/kcm-fcitx
+  DroppedKeywordWarning: version 0.5.0: keywords dropped: ppc, ppc64
+
+app-i18n/kde-l10n-scripts
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-sys-cluster/libccs
-  DeprecatedEAPI: version 3.1.5: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 3.2.0: uses deprecated EAPI: 4
+app-i18n/kimera
+  DeprecatedEAPI: version 2.11-r1: uses deprecated EAPI: 3
 
-sys-cluster/libccs-perl
-  DeprecatedEAPI: version 3.1.5: uses deprecated EAPI: 4
+app-i18n/kinput2
+  DeprecatedEAPI: version 3.1-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 3.1-r2: uses deprecated EAPI: 3
 
-sys-cluster/libcman
-  DeprecatedEAPI: version 3.1.5: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 3.2.0: uses deprecated EAPI: 4
+app-i18n/libguess
+  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 2
 
-sys-cluster/libfence
-  DeprecatedEAPI: version 3.1.5: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 3.2.0: uses deprecated EAPI: 4
+app-i18n/libhangul
+  DeprecatedEAPI: version 0.0.12: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 0.1.0: uses deprecated EAPI: 4
 
-sys-cluster/liblogthread
-  DeprecatedEAPI: version 3.1.5: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 3.2.0: uses deprecated EAPI: 4
+app-i18n/libskk
+  DeprecatedEAPI: version 0.0.9: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.0.11: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.0.12: uses deprecated EAPI: 4
 
-sys-cluster/libqb
-  DeprecatedEAPI: version 0.13.0: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.14.3: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.14.4: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.17.0: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.17.1: uses deprecated EAPI: 4
+app-i18n/libtabe
+  DeprecatedEAPI: version 0.2.6: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.2.6.1.2: uses deprecated EAPI: 0
 
-sys-cluster/lspbs
-  DeprecatedEAPI: version 1.1-r1: uses deprecated EAPI: 0
+app-i18n/libtomoe-gtk
+  DeprecatedEclass: version 0.6.0-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.6.0-r2: uses deprecated EAPI: 3
 
-sys-cluster/maui
-  DeprecatedEAPI: version 3.2.6_p16: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 3.2.6_p21: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 3.2.6_p21-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 3.3: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 3.3.1-r2: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 3.3.1-r3: uses deprecated EAPI: 4
-  MissingChksum: version 3.2.6_p16: "maui-3.2.6p16.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 3.2.6_p21: "maui-3.2.6p21.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 3.3: "maui-3.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-i18n/man-pages-da
+  DeprecatedEAPI: version 0.1.2: uses deprecated EAPI: 4
 
-sys-cluster/mpe2
-  DeprecatedEAPI: version 1.0.6_p1: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 1.0.6_p1-r1: uses deprecated EAPI: 2
+app-i18n/man-pages-fr
+  DeprecatedEAPI: version 2.39.0: uses deprecated EAPI: 0
 
-sys-cluster/mvapich2
-  DeprecatedEAPI: version 1.6: uses deprecated EAPI: 4
-  NonExistentDeps: version 1.6: depset depends: nonexistent atoms [ sys-infiniband/openib-userspace ]
-  NonExistentDeps: version 1.6: depset rdepends: nonexistent atoms [ sys-infiniband/openib-userspace ]
+app-i18n/man-pages-ja
+  DeprecatedEAPI: version 20130215: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 20131015: uses deprecated EAPI: 3
 
-sys-cluster/native-mpi
-  DeprecatedEAPI: version 0: uses deprecated EAPI: 3
+app-i18n/man-pages-nl
+  DeprecatedEAPI: version 0.13.3: uses deprecated EAPI: 0
 
-sys-cluster/neutron
-  DeprecatedEclass: version 2015.1.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DeprecatedEclass: version 2015.2.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+app-i18n/man-pages-pl
+  DeprecatedEAPI: version 0_pre20070628-r2: uses deprecated EAPI: 4
 
-sys-cluster/nova
-  DeprecatedEclass: version 2015.1.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DeprecatedEclass: version 2015.2.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+app-i18n/man-pages-ro
+  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 0
 
-sys-cluster/ocfs
-  DeprecatedEAPI: version 1.0.14: uses deprecated EAPI: 0
+app-i18n/multiskkserv
+  NonExistentDeps: version 20100128: depset rdepends: nonexistent atoms [ app-i18n/skk-jisyo-cdb ]
 
-sys-cluster/onesis
-  DeprecatedEAPI: version 2.0.2: uses deprecated EAPI: 0
+app-i18n/nabi
+  DeprecatedEAPI: version 0.15: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.17: uses deprecated EAPI: 4
 
-sys-cluster/open-mx
-  DeprecatedEAPI: version 1.5.4: uses deprecated EAPI: 4
+app-i18n/opencc
+  DeprecatedEAPI: version 0.2.0: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.3.0_pre20120819: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.3.0_pre20120819-r1: uses deprecated EAPI: 4
 
-sys-cluster/openais
-  DeprecatedEAPI: version 1.1.4-r1: uses deprecated EAPI: 2
+app-i18n/poedit
+  DroppedKeywordWarning: version 1.8.3: keywords dropped: hppa, ppc, sparc
 
-sys-cluster/openmpi
-  DroppedKeywordWarning: version 1.8.4-r4: keywords dropped: ia64
-  DroppedKeywordWarning: version 1.8.7-r1: keywords dropped: alpha, sparc
+app-i18n/pyzy
+  DeprecatedEclass: version 0.1.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-sys-cluster/osc-mpiexec
-  DeprecatedEAPI: version 0.83: uses deprecated EAPI: 0
+app-i18n/qkc
+  DeprecatedEAPI: version 1.00: uses deprecated EAPI: 4
 
-sys-cluster/pacemaker-gui
-  DeprecatedEclass: version 2.1.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 2.1.2: uses deprecated EAPI: 4
+app-i18n/rime-data
+  DeprecatedEAPI: version 0.22: uses deprecated EAPI: 4
 
-sys-cluster/pconsole
-  DeprecatedEAPI: version 1.0-r3: uses deprecated EAPI: 2
+app-i18n/scim
+  DeprecatedEAPI: version 1.4.14: uses deprecated EAPI: 4
 
-sys-cluster/resource-agents
-  DeprecatedEAPI: version 1.0.4-r1: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 1.0.4-r2: uses deprecated EAPI: 2
+app-i18n/scim-anthy
+  DeprecatedEAPI: version 1.3.1: uses deprecated EAPI: 2
+  DroppedKeywordWarning: version 1.3.1: keywords dropped: alpha, arm, sparc
 
-sys-cluster/rgmanager
-  DeprecatedEAPI: version 2.03.09: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.03.09-r1: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 3.1.5: uses deprecated EAPI: 4
+app-i18n/scim-bridge
+  DeprecatedEAPI: version 0.4.16-r2: uses deprecated EAPI: 2
 
-sys-cluster/rgmanager-agents
-  DeprecatedEAPI: version 3.9.2: uses deprecated EAPI: 4
+app-i18n/scim-canna
+  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 0
 
-sys-cluster/swift
-  WhitespaceFound: version 2.3.0-r1: ebuild has leading whitespace on line 97
-  WhitespaceFound: version 2.5.0: ebuild has leading whitespace on line 100
-  SizeViolation: "files/cve-2015-5223-stable-kilo.patch" exceeds 20k in size; 38075 bytes total
+app-i18n/scim-hangul
+  DeprecatedEAPI: version 0.3.2: uses deprecated EAPI: 2
+  NonExistentDeps: version 0.3.2: depset depends: nonexistent atoms [ >=app-i18n/scim-cvs-0.99.8 ]
+  NonExistentDeps: version 0.3.2: depset rdepends: nonexistent atoms [ >=app-i18n/scim-cvs-0.99.8 ]
+  NonExistentDeps: version 0.4.0: depset depends: nonexistent atoms [ >=app-i18n/scim-cvs-0.99.8 ]
+  NonExistentDeps: version 0.4.0: depset rdepends: nonexistent atoms [ >=app-i18n/scim-cvs-0.99.8 ]
 
-sys-cluster/torque
-  DeprecatedEAPI: version 2.5.13: uses deprecated EAPI: 4
+app-i18n/scim-input-pad
+  DeprecatedEAPI: version 0.1.3: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.1.3.1: uses deprecated EAPI: 4
 
-sys-cluster/util-vserver
-  DeprecatedEAPI: version 0.30.216_pre3025: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.30.216_pre3062: uses deprecated EAPI: 4
+app-i18n/scim-m17n
+  DeprecatedEAPI: version 0.2.3: uses deprecated EAPI: 0
 
-sys-cluster/wulfware
-  DeprecatedEAPI: version 2.6.0: uses deprecated EAPI: 0
+app-i18n/scim-pinyin
+  DeprecatedEAPI: version 0.5.91-r3: uses deprecated EAPI: 0
+  NonExistentDeps: version 0.5.91-r3: depset depends: nonexistent atoms [ >=app-i18n/scim-cvs-1.1 ]
+  NonExistentDeps: version 0.5.91-r3: depset rdepends: nonexistent atoms [ >=app-i18n/scim-cvs-1.1 ]
+  DeprecatedEAPI: version 0.5.92: uses deprecated EAPI: 4
+  NonExistentDeps: version 0.5.92: depset depends: nonexistent atoms [ >=app-i18n/scim-cvs-1.1 ]
+  NonExistentDeps: version 0.5.92: depset rdepends: nonexistent atoms [ >=app-i18n/scim-cvs-1.1 ]
 
-sys-cluster/xgridagent
-  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+app-i18n/scim-sayura
+  DeprecatedEAPI: version 0.3.3: uses deprecated EAPI: 2
+
+app-i18n/scim-skk
+  DeprecatedEAPI: version 0.5.2-r1: uses deprecated EAPI: 0
+  NonExistentDeps: version 0.5.2-r1: depset depends: nonexistent atoms [ >=app-i18n/scim-cvs-1.2 ]
+  NonExistentDeps: version 0.5.2-r1: depset rdepends: nonexistent atoms [ >=app-i18n/scim-cvs-1.2 ]
+
+app-i18n/scim-tables
+  DeprecatedEAPI: version 0.5.13: uses deprecated EAPI: 0
+
+app-i18n/scim-tomoe
+  DeprecatedEAPI: version 0.6.0: uses deprecated EAPI: 0
+  NonExistentDeps: version 0.6.0: depset depends: nonexistent atoms [ >=app-i18n/scim-cvs-1.2.0 ]
+  NonExistentDeps: version 0.6.0: depset rdepends: nonexistent atoms [ >=app-i18n/scim-cvs-1.2.0 ]
+  DeprecatedEAPI: version 0.6.0-r2: uses deprecated EAPI: 2
+
+app-i18n/scim-uim
+  DeprecatedEAPI: version 0.2.0-r2: uses deprecated EAPI: 2
+
+app-i18n/scim-wijesekera
+  DeprecatedEAPI: version 0.3.3-r1: uses deprecated EAPI: 2
+
+app-i18n/scim-wnn
+  DeprecatedEAPI: version 0.2.4: uses deprecated EAPI: 0
+  NonExistentDeps: version 0.2.4: depset depends: nonexistent atoms [ >=app-i18n/scim-cvs-1.0 ]
+  NonExistentDeps: version 0.2.4: depset rdepends: nonexistent atoms [ >=app-i18n/scim-cvs-1.0 ]
+  DeprecatedEAPI: version 1.0.0-r1: uses deprecated EAPI: 2
+
+app-i18n/skk-jisyo
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 201101: uses deprecated EAPI: 3
+
+app-i18n/skkfep
+  DeprecatedEAPI: version 0.87-r1: uses deprecated EAPI: 4
+
+app-i18n/skkserv
+  DeprecatedEAPI: version 9.6-r3: uses deprecated EAPI: 3
+
+app-i18n/sunpinyin
+  DeprecatedEAPI: version 2.0.3-r1: uses deprecated EAPI: 3
+
+app-i18n/tomoe
+  DeprecatedEclass: version 0.6.0-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.6.0-r1: uses deprecated EAPI: 3
+
+app-i18n/uim-tomoe-gtk
+  DeprecatedEAPI: version 0.6.0: uses deprecated EAPI: 0
+  NonExistentDeps: version 0.6.0: depset depends: nonexistent atoms [ app-i18n/uim-svn ]
+  NonExistentDeps: version 0.6.0: depset rdepends: nonexistent atoms [ app-i18n/uim-svn ]
+
+app-i18n/unicode-data
+  DeprecatedEAPI: version 6.0.0: uses deprecated EAPI: 0
+
+app-i18n/xcin
+  DeprecatedEAPI: version 2.5.3_pre3-r2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.5.3_pre3-r3: uses deprecated EAPI: 4
+
+app-i18n/xsim
+  MetadataError: version 0.3.9.4-r5: attr(fetchables): error- Metadata Exception: pkg ebuild src: app-i18n/xsim-0.3.9.4-r5, attr fetchables
+error: mirror://berlios/xsim/xsim-0.3.9.4.tar.gz is unparseable
+flagged token- uri mirror://berlios/xsim/xsim-0.3.9.4.tar.gz isn't a known mirror tier
+
+app-i18n/xvnkb
+  DeprecatedEAPI: version 0.2.8a-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.2.9a-r1: uses deprecated EAPI: 0
+
+app-i18n/zhcon
+  DeprecatedEAPI: version 0.2.6-r2: uses deprecated EAPI: 3
+
+app-i18n/zinnia-tomoe
+  DeprecatedEAPI: version 0.6.0_p20080911: uses deprecated EAPI: 4
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
