@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 5 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-libs/*' 'media-video/*' 'media-fonts/*' 'net-wireless/*' 'dev-qt/*' 'net-irc/*' 'kde-plasma/*' 'app-accessibility/*' 'perl-core/*' 'net-news/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-libs/*' 'media-video/*' 'media-fonts/*' 'net-wireless/*' 'dev-qt/*' 'net-irc/*' 'kde-plasma/*' 'app-pda/*' 'perl-core/*' 'net-news/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -2336,73 +2336,119 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-app-accessibility/SphinxTrain
-  DeprecatedEAPI: version 0.9.1-r1: uses deprecated EAPI: 4
-  DroppedKeywordWarning: version 1.0.8: keywords dropped: ppc
+app-pda/dynamite
+  DeprecatedEAPI: version 0.1.1_p20120512: uses deprecated EAPI: 4
 
-app-accessibility/edbrowse
-  DeprecatedEAPI: version 3.5.1: uses deprecated EAPI: 4
+app-pda/fusepod
+  DeprecatedEAPI: version 0.5.2: uses deprecated EAPI: 4
 
-app-accessibility/emacspeak-ss
-  DeprecatedEAPI: version 1.9.1: uses deprecated EAPI: 4
+app-pda/iripdb
+  DeprecatedEAPI: version 0.1.3b: uses deprecated EAPI: 0
 
-app-accessibility/epos
-  DeprecatedEAPI: version 2.5.37-r1: uses deprecated EAPI: 4
+app-pda/jpilot
+  DeprecatedEAPI: version 1.8.0: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 1.8.1: uses deprecated EAPI: 4
 
-app-accessibility/espeakup
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+app-pda/jpilot-backup
+  DeprecatedEAPI: version 0.60: uses deprecated EAPI: 2
 
-app-accessibility/festival
-  DeprecatedEAPI: version 2.1-r1: uses deprecated EAPI: 2
+app-pda/jpilot-mail
+  DeprecatedEAPI: version 0.1.7: uses deprecated EAPI: 2
 
-app-accessibility/festival-fi
-  DeprecatedEAPI: version 20041119: uses deprecated EAPI: 2
+app-pda/jpilot-plucker
+  DeprecatedEAPI: version 0.02: uses deprecated EAPI: 2
 
-app-accessibility/festival-freebsoft-utils
-  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.10: uses deprecated EAPI: 4
+app-pda/jpilot-syncmal
+  DeprecatedEAPI: version 0.81: uses deprecated EAPI: 2
 
-app-accessibility/festival-hts
-  DeprecatedEAPI: version 2.1: uses deprecated EAPI: 2
+app-pda/libopensync
+  DeprecatedEAPI: version 0.22: uses deprecated EAPI: 0
+  DeprecatedEclass: version 0.22-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.22-r1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.36-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.36-r2: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.39-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.39-r1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
 
-app-accessibility/festival-it
-  DeprecatedEAPI: version 1.0-r2: uses deprecated EAPI: 4
+app-pda/libopensync-plugin-file
+  DeprecatedEAPI: version 0.22: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 0.36: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 0.39: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
 
-app-accessibility/festival-ru
-  DeprecatedEAPI: version 0.5: uses deprecated EAPI: 2
-
-app-accessibility/freetts
-  DeprecatedEAPI: version 1.2.1-r2: uses deprecated EAPI: 0
-
-app-accessibility/mbrola
-  DeprecatedEAPI: version 3.0.1h-r6: uses deprecated EAPI: 0
-
-app-accessibility/nfbtrans
-  DeprecatedEAPI: version 7.74: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 7.74-r1: uses deprecated EAPI: 3
-
-app-accessibility/pidgin-festival
-  DeprecatedEAPI: version 2.4: uses deprecated EAPI: 2
-
-app-accessibility/sound-icons
-  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 0
-
-app-accessibility/speakup
-  DeprecatedEAPI: version 3.1.6_p201011120508: uses deprecated EAPI: 2
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+app-pda/libopensync-plugin-gnokii
+  DeprecatedEAPI: version 0.22: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.36: uses deprecated EAPI: 2
   DeprecatedEAPI: version 9999: uses deprecated EAPI: 2
 
-app-accessibility/speechd-el
-  DeprecatedEAPI: version 2.5: uses deprecated EAPI: 4
+app-pda/libopensync-plugin-gpe
+  DeprecatedEAPI: version 0.22: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.36: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 2
 
-app-accessibility/speechd-up
-  DeprecatedEAPI: version 0.4-r3: uses deprecated EAPI: 0
+app-pda/libopensync-plugin-irmc
+  DeprecatedEAPI: version 0.22: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
 
-app-accessibility/sphinx2
-  DeprecatedEAPI: version 0.6: uses deprecated EAPI: 2
+app-pda/libopensync-plugin-moto
+  DeprecatedEclass: version 0.22: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.22: uses deprecated EAPI: 3
+  NonExistentDeps: version 0.22: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 0.22: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
 
-app-accessibility/yasr
-  DeprecatedEAPI: version 0.6.9-r1: uses deprecated EAPI: 2
+app-pda/libopensync-plugin-palm
+  DeprecatedEAPI: version 0.22: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
+
+app-pda/libopensync-plugin-python
+  DeprecatedEclass: version 0.22: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.22: uses deprecated EAPI: 3
+  NonExistentDeps: version 0.22: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  NonExistentDeps: version 0.22: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
+  NonExistentDeps: version 9999: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  NonExistentDeps: version 9999: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+
+app-pda/libopensync-plugin-sunbird
+  DeprecatedEAPI: version 0.22: uses deprecated EAPI: 3
+
+app-pda/libopensync-plugin-synce-rra
+  DeprecatedEAPI: version 0.22.2: uses deprecated EAPI: 4
+
+app-pda/libopensync-plugin-syncml
+  DeprecatedEAPI: version 0.39: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
+
+app-pda/libopensync-plugin-vformat
+  DeprecatedEAPI: version 0.39: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
+
+app-pda/msynctool
+  DeprecatedEAPI: version 0.22: uses deprecated EAPI: 3
+
+app-pda/orange
+  DeprecatedEAPI: version 0.4: uses deprecated EAPI: 4
+
+app-pda/osynctool
+  DeprecatedEAPI: version 0.39: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
+
+app-pda/p3nfs
+  DeprecatedEAPI: version 5.19-r2: uses deprecated EAPI: 2
+
+app-pda/pilot-link
+  SizeViolation: "files/pilot-link-0.12.5-perl514.patch" exceeds 20k in size; 22730 bytes total
+
+app-pda/synce-core
+  DeprecatedEclass: version 0.16-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.16-r1: uses deprecated EAPI: 4
+
+app-pda/synce-sync-engine
+  DeprecatedEclass: version 0.15.1-r3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.15.1-r3: uses deprecated EAPI: 4
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
