@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 11 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'media-sound/*' 'x11-libs/*' 'www-apps/*' 'kde-base/*' 'dev-tex/*' 'sys-boot/*' 'dev-scheme/*' 'app-benchmarks/*' 'sci-calculators/*' 'gnustep-libs/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'media-sound/*' 'x11-libs/*' 'www-apps/*' 'kde-base/*' 'dev-tex/*' 'sys-boot/*' 'dev-scheme/*' 'x11-proto/*' 'sci-calculators/*' 'gnustep-libs/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1997,80 +1997,55 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-app-benchmarks/acovea
-  DeprecatedEAPI: version 5.1.1-r1: uses deprecated EAPI: 2
+x11-proto/bigreqsproto
+  DeprecatedEAPI: version 1.1.2: uses deprecated EAPI: 4
 
-app-benchmarks/bonnie
-  DeprecatedEAPI: version 2.0.6: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.0.6-r1: uses deprecated EAPI: 2
+x11-proto/dmxproto
+  DeprecatedEAPI: version 2.3.1: uses deprecated EAPI: 3
 
-app-benchmarks/bonnie++
-  DeprecatedEAPI: version 1.96: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.96-r1: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 1.97: uses deprecated EAPI: 2
+x11-proto/dri2proto
+  DeprecatedEAPI: version 2.6: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 2.8: uses deprecated EAPI: 4
 
-app-benchmarks/contest
-  DeprecatedEAPI: version 0.61: uses deprecated EAPI: 0
+x11-proto/evieext
+  DeprecatedEAPI: version 1.1.1: uses deprecated EAPI: 3
 
-app-benchmarks/cpuburn
-  DeprecatedEAPI: version 1.4a: uses deprecated EAPI: 4
+x11-proto/fixesproto
+  DeprecatedEAPI: version 5.0: uses deprecated EAPI: 4
 
-app-benchmarks/filebench
-  DeprecatedEAPI: version 1.4.9.1: uses deprecated EAPI: 0
+x11-proto/fontcacheproto
+  DeprecatedEAPI: version 0.1.3: uses deprecated EAPI: 4
 
-app-benchmarks/forkbomb
-  DeprecatedEAPI: version 1.4: uses deprecated EAPI: 0
+x11-proto/fontsproto
+  DeprecatedEAPI: version 2.1.2: uses deprecated EAPI: 4
 
-app-benchmarks/httperf
-  DeprecatedEAPI: version 0.9.0-r2: uses deprecated EAPI: 4
+x11-proto/glproto
+  DeprecatedEAPI: version 1.4.16: uses deprecated EAPI: 4
 
-app-benchmarks/iozone
-  DeprecatedEAPI: version 3.397: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 3.408: uses deprecated EAPI: 0
+x11-proto/inputproto
+  DroppedKeywordWarning: version 2.3.1: keywords dropped: arm64, m68k
 
-app-benchmarks/jmeter
-  DeprecatedEAPI: version 2.0.1-r4: uses deprecated EAPI: 0
+x11-proto/resourceproto
+  DeprecatedEAPI: version 1.2.0: uses deprecated EAPI: 4
 
-app-benchmarks/ltp
-  DeprecatedEAPI: version 20130503: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 20140828: uses deprecated EAPI: 4
+x11-proto/trapproto
+  DeprecatedEAPI: version 3.4.3: uses deprecated EAPI: 4
 
-app-benchmarks/nbench
-  DeprecatedEAPI: version 2.2.3-r1: uses deprecated EAPI: 2
+x11-proto/xcalibrateproto
+  DeprecatedEAPI: version 0.1_pre20081210: uses deprecated EAPI: 4
 
-app-benchmarks/os-autoinst
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
+x11-proto/xcmiscproto
+  DeprecatedEAPI: version 1.2.2: uses deprecated EAPI: 4
 
-app-benchmarks/phoronix-test-suite
-  DeprecatedEAPI: version 4.8.5: uses deprecated EAPI: 4
+x11-proto/xextproto
+  DeprecatedEAPI: version 7.2.0: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 7.2.1: uses deprecated EAPI: 4
 
-app-benchmarks/piozone
-  DeprecatedEAPI: version 1.0-r3: uses deprecated EAPI: 2
+x11-proto/xf86miscproto
+  DeprecatedEAPI: version 0.9.3: uses deprecated EAPI: 4
 
-app-benchmarks/pipebench
-  DeprecatedEAPI: version 0.40: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.40-r1: uses deprecated EAPI: 3
-
-app-benchmarks/siege
-  DeprecatedEAPI: version 3.0.6: uses deprecated EAPI: 4
-
-app-benchmarks/spew
-  DeprecatedEAPI: version 1.0.8: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.0.8-r1: uses deprecated EAPI: 4
-
-app-benchmarks/stress
-  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.0.4: uses deprecated EAPI: 4
-
-app-benchmarks/sysbench
-  DeprecatedEAPI: version 0.4.12-r1: uses deprecated EAPI: 2
-
-app-benchmarks/tiobench
-  DeprecatedEAPI: version 0.3.3-r2: uses deprecated EAPI: 0
-
-app-benchmarks/volanomark
-  DeprecatedEAPI: version 2.5.0.9: uses deprecated EAPI: 0
+x11-proto/xf86rushproto
+  DeprecatedEAPI: version 1.1.2-r1: uses deprecated EAPI: 4
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
