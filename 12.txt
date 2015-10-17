@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 12 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'app-emulation/*' 'sys-fs/*' 'dev-vcs/*' 'x11-apps/*' 'games-puzzle/*' 'gnome-base/*' 'dev-dotnet/*' 'x11-proto/*' 'app-laptop/*' 'games-sports/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'app-emulation/*' 'sys-fs/*' 'dev-vcs/*' 'x11-drivers/*' 'games-puzzle/*' 'gnome-base/*' 'dev-dotnet/*' 'x11-proto/*' 'app-laptop/*' 'games-sports/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -729,157 +729,160 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-x11-apps/ardesia
-  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 4
+x11-drivers/afb-ucode
+  DeprecatedEAPI: version 1.3.11: uses deprecated EAPI: 0
 
-x11-apps/bdftopcf
-  DroppedKeywordWarning: version 1.0.5: keywords dropped: arm64
+x11-drivers/xf86-input-acecad
+  DeprecatedEAPI: version 1.5.0: uses deprecated EAPI: 4
 
-x11-apps/fonttosfnt
-  DeprecatedEAPI: version 1.0.4-r1: uses deprecated EAPI: 4
+x11-drivers/xf86-input-aiptek
+  DeprecatedEAPI: version 1.4.1: uses deprecated EAPI: 4
 
-x11-apps/fslsfonts
-  DeprecatedEAPI: version 1.0.4: uses deprecated EAPI: 4
+x11-drivers/xf86-input-elographics
+  DeprecatedEAPI: version 1.4.1: uses deprecated EAPI: 4
 
-x11-apps/fstobdf
-  DeprecatedEAPI: version 1.0.5: uses deprecated EAPI: 4
+x11-drivers/xf86-input-evdev
+  DeprecatedEAPI: version 2.7.3: uses deprecated EAPI: 4
 
-x11-apps/fusion-icon
-  DeprecatedEclass: version 0.1-r2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.1-r2: uses deprecated EAPI: 4
-  DeprecatedEclass: version 0.1-r3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.1-r3: uses deprecated EAPI: 4
+x11-drivers/xf86-input-fpit
+  DeprecatedEAPI: version 1.4.0: uses deprecated EAPI: 4
 
-x11-apps/iceauth
-  DroppedKeywordWarning: version 1.0.7: keywords dropped: arm64
+x11-drivers/xf86-input-hyperpen
+  DeprecatedEAPI: version 1.4.1: uses deprecated EAPI: 4
 
-x11-apps/listres
-  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 4
+x11-drivers/xf86-input-joystick
+  DeprecatedEAPI: version 1.6.1: uses deprecated EAPI: 4
 
-x11-apps/luit
-  DeprecatedEAPI: version 1.1.1: uses deprecated EAPI: 4
+x11-drivers/xf86-input-libinput
+  DroppedKeywordWarning: version 0.8.0: keywords dropped: alpha
 
-x11-apps/mkfontdir
-  DeprecatedEAPI: version 1.0.7: uses deprecated EAPI: 4
+x11-drivers/xf86-input-mouse
+  DeprecatedEAPI: version 1.8.1: uses deprecated EAPI: 4
 
-x11-apps/oclock
-  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 4
+x11-drivers/xf86-input-mtrack
+  DeprecatedEAPI: version 0.3.0: uses deprecated EAPI: 4
 
-x11-apps/python-whiteboard
-  DeprecatedEclass: version 20101012: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 20101012: uses deprecated EAPI: 3
-
-x11-apps/scripts
-  DeprecatedEAPI: version 1.0.1-r1: uses deprecated EAPI: 3
-
-x11-apps/setxkbmap
+x11-drivers/xf86-input-mutouch
   DeprecatedEAPI: version 1.3.0: uses deprecated EAPI: 4
 
-x11-apps/smproxy
-  DeprecatedEAPI: version 1.0.5: uses deprecated EAPI: 4
+x11-drivers/xf86-input-penmount
+  DeprecatedEAPI: version 1.5.0: uses deprecated EAPI: 4
 
-x11-apps/spotlighter
-  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 3
+x11-drivers/xf86-input-tslib
+  DeprecatedEAPI: version 0.0.6-r2: uses deprecated EAPI: 4
 
-x11-apps/transset
-  DeprecatedEAPI: version 1.0.0: uses deprecated EAPI: 4
+x11-drivers/xf86-input-void
+  DeprecatedEAPI: version 1.4.0: uses deprecated EAPI: 4
 
-x11-apps/x11perf
-  DeprecatedEAPI: version 1.5.4: uses deprecated EAPI: 4
-
-x11-apps/xauth
-  DeprecatedEAPI: version 1.0.8: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.0.9: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.0.9-r1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.0.9-r2: uses deprecated EAPI: 4
-
-x11-apps/xbiff
-  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
-
-x11-apps/xclipboard
-  DeprecatedEAPI: version 1.1.2: uses deprecated EAPI: 4
-
-x11-apps/xclock
-  DeprecatedEAPI: version 1.0.6: uses deprecated EAPI: 4
-
-x11-apps/xcmsdb
-  DeprecatedEAPI: version 1.0.4: uses deprecated EAPI: 4
-
-x11-apps/xcursorgen
-  DeprecatedEAPI: version 1.0.5: uses deprecated EAPI: 4
-
-x11-apps/xdbedizzy
-  DeprecatedEAPI: version 1.1.0: uses deprecated EAPI: 3
-
-x11-apps/xdm
-  DeprecatedEAPI: version 1.1.11-r1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.1.11-r2: uses deprecated EAPI: 4
-
-x11-apps/xdriinfo
-  DeprecatedEAPI: version 1.0.4: uses deprecated EAPI: 3
-
-x11-apps/xeyes
-  DeprecatedEAPI: version 1.1.1: uses deprecated EAPI: 3
-
-x11-apps/xf86dga
-  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
-
-x11-apps/xfontsel
-  DeprecatedEAPI: version 1.0.4: uses deprecated EAPI: 4
-
-x11-apps/xgamma
-  DeprecatedEAPI: version 1.0.5: uses deprecated EAPI: 4
-
-x11-apps/xinit
-  DroppedKeywordWarning: version 1.3.4: keywords dropped: arm64
-
-x11-apps/xinput_calibrator
-  DeprecatedEAPI: version 0.7.5: uses deprecated EAPI: 4
-
-x11-apps/xkbcomp
+x11-drivers/xf86-video-apm
   DeprecatedEAPI: version 1.2.4: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.2.5: uses deprecated EAPI: 4
 
-x11-apps/xkbevd
-  DeprecatedEAPI: version 1.1.3: uses deprecated EAPI: 4
+x11-drivers/xf86-video-ati
+  DeprecatedEAPI: version 6.14.6-r1: uses deprecated EAPI: 4
 
-x11-apps/xkbprint
-  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
+x11-drivers/xf86-video-cirrus
+  DeprecatedEAPI: version 1.5.1: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.5.2: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.5.3: uses deprecated EAPI: 4
 
-x11-apps/xlogo
-  DeprecatedEAPI: version 1.0.4: uses deprecated EAPI: 4
+x11-drivers/xf86-video-dummy
+  DeprecatedEAPI: version 0.3.6: uses deprecated EAPI: 4
 
-x11-apps/xlsatoms
-  DeprecatedEAPI: version 1.1.1: uses deprecated EAPI: 4
+x11-drivers/xf86-video-glint
+  DeprecatedEAPI: version 1.2.7: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.2.8: uses deprecated EAPI: 4
 
-x11-apps/xlsclients
+x11-drivers/xf86-video-i128
+  DeprecatedEAPI: version 1.3.5: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.3.6: uses deprecated EAPI: 4
+
+x11-drivers/xf86-video-intel
+  DeprecatedEclass: version 2.9.1: uses deprecated eclass(es): [ x-modular (migrate to xorg-2) ]
+  DeprecatedEAPI: version 2.9.1: uses deprecated EAPI: 0
+  NonExistentDeps: version 2.9.1: depset depends: nonexistent atoms [ <x11-libs/libdrm-2.4.21 ]
+  NonExistentDeps: version 2.9.1: depset rdepends: nonexistent atoms [ <x11-libs/libdrm-2.4.21 ]
+  DeprecatedEAPI: version 2.19.0: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 2.20.13: uses deprecated EAPI: 4
+
+x11-drivers/xf86-video-ivtv
   DeprecatedEAPI: version 1.1.2: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.1.2-r1: uses deprecated EAPI: 4
 
-x11-apps/xlsfonts
-  DeprecatedEAPI: version 1.0.4: uses deprecated EAPI: 4
+x11-drivers/xf86-video-mga
+  DeprecatedEAPI: version 1.6.2: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.6.3: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.6.4: uses deprecated EAPI: 4
 
-x11-apps/xmessage
-  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 4
+x11-drivers/xf86-video-newport
+  DeprecatedEAPI: version 0.2.3: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.2.4: uses deprecated EAPI: 4
 
-x11-apps/xmore
-  DeprecatedEAPI: version 1.0.2: uses deprecated EAPI: 3
+x11-drivers/xf86-video-omap
+  DeprecatedEAPI: version 0.4.2: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.4.3: uses deprecated EAPI: 4
 
-x11-apps/xpr
-  DeprecatedEAPI: version 1.0.4: uses deprecated EAPI: 4
+x11-drivers/xf86-video-r128
+  DeprecatedEAPI: version 6.9.1: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 6.9.2: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 6.10.0: uses deprecated EAPI: 4
 
-x11-apps/xtitle
-  DeprecatedEAPI: version 1.0.2: uses deprecated EAPI: 4
+x11-drivers/xf86-video-s3
+  DeprecatedEAPI: version 0.6.5: uses deprecated EAPI: 4
 
-x11-apps/xtrap
-  DeprecatedEAPI: version 1.0.2-r1: uses deprecated EAPI: 4
+x11-drivers/xf86-video-savage
+  DeprecatedEAPI: version 2.3.8: uses deprecated EAPI: 4
 
-x11-apps/xvidtune
-  DeprecatedEAPI: version 1.0.2-r1: uses deprecated EAPI: 4
+x11-drivers/xf86-video-sis
+  DeprecatedEAPI: version 0.10.7: uses deprecated EAPI: 4
 
-x11-apps/xwininfo
-  DeprecatedEAPI: version 1.1.2: uses deprecated EAPI: 4
+x11-drivers/xf86-video-sisusb
+  DeprecatedEAPI: version 0.9.5: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.9.6: uses deprecated EAPI: 4
 
-x11-apps/xwud
-  DeprecatedEAPI: version 1.0.4: uses deprecated EAPI: 4
+x11-drivers/xf86-video-suncg14
+  DeprecatedEclass: version 1.1.1: uses deprecated eclass(es): [ x-modular (migrate to xorg-2) ]
+  DeprecatedEAPI: version 1.1.1: uses deprecated EAPI: 0
+  DeprecatedEclass: version 1.1.2: uses deprecated eclass(es): [ x-modular (migrate to xorg-2) ]
+  DeprecatedEAPI: version 1.1.2: uses deprecated EAPI: 0
+
+x11-drivers/xf86-video-suncg3
+  DeprecatedEclass: version 1.1.1: uses deprecated eclass(es): [ x-modular (migrate to xorg-2) ]
+  DeprecatedEAPI: version 1.1.1: uses deprecated EAPI: 0
+  DeprecatedEclass: version 1.1.2: uses deprecated eclass(es): [ x-modular (migrate to xorg-2) ]
+  DeprecatedEAPI: version 1.1.2: uses deprecated EAPI: 0
+
+x11-drivers/xf86-video-suncg6
+  DeprecatedEclass: version 1.1.1: uses deprecated eclass(es): [ x-modular (migrate to xorg-2) ]
+  DeprecatedEAPI: version 1.1.1: uses deprecated EAPI: 0
+  DeprecatedEclass: version 1.1.2: uses deprecated eclass(es): [ x-modular (migrate to xorg-2) ]
+  DeprecatedEAPI: version 1.1.2: uses deprecated EAPI: 0
+
+x11-drivers/xf86-video-sunffb
+  DeprecatedEclass: version 1.2.1: uses deprecated eclass(es): [ x-modular (migrate to xorg-2) ]
+  DeprecatedEAPI: version 1.2.1: uses deprecated EAPI: 0
+
+x11-drivers/xf86-video-sunleo
+  DeprecatedEclass: version 1.2.0: uses deprecated eclass(es): [ x-modular (migrate to xorg-2) ]
+  DeprecatedEAPI: version 1.2.0: uses deprecated EAPI: 0
+  DeprecatedEclass: version 1.2.1: uses deprecated eclass(es): [ x-modular (migrate to xorg-2) ]
+  DeprecatedEAPI: version 1.2.1: uses deprecated EAPI: 0
+
+x11-drivers/xf86-video-suntcx
+  DeprecatedEclass: version 1.1.1: uses deprecated eclass(es): [ x-modular (migrate to xorg-2) ]
+  DeprecatedEAPI: version 1.1.1: uses deprecated EAPI: 0
+  DeprecatedEclass: version 1.1.2: uses deprecated eclass(es): [ x-modular (migrate to xorg-2) ]
+  DeprecatedEAPI: version 1.1.2: uses deprecated EAPI: 0
+
+x11-drivers/xf86-video-tga
+  DeprecatedEAPI: version 1.2.2: uses deprecated EAPI: 4
+
+x11-drivers/xf86-video-v4l
+  DeprecatedEclass: version 0.2.0: uses deprecated eclass(es): [ x-modular (migrate to xorg-2) ]
+  DeprecatedEAPI: version 0.2.0: uses deprecated EAPI: 0
+
+x11-drivers/xf86-video-voodoo
+  DeprecatedEAPI: version 1.2.5: uses deprecated EAPI: 4
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
