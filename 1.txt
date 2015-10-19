@@ -27,6 +27,9 @@ dev-python/SchemaObject
   DeprecatedEAPI: version 0.5.3: uses deprecated EAPI: 4
   DeprecatedEclass: version 0.5.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
+dev-python/astropy
+  WhitespaceFound: version 1.0.5: ebuild has trailing whitespace on line 64
+
 dev-python/autobahn
   DroppedKeywordWarning: version 0.10.4: keywords dropped: arm
 
@@ -37,16 +40,27 @@ dev-python/beaker
   DroppedKeywordWarning: version 1.7.0-r1: keywords dropped: ia64, sparc
 
 dev-python/beautifulsoup
-  SizeViolation: "files/beautifulsoup-3.1.0.1-python-3.patch" exceeds 20k in size; 42319 bytes total
   DroppedKeywordWarning: version 4.3.2: keywords dropped: arm64
+  SizeViolation: "files/beautifulsoup-3.1.0.1-python-3.patch" exceeds 20k in size; 42319 bytes total
 
 dev-python/bsddb3
   DroppedKeywordWarning: version 6.1.0: keywords dropped: hppa
 
-dev-python/cffi
-  DroppedKeywordWarning: version 0.9.2: keywords dropped: alpha, sparc
-
 dev-python/cryptography
+  NonsolvableDeps: version 0.6.1: nonsolvable depset(depends) keyword(sparc) profile (default/linux/sparc/13.0): solutions: [ >=dev-python/cffi-0.8[-python_single_target_python2_7(-),-python_single_target_python3_3(-),-python_single_target_python3_4(-),python_targets_python2_7(-),python_targets_python3_3(-),python_targets_python3_4(-)] ]
+  NonsolvableDeps: version 0.6.1: nonsolvable depset(depends) keyword(sparc) profile (default/linux/sparc/13.0/desktop): solutions: [ >=dev-python/cffi-0.8[-python_single_target_python2_7(-),-python_single_target_python3_3(-),-python_single_target_python3_4(-),python_targets_python2_7(-),python_targets_python3_3(-),python_targets_python3_4(-)] ]
+  NonsolvableDeps: version 0.6.1: nonsolvable depset(depends) keyword(sparc) profile (default/linux/sparc/13.0/desktop/gnome): solutions: [ >=dev-python/cffi-0.8[-python_single_target_python2_7(-),-python_single_target_python3_3(-),-python_single_target_python3_4(-),python_targets_python2_7(-),python_targets_python3_3(-),python_targets_python3_4(-)] ]
+  NonsolvableDeps: version 0.6.1: nonsolvable depset(depends) keyword(sparc) profile (default/linux/sparc/13.0/developer): solutions: [ >=dev-python/cffi-0.8[-python_single_target_python2_7(-),-python_single_target_python3_3(-),-python_single_target_python3_4(-),python_targets_python2_7(-),python_targets_python3_3(-),python_targets_python3_4(-)] ]
+  NonsolvableDeps: version 0.6.1: nonsolvable depset(depends) keyword(sparc) profile (default/linux/sparc/13.0/desktop/gnome/systemd): solutions: [ >=dev-python/cffi-0.8[-python_single_target_python2_7(-),-python_single_target_python3_3(-),-python_single_target_python3_4(-),python_targets_python2_7(-),python_targets_python3_3(-),python_targets_python3_4(-)] ]
+  NonsolvableDeps: version 0.6.1: nonsolvable depset(depends) keyword(sparc) profile (default/linux/sparc/13.0/desktop/kde): solutions: [ >=dev-python/cffi-0.8[-python_single_target_python2_7(-),-python_single_target_python3_3(-),-python_single_target_python3_4(-),python_targets_python2_7(-),python_targets_python3_3(-),python_targets_python3_4(-)] ]
+  NonsolvableDeps: version 0.6.1: nonsolvable depset(depends) keyword(sparc) profile (default/linux/sparc/13.0/desktop/kde/systemd): solutions: [ >=dev-python/cffi-0.8[-python_single_target_python2_7(-),-python_single_target_python3_3(-),-python_single_target_python3_4(-),python_targets_python2_7(-),python_targets_python3_3(-),python_targets_python3_4(-)] ]
+  NonsolvableDeps: version 0.6.1: nonsolvable depset(rdepends) keyword(sparc) profile (default/linux/sparc/13.0): solutions: [ >=dev-python/cffi-0.8[-python_single_target_python2_7(-),-python_single_target_python3_3(-),-python_single_target_python3_4(-),python_targets_python2_7(-),python_targets_python3_3(-),python_targets_python3_4(-)] ]
+  NonsolvableDeps: version 0.6.1: nonsolvable depset(rdepends) keyword(sparc) profile (default/linux/sparc/13.0/desktop): solutions: [ >=dev-python/cffi-0.8[-python_single_target_python2_7(-),-python_single_target_python3_3(-),-python_single_target_python3_4(-),python_targets_python2_7(-),python_targets_python3_3(-),python_targets_python3_4(-)] ]
+  NonsolvableDeps: version 0.6.1: nonsolvable depset(rdepends) keyword(sparc) profile (default/linux/sparc/13.0/desktop/gnome): solutions: [ >=dev-python/cffi-0.8[-python_single_target_python2_7(-),-python_single_target_python3_3(-),-python_single_target_python3_4(-),python_targets_python2_7(-),python_targets_python3_3(-),python_targets_python3_4(-)] ]
+  NonsolvableDeps: version 0.6.1: nonsolvable depset(rdepends) keyword(sparc) profile (default/linux/sparc/13.0/developer): solutions: [ >=dev-python/cffi-0.8[-python_single_target_python2_7(-),-python_single_target_python3_3(-),-python_single_target_python3_4(-),python_targets_python2_7(-),python_targets_python3_3(-),python_targets_python3_4(-)] ]
+  NonsolvableDeps: version 0.6.1: nonsolvable depset(rdepends) keyword(sparc) profile (default/linux/sparc/13.0/desktop/gnome/systemd): solutions: [ >=dev-python/cffi-0.8[-python_single_target_python2_7(-),-python_single_target_python3_3(-),-python_single_target_python3_4(-),python_targets_python2_7(-),python_targets_python3_3(-),python_targets_python3_4(-)] ]
+  NonsolvableDeps: version 0.6.1: nonsolvable depset(rdepends) keyword(sparc) profile (default/linux/sparc/13.0/desktop/kde): solutions: [ >=dev-python/cffi-0.8[-python_single_target_python2_7(-),-python_single_target_python3_3(-),-python_single_target_python3_4(-),python_targets_python2_7(-),python_targets_python3_3(-),python_targets_python3_4(-)] ]
+  NonsolvableDeps: version 0.6.1: nonsolvable depset(rdepends) keyword(sparc) profile (default/linux/sparc/13.0/desktop/kde/systemd): solutions: [ >=dev-python/cffi-0.8[-python_single_target_python2_7(-),-python_single_target_python3_3(-),-python_single_target_python3_4(-),python_targets_python2_7(-),python_targets_python3_3(-),python_targets_python3_4(-)] ]
   DroppedKeywordWarning: version 1.0: keywords dropped: alpha
   DroppedKeywordWarning: version 0.9.2: keywords dropped: arm64, ia64, m68k, mips, ppc, s390, sh
   DroppedKeywordWarning: version 0.7.1-r1: keywords dropped: sparc
