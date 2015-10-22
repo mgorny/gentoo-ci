@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 3 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-haskell/*' 'net-analyzer/*' 'dev-db/*' 'app-arch/*' 'games-fps/*' 'www-apache/*' 'media-tv/*' 'x11-terms/*' 'x11-proto/*' 'sci-misc/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-haskell/*' 'net-analyzer/*' 'dev-db/*' 'app-arch/*' 'games-fps/*' 'www-apache/*' 'media-tv/*' 'sci-visualization/*' 'sci-astronomy/*' 'sci-misc/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1713,61 +1713,69 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-x11-terms/aterm
-  DeprecatedEAPI: version 1.0.1-r2: uses deprecated EAPI: 3
+sci-visualization/circos
+  DeprecatedEAPI: version 0.55: uses deprecated EAPI: 4
 
-x11-terms/eterm
-  DeprecatedEAPI: version 0.9.5: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.9.6: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
+sci-visualization/epix
+  DeprecatedEAPI: version 1.2.10: uses deprecated EAPI: 4
 
-x11-terms/evilvte
-  DeprecatedEAPI: version 0.5.1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.5.2_pre1: uses deprecated EAPI: 4
+sci-visualization/extrema
+  DeprecatedEAPI: version 4.4.5: uses deprecated EAPI: 4
 
-x11-terms/gnome-terminal
-  NonExistentDeps: version 3.14.2-r2: depset depends: nonexistent atoms [ <=x11-libs/gtk+-2.24.10:2 ]
-  SizeViolation: "files/gnome-terminal-3.16.2-restore-transparency.patch" exceeds 20k in size; 54792 bytes total
+sci-visualization/fig2sxd
+  DeprecatedEAPI: version 0.21: uses deprecated EAPI: 4
 
-x11-terms/hanterm
-  DeprecatedEAPI: version 3.1.6-r2: uses deprecated EAPI: 0
+sci-visualization/gcalc
+  DeprecatedEAPI: version 3.1_rc1: uses deprecated EAPI: 4
 
-x11-terms/kterm
-  DeprecatedEAPI: version 6.2.0-r5: uses deprecated EAPI: 4
+sci-visualization/ggobi
+  DeprecatedEAPI: version 2.1.8: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 2.1.9-r1: uses deprecated EAPI: 4
 
-x11-terms/mrxvt
-  DeprecatedEAPI: version 0.5.4: uses deprecated EAPI: 4
+sci-visualization/grace
+  DeprecatedEAPI: version 5.1.22-r2: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 5.1.22-r3: uses deprecated EAPI: 4
 
-x11-terms/multi-aterm
-  DeprecatedEAPI: version 0.2.1-r1: uses deprecated EAPI: 4
+sci-visualization/gri
+  DeprecatedEAPI: version 2.12.19: uses deprecated EAPI: 2
 
-x11-terms/qterminal
-  DeprecatedEAPI: version 0.4.0: uses deprecated EAPI: 4
+sci-visualization/kst
+  DeprecatedEAPI: version 2.0.7: uses deprecated EAPI: 4
+  NonExistentDeps: version 2.0.7: depset depends: nonexistent atoms [ <dev-qt/qtgui-4.8.5:4 ]
+  NonExistentDeps: version 2.0.7: depset rdepends: nonexistent atoms [ <dev-qt/qtgui-4.8.5:4 ]
 
-x11-terms/root-tail
-  DeprecatedEAPI: version 1.2-r3: uses deprecated EAPI: 2
+sci-visualization/opendx
+  DeprecatedEAPI: version 4.4.4-r4: uses deprecated EAPI: 4
 
-x11-terms/roxterm
-  DeprecatedEclass: version 2.6.3: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 2.6.3: uses deprecated EAPI: 4
-  DeprecatedEclass: version 2.6.5: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 2.6.5: uses deprecated EAPI: 4
-  DroppedKeywordWarning: version 2.9.3-r1: keywords dropped: ppc
+sci-visualization/opendx-samples
+  DeprecatedEAPI: version 4.4.0-r1: uses deprecated EAPI: 4
 
-x11-terms/terminology
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+sci-visualization/spectromatic
+  DeprecatedEAPI: version 1.0-r2: uses deprecated EAPI: 4
 
-x11-terms/tilda
-  DeprecatedEAPI: version 0.9.6: uses deprecated EAPI: 4
+sci-visualization/spyview
+  DeprecatedEAPI: version 20111018: uses deprecated EAPI: 4
+  DroppedKeywordWarning: version 20130823: keywords dropped: amd64
 
-x11-terms/valaterm
+sci-visualization/veusz
+  DeprecatedEclass: version 1.11: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.11: uses deprecated EAPI: 3
+
+sci-visualization/xd3d
+  DeprecatedEAPI: version 8.3.1: uses deprecated EAPI: 4
+
+sci-visualization/xds-viewer
   DeprecatedEAPI: version 0.6: uses deprecated EAPI: 4
 
-x11-terms/xvt
-  DeprecatedEAPI: version 2.1-r3: uses deprecated EAPI: 2
+sci-visualization/xgraph
+  DeprecatedEAPI: version 12.1-r2: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 12.1-r3: uses deprecated EAPI: 4
 
-x11-terms/yeahconsole
-  DeprecatedEAPI: version 0.3.4-r1: uses deprecated EAPI: 2
+sci-visualization/xyscan
+  DeprecatedEAPI: version 3.3.1: uses deprecated EAPI: 4
+
+sci-visualization/zhu3d
+  DeprecatedEAPI: version 4.2.4: uses deprecated EAPI: 4
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
@@ -1775,44 +1783,36 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-x11-proto/bigreqsproto
-  DeprecatedEAPI: version 1.1.2: uses deprecated EAPI: 4
+sci-astronomy/aatm
+  DeprecatedEAPI: version 0.4.3.1: uses deprecated EAPI: 4
 
-x11-proto/dmxproto
-  DeprecatedEAPI: version 2.3.1: uses deprecated EAPI: 3
+sci-astronomy/ds9-bin
+  DeprecatedEAPI: version 7.1: uses deprecated EAPI: 4
 
-x11-proto/evieext
-  DeprecatedEAPI: version 1.1.1: uses deprecated EAPI: 3
+sci-astronomy/galaxy
+  DeprecatedEAPI: version 2.2: uses deprecated EAPI: 4
 
-x11-proto/fixesproto
-  DeprecatedEAPI: version 5.0: uses deprecated EAPI: 4
+sci-astronomy/gasgano
+  DeprecatedEAPI: version 2.4.3-r2: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 2.4.5: uses deprecated EAPI: 4
 
-x11-proto/fontcacheproto
-  DeprecatedEAPI: version 0.1.3: uses deprecated EAPI: 4
+sci-astronomy/predict
+  DeprecatedEAPI: version 2.2.3-r1: uses deprecated EAPI: 4
 
-x11-proto/fontsproto
-  DeprecatedEAPI: version 2.1.2: uses deprecated EAPI: 4
+sci-astronomy/skycat
+  DeprecatedEAPI: version 3.1.2-r1: uses deprecated EAPI: 4
 
-x11-proto/inputproto
-  DroppedKeywordWarning: version 2.3.1: keywords dropped: arm64, m68k
+sci-astronomy/stiff
+  DeprecatedEAPI: version 2.1.3: uses deprecated EAPI: 4
 
-x11-proto/resourceproto
-  DeprecatedEAPI: version 1.2.0: uses deprecated EAPI: 4
+sci-astronomy/swarp
+  DeprecatedEAPI: version 2.19.1: uses deprecated EAPI: 4
 
-x11-proto/trapproto
-  DeprecatedEAPI: version 3.4.3: uses deprecated EAPI: 4
+sci-astronomy/xephem
+  DeprecatedEAPI: version 3.7.5: uses deprecated EAPI: 4
 
-x11-proto/xcalibrateproto
-  DeprecatedEAPI: version 0.1_pre20081210: uses deprecated EAPI: 4
-
-x11-proto/xcmiscproto
-  DeprecatedEAPI: version 1.2.2: uses deprecated EAPI: 4
-
-x11-proto/xf86miscproto
-  DeprecatedEAPI: version 0.9.3: uses deprecated EAPI: 4
-
-x11-proto/xf86rushproto
-  DeprecatedEAPI: version 1.1.2-r1: uses deprecated EAPI: 4
+sci-astronomy/xfitsview
+  DeprecatedEAPI: version 2.2-r1: uses deprecated EAPI: 4
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch

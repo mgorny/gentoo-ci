@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 12 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'app-emulation/*' 'sys-fs/*' 'dev-vcs/*' 'x11-drivers/*' 'games-puzzle/*' 'gnome-base/*' 'dev-dotnet/*' 'net-ftp/*' 'app-laptop/*' 'games-sports/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'app-emulation/*' 'sys-fs/*' 'dev-vcs/*' 'x11-drivers/*' 'games-puzzle/*' 'gnome-base/*' 'games-rpg/*' 'games-util/*' 'app-laptop/*' 'games-sports/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -939,208 +939,49 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-dev-dotnet/art-sharp
-  DeprecatedEclass: version 2.24.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DeprecatedEAPI: version 2.24.2: uses deprecated EAPI: 2
+games-rpg/arx-fatalis-data
+  MissingUri: version 1.21-r2: file setup_arx_fatalis.exe is unfetchable- no URI available, and RESTRICT=fetch isn't set
+  MissingUri: version 1.21-r3: file setup_arx_fatalis_2.0.0.7.exe is unfetchable- no URI available, and RESTRICT=fetch isn't set
 
-dev-dotnet/atk-sharp
-  DeprecatedEclass: version 2.12.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DeprecatedEAPI: version 2.12.10: uses deprecated EAPI: 2
+games-rpg/arx-fatalis-demo
+  DeprecatedEAPI: version 0: uses deprecated EAPI: 4
 
-dev-dotnet/dbus-sharp
-  DeprecatedEclass: version 0.7.0-r1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DeprecatedEAPI: version 0.7.0-r1: uses deprecated EAPI: 4
+games-rpg/eternal-lands
+  DeprecatedEAPI: version 1.9.2: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 1.9.2-r1: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 1.9.3: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 1.9.3-r1: uses deprecated EAPI: 2
 
-dev-dotnet/dbus-sharp-glib
-  DeprecatedEclass: version 0.5.0: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DeprecatedEAPI: version 0.5.0: uses deprecated EAPI: 4
+games-rpg/eternal-lands-bloodsucker
+  DeprecatedEAPI: version 3.0: uses deprecated EAPI: 2
 
-dev-dotnet/flickrnet-bin
-  DeprecatedEclass: version 2.2-r1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DeprecatedEAPI: version 2.2-r1: uses deprecated EAPI: 2
+games-rpg/eternal-lands-data
+  DeprecatedEAPI: version 1.9.2-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.9.3: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.9.3-r1: uses deprecated EAPI: 2
 
-dev-dotnet/gconf-sharp
-  DeprecatedEclass: version 2.24.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DeprecatedEAPI: version 2.24.2: uses deprecated EAPI: 2
+games-rpg/nwmovies
+  DeprecatedEAPI: version 20090223.080954: uses deprecated EAPI: 2
 
-dev-dotnet/gdk-sharp
-  DeprecatedEclass: version 2.12.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DeprecatedEAPI: version 2.12.10: uses deprecated EAPI: 2
+games-rpg/nwn-cep
+  DeprecatedEAPI: version 1.68-r1: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 2.0: uses deprecated EAPI: 2
 
-dev-dotnet/gio-sharp
-  DeprecatedEclass: version 0.3: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DeprecatedEAPI: version 0.3: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.3-r1: uses deprecated EAPI: 4
+games-rpg/nwn-penultima
+  DeprecatedEAPI: version 1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1-r1: uses deprecated EAPI: 0
 
-dev-dotnet/gkeyfile-sharp
-  DeprecatedEclass: version 0.1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 2
+games-rpg/nwn-penultimarerolled
+  DeprecatedEAPI: version 1: uses deprecated EAPI: 0
 
-dev-dotnet/glade-sharp
-  DeprecatedEclass: version 2.12.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DeprecatedEAPI: version 2.12.10: uses deprecated EAPI: 2
+games-rpg/nwn-shadowlordsdreamcatcherdemon
+  DeprecatedEAPI: version 1: uses deprecated EAPI: 0
 
-dev-dotnet/glib-sharp
-  DeprecatedEclass: version 2.12.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DeprecatedEAPI: version 2.12.10: uses deprecated EAPI: 4
+games-rpg/queen
+  DeprecatedEAPI: version 1: uses deprecated EAPI: 4
 
-dev-dotnet/gnome-desktop-sharp
-  DeprecatedEclass: version 2.26.0-r1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DeprecatedEAPI: version 2.26.0-r1: uses deprecated EAPI: 2
-
-dev-dotnet/gnome-keyring-sharp
-  DeprecatedEclass: version 1.0.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DeprecatedEAPI: version 1.0.2: uses deprecated EAPI: 2
-
-dev-dotnet/gnome-sharp
-  DeprecatedEclass: version 2.24.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DeprecatedEAPI: version 2.24.2: uses deprecated EAPI: 2
-
-dev-dotnet/gnomevfs-sharp
-  DeprecatedEclass: version 2.24.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DeprecatedEAPI: version 2.24.2: uses deprecated EAPI: 2
-
-dev-dotnet/google-gdata-sharp
-  DeprecatedEclass: version 1.4.0.2-r2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DeprecatedEAPI: version 1.4.0.2-r2: uses deprecated EAPI: 3
-
-dev-dotnet/gsf-sharp
-  DeprecatedEclass: version 0.8.1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DeprecatedEAPI: version 0.8.1: uses deprecated EAPI: 0
-
-dev-dotnet/gtk-dotnet-sharp
-  DeprecatedEclass: version 2.12.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DeprecatedEAPI: version 2.12.10: uses deprecated EAPI: 2
-
-dev-dotnet/gtk-sharp
-  DeprecatedEclass: version 2.12.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DeprecatedEAPI: version 2.12.10: uses deprecated EAPI: 2
-
-dev-dotnet/gtk-sharp-beans
-  DeprecatedEclass: version 2.14.0: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DeprecatedEAPI: version 2.14.0: uses deprecated EAPI: 2
-
-dev-dotnet/gtk-sharp-docs
-  DeprecatedEclass: version 2.12.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DeprecatedEAPI: version 2.12.10: uses deprecated EAPI: 2
-
-dev-dotnet/gtk-sharp-gapi
-  DeprecatedEclass: version 2.12.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DeprecatedEAPI: version 2.12.10: uses deprecated EAPI: 2
-
-dev-dotnet/gtksourceview-sharp
-  DeprecatedEclass: version 2.24.0-r10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DeprecatedEAPI: version 2.24.0-r10: uses deprecated EAPI: 2
-
-dev-dotnet/gudev-sharp
-  DeprecatedEclass: version 0.1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 2
-
-dev-dotnet/ikvm
-  DeprecatedEclass: version 0.46.0.1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DeprecatedEAPI: version 0.46.0.1: uses deprecated EAPI: 4
-  DeprecatedEclass: version 0.46.0.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DeprecatedEAPI: version 0.46.0.2: uses deprecated EAPI: 4
-  DeprecatedEclass: version 7.1.4532.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DeprecatedEAPI: version 7.1.4532.2: uses deprecated EAPI: 4
-  DroppedKeywordWarning: version 7.1.4532.2: keywords dropped: ppc
-
-dev-dotnet/ikvm-bin
-  DeprecatedEclass: version 0.46.0.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DeprecatedEAPI: version 0.46.0.2: uses deprecated EAPI: 4
-  DeprecatedEclass: version 7.1.4532.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DeprecatedEAPI: version 7.1.4532.2: uses deprecated EAPI: 4
-
-dev-dotnet/libgdiplus
-  DeprecatedEclass: version 2.10.9: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DeprecatedEAPI: version 2.10.9: uses deprecated EAPI: 2
-  DeprecatedEclass: version 2.10.9-r1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DeprecatedEclass: version 2.10.9-r2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DroppedKeywordWarning: version 3.12: keywords dropped: arm
-
-dev-dotnet/log4net
-  DeprecatedEclass: version 1.2.11: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DeprecatedEAPI: version 1.2.11: uses deprecated EAPI: 4
-
-dev-dotnet/mono-addins
-  DeprecatedEclass: version 0.6.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DeprecatedEAPI: version 0.6.2: uses deprecated EAPI: 4
-
-dev-dotnet/mono-nat
-  DeprecatedEclass: version 1.1.0: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DeprecatedEAPI: version 1.1.0: uses deprecated EAPI: 4
-
-dev-dotnet/mono-zeroconf
-  DeprecatedEclass: version 0.9.0: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DeprecatedEAPI: version 0.9.0: uses deprecated EAPI: 2
-
-dev-dotnet/monocalendar
-  DeprecatedEclass: version 0.7.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DeprecatedEAPI: version 0.7.2: uses deprecated EAPI: 0
-
-dev-dotnet/monotorrent
-  DeprecatedEclass: version 0.80: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DeprecatedEAPI: version 0.80: uses deprecated EAPI: 2
-
-dev-dotnet/nant
-  DeprecatedEclass: version 0.92: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DeprecatedEAPI: version 0.92: uses deprecated EAPI: 4
-
-dev-dotnet/ndesk-dbus
-  DeprecatedEclass: version 0.6.1a: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DeprecatedEAPI: version 0.6.1a: uses deprecated EAPI: 0
-
-dev-dotnet/ndesk-dbus-glib
-  DeprecatedEclass: version 0.4.1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DeprecatedEAPI: version 0.4.1: uses deprecated EAPI: 3
-
-dev-dotnet/nini
-  DeprecatedEclass: version 1.1.0-r2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DeprecatedEAPI: version 1.1.0-r2: uses deprecated EAPI: 2
-
-dev-dotnet/notify-sharp
-  DeprecatedEclass: version 0.4.0_pre20090305: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DeprecatedEAPI: version 0.4.0_pre20090305: uses deprecated EAPI: 4
-
-dev-dotnet/nuget
-  WhitespaceFound: version 2.8.3: ebuild has trailing whitespace on line 29
-
-dev-dotnet/pango-sharp
-  DeprecatedEclass: version 2.12.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DeprecatedEAPI: version 2.12.10: uses deprecated EAPI: 2
-
-dev-dotnet/pe-format
-  DeprecatedEAPI: version 2.1.2: uses deprecated EAPI: 4
-
-dev-dotnet/rsvg-sharp
-  DeprecatedEclass: version 2.24.0-r10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DeprecatedEAPI: version 2.24.0-r10: uses deprecated EAPI: 2
-
-dev-dotnet/taglib-sharp
-  DeprecatedEclass: version 2.0.4.0: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DeprecatedEAPI: version 2.0.4.0: uses deprecated EAPI: 4
-  DeprecatedEclass: version 2.1.0.0: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DeprecatedEAPI: version 2.1.0.0: uses deprecated EAPI: 4
-
-dev-dotnet/vte-sharp
-  DeprecatedEclass: version 2.24.0-r10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DeprecatedEAPI: version 2.24.0-r10: uses deprecated EAPI: 2
-
-dev-dotnet/webkit-sharp
-  DeprecatedEclass: version 0.3-r1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DeprecatedEAPI: version 0.3-r1: uses deprecated EAPI: 4
-
-dev-dotnet/wnck-sharp
-  DeprecatedEclass: version 2.24.0-r10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DeprecatedEAPI: version 2.24.0-r10: uses deprecated EAPI: 2
-
-dev-dotnet/xsp
-  DeprecatedEclass: version 2.10.2-r2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DeprecatedEAPI: version 2.10.2-r2: uses deprecated EAPI: 4
-
-dev-dotnet/zeitgeist-sharp
-  DeprecatedEclass: version 0.8.0.0-r1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DeprecatedEAPI: version 0.8.0.0-r1: uses deprecated EAPI: 4
+games-rpg/sacred-gold
+  MissingChksum: version 1.0.01: "sacred-1.0-1.0.01-x86.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
@@ -1148,56 +989,13 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-net-ftp/bareftp
-  DeprecatedEclass: version 0.3.9: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DeprecatedEAPI: version 0.3.9: uses deprecated EAPI: 4
-  DeprecatedEclass: version 0.3.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DeprecatedEAPI: version 0.3.10: uses deprecated EAPI: 4
+games-util/dzip
+  DeprecatedEAPI: version 2.9-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.9-r2: uses deprecated EAPI: 2
 
-net-ftp/frox
-  DeprecatedEAPI: version 0.7.18-r4: uses deprecated EAPI: 4
-
-net-ftp/ftp
-  DeprecatedEAPI: version 0.17-r7: uses deprecated EAPI: 0
-
-net-ftp/ftpbase
-  DeprecatedEAPI: version 0.01-r2: uses deprecated EAPI: 0
-
-net-ftp/netkit-ftpd
-  DeprecatedEAPI: version 0.17-r8: uses deprecated EAPI: 0
-
-net-ftp/oftpd
-  DeprecatedEAPI: version 0.3.7-r7: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.3.7-r8: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.3.7-r9: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.3.7-r10: uses deprecated EAPI: 4
-
-net-ftp/oneclickftp
-  DeprecatedEAPI: version 0.5.1: uses deprecated EAPI: 2
-
-net-ftp/pureadmin
-  DeprecatedEAPI: version 0.4-r1: uses deprecated EAPI: 4
-
-net-ftp/scythia
-  DeprecatedEAPI: version 0.9.3_p2: uses deprecated EAPI: 3
-
-net-ftp/tftp-hpa
-  DeprecatedEAPI: version 5.2: uses deprecated EAPI: 4
-
-net-ftp/tlswrap
-  DeprecatedEAPI: version 1.04: uses deprecated EAPI: 0
-
-net-ftp/tnftp
-  DeprecatedEAPI: version 20100108: uses deprecated EAPI: 2
-
-net-ftp/vsftpd
-  DeprecatedEAPI: version 2.3.5: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 3.0.2: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 3.0.2-r1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 3.0.2-r2: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 3.0.2-r3: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 3.0.2-r4: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 3.0.3: uses deprecated EAPI: 4
+games-util/gtkevemon
+  DeprecatedEAPI: version 1.8-r1: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch

@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 1 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-python/*' 'media-gfx/*' 'app-doc/*' 'sys-kernel/*' 'www-client/*' 'www-servers/*' 'games-emulation/*' 'sys-power/*' 'app-mobilephone/*' 'gnustep-base/*' 'games-kids/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-python/*' 'media-gfx/*' 'app-doc/*' 'sys-kernel/*' 'www-client/*' 'www-servers/*' 'games-emulation/*' 'app-forensics/*' 'dev-games/*' 'gnustep-base/*' 'games-kids/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1310,72 +1310,77 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-sys-power/acpi_call
+app-forensics/afflib
+  DeprecatedEAPI: version 3.7.1: uses deprecated EAPI: 4
+  DeprecatedEclass: version 3.7.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+app-forensics/aide
+  DeprecatedEAPI: version 0.13.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.13.1-r3: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.13.1-r5: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.14.2: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 0.15.1: uses deprecated EAPI: 3
+
+app-forensics/air
+  DeprecatedEAPI: version 2.0.0-r1: uses deprecated EAPI: 4
+
+app-forensics/autopsy
+  DeprecatedEAPI: version 2.24-r1: uses deprecated EAPI: 4
+
+app-forensics/chkrootkit
+  DeprecatedEAPI: version 0.48-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.49: uses deprecated EAPI: 4
+
+app-forensics/cmospwd
+  DeprecatedEAPI: version 5.1: uses deprecated EAPI: 4
+
+app-forensics/examiner
+  DeprecatedEAPI: version 0.5-r2: uses deprecated EAPI: 4
+
+app-forensics/foremost
+  DeprecatedEAPI: version 0.69: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.5.7-r1: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.5.7-r2: uses deprecated EAPI: 4
+
+app-forensics/galleta
+  DeprecatedEAPI: version 20040505_p1: uses deprecated EAPI: 0
+
+app-forensics/libbfio
+  DroppedKeywordWarning: version 0.0.20130609_alpha: keywords dropped: hppa
+
+app-forensics/mac-robber
+  DeprecatedEAPI: version 1.02: uses deprecated EAPI: 4
+
+app-forensics/magicrescue
+  DeprecatedEAPI: version 1.1.9: uses deprecated EAPI: 4
+
+app-forensics/memdump
+  DeprecatedEAPI: version 1.01: uses deprecated EAPI: 4
+
+app-forensics/openscap
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-sys-power/apcupsd
-  DeprecatedEAPI: version 3.14.8-r2: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 3.14.10-r6: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 3.14.12: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 3.14.12-r1: uses deprecated EAPI: 4
+app-forensics/ovaldi
+  DeprecatedEAPI: version 5.9.1: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 5.10.1.2: uses deprecated EAPI: 3
 
-sys-power/athcool
-  DeprecatedEAPI: version 0.3.12: uses deprecated EAPI: 3
+app-forensics/pasco
+  DeprecatedEAPI: version 20040505_p1: uses deprecated EAPI: 0
 
-sys-power/cpudyn
-  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 0
+app-forensics/rifiuti
+  DeprecatedEAPI: version 20040505_p1: uses deprecated EAPI: 0
 
-sys-power/cpuspeedy
-  DeprecatedEAPI: version 0.4.1: uses deprecated EAPI: 3
-  DeprecatedEclass: version 0.4.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+app-forensics/rkhunter
+  DeprecatedEAPI: version 1.4.0: uses deprecated EAPI: 4
 
-sys-power/iasl
-  DeprecatedEAPI: version 20121018: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 20130117-r1: uses deprecated EAPI: 4
+app-forensics/scalpel
+  DeprecatedEAPI: version 2.0: uses deprecated EAPI: 4
 
-sys-power/nvclock
-  DeprecatedEAPI: version 0.8_p20110102-r2: uses deprecated EAPI: 4
+app-forensics/unhide
+  DeprecatedEAPI: version 20121229: uses deprecated EAPI: 4
 
-sys-power/nvram-reboot
-  DeprecatedEAPI: version 2004.10.03: uses deprecated EAPI: 0
-
-sys-power/nvram-wakeup
-  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 4
-
-sys-power/phc-intel
-  SizeViolation: "files/phc-intel-0.3.2-rev12-trailing-space-misc.patch" exceeds 20k in size; 33960 bytes total
-
-sys-power/phc-k8
-  DeprecatedEAPI: version 0.4.3: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.4.4: uses deprecated EAPI: 4
-
-sys-power/phctool
-  DeprecatedEAPI: version 0.5.2.2-r1: uses deprecated EAPI: 2
-  DeprecatedEclass: version 0.5.2.2-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.5.2.2-r2: uses deprecated EAPI: 4
-  DeprecatedEclass: version 0.5.2.2-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-
-sys-power/pm-quirks
-  DeprecatedEAPI: version 20100619: uses deprecated EAPI: 3
-
-sys-power/pmtools
-  DeprecatedEAPI: version 20071116: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 20110323: uses deprecated EAPI: 2
-  DroppedKeywordWarning: version 20110323: keywords dropped: ppc
-
-sys-power/powertop
-  DeprecatedEAPI: version 1.13: uses deprecated EAPI: 3
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-sys-power/sispmctl
-  DeprecatedEAPI: version 2.7: uses deprecated EAPI: 2
-
-sys-power/suspend
-  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 4
-
-sys-power/yacpi
-  DeprecatedEAPI: version 3.0.1: uses deprecated EAPI: 3
+app-forensics/zzuf
+  DeprecatedEAPI: version 0.13-r1: uses deprecated EAPI: 4
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
@@ -1383,79 +1388,27 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-app-mobilephone/bitpim
-  ExecutableFile: "files/maketarball" has unnecessary executable bit
-
-app-mobilephone/cobex
-  DeprecatedEAPI: version 0.2.13: uses deprecated EAPI: 0
-
-app-mobilephone/dfu-util
+dev-games/aseprite
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DroppedKeywordWarning: version 1.0.6: keywords dropped: amd64, x86
 
-app-mobilephone/esms
-  DeprecatedEAPI: version 0.9.5: uses deprecated EAPI: 4
+dev-games/clanlib
+  DeprecatedEAPI: version 2.3.7: uses deprecated EAPI: 4
 
-app-mobilephone/freesmee
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+dev-games/etrophy
+  DeprecatedEAPI: version 0.5.1: uses deprecated EAPI: 3
 
-app-mobilephone/gammu
-  DeprecatedEclass: version 1.33.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+dev-games/gtkradiant
+  DeprecatedEAPI: version 1.5.0_pre20060302: uses deprecated EAPI: 2
 
-app-mobilephone/ganyremote
-  DeprecatedEAPI: version 6.0.1: uses deprecated EAPI: 2
+dev-games/irrlicht
+  SizeViolation: "files/irrlicht-1.8.1-demoMake.patch" exceeds 20k in size; 27382 bytes total
 
-app-mobilephone/gnokii
-  DeprecatedEAPI: version 0.6.29: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.6.31: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+dev-games/ois
+  DeprecatedEAPI: version 1.3: uses deprecated EAPI: 4
 
-app-mobilephone/gsmlib
-  DeprecatedEAPI: version 1.11_pre041028: uses deprecated EAPI: 0
-
-app-mobilephone/heimdall
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-app-mobilephone/kannel
-  DeprecatedEAPI: version 1.4.3-r1: uses deprecated EAPI: 2
-
-app-mobilephone/kannel-sqlbox
-  DeprecatedEAPI: version 0.7.2: uses deprecated EAPI: 2
-
-app-mobilephone/linuxsms
-  DeprecatedEAPI: version 0.77: uses deprecated EAPI: 4
-
-app-mobilephone/obex-data-server
-  DeprecatedEAPI: version 0.4.6: uses deprecated EAPI: 4
-
-app-mobilephone/obexd
-  DeprecatedEAPI: version 0.46: uses deprecated EAPI: 4
-
-app-mobilephone/past
-  DeprecatedEAPI: version 0.0.4: uses deprecated EAPI: 4
-
-app-mobilephone/qtadb
-  DeprecatedEAPI: version 0.8.1: uses deprecated EAPI: 4
-
-app-mobilephone/ringtonetools
-  DeprecatedEAPI: version 2.26: uses deprecated EAPI: 0
-
-app-mobilephone/scmxx
-  DeprecatedEAPI: version 0.9.0: uses deprecated EAPI: 0
-
-app-mobilephone/sms
-  DeprecatedEAPI: version 2.0.3: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.1.0: uses deprecated EAPI: 0
-
-app-mobilephone/smstools
-  DeprecatedEAPI: version 3.1.15-r1: uses deprecated EAPI: 4
-
-app-mobilephone/sobexsrv
-  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 0
-
-app-mobilephone/wammu
-  DeprecatedEAPI: version 0.35: uses deprecated EAPI: 3
-  DeprecatedEclass: version 0.35: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+dev-games/wfmath
+  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 4
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch

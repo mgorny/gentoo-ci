@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 0 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'sec-policy/*' 'dev-texlive/*' 'sys-devel/*' 'sci-chemistry/*' 'kde-misc/*' 'app-backup/*' 'games-misc/*' 'net-proxy/*' 'dev-lisp/*' 'net-nntp/*' 'games-server/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'sec-policy/*' 'dev-texlive/*' 'sys-devel/*' 'sci-chemistry/*' 'kde-misc/*' 'app-backup/*' 'games-misc/*' 'sys-power/*' 'app-mobilephone/*' 'net-nntp/*' 'games-server/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1102,126 +1102,152 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-net-proxy/3proxy
-  DeprecatedEAPI: version 0.5.3k: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.6.1: uses deprecated EAPI: 2
-
-net-proxy/bfilter
-  DeprecatedEAPI: version 1.1.4-r1: uses deprecated EAPI: 4
-
-net-proxy/dante
-  DeprecatedEAPI: version 1.1.19-r4: uses deprecated EAPI: 0
-
-net-proxy/dnsproxy
-  DeprecatedEAPI: version 1.16-r1: uses deprecated EAPI: 4
-
-net-proxy/haproxy
+sys-power/acpi_call
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-net-proxy/http-replicator
-  DeprecatedEAPI: version 3.0-r4: uses deprecated EAPI: 4
-  DeprecatedEclass: version 3.0-r4: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+sys-power/apcupsd
+  DeprecatedEAPI: version 3.14.8-r2: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.14.10-r6: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 3.14.12: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 3.14.12-r1: uses deprecated EAPI: 4
 
-net-proxy/httpush
-  DeprecatedEAPI: version 0.9_beta11-r1: uses deprecated EAPI: 0
+sys-power/athcool
+  DeprecatedEAPI: version 0.3.12: uses deprecated EAPI: 3
 
-net-proxy/nylon
-  DeprecatedEAPI: version 1.21-r1: uses deprecated EAPI: 4
+sys-power/cpudyn
+  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 0
 
-net-proxy/oops
-  DeprecatedEAPI: version 1.5.24_pre20050503-r4: uses deprecated EAPI: 2
+sys-power/cpuspeedy
+  DeprecatedEAPI: version 0.4.1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.4.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-net-proxy/piper
-  DeprecatedEAPI: version 1.14: uses deprecated EAPI: 0
+sys-power/iasl
+  DeprecatedEAPI: version 20121018: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 20130117-r1: uses deprecated EAPI: 4
 
-net-proxy/ratproxy
-  DeprecatedEAPI: version 1.58: uses deprecated EAPI: 0
+sys-power/nvclock
+  DeprecatedEAPI: version 0.8_p20110102-r2: uses deprecated EAPI: 4
 
-net-proxy/rejik
-  DeprecatedEAPI: version 3.2.10: uses deprecated EAPI: 4
+sys-power/nvram-reboot
+  DeprecatedEAPI: version 2004.10.03: uses deprecated EAPI: 0
 
-net-proxy/squidclamav
-  DeprecatedEAPI: version 6.8: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 6.10: uses deprecated EAPI: 4
+sys-power/nvram-wakeup
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 4
 
-net-proxy/squidguard
-  DeprecatedEAPI: version 1.4-r4: uses deprecated EAPI: 2
+sys-power/phc-intel
+  SizeViolation: "files/phc-intel-0.3.2-rev12-trailing-space-misc.patch" exceeds 20k in size; 33960 bytes total
 
-net-proxy/tayga
-  DeprecatedEAPI: version 0.9.2: uses deprecated EAPI: 3
+sys-power/phc-k8
+  DeprecatedEAPI: version 0.4.3: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.4.4: uses deprecated EAPI: 4
 
-net-proxy/torsocks
-  DeprecatedEAPI: version 1.2-r2: uses deprecated EAPI: 4
+sys-power/phctool
+  DeprecatedEAPI: version 0.5.2.2-r1: uses deprecated EAPI: 2
+  DeprecatedEclass: version 0.5.2.2-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.5.2.2-r2: uses deprecated EAPI: 4
+  DeprecatedEclass: version 0.5.2.2-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-net-proxy/ufdbguard
-  DeprecatedEAPI: version 1.24-r1: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 1.29: uses deprecated EAPI: 4
+sys-power/pm-quirks
+  DeprecatedEAPI: version 20100619: uses deprecated EAPI: 3
 
-net-proxy/webscarab
-  DeprecatedEAPI: version 20070504: uses deprecated EAPI: 0
+sys-power/pmtools
+  DeprecatedEAPI: version 20071116: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 20110323: uses deprecated EAPI: 2
+  DroppedKeywordWarning: version 20110323: keywords dropped: ppc
 
-net-proxy/wwwoffle
-  DeprecatedEAPI: version 2.9i: uses deprecated EAPI: 4
-WARNING pkgcore: metadata.dtd cannot be opened from
-               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
-               : refetch
-WARNING pkgcore: metadata.dtd cannot be opened from
-               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
-               : refetch
-
-dev-lisp/abcl
-  DeprecatedEAPI: version 0.0.9-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.20.0: uses deprecated EAPI: 2
-
-dev-lisp/asdf
-  DeprecatedEAPI: version 1.86-r1: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 1.89: uses deprecated EAPI: 3
-  DroppedKeywordWarning: version 3.0.3: keywords dropped: alpha, ia64, mips, ppc64, s390
-
-dev-lisp/asdf-binary-locations
-  DeprecatedEAPI: version 20061018: uses deprecated EAPI: 3
-
-dev-lisp/cl-clx
-  DeprecatedEAPI: version 0.7.1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.7.2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.7.3: uses deprecated EAPI: 0
-
-dev-lisp/cl-ppcre
-  DeprecatedEAPI: version 1.2.10: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.2.11: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.2.12: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.2.13: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.2.14: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.2.15: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.2.16: uses deprecated EAPI: 0
-
-dev-lisp/clisp
-  DeprecatedEAPI: version 2.48-r1: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 2.48-r2: uses deprecated EAPI: 2
-  DroppedKeywordWarning: version 2.49-r8: keywords dropped: alpha, ia64
-
-dev-lisp/clx
+sys-power/powertop
+  DeprecatedEAPI: version 1.13: uses deprecated EAPI: 3
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-dev-lisp/common-lisp-controller
-  DeprecatedEAPI: version 4.27: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 5.13-r1: uses deprecated EAPI: 3
+sys-power/sispmctl
+  DeprecatedEAPI: version 2.7: uses deprecated EAPI: 2
 
-dev-lisp/ecls
-  DeprecatedEAPI: version 12.12.1: uses deprecated EAPI: 4
-
-dev-lisp/gentoo-init
-  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 3
+sys-power/suspend
   DeprecatedEAPI: version 1.0: uses deprecated EAPI: 4
-  DroppedKeywordWarning: version 1.0: keywords dropped: alpha, ia64, ppc64
 
-dev-lisp/hyperspec
-  DeprecatedEAPI: version 7.0: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 7.0-r1: uses deprecated EAPI: 0
-  MissingChksum: version 7.0-r1: "HyperSpec-7-0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+sys-power/yacpi
+  DeprecatedEAPI: version 3.0.1: uses deprecated EAPI: 3
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
 
-dev-lisp/sbcl
-  NonExistentDeps: version 1.1.18: depset rdepends: nonexistent atoms [ <sys-libs/glibc-2.6 ]
+app-mobilephone/bitpim
+  ExecutableFile: "files/maketarball" has unnecessary executable bit
+
+app-mobilephone/cobex
+  DeprecatedEAPI: version 0.2.13: uses deprecated EAPI: 0
+
+app-mobilephone/dfu-util
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+app-mobilephone/esms
+  DeprecatedEAPI: version 0.9.5: uses deprecated EAPI: 4
+
+app-mobilephone/freesmee
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+app-mobilephone/gammu
+  DeprecatedEclass: version 1.33.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+app-mobilephone/ganyremote
+  DeprecatedEAPI: version 6.0.1: uses deprecated EAPI: 2
+
+app-mobilephone/gnokii
+  DeprecatedEAPI: version 0.6.29: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.6.31: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+app-mobilephone/gsmlib
+  DeprecatedEAPI: version 1.11_pre041028: uses deprecated EAPI: 0
+
+app-mobilephone/heimdall
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+app-mobilephone/kannel
+  DeprecatedEAPI: version 1.4.3-r1: uses deprecated EAPI: 2
+
+app-mobilephone/kannel-sqlbox
+  DeprecatedEAPI: version 0.7.2: uses deprecated EAPI: 2
+
+app-mobilephone/linuxsms
+  DeprecatedEAPI: version 0.77: uses deprecated EAPI: 4
+
+app-mobilephone/obex-data-server
+  DeprecatedEAPI: version 0.4.6: uses deprecated EAPI: 4
+
+app-mobilephone/obexd
+  DeprecatedEAPI: version 0.46: uses deprecated EAPI: 4
+
+app-mobilephone/past
+  DeprecatedEAPI: version 0.0.4: uses deprecated EAPI: 4
+
+app-mobilephone/qtadb
+  DeprecatedEAPI: version 0.8.1: uses deprecated EAPI: 4
+
+app-mobilephone/ringtonetools
+  DeprecatedEAPI: version 2.26: uses deprecated EAPI: 0
+
+app-mobilephone/scmxx
+  DeprecatedEAPI: version 0.9.0: uses deprecated EAPI: 0
+
+app-mobilephone/sms
+  DeprecatedEAPI: version 2.0.3: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.1.0: uses deprecated EAPI: 0
+
+app-mobilephone/smstools
+  DeprecatedEAPI: version 3.1.15-r1: uses deprecated EAPI: 4
+
+app-mobilephone/sobexsrv
+  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 0
+
+app-mobilephone/wammu
+  DeprecatedEAPI: version 0.35: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.35: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
