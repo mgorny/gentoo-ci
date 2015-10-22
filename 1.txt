@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 1 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-python/*' 'media-gfx/*' 'app-doc/*' 'sys-kernel/*' 'www-client/*' 'www-servers/*' 'games-emulation/*' 'net-proxy/*' 'app-mobilephone/*' 'gnustep-base/*' 'games-kids/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-python/*' 'media-gfx/*' 'app-doc/*' 'sys-kernel/*' 'www-client/*' 'www-servers/*' 'games-emulation/*' 'sys-power/*' 'app-mobilephone/*' 'gnustep-base/*' 'games-kids/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -40,8 +40,8 @@ dev-python/beaker
   DroppedKeywordWarning: version 1.7.0-r1: keywords dropped: ia64, sparc
 
 dev-python/beautifulsoup
-  SizeViolation: "files/beautifulsoup-3.1.0.1-python-3.patch" exceeds 20k in size; 42319 bytes total
   DroppedKeywordWarning: version 4.3.2: keywords dropped: arm64
+  SizeViolation: "files/beautifulsoup-3.1.0.1-python-3.patch" exceeds 20k in size; 42319 bytes total
 
 dev-python/bsddb3
   DroppedKeywordWarning: version 6.1.0: keywords dropped: hppa
@@ -231,10 +231,6 @@ dev-python/pydb
 
 dev-python/pydecomp
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-dev-python/pyfits
-  DeprecatedEAPI: version 2.4.0: uses deprecated EAPI: 2
-  DeprecatedEclass: version 2.4.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/pygresql
   NonExistentDeps: version 4.1.1: depset depends: nonexistent atoms [ dev-db/postgresql:8.4, dev-db/postgresql:8.3 ]
@@ -1314,66 +1310,72 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-net-proxy/3proxy
-  DeprecatedEAPI: version 0.5.3k: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.6.1: uses deprecated EAPI: 2
-
-net-proxy/bfilter
-  DeprecatedEAPI: version 1.1.4-r1: uses deprecated EAPI: 4
-
-net-proxy/dante
-  DeprecatedEAPI: version 1.1.19-r4: uses deprecated EAPI: 0
-
-net-proxy/dnsproxy
-  DeprecatedEAPI: version 1.16-r1: uses deprecated EAPI: 4
-
-net-proxy/haproxy
+sys-power/acpi_call
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-net-proxy/http-replicator
-  DeprecatedEAPI: version 3.0-r4: uses deprecated EAPI: 4
-  DeprecatedEclass: version 3.0-r4: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+sys-power/apcupsd
+  DeprecatedEAPI: version 3.14.8-r2: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.14.10-r6: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 3.14.12: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 3.14.12-r1: uses deprecated EAPI: 4
 
-net-proxy/httpush
-  DeprecatedEAPI: version 0.9_beta11-r1: uses deprecated EAPI: 0
+sys-power/athcool
+  DeprecatedEAPI: version 0.3.12: uses deprecated EAPI: 3
 
-net-proxy/nylon
-  DeprecatedEAPI: version 1.21-r1: uses deprecated EAPI: 4
+sys-power/cpudyn
+  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 0
 
-net-proxy/oops
-  DeprecatedEAPI: version 1.5.24_pre20050503-r4: uses deprecated EAPI: 2
+sys-power/cpuspeedy
+  DeprecatedEAPI: version 0.4.1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.4.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-net-proxy/piper
-  DeprecatedEAPI: version 1.14: uses deprecated EAPI: 0
+sys-power/iasl
+  DeprecatedEAPI: version 20121018: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 20130117-r1: uses deprecated EAPI: 4
 
-net-proxy/ratproxy
-  DeprecatedEAPI: version 1.58: uses deprecated EAPI: 0
+sys-power/nvclock
+  DeprecatedEAPI: version 0.8_p20110102-r2: uses deprecated EAPI: 4
 
-net-proxy/rejik
-  DeprecatedEAPI: version 3.2.10: uses deprecated EAPI: 4
+sys-power/nvram-reboot
+  DeprecatedEAPI: version 2004.10.03: uses deprecated EAPI: 0
 
-net-proxy/squidclamav
-  DeprecatedEAPI: version 6.8: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 6.10: uses deprecated EAPI: 4
+sys-power/nvram-wakeup
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 4
 
-net-proxy/squidguard
-  DeprecatedEAPI: version 1.4-r4: uses deprecated EAPI: 2
+sys-power/phc-intel
+  SizeViolation: "files/phc-intel-0.3.2-rev12-trailing-space-misc.patch" exceeds 20k in size; 33960 bytes total
 
-net-proxy/tayga
-  DeprecatedEAPI: version 0.9.2: uses deprecated EAPI: 3
+sys-power/phc-k8
+  DeprecatedEAPI: version 0.4.3: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.4.4: uses deprecated EAPI: 4
 
-net-proxy/torsocks
-  DeprecatedEAPI: version 1.2-r2: uses deprecated EAPI: 4
+sys-power/phctool
+  DeprecatedEAPI: version 0.5.2.2-r1: uses deprecated EAPI: 2
+  DeprecatedEclass: version 0.5.2.2-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.5.2.2-r2: uses deprecated EAPI: 4
+  DeprecatedEclass: version 0.5.2.2-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-net-proxy/ufdbguard
-  DeprecatedEAPI: version 1.24-r1: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 1.29: uses deprecated EAPI: 4
+sys-power/pm-quirks
+  DeprecatedEAPI: version 20100619: uses deprecated EAPI: 3
 
-net-proxy/webscarab
-  DeprecatedEAPI: version 20070504: uses deprecated EAPI: 0
+sys-power/pmtools
+  DeprecatedEAPI: version 20071116: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 20110323: uses deprecated EAPI: 2
+  DroppedKeywordWarning: version 20110323: keywords dropped: ppc
 
-net-proxy/wwwoffle
-  DeprecatedEAPI: version 2.9i: uses deprecated EAPI: 4
+sys-power/powertop
+  DeprecatedEAPI: version 1.13: uses deprecated EAPI: 3
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+sys-power/sispmctl
+  DeprecatedEAPI: version 2.7: uses deprecated EAPI: 2
+
+sys-power/suspend
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 4
+
+sys-power/yacpi
+  DeprecatedEAPI: version 3.0.1: uses deprecated EAPI: 3
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch

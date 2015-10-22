@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 14 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'app-text/*' 'dev-php/*' 'app-i18n/*' 'gnome-extra/*' 'mail-filter/*' 'games-action/*' 'games-rpg/*' 'sys-freebsd/*' 'dev-go/*' 'games-mud/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'app-text/*' 'dev-php/*' 'app-i18n/*' 'gnome-extra/*' 'mail-filter/*' 'games-action/*' 'dev-tcltk/*' 'sys-freebsd/*' 'dev-go/*' 'games-mud/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1689,49 +1689,75 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-games-rpg/arx-fatalis-data
-  MissingUri: version 1.21-r2: file setup_arx_fatalis.exe is unfetchable- no URI available, and RESTRICT=fetch isn't set
-  MissingUri: version 1.21-r3: file setup_arx_fatalis_2.0.0.7.exe is unfetchable- no URI available, and RESTRICT=fetch isn't set
+dev-tcltk/expect
+  DeprecatedEAPI: version 5.44.1.15: uses deprecated EAPI: 3
 
-games-rpg/arx-fatalis-demo
-  DeprecatedEAPI: version 0: uses deprecated EAPI: 4
+dev-tcltk/expect-lite
+  DeprecatedEAPI: version 4.0.3: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.1.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.1.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.2.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.2.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.2.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.3.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.3.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.3.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.3.3: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.4.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.4.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.5.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.6.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.6.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.6.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.7.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.8.0: uses deprecated EAPI: 4
 
-games-rpg/eternal-lands
-  DeprecatedEAPI: version 1.9.2: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 1.9.2-r1: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 1.9.3: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 1.9.3-r1: uses deprecated EAPI: 2
+dev-tcltk/iwidgets
+  DeprecatedEAPI: version 4.0.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.0.1-r3: uses deprecated EAPI: 4
 
-games-rpg/eternal-lands-bloodsucker
-  DeprecatedEAPI: version 3.0: uses deprecated EAPI: 2
+dev-tcltk/mysqltcl
+  DeprecatedEAPI: version 3.05: uses deprecated EAPI: 4
 
-games-rpg/eternal-lands-data
-  DeprecatedEAPI: version 1.9.2-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.9.3: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.9.3-r1: uses deprecated EAPI: 2
+dev-tcltk/scwoop
+  DeprecatedEAPI: version 4.1: uses deprecated EAPI: 0
 
-games-rpg/nwmovies
-  DeprecatedEAPI: version 20090223.080954: uses deprecated EAPI: 2
+dev-tcltk/snack
+  DeprecatedEclass: version 2.2.10-r5: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 2.2.10-r5: uses deprecated EAPI: 4
 
-games-rpg/nwn-cep
-  DeprecatedEAPI: version 1.68-r1: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 2.0: uses deprecated EAPI: 2
+dev-tcltk/tcllib
+  SizeViolation: "files/tcllib-1.15-XSS-vuln.patch" exceeds 20k in size; 29465 bytes total
+  DroppedKeywordWarning: version 1.16: keywords dropped: ia64, ppc64, s390, sparc
 
-games-rpg/nwn-penultima
-  DeprecatedEAPI: version 1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1-r1: uses deprecated EAPI: 0
+dev-tcltk/tkTheme
+  DeprecatedEAPI: version 1.0-r2: uses deprecated EAPI: 4
 
-games-rpg/nwn-penultimarerolled
-  DeprecatedEAPI: version 1: uses deprecated EAPI: 0
+dev-tcltk/tkXwin
+  DeprecatedEAPI: version 1.0-r3: uses deprecated EAPI: 4
 
-games-rpg/nwn-shadowlordsdreamcatcherdemon
-  DeprecatedEAPI: version 1: uses deprecated EAPI: 0
+dev-tcltk/tkcon
+  DeprecatedEAPI: version 2.5: uses deprecated EAPI: 0
 
-games-rpg/queen
-  DeprecatedEAPI: version 1: uses deprecated EAPI: 4
+dev-tcltk/tkdnd
+  DeprecatedEAPI: version 2.2: uses deprecated EAPI: 4
 
-games-rpg/sacred-gold
-  MissingChksum: version 1.0.01: "sacred-1.0-1.0.01-x86.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+dev-tcltk/tkpiechart
+  DeprecatedEAPI: version 6.5-r1: uses deprecated EAPI: 0
+
+dev-tcltk/tktable
+  DeprecatedEAPI: version 2.10: uses deprecated EAPI: 2
+
+dev-tcltk/tktreectrl
+  DeprecatedEAPI: version 2.2.9: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 2.2.10: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 2.4.1: uses deprecated EAPI: 4
+
+dev-tcltk/togl
+  DeprecatedEAPI: version 2.0-r2: uses deprecated EAPI: 4
+
+dev-tcltk/vtcl
+  DeprecatedEAPI: version 1.6.0-r1: uses deprecated EAPI: 0
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
