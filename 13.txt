@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 13 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'sys-apps/*' 'virtual/*' 'app-crypt/*' 'x11-apps/*' 'xfce-extra/*' 'games-board/*' 'games-rpg/*' 'games-util/*' 'www-plugins/*' 'mate-extra/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'sys-apps/*' 'virtual/*' 'app-crypt/*' 'x11-apps/*' 'xfce-extra/*' 'games-action/*' 'games-rpg/*' 'games-util/*' 'www-plugins/*' 'mate-extra/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1627,6 +1627,87 @@ WARNING pkgcore: metadata.dtd cannot be opened from
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
+
+games-action/0verkill
+  DeprecatedEAPI: version 0.16-r3: uses deprecated EAPI: 4
+
+games-action/abuse
+  DeprecatedEAPI: version 0.8: uses deprecated EAPI: 4
+
+games-action/barrage
+  DeprecatedEAPI: version 1.0.4: uses deprecated EAPI: 4
+
+games-action/bomberclone
+  DeprecatedEAPI: version 0.11.8: uses deprecated EAPI: 4
+
+games-action/chickens
+  DeprecatedEAPI: version 0.2.4: uses deprecated EAPI: 4
+
+games-action/deathchase3d
+  DeprecatedEAPI: version 0.9: uses deprecated EAPI: 4
+
+games-action/formido
+  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 4
+
+games-action/geki2-KXL
+  DeprecatedEAPI: version 2.0.3-r2: uses deprecated EAPI: 4
+
+games-action/geki3-KXL
+  DeprecatedEAPI: version 1.0.3-r2: uses deprecated EAPI: 4
+
+games-action/heroes
+  DeprecatedEAPI: version 0.21-r1: uses deprecated EAPI: 4
+
+games-action/koth
+  DeprecatedEAPI: version 0.8.0: uses deprecated EAPI: 4
+
+games-action/nighthawk
+  DeprecatedEAPI: version 2.2: uses deprecated EAPI: 4
+
+games-action/noiz2sa
+  DeprecatedEAPI: version 0.51a: uses deprecated EAPI: 4
+
+games-action/openclonk
+  SizeViolation: "files/openclonk-6.1-dedicated.patch" exceeds 20k in size; 32512 bytes total
+
+games-action/openlierox
+  DeprecatedEAPI: version 0.58_rc3: uses deprecated EAPI: 4
+
+games-action/poopmup
+  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 4
+
+games-action/rafkill
+  DeprecatedEAPI: version 1.2.3: uses deprecated EAPI: 4
+
+games-action/rrootage
+  DeprecatedEAPI: version 0.23a: uses deprecated EAPI: 4
+
+games-action/shadowgrounds-bin
+  MissingChksum: version 0_beta12-r1: "ShadowgroundsBeta12.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+games-action/shadowgrounds-survivor-bin
+  MissingChksum: version 0_beta11-r1: "SurvivorBeta11.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+games-action/spacearyarya-kxl
+  DeprecatedEAPI: version 1.0.2-r1: uses deprecated EAPI: 4
+
+games-action/towbowl-tactics
+  DeprecatedEAPI: version 0.5: uses deprecated EAPI: 4
+
+games-action/trine-bin
+  MissingChksum: version 1.08: "Trine.64.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+games-action/tuxkart
+  DeprecatedEAPI: version 0.4.0: uses deprecated EAPI: 4
+
+games-action/wordwarvi
+  DeprecatedEAPI: version 1.00: uses deprecated EAPI: 4
+
+games-action/xblast
+  DeprecatedEAPI: version 2.10.4: uses deprecated EAPI: 4
+
+games-action/xbomber
+  DeprecatedEAPI: version 101: uses deprecated EAPI: 4
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
