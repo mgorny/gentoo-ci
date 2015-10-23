@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 1 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-python/*' 'media-gfx/*' 'app-doc/*' 'sys-kernel/*' 'www-client/*' 'www-servers/*' 'games-emulation/*' 'app-forensics/*' 'dev-games/*' 'gnustep-base/*' 'games-kids/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-python/*' 'media-gfx/*' 'app-doc/*' 'sys-kernel/*' 'www-client/*' 'www-servers/*' 'games-emulation/*' 'sys-power/*' 'dev-games/*' 'gnustep-base/*' 'games-kids/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -40,8 +40,8 @@ dev-python/beaker
   DroppedKeywordWarning: version 1.7.0-r1: keywords dropped: ia64, sparc
 
 dev-python/beautifulsoup
-  DroppedKeywordWarning: version 4.3.2: keywords dropped: arm64
   SizeViolation: "files/beautifulsoup-3.1.0.1-python-3.patch" exceeds 20k in size; 42319 bytes total
+  DroppedKeywordWarning: version 4.3.2: keywords dropped: arm64
 
 dev-python/bsddb3
   DroppedKeywordWarning: version 6.1.0: keywords dropped: hppa
@@ -1300,77 +1300,72 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-app-forensics/afflib
-  DeprecatedEAPI: version 3.7.1: uses deprecated EAPI: 4
-  DeprecatedEclass: version 3.7.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-
-app-forensics/aide
-  DeprecatedEAPI: version 0.13.1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.13.1-r3: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.13.1-r5: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.14.2: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 0.15.1: uses deprecated EAPI: 3
-
-app-forensics/air
-  DeprecatedEAPI: version 2.0.0-r1: uses deprecated EAPI: 4
-
-app-forensics/autopsy
-  DeprecatedEAPI: version 2.24-r1: uses deprecated EAPI: 4
-
-app-forensics/chkrootkit
-  DeprecatedEAPI: version 0.48-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.49: uses deprecated EAPI: 4
-
-app-forensics/cmospwd
-  DeprecatedEAPI: version 5.1: uses deprecated EAPI: 4
-
-app-forensics/examiner
-  DeprecatedEAPI: version 0.5-r2: uses deprecated EAPI: 4
-
-app-forensics/foremost
-  DeprecatedEAPI: version 0.69: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.5.7-r1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.5.7-r2: uses deprecated EAPI: 4
-
-app-forensics/galleta
-  DeprecatedEAPI: version 20040505_p1: uses deprecated EAPI: 0
-
-app-forensics/libbfio
-  DroppedKeywordWarning: version 0.0.20130609_alpha: keywords dropped: hppa
-
-app-forensics/mac-robber
-  DeprecatedEAPI: version 1.02: uses deprecated EAPI: 4
-
-app-forensics/magicrescue
-  DeprecatedEAPI: version 1.1.9: uses deprecated EAPI: 4
-
-app-forensics/memdump
-  DeprecatedEAPI: version 1.01: uses deprecated EAPI: 4
-
-app-forensics/openscap
+sys-power/acpi_call
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-app-forensics/ovaldi
-  DeprecatedEAPI: version 5.9.1: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 5.10.1.2: uses deprecated EAPI: 3
+sys-power/apcupsd
+  DeprecatedEAPI: version 3.14.8-r2: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.14.10-r6: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 3.14.12: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 3.14.12-r1: uses deprecated EAPI: 4
 
-app-forensics/pasco
-  DeprecatedEAPI: version 20040505_p1: uses deprecated EAPI: 0
+sys-power/athcool
+  DeprecatedEAPI: version 0.3.12: uses deprecated EAPI: 3
 
-app-forensics/rifiuti
-  DeprecatedEAPI: version 20040505_p1: uses deprecated EAPI: 0
+sys-power/cpudyn
+  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 0
 
-app-forensics/rkhunter
-  DeprecatedEAPI: version 1.4.0: uses deprecated EAPI: 4
+sys-power/cpuspeedy
+  DeprecatedEAPI: version 0.4.1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.4.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-app-forensics/scalpel
-  DeprecatedEAPI: version 2.0: uses deprecated EAPI: 4
+sys-power/iasl
+  DeprecatedEAPI: version 20121018: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 20130117-r1: uses deprecated EAPI: 4
 
-app-forensics/unhide
-  DeprecatedEAPI: version 20121229: uses deprecated EAPI: 4
+sys-power/nvclock
+  DeprecatedEAPI: version 0.8_p20110102-r2: uses deprecated EAPI: 4
 
-app-forensics/zzuf
-  DeprecatedEAPI: version 0.13-r1: uses deprecated EAPI: 4
+sys-power/nvram-reboot
+  DeprecatedEAPI: version 2004.10.03: uses deprecated EAPI: 0
+
+sys-power/nvram-wakeup
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 4
+
+sys-power/phc-intel
+  SizeViolation: "files/phc-intel-0.3.2-rev12-trailing-space-misc.patch" exceeds 20k in size; 33960 bytes total
+
+sys-power/phc-k8
+  DeprecatedEAPI: version 0.4.3: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.4.4: uses deprecated EAPI: 4
+
+sys-power/phctool
+  DeprecatedEAPI: version 0.5.2.2-r1: uses deprecated EAPI: 2
+  DeprecatedEclass: version 0.5.2.2-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.5.2.2-r2: uses deprecated EAPI: 4
+  DeprecatedEclass: version 0.5.2.2-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+sys-power/pm-quirks
+  DeprecatedEAPI: version 20100619: uses deprecated EAPI: 3
+
+sys-power/pmtools
+  DeprecatedEAPI: version 20071116: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 20110323: uses deprecated EAPI: 2
+  DroppedKeywordWarning: version 20110323: keywords dropped: ppc
+
+sys-power/powertop
+  DeprecatedEAPI: version 1.13: uses deprecated EAPI: 3
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+sys-power/sispmctl
+  DeprecatedEAPI: version 2.7: uses deprecated EAPI: 2
+
+sys-power/suspend
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 4
+
+sys-power/yacpi
+  DeprecatedEAPI: version 3.0.1: uses deprecated EAPI: 3
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
