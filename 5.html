@@ -13,7 +13,7 @@
             <li class="warn"><a href="2.html">2</a></li>
             <li class="good"><a href="3.html">3</a></li>
             <li class="warn"><a href="4.html">4</a></li>
-            <li class="warn"><a href="5.html">5</a></li>
+            <li class="err"><a href="5.html">5</a></li>
             <li class="warn"><a href="6.html">6</a></li>
             <li class="warn"><a href="7.html">7</a></li>
             <li class="warn"><a href="8.html">8</a></li>
@@ -35,6 +35,12 @@
                 <li><a href="#l2070">2070</a></li>
                 <li><a href="#l2176">2176</a></li>
                 <li><a href="#l2384">2384</a></li>
+            </ol>
+        </div>
+        <div class="lines err">
+            <p>Errors:</p>
+            <ol>
+                <li><a href="#l2697">2697-2703</a></li>
             </ol>
         </div>
 
@@ -5433,79 +5439,93 @@
 </pre></td></tr>
             <tr class="" id="l2696"><td><a href="#l2696"><span>2696</span></a></td><td><pre>mail-mta/postfix
 </pre></td></tr>
-            <tr class="" id="l2697"><td><a href="#l2697"><span>2697</span></a></td><td><pre>  DroppedKeywordWarning: version 2.11.7: keywords dropped: mips, s390
-</pre></td></tr>
-            <tr class="" id="l2698"><td><a href="#l2698"><span>2698</span></a></td><td><pre>
-</pre></td></tr>
-            <tr class="" id="l2699"><td><a href="#l2699"><span>2699</span></a></td><td><pre>mail-mta/qmail-ldap
-</pre></td></tr>
-            <tr class="" id="l2700"><td><a href="#l2700"><span>2700</span></a></td><td><pre>  DeprecatedEAPI: version 1.03-r8: uses deprecated EAPI: 0
-</pre></td></tr>
-            <tr class="" id="l2701"><td><a href="#l2701"><span>2701</span></a></td><td><pre>
-</pre></td></tr>
-            <tr class="" id="l2702"><td><a href="#l2702"><span>2702</span></a></td><td><pre>mail-mta/qpsmtpd
-</pre></td></tr>
-            <tr class="" id="l2703"><td><a href="#l2703"><span>2703</span></a></td><td><pre>  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-</pre></td></tr>
-            <tr class="" id="l2704"><td><a href="#l2704"><span>2704</span></a></td><td><pre>  DroppedKeywordWarning: version 0.95: keywords dropped: amd64, x86
+            <tr class="err" id="l2697"><td><a href="#l2697"><span>2697</span></a></td><td><pre>  NonsolvableDeps: version 3.0.2: nonsolvable depset(rdepends) keyword(sparc) profile (default/linux/sparc/13.0): solutions: [ net-mail/dovecot ]
+</pre></td><td>[FATAL]</td></tr>
+            <tr class="err" id="l2698"><td><a href="#l2698"><span>2698</span></a></td><td><pre>  NonsolvableDeps: version 3.0.2: nonsolvable depset(rdepends) keyword(sparc) profile (default/linux/sparc/13.0/desktop): solutions: [ net-mail/dovecot ]
+</pre></td><td>[FATAL]</td></tr>
+            <tr class="err" id="l2699"><td><a href="#l2699"><span>2699</span></a></td><td><pre>  NonsolvableDeps: version 3.0.2: nonsolvable depset(rdepends) keyword(sparc) profile (default/linux/sparc/13.0/desktop/gnome): solutions: [ net-mail/dovecot ]
+</pre></td><td>[FATAL]</td></tr>
+            <tr class="err" id="l2700"><td><a href="#l2700"><span>2700</span></a></td><td><pre>  NonsolvableDeps: version 3.0.2: nonsolvable depset(rdepends) keyword(sparc) profile (default/linux/sparc/13.0/developer): solutions: [ net-mail/dovecot ]
+</pre></td><td>[FATAL]</td></tr>
+            <tr class="err" id="l2701"><td><a href="#l2701"><span>2701</span></a></td><td><pre>  NonsolvableDeps: version 3.0.2: nonsolvable depset(rdepends) keyword(sparc) profile (default/linux/sparc/13.0/desktop/gnome/systemd): solutions: [ net-mail/dovecot ]
+</pre></td><td>[FATAL]</td></tr>
+            <tr class="err" id="l2702"><td><a href="#l2702"><span>2702</span></a></td><td><pre>  NonsolvableDeps: version 3.0.2: nonsolvable depset(rdepends) keyword(sparc) profile (default/linux/sparc/13.0/desktop/kde): solutions: [ net-mail/dovecot ]
+</pre></td><td>[FATAL]</td></tr>
+            <tr class="err" id="l2703"><td><a href="#l2703"><span>2703</span></a></td><td><pre>  NonsolvableDeps: version 3.0.2: nonsolvable depset(rdepends) keyword(sparc) profile (default/linux/sparc/13.0/desktop/kde/systemd): solutions: [ net-mail/dovecot ]
+</pre></td><td>[FATAL]</td></tr>
+            <tr class="" id="l2704"><td><a href="#l2704"><span>2704</span></a></td><td><pre>  DroppedKeywordWarning: version 2.11.7: keywords dropped: mips, s390
 </pre></td></tr>
             <tr class="" id="l2705"><td><a href="#l2705"><span>2705</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2706"><td><a href="#l2706"><span>2706</span></a></td><td><pre>mail-mta/ssmtp
+            <tr class="" id="l2706"><td><a href="#l2706"><span>2706</span></a></td><td><pre>mail-mta/qmail-ldap
 </pre></td></tr>
-            <tr class="" id="l2707"><td><a href="#l2707"><span>2707</span></a></td><td><pre>  DeprecatedEAPI: version 2.64-r2: uses deprecated EAPI: 4
+            <tr class="" id="l2707"><td><a href="#l2707"><span>2707</span></a></td><td><pre>  DeprecatedEAPI: version 1.03-r8: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l2708"><td><a href="#l2708"><span>2708</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
+            <tr class="" id="l2708"><td><a href="#l2708"><span>2708</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2709"><td><a href="#l2709"><span>2709</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+            <tr class="" id="l2709"><td><a href="#l2709"><span>2709</span></a></td><td><pre>mail-mta/qpsmtpd
 </pre></td></tr>
-            <tr class="" id="l2710"><td><a href="#l2710"><span>2710</span></a></td><td><pre>               : refetch
+            <tr class="" id="l2710"><td><a href="#l2710"><span>2710</span></a></td><td><pre>  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 </pre></td></tr>
-            <tr class="" id="l2711"><td><a href="#l2711"><span>2711</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
+            <tr class="" id="l2711"><td><a href="#l2711"><span>2711</span></a></td><td><pre>  DroppedKeywordWarning: version 0.95: keywords dropped: amd64, x86
 </pre></td></tr>
-            <tr class="" id="l2712"><td><a href="#l2712"><span>2712</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+            <tr class="" id="l2712"><td><a href="#l2712"><span>2712</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2713"><td><a href="#l2713"><span>2713</span></a></td><td><pre>               : refetch
+            <tr class="" id="l2713"><td><a href="#l2713"><span>2713</span></a></td><td><pre>mail-mta/ssmtp
 </pre></td></tr>
-            <tr class="" id="l2714"><td><a href="#l2714"><span>2714</span></a></td><td><pre>
+            <tr class="" id="l2714"><td><a href="#l2714"><span>2714</span></a></td><td><pre>  DeprecatedEAPI: version 2.64-r2: uses deprecated EAPI: 4
 </pre></td></tr>
-            <tr class="" id="l2715"><td><a href="#l2715"><span>2715</span></a></td><td><pre>net-news/amphetadesk
+            <tr class="" id="l2715"><td><a href="#l2715"><span>2715</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
 </pre></td></tr>
-            <tr class="" id="l2716"><td><a href="#l2716"><span>2716</span></a></td><td><pre>  DeprecatedEAPI: version 0.93.1: uses deprecated EAPI: 0
+            <tr class="" id="l2716"><td><a href="#l2716"><span>2716</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
 </pre></td></tr>
-            <tr class="" id="l2717"><td><a href="#l2717"><span>2717</span></a></td><td><pre>
+            <tr class="" id="l2717"><td><a href="#l2717"><span>2717</span></a></td><td><pre>               : refetch
 </pre></td></tr>
-            <tr class="" id="l2718"><td><a href="#l2718"><span>2718</span></a></td><td><pre>net-news/blam
+            <tr class="" id="l2718"><td><a href="#l2718"><span>2718</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
 </pre></td></tr>
-            <tr class="" id="l2719"><td><a href="#l2719"><span>2719</span></a></td><td><pre>  DeprecatedEclass: version 1.8.9: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+            <tr class="" id="l2719"><td><a href="#l2719"><span>2719</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
 </pre></td></tr>
-            <tr class="" id="l2720"><td><a href="#l2720"><span>2720</span></a></td><td><pre>  DeprecatedEAPI: version 1.8.9: uses deprecated EAPI: 4
+            <tr class="" id="l2720"><td><a href="#l2720"><span>2720</span></a></td><td><pre>               : refetch
 </pre></td></tr>
             <tr class="" id="l2721"><td><a href="#l2721"><span>2721</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2722"><td><a href="#l2722"><span>2722</span></a></td><td><pre>net-news/liferea
+            <tr class="" id="l2722"><td><a href="#l2722"><span>2722</span></a></td><td><pre>net-news/amphetadesk
 </pre></td></tr>
-            <tr class="" id="l2723"><td><a href="#l2723"><span>2723</span></a></td><td><pre>  DeprecatedEAPI: version 1.8.8: uses deprecated EAPI: 4
+            <tr class="" id="l2723"><td><a href="#l2723"><span>2723</span></a></td><td><pre>  DeprecatedEAPI: version 0.93.1: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l2724"><td><a href="#l2724"><span>2724</span></a></td><td><pre>  DeprecatedEAPI: version 1.8.11: uses deprecated EAPI: 4
+            <tr class="" id="l2724"><td><a href="#l2724"><span>2724</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2725"><td><a href="#l2725"><span>2725</span></a></td><td><pre>  DroppedKeywordWarning: version 1.10.8: keywords dropped: ppc64
+            <tr class="" id="l2725"><td><a href="#l2725"><span>2725</span></a></td><td><pre>net-news/blam
 </pre></td></tr>
-            <tr class="" id="l2726"><td><a href="#l2726"><span>2726</span></a></td><td><pre>
+            <tr class="" id="l2726"><td><a href="#l2726"><span>2726</span></a></td><td><pre>  DeprecatedEclass: version 1.8.9: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
 </pre></td></tr>
-            <tr class="" id="l2727"><td><a href="#l2727"><span>2727</span></a></td><td><pre>net-news/rsstail
+            <tr class="" id="l2727"><td><a href="#l2727"><span>2727</span></a></td><td><pre>  DeprecatedEAPI: version 1.8.9: uses deprecated EAPI: 4
 </pre></td></tr>
-            <tr class="" id="l2728"><td><a href="#l2728"><span>2728</span></a></td><td><pre>  DeprecatedEAPI: version 1.8: uses deprecated EAPI: 4
+            <tr class="" id="l2728"><td><a href="#l2728"><span>2728</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l2729"><td><a href="#l2729"><span>2729</span></a></td><td><pre>
+            <tr class="" id="l2729"><td><a href="#l2729"><span>2729</span></a></td><td><pre>net-news/liferea
 </pre></td></tr>
-            <tr class="" id="l2730"><td><a href="#l2730"><span>2730</span></a></td><td><pre>net-news/yencode
+            <tr class="" id="l2730"><td><a href="#l2730"><span>2730</span></a></td><td><pre>  DeprecatedEAPI: version 1.8.8: uses deprecated EAPI: 4
 </pre></td></tr>
-            <tr class="" id="l2731"><td><a href="#l2731"><span>2731</span></a></td><td><pre>  DeprecatedEAPI: version 0.46: uses deprecated EAPI: 0
+            <tr class="" id="l2731"><td><a href="#l2731"><span>2731</span></a></td><td><pre>  DeprecatedEAPI: version 1.8.11: uses deprecated EAPI: 4
+</pre></td></tr>
+            <tr class="" id="l2732"><td><a href="#l2732"><span>2732</span></a></td><td><pre>  DroppedKeywordWarning: version 1.10.8: keywords dropped: ppc64
+</pre></td></tr>
+            <tr class="" id="l2733"><td><a href="#l2733"><span>2733</span></a></td><td><pre>
+</pre></td></tr>
+            <tr class="" id="l2734"><td><a href="#l2734"><span>2734</span></a></td><td><pre>net-news/rsstail
+</pre></td></tr>
+            <tr class="" id="l2735"><td><a href="#l2735"><span>2735</span></a></td><td><pre>  DeprecatedEAPI: version 1.8: uses deprecated EAPI: 4
+</pre></td></tr>
+            <tr class="" id="l2736"><td><a href="#l2736"><span>2736</span></a></td><td><pre>
+</pre></td></tr>
+            <tr class="" id="l2737"><td><a href="#l2737"><span>2737</span></a></td><td><pre>net-news/yencode
+</pre></td></tr>
+            <tr class="" id="l2738"><td><a href="#l2738"><span>2738</span></a></td><td><pre>  DeprecatedEAPI: version 0.46: uses deprecated EAPI: 0
 </pre></td></tr>
 
         </table>
 
-        <address>Generated based on results from 2015-10-24 15:34:53 UTC</address>
+        <address>Generated based on results from 2015-10-24 15:55:42 UTC</address>
     </body>
 </html>
