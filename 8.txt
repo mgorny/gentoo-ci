@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 8 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'net-misc/*' 'dev-lang/*' 'sys-libs/*' 'net-mail/*' 'dev-embedded/*' 'ros-meta/*' 'net-print/*' 'lxqt-base/*' 'x11-base/*' 'games-roguelike/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'net-misc/*' 'dev-lang/*' 'sys-libs/*' 'net-mail/*' 'dev-embedded/*' 'ros-meta/*' 'games-strategy/*' 'lxqt-base/*' 'x11-base/*' 'games-roguelike/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -2024,81 +2024,31 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-net-print/apsfilter
-  DeprecatedEAPI: version 7.2.5: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 7.2.8: uses deprecated EAPI: 4
+games-strategy/attal
+  DeprecatedEAPI: version 0.10.1: uses deprecated EAPI: 2
 
-net-print/c2esp
-  DeprecatedEAPI: version 25c: uses deprecated EAPI: 4
+games-strategy/coldwar
+  MissingChksum: version 1.0.1-r1: "coldwar-1.0-1.0.1-x86.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-print/cups-filters
-  WhitespaceFound: version 1.0.71: ebuild has leading whitespace on line 68
-  WrongIndentFound: version 1.0.71: ebuild has whitespace in indentation on line 68
-  WhitespaceFound: version 1.0.73: ebuild has leading whitespace on line 68
-  WrongIndentFound: version 1.0.73: ebuild has whitespace in indentation on line 68
-  WhitespaceFound: version 1.0.74: ebuild has leading whitespace on line 68
-  WrongIndentFound: version 1.0.74: ebuild has whitespace in indentation on line 68
-  WhitespaceFound: version 1.0.75: ebuild has leading whitespace on line 68
-  WrongIndentFound: version 1.0.75: ebuild has whitespace in indentation on line 68
-  WhitespaceFound: version 1.0.76: ebuild has leading whitespace on line 68
-  WrongIndentFound: version 1.0.76: ebuild has whitespace in indentation on line 68
-  WhitespaceFound: version 9999: ebuild has leading whitespace on line 68
-  WrongIndentFound: version 9999: ebuild has whitespace in indentation on line 68
+games-strategy/ja2-stracciatella
+  DeprecatedEAPI: version 0.12.1_p7072: uses deprecated EAPI: 4
 
-net-print/cups-pdf
-  DeprecatedEAPI: version 2.6.1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 3.0_beta1: uses deprecated EAPI: 4
-
-net-print/cups-windows
-  DeprecatedEAPI: version 6.0-r1: uses deprecated EAPI: 4
-
-net-print/foo2zjs
-  DeprecatedEAPI: version 99999999: uses deprecated EAPI: 4
-
-net-print/gmso2
-  DeprecatedEAPI: version 0.1-r1: uses deprecated EAPI: 4
-
-net-print/gutenprint
-  DeprecatedEAPI: version 5.2.9: uses deprecated EAPI: 4
-
-net-print/kyocera-mita-ppds
-  DeprecatedEAPI: version 8.4: uses deprecated EAPI: 0
-  MissingChksum: version 8.4: "Linux_PPDs_KSL8_4.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-net-print/libinklevel
-  DeprecatedEAPI: version 0.8.0-r1: uses deprecated EAPI: 2
-
-net-print/lprng
-  DeprecatedEAPI: version 3.8.35-r2: uses deprecated EAPI: 4
-
-net-print/magicfilter
-  DeprecatedEAPI: version 2.3h: uses deprecated EAPI: 4
-
-net-print/mtink
-  DeprecatedEAPI: version 1.0.16-r1: uses deprecated EAPI: 4
-
-net-print/npadmin
-  DeprecatedEAPI: version 0.8.7: uses deprecated EAPI: 0
-
-net-print/pkpgcounter
-  DeprecatedEclass: version 3.50-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 3.50-r1: uses deprecated EAPI: 3
-
-net-print/pnm2ppa
-  DeprecatedEAPI: version 1.13-r1: uses deprecated EAPI: 4
-
-net-print/pykota
-  DeprecatedEclass: version 1.26: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 1.26: uses deprecated EAPI: 3
-
-net-print/splix
-  DeprecatedEAPI: version 2.0.0_p20111206: uses deprecated EAPI: 4
-
-net-print/sshlpr
+games-strategy/ja2-stracciatella-data
   DeprecatedEAPI: version 1: uses deprecated EAPI: 4
 
-net-print/xerox-drivers
-  DeprecatedEAPI: version 0_p20080123: uses deprecated EAPI: 2
+games-strategy/openra
+  DeprecatedEclass: version 20120630-r1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 20120630-r1: uses deprecated EAPI: 4
+
+games-strategy/revenge-of-the-titans
+  MissingChksum: version 1.80.12: "revenge-of-the-titans-1.80.12-amd64.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.80.12: "revenge-of-the-titans-1.80.12-i386.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+games-strategy/spaz
+  DeprecatedEAPI: version 1.605: uses deprecated EAPI: 4
+
+games-strategy/wargus-data
+  DeprecatedEAPI: version 0: uses deprecated EAPI: 4
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
