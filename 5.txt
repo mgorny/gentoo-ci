@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 5 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-libs/*' 'app-misc/*' 'media-fonts/*' 'net-wireless/*' 'x11-wm/*' 'net-irc/*' 'net-firewall/*' 'app-accessibility/*' 'mail-mta/*' 'net-news/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-libs/*' 'app-misc/*' 'media-fonts/*' 'net-wireless/*' 'x11-wm/*' 'net-irc/*' 'net-fs/*' 'app-accessibility/*' 'mail-mta/*' 'net-news/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -2449,68 +2449,39 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-net-firewall/arno-iptables-firewall
-  NonExistentDeps: version 2.0.1e: depset rdepends: nonexistent atoms [ <sys-apps/coreutils-8.20 ]
+net-fs/cifs-utils
+  DeprecatedEAPI: version 5.9-r1: uses deprecated EAPI: 4
 
-net-firewall/arptables
-  DeprecatedEAPI: version 0.0.3.4-r2: uses deprecated EAPI: 2
+net-fs/davfs2
+  DeprecatedEAPI: version 1.4.5-r1: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 1.4.7: uses deprecated EAPI: 4
 
-net-firewall/conntrack-tools
-  DroppedKeywordWarning: version 1.4.3: keywords dropped: alpha
+net-fs/libnfs
+  DeprecatedEAPI: version 1.3.0: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.5.0: uses deprecated EAPI: 4
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-net-firewall/dshieldpy
-  DeprecatedEclass: version 3.2-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 3.2-r1: uses deprecated EAPI: 4
+net-fs/nfs-utils
+  DeprecatedEAPI: version 1.2.9-r3: uses deprecated EAPI: 4
 
-net-firewall/ebtables
-  DeprecatedEAPI: version 2.0.10.4: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 2.0.10.4-r1: uses deprecated EAPI: 4
+net-fs/nfs4-acl-tools
+  DeprecatedEAPI: version 0.3.3: uses deprecated EAPI: 4
 
-net-firewall/firehol
-  DeprecatedEAPI: version 1.273-r3: uses deprecated EAPI: 4
+net-fs/samba
+  DeprecatedEAPI: version 3.5.21: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 3.5.22: uses deprecated EAPI: 4
+  DroppedKeywordWarning: version 3.6.25: keywords dropped: s390, sh
+  DroppedKeywordWarning: version 4.2.4-r1: keywords dropped: arm64, hppa
+  DroppedKeywordWarning: version 4.0.26-r1: keywords dropped: alpha, arm, ia64, mips, ppc, ppc64, sparc
 
-net-firewall/fwanalog
-  DeprecatedEAPI: version 0.6.4: uses deprecated EAPI: 0
+net-fs/smbtad
+  DeprecatedEAPI: version 1.2.6: uses deprecated EAPI: 4
 
-net-firewall/fwbuilder
-  DeprecatedEAPI: version 5.0.1.3592-r1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 5.1.0.3599: uses deprecated EAPI: 4
+net-fs/smbtatools
+  DeprecatedEAPI: version 1.2.6: uses deprecated EAPI: 4
 
-net-firewall/fwipsec
-  DeprecatedEAPI: version 0.4.2-r1: uses deprecated EAPI: 0
-
-net-firewall/ipkungfu
-  DeprecatedEAPI: version 0.5.2-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.6.1: uses deprecated EAPI: 0
-
-net-firewall/ipsec-tools
-  DeprecatedEAPI: version 0.8.0-r5: uses deprecated EAPI: 4
-
-net-firewall/ipset
-  DeprecatedEAPI: version 6.15: uses deprecated EAPI: 4
-
-net-firewall/iptables
-  DeprecatedEAPI: version 1.4.17: uses deprecated EAPI: 4
-  ExecutableFile: "files/iptables.init" has unnecessary executable bit
-
-net-firewall/nfacct
-  DeprecatedEAPI: version 1.0.0: uses deprecated EAPI: 4
-
-net-firewall/nufw
-  NonExistentDeps: version 2.2.22-r1: depset depends: nonexistent atoms [ dev-libs/libprelude ]
-  NonExistentDeps: version 2.2.22-r1: depset rdepends: nonexistent atoms [ dev-libs/libprelude ]
-
-net-firewall/pftop
-  DeprecatedEAPI: version 0.5: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.7: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.7-r1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.7-r2: uses deprecated EAPI: 4
-
-net-firewall/quicktables
-  DeprecatedEAPI: version 2.3: uses deprecated EAPI: 0
-
-net-firewall/shapecfg
-  DeprecatedEAPI: version 36: uses deprecated EAPI: 0
+net-fs/wdfs
+  DeprecatedEAPI: version 1.4.2: uses deprecated EAPI: 0
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
