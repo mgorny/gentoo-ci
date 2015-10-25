@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 3 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-haskell/*' 'net-analyzer/*' 'dev-db/*' 'app-xemacs/*' 'games-fps/*' 'www-apache/*' 'media-tv/*' 'app-forensics/*' 'sci-astronomy/*' 'sci-misc/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-haskell/*' 'net-analyzer/*' 'dev-db/*' 'app-xemacs/*' 'games-fps/*' 'www-apache/*' 'media-tv/*' 'app-forensics/*' 'sci-astronomy/*' 'games-engines/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -2069,36 +2069,8 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-sci-misc/flashdot
-  DeprecatedEAPI: version 1.1.4: uses deprecated EAPI: 2
+games-engines/frobtads
+  DeprecatedEAPI: version 1.2.2: uses deprecated EAPI: 4
 
-sci-misc/gato
-  DeprecatedEclass: version 1.1.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 1.1.2: uses deprecated EAPI: 4
-
-sci-misc/gt-itm
-  DeprecatedEAPI: version 19961004-r1: uses deprecated EAPI: 0
-
-sci-misc/lttoolbox
-  DeprecatedEAPI: version 3.1.0: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 3.2.0: uses deprecated EAPI: 4
-
-sci-misc/nco
-  DeprecatedEAPI: version 3.9.9: uses deprecated EAPI: 2
-
-sci-misc/ncview
-  DeprecatedEAPI: version 2.1.1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 2.1.2: uses deprecated EAPI: 4
-
-sci-misc/netlogo-bin
-  DeprecatedEAPI: version 3.0.2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.0.4: uses deprecated EAPI: 4
-
-sci-misc/repsnapper
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-sci-misc/vitables
-  DeprecatedEclass: version 2.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 2.1: uses deprecated EAPI: 4
-  NonExistentDeps: version 2.1: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
-  NonExistentDeps: version 2.1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+games-engines/gargoyle
+  DeprecatedEAPI: version 2011.1: uses deprecated EAPI: 4
