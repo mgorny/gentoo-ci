@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 2 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-perl/*' 'x11-misc/*' 'x11-plugins/*' 'app-xemacs/*' 'sys-block/*' 'www-apache/*' 'sci-physics/*' 'app-forensics/*' 'x11-proto/*' 'dev-ada/*' 'app-antivirus/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-perl/*' 'x11-misc/*' 'x11-plugins/*' 'app-xemacs/*' 'sys-block/*' 'www-servers/*' 'sci-physics/*' 'app-forensics/*' 'x11-proto/*' 'dev-ada/*' 'app-antivirus/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1863,160 +1863,49 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-www-apache/anyterm
-  DeprecatedEAPI: version 1.1.29: uses deprecated EAPI: 2
+www-servers/fnord
+  DeprecatedEAPI: version 1.10-r2: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 1.11: uses deprecated EAPI: 3
 
-www-apache/mod_anonymize_ip
-  DeprecatedEAPI: version 0.3.1: uses deprecated EAPI: 4
+www-servers/gatling
+  DeprecatedEAPI: version 0.12-r2: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.13: uses deprecated EAPI: 4
 
-www-apache/mod_auth_cookie_mysql2
-  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+www-servers/lighttpd
+  DeprecatedEAPI: version 1.4.35: uses deprecated EAPI: 4
+  SizeViolation: "files/lighttpd-1.4.29-mod_uploadprogress.patch" exceeds 20k in size; 22472 bytes total
 
-www-apache/mod_auth_imap2
-  DeprecatedEAPI: version 2.2.0: uses deprecated EAPI: 0
-
-www-apache/mod_auth_kerb
-  DeprecatedEAPI: version 5.3: uses deprecated EAPI: 0
-  SizeViolation: "files/mod_auth_kerb-5.4-s4u2proxy-r3.patch" exceeds 20k in size; 21037 bytes total
-
-www-apache/mod_auth_mysql
-  DeprecatedEAPI: version 3.0.0-r3: uses deprecated EAPI: 2
-
-www-apache/mod_auth_nufw
-  DeprecatedEAPI: version 2.2.2: uses deprecated EAPI: 2
-
-www-apache/mod_auth_pgsql
-  DeprecatedEAPI: version 2.0.3-r1: uses deprecated EAPI: 0
-
-www-apache/mod_auth_token
-  DeprecatedEAPI: version 1.0.6_beta: uses deprecated EAPI: 3
-
-www-apache/mod_authn_sasl
-  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 0
-
-www-apache/mod_authnz_external
-  DeprecatedEAPI: version 3.2.6: uses deprecated EAPI: 0
-
-www-apache/mod_caucho
-  DeprecatedEAPI: version 4.0.26: uses deprecated EAPI: 2
-
-www-apache/mod_cband
-  DeprecatedEAPI: version 0.9.7.5: uses deprecated EAPI: 0
-
-www-apache/mod_common_redirect
-  DeprecatedEAPI: version 0.1.1: uses deprecated EAPI: 4
-
-www-apache/mod_depends
-  DeprecatedEAPI: version 0.7.0_p200702041: uses deprecated EAPI: 0
-
-www-apache/mod_diagnostics
-  DeprecatedEAPI: version 0.0.1: uses deprecated EAPI: 0
-
-www-apache/mod_dnsbl_lookup
-  DeprecatedEAPI: version 0.91: uses deprecated EAPI: 0
-
-www-apache/mod_extract_forwarded
-  DeprecatedEAPI: version 2.0.2: uses deprecated EAPI: 3
-
-www-apache/mod_fastcgi
-  DeprecatedEAPI: version 2.4.7_pre0910052141: uses deprecated EAPI: 0
-
-www-apache/mod_fastcgi_handler
-  DeprecatedEAPI: version 0.6: uses deprecated EAPI: 3
-
-www-apache/mod_fcgid
-  DeprecatedEAPI: version 2.3.9: uses deprecated EAPI: 0
-
-www-apache/mod_flvx
-  DeprecatedEAPI: version 0.0.1-r1: uses deprecated EAPI: 0
-
-www-apache/mod_ftpd
-  DeprecatedEAPI: version 0.14-r1: uses deprecated EAPI: 2
-
-www-apache/mod_geoip2
-  DeprecatedEAPI: version 1.2.7-r1: uses deprecated EAPI: 0
-
-www-apache/mod_gnutls
-  DroppedKeywordWarning: version 0.7.1: keywords dropped: sparc
-
-www-apache/mod_h2
+www-servers/monkeyd
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-www-apache/mod_jk
-  DeprecatedEAPI: version 1.2.37: uses deprecated EAPI: 2
+www-servers/pound
+  DeprecatedEAPI: version 2.6: uses deprecated EAPI: 2
 
-www-apache/mod_layout
-  DeprecatedEAPI: version 5.1: uses deprecated EAPI: 0
+www-servers/servefile
+  NonExistentDeps: version 0.4.2: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 0.4.2: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEAPI: version 0.4.2: uses deprecated EAPI: 4
+  DeprecatedEclass: version 0.4.2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 0.4.3: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 0.4.3: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEAPI: version 0.4.3: uses deprecated EAPI: 4
+  DeprecatedEclass: version 0.4.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-www-apache/mod_limitipconn
-  DeprecatedEAPI: version 0.24: uses deprecated EAPI: 0
+www-servers/spawn-fcgi
+  DeprecatedEAPI: version 1.6.3-r1: uses deprecated EAPI: 4
 
-www-apache/mod_loadavg
-  DeprecatedEAPI: version 0.0.1: uses deprecated EAPI: 0
-
-www-apache/mod_log_rotate
-  DeprecatedEAPI: version 1.00: uses deprecated EAPI: 0
-
-www-apache/mod_log_sql
-  DeprecatedEAPI: version 1.101-r1: uses deprecated EAPI: 0
-
-www-apache/mod_macro
-  DeprecatedEAPI: version 1.1.10: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.2.1: uses deprecated EAPI: 0
-
-www-apache/mod_mono
-  DeprecatedEclass: version 2.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-
-www-apache/mod_pcgi2
-  DeprecatedEAPI: version 2.0.2: uses deprecated EAPI: 0
-
-www-apache/mod_proxy_fcgi
-  DeprecatedEAPI: version 0_p816361: uses deprecated EAPI: 0
-
-www-apache/mod_proxy_html
-  DeprecatedEAPI: version 3.1.2: uses deprecated EAPI: 0
-
-www-apache/mod_rpaf
-  DeprecatedEAPI: version 0.6: uses deprecated EAPI: 0
-
-www-apache/mod_scgi
-  DeprecatedEAPI: version 1.14: uses deprecated EAPI: 3
-
-www-apache/mod_security
-  DeprecatedEAPI: version 2.7.4: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 2.7.5: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 2.7.7: uses deprecated EAPI: 4
-
-www-apache/mod_slotlimit
-  DeprecatedEAPI: version 1.3: uses deprecated EAPI: 3
-
-www-apache/mod_spdy
+www-servers/thttpd
+  DeprecatedEAPI: version 2.26.4-r3: uses deprecated EAPI: 4
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  ExecutableFile: "files/make-snapshot.sh" has unnecessary executable bit
 
-www-apache/mod_tcl
-  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 0
+www-servers/tomcat
+  DroppedKeywordWarning: version 8.0.26: keywords dropped: ppc, ppc64
 
-www-apache/mod_tidy
-  DeprecatedEAPI: version 0.5.5-r1: uses deprecated EAPI: 2
+www-servers/tornado
+  DroppedKeywordWarning: version 4.1.0: keywords dropped: ppc
 
-www-apache/mod_umask
-  DeprecatedEAPI: version 0.1.0: uses deprecated EAPI: 0
-
-www-apache/mod_vdbh
-  DeprecatedEAPI: version 1.0.3-r1: uses deprecated EAPI: 0
-
-www-apache/mod_xml2enc
-  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 0
-
-www-apache/mod_xsendfile
-  DeprecatedEAPI: version 1.0_beta1: uses deprecated EAPI: 4
-
-www-apache/modsec-flameeyes
-  DeprecatedEclass: version 99999999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-www-apache/modsecurity-crs
-  DeprecatedEAPI: version 2.2.6-r1: uses deprecated EAPI: 4
+www-servers/xsp
+  WhitespaceFound: version 2014.12-r2014120900: ebuild has trailing whitespace on lines 82, 84
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
