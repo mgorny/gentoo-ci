@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 6 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-java/*' 'net-libs/*' 'dev-ml/*' 'app-editors/*' 'kde-frameworks/*' 'dev-cpp/*' 'net-firewall/*' 'net-nds/*' 'x11-base/*' 'java-virtuals/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-java/*' 'net-libs/*' 'dev-ml/*' 'app-editors/*' 'kde-frameworks/*' 'dev-cpp/*' 'net-dialup/*' 'net-nds/*' 'x11-base/*' 'java-virtuals/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1822,65 +1822,98 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-net-firewall/arno-iptables-firewall
-  NonExistentDeps: version 2.0.1e: depset rdepends: nonexistent atoms [ <sys-apps/coreutils-8.20 ]
+net-dialup/capidivert
+  DeprecatedEAPI: version 0.0.2: uses deprecated EAPI: 0
 
-net-firewall/arptables
-  DeprecatedEAPI: version 0.0.3.4-r2: uses deprecated EAPI: 2
+net-dialup/capifwd
+  DeprecatedEAPI: version 0.6.3-r1: uses deprecated EAPI: 0
 
-net-firewall/conntrack-tools
-  DroppedKeywordWarning: version 1.4.3: keywords dropped: alpha
+net-dialup/dgcmodem
+  DeprecatedEAPI: version 1.10: uses deprecated EAPI: 0
 
-net-firewall/dshieldpy
-  DeprecatedEclass: version 3.2-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 3.2-r1: uses deprecated EAPI: 4
+net-dialup/dial
+  DeprecatedEAPI: version 1.2-r1: uses deprecated EAPI: 2
 
-net-firewall/ebtables
-  DeprecatedEAPI: version 2.0.10.4: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 2.0.10.4-r1: uses deprecated EAPI: 4
+net-dialup/diald
+  DeprecatedEAPI: version 1.0-r2: uses deprecated EAPI: 0
 
-net-firewall/fwanalog
-  DeprecatedEAPI: version 0.6.4: uses deprecated EAPI: 0
+net-dialup/drdsl
+  DeprecatedEAPI: version 1.2.0: uses deprecated EAPI: 0
 
-net-firewall/fwbuilder
-  DeprecatedEAPI: version 5.0.1.3592-r1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 5.1.0.3599: uses deprecated EAPI: 4
+net-dialup/dwun
+  DeprecatedEAPI: version 0.96e-r2: uses deprecated EAPI: 2
 
-net-firewall/fwipsec
-  DeprecatedEAPI: version 0.4.2-r1: uses deprecated EAPI: 0
+net-dialup/freeradius
+  DroppedKeywordWarning: version 3.0.3: keywords dropped: amd64, ppc, ppc64, sparc, x86
 
-net-firewall/ipkungfu
-  DeprecatedEAPI: version 0.5.2-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.6.1: uses deprecated EAPI: 0
+net-dialup/globespan-adsl
+  DeprecatedEAPI: version 0.11-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.12: uses deprecated EAPI: 0
 
-net-firewall/ipsec-tools
-  DeprecatedEAPI: version 0.8.0-r5: uses deprecated EAPI: 4
+net-dialup/hcfpcimodem
+  DeprecatedEAPI: version 1.20: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.21: uses deprecated EAPI: 2
 
-net-firewall/ipset
-  DeprecatedEAPI: version 6.15: uses deprecated EAPI: 4
+net-dialup/intel-536ep
+  DeprecatedEAPI: version 4.71: uses deprecated EAPI: 0
 
-net-firewall/iptables
-  DeprecatedEAPI: version 1.4.17: uses deprecated EAPI: 4
-  ExecutableFile: "files/iptables.init" has unnecessary executable bit
+net-dialup/itund
+  DeprecatedEAPI: version 0.3.1: uses deprecated EAPI: 0
 
-net-firewall/nfacct
-  DeprecatedEAPI: version 1.0.0: uses deprecated EAPI: 4
+net-dialup/linux-atm
+  DeprecatedEAPI: version 2.5.0: uses deprecated EAPI: 0
 
-net-firewall/nufw
-  NonExistentDeps: version 2.2.22-r1: depset depends: nonexistent atoms [ dev-libs/libprelude ]
-  NonExistentDeps: version 2.2.22-r1: depset rdepends: nonexistent atoms [ dev-libs/libprelude ]
+net-dialup/lrzsz
+  DeprecatedEAPI: version 0.12.20-r3: uses deprecated EAPI: 2
 
-net-firewall/pftop
-  DeprecatedEAPI: version 0.5: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.7: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.7-r1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.7-r2: uses deprecated EAPI: 4
+net-dialup/mingetty
+  DeprecatedEAPI: version 1.08: uses deprecated EAPI: 0
 
-net-firewall/quicktables
-  DeprecatedEAPI: version 2.3: uses deprecated EAPI: 0
+net-dialup/minicom
+  DeprecatedEAPI: version 2.6: uses deprecated EAPI: 4
 
-net-firewall/shapecfg
-  DeprecatedEAPI: version 36: uses deprecated EAPI: 0
+net-dialup/mwavem
+  DeprecatedEAPI: version 2.0-r1: uses deprecated EAPI: 2
+
+net-dialup/neocon
+  DeprecatedEAPI: version 20110228: uses deprecated EAPI: 4
+
+net-dialup/picocom
+  DeprecatedEAPI: version 1.7: uses deprecated EAPI: 4
+
+net-dialup/ppp
+  DeprecatedEAPI: version 2.4.4-r25: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 2.4.5-r3: uses deprecated EAPI: 4
+
+net-dialup/pppconfig
+  DeprecatedEAPI: version 2.3.17-r1: uses deprecated EAPI: 0
+
+net-dialup/qtwvdialer
+  DeprecatedEAPI: version 0.4.4_p20091228: uses deprecated EAPI: 2
+
+net-dialup/radiusclient
+  DeprecatedEAPI: version 0.3.2: uses deprecated EAPI: 0
+
+net-dialup/rp-pppoe
+  DeprecatedEAPI: version 3.8-r2: uses deprecated EAPI: 0
+
+net-dialup/speedtouch-usb
+  DeprecatedEAPI: version 3.0.1.2-r3: uses deprecated EAPI: 0
+
+net-dialup/tkvoice
+  DeprecatedEAPI: version 1.5: uses deprecated EAPI: 4
+
+net-dialup/ueagle-atm
+  DeprecatedEAPI: version 1.1-r3: uses deprecated EAPI: 2
+
+net-dialup/ueagle4-atm
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 2
+
+net-dialup/wvdial
+  DeprecatedEAPI: version 1.61: uses deprecated EAPI: 3
+
+net-dialup/xl2tpd
+  DeprecatedEAPI: version 1.3.1-r2: uses deprecated EAPI: 4
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
