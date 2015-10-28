@@ -344,6 +344,8 @@ dev-java/ibm-jre-bin
   DeprecatedEAPI: version 1.6.0.9_p2-r1: uses deprecated EAPI: 4
 
 dev-java/icedtea
+  NonsolvableDeps: version 7.2.6.1-r1: nonsolvable depset(depends) keyword(~arm) profile (default/linux/arm/13.0): solutions: [ dev-java/rhino:1.6 ]
+  NonsolvableDeps: version 7.2.6.1-r1: nonsolvable depset(rdepends) keyword(~arm) profile (default/linux/arm/13.0): solutions: [ dev-java/rhino:1.6 ]
   DroppedKeywordWarning: version 7.2.5.6-r1: keywords dropped: amd64, ppc64, x86
   DroppedKeywordWarning: version 7.2.6.1-r1: keywords dropped: ppc
 
@@ -353,6 +355,9 @@ dev-java/icedtea-bin
   BadRestricts: version 7.2.6.1: unknown restricts: preserve-libs
   DroppedKeywordWarning: version 7.2.5.6-r1: keywords dropped: amd64, x86
   DroppedKeywordWarning: version 7.2.6.1: keywords dropped: ppc
+
+dev-java/icedtea-web
+  NonsolvableDeps: version 1.5.1-r1: nonsolvable depset(depends) keyword(~arm) profile (default/linux/arm/13.0): solutions: [ dev-java/rhino:1.6 ]
 
 dev-java/icu4j
   DeprecatedEAPI: version 3.8.1-r1: uses deprecated EAPI: 0
@@ -964,11 +969,6 @@ dev-java/resin-servlet-api
   DeprecatedEAPI: version 3.0.25: uses deprecated EAPI: 0
   DeprecatedEAPI: version 3.1.12: uses deprecated EAPI: 2
   DeprecatedEAPI: version 4.0.26: uses deprecated EAPI: 2
-
-dev-java/rhino
-  DeprecatedEAPI: version 1.6.5: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.7.2-r2: uses deprecated EAPI: 1
-  DroppedKeywordWarning: version 1.7.7: keywords dropped: arm
 
 dev-java/rngom
   DeprecatedEAPI: version 20051226: uses deprecated EAPI: 0
