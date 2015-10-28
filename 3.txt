@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 3 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-haskell/*' 'net-analyzer/*' 'dev-db/*' 'sci-chemistry/*' 'games-fps/*' 'www-apache/*' 'games-emulation/*' 'net-firewall/*' 'sci-astronomy/*' 'games-engines/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-haskell/*' 'net-analyzer/*' 'dev-db/*' 'sci-chemistry/*' 'games-fps/*' 'www-apache/*' 'games-emulation/*' 'net-firewall/*' 'x11-base/*' 'games-engines/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1730,36 +1730,12 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-sci-astronomy/aatm
-  DeprecatedEAPI: version 0.4.3.1: uses deprecated EAPI: 4
+x11-base/xorg-drivers
+  DeprecatedEAPI: version 1.12: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.13: uses deprecated EAPI: 4
 
-sci-astronomy/ds9-bin
-  DeprecatedEAPI: version 7.1: uses deprecated EAPI: 4
-
-sci-astronomy/galaxy
-  DeprecatedEAPI: version 2.2: uses deprecated EAPI: 4
-
-sci-astronomy/gasgano
-  DeprecatedEAPI: version 2.4.3-r2: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 2.4.5: uses deprecated EAPI: 4
-
-sci-astronomy/predict
-  DeprecatedEAPI: version 2.2.3-r1: uses deprecated EAPI: 4
-
-sci-astronomy/skycat
-  DeprecatedEAPI: version 3.1.2-r1: uses deprecated EAPI: 4
-
-sci-astronomy/stiff
-  DeprecatedEAPI: version 2.1.3: uses deprecated EAPI: 4
-
-sci-astronomy/swarp
-  DeprecatedEAPI: version 2.19.1: uses deprecated EAPI: 4
-
-sci-astronomy/xephem
-  DeprecatedEAPI: version 3.7.5: uses deprecated EAPI: 4
-
-sci-astronomy/xfitsview
-  DeprecatedEAPI: version 2.2-r1: uses deprecated EAPI: 4
+x11-base/xorg-x11
+  DeprecatedEAPI: version 7.4-r2: uses deprecated EAPI: 2
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
