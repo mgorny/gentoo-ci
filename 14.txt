@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 14 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'app-text/*' 'dev-php/*' 'app-i18n/*' 'x11-apps/*' 'xfce-extra/*' 'games-board/*' 'net-proxy/*' 'media-radio/*' 'www-misc/*' 'games-mud/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'app-text/*' 'dev-php/*' 'app-i18n/*' 'x11-apps/*' 'sci-geosciences/*' 'games-board/*' 'net-proxy/*' 'media-radio/*' 'www-misc/*' 'games-mud/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1532,8 +1532,179 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-xfce-extra/xfce4-taskmanager
-  DroppedKeywordWarning: version 1.1.0: keywords dropped: hppa
+sci-geosciences/foxtrotgps
+  DeprecatedEAPI: version 1.1.0: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.1.1: uses deprecated EAPI: 4
+
+sci-geosciences/gdal-grass
+  DeprecatedEAPI: version 1.4.3-r1: uses deprecated EAPI: 4
+  NoFinalNewline: version 2.0.0: ebuild lacks an ending newline
+  NonsolvableDeps: version 2.0.0: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0): solutions: [ >=sci-geosciences/grass-7.0.1[gdal] ]
+  NonsolvableDeps: version 2.0.0: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop): solutions: [ >=sci-geosciences/grass-7.0.1[gdal] ]
+  NonsolvableDeps: version 2.0.0: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/gnome): solutions: [ >=sci-geosciences/grass-7.0.1[gdal] ]
+  NonsolvableDeps: version 2.0.0: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/developer): solutions: [ >=sci-geosciences/grass-7.0.1[gdal] ]
+  NonsolvableDeps: version 2.0.0: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/gnome/systemd): solutions: [ >=sci-geosciences/grass-7.0.1[gdal] ]
+  NonsolvableDeps: version 2.0.0: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/kde): solutions: [ >=sci-geosciences/grass-7.0.1[gdal] ]
+  NonsolvableDeps: version 2.0.0: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/plasma): solutions: [ >=sci-geosciences/grass-7.0.1[gdal] ]
+  NonsolvableDeps: version 2.0.0: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/kde/systemd): solutions: [ >=sci-geosciences/grass-7.0.1[gdal] ]
+  NonsolvableDeps: version 2.0.0: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/plasma/systemd): solutions: [ >=sci-geosciences/grass-7.0.1[gdal] ]
+  NonsolvableDeps: version 2.0.0: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/systemd): solutions: [ >=sci-geosciences/grass-7.0.1[gdal] ]
+  NonsolvableDeps: version 2.0.0: nonsolvable depset(depends) keyword(~amd64) profile (hardened/linux/amd64): solutions: [ >=sci-geosciences/grass-7.0.1[gdal] ]
+  NonsolvableDeps: version 2.0.0: nonsolvable depset(depends) keyword(~amd64) profile (hardened/linux/amd64/no-multilib): solutions: [ >=sci-geosciences/grass-7.0.1[gdal] ]
+  NonsolvableDeps: version 2.0.0: nonsolvable depset(depends) keyword(~amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ >=sci-geosciences/grass-7.0.1[gdal] ]
+  NonsolvableDeps: version 2.0.0: nonsolvable depset(depends) keyword(~amd64) profile (hardened/linux/amd64/selinux): solutions: [ >=sci-geosciences/grass-7.0.1[gdal] ]
+  NonsolvableDeps: version 2.0.0: nonsolvable depset(depends) keyword(~x86) profile (default/linux/x86/13.0): solutions: [ >=sci-geosciences/grass-7.0.1[gdal] ]
+  NonsolvableDeps: version 2.0.0: nonsolvable depset(depends) keyword(~x86) profile (default/linux/x86/13.0/desktop): solutions: [ >=sci-geosciences/grass-7.0.1[gdal] ]
+  NonsolvableDeps: version 2.0.0: nonsolvable depset(depends) keyword(~x86) profile (default/linux/x86/13.0/desktop/gnome): solutions: [ >=sci-geosciences/grass-7.0.1[gdal] ]
+  NonsolvableDeps: version 2.0.0: nonsolvable depset(depends) keyword(~x86) profile (default/linux/x86/13.0/developer): solutions: [ >=sci-geosciences/grass-7.0.1[gdal] ]
+  NonsolvableDeps: version 2.0.0: nonsolvable depset(depends) keyword(~x86) profile (default/linux/x86/13.0/desktop/gnome/systemd): solutions: [ >=sci-geosciences/grass-7.0.1[gdal] ]
+  NonsolvableDeps: version 2.0.0: nonsolvable depset(depends) keyword(~x86) profile (default/linux/x86/13.0/desktop/kde): solutions: [ >=sci-geosciences/grass-7.0.1[gdal] ]
+  NonsolvableDeps: version 2.0.0: nonsolvable depset(depends) keyword(~x86) profile (default/linux/x86/13.0/desktop/plasma): solutions: [ >=sci-geosciences/grass-7.0.1[gdal] ]
+  NonsolvableDeps: version 2.0.0: nonsolvable depset(depends) keyword(~x86) profile (default/linux/x86/13.0/desktop/kde/systemd): solutions: [ >=sci-geosciences/grass-7.0.1[gdal] ]
+  NonsolvableDeps: version 2.0.0: nonsolvable depset(depends) keyword(~x86) profile (default/linux/x86/13.0/desktop/plasma/systemd): solutions: [ >=sci-geosciences/grass-7.0.1[gdal] ]
+  NonsolvableDeps: version 2.0.0: nonsolvable depset(depends) keyword(~x86) profile (hardened/linux/x86): solutions: [ >=sci-geosciences/grass-7.0.1[gdal] ]
+  NonsolvableDeps: version 2.0.0: nonsolvable depset(depends) keyword(~x86) profile (hardened/linux/x86/selinux): solutions: [ >=sci-geosciences/grass-7.0.1[gdal] ]
+  NonsolvableDeps: version 2.0.0: nonsolvable depset(rdepends) keyword(~amd64) profile (default/linux/amd64/13.0): solutions: [ >=sci-geosciences/grass-7.0.1[gdal] ]
+  NonsolvableDeps: version 2.0.0: nonsolvable depset(rdepends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop): solutions: [ >=sci-geosciences/grass-7.0.1[gdal] ]
+  NonsolvableDeps: version 2.0.0: nonsolvable depset(rdepends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/gnome): solutions: [ >=sci-geosciences/grass-7.0.1[gdal] ]
+  NonsolvableDeps: version 2.0.0: nonsolvable depset(rdepends) keyword(~amd64) profile (default/linux/amd64/13.0/developer): solutions: [ >=sci-geosciences/grass-7.0.1[gdal] ]
+  NonsolvableDeps: version 2.0.0: nonsolvable depset(rdepends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/gnome/systemd): solutions: [ >=sci-geosciences/grass-7.0.1[gdal] ]
+  NonsolvableDeps: version 2.0.0: nonsolvable depset(rdepends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/kde): solutions: [ >=sci-geosciences/grass-7.0.1[gdal] ]
+  NonsolvableDeps: version 2.0.0: nonsolvable depset(rdepends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/plasma): solutions: [ >=sci-geosciences/grass-7.0.1[gdal] ]
+  NonsolvableDeps: version 2.0.0: nonsolvable depset(rdepends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/kde/systemd): solutions: [ >=sci-geosciences/grass-7.0.1[gdal] ]
+  NonsolvableDeps: version 2.0.0: nonsolvable depset(rdepends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/plasma/systemd): solutions: [ >=sci-geosciences/grass-7.0.1[gdal] ]
+  NonsolvableDeps: version 2.0.0: nonsolvable depset(rdepends) keyword(~amd64) profile (default/linux/amd64/13.0/systemd): solutions: [ >=sci-geosciences/grass-7.0.1[gdal] ]
+  NonsolvableDeps: version 2.0.0: nonsolvable depset(rdepends) keyword(~amd64) profile (hardened/linux/amd64): solutions: [ >=sci-geosciences/grass-7.0.1[gdal] ]
+  NonsolvableDeps: version 2.0.0: nonsolvable depset(rdepends) keyword(~amd64) profile (hardened/linux/amd64/no-multilib): solutions: [ >=sci-geosciences/grass-7.0.1[gdal] ]
+  NonsolvableDeps: version 2.0.0: nonsolvable depset(rdepends) keyword(~amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ >=sci-geosciences/grass-7.0.1[gdal] ]
+  NonsolvableDeps: version 2.0.0: nonsolvable depset(rdepends) keyword(~amd64) profile (hardened/linux/amd64/selinux): solutions: [ >=sci-geosciences/grass-7.0.1[gdal] ]
+  NonsolvableDeps: version 2.0.0: nonsolvable depset(rdepends) keyword(~x86) profile (default/linux/x86/13.0): solutions: [ >=sci-geosciences/grass-7.0.1[gdal] ]
+  NonsolvableDeps: version 2.0.0: nonsolvable depset(rdepends) keyword(~x86) profile (default/linux/x86/13.0/desktop): solutions: [ >=sci-geosciences/grass-7.0.1[gdal] ]
+  NonsolvableDeps: version 2.0.0: nonsolvable depset(rdepends) keyword(~x86) profile (default/linux/x86/13.0/desktop/gnome): solutions: [ >=sci-geosciences/grass-7.0.1[gdal] ]
+  NonsolvableDeps: version 2.0.0: nonsolvable depset(rdepends) keyword(~x86) profile (default/linux/x86/13.0/developer): solutions: [ >=sci-geosciences/grass-7.0.1[gdal] ]
+  NonsolvableDeps: version 2.0.0: nonsolvable depset(rdepends) keyword(~x86) profile (default/linux/x86/13.0/desktop/gnome/systemd): solutions: [ >=sci-geosciences/grass-7.0.1[gdal] ]
+  NonsolvableDeps: version 2.0.0: nonsolvable depset(rdepends) keyword(~x86) profile (default/linux/x86/13.0/desktop/kde): solutions: [ >=sci-geosciences/grass-7.0.1[gdal] ]
+  NonsolvableDeps: version 2.0.0: nonsolvable depset(rdepends) keyword(~x86) profile (default/linux/x86/13.0/desktop/plasma): solutions: [ >=sci-geosciences/grass-7.0.1[gdal] ]
+  NonsolvableDeps: version 2.0.0: nonsolvable depset(rdepends) keyword(~x86) profile (default/linux/x86/13.0/desktop/kde/systemd): solutions: [ >=sci-geosciences/grass-7.0.1[gdal] ]
+  NonsolvableDeps: version 2.0.0: nonsolvable depset(rdepends) keyword(~x86) profile (default/linux/x86/13.0/desktop/plasma/systemd): solutions: [ >=sci-geosciences/grass-7.0.1[gdal] ]
+  NonsolvableDeps: version 2.0.0: nonsolvable depset(rdepends) keyword(~x86) profile (hardened/linux/x86): solutions: [ >=sci-geosciences/grass-7.0.1[gdal] ]
+  NonsolvableDeps: version 2.0.0: nonsolvable depset(rdepends) keyword(~x86) profile (hardened/linux/x86/selinux): solutions: [ >=sci-geosciences/grass-7.0.1[gdal] ]
+
+sci-geosciences/gebabbel
+  DeprecatedEAPI: version 0.4: uses deprecated EAPI: 4
+
+sci-geosciences/gmt
+  DeprecatedEAPI: version 4.5.6: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 4.5.8: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 4.5.9: uses deprecated EAPI: 4
+  MissingChksum: version 4.5.6: "GSHHS2.1.1_high.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-geosciences/gpsbabel
+  DeprecatedEAPI: version 1.4.3: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.4.4: uses deprecated EAPI: 4
+
+sci-geosciences/gpscorrelate
+  DeprecatedEAPI: version 1.6.1: uses deprecated EAPI: 4
+
+sci-geosciences/gpsd
+  DeprecatedEclass: version 2.95-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 2.95-r1: uses deprecated EAPI: 3
+  NonExistentDeps: version 2.95-r1: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 2.95-r1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  MetadataError: version 2.95-r1: attr(fetchables): error- Metadata Exception: pkg ebuild src: sci-geosciences/gpsd-2.95-r1, attr fetchables
+error: mirror://berlios/gpsd/gpsd-2.95.tar.gz is unparseable
+flagged token- uri mirror://berlios/gpsd/gpsd-2.95.tar.gz isn't a known mirror tier
+  DeprecatedEclass: version 2.96-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 2.96-r1: uses deprecated EAPI: 3
+  NonExistentDeps: version 2.96-r1: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 2.96-r1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  MetadataError: version 2.96-r1: attr(fetchables): error- Metadata Exception: pkg ebuild src: sci-geosciences/gpsd-2.96-r1, attr fetchables
+error: mirror://berlios/gpsd/gpsd-2.96bis.tar.gz is unparseable
+flagged token- uri mirror://berlios/gpsd/gpsd-2.96bis.tar.gz isn't a known mirror tier
+  DeprecatedEclass: version 3.6: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 3.6: uses deprecated EAPI: 4
+  NonExistentDeps: version 3.6: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 3.6: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 3.7: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 3.7: uses deprecated EAPI: 4
+  NonExistentDeps: version 3.7: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 3.7: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 3.8: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 3.8: uses deprecated EAPI: 4
+  NonExistentDeps: version 3.8: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 3.8: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 3.9: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 3.9: uses deprecated EAPI: 4
+  NonExistentDeps: version 3.9: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 3.9: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 3.9-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 3.9-r1: uses deprecated EAPI: 4
+  NonExistentDeps: version 3.9-r1: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 3.9-r1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+sci-geosciences/grass
+  DeprecatedEclass: version 6.4.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 6.4.2: uses deprecated EAPI: 4
+  NoFinalNewline: version 7.0.1-r3: ebuild lacks an ending newline
+  SizeViolation: "files/7.0.1-sec-format.patch" exceeds 20k in size; 37043 bytes total
+  DroppedKeywordWarning: version 7.0.1-r3: keywords dropped: ppc, ppc64
+  UnusedLocalFlags: metadata.xml unused local use flag: [ gdal ]
+
+sci-geosciences/gtk-g-rays2
+  DeprecatedEAPI: version 2.01: uses deprecated EAPI: 4
+
+sci-geosciences/josm-plugins
+  DeprecatedEAPI: version 20101206: uses deprecated EAPI: 3
+
+sci-geosciences/mapnik
+  DeprecatedEclass: version 2.0.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 2.0.1: uses deprecated EAPI: 4
+  DeprecatedEclass: version 2.0.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 2.0.2: uses deprecated EAPI: 4
+  DeprecatedEclass: version 2.1.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 2.1.0: uses deprecated EAPI: 4
+
+sci-geosciences/mapnik-world-boundaries
+  DeprecatedEAPI: version 20090514: uses deprecated EAPI: 2
+
+sci-geosciences/mapserver
+  DeprecatedEclass: version 6.0.1-r2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+sci-geosciences/mc2bsbh
+  DeprecatedEAPI: version 0.0.9: uses deprecated EAPI: 4
+
+sci-geosciences/merkaartor
+  DeprecatedEAPI: version 0.17.2: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.18.1: uses deprecated EAPI: 4
+
+sci-geosciences/mkgmap
+  DeprecatedEAPI: version 1995: uses deprecated EAPI: 4
+
+sci-geosciences/mtkbabel
+  DeprecatedEAPI: version 0.8.2: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.8.3.1: uses deprecated EAPI: 4
+
+sci-geosciences/opencpn
+  DeprecatedEAPI: version 3.0.2: uses deprecated EAPI: 4
+
+sci-geosciences/osm2mp
+  DeprecatedEAPI: version 0.80: uses deprecated EAPI: 4
+
+sci-geosciences/osm2pgsql
+  DeprecatedEclass: version 99999999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+sci-geosciences/osmosis
+  DeprecatedEAPI: version 0.35.1: uses deprecated EAPI: 4
+
+sci-geosciences/qgis
+  UnusedLocalFlags: metadata.xml unused local use flag: [ grass ]
+
+sci-geosciences/qlandkartegt-garmindev
+  DeprecatedEAPI: version 0.3.4: uses deprecated EAPI: 4
+
+sci-geosciences/readosm
+  DeprecatedEAPI: version 1.0.0: uses deprecated EAPI: 4
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
