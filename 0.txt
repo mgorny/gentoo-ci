@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 0 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'sec-policy/*' 'dev-texlive/*' 'sys-devel/*' 'sys-kernel/*' 'www-client/*' 'net-im/*' 'games-misc/*' 'sys-power/*' 'app-mobilephone/*' 'net-nntp/*' 'games-server/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'sec-policy/*' 'dev-texlive/*' 'sys-devel/*' 'app-arch/*' 'www-client/*' 'net-im/*' 'games-misc/*' 'sys-power/*' 'app-mobilephone/*' 'net-nntp/*' 'games-server/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -682,64 +682,225 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-sys-kernel/dracut
-  DeprecatedEAPI: version 034-r4: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 040-r3: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 041-r3: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 043-r2: uses deprecated EAPI: 4
+app-arch/advancecomp
+  DeprecatedEAPI: version 1.15: uses deprecated EAPI: 4
 
-sys-kernel/genkernel
-  DeprecatedEAPI: version 3.4.45.1: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 3.4.48: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 3.4.49.2: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 3.4.50: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 3.4.51.4: uses deprecated EAPI: 3
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DroppedKeywordWarning: version 3.4.50: keywords dropped: sh
+app-arch/afio
+  DeprecatedEAPI: version 2.5: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.5.1: uses deprecated EAPI: 4
 
-sys-kernel/genkernel-next
-  DroppedKeywordWarning: version 60: keywords dropped: ppc, ppc64
-  DroppedKeywordWarning: version 55: keywords dropped: alpha
+app-arch/arc
+  DeprecatedEAPI: version 5.21p: uses deprecated EAPI: 2
 
-sys-kernel/kccmp
+app-arch/arj
+  DeprecatedEAPI: version 3.10.22-r3: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.10.22-r4: uses deprecated EAPI: 4
+
+app-arch/atool
+  DeprecatedEAPI: version 0.39.0: uses deprecated EAPI: 4
+
+app-arch/bsdsfv
+  DeprecatedEAPI: version 1.18-r1: uses deprecated EAPI: 3
+
+app-arch/bzip2
+  DeprecatedEAPI: version 1.0.6: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0.6-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0.6-r2: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 1.0.6-r3: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 1.0.6-r4: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.0.6-r6: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.0.6-r7: uses deprecated EAPI: 4
+
+app-arch/cfv
+  DeprecatedEAPI: version 1.18.2: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.18.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+app-arch/cksfv
+  DeprecatedEAPI: version 1.3.12: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.3.13: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.3.14: uses deprecated EAPI: 4
+
+app-arch/deb2targz
+  DeprecatedEAPI: version 1-r2: uses deprecated EAPI: 4
+
+app-arch/dump
+  DeprecatedEAPI: version 0.4.44-r1: uses deprecated EAPI: 4
+
+app-arch/engrampa
+  NonExistentDeps: version 1.8.0: depset depends: nonexistent atoms [ >=mate-base/mate-file-manager-1.6:0 ]
+  NonExistentDeps: version 1.8.0: depset rdepends: nonexistent atoms [ >=mate-base/mate-file-manager-1.6:0 ]
+
+app-arch/fastjar
+  DeprecatedEAPI: version 0.98-r2: uses deprecated EAPI: 4
+
+app-arch/freeze
+  DeprecatedEAPI: version 2.5.0-r1: uses deprecated EAPI: 4
+
+app-arch/funzix
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+
+app-arch/gzip
+  DeprecatedEAPI: version 1.4: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.5: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.6: uses deprecated EAPI: 4
+
+app-arch/hardlink
+  DeprecatedEAPI: version 0.2.0: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.3.0: uses deprecated EAPI: 4
+
+app-arch/lcab
+  DeprecatedEAPI: version 1.0_beta12: uses deprecated EAPI: 4
+
+app-arch/lha
+  DeprecatedEAPI: version 114i-r7: uses deprecated EAPI: 4
+
+app-arch/lrzip
+  DeprecatedEAPI: version 0.614: uses deprecated EAPI: 4
+
+app-arch/lzip
+  DeprecatedEAPI: version 1.16: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.17: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.18_pre1: uses deprecated EAPI: 4
+
+app-arch/lzma
+  DeprecatedEAPI: version 9.20: uses deprecated EAPI: 0
+
+app-arch/lzop
+  DeprecatedEAPI: version 1.03: uses deprecated EAPI: 2
+
+app-arch/makeself
+  DeprecatedEAPI: version 2.1.5-r2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.2.0-r1: uses deprecated EAPI: 4
+
+app-arch/mt-st
+  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 2
+
+app-arch/ncompress
+  DeprecatedEAPI: version 4.2.4.4: uses deprecated EAPI: 4
+
+app-arch/p7zip
+  DeprecatedEAPI: version 9.20.1-r5: uses deprecated EAPI: 4
+
+app-arch/par
+  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 2
+
+app-arch/pax
+  DeprecatedEAPI: version 3.4.12.16: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 3.4.12.16-r1: uses deprecated EAPI: 4
+
+app-arch/pbzip2
+  DeprecatedEAPI: version 1.1.8: uses deprecated EAPI: 4
+
+app-arch/pdv
+  DeprecatedEAPI: version 1.5.1-r2: uses deprecated EAPI: 4
+
+app-arch/pet2tgz
   DeprecatedEAPI: version 0.3: uses deprecated EAPI: 4
 
-sys-kernel/linux-firmware
-  DeprecatedEclass: version 99999999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+app-arch/ppmd
+  DeprecatedEAPI: version 9.1_p14: uses deprecated EAPI: 3
 
-sys-kernel/linux-headers
-  DeprecatedEAPI: version 3.18: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 3.19: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 4.0: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 4.1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 4.2: uses deprecated EAPI: 4
+app-arch/pure-sfv
+  DeprecatedEAPI: version 0.3-r1: uses deprecated EAPI: 2
 
-sys-kernel/raspberrypi-image
-  DeprecatedEclass: version 3.10.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+app-arch/pxz
+  DeprecatedEAPI: version 5.0_pre20110811: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-sys-kernel/raspberrypi-sources
-  DeprecatedEclass: version 3.10.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DeprecatedEclass: version 3.12.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DeprecatedEclass: version 3.14.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DeprecatedEclass: version 3.18.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DeprecatedEclass: version 3.19.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+app-arch/rar
+  DeprecatedEAPI: version 4.2.0: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 5.0.0: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 5.1.0: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 5.2.1: uses deprecated EAPI: 4
 
-sys-kernel/spl
-  DeprecatedEAPI: version 0.6.0_rc13-r2: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.6.0_rc14-r3: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.6.1-r3: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.6.2-r5: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.6.3-r1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.6.4.2: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.6.5.2: uses deprecated EAPI: 4
+app-arch/rpm2targz
+  DeprecatedEAPI: version 9.0.0.5g: uses deprecated EAPI: 4
 
-sys-kernel/zen-sources
-  DeprecatedEclass: version 3.8.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DeprecatedEclass: version 3.9.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DeprecatedEclass: version 3.10.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DeprecatedEclass: version 3.11.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DeprecatedEclass: version 3.12.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DeprecatedEclass: version 3.13.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+app-arch/rzip
+  DeprecatedEAPI: version 2.1-r2: uses deprecated EAPI: 2
+
+app-arch/stuffit
+  DeprecatedEAPI: version 5.2.0.611: uses deprecated EAPI: 0
+
+app-arch/tapeutils
+  DeprecatedEAPI: version 0.4: uses deprecated EAPI: 0
+
+app-arch/tar
+  DeprecatedEAPI: version 1.26-r1: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 1.27.1-r2: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.28: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.28-r1: uses deprecated EAPI: 4
+  SizeViolation: "files/tar-1.26-xattr.patch" exceeds 20k in size; 29828 bytes total
+
+app-arch/torrentzip
+  DeprecatedEAPI: version 0.2-r1: uses deprecated EAPI: 0
+
+app-arch/unace
+  DeprecatedEAPI: version 2.5-r3: uses deprecated EAPI: 4
+
+app-arch/unadf
+  DeprecatedEAPI: version 0.7.9b: uses deprecated EAPI: 0
+
+app-arch/unar
+  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.5: uses deprecated EAPI: 4
+
+app-arch/unarj
+  DeprecatedEAPI: version 2.65: uses deprecated EAPI: 0
+
+app-arch/undms
+  DeprecatedEAPI: version 1.3-r1: uses deprecated EAPI: 0
+
+app-arch/unlzx
+  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 0
+
+app-arch/unmakeself
+  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 2
+
+app-arch/unp
+  DeprecatedEAPI: version 2.0_pre7: uses deprecated EAPI: 2
+
+app-arch/unrar-gpl
+  DeprecatedEAPI: version 0.0.1_p20080417-r1: uses deprecated EAPI: 4
+  NonExistentDeps: version 0.0.1_p20080417-r2: depset depends: nonexistent atoms [ dev-libs/argp ]
+  DeprecatedEAPI: version 0.0.1_p20080417-r2: uses deprecated EAPI: 4
+
+app-arch/unshield
+  DeprecatedEAPI: version 0.6_p20120308: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6_p20120308-r1: uses deprecated EAPI: 4
+
+app-arch/unzip
+  DeprecatedEAPI: version 5.52-r2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 6.0-r3: uses deprecated EAPI: 2
+
+app-arch/xar
+  DeprecatedEAPI: version 1.5.2-r1: uses deprecated EAPI: 4
+
+app-arch/xdms
+  DeprecatedEAPI: version 1.3.2: uses deprecated EAPI: 0
+
+app-arch/xz-utils
+  DeprecatedEAPI: version 5.0.8: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 5.2.0: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 5.2.1-r1: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 5.2.2: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+app-arch/zip
+  DeprecatedEAPI: version 2.32-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 3.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 3.0-r1: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 3.0-r2: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 3.0-r3: uses deprecated EAPI: 4
+
+app-arch/zoo
+  DeprecatedEAPI: version 2.10-r4: uses deprecated EAPI: 0
+
+app-arch/zpaq-extras
+  DeprecatedEAPI: version 2: uses deprecated EAPI: 3
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
