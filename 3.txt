@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 3 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-haskell/*' 'net-analyzer/*' 'dev-db/*' 'app-office/*' 'games-fps/*' 'www-apache/*' 'sci-physics/*' 'net-firewall/*' 'x11-base/*' 'games-engines/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-haskell/*' 'net-analyzer/*' 'dev-db/*' 'app-office/*' 'games-fps/*' 'www-apache/*' 'games-emulation/*' 'net-firewall/*' 'x11-base/*' 'games-engines/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1499,51 +1499,41 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-sci-physics/bullet
-  DeprecatedEAPI: version 2.80: uses deprecated EAPI: 4
+games-emulation/desmume
+  DeprecatedEAPI: version 0.9.8: uses deprecated EAPI: 2
 
-sci-physics/clhep
-  DeprecatedEAPI: version 2.0.4.6: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 2.1.0.1: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 2.1.2.4: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 2.1.3.1: uses deprecated EAPI: 4
+games-emulation/dolphin
+  WhitespaceFound: version 4.0-r2: ebuild has trailing whitespace on line 101
+  WhitespaceFound: version 4.0.2-r7: ebuild has trailing whitespace on line 102
 
-sci-physics/geant
-  DeprecatedEAPI: version 3.21.14-r2: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 3.21.14-r3: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 4.9.4_p03: uses deprecated EAPI: 4
+games-emulation/gnomeboyadvance
+  DeprecatedEclass: version 0.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 2
+  MetadataError: version 0.1: attr(fetchables): error- Metadata Exception: pkg ebuild src: games-emulation/gnomeboyadvance-0.1, attr fetchables
+error: mirror://berlios/gnomeboyadvance/gnomeboyadvance-0.1.tar.bz2 is unparseable
+flagged token- uri mirror://berlios/gnomeboyadvance/gnomeboyadvance-0.1.tar.bz2 isn't a known mirror tier
 
-sci-physics/h2o-gtk
-  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 4
+games-emulation/gxmame
+  DeprecatedEAPI: version 0.35_beta2: uses deprecated EAPI: 4
 
-sci-physics/harminv
-  DeprecatedEAPI: version 1.3.1: uses deprecated EAPI: 4
+games-emulation/lxdream
+  DeprecatedEAPI: version 0.9.1-r2: uses deprecated EAPI: 4
 
-sci-physics/hepmc
-  DeprecatedEAPI: version 2.06.03: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 2.06.08: uses deprecated EAPI: 4
+games-emulation/mekanix
+  DeprecatedEAPI: version 070: uses deprecated EAPI: 0
 
-sci-physics/heppdt
-  DeprecatedEAPI: version 3.04.01: uses deprecated EAPI: 4
+games-emulation/mupen64plus
+  DeprecatedEAPI: version 1.5-r1: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 1.5-r2: uses deprecated EAPI: 2
 
-sci-physics/herwig
-  DeprecatedEAPI: version 6.5.10: uses deprecated EAPI: 2
+games-emulation/nestopia
+  DroppedKeywordWarning: version 1.46.2: keywords dropped: ppc
 
-sci-physics/lhapdf
-  DeprecatedEAPI: version 5.8.4: uses deprecated EAPI: 2
+games-emulation/pcsx2
+  SizeViolation: "files/pcsx2-1.3.1-cflags.patch" exceeds 20k in size; 20865 bytes total
 
-sci-physics/lightspeed
-  DeprecatedEAPI: version 1.2a-r1: uses deprecated EAPI: 4
-
-sci-physics/meep
-  DeprecatedEAPI: version 1.1.1: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 4
-
-sci-physics/mpb
-  DeprecatedEAPI: version 1.4.2-r2: uses deprecated EAPI: 4
-
-sci-physics/xfoil
-  DeprecatedEAPI: version 6.97: uses deprecated EAPI: 4
+games-emulation/xe
+  DeprecatedEAPI: version 2.16.2: uses deprecated EAPI: 4
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
