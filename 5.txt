@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 5 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-libs/*' 'app-misc/*' 'media-fonts/*' 'app-editors/*' 'x11-wm/*' 'net-irc/*' 'app-eselect/*' 'app-accessibility/*' 'perl-core/*' 'net-news/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-libs/*' 'app-misc/*' 'media-fonts/*' 'app-editors/*' 'x11-wm/*' 'net-irc/*' 'app-eselect/*' 'app-accessibility/*' 'mail-mta/*' 'net-news/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -2636,6 +2636,50 @@ WARNING pkgcore: metadata.dtd cannot be opened from
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
+
+mail-mta/courier
+  DeprecatedEAPI: version 0.71: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.74.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.74.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.74.1-r1: uses deprecated EAPI: 0
+  DroppedKeywordWarning: version 0.74.0: keywords dropped: alpha, ia64, ppc, sparc
+
+mail-mta/esmtp
+  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 0
+
+mail-mta/exim
+  DroppedKeywordWarning: version 4.86-r2: keywords dropped: alpha, ia64, ppc, sparc
+
+mail-mta/mini-qmail
+  DeprecatedEAPI: version 1.05: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.05-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.06: uses deprecated EAPI: 0
+
+mail-mta/msmtp
+  DeprecatedEclass: version 1.4.31-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+mail-mta/netqmail
+  DeprecatedEAPI: version 1.06: uses deprecated EAPI: 0
+
+mail-mta/postfix
+  NonsolvableDeps: version 3.0.2: nonsolvable depset(rdepends) keyword(sparc) profile (default/linux/sparc/13.0): solutions: [ net-mail/dovecot ]
+  NonsolvableDeps: version 3.0.2: nonsolvable depset(rdepends) keyword(sparc) profile (default/linux/sparc/13.0/desktop): solutions: [ net-mail/dovecot ]
+  NonsolvableDeps: version 3.0.2: nonsolvable depset(rdepends) keyword(sparc) profile (default/linux/sparc/13.0/desktop/gnome): solutions: [ net-mail/dovecot ]
+  NonsolvableDeps: version 3.0.2: nonsolvable depset(rdepends) keyword(sparc) profile (default/linux/sparc/13.0/developer): solutions: [ net-mail/dovecot ]
+  NonsolvableDeps: version 3.0.2: nonsolvable depset(rdepends) keyword(sparc) profile (default/linux/sparc/13.0/desktop/gnome/systemd): solutions: [ net-mail/dovecot ]
+  NonsolvableDeps: version 3.0.2: nonsolvable depset(rdepends) keyword(sparc) profile (default/linux/sparc/13.0/desktop/kde): solutions: [ net-mail/dovecot ]
+  NonsolvableDeps: version 3.0.2: nonsolvable depset(rdepends) keyword(sparc) profile (default/linux/sparc/13.0/desktop/kde/systemd): solutions: [ net-mail/dovecot ]
+  DroppedKeywordWarning: version 2.11.7: keywords dropped: mips, s390
+
+mail-mta/qmail-ldap
+  DeprecatedEAPI: version 1.03-r8: uses deprecated EAPI: 0
+
+mail-mta/qpsmtpd
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DroppedKeywordWarning: version 0.95: keywords dropped: amd64, x86
+
+mail-mta/ssmtp
+  DeprecatedEAPI: version 2.64-r2: uses deprecated EAPI: 4
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
