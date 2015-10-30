@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 5 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-libs/*' 'app-misc/*' 'media-fonts/*' 'app-editors/*' 'x11-wm/*' 'net-irc/*' 'app-eselect/*' 'app-accessibility/*' 'mail-mta/*' 'net-news/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-libs/*' 'app-misc/*' 'media-fonts/*' 'sys-kernel/*' 'x11-wm/*' 'net-irc/*' 'app-eselect/*' 'app-accessibility/*' 'mail-mta/*' 'net-news/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -2020,149 +2020,64 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-app-editors/aee
-  DeprecatedEAPI: version 2.2.15b: uses deprecated EAPI: 4
+sys-kernel/dracut
+  DeprecatedEAPI: version 034-r4: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 040-r3: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 041-r3: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 043-r2: uses deprecated EAPI: 4
 
-app-editors/amyedit
-  DeprecatedEAPI: version 1.0-r2: uses deprecated EAPI: 3
+sys-kernel/genkernel
+  DeprecatedEAPI: version 3.4.45.1: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.4.48: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.4.49.2: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.4.50: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.4.51.4: uses deprecated EAPI: 3
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DroppedKeywordWarning: version 3.4.50: keywords dropped: sh
 
-app-editors/bvi
-  DeprecatedEAPI: version 1.3.2-r2: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.4.0_alpha: uses deprecated EAPI: 4
+sys-kernel/genkernel-next
+  DroppedKeywordWarning: version 60: keywords dropped: ppc, ppc64
+  DroppedKeywordWarning: version 55: keywords dropped: alpha
 
-app-editors/cooledit
-  DeprecatedEAPI: version 3.17.17-r1: uses deprecated EAPI: 0
+sys-kernel/kccmp
+  DeprecatedEAPI: version 0.3: uses deprecated EAPI: 4
 
-app-editors/dhex
-  DeprecatedEAPI: version 0.68: uses deprecated EAPI: 4
+sys-kernel/linux-firmware
+  DeprecatedEclass: version 99999999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-app-editors/editra
-  DeprecatedEclass: version 0.7.20: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  NonExistentDeps: version 0.7.20: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
-  NonExistentDeps: version 0.7.20: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+sys-kernel/linux-headers
+  DeprecatedEAPI: version 3.18: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 3.19: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 4.0: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 4.1: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 4.2: uses deprecated EAPI: 4
 
-app-editors/ee
-  DeprecatedEAPI: version 1.4.6: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.5.2: uses deprecated EAPI: 4
+sys-kernel/raspberrypi-image
+  DeprecatedEclass: version 3.10.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-app-editors/emact
-  DeprecatedEAPI: version 2.56.0: uses deprecated EAPI: 4
+sys-kernel/raspberrypi-sources
+  DeprecatedEclass: version 3.10.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEclass: version 3.12.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEclass: version 3.14.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEclass: version 3.18.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEclass: version 3.19.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-app-editors/ersatz-emacs
-  DeprecatedEAPI: version 20060515: uses deprecated EAPI: 4
+sys-kernel/spl
+  DeprecatedEAPI: version 0.6.0_rc13-r2: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.0_rc14-r3: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.1-r3: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.2-r5: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.3-r1: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.4.2: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.5.2: uses deprecated EAPI: 4
 
-app-editors/fe
-  DeprecatedEAPI: version 1.8: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.9: uses deprecated EAPI: 4
-
-app-editors/fte
-  DeprecatedEAPI: version 20051115-r3: uses deprecated EAPI: 4
-
-app-editors/gobby
-  DeprecatedEAPI: version 0.4.13: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.4.94: uses deprecated EAPI: 2
-  DroppedKeywordWarning: version 0.4.94: keywords dropped: ppc
-
-app-editors/gummi
-  DeprecatedEAPI: version 0.6.5: uses deprecated EAPI: 4
-
-app-editors/gvim
-  NonExistentDeps: version 7.4.273: depset depends: nonexistent atoms [ dev-lang/ruby:1.8 ]
-  NonExistentDeps: version 7.4.273: depset rdepends: nonexistent atoms [ dev-lang/ruby:1.8 ]
-
-app-editors/jasspa-microemacs
-  DeprecatedEAPI: version 20091011-r2: uses deprecated EAPI: 4
-
-app-editors/jed
-  DeprecatedEAPI: version 0.99.19: uses deprecated EAPI: 4
-
-app-editors/jedit
-  DroppedKeywordWarning: version 5.2.0: keywords dropped: ppc64
-
-app-editors/joe
-  DeprecatedEAPI: version 3.7-r2: uses deprecated EAPI: 3
-
-app-editors/jove
-  DeprecatedEAPI: version 4.16.0.73: uses deprecated EAPI: 4
-
-app-editors/jupp
-  DeprecatedEAPI: version 3.1_p23: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 3.1_p24: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 3.1_p26: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 3.1_p27: uses deprecated EAPI: 4
-
-app-editors/le
-  DeprecatedEAPI: version 1.14.3: uses deprecated EAPI: 0
-
-app-editors/leo
-  DeprecatedEclass: version 4.11: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 4.11: uses deprecated EAPI: 3
-  NonExistentDeps: version 4.11: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
-  NonExistentDeps: version 4.11: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
-
-app-editors/lfhex
-  DeprecatedEAPI: version 0.42: uses deprecated EAPI: 4
-
-app-editors/mg
-  DeprecatedEAPI: version 20110905-r1: uses deprecated EAPI: 4
-
-app-editors/mp
-  DeprecatedEAPI: version 5.2.2: uses deprecated EAPI: 4
-
-app-editors/nano
-  DeprecatedEAPI: version 2.3.6: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 2.4.0: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 2.4.1: uses deprecated EAPI: 4
-
-app-editors/ng
-  DeprecatedEAPI: version 1.5_beta1: uses deprecated EAPI: 0
-
-app-editors/nvi
-  DeprecatedEAPI: version 1.81.6-r4: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.81.6-r5: uses deprecated EAPI: 4
-
-app-editors/qwriter
-  DeprecatedEAPI: version 0.1.9: uses deprecated EAPI: 2
-
-app-editors/shed
-  DeprecatedEAPI: version 1.12: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.13: uses deprecated EAPI: 4
-
-app-editors/uemacs-pk
-  DeprecatedEAPI: version 4.0.15_p20130222: uses deprecated EAPI: 4
-
-app-editors/vim
-  NonExistentDeps: version 7.4.273: depset depends: nonexistent atoms [ dev-lang/ruby:1.8 ]
-  NonExistentDeps: version 7.4.273: depset rdepends: nonexistent atoms [ dev-lang/ruby:1.8 ]
-
-app-editors/wily
-  DeprecatedEAPI: version 1.0-r1: uses deprecated EAPI: 0
-
-app-editors/wxhexeditor
-  DeprecatedEAPI: version 0.20: uses deprecated EAPI: 4
-
-app-editors/xemacs
-  WhitespaceFound: version 21.4.22-r4: ebuild has trailing whitespace on line 183
-  WhitespaceFound: version 21.4.24: ebuild has trailing whitespace on line 166
-  DeprecatedEAPI: version 21.5.31: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 21.5.33: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 21.5.34-r2: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 21.5.34-r3: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 21.5.34-r4: uses deprecated EAPI: 4
-
-app-editors/xmlcopyeditor
-  DeprecatedEAPI: version 1.2.0.6: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.2.0.9: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.2.0.12: uses deprecated EAPI: 4
-
-app-editors/yudit
-  DeprecatedEAPI: version 2.9.2: uses deprecated EAPI: 4
-
-app-editors/zile
-  DeprecatedEAPI: version 2.3.24-r1: uses deprecated EAPI: 4
-
-app-editors/znotes
-  DeprecatedEAPI: version 0.4.5: uses deprecated EAPI: 4
+sys-kernel/zen-sources
+  DeprecatedEclass: version 3.8.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEclass: version 3.9.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEclass: version 3.10.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEclass: version 3.11.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEclass: version 3.12.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEclass: version 3.13.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
