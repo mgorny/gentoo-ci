@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 4 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-ruby/*' 'media-video/*' 'app-leechcraft/*' 'app-editors/*' 'games-arcade/*' 'mail-client/*' 'net-fs/*' 'app-pda/*' 'perl-core/*' 'sci-misc/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-ruby/*' 'app-misc/*' 'app-leechcraft/*' 'app-editors/*' 'games-arcade/*' 'mail-client/*' 'net-fs/*' 'app-pda/*' 'perl-core/*' 'sci-misc/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -159,452 +159,574 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-media-video/abby
-  DeprecatedEAPI: version 0.4.8: uses deprecated EAPI: 4
+app-misc/abook
+  DeprecatedEAPI: version 0.6.0_pre2: uses deprecated EAPI: 3
 
-media-video/aegisub
-  DeprecatedEAPI: version 2.1.9: uses deprecated EAPI: 4
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-media-video/alevt
-  DeprecatedEAPI: version 1.6.2: uses deprecated EAPI: 4
-
-media-video/aravis
-  DeprecatedEAPI: version 0.1.14: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.1.15: uses deprecated EAPI: 4
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
-
-media-video/arista
-  DeprecatedEclass: version 0.9.5: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.9.5: uses deprecated EAPI: 3
-  NonExistentDeps: version 0.9.5: depset rdepends: nonexistent atoms [ dev-lang/python:2.6 ]
-
-media-video/asfrecorder
+app-misc/acdctl
   DeprecatedEAPI: version 1.1: uses deprecated EAPI: 4
 
-media-video/atomicparsley
-  DeprecatedEAPI: version 0.9.0: uses deprecated EAPI: 4
+app-misc/activylircd
+  DeprecatedEAPI: version 0.4: uses deprecated EAPI: 4
 
-media-video/avidemux
-  UncheckableDep: version 2.6.2-r1: depset depends: could not be checked due to pkgcore limitation
-  UncheckableDep: version 2.6.2-r1: depset rdepends: could not be checked due to pkgcore limitation
-  UncheckableDep: version 2.6.2-r1: depset post_rdepends: could not be checked due to pkgcore limitation
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+app-misc/astrolog
+  DeprecatedEAPI: version 5.40-r1: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 5.40-r2: uses deprecated EAPI: 4
 
-media-video/avinfo
-  DeprecatedEAPI: version 1.0_alpha15: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.0_alpha15_p1: uses deprecated EAPI: 4
+app-misc/astrolog-ephemeris
+  DeprecatedEAPI: version 5.40: uses deprecated EAPI: 0
 
-media-video/bbtools
-  DeprecatedEAPI: version 1.9: uses deprecated EAPI: 4
+app-misc/away
+  DeprecatedEAPI: version 0.9.5-r1: uses deprecated EAPI: 0
 
-media-video/bdsup2sub
-  DeprecatedEAPI: version 4.0.0-r1: uses deprecated EAPI: 3
+app-misc/basenji
+  DeprecatedEAPI: version 1.0.0: uses deprecated EAPI: 4
 
-media-video/bino
-  DeprecatedEAPI: version 1.3.0: uses deprecated EAPI: 3
+app-misc/beanstalkd
+  DeprecatedEAPI: version 1.4.6-r1: uses deprecated EAPI: 3
 
-media-video/blinkensim
-  DeprecatedEAPI: version 2.7: uses deprecated EAPI: 0
+app-misc/beep
+  DeprecatedEAPI: version 1.2.2-r1: uses deprecated EAPI: 0
 
-media-video/blinkenthemes
-  DeprecatedEAPI: version 0.10: uses deprecated EAPI: 0
+app-misc/bfm
+  DeprecatedEAPI: version 1.2-r1: uses deprecated EAPI: 0
 
-media-video/blinkentools
-  DeprecatedEAPI: version 2.9: uses deprecated EAPI: 0
+app-misc/bgrep
+  DeprecatedEAPI: version 0_p20110121: uses deprecated EAPI: 4
 
-media-video/bombono-dvd
-  DeprecatedEAPI: version 1.2.2: uses deprecated EAPI: 4
-  SizeViolation: "files/bombono-dvd-boost-1.51.0-fix.patch" exceeds 20k in size; 23903 bytes total
+app-misc/binclock
+  DeprecatedEAPI: version 1.5: uses deprecated EAPI: 2
 
-media-video/ccextractor
-  DeprecatedEAPI: version 0.59: uses deprecated EAPI: 4
+app-misc/birthday
+  DeprecatedEAPI: version 1.6.2: uses deprecated EAPI: 0
 
-media-video/chaplin
-  DeprecatedEAPI: version 1.10-r1: uses deprecated EAPI: 4
+app-misc/bottlerocket
+  DeprecatedEAPI: version 0.04c-r1: uses deprecated EAPI: 2
 
-media-video/cheese
-  DroppedKeywordWarning: version 3.14.2: keywords dropped: alpha, sparc
+app-misc/btail
+  DeprecatedEAPI: version 0.3: uses deprecated EAPI: 4
 
-media-video/cinelerra
-  SizeViolation: "files/cinelerra-ffmpeg29.patch" exceeds 20k in size; 22007 bytes total
+app-misc/ca-certificates
+  DeprecatedEAPI: version 20140927.3.17.2: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 20141019.3.17.4: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 20141019.3.19: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 20141019.3.19-r1: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 20150426.3.20: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 20150426.3.20-r1: uses deprecated EAPI: 4
 
-media-video/coherence
-  DeprecatedEclass: version 0.6.6.2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.6.6.2: uses deprecated EAPI: 2
-  NonExistentDeps: version 0.6.6.2: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
-  NonExistentDeps: version 0.6.6.2: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+app-misc/cadubi
+  DeprecatedEAPI: version 1.3: uses deprecated EAPI: 0
 
-media-video/cpdvd
-  DeprecatedEAPI: version 1.10-r1: uses deprecated EAPI: 2
+app-misc/calendar
+  DeprecatedEAPI: version 0.9.1: uses deprecated EAPI: 0
 
-media-video/cpvts
-  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 0
+app-misc/cbrpager
+  DeprecatedEAPI: version 0.9.20: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 0.9.22: uses deprecated EAPI: 3
 
-media-video/cxfe
-  DeprecatedEAPI: version 0.9.2: uses deprecated EAPI: 0
+app-misc/cbview
+  DeprecatedEAPI: version 0.06: uses deprecated EAPI: 0
 
-media-video/devede
-  DeprecatedEclass: version 3.16.9: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 3.16.9: uses deprecated EAPI: 2
-  DeprecatedEclass: version 3.21.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 3.21.0: uses deprecated EAPI: 4
-  DeprecatedEclass: version 3.22.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 3.22.0: uses deprecated EAPI: 4
-  DeprecatedEclass: version 3.23.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 3.23.0: uses deprecated EAPI: 4
-  NonExistentDeps: version 3.23.0: depset rdepends: nonexistent atoms [ media-video/mplayer2 ]
-
-media-video/dfbsee
-  DeprecatedEAPI: version 0.7.4-r1: uses deprecated EAPI: 4
-
-media-video/dirac
-  DeprecatedEAPI: version 1.0.2: uses deprecated EAPI: 4
-
-media-video/dv2sub
+app-misc/cdcat
   DeprecatedEAPI: version 0.3: uses deprecated EAPI: 0
 
-media-video/dvbackup
-  DeprecatedEAPI: version 0.0.4-r1: uses deprecated EAPI: 2
+app-misc/cdctl
+  DeprecatedEAPI: version 0.15: uses deprecated EAPI: 0
 
-media-video/dvd-slideshow
-  DeprecatedEAPI: version 0.8.4.2: uses deprecated EAPI: 4
+app-misc/cdircmp
+  DeprecatedEAPI: version 0.3-r1: uses deprecated EAPI: 2
 
-media-video/dvd9to5
-  DeprecatedEAPI: version 0.1.7: uses deprecated EAPI: 0
+app-misc/cdspeed
+  DeprecatedEAPI: version 0.4-r1: uses deprecated EAPI: 2
 
-media-video/dvdbackup
-  DeprecatedEAPI: version 0.4.1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.4.2: uses deprecated EAPI: 4
+app-misc/cmatrix
+  DeprecatedEAPI: version 1.2a-r1: uses deprecated EAPI: 0
 
-media-video/dvdimagecmp
-  DeprecatedEAPI: version 0.3-r1: uses deprecated EAPI: 0
+app-misc/color
+  DeprecatedEAPI: version 1.2-r1: uses deprecated EAPI: 3
 
-media-video/dvdstyler
-  WrongIndentFound: version 2.7.2: ebuild has whitespace in indentation on line 58
-  WrongIndentFound: version 2.9.2: ebuild has whitespace in indentation on line 58
-  WrongIndentFound: version 2.9.3: ebuild has whitespace in indentation on line 59
-  WrongIndentFound: version 2.9.4: ebuild has whitespace in indentation on line 60
-  WrongIndentFound: version 2.9.4-r1: ebuild has whitespace in indentation on line 62
+app-misc/countrycodes
+  DeprecatedEAPI: version 1.0.5-r1: uses deprecated EAPI: 3
 
-media-video/dvgrab
-  DeprecatedEAPI: version 3.5: uses deprecated EAPI: 0
+app-misc/cstream
+  DeprecatedEAPI: version 3.0.0: uses deprecated EAPI: 2
 
-media-video/emovix
-  DeprecatedEAPI: version 0.9.0: uses deprecated EAPI: 0
+app-misc/dailystrips
+  DeprecatedEAPI: version 1.0.28-r2: uses deprecated EAPI: 0
 
-media-video/episoder
-  DeprecatedEAPI: version 0.4.7: uses deprecated EAPI: 0
+app-misc/datefudge
+  DeprecatedEAPI: version 1.17: uses deprecated EAPI: 4
 
-media-video/ffdiaporama
-  SizeViolation: "files/ffdiaporama-2.1-libav10.patch" exceeds 20k in size; 24734 bytes total
+app-misc/datovka
+  DeprecatedEclass: version 3.0.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 3.0.3: uses deprecated EAPI: 4
 
-media-video/ffmpeg
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DroppedKeywordWarning: version 2.8: keywords dropped: ia64, sparc
+app-misc/detachtty
+  DeprecatedEAPI: version 9: uses deprecated EAPI: 0
 
-media-video/ffmpeg2theora
-  DeprecatedEAPI: version 0.29-r1: uses deprecated EAPI: 4
-  NonExistentDeps: version 0.29-r1: depset depends: nonexistent atoms [ <media-video/libav-0.8.2-r1 ]
-  NonExistentDeps: version 0.29-r1: depset rdepends: nonexistent atoms [ <media-video/libav-0.8.2-r1 ]
+app-misc/dnetc
+  DeprecatedEAPI: version 2.9107.516: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 2.9108.517: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 2.9109.518: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 2.9110.519: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 2.9110.519b: uses deprecated EAPI: 2
+  DroppedKeywordWarning: version 2.9110.519b: keywords dropped: x86
+  DroppedKeywordWarning: version 2.9110.519: keywords dropped: amd64, ppc
+  DroppedKeywordWarning: version 2.9108.517: keywords dropped: sparc
 
-media-video/flumotion
-  DeprecatedEclass: version 0.8.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.8.1: uses deprecated EAPI: 3
-  NonExistentDeps: version 0.8.1: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
-  NonExistentDeps: version 0.8.1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+app-misc/dtach
+  DeprecatedEAPI: version 0.8-r1: uses deprecated EAPI: 4
 
-media-video/flvstreamer
-  DeprecatedEAPI: version 2.1c: uses deprecated EAPI: 2
-
-media-video/frameworks
-  DeprecatedEAPI: version 0.3.7: uses deprecated EAPI: 2
-
-media-video/get_flash_videos
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-media-video/gnome-mplayer
-  NonExistentDeps: version 1.0.8: depset rdepends: nonexistent atoms [ media-video/mplayer2 ]
-  NonExistentDeps: version 1.0.9: depset rdepends: nonexistent atoms [ media-video/mplayer2 ]
-
-media-video/gnome-subtitles
-  DeprecatedEclass: version 1.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 4
-
-media-video/gpac
-  DeprecatedEAPI: version 0.5.0-r1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.5.1_pre5456: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.5.2: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
-
-media-video/griffith
-  DeprecatedEclass: version 0.13: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.13: uses deprecated EAPI: 4
-
-media-video/h264enc
-  DeprecatedEAPI: version 9.4.0: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 9.4.1: uses deprecated EAPI: 4
-
-media-video/hasciicam
-  DeprecatedEAPI: version 1.1.1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.1.2: uses deprecated EAPI: 4
-
-media-video/hwdecode-demos
-  DeprecatedEAPI: version 0.9.5: uses deprecated EAPI: 2
-
-media-video/imagination
-  DeprecatedEAPI: version 3.0: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 3.0-r1: uses deprecated EAPI: 4
-
-media-video/istanbul
-  DeprecatedEclass: version 0.2.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEclass: version 0.2.2.1_pre20120909: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-
-media-video/jubler
-  DeprecatedEAPI: version 4.6.1-r3: uses deprecated EAPI: 2
-
-media-video/kplayer
-  NonExistentDeps: version 0.7.2-r1: depset rdepends: nonexistent atoms [ media-video/mplayer2 ]
-
-media-video/libav
-  NonExistentDeps: version 9.14: depset depends: nonexistent atoms [ <dev-libs/libcdio-0.90 ]
-  NonExistentDeps: version 9.14: depset rdepends: nonexistent atoms [ <dev-libs/libcdio-0.90 ]
-  NonExistentDeps: version 9.17: depset depends: nonexistent atoms [ <dev-libs/libcdio-0.90 ]
-  NonExistentDeps: version 9.17: depset rdepends: nonexistent atoms [ <dev-libs/libcdio-0.90 ]
-  NonExistentDeps: version 10.5: depset depends: nonexistent atoms [ <dev-libs/libcdio-0.90 ]
-  NonExistentDeps: version 10.5: depset rdepends: nonexistent atoms [ <dev-libs/libcdio-0.90 ]
-  DeprecatedEclass: version 10.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  NonExistentDeps: version 10.9999: depset depends: nonexistent atoms [ <dev-libs/libcdio-0.90 ]
-  NonExistentDeps: version 10.9999: depset rdepends: nonexistent atoms [ <dev-libs/libcdio-0.90 ]
-
-media-video/lives
-  DeprecatedEAPI: version 1.4.6: uses deprecated EAPI: 4
-  NonExistentDeps: version 1.4.6: depset rdepends: nonexistent atoms [ dev-lang/python:2.6 ]
-
-media-video/luvcview
-  DeprecatedEAPI: version 0.2.6: uses deprecated EAPI: 2
-
-media-video/m2vrequantizer
-  DeprecatedEAPI: version 0.0.2_pre20060306: uses deprecated EAPI: 2
-
-media-video/matroxset
-  DeprecatedEAPI: version 0.4: uses deprecated EAPI: 0
-
-media-video/maven-poke
-  DeprecatedEAPI: version 0.0.1: uses deprecated EAPI: 0
-
-media-video/miro
-  DeprecatedEclass: version 4.0.6: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 4.0.6: uses deprecated EAPI: 3
-  DeprecatedEclass: version 5.0.4: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 5.0.4: uses deprecated EAPI: 3
-  DeprecatedEclass: version 6.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 6.0: uses deprecated EAPI: 3
-
-media-video/mjpg-streamer
-  DeprecatedEAPI: version 0_pre20120421: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0_pre20120621: uses deprecated EAPI: 4
-  DoubleEmptyLine: version 0_pre20120621-r1: ebuild has unneeded empty line 36
-  DeprecatedEAPI: version 0_pre20120621-r1: uses deprecated EAPI: 4
-
-media-video/mkclean
-  DeprecatedEAPI: version 0.8.6-r1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.8.7: uses deprecated EAPI: 4
-
-media-video/mkvalidator
-  DeprecatedEAPI: version 0.3.7-r1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.4.0: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.4.1: uses deprecated EAPI: 4
-
-media-video/motion
-  DeprecatedEAPI: version 3.2.12-r2: uses deprecated EAPI: 4
-
-media-video/motiontrack
-  DeprecatedEAPI: version 0.1.3: uses deprecated EAPI: 0
-
-media-video/mpeg2vidcodec
-  DeprecatedEAPI: version 12-r1: uses deprecated EAPI: 4
-
-media-video/mpglen
-  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 0
-
-media-video/mplay-sh
-  DeprecatedEAPI: version 0.5.3-r1: uses deprecated EAPI: 0
-
-media-video/mplayer
-  DeprecatedEAPI: version 1.1.1-r1: uses deprecated EAPI: 4
-  NonExistentDeps: version 1.1.1-r1: depset depends: nonexistent atoms [ <dev-libs/libcdio-0.90 ]
-  NonExistentDeps: version 1.1.1-r1: depset rdepends: nonexistent atoms [ <dev-libs/libcdio-0.90 ]
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DroppedKeywordWarning: version 1.2_pre20141011: keywords dropped: alpha, ppc, ppc64, sparc
-  DroppedKeywordWarning: version 1.2_pre20130729: keywords dropped: ia64
-
-media-video/mplayer-resume
-  DeprecatedEAPI: version 2.0: uses deprecated EAPI: 2
-  NonExistentDeps: version 2.0: depset rdepends: nonexistent atoms [ <dev-lang/php-5.3 ]
-
-media-video/noad
-  DeprecatedEAPI: version 0.7.3: uses deprecated EAPI: 4
-
-media-video/pgcedit
-  DeprecatedEAPI: version 0.8.6: uses deprecated EAPI: 4
-
-media-video/pgmfindclip
-  DeprecatedEAPI: version 1.13: uses deprecated EAPI: 0
-
-media-video/photofilmstrip
-  WhitespaceFound: version 1.9.91-r1: ebuild has leading whitespace on lines 37, 38, 42, 43
-
-media-video/pymp
-  DeprecatedEclass: version 1.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 3
-  NonExistentDeps: version 1.1: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
-  NonExistentDeps: version 1.1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
-
-media-video/qt-recordmydesktop
-  DeprecatedEclass: version 0.3.8-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.3.8-r2: uses deprecated EAPI: 4
-  NonExistentDeps: version 0.3.8-r2: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
-  NonExistentDeps: version 0.3.8-r2: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
-
-media-video/recmpeg
-  DeprecatedEAPI: version 1.0.5: uses deprecated EAPI: 0
-
-media-video/recordmydesktop
-  DeprecatedEAPI: version 0.3.8.1-r4: uses deprecated EAPI: 2
-
-media-video/replex
-  DeprecatedEAPI: version 0.1.4: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.1.6.8: uses deprecated EAPI: 0
-
-media-video/rovclock
-  DeprecatedEAPI: version 0.6e: uses deprecated EAPI: 3
-
-media-video/rtmpdump
-  DeprecatedEAPI: version 2.4_p20131018: uses deprecated EAPI: 4
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
-
-media-video/setpwc
-  DeprecatedEAPI: version 1.3: uses deprecated EAPI: 4
-
-media-video/shrip
-  DeprecatedEAPI: version 0.6.0: uses deprecated EAPI: 2
-
-media-video/smplayer
-  DroppedKeywordWarning: version 14.9.0.6994: keywords dropped: alpha
-
-media-video/sonic-snap
-  DeprecatedEAPI: version 1.7: uses deprecated EAPI: 3
-
-media-video/stk11xx
-  DeprecatedEAPI: version 2.1.0_p104: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 2
-
-media-video/streamdvd
-  DeprecatedEAPI: version 0.4-r1: uses deprecated EAPI: 0
-
-media-video/sub2srt
-  DeprecatedEAPI: version 0.5.3: uses deprecated EAPI: 0
-
-media-video/subcheck
-  DeprecatedEAPI: version 0.78.2: uses deprecated EAPI: 2
-
-media-video/subdownloader
-  DeprecatedEclass: version 2.0.18: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-
-media-video/submux-dvd
-  DeprecatedEAPI: version 0.5.2: uses deprecated EAPI: 0
-
-media-video/subsync
-  DeprecatedEAPI: version 0.0.1: uses deprecated EAPI: 2
-
-media-video/subtitler-yuv
-  DeprecatedEAPI: version 0.6.5: uses deprecated EAPI: 4
-
-media-video/subtitleripper
-  DeprecatedEAPI: version 0.3.4-r4: uses deprecated EAPI: 0
-
-media-video/super_demux
-  DeprecatedEAPI: version 0.3: uses deprecated EAPI: 2
-
-media-video/tcmplex-panteltje
-  DeprecatedEAPI: version 0.4.7: uses deprecated EAPI: 3
-
-media-video/tivodecode
-  DeprecatedEAPI: version 0.2_pre4: uses deprecated EAPI: 0
-
-media-video/tovid
-  DeprecatedEclass: version 0.34: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.34: uses deprecated EAPI: 3
-  NonExistentDeps: version 0.34: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
-  NonExistentDeps: version 0.34: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
-  DeprecatedEclass: version 0.34_p20120123: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.34_p20120123: uses deprecated EAPI: 3
-
-media-video/transcode
-  DeprecatedEAPI: version 1.1.7-r1: uses deprecated EAPI: 4
-  SizeViolation: "files/transcode-1.1.7-ffmpeg2.patch" exceeds 20k in size; 21823 bytes total
-
-media-video/ushare
-  DeprecatedEAPI: version 1.1a-r5: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.1a-r6: uses deprecated EAPI: 4
-
-media-video/v4l2loopback
-  DeprecatedEAPI: version 0.4.0: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.4.1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.6.1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.6.3: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.6.3-r1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.8.0: uses deprecated EAPI: 4
-
-media-video/vamps
-  DeprecatedEAPI: version 0.99.2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.99.2-r1: uses deprecated EAPI: 0
-
-media-video/vcdgear
-  DeprecatedEAPI: version 1.76-r2: uses deprecated EAPI: 2
-
-media-video/vdrsync
-  DeprecatedEAPI: version 0.1.3_pre050322-r1: uses deprecated EAPI: 0
-
-media-video/vdrtools-genindex
-  DeprecatedEAPI: version 0.1.3-r1: uses deprecated EAPI: 4
-
-media-video/videocut
-  DeprecatedEAPI: version 0.2.0: uses deprecated EAPI: 2
-
-media-video/videotrans
+app-misc/dvorak7min
   DeprecatedEAPI: version 1.6.1: uses deprecated EAPI: 4
 
-media-video/vobcopy
-  DeprecatedEAPI: version 1.2.0: uses deprecated EAPI: 2
+app-misc/dvorakng
+  DeprecatedEAPI: version 0.6.0: uses deprecated EAPI: 0
 
-media-video/vstrip
-  DeprecatedEAPI: version 0.8f: uses deprecated EAPI: 0
-
-media-video/winki
-  DeprecatedEclass: version 0.4.5: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.4.5: uses deprecated EAPI: 3
-
-media-video/x264-encoder
+app-misc/dvtm
+  DeprecatedEAPI: version 0.8: uses deprecated EAPI: 3
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-media-video/xanim
-  DeprecatedEAPI: version 2.80.1-r4: uses deprecated EAPI: 0
+app-misc/editor-wrapper
+  DeprecatedEAPI: version 4: uses deprecated EAPI: 4
 
-media-video/xanim-export
-  DeprecatedEAPI: version 2.80.1-r5: uses deprecated EAPI: 0
+app-misc/egads
+  DeprecatedEAPI: version 0.9.5: uses deprecated EAPI: 0
 
-media-video/xine-ui
-  DeprecatedEAPI: version 0.99.7: uses deprecated EAPI: 4
+app-misc/emelfm2
+  DeprecatedEAPI: version 0.8.1: uses deprecated EAPI: 4
 
-media-video/xvid4conf
-  DeprecatedEAPI: version 1.12: uses deprecated EAPI: 2
+app-misc/empty
+  DeprecatedEAPI: version 0.6.19b: uses deprecated EAPI: 4
 
-media-video/xvideoservicethief
-  DeprecatedEAPI: version 2.4.1-r2: uses deprecated EAPI: 2
+app-misc/enum
+  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 2
+
+app-misc/evtest
+  DeprecatedEAPI: version 1.29: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.30: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.31: uses deprecated EAPI: 4
+
+app-misc/fdutils
+  DeprecatedEAPI: version 5.4.20020222-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 5.5-r2: uses deprecated EAPI: 0
+
+app-misc/fujiplay
+  DeprecatedEAPI: version 1.33: uses deprecated EAPI: 0
+
+app-misc/g15composer
+  DeprecatedEAPI: version 3.1: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 3.2: uses deprecated EAPI: 2
+
+app-misc/g15daemon
+  DeprecatedEclass: version 1.9.5.3-r11: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 1.9.5.3-r12: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DroppedKeywordWarning: version 1.9.5.3-r12: keywords dropped: amd64, ppc, ppc64, x86
+
+app-misc/g15macro
+  DeprecatedEAPI: version 1.0.3-r1: uses deprecated EAPI: 4
+
+app-misc/g15message
+  DeprecatedEAPI: version 1.0.0: uses deprecated EAPI: 0
+
+app-misc/g15stats
+  DeprecatedEAPI: version 1.9.7: uses deprecated EAPI: 4
+
+app-misc/gcstar
+  DeprecatedEAPI: version 1.7.0: uses deprecated EAPI: 4
+
+app-misc/geekcode
+  DeprecatedEAPI: version 1.7.3-r1: uses deprecated EAPI: 2
+
+app-misc/geneweb
+  DeprecatedEAPI: version 6.07: uses deprecated EAPI: 4
+
+app-misc/geoclue
+  DeprecatedEAPI: version 0.12.99: uses deprecated EAPI: 4
+
+app-misc/getopt
+  DeprecatedEAPI: version 1.1.6: uses deprecated EAPI: 4
+
+app-misc/glastree
+  DeprecatedEAPI: version 1.04: uses deprecated EAPI: 4
+
+app-misc/glimpse
+  DeprecatedEAPI: version 4.18.5: uses deprecated EAPI: 0
+
+app-misc/gnutu
+  DeprecatedEAPI: version 2.5: uses deprecated EAPI: 4
+
+app-misc/golly
+  DeprecatedEclass: version 2.4: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 2.4: uses deprecated EAPI: 4
+
+app-misc/gramps
+  DroppedKeywordWarning: version 3.4.9: keywords dropped: ppc
+
+app-misc/granule
+  DeprecatedEAPI: version 1.4.0: uses deprecated EAPI: 2
+
+app-misc/graphlcd-base
+  DeprecatedEAPI: version 0.1.5-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.1.9: uses deprecated EAPI: 4
+
+app-misc/gtk-sunlight
+  DeprecatedEAPI: version 0.4.2: uses deprecated EAPI: 4
+
+app-misc/gtypist
+  DeprecatedEAPI: version 2.8.5-r1: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 2.9.1: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 2.9.2: uses deprecated EAPI: 4
+
+app-misc/hatools
+  DeprecatedEAPI: version 2.14: uses deprecated EAPI: 4
+
+app-misc/hello
+  DeprecatedEAPI: version 2.8: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 2.9: uses deprecated EAPI: 4
+
+app-misc/hexcompare
+  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 3
+
+app-misc/hilite
+  DeprecatedEAPI: version 1.5: uses deprecated EAPI: 0
+
+app-misc/ifp-line
+  DeprecatedEAPI: version 0.3: uses deprecated EAPI: 2
+
+app-misc/iguanaIR
+  DeprecatedEclass: version 0.93: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.93: uses deprecated EAPI: 4
+  NonExistentDeps: version 0.93: depset depends: nonexistent atoms [ dev-lang/python:2.6 ]
+  DeprecatedEclass: version 1.0.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 4
+  NonExistentDeps: version 1.0.1: depset depends: nonexistent atoms [ dev-lang/python:2.6 ]
+
+app-misc/inputlircd
+  DeprecatedEAPI: version 0.0.1_pre11: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.0.1_pre11-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.0.1_pre15: uses deprecated EAPI: 0
+
+app-misc/interceptty
+  DeprecatedEAPI: version 0.6: uses deprecated EAPI: 0
+
+app-misc/irtrans-irclient
+  DeprecatedEAPI: version 6.01.05: uses deprecated EAPI: 2
+
+app-misc/joy2key
+  DeprecatedEAPI: version 1.6.3: uses deprecated EAPI: 0
+
+app-misc/ktoblzcheck
+  DeprecatedEclass: version 1.39: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.39: uses deprecated EAPI: 4
+  NonExistentDeps: version 1.39: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 1.39: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+
+app-misc/lcd-stuff
+  DeprecatedEAPI: version 0.1.6: uses deprecated EAPI: 2
+  MetadataError: version 0.1.6: attr(fetchables): error- Metadata Exception: pkg ebuild src: app-misc/lcd-stuff-0.1.6, attr fetchables
+error: mirror://berlios/lcd-stuff/lcd-stuff-0.1.6.tar.bz2 is unparseable
+flagged token- uri mirror://berlios/lcd-stuff/lcd-stuff-0.1.6.tar.bz2 isn't a known mirror tier
+
+app-misc/lcdproc
+  DeprecatedEAPI: version 0.5.2-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.5.5: uses deprecated EAPI: 4
+
+app-misc/leave
+  DeprecatedEAPI: version 20100918: uses deprecated EAPI: 3
+
+app-misc/linuxspa
+  DeprecatedEAPI: version 0.7.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.7.1-r1: uses deprecated EAPI: 4
+
+app-misc/lirc
+  DeprecatedEAPI: version 0.9.0-r2: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.9.0-r3: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.9.0-r4: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.9.0-r5: uses deprecated EAPI: 4
+
+app-misc/livecd-tools
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
+
+app-misc/lockfile-progs
+  DeprecatedEAPI: version 0.1.16: uses deprecated EAPI: 4
+
+app-misc/logserial
+  DeprecatedEAPI: version 0.4.2: uses deprecated EAPI: 2
+
+app-misc/lsx
+  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 0
+
+app-misc/lxsplit
+  DeprecatedEAPI: version 0.2.4: uses deprecated EAPI: 0
+
+app-misc/matew
+  DeprecatedEAPI: version 1.9: uses deprecated EAPI: 0
+
+app-misc/mc
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+app-misc/mencal
+  DeprecatedEAPI: version 2.3: uses deprecated EAPI: 0
+
+app-misc/mepl
+  DeprecatedEAPI: version 0.45: uses deprecated EAPI: 0
+
+app-misc/mime-types
+  DeprecatedEAPI: version 9: uses deprecated EAPI: 0
+
+app-misc/misterhouse
+  DeprecatedEAPI: version 2.103: uses deprecated EAPI: 0
+
+app-misc/mouseremote
+  DeprecatedEAPI: version 0.90-r1: uses deprecated EAPI: 0
+
+app-misc/mtail
+  DeprecatedEclass: version 1.1.1-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.1.1-r2: uses deprecated EAPI: 3
+
+app-misc/multimon
+  DeprecatedEAPI: version 1.0-r2: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.0-r3: uses deprecated EAPI: 4
+
+app-misc/muttprint
+  DeprecatedEAPI: version 0.73: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.73-r1: uses deprecated EAPI: 4
+
+app-misc/mvcase
+  DeprecatedEAPI: version 0.1-r1: uses deprecated EAPI: 2
+
+app-misc/nullmodem
+  DeprecatedEAPI: version 0.0.6: uses deprecated EAPI: 2
+
+app-misc/ofl
+  DeprecatedEAPI: version 20110721: uses deprecated EAPI: 4
+
+app-misc/ompload
+  DeprecatedEAPI: version 20101220: uses deprecated EAPI: 3
+
+app-misc/ondir
+  DeprecatedEAPI: version 0.2.2-r1: uses deprecated EAPI: 3
+
+app-misc/pax-utils
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.0.2: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.0.4: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.0.5: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.1.1: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.1.2: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.1.3: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.1.4: uses deprecated EAPI: 4
+
+app-misc/perltrash
+  DeprecatedEAPI: version 0.3: uses deprecated EAPI: 0
+
+app-misc/pipeworks
+  DeprecatedEAPI: version 0.4: uses deprecated EAPI: 0
+
+app-misc/plod
+  DeprecatedEAPI: version 1.9: uses deprecated EAPI: 0
+
+app-misc/ps3pf_utils
+  DeprecatedEAPI: version 2.1.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.2.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.3: uses deprecated EAPI: 0
+
+app-misc/pwsafe
+  DeprecatedEAPI: version 0.2.0-r2: uses deprecated EAPI: 4
+
+app-misc/pysmssend
+  DeprecatedEclass: version 1.48: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.48: uses deprecated EAPI: 3
+  NonExistentDeps: version 1.48: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  NonExistentDeps: version 1.48: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), git-2 (migrate to git-r3), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
+  NonExistentDeps: version 9999: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  NonExistentDeps: version 9999: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+
+app-misc/pystopwatch
+  DeprecatedEclass: version 2012.12.24.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 2012.12.24.1: uses deprecated EAPI: 4
+
+app-misc/razertool
+  DeprecatedEAPI: version 0.0.7-r3: uses deprecated EAPI: 2
+
+app-misc/realpath
+  DeprecatedEAPI: version 1.17: uses deprecated EAPI: 4
+
+app-misc/recoll
+  DeprecatedEclass: version 1.17.3-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.17.3-r1: uses deprecated EAPI: 4
+  DeprecatedEclass: version 1.19.5: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.19.5: uses deprecated EAPI: 4
+
+app-misc/regex-markup
+  DeprecatedEAPI: version 0.10.0: uses deprecated EAPI: 4
+
+app-misc/regionset
+  DeprecatedEAPI: version 0.1-r1: uses deprecated EAPI: 4
+
+app-misc/rioutil
+  DeprecatedEAPI: version 1.5.0-r2: uses deprecated EAPI: 4
+
+app-misc/rl
+  DeprecatedEAPI: version 0.2.7: uses deprecated EAPI: 0
+
+app-misc/rlwrap
+  DeprecatedEAPI: version 0.37: uses deprecated EAPI: 3
+
+app-misc/rox-filer
+  BadInsIntoDir: version 2.11: ebuild uses insinto /usr/share/applications on line 69
+
+app-misc/run-mailcap
+  DeprecatedEAPI: version 3.39_p1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 3.52_p1: uses deprecated EAPI: 4
+
+app-misc/scope
+  DeprecatedEAPI: version 0.04-r1: uses deprecated EAPI: 4
+
+app-misc/screenfetch
+  DeprecatedEAPI: version 2.7.7: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 3.2.2: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 3.6.5: uses deprecated EAPI: 4
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
+
+app-misc/screenie
+  DeprecatedEAPI: version 1.30.0-r1: uses deprecated EAPI: 2
+
+app-misc/scrub
+  DeprecatedEAPI: version 2.5.2: uses deprecated EAPI: 4
+
+app-misc/sl
+  DeprecatedEAPI: version 3.03-r3: uses deprecated EAPI: 4
+
+app-misc/sleepyhead
+  DeprecatedEAPI: version 0.9.2.2: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.9.2.2-r1: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.9.3: uses deprecated EAPI: 4
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+app-misc/socnetv
+  DeprecatedEAPI: version 0.90: uses deprecated EAPI: 4
+
+app-misc/spacenavd
+  DeprecatedEAPI: version 0.5-r2: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.5-r4: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.5-r5: uses deprecated EAPI: 4
+
+app-misc/sphinx
+  DeprecatedEAPI: version 0.9.9: uses deprecated EAPI: 2
+  DroppedKeywordWarning: version 2.2.10: keywords dropped: alpha, hppa, ia64, ppc, ppc64, s390, sparc
+
+app-misc/splitvt
+  DeprecatedEAPI: version 1.6.6-r2: uses deprecated EAPI: 3
+
+app-misc/srm
+  DeprecatedEAPI: version 1.2.11-r2: uses deprecated EAPI: 4
+
+app-misc/subsurface
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+app-misc/supercat
+  DeprecatedEAPI: version 0.5.5-r1: uses deprecated EAPI: 3
+
+app-misc/symlinks
+  DeprecatedEAPI: version 1.4: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.4-r2: uses deprecated EAPI: 4
+
+app-misc/tablix
+  DeprecatedEAPI: version 0.3.5-r1: uses deprecated EAPI: 2
+  NonExistentDeps: version 0.3.5-r1: depset depends: nonexistent atoms [ sys-cluster/pvm ]
+  NonExistentDeps: version 0.3.5-r1: depset rdepends: nonexistent atoms [ sys-cluster/pvm ]
+
+app-misc/tasque
+  DeprecatedEclass: version 0.1.11: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 0.1.11: uses deprecated EAPI: 4
+  DeprecatedEclass: version 0.1.12: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+
+app-misc/tdfsb
+  DeprecatedEAPI: version 0.0.10: uses deprecated EAPI: 4
+
+app-misc/tdl
+  DeprecatedEAPI: version 1.5.2-r2: uses deprecated EAPI: 4
+
+app-misc/timestamp
+  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 0
+
+app-misc/tmux-mem-cpu-load
+  DeprecatedEAPI: version 2.1.0: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 2.2.1: uses deprecated EAPI: 3
+
+app-misc/toilet
+  DeprecatedEAPI: version 0.3: uses deprecated EAPI: 4
+
+app-misc/tomboy
+  DeprecatedEclass: version 1.14.1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+
+app-misc/towitoko
+  DeprecatedEAPI: version 2.0.7-r2: uses deprecated EAPI: 0
+
+app-misc/tpconfig
+  DeprecatedEAPI: version 3.1.3: uses deprecated EAPI: 0
+
+app-misc/tpipe
+  DeprecatedEAPI: version 1.6: uses deprecated EAPI: 0
+
+app-misc/tracker
+  NonExistentDeps: version 1.2.6: depset depends: nonexistent atoms [ <mail-client/evolution-3.5.3, <gnome-extra/evolution-data-server-3.5.3 ]
+  NonExistentDeps: version 1.2.6: depset rdepends: nonexistent atoms [ <mail-client/evolution-3.5.3, <gnome-extra/evolution-data-server-3.5.3 ]
+  NonExistentDeps: version 1.4.0: depset depends: nonexistent atoms [ <mail-client/evolution-3.5.3, <gnome-extra/evolution-data-server-3.5.3 ]
+  NonExistentDeps: version 1.4.0: depset rdepends: nonexistent atoms [ <mail-client/evolution-3.5.3, <gnome-extra/evolution-data-server-3.5.3 ]
+  NonExistentDeps: version 1.4.1: depset depends: nonexistent atoms [ <mail-client/evolution-3.5.3, <gnome-extra/evolution-data-server-3.5.3 ]
+  NonExistentDeps: version 1.4.1: depset rdepends: nonexistent atoms [ <mail-client/evolution-3.5.3, <gnome-extra/evolution-data-server-3.5.3 ]
+
+app-misc/ttysnoop
+  DeprecatedEAPI: version 0.12d: uses deprecated EAPI: 4
+
+app-misc/usbirboy
+  DeprecatedEAPI: version 0.2.1-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.3.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.3.1-r1: uses deprecated EAPI: 0
+
+app-misc/utimer
+  DeprecatedEAPI: version 0.4: uses deprecated EAPI: 2
+
+app-misc/vcp
+  DeprecatedEAPI: version 2.2-r1: uses deprecated EAPI: 2
+
+app-misc/vifm
+  DeprecatedEAPI: version 0.7.2: uses deprecated EAPI: 4
+
+app-misc/vittk
+  DeprecatedEAPI: version 1.3: uses deprecated EAPI: 4
+
+app-misc/vlock
+  DeprecatedEAPI: version 2.2.3: uses deprecated EAPI: 4
+
+app-misc/webcomics-collector
+  DeprecatedEclass: version 0.7.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.7.3: uses deprecated EAPI: 3
+
+app-misc/wipe
+  DeprecatedEAPI: version 2.3.1: uses deprecated EAPI: 3
+
+app-misc/wyrd
+  DeprecatedEAPI: version 1.4.4: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 1.4.5: uses deprecated EAPI: 4
+
+app-misc/yagtd
+  DeprecatedEclass: version 0.3.4: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.3.4: uses deprecated EAPI: 3
+
+app-misc/zisofs-tools
+  DeprecatedEAPI: version 1.0.6: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0.8: uses deprecated EAPI: 0
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
