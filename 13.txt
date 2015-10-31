@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 13 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'sys-apps/*' 'virtual/*' 'app-crypt/*' 'gnome-extra/*' 'xfce-extra/*' 'games-action/*' 'gnustep-apps/*' 'sys-freebsd/*' 'www-misc/*' 'mate-extra/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'sys-apps/*' 'virtual/*' 'app-crypt/*' 'dev-qt/*' 'xfce-extra/*' 'games-action/*' 'gnustep-apps/*' 'sys-freebsd/*' 'www-misc/*' 'mate-extra/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1455,56 +1455,68 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-gnome-extra/assogiate
-  DeprecatedEAPI: version 0.2.1: uses deprecated EAPI: 4
+dev-qt/assistant
+  DroppedKeywordWarning: version 5.4.2: keywords dropped: alpha, ia64, ppc, sparc
 
-gnome-extra/avant-window-navigator-extras
-  DeprecatedEclass: version 0.4.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.4.0: uses deprecated EAPI: 4
-  NonExistentDeps: version 0.4.0: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
-  NonExistentDeps: version 0.4.0: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+dev-qt/designer
+  DroppedKeywordWarning: version 5.4.2: keywords dropped: alpha, ia64, mips, ppc, sparc
 
-gnome-extra/cameramonitor
-  DeprecatedEclass: version 0.3.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+dev-qt/linguist
+  DroppedKeywordWarning: version 5.4.2: keywords dropped: alpha, ia64, mips, ppc, sparc
 
-gnome-extra/docky
-  DeprecatedEclass: version 2.2.0: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DeprecatedEAPI: version 2.2.0: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 2.2.1.1: uses deprecated EAPI: 4
+dev-qt/pixeltool
+  DroppedKeywordWarning: version 5.4.2: keywords dropped: alpha, ia64, ppc, sparc
 
-gnome-extra/gnome-color-manager
-  DroppedKeywordWarning: version 3.14.2: keywords dropped: alpha, sparc
+dev-qt/qdbusviewer
+  DroppedKeywordWarning: version 5.4.2: keywords dropped: alpha, ia64, mips, ppc, sparc
 
-gnome-extra/gnome-dvb-daemon
-  DeprecatedEclass: version 0.2.10: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.2.10: uses deprecated EAPI: 4
-  NonExistentDeps: version 0.2.10: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
-  NonExistentDeps: version 0.2.10: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+dev-qt/qt-creator
+  DroppedKeywordWarning: version 3.4.2: keywords dropped: ppc
 
-gnome-extra/gnome-integration-spotify
-  DeprecatedEAPI: version 20131013: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 20140907: uses deprecated EAPI: 4
+dev-qt/qtcore
+  DroppedKeywordWarning: version 5.4.2: keywords dropped: alpha, ia64, mips, ppc, sparc
 
-gnome-extra/gnome-power-manager
-  DroppedKeywordWarning: version 3.16.1: keywords dropped: alpha
+dev-qt/qtdbus
+  DroppedKeywordWarning: version 5.4.2: keywords dropped: alpha, ia64, mips, ppc, sparc
 
-gnome-extra/gnome-web-photo
-  DeprecatedEAPI: version 0.10.6: uses deprecated EAPI: 4
+dev-qt/qtdeclarative
+  DroppedKeywordWarning: version 5.4.2-r1: keywords dropped: alpha, ia64, ppc, sparc
 
-gnome-extra/gucharmap
-  DeprecatedEAPI: version 3.0.1-r200: uses deprecated EAPI: 4
+dev-qt/qtdemo
+  UnusedLocalFlags: metadata.xml unused local use flag: [ qt3support ]
 
-gnome-extra/nautilus-share
-  DeprecatedEAPI: version 0.7.3-r1: uses deprecated EAPI: 4
+dev-qt/qtgui
+  DroppedKeywordWarning: version 5.4.2-r1: keywords dropped: alpha, ia64, mips, ppc, sparc
 
-gnome-extra/nm-applet
-  DroppedKeywordWarning: version 1.0.2: keywords dropped: ia64
+dev-qt/qthelp
+  DroppedKeywordWarning: version 5.4.2: keywords dropped: alpha, ia64, ppc, sparc
 
-gnome-extra/polkit-gnome
-  DeprecatedEAPI: version 0.105-r1: uses deprecated EAPI: 4
+dev-qt/qtmultimedia
+  DroppedKeywordWarning: version 5.4.2-r1: keywords dropped: ia64, ppc
 
-gnome-extra/zeitgeist-datahub
-  DeprecatedEAPI: version 0.9.5: uses deprecated EAPI: 4
+dev-qt/qtopengl
+  DroppedKeywordWarning: version 5.4.2: keywords dropped: alpha, ia64, mips, ppc, sparc
+
+dev-qt/qtscript
+  DroppedKeywordWarning: version 5.4.2-r1: keywords dropped: alpha, ia64, mips, ppc, sparc
+
+dev-qt/qtsql
+  DroppedKeywordWarning: version 5.4.2: keywords dropped: alpha, ia64, mips, ppc, sparc
+
+dev-qt/qtsvg
+  DroppedKeywordWarning: version 5.4.2: keywords dropped: alpha, ia64, mips, ppc, sparc
+
+dev-qt/qttest
+  DroppedKeywordWarning: version 5.4.2: keywords dropped: alpha, ia64, mips, ppc, sparc
+
+dev-qt/qttranslations
+  DroppedKeywordWarning: version 5.4.2: keywords dropped: alpha, ia64, mips, ppc, sparc
+
+dev-qt/qtwebkit
+  DroppedKeywordWarning: version 4.10.4: keywords dropped: arm, ia64, mips, ppc, ppc64, x86
+
+dev-qt/qtxmlpatterns
+  DroppedKeywordWarning: version 5.4.2: keywords dropped: alpha, ia64, mips, ppc, sparc
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch

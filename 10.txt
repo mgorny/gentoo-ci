@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 10 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-ros/*' 'app-admin/*' 'www-apps/*' 'dev-qt/*' 'net-dns/*' 'sys-process/*' 'games-rpg/*' 'sys-infiniband/*' 'sci-calculators/*' 'mate-base/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-ros/*' 'app-admin/*' 'www-apps/*' 'kde-base/*' 'net-dns/*' 'sys-process/*' 'games-rpg/*' 'sys-infiniband/*' 'sci-calculators/*' 'mate-base/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -577,89 +577,12 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-dev-qt/assistant
-  DroppedKeywordWarning: version 5.4.2: keywords dropped: alpha, ia64, ppc, sparc
+kde-base/kinfocenter
+  NoFinalNewline: version 4.11.19: ebuild lacks an ending newline
+  NoFinalNewline: version 4.11.22: ebuild lacks an ending newline
 
-dev-qt/designer
-  DroppedKeywordWarning: version 5.4.2: keywords dropped: alpha, ia64, mips, ppc, sparc
-
-dev-qt/linguist
-  DroppedKeywordWarning: version 5.4.2: keywords dropped: alpha, ia64, mips, ppc, sparc
-
-dev-qt/pixeltool
-  DroppedKeywordWarning: version 5.4.2: keywords dropped: alpha, ia64, ppc, sparc
-
-dev-qt/qdbusviewer
-  DroppedKeywordWarning: version 5.4.2: keywords dropped: alpha, ia64, mips, ppc, sparc
-
-dev-qt/qt-creator
-  DroppedKeywordWarning: version 3.4.2: keywords dropped: ppc
-
-dev-qt/qt3support
-  DeprecatedEAPI: version 4.8.5: uses deprecated EAPI: 4
-
-dev-qt/qtbearer
-  DeprecatedEAPI: version 4.8.5: uses deprecated EAPI: 4
-
-dev-qt/qtcore
-  DroppedKeywordWarning: version 5.4.2: keywords dropped: alpha, ia64, mips, ppc, sparc
-
-dev-qt/qtdbus
-  DeprecatedEAPI: version 4.8.5: uses deprecated EAPI: 4
-  DroppedKeywordWarning: version 5.4.2: keywords dropped: alpha, ia64, mips, ppc, sparc
-
-dev-qt/qtdeclarative
-  DeprecatedEAPI: version 4.8.5: uses deprecated EAPI: 4
-  DroppedKeywordWarning: version 5.4.2-r1: keywords dropped: alpha, ia64, ppc, sparc
-
-dev-qt/qtdemo
-  DeprecatedEAPI: version 4.8.5-r1: uses deprecated EAPI: 4
-
-dev-qt/qtgui
-  DroppedKeywordWarning: version 5.4.2-r1: keywords dropped: alpha, ia64, mips, ppc, sparc
-
-dev-qt/qthelp
-  DroppedKeywordWarning: version 5.4.2: keywords dropped: alpha, ia64, ppc, sparc
-
-dev-qt/qtmultimedia
-  DeprecatedEAPI: version 4.8.5: uses deprecated EAPI: 4
-  DroppedKeywordWarning: version 5.4.2-r1: keywords dropped: ia64, ppc
-
-dev-qt/qtopengl
-  DeprecatedEAPI: version 4.8.5: uses deprecated EAPI: 4
-  DroppedKeywordWarning: version 5.4.2: keywords dropped: alpha, ia64, mips, ppc, sparc
-
-dev-qt/qtopenvg
-  DeprecatedEAPI: version 4.8.5: uses deprecated EAPI: 4
-
-dev-qt/qtphonon
-  DeprecatedEAPI: version 4.8.5: uses deprecated EAPI: 4
-
-dev-qt/qtscript
-  DeprecatedEAPI: version 4.8.5: uses deprecated EAPI: 4
-  DroppedKeywordWarning: version 5.4.2-r1: keywords dropped: alpha, ia64, mips, ppc, sparc
-
-dev-qt/qtsql
-  DeprecatedEAPI: version 4.8.5: uses deprecated EAPI: 4
-  DroppedKeywordWarning: version 5.4.2: keywords dropped: alpha, ia64, mips, ppc, sparc
-
-dev-qt/qtsvg
-  DeprecatedEAPI: version 4.8.5: uses deprecated EAPI: 4
-  DroppedKeywordWarning: version 5.4.2: keywords dropped: alpha, ia64, mips, ppc, sparc
-
-dev-qt/qttest
-  DeprecatedEAPI: version 4.8.5: uses deprecated EAPI: 4
-  DroppedKeywordWarning: version 5.4.2: keywords dropped: alpha, ia64, mips, ppc, sparc
-
-dev-qt/qttranslations
-  DroppedKeywordWarning: version 5.4.2: keywords dropped: alpha, ia64, mips, ppc, sparc
-
-dev-qt/qtwebkit
-  DroppedKeywordWarning: version 4.10.4: keywords dropped: arm, ia64, mips, ppc, ppc64, x86
-
-dev-qt/qtxmlpatterns
-  DeprecatedEAPI: version 4.8.5: uses deprecated EAPI: 4
-  DroppedKeywordWarning: version 5.4.2: keywords dropped: alpha, ia64, mips, ppc, sparc
+kde-base/kleopatra
+  SizeViolation: "files/kleopatra-4.14.10-newer-boost-buildfix.patch" exceeds 20k in size; 34860 bytes total
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
