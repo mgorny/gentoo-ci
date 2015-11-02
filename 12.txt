@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 12 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'app-emulation/*' 'sys-fs/*' 'dev-vcs/*' 'dev-qt/*' 'games-puzzle/*' 'gnome-base/*' 'dev-tcltk/*' 'games-util/*' 'www-plugins/*' 'games-sports/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'app-emulation/*' 'sys-fs/*' 'dev-vcs/*' 'dev-qt/*' 'games-puzzle/*' 'gnome-base/*' 'dev-tcltk/*' 'net-ftp/*' 'www-plugins/*' 'games-sports/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -907,13 +907,56 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-games-util/dzip
-  DeprecatedEAPI: version 2.9-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.9-r2: uses deprecated EAPI: 2
+net-ftp/bareftp
+  DeprecatedEclass: version 0.3.9: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 0.3.9: uses deprecated EAPI: 4
+  DeprecatedEclass: version 0.3.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 0.3.10: uses deprecated EAPI: 4
 
-games-util/gtkevemon
-  DeprecatedEAPI: version 1.8-r1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
+net-ftp/frox
+  DeprecatedEAPI: version 0.7.18-r4: uses deprecated EAPI: 4
+
+net-ftp/ftp
+  DeprecatedEAPI: version 0.17-r7: uses deprecated EAPI: 0
+
+net-ftp/ftpbase
+  DeprecatedEAPI: version 0.01-r2: uses deprecated EAPI: 0
+
+net-ftp/netkit-ftpd
+  DeprecatedEAPI: version 0.17-r8: uses deprecated EAPI: 0
+
+net-ftp/oftpd
+  DeprecatedEAPI: version 0.3.7-r7: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.3.7-r8: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.3.7-r9: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.3.7-r10: uses deprecated EAPI: 4
+
+net-ftp/oneclickftp
+  DeprecatedEAPI: version 0.5.1: uses deprecated EAPI: 2
+
+net-ftp/pureadmin
+  DeprecatedEAPI: version 0.4-r1: uses deprecated EAPI: 4
+
+net-ftp/scythia
+  DeprecatedEAPI: version 0.9.3_p2: uses deprecated EAPI: 3
+
+net-ftp/tftp-hpa
+  DeprecatedEAPI: version 5.2: uses deprecated EAPI: 4
+
+net-ftp/tlswrap
+  DeprecatedEAPI: version 1.04: uses deprecated EAPI: 0
+
+net-ftp/tnftp
+  DeprecatedEAPI: version 20100108: uses deprecated EAPI: 2
+
+net-ftp/vsftpd
+  DeprecatedEAPI: version 2.3.5: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 3.0.2: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 3.0.2-r1: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 3.0.2-r2: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 3.0.2-r3: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 3.0.2-r4: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 3.0.3: uses deprecated EAPI: 4
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
