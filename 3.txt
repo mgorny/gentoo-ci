@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 3 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-haskell/*' 'net-analyzer/*' 'dev-db/*' 'sys-kernel/*' 'games-fps/*' 'www-apache/*' 'games-emulation/*' 'sci-visualization/*' 'sci-astronomy/*' 'x11-base/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-haskell/*' 'net-analyzer/*' 'dev-db/*' 'sys-kernel/*' 'games-fps/*' 'www-apache/*' 'games-emulation/*' 'sci-visualization/*' 'sci-astronomy/*' 'games-engines/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1629,9 +1629,8 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-x11-base/xorg-drivers
-  DeprecatedEAPI: version 1.12: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.13: uses deprecated EAPI: 4
+games-engines/frobtads
+  DeprecatedEAPI: version 1.2.2: uses deprecated EAPI: 4
 
-x11-base/xorg-x11
-  DeprecatedEAPI: version 7.4-r2: uses deprecated EAPI: 2
+games-engines/gargoyle
+  DeprecatedEAPI: version 2011.1: uses deprecated EAPI: 4

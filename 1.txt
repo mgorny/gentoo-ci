@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 1 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-python/*' 'dev-texlive/*' 'app-doc/*' 'app-office/*' 'kde-misc/*' 'net-im/*' 'sci-physics/*' 'net-firewall/*' 'dev-games/*' 'games-engines/*' 'games-kids/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-python/*' 'dev-texlive/*' 'app-doc/*' 'app-office/*' 'kde-misc/*' 'net-im/*' 'sci-physics/*' 'net-firewall/*' 'dev-games/*' 'dev-ada/*' 'games-kids/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1166,11 +1166,60 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-games-engines/frobtads
-  DeprecatedEAPI: version 1.2.2: uses deprecated EAPI: 4
+dev-ada/adadoc
+  DeprecatedEAPI: version 2.1: uses deprecated EAPI: 0
 
-games-engines/gargoyle
-  DeprecatedEAPI: version 2011.1: uses deprecated EAPI: 4
+dev-ada/adasockets
+  DeprecatedEAPI: version 1.8.4.7: uses deprecated EAPI: 0
+
+dev-ada/asis-gcc
+  DeprecatedEAPI: version 3.4.6: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.1.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.1.2-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.2.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.3.0_pre132166: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.3.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.3.1-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.4: uses deprecated EAPI: 0
+
+dev-ada/asis-gpl
+  DeprecatedEAPI: version 3.4.6.2006: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.1.3.2007-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.1.3.2007-r2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.1.3.2008: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.1.3.2008-r1: uses deprecated EAPI: 0
+
+dev-ada/aunit
+  DeprecatedEAPI: version 1.05: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.01: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.03: uses deprecated EAPI: 0
+
+dev-ada/booch_components
+  DeprecatedEAPI: version 20051222-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 20070420: uses deprecated EAPI: 0
+
+dev-ada/cbind
+  DeprecatedEAPI: version 6.0.1: uses deprecated EAPI: 0
+
+dev-ada/charles
+  DeprecatedEAPI: version 20050913: uses deprecated EAPI: 0
+
+dev-ada/florist
+  DeprecatedEAPI: version 2007.0: uses deprecated EAPI: 0
+
+dev-ada/glade
+  DeprecatedEAPI: version 2006.0: uses deprecated EAPI: 0
+
+dev-ada/gtkada
+  DeprecatedEAPI: version 2.10.0: uses deprecated EAPI: 0
+
+dev-ada/polyorb
+  DeprecatedEAPI: version 2.1.0: uses deprecated EAPI: 0
+
+dev-ada/xmlada
+  DeprecatedEAPI: version 1.0-r4: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.2.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.2.0-r1: uses deprecated EAPI: 0
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
