@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 3 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-haskell/*' 'net-analyzer/*' 'dev-db/*' 'sys-kernel/*' 'games-fps/*' 'www-apache/*' 'games-emulation/*' 'sci-visualization/*' 'sci-astronomy/*' 'games-engines/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-haskell/*' 'net-analyzer/*' 'dev-db/*' 'app-xemacs/*' 'games-fps/*' 'www-apache/*' 'games-emulation/*' 'sci-visualization/*' 'sci-astronomy/*' 'games-engines/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -989,68 +989,466 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-sys-kernel/dracut
-  DeprecatedEAPI: version 034-r4: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 040-r3: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 041-r3: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 043-r2: uses deprecated EAPI: 4
+app-xemacs/ada
+  DeprecatedEAPI: version 1.14: uses deprecated EAPI: 0
 
-sys-kernel/genkernel
-  DeprecatedEAPI: version 3.4.45.1: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 3.4.48: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 3.4.49.2: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 3.4.50: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 3.4.51.4: uses deprecated EAPI: 3
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DroppedKeywordWarning: version 3.4.50: keywords dropped: sh
+app-xemacs/apel
+  DeprecatedEAPI: version 1.32: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.34: uses deprecated EAPI: 0
 
-sys-kernel/genkernel-next
-  DroppedKeywordWarning: version 60: keywords dropped: ppc, ppc64
-  DroppedKeywordWarning: version 55: keywords dropped: alpha
+app-xemacs/auctex
+  DeprecatedEAPI: version 1.47: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.51: uses deprecated EAPI: 0
 
-sys-kernel/kccmp
-  DeprecatedEAPI: version 0.3: uses deprecated EAPI: 4
+app-xemacs/bbdb
+  DeprecatedEAPI: version 1.32: uses deprecated EAPI: 0
 
-sys-kernel/linux-firmware
-  DeprecatedEclass: version 99999999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+app-xemacs/build
+  DeprecatedEAPI: version 1.14: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.15: uses deprecated EAPI: 0
 
-sys-kernel/linux-headers
-  DeprecatedEAPI: version 3.18: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 3.19: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 4.0: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 4.1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 4.2: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 4.3: uses deprecated EAPI: 4
+app-xemacs/c-support
+  DeprecatedEAPI: version 1.22: uses deprecated EAPI: 0
 
-sys-kernel/raspberrypi-image
-  DeprecatedEclass: version 3.10.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+app-xemacs/calc
+  DeprecatedEAPI: version 1.26: uses deprecated EAPI: 0
 
-sys-kernel/raspberrypi-sources
-  DeprecatedEclass: version 3.10.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DeprecatedEclass: version 3.12.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DeprecatedEclass: version 3.14.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DeprecatedEclass: version 3.18.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DeprecatedEclass: version 3.19.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+app-xemacs/calendar
+  DeprecatedEAPI: version 1.32: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.38: uses deprecated EAPI: 0
 
-sys-kernel/spl
-  DeprecatedEAPI: version 0.6.0_rc13-r2: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.6.0_rc14-r3: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.6.1-r3: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.6.2-r5: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.6.3-r1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.6.4.2: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.6.5.2: uses deprecated EAPI: 4
+app-xemacs/cc-mode
+  DeprecatedEAPI: version 1.45: uses deprecated EAPI: 0
 
-sys-kernel/vanilla-sources
-  UnusedLocalFlags: metadata.xml unused local use flag: [ deblob ]
+app-xemacs/cedet-common
+  DeprecatedEAPI: version 1.01: uses deprecated EAPI: 0
 
-sys-kernel/zen-sources
-  DeprecatedEclass: version 3.8.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DeprecatedEclass: version 3.9.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DeprecatedEclass: version 3.10.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DeprecatedEclass: version 3.11.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DeprecatedEclass: version 3.12.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DeprecatedEclass: version 3.13.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+app-xemacs/clearcase
+  DeprecatedEAPI: version 1.10: uses deprecated EAPI: 0
+
+app-xemacs/cogre
+  DeprecatedEAPI: version 1.02: uses deprecated EAPI: 0
+
+app-xemacs/cookie
+  DeprecatedEAPI: version 1.15: uses deprecated EAPI: 0
+
+app-xemacs/crisp
+  DeprecatedEAPI: version 1.15: uses deprecated EAPI: 0
+
+app-xemacs/debug
+  DeprecatedEAPI: version 1.18: uses deprecated EAPI: 0
+
+app-xemacs/dictionary
+  DeprecatedEAPI: version 1.16: uses deprecated EAPI: 0
+
+app-xemacs/dired
+  DeprecatedEAPI: version 1.17: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.19: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.20: uses deprecated EAPI: 0
+
+app-xemacs/docbookide
+  DeprecatedEAPI: version 0.08: uses deprecated EAPI: 0
+
+app-xemacs/easypg
+  DeprecatedEAPI: version 1.02: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.03-r1: uses deprecated EAPI: 0
+
+app-xemacs/ebuild-mode
+  DeprecatedEAPI: version 1.19: uses deprecated EAPI: 0
+
+app-xemacs/ecb
+  DeprecatedEAPI: version 1.22: uses deprecated EAPI: 0
+
+app-xemacs/ecrypto
+  DeprecatedEAPI: version 0.20: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.21: uses deprecated EAPI: 0
+
+app-xemacs/ede
+  DeprecatedEAPI: version 1.03-r1: uses deprecated EAPI: 0
+
+app-xemacs/edebug
+  DeprecatedEAPI: version 1.22: uses deprecated EAPI: 0
+
+app-xemacs/edict
+  DeprecatedEAPI: version 1.16: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.17: uses deprecated EAPI: 0
+
+app-xemacs/ediff
+  DeprecatedEAPI: version 1.68: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.77: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.81: uses deprecated EAPI: 0
+
+app-xemacs/edit-utils
+  DeprecatedEAPI: version 2.39: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.43: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.44: uses deprecated EAPI: 0
+
+app-xemacs/edt
+  DeprecatedEAPI: version 1.13: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.14: uses deprecated EAPI: 0
+
+app-xemacs/efs
+  DeprecatedEAPI: version 1.33: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.34: uses deprecated EAPI: 0
+
+app-xemacs/egg-its
+  DeprecatedEAPI: version 1.27: uses deprecated EAPI: 0
+
+app-xemacs/eieio
+  DeprecatedEAPI: version 1.05: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.07: uses deprecated EAPI: 0
+
+app-xemacs/elib
+  DeprecatedEAPI: version 1.11: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.13: uses deprecated EAPI: 0
+
+app-xemacs/emerge
+  DeprecatedEAPI: version 1.11: uses deprecated EAPI: 0
+
+app-xemacs/erc
+  DeprecatedEAPI: version 0.21: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.23: uses deprecated EAPI: 0
+
+app-xemacs/escreen
+  DeprecatedEAPI: version 1.01: uses deprecated EAPI: 0
+
+app-xemacs/eshell
+  DeprecatedEAPI: version 1.10: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.18: uses deprecated EAPI: 0
+
+app-xemacs/ess
+  DeprecatedEAPI: version 1.03: uses deprecated EAPI: 0
+
+app-xemacs/eudc
+  DeprecatedEAPI: version 1.39: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.40: uses deprecated EAPI: 0
+
+app-xemacs/footnote
+  DeprecatedEAPI: version 1.16: uses deprecated EAPI: 0
+
+app-xemacs/forms
+  DeprecatedEAPI: version 1.15: uses deprecated EAPI: 0
+
+app-xemacs/fortran-modes
+  DeprecatedEAPI: version 1.05: uses deprecated EAPI: 0
+
+app-xemacs/frame-icon
+  DeprecatedEAPI: version 1.11: uses deprecated EAPI: 0
+
+app-xemacs/fsf-compat
+  DeprecatedEAPI: version 1.15: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.19: uses deprecated EAPI: 0
+
+app-xemacs/games
+  DeprecatedEAPI: version 1.20: uses deprecated EAPI: 0
+
+app-xemacs/general-docs
+  DeprecatedEAPI: version 1.04: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.06: uses deprecated EAPI: 0
+
+app-xemacs/gnats
+  DeprecatedEAPI: version 1.17: uses deprecated EAPI: 0
+
+app-xemacs/gnus
+  DeprecatedEAPI: version 1.99: uses deprecated EAPI: 0
+
+app-xemacs/guided-tour
+  DeprecatedEAPI: version 0.52: uses deprecated EAPI: 0
+
+app-xemacs/haskell-mode
+  DeprecatedEAPI: version 1.11: uses deprecated EAPI: 0
+
+app-xemacs/hm-html-menus
+  DeprecatedEAPI: version 1.23: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.24: uses deprecated EAPI: 0
+
+app-xemacs/hyperbole
+  DeprecatedEAPI: version 1.16: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.17: uses deprecated EAPI: 0
+
+app-xemacs/ibuffer
+  DeprecatedEAPI: version 1.09: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.10: uses deprecated EAPI: 0
+
+app-xemacs/idlwave
+  DeprecatedEAPI: version 1.32: uses deprecated EAPI: 0
+
+app-xemacs/igrep
+  DeprecatedEAPI: version 1.14: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.16: uses deprecated EAPI: 0
+
+app-xemacs/ilisp
+  DeprecatedEAPI: version 1.34: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.36: uses deprecated EAPI: 0
+
+app-xemacs/jde
+  DeprecatedEAPI: version 1.51: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.52: uses deprecated EAPI: 0
+
+app-xemacs/latin-euro-standards
+  DeprecatedEAPI: version 1.07: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.09: uses deprecated EAPI: 0
+
+app-xemacs/latin-unity
+  DeprecatedEAPI: version 1.20: uses deprecated EAPI: 0
+
+app-xemacs/leim
+  DeprecatedEAPI: version 1.24: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.31: uses deprecated EAPI: 0
+
+app-xemacs/locale
+  DeprecatedEAPI: version 1.24: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.28: uses deprecated EAPI: 0
+
+app-xemacs/lookup
+  DeprecatedEAPI: version 1.15: uses deprecated EAPI: 0
+
+app-xemacs/mail-lib
+  DeprecatedEAPI: version 1.83: uses deprecated EAPI: 0
+
+app-xemacs/mailcrypt
+  DeprecatedEAPI: version 2.14: uses deprecated EAPI: 0
+
+app-xemacs/mew
+  DeprecatedEAPI: version 1.19: uses deprecated EAPI: 0
+
+app-xemacs/mh-e
+  DeprecatedEAPI: version 1.29: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.32: uses deprecated EAPI: 0
+
+app-xemacs/mine
+  DeprecatedEAPI: version 1.16: uses deprecated EAPI: 0
+
+app-xemacs/misc-games
+  DeprecatedEAPI: version 1.19: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.22: uses deprecated EAPI: 0
+
+app-xemacs/mmm-mode
+  DeprecatedEAPI: version 1.02: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.05: uses deprecated EAPI: 0
+
+app-xemacs/mule-base
+  DeprecatedEAPI: version 1.49-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.56: uses deprecated EAPI: 0
+
+app-xemacs/mule-ucs
+  DeprecatedEAPI: version 1.14: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.18: uses deprecated EAPI: 0
+
+app-xemacs/net-utils
+  DeprecatedEAPI: version 1.52: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.56: uses deprecated EAPI: 0
+
+app-xemacs/ocaml
+  DeprecatedEAPI: version 0.06: uses deprecated EAPI: 0
+
+app-xemacs/oo-browser
+  DeprecatedEAPI: version 1.04: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.05: uses deprecated EAPI: 0
+
+app-xemacs/os-utils
+  DeprecatedEAPI: version 1.39: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.41: uses deprecated EAPI: 0
+
+app-xemacs/pc
+  DeprecatedEAPI: version 1.28: uses deprecated EAPI: 0
+
+app-xemacs/pcl-cvs
+  DeprecatedEAPI: version 1.67: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.70: uses deprecated EAPI: 0
+
+app-xemacs/pcomplete
+  DeprecatedEAPI: version 1.04: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.06: uses deprecated EAPI: 0
+
+app-xemacs/perl-modes
+  DeprecatedEAPI: version 1.09: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.14: uses deprecated EAPI: 0
+
+app-xemacs/pgg
+  DeprecatedEAPI: version 1.06: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.07: uses deprecated EAPI: 0
+
+app-xemacs/prog-modes
+  DeprecatedEAPI: version 2.10: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.20: uses deprecated EAPI: 0
+
+app-xemacs/ps-print
+  DeprecatedEAPI: version 1.11: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.12: uses deprecated EAPI: 0
+
+app-xemacs/psgml
+  DeprecatedEAPI: version 1.44: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.45: uses deprecated EAPI: 0
+
+app-xemacs/psgml-dtds
+  DeprecatedEAPI: version 1.03: uses deprecated EAPI: 0
+
+app-xemacs/python-modes
+  DeprecatedEAPI: version 1.08: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.14: uses deprecated EAPI: 0
+
+app-xemacs/re-builder
+  DeprecatedEAPI: version 1.05: uses deprecated EAPI: 0
+
+app-xemacs/reftex
+  DeprecatedEAPI: version 1.34: uses deprecated EAPI: 0
+
+app-xemacs/riece
+  DeprecatedEAPI: version 1.23: uses deprecated EAPI: 0
+
+app-xemacs/rmail
+  DeprecatedEAPI: version 1.14: uses deprecated EAPI: 0
+
+app-xemacs/ruby-modes
+  DeprecatedEAPI: version 1.02: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.04: uses deprecated EAPI: 0
+
+app-xemacs/sasl
+  DeprecatedEAPI: version 1.16: uses deprecated EAPI: 0
+
+app-xemacs/scheme
+  DeprecatedEAPI: version 1.15: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.18: uses deprecated EAPI: 0
+
+app-xemacs/semantic
+  DeprecatedEAPI: version 1.20: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.21: uses deprecated EAPI: 0
+
+app-xemacs/sgml
+  DeprecatedEAPI: version 1.11: uses deprecated EAPI: 0
+
+app-xemacs/sh-script
+  DeprecatedEAPI: version 1.22: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.24: uses deprecated EAPI: 0
+
+app-xemacs/sieve
+  DeprecatedEAPI: version 1.18: uses deprecated EAPI: 0
+
+app-xemacs/skk
+  DeprecatedEAPI: version 1.23: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.24: uses deprecated EAPI: 0
+
+app-xemacs/slider
+  DeprecatedEAPI: version 1.15: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.16: uses deprecated EAPI: 0
+
+app-xemacs/sml-mode
+  DeprecatedEAPI: version 0.12: uses deprecated EAPI: 0
+
+app-xemacs/sounds-au
+  DeprecatedEAPI: version 1.12: uses deprecated EAPI: 0
+
+app-xemacs/sounds-wav
+  DeprecatedEAPI: version 1.12: uses deprecated EAPI: 0
+
+app-xemacs/speedbar
+  DeprecatedEAPI: version 1.28: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.29: uses deprecated EAPI: 0
+
+app-xemacs/strokes
+  DeprecatedEAPI: version 1.10: uses deprecated EAPI: 0
+
+app-xemacs/sun
+  DeprecatedEAPI: version 1.16: uses deprecated EAPI: 0
+
+app-xemacs/supercite
+  DeprecatedEAPI: version 1.21: uses deprecated EAPI: 0
+
+app-xemacs/texinfo
+  DeprecatedEAPI: version 1.30: uses deprecated EAPI: 0
+
+app-xemacs/text-modes
+  DeprecatedEAPI: version 1.92: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.98: uses deprecated EAPI: 0
+
+app-xemacs/textools
+  DeprecatedEAPI: version 1.15: uses deprecated EAPI: 0
+
+app-xemacs/time
+  DeprecatedEAPI: version 1.14: uses deprecated EAPI: 0
+
+app-xemacs/tm
+  DeprecatedEAPI: version 1.38: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.39: uses deprecated EAPI: 0
+
+app-xemacs/tooltalk
+  DeprecatedEAPI: version 1.15: uses deprecated EAPI: 0
+
+app-xemacs/tpu
+  DeprecatedEAPI: version 1.14: uses deprecated EAPI: 0
+
+app-xemacs/tramp
+  DeprecatedEAPI: version 1.52: uses deprecated EAPI: 0
+
+app-xemacs/vc
+  DeprecatedEAPI: version 1.41: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.48: uses deprecated EAPI: 0
+
+app-xemacs/vc-cc
+  DeprecatedEAPI: version 1.22: uses deprecated EAPI: 0
+
+app-xemacs/vhdl
+  DeprecatedEAPI: version 1.22: uses deprecated EAPI: 0
+
+app-xemacs/view-process
+  DeprecatedEAPI: version 1.13: uses deprecated EAPI: 0
+
+app-xemacs/viper
+  DeprecatedEAPI: version 1.55: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.67: uses deprecated EAPI: 0
+
+app-xemacs/vm
+  DeprecatedEAPI: version 7.22: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 8.08: uses deprecated EAPI: 0
+
+app-xemacs/w3
+  DeprecatedEAPI: version 1.33: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.35: uses deprecated EAPI: 0
+
+app-xemacs/x-symbol
+  DeprecatedEAPI: version 1.10: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.11: uses deprecated EAPI: 0
+
+app-xemacs/xemacs-base
+  DeprecatedEAPI: version 2.08: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.10-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.27: uses deprecated EAPI: 0
+
+app-xemacs/xemacs-devel
+  DeprecatedEAPI: version 1.75: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.80: uses deprecated EAPI: 0
+
+app-xemacs/xemacs-eterm
+  DeprecatedEAPI: version 1.17: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.18-r1: uses deprecated EAPI: 0
+
+app-xemacs/xemacs-ispell
+  DeprecatedEAPI: version 1.32: uses deprecated EAPI: 0
+
+app-xemacs/xemacs-packages-all
+  DeprecatedEAPI: version 2007.04.27-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2010.07.29: uses deprecated EAPI: 0
+
+app-xemacs/xetla
+  DeprecatedEAPI: version 1.01: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.02: uses deprecated EAPI: 0
+
+app-xemacs/xlib
+  DeprecatedEAPI: version 1.14: uses deprecated EAPI: 0
+
+app-xemacs/xslide
+  DeprecatedEAPI: version 1.09: uses deprecated EAPI: 0
+
+app-xemacs/xslt-process
+  DeprecatedEAPI: version 1.12: uses deprecated EAPI: 0
+
+app-xemacs/xwem
+  DeprecatedEAPI: version 1.22: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.23: uses deprecated EAPI: 0
+
+app-xemacs/zenirc
+  DeprecatedEAPI: version 1.16: uses deprecated EAPI: 0
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
