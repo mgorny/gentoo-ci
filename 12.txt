@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 12 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'app-emulation/*' 'sys-fs/*' 'dev-vcs/*' 'www-client/*' 'games-puzzle/*' 'gnome-base/*' 'net-fs/*' 'sys-freebsd/*' 'www-plugins/*' 'games-sports/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'app-emulation/*' 'sys-fs/*' 'dev-vcs/*' 'dev-qt/*' 'games-puzzle/*' 'gnome-base/*' 'net-fs/*' 'sys-freebsd/*' 'www-plugins/*' 'games-sports/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -726,66 +726,65 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-www-client/ck4up
-  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 0
+dev-qt/assistant
+  DroppedKeywordWarning: version 5.4.2: keywords dropped: alpha, ia64, ppc, sparc
 
-www-client/elinks
-  DeprecatedEAPI: version 0.12_pre6-r1: uses deprecated EAPI: 4
+dev-qt/designer
+  DroppedKeywordWarning: version 5.4.2: keywords dropped: alpha, ia64, mips, ppc, sparc
 
-www-client/fetch
-  DeprecatedEAPI: version 1.0-r1: uses deprecated EAPI: 0
+dev-qt/linguist
+  DroppedKeywordWarning: version 5.4.2: keywords dropped: alpha, ia64, mips, ppc, sparc
 
-www-client/httrack
-  DeprecatedEAPI: version 3.45.4: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 3.47.27: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 3.48.13: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 3.48.19: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 3.48.20: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 3.48.21: uses deprecated EAPI: 4
+dev-qt/pixeltool
+  DroppedKeywordWarning: version 5.4.2: keywords dropped: alpha, ia64, ppc, sparc
 
-www-client/jumanji
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+dev-qt/qdbusviewer
+  DroppedKeywordWarning: version 5.4.2: keywords dropped: alpha, ia64, mips, ppc, sparc
 
-www-client/luakit
-  DeprecatedEAPI: version 2012.09.13_p1-r1: uses deprecated EAPI: 4
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
+dev-qt/qt-creator
+  DroppedKeywordWarning: version 3.4.2: keywords dropped: ppc
 
-www-client/opera
-  DeprecatedEAPI: version 12.16_p1860-r1: uses deprecated EAPI: 4
-  DroppedKeywordWarning: version 33.0.1990.43: keywords dropped: x86
+dev-qt/qtcore
+  DroppedKeywordWarning: version 5.4.2: keywords dropped: alpha, ia64, mips, ppc, sparc
 
-www-client/seamonkey-bin
-  DeprecatedEAPI: version 2.35: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 2.38: uses deprecated EAPI: 4
+dev-qt/qtdbus
+  DroppedKeywordWarning: version 5.4.2: keywords dropped: alpha, ia64, mips, ppc, sparc
 
-www-client/surf
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+dev-qt/qtdeclarative
+  DroppedKeywordWarning: version 5.4.2-r1: keywords dropped: alpha, ia64, ppc, sparc
 
-www-client/uget
-  DeprecatedEAPI: version 1.8.0: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.10.3: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.10.3-r1: uses deprecated EAPI: 4
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+dev-qt/qtgui
+  DroppedKeywordWarning: version 5.4.2-r1: keywords dropped: alpha, ia64, mips, ppc, sparc
 
-www-client/uzbl
-  DeprecatedEAPI: version 2012.05.14: uses deprecated EAPI: 4
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+dev-qt/qthelp
+  DroppedKeywordWarning: version 5.4.2: keywords dropped: alpha, ia64, ppc, sparc
 
-www-client/w3m
-  NonExistentDeps: version 0.5.3-r5: depset depends: nonexistent atoms [ >=app-text/migemo-0.40 ]
-  NonExistentDeps: version 0.5.3-r5: depset rdepends: nonexistent atoms [ >=app-text/migemo-0.40 ]
+dev-qt/qtmultimedia
+  DroppedKeywordWarning: version 5.4.2-r1: keywords dropped: ia64, ppc
 
-www-client/w3mmee
-  DeprecatedEAPI: version 0.3.2_p24-r7: uses deprecated EAPI: 0
+dev-qt/qtopengl
+  DroppedKeywordWarning: version 5.4.2: keywords dropped: alpha, ia64, mips, ppc, sparc
 
-www-client/weboob
-  DeprecatedEclass: version 9998: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DroppedKeywordWarning: version 9998: keywords dropped: amd64, x86
+dev-qt/qtscript
+  DroppedKeywordWarning: version 5.4.2-r1: keywords dropped: alpha, ia64, mips, ppc, sparc
 
-www-client/xombrero
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+dev-qt/qtsql
+  DroppedKeywordWarning: version 5.4.2: keywords dropped: alpha, ia64, mips, ppc, sparc
+
+dev-qt/qtsvg
+  DroppedKeywordWarning: version 5.4.2: keywords dropped: alpha, ia64, mips, ppc, sparc
+
+dev-qt/qttest
+  DroppedKeywordWarning: version 5.4.2: keywords dropped: alpha, ia64, mips, ppc, sparc
+
+dev-qt/qttranslations
+  DroppedKeywordWarning: version 5.4.2: keywords dropped: alpha, ia64, mips, ppc, sparc
+
+dev-qt/qtwebkit
+  DroppedKeywordWarning: version 4.10.4: keywords dropped: arm, ia64, mips, ppc, ppc64, x86
+
+dev-qt/qtxmlpatterns
+  DroppedKeywordWarning: version 5.4.2: keywords dropped: alpha, ia64, mips, ppc, sparc
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
