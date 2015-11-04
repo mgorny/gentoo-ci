@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 13 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'sys-apps/*' 'virtual/*' 'app-crypt/*' 'gnome-extra/*' 'xfce-extra/*' 'games-action/*' 'gnustep-apps/*' 'sys-freebsd/*' 'www-misc/*' 'mate-extra/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'sys-apps/*' 'virtual/*' 'app-crypt/*' 'x11-apps/*' 'xfce-extra/*' 'games-action/*' 'gnustep-apps/*' 'sys-freebsd/*' 'www-misc/*' 'mate-extra/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1453,56 +1453,151 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-gnome-extra/assogiate
-  DeprecatedEAPI: version 0.2.1: uses deprecated EAPI: 4
+x11-apps/ardesia
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 4
 
-gnome-extra/avant-window-navigator-extras
-  DeprecatedEclass: version 0.4.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  NonExistentDeps: version 0.4.0: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
-  NonExistentDeps: version 0.4.0: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
-  DeprecatedEAPI: version 0.4.0: uses deprecated EAPI: 4
+x11-apps/bdftopcf
+  DroppedKeywordWarning: version 1.0.5: keywords dropped: arm64
 
-gnome-extra/cameramonitor
-  DeprecatedEclass: version 0.3.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+x11-apps/fonttosfnt
+  DeprecatedEAPI: version 1.0.4-r1: uses deprecated EAPI: 4
 
-gnome-extra/docky
-  DeprecatedEclass: version 2.2.0: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DeprecatedEAPI: version 2.2.0: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 2.2.1.1: uses deprecated EAPI: 4
+x11-apps/fslsfonts
+  DeprecatedEAPI: version 1.0.4: uses deprecated EAPI: 4
 
-gnome-extra/gnome-color-manager
-  DroppedKeywordWarning: version 3.14.2: keywords dropped: alpha, sparc
+x11-apps/fstobdf
+  DeprecatedEAPI: version 1.0.5: uses deprecated EAPI: 4
 
-gnome-extra/gnome-dvb-daemon
-  DeprecatedEclass: version 0.2.10: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  NonExistentDeps: version 0.2.10: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
-  NonExistentDeps: version 0.2.10: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
-  DeprecatedEAPI: version 0.2.10: uses deprecated EAPI: 4
+x11-apps/iceauth
+  DroppedKeywordWarning: version 1.0.7: keywords dropped: arm64
 
-gnome-extra/gnome-integration-spotify
-  DeprecatedEAPI: version 20131013: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 20140907: uses deprecated EAPI: 4
+x11-apps/listres
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 4
 
-gnome-extra/gnome-power-manager
-  DroppedKeywordWarning: version 3.16.1: keywords dropped: alpha
+x11-apps/luit
+  DeprecatedEAPI: version 1.1.1: uses deprecated EAPI: 4
 
-gnome-extra/gnome-web-photo
-  DeprecatedEAPI: version 0.10.6: uses deprecated EAPI: 4
+x11-apps/mkfontdir
+  DeprecatedEAPI: version 1.0.7: uses deprecated EAPI: 4
 
-gnome-extra/gucharmap
-  DeprecatedEAPI: version 3.0.1-r200: uses deprecated EAPI: 4
+x11-apps/oclock
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 4
 
-gnome-extra/nautilus-share
-  DeprecatedEAPI: version 0.7.3-r1: uses deprecated EAPI: 4
+x11-apps/python-whiteboard
+  DeprecatedEclass: version 20101012: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 20101012: uses deprecated EAPI: 3
 
-gnome-extra/nm-applet
-  DroppedKeywordWarning: version 1.0.2: keywords dropped: ia64
+x11-apps/scripts
+  DeprecatedEAPI: version 1.0.1-r1: uses deprecated EAPI: 3
 
-gnome-extra/polkit-gnome
-  DeprecatedEAPI: version 0.105-r1: uses deprecated EAPI: 4
+x11-apps/setxkbmap
+  DeprecatedEAPI: version 1.3.0: uses deprecated EAPI: 4
 
-gnome-extra/zeitgeist-datahub
-  DeprecatedEAPI: version 0.9.5: uses deprecated EAPI: 4
+x11-apps/smproxy
+  DeprecatedEAPI: version 1.0.5: uses deprecated EAPI: 4
+
+x11-apps/spotlighter
+  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 3
+
+x11-apps/transset
+  DeprecatedEAPI: version 1.0.0: uses deprecated EAPI: 4
+
+x11-apps/x11perf
+  DeprecatedEAPI: version 1.5.4: uses deprecated EAPI: 4
+
+x11-apps/xauth
+  DeprecatedEAPI: version 1.0.8: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.0.9: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.0.9-r1: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.0.9-r2: uses deprecated EAPI: 4
+
+x11-apps/xbiff
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
+
+x11-apps/xclipboard
+  DeprecatedEAPI: version 1.1.2: uses deprecated EAPI: 4
+
+x11-apps/xclock
+  DeprecatedEAPI: version 1.0.6: uses deprecated EAPI: 4
+
+x11-apps/xcmsdb
+  DeprecatedEAPI: version 1.0.4: uses deprecated EAPI: 4
+
+x11-apps/xcursorgen
+  DeprecatedEAPI: version 1.0.5: uses deprecated EAPI: 4
+
+x11-apps/xdbedizzy
+  DeprecatedEAPI: version 1.1.0: uses deprecated EAPI: 3
+
+x11-apps/xdm
+  DeprecatedEAPI: version 1.1.11-r1: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.1.11-r2: uses deprecated EAPI: 4
+
+x11-apps/xdriinfo
+  DeprecatedEAPI: version 1.0.4: uses deprecated EAPI: 3
+
+x11-apps/xeyes
+  DeprecatedEAPI: version 1.1.1: uses deprecated EAPI: 3
+
+x11-apps/xf86dga
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
+
+x11-apps/xfontsel
+  DeprecatedEAPI: version 1.0.4: uses deprecated EAPI: 4
+
+x11-apps/xgamma
+  DeprecatedEAPI: version 1.0.5: uses deprecated EAPI: 4
+
+x11-apps/xinit
+  DroppedKeywordWarning: version 1.3.4: keywords dropped: arm64
+
+x11-apps/xinput_calibrator
+  DeprecatedEAPI: version 0.7.5: uses deprecated EAPI: 4
+
+x11-apps/xkbcomp
+  DeprecatedEAPI: version 1.2.4: uses deprecated EAPI: 4
+
+x11-apps/xkbevd
+  DeprecatedEAPI: version 1.1.3: uses deprecated EAPI: 4
+
+x11-apps/xkbprint
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
+
+x11-apps/xlogo
+  DeprecatedEAPI: version 1.0.4: uses deprecated EAPI: 4
+
+x11-apps/xlsatoms
+  DeprecatedEAPI: version 1.1.1: uses deprecated EAPI: 4
+
+x11-apps/xlsclients
+  DeprecatedEAPI: version 1.1.2: uses deprecated EAPI: 4
+
+x11-apps/xlsfonts
+  DeprecatedEAPI: version 1.0.4: uses deprecated EAPI: 4
+
+x11-apps/xmessage
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 4
+
+x11-apps/xmore
+  DeprecatedEAPI: version 1.0.2: uses deprecated EAPI: 3
+
+x11-apps/xpr
+  DeprecatedEAPI: version 1.0.4: uses deprecated EAPI: 4
+
+x11-apps/xtitle
+  DeprecatedEAPI: version 1.0.2: uses deprecated EAPI: 4
+
+x11-apps/xtrap
+  DeprecatedEAPI: version 1.0.2-r1: uses deprecated EAPI: 4
+
+x11-apps/xvidtune
+  DeprecatedEAPI: version 1.0.2-r1: uses deprecated EAPI: 4
+
+x11-apps/xwininfo
+  DeprecatedEAPI: version 1.1.2: uses deprecated EAPI: 4
+
+x11-apps/xwud
+  DeprecatedEAPI: version 1.0.4: uses deprecated EAPI: 4
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
