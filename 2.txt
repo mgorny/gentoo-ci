@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 2 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-perl/*' 'x11-misc/*' 'x11-plugins/*' 'app-office/*' 'sys-block/*' 'net-im/*' 'media-tv/*' 'app-forensics/*' 'x11-proto/*' 'games-engines/*' 'app-antivirus/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-perl/*' 'x11-misc/*' 'x11-plugins/*' 'sys-kernel/*' 'sys-block/*' 'net-im/*' 'media-tv/*' 'app-forensics/*' 'x11-proto/*' 'games-engines/*' 'app-antivirus/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1181,88 +1181,68 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-app-office/eqe
-  DeprecatedEAPI: version 1.3.0: uses deprecated EAPI: 0
+sys-kernel/dracut
+  DeprecatedEAPI: version 034-r4: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 040-r3: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 041-r3: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 043-r2: uses deprecated EAPI: 4
 
-app-office/grisbi
-  DeprecatedEAPI: version 1.0.0: uses deprecated EAPI: 4
+sys-kernel/genkernel
+  DeprecatedEAPI: version 3.4.45.1: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.4.48: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.4.49.2: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.4.50: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.4.51.4: uses deprecated EAPI: 3
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DroppedKeywordWarning: version 3.4.50: keywords dropped: sh
 
-app-office/gtimelog
-  DeprecatedEAPI: version 0.8.0: uses deprecated EAPI: 4
-  DeprecatedEclass: version 0.8.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+sys-kernel/genkernel-next
+  DroppedKeywordWarning: version 60: keywords dropped: ppc, ppc64
+  DroppedKeywordWarning: version 55: keywords dropped: alpha
 
-app-office/ledger
-  DeprecatedEAPI: version 2.6.3-r1: uses deprecated EAPI: 4
+sys-kernel/kccmp
+  DeprecatedEAPI: version 0.3: uses deprecated EAPI: 4
 
-app-office/libreoffice
-  DroppedKeywordWarning: version 5.0.3.2: keywords dropped: amd64, arm, x86
+sys-kernel/linux-firmware
+  DeprecatedEclass: version 99999999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-app-office/libreoffice-l10n
-  DroppedKeywordWarning: version 5.0.3.2: keywords dropped: amd64, arm, x86
+sys-kernel/linux-headers
+  DeprecatedEAPI: version 3.18: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 3.19: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 4.0: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 4.1: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 4.2: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 4.3: uses deprecated EAPI: 4
 
-app-office/lyx
-  DeprecatedEAPI: version 1.6.10: uses deprecated EAPI: 2
-  NonExistentDeps: version 1.6.10: depset rdepends: nonexistent atoms [ <dev-vcs/subversion-1.7.0 ]
-  DeprecatedEclass: version 1.6.10: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  NonExistentDeps: version 2.0.8.1: depset rdepends: nonexistent atoms [ <dev-vcs/subversion-1.7.0 ]
+sys-kernel/raspberrypi-image
+  DeprecatedEclass: version 3.10.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-app-office/magicpoint
-  DeprecatedEAPI: version 1.13a: uses deprecated EAPI: 4
+sys-kernel/raspberrypi-sources
+  DeprecatedEclass: version 3.10.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEclass: version 3.12.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEclass: version 3.14.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEclass: version 3.18.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEclass: version 3.19.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-app-office/odeskteam
-  DeprecatedEAPI: version 3.6.1: uses deprecated EAPI: 4
+sys-kernel/spl
+  DeprecatedEAPI: version 0.6.0_rc13-r2: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.0_rc14-r3: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.1-r3: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.2-r5: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.3-r1: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.4.2: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.5.2: uses deprecated EAPI: 4
 
-app-office/ooextras
-  DeprecatedEAPI: version 20060909: uses deprecated EAPI: 0
+sys-kernel/vanilla-sources
+  UnusedLocalFlags: metadata.xml unused local use flag: [ deblob ]
 
-app-office/openerp
-  DeprecatedEAPI: version 6.1.1-r1: uses deprecated EAPI: 3
-  DeprecatedEclass: version 6.1.1-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 7.0.20130219-r5: uses deprecated EAPI: 3
-  DeprecatedEclass: version 7.0.20130219-r5: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DroppedKeywordWarning: version 8.0.20140125: keywords dropped: amd64, x86
-
-app-office/openoffice-bin
-  DeprecatedEAPI: version 4.1.1: uses deprecated EAPI: 4
-
-app-office/qchartdiary
-  DeprecatedEAPI: version 0.6.4.1-r2: uses deprecated EAPI: 2
-
-app-office/rubrica
-  MetadataError: version 2.1.6-r1: attr(fetchables): error- Metadata Exception: pkg ebuild src: app-office/rubrica-2.1.6-r1, attr fetchables
-error: mirror://berlios/rubrica/rubrica2-2.1.6.tar.bz2 mirror://gentoo/rubrica-2.1.6-hu.po.bz2 is unparseable
-flagged token- uri mirror://berlios/rubrica/rubrica2-2.1.6.tar.bz2 isn't a known mirror tier
-
-app-office/scribus
-  DroppedKeywordWarning: version 1.5.0-r1: keywords dropped: hppa, ppc, ppc64, sparc
-
-app-office/skrooge
-  DroppedKeywordWarning: version 2.0.0: keywords dropped: x86
-
-app-office/taskcoach
-  DeprecatedEAPI: version 1.3.18: uses deprecated EAPI: 3
-  DeprecatedEclass: version 1.3.18: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 1.3.27: uses deprecated EAPI: 3
-  DeprecatedEclass: version 1.3.27: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 1.3.29: uses deprecated EAPI: 3
-  DeprecatedEclass: version 1.3.29: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 1.3.32: uses deprecated EAPI: 3
-  DeprecatedEclass: version 1.3.32: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-
-app-office/tedia2sql
-  DeprecatedEAPI: version 1.2.12: uses deprecated EAPI: 0
-
-app-office/texmacs
-  DeprecatedEAPI: version 1.99.1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.99.2: uses deprecated EAPI: 4
-
-app-office/unoconv
-  DeprecatedEAPI: version 0.6: uses deprecated EAPI: 3
-  DeprecatedEclass: version 0.6: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.6.20131229: uses deprecated EAPI: 3
-  DeprecatedEclass: version 0.6.20131229: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 99999999: uses deprecated EAPI: 3
-  DeprecatedEclass: version 99999999: uses deprecated eclass(es): [ git-2 (migrate to git-r3), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+sys-kernel/zen-sources
+  DeprecatedEclass: version 3.8.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEclass: version 3.9.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEclass: version 3.10.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEclass: version 3.11.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEclass: version 3.12.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEclass: version 3.13.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch

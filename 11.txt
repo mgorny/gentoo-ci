@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 11 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'media-sound/*' 'x11-libs/*' 'sys-cluster/*' 'kde-base/*' 'games-puzzle/*' 'sys-boot/*' 'dev-tcltk/*' 'sys-infiniband/*' 'app-laptop/*' 'gnustep-libs/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'app-emulation/*' 'x11-libs/*' 'sys-cluster/*' 'kde-base/*' 'games-puzzle/*' 'sys-boot/*' 'dev-tcltk/*' 'sys-infiniband/*' 'app-laptop/*' 'gnustep-libs/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -14,945 +14,191 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-media-sound/SmarTagger
-  DeprecatedEAPI: version 0.1-r1: uses deprecated EAPI: 0
-
-media-sound/a2jmidid
-  DeprecatedEclass: version 8: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 8: uses deprecated EAPI: 4
-
-media-sound/aacgain
-  DeprecatedEAPI: version 1.9: uses deprecated EAPI: 4
-
-media-sound/aacplusenc
-  DeprecatedEAPI: version 0.17.5: uses deprecated EAPI: 4
-  MissingChksum: version 0.17.5: "aacplusenc_0.17.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-media-sound/abcde
-  DroppedKeywordWarning: version 2.6: keywords dropped: ppc
-
-media-sound/adplay
-  DeprecatedEAPI: version 1.7: uses deprecated EAPI: 4
-
-media-sound/aeolus
-  DeprecatedEAPI: version 0.8.1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.8.4: uses deprecated EAPI: 0
-
-media-sound/alac_decoder
-  DeprecatedEAPI: version 0.1.3: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.2.0: uses deprecated EAPI: 2
-
-media-sound/alsamixer-app
-  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 0
-
-media-sound/alsamixergui
-  DeprecatedEAPI: version 0.9.0.1.2-r4: uses deprecated EAPI: 4
-
-media-sound/alsaplayer
-  DeprecatedEAPI: version 0.99.81: uses deprecated EAPI: 4
-
-media-sound/ams
-  DeprecatedEAPI: version 2.0.1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 2.1.1: uses deprecated EAPI: 4
-
-media-sound/apetag
-  DeprecatedEclass: version 1.12: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 1.12: uses deprecated EAPI: 3
-
-media-sound/apulse
-  ExecutableFile: "files/apulse" has unnecessary executable bit
-
-media-sound/ardour
-  DeprecatedEAPI: version 2.8.14-r1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 3.5.308-r1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 3.5.357: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 3.5.380: uses deprecated EAPI: 4
-
-media-sound/ario
-  DeprecatedEclass: version 1.5.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-
-media-sound/aseqview
-  DeprecatedEAPI: version 0.2.8: uses deprecated EAPI: 2
-
-media-sound/asunder
-  DeprecatedEAPI: version 2.2: uses deprecated EAPI: 4
-  DroppedKeywordWarning: version 2.7: keywords dropped: ppc
-
-media-sound/audacious
-  DeprecatedEAPI: version 2.4.4: uses deprecated EAPI: 1
-  DeprecatedEAPI: version 2.5.4: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 3.1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 3.1.1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 3.2.2-r1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 3.2.3: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 3.2.4: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 3.3.3: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 3.3.4: uses deprecated EAPI: 4
-  DroppedKeywordWarning: version 3.6.2: keywords dropped: ppc, sparc
-
-media-sound/audacity
-  DeprecatedEAPI: version 2.0.2: uses deprecated EAPI: 4
-
-media-sound/audiocompress
-  DeprecatedEAPI: version 2.0: uses deprecated EAPI: 0
-
-media-sound/audiotag
-  DeprecatedEAPI: version 0.19: uses deprecated EAPI: 0
-
-media-sound/aumix
-  DeprecatedEAPI: version 2.9.1: uses deprecated EAPI: 2
-
-media-sound/awesfx
-  DeprecatedEAPI: version 0.5.1d: uses deprecated EAPI: 4
-
-media-sound/banshee
-  DeprecatedEclass: version 2.6.1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-
-media-sound/baudline
-  DeprecatedEAPI: version 1.08-r1: uses deprecated EAPI: 3
-
-media-sound/bempc
-  DeprecatedEAPI: version 0.11: uses deprecated EAPI: 4
-
-media-sound/bitmeter
-  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 2
-
-media-sound/bladeenc
-  DeprecatedEAPI: version 0.94.2-r1: uses deprecated EAPI: 2
-
-media-sound/bplay
-  DeprecatedEAPI: version 0.991: uses deprecated EAPI: 0
-
-media-sound/bpmdetect
-  DeprecatedEAPI: version 0.6.1: uses deprecated EAPI: 2
-
-media-sound/bristol
-  DeprecatedEAPI: version 0.60.9: uses deprecated EAPI: 4
-
-media-sound/brutefir
-  DeprecatedEAPI: version 1.0k-r1: uses deprecated EAPI: 2
-
-media-sound/cd-discid
-  DeprecatedEAPI: version 1.3: uses deprecated EAPI: 4
-
-media-sound/cdplay
-  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
-
-media-sound/cdstatus
-  DeprecatedEAPI: version 0.97.03: uses deprecated EAPI: 4
-
-media-sound/cdtool
-  DeprecatedEAPI: version 2.1.8-r1: uses deprecated EAPI: 4
-
-media-sound/chordii
-  DeprecatedEAPI: version 4.3: uses deprecated EAPI: 4
-
-media-sound/christine
-  DeprecatedEclass: version 0.7.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.7.0: uses deprecated EAPI: 4
-
-media-sound/chuck
-  DeprecatedEAPI: version 1.2.1.2: uses deprecated EAPI: 0
-
-media-sound/clementine
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-media-sound/cmix
-  DeprecatedEAPI: version 1.6: uses deprecated EAPI: 0
-
-media-sound/codecgraph
-  DeprecatedEclass: version 20120114: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 20120114: uses deprecated EAPI: 4
-
-media-sound/combine_wave
-  DeprecatedEAPI: version 0.3.1-r1: uses deprecated EAPI: 2
-
-media-sound/coquillo
-  DeprecatedEAPI: version 1.12: uses deprecated EAPI: 4
-
-media-sound/cplay
-  DeprecatedEclass: version 1.49: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 1.49: uses deprecated EAPI: 2
-
-media-sound/cvoicecontrol
-  DeprecatedEAPI: version 0.9_alpha: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.9_alpha-r1: uses deprecated EAPI: 2
-
-media-sound/dagrab
-  DeprecatedEAPI: version 0.513: uses deprecated EAPI: 0
-
-media-sound/daudio
-  DeprecatedEAPI: version 0.3: uses deprecated EAPI: 0
-
-media-sound/dcd
-  DeprecatedEAPI: version 0.95: uses deprecated EAPI: 0
-
-media-sound/declick
-  DeprecatedEAPI: version 0.6.5: uses deprecated EAPI: 2
-
-media-sound/denemo
-  DeprecatedEAPI: version 0.9.6: uses deprecated EAPI: 4
-
-media-sound/dir2ogg
-  DeprecatedEAPI: version 0.11.6: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.11.8-r1: uses deprecated EAPI: 2
-
-media-sound/drumstick
-  DeprecatedEAPI: version 0.5.0: uses deprecated EAPI: 4
-
-media-sound/dvda-author
-  DeprecatedEAPI: version 10.06: uses deprecated EAPI: 2
-
-media-sound/easytag
-  DroppedKeywordWarning: version 2.2.6: keywords dropped: ppc, sparc
-
-media-sound/ecasound
-  DeprecatedEclass: version 2.6.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 2.6.0: uses deprecated EAPI: 3
-  DeprecatedEclass: version 2.9.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 2.9.0: uses deprecated EAPI: 4
-  DeprecatedEclass: version 2.9.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 2.9.1: uses deprecated EAPI: 4
-
-media-sound/entagged-tageditor
-  DeprecatedEAPI: version 0.35: uses deprecated EAPI: 0
-
-media-sound/erec
-  DeprecatedEAPI: version 2.2.0.1: uses deprecated EAPI: 0
-
-media-sound/exaile
-  DeprecatedEclass: version 0.3.2.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  NonExistentDeps: version 0.3.2.0: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
-  NonExistentDeps: version 0.3.2.0: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
-  DeprecatedEAPI: version 0.3.2.0: uses deprecated EAPI: 3
-  DeprecatedEclass: version 0.3.2.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  NonExistentDeps: version 0.3.2.1: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
-  NonExistentDeps: version 0.3.2.1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
-  DeprecatedEAPI: version 0.3.2.1: uses deprecated EAPI: 3
-
-media-sound/ezstream
-  DeprecatedEAPI: version 0.5.6: uses deprecated EAPI: 4
-
-media-sound/fapg
-  DeprecatedEAPI: version 0.41: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.42: uses deprecated EAPI: 0
-
-media-sound/flac-image
-  DeprecatedEAPI: version 1.00: uses deprecated EAPI: 4
-
-media-sound/flac123
-  DeprecatedEAPI: version 0.0.12: uses deprecated EAPI: 4
-
-media-sound/flack
-  DeprecatedEAPI: version 2.0.6: uses deprecated EAPI: 4
-
-media-sound/flacon
-  DeprecatedEclass: version 0.7.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.7.2: uses deprecated EAPI: 4
-
-media-sound/flake
-  DeprecatedEAPI: version 0.11: uses deprecated EAPI: 0
-
-media-sound/fluid-soundfont
-  DeprecatedEAPI: version 3.1: uses deprecated EAPI: 4
-
-media-sound/fluidsynth
-  DeprecatedEAPI: version 1.1.6: uses deprecated EAPI: 4
-
-media-sound/freebirth
-  DeprecatedEAPI: version 0.3.2-r1: uses deprecated EAPI: 2
-
-media-sound/freewheeling
-  DeprecatedEAPI: version 0.6: uses deprecated EAPI: 2
-
-media-sound/galan
-  DeprecatedEAPI: version 0.3.0_beta7: uses deprecated EAPI: 4
-
-media-sound/gbsplay
-  MetadataError: version 0.0.91-r1: attr(fetchables): error- Metadata Exception: pkg ebuild src: media-sound/gbsplay-0.0.91-r1, attr fetchables
-error: mirror://berlios/gbsplay/gbsplay-0.0.91.tar.gz is unparseable
-flagged token- uri mirror://berlios/gbsplay/gbsplay-0.0.91.tar.gz isn't a known mirror tier
-
-media-sound/gejengel
-  DeprecatedEAPI: version 0.1.4-r1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.1.4-r2: uses deprecated EAPI: 4
-
-media-sound/gigedit
-  DeprecatedEAPI: version 0.2.0: uses deprecated EAPI: 3
-
-media-sound/gimmix
-  DeprecatedEAPI: version 0.5.7.2: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.5.7.2-r1: uses deprecated EAPI: 4
-
-media-sound/glmix
-  DeprecatedEAPI: version 0.3: uses deprecated EAPI: 2
-
-media-sound/glurp
-  DeprecatedEAPI: version 0.12.3: uses deprecated EAPI: 4
-
-media-sound/gmorgan
-  DeprecatedEAPI: version 0.39: uses deprecated EAPI: 2
-
-media-sound/gmpc
-  DeprecatedEAPI: version 11.8.16-r1: uses deprecated EAPI: 4
-
-media-sound/gmtp
-  DeprecatedEAPI: version 1.3.5: uses deprecated EAPI: 4
-
-media-sound/gmusicbrowser
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-media-sound/gnomoradio
-  DeprecatedEAPI: version 0.15.1: uses deprecated EAPI: 4
-
-media-sound/gnump3d
-  DeprecatedEAPI: version 3.0-r1: uses deprecated EAPI: 0
-
-media-sound/gom
-  DeprecatedEAPI: version 0.29.103-r1: uses deprecated EAPI: 0
-
-media-sound/gqmpeg
-  DeprecatedEAPI: version 0.91.1: uses deprecated EAPI: 4
-
-media-sound/gramofile
-  DeprecatedEAPI: version 1.6-r1: uses deprecated EAPI: 2
-
-media-sound/grip
-  DeprecatedEAPI: version 3.3.1-r3: uses deprecated EAPI: 2
-
-media-sound/gst123
-  DeprecatedEAPI: version 0.3.1: uses deprecated EAPI: 4
-
-media-sound/gstreamripper
-  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 4
-
-media-sound/gtick
-  DeprecatedEAPI: version 0.5.0: uses deprecated EAPI: 4
-
-media-sound/gtkguitune
-  DeprecatedEAPI: version 0.8: uses deprecated EAPI: 2
-
-media-sound/guayadeque
-  DeprecatedEAPI: version 0.3.5: uses deprecated EAPI: 4
-  SizeViolation: "files/guayadeque-0.3.7-wx3.0.patch" exceeds 20k in size; 25030 bytes total
-
-media-sound/guimup
-  DeprecatedEAPI: version 0.3.2: uses deprecated EAPI: 4
-
-media-sound/hearnet
-  DeprecatedEAPI: version 0.0.9: uses deprecated EAPI: 0
-
-media-sound/herrie
-  DeprecatedEAPI: version 2.2: uses deprecated EAPI: 2
-
-media-sound/horgand
-  MetadataError: version 1.14: attr(fetchables): error- Metadata Exception: pkg ebuild src: media-sound/horgand-1.14, attr fetchables
-error: mirror://berlios/horgand/horgand-1.14.tar.gz is unparseable
-flagged token- uri mirror://berlios/horgand/horgand-1.14.tar.gz isn't a known mirror tier
-  DeprecatedEAPI: version 1.14: uses deprecated EAPI: 2
-
-media-sound/hydrogen
-  DeprecatedEAPI: version 0.9.5: uses deprecated EAPI: 4
-
-media-sound/icecream
-  DeprecatedEAPI: version 1.3: uses deprecated EAPI: 0
-
-media-sound/id3
-  DeprecatedEAPI: version 0.15: uses deprecated EAPI: 0
-
-media-sound/id3ed
-  DeprecatedEAPI: version 1.10.4: uses deprecated EAPI: 2
-
-media-sound/id3ted
-  DeprecatedEAPI: version 1.0_beta3: uses deprecated EAPI: 4
-
-media-sound/id3tool
-  DeprecatedEAPI: version 1.2a: uses deprecated EAPI: 0
-
-media-sound/id3v2
-  DeprecatedEAPI: version 0.1.12: uses deprecated EAPI: 2
-
-media-sound/ifp-gnome
-  DeprecatedEclass: version 0.7: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.7: uses deprecated EAPI: 2
-
-media-sound/imp3sh
-  DeprecatedEAPI: version 0.2.4: uses deprecated EAPI: 0
-
-media-sound/jaaa
-  DeprecatedEAPI: version 0.4.2: uses deprecated EAPI: 2
-  DroppedKeywordWarning: version 0.8.4: keywords dropped: ppc, sparc, x86
-
-media-sound/jack
-  DeprecatedEclass: version 3.1.1-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 3.1.1-r1: uses deprecated EAPI: 3
-
-media-sound/jack-rack
-  DeprecatedEAPI: version 1.4.7-r1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.4.8_rc1: uses deprecated EAPI: 4
-
-media-sound/jack-smf-utils
-  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
-
-media-sound/jalv
+app-emulation/aqemu
+  DeprecatedEAPI: version 0.8.2-r2: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.8.2-r3: uses deprecated EAPI: 4
+
+app-emulation/armv8-fast-model
+  DeprecatedEAPI: version 0.8.5206: uses deprecated EAPI: 4
+
+app-emulation/cloud-init
+  SizeViolation: "files/growpart" exceeds 20k in size; 21323 bytes total
+
+app-emulation/coldfire
+  DeprecatedEAPI: version 0.3.1: uses deprecated EAPI: 2
+
+app-emulation/crossover-office-bin
+  MissingChksum: version 6.0.0: "install-crossover-standard-6.0.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 6.0.1: "install-crossover-standard-6.0.1.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 6.1.0: "install-crossover-standard-6.1.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 6.2.0: "install-crossover-standard-6.2.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+app-emulation/crossover-office-pro-bin
+  MissingChksum: version 5.0.0: "install-crossover-pro-5.0.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 5.0.1: "install-crossover-pro-5.0.1.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 5.0.3: "install-crossover-pro-5.0.3.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 6.0.0: "install-crossover-pro-6.0.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 6.1.0: "install-crossover-pro-6.1.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 6.2.0: "install-crossover-pro-6.2.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 7.0.2: "install-crossover-pro-7.0.2.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 7.1.0: "install-crossover-pro-7.1.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 8.0.0: "install-crossover-pro-8.0.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 9.0.0: "install-crossover-pro-9.0.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 9.0.1: "install-crossover-pro-9.0.1.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 9.1.0: "install-crossover-pro-9.1.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 9.2.0: "install-crossover-pro-9.2.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+app-emulation/dinero
+  DeprecatedEAPI: version 4.7-r1: uses deprecated EAPI: 4
+
+app-emulation/dlx
+  DeprecatedEAPI: version 1.0.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0.0-r1: uses deprecated EAPI: 0
+
+app-emulation/dosemu
+  DeprecatedEAPI: version 1.4.1_pre20091009: uses deprecated EAPI: 0
+
+app-emulation/e-uae
+  DeprecatedEAPI: version 0.8.29_rc4-r2: uses deprecated EAPI: 3
+
+app-emulation/fuse
   DeprecatedEAPI: version 1.0.0: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.2.0: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.4.0: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.4.4: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.4.6: uses deprecated EAPI: 4
 
-media-sound/jamin
-  DeprecatedEAPI: version 0.95.0-r2: uses deprecated EAPI: 2
-
-media-sound/justeport
-  DeprecatedEclass: version 0.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 0
-
-media-sound/lame
-  DeprecatedEAPI: version 3.99.3: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 3.99.5: uses deprecated EAPI: 4
-
-media-sound/lash
-  DeprecatedEclass: version 0.5.4-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  NonExistentDeps: version 0.5.4-r1: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
-  NonExistentDeps: version 0.5.4-r1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
-  DeprecatedEAPI: version 0.5.4-r1: uses deprecated EAPI: 4
-
-media-sound/lilycomp
-  DeprecatedEclass: version 1.0.2-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 1.0.2-r1: uses deprecated EAPI: 2
-
-media-sound/lingot
-  DeprecatedEAPI: version 0.9.0: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.9.1: uses deprecated EAPI: 4
-
-media-sound/linuxsampler
-  DeprecatedEAPI: version 0.5.1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.0.0-r1: uses deprecated EAPI: 4
-
-media-sound/litestream
-  DeprecatedEAPI: version 1.3_rc3: uses deprecated EAPI: 0
-
-media-sound/lxmusic
-  DeprecatedEAPI: version 0.4.5: uses deprecated EAPI: 4
-
-media-sound/madplay
-  DeprecatedEAPI: version 0.15.2b-r1: uses deprecated EAPI: 4
-
-media-sound/mcdp
-  DeprecatedEAPI: version 0.4a: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.4b: uses deprecated EAPI: 4
-
-media-sound/meterbridge
-  DeprecatedEAPI: version 0.9.3: uses deprecated EAPI: 2
-
-media-sound/mhwaveedit
-  DeprecatedEAPI: version 1.4.21: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 1.4.22: uses deprecated EAPI: 4
-
-media-sound/mimd
-  DeprecatedEAPI: version 0.30.1: uses deprecated EAPI: 2
-
-media-sound/mixxx
-  DeprecatedEAPI: version 1.10.1: uses deprecated EAPI: 4
-
-media-sound/mmix
-  DeprecatedEAPI: version 0.3: uses deprecated EAPI: 4
-
-media-sound/moc
-  DeprecatedEAPI: version 2.5.0_beta1-r1: uses deprecated EAPI: 4
-
-media-sound/modplugtools
-  DeprecatedEAPI: version 0.5.1: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.5.3: uses deprecated EAPI: 2
-
-media-sound/moodbar
-  DeprecatedEAPI: version 0.1.2: uses deprecated EAPI: 2
-
-media-sound/mp32ogg
-  DeprecatedEAPI: version 0.11-r6: uses deprecated EAPI: 2
-
-media-sound/mp3_check
-  DeprecatedEAPI: version 1.98: uses deprecated EAPI: 0
-
-media-sound/mp3asm
-  DeprecatedEAPI: version 0.1.3-r2: uses deprecated EAPI: 0
-
-media-sound/mp3blaster
-  DeprecatedEAPI: version 3.2.5: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 3.2.5-r1: uses deprecated EAPI: 4
-
-media-sound/mp3c
-  DeprecatedEAPI: version 0.31-r1: uses deprecated EAPI: 0
-
-media-sound/mp3check
-  DeprecatedEAPI: version 0.8.4: uses deprecated EAPI: 4
-
-media-sound/mp3gain
-  DeprecatedEAPI: version 1.5.2: uses deprecated EAPI: 2
-
-media-sound/mp3report
-  DeprecatedEAPI: version 1.0.2: uses deprecated EAPI: 0
-
-media-sound/mp3splt
-  DeprecatedEAPI: version 2.6.1a: uses deprecated EAPI: 4
-
-media-sound/mp3splt-gtk
-  DeprecatedEAPI: version 0.7.3: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.9: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.9.1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.9.1a: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.9.1a-r1: uses deprecated EAPI: 4
-
-media-sound/mp3unicode
-  DeprecatedEAPI: version 1.2.1: uses deprecated EAPI: 4
-
-media-sound/mp3wrap
-  DeprecatedEAPI: version 0.5: uses deprecated EAPI: 0
-
-media-sound/mpc
-  DeprecatedEAPI: version 0.25: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.26: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.27: uses deprecated EAPI: 4
-
-media-sound/mpck
-  DeprecatedEAPI: version 0.15: uses deprecated EAPI: 0
-
-media-sound/mpdscribble
-  DeprecatedEAPI: version 0.22: uses deprecated EAPI: 4
-
-media-sound/mpfc
-  DeprecatedEAPI: version 1.3.7-r1: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 1.3.8.1: uses deprecated EAPI: 2
-
-media-sound/mplay
-  DeprecatedEAPI: version 0.80: uses deprecated EAPI: 0
-
-media-sound/mserv
-  DeprecatedEAPI: version 0.35-r1: uses deprecated EAPI: 0
-
-media-sound/mt-daapd
-  DeprecatedEAPI: version 0.2.4.2: uses deprecated EAPI: 2
-
-media-sound/multimux
-  DeprecatedEAPI: version 0.2.5.2: uses deprecated EAPI: 0
-
-media-sound/mup
-  DeprecatedEAPI: version 5.7: uses deprecated EAPI: 4
-
-media-sound/muse
-  DeprecatedEAPI: version 0.9.2: uses deprecated EAPI: 2
-
-media-sound/musescore
-  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 4
-
-media-sound/neroaac
-  DeprecatedEAPI: version 1.5.1: uses deprecated EAPI: 4
-
-media-sound/neutrino
-  DeprecatedEAPI: version 0.8.4: uses deprecated EAPI: 4
-
-media-sound/normalize
-  DeprecatedEAPI: version 0.7.7-r1: uses deprecated EAPI: 4
-
-media-sound/ogg2mp3
-  DeprecatedEAPI: version 0.6.1: uses deprecated EAPI: 2
-
-media-sound/oggtst
-  DeprecatedEAPI: version 0.0: uses deprecated EAPI: 0
-
-media-sound/ogmtools
-  DeprecatedEAPI: version 1.5-r2: uses deprecated EAPI: 2
-
-media-sound/opus-tools
-  DeprecatedEAPI: version 0.1.6: uses deprecated EAPI: 4
-
-media-sound/orpheus
-  DeprecatedEAPI: version 1.6-r2: uses deprecated EAPI: 4
-
-media-sound/paprefs
-  DeprecatedEAPI: version 0.9.10: uses deprecated EAPI: 4
-
-media-sound/pasystray
-  DeprecatedEAPI: version 0.2.1: uses deprecated EAPI: 4
-
-media-sound/pavumeter
-  DeprecatedEAPI: version 0.9.3-r1: uses deprecated EAPI: 2
-
-media-sound/peercast
-  DeprecatedEAPI: version 0.1218-r2: uses deprecated EAPI: 2
-
-media-sound/phasex
-  DeprecatedEAPI: version 0.12.0_beta3: uses deprecated EAPI: 2
-
-media-sound/pianobooster
-  DeprecatedEAPI: version 0.6.4b: uses deprecated EAPI: 4
-
-media-sound/picard
-  WhitespaceFound: version 1.3.1: ebuild has leading whitespace on lines 32, 35
-  WhitespaceFound: version 1.3.2-r1: ebuild has leading whitespace on lines 33, 36
-
-media-sound/picoxine
-  DeprecatedEAPI: version 0.0.7: uses deprecated EAPI: 0
-
-media-sound/pitchtune
-  DeprecatedEAPI: version 0.0.4: uses deprecated EAPI: 2
-
-media-sound/pithos
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-media-sound/playmidi
-  DeprecatedEAPI: version 2.5-r2: uses deprecated EAPI: 0
-
-media-sound/pms
-  DeprecatedEAPI: version 0.42: uses deprecated EAPI: 2
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 2
-
-media-sound/poc
-  DeprecatedEAPI: version 0.4.1: uses deprecated EAPI: 0
-
-media-sound/podcatcher
-  NonExistentDeps: version 3.1.6: depset depends: nonexistent atoms [ dev-ruby/rubytorrent ]
-  NonExistentDeps: version 3.1.6: depset rdepends: nonexistent atoms [ dev-ruby/rubytorrent ]
-  DeprecatedEAPI: version 3.1.6: uses deprecated EAPI: 4
-
-media-sound/podget
+app-emulation/ganeti
+  DeprecatedEAPI: version 2.4.5-r1: uses deprecated EAPI: 4
+  BadInsIntoDir: version 2.10.5-r4: ebuild uses insinto /etc/cron.d on line 154
+  BadInsIntoDir: version 2.11.6-r2: ebuild uses insinto /etc/cron.d on line 191
+  BadInsIntoDir: version 2.12.1-r3: ebuild uses insinto /etc/cron.d on line 224
+  BadInsIntoDir: version 2.12.3-r2: ebuild uses insinto /etc/cron.d on line 232
+  BadInsIntoDir: version 2.13.0-r2: ebuild uses insinto /etc/cron.d on line 228
+  BadInsIntoDir: version 2.14.1-r1: ebuild uses insinto /etc/cron.d on line 262
+
+app-emulation/ganeti-htools
+  DeprecatedEAPI: version 0.2.8: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.3.0: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.3.1: uses deprecated EAPI: 2
+
+app-emulation/ganeti-instance-debian-etch
+  DeprecatedEAPI: version 0.4: uses deprecated EAPI: 0
+
+app-emulation/ganeti-instance-debootstrap
+  DeprecatedEAPI: version 0.9: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.11: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.12: uses deprecated EAPI: 2
+
+app-emulation/ganeti-instance-image
   DeprecatedEAPI: version 0.6: uses deprecated EAPI: 4
 
-media-sound/podracer
-  DeprecatedEAPI: version 1.4: uses deprecated EAPI: 3
+app-emulation/gxemul
+  DeprecatedEAPI: version 0.6.0-r1: uses deprecated EAPI: 4
 
-media-sound/positron
-  DeprecatedEclass: version 1.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 3
+app-emulation/hercules
+  DeprecatedEAPI: version 3.06: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 3.08: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 3.09: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 3.10: uses deprecated EAPI: 4
 
-media-sound/potamus
-  DeprecatedEAPI: version 0.12: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 14: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 16: uses deprecated EAPI: 4
+app-emulation/libcacard
+  DeprecatedEAPI: version 0.1.2: uses deprecated EAPI: 4
 
-media-sound/protux
-  DeprecatedEAPI: version 0.50.100: uses deprecated EAPI: 0
+app-emulation/libspectrum
+  DeprecatedEAPI: version 1.0.0: uses deprecated EAPI: 3
 
-media-sound/ptabtools
-  DeprecatedEAPI: version 0.4.3: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.5.0: uses deprecated EAPI: 4
+app-emulation/libvirt
+  NonExistentDeps: version 1.2.18-r1: depset depends: nonexistent atoms [ <sys-libs/glibc-2.14 ]
+  NonExistentDeps: version 1.2.18-r1: depset rdepends: nonexistent atoms [ <sys-libs/glibc-2.14 ]
+  NonExistentDeps: version 1.2.19-r1: depset depends: nonexistent atoms [ <sys-libs/glibc-2.14 ]
+  NonExistentDeps: version 1.2.19-r1: depset rdepends: nonexistent atoms [ <sys-libs/glibc-2.14 ]
+  NonExistentDeps: version 1.2.20: depset depends: nonexistent atoms [ <sys-libs/glibc-2.14 ]
+  NonExistentDeps: version 1.2.20: depset rdepends: nonexistent atoms [ <sys-libs/glibc-2.14 ]
+  NonExistentDeps: version 9999: depset depends: nonexistent atoms [ <sys-libs/glibc-2.14 ]
+  NonExistentDeps: version 9999: depset rdepends: nonexistent atoms [ <sys-libs/glibc-2.14 ]
 
-media-sound/pwavecat
-  DeprecatedEAPI: version 0.4.5: uses deprecated EAPI: 2
+app-emulation/libvirt-snmp
+  DeprecatedEAPI: version 0.0.2-r2: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.0.3: uses deprecated EAPI: 4
 
-media-sound/pympd
-  DeprecatedEclass: version 0.08.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  NonExistentDeps: version 0.08.1: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
-  NonExistentDeps: version 0.08.1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
-  DeprecatedEAPI: version 0.08.1: uses deprecated EAPI: 3
+app-emulation/lxc
+  DroppedKeywordWarning: version 1.1.0-r6: keywords dropped: arm64, ppc64, x86
 
-media-sound/qarecord
-  DeprecatedEAPI: version 0.5.0: uses deprecated EAPI: 2
+app-emulation/phpvirtualbox
+  DeprecatedEAPI: version 4.1.11: uses deprecated EAPI: 2
 
-media-sound/qjackctl
-  DeprecatedEAPI: version 0.3.10: uses deprecated EAPI: 4
+app-emulation/q4wine
+  DeprecatedEAPI: version 1.0-r3: uses deprecated EAPI: 4
 
-media-sound/qmidiarp
-  DeprecatedEAPI: version 0.3.9: uses deprecated EAPI: 4
-
-media-sound/qmidiroute
-  DeprecatedEAPI: version 0.3.0: uses deprecated EAPI: 2
-
-media-sound/qmmp
-  DroppedKeywordWarning: version 1.0.0-r1: keywords dropped: ppc
-
-media-sound/qmpdclient
-  DeprecatedEAPI: version 1.2.2-r1: uses deprecated EAPI: 4
-
-media-sound/qsampler
-  DeprecatedEAPI: version 0.2.2_p2345: uses deprecated EAPI: 4
-
-media-sound/qsynth
-  DeprecatedEAPI: version 0.3.6: uses deprecated EAPI: 4
-
-media-sound/qtagger
-  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 3
-
-media-sound/qtgain
-  DeprecatedEAPI: version 0.9.5: uses deprecated EAPI: 4
-
-media-sound/qtscrobbler
-  DeprecatedEAPI: version 0.10: uses deprecated EAPI: 4
-
-media-sound/quark
-  DeprecatedEAPI: version 3.21: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 3.24: uses deprecated EAPI: 4
-
-media-sound/rawrec
-  DeprecatedEAPI: version 0.9.991: uses deprecated EAPI: 0
-
-media-sound/rcenter
-  DeprecatedEAPI: version 0.6.2: uses deprecated EAPI: 0
-
-media-sound/redoflacs
-  DeprecatedEAPI: version 0.15: uses deprecated EAPI: 4
-
-media-sound/retrovol
-  DeprecatedEAPI: version 0.12: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.13: uses deprecated EAPI: 4
-
-media-sound/rexima
-  DeprecatedEAPI: version 1.4: uses deprecated EAPI: 0
-
-media-sound/rezound
-  DeprecatedEAPI: version 0.12.3_beta-r2: uses deprecated EAPI: 4
-
-media-sound/rip
-  NonExistentDeps: version 1.07: depset rdepends: nonexistent atoms [ media-sound/gogo ]
-  DeprecatedEAPI: version 1.07: uses deprecated EAPI: 0
-
-media-sound/rplay
-  DeprecatedEAPI: version 3.3.2-r1: uses deprecated EAPI: 0
-
-media-sound/saydate
-  DeprecatedEAPI: version 0.3.0: uses deprecated EAPI: 0
-
-media-sound/schismtracker
-  DeprecatedEAPI: version 20110101: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 20120105: uses deprecated EAPI: 4
-
-media-sound/scmpc
-  DeprecatedEAPI: version 0.4.1: uses deprecated EAPI: 4
-
-media-sound/seq24
-  DeprecatedEAPI: version 0.9.2-r1: uses deprecated EAPI: 4
-
-media-sound/setmixer
-  DeprecatedEAPI: version 19941227_p1: uses deprecated EAPI: 0
-
-media-sound/sexypsf
-  DeprecatedEAPI: version 0.4.7: uses deprecated EAPI: 0
-
-media-sound/shell-fm
-  DeprecatedEAPI: version 0.8-r1: uses deprecated EAPI: 4
-
-media-sound/shnflacverify
-  DeprecatedEAPI: version 0.3: uses deprecated EAPI: 4
-
-media-sound/shntool
-  DeprecatedEAPI: version 3.0.10-r1: uses deprecated EAPI: 4
-
-media-sound/shorten
-  DeprecatedEAPI: version 3.6.1: uses deprecated EAPI: 0
-
-media-sound/shoutcast-search
-  DeprecatedEclass: version 0.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.3: uses deprecated EAPI: 3
-  DeprecatedEclass: version 0.3.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.3.1: uses deprecated EAPI: 3
-
-media-sound/shoutcast-server-bin
-  DeprecatedEAPI: version 1.9.8-r1: uses deprecated EAPI: 2
-  MissingChksum: version 1.9.8-r1: "sc_serv_1.9.8_Linux.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-media-sound/shoutcast-trans-bin
-  DeprecatedEAPI: version 0.4.0-r1: uses deprecated EAPI: 0
-  MissingChksum: version 0.4.0-r1: "sc_trans_posix_040.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-media-sound/sidplay
-  DeprecatedEAPI: version 2.0.9: uses deprecated EAPI: 2
-
-media-sound/skype-call-recorder
-  DeprecatedEAPI: version 0.8: uses deprecated EAPI: 4
-
-media-sound/smixer
-  DeprecatedEAPI: version 1.0.4: uses deprecated EAPI: 4
-
-media-sound/snd
-  DeprecatedEAPI: version 12.8: uses deprecated EAPI: 4
-
-media-sound/sndfile-tools
-  DeprecatedEAPI: version 1.03: uses deprecated EAPI: 2
-
-media-sound/sndpeek
-  DeprecatedEAPI: version 1.4: uses deprecated EAPI: 2
-
-media-sound/sonic-visualiser
-  DeprecatedEAPI: version 1.9: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 2.3: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 2.4.1: uses deprecated EAPI: 4
-
-media-sound/sooperlooper
-  DeprecatedEAPI: version 1.6.17: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.6.18: uses deprecated EAPI: 4
-
-media-sound/sound-juicer
-  DroppedKeywordWarning: version 3.16.1: keywords dropped: alpha
-
-media-sound/sox
-  DeprecatedEAPI: version 14.4.1: uses deprecated EAPI: 4
-
-media-sound/spek
-  WhitespaceFound: version 0.8.3-r1: ebuild has trailing whitespace on line 33
-
-media-sound/splay
-  DeprecatedEAPI: version 0.9.5.2: uses deprecated EAPI: 0
-
-media-sound/split2flac
-  DeprecatedEAPI: version 0.1_pre20111110-r2: uses deprecated EAPI: 4
+app-emulation/qemu
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-media-sound/squeezeslave
-  DeprecatedEAPI: version 1.1_p365: uses deprecated EAPI: 4
+app-emulation/simh
+  DeprecatedEAPI: version 3.9.0-r1: uses deprecated EAPI: 4
 
-media-sound/streamripper
-  DeprecatedEAPI: version 1.64.6: uses deprecated EAPI: 2
+app-emulation/ski
+  DeprecatedEAPI: version 1.3.2: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.3.2-r1: uses deprecated EAPI: 4
 
-media-sound/streamtranscoder
-  DeprecatedEAPI: version 1.2.4: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 3.1.11: uses deprecated EAPI: 0
+app-emulation/skyeye
+  DeprecatedEAPI: version 1.0.0: uses deprecated EAPI: 2
 
-media-sound/substract_wave
-  DeprecatedEAPI: version 0.3-r1: uses deprecated EAPI: 2
+app-emulation/softgun
+  DeprecatedEAPI: version 0.21: uses deprecated EAPI: 4
 
-media-sound/sweep
-  DeprecatedEAPI: version 0.9.3-r1: uses deprecated EAPI: 4
+app-emulation/spectemu
+  DeprecatedEAPI: version 0.99.3: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.99.3-r1: uses deprecated EAPI: 4
 
-media-sound/synaesthesia
-  DeprecatedEAPI: version 2.4: uses deprecated EAPI: 2
+app-emulation/spice-protocol
+  DeprecatedEAPI: version 0.12.3: uses deprecated EAPI: 4
 
-media-sound/taginfo
-  DeprecatedEAPI: version 1.2-r1: uses deprecated EAPI: 2
+app-emulation/spice-vdagent
+  DeprecatedEAPI: version 0.12.0: uses deprecated EAPI: 4
 
-media-sound/tagtool
-  DeprecatedEAPI: version 0.12.3: uses deprecated EAPI: 2
+app-emulation/spim
+  DeprecatedEAPI: version 8.0-r1: uses deprecated EAPI: 3
 
-media-sound/takcd
-  DeprecatedEAPI: version 0.10: uses deprecated EAPI: 0
-
-media-sound/tap-reverbed
-  DeprecatedEAPI: version 0: uses deprecated EAPI: 2
-
-media-sound/tapiir
-  DeprecatedEAPI: version 0.7.2: uses deprecated EAPI: 2
-
-media-sound/tempest_for_eliza
-  DeprecatedEAPI: version 1.0.5-r1: uses deprecated EAPI: 2
-
-media-sound/timemachine
-  DeprecatedEAPI: version 0.3.1: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.3.3: uses deprecated EAPI: 2
-
-media-sound/timidity-eawpatches
-  DeprecatedEAPI: version 12-r5: uses deprecated EAPI: 0
-
-media-sound/tk707
-  DeprecatedEAPI: version 0.8-r1: uses deprecated EAPI: 0
-
-media-sound/toolame
-  DeprecatedEAPI: version 02l-r3: uses deprecated EAPI: 4
-
-media-sound/traverso
-  DeprecatedEAPI: version 0.49.2-r1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.49.3: uses deprecated EAPI: 4
-
-media-sound/trommler
-  DeprecatedEAPI: version 3.8: uses deprecated EAPI: 2
-
-media-sound/ttaenc
-  DeprecatedEAPI: version 3.4.1-r1: uses deprecated EAPI: 4
-
-media-sound/tudor-volumed
-  DeprecatedEAPI: version 0_pre20110427: uses deprecated EAPI: 4
-
-media-sound/tunapie
-  DeprecatedEclass: version 2.1.17: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 2.1.17: uses deprecated EAPI: 3
-
-media-sound/umix
-  DeprecatedEAPI: version 1.0.2: uses deprecated EAPI: 0
-
-media-sound/vb2rip
-  DeprecatedEAPI: version 1.4: uses deprecated EAPI: 0
-
-media-sound/vbrfixc
-  DeprecatedEAPI: version 0.24: uses deprecated EAPI: 2
-
-media-sound/vdramgw
-  DeprecatedEAPI: version 0.0.2: uses deprecated EAPI: 4
-
-media-sound/ventrilo-server-bin
-  DeprecatedEAPI: version 2.3.1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 3.0.3: uses deprecated EAPI: 0
-  MissingChksum: version 2.3.1: "ventrilo_srv-2.3.1-Linux-i386.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 3.0.3: "ventrilo_srv-3.0.3-Linux-i386.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-media-sound/vitunes
-  NonExistentDeps: version 2.3: depset rdepends: nonexistent atoms [ media-video/mplayer2 ]
-  DeprecatedEAPI: version 2.3: uses deprecated EAPI: 4
-
-media-sound/vkeybd
-  DeprecatedEAPI: version 0.1.18d: uses deprecated EAPI: 2
-
-media-sound/vlevel
-  DeprecatedEAPI: version 0.5-r1: uses deprecated EAPI: 4
-
-media-sound/vlorb
-  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 0
-
-media-sound/vmpk
-  DeprecatedEAPI: version 0.5.1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.6.0: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.6.1: uses deprecated EAPI: 4
-
-media-sound/volumeicon
-  DeprecatedEAPI: version 0.4.6: uses deprecated EAPI: 4
-
-media-sound/vorbisgain
-  DeprecatedEAPI: version 0.37-r1: uses deprecated EAPI: 0
-
-media-sound/vsound
-  DeprecatedEAPI: version 0.6-r1: uses deprecated EAPI: 4
-
-media-sound/wavbreaker
-  DeprecatedEAPI: version 0.11: uses deprecated EAPI: 4
-
-media-sound/wavegain
-  DeprecatedEAPI: version 1.3.0: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.3.1: uses deprecated EAPI: 4
-
-media-sound/wavplay
-  DeprecatedEAPI: version 2.0: uses deprecated EAPI: 4
-
-media-sound/wavsplit
-  DeprecatedEAPI: version 1.2.1-r1: uses deprecated EAPI: 2
-
-media-sound/wildmidi
-  DroppedKeywordWarning: version 0.3.6: keywords dropped: alpha
-
-media-sound/wmsound-data
-  DeprecatedEAPI: version 1.0.0: uses deprecated EAPI: 0
-
-media-sound/xineadump
-  DeprecatedEAPI: version 0.1-r1: uses deprecated EAPI: 2
-
-media-sound/xmms2
-  DeprecatedEclass: version 0.8-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.8-r2: uses deprecated EAPI: 3
-
-media-sound/xmms2-scrobbler
-  DeprecatedEAPI: version 0.4.0: uses deprecated EAPI: 4
-
-media-sound/xmp
-  DeprecatedEAPI: version 3.5.0: uses deprecated EAPI: 4
-
-media-sound/xnoise
-  DeprecatedEAPI: version 0.2.21: uses deprecated EAPI: 4
+app-emulation/virt-manager
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
 
-media-sound/zynaddsubfx
-  DeprecatedEAPI: version 2.4.1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 2.4.3: uses deprecated EAPI: 4
+app-emulation/virtualbox-modules
+  ExecutableFile: "files/create_vbox_modules_tarball.sh" has unnecessary executable bit
+
+app-emulation/vmips
+  DeprecatedEAPI: version 1.3: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.3.1: uses deprecated EAPI: 0
+
+app-emulation/vmips-cross-bin
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+
+app-emulation/vmware-modules
+  NonExistentDeps: version 271.3-r1: depset depends: nonexistent atoms [ =app-emulation/vmware-player-5.0.3* ]
+  DeprecatedEAPI: version 271.3-r1: uses deprecated EAPI: 4
+  DroppedKeywordWarning: version 304.2: keywords dropped: x86
+  SizeViolation: "files/271-3.10.0.patch" exceeds 20k in size; 23418 bytes total
+
+app-emulation/vmware-player
+  DroppedKeywordWarning: version 7.1.2.2780323: keywords dropped: x86
+
+app-emulation/vmware-tools
+  DeprecatedEAPI: version 9.2.3.1031769: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.6.1.1379776: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.6.2.1744117: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.6.5.2700073: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.9.2.2496824: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.9.3.2780323: uses deprecated EAPI: 0
+  DroppedKeywordWarning: version 9.9.2.2496824: keywords dropped: x86
+
+app-emulation/vmware-vix
+  DeprecatedEAPI: version 1.11.4.744019: uses deprecated EAPI: 4
+
+app-emulation/vmware-workstation
+  DeprecatedEAPI: version 9.0.3.1410761: uses deprecated EAPI: 4
+  DroppedKeywordWarning: version 11.1.2.2780323: keywords dropped: x86
+
+app-emulation/vov
+  DeprecatedEAPI: version 2.0.0: uses deprecated EAPI: 0
+
+app-emulation/x48
+  DeprecatedEAPI: version 0.6.4: uses deprecated EAPI: 4
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
