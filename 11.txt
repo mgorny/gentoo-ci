@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 11 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'media-sound/*' 'x11-libs/*' 'sys-cluster/*' 'kde-base/*' 'dev-tex/*' 'sys-boot/*' 'dev-tcltk/*' 'sys-infiniband/*' 'app-laptop/*' 'gnustep-libs/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'media-sound/*' 'x11-libs/*' 'sys-cluster/*' 'kde-base/*' 'games-puzzle/*' 'sys-boot/*' 'dev-tcltk/*' 'sys-infiniband/*' 'app-laptop/*' 'gnustep-libs/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1458,244 +1458,18 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-dev-tex/aastex
-  DeprecatedEAPI: version 5.2: uses deprecated EAPI: 0
+games-puzzle/kiki
+  DeprecatedEclass: version 1.0.2-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-dev-tex/abntex
-  DeprecatedEAPI: version 0.9_beta2: uses deprecated EAPI: 3
+games-puzzle/krystaldrop
+  DeprecatedEAPI: version 0.7.2: uses deprecated EAPI: 4
 
-dev-tex/bera
-  DeprecatedEAPI: version 20040930: uses deprecated EAPI: 0
+games-puzzle/neverball
+  DeprecatedEAPI: version 1.5.4: uses deprecated EAPI: 2
+  DroppedKeywordWarning: version 1.6.0: keywords dropped: ppc
 
-dev-tex/catdvi
-  DeprecatedEAPI: version 0.14-r1: uses deprecated EAPI: 4
-
-dev-tex/cdcover
-  DeprecatedEAPI: version 1.3b: uses deprecated EAPI: 0
-
-dev-tex/chktex
-  DeprecatedEAPI: version 1.7.1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.7.2: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.7.3: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.7.4: uses deprecated EAPI: 4
-
-dev-tex/cjk-latex
-  DeprecatedEAPI: version 4.8.3-r1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 4.8.4: uses deprecated EAPI: 4
-
-dev-tex/cpp2latex
-  DeprecatedEAPI: version 2.3-r1: uses deprecated EAPI: 0
-
-dev-tex/crosstex
-  DeprecatedEclass: version 0.6: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.6: uses deprecated EAPI: 3
-
-dev-tex/csindex
-  DeprecatedEAPI: version 2.11c-r1: uses deprecated EAPI: 3
-
-dev-tex/culmus-latex
-  NonExistentDeps: version 0.7: depset depends: nonexistent atoms [ <media-fonts/culmus-0.110 ]
-  DeprecatedEAPI: version 0.7: uses deprecated EAPI: 2
-
-dev-tex/currvita
-  DeprecatedEAPI: version 0.9i-r1: uses deprecated EAPI: 0
-
-dev-tex/curve
-  DeprecatedEAPI: version 1.16: uses deprecated EAPI: 2
-
-dev-tex/detex
-  DeprecatedEAPI: version 2.8-r1: uses deprecated EAPI: 0
-
-dev-tex/dot2tex
-  DeprecatedEclass: version 2.8.7: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 2.8.7: uses deprecated EAPI: 3
-
-dev-tex/dot2texi
-  DeprecatedEAPI: version 3.0: uses deprecated EAPI: 0
-
-dev-tex/dvi2gr
-  DeprecatedEAPI: version 0.4: uses deprecated EAPI: 2
-
-dev-tex/dvi2tty
-  DeprecatedEAPI: version 5.3.4: uses deprecated EAPI: 4
-
-dev-tex/dvipost
-  DeprecatedEAPI: version 1.1-r2: uses deprecated EAPI: 2
-
-dev-tex/ellipsis
-  DeprecatedEAPI: version 1.6: uses deprecated EAPI: 0
-
-dev-tex/envlab
-  DeprecatedEAPI: version 1.2-r1: uses deprecated EAPI: 0
-
-dev-tex/europecv
-  DeprecatedEAPI: version 20060424-r1: uses deprecated EAPI: 0
-
-dev-tex/flabels
-  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 4
-
-dev-tex/floatflt
-  DeprecatedEAPI: version 1.31a: uses deprecated EAPI: 3
-
-dev-tex/foiltex
-  DeprecatedEAPI: version 2.1.4b: uses deprecated EAPI: 0
-
-dev-tex/frakturx
-  DeprecatedEAPI: version 20070103: uses deprecated EAPI: 4
-
-dev-tex/fundus
-  DeprecatedEAPI: version 19970826: uses deprecated EAPI: 0
-
-dev-tex/g-brief
-  DeprecatedEAPI: version 4.0.2: uses deprecated EAPI: 0
-
-dev-tex/glossaries
-  DroppedKeywordWarning: version 4.12-r1: keywords dropped: ia64, sparc
-
-dev-tex/harvard
-  DeprecatedEAPI: version 2.0.5: uses deprecated EAPI: 0
-
-dev-tex/herm-pic
-  DeprecatedEAPI: version 1.0.2: uses deprecated EAPI: 0
-
-dev-tex/hlatex
-  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 3
-
-dev-tex/hyphen_show
-  DeprecatedEAPI: version 20000425: uses deprecated EAPI: 0
-
-dev-tex/isotope
-  DeprecatedEAPI: version 20040401: uses deprecated EAPI: 0
-
-dev-tex/ivritex
-  DeprecatedEAPI: version 1.1.2: uses deprecated EAPI: 0
-
-dev-tex/latex-calendar
-  DeprecatedEAPI: version 3.1: uses deprecated EAPI: 0
-
-dev-tex/latex-unicode
-  DeprecatedEAPI: version 20041017: uses deprecated EAPI: 0
-
-dev-tex/latex2html
-  DeprecatedEAPI: version 2008: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2008-r1: uses deprecated EAPI: 4
-
-dev-tex/latex2rtf
-  DeprecatedEAPI: version 2.2.1b: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 2.3.1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 2.3.3: uses deprecated EAPI: 4
-
-dev-tex/latexdiff
-  DeprecatedEAPI: version 0.5: uses deprecated EAPI: 0
-
-dev-tex/latexmk
-  DeprecatedEAPI: version 435: uses deprecated EAPI: 4
-
-dev-tex/lazylist
-  DeprecatedEAPI: version 1.0a: uses deprecated EAPI: 0
-
-dev-tex/leaflet
-  DeprecatedEAPI: version 20041222: uses deprecated EAPI: 0
-
-dev-tex/lgrind
-  DeprecatedEAPI: version 3.67-r3: uses deprecated EAPI: 0
-
-dev-tex/metapost
-  DeprecatedEAPI: version 1.780: uses deprecated EAPI: 4
-
-dev-tex/newlfm
-  DeprecatedEAPI: version 8.3-r1: uses deprecated EAPI: 0
-
-dev-tex/notoccite
-  DeprecatedEAPI: version 20000720: uses deprecated EAPI: 0
-
-dev-tex/oesch
-  DeprecatedEAPI: version 20080712: uses deprecated EAPI: 0
-
-dev-tex/pdfannotextractor
-  DeprecatedEAPI: version 0.1l: uses deprecated EAPI: 3
-
-dev-tex/pgf
-  DeprecatedEAPI: version 2.10: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 3.0.0: uses deprecated EAPI: 0
-
-dev-tex/polytable
-  DeprecatedEAPI: version 0.8.2: uses deprecated EAPI: 0
-
-dev-tex/ppower4
-  DeprecatedEAPI: version 0.9.6: uses deprecated EAPI: 0
-
-dev-tex/prosper
-  DeprecatedEAPI: version 1.5-r1: uses deprecated EAPI: 0
-
-dev-tex/pscyr
-  DeprecatedEAPI: version 0.4d_beta9: uses deprecated EAPI: 4
-
-dev-tex/pstplus
-  DeprecatedEAPI: version 1.6: uses deprecated EAPI: 4
-
-dev-tex/quotchap
-  DeprecatedEAPI: version 0.9f: uses deprecated EAPI: 0
-
-dev-tex/rail
-  DeprecatedEAPI: version 1.2_p1: uses deprecated EAPI: 4
-
-dev-tex/rcsinfo
-  DeprecatedEAPI: version 1.9: uses deprecated EAPI: 0
-
-dev-tex/revtex
-  DeprecatedEAPI: version 4.1_p2-r1: uses deprecated EAPI: 2
-
-dev-tex/rubber
-  DeprecatedEclass: version 1.1_p20090819: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  NonExistentDeps: version 1.1_p20090819: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
-  NonExistentDeps: version 1.1_p20090819: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
-  DeprecatedEAPI: version 1.1_p20090819: uses deprecated EAPI: 3
-
-dev-tex/serienbrief
-  DeprecatedEAPI: version 0.2.4: uses deprecated EAPI: 4
-
-dev-tex/sketch
-  DeprecatedEAPI: version 0.3.7: uses deprecated EAPI: 0
-
-dev-tex/slatex
-  DeprecatedEAPI: version 20090928: uses deprecated EAPI: 3
-
-dev-tex/style-check
-  DeprecatedEAPI: version 0.14: uses deprecated EAPI: 4
-
-dev-tex/svninfo
-  DeprecatedEAPI: version 0.7.4: uses deprecated EAPI: 0
-
-dev-tex/tex4ht
-  DeprecatedEAPI: version 20090611_p1038-r1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 20090611_p1038-r2: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 20090611_p1038-r3: uses deprecated EAPI: 4
-
-dev-tex/texamator
-  DeprecatedEclass: version 1.7.5: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 1.7.5: uses deprecated EAPI: 4
-
-dev-tex/texmfind
-  DeprecatedEAPI: version 2010.1: uses deprecated EAPI: 0
-
-dev-tex/texpower
-  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 0
-
-dev-tex/tipa
-  DeprecatedEAPI: version 1.3: uses deprecated EAPI: 0
-
-dev-tex/translator
-  DeprecatedEAPI: version 1.00: uses deprecated EAPI: 0
-
-dev-tex/tth
-  DeprecatedEAPI: version 3.77: uses deprecated EAPI: 4
-
-dev-tex/xcolor
-  DeprecatedEAPI: version 2.11: uses deprecated EAPI: 0
-
-dev-tex/xymtex
-  DeprecatedEAPI: version 5.00a: uses deprecated EAPI: 4
+games-puzzle/picpuz
+  DeprecatedEAPI: version 2.5: uses deprecated EAPI: 4
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
