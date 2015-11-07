@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 9 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'net-misc/*' 'kde-apps/*' 'sys-libs/*' 'x11-themes/*' 'net-dns/*' 'app-shells/*' 'games-rpg/*' 'app-benchmarks/*' 'xfce-base/*' 'net-voip/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'net-misc/*' 'kde-apps/*' 'sci-biology/*' 'x11-themes/*' 'net-dns/*' 'app-shells/*' 'games-rpg/*' 'app-benchmarks/*' 'xfce-base/*' 'net-voip/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1086,300 +1086,334 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-sys-libs/argp-standalone
-  DeprecatedEAPI: version 1.3: uses deprecated EAPI: 4
+sci-biology/aaindex
+  DeprecatedEAPI: version 9.1: uses deprecated EAPI: 0
 
-sys-libs/cracklib
-  DeprecatedEAPI: version 2.9.1-r1: uses deprecated EAPI: 4
+sci-biology/abyss
+  DeprecatedEAPI: version 1.3.3: uses deprecated EAPI: 4
 
-sys-libs/csu
-  DeprecatedEAPI: version 79: uses deprecated EAPI: 3
+sci-biology/allpathslg
+  DeprecatedEAPI: version 42337: uses deprecated EAPI: 4
 
-sys-libs/db
-  DeprecatedEAPI: version 1.85-r3: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 3.2.9_p2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.2.52_p5-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.3.29_p1-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.4.20_p4-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.5.20_p2-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.6.21_p4: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.7.25_p4: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.8.30-r1: uses deprecated EAPI: 4
-  DroppedKeywordWarning: version 4.4.20_p4-r1: keywords dropped: alpha, hppa
-  DroppedKeywordWarning: version 5.1.29-r1: keywords dropped: mips
+sci-biology/amap
+  DeprecatedEAPI: version 2.2-r2: uses deprecated EAPI: 2
 
-sys-libs/e2fsprogs-libs
-  DeprecatedEAPI: version 1.41.7: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 1.42.12: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.42.13: uses deprecated EAPI: 4
+sci-biology/amos
+  DeprecatedEAPI: version 3.1.0: uses deprecated EAPI: 4
 
-sys-libs/fortify-headers
+sci-biology/arb
+  DeprecatedEAPI: version 5.1-r1: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 5.2: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 5.3: uses deprecated EAPI: 4
+
+sci-biology/ariadne
+  DeprecatedEAPI: version 1.3-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.3-r2: uses deprecated EAPI: 4
+
+sci-biology/augustus
+  DeprecatedEAPI: version 2.5.5: uses deprecated EAPI: 4
+
+sci-biology/bamtools
+  DeprecatedEAPI: version 1.0.2: uses deprecated EAPI: 4
+
+sci-biology/beast-mcmc
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 2
+
+sci-biology/bedtools
+  DeprecatedEAPI: version 2.16.2: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 2.20.1: uses deprecated EAPI: 4
+
+sci-biology/biogrep
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0-r1: uses deprecated EAPI: 3
+
+sci-biology/biojava
+  DeprecatedEAPI: version 1.6: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 1.7: uses deprecated EAPI: 2
+
+sci-biology/bioperl
+  DeprecatedEclass: version 9999-r1: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+sci-biology/bioperl-db
+  DeprecatedEclass: version 9999-r1: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+sci-biology/bioperl-network
+  DeprecatedEclass: version 9999-r1: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+sci-biology/bioperl-run
+  DeprecatedEclass: version 9999-r1: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+sci-biology/bioruby
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-sys-libs/freeipmi
-  DeprecatedEAPI: version 1.2.2: uses deprecated EAPI: 4
-
-sys-libs/gdbm
-  DeprecatedEAPI: version 1.8.3-r3: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.8.3-r4: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.9.1-r2: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 1.10: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.10-r1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.11: uses deprecated EAPI: 4
-
-sys-libs/glibc
-  DeprecatedEAPI: version 2.17: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.18-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.19-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.20-r2: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 2.21-r1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 2.22-r1: uses deprecated EAPI: 4
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
-
-sys-libs/gpm
-  DeprecatedEAPI: version 1.20.6: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 1.20.6-r1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.20.7: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.20.7-r1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.20.7-r2: uses deprecated EAPI: 4
-
-sys-libs/gwenhywfar
-  DeprecatedEAPI: version 4.3.3: uses deprecated EAPI: 4
-
-sys-libs/itx-bind
-  DeprecatedEAPI: version 0.1-r2: uses deprecated EAPI: 2
-
-sys-libs/ldb
-  DeprecatedEclass: version 1.1.12: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 1.1.12: uses deprecated EAPI: 4
-  DeprecatedEclass: version 1.1.15: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 1.1.15: uses deprecated EAPI: 4
-  DroppedKeywordWarning: version 1.1.17-r1: keywords dropped: sparc
-
-sys-libs/libaal
-  DeprecatedEAPI: version 1.0.5: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.0.5-r1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.0.6: uses deprecated EAPI: 4
-
-sys-libs/libacpi
-  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 2
-
-sys-libs/libavc1394
-  DeprecatedEAPI: version 0.5.3: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.5.4: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.5.4-r1: uses deprecated EAPI: 4
-
-sys-libs/libcap
-  DeprecatedEAPI: version 2.22-r2: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 2.24-r2: uses deprecated EAPI: 4
-
-sys-libs/libcap-ng
-  DeprecatedEclass: version 0.6.6: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.6.6: uses deprecated EAPI: 4
-  DeprecatedEclass: version 0.7.3: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-
-sys-libs/libchipcard
-  DeprecatedEAPI: version 5.0.2: uses deprecated EAPI: 2
-
-sys-libs/libcxx
-  WhitespaceFound: version 0.0_p20130725: ebuild has leading whitespace on line 113
-  WhitespaceFound: version 0.0_p20131222: ebuild has leading whitespace on line 114
-  WhitespaceFound: version 0.0_p20140322: ebuild has leading whitespace on line 114
-  WhitespaceFound: version 3.6.0: ebuild has leading whitespace on line 115
-  WhitespaceFound: version 3.6.1: ebuild has leading whitespace on line 115
-  WhitespaceFound: version 3.6.2: ebuild has leading whitespace on line 115
-  WhitespaceFound: version 3.7.0: ebuild has leading whitespace on line 115
-  WhitespaceFound: version 9999: ebuild has leading whitespace on line 115
-  ExecutableFile: "files/prepare_snapshot.sh" has unnecessary executable bit
-
-sys-libs/libcxxrt
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  ExecutableFile: "files/prepare_snapshot.sh" has unnecessary executable bit
-
-sys-libs/libfreevec
-  DeprecatedEAPI: version 1.0.4: uses deprecated EAPI: 0
-
-sys-libs/libhugetlbfs
-  DeprecatedEAPI: version 2.18: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 2.19: uses deprecated EAPI: 4
-
-sys-libs/libieee1284
-  DeprecatedEclass: version 0.2.11-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.2.11-r1: uses deprecated EAPI: 3
-  DeprecatedEclass: version 0.2.11-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.2.11-r2: uses deprecated EAPI: 3
-  DeprecatedEclass: version 0.2.11-r3: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.2.11-r3: uses deprecated EAPI: 4
-
-sys-libs/libixp
-  DeprecatedEAPI: version 0.5_p20110208-r3: uses deprecated EAPI: 4
-
-sys-libs/libnih
-  DeprecatedEAPI: version 1.0.3-r3: uses deprecated EAPI: 4
-
-sys-libs/libraw1394
-  DeprecatedEAPI: version 2.0.8: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 2.1.0-r1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 2.1.1: uses deprecated EAPI: 4
-
-sys-libs/librtas
-  DeprecatedEAPI: version 1.3.3: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.3.5: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.3.6: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.3.8: uses deprecated EAPI: 4
-
-sys-libs/libseccomp
-  DeprecatedEAPI: version 2.1.1: uses deprecated EAPI: 4
-
-sys-libs/libsepol
-  DeprecatedEAPI: version 2.2: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 2.3: uses deprecated EAPI: 4
-
-sys-libs/libservicelog
-  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.1.11: uses deprecated EAPI: 0
-
-sys-libs/libspe2
-  DeprecatedEAPI: version 2.2.80_p95-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.3.0_p135: uses deprecated EAPI: 0
-
-sys-libs/libstatgrab
-  DeprecatedEAPI: version 0.17: uses deprecated EAPI: 4
-
-sys-libs/libstdc++-v3
-  DeprecatedEAPI: version 3.3.6: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 3.3.6-r1: uses deprecated EAPI: 0
-
-sys-libs/libstdc++-v3-bin
-  DeprecatedEAPI: version 3.3.6: uses deprecated EAPI: 0
-
-sys-libs/libtermcap-compat
-  DeprecatedEAPI: version 2.0.8-r2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.0.8-r3: uses deprecated EAPI: 4
-
-sys-libs/libunwind
-  DeprecatedEAPI: version 0.99-r1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.0.1-r1: uses deprecated EAPI: 4
-
-sys-libs/libutempter
-  DeprecatedEAPI: version 1.1.5: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.1.5-r1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.1.6: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.1.6-r1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.1.6-r2: uses deprecated EAPI: 4
-
-sys-libs/libvpd
-  DeprecatedEAPI: version 2.1.3: uses deprecated EAPI: 4
-
-sys-libs/libxcrypt
-  DeprecatedEAPI: version 2.0: uses deprecated EAPI: 0
-
-sys-libs/lrmi
-  DeprecatedEAPI: version 0.10-r1: uses deprecated EAPI: 0
-
-sys-libs/lwp
-  DeprecatedEAPI: version 2.2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.5: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.6: uses deprecated EAPI: 4
-
-sys-libs/mars
+sci-biology/biosql
   DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 0
 
-sys-libs/ncurses
-  DeprecatedEAPI: version 5.9-r3: uses deprecated EAPI: 4
-  MetadataError: version 5.9-r4: attr(rdepends): blocks itself
-  DeprecatedEAPI: version 5.9-r4: uses deprecated EAPI: 4
-  DoubleEmptyLine: version 5.9-r101: ebuild has unneeded empty line 172
+sci-biology/blat
+  DeprecatedEAPI: version 34: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 34-r1: uses deprecated EAPI: 4
 
-sys-libs/newlib
-  DeprecatedEAPI: version 1.18.0: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.19.0: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.20.0: uses deprecated EAPI: 4
+sci-biology/blossoc
+  DeprecatedEAPI: version 1.4.0: uses deprecated EAPI: 2
+
+sci-biology/bowtie
+  DeprecatedEAPI: version 0.12.8: uses deprecated EAPI: 4
+
+sci-biology/cd-hit
+  DeprecatedEAPI: version 4.5.1: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 4.5.4: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 4.6: uses deprecated EAPI: 4
+
+sci-biology/clustalw
+  DeprecatedEAPI: version 2.1: uses deprecated EAPI: 4
+  DroppedKeywordWarning: version 2.1: keywords dropped: alpha, ppc, ppc64, sparc
+
+sci-biology/clustalw-mpi
+  DeprecatedEAPI: version 0.13-r1: uses deprecated EAPI: 4
+
+sci-biology/consed
+  DeprecatedEAPI: version 19-r2: uses deprecated EAPI: 3
+  MissingChksum: version 19-r2: "consed-19-sources.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 19-r2: "consed-19-linux.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-biology/cufflinks
+  SizeViolation: "files/cufflinks-1.3.0-boost.patch" exceeds 20k in size; 52005 bytes total
+
+sci-biology/elph
+  DeprecatedEAPI: version 0.1.5: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 0
+
+sci-biology/exonerate
+  DeprecatedEAPI: version 2.2.0-r1: uses deprecated EAPI: 4
+
+sci-biology/express
+  DeprecatedEAPI: version 0.9.5: uses deprecated EAPI: 4
+
+sci-biology/fasta
+  DeprecatedEAPI: version 35.4.10: uses deprecated EAPI: 2
+
+sci-biology/foldingathome
+  DeprecatedEAPI: version 7.3.6-r2: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 7.4.4: uses deprecated EAPI: 4
+
+sci-biology/gatk
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+sci-biology/gibbs
+  DeprecatedEAPI: version 3.1: uses deprecated EAPI: 4
+
+sci-biology/glimmerhmm
+  DeprecatedEAPI: version 3.0.1-r1: uses deprecated EAPI: 4
+
+sci-biology/gmap
+  DeprecatedEAPI: version 2011.10.07: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 2012.07.20: uses deprecated EAPI: 4
+
+sci-biology/goby
+  DeprecatedEAPI: version 1.9.7.3: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.9.8.1: uses deprecated EAPI: 4
+
+sci-biology/goby-cpp
+  DeprecatedEAPI: version 1.9.7.3: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.9.8.1: uses deprecated EAPI: 4
+  SizeViolation: "files/Alignments.proto" exceeds 20k in size; 26192 bytes total
+
+sci-biology/hmmer
+  NonExistentDeps: version 2.3.2-r1: depset depends: nonexistent atoms [ sys-cluster/pvm ]
+  NonExistentDeps: version 2.3.2-r1: depset rdepends: nonexistent atoms [ sys-cluster/pvm ]
+  DeprecatedEAPI: version 2.3.2-r1: uses deprecated EAPI: 0
+  NonExistentDeps: version 2.3.2-r2: depset depends: nonexistent atoms [ sys-cluster/pvm ]
+  NonExistentDeps: version 2.3.2-r2: depset rdepends: nonexistent atoms [ sys-cluster/pvm ]
+  DeprecatedEAPI: version 2.3.2-r2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 3.0: uses deprecated EAPI: 4
+  DroppedKeywordWarning: version 3.0: keywords dropped: alpha, ia64, ppc, ppc64, sparc
+
+sci-biology/iedera
+  DeprecatedEAPI: version 1.04: uses deprecated EAPI: 2
+
+sci-biology/infernal
+  DeprecatedEAPI: version 1.0.2-r1: uses deprecated EAPI: 4
+
+sci-biology/iqpnni
+  DeprecatedEAPI: version 3.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 3.3.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 3.3.2: uses deprecated EAPI: 4
+
+sci-biology/kalign
+  DeprecatedEAPI: version 2.03: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.03-r1: uses deprecated EAPI: 4
+
+sci-biology/lagan
+  DeprecatedEAPI: version 2.0-r1: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 2.0-r2: uses deprecated EAPI: 2
+
+sci-biology/last
+  DeprecatedEAPI: version 230: uses deprecated EAPI: 4
+
+sci-biology/mammoth
+  MissingChksum: version 1.0-r1: "mammoth-1.0-src.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-biology/maq
+  DeprecatedEAPI: version 0.7.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.7.1-r1: uses deprecated EAPI: 4
+
+sci-biology/mauve
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 2
+
+sci-biology/mauvealigner
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 2
+
+sci-biology/mcl
+  DeprecatedEAPI: version 08.312: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 12.135: uses deprecated EAPI: 4
+
+sci-biology/meme
+  DeprecatedEclass: version 4.8.1-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 4.8.1-r2: uses deprecated EAPI: 4
+
+sci-biology/mosaik
+  DeprecatedEAPI: version 1.0.1367: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 1.0.1388: uses deprecated EAPI: 2
+
+sci-biology/mrbayes
+  DeprecatedEAPI: version 3.1.2-r1: uses deprecated EAPI: 4
+
+sci-biology/mummer
+  DeprecatedEAPI: version 3.20: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 3.21: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 3.22-r1: uses deprecated EAPI: 3
+
+sci-biology/newick-utils
+  DeprecatedEAPI: version 1.3.0: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 1.5.0: uses deprecated EAPI: 2
+
+sci-biology/njplot
+  DeprecatedEAPI: version 2.3: uses deprecated EAPI: 2
+
+sci-biology/pals
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 2
+
+sci-biology/phrap
+  MissingChksum: version 1.080812-r1: "phrap-1.080812-distrib.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-biology/phred
+  DeprecatedEAPI: version 071220: uses deprecated EAPI: 0
+  MissingChksum: version 071220: "phred-dist-071220.b-acd.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-biology/phyml
+  DeprecatedEAPI: version 2.4.5-r2: uses deprecated EAPI: 2
+
+sci-biology/piler
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 2
+
+sci-biology/pilercr
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 4
+
+sci-biology/plink
+  DeprecatedEAPI: version 1.07-r1: uses deprecated EAPI: 4
+
+sci-biology/prank
+  DeprecatedEAPI: version 100701: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 111130: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 140603: uses deprecated EAPI: 4
+
+sci-biology/prints
+  DeprecatedEAPI: version 39.0: uses deprecated EAPI: 0
+
+sci-biology/prodigal
+  DeprecatedEAPI: version 2.50: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 2.60: uses deprecated EAPI: 2
+
+sci-biology/prosite
+  DeprecatedEAPI: version 19.36: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 20.36: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 20.52: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 20.72: uses deprecated EAPI: 0
+
+sci-biology/psipred
+  NonExistentDeps: version 3.1: depset rdepends: nonexistent atoms [ sci-biology/ncbi-tools++ ]
+  DeprecatedEAPI: version 3.1: uses deprecated EAPI: 3
+  NonExistentDeps: version 3.2: depset rdepends: nonexistent atoms [ sci-biology/ncbi-tools++ ]
+  DeprecatedEAPI: version 3.2: uses deprecated EAPI: 3
+  NonExistentDeps: version 3.2.1: depset rdepends: nonexistent atoms [ sci-biology/ncbi-tools++ ]
+  DeprecatedEAPI: version 3.2.1: uses deprecated EAPI: 4
+  NonExistentDeps: version 3.3: depset rdepends: nonexistent atoms [ sci-biology/ncbi-tools++ ]
+  DeprecatedEAPI: version 3.3: uses deprecated EAPI: 4
+  NonExistentDeps: version 3.4: depset rdepends: nonexistent atoms [ sci-biology/ncbi-tools++ ]
+  NonExistentDeps: version 3.5: depset rdepends: nonexistent atoms [ sci-biology/ncbi-tools++ ]
+
+sci-biology/qrna
+  DeprecatedEAPI: version 2.0.3c-r1: uses deprecated EAPI: 4
+
+sci-biology/recon
+  DeprecatedEAPI: version 1.06-r1: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.06-r2: uses deprecated EAPI: 4
+
+sci-biology/rmblast
+  SizeViolation: "files/rmblast-1.2-gcc47.patch" exceeds 20k in size; 31795 bytes total
+
+sci-biology/rnaview
+  DeprecatedEAPI: version 20040713: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 20040713-r2: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 20040713-r3: uses deprecated EAPI: 4
+
+sci-biology/samtools
+  DeprecatedEAPI: version 0.1.12: uses deprecated EAPI: 2
+
+sci-biology/shrimp
+  DeprecatedEAPI: version 2.0.1: uses deprecated EAPI: 4
+
+sci-biology/sim4
+  DeprecatedEAPI: version 20030921: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 20030921-r1: uses deprecated EAPI: 0
+
+sci-biology/snpfile
+  DeprecatedEAPI: version 2.0.1: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 2.0.1-r1: uses deprecated EAPI: 4
+
+sci-biology/tophat
+  DeprecatedEAPI: version 1.0.12: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 1.4.1: uses deprecated EAPI: 4
   DeprecatedEAPI: version 2.0.0: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 2.1.0: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 2.2.0: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 2.2.0.20150423: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
-  DroppedKeywordWarning: version 2.2.0.20150423: keywords dropped: arm, hppa, m68k, mips, ppc, ppc64, sh, sparc, x86
+  DeprecatedEAPI: version 2.0.2: uses deprecated EAPI: 4
 
-sys-libs/nss-db
-  DeprecatedEAPI: version 2.2.3_pre1-r2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.2.3_pre1-r3: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.2.3_pre1-r4: uses deprecated EAPI: 0
+sci-biology/transfac
+  DeprecatedEAPI: version 3.2: uses deprecated EAPI: 0
 
-sys-libs/openhpi
-  DeprecatedEAPI: version 2.12.0: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 3.0.0: uses deprecated EAPI: 4
+sci-biology/tree-puzzle
+  DeprecatedEAPI: version 5.2: uses deprecated EAPI: 4
 
-sys-libs/openipmi
-  DeprecatedEAPI: version 1.3.18: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.4.12: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.4.14: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.4.28: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.0.11: uses deprecated EAPI: 0
-  DeprecatedEclass: version 2.0.16: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 2.0.16: uses deprecated EAPI: 0
-  DeprecatedEclass: version 2.0.16-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 2.0.16-r1: uses deprecated EAPI: 0
-  DeprecatedEclass: version 2.0.18: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 2.0.18: uses deprecated EAPI: 0
-  DroppedKeywordWarning: version 1.4.12: keywords dropped: amd64
+sci-biology/treeviewx
+  DeprecatedEAPI: version 0.5.1-r2: uses deprecated EAPI: 2
 
-sys-libs/pam
-  NonExistentDeps: version 1.1.5: depset depends: nonexistent atoms [ <sys-libs/glibc-2.14 ]
-  NonExistentDeps: version 1.1.5: depset rdepends: nonexistent atoms [ <sys-libs/glibc-2.14 ]
-  DeprecatedEAPI: version 1.1.5: uses deprecated EAPI: 4
-  NonExistentDeps: version 1.1.6-r2: depset depends: nonexistent atoms [ <sys-libs/glibc-2.14 ]
-  NonExistentDeps: version 1.1.6-r2: depset rdepends: nonexistent atoms [ <sys-libs/glibc-2.14 ]
-  NonExistentDeps: version 1.1.8: depset depends: nonexistent atoms [ <sys-libs/glibc-2.14 ]
-  NonExistentDeps: version 1.1.8: depset rdepends: nonexistent atoms [ <sys-libs/glibc-2.14 ]
-  NonExistentDeps: version 1.1.8-r1: depset depends: nonexistent atoms [ <sys-libs/glibc-2.14 ]
-  NonExistentDeps: version 1.1.8-r1: depset rdepends: nonexistent atoms [ <sys-libs/glibc-2.14 ]
-  NonExistentDeps: version 1.1.8-r2: depset depends: nonexistent atoms [ <sys-libs/glibc-2.14 ]
-  NonExistentDeps: version 1.1.8-r2: depset rdepends: nonexistent atoms [ <sys-libs/glibc-2.14 ]
+sci-biology/trf
+  DeprecatedEAPI: version 4.04: uses deprecated EAPI: 4
 
-sys-libs/pwdb
-  DeprecatedEAPI: version 0.62: uses deprecated EAPI: 4
+sci-biology/trnascan-se
+  DeprecatedEAPI: version 1.23-r2: uses deprecated EAPI: 3
 
-sys-libs/readline
-  DeprecatedEAPI: version 6.2_p5-r1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 6.3_p8-r1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 6.3_p8-r2: uses deprecated EAPI: 4
-  DroppedKeywordWarning: version 7.0_beta: keywords dropped: alpha, amd64, arm, arm64, hppa, ia64, m68k, mips, ppc, ppc64, s390, sh, sparc, x86
+sci-biology/uchime
+  DeprecatedEAPI: version 4.2.40: uses deprecated EAPI: 4
 
-sys-libs/rvm
-  DeprecatedEAPI: version 1.12: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.16: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.17: uses deprecated EAPI: 2
+sci-biology/unafold
+  DeprecatedEAPI: version 3.8: uses deprecated EAPI: 3
 
-sys-libs/slang
-  DeprecatedEAPI: version 2.2.4: uses deprecated EAPI: 4
+sci-biology/velvet
+  DeprecatedEAPI: version 1.0.18-r1: uses deprecated EAPI: 4
 
-sys-libs/suacomp
-  DeprecatedEAPI: version 0.6.13: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 0.6.14: uses deprecated EAPI: 3
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
+sci-biology/wgs-assembler
+  DeprecatedEAPI: version 5.4: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 6.1: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 7.0: uses deprecated EAPI: 2
+  DeprecatedEclass: version 7.0-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 7.0-r1: uses deprecated EAPI: 4
 
-sys-libs/system-config-base
-  DeprecatedEAPI: version 1-r1: uses deprecated EAPI: 0
+sci-biology/wise
+  SizeViolation: "files/wise-2.4.0_alpha-cflags.patch" exceeds 20k in size; 27241 bytes total
 
-sys-libs/timezone-data
-  DeprecatedEAPI: version 2015e: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 2015f: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 2015g: uses deprecated EAPI: 4
-
-sys-libs/uclibc
-  DeprecatedEAPI: version 0.9.33.2-r15: uses deprecated EAPI: 0
-  DeprecatedEclass: version 0.9.33.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DeprecatedEAPI: version 0.9.33.9999: uses deprecated EAPI: 0
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 0
-
-sys-libs/zlib
-  DeprecatedEAPI: version 1.2.8-r1: uses deprecated EAPI: 4
+sci-biology/yass
+  DeprecatedEAPI: version 1.14: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 1.14-r1: uses deprecated EAPI: 2
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
