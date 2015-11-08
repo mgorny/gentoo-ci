@@ -5,5 +5,1705 @@
 + [[ global == global ]]
 + exec pkgcheck -r gentoo --reporter FancyReporter -c UnusedGlobalFlags -c UnusedLicense
 
+!!! ERROR: dev-python/envisage-4.4.0 failed.
+!!! die invoked from directory /home/mgorny/pkgcore-venv/lib/pkgcore
+!!! Call stack:
+!!!             ebuild-daemon.bash, line 456:  Called __ebd_exec_main 'daemonize'
+!!!             ebuild-daemon.bash, line 210:  Called __ebd_main_loop
+!!!             ebuild-daemon.bash, line 439:  Called __ebd_process_metadata '185' 'depend'
+!!!             ebuild-daemon.bash, line 372:  Called __execute_phases 'depend'
+!!!                     ebuild.lib, line 427:  Called __load_ebuild '/home/mgorny/repos/gentoo/dev-python/envisage/envisage-4.4.0.ebuild'
+!!!                     ebuild.lib, line 252:  Called __qa_invoke 'source' '/home/mgorny/repos/gentoo/dev-python/envisage/envisage-4.4.0.ebuild'
+!!!         isolated-functions.lib, line 286:  Called source '/home/mgorny/repos/gentoo/dev-python/envisage/envisage-4.4.0.ebuild'
+!!!          envisage-4.4.0.ebuild, line  10:  Called inherit 'distutils-r1' 'virtualx'
+!!!   ebuild-default-functions.lib, line 230:  Called __internal_inherit 'distutils-r1'
+!!!              ebuild-daemon.lib, line  30:  Called __qa_invoke 'source' '/home/mgorny/repos/gentoo/eclass/distutils-r1.eclass'
+!!!         isolated-functions.lib, line 286:  Called source '/home/mgorny/repos/gentoo/eclass/distutils-r1.eclass'
+!!!            distutils-r1.eclass, line  85:  Called inherit 'multiprocessing' 'python-r1'
+!!!   ebuild-default-functions.lib, line 230:  Called __internal_inherit 'python-r1'
+!!!              ebuild-daemon.lib, line  30:  Called __qa_invoke 'source' '/home/mgorny/repos/gentoo/eclass/python-r1.eclass'
+!!!         isolated-functions.lib, line 286:  Called source '/home/mgorny/repos/gentoo/eclass/python-r1.eclass'
+!!!               python-r1.eclass, line  88:  Called die
+!!! The die message:
+!!!  PYTHON_COMPAT must be an array.
+
+
+!!! ERROR: dev-python/envisage-4.4.0 failed.
+!!! die invoked from directory /home/mgorny/pkgcore-venv/lib/pkgcore
+!!! Call stack:
+!!!             ebuild-daemon.bash, line 456:  Called __ebd_exec_main 'daemonize'
+!!!             ebuild-daemon.bash, line 210:  Called __ebd_main_loop
+!!!             ebuild-daemon.bash, line 439:  Called __ebd_process_metadata '185' 'depend'
+!!!             ebuild-daemon.bash, line 372:  Called __execute_phases 'depend'
+!!!                     ebuild.lib, line 427:  Called __load_ebuild '/home/mgorny/repos/gentoo/dev-python/envisage/envisage-4.4.0.ebuild'
+!!!                     ebuild.lib, line 252:  Called __qa_invoke 'source' '/home/mgorny/repos/gentoo/dev-python/envisage/envisage-4.4.0.ebuild'
+!!!         isolated-functions.lib, line 286:  Called source '/home/mgorny/repos/gentoo/dev-python/envisage/envisage-4.4.0.ebuild'
+!!!          envisage-4.4.0.ebuild, line  10:  Called inherit 'distutils-r1' 'virtualx'
+!!!   ebuild-default-functions.lib, line 230:  Called __internal_inherit 'distutils-r1'
+!!!              ebuild-daemon.lib, line  30:  Called __qa_invoke 'source' '/home/mgorny/repos/gentoo/eclass/distutils-r1.eclass'
+!!!         isolated-functions.lib, line 286:  Called source '/home/mgorny/repos/gentoo/eclass/distutils-r1.eclass'
+!!!            distutils-r1.eclass, line  85:  Called inherit 'multiprocessing' 'python-r1'
+!!!   ebuild-default-functions.lib, line 230:  Called __internal_inherit 'python-r1'
+!!!              ebuild-daemon.lib, line  30:  Called __qa_invoke 'source' '/home/mgorny/repos/gentoo/eclass/python-r1.eclass'
+!!!         isolated-functions.lib, line 286:  Called source '/home/mgorny/repos/gentoo/eclass/python-r1.eclass'
+!!!               python-r1.eclass, line  88:  Called die
+!!! The die message:
+!!!  PYTHON_COMPAT must be an array.
+
+ERROR pkgcore: returned val from gen_metadata was 'False'
+ERROR root: check <pkgcheck.repo_metadata.UnusedGlobalFlags object at
+          : 0x7f2f53b999d0> raised
+ERROR root: Traceback (most recent call last):
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/bas
+          : e.py", line 337, in feed
+ERROR root:     check.feed(item, reporter)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/rep
+          : o_metadata.py", line 62, in feed
+ERROR root:     self.flags.difference_update(pkg.iuse_stripped)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 230, in iuse_stripped
+ERROR root:     return frozenset(x.lstrip('-+') for x in self.iuse)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 101, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 208, in <lambda>
+ERROR root:     s.data.pop("IUSE", "").split()))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 103, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/metadata.py", line 59, in _get_data
+ERROR root:     return self._fetch_metadata()
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 269, in _fetch_metadata
+ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
+          : force_regen=force_regen)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 360, in _get_metadata
+ERROR root:     return self._update_metadata(pkg, ebp=ebp)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 368, in _update_metadata
+ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/processor.py", line 825, in get_keys
+ERROR root:     {"key": receive_key})
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/processor.py", line 769, in _run_depend_like_phase
+ERROR root:     raise Exception(val)
+ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
+          : dev-python/envisage-4.4.0, attr iuse
+ERROR root: error: Metadata Exception: pkg ebuild src:
+          : dev-python/envisage-4.4.0, attr data
+ERROR root: error: False
+ERROR pkgcore: returned val from gen_metadata was 'False'
+ERROR root: check <pkgcheck.repo_metadata.UnusedLicense object at
+          : 0x7f2f53bff9d0> raised
+ERROR root: Traceback (most recent call last):
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/bas
+          : e.py", line 337, in feed
+ERROR root:     check.feed(item, reporter)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/rep
+          : o_metadata.py", line 113, in feed
+ERROR root:     self.licenses.difference_update(iflatten_instance(pkg.license))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/
+!!! ERROR: dev-python/etsdevtools-4.0.2-r1 failed.
+!!! die invoked from directory /home/mgorny/pkgcore-venv/lib/pkgcore
+!!! Call stack:
+!!!             ebuild-daemon.bash, line 456:  Called __ebd_exec_main 'daemonize'
+!!!             ebuild-daemon.bash, line 210:  Called __ebd_main_loop
+!!!             ebuild-daemon.bash, line 439:  Called __ebd_process_metadata '209' 'depend'
+!!!             ebuild-daemon.bash, line 372:  Called __execute_phases 'depend'
+!!!                     ebuild.lib, line 427:  Called __load_ebuild '/home/mgorny/repos/gentoo/dev-python/etsdevtools/etsdevtools-4.0.2-r1.ebuild'
+!!!                     ebuild.lib, line 252:  Called __qa_invoke 'source' '/home/mgorny/repos/gentoo/dev-python/etsdevtools/etsdevtools-4.0.2-r1.ebuild'
+!!!         isolated-functions.lib, line 286:  Called source '/home/mgorny/repos/gentoo/dev-python/etsdevtools/etsdevtools-4.0.2-r1.ebuild'
+!!!    etsdevtools-4.0.2-r1.ebuild, line   9:  Called inherit 'distutils-r1' 'virtualx'
+!!!   ebuild-default-functions.lib, line 230:  Called __internal_inherit 'distutils-r1'
+!!!              ebuild-daemon.lib, line  30:  Called __qa_invoke 'source' '/home/mgorny/repos/gentoo/eclass/distutils-r1.eclass'
+!!!         isolated-functions.lib, line 286:  Called source '/home/mgorny/repos/gentoo/eclass/distutils-r1.eclass'
+!!!            distutils-r1.eclass, line  85:  Called inherit 'multiprocessing' 'python-r1'
+!!!   ebuild-default-functions.lib, line 230:  Called __internal_inherit 'python-r1'
+!!!              ebuild-daemon.lib, line  30:  Called __qa_invoke 'source' '/home/mgorny/repos/gentoo/eclass/python-r1.eclass'
+!!!         isolated-functions.lib, line 286:  Called source '/home/mgorny/repos/gentoo/eclass/python-r1.eclass'
+!!!               python-r1.eclass, line  88:  Called die
+!!! The die message:
+!!!  PYTHON_COMPAT must be an array.
+
+pack
+          : age/base.py", line 101, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 43, in generate_depset
+ERROR root:     return conditionals.DepSet.parse(s.data.pop(key, ""), c,
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 103, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/metadata.py", line 59, in _get_data
+ERROR root:     return self._fetch_metadata()
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 269, in _fetch_metadata
+ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
+          : force_regen=force_regen)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 360, in _get_metadata
+ERROR root:     return self._update_metadata(pkg, ebp=ebp)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 368, in _update_metadata
+ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/processor.py", line 825, in get_keys
+ERROR root:     {"key": receive_key})
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/processor.py", line 769, in _run_depend_like_phase
+ERROR root:     raise Exception(val)
+ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
+          : dev-python/envisage-4.4.0, attr license
+ERROR root: error: Metadata Exception: pkg ebuild src:
+          : dev-python/envisage-4.4.0, attr data
+ERROR root: error: False
+ERROR pkgcore: returned val from gen_metadata was 'False'
+ERROR root: check <pkgcheck.repo_metadata.UnusedGlobalFlags object at
+          : 0x7f2f53b999d0> raised
+ERROR root: Traceback (most recent call last):
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/bas
+          : e.py", line 337, in feed
+ERROR root:     check.feed(item, reporter)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/rep
+          : o_metadata.py", line 62, in feed
+ERROR root:     self.flags.difference_update(pkg.iuse_stripped)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 230, in iuse_stripped
+ERROR root:     return frozenset(x.lstrip('-+') for x in self.iuse)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 101, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 208, in <lambda>
+ERROR root:     s.data.pop("IUSE", "").split()))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 103, in dynamic
+!!! ERROR: dev-python/etsdevtools-4.0.2-r1 failed.
+!!! die invoked from directory /home/mgorny/pkgcore-venv/lib/pkgcore
+!!! Call stack:
+!!!             ebuild-daemon.bash, line 456:  Called __ebd_exec_main 'daemonize'
+!!!             ebuild-daemon.bash, line 210:  Called __ebd_main_loop
+!!!             ebuild-daemon.bash, line 439:  Called __ebd_process_metadata '209' 'depend'
+!!!             ebuild-daemon.bash, line 372:  Called __execute_phases 'depend'
+!!!                     ebuild.lib, line 427:  Called __load_ebuild '/home/mgorny/repos/gentoo/dev-python/etsdevtools/etsdevtools-4.0.2-r1.ebuild'
+!!!                     ebuild.lib, line 252:  Called __qa_invoke 'source' '/home/mgorny/repos/gentoo/dev-python/etsdevtools/etsdevtools-4.0.2-r1.ebuild'
+!!!         isolated-functions.lib, line 286:  Called source '/home/mgorny/repos/gentoo/dev-python/etsdevtools/etsdevtools-4.0.2-r1.ebuild'
+!!!    etsdevtools-4.0.2-r1.ebuild, line   9:  Called inherit 'distutils-r1' 'virtualx'
+!!!   ebuild-default-functions.lib, line 230:  Called __internal_inherit 'distutils-r1'
+!!!              ebuild-daemon.lib, line  30:  Called __qa_invoke 'source' '/home/mgorny/repos/gentoo/eclass/distutils-r1.eclass'
+!!!         isolated-functions.lib, line 286:  Called source '/home/mgorny/repos/gentoo/eclass/distutils-r1.eclass'
+!!!            distutils-r1.eclass, line  85:  Called inherit 'multiprocessing' 'python-r1'
+!!!   ebuild-default-functions.lib, line 230:  Called __internal_inherit 'python-r1'
+!!!              ebuild-daemon.lib, line  30:  Called __qa_invoke 'source' '/home/mgorny/repos/gentoo/eclass/python-r1.eclass'
+!!!         isolated-functions.lib, line 286:  Called source '/home/mgorny/repos/gentoo/eclass/python-r1.eclass'
+!!!               python-r1.eclass, line  88:  Called die
+!!! The die message:
+!!!  PYTHON_COMPAT must be an array.
+
+_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/metadata.py", line 59, in _get_data
+ERROR root:     return self._fetch_metadata()
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 269, in _fetch_metadata
+ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
+          : force_regen=force_regen)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 360, in _get_metadata
+ERROR root:     return self._update_metadata(pkg, ebp=ebp)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 368, in _update_metadata
+ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/processor.py", line 825, in get_keys
+ERROR root:     {"key": receive_key})
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/processor.py", line 769, in _run_depend_like_phase
+ERROR root:     raise Exception(val)
+ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
+          : dev-python/etsdevtools-4.0.2-r1, attr iuse
+ERROR root: error: Metadata Exception: pkg ebuild src:
+          : dev-python/etsdevtools-4.0.2-r1, attr data
+ERROR root: error: False
+ERROR pkgcore: returned val from gen_metadata was 'False'
+ERROR root: check <pkgcheck.repo_metadata.UnusedLicense object at
+          : 0x7f2f53bff9d0> raised
+ERROR root: Traceback (most recent call last):
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/bas
+          : e.py", line 337, in feed
+ERROR root:     check.feed(item, reporter)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/rep
+          : o_metadata.py", line 113, in feed
+ERROR root:     self.licenses.difference_update(iflatten_instance(pkg.license))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 101, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 43, in generate_depset
+ERROR root:     return conditionals.DepSet.parse(s.data.pop(key, ""), c,
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 103, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/metadata.py", line 59, in _get_data
+ERROR root:     return self._fetch_metadata()
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 269, in _fetch_metadata
+ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
+          : force_regen=force_regen)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 360, in
+!!! ERROR: dev-python/tvdb_api-1.9 failed.
+!!! die invoked from directory /home/mgorny/pkgcore-venv/lib/pkgcore
+!!! Call stack:
+!!!             ebuild-daemon.bash, line 456:  Called __ebd_exec_main 'daemonize'
+!!!             ebuild-daemon.bash, line 210:  Called __ebd_main_loop
+!!!             ebuild-daemon.bash, line 439:  Called __ebd_process_metadata '177' 'depend'
+!!!             ebuild-daemon.bash, line 372:  Called __execute_phases 'depend'
+!!!                     ebuild.lib, line 427:  Called __load_ebuild '/home/mgorny/repos/gentoo/dev-python/tvdb_api/tvdb_api-1.9.ebuild'
+!!!                     ebuild.lib, line 252:  Called __qa_invoke 'source' '/home/mgorny/repos/gentoo/dev-python/tvdb_api/tvdb_api-1.9.ebuild'
+!!!         isolated-functions.lib, line 286:  Called source '/home/mgorny/repos/gentoo/dev-python/tvdb_api/tvdb_api-1.9.ebuild'
+!!!            tvdb_api-1.9.ebuild, line   8:  Called inherit 'distutils-r1' 'vcs-snapshot'
+!!!   ebuild-default-functions.lib, line 230:  Called __internal_inherit 'distutils-r1'
+!!!              ebuild-daemon.lib, line  30:  Called __qa_invoke 'source' '/home/mgorny/repos/gentoo/eclass/distutils-r1.eclass'
+!!!         isolated-functions.lib, line 286:  Called source '/home/mgorny/repos/gentoo/eclass/distutils-r1.eclass'
+!!!            distutils-r1.eclass, line  85:  Called inherit 'multiprocessing' 'python-r1'
+!!!   ebuild-default-functions.lib, line 230:  Called __internal_inherit 'python-r1'
+!!!              ebuild-daemon.lib, line  30:  Called __qa_invoke 'source' '/home/mgorny/repos/gentoo/eclass/python-r1.eclass'
+!!!         isolated-functions.lib, line 286:  Called source '/home/mgorny/repos/gentoo/eclass/python-r1.eclass'
+!!!               python-r1.eclass, line  88:  Called die
+!!! The die message:
+!!!  PYTHON_COMPAT must be an array.
+
+ _get_metadata
+ERROR root:     return self._update_metadata(pkg, ebp=ebp)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 368, in _update_metadata
+ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/processor.py", line 825, in get_keys
+ERROR root:     {"key": receive_key})
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/processor.py", line 769, in _run_depend_like_phase
+ERROR root:     raise Exception(val)
+ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
+          : dev-python/etsdevtools-4.0.2-r1, attr license
+ERROR root: error: Metadata Exception: pkg ebuild src:
+          : dev-python/etsdevtools-4.0.2-r1, attr data
+ERROR root: error: False
+ERROR pkgcore: returned val from gen_metadata was 'False'
+ERROR root: check <pkgcheck.repo_metadata.UnusedGlobalFlags object at
+          : 0x7f2f53b999d0> raised
+ERROR root: Traceback (most recent call last):
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/bas
+          : e.py", line 337, in feed
+ERROR root:     check.feed(item, reporter)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/rep
+          : o_metadata.py", line 62, in feed
+ERROR root:     self.flags.difference_update(pkg.iuse_stripped)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 230, in iuse_stripped
+ERROR root:     return frozenset(x.lstrip('-+') for x in self.iuse)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 101, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 208, in <lambda>
+ERROR root:     s.data.pop("IUSE", "").split()))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 103, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/metadata.py", line 59, in _get_data
+ERROR root:     return self._fetch_metadata()
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 269, in _fetch_metadata
+ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
+          : force_regen=force_regen)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 360, in _get_metadata
+ERROR root:     return self._update_metadata(pkg, ebp=ebp)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 368, in _update_metadata
+ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/processor.py", line 825, in get_keys
+ERROR root:     {"key": receive_key})
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/processor.py", line 769, in _run_depend_like_phase
+ERROR root:     raise Exception(val)
+ERR
+!!! ERROR: dev-python/tvdb_api-1.9 failed.
+!!! die invoked from directory /home/mgorny/pkgcore-venv/lib/pkgcore
+!!! Call stack:
+!!!             ebuild-daemon.bash, line 456:  Called __ebd_exec_main 'daemonize'
+!!!             ebuild-daemon.bash, line 210:  Called __ebd_main_loop
+!!!             ebuild-daemon.bash, line 439:  Called __ebd_process_metadata '177' 'depend'
+!!!             ebuild-daemon.bash, line 372:  Called __execute_phases 'depend'
+!!!                     ebuild.lib, line 427:  Called __load_ebuild '/home/mgorny/repos/gentoo/dev-python/tvdb_api/tvdb_api-1.9.ebuild'
+!!!                     ebuild.lib, line 252:  Called __qa_invoke 'source' '/home/mgorny/repos/gentoo/dev-python/tvdb_api/tvdb_api-1.9.ebuild'
+!!!         isolated-functions.lib, line 286:  Called source '/home/mgorny/repos/gentoo/dev-python/tvdb_api/tvdb_api-1.9.ebuild'
+!!!            tvdb_api-1.9.ebuild, line   8:  Called inherit 'distutils-r1' 'vcs-snapshot'
+!!!   ebuild-default-functions.lib, line 230:  Called __internal_inherit 'distutils-r1'
+!!!              ebuild-daemon.lib, line  30:  Called __qa_invoke 'source' '/home/mgorny/repos/gentoo/eclass/distutils-r1.eclass'
+!!!         isolated-functions.lib, line 286:  Called source '/home/mgorny/repos/gentoo/eclass/distutils-r1.eclass'
+!!!            distutils-r1.eclass, line  85:  Called inherit 'multiprocessing' 'python-r1'
+!!!   ebuild-default-functions.lib, line 230:  Called __internal_inherit 'python-r1'
+!!!              ebuild-daemon.lib, line  30:  Called __qa_invoke 'source' '/home/mgorny/repos/gentoo/eclass/python-r1.eclass'
+!!!         isolated-functions.lib, line 286:  Called source '/home/mgorny/repos/gentoo/eclass/python-r1.eclass'
+!!!               python-r1.eclass, line  88:  Called die
+!!! The die message:
+!!!  PYTHON_COMPAT must be an array.
+
+
+!!! ERROR: media-tv/tvnamer-2.3 failed.
+!!! die invoked from directory /home/mgorny/pkgcore-venv/lib/pkgcore
+!!! Call stack:
+!!!             ebuild-daemon.bash, line 456:  Called __ebd_exec_main 'daemonize'
+!!!             ebuild-daemon.bash, line 210:  Called __ebd_main_loop
+!!!             ebuild-daemon.bash, line 439:  Called __ebd_process_metadata '166' 'depend'
+!!!             ebuild-daemon.bash, line 372:  Called __execute_phases 'depend'
+!!!                     ebuild.lib, line 427:  Called __load_ebuild '/home/mgorny/repos/gentoo/media-tv/tvnamer/tvnamer-2.3.ebuild'
+!!!                     ebuild.lib, line 252:  Called __qa_invoke 'source' '/home/mgorny/repos/gentoo/media-tv/tvnamer/tvnamer-2.3.ebuild'
+!!!         isolated-functions.lib, line 286:  Called source '/home/mgorny/repos/gentoo/media-tv/tvnamer/tvnamer-2.3.ebuild'
+!!!             tvnamer-2.3.ebuild, line   8:  Called inherit 'distutils-r1'
+!!!   ebuild-default-functions.lib, line 230:  Called __internal_inherit 'distutils-r1'
+!!!              ebuild-daemon.lib, line  30:  Called __qa_invoke 'source' '/home/mgorny/repos/gentoo/eclass/distutils-r1.eclass'
+!!!         isolated-functions.lib, line 286:  Called source '/home/mgorny/repos/gentoo/eclass/distutils-r1.eclass'
+!!!            distutils-r1.eclass, line  85:  Called inherit 'multiprocessing' 'python-r1'
+!!!   ebuild-default-functions.lib, line 230:  Called __internal_inherit 'python-r1'
+!!!              ebuild-daemon.lib, line  30:  Called __qa_invoke 'source' '/home/mgorny/repos/gentoo/eclass/python-r1.eclass'
+!!!         isolated-functions.lib, line 286:  Called source '/home/mgorny/repos/gentoo/eclass/python-r1.eclass'
+!!!               python-r1.eclass, line  88:  Called die
+!!! The die message:
+!!!  PYTHON_COMPAT must be an array.
+
+OR root: MetadataException: Metadata Exception: pkg ebuild src:
+          : dev-python/tvdb_api-1.9, attr iuse
+ERROR root: error: Metadata Exception: pkg ebuild src:
+          : dev-python/tvdb_api-1.9, attr data
+ERROR root: error: False
+ERROR pkgcore: returned val from gen_metadata was 'False'
+ERROR root: check <pkgcheck.repo_metadata.UnusedLicense object at
+          : 0x7f2f53bff9d0> raised
+ERROR root: Traceback (most recent call last):
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/bas
+          : e.py", line 337, in feed
+ERROR root:     check.feed(item, reporter)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/rep
+          : o_metadata.py", line 113, in feed
+ERROR root:     self.licenses.difference_update(iflatten_instance(pkg.license))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 101, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 43, in generate_depset
+ERROR root:     return conditionals.DepSet.parse(s.data.pop(key, ""), c,
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 103, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/metadata.py", line 59, in _get_data
+ERROR root:     return self._fetch_metadata()
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 269, in _fetch_metadata
+ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
+          : force_regen=force_regen)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 360, in _get_metadata
+ERROR root:     return self._update_metadata(pkg, ebp=ebp)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 368, in _update_metadata
+ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/processor.py", line 825, in get_keys
+ERROR root:     {"key": receive_key})
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/processor.py", line 769, in _run_depend_like_phase
+ERROR root:     raise Exception(val)
+ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
+          : dev-python/tvdb_api-1.9, attr license
+ERROR root: error: Metadata Exception: pkg ebuild src:
+          : dev-python/tvdb_api-1.9, attr data
+ERROR root: error: False
+ERROR pkgcore: returned val from gen_metadata was 'False'
+ERROR root: check <pkgcheck.repo_metadata.UnusedGlobalFlags object at
+          : 0x7f2f53b999d0> raised
+ERROR root: Traceback (most recent call last):
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/bas
+          : e.py", line 337, in feed
+ERROR root:     check.feed(item, reporter)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/rep
+          : o_metadata.py", line 62, in feed
+ERROR root:     self.flags.difference_update(pkg.iuse_stripped)
+ERROR root:   File
+          : "/home/mgorny/pkgcore
+!!! ERROR: media-tv/tvnamer-2.3 failed.
+!!! die invoked from directory /home/mgorny/pkgcore-venv/lib/pkgcore
+!!! Call stack:
+!!!             ebuild-daemon.bash, line 456:  Called __ebd_exec_main 'daemonize'
+!!!             ebuild-daemon.bash, line 210:  Called __ebd_main_loop
+!!!             ebuild-daemon.bash, line 439:  Called __ebd_process_metadata '166' 'depend'
+!!!             ebuild-daemon.bash, line 372:  Called __execute_phases 'depend'
+!!!                     ebuild.lib, line 427:  Called __load_ebuild '/home/mgorny/repos/gentoo/media-tv/tvnamer/tvnamer-2.3.ebuild'
+!!!                     ebuild.lib, line 252:  Called __qa_invoke 'source' '/home/mgorny/repos/gentoo/media-tv/tvnamer/tvnamer-2.3.ebuild'
+!!!         isolated-functions.lib, line 286:  Called source '/home/mgorny/repos/gentoo/media-tv/tvnamer/tvnamer-2.3.ebuild'
+!!!             tvnamer-2.3.ebuild, line   8:  Called inherit 'distutils-r1'
+!!!   ebuild-default-functions.lib, line 230:  Called __internal_inherit 'distutils-r1'
+!!!              ebuild-daemon.lib, line  30:  Called __qa_invoke 'source' '/home/mgorny/repos/gentoo/eclass/distutils-r1.eclass'
+!!!         isolated-functions.lib, line 286:  Called source '/home/mgorny/repos/gentoo/eclass/distutils-r1.eclass'
+!!!            distutils-r1.eclass, line  85:  Called inherit 'multiprocessing' 'python-r1'
+!!!   ebuild-default-functions.lib, line 230:  Called __internal_inherit 'python-r1'
+!!!              ebuild-daemon.lib, line  30:  Called __qa_invoke 'source' '/home/mgorny/repos/gentoo/eclass/python-r1.eclass'
+!!!         isolated-functions.lib, line 286:  Called source '/home/mgorny/repos/gentoo/eclass/python-r1.eclass'
+!!!               python-r1.eclass, line  88:  Called die
+!!! The die message:
+!!!  PYTHON_COMPAT must be an array.
+
+-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 230, in iuse_stripped
+ERROR root:     return frozenset(x.lstrip('-+') for x in self.iuse)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 101, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 208, in <lambda>
+ERROR root:     s.data.pop("IUSE", "").split()))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 103, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/metadata.py", line 59, in _get_data
+ERROR root:     return self._fetch_metadata()
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 269, in _fetch_metadata
+ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
+          : force_regen=force_regen)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 360, in _get_metadata
+ERROR root:     return self._update_metadata(pkg, ebp=ebp)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 368, in _update_metadata
+ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/processor.py", line 825, in get_keys
+ERROR root:     {"key": receive_key})
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/processor.py", line 769, in _run_depend_like_phase
+ERROR root:     raise Exception(val)
+ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
+          : media-tv/tvnamer-2.3, attr iuse
+ERROR root: error: Metadata Exception: pkg ebuild src: media-tv/tvnamer-2.3,
+          : attr data
+ERROR root: error: False
+ERROR pkgcore: returned val from gen_metadata was 'False'
+ERROR root: check <pkgcheck.repo_metadata.UnusedLicense object at
+          : 0x7f2f53bff9d0> raised
+ERROR root: Traceback (most recent call last):
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/bas
+          : e.py", line 337, in feed
+ERROR root:     check.feed(item, reporter)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/rep
+          : o_metadata.py", line 113, in feed
+ERROR root:     self.licenses.difference_update(iflatten_instance(pkg.license))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 101, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 43, in generate_depset
+ERROR root:     return conditionals.DepSet.parse(s.data.pop(key, ""), c,
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+    
+!!! ERROR: net-misc/elliptics-eblob-0.22.16 failed.
+!!! die invoked from directory /home/mgorny/pkgcore-venv/lib/pkgcore
+!!! Call stack:
+!!!               ebuild-daemon.bash, line 456:  Called __ebd_exec_main 'daemonize'
+!!!               ebuild-daemon.bash, line 210:  Called __ebd_main_loop
+!!!               ebuild-daemon.bash, line 439:  Called __ebd_process_metadata '228' 'depend'
+!!!               ebuild-daemon.bash, line 372:  Called __execute_phases 'depend'
+!!!                       ebuild.lib, line 427:  Called __load_ebuild '/home/mgorny/repos/gentoo/net-misc/elliptics-eblob/elliptics-eblob-0.22.16.ebuild'
+!!!                       ebuild.lib, line 252:  Called __qa_invoke 'source' '/home/mgorny/repos/gentoo/net-misc/elliptics-eblob/elliptics-eblob-0.22.16.ebuild'
+!!!           isolated-functions.lib, line 286:  Called source '/home/mgorny/repos/gentoo/net-misc/elliptics-eblob/elliptics-eblob-0.22.16.ebuild'
+!!!   elliptics-eblob-0.22.16.ebuild, line   8:  Called inherit 'eutils' 'python-single-r1' 'flag-o-matic' 'cmake-utils'
+!!!     ebuild-default-functions.lib, line 230:  Called __internal_inherit 'python-single-r1'
+!!!                ebuild-daemon.lib, line  30:  Called __qa_invoke 'source' '/home/mgorny/repos/gentoo/eclass/python-single-r1.eclass'
+!!!           isolated-functions.lib, line 286:  Called source '/home/mgorny/repos/gentoo/eclass/python-single-r1.eclass'
+!!!          python-single-r1.eclass, line 102:  Called die
+!!! The die message:
+!!!  PYTHON_COMPAT must be an array.
+
+      : age/base.py", line 103, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/metadata.py", line 59, in _get_data
+ERROR root:     return self._fetch_metadata()
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 269, in _fetch_metadata
+ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
+          : force_regen=force_regen)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 360, in _get_metadata
+ERROR root:     return self._update_metadata(pkg, ebp=ebp)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 368, in _update_metadata
+ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/processor.py", line 825, in get_keys
+ERROR root:     {"key": receive_key})
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/processor.py", line 769, in _run_depend_like_phase
+ERROR root:     raise Exception(val)
+ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
+          : media-tv/tvnamer-2.3, attr license
+ERROR root: error: Metadata Exception: pkg ebuild src: media-tv/tvnamer-2.3,
+          : attr data
+ERROR root: error: False
+ERROR pkgcore: returned val from gen_metadata was 'False'
+ERROR root: check <pkgcheck.repo_metadata.UnusedGlobalFlags object at
+          : 0x7f2f53b999d0> raised
+ERROR root: Traceback (most recent call last):
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/bas
+          : e.py", line 337, in feed
+ERROR root:     check.feed(item, reporter)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/rep
+          : o_metadata.py", line 62, in feed
+ERROR root:     self.flags.difference_update(pkg.iuse_stripped)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 230, in iuse_stripped
+ERROR root:     return frozenset(x.lstrip('-+') for x in self.iuse)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 101, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 208, in <lambda>
+ERROR root:     s.data.pop("IUSE", "").split()))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 103, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/metadata.py", line 59, in _get_data
+ERROR root:     return self._fetch_metadata()
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 269, in _fetch_metadata
+ERROR root:     return self._parent._ge
+!!! ERROR: net-misc/elliptics-eblob-0.22.16 failed.
+!!! die invoked from directory /home/mgorny/pkgcore-venv/lib/pkgcore
+!!! Call stack:
+!!!               ebuild-daemon.bash, line 456:  Called __ebd_exec_main 'daemonize'
+!!!               ebuild-daemon.bash, line 210:  Called __ebd_main_loop
+!!!               ebuild-daemon.bash, line 439:  Called __ebd_process_metadata '228' 'depend'
+!!!               ebuild-daemon.bash, line 372:  Called __execute_phases 'depend'
+!!!                       ebuild.lib, line 427:  Called __load_ebuild '/home/mgorny/repos/gentoo/net-misc/elliptics-eblob/elliptics-eblob-0.22.16.ebuild'
+!!!                       ebuild.lib, line 252:  Called __qa_invoke 'source' '/home/mgorny/repos/gentoo/net-misc/elliptics-eblob/elliptics-eblob-0.22.16.ebuild'
+!!!           isolated-functions.lib, line 286:  Called source '/home/mgorny/repos/gentoo/net-misc/elliptics-eblob/elliptics-eblob-0.22.16.ebuild'
+!!!   elliptics-eblob-0.22.16.ebuild, line   8:  Called inherit 'eutils' 'python-single-r1' 'flag-o-matic' 'cmake-utils'
+!!!     ebuild-default-functions.lib, line 230:  Called __internal_inherit 'python-single-r1'
+!!!                ebuild-daemon.lib, line  30:  Called __qa_invoke 'source' '/home/mgorny/repos/gentoo/eclass/python-single-r1.eclass'
+!!!           isolated-functions.lib, line 286:  Called source '/home/mgorny/repos/gentoo/eclass/python-single-r1.eclass'
+!!!          python-single-r1.eclass, line 102:  Called die
+!!! The die message:
+!!!  PYTHON_COMPAT must be an array.
+
+t_metadata(self, ebp=ebp,
+          : force_regen=force_regen)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 360, in _get_metadata
+ERROR root:     return self._update_metadata(pkg, ebp=ebp)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 368, in _update_metadata
+ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/processor.py", line 825, in get_keys
+ERROR root:     {"key": receive_key})
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/processor.py", line 769, in _run_depend_like_phase
+ERROR root:     raise Exception(val)
+ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
+          : net-misc/elliptics-eblob-0.22.16, attr iuse
+ERROR root: error: Metadata Exception: pkg ebuild src:
+          : net-misc/elliptics-eblob-0.22.16, attr data
+ERROR root: error: False
+ERROR pkgcore: returned val from gen_metadata was 'False'
+ERROR root: check <pkgcheck.repo_metadata.UnusedLicense object at
+          : 0x7f2f53bff9d0> raised
+ERROR root: Traceback (most recent call last):
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/bas
+          : e.py", line 337, in feed
+ERROR root:     check.feed(item, reporter)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/rep
+          : o_metadata.py", line 113, in feed
+ERROR root:     self.licenses.difference_update(iflatten_instance(pkg.license))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 101, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 43, in generate_depset
+ERROR root:     return conditionals.DepSet.parse(s.data.pop(key, ""), c,
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 103, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/metadata.py", line 59, in _get_data
+ERROR root:     return self._fetch_metadata()
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 269, in _fetch_metadata
+ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
+          : force_regen=force_regen)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 360, in _get_metadata
+ERROR root:     return self._update_metadata(pkg, ebp=ebp)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 368, in _update_metadata
+ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/processor.py", line 825, in get_keys
+ERROR root:     {"key": receive_key})
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/processor.py", line 769, in _run_depend_like_phase
+ERROR root:     ra
+!!! ERROR: net-proxy/hatop-0.7.7 failed.
+!!! die invoked from directory /home/mgorny/pkgcore-venv/lib/pkgcore
+!!! Call stack:
+!!!             ebuild-daemon.bash, line 456:  Called __ebd_exec_main 'daemonize'
+!!!             ebuild-daemon.bash, line 210:  Called __ebd_main_loop
+!!!             ebuild-daemon.bash, line 439:  Called __ebd_process_metadata '168' 'depend'
+!!!             ebuild-daemon.bash, line 372:  Called __execute_phases 'depend'
+!!!                     ebuild.lib, line 427:  Called __load_ebuild '/home/mgorny/repos/gentoo/net-proxy/hatop/hatop-0.7.7.ebuild'
+!!!                     ebuild.lib, line 252:  Called __qa_invoke 'source' '/home/mgorny/repos/gentoo/net-proxy/hatop/hatop-0.7.7.ebuild'
+!!!         isolated-functions.lib, line 286:  Called source '/home/mgorny/repos/gentoo/net-proxy/hatop/hatop-0.7.7.ebuild'
+!!!             hatop-0.7.7.ebuild, line  10:  Called inherit 'python-r1'
+!!!   ebuild-default-functions.lib, line 230:  Called __internal_inherit 'python-r1'
+!!!              ebuild-daemon.lib, line  30:  Called __qa_invoke 'source' '/home/mgorny/repos/gentoo/eclass/python-r1.eclass'
+!!!         isolated-functions.lib, line 286:  Called source '/home/mgorny/repos/gentoo/eclass/python-r1.eclass'
+!!!               python-r1.eclass, line  88:  Called die
+!!! The die message:
+!!!  PYTHON_COMPAT must be an array.
+
+
+!!! ERROR: net-proxy/hatop-0.7.7 failed.
+!!! die invoked from directory /home/mgorny/pkgcore-venv/lib/pkgcore
+!!! Call stack:
+!!!             ebuild-daemon.bash, line 456:  Called __ebd_exec_main 'daemonize'
+!!!             ebuild-daemon.bash, line 210:  Called __ebd_main_loop
+!!!             ebuild-daemon.bash, line 439:  Called __ebd_process_metadata '168' 'depend'
+!!!             ebuild-daemon.bash, line 372:  Called __execute_phases 'depend'
+!!!                     ebuild.lib, line 427:  Called __load_ebuild '/home/mgorny/repos/gentoo/net-proxy/hatop/hatop-0.7.7.ebuild'
+!!!                     ebuild.lib, line 252:  Called __qa_invoke 'source' '/home/mgorny/repos/gentoo/net-proxy/hatop/hatop-0.7.7.ebuild'
+!!!         isolated-functions.lib, line 286:  Called source '/home/mgorny/repos/gentoo/net-proxy/hatop/hatop-0.7.7.ebuild'
+!!!             hatop-0.7.7.ebuild, line  10:  Called inherit 'python-r1'
+!!!   ebuild-default-functions.lib, line 230:  Called __internal_inherit 'python-r1'
+!!!              ebuild-daemon.lib, line  30:  Called __qa_invoke 'source' '/home/mgorny/repos/gentoo/eclass/python-r1.eclass'
+!!!         isolated-functions.lib, line 286:  Called source '/home/mgorny/repos/gentoo/eclass/python-r1.eclass'
+!!!               python-r1.eclass, line  88:  Called die
+!!! The die message:
+!!!  PYTHON_COMPAT must be an array.
+
+ise Exception(val)
+ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
+          : net-misc/elliptics-eblob-0.22.16, attr license
+ERROR root: error: Metadata Exception: pkg ebuild src:
+          : net-misc/elliptics-eblob-0.22.16, attr data
+ERROR root: error: False
+ERROR pkgcore: returned val from gen_metadata was 'False'
+ERROR root: check <pkgcheck.repo_metadata.UnusedGlobalFlags object at
+          : 0x7f2f53b999d0> raised
+ERROR root: Traceback (most recent call last):
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/bas
+          : e.py", line 337, in feed
+ERROR root:     check.feed(item, reporter)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/rep
+          : o_metadata.py", line 62, in feed
+ERROR root:     self.flags.difference_update(pkg.iuse_stripped)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 230, in iuse_stripped
+ERROR root:     return frozenset(x.lstrip('-+') for x in self.iuse)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 101, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 208, in <lambda>
+ERROR root:     s.data.pop("IUSE", "").split()))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 103, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/metadata.py", line 59, in _get_data
+ERROR root:     return self._fetch_metadata()
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 269, in _fetch_metadata
+ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
+          : force_regen=force_regen)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 360, in _get_metadata
+ERROR root:     return self._update_metadata(pkg, ebp=ebp)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 368, in _update_metadata
+ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/processor.py", line 825, in get_keys
+ERROR root:     {"key": receive_key})
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/processor.py", line 769, in _run_depend_like_phase
+ERROR root:     raise Exception(val)
+ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
+          : net-proxy/hatop-0.7.7, attr iuse
+ERROR root: error: Metadata Exception: pkg ebuild src: net-proxy/hatop-0.7.7,
+          : attr data
+ERROR root: error: False
+ERROR pkgcore: returned val from gen_metadata was 'False'
+ERROR root: check <pkgcheck.repo_metadata.UnusedLicense object at
+          : 0x7f2f53bff9d0> raised
+ERROR root: Traceback (most recent call last):
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/bas
+          : e.py", line 337, in feed
+ERROR root:     check.feed(item, reporter)
+ERROR root:   File
+          : "/home/mgorny/p
+!!! ERROR: net-wireless/multimode-1.00-r2 failed.
+!!! die invoked from directory /home/mgorny/pkgcore-venv/lib/pkgcore
+!!! Call stack:
+!!!             ebuild-daemon.bash, line 456:  Called __ebd_exec_main 'daemonize'
+!!!             ebuild-daemon.bash, line 210:  Called __ebd_main_loop
+!!!             ebuild-daemon.bash, line 439:  Called __ebd_process_metadata '198' 'depend'
+!!!             ebuild-daemon.bash, line 372:  Called __execute_phases 'depend'
+!!!                     ebuild.lib, line 427:  Called __load_ebuild '/home/mgorny/repos/gentoo/net-wireless/multimode/multimode-1.00-r2.ebuild'
+!!!                     ebuild.lib, line 252:  Called __qa_invoke 'source' '/home/mgorny/repos/gentoo/net-wireless/multimode/multimode-1.00-r2.ebuild'
+!!!         isolated-functions.lib, line 286:  Called source '/home/mgorny/repos/gentoo/net-wireless/multimode/multimode-1.00-r2.ebuild'
+!!!       multimode-1.00-r2.ebuild, line   8:  Called inherit 'python-single-r1'
+!!!   ebuild-default-functions.lib, line 230:  Called __internal_inherit 'python-single-r1'
+!!!              ebuild-daemon.lib, line  30:  Called __qa_invoke 'source' '/home/mgorny/repos/gentoo/eclass/python-single-r1.eclass'
+!!!         isolated-functions.lib, line 286:  Called source '/home/mgorny/repos/gentoo/eclass/python-single-r1.eclass'
+!!!        python-single-r1.eclass, line 102:  Called die
+!!! The die message:
+!!!  PYTHON_COMPAT must be an array.
+
+kgcore-venv/lib/python2.7/site-packages/pkgcheck/rep
+          : o_metadata.py", line 113, in feed
+ERROR root:     self.licenses.difference_update(iflatten_instance(pkg.license))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 101, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 43, in generate_depset
+ERROR root:     return conditionals.DepSet.parse(s.data.pop(key, ""), c,
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 103, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/metadata.py", line 59, in _get_data
+ERROR root:     return self._fetch_metadata()
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 269, in _fetch_metadata
+ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
+          : force_regen=force_regen)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 360, in _get_metadata
+ERROR root:     return self._update_metadata(pkg, ebp=ebp)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 368, in _update_metadata
+ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/processor.py", line 825, in get_keys
+ERROR root:     {"key": receive_key})
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/processor.py", line 769, in _run_depend_like_phase
+ERROR root:     raise Exception(val)
+ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
+          : net-proxy/hatop-0.7.7, attr license
+ERROR root: error: Metadata Exception: pkg ebuild src: net-proxy/hatop-0.7.7,
+          : attr data
+ERROR root: error: False
+ERROR pkgcore: returned val from gen_metadata was 'False'
+ERROR root: check <pkgcheck.repo_metadata.UnusedGlobalFlags object at
+          : 0x7f2f53b999d0> raised
+ERROR root: Traceback (most recent call last):
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/bas
+          : e.py", line 337, in feed
+ERROR root:     check.feed(item, reporter)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/rep
+          : o_metadata.py", line 62, in feed
+ERROR root:     self.flags.difference_update(pkg.iuse_stripped)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 230, in iuse_stripped
+ERROR root:     return frozenset(x.lstrip('-+') for x in self.iuse)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 101, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-pack
+!!! ERROR: net-wireless/multimode-1.00-r2 failed.
+!!! die invoked from directory /home/mgorny/pkgcore-venv/lib/pkgcore
+!!! Call stack:
+!!!             ebuild-daemon.bash, line 456:  Called __ebd_exec_main 'daemonize'
+!!!             ebuild-daemon.bash, line 210:  Called __ebd_main_loop
+!!!             ebuild-daemon.bash, line 439:  Called __ebd_process_metadata '198' 'depend'
+!!!             ebuild-daemon.bash, line 372:  Called __execute_phases 'depend'
+!!!                     ebuild.lib, line 427:  Called __load_ebuild '/home/mgorny/repos/gentoo/net-wireless/multimode/multimode-1.00-r2.ebuild'
+!!!                     ebuild.lib, line 252:  Called __qa_invoke 'source' '/home/mgorny/repos/gentoo/net-wireless/multimode/multimode-1.00-r2.ebuild'
+!!!         isolated-functions.lib, line 286:  Called source '/home/mgorny/repos/gentoo/net-wireless/multimode/multimode-1.00-r2.ebuild'
+!!!       multimode-1.00-r2.ebuild, line   8:  Called inherit 'python-single-r1'
+!!!   ebuild-default-functions.lib, line 230:  Called __internal_inherit 'python-single-r1'
+!!!              ebuild-daemon.lib, line  30:  Called __qa_invoke 'source' '/home/mgorny/repos/gentoo/eclass/python-single-r1.eclass'
+!!!         isolated-functions.lib, line 286:  Called source '/home/mgorny/repos/gentoo/eclass/python-single-r1.eclass'
+!!!        python-single-r1.eclass, line 102:  Called die
+!!! The die message:
+!!!  PYTHON_COMPAT must be an array.
+
+ages/pkgcore/ebui
+          : ld/ebuild_src.py", line 208, in <lambda>
+ERROR root:     s.data.pop("IUSE", "").split()))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 103, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/metadata.py", line 59, in _get_data
+ERROR root:     return self._fetch_metadata()
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 269, in _fetch_metadata
+ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
+          : force_regen=force_regen)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 360, in _get_metadata
+ERROR root:     return self._update_metadata(pkg, ebp=ebp)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 368, in _update_metadata
+ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/processor.py", line 825, in get_keys
+ERROR root:     {"key": receive_key})
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/processor.py", line 769, in _run_depend_like_phase
+ERROR root:     raise Exception(val)
+ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
+          : net-wireless/multimode-1.00-r2, attr iuse
+ERROR root: error: Metadata Exception: pkg ebuild src:
+          : net-wireless/multimode-1.00-r2, attr data
+ERROR root: error: False
+ERROR pkgcore: returned val from gen_metadata was 'False'
+ERROR root: check <pkgcheck.repo_metadata.UnusedLicense object at
+          : 0x7f2f53bff9d0> raised
+ERROR root: Traceback (most recent call last):
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/bas
+          : e.py", line 337, in feed
+ERROR root:     check.feed(item, reporter)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/rep
+          : o_metadata.py", line 113, in feed
+ERROR root:     self.licenses.difference_update(iflatten_instance(pkg.license))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 101, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 43, in generate_depset
+ERROR root:     return conditionals.DepSet.parse(s.data.pop(key, ""), c,
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 103, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/metadata.py", line 59, in _get_data
+ERROR root:     return self._fetch_metadata()
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 269, 
+!!! ERROR: net-wireless/multimode-1.4_p20140831-r1 failed.
+!!! die invoked from directory /home/mgorny/pkgcore-venv/lib/pkgcore
+!!! Call stack:
+!!!                  ebuild-daemon.bash, line 456:  Called __ebd_exec_main 'daemonize'
+!!!                  ebuild-daemon.bash, line 210:  Called __ebd_main_loop
+!!!                  ebuild-daemon.bash, line 439:  Called __ebd_process_metadata '243' 'depend'
+!!!                  ebuild-daemon.bash, line 372:  Called __execute_phases 'depend'
+!!!                          ebuild.lib, line 427:  Called __load_ebuild '/home/mgorny/repos/gentoo/net-wireless/multimode/multimode-1.4_p20140831-r1.ebuild'
+!!!                          ebuild.lib, line 252:  Called __qa_invoke 'source' '/home/mgorny/repos/gentoo/net-wireless/multimode/multimode-1.4_p20140831-r1.ebuild'
+!!!              isolated-functions.lib, line 286:  Called source '/home/mgorny/repos/gentoo/net-wireless/multimode/multimode-1.4_p20140831-r1.ebuild'
+!!!   multimode-1.4_p20140831-r1.ebuild, line   8:  Called inherit 'python-single-r1'
+!!!        ebuild-default-functions.lib, line 230:  Called __internal_inherit 'python-single-r1'
+!!!                   ebuild-daemon.lib, line  30:  Called __qa_invoke 'source' '/home/mgorny/repos/gentoo/eclass/python-single-r1.eclass'
+!!!              isolated-functions.lib, line 286:  Called source '/home/mgorny/repos/gentoo/eclass/python-single-r1.eclass'
+!!!             python-single-r1.eclass, line 102:  Called die
+!!! The die message:
+!!!  PYTHON_COMPAT must be an array.
+
+in _fetch_metadata
+ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
+          : force_regen=force_regen)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 360, in _get_metadata
+ERROR root:     return self._update_metadata(pkg, ebp=ebp)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 368, in _update_metadata
+ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/processor.py", line 825, in get_keys
+ERROR root:     {"key": receive_key})
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/processor.py", line 769, in _run_depend_like_phase
+ERROR root:     raise Exception(val)
+ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
+          : net-wireless/multimode-1.00-r2, attr license
+ERROR root: error: Metadata Exception: pkg ebuild src:
+          : net-wireless/multimode-1.00-r2, attr data
+ERROR root: error: False
+ERROR pkgcore: returned val from gen_metadata was 'False'
+ERROR root: check <pkgcheck.repo_metadata.UnusedGlobalFlags object at
+          : 0x7f2f53b999d0> raised
+ERROR root: Traceback (most recent call last):
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/bas
+          : e.py", line 337, in feed
+ERROR root:     check.feed(item, reporter)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/rep
+          : o_metadata.py", line 62, in feed
+ERROR root:     self.flags.difference_update(pkg.iuse_stripped)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 230, in iuse_stripped
+ERROR root:     return frozenset(x.lstrip('-+') for x in self.iuse)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 101, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 208, in <lambda>
+ERROR root:     s.data.pop("IUSE", "").split()))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 103, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/metadata.py", line 59, in _get_data
+ERROR root:     return self._fetch_metadata()
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 269, in _fetch_metadata
+ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
+          : force_regen=force_regen)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 360, in _get_metadata
+ERROR root:     return self._update_metadata(pkg, ebp=ebp)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 368, in _update_metadata
+ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/processor.py", line
+!!! ERROR: net-wireless/multimode-1.4_p20140831-r1 failed.
+!!! die invoked from directory /home/mgorny/pkgcore-venv/lib/pkgcore
+!!! Call stack:
+!!!                  ebuild-daemon.bash, line 456:  Called __ebd_exec_main 'daemonize'
+!!!                  ebuild-daemon.bash, line 210:  Called __ebd_main_loop
+!!!                  ebuild-daemon.bash, line 439:  Called __ebd_process_metadata '243' 'depend'
+!!!                  ebuild-daemon.bash, line 372:  Called __execute_phases 'depend'
+!!!                          ebuild.lib, line 427:  Called __load_ebuild '/home/mgorny/repos/gentoo/net-wireless/multimode/multimode-1.4_p20140831-r1.ebuild'
+!!!                          ebuild.lib, line 252:  Called __qa_invoke 'source' '/home/mgorny/repos/gentoo/net-wireless/multimode/multimode-1.4_p20140831-r1.ebuild'
+!!!              isolated-functions.lib, line 286:  Called source '/home/mgorny/repos/gentoo/net-wireless/multimode/multimode-1.4_p20140831-r1.ebuild'
+!!!   multimode-1.4_p20140831-r1.ebuild, line   8:  Called inherit 'python-single-r1'
+!!!        ebuild-default-functions.lib, line 230:  Called __internal_inherit 'python-single-r1'
+!!!                   ebuild-daemon.lib, line  30:  Called __qa_invoke 'source' '/home/mgorny/repos/gentoo/eclass/python-single-r1.eclass'
+!!!              isolated-functions.lib, line 286:  Called source '/home/mgorny/repos/gentoo/eclass/python-single-r1.eclass'
+!!!             python-single-r1.eclass, line 102:  Called die
+!!! The die message:
+!!!  PYTHON_COMPAT must be an array.
+
+
+!!! ERROR: net-wireless/multimode-9999 failed.
+!!! die invoked from directory /home/mgorny/pkgcore-venv/lib/pkgcore
+!!! Call stack:
+!!!             ebuild-daemon.bash, line 456:  Called __ebd_exec_main 'daemonize'
+!!!             ebuild-daemon.bash, line 210:  Called __ebd_main_loop
+!!!             ebuild-daemon.bash, line 439:  Called __ebd_process_metadata '185' 'depend'
+!!!             ebuild-daemon.bash, line 372:  Called __execute_phases 'depend'
+!!!                     ebuild.lib, line 427:  Called __load_ebuild '/home/mgorny/repos/gentoo/net-wireless/multimode/multimode-9999.ebuild'
+!!!                     ebuild.lib, line 252:  Called __qa_invoke 'source' '/home/mgorny/repos/gentoo/net-wireless/multimode/multimode-9999.ebuild'
+!!!         isolated-functions.lib, line 286:  Called source '/home/mgorny/repos/gentoo/net-wireless/multimode/multimode-9999.ebuild'
+!!!          multimode-9999.ebuild, line   8:  Called inherit 'python-single-r1'
+!!!   ebuild-default-functions.lib, line 230:  Called __internal_inherit 'python-single-r1'
+!!!              ebuild-daemon.lib, line  30:  Called __qa_invoke 'source' '/home/mgorny/repos/gentoo/eclass/python-single-r1.eclass'
+!!!         isolated-functions.lib, line 286:  Called source '/home/mgorny/repos/gentoo/eclass/python-single-r1.eclass'
+!!!        python-single-r1.eclass, line 102:  Called die
+!!! The die message:
+!!!  PYTHON_COMPAT must be an array.
+
+ 825, in get_keys
+ERROR root:     {"key": receive_key})
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/processor.py", line 769, in _run_depend_like_phase
+ERROR root:     raise Exception(val)
+ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
+          : net-wireless/multimode-1.4_p20140831-r1, attr iuse
+ERROR root: error: Metadata Exception: pkg ebuild src:
+          : net-wireless/multimode-1.4_p20140831-r1, attr data
+ERROR root: error: False
+ERROR pkgcore: returned val from gen_metadata was 'False'
+ERROR root: check <pkgcheck.repo_metadata.UnusedLicense object at
+          : 0x7f2f53bff9d0> raised
+ERROR root: Traceback (most recent call last):
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/bas
+          : e.py", line 337, in feed
+ERROR root:     check.feed(item, reporter)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/rep
+          : o_metadata.py", line 113, in feed
+ERROR root:     self.licenses.difference_update(iflatten_instance(pkg.license))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 101, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 43, in generate_depset
+ERROR root:     return conditionals.DepSet.parse(s.data.pop(key, ""), c,
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 103, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/metadata.py", line 59, in _get_data
+ERROR root:     return self._fetch_metadata()
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 269, in _fetch_metadata
+ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
+          : force_regen=force_regen)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 360, in _get_metadata
+ERROR root:     return self._update_metadata(pkg, ebp=ebp)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 368, in _update_metadata
+ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/processor.py", line 825, in get_keys
+ERROR root:     {"key": receive_key})
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/processor.py", line 769, in _run_depend_like_phase
+ERROR root:     raise Exception(val)
+ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
+          : net-wireless/multimode-1.4_p20140831-r1, attr license
+ERROR root: error: Metadata Exception: pkg ebuild src:
+          : net-wireless/multimode-1.4_p20140831-r1, attr data
+ERROR root: error: False
+ERROR pkgcore: returned val from gen_metadata was 'False'
+ERROR root: check <pkgcheck.repo_metadata.UnusedGlobalFlags object at
+          : 0x7f2f53b999d0> raised
+ERROR root: Traceback (most recent call last):
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/bas
+          : e.p
+!!! ERROR: net-wireless/multimode-9999 failed.
+!!! die invoked from directory /home/mgorny/pkgcore-venv/lib/pkgcore
+!!! Call stack:
+!!!             ebuild-daemon.bash, line 456:  Called __ebd_exec_main 'daemonize'
+!!!             ebuild-daemon.bash, line 210:  Called __ebd_main_loop
+!!!             ebuild-daemon.bash, line 439:  Called __ebd_process_metadata '185' 'depend'
+!!!             ebuild-daemon.bash, line 372:  Called __execute_phases 'depend'
+!!!                     ebuild.lib, line 427:  Called __load_ebuild '/home/mgorny/repos/gentoo/net-wireless/multimode/multimode-9999.ebuild'
+!!!                     ebuild.lib, line 252:  Called __qa_invoke 'source' '/home/mgorny/repos/gentoo/net-wireless/multimode/multimode-9999.ebuild'
+!!!         isolated-functions.lib, line 286:  Called source '/home/mgorny/repos/gentoo/net-wireless/multimode/multimode-9999.ebuild'
+!!!          multimode-9999.ebuild, line   8:  Called inherit 'python-single-r1'
+!!!   ebuild-default-functions.lib, line 230:  Called __internal_inherit 'python-single-r1'
+!!!              ebuild-daemon.lib, line  30:  Called __qa_invoke 'source' '/home/mgorny/repos/gentoo/eclass/python-single-r1.eclass'
+!!!         isolated-functions.lib, line 286:  Called source '/home/mgorny/repos/gentoo/eclass/python-single-r1.eclass'
+!!!        python-single-r1.eclass, line 102:  Called die
+!!! The die message:
+!!!  PYTHON_COMPAT must be an array.
+
+y", line 337, in feed
+ERROR root:     check.feed(item, reporter)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/rep
+          : o_metadata.py", line 62, in feed
+ERROR root:     self.flags.difference_update(pkg.iuse_stripped)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 230, in iuse_stripped
+ERROR root:     return frozenset(x.lstrip('-+') for x in self.iuse)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 101, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 208, in <lambda>
+ERROR root:     s.data.pop("IUSE", "").split()))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 103, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/metadata.py", line 59, in _get_data
+ERROR root:     return self._fetch_metadata()
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 269, in _fetch_metadata
+ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
+          : force_regen=force_regen)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 360, in _get_metadata
+ERROR root:     return self._update_metadata(pkg, ebp=ebp)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 368, in _update_metadata
+ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/processor.py", line 825, in get_keys
+ERROR root:     {"key": receive_key})
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/processor.py", line 769, in _run_depend_like_phase
+ERROR root:     raise Exception(val)
+ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
+          : net-wireless/multimode-9999, attr iuse
+ERROR root: error: Metadata Exception: pkg ebuild src:
+          : net-wireless/multimode-9999, attr data
+ERROR root: error: False
+ERROR pkgcore: returned val from gen_metadata was 'False'
+ERROR root: check <pkgcheck.repo_metadata.UnusedLicense object at
+          : 0x7f2f53bff9d0> raised
+ERROR root: Traceback (most recent call last):
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/bas
+          : e.py", line 337, in feed
+ERROR root:     check.feed(item, reporter)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/rep
+          : o_metadata.py", line 113, in feed
+ERROR root:     self.licenses.difference_update(iflatten_instance(pkg.license))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 101, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 93, in dynamic_getattr_dict
+ERROR root:     val = functor(s
+!!! ERROR: net-wireless/rfcat-9999 failed.
+!!! die invoked from directory /home/mgorny/pkgcore-venv/lib/pkgcore
+!!! Call stack:
+!!!             ebuild-daemon.bash, line 456:  Called __ebd_exec_main 'daemonize'
+!!!             ebuild-daemon.bash, line 210:  Called __ebd_main_loop
+!!!             ebuild-daemon.bash, line 439:  Called __ebd_process_metadata '165' 'depend'
+!!!             ebuild-daemon.bash, line 372:  Called __execute_phases 'depend'
+!!!                     ebuild.lib, line 427:  Called __load_ebuild '/home/mgorny/repos/gentoo/net-wireless/rfcat/rfcat-9999.ebuild'
+!!!                     ebuild.lib, line 252:  Called __qa_invoke 'source' '/home/mgorny/repos/gentoo/net-wireless/rfcat/rfcat-9999.ebuild'
+!!!         isolated-functions.lib, line 286:  Called source '/home/mgorny/repos/gentoo/net-wireless/rfcat/rfcat-9999.ebuild'
+!!!              rfcat-9999.ebuild, line   8:  Called inherit 'mercurial' 'distutils-r1'
+!!!   ebuild-default-functions.lib, line 230:  Called __internal_inherit 'distutils-r1'
+!!!              ebuild-daemon.lib, line  30:  Called __qa_invoke 'source' '/home/mgorny/repos/gentoo/eclass/distutils-r1.eclass'
+!!!         isolated-functions.lib, line 286:  Called source '/home/mgorny/repos/gentoo/eclass/distutils-r1.eclass'
+!!!            distutils-r1.eclass, line  85:  Called inherit 'multiprocessing' 'python-r1'
+!!!   ebuild-default-functions.lib, line 230:  Called __internal_inherit 'python-r1'
+!!!              ebuild-daemon.lib, line  30:  Called __qa_invoke 'source' '/home/mgorny/repos/gentoo/eclass/python-r1.eclass'
+!!!         isolated-functions.lib, line 286:  Called source '/home/mgorny/repos/gentoo/eclass/python-r1.eclass'
+!!!               python-r1.eclass, line  88:  Called die
+!!! The die message:
+!!!  PYTHON_COMPAT must be an array.
+
+elf)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 43, in generate_depset
+ERROR root:     return conditionals.DepSet.parse(s.data.pop(key, ""), c,
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 103, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/metadata.py", line 59, in _get_data
+ERROR root:     return self._fetch_metadata()
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 269, in _fetch_metadata
+ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
+          : force_regen=force_regen)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 360, in _get_metadata
+ERROR root:     return self._update_metadata(pkg, ebp=ebp)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 368, in _update_metadata
+ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/processor.py", line 825, in get_keys
+ERROR root:     {"key": receive_key})
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/processor.py", line 769, in _run_depend_like_phase
+ERROR root:     raise Exception(val)
+ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
+          : net-wireless/multimode-9999, attr license
+ERROR root: error: Metadata Exception: pkg ebuild src:
+          : net-wireless/multimode-9999, attr data
+ERROR root: error: False
+ERROR pkgcore: returned val from gen_metadata was 'False'
+ERROR root: check <pkgcheck.repo_metadata.UnusedGlobalFlags object at
+          : 0x7f2f53b999d0> raised
+ERROR root: Traceback (most recent call last):
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/bas
+          : e.py", line 337, in feed
+ERROR root:     check.feed(item, reporter)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/rep
+          : o_metadata.py", line 62, in feed
+ERROR root:     self.flags.difference_update(pkg.iuse_stripped)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 230, in iuse_stripped
+ERROR root:     return frozenset(x.lstrip('-+') for x in self.iuse)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 101, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 208, in <lambda>
+ERROR root:     s.data.pop("IUSE", "").split()))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 103, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/home/mgor
+!!! ERROR: net-wireless/rfcat-9999 failed.
+!!! die invoked from directory /home/mgorny/pkgcore-venv/lib/pkgcore
+!!! Call stack:
+!!!             ebuild-daemon.bash, line 456:  Called __ebd_exec_main 'daemonize'
+!!!             ebuild-daemon.bash, line 210:  Called __ebd_main_loop
+!!!             ebuild-daemon.bash, line 439:  Called __ebd_process_metadata '165' 'depend'
+!!!             ebuild-daemon.bash, line 372:  Called __execute_phases 'depend'
+!!!                     ebuild.lib, line 427:  Called __load_ebuild '/home/mgorny/repos/gentoo/net-wireless/rfcat/rfcat-9999.ebuild'
+!!!                     ebuild.lib, line 252:  Called __qa_invoke 'source' '/home/mgorny/repos/gentoo/net-wireless/rfcat/rfcat-9999.ebuild'
+!!!         isolated-functions.lib, line 286:  Called source '/home/mgorny/repos/gentoo/net-wireless/rfcat/rfcat-9999.ebuild'
+!!!              rfcat-9999.ebuild, line   8:  Called inherit 'mercurial' 'distutils-r1'
+!!!   ebuild-default-functions.lib, line 230:  Called __internal_inherit 'distutils-r1'
+!!!              ebuild-daemon.lib, line  30:  Called __qa_invoke 'source' '/home/mgorny/repos/gentoo/eclass/distutils-r1.eclass'
+!!!         isolated-functions.lib, line 286:  Called source '/home/mgorny/repos/gentoo/eclass/distutils-r1.eclass'
+!!!            distutils-r1.eclass, line  85:  Called inherit 'multiprocessing' 'python-r1'
+!!!   ebuild-default-functions.lib, line 230:  Called __internal_inherit 'python-r1'
+!!!              ebuild-daemon.lib, line  30:  Called __qa_invoke 'source' '/home/mgorny/repos/gentoo/eclass/python-r1.eclass'
+!!!         isolated-functions.lib, line 286:  Called source '/home/mgorny/repos/gentoo/eclass/python-r1.eclass'
+!!!               python-r1.eclass, line  88:  Called die
+!!! The die message:
+!!!  PYTHON_COMPAT must be an array.
+
+ny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/metadata.py", line 59, in _get_data
+ERROR root:     return self._fetch_metadata()
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 269, in _fetch_metadata
+ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
+          : force_regen=force_regen)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 360, in _get_metadata
+ERROR root:     return self._update_metadata(pkg, ebp=ebp)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 368, in _update_metadata
+ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/processor.py", line 825, in get_keys
+ERROR root:     {"key": receive_key})
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/processor.py", line 769, in _run_depend_like_phase
+ERROR root:     raise Exception(val)
+ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
+          : net-wireless/rfcat-9999, attr iuse
+ERROR root: error: Metadata Exception: pkg ebuild src:
+          : net-wireless/rfcat-9999, attr data
+ERROR root: error: False
+ERROR pkgcore: returned val from gen_metadata was 'False'
+ERROR root: check <pkgcheck.repo_metadata.UnusedLicense object at
+          : 0x7f2f53bff9d0> raised
+ERROR root: Traceback (most recent call last):
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/bas
+          : e.py", line 337, in feed
+ERROR root:     check.feed(item, reporter)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/rep
+          : o_metadata.py", line 113, in feed
+ERROR root:     self.licenses.difference_update(iflatten_instance(pkg.license))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 101, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 43, in generate_depset
+ERROR root:     return conditionals.DepSet.parse(s.data.pop(key, ""), c,
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 103, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/metadata.py", line 59, in _get_data
+ERROR root:     return self._fetch_metadata()
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 269, in _fetch_metadata
+ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
+          : force_regen=force_regen)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 360, in _get_metadata
+ERROR root:     return self._update_metadata(pkg, ebp=ebp)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 368, in _update_metadata
+ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/processor.py", line 825, in get_keys
+ERROR root:     {"key": receive_key})
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/processor.py", line 769, in _run_depend_like_phase
+ERROR root:     raise Exception(val)
+ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
+          : net-wireless/rfcat-9999, attr license
+ERROR root: error: Metadata Exception: pkg ebuild src:
+          : net-wireless/rfcat-9999, attr data
+ERROR root: error: False
+
 unknown
   UnusedLicenseReport: unused licenses: AGPL-3+, CC-BY-4.0, CC-BY-NC-3.0, CC-BY-ND-2.5, CC-BY-ND-NC-1.0, DSL, ECL-2.0, ODbL-1.0, kicad-doc

@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 15 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'media-plugins/*' 'app-dicts/*' 'app-vim/*' 'gnome-extra/*' 'mail-filter/*' 'games-misc/*' 'x11-terms/*' 'media-radio/*' 'net-nntp/*' 'app-officeext/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'media-plugins/*' 'app-dicts/*' 'app-vim/*' 'gnome-extra/*' 'mail-filter/*' 'games-misc/*' 'net-proxy/*' 'media-radio/*' 'net-nntp/*' 'app-officeext/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1429,61 +1429,843 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-x11-terms/aterm
-  DeprecatedEAPI: version 1.0.1-r2: uses deprecated EAPI: 3
+net-proxy/3proxy
+  Deprecated
+!!! ERROR: net-proxy/hatop-0.7.7 failed.
+!!! die invoked from directory /home/mgorny/pkgcore-venv/lib/pkgcore
+!!! Call stack:
+!!!             ebuild-daemon.bash, line 456:  Called __ebd_exec_main 'daemonize'
+!!!             ebuild-daemon.bash, line 210:  Called __ebd_main_loop
+!!!             ebuild-daemon.bash, line 439:  Called __ebd_process_metadata '168' 'depend'
+!!!             ebuild-daemon.bash, line 372:  Called __execute_phases 'depend'
+!!!                     ebuild.lib, line 427:  Called __load_ebuild '/home/mgorny/repos/gentoo/net-proxy/hatop/hatop-0.7.7.ebuild'
+!!!                     ebuild.lib, line 252:  Called __qa_invoke 'source' '/home/mgorny/repos/gentoo/net-proxy/hatop/hatop-0.7.7.ebuild'
+!!!         isolated-functions.lib, line 286:  Called source '/home/mgorny/repos/gentoo/net-proxy/hatop/hatop-0.7.7.ebuild'
+!!!             hatop-0.7.7.ebuild, line  10:  Called inherit 'python-r1'
+!!!   ebuild-default-functions.lib, line 230:  Called __internal_inherit 'python-r1'
+!!!              ebuild-daemon.lib, line  30:  Called __qa_invoke 'source' '/home/mgorny/repos/gentoo/eclass/python-r1.eclass'
+!!!         isolated-functions.lib, line 286:  Called source '/home/mgorny/repos/gentoo/eclass/python-r1.eclass'
+!!!               python-r1.eclass, line  88:  Called die
+!!! The die message:
+!!!  PYTHON_COMPAT must be an array.
 
-x11-terms/eterm
-  DeprecatedEAPI: version 0.9.5: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.9.6: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
 
-x11-terms/evilvte
-  DeprecatedEAPI: version 0.5.1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.5.2_pre1: uses deprecated EAPI: 4
+!!! ERROR: net-proxy/hatop-0.7.7 failed.
+!!! die invoked from directory /home/mgorny/pkgcore-venv/lib/pkgcore
+!!! Call stack:
+!!!             ebuild-daemon.bash, line 456:  Called __ebd_exec_main 'daemonize'
+!!!             ebuild-daemon.bash, line 210:  Called __ebd_main_loop
+!!!             ebuild-daemon.bash, line 439:  Called __ebd_process_metadata '168' 'depend'
+!!!             ebuild-daemon.bash, line 372:  Called __execute_phases 'depend'
+!!!                     ebuild.lib, line 427:  Called __load_ebuild '/home/mgorny/repos/gentoo/net-proxy/hatop/hatop-0.7.7.ebuild'
+!!!                     ebuild.lib, line 252:  Called __qa_invoke 'source' '/home/mgorny/repos/gentoo/net-proxy/hatop/hatop-0.7.7.ebuild'
+!!!         isolated-functions.lib, line 286:  Called source '/home/mgorny/repos/gentoo/net-proxy/hatop/hatop-0.7.7.ebuild'
+!!!             hatop-0.7.7.ebuild, line  10:  Called inherit 'python-r1'
+!!!   ebuild-default-functions.lib, line 230:  Called __internal_inherit 'python-r1'
+!!!              ebuild-daemon.lib, line  30:  Called __qa_invoke 'source' '/home/mgorny/repos/gentoo/eclass/python-r1.eclass'
+!!!         isolated-functions.lib, line 286:  Called source '/home/mgorny/repos/gentoo/eclass/python-r1.eclass'
+!!!               python-r1.eclass, line  88:  Called die
+!!! The die message:
+!!!  PYTHON_COMPAT must be an array.
 
-x11-terms/gnome-terminal
-  NonExistentDeps: version 3.14.2-r2: depset depends: nonexistent atoms [ <=x11-libs/gtk+-2.24.10:2 ]
-  SizeViolation: "files/gnome-terminal-3.16.2-restore-transparency.patch" exceeds 20k in size; 54792 bytes total
 
-x11-terms/hanterm
-  DeprecatedEAPI: version 3.1.6-r2: uses deprecated EAPI: 0
+!!! ERROR: net-proxy/hatop-0.7.7 failed.
+!!! die invoked from directory /home/mgorny/pkgcore-venv/lib/pkgcore
+!!! Call stack:
+!!!             ebuild-daemon.bash, line 456:  Called __ebd_exec_main 'daemonize'
+!!!             ebuild-daemon.bash, line 210:  Called __ebd_main_loop
+!!!             ebuild-daemon.bash, line 439:  Called __ebd_process_metadata '168' 'depend'
+!!!             ebuild-daemon.bash, line 372:  Called __execute_phases 'depend'
+!!!                     ebuild.lib, line 427:  Called __load_ebuild '/home/mgorny/repos/gentoo/net-proxy/hatop/hatop-0.7.7.ebuild'
+!!!                     ebuild.lib, line 252:  Called __qa_invoke 'source' '/home/mgorny/repos/gentoo/net-proxy/hatop/hatop-0.7.7.ebuild'
+!!!         isolated-functions.lib, line 286:  Called source '/home/mgorny/repos/gentoo/net-proxy/hatop/hatop-0.7.7.ebuild'
+!!!             hatop-0.7.7.ebuild, line  10:  Called inherit 'python-r1'
+!!!   ebuild-default-functions.lib, line 230:  Called __internal_inherit 'python-r1'
+!!!              ebuild-daemon.lib, line  30:  Called __qa_invoke 'source' '/home/mgorny/repos/gentoo/eclass/python-r1.eclass'
+!!!         isolated-functions.lib, line 286:  Called source '/home/mgorny/repos/gentoo/eclass/python-r1.eclass'
+!!!               python-r1.eclass, line  88:  Called die
+!!! The die message:
+!!!  PYTHON_COMPAT must be an array.
 
-x11-terms/kterm
-  DeprecatedEAPI: version 6.2.0-r5: uses deprecated EAPI: 4
 
-x11-terms/mrxvt
-  DeprecatedEAPI: version 0.5.4: uses deprecated EAPI: 4
+!!! ERROR: net-proxy/hatop-0.7.7 failed.
+!!! die invoked from directory /home/mgorny/pkgcore-venv/lib/pkgcore
+!!! Call stack:
+!!!             ebuild-daemon.bash, line 456:  Called __ebd_exec_main 'daemonize'
+!!!             ebuild-daemon.bash, line 210:  Called __ebd_main_loop
+!!!             ebuild-daemon.bash, line 439:  Called __ebd_process_metadata '168' 'depend'
+!!!             ebuild-daemon.bash, line 372:  Called __execute_phases 'depend'
+!!!                     ebuild.lib, line 427:  Called __load_ebuild '/home/mgorny/repos/gentoo/net-proxy/hatop/hatop-0.7.7.ebuild'
+!!!                     ebuild.lib, line 252:  Called __qa_invoke 'source' '/home/mgorny/repos/gentoo/net-proxy/hatop/hatop-0.7.7.ebuild'
+!!!         isolated-functions.lib, line 286:  Called source '/home/mgorny/repos/gentoo/net-proxy/hatop/hatop-0.7.7.ebuild'
+!!!             hatop-0.7.7.ebuild, line  10:  Called inherit 'python-r1'
+!!!   ebuild-default-functions.lib, line 230:  Called __internal_inherit 'python-r1'
+!!!              ebuild-daemon.lib, line  30:  Called __qa_invoke 'source' '/home/mgorny/repos/gentoo/eclass/python-r1.eclass'
+!!!         isolated-functions.lib, line 286:  Called source '/home/mgorny/repos/gentoo/eclass/python-r1.eclass'
+!!!               python-r1.eclass, line  88:  Called die
+!!! The die message:
+!!!  PYTHON_COMPAT must be an array.
 
-x11-terms/multi-aterm
-  DeprecatedEAPI: version 0.2.1-r1: uses deprecated EAPI: 4
 
-x11-terms/qterminal
-  DeprecatedEAPI: version 0.4.0: uses deprecated EAPI: 4
+!!! ERROR: net-proxy/hatop-0.7.7 failed.
+!!! die invoked from directory /home/mgorny/pkgcore-venv/lib/pkgcore
+!!! Call stack:
+!!!             ebuild-daemon.bash, line 456:  Called __ebd_exec_main 'daemonize'
+!!!             ebuild-daemon.bash, line 210:  Called __ebd_main_loop
+!!!             ebuild-daemon.bash, line 439:  Called __ebd_process_metadata '168' 'depend'
+!!!             ebuild-daemon.bash, line 372:  Called __execute_phases 'depend'
+!!!                     ebuild.lib, line 427:  Called __load_ebuild '/home/mgorny/repos/gentoo/net-proxy/hatop/hatop-0.7.7.ebuild'
+!!!                     ebuild.lib, line 252:  Called __qa_invoke 'source' '/home/mgorny/repos/gentoo/net-proxy/hatop/hatop-0.7.7.ebuild'
+!!!         isolated-functions.lib, line 286:  Called source '/home/mgorny/repos/gentoo/net-proxy/hatop/hatop-0.7.7.ebuild'
+!!!             hatop-0.7.7.ebuild, line  10:  Called inherit 'python-r1'
+!!!   ebuild-default-functions.lib, line 230:  Called __internal_inherit 'python-r1'
+!!!              ebuild-daemon.lib, line  30:  Called __qa_invoke 'source' '/home/mgorny/repos/gentoo/eclass/python-r1.eclass'
+!!!         isolated-functions.lib, line 286:  Called source '/home/mgorny/repos/gentoo/eclass/python-r1.eclass'
+!!!               python-r1.eclass, line  88:  Called die
+!!! The die message:
+!!!  PYTHON_COMPAT must be an array.
 
-x11-terms/root-tail
-  DeprecatedEAPI: version 1.2-r3: uses deprecated EAPI: 2
+EAPI: version 0.5.3k: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.6.1: uses deprecated EAPI: 2
 
-x11-terms/roxterm
-  DeprecatedEclass: version 2.6.3: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 2.6.3: uses deprecated EAPI: 4
-  DeprecatedEclass: version 2.6.5: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 2.6.5: uses deprecated EAPI: 4
-  DroppedKeywordWarning: version 2.9.3-r1: keywords dropped: ppc
+net-proxy/bfilter
+  DeprecatedEAPI: version 1.1.4-r1: uses deprecated EAPI: 4
 
-x11-terms/terminology
+net-proxy/dante
+  DeprecatedEAPI: version 1.1.19-r4: uses deprecated EAPI: 0
+
+net-proxy/dnsproxy
+  DeprecatedEAPI: version 1.16-r1: uses deprecated EAPI: 4
+
+net-proxy/haproxy
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+ERROR pkgcore: returned val from gen_metadata was 'False'
 
-x11-terms/tilda
-  DeprecatedEAPI: version 0.9.6: uses deprecated EAPI: 4
+net-proxy/hatop
+  MetadataError: version 0.7.7: attr(depends): error- Metadata Exception: pkg ebuild src: net-proxy/hatop-0.7.7, attr depends
+error: Metadata Exception: pkg ebuild src: net-proxy/hatop-0.7.7, attr data
+error: False
+ERROR pkgcore: returned val from gen_metadata was 'False'
+  MetadataError: version 0.7.7: attr(rdepends): error- Metadata Exception: pkg ebuild src: net-proxy/hatop-0.7.7, attr rdepends
+error: Metadata Exception: pkg ebuild src: net-proxy/hatop-0.7.7, attr data
+error: False
+ERROR pkgcore: returned val from gen_metadata was 'False'
+  MetadataError: version 0.7.7: attr(post_rdepends): error- Metadata Exception: pkg ebuild src: net-proxy/hatop-0.7.7, attr post_rdepends
+error: Metadata Exception: pkg ebuild src: net-proxy/hatop-0.7.7, attr data
+error: False
+ERROR pkgcore: returned val from gen_metadata was 'False'
+  MetadataError: version 0.7.7: attr(fetchables): error- Metadata Exception: pkg ebuild src: net-proxy/hatop-0.7.7, attr fetchables
+error: Metadata Exception: pkg ebuild src: net-proxy/hatop-0.7.7, attr data
+error: False
+ERROR pkgcore: returned val from gen_metadata was 'False'
+ERROR root: check <pkgcheck.deprecated.DeprecatedEclassReport object at
+          : 0x7f1cb7a6f250> raised
+ERROR root: Traceback (most recent call last):
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/bas
+          : e.py", line 337, in feed
+ERROR root:     check.feed(item, reporter)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/dep
+          : recated.py", line 133, in feed
+ERROR root:     bad = set(self.blacklist.keys()).intersection(pkg.inherited)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 101, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 172, in get_inherited
+ERROR root:     return tuple(sorted(self.data.get('_eclasses_', {})))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 103, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/metadata.py", line 59, in _get_data
+ERROR root:     return self._fetch_metadata()
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 269, in _fetch_metadata
+ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
+          : force_regen=force_regen)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 360, in _get_metadata
+ERROR root:     return self._update_metadata(pkg, ebp=ebp)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 368, in _update_metadata
+ERROR ro
+!!! ERROR: net-proxy/hatop-0.7.7 failed.
+!!! die invoked from directory /home/mgorny/pkgcore-venv/lib/pkgcore
+!!! Call stack:
+!!!             ebuild-daemon.bash, line 456:  Called __ebd_exec_main 'daemonize'
+!!!             ebuild-daemon.bash, line 210:  Called __ebd_main_loop
+!!!             ebuild-daemon.bash, line 439:  Called __ebd_process_metadata '168' 'depend'
+!!!             ebuild-daemon.bash, line 372:  Called __execute_phases 'depend'
+!!!                     ebuild.lib, line 427:  Called __load_ebuild '/home/mgorny/repos/gentoo/net-proxy/hatop/hatop-0.7.7.ebuild'
+!!!                     ebuild.lib, line 252:  Called __qa_invoke 'source' '/home/mgorny/repos/gentoo/net-proxy/hatop/hatop-0.7.7.ebuild'
+!!!         isolated-functions.lib, line 286:  Called source '/home/mgorny/repos/gentoo/net-proxy/hatop/hatop-0.7.7.ebuild'
+!!!             hatop-0.7.7.ebuild, line  10:  Called inherit 'python-r1'
+!!!   ebuild-default-functions.lib, line 230:  Called __internal_inherit 'python-r1'
+!!!              ebuild-daemon.lib, line  30:  Called __qa_invoke 'source' '/home/mgorny/repos/gentoo/eclass/python-r1.eclass'
+!!!         isolated-functions.lib, line 286:  Called source '/home/mgorny/repos/gentoo/eclass/python-r1.eclass'
+!!!               python-r1.eclass, line  88:  Called die
+!!! The die message:
+!!!  PYTHON_COMPAT must be an array.
 
-x11-terms/valaterm
-  DeprecatedEAPI: version 0.6: uses deprecated EAPI: 4
 
-x11-terms/xvt
-  DeprecatedEAPI: version 2.1-r3: uses deprecated EAPI: 2
+!!! ERROR: net-proxy/hatop-0.7.7 failed.
+!!! die invoked from directory /home/mgorny/pkgcore-venv/lib/pkgcore
+!!! Call stack:
+!!!             ebuild-daemon.bash, line 456:  Called __ebd_exec_main 'daemonize'
+!!!             ebuild-daemon.bash, line 210:  Called __ebd_main_loop
+!!!             ebuild-daemon.bash, line 439:  Called __ebd_process_metadata '168' 'depend'
+!!!             ebuild-daemon.bash, line 372:  Called __execute_phases 'depend'
+!!!                     ebuild.lib, line 427:  Called __load_ebuild '/home/mgorny/repos/gentoo/net-proxy/hatop/hatop-0.7.7.ebuild'
+!!!                     ebuild.lib, line 252:  Called __qa_invoke 'source' '/home/mgorny/repos/gentoo/net-proxy/hatop/hatop-0.7.7.ebuild'
+!!!         isolated-functions.lib, line 286:  Called source '/home/mgorny/repos/gentoo/net-proxy/hatop/hatop-0.7.7.ebuild'
+!!!             hatop-0.7.7.ebuild, line  10:  Called inherit 'python-r1'
+!!!   ebuild-default-functions.lib, line 230:  Called __internal_inherit 'python-r1'
+!!!              ebuild-daemon.lib, line  30:  Called __qa_invoke 'source' '/home/mgorny/repos/gentoo/eclass/python-r1.eclass'
+!!!         isolated-functions.lib, line 286:  Called source '/home/mgorny/repos/gentoo/eclass/python-r1.eclass'
+!!!               python-r1.eclass, line  88:  Called die
+!!! The die message:
+!!!  PYTHON_COMPAT must be an array.
 
-x11-terms/yeahconsole
-  DeprecatedEAPI: version 0.3.4-r1: uses deprecated EAPI: 2
+ot:     mydata = my_proc.get_keys(pkg, self._ecache)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/processor.py", line 825, in get_keys
+ERROR root:     {"key": receive_key})
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/processor.py", line 769, in _run_depend_like_phase
+ERROR root:     raise Exception(val)
+ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
+          : net-proxy/hatop-0.7.7, attr inherited
+ERROR root: error: Metadata Exception: pkg ebuild src: net-proxy/hatop-0.7.7,
+          : attr data
+ERROR root: error: False
+ERROR pkgcore: returned val from gen_metadata was 'False'
+  MetadataError: version 0.7.7: attr(license): error- Metadata Exception: pkg ebuild src: net-proxy/hatop-0.7.7, attr license
+error: Metadata Exception: pkg ebuild src: net-proxy/hatop-0.7.7, attr data
+error: False
+ERROR pkgcore: returned val from gen_metadata was 'False'
+ERROR root: check <pkgcheck.metadata_checks.IUSEMetadataReport object at
+          : 0x7f1cb7a6f810> raised
+ERROR root: Traceback (most recent call last):
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/bas
+          : e.py", line 337, in feed
+ERROR root:     check.feed(item, reporter)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/met
+          : adata_checks.py", line 118, in feed
+ERROR root:     iuse =
+          : pkg.iuse_stripped.difference(self.iuse_handler.allowed_iuse(pkg))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 230, in iuse_stripped
+ERROR root:     return frozenset(x.lstrip('-+') for x in self.iuse)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 101, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 208, in <lambda>
+ERROR root:     s.data.pop("IUSE", "").split()))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 103, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/metadata.py", line 59, in _get_data
+ERROR root:     return self._fetch_metadata()
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 269, in _fetch_metadata
+ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
+          : force_regen=force_regen)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 360, in _get_metadata
+ERROR root:     return self._update_metadata(pkg, ebp=ebp)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 368, in _update_metadata
+ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/processor.py", line 825, in get_keys
+ERROR root:     {"key": receive_key})
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/processor.py", line 769, in _run_de
+!!! ERROR: net-proxy/hatop-0.7.7 failed.
+!!! die invoked from directory /home/mgorny/pkgcore-venv/lib/pkgcore
+!!! Call stack:
+!!!             ebuild-daemon.bash, line 456:  Called __ebd_exec_main 'daemonize'
+!!!             ebuild-daemon.bash, line 210:  Called __ebd_main_loop
+!!!             ebuild-daemon.bash, line 439:  Called __ebd_process_metadata '168' 'depend'
+!!!             ebuild-daemon.bash, line 372:  Called __execute_phases 'depend'
+!!!                     ebuild.lib, line 427:  Called __load_ebuild '/home/mgorny/repos/gentoo/net-proxy/hatop/hatop-0.7.7.ebuild'
+!!!                     ebuild.lib, line 252:  Called __qa_invoke 'source' '/home/mgorny/repos/gentoo/net-proxy/hatop/hatop-0.7.7.ebuild'
+!!!         isolated-functions.lib, line 286:  Called source '/home/mgorny/repos/gentoo/net-proxy/hatop/hatop-0.7.7.ebuild'
+!!!             hatop-0.7.7.ebuild, line  10:  Called inherit 'python-r1'
+!!!   ebuild-default-functions.lib, line 230:  Called __internal_inherit 'python-r1'
+!!!              ebuild-daemon.lib, line  30:  Called __qa_invoke 'source' '/home/mgorny/repos/gentoo/eclass/python-r1.eclass'
+!!!         isolated-functions.lib, line 286:  Called source '/home/mgorny/repos/gentoo/eclass/python-r1.eclass'
+!!!               python-r1.eclass, line  88:  Called die
+!!! The die message:
+!!!  PYTHON_COMPAT must be an array.
+
+
+!!! ERROR: net-proxy/hatop-0.7.7 failed.
+!!! die invoked from directory /home/mgorny/pkgcore-venv/lib/pkgcore
+!!! Call stack:
+!!!             ebuild-daemon.bash, line 456:  Called __ebd_exec_main 'daemonize'
+!!!             ebuild-daemon.bash, line 210:  Called __ebd_main_loop
+!!!             ebuild-daemon.bash, line 439:  Called __ebd_process_metadata '168' 'depend'
+!!!             ebuild-daemon.bash, line 372:  Called __execute_phases 'depend'
+!!!                     ebuild.lib, line 427:  Called __load_ebuild '/home/mgorny/repos/gentoo/net-proxy/hatop/hatop-0.7.7.ebuild'
+!!!                     ebuild.lib, line 252:  Called __qa_invoke 'source' '/home/mgorny/repos/gentoo/net-proxy/hatop/hatop-0.7.7.ebuild'
+!!!         isolated-functions.lib, line 286:  Called source '/home/mgorny/repos/gentoo/net-proxy/hatop/hatop-0.7.7.ebuild'
+!!!             hatop-0.7.7.ebuild, line  10:  Called inherit 'python-r1'
+!!!   ebuild-default-functions.lib, line 230:  Called __internal_inherit 'python-r1'
+!!!              ebuild-daemon.lib, line  30:  Called __qa_invoke 'source' '/home/mgorny/repos/gentoo/eclass/python-r1.eclass'
+!!!         isolated-functions.lib, line 286:  Called source '/home/mgorny/repos/gentoo/eclass/python-r1.eclass'
+!!!               python-r1.eclass, line  88:  Called die
+!!! The die message:
+!!!  PYTHON_COMPAT must be an array.
+
+pend_like_phase
+ERROR root:     raise Exception(val)
+ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
+          : net-proxy/hatop-0.7.7, attr iuse
+ERROR root: error: Metadata Exception: pkg ebuild src: net-proxy/hatop-0.7.7,
+          : attr data
+ERROR root: error: False
+ERROR pkgcore: returned val from gen_metadata was 'False'
+ERROR root: check <pkgcheck.visibility.VisibilityReport object at
+          : 0x7f1cb78c8a10> raised
+ERROR root: Traceback (most recent call last):
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/bas
+          : e.py", line 337, in feed
+ERROR root:     check.feed(item, reporter)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/vis
+          : ibility.py", line 214, in feed
+ERROR root:     for eclass in pkg.inherited:
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 101, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 172, in get_inherited
+ERROR root:     return tuple(sorted(self.data.get('_eclasses_', {})))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 103, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/metadata.py", line 59, in _get_data
+ERROR root:     return self._fetch_metadata()
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 269, in _fetch_metadata
+ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
+          : force_regen=force_regen)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 360, in _get_metadata
+ERROR root:     return self._update_metadata(pkg, ebp=ebp)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 368, in _update_metadata
+ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/processor.py", line 825, in get_keys
+ERROR root:     {"key": receive_key})
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/processor.py", line 769, in _run_depend_like_phase
+ERROR root:     raise Exception(val)
+ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
+          : net-proxy/hatop-0.7.7, attr inherited
+ERROR root: error: Metadata Exception: pkg ebuild src: net-proxy/hatop-0.7.7,
+          : attr data
+ERROR root: error: False
+ERROR pkgcore: returned val from gen_metadata was 'False'
+ERROR root: check <pkgcheck.metadata_checks.RestrictsReport object at
+          : 0x7f1cb78c83d0> raised
+ERROR root: Traceback (most recent call last):
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/bas
+          : e.py", line 337, in feed
+ERROR root:     check.feed(item, reporter)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/met
+          : adata_checks.py", line 429, in feed
+ERROR root:     i = self.iuse_filter((basestring,), pkg, pkg.restrict,
+          : reporter)
+ERROR root: 
+!!! ERROR: net-proxy/hatop-0.7.7 failed.
+!!! die invoked from directory /home/mgorny/pkgcore-venv/lib/pkgcore
+!!! Call stack:
+!!!             ebuild-daemon.bash, line 456:  Called __ebd_exec_main 'daemonize'
+!!!             ebuild-daemon.bash, line 210:  Called __ebd_main_loop
+!!!             ebuild-daemon.bash, line 439:  Called __ebd_process_metadata '168' 'depend'
+!!!             ebuild-daemon.bash, line 372:  Called __execute_phases 'depend'
+!!!                     ebuild.lib, line 427:  Called __load_ebuild '/home/mgorny/repos/gentoo/net-proxy/hatop/hatop-0.7.7.ebuild'
+!!!                     ebuild.lib, line 252:  Called __qa_invoke 'source' '/home/mgorny/repos/gentoo/net-proxy/hatop/hatop-0.7.7.ebuild'
+!!!         isolated-functions.lib, line 286:  Called source '/home/mgorny/repos/gentoo/net-proxy/hatop/hatop-0.7.7.ebuild'
+!!!             hatop-0.7.7.ebuild, line  10:  Called inherit 'python-r1'
+!!!   ebuild-default-functions.lib, line 230:  Called __internal_inherit 'python-r1'
+!!!              ebuild-daemon.lib, line  30:  Called __qa_invoke 'source' '/home/mgorny/repos/gentoo/eclass/python-r1.eclass'
+!!!         isolated-functions.lib, line 286:  Called source '/home/mgorny/repos/gentoo/eclass/python-r1.eclass'
+!!!               python-r1.eclass, line  88:  Called die
+!!! The die message:
+!!!  PYTHON_COMPAT must be an array.
+
+  File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 101, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 204, in <lambda>
+ERROR root:     s.data.pop("RESTRICT", ''), str, operators={},
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 103, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/metadata.py", line 59, in _get_data
+ERROR root:     return self._fetch_metadata()
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 269, in _fetch_metadata
+ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
+          : force_regen=force_regen)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 360, in _get_metadata
+ERROR root:     return self._update_metadata(pkg, ebp=ebp)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 368, in _update_metadata
+ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/processor.py", line 825, in get_keys
+ERROR root:     {"key": receive_key})
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/processor.py", line 769, in _run_depend_like_phase
+ERROR root:     raise Exception(val)
+ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
+          : net-proxy/hatop-0.7.7, attr restrict
+ERROR root: error: Metadata Exception: pkg ebuild src: net-proxy/hatop-0.7.7,
+          : attr data
+ERROR root: error: False
+ERROR pkgcore: returned val from gen_metadata was 'False'
+ERROR root: check <pkgcheck.metadata_checks.DescriptionReport object at
+          : 0x7f1cb7a6f890> raised
+ERROR root: Traceback (most recent call last):
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/bas
+          : e.py", line 337, in feed
+ERROR root:     check.feed(item, reporter)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/met
+          : adata_checks.py", line 360, in feed
+ERROR root:     s = pkg.description.lower()
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 101, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 200, in <lambda>
+ERROR root:     _get_attr["description"] = lambda s:s.data.pop("DESCRIPTION",
+          : "").strip()
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 103, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/home/mgorny/pkg
+!!! ERROR: net-proxy/hatop-0.7.7 failed.
+!!! die invoked from directory /home/mgorny/pkgcore-venv/lib/pkgcore
+!!! Call stack:
+!!!             ebuild-daemon.bash, line 456:  Called __ebd_exec_main 'daemonize'
+!!!             ebuild-daemon.bash, line 210:  Called __ebd_main_loop
+!!!             ebuild-daemon.bash, line 439:  Called __ebd_process_metadata '168' 'depend'
+!!!             ebuild-daemon.bash, line 372:  Called __execute_phases 'depend'
+!!!                     ebuild.lib, line 427:  Called __load_ebuild '/home/mgorny/repos/gentoo/net-proxy/hatop/hatop-0.7.7.ebuild'
+!!!                     ebuild.lib, line 252:  Called __qa_invoke 'source' '/home/mgorny/repos/gentoo/net-proxy/hatop/hatop-0.7.7.ebuild'
+!!!         isolated-functions.lib, line 286:  Called source '/home/mgorny/repos/gentoo/net-proxy/hatop/hatop-0.7.7.ebuild'
+!!!             hatop-0.7.7.ebuild, line  10:  Called inherit 'python-r1'
+!!!   ebuild-default-functions.lib, line 230:  Called __internal_inherit 'python-r1'
+!!!              ebuild-daemon.lib, line  30:  Called __qa_invoke 'source' '/home/mgorny/repos/gentoo/eclass/python-r1.eclass'
+!!!         isolated-functions.lib, line 286:  Called source '/home/mgorny/repos/gentoo/eclass/python-r1.eclass'
+!!!               python-r1.eclass, line  88:  Called die
+!!! The die message:
+!!!  PYTHON_COMPAT must be an array.
+
+core-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/metadata.py", line 59, in _get_data
+ERROR root:     return self._fetch_metadata()
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 269, in _fetch_metadata
+ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
+          : force_regen=force_regen)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 360, in _get_metadata
+ERROR root:     return self._update_metadata(pkg, ebp=ebp)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 368, in _update_metadata
+ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/processor.py", line 825, in get_keys
+ERROR root:     {"key": receive_key})
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/processor.py", line 769, in _run_depend_like_phase
+ERROR root:     raise Exception(val)
+ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
+          : net-proxy/hatop-0.7.7, attr description
+ERROR root: error: Metadata Exception: pkg ebuild src: net-proxy/hatop-0.7.7,
+          : attr data
+ERROR root: error: False
+ERROR pkgcore: returned val from gen_metadata was 'False'
+ERROR root: check <pkgcheck.metadata_checks.KeywordsReport object at
+          : 0x7f1cb7a47150> raised
+ERROR root: Traceback (most recent call last):
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/bas
+          : e.py", line 337, in feed
+ERROR root:     check.feed(item, reporter)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/met
+          : adata_checks.py", line 235, in feed
+ERROR root:     if "-*" in pkg.keywords and len(pkg.keywords) == 1:
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 101, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 202, in <lambda>
+ERROR root:     s.data.pop("KEYWORDS", "").split()))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 103, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/metadata.py", line 59, in _get_data
+ERROR root:     return self._fetch_metadata()
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 269, in _fetch_metadata
+ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
+          : force_regen=force_regen)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 360, in _get_metadata
+ERROR root:     return self._update_metadata(pkg, ebp=ebp)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+ 
+!!! ERROR: net-proxy/hatop-0.7.7 failed.
+!!! die invoked from directory /home/mgorny/pkgcore-venv/lib/pkgcore
+!!! Call stack:
+!!!             ebuild-daemon.bash, line 456:  Called __ebd_exec_main 'daemonize'
+!!!             ebuild-daemon.bash, line 210:  Called __ebd_main_loop
+!!!             ebuild-daemon.bash, line 439:  Called __ebd_process_metadata '168' 'depend'
+!!!             ebuild-daemon.bash, line 372:  Called __execute_phases 'depend'
+!!!                     ebuild.lib, line 427:  Called __load_ebuild '/home/mgorny/repos/gentoo/net-proxy/hatop/hatop-0.7.7.ebuild'
+!!!                     ebuild.lib, line 252:  Called __qa_invoke 'source' '/home/mgorny/repos/gentoo/net-proxy/hatop/hatop-0.7.7.ebuild'
+!!!         isolated-functions.lib, line 286:  Called source '/home/mgorny/repos/gentoo/net-proxy/hatop/hatop-0.7.7.ebuild'
+!!!             hatop-0.7.7.ebuild, line  10:  Called inherit 'python-r1'
+!!!   ebuild-default-functions.lib, line 230:  Called __internal_inherit 'python-r1'
+!!!              ebuild-daemon.lib, line  30:  Called __qa_invoke 'source' '/home/mgorny/repos/gentoo/eclass/python-r1.eclass'
+!!!         isolated-functions.lib, line 286:  Called source '/home/mgorny/repos/gentoo/eclass/python-r1.eclass'
+!!!               python-r1.eclass, line  88:  Called die
+!!! The die message:
+!!!  PYTHON_COMPAT must be an array.
+
+
+!!! ERROR: net-proxy/hatop-0.7.7 failed.
+!!! die invoked from directory /home/mgorny/pkgcore-venv/lib/pkgcore
+!!! Call stack:
+!!!             ebuild-daemon.bash, line 456:  Called __ebd_exec_main 'daemonize'
+!!!             ebuild-daemon.bash, line 210:  Called __ebd_main_loop
+!!!             ebuild-daemon.bash, line 439:  Called __ebd_process_metadata '168' 'depend'
+!!!             ebuild-daemon.bash, line 372:  Called __execute_phases 'depend'
+!!!                     ebuild.lib, line 427:  Called __load_ebuild '/home/mgorny/repos/gentoo/net-proxy/hatop/hatop-0.7.7.ebuild'
+!!!                     ebuild.lib, line 252:  Called __qa_invoke 'source' '/home/mgorny/repos/gentoo/net-proxy/hatop/hatop-0.7.7.ebuild'
+!!!         isolated-functions.lib, line 286:  Called source '/home/mgorny/repos/gentoo/net-proxy/hatop/hatop-0.7.7.ebuild'
+!!!             hatop-0.7.7.ebuild, line  10:  Called inherit 'python-r1'
+!!!   ebuild-default-functions.lib, line 230:  Called __internal_inherit 'python-r1'
+!!!              ebuild-daemon.lib, line  30:  Called __qa_invoke 'source' '/home/mgorny/repos/gentoo/eclass/python-r1.eclass'
+!!!         isolated-functions.lib, line 286:  Called source '/home/mgorny/repos/gentoo/eclass/python-r1.eclass'
+!!!               python-r1.eclass, line  88:  Called die
+!!! The die message:
+!!!  PYTHON_COMPAT must be an array.
+
+         : ld/ebuild_src.py", line 368, in _update_metadata
+ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/processor.py", line 825, in get_keys
+ERROR root:     {"key": receive_key})
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/processor.py", line 769, in _run_depend_like_phase
+ERROR root:     raise Exception(val)
+ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
+          : net-proxy/hatop-0.7.7, attr keywords
+ERROR root: error: Metadata Exception: pkg ebuild src: net-proxy/hatop-0.7.7,
+          : attr data
+ERROR root: error: False
+ERROR pkgcore: returned val from gen_metadata was 'False'
+ERROR root: check <pkgcheck.repo_metadata.RequiredChksums object at
+          : 0x7f1cb7e74790> raised
+ERROR root: Traceback (most recent call last):
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/bas
+          : e.py", line 337, in feed
+ERROR root:     check.feed(item, reporter)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/rep
+          : o_metadata.py", line 201, in feed
+ERROR root:     for f_inst in (iflatten_instance(pkg.fetchables,
+          : fetch.fetchable)):
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 101, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 87, in generate_fetchables
+ERROR root:     self.data.pop("SRC_URI", ""), fetchable, operators={},
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 103, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/metadata.py", line 59, in _get_data
+ERROR root:     return self._fetch_metadata()
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 269, in _fetch_metadata
+ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
+          : force_regen=force_regen)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 360, in _get_metadata
+ERROR root:     return self._update_metadata(pkg, ebp=ebp)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 368, in _update_metadata
+ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/processor.py", line 825, in get_keys
+ERROR root:     {"key": receive_key})
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/processor.py", line 769, in _run_depend_like_phase
+ERROR root:     raise Exception(val)
+ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
+          : net-proxy/hatop-0.7.7, attr fetchables
+ERROR root: error: Metadata Exception: pkg ebuild src: net-proxy/hatop-0.7.7,
+          : attr data
+ERROR root: error: False
+ERROR pkgcore: returned val from gen_metadata was 'False'
+ERROR root: check <pkgcheck.metadata_checks.UnusedLocalFlagsReport object at
+          : 0x7f1cb8af1d10> raised
+ERROR root: Traceback (most recent call last):
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/bas
+          : e.py", line 337, in feed
+ERROR root:     check.feed(item, reporter)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/met
+          : adata_checks.py", line 166, in feed
+ERROR root:     unused.difference_update(pkg.iuse_stripped)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 230, in iuse_stripped
+ERROR root:     return frozenset(x.lstrip('-+') for x in self.iuse)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 101, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 208, in <lambda>
+ERROR root:     s.data.pop("IUSE", "").split()))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 103, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/metadata.py", line 59, in _get_data
+ERROR root:     return self._fetch_metadata()
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 269, in _fetch_metadata
+ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
+          : force_regen=force_regen)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 360, in _get_metadata
+ERROR root:     return self._update_metadata(pkg, ebp=ebp)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 368, in _update_metadata
+ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/processor.py", line 825, in get_keys
+ERROR root:     {"key": receive_key})
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/processor.py", line 769, in _run_depend_like_phase
+ERROR root:     raise Exception(val)
+ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
+          : net-proxy/hatop-0.7.7, attr iuse
+ERROR root: error: Metadata Exception: pkg ebuild src: net-proxy/hatop-0.7.7,
+          : attr data
+ERROR root: error: False
+
+net-proxy/http-replicator
+  DeprecatedEclass: version 3.0-r4: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 3.0-r4: uses deprecated EAPI: 4
+
+net-proxy/httpush
+  DeprecatedEAPI: version 0.9_beta11-r1: uses deprecated EAPI: 0
+
+net-proxy/nylon
+  DeprecatedEAPI: version 1.21-r1: uses deprecated EAPI: 4
+
+net-proxy/oops
+  DeprecatedEAPI: version 1.5.24_pre20050503-r4: uses deprecated EAPI: 2
+
+net-proxy/piper
+  DeprecatedEAPI: version 1.14: uses deprecated EAPI: 0
+
+net-proxy/ratproxy
+  DeprecatedEAPI: version 1.58: uses deprecated EAPI: 0
+
+net-proxy/rejik
+  DeprecatedEAPI: version 3.2.10: uses deprecated EAPI: 4
+
+net-proxy/squidclamav
+  DeprecatedEAPI: version 6.8: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 6.10: uses deprecated EAPI: 4
+
+net-proxy/squidguard
+  DeprecatedEAPI: version 1.4-r4: uses deprecated EAPI: 2
+
+net-proxy/tayga
+  DeprecatedEAPI: version 0.9.2: uses deprecated EAPI: 3
+
+net-proxy/torsocks
+  DeprecatedEAPI: version 1.2-r2: uses deprecated EAPI: 4
+
+net-proxy/ufdbguard
+  DeprecatedEAPI: version 1.24-r1: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 1.29: uses deprecated EAPI: 4
+
+net-proxy/webscarab
+  DeprecatedEAPI: version 20070504: uses deprecated EAPI: 0
+
+net-proxy/wwwoffle
+  DeprecatedEAPI: version 2.9i: uses deprecated EAPI: 4
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
