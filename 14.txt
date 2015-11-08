@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 14 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'app-text/*' 'dev-php/*' 'app-i18n/*' 'sys-auth/*' 'sci-geosciences/*' 'games-action/*' 'net-proxy/*' 'dev-lisp/*' 'dev-go/*' 'games-mud/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'app-text/*' 'dev-php/*' 'app-i18n/*' 'sys-auth/*' 'sci-geosciences/*' 'games-action/*' 'net-proxy/*' 'net-ftp/*' 'dev-go/*' 'games-mud/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1820,59 +1820,56 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-dev-lisp/abcl
-  DeprecatedEAPI: version 0.0.9-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.20.0: uses deprecated EAPI: 2
+net-ftp/bareftp
+  DeprecatedEclass: version 0.3.9: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 0.3.9: uses deprecated EAPI: 4
+  DeprecatedEclass: version 0.3.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 0.3.10: uses deprecated EAPI: 4
 
-dev-lisp/asdf
-  DeprecatedEAPI: version 1.86-r1: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 1.89: uses deprecated EAPI: 3
-  DroppedKeywordWarning: version 3.0.3: keywords dropped: alpha, ia64, mips, ppc64, s390
+net-ftp/frox
+  DeprecatedEAPI: version 0.7.18-r4: uses deprecated EAPI: 4
 
-dev-lisp/asdf-binary-locations
-  DeprecatedEAPI: version 20061018: uses deprecated EAPI: 3
+net-ftp/ftp
+  DeprecatedEAPI: version 0.17-r7: uses deprecated EAPI: 0
 
-dev-lisp/cl-clx
-  DeprecatedEAPI: version 0.7.1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.7.2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.7.3: uses deprecated EAPI: 0
+net-ftp/ftpbase
+  DeprecatedEAPI: version 0.01-r2: uses deprecated EAPI: 0
 
-dev-lisp/cl-ppcre
-  DeprecatedEAPI: version 1.2.10: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.2.11: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.2.12: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.2.13: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.2.14: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.2.15: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.2.16: uses deprecated EAPI: 0
+net-ftp/netkit-ftpd
+  DeprecatedEAPI: version 0.17-r8: uses deprecated EAPI: 0
 
-dev-lisp/clisp
-  DeprecatedEAPI: version 2.48-r1: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 2.48-r2: uses deprecated EAPI: 2
-  DroppedKeywordWarning: version 2.49-r8: keywords dropped: alpha, ia64
+net-ftp/oftpd
+  DeprecatedEAPI: version 0.3.7-r7: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.3.7-r8: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.3.7-r9: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.3.7-r10: uses deprecated EAPI: 4
 
-dev-lisp/clx
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+net-ftp/oneclickftp
+  DeprecatedEAPI: version 0.5.1: uses deprecated EAPI: 2
 
-dev-lisp/common-lisp-controller
-  DeprecatedEAPI: version 4.27: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 5.13-r1: uses deprecated EAPI: 3
+net-ftp/pureadmin
+  DeprecatedEAPI: version 0.4-r1: uses deprecated EAPI: 4
 
-dev-lisp/ecls
-  DeprecatedEAPI: version 12.12.1: uses deprecated EAPI: 4
+net-ftp/scythia
+  DeprecatedEAPI: version 0.9.3_p2: uses deprecated EAPI: 3
 
-dev-lisp/gentoo-init
-  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 4
-  DroppedKeywordWarning: version 1.0: keywords dropped: alpha, ia64, ppc64
+net-ftp/tftp-hpa
+  DeprecatedEAPI: version 5.2: uses deprecated EAPI: 4
 
-dev-lisp/hyperspec
-  DeprecatedEAPI: version 7.0: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 7.0-r1: uses deprecated EAPI: 0
-  MissingChksum: version 7.0-r1: "HyperSpec-7-0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+net-ftp/tlswrap
+  DeprecatedEAPI: version 1.04: uses deprecated EAPI: 0
 
-dev-lisp/sbcl
-  NonExistentDeps: version 1.1.18: depset rdepends: nonexistent atoms [ <sys-libs/glibc-2.6 ]
+net-ftp/tnftp
+  DeprecatedEAPI: version 20100108: uses deprecated EAPI: 2
+
+net-ftp/vsftpd
+  DeprecatedEAPI: version 2.3.5: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 3.0.2: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 3.0.2-r1: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 3.0.2-r2: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 3.0.2-r3: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 3.0.2-r4: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 3.0.3: uses deprecated EAPI: 4
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
