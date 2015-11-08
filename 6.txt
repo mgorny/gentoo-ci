@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 6 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-java/*' 'media-video/*' 'media-fonts/*' 'net-wireless/*' 'kde-frameworks/*' 'dev-cpp/*' 'net-dialup/*' 'app-accessibility/*' 'dev-lua/*' 'games-roguelike/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-java/*' 'media-video/*' 'media-fonts/*' 'net-wireless/*' 'x11-wm/*' 'dev-cpp/*' 'net-dialup/*' 'app-accessibility/*' 'dev-lua/*' 'games-roguelike/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -2283,11 +2283,125 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-kde-frameworks/kwallet
-  NonExistentDeps: version 5.14.0: depset depends: nonexistent atoms [ >=kde-apps/gpgmepp-14.12.0 ]
-  NonExistentDeps: version 5.14.0: depset rdepends: nonexistent atoms [ >=kde-apps/gpgmepp-14.12.0 ]
-  NonExistentDeps: version 5.15.0: depset depends: nonexistent atoms [ >=kde-apps/gpgmepp-14.12.0 ]
-  NonExistentDeps: version 5.15.0: depset rdepends: nonexistent atoms [ >=kde-apps/gpgmepp-14.12.0 ]
+x11-wm/afterstep
+  DeprecatedEAPI: version 2.2.9: uses deprecated EAPI: 4
+
+x11-wm/amiwm
+  DeprecatedEAPI: version 0.21_p2: uses deprecated EAPI: 4
+
+x11-wm/awesome
+  NonExistentDeps: version 3.4.15: depset depends: nonexistent atoms [ <x11-libs/libX11-1.3.99.901 ]
+  NonExistentDeps: version 3.4.15: depset rdepends: nonexistent atoms [ <x11-libs/libX11-1.3.99.901 ]
+  DeprecatedEAPI: version 3.4.15: uses deprecated EAPI: 3
+
+x11-wm/blackbox
+  DeprecatedEAPI: version 0.70.1: uses deprecated EAPI: 0
+
+x11-wm/compiz-fusion
+  DeprecatedEAPI: version 0.8.8: uses deprecated EAPI: 0
+
+x11-wm/ctwm
+  DeprecatedEAPI: version 3.7: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 3.8a-r1: uses deprecated EAPI: 2
+
+x11-wm/cwm
+  DeprecatedEAPI: version 5.1: uses deprecated EAPI: 4
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+x11-wm/echinus
+  DeprecatedEAPI: version 0.4.9: uses deprecated EAPI: 4
+
+x11-wm/emerald
+  DeprecatedEAPI: version 0.8.8: uses deprecated EAPI: 4
+
+x11-wm/enlightenment
+  DeprecatedEAPI: version 0.16.9999: uses deprecated EAPI: 4
+  DeprecatedEclass: version 0.17.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEAPI: version 1.0.11: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.0.13: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.0.14: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.0.15: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.0.16: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.0.17: uses deprecated EAPI: 4
+
+x11-wm/evilwm
+  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 1.1.0: uses deprecated EAPI: 3
+  DroppedKeywordWarning: version 1.1.0: keywords dropped: alpha, amd64, ppc, sparc, x86
+
+x11-wm/fluxbox
+  DeprecatedEAPI: version 1.3.2: uses deprecated EAPI: 4
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+x11-wm/i3
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+x11-wm/icewm
+  DroppedKeywordWarning: version 1.3.9: keywords dropped: alpha, ppc64, sparc
+
+x11-wm/jwm
+  DeprecatedEAPI: version 2.1.0: uses deprecated EAPI: 4
+
+x11-wm/larswm
+  DeprecatedEAPI: version 7.5.3-r1: uses deprecated EAPI: 2
+
+x11-wm/lwm
+  DeprecatedEAPI: version 1.2.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.2.2: uses deprecated EAPI: 4
+
+x11-wm/matchbox
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+
+x11-wm/matchbox-common
+  DeprecatedEAPI: version 0.9.1-r2: uses deprecated EAPI: 0
+
+x11-wm/matchbox-desktop
+  DeprecatedEAPI: version 0.9.1: uses deprecated EAPI: 0
+
+x11-wm/matchbox-panel
+  DeprecatedEAPI: version 0.9.3-r1: uses deprecated EAPI: 0
+
+x11-wm/matchbox-window-manager
+  WrongIndentFound: version 1.2-r1: ebuild has whitespace in indentation on line 39
+
+x11-wm/matwm2
+  DeprecatedEAPI: version 0.1.1: uses deprecated EAPI: 4
+
+x11-wm/musca
+  DeprecatedEAPI: version 0.9.24_p20100226-r3: uses deprecated EAPI: 4
+
+x11-wm/mutter
+  SizeViolation: "files/mutter-3.16.3-GL_EXT_x11_sync_object.patch" exceeds 20k in size; 25061 bytes total
+
+x11-wm/openbox
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+x11-wm/oroborus
+  DeprecatedEAPI: version 2.0.20: uses deprecated EAPI: 4
+
+x11-wm/sithwm
+  DeprecatedEAPI: version 1.2.3: uses deprecated EAPI: 4
+
+x11-wm/spectrwm
+  DeprecatedEAPI: version 2.6.2: uses deprecated EAPI: 4
+
+x11-wm/stumpwm
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+x11-wm/treewm
+  DeprecatedEAPI: version 0.4.5: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.4.5-r1: uses deprecated EAPI: 2
+
+x11-wm/vtwm
+  DeprecatedEAPI: version 5.4.6a: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 5.4.7-r1: uses deprecated EAPI: 2
+
+x11-wm/windowlab
+  DeprecatedEAPI: version 1.34: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.40: uses deprecated EAPI: 2
+
+x11-wm/windowmaker
+  DeprecatedEAPI: version 0.92.0-r11: uses deprecated EAPI: 3
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
