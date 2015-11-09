@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 15 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'app-text/*' 'app-dicts/*' 'app-vim/*' 'kde-misc/*' 'mail-filter/*' 'games-board/*' 'x11-terms/*' 'media-radio/*' 'net-nntp/*' 'app-officeext/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'app-text/*' 'app-dicts/*' 'app-vim/*' 'kde-misc/*' 'app-backup/*' 'games-board/*' 'x11-terms/*' 'media-radio/*' 'net-nntp/*' 'app-officeext/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1472,161 +1472,102 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-mail-filter/MailScanner
-  DeprecatedEAPI: version 4.84.5.2: uses deprecated EAPI: 0
+app-backup/amanda
+  BadInsIntoDir: version 3.3.3: ebuild uses insinto /etc/cron.daily on line 332
+  BadInsIntoDir: version 3.3.3-r1: ebuild uses insinto /etc/cron.daily on line 338
+  BadInsIntoDir: version 3.3.5: ebuild uses insinto /etc/cron.daily on line 338
+  BadInsIntoDir: version 3.3.7: ebuild uses insinto /etc/cron.daily on line 335
 
-mail-filter/amavisd-milter
-  DeprecatedEAPI: version 1.5.0: uses deprecated EAPI: 4
+app-backup/backup-manager
+  DeprecatedEAPI: version 0.7.5: uses deprecated EAPI: 0
 
-mail-filter/amavisd-new
-  DeprecatedEAPI: version 2.7.2: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 2.8.1-r1: uses deprecated EAPI: 4
-  DroppedKeywordWarning: version 2.10.1-r2: keywords dropped: ppc
+app-backup/backuppc
+  SizeViolation: "files/02-fix-config.pl-formatting.patch" exceeds 20k in size; 23353 bytes total
 
-mail-filter/anomy-sanitizer
-  DeprecatedEAPI: version 1.76-r1: uses deprecated EAPI: 4
+app-backup/bareos
+  DroppedKeywordWarning: version 15.2.1: keywords dropped: amd64, x86
 
-mail-filter/anubis
-  DeprecatedEAPI: version 4.1.1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 4.1.1-r1: uses deprecated EAPI: 4
+app-backup/boxbackup
+  DeprecatedEAPI: version 0.11.1: uses deprecated EAPI: 2
 
-mail-filter/ask
-  DeprecatedEAPI: version 2.4.1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.5.3: uses deprecated EAPI: 0
+app-backup/burp
+  DroppedKeywordWarning: version 1.4.40: keywords dropped: x86
 
-mail-filter/assp
-  DeprecatedEAPI: version 1.8.5.9: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.9.4.7: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.9.4.8: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.9.4.9: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.9.8.13030: uses deprecated EAPI: 0
+app-backup/ccollect
+  DeprecatedEAPI: version 0.5.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.7.1: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.8: uses deprecated EAPI: 2
 
-mail-filter/bmf
-  DeprecatedEAPI: version 0.9.4-r2: uses deprecated EAPI: 4
+app-backup/cdbackup
+  DeprecatedEAPI: version 0.7.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.7.1: uses deprecated EAPI: 0
 
-mail-filter/clamassassin
-  DeprecatedEAPI: version 1.2.4: uses deprecated EAPI: 0
+app-backup/cdbkup
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0-r1: uses deprecated EAPI: 0
 
-mail-filter/clamsmtp
-  DeprecatedEAPI: version 1.10: uses deprecated EAPI: 0
+app-backup/cpdup
+  DeprecatedEAPI: version 1.18: uses deprecated EAPI: 0
 
-mail-filter/couriersrs
-  DeprecatedEAPI: version 0.1.2: uses deprecated EAPI: 2
+app-backup/dar
+  DeprecatedEAPI: version 2.3.8: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 2.4.9: uses deprecated EAPI: 3
 
-mail-filter/dcc
-  DeprecatedEAPI: version 1.3.140-r1: uses deprecated EAPI: 2
+app-backup/dirvish
+  DeprecatedEAPI: version 1.2.1: uses deprecated EAPI: 0
 
-mail-filter/disspam
+app-backup/flexbackup
+  DeprecatedEAPI: version 1.2.1-r12: uses deprecated EAPI: 0
+
+app-backup/furball
+  DeprecatedEAPI: version 0.5: uses deprecated EAPI: 4
+
+app-backup/hdup
+  DeprecatedEAPI: version 2.0.14: uses deprecated EAPI: 0
+
+app-backup/luckybackup
+  DeprecatedEAPI: version 0.4.7-r1: uses deprecated EAPI: 4
+
+app-backup/mirdir
+  DeprecatedEAPI: version 2.1-r1: uses deprecated EAPI: 3
+
+app-backup/mylvmbackup
+  DeprecatedEAPI: version 0.11: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.13: uses deprecated EAPI: 0
   DeprecatedEAPI: version 0.14: uses deprecated EAPI: 0
 
-mail-filter/dspam
-  DeprecatedEAPI: version 3.10.2-r1: uses deprecated EAPI: 4
+app-backup/obnam
+  NonExistentDeps: version 1.9: depset depends: nonexistent atoms [ <dev-python/paramiko-1.13.0 ]
+  NonExistentDeps: version 1.9: depset rdepends: nonexistent atoms [ <dev-python/paramiko-1.13.0 ]
+  NonExistentDeps: version 1.16: depset depends: nonexistent atoms [ <dev-python/paramiko-1.13.0 ]
+  NonExistentDeps: version 1.16: depset rdepends: nonexistent atoms [ <dev-python/paramiko-1.13.0 ]
+  NonExistentDeps: version 1.17: depset depends: nonexistent atoms [ <dev-python/paramiko-1.13.0 ]
+  NonExistentDeps: version 1.17: depset rdepends: nonexistent atoms [ <dev-python/paramiko-1.13.0 ]
 
-mail-filter/exim-geoip
-  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 4
+app-backup/rdiff-backup
+  DeprecatedEclass: version 1.2.8-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.2.8-r1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.3.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.3.3: uses deprecated EAPI: 3
 
-mail-filter/exim-p0f
-  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 4
+app-backup/reoback
+  BadInsIntoDir: version 1.0_p3-r1: ebuild uses insinto /etc/cron.daily on line 36
 
-mail-filter/gld
-  DeprecatedEAPI: version 1.7-r2: uses deprecated EAPI: 4
+app-backup/sarab
+  DeprecatedEAPI: version 1.0.0: uses deprecated EAPI: 0
 
-mail-filter/isbg
-  DeprecatedEclass: version 0.99-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.99-r1: uses deprecated EAPI: 3
+app-backup/simplebackup
+  DeprecatedEAPI: version 1.8.1: uses deprecated EAPI: 0
 
-mail-filter/libdkim
-  DeprecatedEAPI: version 1.0.21-r1: uses deprecated EAPI: 4
+app-backup/tarsnap
+  DeprecatedEAPI: version 1.0.35: uses deprecated EAPI: 4
 
-mail-filter/libmilter
-  DeprecatedEAPI: version 1.0.2: uses deprecated EAPI: 2
+app-backup/tsm
+  DroppedKeywordWarning: version 6.3.0.5-r2: keywords dropped: x86
 
-mail-filter/libsieve
-  DeprecatedEAPI: version 2.2.7: uses deprecated EAPI: 0
-
-mail-filter/libspf2
-  DeprecatedEAPI: version 1.2.9-r3: uses deprecated EAPI: 4
-
-mail-filter/libsrs2
-  DeprecatedEAPI: version 1.0.18: uses deprecated EAPI: 4
-
-mail-filter/libsrs_alt
-  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
-
-mail-filter/maildrop
-  DeprecatedEAPI: version 2.6.0: uses deprecated EAPI: 4
-
-mail-filter/mailfilter
-  DeprecatedEAPI: version 0.8.2: uses deprecated EAPI: 2
-
-mail-filter/mapson
-  DeprecatedEAPI: version 3.3: uses deprecated EAPI: 4
-
-mail-filter/milter-regex
-  DeprecatedEAPI: version 1.9: uses deprecated EAPI: 4
-
-mail-filter/mimedefang
-  DeprecatedEAPI: version 2.73: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 2.74: uses deprecated EAPI: 4
-
-mail-filter/normalizemime
-  DeprecatedEAPI: version 1.19: uses deprecated EAPI: 0
-
-mail-filter/opendmarc
-  DroppedKeywordWarning: version 1.3.0: keywords dropped: ppc, ppc64, sparc
-
-mail-filter/p3scan
-  DeprecatedEAPI: version 2.3.1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.3.2-r1: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 2.3.2-r2: uses deprecated EAPI: 4
-
-mail-filter/policyd
-  DeprecatedEAPI: version 1.82-r1: uses deprecated EAPI: 0
-
-mail-filter/policyd-weight
-  DeprecatedEAPI: version 0.1.15.2-r1: uses deprecated EAPI: 4
-
-mail-filter/procmail
-  DeprecatedEAPI: version 3.22-r10: uses deprecated EAPI: 0
-
-mail-filter/procmail-lib
-  DeprecatedEAPI: version 20081108: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 20091202: uses deprecated EAPI: 0
-
-mail-filter/pypolicyd-spf
-  DeprecatedEclass: version 1.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 3
-
-mail-filter/qmail-scanner
-  DeprecatedEAPI: version 1.25-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.05: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.06: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 2.08: uses deprecated EAPI: 2
-
-mail-filter/rblcheck
-  DeprecatedEAPI: version 1.5-r1: uses deprecated EAPI: 2
-
-mail-filter/scmail
-  DeprecatedEAPI: version 1.3: uses deprecated EAPI: 4
-
-mail-filter/sid-milter
-  DeprecatedEAPI: version 1.0.0-r6: uses deprecated EAPI: 4
-
-mail-filter/spamass-milter
-  DeprecatedEAPI: version 0.3.2: uses deprecated EAPI: 4
-
-mail-filter/spampd
-  DeprecatedEAPI: version 2.30: uses deprecated EAPI: 0
-
-mail-filter/spamprobe
-  DeprecatedEAPI: version 1.4d: uses deprecated EAPI: 2
-
-mail-filter/sqlgrey
-  DeprecatedEAPI: version 1.7.6-r1: uses deprecated EAPI: 0
-
-mail-filter/tmda
-  DeprecatedEclass: version 1.1.12: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 1.1.12: uses deprecated EAPI: 3
+app-backup/vzdump
+  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 2
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
