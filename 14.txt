@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 14 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'sys-apps/*' 'dev-php/*' 'app-i18n/*' 'gnome-extra/*' 'sci-geosciences/*' 'games-board/*' 'gnustep-apps/*' 'media-radio/*' 'dev-go/*' 'games-mud/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'sys-apps/*' 'dev-php/*' 'app-i18n/*' 'gnome-extra/*' 'sci-geosciences/*' 'games-misc/*' 'gnustep-apps/*' 'media-radio/*' 'dev-go/*' 'games-mud/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1599,6 +1599,32 @@ WARNING pkgcore: metadata.dtd cannot be opened from
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
+
+games-misc/c++robots
+  DeprecatedEAPI: version 0: uses deprecated EAPI: 4
+
+games-misc/fortune-mod-flashrider
+  DeprecatedEAPI: version 0.25: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.80: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 0.90: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 1.00: uses deprecated EAPI: 3
+
+games-misc/fortune-mod-gentoo-dev
+  DeprecatedEAPI: version 20061115: uses deprecated EAPI: 0
+
+games-misc/fortune-mod-gentoo-ru
+  DeprecatedEAPI: version 0.25: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.26: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
+
+games-misc/ggencoder
+  DeprecatedEAPI: version 0.91a: uses deprecated EAPI: 4
+
+games-misc/gtklife
+  DeprecatedEAPI: version 5.1: uses deprecated EAPI: 4
+
+games-misc/xcowsay
+  DeprecatedEAPI: version 1.3: uses deprecated EAPI: 2
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
