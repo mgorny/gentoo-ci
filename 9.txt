@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 9 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'net-misc/*' 'kde-apps/*' 'sci-biology/*' 'x11-themes/*' 'net-dns/*' 'app-shells/*' 'games-rpg/*' 'app-benchmarks/*' 'xfce-base/*' 'net-voip/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'net-misc/*' 'kde-apps/*' 'sci-biology/*' 'x11-themes/*' 'net-dns/*' 'www-servers/*' 'games-rpg/*' 'app-benchmarks/*' 'xfce-base/*' 'net-voip/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1831,90 +1831,46 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-app-shells/bash
-  DeprecatedEAPI: version 2.05b_p13: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 3.0_p22: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 3.1_p23: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 3.2_p57: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 4.0_p44: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 4.1_p17: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 4.2_p53: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 4.3_p33: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 4.3_p33-r1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 4.3_p33-r2: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 4.3_p39_pre0: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 4.3_p39: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 4.3_p42: uses deprecated EAPI: 4
-  DroppedKeywordWarning: version 4.4_beta: keywords dropped: alpha, amd64, arm, arm64, hppa, ia64, m68k, mips, ppc, ppc64, s390, sh, sparc, x86
+www-servers/fnord
+  DeprecatedEAPI: version 1.10-r2: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 1.11: uses deprecated EAPI: 3
 
-app-shells/bash-completion
-  NonExistentDeps: version 1.3-r2: depset rdepends: nonexistent atoms [ <app-admin/eselect-1.3.7 ]
-  DeprecatedEAPI: version 1.3-r2: uses deprecated EAPI: 3
-  NonExistentDeps: version 2.1: depset rdepends: nonexistent atoms [ <app-admin/eselect-1.3.7 ]
-  NonExistentDeps: version 2.1-r2: depset rdepends: nonexistent atoms [ <app-admin/eselect-1.3.7 ]
+www-servers/gatling
+  DeprecatedEAPI: version 0.12-r2: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.13: uses deprecated EAPI: 4
 
-app-shells/ccsh
-  DeprecatedEAPI: version 0.0.4-r3: uses deprecated EAPI: 4
+www-servers/lighttpd
+  DeprecatedEAPI: version 1.4.35: uses deprecated EAPI: 4
+  SizeViolation: "files/lighttpd-1.4.29-mod_uploadprogress.patch" exceeds 20k in size; 22472 bytes total
 
-app-shells/dash
-  DeprecatedEAPI: version 0.5.7.4: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.5.8.1-r2: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.5.8.2: uses deprecated EAPI: 4
+www-servers/monkeyd
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-app-shells/dsh
-  DeprecatedEAPI: version 0.25.10: uses deprecated EAPI: 3
+www-servers/pound
+  DeprecatedEAPI: version 2.6: uses deprecated EAPI: 2
 
-app-shells/gentoo-bashcomp
-  DeprecatedEAPI: version 20101217-r1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 20121024: uses deprecated EAPI: 4
+www-servers/servefile
+  DeprecatedEclass: version 0.4.2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 0.4.2: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 0.4.2: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEAPI: version 0.4.2: uses deprecated EAPI: 4
+  DeprecatedEclass: version 0.4.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 0.4.3: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 0.4.3: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEAPI: version 0.4.3: uses deprecated EAPI: 4
 
-app-shells/heirloom-sh
-  DeprecatedEAPI: version 050706: uses deprecated EAPI: 0
+www-servers/spawn-fcgi
+  DeprecatedEAPI: version 1.6.3-r1: uses deprecated EAPI: 4
 
-app-shells/ksh
-  DeprecatedEAPI: version 93.20110208: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 93.20120229: uses deprecated EAPI: 4
+www-servers/thttpd
+  DeprecatedEAPI: version 2.26.4-r3: uses deprecated EAPI: 4
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-app-shells/mksh
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
+www-servers/tomcat
+  DroppedKeywordWarning: version 8.0.26: keywords dropped: ppc, ppc64
 
-app-shells/pdsh
-  DeprecatedEAPI: version 2.18-r1: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 2.26: uses deprecated EAPI: 2
-
-app-shells/push
-  DeprecatedEAPI: version 1.5: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.5-r1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.6: uses deprecated EAPI: 4
-
-app-shells/rrs
-  DeprecatedEAPI: version 1.70: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.70-r1: uses deprecated EAPI: 4
-
-app-shells/rssh
-  DeprecatedEAPI: version 2.3.4: uses deprecated EAPI: 4
-
-app-shells/sash
-  DeprecatedEAPI: version 3.8: uses deprecated EAPI: 4
-
-app-shells/scsh
-  DeprecatedEAPI: version 0.6.7: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.6.7-r1: uses deprecated EAPI: 2
-
-app-shells/scsh-install-lib
-  DeprecatedEAPI: version 1.3.0: uses deprecated EAPI: 0
-
-app-shells/squirrelsh
-  DeprecatedEAPI: version 1.2.3-r1: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 1.2.6: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.2.7: uses deprecated EAPI: 4
-
-app-shells/tcsh
-  DeprecatedEAPI: version 6.17-r1: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 6.17.06: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 6.18.01: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 6.18.01-r2: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 6.18.01-r3: uses deprecated EAPI: 3
+www-servers/xsp
+  WhitespaceFound: version 2014.12-r2014120900: ebuild has trailing whitespace on lines 82, 84
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
