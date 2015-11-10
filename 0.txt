@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 0 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'sec-policy/*' 'dev-texlive/*' 'app-doc/*' 'app-office/*' 'x11-apps/*' 'mail-filter/*' 'app-cdr/*' 'sys-power/*' 'app-mobilephone/*' 'gnustep-base/*' 'games-server/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'sec-policy/*' 'dev-texlive/*' 'app-doc/*' 'app-office/*' 'x11-apps/*' 'mail-filter/*' 'app-cdr/*' 'sys-power/*' 'media-radio/*' 'gnustep-base/*' 'games-server/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1036,79 +1036,38 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-app-mobilephone/bitpim
-  ExecutableFile: "files/maketarball" has unnecessary executable bit
+media-radio/KochMorse
+  DeprecatedEAPI: version 0.99.6: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.99.6: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-app-mobilephone/cobex
-  DeprecatedEAPI: version 0.2.13: uses deprecated EAPI: 0
+media-radio/cwdaemon
+  DeprecatedEAPI: version 0.10.1: uses deprecated EAPI: 4
 
-app-mobilephone/dfu-util
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+media-radio/grig
+  DeprecatedEAPI: version 0.8.0: uses deprecated EAPI: 4
 
-app-mobilephone/esms
-  DeprecatedEAPI: version 0.9.5: uses deprecated EAPI: 4
+media-radio/ibp
+  DeprecatedEAPI: version 0.21: uses deprecated EAPI: 4
 
-app-mobilephone/freesmee
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+media-radio/svxlink
+  DeprecatedEAPI: version 13.03: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 13.07: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 13.12: uses deprecated EAPI: 4
 
-app-mobilephone/gammu
-  DeprecatedEclass: version 1.33.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+media-radio/tucnak2
+  DeprecatedEAPI: version 2.48: uses deprecated EAPI: 4
 
-app-mobilephone/ganyremote
-  DeprecatedEAPI: version 6.0.1: uses deprecated EAPI: 2
+media-radio/xastir
+  DeprecatedEAPI: version 2.0.4: uses deprecated EAPI: 4
 
-app-mobilephone/gnokii
-  DeprecatedEAPI: version 0.6.29: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.6.31: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+media-radio/xlog
+  DeprecatedEAPI: version 2.0.11: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 2.0.12: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 2.0.13: uses deprecated EAPI: 4
 
-app-mobilephone/gsmlib
-  DeprecatedEAPI: version 1.11_pre041028: uses deprecated EAPI: 0
-
-app-mobilephone/heimdall
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-app-mobilephone/kannel
-  DeprecatedEAPI: version 1.4.3-r1: uses deprecated EAPI: 2
-
-app-mobilephone/kannel-sqlbox
-  DeprecatedEAPI: version 0.7.2: uses deprecated EAPI: 2
-
-app-mobilephone/linuxsms
-  DeprecatedEAPI: version 0.77: uses deprecated EAPI: 4
-
-app-mobilephone/obex-data-server
-  DeprecatedEAPI: version 0.4.6: uses deprecated EAPI: 4
-
-app-mobilephone/obexd
-  DeprecatedEAPI: version 0.46: uses deprecated EAPI: 4
-
-app-mobilephone/past
-  DeprecatedEAPI: version 0.0.4: uses deprecated EAPI: 4
-
-app-mobilephone/qtadb
-  DeprecatedEAPI: version 0.8.1: uses deprecated EAPI: 4
-
-app-mobilephone/ringtonetools
-  DeprecatedEAPI: version 2.26: uses deprecated EAPI: 0
-
-app-mobilephone/scmxx
-  DeprecatedEAPI: version 0.9.0: uses deprecated EAPI: 0
-
-app-mobilephone/sms
-  DeprecatedEAPI: version 2.0.3: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.1.0: uses deprecated EAPI: 0
-
-app-mobilephone/smstools
-  DeprecatedEAPI: version 3.1.15-r1: uses deprecated EAPI: 4
-
-app-mobilephone/sobexsrv
-  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 0
-
-app-mobilephone/wammu
-  DeprecatedEAPI: version 0.35: uses deprecated EAPI: 3
-  DeprecatedEclass: version 0.35: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+media-radio/xwxapt
+  DeprecatedEAPI: version 2.1: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 2.2: uses deprecated EAPI: 4
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
