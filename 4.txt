@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 4 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-ruby/*' 'app-misc/*' 'app-leechcraft/*' 'sci-chemistry/*' 'games-arcade/*' 'mail-client/*' 'app-eselect/*' 'app-accessibility/*' 'perl-core/*' 'sci-misc/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-ruby/*' 'app-misc/*' 'app-leechcraft/*' 'sci-chemistry/*' 'app-portage/*' 'mail-client/*' 'app-eselect/*' 'app-accessibility/*' 'perl-core/*' 'sci-misc/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1337,72 +1337,123 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-games-arcade/abe
-  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 4
+app-portage/conf-update
+  DeprecatedEAPI: version 1.0.2: uses deprecated EAPI: 4
 
-games-arcade/afternoonstalker
-  DeprecatedEAPI: version 1.1.5: uses deprecated EAPI: 4
+app-portage/demerge
+  DeprecatedEAPI: version 0.047-r1: uses deprecated EAPI: 0
 
-games-arcade/alienwave
-  DeprecatedEAPI: version 0.3.0: uses deprecated EAPI: 4
+app-portage/distpatch
+  DeprecatedEclass: version 0.1.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 0.1.1: depset depends: nonexistent atoms [ =dev-lang/python-2.6*, =dev-lang/python-3.1*, =dev-lang/python-3.2* ]
+  NonExistentDeps: version 0.1.1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6*, =dev-lang/python-3.1*, =dev-lang/python-3.2* ]
+  DeprecatedEAPI: version 0.1.1: uses deprecated EAPI: 3
 
-games-arcade/amphetamine
-  DeprecatedEAPI: version 0.8.10: uses deprecated EAPI: 4
+app-portage/eclass-manpages
+  ExecutableFile: "files/eclass-to-manpage.sh" has unnecessary executable bit
 
-games-arcade/aquaria
-  MissingChksum: version 1.1.3-r1: "aquaria-lnx-humble-bundle.mojo.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-portage/emerge-delta-webrsync
+  DeprecatedEAPI: version 3.6.2: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 3.7.1: uses deprecated EAPI: 4
 
-games-arcade/asteroid
-  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 4
+app-portage/epkg
+  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.3: uses deprecated EAPI: 4
 
-games-arcade/balloonchase
-  DeprecatedEAPI: version 0.9.6: uses deprecated EAPI: 4
+app-portage/epm
+  DeprecatedEAPI: version 1.40: uses deprecated EAPI: 4
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
 
-games-arcade/betna
-  DeprecatedEAPI: version 0.9.7: uses deprecated EAPI: 4
+app-portage/esearch
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-games-arcade/blobby
-  DeprecatedEAPI: version 0.9c: uses deprecated EAPI: 4
+app-portage/euscan
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-games-arcade/blobwars
-  DeprecatedEAPI: version 1.19: uses deprecated EAPI: 4
+app-portage/euses
+  DeprecatedEAPI: version 2.5.9: uses deprecated EAPI: 4
 
-games-arcade/blockrage
-  DeprecatedEAPI: version 0.2.3: uses deprecated EAPI: 4
+app-portage/g-ctan
+  NonExistentDeps: version 2011.1: depset rdepends: nonexistent atoms [ ~app-text/texlive-2011 ]
+  DeprecatedEAPI: version 2011.1: uses deprecated EAPI: 2
 
-games-arcade/bomns
-  DeprecatedEAPI: version 0.99.2: uses deprecated EAPI: 4
+app-portage/g-octave
+  DeprecatedEclass: version 0.4.1-r4: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.4.1-r4: uses deprecated EAPI: 2
 
-games-arcade/briquolo
-  DeprecatedEAPI: version 0.5.7: uses deprecated EAPI: 4
+app-portage/g-sorcery
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DroppedKeywordWarning: version 0.2: keywords dropped: alpha, ia64, ppc, ppc64, sparc
 
-games-arcade/cdogs-sdl
-  DeprecatedEAPI: version 0.4-r1: uses deprecated EAPI: 4
+app-portage/genlop
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-games-arcade/holotz-castle
-  DeprecatedEAPI: version 1.3.14: uses deprecated EAPI: 4
+app-portage/gpytage
+  DeprecatedEclass: version 0.3.0_rc1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 0.3.0_rc1: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 0.3.0_rc1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEAPI: version 0.3.0_rc1: uses deprecated EAPI: 3
 
-games-arcade/mari0
-  DeprecatedEAPI: version 1.6: uses deprecated EAPI: 4
+app-portage/grs
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-games-arcade/methane
-  DeprecatedEAPI: version 1.5.1: uses deprecated EAPI: 4
+app-portage/gs-elpa
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-games-arcade/opensonic
-  DeprecatedEAPI: version 0.1.4-r1: uses deprecated EAPI: 4
+app-portage/gs-pypi
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-games-arcade/opentyrian
-  DeprecatedEAPI: version 2.1.20130907: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 20090702: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 20091025: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 20110517: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 20110517-r1: uses deprecated EAPI: 0
+app-portage/layman
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DroppedKeywordWarning: version 2.3.0: keywords dropped: alpha, arm64, ia64, m68k, sh, sparc
 
-games-arcade/smc
-  DeprecatedEAPI: version 1.9: uses deprecated EAPI: 4
+app-portage/layman-dbtools
+  DeprecatedEclass: version 0_p20100322: uses deprecated eclass(es): [ git-2 (migrate to git-r3), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0_p20100322: uses deprecated EAPI: 3
 
-games-arcade/tuxanci
-  DeprecatedEclass: version 99999999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+app-portage/maintainer-helper
+  DeprecatedEclass: version 0.1.2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.1.2: uses deprecated EAPI: 3
+
+app-portage/mirrorselect
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DroppedKeywordWarning: version 2.2.2: keywords dropped: m68k, s390, sh
+
+app-portage/perl-info
+  DeprecatedEAPI: version 0.16: uses deprecated EAPI: 0
+
+app-portage/pms-test-suite
+  DeprecatedEclass: version 0.2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 0.2: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 0.2: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 4
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), git-2 (migrate to git-r3), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 9999: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 9999: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
+
+app-portage/portage-utils
+  DeprecatedEAPI: version 0.53: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.54: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.55: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.56: uses deprecated EAPI: 4
+
+app-portage/porthole
+  DeprecatedEclass: version 0.6.1-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.6.1-r1: uses deprecated EAPI: 2
+  DeprecatedEclass: version 0.6.1-r2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.6.1-r2: uses deprecated EAPI: 2
+  DeprecatedEclass: version 0.6.1-r3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.6.1-r3: uses deprecated EAPI: 2
+
+app-portage/prefix-chain-setup
+  DeprecatedEAPI: version 0.4-r5: uses deprecated EAPI: 0
+
+app-portage/repo-commit
+  NonExistentDeps: version 0.4.1: depset rdepends: nonexistent atoms [ <sys-apps/portage-2.2.0_alpha ]
+  DeprecatedEAPI: version 0.4.1: uses deprecated EAPI: 4
+  NonExistentDeps: version 9999: depset rdepends: nonexistent atoms [ <sys-apps/portage-2.2.0_alpha ]
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
