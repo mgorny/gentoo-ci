@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 3 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-haskell/*' 'net-analyzer/*' 'dev-db/*' 'app-xemacs/*' 'games-fps/*' 'mail-client/*' 'games-emulation/*' 'sci-visualization/*' 'sci-astronomy/*' 'dev-ada/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-haskell/*' 'net-analyzer/*' 'dev-db/*' 'app-xemacs/*' 'games-fps/*' 'mail-client/*' 'games-emulation/*' 'sci-visualization/*' 'x11-proto/*' 'dev-ada/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1958,36 +1958,44 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-sci-astronomy/aatm
-  DeprecatedEAPI: version 0.4.3.1: uses deprecated EAPI: 4
+x11-proto/bigreqsproto
+  DeprecatedEAPI: version 1.1.2: uses deprecated EAPI: 4
 
-sci-astronomy/ds9-bin
-  DeprecatedEAPI: version 7.1: uses deprecated EAPI: 4
+x11-proto/dmxproto
+  DeprecatedEAPI: version 2.3.1: uses deprecated EAPI: 3
 
-sci-astronomy/galaxy
-  DeprecatedEAPI: version 2.2: uses deprecated EAPI: 4
+x11-proto/evieext
+  DeprecatedEAPI: version 1.1.1: uses deprecated EAPI: 3
 
-sci-astronomy/gasgano
-  DeprecatedEAPI: version 2.4.3-r2: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 2.4.5: uses deprecated EAPI: 4
+x11-proto/fixesproto
+  DeprecatedEAPI: version 5.0: uses deprecated EAPI: 4
 
-sci-astronomy/predict
-  DeprecatedEAPI: version 2.2.3-r1: uses deprecated EAPI: 4
+x11-proto/fontcacheproto
+  DeprecatedEAPI: version 0.1.3: uses deprecated EAPI: 4
 
-sci-astronomy/skycat
-  DeprecatedEAPI: version 3.1.2-r1: uses deprecated EAPI: 4
+x11-proto/fontsproto
+  DeprecatedEAPI: version 2.1.2: uses deprecated EAPI: 4
 
-sci-astronomy/stiff
-  DeprecatedEAPI: version 2.1.3: uses deprecated EAPI: 4
+x11-proto/inputproto
+  DroppedKeywordWarning: version 2.3.1: keywords dropped: arm64, m68k
 
-sci-astronomy/swarp
-  DeprecatedEAPI: version 2.19.1: uses deprecated EAPI: 4
+x11-proto/resourceproto
+  DeprecatedEAPI: version 1.2.0: uses deprecated EAPI: 4
 
-sci-astronomy/xephem
-  DeprecatedEAPI: version 3.7.5: uses deprecated EAPI: 4
+x11-proto/trapproto
+  DeprecatedEAPI: version 3.4.3: uses deprecated EAPI: 4
 
-sci-astronomy/xfitsview
-  DeprecatedEAPI: version 2.2-r1: uses deprecated EAPI: 4
+x11-proto/xcalibrateproto
+  DeprecatedEAPI: version 0.1_pre20081210: uses deprecated EAPI: 4
+
+x11-proto/xcmiscproto
+  DeprecatedEAPI: version 1.2.2: uses deprecated EAPI: 4
+
+x11-proto/xf86miscproto
+  DeprecatedEAPI: version 0.9.3: uses deprecated EAPI: 4
+
+x11-proto/xf86rushproto
+  DeprecatedEAPI: version 1.1.2-r1: uses deprecated EAPI: 4
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch

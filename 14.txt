@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 14 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'sys-apps/*' 'dev-php/*' 'app-crypt/*' 'gnome-extra/*' 'sci-geosciences/*' 'games-misc/*' 'gnustep-apps/*' 'net-ftp/*' 'www-plugins/*' 'games-mud/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'sys-apps/*' 'dev-php/*' 'app-crypt/*' 'gnome-extra/*' 'sci-geosciences/*' 'games-misc/*' 'gnustep-apps/*' 'sys-freebsd/*' 'www-plugins/*' 'games-mud/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1619,53 +1619,74 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-net-ftp/bareftp
-  DeprecatedEclass: version 0.3.9: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DeprecatedEAPI: version 0.3.9: uses deprecated EAPI: 4
-  DeprecatedEclass: version 0.3.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DeprecatedEAPI: version 0.3.10: uses deprecated EAPI: 4
+sys-freebsd/boot0
+  DeprecatedEAPI: version 8.2: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 9.1: uses deprecated EAPI: 2
 
-net-ftp/frox
-  DeprecatedEAPI: version 0.7.18-r4: uses deprecated EAPI: 4
+sys-freebsd/freebsd-bin
+  DeprecatedEAPI: version 8.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.1: uses deprecated EAPI: 0
 
-net-ftp/ftp
-  DeprecatedEAPI: version 0.17-r7: uses deprecated EAPI: 0
+sys-freebsd/freebsd-cddl
+  DeprecatedEAPI: version 8.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.1: uses deprecated EAPI: 4
 
-net-ftp/ftpbase
-  DeprecatedEAPI: version 0.01-r2: uses deprecated EAPI: 0
+sys-freebsd/freebsd-contrib
+  DeprecatedEAPI: version 8.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.1: uses deprecated EAPI: 0
 
-net-ftp/netkit-ftpd
-  DeprecatedEAPI: version 0.17-r8: uses deprecated EAPI: 0
+sys-freebsd/freebsd-lib
+  WhitespaceFound: version 8.2-r1: ebuild has leading whitespace on lines 368, 369, 370, 371, 372
+  DeprecatedEAPI: version 8.2-r1: uses deprecated EAPI: 2
+  WhitespaceFound: version 9.1-r10: ebuild has leading whitespace on lines 413, 414, 415, 416, 417, 441, 442, 443, 446, 448, 450
+  WhitespaceFound: version 9.1-r11: ebuild has leading whitespace on lines 415, 416, 417, 418, 419, 443, 444, 445, 448, 450, 452
+  WhitespaceFound: version 10.2-r1: ebuild has leading whitespace on lines 424, 425, 426, 427, 428, 452, 453, 454, 457, 459, 461
 
-net-ftp/oftpd
-  DeprecatedEAPI: version 0.3.7-r7: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.3.7-r8: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.3.7-r9: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.3.7-r10: uses deprecated EAPI: 4
+sys-freebsd/freebsd-libexec
+  DeprecatedEAPI: version 8.2: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 8.2-r1: uses deprecated EAPI: 2
 
-net-ftp/oneclickftp
-  DeprecatedEAPI: version 0.5.1: uses deprecated EAPI: 2
+sys-freebsd/freebsd-mk-defs
+  DeprecatedEAPI: version 8.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.1: uses deprecated EAPI: 3
 
-net-ftp/pureadmin
-  DeprecatedEAPI: version 0.4-r1: uses deprecated EAPI: 4
+sys-freebsd/freebsd-pam-modules
+  DeprecatedEAPI: version 8.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.1-r1: uses deprecated EAPI: 0
 
-net-ftp/scythia
-  DeprecatedEAPI: version 0.9.3_p2: uses deprecated EAPI: 3
+sys-freebsd/freebsd-pf
+  DeprecatedEAPI: version 8.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.1: uses deprecated EAPI: 0
 
-net-ftp/tftp-hpa
-  DeprecatedEAPI: version 5.2: uses deprecated EAPI: 4
+sys-freebsd/freebsd-rescue
+  DeprecatedEAPI: version 8.2: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 9.1: uses deprecated EAPI: 2
 
-net-ftp/tlswrap
-  DeprecatedEAPI: version 1.04: uses deprecated EAPI: 0
+sys-freebsd/freebsd-sbin
+  BadInsIntoDir: version 8.2-r1: ebuild uses insinto /etc/cron.d on line 78
+  DeprecatedEAPI: version 8.2-r1: uses deprecated EAPI: 2
+  BadInsIntoDir: version 9.1: ebuild uses insinto /etc/cron.d on line 79
+  DeprecatedEAPI: version 9.1: uses deprecated EAPI: 2
+  BadInsIntoDir: version 10.2: ebuild uses insinto /etc/cron.d on line 83
 
-net-ftp/vsftpd
-  DeprecatedEAPI: version 2.3.5: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 3.0.2: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 3.0.2-r1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 3.0.2-r2: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 3.0.2-r3: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 3.0.2-r4: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 3.0.3: uses deprecated EAPI: 4
+sys-freebsd/freebsd-share
+  DeprecatedEAPI: version 8.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.1: uses deprecated EAPI: 0
+
+sys-freebsd/freebsd-sources
+  DeprecatedEAPI: version 8.2-r2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.1-r3: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.1-r9: uses deprecated EAPI: 0
+
+sys-freebsd/freebsd-ubin
+  DeprecatedEAPI: version 8.2-r1: uses deprecated EAPI: 2
+
+sys-freebsd/freebsd-usbin
+  DeprecatedEAPI: version 8.2-r2: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 9.1-r1: uses deprecated EAPI: 2
+
+sys-freebsd/virtio-kmod
+  DeprecatedEAPI: version 0.228301-r1: uses deprecated EAPI: 4
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch

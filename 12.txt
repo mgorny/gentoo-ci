@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 12 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'media-sound/*' 'sys-fs/*' 'sys-cluster/*' 'dev-qt/*' 'dev-embedded/*' 'games-action/*' 'dev-tcltk/*' 'dev-lisp/*' 'www-misc/*' 'games-sports/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'media-sound/*' 'sys-fs/*' 'sys-cluster/*' 'dev-qt/*' 'dev-embedded/*' 'games-action/*' 'dev-tcltk/*' 'dev-lua/*' 'www-misc/*' 'games-sports/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1944,59 +1944,39 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-dev-lisp/abcl
-  DeprecatedEAPI: version 0.0.9-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.20.0: uses deprecated EAPI: 2
+dev-lua/lgi
+  DeprecatedEAPI: version 0.6.2: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.2-r1: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.7.2: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.9.0: uses deprecated EAPI: 4
 
-dev-lisp/asdf
-  DeprecatedEAPI: version 1.86-r1: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 1.89: uses deprecated EAPI: 3
-  DroppedKeywordWarning: version 3.0.3: keywords dropped: alpha, ia64, mips, ppc64, s390
+dev-lua/luadoc
+  DeprecatedEAPI: version 3.0.1: uses deprecated EAPI: 0
 
-dev-lisp/asdf-binary-locations
-  DeprecatedEAPI: version 20061018: uses deprecated EAPI: 3
+dev-lua/luaexpat
+  DeprecatedEAPI: version 1.3.0: uses deprecated EAPI: 4
+  DroppedKeywordWarning: version 1.3.0: keywords dropped: mips
 
-dev-lisp/cl-clx
-  DeprecatedEAPI: version 0.7.1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.7.2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.7.3: uses deprecated EAPI: 0
+dev-lua/luafilesystem
+  DroppedKeywordWarning: version 1.6.2: keywords dropped: sparc
 
-dev-lisp/cl-ppcre
-  DeprecatedEAPI: version 1.2.10: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.2.11: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.2.12: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.2.13: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.2.14: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.2.15: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.2.16: uses deprecated EAPI: 0
+dev-lua/luarocks
+  DeprecatedEAPI: version 2.0.7.1: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 2.0.8: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 2.0.12: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 2.2.0: uses deprecated EAPI: 4
 
-dev-lisp/clisp
-  DeprecatedEAPI: version 2.48-r1: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 2.48-r2: uses deprecated EAPI: 2
-  DroppedKeywordWarning: version 2.49-r8: keywords dropped: alpha, ia64
+dev-lua/luasec
+  DeprecatedEAPI: version 0.4.1: uses deprecated EAPI: 2
 
-dev-lisp/clx
+dev-lua/luasocket
+  DeprecatedEAPI: version 2.0.2: uses deprecated EAPI: 2
+
+dev-lua/luvit
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-dev-lisp/common-lisp-controller
-  DeprecatedEAPI: version 4.27: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 5.13-r1: uses deprecated EAPI: 3
-
-dev-lisp/ecls
-  DeprecatedEAPI: version 12.12.1: uses deprecated EAPI: 4
-
-dev-lisp/gentoo-init
-  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 4
-  DroppedKeywordWarning: version 1.0: keywords dropped: alpha, ia64, ppc64
-
-dev-lisp/hyperspec
-  DeprecatedEAPI: version 7.0: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 7.0-r1: uses deprecated EAPI: 0
-  MissingChksum: version 7.0-r1: "HyperSpec-7-0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-dev-lisp/sbcl
-  NonExistentDeps: version 1.1.18: depset rdepends: nonexistent atoms [ <sys-libs/glibc-2.6 ]
+dev-lua/toluapp
+  DeprecatedEAPI: version 1.0.93: uses deprecated EAPI: 2
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
