@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 14 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'sys-apps/*' 'dev-php/*' 'app-vim/*' 'gnome-extra/*' 'sci-geosciences/*' 'games-misc/*' 'gnustep-apps/*' 'net-ftp/*' 'dev-go/*' 'games-mud/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'sys-apps/*' 'dev-php/*' 'app-vim/*' 'gnome-extra/*' 'sci-geosciences/*' 'games-misc/*' 'gnustep-apps/*' 'net-ftp/*' 'www-plugins/*' 'games-mud/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1797,6 +1797,14 @@ WARNING pkgcore: metadata.dtd cannot be opened from
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
+
+www-plugins/lightspark
+  DeprecatedEAPI: version 0.7.1: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.7.2: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.7.2-r1: uses deprecated EAPI: 4
+
+www-plugins/pipelight
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
