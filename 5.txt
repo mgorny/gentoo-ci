@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 5 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-libs/*' 'media-video/*' 'dev-ml/*' 'sci-mathematics/*' 'kde-frameworks/*' 'net-irc/*' 'app-eselect/*' 'app-accessibility/*' 'sci-astronomy/*' 'net-news/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-libs/*' 'media-video/*' 'dev-ml/*' 'net-wireless/*' 'kde-frameworks/*' 'net-irc/*' 'app-eselect/*' 'app-accessibility/*' 'sci-astronomy/*' 'net-news/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1455,174 +1455,141 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-sci-mathematics/axiom
-  DeprecatedEAPI: version 200805: uses deprecated EAPI: 4
+net-wireless/adm8211
+  DeprecatedEAPI: version 20060111: uses deprecated EAPI: 0
 
-sci-mathematics/cado-nfs
-  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 2.0: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 2.1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 2.1.1: uses deprecated EAPI: 4
+net-wireless/airsnort
+  DeprecatedEAPI: version 0.2.7e: uses deprecated EAPI: 0
 
-sci-mathematics/calc
-  DeprecatedEAPI: version 2.12.1.5: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.12.2.2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.12.4.3: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 2.12.4.4: uses deprecated EAPI: 4
+net-wireless/ap-utils
+  DeprecatedEAPI: version 1.4: uses deprecated EAPI: 0
 
-sci-mathematics/coq
-  DeprecatedEAPI: version 8.3_p1: uses deprecated EAPI: 2
+net-wireless/b43-fwcutter
+  DeprecatedEAPI: version 018: uses deprecated EAPI: 0
 
-sci-mathematics/diagrtb
-  DeprecatedEAPI: version 2.64: uses deprecated EAPI: 4
+net-wireless/bcm43xx-fwcutter
+  MetadataError: version 005: attr(fetchables): error- Metadata Exception: pkg ebuild src: net-wireless/bcm43xx-fwcutter-005, attr fetchables
+error: mirror://berlios/bcm43xx/bcm43xx-fwcutter-005.tar.bz2 is unparseable: uri mirror://berlios/bcm43xx/bcm43xx-fwcutter-005.tar.bz2 isn't a known mirror tier
+flagged token- mirror://berlios/bcm43xx/bcm43xx-fwcutter-005.tar.bz2
+  DeprecatedEAPI: version 005: uses deprecated EAPI: 0
+  MetadataError: version 006: attr(fetchables): error- Metadata Exception: pkg ebuild src: net-wireless/bcm43xx-fwcutter-006, attr fetchables
+error: mirror://berlios/bcm43xx/bcm43xx-fwcutter-006.tar.bz2 is unparseable: uri mirror://berlios/bcm43xx/bcm43xx-fwcutter-006.tar.bz2 isn't a known mirror tier
+flagged token- mirror://berlios/bcm43xx/bcm43xx-fwcutter-006.tar.bz2
+  DeprecatedEAPI: version 006: uses deprecated EAPI: 0
 
-sci-mathematics/drgeo
-  NonExistentDeps: version 1.1.0: depset depends: nonexistent atoms [ =dev-scheme/guile-1.6* ]
-  NonExistentDeps: version 1.1.0: depset rdepends: nonexistent atoms [ =dev-scheme/guile-1.6* ]
-  DeprecatedEAPI: version 1.1.0: uses deprecated EAPI: 4
+net-wireless/bss
+  DeprecatedEAPI: version 0.8: uses deprecated EAPI: 2
 
-sci-mathematics/factmsieve
-  NonExistentDeps: version 76: depset rdepends: nonexistent atoms [ dev-lang/python:2.6 ]
-  DeprecatedEAPI: version 76: uses deprecated EAPI: 4
+net-wireless/chillispot
+  DeprecatedEAPI: version 1.1.0: uses deprecated EAPI: 0
 
-sci-mathematics/fann
-  DeprecatedEclass: version 2.1.0_beta-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 2.1.0_beta-r1: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 2.2.0: uses deprecated EAPI: 4
+net-wireless/cpyrit-cuda
+  DeprecatedEclass: version 0.4.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 0.4.0: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  NonExistentDeps: version 0.4.0: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  DeprecatedEAPI: version 0.4.0: uses deprecated EAPI: 4
 
-sci-mathematics/flint
-  DroppedKeywordWarning: version 2.4.5: keywords dropped: ppc
+net-wireless/cpyrit-opencl
+  DeprecatedEclass: version 0.4.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 0.4.0: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  NonExistentDeps: version 0.4.0: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  DeprecatedEAPI: version 0.4.0: uses deprecated EAPI: 4
 
-sci-mathematics/frobby
-  DeprecatedEAPI: version 0.9.0-r1: uses deprecated EAPI: 4
+net-wireless/crda
+  DeprecatedEclass: version 1.1.2-r3: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.1.2-r3: uses deprecated EAPI: 4
+  DeprecatedEclass: version 1.1.2-r4: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.1.2-r4: uses deprecated EAPI: 4
+  DeprecatedEclass: version 1.1.3: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.1.3: uses deprecated EAPI: 4
 
-sci-mathematics/gfan
-  DeprecatedEAPI: version 0.5: uses deprecated EAPI: 3
+net-wireless/gobi_loader
+  DeprecatedEAPI: version 0.7-r2: uses deprecated EAPI: 2
 
-sci-mathematics/gimps
-  DeprecatedEAPI: version 28.7: uses deprecated EAPI: 4
+net-wireless/gr-iqbal
+  DeprecatedEclass: version 0.36.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-sci-mathematics/ginac
-  DeprecatedEAPI: version 1.5.8: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 1.6.1: uses deprecated EAPI: 4
+net-wireless/hackrf-tools
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-sci-mathematics/glpk
-  DeprecatedEAPI: version 4.45: uses deprecated EAPI: 2
-  DroppedKeywordWarning: version 4.54: keywords dropped: alpha
+net-wireless/hidclient
+  DeprecatedEAPI: version 20120728: uses deprecated EAPI: 4
 
-sci-mathematics/gmm
-  DeprecatedEAPI: version 4.2: uses deprecated EAPI: 4
+net-wireless/hostap-utils
+  DeprecatedEAPI: version 0.4.7-r1: uses deprecated EAPI: 4
 
-sci-mathematics/gmp-ecm
-  DeprecatedEAPI: version 6.4.3-r5: uses deprecated EAPI: 4
+net-wireless/hostapd
+  DeprecatedEAPI: version 2.4-r2: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 2.4-r3: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 2.5: uses deprecated EAPI: 4
 
-sci-mathematics/gsl-shell
-  DeprecatedEAPI: version 2.2.0: uses deprecated EAPI: 4
+net-wireless/kismet
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-sci-mathematics/gwnum
-  DeprecatedEAPI: version 277: uses deprecated EAPI: 4
+net-wireless/madwifi-ng
+  DeprecatedEAPI: version 0.9.3.3: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.9.4: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.9.4-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.9.4.4119.20100201: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.9.4.4133.20100621: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.9.4.4165.20110816: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.9.4.4180.20120502: uses deprecated EAPI: 2
 
-sci-mathematics/isabelle
-  DeprecatedEAPI: version 2011.1: uses deprecated EAPI: 4
+net-wireless/madwifi-ng-tools
+  DeprecatedEAPI: version 0.9.3.3: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.9.4: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.9.4.4119.20100201: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.9.4.4133.20100621: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.9.4.4165.20110816: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.9.4.4180.20120502: uses deprecated EAPI: 2
 
-sci-mathematics/lpsolve
-  DeprecatedEAPI: version 5.5.2.0: uses deprecated EAPI: 4
+net-wireless/ndiswrapper
+  DeprecatedEAPI: version 1.59: uses deprecated EAPI: 4
 
-sci-mathematics/lybniz
-  DeprecatedEclass: version 1.3.2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 1.3.2: uses deprecated EAPI: 3
+net-wireless/neard
+  DeprecatedEAPI: version 0.11: uses deprecated EAPI: 4
 
-sci-mathematics/mathomatic
-  DeprecatedEAPI: version 15.8.5: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 16.0.1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 16.0.5: uses deprecated EAPI: 4
+net-wireless/openbsc
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-sci-mathematics/minisat
-  DeprecatedEAPI: version 2.1.0: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 2.2.0-r3: uses deprecated EAPI: 2
+net-wireless/openggsn
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-sci-mathematics/nestedsums
-  DeprecatedEAPI: version 1.4.12-r1: uses deprecated EAPI: 3
-
-sci-mathematics/num-utils
+net-wireless/orinoco-fwutils
+  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 0
   DeprecatedEAPI: version 0.3: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.5-r1: uses deprecated EAPI: 4
 
-sci-mathematics/nusmv
-  DeprecatedEAPI: version 2.3.1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.5.0: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.5.2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.5.3: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.5.4: uses deprecated EAPI: 0
+net-wireless/orinoco-usb
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 0
 
-sci-mathematics/octave
-  DroppedKeywordWarning: version 3.8.1: keywords dropped: arm
+net-wireless/osmobts
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-sci-mathematics/octave-epstk
-  DeprecatedEAPI: version 2.3: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 2.4: uses deprecated EAPI: 4
+net-wireless/osmocom-bb
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-sci-mathematics/otter
-  DeprecatedEAPI: version 3.3-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 3.3-r2: uses deprecated EAPI: 4
+net-wireless/python-wifi
+  MetadataError: version 0.5.0-r1: attr(fetchables): error- Metadata Exception: pkg ebuild src: net-wireless/python-wifi-0.5.0-r1, attr fetchables
+error: mirror://berlios/pythonwifi/python-wifi-0.5.0.tar.bz2 is unparseable
+flagged token- uri mirror://berlios/pythonwifi/python-wifi-0.5.0.tar.bz2 isn't a known mirror tier
+  DeprecatedEclass: version 0.5.0-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.5.0-r1: uses deprecated EAPI: 3
 
-sci-mathematics/pari
-  DeprecatedEAPI: version 2.3.5: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 2.5.0-r3: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 2.5.1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 2.5.1-r1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 2.5.2: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 2.5.3: uses deprecated EAPI: 4
-  SizeViolation: "files/pari-2.5.4-polred.patch" exceeds 20k in size; 23409 bytes total
+net-wireless/reaver
+  DeprecatedEAPI: version 1.4: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.4-r1: uses deprecated EAPI: 4
 
-sci-mathematics/pari-data
-  DeprecatedEAPI: version 20120726: uses deprecated EAPI: 4
+net-wireless/rfswitch
+  DeprecatedEAPI: version 1.3: uses deprecated EAPI: 0
 
-sci-mathematics/prng
-  DeprecatedEAPI: version 3.0.2: uses deprecated EAPI: 4
+net-wireless/spectools
+  DeprecatedEAPI: version 2011.08.1-r2: uses deprecated EAPI: 4
 
-sci-mathematics/pymc
-  DeprecatedEclass: version 2.2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 2.2: uses deprecated EAPI: 4
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), git-2 (migrate to git-r3), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
+net-wireless/wepdecrypt
+  DeprecatedEAPI: version 0.8-r2: uses deprecated EAPI: 4
 
-sci-mathematics/qtoctave
-  NonExistentDeps: version 0.10.1-r1: depset depends: nonexistent atoms [ <dev-qt/qtgui-4.8.5:4 ]
-  NonExistentDeps: version 0.10.1-r1: depset rdepends: nonexistent atoms [ <dev-qt/qtgui-4.8.5:4 ]
-
-sci-mathematics/relational
-  DeprecatedEclass: version 0.11: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.11: uses deprecated EAPI: 3
-
-sci-mathematics/rngstreams
-  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 4
-
-sci-mathematics/snns
-  MetadataError: version 4.2-r8: attr(fetchables): error- Metadata Exception: pkg ebuild src: sci-mathematics/snns-4.2-r8, attr fetchables
-error: http://www-ra.informatik.uni-tuebingen.de/downloads/SNNS/SNNSv4.2.tar.gz mirror://berlios/snns-dev/snns-4.2-20040227.patch.gz doc? ( http://www-ra.informatik.uni-tuebingen.de/downloads/SNNS/SNNSv4.2.Manual.pdf ) python? ( mirror://berlios/snns-dev/PySNNS-20040605.tar.gz mirror://berlios/snns-dev/PythonFunctionSupport-20050210.patch.gz ) is unparseable
-flagged token- uri mirror://berlios/snns-dev/snns-4.2-20040227.patch.gz isn't a known mirror tier
-  DeprecatedEclass: version 4.2-r8: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 4.2-r8: uses deprecated EAPI: 3
-  DeprecatedEclass: version 4.2-r9: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 4.2-r9: uses deprecated EAPI: 3
-
-sci-mathematics/spin
-  DeprecatedEAPI: version 6.2.1: uses deprecated EAPI: 4
-
-sci-mathematics/topcom
-  DeprecatedEAPI: version 0.17.4-r1: uses deprecated EAPI: 4
-
-sci-mathematics/unuran
-  DeprecatedEAPI: version 1.8.1: uses deprecated EAPI: 4
-
-sci-mathematics/xmds
-  DeprecatedEAPI: version 1.6.5: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.6.6: uses deprecated EAPI: 0
-
-sci-mathematics/yacas
-  DeprecatedEAPI: version 1.3.2: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.3.3: uses deprecated EAPI: 4
+net-wireless/wireless-tools
+  DeprecatedEAPI: version 30_pre9: uses deprecated EAPI: 4
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
