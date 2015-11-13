@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 6 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-java/*' 'media-video/*' 'media-fonts/*' 'net-mail/*' 'games-arcade/*' 'dev-cpp/*' 'games-strategy/*' 'net-nds/*' 'perl-core/*' 'games-simulation/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-java/*' 'media-video/*' 'media-fonts/*' 'net-wireless/*' 'games-arcade/*' 'dev-cpp/*' 'games-strategy/*' 'net-nds/*' 'perl-core/*' 'games-simulation/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -2129,312 +2129,141 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-net-mail/Freemail
-  DeprecatedEclass: version 9999-r1: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+net-wireless/adm8211
+  DeprecatedEAPI: version 20060111: uses deprecated EAPI: 0
 
-net-mail/altermime
-  DeprecatedEAPI: version 0.3.7: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.3.10: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.3.10-r1: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.3.11: uses deprecated EAPI: 4
+net-wireless/airsnort
+  DeprecatedEAPI: version 0.2.7e: uses deprecated EAPI: 0
 
-net-mail/archivemail
-  DeprecatedEclass: version 0.9.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.9.0: uses deprecated EAPI: 3
+net-wireless/ap-utils
+  DeprecatedEAPI: version 1.4: uses deprecated EAPI: 0
 
-net-mail/asmail
-  DeprecatedEAPI: version 2.1: uses deprecated EAPI: 0
+net-wireless/b43-fwcutter
+  DeprecatedEAPI: version 018: uses deprecated EAPI: 0
 
-net-mail/autorespond
-  DeprecatedEAPI: version 2.0.4: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.0.5: uses deprecated EAPI: 0
+net-wireless/bcm43xx-fwcutter
+  MetadataError: version 005: attr(fetchables): error- Metadata Exception: pkg ebuild src: net-wireless/bcm43xx-fwcutter-005, attr fetchables
+error: mirror://berlios/bcm43xx/bcm43xx-fwcutter-005.tar.bz2 is unparseable: uri mirror://berlios/bcm43xx/bcm43xx-fwcutter-005.tar.bz2 isn't a known mirror tier
+flagged token- mirror://berlios/bcm43xx/bcm43xx-fwcutter-005.tar.bz2
+  DeprecatedEAPI: version 005: uses deprecated EAPI: 0
+  MetadataError: version 006: attr(fetchables): error- Metadata Exception: pkg ebuild src: net-wireless/bcm43xx-fwcutter-006, attr fetchables
+error: mirror://berlios/bcm43xx/bcm43xx-fwcutter-006.tar.bz2 is unparseable: uri mirror://berlios/bcm43xx/bcm43xx-fwcutter-006.tar.bz2 isn't a known mirror tier
+flagged token- mirror://berlios/bcm43xx/bcm43xx-fwcutter-006.tar.bz2
+  DeprecatedEAPI: version 006: uses deprecated EAPI: 0
 
-net-mail/bincimap
-  DeprecatedEAPI: version 1.2.13: uses deprecated EAPI: 0
+net-wireless/bss
+  DeprecatedEAPI: version 0.8: uses deprecated EAPI: 2
 
-net-mail/checkpassword
-  DeprecatedEAPI: version 0.90-r2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.90-r3: uses deprecated EAPI: 0
+net-wireless/chillispot
+  DeprecatedEAPI: version 1.1.0: uses deprecated EAPI: 0
 
-net-mail/checkpassword-pam
-  DeprecatedEAPI: version 0.99: uses deprecated EAPI: 0
+net-wireless/cpyrit-cuda
+  DeprecatedEclass: version 0.4.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 0.4.0: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  NonExistentDeps: version 0.4.0: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  DeprecatedEAPI: version 0.4.0: uses deprecated EAPI: 4
 
-net-mail/checkpw
-  DeprecatedEAPI: version 1.02: uses deprecated EAPI: 0
+net-wireless/cpyrit-opencl
+  DeprecatedEclass: version 0.4.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 0.4.0: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  NonExistentDeps: version 0.4.0: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  DeprecatedEAPI: version 0.4.0: uses deprecated EAPI: 4
 
-net-mail/cmd5checkpw
-  DeprecatedEAPI: version 0.30-r1: uses deprecated EAPI: 0
+net-wireless/crda
+  DeprecatedEclass: version 1.1.2-r3: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.1.2-r3: uses deprecated EAPI: 4
+  DeprecatedEclass: version 1.1.2-r4: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.1.2-r4: uses deprecated EAPI: 4
+  DeprecatedEclass: version 1.1.3: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.1.3: uses deprecated EAPI: 4
 
-net-mail/courier-imap
-  DroppedKeywordWarning: version 4.16.0: keywords dropped: alpha, arm, ia64, mips, ppc, s390, sh, sparc
+net-wireless/gobi_loader
+  DeprecatedEAPI: version 0.7-r2: uses deprecated EAPI: 2
 
-net-mail/courierpassd
-  DeprecatedEAPI: version 1.1.2: uses deprecated EAPI: 0
-  MissingChksum: version 1.1.2: "courierpassd-1.1.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+net-wireless/gr-iqbal
+  DeprecatedEclass: version 0.36.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-net-mail/cyrus-imapd
-  DeprecatedEAPI: version 2.4.16: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 2.4.17: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 2.4.17-r1: uses deprecated EAPI: 4
+net-wireless/hackrf-tools
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-net-mail/dbmail
-  DeprecatedEAPI: version 3.2.2: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 3.2.3: uses deprecated EAPI: 4
+net-wireless/hidclient
+  DeprecatedEAPI: version 20120728: uses deprecated EAPI: 4
 
-net-mail/dot-forward
-  DeprecatedEAPI: version 0.71-r2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.71-r3: uses deprecated EAPI: 0
+net-wireless/hostap-utils
+  DeprecatedEAPI: version 0.4.7-r1: uses deprecated EAPI: 4
 
-net-mail/dovecot
-  DroppedKeywordWarning: version 2.2.19-r1: keywords dropped: alpha, ia64, mips, s390, sh, sparc
+net-wireless/hostapd
+  DeprecatedEAPI: version 2.4-r2: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 2.4-r3: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 2.5: uses deprecated EAPI: 4
 
-net-mail/email
-  DeprecatedEAPI: version 2.5.0: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 3.0.5: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 3.1.2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 3.1.3: uses deprecated EAPI: 4
+net-wireless/kismet
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-net-mail/eps
-  DeprecatedEAPI: version 1.7: uses deprecated EAPI: 3
+net-wireless/madwifi-ng
+  DeprecatedEAPI: version 0.9.3.3: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.9.4: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.9.4-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.9.4.4119.20100201: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.9.4.4133.20100621: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.9.4.4165.20110816: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.9.4.4180.20120502: uses deprecated EAPI: 2
 
-net-mail/ezmlm-idx
-  DeprecatedEAPI: version 6.0.0: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 7.0.0: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 7.0.0-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 7.0.0-r2: uses deprecated EAPI: 0
+net-wireless/madwifi-ng-tools
+  DeprecatedEAPI: version 0.9.3.3: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.9.4: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.9.4.4119.20100201: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.9.4.4133.20100621: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.9.4.4165.20110816: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.9.4.4180.20120502: uses deprecated EAPI: 2
 
-net-mail/fastforward
-  DeprecatedEAPI: version 0.51-r1: uses deprecated EAPI: 0
+net-wireless/ndiswrapper
+  DeprecatedEAPI: version 1.59: uses deprecated EAPI: 4
 
-net-mail/gensig
-  DeprecatedEAPI: version 2.3: uses deprecated EAPI: 0
+net-wireless/neard
+  DeprecatedEAPI: version 0.11: uses deprecated EAPI: 4
 
-net-mail/hotwayd
-  DeprecatedEAPI: version 0.8.4: uses deprecated EAPI: 0
+net-wireless/openbsc
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-net-mail/kuvert
-  DeprecatedEAPI: version 2.0.4: uses deprecated EAPI: 4
+net-wireless/openggsn
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-net-mail/libpst
-  DeprecatedEclass: version 0.6.55: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.6.55: uses deprecated EAPI: 4
-  DeprecatedEclass: version 0.6.58: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.6.58: uses deprecated EAPI: 4
-  DeprecatedEclass: version 0.6.59: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.6.59: uses deprecated EAPI: 4
-  DeprecatedEclass: version 0.6.60: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.6.60: uses deprecated EAPI: 4
-  DeprecatedEclass: version 0.6.61: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.6.61: uses deprecated EAPI: 4
-  DeprecatedEclass: version 0.6.63: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.6.63: uses deprecated EAPI: 4
-  DeprecatedEclass: version 0.6.64: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.6.64: uses deprecated EAPI: 4
-
-net-mail/mailbase
-  DeprecatedEAPI: version 1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 0
-
-net-mail/maildirtree
-  DeprecatedEAPI: version 0.6-r1: uses deprecated EAPI: 4
-
-net-mail/mailfront
-  DeprecatedEAPI: version 0.88: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.98: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.12: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 1.16: uses deprecated EAPI: 2
-
-net-mail/mailgraph
-  DeprecatedEAPI: version 1.14-r2: uses deprecated EAPI: 4
-
-net-mail/mailman
-  DeprecatedEclass: version 2.1.20: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 2.1.20: uses deprecated EAPI: 4
-
-net-mail/mailsync
-  DeprecatedEAPI: version 5.2.1: uses deprecated EAPI: 0
-
-net-mail/mailutils
-  DeprecatedEclass: version 2.99.98: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-
-net-mail/mairix
-  DeprecatedEAPI: version 0.23: uses deprecated EAPI: 4
-
-net-mail/mboxgrep
-  DeprecatedEAPI: version 0.7.9-r1: uses deprecated EAPI: 4
-
-net-mail/mess822
-  DeprecatedEAPI: version 0.58-r2: uses deprecated EAPI: 4
-
-net-mail/metamail
-  DeprecatedEAPI: version 2.7.53.3-r1: uses deprecated EAPI: 4
-
-net-mail/mlmmj
-  DeprecatedEAPI: version 1.2.17.1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.2.18.0: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.2.18.1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.2.19.0: uses deprecated EAPI: 4
-
-net-mail/mpack
-  DeprecatedEAPI: version 1.6-r3: uses deprecated EAPI: 3
-
-net-mail/mswatch
-  DeprecatedEAPI: version 1.2.0: uses deprecated EAPI: 4
-
-net-mail/mu
-  DeprecatedEAPI: version 0.9.9: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.9.9.5: uses deprecated EAPI: 4
-
-net-mail/nmzmail
-  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 2
-
-net-mail/peephole
-  DeprecatedEAPI: version 1.5: uses deprecated EAPI: 4
-
-net-mail/perdition
-  DeprecatedEAPI: version 1.18: uses deprecated EAPI: 4
-
-net-mail/pflogsumm
-  DeprecatedEAPI: version 1.1.5: uses deprecated EAPI: 0
-
-net-mail/pop-before-smtp
-  DeprecatedEAPI: version 1.42: uses deprecated EAPI: 4
-
-net-mail/pop2imap
-  DeprecatedEAPI: version 1.18: uses deprecated EAPI: 4
-
-net-mail/popa3d
-  DeprecatedEAPI: version 1.0.2-r1: uses deprecated EAPI: 4
-
-net-mail/popick
+net-wireless/orinoco-fwutils
   DeprecatedEAPI: version 0.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.3: uses deprecated EAPI: 0
 
-net-mail/poppassd_ceti
-  DeprecatedEAPI: version 1.8.5-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.8.5-r2: uses deprecated EAPI: 0
+net-wireless/orinoco-usb
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 0
 
-net-mail/qlogtools
-  DeprecatedEAPI: version 3.1: uses deprecated EAPI: 0
+net-wireless/osmobts
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-net-mail/qmail-autoresponder
-  DeprecatedEAPI: version 0.97-r1: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.97-r2: uses deprecated EAPI: 2
+net-wireless/osmocom-bb
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-net-mail/qmail-lint
-  DeprecatedEAPI: version 0.55: uses deprecated EAPI: 0
+net-wireless/python-wifi
+  MetadataError: version 0.5.0-r1: attr(fetchables): error- Metadata Exception: pkg ebuild src: net-wireless/python-wifi-0.5.0-r1, attr fetchables
+error: mirror://berlios/pythonwifi/python-wifi-0.5.0.tar.bz2 is unparseable
+flagged token- uri mirror://berlios/pythonwifi/python-wifi-0.5.0.tar.bz2 isn't a known mirror tier
+  DeprecatedEclass: version 0.5.0-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.5.0-r1: uses deprecated EAPI: 3
 
-net-mail/qmail-notify
-  DeprecatedEAPI: version 0.93-r1: uses deprecated EAPI: 0
+net-wireless/reaver
+  DeprecatedEAPI: version 1.4: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.4-r1: uses deprecated EAPI: 4
 
-net-mail/qmail-qfilter
-  DeprecatedEAPI: version 2.1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.1-r1: uses deprecated EAPI: 2
+net-wireless/rfswitch
+  DeprecatedEAPI: version 1.3: uses deprecated EAPI: 0
 
-net-mail/qmail-qsanity
-  DeprecatedEAPI: version 0.52: uses deprecated EAPI: 0
+net-wireless/spectools
+  DeprecatedEAPI: version 2011.08.1-r2: uses deprecated EAPI: 4
 
-net-mail/qmailadmin
-  DeprecatedEAPI: version 1.2.10: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.2.12: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.2.15: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.2.15-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.2.16: uses deprecated EAPI: 0
-  DroppedKeywordWarning: version 1.2.16: keywords dropped: ia64
+net-wireless/wepdecrypt
+  DeprecatedEAPI: version 0.8-r2: uses deprecated EAPI: 4
 
-net-mail/qmailanalog
-  DeprecatedEAPI: version 0.70-r1: uses deprecated EAPI: 0
-
-net-mail/qmhandle
-  DeprecatedEAPI: version 1.2.0-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.3.2: uses deprecated EAPI: 0
-
-net-mail/qpopper
-  DeprecatedEAPI: version 4.1.0: uses deprecated EAPI: 4
-
-net-mail/qprint
-  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
-
-net-mail/qtools
-  DeprecatedEAPI: version 0.56: uses deprecated EAPI: 0
-
-net-mail/queue-fix
-  DeprecatedEAPI: version 1.4-r2: uses deprecated EAPI: 0
-
-net-mail/queue-repair
-  DeprecatedEAPI: version 0.9.0: uses deprecated EAPI: 0
-
-net-mail/randomsig
-  DeprecatedEAPI: version 1.10.0: uses deprecated EAPI: 0
-
-net-mail/relay-ctrl
-  DeprecatedEAPI: version 3.1.1-r2: uses deprecated EAPI: 0
-
-net-mail/ripmime
-  DeprecatedEAPI: version 1.4.0.10: uses deprecated EAPI: 4
-
-net-mail/ripole
-  DeprecatedEAPI: version 0.2.1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.2.2: uses deprecated EAPI: 4
-
-net-mail/rss2email
-  DeprecatedEclass: version 2.71: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 2.71: uses deprecated EAPI: 2
-
-net-mail/safecat
-  DeprecatedEAPI: version 1.13: uses deprecated EAPI: 3
-
-net-mail/serialmail
-  DeprecatedEAPI: version 0.75-r4: uses deprecated EAPI: 4
-
-net-mail/signify
-  DeprecatedEAPI: version 1.14: uses deprecated EAPI: 0
-
-net-mail/smtptools
-  DeprecatedEAPI: version 0.2.3: uses deprecated EAPI: 4
-
-net-mail/spamcup
-  NonExistentDeps: version 1.09: depset depends: nonexistent atoms [ <dev-perl/libwww-perl-6 ]
-  NonExistentDeps: version 1.09: depset rdepends: nonexistent atoms [ <dev-perl/libwww-perl-6 ]
-  DeprecatedEAPI: version 1.09: uses deprecated EAPI: 0
-
-net-mail/swaks
-  DeprecatedEAPI: version 20130209.0: uses deprecated EAPI: 0
-
-net-mail/topal
-  DeprecatedEAPI: version 75: uses deprecated EAPI: 4
-
-net-mail/tpop3d
-  DeprecatedEAPI: version 1.5.5: uses deprecated EAPI: 4
-
-net-mail/uw-imap
-  DeprecatedEAPI: version 2007f: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 2007f-r1: uses deprecated EAPI: 4
-
-net-mail/uw-mailutils
-  DeprecatedEAPI: version 2007f: uses deprecated EAPI: 4
-
-net-mail/vacation
-  DeprecatedEAPI: version 1.2.7.0: uses deprecated EAPI: 0
-
-net-mail/vchkuser
-  DeprecatedEAPI: version 0.3.3: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.4: uses deprecated EAPI: 3
-
-net-mail/vpopmail
-  BadInsIntoDir: version 5.4.16: ebuild uses insinto /etc/cron.hourly on line 167
-  DeprecatedEAPI: version 5.4.16: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 5.4.30-r1: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 5.4.30-r2: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 5.4.33: uses deprecated EAPI: 4
-
-net-mail/vqadmin
-  DeprecatedEAPI: version 2.3.6: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.3.7: uses deprecated EAPI: 0
-
-net-mail/yosucker
-  DeprecatedEAPI: version 73: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 75: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 77: uses deprecated EAPI: 0
+net-wireless/wireless-tools
+  DeprecatedEAPI: version 30_pre9: uses deprecated EAPI: 4
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch

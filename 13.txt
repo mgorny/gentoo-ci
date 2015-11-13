@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 13 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'media-plugins/*' 'virtual/*' 'app-i18n/*' 'sys-auth/*' 'xfce-extra/*' 'gnome-base/*' 'dev-tcltk/*' 'dev-lua/*' 'dev-go/*' 'mate-extra/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'media-plugins/*' 'virtual/*' 'app-i18n/*' 'dev-qt/*' 'xfce-extra/*' 'gnome-base/*' 'dev-tcltk/*' 'dev-lua/*' 'dev-go/*' 'mate-extra/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1239,163 +1239,65 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-sys-auth/bioapi
-  DeprecatedEAPI: version 1.2.3-r2: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 1.2.4: uses deprecated EAPI: 4
+dev-qt/assistant
+  DroppedKeywordWarning: version 5.4.2: keywords dropped: alpha, ia64, ppc, sparc
 
-sys-auth/fingerprint-gui
-  WhitespaceFound: version 1.07: ebuild has leading whitespace on line 90
+dev-qt/designer
+  DroppedKeywordWarning: version 5.4.2: keywords dropped: alpha, ia64, mips, ppc, sparc
 
-sys-auth/consolekit
-  DroppedKeywordWarning: version 1.0.0: keywords dropped: arm64, ia64, mips, ppc, s390, sh, sparc
+dev-qt/linguist
+  DroppedKeywordWarning: version 5.4.2: keywords dropped: alpha, ia64, mips, ppc, sparc
 
-sys-auth/fprint_demo
-  DeprecatedEAPI: version 0.4: uses deprecated EAPI: 3
+dev-qt/pixeltool
+  DroppedKeywordWarning: version 5.4.2: keywords dropped: alpha, ia64, ppc, sparc
 
-sys-auth/fprintd
-  DeprecatedEAPI: version 0.2.0-r1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.4.1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.5.0: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.5.1: uses deprecated EAPI: 4
+dev-qt/qdbusviewer
+  DroppedKeywordWarning: version 5.4.2: keywords dropped: alpha, ia64, mips, ppc, sparc
 
-sys-auth/icmpdn
-  DeprecatedEAPI: version 0.4: uses deprecated EAPI: 0
+dev-qt/qt-creator
+  DroppedKeywordWarning: version 3.4.2: keywords dropped: ppc
 
-sys-auth/keystone
-  DeprecatedEclass: version 2015.1.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DeprecatedEclass: version 2015.2.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+dev-qt/qtcore
+  DroppedKeywordWarning: version 5.4.2: keywords dropped: alpha, ia64, mips, ppc, sparc
 
-sys-auth/libfprint
-  DeprecatedEAPI: version 0.4.0: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.5.0-r1: uses deprecated EAPI: 4
-  DroppedKeywordWarning: version 0.5.0-r1: keywords dropped: arm, sparc
+dev-qt/qtdbus
+  DroppedKeywordWarning: version 5.4.2: keywords dropped: alpha, ia64, mips, ppc, sparc
 
-sys-auth/libnss-cache
-  DeprecatedEAPI: version 0.1-r1: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.10.1: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 0.10.2: uses deprecated EAPI: 3
+dev-qt/qtdeclarative
+  DroppedKeywordWarning: version 5.4.2-r1: keywords dropped: alpha, ia64, ppc, sparc
 
-sys-auth/libnss-mysql
-  DeprecatedEAPI: version 1.5_p20060915-r2: uses deprecated EAPI: 2
+dev-qt/qtgui
+  DroppedKeywordWarning: version 5.4.2-r1: keywords dropped: alpha, ia64, mips, ppc, sparc
 
-sys-auth/libnss-pgsql
-  DeprecatedEAPI: version 1.4.0: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.5.0_beta: uses deprecated EAPI: 0
+dev-qt/qthelp
+  DroppedKeywordWarning: version 5.4.2: keywords dropped: alpha, ia64, ppc, sparc
 
-sys-auth/munge
-  DeprecatedEAPI: version 0.5.10-r1: uses deprecated EAPI: 4
+dev-qt/qtmultimedia
+  DroppedKeywordWarning: version 5.4.2-r1: keywords dropped: ia64, ppc
 
-sys-auth/nss-myhostname
-  DeprecatedEAPI: version 0.3: uses deprecated EAPI: 4
+dev-qt/qtopengl
+  DroppedKeywordWarning: version 5.4.2: keywords dropped: alpha, ia64, mips, ppc, sparc
 
-sys-auth/nss-pam-ldapd
-  DroppedKeywordWarning: version 0.9.6: keywords dropped: amd64, x86
+dev-qt/qtscript
+  DroppedKeywordWarning: version 5.4.2-r1: keywords dropped: alpha, ia64, mips, ppc, sparc
 
-sys-auth/nss_ldap
-  DeprecatedEAPI: version 258: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 259: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 261: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 262: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 264: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 264-r1: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 265: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 265-r1: uses deprecated EAPI: 2
+dev-qt/qtsql
+  DroppedKeywordWarning: version 5.4.2: keywords dropped: alpha, ia64, mips, ppc, sparc
 
-sys-auth/pam-afs-session
-  DeprecatedEAPI: version 1.3: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.5: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.6: uses deprecated EAPI: 0
+dev-qt/qtsvg
+  DroppedKeywordWarning: version 5.4.2: keywords dropped: alpha, ia64, mips, ppc, sparc
 
-sys-auth/pam-csync
-  DeprecatedEAPI: version 0.42.0-r1: uses deprecated EAPI: 4
+dev-qt/qttest
+  DroppedKeywordWarning: version 5.4.2: keywords dropped: alpha, ia64, mips, ppc, sparc
 
-sys-auth/pam-pgsql
-  DeprecatedEAPI: version 0.7.3: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.7.3.1: uses deprecated EAPI: 2
+dev-qt/qttranslations
+  DroppedKeywordWarning: version 5.4.2: keywords dropped: alpha, ia64, mips, ppc, sparc
 
-sys-auth/pam_abl
-  DeprecatedEAPI: version 0.4.1: uses deprecated EAPI: 2
+dev-qt/qtwebkit
+  DroppedKeywordWarning: version 4.10.4: keywords dropped: arm, ia64, mips, ppc, ppc64, x86
 
-sys-auth/pam_bioapi
-  DeprecatedEAPI: version 0.4.0: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.4.0-r1: uses deprecated EAPI: 0
-
-sys-auth/pam_blue
-  DeprecatedEAPI: version 0.9.0: uses deprecated EAPI: 0
-
-sys-auth/pam_chroot
-  DeprecatedEAPI: version 0.9.2: uses deprecated EAPI: 0
-
-sys-auth/pam_dotfile
-  DeprecatedEAPI: version 0.7-r1: uses deprecated EAPI: 0
-
-sys-auth/pam_fprint
-  DeprecatedEAPI: version 0.2-r1: uses deprecated EAPI: 3
-
-sys-auth/pam_keystore
-  DeprecatedEAPI: version 0.1.3: uses deprecated EAPI: 0
-
-sys-auth/pam_krb5
-  DeprecatedEAPI: version 4.6: uses deprecated EAPI: 4
-
-sys-auth/pam_ldap
-  DeprecatedEAPI: version 183: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 184: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 186: uses deprecated EAPI: 0
-
-sys-auth/pam_mktemp
-  DeprecatedEAPI: version 1.1.1: uses deprecated EAPI: 4
-
-sys-auth/pam_mount
-  DeprecatedEAPI: version 2.14: uses deprecated EAPI: 4
-
-sys-auth/pam_mysql
-  DeprecatedEAPI: version 0.7_rc1-r4: uses deprecated EAPI: 2
-
-sys-auth/pam_p11
-  DeprecatedEAPI: version 0.1.5-r1: uses deprecated EAPI: 2
-
-sys-auth/pam_passwdqc
-  DeprecatedEAPI: version 1.0.4: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.0.5: uses deprecated EAPI: 0
-
-sys-auth/pam_pkcs11
-  DeprecatedEAPI: version 0.6.8: uses deprecated EAPI: 4
-
-sys-auth/pam_require
-  DeprecatedEAPI: version 0.7: uses deprecated EAPI: 0
-
-sys-auth/pam_smb
-  DeprecatedEAPI: version 2.0.0_rc6-r1: uses deprecated EAPI: 0
-
-sys-auth/pam_ssh
-  DeprecatedEAPI: version 1.97-r1: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 1.97-r2: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 1.97-r3: uses deprecated EAPI: 2
-
-sys-auth/pam_ssh_agent_auth
-  DeprecatedEAPI: version 0.9.2: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.9.3: uses deprecated EAPI: 4
-
-sys-auth/pambase
-  NonExistentDeps: version 20101024-r2: depset rdepends: nonexistent atoms [ sys-netbsd/netbsd-pam-modules ]
-  DeprecatedEAPI: version 20101024-r2: uses deprecated EAPI: 4
-  NonExistentDeps: version 20120417-r3: depset rdepends: nonexistent atoms [ sys-netbsd/netbsd-pam-modules ]
-  NonExistentDeps: version 20140313: depset rdepends: nonexistent atoms [ sys-netbsd/netbsd-pam-modules ]
-  NonExistentDeps: version 20150213: depset rdepends: nonexistent atoms [ sys-netbsd/netbsd-pam-modules ]
-
-sys-auth/realtime-base
-  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 3
-
-sys-auth/sssd
-  NonExistentDeps: version 1.9.6-r3: depset rdepends: nonexistent atoms [ <=sys-libs/glibc-2.16.9999 ]
-  NonExistentDeps: version 1.9.7: depset rdepends: nonexistent atoms [ <=sys-libs/glibc-2.16.9999 ]
-
-sys-auth/tfm-fingerprint
-  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
-
-sys-auth/thinkfinger
-  DeprecatedEAPI: version 0.3-r3: uses deprecated EAPI: 4
+dev-qt/qtxmlpatterns
+  DroppedKeywordWarning: version 5.4.2: keywords dropped: alpha, ia64, mips, ppc, sparc
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
@@ -1439,115 +1341,4 @@ dev-tcltk/expect-lite
   DeprecatedEAPI: version 4.1.2: uses deprecated EAPI: 0
   DeprecatedEAPI: version 4.2.0: uses deprecated EAPI: 0
   DeprecatedEAPI: version 4.2.1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.2.2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.3.0: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.3.1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.3.2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.3.3: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.4.0: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.4.1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.5.0: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.6.0: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.6.1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.6.2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.7.2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.8.0: uses deprecated EAPI: 4
-
-dev-tcltk/iwidgets
-  DeprecatedEAPI: version 4.0.1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.0.1-r3: uses deprecated EAPI: 4
-
-dev-tcltk/mysqltcl
-  DeprecatedEAPI: version 3.05: uses deprecated EAPI: 4
-
-dev-tcltk/scwoop
-  DeprecatedEAPI: version 4.1: uses deprecated EAPI: 0
-
-dev-tcltk/snack
-  DeprecatedEclass: version 2.2.10-r5: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 2.2.10-r5: uses deprecated EAPI: 4
-
-dev-tcltk/tcllib
-  DroppedKeywordWarning: version 1.16: keywords dropped: ia64, ppc64, s390, sparc
-  SizeViolation: "files/tcllib-1.15-XSS-vuln.patch" exceeds 20k in size; 29465 bytes total
-
-dev-tcltk/tkTheme
-  DeprecatedEAPI: version 1.0-r2: uses deprecated EAPI: 4
-
-dev-tcltk/tkXwin
-  DeprecatedEAPI: version 1.0-r3: uses deprecated EAPI: 4
-
-dev-tcltk/tkcon
-  DeprecatedEAPI: version 2.5: uses deprecated EAPI: 0
-
-dev-tcltk/tkdnd
-  DeprecatedEAPI: version 2.2: uses deprecated EAPI: 4
-
-dev-tcltk/tkpiechart
-  DeprecatedEAPI: version 6.5-r1: uses deprecated EAPI: 0
-
-dev-tcltk/tktable
-  DeprecatedEAPI: version 2.10: uses deprecated EAPI: 2
-
-dev-tcltk/tktreectrl
-  DeprecatedEAPI: version 2.2.9: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 2.2.10: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 2.4.1: uses deprecated EAPI: 4
-
-dev-tcltk/togl
-  DeprecatedEAPI: version 2.0-r2: uses deprecated EAPI: 4
-
-dev-tcltk/vtcl
-  DeprecatedEAPI: version 1.6.0-r1: uses deprecated EAPI: 0
-WARNING pkgcore: metadata.dtd cannot be opened from
-               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
-               : refetch
-WARNING pkgcore: metadata.dtd cannot be opened from
-               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
-               : refetch
-
-dev-lua/lgi
-  DeprecatedEAPI: version 0.6.2: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.6.2-r1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.7.2: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.9.0: uses deprecated EAPI: 4
-
-dev-lua/luadoc
-  DeprecatedEAPI: version 3.0.1: uses deprecated EAPI: 0
-
-dev-lua/luaexpat
-  DeprecatedEAPI: version 1.3.0: uses deprecated EAPI: 4
-  DroppedKeywordWarning: version 1.3.0: keywords dropped: mips
-
-dev-lua/luafilesystem
-  DroppedKeywordWarning: version 1.6.2: keywords dropped: sparc
-
-dev-lua/luarocks
-  DeprecatedEAPI: version 2.0.7.1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 2.0.8: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 2.0.12: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 2.2.0: uses deprecated EAPI: 4
-
-dev-lua/luasec
-  DeprecatedEAPI: version 0.4.1: uses deprecated EAPI: 2
-
-dev-lua/luasocket
-  DeprecatedEAPI: version 2.0.2: uses deprecated EAPI: 2
-
-dev-lua/luvit
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-dev-lua/toluapp
-  DeprecatedEAPI: version 1.0.93: uses deprecated EAPI: 2
-WARNING pkgcore: metadata.dtd cannot be opened from
-               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
-               : refetch
-WARNING pkgcore: metadata.dtd cannot be opened from
-               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
-               : refetch
-WARNING pkgcore: metadata.dtd cannot be opened from
-               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
-               : refetch
-WARNING pkgcore: metadata.dtd cannot be opened from
-               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
-               : refetch
+  DeprecatedE/bin/sh: line 1: 26281 Killed                  bash /home/mgorny/git/travis-repo-checks/run-pkgcheck.bash 13 16

@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 8 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-ros/*' 'dev-lang/*' 'sys-libs/*' 'app-editors/*' 'net-p2p/*' 'app-shells/*' 'net-print/*' 'sys-firmware/*' 'lxde-base/*' 'java-virtuals/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-ros/*' 'dev-lang/*' 'sys-libs/*' 'sci-mathematics/*' 'net-p2p/*' 'app-shells/*' 'net-print/*' 'sys-firmware/*' 'lxde-base/*' 'java-virtuals/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -226,9 +226,6 @@ dev-lang/pasm
   DeprecatedEAPI: version 1.7: uses deprecated EAPI: 0
 
 dev-lang/python
-  NonExistentDeps: version 2.7.9-r1: depset depends: nonexistent atoms [ sys-libs/db:5.2, sys-libs/db:5.0 ]
-  NonExistentDeps: version 2.7.9-r1: depset rdepends: nonexistent atoms [ sys-libs/db:5.2, sys-libs/db:5.0 ]
-  DeprecatedEAPI: version 2.7.9-r1: uses deprecated EAPI: 4
   NonExistentDeps: version 2.7.10: depset depends: nonexistent atoms [ sys-libs/db:5.2, sys-libs/db:5.0 ]
   NonExistentDeps: version 2.7.10: depset rdepends: nonexistent atoms [ sys-libs/db:5.2, sys-libs/db:5.0 ]
   DeprecatedEAPI: version 2.7.10: uses deprecated EAPI: 4
@@ -239,7 +236,6 @@ dev-lang/python
   NonExistentDeps: version 2.7.10-r3: depset rdepends: nonexistent atoms [ sys-libs/db:5.2, sys-libs/db:5.0 ]
   DeprecatedEAPI: version 3.3.5-r1: uses deprecated EAPI: 4
   DeprecatedEAPI: version 3.3.5-r2: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 3.4.1: uses deprecated EAPI: 4
   DeprecatedEAPI: version 3.4.3: uses deprecated EAPI: 4
   DeprecatedEAPI: version 3.4.3-r2: uses deprecated EAPI: 4
 
@@ -634,143 +630,171 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-app-editors/aee
-  DeprecatedEAPI: version 2.2.15b: uses deprecated EAPI: 4
+sci-mathematics/axiom
+  DeprecatedEAPI: version 200805: uses deprecated EAPI: 4
 
-app-editors/amyedit
-  DeprecatedEAPI: version 1.0-r2: uses deprecated EAPI: 3
+sci-mathematics/cado-nfs
+  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 2.0: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 2.1: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 2.1.1: uses deprecated EAPI: 4
 
-app-editors/bvi
-  DeprecatedEAPI: version 1.3.2-r2: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.4.0_alpha: uses deprecated EAPI: 4
+sci-mathematics/calc
+  DeprecatedEAPI: version 2.12.1.5: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.12.2.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.12.4.3: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 2.12.4.4: uses deprecated EAPI: 4
 
-app-editors/cooledit
-  DeprecatedEAPI: version 3.17.17-r1: uses deprecated EAPI: 0
+sci-mathematics/diagrtb
+  DeprecatedEAPI: version 2.64: uses deprecated EAPI: 4
 
-app-editors/dhex
-  DeprecatedEAPI: version 0.68: uses deprecated EAPI: 4
+sci-mathematics/drgeo
+  NonExistentDeps: version 1.1.0: depset depends: nonexistent atoms [ =dev-scheme/guile-1.6* ]
+  NonExistentDeps: version 1.1.0: depset rdepends: nonexistent atoms [ =dev-scheme/guile-1.6* ]
+  DeprecatedEAPI: version 1.1.0: uses deprecated EAPI: 4
 
-app-editors/editra
-  DeprecatedEclass: version 0.7.20: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  NonExistentDeps: version 0.7.20: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
-  NonExistentDeps: version 0.7.20: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+sci-mathematics/factmsieve
+  NonExistentDeps: version 76: depset rdepends: nonexistent atoms [ dev-lang/python:2.6 ]
+  DeprecatedEAPI: version 76: uses deprecated EAPI: 4
 
-app-editors/ee
-  DeprecatedEAPI: version 1.4.6: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.5.2: uses deprecated EAPI: 4
+sci-mathematics/fann
+  DeprecatedEclass: version 2.1.0_beta-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 2.1.0_beta-r1: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 2.2.0: uses deprecated EAPI: 4
 
-app-editors/emact
-  DeprecatedEAPI: version 2.56.0: uses deprecated EAPI: 4
+sci-mathematics/flint
+  DroppedKeywordWarning: version 2.4.5: keywords dropped: ppc
 
-app-editors/ersatz-emacs
-  DeprecatedEAPI: version 20060515: uses deprecated EAPI: 4
+sci-mathematics/frobby
+  DeprecatedEAPI: version 0.9.0-r1: uses deprecated EAPI: 4
 
-app-editors/fe
-  DeprecatedEAPI: version 1.8: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.9: uses deprecated EAPI: 4
+sci-mathematics/gfan
+  DeprecatedEAPI: version 0.5: uses deprecated EAPI: 3
 
-app-editors/fte
-  DeprecatedEAPI: version 20051115-r3: uses deprecated EAPI: 4
+sci-mathematics/gimps
+  DeprecatedEAPI: version 28.7: uses deprecated EAPI: 4
 
-app-editors/gobby
-  DeprecatedEAPI: version 0.4.13: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.4.94: uses deprecated EAPI: 2
-  DroppedKeywordWarning: version 0.4.94: keywords dropped: ppc
+sci-mathematics/ginac
+  DeprecatedEAPI: version 1.5.8: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 1.6.1: uses deprecated EAPI: 4
 
-app-editors/gummi
-  DeprecatedEAPI: version 0.6.5: uses deprecated EAPI: 4
+sci-mathematics/glpk
+  DeprecatedEAPI: version 4.45: uses deprecated EAPI: 2
+  DroppedKeywordWarning: version 4.54: keywords dropped: alpha
 
-app-editors/gvim
-  NonExistentDeps: version 7.4.273: depset depends: nonexistent atoms [ dev-lang/ruby:1.8 ]
-  NonExistentDeps: version 7.4.273: depset rdepends: nonexistent atoms [ dev-lang/ruby:1.8 ]
+sci-mathematics/gmm
+  DeprecatedEAPI: version 4.2: uses deprecated EAPI: 4
 
-app-editors/jasspa-microemacs
-  DeprecatedEAPI: version 20091011-r2: uses deprecated EAPI: 4
+sci-mathematics/gmp-ecm
+  DeprecatedEAPI: version 6.4.3-r5: uses deprecated EAPI: 4
 
-app-editors/jed
-  DeprecatedEAPI: version 0.99.19: uses deprecated EAPI: 4
+sci-mathematics/gsl-shell
+  DeprecatedEAPI: version 2.2.0: uses deprecated EAPI: 4
 
-app-editors/jedit
-  DroppedKeywordWarning: version 5.2.0: keywords dropped: ppc64
+sci-mathematics/gwnum
+  DeprecatedEAPI: version 277: uses deprecated EAPI: 4
 
-app-editors/joe
-  DeprecatedEAPI: version 3.7-r2: uses deprecated EAPI: 3
+sci-mathematics/isabelle
+  DeprecatedEAPI: version 2011.1: uses deprecated EAPI: 4
 
-app-editors/jove
-  DeprecatedEAPI: version 4.16.0.73: uses deprecated EAPI: 4
+sci-mathematics/lpsolve
+  DeprecatedEAPI: version 5.5.2.0: uses deprecated EAPI: 4
 
-app-editors/jupp
-  DeprecatedEAPI: version 3.1_p23: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 3.1_p24: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 3.1_p26: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 3.1_p27: uses deprecated EAPI: 4
+sci-mathematics/lybniz
+  DeprecatedEclass: version 1.3.2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.3.2: uses deprecated EAPI: 3
 
-app-editors/le
-  DeprecatedEAPI: version 1.14.3: uses deprecated EAPI: 0
+sci-mathematics/mathomatic
+  DeprecatedEAPI: version 15.8.5: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 16.0.1: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 16.0.5: uses deprecated EAPI: 4
 
-app-editors/lfhex
-  DeprecatedEAPI: version 0.42: uses deprecated EAPI: 4
+sci-mathematics/minisat
+  DeprecatedEAPI: version 2.1.0: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 2.2.0-r3: uses deprecated EAPI: 2
 
-app-editors/mg
-  DeprecatedEAPI: version 20110905-r1: uses deprecated EAPI: 4
+sci-mathematics/nestedsums
+  DeprecatedEAPI: version 1.4.12-r1: uses deprecated EAPI: 3
 
-app-editors/mp
-  DeprecatedEAPI: version 5.2.2: uses deprecated EAPI: 4
+sci-mathematics/num-utils
+  DeprecatedEAPI: version 0.3: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.5-r1: uses deprecated EAPI: 4
 
-app-editors/nano
-  DeprecatedEAPI: version 2.3.6: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 2.4.0: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 2.4.1: uses deprecated EAPI: 4
+sci-mathematics/nusmv
+  DeprecatedEAPI: version 2.3.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.5.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.5.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.5.3: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.5.4: uses deprecated EAPI: 0
 
-app-editors/ng
-  DeprecatedEAPI: version 1.5_beta1: uses deprecated EAPI: 0
+sci-mathematics/octave
+  DroppedKeywordWarning: version 3.8.1: keywords dropped: arm
 
-app-editors/nvi
-  DeprecatedEAPI: version 1.81.6-r4: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.81.6-r5: uses deprecated EAPI: 4
+sci-mathematics/octave-epstk
+  DeprecatedEAPI: version 2.3: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 2.4: uses deprecated EAPI: 4
 
-app-editors/qwriter
-  DeprecatedEAPI: version 0.1.9: uses deprecated EAPI: 2
+sci-mathematics/otter
+  DeprecatedEAPI: version 3.3-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 3.3-r2: uses deprecated EAPI: 4
 
-app-editors/shed
-  DeprecatedEAPI: version 1.12: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.13: uses deprecated EAPI: 4
+sci-mathematics/pari
+  DeprecatedEAPI: version 2.3.5: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 2.5.0-r3: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 2.5.1: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 2.5.1-r1: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 2.5.2: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 2.5.3: uses deprecated EAPI: 4
+  SizeViolation: "files/pari-2.5.4-polred.patch" exceeds 20k in size; 23409 bytes total
 
-app-editors/uemacs-pk
-  DeprecatedEAPI: version 4.0.15_p20130222: uses deprecated EAPI: 4
+sci-mathematics/pari-data
+  DeprecatedEAPI: version 20120726: uses deprecated EAPI: 4
 
-app-editors/vim
-  NonExistentDeps: version 7.4.273: depset depends: nonexistent atoms [ dev-lang/ruby:1.8 ]
-  NonExistentDeps: version 7.4.273: depset rdepends: nonexistent atoms [ dev-lang/ruby:1.8 ]
+sci-mathematics/prng
+  DeprecatedEAPI: version 3.0.2: uses deprecated EAPI: 4
 
-app-editors/wily
-  DeprecatedEAPI: version 1.0-r1: uses deprecated EAPI: 0
+sci-mathematics/pymc
+  DeprecatedEclass: version 2.2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 2.2: uses deprecated EAPI: 4
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), git-2 (migrate to git-r3), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
 
-app-editors/wxhexeditor
-  DeprecatedEAPI: version 0.20: uses deprecated EAPI: 4
+sci-mathematics/qtoctave
+  NonExistentDeps: version 0.10.1-r1: depset depends: nonexistent atoms [ <dev-qt/qtgui-4.8.5:4 ]
+  NonExistentDeps: version 0.10.1-r1: depset rdepends: nonexistent atoms [ <dev-qt/qtgui-4.8.5:4 ]
 
-app-editors/xemacs
-  WhitespaceFound: version 21.4.22-r4: ebuild has trailing whitespace on line 183
-  WhitespaceFound: version 21.4.24: ebuild has trailing whitespace on line 166
-  DeprecatedEAPI: version 21.5.31: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 21.5.33: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 21.5.34-r2: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 21.5.34-r3: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 21.5.34-r4: uses deprecated EAPI: 4
+sci-mathematics/relational
+  DeprecatedEclass: version 0.11: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.11: uses deprecated EAPI: 3
 
-app-editors/xmlcopyeditor
-  DeprecatedEAPI: version 1.2.0.6: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.2.0.9: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.2.0.12: uses deprecated EAPI: 4
+sci-mathematics/rngstreams
+  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 4
 
-app-editors/yudit
-  DeprecatedEAPI: version 2.9.2: uses deprecated EAPI: 4
+sci-mathematics/snns
+  MetadataError: version 4.2-r8: attr(fetchables): error- Metadata Exception: pkg ebuild src: sci-mathematics/snns-4.2-r8, attr fetchables
+error: http://www-ra.informatik.uni-tuebingen.de/downloads/SNNS/SNNSv4.2.tar.gz mirror://berlios/snns-dev/snns-4.2-20040227.patch.gz doc? ( http://www-ra.informatik.uni-tuebingen.de/downloads/SNNS/SNNSv4.2.Manual.pdf ) python? ( mirror://berlios/snns-dev/PySNNS-20040605.tar.gz mirror://berlios/snns-dev/PythonFunctionSupport-20050210.patch.gz ) is unparseable
+flagged token- uri mirror://berlios/snns-dev/snns-4.2-20040227.patch.gz isn't a known mirror tier
+  DeprecatedEclass: version 4.2-r8: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 4.2-r8: uses deprecated EAPI: 3
+  DeprecatedEclass: version 4.2-r9: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 4.2-r9: uses deprecated EAPI: 3
 
-app-editors/zile
-  DeprecatedEAPI: version 2.3.24-r1: uses deprecated EAPI: 4
+sci-mathematics/spin
+  DeprecatedEAPI: version 6.2.1: uses deprecated EAPI: 4
 
-app-editors/znotes
-  DeprecatedEAPI: version 0.4.5: uses deprecated EAPI: 4
+sci-mathematics/topcom
+  DeprecatedEAPI: version 0.17.4-r1: uses deprecated EAPI: 4
+
+sci-mathematics/unuran
+  DeprecatedEAPI: version 1.8.1: uses deprecated EAPI: 4
+
+sci-mathematics/xmds
+  DeprecatedEAPI: version 1.6.5: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.6.6: uses deprecated EAPI: 0
+
+sci-mathematics/yacas
+  DeprecatedEAPI: version 1.3.2: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.3.3: uses deprecated EAPI: 4
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch

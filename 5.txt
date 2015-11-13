@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 5 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-libs/*' 'net-libs/*' 'dev-ml/*' 'net-wireless/*' 'kde-frameworks/*' 'net-irc/*' 'app-eselect/*' 'app-accessibility/*' 'sci-astronomy/*' 'net-news/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-libs/*' 'net-libs/*' 'dev-ml/*' 'sci-chemistry/*' 'sys-block/*' 'net-irc/*' 'app-eselect/*' 'app-accessibility/*' 'sci-astronomy/*' 'net-news/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1296,153 +1296,414 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-net-wireless/adm8211
-  DeprecatedEAPI: version 20060111: uses deprecated EAPI: 0
+sci-chemistry/PyMca
+  DeprecatedEclass: version 4.6.2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-net-wireless/airsnort
-  DeprecatedEAPI: version 0.2.7e: uses deprecated EAPI: 0
+sci-chemistry/acpype
+  DeprecatedEclass: version 366: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 366: uses deprecated EAPI: 3
+  DeprecatedEclass: version 374: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 374: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  NonExistentDeps: version 374: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  DeprecatedEAPI: version 374: uses deprecated EAPI: 4
 
-net-wireless/ap-utils
+sci-chemistry/ambertools
+  DeprecatedEAPI: version 1.5-r1: uses deprecated EAPI: 4
+  MissingChksum: version 1.5-r1: "AmberTools-1.5.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.5-r1: "ambertools-1.5-bugfix_1-10.patch.xz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-chemistry/aqua
+  DeprecatedEAPI: version 3.2-r2: uses deprecated EAPI: 4
+  MissingChksum: version 3.2-r2: "aqua-3.2-nmr_manual.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-chemistry/avogadro
+  DroppedKeywordWarning: version 1.1.0: keywords dropped: ppc
+
+sci-chemistry/azara
+  DeprecatedEclass: version 2.8-r4: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 2.8-r4: uses deprecated EAPI: 3
+
+sci-chemistry/chemical-mime-data
+  DeprecatedEAPI: version 0.1.94: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.1.94-r1: uses deprecated EAPI: 2
+
+sci-chemistry/chemtool
+  DeprecatedEAPI: version 1.6.13: uses deprecated EAPI: 4
+
+sci-chemistry/clashlist
+  DeprecatedEAPI: version 3.17-r1: uses deprecated EAPI: 4
+
+sci-chemistry/cluster
+  DeprecatedEAPI: version 1.3.081231: uses deprecated EAPI: 4
+
+sci-chemistry/elem
+  DeprecatedEAPI: version 1.0.3-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0.3-r2: uses deprecated EAPI: 0
+
+sci-chemistry/gamess
+  DeprecatedEAPI: version 20110811.1: uses deprecated EAPI: 4
+  MissingChksum: version 20110811.1: "gamess-20110811.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 20110811.1: "tinker.tar.Z" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-chemistry/gelemental
+  DeprecatedEAPI: version 1.2.0: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.2.0-r1: uses deprecated EAPI: 4
+
+sci-chemistry/ghemical
+  DeprecatedEAPI: version 2.99.2-r2: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.0.0: uses deprecated EAPI: 3
+
+sci-chemistry/gopenmol
+  DeprecatedEclass: version 3.00-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 3.00-r2: uses deprecated EAPI: 4
+
+sci-chemistry/gperiodic
+  DeprecatedEAPI: version 2.0.10: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 2.0.10-r2: uses deprecated EAPI: 4
+
+sci-chemistry/ksdssp
+  DeprecatedEAPI: version 040728: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 040728-r1: uses deprecated EAPI: 4
+
+sci-chemistry/mars
+  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 4
+
+sci-chemistry/massxpert
+  DeprecatedEAPI: version 2.0.5: uses deprecated EAPI: 2
+
+sci-chemistry/mead
+  DeprecatedEAPI: version 2.2.7: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.2.7-r1: uses deprecated EAPI: 0
+  MissingChksum: version 2.2.7: "mead-2.2.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-chemistry/mm-align
+  DeprecatedEAPI: version 20120321: uses deprecated EAPI: 4
+
+sci-chemistry/molden
+  DeprecatedEAPI: version 4.8-r2: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 5.0: uses deprecated EAPI: 4
+
+sci-chemistry/moldy
+  DeprecatedEAPI: version 2.16e-r2: uses deprecated EAPI: 4
+
+sci-chemistry/molmol
+  DeprecatedEAPI: version 2k_p2-r2: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 2k_p2-r3: uses deprecated EAPI: 4
+  SizeViolation: "files/wild.patch" exceeds 20k in size; 50572 bytes total
+
+sci-chemistry/mopac7
+  DeprecatedEAPI: version 1.15: uses deprecated EAPI: 4
+
+sci-chemistry/mpqc
+  DeprecatedEAPI: version 2.3.1-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.3.1-r2: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 2.3.1-r3: uses deprecated EAPI: 4
+
+sci-chemistry/msms-bin
+  DeprecatedEAPI: version 2.6.1-r1: uses deprecated EAPI: 4
+  MissingChksum: version 2.6.1-r1: "msms_i86Linux2_2.6.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-chemistry/mustang
+  DeprecatedEAPI: version 3.2.1: uses deprecated EAPI: 4
+
+sci-chemistry/ortep3
+  DeprecatedEAPI: version 1.0.3-r1: uses deprecated EAPI: 4
+
+sci-chemistry/p3d
+  DeprecatedEclass: version 0.4.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.4.3: uses deprecated EAPI: 3
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), git-2 (migrate to git-r3), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
+
+sci-chemistry/pdbcat
+  DeprecatedEAPI: version 1.3: uses deprecated EAPI: 4
+
+sci-chemistry/pdbcns
+  DeprecatedEAPI: version 2.0.010504: uses deprecated EAPI: 4
+
+sci-chemistry/pdbmat
+  DeprecatedEAPI: version 3.89: uses deprecated EAPI: 4
+
+sci-chemistry/povscript+
+  DeprecatedEAPI: version 2.1.2.2.19: uses deprecated EAPI: 4
+
+sci-chemistry/prekin
+  DeprecatedEAPI: version 6.51.081122-r1: uses deprecated EAPI: 2
+
+sci-chemistry/probe
+  DeprecatedEAPI: version 2.13.110909: uses deprecated EAPI: 4
+
+sci-chemistry/procheck
+  DeprecatedEAPI: version 3.5.4-r1: uses deprecated EAPI: 4
+  MissingChksum: version 3.5.4-r1: "procheck-3.5.4-manual.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-chemistry/psi
+  DeprecatedEAPI: version 3.4.0-r2: uses deprecated EAPI: 4
+
+sci-chemistry/pymol-apbs-plugin
+  DeprecatedEclass: version 0_p15: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0_p15: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0_p18: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0_p18: uses deprecated EAPI: 3
+  DeprecatedEclass: version 2.1_p24: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 2.1_p24: uses deprecated EAPI: 3
+
+sci-chemistry/pymol-plugins-bni-tools
+  DeprecatedEclass: version 0.25.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.25.1: uses deprecated EAPI: 3
+
+sci-chemistry/pymol-plugins-dssp
+  DeprecatedEclass: version 110430: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 110430: uses deprecated EAPI: 3
+
+sci-chemistry/pymol-plugins-emovie
+  DeprecatedEclass: version 1.0.4: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.0.4: uses deprecated EAPI: 3
+
+sci-chemistry/pymol-plugins-msms
+  DeprecatedEclass: version 100415: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 100415: uses deprecated EAPI: 3
+
+sci-chemistry/raster3d
+  DeprecatedEAPI: version 3.0.2: uses deprecated EAPI: 4
+
+sci-chemistry/reduce
+  DeprecatedEAPI: version 3.13.080428-r1: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.14.080821: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 3.16.111118: uses deprecated EAPI: 4
+
+sci-chemistry/suitename
+  DeprecatedEAPI: version 0.3.070628: uses deprecated EAPI: 4
+
+sci-chemistry/surf
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 4
+
+sci-chemistry/threeV
+  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 3
+
+sci-chemistry/viewmol
+  DeprecatedEclass: version 2.4.1-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 2.4.1-r2: uses deprecated EAPI: 3
+
+sci-chemistry/votca-csg
+  NonExistentDeps: version 1.2.2: depset depends: nonexistent atoms [ <app-doc/doxygen-1.7.6.1 ]
+  DeprecatedEAPI: version 1.2.2: uses deprecated EAPI: 4
+  NonExistentDeps: version 1.2.4-r1: depset depends: nonexistent atoms [ <app-doc/doxygen-1.7.6.1 ]
+
+sci-chemistry/votca-csgapps
+  DeprecatedEAPI: version 1.2.2: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.2.4: uses deprecated EAPI: 4
+
+sci-chemistry/xyza2pipe
+  DeprecatedEAPI: version 20101129: uses deprecated EAPI: 3
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+
+sys-block/afacli
+  DeprecatedEAPI: version 4.1: uses deprecated EAPI: 0
+
+sys-block/aoetools
+  DeprecatedEAPI: version 35: uses deprecated EAPI: 4
+
+sys-block/btrace
+  DeprecatedEAPI: version 1.0.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0.1-r1: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 2
+
+sys-block/buffer
+  DeprecatedEAPI: version 1.19-r2: uses deprecated EAPI: 4
+
+sys-block/dellmgr
+  DeprecatedEAPI: version 5.32-r1: uses deprecated EAPI: 0
+
+sys-block/devio
+  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 0
+
+sys-block/di
+  DeprecatedEAPI: version 4.35: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 4.36: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 4.37: uses deprecated EAPI: 4
+
+sys-block/disktype
+  DeprecatedEAPI: version 9: uses deprecated EAPI: 4
+
+sys-block/eject
+  DeprecatedEAPI: version 2.1.5-r2: uses deprecated EAPI: 3
+
+sys-block/eject-bsd
+  DeprecatedEAPI: version 1.5: uses deprecated EAPI: 0
+
+sys-block/endpoint
+  DeprecatedEAPI: version 0.1.0: uses deprecated EAPI: 0
+
+sys-block/fio
+  DeprecatedEAPI: version 1.17.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.99.10: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 2.0.14-r1: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 2.0.15: uses deprecated EAPI: 4
+
+sys-block/fwdl
+  DeprecatedEAPI: version 1.2.3: uses deprecated EAPI: 4
+
+sys-block/gpart
+  DeprecatedEAPI: version 0.1h-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.1h-r2: uses deprecated EAPI: 0
+
+sys-block/iscsitarget
+  DeprecatedEAPI: version 0.4.17: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.4.19: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.4.20.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.4.20.2_p20130103: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.4.20.2_p20130821: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
+
+sys-block/lio-utils
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), git-2 (migrate to git-r3), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
+
+sys-block/mbuffer
+  DeprecatedEAPI: version 20090113: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 20110724: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 20130220: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 20140126: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 20150412: uses deprecated EAPI: 4
+
+sys-block/megacli
+  DeprecatedEAPI: version 8.02.21: uses deprecated EAPI: 4
+  MissingChksum: version 8.02.21: "8.02.21_MegaCLI.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sys-block/megactl
+  DeprecatedEAPI: version 0.4.1-r1: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.4.1-r2: uses deprecated EAPI: 2
+
+sys-block/megamgr
+  DeprecatedEAPI: version 5.20-r2: uses deprecated EAPI: 3
+  MissingChksum: version 5.20-r2: "ut_linux_mgr_5.20.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sys-block/megarc
+  DeprecatedEAPI: version 1.11-r1: uses deprecated EAPI: 3
+
+sys-block/mtx
+  DeprecatedEAPI: version 1.2.18: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.3.12: uses deprecated EAPI: 0
+
+sys-block/nbd
+  DeprecatedEAPI: version 3.11: uses deprecated EAPI: 4
+
+sys-block/noflushd
+  DeprecatedEAPI: version 2.7.3: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.7.4: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.7.5: uses deprecated EAPI: 0
+
+sys-block/nwutil
   DeprecatedEAPI: version 1.4: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.8: uses deprecated EAPI: 0
 
-net-wireless/b43-fwcutter
-  DeprecatedEAPI: version 018: uses deprecated EAPI: 0
+sys-block/open-iscsi
+  DeprecatedEAPI: version 2.0.872-r2: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 2.0.872-r3: uses deprecated EAPI: 2
 
-net-wireless/bcm43xx-fwcutter
-  MetadataError: version 005: attr(fetchables): error- Metadata Exception: pkg ebuild src: net-wireless/bcm43xx-fwcutter-005, attr fetchables
-error: mirror://berlios/bcm43xx/bcm43xx-fwcutter-005.tar.bz2 is unparseable: uri mirror://berlios/bcm43xx/bcm43xx-fwcutter-005.tar.bz2 isn't a known mirror tier
-flagged token- mirror://berlios/bcm43xx/bcm43xx-fwcutter-005.tar.bz2
-  DeprecatedEAPI: version 005: uses deprecated EAPI: 0
-  MetadataError: version 006: attr(fetchables): error- Metadata Exception: pkg ebuild src: net-wireless/bcm43xx-fwcutter-006, attr fetchables
-error: mirror://berlios/bcm43xx/bcm43xx-fwcutter-006.tar.bz2 is unparseable: uri mirror://berlios/bcm43xx/bcm43xx-fwcutter-006.tar.bz2 isn't a known mirror tier
-flagged token- mirror://berlios/bcm43xx/bcm43xx-fwcutter-006.tar.bz2
-  DeprecatedEAPI: version 006: uses deprecated EAPI: 0
+sys-block/parted
+  DeprecatedEAPI: version 3.1-r1: uses deprecated EAPI: 4
 
-net-wireless/bss
-  DeprecatedEAPI: version 0.8: uses deprecated EAPI: 2
+sys-block/partimage
+  DeprecatedEAPI: version 0.6.8: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 0.6.9: uses deprecated EAPI: 4
 
-net-wireless/chillispot
-  DeprecatedEAPI: version 1.1.0: uses deprecated EAPI: 0
+sys-block/qla-fc-firmware
+  DeprecatedEAPI: version 20071207-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 20080423: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 20101015: uses deprecated EAPI: 0
 
-net-wireless/cpyrit-cuda
-  DeprecatedEclass: version 0.4.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  NonExistentDeps: version 0.4.0: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
-  NonExistentDeps: version 0.4.0: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
-  DeprecatedEAPI: version 0.4.0: uses deprecated EAPI: 4
+sys-block/rts5229
+  DeprecatedEAPI: version 1.07-r6: uses deprecated EAPI: 4
 
-net-wireless/cpyrit-opencl
-  DeprecatedEclass: version 0.4.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  NonExistentDeps: version 0.4.0: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
-  NonExistentDeps: version 0.4.0: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
-  DeprecatedEAPI: version 0.4.0: uses deprecated EAPI: 4
+sys-block/rts_pstor
+  DeprecatedEAPI: version 1.10-r5: uses deprecated EAPI: 4
 
-net-wireless/crda
-  DeprecatedEclass: version 1.1.2-r3: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 1.1.2-r3: uses deprecated EAPI: 4
-  DeprecatedEclass: version 1.1.2-r4: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 1.1.2-r4: uses deprecated EAPI: 4
-  DeprecatedEclass: version 1.1.3: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 1.1.3: uses deprecated EAPI: 4
+sys-block/rtsadmin
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), git-2 (migrate to git-r3), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
 
-net-wireless/gobi_loader
-  DeprecatedEAPI: version 0.7-r2: uses deprecated EAPI: 2
+sys-block/scsiadd
+  DeprecatedEAPI: version 1.97: uses deprecated EAPI: 2
 
-net-wireless/gr-iqbal
-  DeprecatedEclass: version 0.36.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+sys-block/scsiping
+  DeprecatedEAPI: version 0.0.1: uses deprecated EAPI: 0
 
-net-wireless/hackrf-tools
+sys-block/scsirastools
+  DeprecatedEAPI: version 1.5.4: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.5.6: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.5.7: uses deprecated EAPI: 0
+
+sys-block/seekwatcher
+  DeprecatedEAPI: version 0.6: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.9: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.12: uses deprecated EAPI: 0
+  DeprecatedEclass: version 0.12_p20091015: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.12_p20091015: uses deprecated EAPI: 4
+
+sys-block/smp_utils
+  DeprecatedEAPI: version 0.97: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.98: uses deprecated EAPI: 4
+
+sys-block/spindown
+  DeprecatedEAPI: version 0.4.0-r4: uses deprecated EAPI: 0
+
+sys-block/tapecat
+  DeprecatedEAPI: version 1.0.0: uses deprecated EAPI: 0
+
+sys-block/targetcli
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), git-2 (migrate to git-r3), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
+
+sys-block/tgt
+  DeprecatedEAPI: version 1.0.19: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.0.22: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.0.24-r1: uses deprecated EAPI: 4
+
+sys-block/thin-provisioning-tools
+  NonExistentDeps: version 0.2.8-r1: depset depends: nonexistent atoms [ dev-lang/ruby:1.8, dev-lang/ruby:2.3, dev-lang/ruby:2.6, dev-lang/ruby:2.7, dev-lang/ruby:2.4, dev-lang/ruby:2.5, dev-lang/ruby:2.8, dev-lang/ruby:2.9 ]
+  NonExistentDeps: version 0.3.2-r1: depset depends: nonexistent atoms [ dev-lang/ruby:1.8, dev-lang/ruby:2.3, dev-lang/ruby:2.6, dev-lang/ruby:2.7, dev-lang/ruby:2.4, dev-lang/ruby:2.5, dev-lang/ruby:2.8, dev-lang/ruby:2.9 ]
+  NonExistentDeps: version 0.4.0: depset depends: nonexistent atoms [ dev-lang/ruby:1.8, dev-lang/ruby:2.3, dev-lang/ruby:2.6, dev-lang/ruby:2.7, dev-lang/ruby:2.4, dev-lang/ruby:2.5, dev-lang/ruby:2.8, dev-lang/ruby:2.9 ]
+  NonExistentDeps: version 0.4.1: depset depends: nonexistent atoms [ dev-lang/ruby:1.8, dev-lang/ruby:2.3, dev-lang/ruby:2.6, dev-lang/ruby:2.7, dev-lang/ruby:2.4, dev-lang/ruby:2.5, dev-lang/ruby:2.8, dev-lang/ruby:2.9 ]
+  NonExistentDeps: version 0.5.3: depset depends: nonexistent atoms [ dev-lang/ruby:2.3, dev-lang/ruby:2.6, dev-lang/ruby:2.7, dev-lang/ruby:2.4, dev-lang/ruby:2.5, dev-lang/ruby:2.8, dev-lang/ruby:2.9 ]
+
+sys-block/tw_cli
+  DeprecatedEAPI: version 9.2.1.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.3.0.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.3.0.3: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.3.0.4: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.4.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.4.0.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.4.1.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.4.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.5.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.5.0.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.5.1.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.5.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.5.3: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 10.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 10.2: uses deprecated EAPI: 2
+
+sys-block/vblade
+  DeprecatedEAPI: version 19: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 20: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 21: uses deprecated EAPI: 4
+
+sys-block/viaideinfo
+  DeprecatedEAPI: version 0.5: uses deprecated EAPI: 0
+
+sys-block/whdd
+  DeprecatedEAPI: version 2.1: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 2.2: uses deprecated EAPI: 4
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-net-wireless/hidclient
-  DeprecatedEAPI: version 20120728: uses deprecated EAPI: 4
-
-net-wireless/hostap-utils
-  DeprecatedEAPI: version 0.4.7-r1: uses deprecated EAPI: 4
-
-net-wireless/hostapd
-  DeprecatedEAPI: version 2.4-r2: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 2.4-r3: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 2.5: uses deprecated EAPI: 4
-
-net-wireless/kismet
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-net-wireless/madwifi-ng
-  DeprecatedEAPI: version 0.9.3.3: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.9.4: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.9.4-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.9.4.4119.20100201: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.9.4.4133.20100621: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.9.4.4165.20110816: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.9.4.4180.20120502: uses deprecated EAPI: 2
-
-net-wireless/madwifi-ng-tools
-  DeprecatedEAPI: version 0.9.3.3: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.9.4: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.9.4.4119.20100201: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.9.4.4133.20100621: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.9.4.4165.20110816: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.9.4.4180.20120502: uses deprecated EAPI: 2
-
-net-wireless/ndiswrapper
-  DeprecatedEAPI: version 1.59: uses deprecated EAPI: 4
-
-net-wireless/neard
-  DeprecatedEAPI: version 0.11: uses deprecated EAPI: 4
-
-net-wireless/openbsc
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-net-wireless/openggsn
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-net-wireless/orinoco-fwutils
-  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.3: uses deprecated EAPI: 0
-
-net-wireless/orinoco-usb
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 0
-
-net-wireless/osmobts
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-net-wireless/osmocom-bb
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-net-wireless/python-wifi
-  MetadataError: version 0.5.0-r1: attr(fetchables): error- Metadata Exception: pkg ebuild src: net-wireless/python-wifi-0.5.0-r1, attr fetchables
-error: mirror://berlios/pythonwifi/python-wifi-0.5.0.tar.bz2 is unparseable
-flagged token- uri mirror://berlios/pythonwifi/python-wifi-0.5.0.tar.bz2 isn't a known mirror tier
-  DeprecatedEclass: version 0.5.0-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.5.0-r1: uses deprecated EAPI: 3
-
-net-wireless/reaver
-  DeprecatedEAPI: version 1.4: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.4-r1: uses deprecated EAPI: 4
-
-net-wireless/rfswitch
-  DeprecatedEAPI: version 1.3: uses deprecated EAPI: 0
-
-net-wireless/spectools
-  DeprecatedEAPI: version 2011.08.1-r2: uses deprecated EAPI: 4
-
-net-wireless/wepdecrypt
-  DeprecatedEAPI: version 0.8-r2: uses deprecated EAPI: 4
-
-net-wireless/wireless-tools
-  DeprecatedEAPI: version 30_pre9: uses deprecated EAPI: 4
-WARNING pkgcore: metadata.dtd cannot be opened from
-               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
-               : refetch
-WARNING pkgcore: metadata.dtd cannot be opened from
-               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
-               : refetch
-
-kde-frameworks/kwallet
-  NonExistentDeps: version 5.14.0: depset depends: nonexistent atoms [ >=kde-apps/gpgmepp-14.12.0 ]
-  NonExistentDeps: version 5.14.0: depset rdepends: nonexistent atoms [ >=kde-apps/gpgmepp-14.12.0 ]
-  NonExistentDeps: version 5.15.0: depset depends: nonexistent atoms [ >=kde-apps/gpgmepp-14.12.0 ]
-  NonExistentDeps: version 5.15.0: depset rdepends: nonexistent atoms [ >=kde-apps/gpgmepp-14.12.0 ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
