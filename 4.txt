@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 4 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-ruby/*' 'app-misc/*' 'app-leechcraft/*' 'app-xemacs/*' 'games-fps/*' 'ros-meta/*' 'kde-plasma/*' 'sci-visualization/*' 'x11-proto/*' 'sci-misc/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-ruby/*' 'app-misc/*' 'app-leechcraft/*' 'app-xemacs/*' 'games-fps/*' 'ros-meta/*' 'kde-plasma/*' 'app-forensics/*' 'x11-proto/*' 'sci-misc/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1880,64 +1880,77 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-sci-visualization/circos
-  DeprecatedEAPI: version 0.55: uses deprecated EAPI: 4
+app-forensics/afflib
+  DeprecatedEclass: version 3.7.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 3.7.1: uses deprecated EAPI: 4
 
-sci-visualization/epix
-  DeprecatedEAPI: version 1.2.10: uses deprecated EAPI: 4
+app-forensics/aide
+  DeprecatedEAPI: version 0.13.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.13.1-r3: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.13.1-r5: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.14.2: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 0.15.1: uses deprecated EAPI: 3
 
-sci-visualization/extrema
-  DeprecatedEAPI: version 4.4.5: uses deprecated EAPI: 4
+app-forensics/air
+  DeprecatedEAPI: version 2.0.0-r1: uses deprecated EAPI: 4
 
-sci-visualization/fig2sxd
-  DeprecatedEAPI: version 0.21: uses deprecated EAPI: 4
+app-forensics/autopsy
+  DeprecatedEAPI: version 2.24-r1: uses deprecated EAPI: 4
 
-sci-visualization/gcalc
-  DeprecatedEAPI: version 3.1_rc1: uses deprecated EAPI: 4
+app-forensics/chkrootkit
+  DeprecatedEAPI: version 0.48-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.49: uses deprecated EAPI: 4
 
-sci-visualization/ggobi
-  DeprecatedEAPI: version 2.1.8: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 2.1.9-r1: uses deprecated EAPI: 4
+app-forensics/cmospwd
+  DeprecatedEAPI: version 5.1: uses deprecated EAPI: 4
 
-sci-visualization/grace
-  DeprecatedEAPI: version 5.1.22-r2: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 5.1.22-r3: uses deprecated EAPI: 4
+app-forensics/examiner
+  DeprecatedEAPI: version 0.5-r2: uses deprecated EAPI: 4
 
-sci-visualization/gri
-  DeprecatedEAPI: version 2.12.19: uses deprecated EAPI: 2
+app-forensics/foremost
+  DeprecatedEAPI: version 0.69: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.5.7-r1: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.5.7-r2: uses deprecated EAPI: 4
 
-sci-visualization/opendx
-  DeprecatedEAPI: version 4.4.4-r4: uses deprecated EAPI: 4
+app-forensics/galleta
+  DeprecatedEAPI: version 20040505_p1: uses deprecated EAPI: 0
 
-sci-visualization/opendx-samples
-  DeprecatedEAPI: version 4.4.0-r1: uses deprecated EAPI: 4
+app-forensics/libbfio
+  DroppedKeywordWarning: version 0.0.20130609_alpha: keywords dropped: hppa
 
-sci-visualization/spectromatic
-  DeprecatedEAPI: version 1.0-r2: uses deprecated EAPI: 4
+app-forensics/mac-robber
+  DeprecatedEAPI: version 1.02: uses deprecated EAPI: 4
 
-sci-visualization/spyview
-  DeprecatedEAPI: version 20111018: uses deprecated EAPI: 4
-  DroppedKeywordWarning: version 20130823: keywords dropped: amd64
+app-forensics/magicrescue
+  DeprecatedEAPI: version 1.1.9: uses deprecated EAPI: 4
 
-sci-visualization/veusz
-  DeprecatedEclass: version 1.11: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 1.11: uses deprecated EAPI: 3
+app-forensics/memdump
+  DeprecatedEAPI: version 1.01: uses deprecated EAPI: 4
 
-sci-visualization/xd3d
-  DeprecatedEAPI: version 8.3.1: uses deprecated EAPI: 4
+app-forensics/openscap
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-sci-visualization/xds-viewer
-  DeprecatedEAPI: version 0.6: uses deprecated EAPI: 4
+app-forensics/ovaldi
+  DeprecatedEAPI: version 5.9.1: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 5.10.1.2: uses deprecated EAPI: 3
 
-sci-visualization/xgraph
-  DeprecatedEAPI: version 12.1-r2: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 12.1-r3: uses deprecated EAPI: 4
+app-forensics/pasco
+  DeprecatedEAPI: version 20040505_p1: uses deprecated EAPI: 0
 
-sci-visualization/xyscan
-  DeprecatedEAPI: version 3.3.1: uses deprecated EAPI: 4
+app-forensics/rifiuti
+  DeprecatedEAPI: version 20040505_p1: uses deprecated EAPI: 0
 
-sci-visualization/zhu3d
-  DeprecatedEAPI: version 4.2.4: uses deprecated EAPI: 4
+app-forensics/rkhunter
+  DeprecatedEAPI: version 1.4.0: uses deprecated EAPI: 4
+
+app-forensics/scalpel
+  DeprecatedEAPI: version 2.0: uses deprecated EAPI: 4
+
+app-forensics/unhide
+  DeprecatedEAPI: version 20121229: uses deprecated EAPI: 4
+
+app-forensics/zzuf
+  DeprecatedEAPI: version 0.13-r1: uses deprecated EAPI: 4
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
