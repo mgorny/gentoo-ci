@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 3 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-haskell/*' 'net-analyzer/*' 'dev-db/*' 'app-arch/*' 'app-portage/*' 'mail-client/*' 'gnome-base/*' 'net-firewall/*' 'dev-games/*' 'dev-ada/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-haskell/*' 'net-analyzer/*' 'dev-db/*' 'app-arch/*' 'app-portage/*' 'mail-client/*' 'kde-plasma/*' 'net-firewall/*' 'dev-games/*' 'dev-ada/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1468,17 +1468,11 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-gnome-base/gnome-light
-  WhitespaceFound: version 3.16.0: ebuild has trailing whitespace on line 54
-
-gnome-base/gnome-session
-  BadInsIntoDir: version 3.14.0-r1: ebuild uses insinto /usr/share/applications on line 102
-  BadInsIntoDir: version 3.14.0-r2: ebuild uses insinto /usr/share/applications on line 102
-  BadInsIntoDir: version 3.16.0: ebuild uses insinto /usr/share/applications on line 99
-
-gnome-base/gvfs
-  NonExistentDeps: version 1.22.4: depset depends: nonexistent atoms [ <dev-libs/libcdio-0.90 ]
-  NonExistentDeps: version 1.22.4: depset rdepends: nonexistent atoms [ <dev-libs/libcdio-0.90 ]
+kde-plasma/plasma-workspace
+  NonExistentDeps: version 5.4.2: depset depends: nonexistent atoms [ media-libs/prison:5 ]
+  NonExistentDeps: version 5.4.2: depset rdepends: nonexistent atoms [ media-libs/prison:5 ]
+  NonExistentDeps: version 5.4.3: depset depends: nonexistent atoms [ media-libs/prison:5 ]
+  NonExistentDeps: version 5.4.3: depset rdepends: nonexistent atoms [ media-libs/prison:5 ]
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
