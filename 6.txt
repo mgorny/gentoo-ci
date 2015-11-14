@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 6 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-java/*' 'media-video/*' 'media-fonts/*' 'net-wireless/*' 'games-arcade/*' 'dev-cpp/*' 'net-dialup/*' 'net-nds/*' 'perl-core/*' 'games-simulation/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-java/*' 'media-video/*' 'media-fonts/*' 'net-wireless/*' 'games-arcade/*' 'dev-cpp/*' 'games-strategy/*' 'net-nds/*' 'perl-core/*' 'games-simulation/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -2445,95 +2445,31 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-net-dialup/capidivert
-  DeprecatedEAPI: version 0.0.2: uses deprecated EAPI: 0
+games-strategy/attal
+  DeprecatedEAPI: version 0.10.1: uses deprecated EAPI: 2
 
-net-dialup/capifwd
-  DeprecatedEAPI: version 0.6.3-r1: uses deprecated EAPI: 0
+games-strategy/coldwar
+  MissingChksum: version 1.0.1-r1: "coldwar-1.0-1.0.1-x86.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-dialup/dgcmodem
-  DeprecatedEAPI: version 1.10: uses deprecated EAPI: 0
+games-strategy/ja2-stracciatella
+  DeprecatedEAPI: version 0.12.1_p7072: uses deprecated EAPI: 4
 
-net-dialup/dial
-  DeprecatedEAPI: version 1.2-r1: uses deprecated EAPI: 2
+games-strategy/ja2-stracciatella-data
+  DeprecatedEAPI: version 1: uses deprecated EAPI: 4
 
-net-dialup/diald
-  DeprecatedEAPI: version 1.0-r2: uses deprecated EAPI: 0
+games-strategy/openra
+  DeprecatedEclass: version 20120630-r1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 20120630-r1: uses deprecated EAPI: 4
 
-net-dialup/drdsl
-  DeprecatedEAPI: version 1.2.0: uses deprecated EAPI: 0
+games-strategy/revenge-of-the-titans
+  MissingChksum: version 1.80.12: "revenge-of-the-titans-1.80.12-amd64.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.80.12: "revenge-of-the-titans-1.80.12-i386.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-dialup/dwun
-  DeprecatedEAPI: version 0.96e-r2: uses deprecated EAPI: 2
+games-strategy/spaz
+  DeprecatedEAPI: version 1.605: uses deprecated EAPI: 4
 
-net-dialup/freeradius
-  DroppedKeywordWarning: version 3.0.3: keywords dropped: amd64, ppc, ppc64, sparc, x86
-
-net-dialup/globespan-adsl
-  DeprecatedEAPI: version 0.11-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.12: uses deprecated EAPI: 0
-
-net-dialup/hcfpcimodem
-  DeprecatedEAPI: version 1.20: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.21: uses deprecated EAPI: 2
-
-net-dialup/itund
-  DeprecatedEAPI: version 0.3.1: uses deprecated EAPI: 0
-
-net-dialup/linux-atm
-  DeprecatedEAPI: version 2.5.0: uses deprecated EAPI: 0
-
-net-dialup/lrzsz
-  DeprecatedEAPI: version 0.12.20-r3: uses deprecated EAPI: 2
-
-net-dialup/mingetty
-  DeprecatedEAPI: version 1.08: uses deprecated EAPI: 0
-
-net-dialup/minicom
-  DeprecatedEAPI: version 2.6: uses deprecated EAPI: 4
-
-net-dialup/mwavem
-  DeprecatedEAPI: version 2.0-r1: uses deprecated EAPI: 2
-
-net-dialup/neocon
-  DeprecatedEAPI: version 20110228: uses deprecated EAPI: 4
-
-net-dialup/picocom
-  DeprecatedEAPI: version 1.7: uses deprecated EAPI: 4
-
-net-dialup/ppp
-  DeprecatedEAPI: version 2.4.4-r25: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 2.4.5-r3: uses deprecated EAPI: 4
-
-net-dialup/pppconfig
-  DeprecatedEAPI: version 2.3.17-r1: uses deprecated EAPI: 0
-
-net-dialup/qtwvdialer
-  DeprecatedEAPI: version 0.4.4_p20091228: uses deprecated EAPI: 2
-
-net-dialup/radiusclient
-  DeprecatedEAPI: version 0.3.2: uses deprecated EAPI: 0
-
-net-dialup/rp-pppoe
-  DeprecatedEAPI: version 3.8-r2: uses deprecated EAPI: 0
-
-net-dialup/speedtouch-usb
-  DeprecatedEAPI: version 3.0.1.2-r3: uses deprecated EAPI: 0
-
-net-dialup/tkvoice
-  DeprecatedEAPI: version 1.5: uses deprecated EAPI: 4
-
-net-dialup/ueagle-atm
-  DeprecatedEAPI: version 1.1-r3: uses deprecated EAPI: 2
-
-net-dialup/ueagle4-atm
-  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 2
-
-net-dialup/wvdial
-  DeprecatedEAPI: version 1.61: uses deprecated EAPI: 3
-
-net-dialup/xl2tpd
-  DeprecatedEAPI: version 1.3.1-r2: uses deprecated EAPI: 4
+games-strategy/wargus-data
+  DeprecatedEAPI: version 0: uses deprecated EAPI: 4
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
