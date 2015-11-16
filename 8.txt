@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 8 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-ros/*' 'dev-lang/*' 'sci-biology/*' 'sci-mathematics/*' 'net-p2p/*' 'app-shells/*' 'net-print/*' 'sys-firmware/*' 'lxde-base/*' 'java-virtuals/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-ros/*' 'kde-apps/*' 'sci-biology/*' 'sci-mathematics/*' 'net-p2p/*' 'app-shells/*' 'net-print/*' 'sys-firmware/*' 'lxde-base/*' 'java-virtuals/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -24,304 +24,263 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-dev-lang/bas
-  DeprecatedEAPI: version 2.4: uses deprecated EAPI: 4
+kde-apps/amor
+  DroppedKeywordWarning: version 15.08.1: keywords dropped: arm, ppc, ppc64
 
-dev-lang/bashforth
-  DeprecatedEAPI: version 0.58a: uses deprecated EAPI: 4
+kde-apps/attica
+  DroppedKeywordWarning: version 15.08.1: keywords dropped: arm, ppc, ppc64
 
-dev-lang/bff
-  DeprecatedEAPI: version 1.0.3.1: uses deprecated EAPI: 0
+kde-apps/audiocd-kio
+  DroppedKeywordWarning: version 15.08.1: keywords dropped: arm, ppc, ppc64
 
-dev-lang/c-intercal
-  DeprecatedEAPI: version 29.0: uses deprecated EAPI: 4
+kde-apps/baloo-widgets
+  DroppedKeywordWarning: version 15.08.1: keywords dropped: arm, ppc, ppc64
 
-dev-lang/cfortran
-  DeprecatedEAPI: version 4.4-r2: uses deprecated EAPI: 0
+kde-apps/dolphin
+  NonExistentDeps: version 15.08.1: depset rdepends: nonexistent atoms [ >=kde-apps/thumbnailers-5.9999:5, >=kde-apps/ffmpegthumbs-5.9999:5 ]
+  NonExistentDeps: version 15.08.2: depset rdepends: nonexistent atoms [ >=kde-apps/thumbnailers-5.9999:5, >=kde-apps/ffmpegthumbs-5.9999:5 ]
+  DroppedKeywordWarning: version 15.08.1: keywords dropped: arm, ppc, ppc64
 
-dev-lang/cll1h
-  DeprecatedEAPI: version 0.6-r1: uses deprecated EAPI: 4
+kde-apps/dragon
+  DroppedKeywordWarning: version 15.08.1: keywords dropped: arm, ppc, ppc64
 
-dev-lang/closure-compiler-bin
-  DeprecatedEAPI: version 20120305: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 20121212: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 20130227: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 20130411: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 20150126: uses deprecated EAPI: 4
+kde-apps/drkonqi
+  DroppedKeywordWarning: version 15.08.1: keywords dropped: arm, ppc, ppc64
 
-dev-lang/confluence
-  DeprecatedEAPI: version 0.10.6: uses deprecated EAPI: 2
+kde-apps/ffmpegthumbs
+  DroppedKeywordWarning: version 15.08.1: keywords dropped: arm, ppc, ppc64
 
-dev-lang/crystal
-  MissingChksum: version 0.7.7: "crystal-0.7.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 0.7.7: "crystal-0.7.7-1-linux-x86_64.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 0.7.7: "crystal-0.7.7-1-linux-i686.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 0.8.0: "crystal-0.8.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 0.8.0: "crystal-0.8.0-1-linux-x86_64.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 0.8.0: "crystal-0.8.0-1-linux-i686.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+kde-apps/juk
+  DroppedKeywordWarning: version 15.08.1: keywords dropped: arm, ppc, ppc64
 
-dev-lang/dmd-bin
-  DeprecatedEAPI: version 1.016: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.008-r1: uses deprecated EAPI: 0
+kde-apps/kate
+  DroppedKeywordWarning: version 15.08.1: keywords dropped: arm, ppc, ppc64
 
-dev-lang/epic
-  DeprecatedEAPI: version 0.9.2: uses deprecated EAPI: 4
+kde-apps/kcmshell
+  DroppedKeywordWarning: version 15.08.1: keywords dropped: arm, ppc, ppc64
 
-dev-lang/erlang
-  DeprecatedEAPI: version 15.2.3.1: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 17.3: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 17.5: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 18.0: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 18.0-r1: uses deprecated EAPI: 4
-
-dev-lang/execline
-  WhitespaceFound: version 2.1.1.0: ebuild has leading whitespace on lines 37, 38, 39, 40, 41, 42, 43
-
-dev-lang/f2c
-  DeprecatedEAPI: version 20060507: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 20100827: uses deprecated EAPI: 4
-
-dev-lang/falcon
-  DeprecatedEAPI: version 0.9.6.4: uses deprecated EAPI: 2
-
-dev-lang/ferite
-  DeprecatedEAPI: version 1.1.17-r1: uses deprecated EAPI: 4
-
-dev-lang/ghc
-  DroppedKeywordWarning: version 7.10.2: keywords dropped: alpha, ia64, ppc, ppc64, sparc
-
-dev-lang/gnat-gcc
-  DroppedKeywordWarning: version 4.4.7: keywords dropped: ppc
-
-dev-lang/gnat-gpl
-  DeprecatedEAPI: version 3.4.5.2005: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 3.4.6.2006-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.1.3.2007: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.1.3.2008-r2: uses deprecated EAPI: 0
-
-dev-lang/gnu-smalltalk
-  DeprecatedEAPI: version 3.2.4: uses deprecated EAPI: 3
-
-dev-lang/gprolog
-  DeprecatedEAPI: version 1.4.4: uses deprecated EAPI: 4
-
-dev-lang/gwydion-dylan-bin
-  DeprecatedEAPI: version 2.4.0-r1: uses deprecated EAPI: 0
-
-dev-lang/helium
-  DeprecatedEAPI: version 1.6: uses deprecated EAPI: 0
-  DroppedKeywordWarning: version 1.8.1: keywords dropped: ppc
-
-dev-lang/icc
-  DeprecatedEAPI: version 13.0.0.079: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 13.0.1.117: uses deprecated EAPI: 4
-
-dev-lang/icon
-  DeprecatedEAPI: version 9.4.3-r5: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 9.5.0: uses deprecated EAPI: 4
-
-dev-lang/idb
-  DeprecatedEAPI: version 13.0.0.079: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 13.0.1.117-r1: uses deprecated EAPI: 4
-
-dev-lang/ifc
-  DeprecatedEAPI: version 13.0.0.079-r1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 13.0.1.117: uses deprecated EAPI: 4
-
-dev-lang/interprolog
-  DeprecatedEAPI: version 2.1.2: uses deprecated EAPI: 0
-
-dev-lang/io
-  DeprecatedEAPI: version 2011.09.12-r2: uses deprecated EAPI: 4
-
-dev-lang/j
-  DeprecatedEAPI: version 701-r2: uses deprecated EAPI: 4
-
-dev-lang/jimtcl
-  DeprecatedEAPI: version 0.70_pre20110317: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.73: uses deprecated EAPI: 4
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-dev-lang/lisaac
-  DeprecatedEAPI: version 0.13.1-r2: uses deprecated EAPI: 4
-
-dev-lang/logtalk
-  DeprecatedEAPI: version 2.41.0: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.42.2: uses deprecated EAPI: 0
-
-dev-lang/lua
-  DeprecatedEAPI: version 5.1.4-r8: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 5.1.5: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 5.1.5-r1: uses deprecated EAPI: 4
-
-dev-lang/luajit
-  DeprecatedEAPI: version 1.1.6: uses deprecated EAPI: 2
-
-dev-lang/mercury
-  DeprecatedEAPI: version 11.01: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 11.07: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 11.07.1: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 11.07.2: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 13.05: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 13.05.1: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 13.05.2: uses deprecated EAPI: 2
-
-dev-lang/mercury-extras
-  DeprecatedEAPI: version 11.01: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 11.07: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 11.07.1: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 11.07.2: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 13.05: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 13.05.1: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 13.05.2: uses deprecated EAPI: 2
-
-dev-lang/mono
-  DeprecatedEclass: version 2.10.9-r2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DeprecatedEAPI: version 2.10.9-r2: uses deprecated EAPI: 4
-
-dev-lang/mono-basic
-  DeprecatedEclass: version 2.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DeprecatedEAPI: version 2.10: uses deprecated EAPI: 2
-
-dev-lang/mozart-stdlib
-  DeprecatedEAPI: version 1.4.0-r1: uses deprecated EAPI: 2
-
-dev-lang/niecza
-  DeprecatedEAPI: version 19: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 21: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 22: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 24: uses deprecated EAPI: 4
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
-
-dev-lang/niecza-bin
-  DeprecatedEAPI: version 20: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 21: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 22: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 24: uses deprecated EAPI: 4
-
-dev-lang/nqc
-  DeprecatedEAPI: version 3.1_p6: uses deprecated EAPI: 4
-
-dev-lang/ocaml
-  DeprecatedEAPI: version 3.12.1: uses deprecated EAPI: 1
-
-dev-lang/open-cobol
-  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 0
-
-dev-lang/opendylan
-  DeprecatedEAPI: version 2013.1-r1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 2013.2: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 2014.1: uses deprecated EAPI: 4
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
-
-dev-lang/opendylan-bin
-  DeprecatedEAPI: version 2011.1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 2012.1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 2013.1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 2013.2: uses deprecated EAPI: 4
-
-dev-lang/pasm
-  DeprecatedEAPI: version 1.7: uses deprecated EAPI: 0
-
-dev-lang/python
-  NonExistentDeps: version 2.7.10: depset depends: nonexistent atoms [ sys-libs/db:5.2, sys-libs/db:5.0 ]
-  NonExistentDeps: version 2.7.10: depset rdepends: nonexistent atoms [ sys-libs/db:5.2, sys-libs/db:5.0 ]
-  DeprecatedEAPI: version 2.7.10: uses deprecated EAPI: 4
-  NonExistentDeps: version 2.7.10-r2: depset depends: nonexistent atoms [ sys-libs/db:5.2, sys-libs/db:5.0 ]
-  NonExistentDeps: version 2.7.10-r2: depset rdepends: nonexistent atoms [ sys-libs/db:5.2, sys-libs/db:5.0 ]
-  DeprecatedEAPI: version 2.7.10-r2: uses deprecated EAPI: 4
-  NonExistentDeps: version 2.7.10-r3: depset depends: nonexistent atoms [ sys-libs/db:5.2, sys-libs/db:5.0 ]
-  NonExistentDeps: version 2.7.10-r3: depset rdepends: nonexistent atoms [ sys-libs/db:5.2, sys-libs/db:5.0 ]
-  DeprecatedEAPI: version 3.3.5-r1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 3.3.5-r2: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 3.4.3: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 3.4.3-r2: uses deprecated EAPI: 4
-
-dev-lang/qu-prolog
-  DeprecatedEAPI: version 9.1: uses deprecated EAPI: 2
-
-dev-lang/rebol
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
-
-dev-lang/rebol-bin
-  DeprecatedEAPI: version 3_pre111: uses deprecated EAPI: 4
-
-dev-lang/regina-rexx
-  DeprecatedEAPI: version 3.6-r2: uses deprecated EAPI: 4
-
-dev-lang/ruby
-  DeprecatedEAPI: version 1.9.3_p551-r1: uses deprecated EAPI: 4
-
-dev-lang/rust
-  BadInsIntoDir: version 1.2.0: ebuild uses insinto /etc/env.d on line 107
-  BadInsIntoDir: version 1.3.0: ebuild uses insinto /etc/env.d on line 105
-
-dev-lang/rust-bin
-  BadInsIntoDir: version 1.2.0: ebuild uses insinto /etc/env.d on line 68
-  BadInsIntoDir: version 1.3.0: ebuild uses insinto /etc/env.d on line 68
-
-dev-lang/smlnj
-  DeprecatedEAPI: version 110.75: uses deprecated EAPI: 4
-
-dev-lang/snobol
-  DeprecatedEAPI: version 0.99.4: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.99.44: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 4
-
-dev-lang/spidermonkey
-  DeprecatedEAPI: version 1.7.0: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.7.0-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.7.0-r2: uses deprecated EAPI: 0
-  DroppedKeywordWarning: version 17.0.0-r4: keywords dropped: arm64
-
-dev-lang/squirrel
-  DeprecatedEAPI: version 2.2.4-r1: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 2.2.4-r2: uses deprecated EAPI: 3
-
-dev-lang/swi-prolog
-  DeprecatedEAPI: version 6.6.6: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 7.2.2: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 7.2.3: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 7.3.9: uses deprecated EAPI: 4
-
-dev-lang/swig
-  DeprecatedEAPI: version 1.3.40-r2: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 2.0.9: uses deprecated EAPI: 4
-
-dev-lang/tcc
-  WhitespaceFound: version 0.9.26-r1: ebuild has leading whitespace on lines 43, 44, 45, 46, 47, 48
-
-dev-lang/tinycobol
-  DeprecatedEAPI: version 0.65.9: uses deprecated EAPI: 0
-
-dev-lang/tuprolog
-  DeprecatedEAPI: version 2.4.0_rc5: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 2.5.0: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 2.6.0: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 2.7.0: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 2.7.2: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 2.9.0: uses deprecated EAPI: 3
-  DroppedKeywordWarning: version 2.6.0: keywords dropped: ppc
-
-dev-lang/ucblogo
-  DeprecatedEAPI: version 5.5: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 5.5-r1: uses deprecated EAPI: 0
-
-dev-lang/xsb
-  DeprecatedEAPI: version 3.3.6: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 3.3.7: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 3.5.0: uses deprecated EAPI: 2
-
-dev-lang/yap
-  DeprecatedEAPI: version 6.2.2: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 6.3.2: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 6.3.3: uses deprecated EAPI: 2
-
-dev-lang/yasm
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+kde-apps/kcontrol
+  DroppedKeywordWarning: version 15.08.1: keywords dropped: arm, ppc, ppc64
+
+kde-apps/kcron
+  DroppedKeywordWarning: version 15.08.1: keywords dropped: arm, ppc, ppc64
+
+kde-apps/kde-base-artwork
+  DroppedKeywordWarning: version 15.08.2: keywords dropped: arm, ppc, ppc64
+
+kde-apps/kde-wallpapers
+  DroppedKeywordWarning: version 15.08.1: keywords dropped: arm, ppc, ppc64
+
+kde-apps/kdeadmin-meta
+  DroppedKeywordWarning: version 15.08.1: keywords dropped: arm, ppc, ppc64
+
+kde-apps/kdebase-data
+  DroppedKeywordWarning: version 15.08.1: keywords dropped: arm, ppc, ppc64
+
+kde-apps/kdebase-desktoptheme
+  DroppedKeywordWarning: version 15.08.1: keywords dropped: arm, ppc, ppc64
+
+kde-apps/kdebase-kioslaves
+  DroppedKeywordWarning: version 15.08.1: keywords dropped: arm, ppc, ppc64
+
+kde-apps/kdebase-menu
+  DroppedKeywordWarning: version 15.08.1: keywords dropped: arm, ppc, ppc64
+
+kde-apps/kdebase-menu-icons
+  DroppedKeywordWarning: version 15.08.1: keywords dropped: arm, ppc, ppc64
+
+kde-apps/kdebase-runtime-meta
+  DroppedKeywordWarning: version 15.08.1: keywords dropped: arm, ppc, ppc64
+
+kde-apps/kdebugdialog
+  DroppedKeywordWarning: version 15.08.1: keywords dropped: arm, ppc, ppc64
+
+kde-apps/kdemultimedia-meta
+  DroppedKeywordWarning: version 15.08.1: keywords dropped: arm, ppc, ppc64
+
+kde-apps/kdenetwork-filesharing
+  DroppedKeywordWarning: version 15.08.2: keywords dropped: arm, ppc, ppc64
+
+kde-apps/kdenlive
+  DroppedKeywordWarning: version 15.08.1: keywords dropped: ppc
+
+kde-apps/kdepasswd
+  DroppedKeywordWarning: version 15.08.2: keywords dropped: arm, ppc, ppc64
+
+kde-apps/kdesu
+  DroppedKeywordWarning: version 15.08.1: keywords dropped: arm, ppc, ppc64
+
+kde-apps/kdetoys-meta
+  DroppedKeywordWarning: version 15.08.1: keywords dropped: arm, ppc, ppc64
+
+kde-apps/kdialog
+  DroppedKeywordWarning: version 15.08.2: keywords dropped: arm, ppc, ppc64
+
+kde-apps/kdontchangethehostname
+  DroppedKeywordWarning: version 15.08.1: keywords dropped: arm, ppc, ppc64
+
+kde-apps/keditbookmarks
+  DroppedKeywordWarning: version 15.08.2: keywords dropped: arm, ppc, ppc64
+
+kde-apps/keditfiletype
+  DroppedKeywordWarning: version 15.08.1: keywords dropped: arm, ppc, ppc64
+
+kde-apps/kfile
+  DroppedKeywordWarning: version 15.08.1: keywords dropped: arm, ppc, ppc64
+
+kde-apps/kfind
+  DroppedKeywordWarning: version 15.08.2: keywords dropped: arm, ppc, ppc64
+
+kde-apps/kfmclient
+  DroppedKeywordWarning: version 15.08.2: keywords dropped: arm, ppc, ppc64
+
+kde-apps/kget
+  NonExistentDeps: version 15.08.2: depset depends: nonexistent atoms [ >=kde-apps/gpgmepp-4.14.3:4 ]
+  NonExistentDeps: version 15.08.2: depset rdepends: nonexistent atoms [ >=kde-apps/gpgmepp-4.14.3:4 ]
+  DroppedKeywordWarning: version 15.08.2: keywords dropped: arm, ppc, ppc64
+
+kde-apps/kglobalaccel
+  DroppedKeywordWarning: version 15.08.1: keywords dropped: arm, ppc, ppc64
+
+kde-apps/kgpg
+  DroppedKeywordWarning: version 15.08.2: keywords dropped: arm, ppc, ppc64
+
+kde-apps/kiconfinder
+  DroppedKeywordWarning: version 15.08.1: keywords dropped: arm, ppc, ppc64
+
+kde-apps/kimgio
+  DroppedKeywordWarning: version 15.08.1: keywords dropped: arm, ppc, ppc64
+
+kde-apps/kioclient
+  DroppedKeywordWarning: version 15.08.1: keywords dropped: arm, ppc, ppc64
+
+kde-apps/kmimetypefinder
+  DroppedKeywordWarning: version 15.08.1: keywords dropped: arm, ppc, ppc64
+
+kde-apps/kmix
+  DroppedKeywordWarning: version 15.08.1: keywords dropped: arm, ppc, ppc64
+
+kde-apps/knetattach
+  DroppedKeywordWarning: version 15.08.1: keywords dropped: arm, ppc, ppc64
+
+kde-apps/knewstuff
+  DroppedKeywordWarning: version 15.08.1: keywords dropped: arm, ppc, ppc64
+
+kde-apps/knotify
+  DroppedKeywordWarning: version 15.08.1: keywords dropped: arm, ppc, ppc64
+
+kde-apps/konq-plugins
+  DroppedKeywordWarning: version 15.08.2: keywords dropped: arm, ppc, ppc64
+
+kde-apps/konqueror
+  DroppedKeywordWarning: version 15.08.2: keywords dropped: arm, ppc, ppc64
+
+kde-apps/konsole
+  DroppedKeywordWarning: version 15.08.2: keywords dropped: arm, ppc, ppc64
+
+kde-apps/kopete
+  DroppedKeywordWarning: version 15.08.2: keywords dropped: arm, ppc, ppc64
+
+kde-apps/kpasswdserver
+  DroppedKeywordWarning: version 15.08.1: keywords dropped: arm, ppc, ppc64
+
+kde-apps/kppp
+  DroppedKeywordWarning: version 15.08.2: keywords dropped: ppc, ppc64
+
+kde-apps/kquitapp
+  DroppedKeywordWarning: version 15.08.1: keywords dropped: arm, ppc, ppc64
+
+kde-apps/krdc
+  DroppedKeywordWarning: version 15.08.2: keywords dropped: arm, ppc, ppc64
+
+kde-apps/kreadconfig
+  DroppedKeywordWarning: version 15.08.1: keywords dropped: arm, ppc, ppc64
+
+kde-apps/krfb
+  DroppedKeywordWarning: version 15.08.2: keywords dropped: arm, ppc, ppc64
+
+kde-apps/kscd
+  DroppedKeywordWarning: version 15.08.1: keywords dropped: arm, ppc, ppc64
+
+kde-apps/kstart
+  DroppedKeywordWarning: version 15.08.1: keywords dropped: arm, ppc, ppc64
+
+kde-apps/ksystemlog
+  DroppedKeywordWarning: version 15.08.1: keywords dropped: arm, ppc, ppc64
+
+kde-apps/ktimezoned
+  DroppedKeywordWarning: version 15.08.1: keywords dropped: arm, ppc, ppc64
+
+kde-apps/ktraderclient
+  DroppedKeywordWarning: version 15.08.1: keywords dropped: arm, ppc, ppc64
+
+kde-apps/ktux
+  DroppedKeywordWarning: version 15.08.1: keywords dropped: arm, ppc, ppc64
+
+kde-apps/kuiserver
+  DroppedKeywordWarning: version 15.08.1: keywords dropped: arm, ppc, ppc64
+
+kde-apps/kurifilter-plugins
+  DroppedKeywordWarning: version 15.08.1: keywords dropped: arm, ppc, ppc64
+
+kde-apps/kuser
+  DroppedKeywordWarning: version 15.08.2: keywords dropped: arm, ppc, ppc64
+
+kde-apps/kwalletd
+  NonExistentDeps: version 15.08.1: depset depends: nonexistent atoms [ >=kde-apps/gpgmepp-4.14.3:4 ]
+  NonExistentDeps: version 15.08.1: depset rdepends: nonexistent atoms [ >=kde-apps/gpgmepp-4.14.3:4 ]
+  NonExistentDeps: version 15.08.2: depset depends: nonexistent atoms [ >=kde-apps/gpgmepp-4.14.3:4 ]
+  NonExistentDeps: version 15.08.2: depset rdepends: nonexistent atoms [ >=kde-apps/gpgmepp-4.14.3:4 ]
+  DroppedKeywordWarning: version 15.08.1: keywords dropped: arm, ppc, ppc64
+  SizeViolation: "files/kwalletd-4.14.3-CVE-2013-7252.patch" exceeds 20k in size; 21806 bytes total
+
+kde-apps/kwrite
+  DroppedKeywordWarning: version 15.08.2: keywords dropped: arm, ppc, ppc64
+
+kde-apps/libkcddb
+  DroppedKeywordWarning: version 15.08.1: keywords dropped: arm, ppc, ppc64
+
+kde-apps/libkcompactdisc
+  DroppedKeywordWarning: version 15.08.1: keywords dropped: arm, ppc, ppc64
+
+kde-apps/libkdcraw
+  DroppedKeywordWarning: version 15.08.2: keywords dropped: arm, ppc, ppc64
+
+kde-apps/libkexiv2
+  DroppedKeywordWarning: version 15.08.2: keywords dropped: arm, ppc, ppc64
+
+kde-apps/libkipi
+  DroppedKeywordWarning: version 15.08.2-r1: keywords dropped: arm, ppc, ppc64
+
+kde-apps/libkonq
+  DroppedKeywordWarning: version 15.08.2: keywords dropped: arm, ppc, ppc64
+
+kde-apps/mplayerthumbs
+  DroppedKeywordWarning: version 15.08.1: keywords dropped: arm, ppc, ppc64
+
+kde-apps/nsplugins
+  DroppedKeywordWarning: version 15.08.2: keywords dropped: arm, ppc, ppc64
+
+kde-apps/pairs
+  DroppedKeywordWarning: version 15.04.3: keywords dropped: arm, ppc, ppc64
+
+kde-apps/phonon-kde
+  DroppedKeywordWarning: version 15.08.1: keywords dropped: arm, ppc, ppc64
+
+kde-apps/plasma-apps
+  DroppedKeywordWarning: version 15.08.2: keywords dropped: arm, ppc, ppc64
+
+kde-apps/plasma-runtime
+  DroppedKeywordWarning: version 15.08.1: keywords dropped: arm, ppc, ppc64
+
+kde-apps/renamedlg-plugins
+  DroppedKeywordWarning: version 15.08.1: keywords dropped: arm, ppc, ppc64
+
+kde-apps/solid-runtime
+  DroppedKeywordWarning: version 15.08.1: keywords dropped: arm, ppc, ppc64
+
+kde-apps/zeroconf-ioslave
+  DroppedKeywordWarning: version 15.08.2: keywords dropped: arm, ppc, ppc64
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
