@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 1 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-python/*' 'media-gfx/*' 'sys-devel/*' 'sys-kernel/*' 'www-client/*' 'net-im/*' 'sci-physics/*' 'sys-power/*' 'media-radio/*' 'games-engines/*' 'games-kids/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-python/*' 'media-gfx/*' 'sys-devel/*' 'sys-kernel/*' 'gnome-extra/*' 'net-im/*' 'sci-physics/*' 'sys-power/*' 'media-radio/*' 'games-engines/*' 'games-kids/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -23,9 +23,9 @@ dev-python/PyQtMobility
 
 dev-python/SchemaObject
   DeprecatedEAPI: version 0.5.3: uses deprecated EAPI: 4
-  DeprecatedEclass: version 0.5.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 0.5.3: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
   NonExistentDeps: version 0.5.3: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 0.5.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/aldryn-bootstrap3
   NoFinalNewline: version 0.5.1: ebuild lacks an ending newline
@@ -157,15 +157,15 @@ dev-python/jsonschema
 
 dev-python/kaa-display
   DeprecatedEAPI: version 0.1.0: uses deprecated EAPI: 3
-  DeprecatedEclass: version 0.1.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 0.1.0: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
   NonExistentDeps: version 0.1.0: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 0.1.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/kaa-imlib2
   DeprecatedEAPI: version 0.2.3-r1: uses deprecated EAPI: 3
-  DeprecatedEclass: version 0.2.3-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 0.2.3-r1: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
   NonExistentDeps: version 0.2.3-r1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 0.2.3-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/kombu
   WhitespaceFound: version 3.0.26: ebuild has trailing whitespace on line 88
@@ -284,9 +284,9 @@ dev-python/pygsl
 
 dev-python/pygtkhelpers
   DeprecatedEAPI: version 0.4.3: uses deprecated EAPI: 3
-  DeprecatedEclass: version 0.4.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 0.4.3: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
   NonExistentDeps: version 0.4.3: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 0.4.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/pyid3lib
   DeprecatedEAPI: version 0.5.1-r1: uses deprecated EAPI: 3
@@ -555,9 +555,9 @@ media-gfx/engauge
 
 media-gfx/exact-image
   DeprecatedEAPI: version 0.8.1-r1: uses deprecated EAPI: 4
-  DeprecatedEclass: version 0.8.1-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 0.8.1-r1: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
   NonExistentDeps: version 0.8.1-r1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 0.8.1-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 media-gfx/exif
   DeprecatedEAPI: version 0.6.21: uses deprecated EAPI: 4
@@ -585,9 +585,9 @@ media-gfx/fontforge
   DeprecatedEclass: version 20120731: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 media-gfx/fontypython
-  DeprecatedEclass: version 0.4.4-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 0.4.4-r1: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
   NonExistentDeps: version 0.4.4-r1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 0.4.4-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 media-gfx/fotowall
   DeprecatedEAPI: version 0.9-r1: uses deprecated EAPI: 2
@@ -628,13 +628,13 @@ media-gfx/gliv
 
 media-gfx/gnofract4d
   DeprecatedEAPI: version 3.13: uses deprecated EAPI: 3
-  DeprecatedEclass: version 3.13: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 3.13: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
   NonExistentDeps: version 3.13: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 3.13: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 3.14: uses deprecated EAPI: 3
-  DeprecatedEclass: version 3.14: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 3.14: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
   NonExistentDeps: version 3.14: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 3.14: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 media-gfx/gnome-raw-thumbnailer
   DeprecatedEAPI: version 3.0.0: uses deprecated EAPI: 4
@@ -745,16 +745,16 @@ media-gfx/mirage
   MetadataError: version 0.9.5.1: attr(fetchables): error- Metadata Exception: pkg ebuild src: media-gfx/mirage-0.9.5.1, attr fetchables
 error: mirror://berlios/mirageiv/mirage-0.9.5.1.tar.bz2 is unparseable
 flagged token- uri mirror://berlios/mirageiv/mirage-0.9.5.1.tar.bz2 isn't a known mirror tier
-  DeprecatedEclass: version 0.9.5.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 0.9.5.1: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
   NonExistentDeps: version 0.9.5.1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 0.9.5.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.9.5.2: uses deprecated EAPI: 3
   MetadataError: version 0.9.5.2: attr(fetchables): error- Metadata Exception: pkg ebuild src: media-gfx/mirage-0.9.5.2, attr fetchables
 error: mirror://berlios/mirageiv/mirage-0.9.5.2.tar.bz2 is unparseable
 flagged token- uri mirror://berlios/mirageiv/mirage-0.9.5.2.tar.bz2 isn't a known mirror tier
-  DeprecatedEclass: version 0.9.5.2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 0.9.5.2: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
   NonExistentDeps: version 0.9.5.2: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 0.9.5.2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   MetadataError: version 0.9.5.2-r1: attr(fetchables): error- Metadata Exception: pkg ebuild src: media-gfx/mirage-0.9.5.2-r1, attr fetchables
 error: mirror://berlios/mirageiv/mirage-0.9.5.2.tar.bz2 is unparseable
 flagged token- uri mirror://berlios/mirageiv/mirage-0.9.5.2.tar.bz2 isn't a known mirror tier
@@ -770,16 +770,16 @@ media-gfx/mscgen
 
 media-gfx/mypaint
   DeprecatedEAPI: version 1.0.0-r1: uses deprecated EAPI: 4
-  DeprecatedEclass: version 1.0.0-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 1.0.0-r1: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
   NonExistentDeps: version 1.0.0-r1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 1.0.0-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 1.1.0: uses deprecated EAPI: 4
-  DeprecatedEclass: version 1.1.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 1.1.0: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
   NonExistentDeps: version 1.1.0: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
-  DeprecatedEclass: version 1.1.0-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 1.1.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 1.1.0-r1: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
   NonExistentDeps: version 1.1.0-r1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 1.1.0-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 media-gfx/nip2
   DeprecatedEAPI: version 7.26.4: uses deprecated EAPI: 2
@@ -1440,58 +1440,47 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-www-client/ck4up
-  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 0
+gnome-extra/assogiate
+  DeprecatedEAPI: version 0.2.1: uses deprecated EAPI: 4
 
-www-client/elinks
-  DeprecatedEAPI: version 0.12_pre6-r1: uses deprecated EAPI: 4
+gnome-extra/avant-window-navigator-extras
+  DeprecatedEAPI: version 0.4.0: uses deprecated EAPI: 4
+  NonExistentDeps: version 0.4.0: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 0.4.0: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 0.4.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-www-client/fetch
-  DeprecatedEAPI: version 1.0-r1: uses deprecated EAPI: 0
+gnome-extra/cameramonitor
+  DeprecatedEclass: version 0.3.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-www-client/jumanji
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+gnome-extra/docky
+  DeprecatedEAPI: version 2.2.0: uses deprecated EAPI: 4
+  DeprecatedEclass: version 2.2.0: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 2.2.1.1: uses deprecated EAPI: 4
 
-www-client/luakit
-  DeprecatedEAPI: version 2012.09.13_p1-r1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+gnome-extra/gnome-dvb-daemon
+  DeprecatedEAPI: version 0.2.10: uses deprecated EAPI: 4
+  NonExistentDeps: version 0.2.10: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  NonExistentDeps: version 0.2.10: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 0.2.10: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-www-client/opera
-  DeprecatedEAPI: version 12.16_p1860-r1: uses deprecated EAPI: 4
-  DroppedKeywordWarning: version 33.0.1990.43: keywords dropped: x86
+gnome-extra/gnome-integration-spotify
+  DeprecatedEAPI: version 20131013: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 20140907: uses deprecated EAPI: 4
 
-www-client/seamonkey-bin
-  DeprecatedEAPI: version 2.35: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 2.38: uses deprecated EAPI: 4
+gnome-extra/gnome-web-photo
+  DeprecatedEAPI: version 0.10.6: uses deprecated EAPI: 4
 
-www-client/surf
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+gnome-extra/gucharmap
+  DeprecatedEAPI: version 3.0.1-r200: uses deprecated EAPI: 4
 
-www-client/uget
-  DeprecatedEAPI: version 1.8.0: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.10.3: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.10.3-r1: uses deprecated EAPI: 4
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+gnome-extra/nautilus-share
+  DeprecatedEAPI: version 0.7.3-r1: uses deprecated EAPI: 4
 
-www-client/uzbl
-  DeprecatedEAPI: version 2012.05.14: uses deprecated EAPI: 4
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+gnome-extra/nm-applet
+  DroppedKeywordWarning: version 1.0.2: keywords dropped: ia64
 
-www-client/w3m
-  NonExistentDeps: version 0.5.3-r5: depset depends: nonexistent atoms [ >=app-text/migemo-0.40 ]
-  NonExistentDeps: version 0.5.3-r5: depset rdepends: nonexistent atoms [ >=app-text/migemo-0.40 ]
-
-www-client/w3mmee
-  DeprecatedEAPI: version 0.3.2_p24-r7: uses deprecated EAPI: 0
-
-www-client/weboob
-  DeprecatedEclass: version 9998: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DroppedKeywordWarning: version 9998: keywords dropped: amd64, x86
-
-www-client/xombrero
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+gnome-extra/polkit-gnome
+  DeprecatedEAPI: version 0.105-r1: uses deprecated EAPI: 4
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
@@ -1563,8 +1552,8 @@ net-im/skypetab-ng
   DeprecatedEAPI: version 0.5.2: uses deprecated EAPI: 4
   NonExistentDeps: version 0.5.2: depset rdepends: nonexistent atoms [ <net-im/skype-4.1 ]
   DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
   NonExistentDeps: version 9999: depset rdepends: nonexistent atoms [ <net-im/skype-4.1 ]
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch

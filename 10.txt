@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 10 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-util/*' 'dev-lang/*' 'www-apps/*' 'net-wireless/*' 'dev-tex/*' 'sys-process/*' 'games-rpg/*' 'games-util/*' 'app-laptop/*' 'mate-base/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-util/*' 'dev-lang/*' 'www-apps/*' 'kde-base/*' 'dev-tex/*' 'sys-process/*' 'games-rpg/*' 'games-util/*' 'app-laptop/*' 'mate-base/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1271,133 +1271,15 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-net-wireless/adm8211
-  DeprecatedEAPI: version 20060111: uses deprecated EAPI: 0
+kde-base/kcheckpass
+  NonExistentDeps: version 4.11.22-r1: depset rdepends: nonexistent atoms [ kde-plasma/kscreenlocker ]
 
-net-wireless/airsnort
-  DeprecatedEAPI: version 0.2.7e: uses deprecated EAPI: 0
+kde-base/kinfocenter
+  NoFinalNewline: version 4.11.19: ebuild lacks an ending newline
+  NoFinalNewline: version 4.11.22: ebuild lacks an ending newline
 
-net-wireless/ap-utils
-  DeprecatedEAPI: version 1.4: uses deprecated EAPI: 0
-
-net-wireless/b43-fwcutter
-  DeprecatedEAPI: version 018: uses deprecated EAPI: 0
-
-net-wireless/bcm43xx-fwcutter
-  MetadataError: version 005: attr(fetchables): error- Metadata Exception: pkg ebuild src: net-wireless/bcm43xx-fwcutter-005, attr fetchables
-error: mirror://berlios/bcm43xx/bcm43xx-fwcutter-005.tar.bz2 is unparseable: uri mirror://berlios/bcm43xx/bcm43xx-fwcutter-005.tar.bz2 isn't a known mirror tier
-flagged token- mirror://berlios/bcm43xx/bcm43xx-fwcutter-005.tar.bz2
-  DeprecatedEAPI: version 005: uses deprecated EAPI: 0
-  MetadataError: version 006: attr(fetchables): error- Metadata Exception: pkg ebuild src: net-wireless/bcm43xx-fwcutter-006, attr fetchables
-error: mirror://berlios/bcm43xx/bcm43xx-fwcutter-006.tar.bz2 is unparseable: uri mirror://berlios/bcm43xx/bcm43xx-fwcutter-006.tar.bz2 isn't a known mirror tier
-flagged token- mirror://berlios/bcm43xx/bcm43xx-fwcutter-006.tar.bz2
-  DeprecatedEAPI: version 006: uses deprecated EAPI: 0
-
-net-wireless/bss
-  DeprecatedEAPI: version 0.8: uses deprecated EAPI: 2
-
-net-wireless/chillispot
-  DeprecatedEAPI: version 1.1.0: uses deprecated EAPI: 0
-
-net-wireless/cpyrit-cuda
-  DeprecatedEclass: version 0.4.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  NonExistentDeps: version 0.4.0: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
-  NonExistentDeps: version 0.4.0: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
-  DeprecatedEAPI: version 0.4.0: uses deprecated EAPI: 4
-
-net-wireless/cpyrit-opencl
-  DeprecatedEclass: version 0.4.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  NonExistentDeps: version 0.4.0: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
-  NonExistentDeps: version 0.4.0: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
-  DeprecatedEAPI: version 0.4.0: uses deprecated EAPI: 4
-
-net-wireless/gobi_loader
-  DeprecatedEAPI: version 0.7-r2: uses deprecated EAPI: 2
-
-net-wireless/gr-iqbal
-  DeprecatedEclass: version 0.36.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-
-net-wireless/hackrf-tools
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-net-wireless/hidclient
-  DeprecatedEAPI: version 20120728: uses deprecated EAPI: 4
-
-net-wireless/hostap-utils
-  DeprecatedEAPI: version 0.4.7-r1: uses deprecated EAPI: 4
-
-net-wireless/hostapd
-  DeprecatedEAPI: version 2.4-r2: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 2.4-r3: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 2.5: uses deprecated EAPI: 4
-
-net-wireless/kismet
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-net-wireless/madwifi-ng
-  DeprecatedEAPI: version 0.9.3.3: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.9.4: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.9.4-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.9.4.4119.20100201: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.9.4.4133.20100621: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.9.4.4165.20110816: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.9.4.4180.20120502: uses deprecated EAPI: 2
-
-net-wireless/madwifi-ng-tools
-  DeprecatedEAPI: version 0.9.3.3: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.9.4: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.9.4.4119.20100201: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.9.4.4133.20100621: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.9.4.4165.20110816: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.9.4.4180.20120502: uses deprecated EAPI: 2
-
-net-wireless/ndiswrapper
-  DeprecatedEAPI: version 1.59: uses deprecated EAPI: 4
-
-net-wireless/neard
-  DeprecatedEAPI: version 0.11: uses deprecated EAPI: 4
-
-net-wireless/openbsc
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-net-wireless/openggsn
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-net-wireless/orinoco-fwutils
-  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.3: uses deprecated EAPI: 0
-
-net-wireless/orinoco-usb
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 0
-
-net-wireless/osmobts
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-net-wireless/osmocom-bb
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-net-wireless/python-wifi
-  MetadataError: version 0.5.0-r1: attr(fetchables): error- Metadata Exception: pkg ebuild src: net-wireless/python-wifi-0.5.0-r1, attr fetchables
-error: mirror://berlios/pythonwifi/python-wifi-0.5.0.tar.bz2 is unparseable
-flagged token- uri mirror://berlios/pythonwifi/python-wifi-0.5.0.tar.bz2 isn't a known mirror tier
-  DeprecatedEclass: version 0.5.0-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.5.0-r1: uses deprecated EAPI: 3
-
-net-wireless/reaver
-  DeprecatedEAPI: version 1.4: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.4-r1: uses deprecated EAPI: 4
-
-net-wireless/rfswitch
-  DeprecatedEAPI: version 1.3: uses deprecated EAPI: 0
-
-net-wireless/spectools
-  DeprecatedEAPI: version 2011.08.1-r2: uses deprecated EAPI: 4
-
-net-wireless/wepdecrypt
-  DeprecatedEAPI: version 0.8-r2: uses deprecated EAPI: 4
-
-net-wireless/wireless-tools
-  DeprecatedEAPI: version 30_pre9: uses deprecated EAPI: 4
+kde-base/kleopatra
+  SizeViolation: "files/kleopatra-4.14.10-newer-boost-buildfix.patch" exceeds 20k in size; 34860 bytes total
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
