@@ -208,6 +208,9 @@ dev-python/nose
 dev-python/os-diskconfig-python-novaclient-ext
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
+dev-python/oslo-db
+  NonExistentDeps: version 1.0.2: depset rdepends: nonexistent atoms [ <=dev-python/sqlalchemy-0.8.99 ]
+
 dev-python/oslo-sphinx
   DroppedKeywordWarning: version 2.5.0: keywords dropped: alpha
 
@@ -411,14 +414,6 @@ dev-python/setuptools
 dev-python/simpleparse
   DeprecatedEclass: version 2.1.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 2.1.1: uses deprecated EAPI: 3
-
-dev-python/sqlalchemy
-  NonExistentDeps: version 0.7.10: depset depends: nonexistent atoms [ dev-python/kinterbasdb ]
-  NonExistentDeps: version 0.7.10: depset rdepends: nonexistent atoms [ dev-python/kinterbasdb ]
-
-dev-python/sqlalchemy-migrate
-  DroppedKeywordWarning: version 0.9.1: keywords dropped: s390, sh
-  DroppedKeywordWarning: version 0.9.5: keywords dropped: sparc
 
 dev-python/ssl-fetch
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
