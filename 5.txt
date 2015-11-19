@@ -1240,6 +1240,7 @@ net-libs/vanessa-socket
 
 net-libs/webkit-gtk
   DroppedKeywordWarning: version 2.8.5: keywords dropped: mips
+  DroppedKeywordWarning: version 2.10.4: keywords dropped: alpha, ia64
 
 net-libs/wvstreams
   DeprecatedEAPI: version 4.6.1-r2: uses deprecated EAPI: 4
@@ -1959,6 +1960,14 @@ gnome-base/gnome-light
 gnome-base/gnome-session
   BadInsIntoDir: version 3.16.0: ebuild uses insinto /usr/share/applications on line 99
   BadInsIntoDir: version 3.18.1.2: ebuild uses insinto /usr/share/applications on line 100
+
+gnome-base/gnome-shell
+  NonsolvableDeps: version 3.16.4: nonsolvable depset(post_rdepends) keyword(amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ >=gnome-base/gdm-3.5[introspection] ]
+  NonsolvableDeps: version 3.16.4: nonsolvable depset(post_rdepends) keyword(amd64) profile (hardened/linux/amd64/selinux): solutions: [ >=gnome-base/gdm-3.5[introspection] ]
+  NonsolvableDeps: version 3.16.4: nonsolvable depset(post_rdepends) keyword(x86) profile (hardened/linux/x86/selinux): solutions: [ >=gnome-base/gdm-3.5[introspection] ]
+  NonsolvableDeps: version 3.18.3: nonsolvable depset(post_rdepends) keyword(~amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ >=gnome-base/gdm-3.5[introspection] ]
+  NonsolvableDeps: version 3.18.3: nonsolvable depset(post_rdepends) keyword(~amd64) profile (hardened/linux/amd64/selinux): solutions: [ >=gnome-base/gdm-3.5[introspection] ]
+  NonsolvableDeps: version 3.18.3: nonsolvable depset(post_rdepends) keyword(~x86) profile (hardened/linux/x86/selinux): solutions: [ >=gnome-base/gdm-3.5[introspection] ]
 
 gnome-base/gvfs
   NonExistentDeps: version 1.22.4: depset depends: nonexistent atoms [ <dev-libs/libcdio-0.90 ]
