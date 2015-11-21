@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 14 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'media-plugins/*' 'dev-php/*' 'app-vim/*' 'kde-misc/*' 'sci-geosciences/*' 'media-tv/*' 'dev-scheme/*' 'dev-lisp/*' 'www-plugins/*' 'games-mud/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'media-plugins/*' 'dev-php/*' 'app-vim/*' 'www-client/*' 'sci-geosciences/*' 'media-tv/*' 'dev-scheme/*' 'dev-lisp/*' 'www-plugins/*' 'games-mud/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1091,9 +1091,61 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-kde-misc/eventlist
-  NonExistentDeps: version 0.6-r1: depset depends: nonexistent atoms [ >=kde-base/akonadi-4.4:4 ]
-  NonExistentDeps: version 0.6-r1: depset rdepends: nonexistent atoms [ >=kde-base/akonadi-4.4:4 ]
+www-client/ck4up
+  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 0
+
+www-client/elinks
+  DeprecatedEAPI: version 0.12_pre6-r1: uses deprecated EAPI: 4
+
+www-client/epiphany
+  DroppedKeywordWarning: version 3.18.0: keywords dropped: alpha, ia64
+
+www-client/fetch
+  DeprecatedEAPI: version 1.0-r1: uses deprecated EAPI: 0
+
+www-client/jumanji
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+www-client/luakit
+  DeprecatedEAPI: version 2012.09.13_p1-r1: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+www-client/opera
+  DeprecatedEAPI: version 12.16_p1860-r1: uses deprecated EAPI: 4
+  DroppedKeywordWarning: version 33.0.1990.43: keywords dropped: x86
+
+www-client/seamonkey-bin
+  DeprecatedEAPI: version 2.35: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 2.38: uses deprecated EAPI: 4
+
+www-client/surf
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+www-client/uget
+  DeprecatedEAPI: version 1.8.0: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.10.3: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.10.3-r1: uses deprecated EAPI: 4
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+www-client/uzbl
+  DeprecatedEAPI: version 2012.05.14: uses deprecated EAPI: 4
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+www-client/w3m
+  NonExistentDeps: version 0.5.3-r5: depset depends: nonexistent atoms [ >=app-text/migemo-0.40 ]
+  NonExistentDeps: version 0.5.3-r5: depset rdepends: nonexistent atoms [ >=app-text/migemo-0.40 ]
+
+www-client/w3mmee
+  DeprecatedEAPI: version 0.3.2_p24-r7: uses deprecated EAPI: 0
+
+www-client/weboob
+  DeprecatedEclass: version 9998: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DroppedKeywordWarning: version 9998: keywords dropped: amd64, x86
+
+www-client/xombrero
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
@@ -1456,7 +1508,7 @@ dev-lisp/clisp
   DeprecatedEAPI: version 2.48-r2: uses deprecated EAPI: 2
   DroppedKeywordWarning: version 2.49-r8: keywords dropped: alpha, ia64
 ERROR root: check <pkgcheck.visibility.VisibilityReport object at
-          : 0x7f975c057d90> raised
+          : 0x7f71fa68ce50> raised
 ERROR root: Traceback (most recent call last):
 ERROR root:   File
           : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/bas
