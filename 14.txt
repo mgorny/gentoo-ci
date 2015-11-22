@@ -1382,49 +1382,6 @@ dev-lisp/clisp
   DeprecatedEAPI: version 2.48-r1: uses deprecated EAPI: 2
   DeprecatedEAPI: version 2.48-r2: uses deprecated EAPI: 2
   DroppedKeywordWarning: version 2.49-r8: keywords dropped: alpha, ia64
-ERROR root: check <pkgcheck.visibility.VisibilityReport object at
-          : 0x7fe054c07cd0> raised
-ERROR root: Traceback (most recent call last):
-ERROR root:   File
-          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/bas
-          : e.py", line 337, in feed
-ERROR root:     check.feed(item, reporter)
-ERROR root:   File
-          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/vis
-          : ibility.py", line 221, in feed
-ERROR root:     for attr, depset in (("depends", pkg.depends),
-ERROR root:   File
-          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
-          : age/base.py", line 101, in dynamic_getattr_dict
-ERROR root:     raise_from(MetadataException(self, attr, str(e)))
-ERROR root:   File
-          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
-          : age/base.py", line 93, in dynamic_getattr_dict
-ERROR root:     val = functor(self)
-ERROR root:   File
-          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
-          : ld/ebuild_src.py", line 48, in generate_depset
-ERROR root:     raise metadata_errors.MetadataException(s, "eapi",
-          : "unsupported eapi: %s" % eapi_obj.magic)
-ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
-          : dev-lisp/clozurecl-1.11-r1, attr depends
-ERROR root: error: Metadata Exception: pkg ebuild src:
-          : dev-lisp/clozurecl-1.11-r1, attr eapi
-ERROR root: error: unsupported eapi: 6
-
-dev-lisp/clozurecl
-  MetadataError: version 1.11-r1: attr(depends): error- Metadata Exception: pkg ebuild src: dev-lisp/clozurecl-1.11-r1, attr depends
-error: Metadata Exception: pkg ebuild src: dev-lisp/clozurecl-1.11-r1, attr eapi
-error: unsupported eapi: 6
-  MetadataError: version 1.11-r1: attr(rdepends): error- Metadata Exception: pkg ebuild src: dev-lisp/clozurecl-1.11-r1, attr rdepends
-error: Metadata Exception: pkg ebuild src: dev-lisp/clozurecl-1.11-r1, attr eapi
-error: unsupported eapi: 6
-  MetadataError: version 1.11-r1: attr(post_rdepends): error- Metadata Exception: pkg ebuild src: dev-lisp/clozurecl-1.11-r1, attr post_rdepends
-error: Metadata Exception: pkg ebuild src: dev-lisp/clozurecl-1.11-r1, attr eapi
-error: unsupported eapi: 6
-  MetadataError: version 1.11-r1: attr(license): no license defined
-  CrappyDescription: version 1.11-r1: description needs improvement: empty/unset
-  DroppedKeywordWarning: version 1.11-r1: keywords dropped: amd64, x86
 
 dev-lisp/clx
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
