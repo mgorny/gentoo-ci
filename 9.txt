@@ -753,6 +753,47 @@ net-misc/unix2tcp
 
 net-misc/utelnetd
   DeprecatedEAPI: version 0.1.9-r1: uses deprecated EAPI: 0
+ERROR root: check <pkgcheck.visibility.VisibilityReport object at
+          : 0x7f138f82d2d0> raised
+ERROR root: Traceback (most recent call last):
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/bas
+          : e.py", line 337, in feed
+ERROR root:     check.feed(item, reporter)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/vis
+          : ibility.py", line 221, in feed
+ERROR root:     for attr, depset in (("depends", pkg.depends),
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 101, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/pack
+          : age/base.py", line 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 48, in generate_depset
+ERROR root:     raise metadata_errors.MetadataException(s, "eapi",
+          : "unsupported eapi: %s" % eapi_obj.magic)
+ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
+          : net-misc/utelnetd-0.1.11, attr depends
+ERROR root: error: Metadata Exception: pkg ebuild src:
+          : net-misc/utelnetd-0.1.11, attr eapi
+ERROR root: error: unsupported eapi: 6
+  MetadataError: version 0.1.11: attr(depends): error- Metadata Exception: pkg ebuild src: net-misc/utelnetd-0.1.11, attr depends
+error: Metadata Exception: pkg ebuild src: net-misc/utelnetd-0.1.11, attr eapi
+error: unsupported eapi: 6
+  MetadataError: version 0.1.11: attr(rdepends): error- Metadata Exception: pkg ebuild src: net-misc/utelnetd-0.1.11, attr rdepends
+error: Metadata Exception: pkg ebuild src: net-misc/utelnetd-0.1.11, attr eapi
+error: unsupported eapi: 6
+  MetadataError: version 0.1.11: attr(post_rdepends): error- Metadata Exception: pkg ebuild src: net-misc/utelnetd-0.1.11, attr post_rdepends
+error: Metadata Exception: pkg ebuild src: net-misc/utelnetd-0.1.11, attr eapi
+error: unsupported eapi: 6
+  MetadataError: version 0.1.11: attr(license): no license defined
+  CrappyDescription: version 0.1.11: description needs improvement: empty/unset
+  DroppedKeywordWarning: version 0.1.11: keywords dropped: amd64, ppc, s390, sparc, x86
 
 net-misc/valve
   DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
