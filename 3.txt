@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 3 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-haskell/*' 'net-analyzer/*' 'dev-db/*' 'app-xemacs/*' 'kde-frameworks/*' 'mail-client/*' 'kde-plasma/*' 'net-firewall/*' 'app-mobilephone/*' 'dev-ada/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-haskell/*' 'net-analyzer/*' 'dev-db/*' 'app-xemacs/*' 'app-portage/*' 'mail-client/*' 'kde-plasma/*' 'net-firewall/*' 'app-mobilephone/*' 'dev-ada/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1441,16 +1441,123 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-kde-frameworks/knotifications
-  NonExistentDeps: version 5.16.0: depset depends: nonexistent atoms [ dev-qt/qtspeech:5 ]
-  NonExistentDeps: version 5.16.0: depset rdepends: nonexistent atoms [ dev-qt/qtspeech:5 ]
+app-portage/conf-update
+  DeprecatedEAPI: version 1.0.2: uses deprecated EAPI: 4
 
-kde-frameworks/ktextwidgets
-  NonExistentDeps: version 5.16.0: depset depends: nonexistent atoms [ dev-qt/qtspeech:5 ]
-  NonExistentDeps: version 5.16.0: depset rdepends: nonexistent atoms [ dev-qt/qtspeech:5 ]
+app-portage/demerge
+  DeprecatedEAPI: version 0.047-r1: uses deprecated EAPI: 0
 
-kde-frameworks/oxygen-icons
-  DroppedKeywordWarning: version 5.16.0: keywords dropped: arm, arm64, ppc, ppc64
+app-portage/distpatch
+  DeprecatedEAPI: version 0.1.1: uses deprecated EAPI: 3
+  NonExistentDeps: version 0.1.1: depset depends: nonexistent atoms [ =dev-lang/python-2.6*, =dev-lang/python-3.1*, =dev-lang/python-3.2* ]
+  NonExistentDeps: version 0.1.1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6*, =dev-lang/python-3.1*, =dev-lang/python-3.2* ]
+  DeprecatedEclass: version 0.1.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+app-portage/eclass-manpages
+  ExecutableFile: "files/eclass-to-manpage.sh" has unnecessary executable bit
+
+app-portage/emerge-delta-webrsync
+  DeprecatedEAPI: version 3.6.2: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 3.7.1: uses deprecated EAPI: 4
+
+app-portage/epkg
+  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.3: uses deprecated EAPI: 4
+
+app-portage/epm
+  DeprecatedEAPI: version 1.40: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+app-portage/esearch
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+app-portage/euscan
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+app-portage/euses
+  DeprecatedEAPI: version 2.5.9: uses deprecated EAPI: 4
+
+app-portage/g-ctan
+  DeprecatedEAPI: version 2011.1: uses deprecated EAPI: 2
+  NonExistentDeps: version 2011.1: depset rdepends: nonexistent atoms [ ~app-text/texlive-2011 ]
+
+app-portage/g-octave
+  DeprecatedEAPI: version 0.4.1-r4: uses deprecated EAPI: 2
+  DeprecatedEclass: version 0.4.1-r4: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+app-portage/g-sorcery
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DroppedKeywordWarning: version 0.2: keywords dropped: alpha, ia64, ppc, ppc64, sparc
+
+app-portage/genlop
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+app-portage/gpytage
+  DeprecatedEAPI: version 0.3.0_rc1: uses deprecated EAPI: 3
+  NonExistentDeps: version 0.3.0_rc1: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 0.3.0_rc1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 0.3.0_rc1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+app-portage/grs
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+app-portage/gs-elpa
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+app-portage/gs-pypi
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+app-portage/layman
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DroppedKeywordWarning: version 2.3.0-r1: keywords dropped: alpha, arm64, ia64, m68k, sh, sparc
+
+app-portage/layman-dbtools
+  DeprecatedEAPI: version 0_p20100322: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0_p20100322: uses deprecated eclass(es): [ git-2 (migrate to git-r3), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+app-portage/maintainer-helper
+  DeprecatedEAPI: version 0.1.2: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.1.2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+app-portage/mirrorselect
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DroppedKeywordWarning: version 2.2.2: keywords dropped: m68k, s390, sh
+
+app-portage/perl-info
+  DeprecatedEAPI: version 0.16: uses deprecated EAPI: 0
+
+app-portage/pms-test-suite
+  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 4
+  NonExistentDeps: version 0.2: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 0.2: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 0.2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
+  NonExistentDeps: version 9999: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 9999: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), git-2 (migrate to git-r3), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+app-portage/portage-utils
+  DeprecatedEAPI: version 0.53: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.54: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.55: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.56: uses deprecated EAPI: 4
+
+app-portage/porthole
+  DeprecatedEAPI: version 0.6.1-r1: uses deprecated EAPI: 2
+  DeprecatedEclass: version 0.6.1-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.6.1-r2: uses deprecated EAPI: 2
+  DeprecatedEclass: version 0.6.1-r2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.6.1-r3: uses deprecated EAPI: 2
+  DeprecatedEclass: version 0.6.1-r3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+app-portage/prefix-chain-setup
+  DeprecatedEAPI: version 0.4-r5: uses deprecated EAPI: 0
+
+app-portage/repo-commit
+  DeprecatedEAPI: version 0.4.1: uses deprecated EAPI: 4
+  NonExistentDeps: version 0.4.1: depset rdepends: nonexistent atoms [ <sys-apps/portage-2.2.0_alpha ]
+  NonExistentDeps: version 9999: depset rdepends: nonexistent atoms [ <sys-apps/portage-2.2.0_alpha ]
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
