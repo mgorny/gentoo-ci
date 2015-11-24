@@ -4,9 +4,8 @@
 + [[ ! -n 16 ]]
 + [[ 3 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-haskell/*' 'net-analyzer/*' 'dev-db/*' 'app-xemacs/*' 'app-portage/*' 'mail-client/*' 'kde-plasma/*' 'net-firewall/*' 'app-mobilephone/*' 'dev-ada/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
-/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
-  "disabling GLSA checks due to no glsa source "
++ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-haskell/*' 'net-analyzer/*' 'dev-db/*' 'app-xemacs/*' 'app-portage/*' 'ros-meta/*' 'kde-plasma/*' 'net-firewall/*' 'app-mobilephone/*' 'dev-ada/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
+WARNING:pkgcore:disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
@@ -609,9 +608,9 @@ net-analyzer/nessus-client
   DeprecatedEAPI: version 1.0.2-r1: uses deprecated EAPI: 2
 
 net-analyzer/nessus-core
-  DeprecatedEAPI: version 2.2.9-r1: uses deprecated EAPI: 4
   NonExistentDeps: version 2.2.9-r1: depset depends: nonexistent atoms [ dev-libs/libprelude ]
   NonExistentDeps: version 2.2.9-r1: depset rdepends: nonexistent atoms [ dev-libs/libprelude ]
+  DeprecatedEAPI: version 2.2.9-r1: uses deprecated EAPI: 4
 
 net-analyzer/nessus-libraries
   DeprecatedEAPI: version 2.2.9-r1: uses deprecated EAPI: 4
@@ -727,9 +726,9 @@ dev-db/4store
   DeprecatedEAPI: version 1.1.5: uses deprecated EAPI: 2
 
 dev-db/SchemaSync
-  DeprecatedEAPI: version 0.9.2: uses deprecated EAPI: 4
   NonExistentDeps: version 0.9.2: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
   NonExistentDeps: version 0.9.2: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  DeprecatedEAPI: version 0.9.2: uses deprecated EAPI: 4
   DeprecatedEclass: version 0.9.2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-db/cdb
@@ -844,13 +843,6 @@ dev-db/mysql-udf-ipv6
 dev-db/mysqltuner
   DeprecatedEAPI: version 1.2.0: uses deprecated EAPI: 4
 
-dev-db/octopus
-  DeprecatedEAPI: version 3.0.1-r3: uses deprecated EAPI: 2
-  NonExistentDeps: version 3.0.1-r3: depset depends: nonexistent atoms [ =dev-java/rhino-1.6* ]
-  NonExistentDeps: version 3.0.1-r3: depset rdepends: nonexistent atoms [ =dev-java/rhino-1.6* ]
-  NonExistentDeps: version 3.0.1-r4: depset depends: nonexistent atoms [ =dev-java/rhino-1.6* ]
-  NonExistentDeps: version 3.0.1-r4: depset rdepends: nonexistent atoms [ =dev-java/rhino-1.6* ]
-
 dev-db/odbtp
   DeprecatedEAPI: version 1.1.4: uses deprecated EAPI: 0
 
@@ -893,19 +885,19 @@ dev-db/pgpool2
   DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
 
 dev-db/phppgadmin
-  DeprecatedEAPI: version 5.1: uses deprecated EAPI: 4
   NonExistentDeps: version 5.1: depset rdepends: nonexistent atoms [ <dev-lang/php-5.3 ]
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 5.1: uses deprecated EAPI: 4
   NonExistentDeps: version 9999: depset rdepends: nonexistent atoms [ <dev-lang/php-5.3 ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 2
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
 dev-db/postgis
-  DeprecatedEAPI: version 2.0.3: uses deprecated EAPI: 4
   NonExistentDeps: version 2.0.3: depset depends: nonexistent atoms [ dev-db/postgresql:8.4 ]
   NonExistentDeps: version 2.0.3: depset rdepends: nonexistent atoms [ dev-db/postgresql:8.4 ]
-  DeprecatedEAPI: version 2.0.6: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 2.0.3: uses deprecated EAPI: 4
   NonExistentDeps: version 2.0.6: depset depends: nonexistent atoms [ dev-db/postgresql:8.4 ]
   NonExistentDeps: version 2.0.6: depset rdepends: nonexistent atoms [ dev-db/postgresql:8.4 ]
+  DeprecatedEAPI: version 2.0.6: uses deprecated EAPI: 4
 
 dev-db/postgresql
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
@@ -1448,9 +1440,9 @@ app-portage/demerge
   DeprecatedEAPI: version 0.047-r1: uses deprecated EAPI: 0
 
 app-portage/distpatch
-  DeprecatedEAPI: version 0.1.1: uses deprecated EAPI: 3
   NonExistentDeps: version 0.1.1: depset depends: nonexistent atoms [ =dev-lang/python-2.6*, =dev-lang/python-3.1*, =dev-lang/python-3.2* ]
   NonExistentDeps: version 0.1.1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6*, =dev-lang/python-3.1*, =dev-lang/python-3.2* ]
+  DeprecatedEAPI: version 0.1.1: uses deprecated EAPI: 3
   DeprecatedEclass: version 0.1.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 app-portage/eclass-manpages
@@ -1479,8 +1471,8 @@ app-portage/euses
   DeprecatedEAPI: version 2.5.9: uses deprecated EAPI: 4
 
 app-portage/g-ctan
-  DeprecatedEAPI: version 2011.1: uses deprecated EAPI: 2
   NonExistentDeps: version 2011.1: depset rdepends: nonexistent atoms [ ~app-text/texlive-2011 ]
+  DeprecatedEAPI: version 2011.1: uses deprecated EAPI: 2
 
 app-portage/g-octave
   DeprecatedEAPI: version 0.4.1-r4: uses deprecated EAPI: 2
@@ -1494,9 +1486,9 @@ app-portage/genlop
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
 app-portage/gpytage
-  DeprecatedEAPI: version 0.3.0_rc1: uses deprecated EAPI: 3
   NonExistentDeps: version 0.3.0_rc1: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
   NonExistentDeps: version 0.3.0_rc1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEAPI: version 0.3.0_rc1: uses deprecated EAPI: 3
   DeprecatedEclass: version 0.3.0_rc1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 app-portage/grs
@@ -1528,13 +1520,13 @@ app-portage/perl-info
   DeprecatedEAPI: version 0.16: uses deprecated EAPI: 0
 
 app-portage/pms-test-suite
-  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 4
   NonExistentDeps: version 0.2: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
   NonExistentDeps: version 0.2: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 4
   DeprecatedEclass: version 0.2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
   NonExistentDeps: version 9999: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
   NonExistentDeps: version 9999: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), git-2 (migrate to git-r3), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 app-portage/portage-utils
@@ -1555,8 +1547,8 @@ app-portage/prefix-chain-setup
   DeprecatedEAPI: version 0.4-r5: uses deprecated EAPI: 0
 
 app-portage/repo-commit
-  DeprecatedEAPI: version 0.4.1: uses deprecated EAPI: 4
   NonExistentDeps: version 0.4.1: depset rdepends: nonexistent atoms [ <sys-apps/portage-2.2.0_alpha ]
+  DeprecatedEAPI: version 0.4.1: uses deprecated EAPI: 4
   NonExistentDeps: version 9999: depset rdepends: nonexistent atoms [ <sys-apps/portage-2.2.0_alpha ]
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
@@ -1564,136 +1556,6 @@ WARNING pkgcore: metadata.dtd cannot be opened from
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
-
-mail-client/alpine
-  DeprecatedEAPI: version 2.00-r5: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 2.00-r6: uses deprecated EAPI: 4
-
-mail-client/biabam
-  DeprecatedEAPI: version 0.9.7: uses deprecated EAPI: 0
-
-mail-client/claws-mail
-  DeprecatedEAPI: version 3.9.0: uses deprecated EAPI: 4
-
-mail-client/claws-mail-acpi-notifier
-  DeprecatedEAPI: version 1.0.28: uses deprecated EAPI: 0
-
-mail-client/claws-mail-address_keeper
-  DeprecatedEAPI: version 1.0.7: uses deprecated EAPI: 0
-
-mail-client/claws-mail-archive
-  DeprecatedEAPI: version 0.6.13: uses deprecated EAPI: 0
-
-mail-client/claws-mail-att-remover
-  DeprecatedEAPI: version 1.0.15: uses deprecated EAPI: 0
-
-mail-client/claws-mail-attachwarner
-  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
-
-mail-client/claws-mail-clamd
-  DeprecatedEAPI: version 3.5.5: uses deprecated EAPI: 0
-
-mail-client/claws-mail-fancy
-  DeprecatedEAPI: version 0.9.17: uses deprecated EAPI: 3
-
-mail-client/claws-mail-fetchinfo
-  DeprecatedEAPI: version 0.4.25: uses deprecated EAPI: 0
-
-mail-client/claws-mail-gdata
-  DeprecatedEAPI: version 0.5: uses deprecated EAPI: 4
-
-mail-client/claws-mail-gtkhtml
-  DeprecatedEAPI: version 0.34: uses deprecated EAPI: 0
-
-mail-client/claws-mail-mailmbox
-  DeprecatedEAPI: version 1.15: uses deprecated EAPI: 0
-
-mail-client/claws-mail-newmail
-  DeprecatedEAPI: version 0.0.16: uses deprecated EAPI: 0
-
-mail-client/claws-mail-notification
-  DeprecatedEAPI: version 0.31: uses deprecated EAPI: 4
-
-mail-client/claws-mail-perl
-  DeprecatedEAPI: version 0.9.20: uses deprecated EAPI: 0
-
-mail-client/claws-mail-python
-  DeprecatedEAPI: version 0.11: uses deprecated EAPI: 4
-
-mail-client/claws-mail-rssyl
-  DeprecatedEAPI: version 0.34: uses deprecated EAPI: 4
-
-mail-client/claws-mail-spam-report
-  DeprecatedEAPI: version 0.3.17: uses deprecated EAPI: 4
-
-mail-client/claws-mail-tnef-parse
-  DeprecatedEAPI: version 0.3.14: uses deprecated EAPI: 4
-
-mail-client/claws-mail-vcalendar
-  DeprecatedEAPI: version 2.0.14: uses deprecated EAPI: 4
-
-mail-client/clawsker
-  DeprecatedEAPI: version 0.7.8: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.7.10: uses deprecated EAPI: 0
-
-mail-client/cone
-  DeprecatedEAPI: version 0.89: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.90: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.90-r1: uses deprecated EAPI: 4
-
-mail-client/drac
-  DeprecatedEAPI: version 1.12-r1: uses deprecated EAPI: 0
-
-mail-client/etpan-ng
-  DeprecatedEAPI: version 0.7.1-r1: uses deprecated EAPI: 0
-
-mail-client/evolution
-  DroppedKeywordWarning: version 3.16.5: keywords dropped: arm, ppc, ppc64, sparc
-
-mail-client/hap
-  DeprecatedEAPI: version 3.7-r1: uses deprecated EAPI: 4
-
-mail-client/mail-notification
-  SizeViolation: "files/mail-notification-aarch64.patch" exceeds 20k in size; 49364 bytes total
-
-mail-client/mailx
-  DeprecatedEAPI: version 8.1.2.20050715-r6: uses deprecated EAPI: 0
-
-mail-client/mailx-support
-  DeprecatedEAPI: version 20060102-r1: uses deprecated EAPI: 0
-
-mail-client/mutt
-  MetadataError: version 1.5.23-r5: attr(fetchables): error- Metadata Exception: pkg ebuild src: mail-client/mutt-1.5.23-r5, attr fetchables
-error: mirror://sourceforge/mutt/mutt-1.5.23.tar.gz mirror://bitbucket/mutt/mutt/downloads/mutt-1.5.23.tar.gz ftp://ftp.mutt.org/mutt/devel/mutt-1.5.23.tar.gz mirror://gentoo/mutt-1.5.23-gentoo-patches-r5.tar.bz2 https://dev.gentoo.org/~grobian/distfiles/mutt-1.5.23-gentoo-patches-r5.tar.bz2 is unparseable
-flagged token- uri mirror://bitbucket/mutt/mutt/downloads/mutt-1.5.23.tar.gz isn't a known mirror tier
-  MetadataError: version 1.5.23-r7: attr(fetchables): error- Metadata Exception: pkg ebuild src: mail-client/mutt-1.5.23-r7, attr fetchables
-error: mirror://sourceforge/mutt/mutt-1.5.23.tar.gz mirror://bitbucket/mutt/mutt/downloads/mutt-1.5.23.tar.gz ftp://ftp.mutt.org/mutt/devel/mutt-1.5.23.tar.gz mirror://gentoo/mutt-1.5.23-gentoo-patches-r7.tar.bz2 https://dev.gentoo.org/~grobian/distfiles/mutt-1.5.23-gentoo-patches-r7.tar.bz2 is unparseable
-flagged token- uri mirror://bitbucket/mutt/mutt/downloads/mutt-1.5.23.tar.gz isn't a known mirror tier
-  MetadataError: version 1.5.23-r8: attr(fetchables): error- Metadata Exception: pkg ebuild src: mail-client/mutt-1.5.23-r8, attr fetchables
-error: mirror://sourceforge/mutt/mutt-1.5.23.tar.gz mirror://bitbucket/mutt/mutt/downloads/mutt-1.5.23.tar.gz ftp://ftp.mutt.org/mutt/devel/mutt-1.5.23.tar.gz mirror://gentoo/mutt-1.5.23-gentoo-patches-r8.tar.bz2 https://dev.gentoo.org/~grobian/distfiles/mutt-1.5.23-gentoo-patches-r8.tar.bz2 is unparseable
-flagged token- uri mirror://bitbucket/mutt/mutt/downloads/mutt-1.5.23.tar.gz isn't a known mirror tier
-  MetadataError: version 1.5.24-r1: attr(fetchables): error- Metadata Exception: pkg ebuild src: mail-client/mutt-1.5.24-r1, attr fetchables
-error: mirror://sourceforge/mutt/mutt-1.5.24.tar.gz mirror://bitbucket/mutt/mutt/downloads/mutt-1.5.24.tar.gz ftp://ftp.mutt.org/pub/mutt/mutt-1.5.24.tar.gz mirror://gentoo/mutt-1.5.24-gentoo-patches-r1.tar.bz2 https://dev.gentoo.org/~grobian/distfiles/mutt-1.5.24-gentoo-patches-r1.tar.bz2 is unparseable
-flagged token- uri mirror://bitbucket/mutt/mutt/downloads/mutt-1.5.24.tar.gz isn't a known mirror tier
-  MetadataError: version 1.5.24-r2: attr(fetchables): error- Metadata Exception: pkg ebuild src: mail-client/mutt-1.5.24-r2, attr fetchables
-error: mirror://sourceforge/mutt/mutt-1.5.24.tar.gz mirror://bitbucket/mutt/mutt/downloads/mutt-1.5.24.tar.gz ftp://ftp.mutt.org/pub/mutt/mutt-1.5.24.tar.gz mirror://gentoo/mutt-1.5.24-gentoo-patches-r1.tar.bz2 https://dev.gentoo.org/~grobian/distfiles/mutt-1.5.24-gentoo-patches-r1.tar.bz2 is unparseable
-flagged token- uri mirror://bitbucket/mutt/mutt/downloads/mutt-1.5.24.tar.gz isn't a known mirror tier
-
-mail-client/nail
-  DeprecatedEAPI: version 12.4: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 12.4-r2: uses deprecated EAPI: 3
-
-mail-client/nmh
-  DeprecatedEAPI: version 1.3-r3: uses deprecated EAPI: 2
-
-mail-client/pinepgp
-  DeprecatedEAPI: version 0.18.0-r1: uses deprecated EAPI: 0
-  NonExistentDeps: version 0.18.0-r1: depset depends: nonexistent atoms [ mail-client/pine ]
-  NonExistentDeps: version 0.18.0-r1: depset rdepends: nonexistent atoms [ mail-client/pine ]
-
-mail-client/trojita
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DroppedKeywordWarning: version 0.5: keywords dropped: ppc
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch

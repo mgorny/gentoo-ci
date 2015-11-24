@@ -4,9 +4,8 @@
 + [[ ! -n 16 ]]
 + [[ 15 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'app-text/*' 'app-dicts/*' 'app-vim/*' 'kde-misc/*' 'app-backup/*' 'games-misc/*' 'net-fs/*' 'sys-freebsd/*' 'net-nntp/*' 'app-officeext/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
-/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:98: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
-  "disabling GLSA checks due to no glsa source "
++ exec pkgcheck -r gentoo --reporter FancyReporter 'app-text/*' 'app-dicts/*' 'app-vim/*' 'www-client/*' 'app-backup/*' 'games-misc/*' 'net-fs/*' 'sys-freebsd/*' 'net-nntp/*' 'app-officeext/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
+WARNING:pkgcore:disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
@@ -70,21 +69,21 @@ app-text/cedilla
   DeprecatedEAPI: version 0.6: uses deprecated EAPI: 4
 
 app-text/chm2pdf
-  DeprecatedEAPI: version 0.9.1-r1: uses deprecated EAPI: 2
   NonExistentDeps: version 0.9.1-r1: depset rdepends: nonexistent atoms [ <dev-libs/chmlib-0.40-r1 ]
+  DeprecatedEAPI: version 0.9.1-r1: uses deprecated EAPI: 2
   DeprecatedEclass: version 0.9.1-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 app-text/clara
   DeprecatedEAPI: version 20031214: uses deprecated EAPI: 0
 
 app-text/cmigemo
-  DeprecatedEAPI: version 1.3c: uses deprecated EAPI: 0
   NonExistentDeps: version 1.3c: depset rdepends: nonexistent atoms [ >=app-text/migemo-0.40-r1 ]
-  DeprecatedEAPI: version 1.3c-r1: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 1.3c: uses deprecated EAPI: 0
   NonExistentDeps: version 1.3c-r1: depset rdepends: nonexistent atoms [ >=app-text/migemo-0.40-r1 ]
-  DeprecatedEAPI: version 1.3c-r2: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 1.3c-r1: uses deprecated EAPI: 2
   NonExistentDeps: version 1.3c-r2: depset depends: nonexistent atoms [ net-misc/fetch ]
   NonExistentDeps: version 1.3c-r2: depset rdepends: nonexistent atoms [ >=app-text/migemo-0.40-r1 ]
+  DeprecatedEAPI: version 1.3c-r2: uses deprecated EAPI: 2
 
 app-text/code2html
   DeprecatedEAPI: version 0.9.1-r1: uses deprecated EAPI: 3
@@ -376,9 +375,9 @@ app-text/namazu
   DroppedKeywordWarning: version 2.0.22_p1: keywords dropped: amd64, ppc, ppc64, x86
 
 app-text/nfoview
-  DeprecatedEAPI: version 1.10: uses deprecated EAPI: 3
   NonExistentDeps: version 1.10: depset depends: nonexistent atoms [ =dev-lang/python-3.2* ]
   NonExistentDeps: version 1.10: depset rdepends: nonexistent atoms [ =dev-lang/python-3.2* ]
+  DeprecatedEAPI: version 1.10: uses deprecated EAPI: 3
   DeprecatedEclass: version 1.10: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
@@ -447,9 +446,9 @@ app-text/rarian
   DeprecatedEAPI: version 0.8.1-r2: uses deprecated EAPI: 4
 
 app-text/refbase
-  DeprecatedEAPI: version 0.9.5: uses deprecated EAPI: 2
   NonExistentDeps: version 0.9.5: depset depends: nonexistent atoms [ <dev-lang/php-5.3 ]
   NonExistentDeps: version 0.9.5: depset rdepends: nonexistent atoms [ <dev-lang/php-5.3 ]
+  DeprecatedEAPI: version 0.9.5: uses deprecated EAPI: 2
 
 app-text/referencer
   DeprecatedEclass: version 1.2.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
@@ -463,8 +462,8 @@ app-text/rhyme
 
 app-text/rnv
   DeprecatedEAPI: version 1.7.11: uses deprecated EAPI: 4
-  DroppedKeywordWarning: version 1.7.11-r1: keywords dropped: ppc
   UnusedLocalFlags: metadata.xml unused local use flag: [ scheme ]
+  DroppedKeywordWarning: version 1.7.11-r1: keywords dropped: ppc
 
 app-text/rpl
   DeprecatedEAPI: version 1.5.5: uses deprecated EAPI: 3
@@ -573,15 +572,15 @@ app-text/wgetpaste
   DeprecatedEAPI: version 2.22: uses deprecated EAPI: 4
 
 app-text/winefish
-  DeprecatedEAPI: version 1.3.3-r1: uses deprecated EAPI: 3
   MetadataError: version 1.3.3-r1: attr(fetchables): error- Metadata Exception: pkg ebuild src: app-text/winefish-1.3.3-r1, attr fetchables
 error: mirror://berlios/winefish/winefish-1.3.3.tgz is unparseable
 flagged token- uri mirror://berlios/winefish/winefish-1.3.3.tgz isn't a known mirror tier
+  DeprecatedEAPI: version 1.3.3-r1: uses deprecated EAPI: 3
 
 app-text/wklej
-  DeprecatedEAPI: version 0.2.0: uses deprecated EAPI: 3
   NonExistentDeps: version 0.2.0: depset depends: nonexistent atoms [ =dev-lang/python-2.6*, =dev-lang/python-3.1*, =dev-lang/python-3.2* ]
   NonExistentDeps: version 0.2.0: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6*, =dev-lang/python-3.1*, =dev-lang/python-3.2* ]
+  DeprecatedEAPI: version 0.2.0: uses deprecated EAPI: 3
   DeprecatedEclass: version 0.2.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 app-text/writerperfect
@@ -1430,8 +1429,8 @@ app-vim/vimoutliner
   DeprecatedEAPI: version 0.3.4-r2: uses deprecated EAPI: 0
 
 app-vim/vimpress
-  DeprecatedEAPI: version 2.1.5: uses deprecated EAPI: 4
   NonExistentDeps: version 2.1.5: depset rdepends: nonexistent atoms [ dev-lang/python:2.6 ]
+  DeprecatedEAPI: version 2.1.5: uses deprecated EAPI: 4
 
 app-vim/vimpython
   DeprecatedEAPI: version 1.13: uses deprecated EAPI: 0
@@ -1457,9 +1456,61 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-kde-misc/eventlist
-  NonExistentDeps: version 0.6-r1: depset depends: nonexistent atoms [ >=kde-base/akonadi-4.4:4 ]
-  NonExistentDeps: version 0.6-r1: depset rdepends: nonexistent atoms [ >=kde-base/akonadi-4.4:4 ]
+www-client/ck4up
+  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 0
+
+www-client/elinks
+  DeprecatedEAPI: version 0.12_pre6-r1: uses deprecated EAPI: 4
+
+www-client/epiphany
+  DroppedKeywordWarning: version 3.18.0: keywords dropped: alpha, ia64
+
+www-client/fetch
+  DeprecatedEAPI: version 1.0-r1: uses deprecated EAPI: 0
+
+www-client/jumanji
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+www-client/luakit
+  DeprecatedEAPI: version 2012.09.13_p1-r1: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+www-client/opera
+  DeprecatedEAPI: version 12.16_p1860-r1: uses deprecated EAPI: 4
+  DroppedKeywordWarning: version 33.0.1990.43: keywords dropped: x86
+
+www-client/seamonkey-bin
+  DeprecatedEAPI: version 2.35: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 2.38: uses deprecated EAPI: 4
+
+www-client/surf
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+www-client/uget
+  DeprecatedEAPI: version 1.8.0: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.10.3: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.10.3-r1: uses deprecated EAPI: 4
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+www-client/uzbl
+  DeprecatedEAPI: version 2012.05.14: uses deprecated EAPI: 4
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+www-client/w3m
+  NonExistentDeps: version 0.5.3-r5: depset depends: nonexistent atoms [ >=app-text/migemo-0.40 ]
+  NonExistentDeps: version 0.5.3-r5: depset rdepends: nonexistent atoms [ >=app-text/migemo-0.40 ]
+
+www-client/w3mmee
+  DeprecatedEAPI: version 0.3.2_p24-r7: uses deprecated EAPI: 0
+
+www-client/weboob
+  DeprecatedEclass: version 9998: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DroppedKeywordWarning: version 9998: keywords dropped: amd64, x86
+
+www-client/xombrero
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
@@ -1735,25 +1786,25 @@ net-nntp/pan
   DeprecatedEAPI: version 0.139: uses deprecated EAPI: 4
 
 net-nntp/sabnzbd
-  DeprecatedEAPI: version 0.7.16: uses deprecated EAPI: 4
   NonExistentDeps: version 0.7.16: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
   NonExistentDeps: version 0.7.16: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEAPI: version 0.7.16: uses deprecated EAPI: 4
   DeprecatedEclass: version 0.7.16: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.7.17: uses deprecated EAPI: 4
   NonExistentDeps: version 0.7.17: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
   NonExistentDeps: version 0.7.17: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEAPI: version 0.7.17: uses deprecated EAPI: 4
   DeprecatedEclass: version 0.7.17: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.7.18: uses deprecated EAPI: 4
   NonExistentDeps: version 0.7.18: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
   NonExistentDeps: version 0.7.18: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEAPI: version 0.7.18: uses deprecated EAPI: 4
   DeprecatedEclass: version 0.7.18: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.7.19: uses deprecated EAPI: 4
   NonExistentDeps: version 0.7.19: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
   NonExistentDeps: version 0.7.19: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEAPI: version 0.7.19: uses deprecated EAPI: 4
   DeprecatedEclass: version 0.7.19: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.7.20: uses deprecated EAPI: 4
   NonExistentDeps: version 0.7.20: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
   NonExistentDeps: version 0.7.20: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEAPI: version 0.7.20: uses deprecated EAPI: 4
   DeprecatedEclass: version 0.7.20: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 net-nntp/slrnconf
