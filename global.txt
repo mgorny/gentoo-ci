@@ -4,6 +4,29 @@
 + [[ ! -n 16 ]]
 + [[ global == global ]]
 + exec pkgcheck -r gentoo --reporter FancyReporter -c UnusedGlobalFlags -c UnusedLicense
+Unhandled exception occurred:
+Traceback follows:
+  File "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/util/commandline.py", line 816, in argparse_parse
+    namespace = parser.parse_args(args, namespace=namespace)
+  File "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/util/commandline.py", line 644, in parse_args
+    delayed(args, attr)
+  File "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/util/commandline.py", line 402, in __call__
+    self.invokable()
+  File "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/util/commandline.py", line 229, in _real_call
+    value = self._load_obj(sections, values)
+  File "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/util/commandline.py", line 323, in _load_obj
+    if not self.allow_name_lookup or name in sections:
+  File "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/config/central.py", line 60, in __contains__
+    conf = self.manager.collapse_named_section(key, raise_on_missing=False)
+  File "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/config/central.py", line 394, in collapse_named_section
+    "Collapsing section named %r" % (name,)))
+  File "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/config/central.py", line 388, in collapse_named_section
+    result = self.collapse_section(section_stack, name)
+  File "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/config/central.py", line 469, in collapse_section
+    collapsed = CollapsedConfig(type_obj, self._render_config_stack(type_obj, config_stack),
+  File "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/config/central.py", line 491, in _render_config_stack
+    'Type of %r unknown' % (key,))
 
-unknown
-  UnusedLicenseReport: unused licenses: AGPL-3+, CC-BY-4.0, CC-BY-NC-3.0, CC-BY-ND-2.5, CC-BY-ND-NC-1.0, DSL, ECL-2.0, ODbL-1.0, cos, kicad-doc
+ConfigurationError:
+ Collapsing section named 'gentoo'
+ Type of 'raw_repo' unknown
