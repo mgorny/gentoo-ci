@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 3 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-haskell/*' 'net-analyzer/*' 'dev-db/*' 'app-xemacs/*' 'app-portage/*' 'ros-meta/*' 'kde-plasma/*' 'net-firewall/*' 'app-mobilephone/*' 'dev-ada/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-haskell/*' 'net-analyzer/*' 'dev-db/*' 'app-xemacs/*' 'app-portage/*' 'ros-meta/*' 'kde-plasma/*' 'sci-visualization/*' 'app-mobilephone/*' 'dev-ada/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 WARNING:pkgcore:disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
@@ -1577,68 +1577,64 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-net-firewall/arno-iptables-firewall
-  NonExistentDeps: version 2.0.1e: depset rdepends: nonexistent atoms [ <sys-apps/coreutils-8.20 ]
+sci-visualization/circos
+  DeprecatedEAPI: version 0.55: uses deprecated EAPI: 4
 
-net-firewall/arptables
-  DeprecatedEAPI: version 0.0.3.4-r2: uses deprecated EAPI: 2
+sci-visualization/epix
+  DeprecatedEAPI: version 1.2.10: uses deprecated EAPI: 4
 
-net-firewall/conntrack-tools
-  DroppedKeywordWarning: version 1.4.3: keywords dropped: alpha
+sci-visualization/extrema
+  DeprecatedEAPI: version 4.4.5: uses deprecated EAPI: 4
 
-net-firewall/dshieldpy
-  DeprecatedEAPI: version 3.2-r1: uses deprecated EAPI: 4
-  DeprecatedEclass: version 3.2-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+sci-visualization/fig2sxd
+  DeprecatedEAPI: version 0.21: uses deprecated EAPI: 4
 
-net-firewall/ebtables
-  DeprecatedEAPI: version 2.0.10.4: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 2.0.10.4-r1: uses deprecated EAPI: 4
+sci-visualization/gcalc
+  DeprecatedEAPI: version 3.1_rc1: uses deprecated EAPI: 4
 
-net-firewall/fwanalog
-  DeprecatedEAPI: version 0.6.4: uses deprecated EAPI: 0
+sci-visualization/ggobi
+  DeprecatedEAPI: version 2.1.8: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 2.1.9-r1: uses deprecated EAPI: 4
 
-net-firewall/fwbuilder
-  DeprecatedEAPI: version 5.0.1.3592-r1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 5.1.0.3599: uses deprecated EAPI: 4
+sci-visualization/grace
+  DeprecatedEAPI: version 5.1.22-r2: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 5.1.22-r3: uses deprecated EAPI: 4
 
-net-firewall/fwipsec
-  DeprecatedEAPI: version 0.4.2-r1: uses deprecated EAPI: 0
+sci-visualization/gri
+  DeprecatedEAPI: version 2.12.19: uses deprecated EAPI: 2
 
-net-firewall/ipkungfu
-  DeprecatedEAPI: version 0.5.2-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.6.1: uses deprecated EAPI: 0
+sci-visualization/opendx
+  DeprecatedEAPI: version 4.4.4-r4: uses deprecated EAPI: 4
 
-net-firewall/ipsec-tools
-  DeprecatedEAPI: version 0.8.0-r5: uses deprecated EAPI: 4
+sci-visualization/opendx-samples
+  DeprecatedEAPI: version 4.4.0-r1: uses deprecated EAPI: 4
 
-net-firewall/ipset
-  DeprecatedEAPI: version 6.15: uses deprecated EAPI: 4
+sci-visualization/spectromatic
+  DeprecatedEAPI: version 1.0-r2: uses deprecated EAPI: 4
 
-net-firewall/iptables
-  DeprecatedEAPI: version 1.4.17: uses deprecated EAPI: 4
-  ExecutableFile: "files/iptables.init" has unnecessary executable bit
+sci-visualization/spyview
+  DeprecatedEAPI: version 20111018: uses deprecated EAPI: 4
+  DroppedKeywordWarning: version 20130823: keywords dropped: amd64
 
-net-firewall/nfacct
-  DeprecatedEAPI: version 1.0.0: uses deprecated EAPI: 4
+sci-visualization/veusz
+  DeprecatedEAPI: version 1.11: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.11: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-net-firewall/nftables
-  ExecutableFile: "files/libexec/nftables.sh" has unnecessary executable bit
+sci-visualization/xd3d
+  DeprecatedEAPI: version 8.3.1: uses deprecated EAPI: 4
 
-net-firewall/nufw
-  NonExistentDeps: version 2.2.22-r1: depset depends: nonexistent atoms [ dev-libs/libprelude ]
-  NonExistentDeps: version 2.2.22-r1: depset rdepends: nonexistent atoms [ dev-libs/libprelude ]
+sci-visualization/xds-viewer
+  DeprecatedEAPI: version 0.6: uses deprecated EAPI: 4
 
-net-firewall/pftop
-  DeprecatedEAPI: version 0.5: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.7: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.7-r1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.7-r2: uses deprecated EAPI: 4
+sci-visualization/xgraph
+  DeprecatedEAPI: version 12.1-r2: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 12.1-r3: uses deprecated EAPI: 4
 
-net-firewall/quicktables
-  DeprecatedEAPI: version 2.3: uses deprecated EAPI: 0
+sci-visualization/xyscan
+  DeprecatedEAPI: version 3.3.1: uses deprecated EAPI: 4
 
-net-firewall/shapecfg
-  DeprecatedEAPI: version 36: uses deprecated EAPI: 0
+sci-visualization/zhu3d
+  DeprecatedEAPI: version 4.2.4: uses deprecated EAPI: 4
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch

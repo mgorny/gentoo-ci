@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 7 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'media-libs/*' 'sci-libs/*' 'app-emacs/*' 'app-editors/*' 'games-arcade/*' 'www-servers/*' 'net-dialup/*' 'sys-firmware/*' 'perl-core/*' 'games-roguelike/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'media-libs/*' 'sci-libs/*' 'app-emacs/*' 'app-editors/*' 'games-arcade/*' 'www-servers/*' 'net-dialup/*' 'app-accessibility/*' 'perl-core/*' 'games-roguelike/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 WARNING:pkgcore:disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
@@ -1613,37 +1613,73 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-sys-firmware/iwl1000-ucode
-  DeprecatedEAPI: version 39.31.5.1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 128.50.3.1: uses deprecated EAPI: 4
-  DroppedKeywordWarning: version 128.50.3.1: keywords dropped: amd64, x86
+app-accessibility/SphinxTrain
+  DeprecatedEAPI: version 0.9.1-r1: uses deprecated EAPI: 4
+  DroppedKeywordWarning: version 1.0.8: keywords dropped: ppc
 
-sys-firmware/iwl6000-ucode
-  DeprecatedEAPI: version 9.221.4.1: uses deprecated EAPI: 0
+app-accessibility/edbrowse
+  DeprecatedEAPI: version 3.5.1: uses deprecated EAPI: 4
 
-sys-firmware/iwl6005-ucode
-  DeprecatedEAPI: version 17.168.5.3: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 18.168.6.1: uses deprecated EAPI: 0
+app-accessibility/emacspeak-ss
+  DeprecatedEAPI: version 1.9.1: uses deprecated EAPI: 4
 
-sys-firmware/iwl6030-ucode
-  DeprecatedEAPI: version 17.168.5.2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 18.168.6.1: uses deprecated EAPI: 0
+app-accessibility/epos
+  DeprecatedEAPI: version 2.5.37-r1: uses deprecated EAPI: 4
 
-sys-firmware/iwl6050-ucode
-  DeprecatedEAPI: version 9.201.4.1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 41.28.5.1: uses deprecated EAPI: 0
-
-sys-firmware/sgabios
-  DeprecatedEAPI: version 0.1_pre8: uses deprecated EAPI: 4
-
-sys-firmware/sigrok-firmware-fx2lafw
+app-accessibility/espeakup
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-sys-firmware/vgabios
-  DeprecatedEAPI: version 0.6c-r1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.7a: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.7a-r1: uses deprecated EAPI: 4
-  DroppedKeywordWarning: version 0.7a: keywords dropped: ppc, ppc64
+app-accessibility/festival
+  DeprecatedEAPI: version 2.1-r1: uses deprecated EAPI: 2
+
+app-accessibility/festival-fi
+  DeprecatedEAPI: version 20041119: uses deprecated EAPI: 2
+
+app-accessibility/festival-freebsoft-utils
+  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.10: uses deprecated EAPI: 4
+
+app-accessibility/festival-hts
+  DeprecatedEAPI: version 2.1: uses deprecated EAPI: 2
+
+app-accessibility/festival-it
+  DeprecatedEAPI: version 1.0-r2: uses deprecated EAPI: 4
+
+app-accessibility/festival-ru
+  DeprecatedEAPI: version 0.5: uses deprecated EAPI: 2
+
+app-accessibility/freetts
+  DeprecatedEAPI: version 1.2.1-r2: uses deprecated EAPI: 0
+
+app-accessibility/mbrola
+  DeprecatedEAPI: version 3.0.1h-r6: uses deprecated EAPI: 0
+
+app-accessibility/nfbtrans
+  DeprecatedEAPI: version 7.74: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 7.74-r1: uses deprecated EAPI: 3
+
+app-accessibility/pidgin-festival
+  DeprecatedEAPI: version 2.4: uses deprecated EAPI: 2
+
+app-accessibility/sound-icons
+  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 0
+
+app-accessibility/speakup
+  DeprecatedEAPI: version 3.1.6_p201011120508: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 2
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+app-accessibility/speechd-el
+  DeprecatedEAPI: version 2.5: uses deprecated EAPI: 4
+
+app-accessibility/speechd-up
+  DeprecatedEAPI: version 0.4-r3: uses deprecated EAPI: 0
+
+app-accessibility/sphinx2
+  DeprecatedEAPI: version 0.6: uses deprecated EAPI: 2
+
+app-accessibility/yasr
+  DeprecatedEAPI: version 0.6.9-r1: uses deprecated EAPI: 2
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch

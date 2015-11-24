@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 9 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'net-misc/*' 'app-admin/*' 'sys-libs/*' 'x11-themes/*' 'net-dns/*' 'app-shells/*' 'dev-dotnet/*' 'lxqt-base/*' 'xfce-base/*' 'net-voip/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'net-misc/*' 'app-admin/*' 'sys-libs/*' 'x11-themes/*' 'net-dns/*' 'app-shells/*' 'dev-dotnet/*' 'lxqt-base/*' 'xfce-base/*' 'java-virtuals/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 WARNING:pkgcore:disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
@@ -2138,7 +2138,9 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-net-voip/homer
-  NonExistentDeps: version 0.24.1-r1: depset depends: nonexistent atoms [ <media-video/ffmpeg-2 ]
-  NonExistentDeps: version 0.24.1-r1: depset rdepends: nonexistent atoms [ <media-video/ffmpeg-2 ]
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+java-virtuals/servlet-api
+  DeprecatedEAPI: version 2.5-r1: uses deprecated EAPI: 4
+  NonExistentDeps: version 2.5-r1: depset rdepends: nonexistent atoms [ dev-java/glassfish-servlet-api:2.5 ]
+  DeprecatedEAPI: version 3.0-r1: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 3.1: uses deprecated EAPI: 4
+  DroppedKeywordWarning: version 3.0-r1: keywords dropped: arm
