@@ -5,29 +5,1593 @@
 + [[ 4 == global ]]
 + set +x
 + exec pkgcheck -r gentoo --reporter FancyReporter 'dev-ruby/*' 'net-libs/*' 'app-leechcraft/*' 'sci-chemistry/*' 'x11-wm/*' 'mail-client/*' 'app-eselect/*' 'app-forensics/*' 'x11-proto/*' 'sci-misc/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
-Unhandled exception occurred:
-Traceback follows:
-  File "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/util/commandline.py", line 816, in argparse_parse
-    namespace = parser.parse_args(args, namespace=namespace)
-  File "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/util/commandline.py", line 644, in parse_args
-    delayed(args, attr)
-  File "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/util/commandline.py", line 402, in __call__
-    self.invokable()
-  File "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/util/commandline.py", line 229, in _real_call
-    value = self._load_obj(sections, values)
-  File "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/util/commandline.py", line 323, in _load_obj
-    if not self.allow_name_lookup or name in sections:
-  File "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/config/central.py", line 60, in __contains__
-    conf = self.manager.collapse_named_section(key, raise_on_missing=False)
-  File "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/config/central.py", line 394, in collapse_named_section
-    "Collapsing section named %r" % (name,)))
-  File "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/config/central.py", line 388, in collapse_named_section
-    result = self.collapse_section(section_stack, name)
-  File "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/config/central.py", line 469, in collapse_section
-    collapsed = CollapsedConfig(type_obj, self._render_config_stack(type_obj, config_stack),
-  File "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/config/central.py", line 491, in _render_config_stack
-    'Type of %r unknown' % (key,))
+WARNING:pkgcore:disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
 
-ConfigurationError:
- Collapsing section named 'gentoo'
- Type of 'raw_repo' unknown
+dev-ruby/actionmailer
+  DroppedKeywordWarning: version 4.2.4: keywords dropped: x86
+
+dev-ruby/actionpack
+  DroppedKeywordWarning: version 4.2.4: keywords dropped: x86
+
+dev-ruby/actionview
+  DroppedKeywordWarning: version 4.2.4: keywords dropped: x86
+
+dev-ruby/activeldap
+  DeprecatedEAPI: version 3.2.2: uses deprecated EAPI: 4
+
+dev-ruby/activemodel
+  DroppedKeywordWarning: version 4.2.4: keywords dropped: x86
+
+dev-ruby/activerecord
+  DroppedKeywordWarning: version 4.2.4: keywords dropped: x86
+
+dev-ruby/activeresource
+  DroppedKeywordWarning: version 4.0.0: keywords dropped: arm, ppc, ppc64, x86
+
+dev-ruby/aws-s3
+  DeprecatedEAPI: version 0.6.3: uses deprecated EAPI: 4
+
+dev-ruby/blankslate
+  DroppedKeywordWarning: version 3.1.2: keywords dropped: alpha, x86
+
+dev-ruby/bouncy-castle-java
+  DeprecatedEAPI: version 1.5.0146.1: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.5.0147: uses deprecated EAPI: 4
+
+dev-ruby/capistrano
+  DroppedKeywordWarning: version 3.3.5: keywords dropped: ppc, ppc64, x86
+
+dev-ruby/capybara
+  DeprecatedEAPI: version 1.1.4: uses deprecated EAPI: 4
+
+dev-ruby/coffee-rails
+  DeprecatedEAPI: version 3.2.2: uses deprecated EAPI: 4
+
+dev-ruby/dalli
+  DroppedKeywordWarning: version 2.7.4-r1: keywords dropped: ppc
+
+dev-ruby/facter
+  DroppedKeywordWarning: version 3.0.2-r1: keywords dropped: sparc
+
+dev-ruby/fakefs
+  DroppedKeywordWarning: version 0.6.5: keywords dropped: alpha, sparc
+
+dev-ruby/gherkin
+  DroppedKeywordWarning: version 2.12.2: keywords dropped: ppc, sparc
+
+dev-ruby/haml
+  DroppedKeywordWarning: version 4.0.6-r1: keywords dropped: x86
+
+dev-ruby/hiera
+  DroppedKeywordWarning: version 3.0.1-r1: keywords dropped: ppc, sparc
+
+dev-ruby/http
+  DroppedKeywordWarning: version 0.9.3: keywords dropped: ppc
+
+dev-ruby/i18n
+  DroppedKeywordWarning: version 0.6.11: keywords dropped: x86
+
+dev-ruby/jquery-rails
+  DroppedKeywordWarning: version 4.0.4: keywords dropped: x86
+
+dev-ruby/jruby-openssl
+  DeprecatedEAPI: version 0.7.7: uses deprecated EAPI: 4
+
+dev-ruby/kramdown
+  DroppedKeywordWarning: version 1.8.0: keywords dropped: arm, ppc
+
+dev-ruby/liquid
+  DroppedKeywordWarning: version 3.0.4: keywords dropped: x86
+
+dev-ruby/listen
+  DroppedKeywordWarning: version 2.8.5: keywords dropped: arm, x86
+
+dev-ruby/mime-types
+  DroppedKeywordWarning: version 1.25.1: keywords dropped: hppa
+
+dev-ruby/mocha
+  DeprecatedEAPI: version 0.11.4: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.12.7: uses deprecated EAPI: 4
+
+dev-ruby/moneta
+  DeprecatedEAPI: version 0.7.20: uses deprecated EAPI: 4
+
+dev-ruby/multi_xml
+  DroppedKeywordWarning: version 0.5.5: keywords dropped: ppc
+
+dev-ruby/net-ssh
+  DroppedKeywordWarning: version 3.0.1: keywords dropped: arm
+
+dev-ruby/net-ssh-gateway
+  DeprecatedEAPI: version 1.2.0: uses deprecated EAPI: 4
+
+dev-ruby/rack-cache
+  DroppedKeywordWarning: version 1.5.1: keywords dropped: ppc, x86
+
+dev-ruby/rails
+  DroppedKeywordWarning: version 4.2.4: keywords dropped: x86
+
+dev-ruby/railties
+  DroppedKeywordWarning: version 4.2.4: keywords dropped: x86
+
+dev-ruby/rmagick
+  DroppedKeywordWarning: version 2.15.4: keywords dropped: mips
+
+dev-ruby/rrdtool-bindings
+  DroppedKeywordWarning: version 1.5.4: keywords dropped: alpha, ia64, sparc
+
+dev-ruby/rspec
+  DroppedKeywordWarning: version 3.4.0: keywords dropped: alpha, ia64, ppc, sparc, x86
+
+dev-ruby/rspec-core
+  DroppedKeywordWarning: version 3.3.2-r1: keywords dropped: alpha, ia64, ppc, sparc, x86
+
+dev-ruby/rspec-expectations
+  DroppedKeywordWarning: version 3.4.0: keywords dropped: alpha, ia64, ppc, sparc, x86
+
+dev-ruby/rspec-mocks
+  DroppedKeywordWarning: version 3.4.0: keywords dropped: alpha, ia64, ppc, sparc, x86
+
+dev-ruby/rspec-rails
+  DroppedKeywordWarning: version 3.4.0: keywords dropped: x86
+
+dev-ruby/rspec-support
+  DroppedKeywordWarning: version 3.4.0: keywords dropped: alpha, ia64, ppc, sparc, x86
+
+dev-ruby/ruby-elf
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+dev-ruby/rubyzip
+  DroppedKeywordWarning: version 1.1.7: keywords dropped: alpha, arm
+
+dev-ruby/shoulda
+  DroppedKeywordWarning: version 3.5.0-r1: keywords dropped: alpha, ia64, sparc, x86
+
+dev-ruby/slop
+  DroppedKeywordWarning: version 4.1.0: keywords dropped: arm
+
+dev-ruby/term-ansicolor
+  DroppedKeywordWarning: version 1.3.0-r1: keywords dropped: ia64
+
+dev-ruby/trollop
+  DroppedKeywordWarning: version 2.0: keywords dropped: arm
+  DroppedKeywordWarning: version 2.1.1: keywords dropped: alpha, sparc
+
+dev-ruby/webmock
+  DroppedKeywordWarning: version 1.22.1: keywords dropped: ppc, x86
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+
+net-libs/NativeThread
+  DeprecatedEAPI: version 0_pre20080330: uses deprecated EAPI: 0
+
+net-libs/adns
+  DeprecatedEAPI: version 1.4: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.4-r1: uses deprecated EAPI: 2
+
+net-libs/aqbanking
+  DeprecatedEAPI: version 5.0.25: uses deprecated EAPI: 4
+
+net-libs/c-client
+  DeprecatedEAPI: version 2007f-r4: uses deprecated EAPI: 4
+
+net-libs/canlock
+  DeprecatedEAPI: version 2b: uses deprecated EAPI: 4
+
+net-libs/courier-authlib
+  DeprecatedEAPI: version 0.65.0-r3: uses deprecated EAPI: 4
+
+net-libs/cvm
+  DeprecatedEAPI: version 0.76: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.82: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.96: uses deprecated EAPI: 2
+
+net-libs/daq
+  DeprecatedEAPI: version 0.6.2: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.2-r1: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 2.0.0: uses deprecated EAPI: 4
+
+net-libs/dhcpcd-dbus
+  DeprecatedEAPI: version 0.6.1: uses deprecated EAPI: 4
+
+net-libs/enet
+  DeprecatedEAPI: version 1.2.2: uses deprecated EAPI: 3
+
+net-libs/farstream
+  NonExistentDeps: version 0.1.2-r1: depset rdepends: nonexistent atoms [ <=net-libs/libnice-0.1.3 ]
+  DeprecatedEclass: version 0.1.2-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.1.2-r1: uses deprecated EAPI: 4
+  NonExistentDeps: version 0.1.2-r2: depset rdepends: nonexistent atoms [ <=net-libs/libnice-0.1.3 ]
+
+net-libs/ftplib
+  DeprecatedEAPI: version 3.1.1: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 4.0: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 4.0-r1: uses deprecated EAPI: 4
+
+net-libs/gsoap
+  DeprecatedEAPI: version 2.7.17: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 2.8.12: uses deprecated EAPI: 4
+
+net-libs/gupnp-ui
+  WhitespaceFound: version 0.1.1: ebuild has leading whitespace on line 28
+
+net-libs/iax
+  DeprecatedEAPI: version 0.2.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.2.2-r1: uses deprecated EAPI: 2
+
+net-libs/iojs
+  NoFinalNewline: version 2.4.0: ebuild lacks an ending newline
+  NoFinalNewline: version 2.5.0: ebuild lacks an ending newline
+  NoFinalNewline: version 3.0.0: ebuild lacks an ending newline
+
+net-libs/liba53
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+net-libs/libbitcoinconsensus
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+net-libs/libbt
+  DeprecatedEAPI: version 1.05: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.06: uses deprecated EAPI: 2
+
+net-libs/libeXosip
+  DeprecatedEAPI: version 3.5.0: uses deprecated EAPI: 2
+
+net-libs/libecap
+  DeprecatedEAPI: version 0.2.0: uses deprecated EAPI: 4
+
+net-libs/libesmtp
+  DeprecatedEAPI: version 1.0.6: uses deprecated EAPI: 3
+
+net-libs/libetpan
+  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 4
+
+net-libs/libgadu
+  DroppedKeywordWarning: version 1.12.0: keywords dropped: alpha, ia64, sparc
+
+net-libs/libgsasl
+  DeprecatedEAPI: version 1.8.0-r1: uses deprecated EAPI: 4
+
+net-libs/libgssglue
+  DeprecatedEAPI: version 0.4: uses deprecated EAPI: 4
+
+net-libs/libhackrf
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+net-libs/libident
+  DeprecatedEAPI: version 0.32: uses deprecated EAPI: 0
+
+net-libs/libinfinity
+  DeprecatedEAPI: version 0.5.4: uses deprecated EAPI: 4
+
+net-libs/libiscsi
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+net-libs/libisds
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+net-libs/liblockfile
+  DeprecatedEAPI: version 1.09: uses deprecated EAPI: 4
+
+net-libs/libmapi
+  DeprecatedEclass: version 1.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 4
+
+net-libs/libmirisdr
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+net-libs/libmnl
+  DeprecatedEAPI: version 1.0.3-r1: uses deprecated EAPI: 4
+
+net-libs/libmrss
+  DeprecatedEAPI: version 0.19.2: uses deprecated EAPI: 4
+
+net-libs/libnatpmp
+  DeprecatedEAPI: version 20110808-r1: uses deprecated EAPI: 4
+
+net-libs/libnet
+  DeprecatedEAPI: version 1.0.2a-r5: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.1.6: uses deprecated EAPI: 4
+
+net-libs/libnfnetlink
+  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 4
+
+net-libs/libnfsidmap
+  DeprecatedEAPI: version 0.24: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.25: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.25-r1: uses deprecated EAPI: 4
+
+net-libs/libnipper
+  DeprecatedEAPI: version 0.12.6-r1: uses deprecated EAPI: 4
+
+net-libs/libntlm
+  DeprecatedEAPI: version 1.3: uses deprecated EAPI: 4
+
+net-libs/libnxml
+  DeprecatedEAPI: version 0.18.3: uses deprecated EAPI: 4
+
+net-libs/libosip
+  DeprecatedEAPI: version 3.6.0: uses deprecated EAPI: 2
+
+net-libs/libosmo-abis
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+net-libs/libosmo-dsp
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+net-libs/libosmocore
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+net-libs/libpri
+  DeprecatedEAPI: version 1.4.12-r2: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.4.13: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.4.14: uses deprecated EAPI: 4
+
+net-libs/libproxy
+  DeprecatedEclass: version 0.4.11-r2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+
+net-libs/libqmi
+  DeprecatedEAPI: version 1.0.0: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.4.0: uses deprecated EAPI: 4
+  DroppedKeywordWarning: version 1.12.6: keywords dropped: arm64
+
+net-libs/librouteros
+  DeprecatedEAPI: version 1.1.2: uses deprecated EAPI: 4
+
+net-libs/librpcsecgss
+  DeprecatedEAPI: version 0.16: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.19: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.19-r1: uses deprecated EAPI: 2
+
+net-libs/libs3
+  DeprecatedEAPI: version 2.0-r1: uses deprecated EAPI: 4
+
+net-libs/libsrtp
+  DeprecatedEAPI: version 1.4.4-r1: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 1.4.4-r2: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.4.4_p20121108: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.4.4_p20121108-r1: uses deprecated EAPI: 4
+
+net-libs/libssh
+  DroppedKeywordWarning: version 0.7.0-r1: keywords dropped: ia64
+
+net-libs/libtelnet
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+net-libs/libtirpc
+  DeprecatedEAPI: version 0.1.10: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.2.4-r1: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.2.4-r2: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.2.5: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.3.1: uses deprecated EAPI: 4
+
+net-libs/libtorrent
+  DeprecatedEAPI: version 0.13.3: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.13.4: uses deprecated EAPI: 4
+
+net-libs/libupnp
+  DeprecatedEAPI: version 1.6.18: uses deprecated EAPI: 4
+
+net-libs/libyahoo2
+  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 2
+
+net-libs/meanwhile
+  DeprecatedEAPI: version 1.0.2-r1: uses deprecated EAPI: 4
+
+net-libs/nativebiginteger
+  DeprecatedEAPI: version 0.6.4: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.6.4-r3: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.8.7: uses deprecated EAPI: 4
+
+net-libs/net6
+  DeprecatedEAPI: version 1.3.14: uses deprecated EAPI: 4
+
+net-libs/netembryo
+  DeprecatedEAPI: version 0.1.1: uses deprecated EAPI: 2
+
+net-libs/nghttp2
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+net-libs/obby
+  DeprecatedEAPI: version 0.4.8: uses deprecated EAPI: 4
+
+net-libs/openslp
+  DeprecatedEAPI: version 1.2.1-r3: uses deprecated EAPI: 0
+  DroppedKeywordWarning: version 2.0.0: keywords dropped: alpha, amd64, arm, hppa, ia64, m68k, mips, ppc, ppc64, s390, sh, sparc, x86
+
+net-libs/osptoolkit
+  DeprecatedEAPI: version 3.5.0: uses deprecated EAPI: 2
+
+net-libs/qtweetlib
+  DeprecatedEAPI: version 0.5: uses deprecated EAPI: 4
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
+
+net-libs/qxmpp
+  DeprecatedEAPI: version 0.7.4: uses deprecated EAPI: 4
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+net-libs/rb_libtorrent
+  DeprecatedEclass: version 0.16.17: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.16.17: uses deprecated EAPI: 4
+
+net-libs/roadrunner
+  DeprecatedEAPI: version 0.9.1: uses deprecated EAPI: 0
+
+net-libs/rpc2
+  DeprecatedEAPI: version 2.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.8: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.10: uses deprecated EAPI: 4
+
+net-libs/sofia-sip
+  DeprecatedEAPI: version 1.12.11: uses deprecated EAPI: 4
+
+net-libs/udns
+  DeprecatedEAPI: version 0.4: uses deprecated EAPI: 4
+
+net-libs/vanessa-mcast
+  DeprecatedEAPI: version 1.0.0: uses deprecated EAPI: 0
+
+net-libs/vanessa-socket
+  DeprecatedEAPI: version 0.0.12: uses deprecated EAPI: 0
+
+net-libs/webkit-gtk
+  DroppedKeywordWarning: version 2.8.5: keywords dropped: mips
+  DroppedKeywordWarning: version 2.10.4: keywords dropped: alpha, ia64
+
+net-libs/wvstreams
+  DeprecatedEAPI: version 4.6.1-r2: uses deprecated EAPI: 4
+
+net-libs/zeromq
+  DeprecatedEAPI: version 2.2.0: uses deprecated EAPI: 4
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+
+app-leechcraft/laretz
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+app-leechcraft/lc-advancednotifications
+  DeprecatedEAPI: version 0.6.60: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.65: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.70: uses deprecated EAPI: 4
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
+
+app-leechcraft/lc-aggregator
+  DeprecatedEAPI: version 0.6.60: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.65: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.70: uses deprecated EAPI: 4
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
+
+app-leechcraft/lc-anhero
+  DeprecatedEAPI: version 0.6.60: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.65: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.70: uses deprecated EAPI: 4
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
+
+app-leechcraft/lc-auscrie
+  DeprecatedEAPI: version 0.6.60: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.65: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.70: uses deprecated EAPI: 4
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
+
+app-leechcraft/lc-azoth
+  NonExistentDeps: version 9999: depset depends: nonexistent atoms [ net-libs/tox ]
+  NonExistentDeps: version 9999: depset rdepends: nonexistent atoms [ net-libs/tox ]
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+app-leechcraft/lc-bittorrent
+  DeprecatedEAPI: version 0.6.60: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.65: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.70: uses deprecated EAPI: 4
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
+
+app-leechcraft/lc-blasq
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+app-leechcraft/lc-blogique
+  DeprecatedEAPI: version 0.6.60: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.65: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.70: uses deprecated EAPI: 4
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
+
+app-leechcraft/lc-certmgr
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+app-leechcraft/lc-core
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+app-leechcraft/lc-cpuload
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+app-leechcraft/lc-cstp
+  DeprecatedEAPI: version 0.6.60: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.65: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.70: uses deprecated EAPI: 4
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
+
+app-leechcraft/lc-dbusmanager
+  DeprecatedEAPI: version 0.6.60: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.65: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.70: uses deprecated EAPI: 4
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
+
+app-leechcraft/lc-deadlyrics
+  DeprecatedEAPI: version 0.6.60: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.65: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.70: uses deprecated EAPI: 4
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
+
+app-leechcraft/lc-devmon
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+app-leechcraft/lc-dolozhee
+  DeprecatedEAPI: version 0.6.60: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.65: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.70: uses deprecated EAPI: 4
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
+
+app-leechcraft/lc-eleeminator
+  DeprecatedEAPI: version 0.6.70: uses deprecated EAPI: 4
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
+
+app-leechcraft/lc-fenet
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+app-leechcraft/lc-gacts
+  DeprecatedEAPI: version 0.6.60: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.65: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.70: uses deprecated EAPI: 4
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
+
+app-leechcraft/lc-glance
+  DeprecatedEAPI: version 0.6.60: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.65: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.70: uses deprecated EAPI: 4
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
+
+app-leechcraft/lc-gmailnotifier
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+app-leechcraft/lc-historyholder
+  DeprecatedEAPI: version 0.6.60: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.65: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.70: uses deprecated EAPI: 4
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
+
+app-leechcraft/lc-hotsensors
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+app-leechcraft/lc-hotstreams
+  DeprecatedEAPI: version 0.6.60: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.65: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.70: uses deprecated EAPI: 4
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
+
+app-leechcraft/lc-htthare
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+app-leechcraft/lc-imgaste
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+app-leechcraft/lc-intermutko
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+app-leechcraft/lc-kbswitch
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+app-leechcraft/lc-kinotify
+  DeprecatedEAPI: version 0.6.60: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.65: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.70: uses deprecated EAPI: 4
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
+
+app-leechcraft/lc-knowhow
+  DeprecatedEAPI: version 0.6.60: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.65: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.70: uses deprecated EAPI: 4
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
+
+app-leechcraft/lc-krigstask
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+app-leechcraft/lc-lackman
+  DeprecatedEAPI: version 0.6.60: uses deprecated EAPI: 4
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+app-leechcraft/lc-lastfmscrobble
+  DeprecatedEAPI: version 0.6.60: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.65: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.70: uses deprecated EAPI: 4
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
+
+app-leechcraft/lc-laughty
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+app-leechcraft/lc-launchy
+  DeprecatedEAPI: version 0.6.60: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.65: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.70: uses deprecated EAPI: 4
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
+
+app-leechcraft/lc-lemon
+  DeprecatedEAPI: version 0.6.60: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.65: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.70: uses deprecated EAPI: 4
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
+
+app-leechcraft/lc-lhtr
+  DeprecatedEAPI: version 0.6.60: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.65: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.70: uses deprecated EAPI: 4
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
+
+app-leechcraft/lc-liznoo
+  DeprecatedEAPI: version 0.6.60: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.65: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.70: uses deprecated EAPI: 4
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
+
+app-leechcraft/lc-lmp
+  DeprecatedEAPI: version 0.6.60: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.65: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.70: uses deprecated EAPI: 4
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
+
+app-leechcraft/lc-mellonetray
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+app-leechcraft/lc-monocle
+  NonExistentDeps: version 0.6.60: depset depends: nonexistent atoms [ <app-text/ghostscript-gpl-9.07 ]
+  NonExistentDeps: version 0.6.60: depset rdepends: nonexistent atoms [ <app-text/ghostscript-gpl-9.07 ]
+  NonExistentDeps: version 0.6.65: depset depends: nonexistent atoms [ <app-text/ghostscript-gpl-9.07 ]
+  NonExistentDeps: version 0.6.65: depset rdepends: nonexistent atoms [ <app-text/ghostscript-gpl-9.07 ]
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+app-leechcraft/lc-musiczombie
+  DeprecatedEAPI: version 0.6.60: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.65: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.70: uses deprecated EAPI: 4
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
+
+app-leechcraft/lc-nacheku
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+app-leechcraft/lc-netstoremanager
+  DeprecatedEAPI: version 0.6.60: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.65: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.70: uses deprecated EAPI: 4
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
+
+app-leechcraft/lc-networkmonitor
+  DeprecatedEAPI: version 0.6.60: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.65: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.70: uses deprecated EAPI: 4
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
+
+app-leechcraft/lc-newlife
+  DeprecatedEAPI: version 0.6.60: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.65: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.70: uses deprecated EAPI: 4
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
+
+app-leechcraft/lc-ooronee
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+app-leechcraft/lc-otlozhu
+  DeprecatedEAPI: version 0.6.60: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.65: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.70: uses deprecated EAPI: 4
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
+
+app-leechcraft/lc-pintab
+  DeprecatedEAPI: version 0.6.60: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.65: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.70: uses deprecated EAPI: 4
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
+
+app-leechcraft/lc-pogooglue
+  DeprecatedEAPI: version 0.6.60: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.65: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.70: uses deprecated EAPI: 4
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
+
+app-leechcraft/lc-popishu
+  DeprecatedEAPI: version 0.6.60: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.65: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.70: uses deprecated EAPI: 4
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
+
+app-leechcraft/lc-poshuku
+  DeprecatedEAPI: version 0.6.60: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.65: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.70: uses deprecated EAPI: 4
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
+
+app-leechcraft/lc-qrosp
+  DeprecatedEAPI: version 0.6.60: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.65: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.70: uses deprecated EAPI: 4
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
+
+app-leechcraft/lc-rosenthal
+  DeprecatedEAPI: version 0.6.65: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.70: uses deprecated EAPI: 4
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
+
+app-leechcraft/lc-sb2
+  DeprecatedEAPI: version 0.6.60: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.65: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.70: uses deprecated EAPI: 4
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
+
+app-leechcraft/lc-scroblibre
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+app-leechcraft/lc-secman
+  DeprecatedEAPI: version 0.6.60: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.65: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.70: uses deprecated EAPI: 4
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
+
+app-leechcraft/lc-seekthru
+  DeprecatedEAPI: version 0.6.60: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.65: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.70: uses deprecated EAPI: 4
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
+
+app-leechcraft/lc-summary
+  DeprecatedEAPI: version 0.6.60: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.65: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.70: uses deprecated EAPI: 4
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
+
+app-leechcraft/lc-sysnotify
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+app-leechcraft/lc-tabsessmanager
+  DeprecatedEAPI: version 0.6.60: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.65: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.70: uses deprecated EAPI: 4
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
+
+app-leechcraft/lc-tabslist
+  DeprecatedEAPI: version 0.6.60: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.65: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.70: uses deprecated EAPI: 4
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
+
+app-leechcraft/lc-touchstreams
+  DeprecatedEAPI: version 0.6.60: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.65: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.70: uses deprecated EAPI: 4
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
+
+app-leechcraft/lc-tpi
+  DeprecatedEAPI: version 0.6.60: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.65: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.70: uses deprecated EAPI: 4
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
+
+app-leechcraft/lc-vgrabber
+  DeprecatedEAPI: version 0.6.60: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.65: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.70: uses deprecated EAPI: 4
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
+
+app-leechcraft/lc-vrooby
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+app-leechcraft/lc-xproxy
+  DeprecatedEAPI: version 0.6.60: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.65: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.70: uses deprecated EAPI: 4
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
+
+app-leechcraft/lc-xtazy
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+app-leechcraft/liblaretz
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+
+sci-chemistry/PyMca
+  DeprecatedEclass: version 4.6.2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+sci-chemistry/acpype
+  DeprecatedEclass: version 366: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 366: uses deprecated EAPI: 3
+  NonExistentDeps: version 374: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  NonExistentDeps: version 374: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 374: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 374: uses deprecated EAPI: 4
+
+sci-chemistry/ambertools
+  DeprecatedEAPI: version 1.5-r1: uses deprecated EAPI: 4
+  MissingChksum: version 1.5-r1: "AmberTools-1.5.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.5-r1: "ambertools-1.5-bugfix_1-10.patch.xz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-chemistry/aqua
+  DeprecatedEAPI: version 3.2-r2: uses deprecated EAPI: 4
+  MissingChksum: version 3.2-r2: "aqua-3.2-nmr_manual.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-chemistry/avogadro
+  DroppedKeywordWarning: version 1.1.0: keywords dropped: ppc
+
+sci-chemistry/azara
+  DeprecatedEclass: version 2.8-r4: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 2.8-r4: uses deprecated EAPI: 3
+
+sci-chemistry/chemical-mime-data
+  DeprecatedEAPI: version 0.1.94: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.1.94-r1: uses deprecated EAPI: 2
+
+sci-chemistry/chemtool
+  DeprecatedEAPI: version 1.6.13: uses deprecated EAPI: 4
+
+sci-chemistry/clashlist
+  DeprecatedEAPI: version 3.17-r1: uses deprecated EAPI: 4
+
+sci-chemistry/cluster
+  DeprecatedEAPI: version 1.3.081231: uses deprecated EAPI: 4
+
+sci-chemistry/elem
+  DeprecatedEAPI: version 1.0.3-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0.3-r2: uses deprecated EAPI: 0
+
+sci-chemistry/gamess
+  DeprecatedEAPI: version 20110811.1: uses deprecated EAPI: 4
+  MissingChksum: version 20110811.1: "gamess-20110811.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 20110811.1: "tinker.tar.Z" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-chemistry/gelemental
+  DeprecatedEAPI: version 1.2.0: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.2.0-r1: uses deprecated EAPI: 4
+
+sci-chemistry/ghemical
+  DeprecatedEAPI: version 2.99.2-r2: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.0.0: uses deprecated EAPI: 3
+
+sci-chemistry/gopenmol
+  DeprecatedEclass: version 3.00-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 3.00-r2: uses deprecated EAPI: 4
+
+sci-chemistry/gperiodic
+  DeprecatedEAPI: version 2.0.10: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 2.0.10-r2: uses deprecated EAPI: 4
+
+sci-chemistry/ksdssp
+  DeprecatedEAPI: version 040728: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 040728-r1: uses deprecated EAPI: 4
+
+sci-chemistry/mars
+  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 4
+
+sci-chemistry/mead
+  DeprecatedEAPI: version 2.2.7: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.2.7-r1: uses deprecated EAPI: 0
+  MissingChksum: version 2.2.7: "mead-2.2.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-chemistry/mm-align
+  DeprecatedEAPI: version 20120321: uses deprecated EAPI: 4
+
+sci-chemistry/molden
+  DeprecatedEAPI: version 4.8-r2: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 5.0: uses deprecated EAPI: 4
+
+sci-chemistry/moldy
+  DeprecatedEAPI: version 2.16e-r2: uses deprecated EAPI: 4
+
+sci-chemistry/molmol
+  DeprecatedEAPI: version 2k_p2-r2: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 2k_p2-r3: uses deprecated EAPI: 4
+  SizeViolation: "files/wild.patch" exceeds 20k in size; 50572 bytes total
+
+sci-chemistry/mopac7
+  DeprecatedEAPI: version 1.15: uses deprecated EAPI: 4
+
+sci-chemistry/mpqc
+  DeprecatedEAPI: version 2.3.1-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.3.1-r2: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 2.3.1-r3: uses deprecated EAPI: 4
+
+sci-chemistry/msms-bin
+  DeprecatedEAPI: version 2.6.1-r1: uses deprecated EAPI: 4
+  MissingChksum: version 2.6.1-r1: "msms_i86Linux2_2.6.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-chemistry/mustang
+  DeprecatedEAPI: version 3.2.1: uses deprecated EAPI: 4
+
+sci-chemistry/ortep3
+  DeprecatedEAPI: version 1.0.3-r1: uses deprecated EAPI: 4
+
+sci-chemistry/p3d
+  DeprecatedEclass: version 0.4.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.4.3: uses deprecated EAPI: 3
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), git-2 (migrate to git-r3), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
+
+sci-chemistry/pdbcat
+  DeprecatedEAPI: version 1.3: uses deprecated EAPI: 4
+
+sci-chemistry/pdbcns
+  DeprecatedEAPI: version 2.0.010504: uses deprecated EAPI: 4
+
+sci-chemistry/pdbmat
+  DeprecatedEAPI: version 3.89: uses deprecated EAPI: 4
+
+sci-chemistry/povscript+
+  DeprecatedEAPI: version 2.1.2.2.19: uses deprecated EAPI: 4
+
+sci-chemistry/prekin
+  DeprecatedEAPI: version 6.51.081122-r1: uses deprecated EAPI: 2
+
+sci-chemistry/probe
+  DeprecatedEAPI: version 2.13.110909: uses deprecated EAPI: 4
+
+sci-chemistry/procheck
+  DeprecatedEAPI: version 3.5.4-r1: uses deprecated EAPI: 4
+  MissingChksum: version 3.5.4-r1: "procheck-3.5.4-manual.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-chemistry/psi
+  DeprecatedEAPI: version 3.4.0-r2: uses deprecated EAPI: 4
+
+sci-chemistry/pymol-apbs-plugin
+  DeprecatedEclass: version 0_p15: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0_p15: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0_p18: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0_p18: uses deprecated EAPI: 3
+  DeprecatedEclass: version 2.1_p24: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 2.1_p24: uses deprecated EAPI: 3
+
+sci-chemistry/pymol-plugins-bni-tools
+  DeprecatedEclass: version 0.25.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.25.1: uses deprecated EAPI: 3
+
+sci-chemistry/pymol-plugins-dssp
+  DeprecatedEclass: version 110430: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 110430: uses deprecated EAPI: 3
+
+sci-chemistry/pymol-plugins-emovie
+  DeprecatedEclass: version 1.0.4: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.0.4: uses deprecated EAPI: 3
+
+sci-chemistry/pymol-plugins-msms
+  DeprecatedEclass: version 100415: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 100415: uses deprecated EAPI: 3
+
+sci-chemistry/raster3d
+  DeprecatedEAPI: version 3.0.2: uses deprecated EAPI: 4
+
+sci-chemistry/reduce
+  DeprecatedEAPI: version 3.13.080428-r1: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.14.080821: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 3.16.111118: uses deprecated EAPI: 4
+
+sci-chemistry/suitename
+  DeprecatedEAPI: version 0.3.070628: uses deprecated EAPI: 4
+
+sci-chemistry/surf
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 4
+
+sci-chemistry/threeV
+  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 3
+
+sci-chemistry/viewmol
+  DeprecatedEclass: version 2.4.1-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 2.4.1-r2: uses deprecated EAPI: 3
+
+sci-chemistry/votca-csg
+  NonExistentDeps: version 1.2.2: depset depends: nonexistent atoms [ <app-doc/doxygen-1.7.6.1 ]
+  DeprecatedEAPI: version 1.2.2: uses deprecated EAPI: 4
+  NonExistentDeps: version 1.2.4-r1: depset depends: nonexistent atoms [ <app-doc/doxygen-1.7.6.1 ]
+
+sci-chemistry/votca-csgapps
+  DeprecatedEAPI: version 1.2.2: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.2.4: uses deprecated EAPI: 4
+
+sci-chemistry/xyza2pipe
+  DeprecatedEAPI: version 20101129: uses deprecated EAPI: 3
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+
+x11-wm/afterstep
+  DeprecatedEAPI: version 2.2.9: uses deprecated EAPI: 4
+
+x11-wm/amiwm
+  DeprecatedEAPI: version 0.21_p2: uses deprecated EAPI: 4
+
+x11-wm/awesome
+  NonExistentDeps: version 3.4.15: depset depends: nonexistent atoms [ <x11-libs/libX11-1.3.99.901 ]
+  NonExistentDeps: version 3.4.15: depset rdepends: nonexistent atoms [ <x11-libs/libX11-1.3.99.901 ]
+  DeprecatedEAPI: version 3.4.15: uses deprecated EAPI: 3
+
+x11-wm/compiz-fusion
+  DeprecatedEAPI: version 0.8.8: uses deprecated EAPI: 0
+
+x11-wm/ctwm
+  DeprecatedEAPI: version 3.7: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 3.8a-r1: uses deprecated EAPI: 2
+
+x11-wm/cwm
+  DeprecatedEAPI: version 5.1: uses deprecated EAPI: 4
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+x11-wm/echinus
+  DeprecatedEAPI: version 0.4.9: uses deprecated EAPI: 4
+
+x11-wm/emerald
+  DeprecatedEAPI: version 0.8.8: uses deprecated EAPI: 4
+
+x11-wm/enlightenment
+  DeprecatedEAPI: version 0.16.9999: uses deprecated EAPI: 4
+  DeprecatedEclass: version 0.17.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEAPI: version 1.0.11: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.0.13: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.0.14: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.0.15: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.0.16: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.0.17: uses deprecated EAPI: 4
+
+x11-wm/evilwm
+  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 1.1.0: uses deprecated EAPI: 3
+  DroppedKeywordWarning: version 1.1.0: keywords dropped: alpha, amd64, ppc, sparc, x86
+
+x11-wm/fluxbox
+  DeprecatedEAPI: version 1.3.2: uses deprecated EAPI: 4
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+x11-wm/i3
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+x11-wm/icewm
+  DroppedKeywordWarning: version 1.3.9: keywords dropped: alpha, ppc64, sparc
+
+x11-wm/jwm
+  DeprecatedEAPI: version 2.1.0: uses deprecated EAPI: 4
+
+x11-wm/larswm
+  DeprecatedEAPI: version 7.5.3-r1: uses deprecated EAPI: 2
+
+x11-wm/lwm
+  DeprecatedEAPI: version 1.2.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.2.2: uses deprecated EAPI: 4
+
+x11-wm/matchbox
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+
+x11-wm/matchbox-common
+  DeprecatedEAPI: version 0.9.1-r2: uses deprecated EAPI: 0
+
+x11-wm/matchbox-desktop
+  DeprecatedEAPI: version 0.9.1: uses deprecated EAPI: 0
+
+x11-wm/matchbox-panel
+  DeprecatedEAPI: version 0.9.3-r1: uses deprecated EAPI: 0
+
+x11-wm/matchbox-window-manager
+  WrongIndentFound: version 1.2-r1: ebuild has whitespace in indentation on line 39
+
+x11-wm/matwm2
+  DeprecatedEAPI: version 0.1.1: uses deprecated EAPI: 4
+
+x11-wm/musca
+  DeprecatedEAPI: version 0.9.24_p20100226-r3: uses deprecated EAPI: 4
+
+x11-wm/mutter
+  SizeViolation: "files/mutter-3.16.3-GL_EXT_x11_sync_object.patch" exceeds 20k in size; 25061 bytes total
+
+x11-wm/openbox
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+x11-wm/oroborus
+  DeprecatedEAPI: version 2.0.20: uses deprecated EAPI: 4
+
+x11-wm/sithwm
+  DeprecatedEAPI: version 1.2.3: uses deprecated EAPI: 4
+
+x11-wm/spectrwm
+  DeprecatedEAPI: version 2.6.2: uses deprecated EAPI: 4
+
+x11-wm/stumpwm
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+x11-wm/treewm
+  DeprecatedEAPI: version 0.4.5: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.4.5-r1: uses deprecated EAPI: 2
+
+x11-wm/vtwm
+  DeprecatedEAPI: version 5.4.6a: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 5.4.7-r1: uses deprecated EAPI: 2
+
+x11-wm/windowlab
+  DeprecatedEAPI: version 1.34: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.40: uses deprecated EAPI: 2
+
+x11-wm/windowmaker
+  DeprecatedEAPI: version 0.92.0-r11: uses deprecated EAPI: 3
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+
+mail-client/alpine
+  DeprecatedEAPI: version 2.00-r5: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 2.00-r6: uses deprecated EAPI: 4
+
+mail-client/biabam
+  DeprecatedEAPI: version 0.9.7: uses deprecated EAPI: 0
+
+mail-client/claws-mail
+  DeprecatedEAPI: version 3.9.0: uses deprecated EAPI: 4
+
+mail-client/claws-mail-acpi-notifier
+  DeprecatedEAPI: version 1.0.28: uses deprecated EAPI: 0
+
+mail-client/claws-mail-address_keeper
+  DeprecatedEAPI: version 1.0.7: uses deprecated EAPI: 0
+
+mail-client/claws-mail-archive
+  DeprecatedEAPI: version 0.6.13: uses deprecated EAPI: 0
+
+mail-client/claws-mail-att-remover
+  DeprecatedEAPI: version 1.0.15: uses deprecated EAPI: 0
+
+mail-client/claws-mail-attachwarner
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+
+mail-client/claws-mail-clamd
+  DeprecatedEAPI: version 3.5.5: uses deprecated EAPI: 0
+
+mail-client/claws-mail-fancy
+  DeprecatedEAPI: version 0.9.17: uses deprecated EAPI: 3
+
+mail-client/claws-mail-fetchinfo
+  DeprecatedEAPI: version 0.4.25: uses deprecated EAPI: 0
+
+mail-client/claws-mail-gdata
+  DeprecatedEAPI: version 0.5: uses deprecated EAPI: 4
+
+mail-client/claws-mail-gtkhtml
+  DeprecatedEAPI: version 0.34: uses deprecated EAPI: 0
+
+mail-client/claws-mail-mailmbox
+  DeprecatedEAPI: version 1.15: uses deprecated EAPI: 0
+
+mail-client/claws-mail-newmail
+  DeprecatedEAPI: version 0.0.16: uses deprecated EAPI: 0
+
+mail-client/claws-mail-notification
+  DeprecatedEAPI: version 0.31: uses deprecated EAPI: 4
+
+mail-client/claws-mail-perl
+  DeprecatedEAPI: version 0.9.20: uses deprecated EAPI: 0
+
+mail-client/claws-mail-python
+  DeprecatedEAPI: version 0.11: uses deprecated EAPI: 4
+
+mail-client/claws-mail-rssyl
+  DeprecatedEAPI: version 0.34: uses deprecated EAPI: 4
+
+mail-client/claws-mail-spam-report
+  DeprecatedEAPI: version 0.3.17: uses deprecated EAPI: 4
+
+mail-client/claws-mail-tnef-parse
+  DeprecatedEAPI: version 0.3.14: uses deprecated EAPI: 4
+
+mail-client/claws-mail-vcalendar
+  DeprecatedEAPI: version 2.0.14: uses deprecated EAPI: 4
+
+mail-client/clawsker
+  DeprecatedEAPI: version 0.7.8: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.7.10: uses deprecated EAPI: 0
+
+mail-client/cone
+  DeprecatedEAPI: version 0.89: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.90: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.90-r1: uses deprecated EAPI: 4
+
+mail-client/drac
+  DeprecatedEAPI: version 1.12-r1: uses deprecated EAPI: 0
+
+mail-client/etpan-ng
+  DeprecatedEAPI: version 0.7.1-r1: uses deprecated EAPI: 0
+
+mail-client/evolution
+  DroppedKeywordWarning: version 3.16.5: keywords dropped: arm, ppc, ppc64, sparc
+
+mail-client/hap
+  DeprecatedEAPI: version 3.7-r1: uses deprecated EAPI: 4
+
+mail-client/mail-notification
+  SizeViolation: "files/mail-notification-aarch64.patch" exceeds 20k in size; 49364 bytes total
+
+mail-client/mailx
+  DeprecatedEAPI: version 8.1.2.20050715-r6: uses deprecated EAPI: 0
+
+mail-client/mailx-support
+  DeprecatedEAPI: version 20060102-r1: uses deprecated EAPI: 0
+
+mail-client/mutt
+  MetadataError: version 1.5.23-r5: attr(fetchables): error- Metadata Exception: pkg ebuild src: mail-client/mutt-1.5.23-r5, attr fetchables
+error: mirror://sourceforge/mutt/mutt-1.5.23.tar.gz mirror://bitbucket/mutt/mutt/downloads/mutt-1.5.23.tar.gz ftp://ftp.mutt.org/mutt/devel/mutt-1.5.23.tar.gz mirror://gentoo/mutt-1.5.23-gentoo-patches-r5.tar.bz2 https://dev.gentoo.org/~grobian/distfiles/mutt-1.5.23-gentoo-patches-r5.tar.bz2 is unparseable
+flagged token- uri mirror://bitbucket/mutt/mutt/downloads/mutt-1.5.23.tar.gz isn't a known mirror tier
+  MetadataError: version 1.5.23-r7: attr(fetchables): error- Metadata Exception: pkg ebuild src: mail-client/mutt-1.5.23-r7, attr fetchables
+error: mirror://sourceforge/mutt/mutt-1.5.23.tar.gz mirror://bitbucket/mutt/mutt/downloads/mutt-1.5.23.tar.gz ftp://ftp.mutt.org/mutt/devel/mutt-1.5.23.tar.gz mirror://gentoo/mutt-1.5.23-gentoo-patches-r7.tar.bz2 https://dev.gentoo.org/~grobian/distfiles/mutt-1.5.23-gentoo-patches-r7.tar.bz2 is unparseable
+flagged token- uri mirror://bitbucket/mutt/mutt/downloads/mutt-1.5.23.tar.gz isn't a known mirror tier
+  MetadataError: version 1.5.23-r8: attr(fetchables): error- Metadata Exception: pkg ebuild src: mail-client/mutt-1.5.23-r8, attr fetchables
+error: mirror://sourceforge/mutt/mutt-1.5.23.tar.gz mirror://bitbucket/mutt/mutt/downloads/mutt-1.5.23.tar.gz ftp://ftp.mutt.org/mutt/devel/mutt-1.5.23.tar.gz mirror://gentoo/mutt-1.5.23-gentoo-patches-r8.tar.bz2 https://dev.gentoo.org/~grobian/distfiles/mutt-1.5.23-gentoo-patches-r8.tar.bz2 is unparseable
+flagged token- uri mirror://bitbucket/mutt/mutt/downloads/mutt-1.5.23.tar.gz isn't a known mirror tier
+  MetadataError: version 1.5.24-r1: attr(fetchables): error- Metadata Exception: pkg ebuild src: mail-client/mutt-1.5.24-r1, attr fetchables
+error: mirror://sourceforge/mutt/mutt-1.5.24.tar.gz mirror://bitbucket/mutt/mutt/downloads/mutt-1.5.24.tar.gz ftp://ftp.mutt.org/pub/mutt/mutt-1.5.24.tar.gz mirror://gentoo/mutt-1.5.24-gentoo-patches-r1.tar.bz2 https://dev.gentoo.org/~grobian/distfiles/mutt-1.5.24-gentoo-patches-r1.tar.bz2 is unparseable
+flagged token- uri mirror://bitbucket/mutt/mutt/downloads/mutt-1.5.24.tar.gz isn't a known mirror tier
+  MetadataError: version 1.5.24-r2: attr(fetchables): error- Metadata Exception: pkg ebuild src: mail-client/mutt-1.5.24-r2, attr fetchables
+error: mirror://sourceforge/mutt/mutt-1.5.24.tar.gz mirror://bitbucket/mutt/mutt/downloads/mutt-1.5.24.tar.gz ftp://ftp.mutt.org/pub/mutt/mutt-1.5.24.tar.gz mirror://gentoo/mutt-1.5.24-gentoo-patches-r1.tar.bz2 https://dev.gentoo.org/~grobian/distfiles/mutt-1.5.24-gentoo-patches-r1.tar.bz2 is unparseable
+flagged token- uri mirror://bitbucket/mutt/mutt/downloads/mutt-1.5.24.tar.gz isn't a known mirror tier
+
+mail-client/nail
+  DeprecatedEAPI: version 12.4: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 12.4-r2: uses deprecated EAPI: 3
+
+mail-client/nmh
+  DeprecatedEAPI: version 1.3-r3: uses deprecated EAPI: 2
+
+mail-client/pinepgp
+  NonExistentDeps: version 0.18.0-r1: depset depends: nonexistent atoms [ mail-client/pine ]
+  NonExistentDeps: version 0.18.0-r1: depset rdepends: nonexistent atoms [ mail-client/pine ]
+  DeprecatedEAPI: version 0.18.0-r1: uses deprecated EAPI: 0
+
+mail-client/trojita
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DroppedKeywordWarning: version 0.5: keywords dropped: ppc
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+
+app-eselect/eselect-audicle
+  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 0
+
+app-eselect/eselect-awk
+  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 4
+
+app-eselect/eselect-bashcomp
+  DeprecatedEAPI: version 1.3.6: uses deprecated EAPI: 4
+
+app-eselect/eselect-blas
+  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 0
+
+app-eselect/eselect-cblas
+  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 0
+
+app-eselect/eselect-chuck
+  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 0
+
+app-eselect/eselect-esd
+  DeprecatedEAPI: version 20060719: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 20091106: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 20100127: uses deprecated EAPI: 0
+
+app-eselect/eselect-fontconfig
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 0
+
+app-eselect/eselect-gnat
+  DeprecatedEAPI: version 1.3-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.4: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.4-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.5: uses deprecated EAPI: 0
+
+app-eselect/eselect-gnome-shell-extensions
+  DeprecatedEAPI: version 20120911: uses deprecated EAPI: 4
+
+app-eselect/eselect-infinality
+  DeprecatedEAPI: version 1: uses deprecated EAPI: 4
+
+app-eselect/eselect-java
+  DroppedKeywordWarning: version 0.1.0-r1: keywords dropped: ia64
+
+app-eselect/eselect-lapack
+  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 0
+
+app-eselect/eselect-lcdfilter
+  DeprecatedEAPI: version 1: uses deprecated EAPI: 4
+
+app-eselect/eselect-maven
+  DeprecatedEAPI: version 0.2-r1: uses deprecated EAPI: 3
+  DroppedKeywordWarning: version 0.2-r3: keywords dropped: ppc
+
+app-eselect/eselect-mesa
+  DeprecatedEAPI: version 0.0.10: uses deprecated EAPI: 3
+
+app-eselect/eselect-miniaudicle
+  DeprecatedEAPI: version 1.0.1-r1: uses deprecated EAPI: 3
+
+app-eselect/eselect-mpost
+  DeprecatedEAPI: version 0.3: uses deprecated EAPI: 0
+
+app-eselect/eselect-oodict
+  DeprecatedEAPI: version 20100228: uses deprecated EAPI: 0
+
+app-eselect/eselect-opencascade
+  DeprecatedEAPI: version 0: uses deprecated EAPI: 4
+
+app-eselect/eselect-opencl
+  DeprecatedEAPI: version 1.1.0: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.1.0-r1: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.1.0-r2: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.1.0-r3: uses deprecated EAPI: 4
+
+app-eselect/eselect-opengl
+  DeprecatedEAPI: version 1.2.7: uses deprecated EAPI: 4
+
+app-eselect/eselect-package-manager
+  DeprecatedEAPI: version 20110108: uses deprecated EAPI: 0
+
+app-eselect/eselect-pdftex
+  DeprecatedEAPI: version 0.3: uses deprecated EAPI: 0
+
+app-eselect/eselect-python
+  DeprecatedEAPI: version 20111108: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 20131210: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 20140115: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 20140125: uses deprecated EAPI: 0
+
+app-eselect/eselect-qtgraphicssystem
+  DeprecatedEAPI: version 1.1.1: uses deprecated EAPI: 4
+
+app-eselect/eselect-rails
+  DeprecatedEAPI: version 0.18: uses deprecated EAPI: 0
+
+app-eselect/eselect-ruby
+  DeprecatedEAPI: version 20131227: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 20141227: uses deprecated EAPI: 0
+
+app-eselect/eselect-sndpeek
+  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 0
+
+app-eselect/eselect-timezone
+  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 4
+
+app-eselect/eselect-timidity
+  DeprecatedEAPI: version 20110513: uses deprecated EAPI: 0
+
+app-eselect/eselect-unison
+  DeprecatedEAPI: version 0.3: uses deprecated EAPI: 0
+
+app-eselect/eselect-vi
+  DeprecatedEAPI: version 1.1.7-r1: uses deprecated EAPI: 3
+
+app-eselect/eselect-wxwidgets
+  SizeViolation: "files/wxwin.m4-3.0" exceeds 20k in size; 40561 bytes total
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+
+app-forensics/afflib
+  DeprecatedEclass: version 3.7.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 3.7.1: uses deprecated EAPI: 4
+
+app-forensics/aide
+  DeprecatedEAPI: version 0.13.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.13.1-r3: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.13.1-r5: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.14.2: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 0.15.1: uses deprecated EAPI: 3
+
+app-forensics/air
+  DeprecatedEAPI: version 2.0.0-r1: uses deprecated EAPI: 4
+
+app-forensics/autopsy
+  DeprecatedEAPI: version 2.24-r1: uses deprecated EAPI: 4
+
+app-forensics/chkrootkit
+  DeprecatedEAPI: version 0.48-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.49: uses deprecated EAPI: 4
+
+app-forensics/cmospwd
+  DeprecatedEAPI: version 5.1: uses deprecated EAPI: 4
+
+app-forensics/examiner
+  DeprecatedEAPI: version 0.5-r2: uses deprecated EAPI: 4
+
+app-forensics/foremost
+  DeprecatedEAPI: version 0.69: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.5.7-r1: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.5.7-r2: uses deprecated EAPI: 4
+
+app-forensics/galleta
+  DeprecatedEAPI: version 20040505_p1: uses deprecated EAPI: 0
+
+app-forensics/libbfio
+  DroppedKeywordWarning: version 0.0.20130609_alpha: keywords dropped: hppa
+
+app-forensics/mac-robber
+  DeprecatedEAPI: version 1.02: uses deprecated EAPI: 4
+
+app-forensics/magicrescue
+  DeprecatedEAPI: version 1.1.9: uses deprecated EAPI: 4
+
+app-forensics/memdump
+  DeprecatedEAPI: version 1.01: uses deprecated EAPI: 4
+
+app-forensics/openscap
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+app-forensics/ovaldi
+  DeprecatedEAPI: version 5.9.1: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 5.10.1.2: uses deprecated EAPI: 3
+
+app-forensics/pasco
+  DeprecatedEAPI: version 20040505_p1: uses deprecated EAPI: 0
+
+app-forensics/rifiuti
+  DeprecatedEAPI: version 20040505_p1: uses deprecated EAPI: 0
+
+app-forensics/rkhunter
+  DeprecatedEAPI: version 1.4.0: uses deprecated EAPI: 4
+
+app-forensics/scalpel
+  DeprecatedEAPI: version 2.0: uses deprecated EAPI: 4
+
+app-forensics/unhide
+  DeprecatedEAPI: version 20121229: uses deprecated EAPI: 4
+
+app-forensics/zzuf
+  DeprecatedEAPI: version 0.13-r1: uses deprecated EAPI: 4
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+
+x11-proto/bigreqsproto
+  DeprecatedEAPI: version 1.1.2: uses deprecated EAPI: 4
+
+x11-proto/dmxproto
+  DeprecatedEAPI: version 2.3.1: uses deprecated EAPI: 3
+
+x11-proto/evieext
+  DeprecatedEAPI: version 1.1.1: uses deprecated EAPI: 3
+
+x11-proto/fixesproto
+  DeprecatedEAPI: version 5.0: uses deprecated EAPI: 4
+
+x11-proto/fontcacheproto
+  DeprecatedEAPI: version 0.1.3: uses deprecated EAPI: 4
+
+x11-proto/fontsproto
+  DeprecatedEAPI: version 2.1.2: uses deprecated EAPI: 4
+
+x11-proto/inputproto
+  DroppedKeywordWarning: version 2.3.1: keywords dropped: arm64, m68k
+
+x11-proto/resourceproto
+  DeprecatedEAPI: version 1.2.0: uses deprecated EAPI: 4
+
+x11-proto/trapproto
+  DeprecatedEAPI: version 3.4.3: uses deprecated EAPI: 4
+
+x11-proto/xcalibrateproto
+  DeprecatedEAPI: version 0.1_pre20081210: uses deprecated EAPI: 4
+
+x11-proto/xcmiscproto
+  DeprecatedEAPI: version 1.2.2: uses deprecated EAPI: 4
+
+x11-proto/xf86miscproto
+  DeprecatedEAPI: version 0.9.3: uses deprecated EAPI: 4
+
+x11-proto/xf86rushproto
+  DeprecatedEAPI: version 1.1.2-r1: uses deprecated EAPI: 4
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+
+sci-misc/gato
+  DeprecatedEclass: version 1.1.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.1.2: uses deprecated EAPI: 4
+
+sci-misc/gt-itm
+  DeprecatedEAPI: version 19961004-r1: uses deprecated EAPI: 0
+
+sci-misc/lttoolbox
+  DeprecatedEAPI: version 3.1.0: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 3.2.0: uses deprecated EAPI: 4
+
+sci-misc/nco
+  DeprecatedEAPI: version 3.9.9: uses deprecated EAPI: 2
+
+sci-misc/ncview
+  DeprecatedEAPI: version 2.1.1: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 2.1.2: uses deprecated EAPI: 4
+
+sci-misc/netlogo-bin
+  DeprecatedEAPI: version 3.0.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.0.4: uses deprecated EAPI: 4
+
+sci-misc/repsnapper
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+sci-misc/vitables
+  NonExistentDeps: version 2.1: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  NonExistentDeps: version 2.1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 2.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 2.1: uses deprecated EAPI: 4
