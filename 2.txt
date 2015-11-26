@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 2 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-perl/*' 'x11-misc/*' 'sys-devel/*' 'app-arch/*' 'kde-frameworks/*' 'www-apache/*' 'sci-physics/*' 'sys-power/*' 'dev-games/*' 'x11-base/*' 'app-antivirus/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-perl/*' 'x11-misc/*' 'sys-devel/*' 'app-arch/*' 'gnome-extra/*' 'www-apache/*' 'sci-physics/*' 'sys-power/*' 'dev-games/*' 'x11-base/*' 'app-antivirus/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 WARNING:pkgcore:disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
@@ -1230,16 +1230,50 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-kde-frameworks/knotifications
-  NonExistentDeps: version 5.16.0: depset depends: nonexistent atoms [ dev-qt/qtspeech:5 ]
-  NonExistentDeps: version 5.16.0: depset rdepends: nonexistent atoms [ dev-qt/qtspeech:5 ]
+gnome-extra/assogiate
+  DeprecatedEAPI: version 0.2.1: uses deprecated EAPI: 4
 
-kde-frameworks/ktextwidgets
-  NonExistentDeps: version 5.16.0: depset depends: nonexistent atoms [ dev-qt/qtspeech:5 ]
-  NonExistentDeps: version 5.16.0: depset rdepends: nonexistent atoms [ dev-qt/qtspeech:5 ]
+gnome-extra/avant-window-navigator-extras
+  DeprecatedEAPI: version 0.4.0: uses deprecated EAPI: 4
+  DeprecatedEclass: version 0.4.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 0.4.0: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 0.4.0: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
 
-kde-frameworks/oxygen-icons
-  DroppedKeywordWarning: version 5.16.0: keywords dropped: arm, arm64, ppc, ppc64
+gnome-extra/cameramonitor
+  DeprecatedEclass: version 0.3.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+gnome-extra/docky
+  DeprecatedEAPI: version 2.2.0: uses deprecated EAPI: 4
+  DeprecatedEclass: version 2.2.0: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 2.2.1.1: uses deprecated EAPI: 4
+
+gnome-extra/gnome-dvb-daemon
+  DeprecatedEAPI: version 0.2.10: uses deprecated EAPI: 4
+  DeprecatedEclass: version 0.2.10: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 0.2.10: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  NonExistentDeps: version 0.2.10: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+
+gnome-extra/gnome-integration-spotify
+  DeprecatedEAPI: version 20131013: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 20140907: uses deprecated EAPI: 4
+
+gnome-extra/gnome-web-photo
+  DeprecatedEAPI: version 0.10.6: uses deprecated EAPI: 4
+
+gnome-extra/gucharmap
+  DeprecatedEAPI: version 3.0.1-r200: uses deprecated EAPI: 4
+
+gnome-extra/nautilus-share
+  DeprecatedEAPI: version 0.7.3-r1: uses deprecated EAPI: 4
+
+gnome-extra/nemo
+  UnusedLocalFlags: metadata.xml unused local use flag: [ l10n ]
+
+gnome-extra/nm-applet
+  DroppedKeywordWarning: version 1.0.2: keywords dropped: ia64
+
+gnome-extra/polkit-gnome
+  DeprecatedEAPI: version 0.105-r1: uses deprecated EAPI: 4
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
