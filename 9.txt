@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 9 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'net-misc/*' 'app-admin/*' 'sys-libs/*' 'x11-themes/*' 'net-dns/*' 'app-shells/*' 'dev-dotnet/*' 'lxqt-base/*' 'xfce-base/*' 'java-virtuals/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'net-misc/*' 'app-admin/*' 'sys-libs/*' 'x11-themes/*' 'net-dns/*' 'app-shells/*' 'dev-dotnet/*' 'app-accessibility/*' 'xfce-base/*' 'java-virtuals/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 WARNING:pkgcore:disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
@@ -2069,53 +2069,73 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-lxqt-base/liblxqt
-  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
+app-accessibility/SphinxTrain
+  DeprecatedEAPI: version 0.9.1-r1: uses deprecated EAPI: 4
+  DroppedKeywordWarning: version 1.0.8: keywords dropped: ppc
 
-lxqt-base/liblxqt-mount
-  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
+app-accessibility/edbrowse
+  DeprecatedEAPI: version 3.5.1: uses deprecated EAPI: 4
 
-lxqt-base/libsysstat
-  DroppedKeywordWarning: version 0.2.0: keywords dropped: arm
+app-accessibility/emacspeak-ss
+  DeprecatedEAPI: version 1.9.1: uses deprecated EAPI: 4
 
-lxqt-base/lxqt-about
-  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
+app-accessibility/epos
+  DeprecatedEAPI: version 2.5.37-r1: uses deprecated EAPI: 4
 
-lxqt-base/lxqt-common
-  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
+app-accessibility/espeakup
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-lxqt-base/lxqt-config
-  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
+app-accessibility/festival
+  DeprecatedEAPI: version 2.1-r1: uses deprecated EAPI: 2
 
-lxqt-base/lxqt-globalkeys
-  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
+app-accessibility/festival-fi
+  DeprecatedEAPI: version 20041119: uses deprecated EAPI: 2
 
-lxqt-base/lxqt-meta
-  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
+app-accessibility/festival-freebsoft-utils
+  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.10: uses deprecated EAPI: 4
 
-lxqt-base/lxqt-notificationd
-  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
+app-accessibility/festival-hts
+  DeprecatedEAPI: version 2.1: uses deprecated EAPI: 2
 
-lxqt-base/lxqt-openssh-askpass
-  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
+app-accessibility/festival-it
+  DeprecatedEAPI: version 1.0-r2: uses deprecated EAPI: 4
 
-lxqt-base/lxqt-panel
-  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
+app-accessibility/festival-ru
+  DeprecatedEAPI: version 0.5: uses deprecated EAPI: 2
 
-lxqt-base/lxqt-policykit
-  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
+app-accessibility/freetts
+  DeprecatedEAPI: version 1.2.1-r2: uses deprecated EAPI: 0
 
-lxqt-base/lxqt-powermanagement
-  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
+app-accessibility/mbrola
+  DeprecatedEAPI: version 3.0.1h-r6: uses deprecated EAPI: 0
 
-lxqt-base/lxqt-qtplugin
-  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
+app-accessibility/nfbtrans
+  DeprecatedEAPI: version 7.74: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 7.74-r1: uses deprecated EAPI: 3
 
-lxqt-base/lxqt-runner
-  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
+app-accessibility/pidgin-festival
+  DeprecatedEAPI: version 2.4: uses deprecated EAPI: 2
 
-lxqt-base/lxqt-session
-  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
+app-accessibility/sound-icons
+  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 0
+
+app-accessibility/speakup
+  DeprecatedEAPI: version 3.1.6_p201011120508: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 2
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+app-accessibility/speechd-el
+  DeprecatedEAPI: version 2.5: uses deprecated EAPI: 4
+
+app-accessibility/speechd-up
+  DeprecatedEAPI: version 0.4-r3: uses deprecated EAPI: 0
+
+app-accessibility/sphinx2
+  DeprecatedEAPI: version 0.6: uses deprecated EAPI: 2
+
+app-accessibility/yasr
+  DeprecatedEAPI: version 0.6.9-r1: uses deprecated EAPI: 2
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
