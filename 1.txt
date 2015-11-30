@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 1 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'sec-policy/*' 'media-gfx/*' 'x11-plugins/*' 'app-arch/*' 'kde-frameworks/*' 'net-im/*' 'app-cdr/*' 'games-rpg/*' 'media-radio/*' 'games-engines/*' 'games-kids/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'sec-policy/*' 'media-gfx/*' 'x11-plugins/*' 'app-arch/*' 'kde-frameworks/*' 'net-im/*' 'app-cdr/*' 'net-fs/*' 'media-radio/*' 'games-engines/*' 'games-kids/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 WARNING:pkgcore:disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
@@ -1554,49 +1554,39 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-games-rpg/arx-fatalis-data
-  MissingUri: version 1.21-r2: file setup_arx_fatalis.exe is unfetchable- no URI available, and RESTRICT=fetch isn't set
-  MissingUri: version 1.21-r3: file setup_arx_fatalis_2.0.0.7.exe is unfetchable- no URI available, and RESTRICT=fetch isn't set
+net-fs/cifs-utils
+  DeprecatedEAPI: version 5.9-r1: uses deprecated EAPI: 4
 
-games-rpg/arx-fatalis-demo
-  DeprecatedEAPI: version 0: uses deprecated EAPI: 4
+net-fs/davfs2
+  DeprecatedEAPI: version 1.4.5-r1: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 1.4.7: uses deprecated EAPI: 4
 
-games-rpg/eternal-lands
-  DeprecatedEAPI: version 1.9.2: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 1.9.2-r1: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 1.9.3: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 1.9.3-r1: uses deprecated EAPI: 2
+net-fs/libnfs
+  DeprecatedEAPI: version 1.3.0: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.5.0: uses deprecated EAPI: 4
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-games-rpg/eternal-lands-bloodsucker
-  DeprecatedEAPI: version 3.0: uses deprecated EAPI: 2
+net-fs/nfs-utils
+  DeprecatedEAPI: version 1.2.9-r3: uses deprecated EAPI: 4
 
-games-rpg/eternal-lands-data
-  DeprecatedEAPI: version 1.9.2-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.9.3: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.9.3-r1: uses deprecated EAPI: 2
+net-fs/nfs4-acl-tools
+  DeprecatedEAPI: version 0.3.3: uses deprecated EAPI: 4
 
-games-rpg/nwmovies
-  DeprecatedEAPI: version 20090223.080954: uses deprecated EAPI: 2
+net-fs/samba
+  DeprecatedEAPI: version 3.5.21: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 3.5.22: uses deprecated EAPI: 4
+  DroppedKeywordWarning: version 3.6.25: keywords dropped: s390, sh
+  DroppedKeywordWarning: version 4.2.4-r1: keywords dropped: arm64
+  DroppedKeywordWarning: version 4.0.26-r1: keywords dropped: alpha, arm, ia64, mips, ppc, ppc64, sparc
 
-games-rpg/nwn-cep
-  DeprecatedEAPI: version 1.68-r1: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 2.0: uses deprecated EAPI: 2
+net-fs/smbtad
+  DeprecatedEAPI: version 1.2.6: uses deprecated EAPI: 4
 
-games-rpg/nwn-penultima
-  DeprecatedEAPI: version 1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1-r1: uses deprecated EAPI: 0
+net-fs/smbtatools
+  DeprecatedEAPI: version 1.2.6: uses deprecated EAPI: 4
 
-games-rpg/nwn-penultimarerolled
-  DeprecatedEAPI: version 1: uses deprecated EAPI: 0
-
-games-rpg/nwn-shadowlordsdreamcatcherdemon
-  DeprecatedEAPI: version 1: uses deprecated EAPI: 0
-
-games-rpg/queen
-  DeprecatedEAPI: version 1: uses deprecated EAPI: 4
-
-games-rpg/sacred-gold
-  MissingChksum: version 1.0.01: "sacred-1.0-1.0.01-x86.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+net-fs/wdfs
+  DeprecatedEAPI: version 1.4.2: uses deprecated EAPI: 0
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
