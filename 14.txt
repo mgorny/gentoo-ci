@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 14 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'sys-apps/*' 'dev-php/*' 'app-i18n/*' 'kde-misc/*' 'sci-geosciences/*' 'games-board/*' 'gnustep-apps/*' 'dev-lua/*' 'www-plugins/*' 'games-mud/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'sys-apps/*' 'dev-php/*' 'app-i18n/*' 'kde-misc/*' 'sci-geosciences/*' 'games-board/*' 'dev-tcltk/*' 'dev-lua/*' 'www-plugins/*' 'games-mud/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 WARNING:pkgcore:disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
@@ -1557,121 +1557,75 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-gnustep-apps/aclock
-  DeprecatedEAPI: version 0.4.0: uses deprecated EAPI: 4
+dev-tcltk/expect
+  DeprecatedEAPI: version 5.44.1.15: uses deprecated EAPI: 3
 
-gnustep-apps/addresses
-  DeprecatedEAPI: version 0.4.7: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.4.8: uses deprecated EAPI: 4
+dev-tcltk/expect-lite
+  DeprecatedEAPI: version 4.0.3: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.1.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.1.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.2.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.2.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.2.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.3.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.3.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.3.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.3.3: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.4.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.4.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.5.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.6.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.6.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.6.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.7.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.8.0: uses deprecated EAPI: 4
 
-gnustep-apps/affiche
-  DeprecatedEAPI: version 0.6.0-r3: uses deprecated EAPI: 0
+dev-tcltk/iwidgets
+  DeprecatedEAPI: version 4.0.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.0.1-r3: uses deprecated EAPI: 4
 
-gnustep-apps/camera
-  DeprecatedEAPI: version 0.8-r1: uses deprecated EAPI: 0
+dev-tcltk/mysqltcl
+  DeprecatedEAPI: version 3.05: uses deprecated EAPI: 4
 
-gnustep-apps/cenon
-  DeprecatedEAPI: version 3.9.5: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 3.9.6: uses deprecated EAPI: 4
+dev-tcltk/scwoop
+  DeprecatedEAPI: version 4.1: uses deprecated EAPI: 0
 
-gnustep-apps/clipbook
-  DeprecatedEAPI: version 0.6.0.8.3-r1: uses deprecated EAPI: 0
+dev-tcltk/snack
+  DeprecatedEAPI: version 2.2.10-r5: uses deprecated EAPI: 4
+  DeprecatedEclass: version 2.2.10-r5: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-gnustep-apps/displaycalibrator
-  DeprecatedEAPI: version 0.7: uses deprecated EAPI: 0
+dev-tcltk/tcllib
+  DroppedKeywordWarning: version 1.16: keywords dropped: ia64, ppc64, s390, sparc
+  SizeViolation: "files/tcllib-1.15-XSS-vuln.patch" exceeds 20k in size; 29465 bytes total
 
-gnustep-apps/easydiff
-  DeprecatedEAPI: version 0.4.0: uses deprecated EAPI: 0
+dev-tcltk/tkTheme
+  DeprecatedEAPI: version 1.0-r2: uses deprecated EAPI: 4
 
-gnustep-apps/fisicalab
-  DeprecatedEAPI: version 0.3.0: uses deprecated EAPI: 4
+dev-tcltk/tkXwin
+  DeprecatedEAPI: version 1.0-r3: uses deprecated EAPI: 4
 
-gnustep-apps/gemas
-  DeprecatedEAPI: version 0.3: uses deprecated EAPI: 4
+dev-tcltk/tkcon
+  DeprecatedEAPI: version 2.5: uses deprecated EAPI: 0
 
-gnustep-apps/gmines
-  DeprecatedEAPI: version 0.1-r2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 4
+dev-tcltk/tkdnd
+  DeprecatedEAPI: version 2.2: uses deprecated EAPI: 4
 
-gnustep-apps/gnumail
-  DeprecatedEAPI: version 1.2.0: uses deprecated EAPI: 4
+dev-tcltk/tkpiechart
+  DeprecatedEAPI: version 6.5-r1: uses deprecated EAPI: 0
 
-gnustep-apps/gorm
-  DeprecatedEAPI: version 1.2.16: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.2.18: uses deprecated EAPI: 4
+dev-tcltk/tktable
+  DeprecatedEAPI: version 2.10: uses deprecated EAPI: 2
 
-gnustep-apps/graphos
-  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.3: uses deprecated EAPI: 4
+dev-tcltk/tktreectrl
+  DeprecatedEAPI: version 2.2.9: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 2.2.10: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 2.4.1: uses deprecated EAPI: 4
 
-gnustep-apps/gshisen
-  DeprecatedEAPI: version 1.3.0: uses deprecated EAPI: 0
+dev-tcltk/togl
+  DeprecatedEAPI: version 2.0-r2: uses deprecated EAPI: 4
 
-gnustep-apps/gspdf
-  DeprecatedEAPI: version 0.4: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.5: uses deprecated EAPI: 4
-
-gnustep-apps/gwnet
-  DeprecatedEAPI: version 0.1.0.8.2: uses deprecated EAPI: 0
-
-gnustep-apps/gworkspace
-  DeprecatedEAPI: version 0.9.1: uses deprecated EAPI: 3
-
-gnustep-apps/lapispuzzle
-  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 4
-
-gnustep-apps/laternamagica
-  DeprecatedEAPI: version 0.4: uses deprecated EAPI: 4
-
-gnustep-apps/pictureframe
-  DeprecatedEAPI: version 1.0.0: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.1.2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.1.3: uses deprecated EAPI: 4
-
-gnustep-apps/preferences
-  DeprecatedEAPI: version 1.3.0_pre20061204-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.3.0_pre20100523: uses deprecated EAPI: 3
-
-gnustep-apps/preview
-  DeprecatedEAPI: version 0.8.5-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.9: uses deprecated EAPI: 3
-
-gnustep-apps/price
-  DeprecatedEAPI: version 1.1.0: uses deprecated EAPI: 4
-
-gnustep-apps/projectcenter
-  DeprecatedEAPI: version 0.6.1: uses deprecated EAPI: 4
-
-gnustep-apps/remotedesk
-  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 0
-
-gnustep-apps/simpleagenda
-  DeprecatedEAPI: version 0.42.2: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.43: uses deprecated EAPI: 4
-
-gnustep-apps/sogo
-  BadInsIntoDir: version 2.3.2: ebuild uses insinto /etc/cron.d on line 84
-
-gnustep-apps/stepulator
-  DeprecatedEAPI: version 1.0-r2: uses deprecated EAPI: 0
-
-gnustep-apps/sudoku
-  DeprecatedEAPI: version 0.7: uses deprecated EAPI: 0
-
-gnustep-apps/systempreferences
-  DeprecatedEAPI: version 1.0.2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.1.0: uses deprecated EAPI: 0
-
-gnustep-apps/terminal
-  DeprecatedEAPI: version 0.9.7: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.9.8: uses deprecated EAPI: 4
-
-gnustep-apps/textedit
-  DeprecatedEAPI: version 0.95_pre20100427: uses deprecated EAPI: 3
-
-gnustep-apps/zipper
-  DeprecatedEAPI: version 1.3: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.4: uses deprecated EAPI: 4
+dev-tcltk/vtcl
+  DeprecatedEAPI: version 1.6.0-r1: uses deprecated EAPI: 0
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
