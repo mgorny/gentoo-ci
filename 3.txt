@@ -179,6 +179,9 @@ dev-haskell/hscolour
   DeprecatedEAPI: version 1.17: uses deprecated EAPI: 0
   DeprecatedEAPI: version 1.19: uses deprecated EAPI: 4
 
+dev-haskell/hslua
+  MissingSlotDep: version 0.3.13: 'dev-lang/lua' matches more than one slot: [ 0, 5.1, 5.2 ]
+
 dev-haskell/hsql-mysql
   DeprecatedEAPI: version 1.8.1: uses deprecated EAPI: 4
   DeprecatedEAPI: version 1.8.2: uses deprecated EAPI: 4
@@ -389,6 +392,8 @@ dev-haskell/temporary
 
 dev-haskell/terminfo
   DeprecatedEAPI: version 0.3.2.3: uses deprecated EAPI: 3
+  MissingSlotDep: version 0.3.2.5: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
+  MissingSlotDep: version 0.4.0.0: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
 
 dev-haskell/test-framework
   DeprecatedEAPI: version 0.2.4: uses deprecated EAPI: 0
@@ -480,6 +485,7 @@ net-libs/canlock
 
 net-libs/courier-authlib
   DeprecatedEAPI: version 0.65.0-r3: uses deprecated EAPI: 4
+  MissingSlotDep: version 0.66.1: 'sys-libs/db' matches more than one slot: [ 1, 3, 4.2, 4.3, 4.4, 4.5, 4.6, 4.7, 4.8, 5.1, 5.3, 6.0, 6.1 ]
 
 net-libs/cvm
   DeprecatedEAPI: version 0.76: uses deprecated EAPI: 2
@@ -498,15 +504,19 @@ net-libs/enet
   DeprecatedEAPI: version 1.2.2: uses deprecated EAPI: 3
 
 net-libs/farstream
-  DeprecatedEAPI: version 0.1.2-r1: uses deprecated EAPI: 4
-  NonExistentDeps: version 0.1.2-r1: depset rdepends: nonexistent atoms [ <=net-libs/libnice-0.1.3 ]
   DeprecatedEclass: version 0.1.2-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 0.1.2-r1: depset rdepends: nonexistent atoms [ <=net-libs/libnice-0.1.3 ]
+  DeprecatedEAPI: version 0.1.2-r1: uses deprecated EAPI: 4
   NonExistentDeps: version 0.1.2-r2: depset rdepends: nonexistent atoms [ <=net-libs/libnice-0.1.3 ]
 
 net-libs/ftplib
   DeprecatedEAPI: version 3.1.1: uses deprecated EAPI: 4
   DeprecatedEAPI: version 4.0: uses deprecated EAPI: 4
   DeprecatedEAPI: version 4.0-r1: uses deprecated EAPI: 4
+
+net-libs/gloox
+  MissingSlotDep: version 1.0.9: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+  MissingSlotDep: version 1.0.13: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
 
 net-libs/gsoap
   DeprecatedEAPI: version 2.7.17: uses deprecated EAPI: 2
@@ -536,15 +546,19 @@ net-libs/libbt
 
 net-libs/libeXosip
   DeprecatedEAPI: version 3.5.0: uses deprecated EAPI: 2
+  MissingSlotDep: version 4.0.0: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
 
 net-libs/libecap
   DeprecatedEAPI: version 0.2.0: uses deprecated EAPI: 4
 
 net-libs/libesmtp
   DeprecatedEAPI: version 1.0.6: uses deprecated EAPI: 3
+  MissingSlotDep: version 1.0.6-r1: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
 
 net-libs/libetpan
   DeprecatedEAPI: version 1.1: uses deprecated EAPI: 4
+  MissingSlotDep: version 1.5: 'sys-libs/db' matches more than one slot: [ 1, 3, 4.2, 4.3, 4.4, 4.5, 4.6, 4.7, 4.8, 5.1, 5.3, 6.0, 6.1 ]
+  MissingSlotDep: version 1.5: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
 
 net-libs/libgadu
   DroppedKeywordWarning: version 1.12.0: keywords dropped: alpha, ia64, sparc
@@ -570,12 +584,23 @@ net-libs/libiscsi
 net-libs/libisds
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
+net-libs/libkolab
+  MissingSlotDep: version 0.5.2: 'dev-lang/swig' matches more than one slot: [ 0, 1 ]
+  MissingSlotDep: version 0.5.2: 'dev-lang/php' matches more than one slot: [ 5.4, 5.5, 5.6, 7.0 ]
+  MissingSlotDep: version 0.5.2: 'dev-lang/python' matches more than one slot: [ 2.7, 3.3, 3.4, 3.5 ]
+  MissingSlotDep: version 0.5.3: 'dev-lang/swig' matches more than one slot: [ 0, 1 ]
+  MissingSlotDep: version 0.5.3: 'dev-lang/php' matches more than one slot: [ 5.4, 5.5, 5.6, 7.0 ]
+  MissingSlotDep: version 0.5.3: 'dev-lang/python' matches more than one slot: [ 2.7, 3.3, 3.4, 3.5 ]
+
+net-libs/libktorrent
+  MissingSlotDep: version 1.3.1: 'dev-libs/gmp' matches more than one slot: [ 0, 3 ]
+
 net-libs/liblockfile
   DeprecatedEAPI: version 1.09: uses deprecated EAPI: 4
 
 net-libs/libmapi
-  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 4
   DeprecatedEclass: version 1.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 4
 
 net-libs/libmirisdr
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
@@ -610,6 +635,16 @@ net-libs/libntlm
 net-libs/libnxml
   DeprecatedEAPI: version 0.18.3: uses deprecated EAPI: 4
 
+net-libs/liboauth
+  MissingSlotDep: version 1.0.1: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+
+net-libs/liboping
+  MissingSlotDep: version 1.7.0: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
+  MissingSlotDep: version 1.8.0: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
+
+net-libs/libopkele
+  MissingSlotDep: version 2.0.4-r1: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+
 net-libs/libosip
   DeprecatedEAPI: version 3.6.0: uses deprecated EAPI: 2
 
@@ -617,6 +652,8 @@ net-libs/libosmo-abis
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
 net-libs/libosmo-dsp
+  MissingSlotDep: version 0.3: 'sci-libs/fftw' matches more than one slot: [ 2.1, 3.0 ]
+  MissingSlotDep: version 9999: 'sci-libs/fftw' matches more than one slot: [ 2.1, 3.0 ]
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
 net-libs/libosmocore
@@ -669,6 +706,10 @@ net-libs/libtorrent
   DeprecatedEAPI: version 0.13.3: uses deprecated EAPI: 4
   DeprecatedEAPI: version 0.13.4: uses deprecated EAPI: 4
 
+net-libs/libtrace
+  MissingSlotDep: version 3.0.21: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
+  MissingSlotDep: version 3.0.22: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
+
 net-libs/libupnp
   DeprecatedEAPI: version 1.6.18: uses deprecated EAPI: 4
 
@@ -695,25 +736,42 @@ net-libs/nghttp2
 net-libs/obby
   DeprecatedEAPI: version 0.4.8: uses deprecated EAPI: 4
 
+net-libs/opal
+  MissingSlotDep: version 3.10.11: 'media-libs/celt' matches more than one slot: [ 0, 0.5.1 ]
+  MissingSlotDep: version 3.12.4: 'media-libs/celt' matches more than one slot: [ 0, 0.5.1 ]
+
 net-libs/openslp
   DeprecatedEAPI: version 1.2.1-r3: uses deprecated EAPI: 0
+  MissingSlotDep: version 2.0.0: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
   DroppedKeywordWarning: version 2.0.0: keywords dropped: alpha, amd64, arm, hppa, ia64, m68k, mips, ppc, ppc64, s390, sh, sparc, x86
+
+net-libs/ortp
+  MissingSlotDep: version 0.20.0: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+  MissingSlotDep: version 0.22.0: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
 
 net-libs/osptoolkit
   DeprecatedEAPI: version 3.5.0: uses deprecated EAPI: 2
+  MissingSlotDep: version 4.1.5: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+
+net-libs/ptlib
+  MissingSlotDep: version 2.10.11: 'dev-lang/lua' matches more than one slot: [ 0, 5.1, 5.2 ]
+  MissingSlotDep: version 2.10.11: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+  MissingSlotDep: version 2.12.9: 'dev-lang/lua' matches more than one slot: [ 0, 5.1, 5.2 ]
+  MissingSlotDep: version 2.12.9: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+  MissingSlotDep: version 2.12.9-r1: 'dev-lang/lua' matches more than one slot: [ 0, 5.1, 5.2 ]
 
 net-libs/qtweetlib
   DeprecatedEAPI: version 0.5: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
 
 net-libs/qxmpp
   DeprecatedEAPI: version 0.7.4: uses deprecated EAPI: 4
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
 net-libs/rb_libtorrent
-  DeprecatedEAPI: version 0.16.17: uses deprecated EAPI: 4
   DeprecatedEclass: version 0.16.17: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.16.17: uses deprecated EAPI: 4
 
 net-libs/roadrunner
   DeprecatedEAPI: version 0.9.1: uses deprecated EAPI: 0
@@ -741,6 +799,7 @@ net-libs/webkit-gtk
 
 net-libs/wvstreams
   DeprecatedEAPI: version 4.6.1-r2: uses deprecated EAPI: 4
+  MissingSlotDep: version 4.6.1-r3: 'sys-libs/readline' matches more than one slot: [ 0, 4, 5 ]
 
 net-libs/zeromq
   DeprecatedEAPI: version 2.2.0: uses deprecated EAPI: 4
@@ -755,13 +814,16 @@ dev-db/4store
   DeprecatedEAPI: version 1.1.5: uses deprecated EAPI: 2
 
 dev-db/SchemaSync
-  DeprecatedEAPI: version 0.9.2: uses deprecated EAPI: 4
+  DeprecatedEclass: version 0.9.2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 0.9.2: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
   NonExistentDeps: version 0.9.2: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
-  DeprecatedEclass: version 0.9.2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.9.2: uses deprecated EAPI: 4
 
 dev-db/cdb
   DeprecatedEAPI: version 0.75-r3: uses deprecated EAPI: 3
+
+dev-db/cppdb
+  MissingSlotDep: version 0.3.1-r1: 'dev-db/postgresql' matches more than one slot: [ 9.0, 9.1, 9.2, 9.3, 9.4, 9.5, 9.6 ]
 
 dev-db/ctdb
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
@@ -776,9 +838,11 @@ dev-db/dbmodel
   DeprecatedEAPI: version 0.3: uses deprecated EAPI: 2
 
 dev-db/drizzle
+  MissingSlotDep: version 7.2.4: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+  MissingSlotDep: version 7.2.4: 'sys-libs/readline' matches more than one slot: [ 0, 4, 5 ]
+  DeprecatedEclass: version 7.2.4: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 7.2.4: depset depends: nonexistent atoms [ dev-lang/v8 ]
   NonExistentDeps: version 7.2.4: depset rdepends: nonexistent atoms [ dev-lang/v8 ]
-  DeprecatedEclass: version 7.2.4: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-db/flamerobin
   DeprecatedEAPI: version 0.9.2: uses deprecated EAPI: 4
@@ -834,6 +898,9 @@ dev-db/libdbi
 
 dev-db/libdbi-drivers
   DeprecatedEAPI: version 0.9.0: uses deprecated EAPI: 4
+
+dev-db/libodbc++
+  MissingSlotDep: version 0.2.5-r2: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
 
 dev-db/libzdb
   DeprecatedEAPI: version 2.11.1: uses deprecated EAPI: 4
@@ -902,6 +969,10 @@ dev-db/oracle-instantclient-sqlplus
   DeprecatedEAPI: version 11.2.0.3-r1: uses deprecated EAPI: 4
   DeprecatedEAPI: version 11.2.0.4: uses deprecated EAPI: 4
 
+dev-db/pg_top
+  MissingSlotDep: version 3.6.2-r1: 'dev-db/postgresql' matches more than one slot: [ 9.0, 9.1, 9.2, 9.3, 9.4, 9.5, 9.6 ]
+  MissingSlotDep: version 3.7.0: 'dev-db/postgresql' matches more than one slot: [ 9.0, 9.1, 9.2, 9.3, 9.4, 9.5, 9.6 ]
+
 dev-db/pgadmin3
   DeprecatedEAPI: version 1.18.1: uses deprecated EAPI: 4
   DeprecatedEAPI: version 1.20.0: uses deprecated EAPI: 4
@@ -909,24 +980,33 @@ dev-db/pgadmin3
 dev-db/pgagent
   DeprecatedEAPI: version 3.3.0: uses deprecated EAPI: 4
 
+dev-db/pgmemcache
+  MissingSlotDep: version 2.1.2: 'dev-db/postgresql' matches more than one slot: [ 9.0, 9.1, 9.2, 9.3, 9.4, 9.5, 9.6 ]
+  MissingSlotDep: version 2.2.0: 'dev-db/postgresql' matches more than one slot: [ 9.0, 9.1, 9.2, 9.3, 9.4, 9.5, 9.6 ]
+  MissingSlotDep: version 2.3.0: 'dev-db/postgresql' matches more than one slot: [ 9.0, 9.1, 9.2, 9.3, 9.4, 9.5, 9.6 ]
+
 dev-db/pgpool2
   DeprecatedEAPI: version 3.2.5: uses deprecated EAPI: 4
+  MissingSlotDep: version 3.3.6: 'dev-db/postgresql' matches more than one slot: [ 9.0, 9.1, 9.2, 9.3, 9.4, 9.5, 9.6 ]
+  MissingSlotDep: version 3.3.6: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+  MissingSlotDep: version 3.3.7: 'dev-db/postgresql' matches more than one slot: [ 9.0, 9.1, 9.2, 9.3, 9.4, 9.5, 9.6 ]
+  MissingSlotDep: version 3.3.7: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
   DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
 
 dev-db/phppgadmin
-  DeprecatedEAPI: version 5.1: uses deprecated EAPI: 4
   NonExistentDeps: version 5.1: depset rdepends: nonexistent atoms [ <dev-lang/php-5.3 ]
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 2
-  NonExistentDeps: version 9999: depset rdepends: nonexistent atoms [ <dev-lang/php-5.3 ]
+  DeprecatedEAPI: version 5.1: uses deprecated EAPI: 4
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  NonExistentDeps: version 9999: depset rdepends: nonexistent atoms [ <dev-lang/php-5.3 ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 2
 
 dev-db/postgis
-  DeprecatedEAPI: version 2.0.3: uses deprecated EAPI: 4
   NonExistentDeps: version 2.0.3: depset depends: nonexistent atoms [ dev-db/postgresql:8.4 ]
   NonExistentDeps: version 2.0.3: depset rdepends: nonexistent atoms [ dev-db/postgresql:8.4 ]
-  DeprecatedEAPI: version 2.0.6: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 2.0.3: uses deprecated EAPI: 4
   NonExistentDeps: version 2.0.6: depset depends: nonexistent atoms [ dev-db/postgresql:8.4 ]
   NonExistentDeps: version 2.0.6: depset rdepends: nonexistent atoms [ dev-db/postgresql:8.4 ]
+  DeprecatedEAPI: version 2.0.6: uses deprecated EAPI: 4
 
 dev-db/postgresql
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
@@ -937,8 +1017,12 @@ dev-db/psqlodbc
   DeprecatedEAPI: version 09.02.0100: uses deprecated EAPI: 4
   DeprecatedEAPI: version 09.03.0210: uses deprecated EAPI: 4
 
+dev-db/qdbm
+  MissingSlotDep: version 1.8.78-r1: 'dev-lang/ruby' matches more than one slot: [ 1.9, 2.0, 2.1, 2.2 ]
+
 dev-db/recutils
   DeprecatedEAPI: version 1.5: uses deprecated EAPI: 4
+  MissingSlotDep: version 1.7: 'sys-libs/readline' matches more than one slot: [ 0, 4, 5 ]
 
 dev-db/slony1
   DeprecatedEAPI: version 2.1.3: uses deprecated EAPI: 4
@@ -975,6 +1059,10 @@ dev-db/textsearch_ja
 
 dev-db/tokyocabinet
   DeprecatedEAPI: version 1.4.48: uses deprecated EAPI: 2
+
+dev-db/tora
+  MissingSlotDep: version 3.0.0_pre20140929-r1: 'dev-db/postgresql' matches more than one slot: [ 9.0, 9.1, 9.2, 9.3, 9.4, 9.5, 9.6 ]
+  MissingSlotDep: version 9999: 'dev-db/postgresql' matches more than one slot: [ 9.0, 9.1, 9.2, 9.3, 9.4, 9.5, 9.6 ]
 
 dev-db/unixODBC
   DeprecatedEAPI: version 2.3.1: uses deprecated EAPI: 4
@@ -1469,10 +1557,10 @@ app-portage/demerge
   DeprecatedEAPI: version 0.047-r1: uses deprecated EAPI: 0
 
 app-portage/distpatch
-  DeprecatedEAPI: version 0.1.1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.1.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 0.1.1: depset depends: nonexistent atoms [ =dev-lang/python-2.6*, =dev-lang/python-3.1*, =dev-lang/python-3.2* ]
   NonExistentDeps: version 0.1.1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6*, =dev-lang/python-3.1*, =dev-lang/python-3.2* ]
-  DeprecatedEclass: version 0.1.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.1.1: uses deprecated EAPI: 3
 
 app-portage/eclass-manpages
   ExecutableFile: "files/eclass-to-manpage.sh" has unnecessary executable bit
@@ -1487,8 +1575,8 @@ app-portage/epkg
 
 app-portage/epm
   DeprecatedEAPI: version 1.40: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
 
 app-portage/esearch
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
@@ -1500,12 +1588,12 @@ app-portage/euses
   DeprecatedEAPI: version 2.5.9: uses deprecated EAPI: 4
 
 app-portage/g-ctan
-  DeprecatedEAPI: version 2011.1: uses deprecated EAPI: 2
   NonExistentDeps: version 2011.1: depset rdepends: nonexistent atoms [ ~app-text/texlive-2011 ]
+  DeprecatedEAPI: version 2011.1: uses deprecated EAPI: 2
 
 app-portage/g-octave
-  DeprecatedEAPI: version 0.4.1-r4: uses deprecated EAPI: 2
   DeprecatedEclass: version 0.4.1-r4: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.4.1-r4: uses deprecated EAPI: 2
 
 app-portage/g-sorcery
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
@@ -1515,10 +1603,10 @@ app-portage/genlop
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
 app-portage/gpytage
-  DeprecatedEAPI: version 0.3.0_rc1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.3.0_rc1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 0.3.0_rc1: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
   NonExistentDeps: version 0.3.0_rc1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
-  DeprecatedEclass: version 0.3.0_rc1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.3.0_rc1: uses deprecated EAPI: 3
 
 app-portage/grs
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
@@ -1534,12 +1622,12 @@ app-portage/layman
   DroppedKeywordWarning: version 2.3.0-r1: keywords dropped: alpha, arm64, ia64, m68k, sh, sparc
 
 app-portage/layman-dbtools
-  DeprecatedEAPI: version 0_p20100322: uses deprecated EAPI: 3
   DeprecatedEclass: version 0_p20100322: uses deprecated eclass(es): [ git-2 (migrate to git-r3), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0_p20100322: uses deprecated EAPI: 3
 
 app-portage/maintainer-helper
-  DeprecatedEAPI: version 0.1.2: uses deprecated EAPI: 3
   DeprecatedEclass: version 0.1.2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.1.2: uses deprecated EAPI: 3
 
 app-portage/mirrorselect
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
@@ -1549,33 +1637,33 @@ app-portage/perl-info
   DeprecatedEAPI: version 0.16: uses deprecated EAPI: 0
 
 app-portage/pms-test-suite
-  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 4
+  DeprecatedEclass: version 0.2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 0.2: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
   NonExistentDeps: version 0.2: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
-  DeprecatedEclass: version 0.2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 4
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), git-2 (migrate to git-r3), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 9999: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
   NonExistentDeps: version 9999: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), git-2 (migrate to git-r3), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
 
 app-portage/portage-utils
   DeprecatedEAPI: version 0.56: uses deprecated EAPI: 4
   DeprecatedEAPI: version 0.60: uses deprecated EAPI: 4
 
 app-portage/porthole
-  DeprecatedEAPI: version 0.6.1-r1: uses deprecated EAPI: 2
   DeprecatedEclass: version 0.6.1-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.6.1-r2: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.6.1-r1: uses deprecated EAPI: 2
   DeprecatedEclass: version 0.6.1-r2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.6.1-r3: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.6.1-r2: uses deprecated EAPI: 2
   DeprecatedEclass: version 0.6.1-r3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.6.1-r3: uses deprecated EAPI: 2
 
 app-portage/prefix-chain-setup
   DeprecatedEAPI: version 0.4-r5: uses deprecated EAPI: 0
 
 app-portage/repo-commit
-  DeprecatedEAPI: version 0.4.1: uses deprecated EAPI: 4
   NonExistentDeps: version 0.4.1: depset rdepends: nonexistent atoms [ <sys-apps/portage-2.2.0_alpha ]
+  DeprecatedEAPI: version 0.4.1: uses deprecated EAPI: 4
   NonExistentDeps: version 9999: depset rdepends: nonexistent atoms [ <sys-apps/portage-2.2.0_alpha ]
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
@@ -1668,6 +1756,9 @@ www-apache/mod_jk
 
 www-apache/mod_layout
   DeprecatedEAPI: version 5.1: uses deprecated EAPI: 0
+
+www-apache/mod_ldap_userdir
+  MissingSlotDep: version 1.1.19: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
 
 www-apache/mod_limitipconn
   DeprecatedEAPI: version 0.24: uses deprecated EAPI: 0
@@ -1775,8 +1866,8 @@ sys-power/cpudyn
   DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 0
 
 sys-power/cpuspeedy
-  DeprecatedEAPI: version 0.4.1: uses deprecated EAPI: 3
   DeprecatedEclass: version 0.4.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.4.1: uses deprecated EAPI: 3
 
 sys-power/iasl
   DeprecatedEAPI: version 20121018: uses deprecated EAPI: 4
@@ -1800,10 +1891,10 @@ sys-power/phc-k8
   DeprecatedEAPI: version 0.4.4: uses deprecated EAPI: 4
 
 sys-power/phctool
-  DeprecatedEAPI: version 0.5.2.2-r1: uses deprecated EAPI: 2
   DeprecatedEclass: version 0.5.2.2-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.5.2.2-r2: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.5.2.2-r1: uses deprecated EAPI: 2
   DeprecatedEclass: version 0.5.2.2-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.5.2.2-r2: uses deprecated EAPI: 4
 
 sys-power/pm-quirks
   DeprecatedEAPI: version 20100619: uses deprecated EAPI: 3
@@ -1856,8 +1947,8 @@ app-mobilephone/ganyremote
 app-mobilephone/gnokii
   DeprecatedEAPI: version 0.6.29: uses deprecated EAPI: 2
   DeprecatedEAPI: version 0.6.31: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
 
 app-mobilephone/gsmlib
   DeprecatedEAPI: version 1.11_pre041028: uses deprecated EAPI: 0
@@ -1867,6 +1958,7 @@ app-mobilephone/heimdall
 
 app-mobilephone/kannel
   DeprecatedEAPI: version 1.4.3-r1: uses deprecated EAPI: 2
+  MissingSlotDep: version 1.5.0: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
 
 app-mobilephone/kannel-sqlbox
   DeprecatedEAPI: version 0.7.2: uses deprecated EAPI: 2
@@ -1903,8 +1995,11 @@ app-mobilephone/sobexsrv
   DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 0
 
 app-mobilephone/wammu
-  DeprecatedEAPI: version 0.35: uses deprecated EAPI: 3
   DeprecatedEclass: version 0.35: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.35: uses deprecated EAPI: 3
+
+app-mobilephone/yaps
+  MissingSlotDep: version 0.96-r5: 'dev-lang/lua' matches more than one slot: [ 0, 5.1, 5.2 ]
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch

@@ -111,6 +111,13 @@ dev-ruby/net-ssh
 dev-ruby/net-ssh-gateway
   DeprecatedEAPI: version 1.2.0: uses deprecated EAPI: 4
 
+dev-ruby/pg
+  MissingSlotDep: version 0.17.1: 'dev-db/postgresql' matches more than one slot: [ 9.0, 9.1, 9.2, 9.3, 9.4, 9.5, 9.6 ]
+  MissingSlotDep: version 0.17.1-r1: 'dev-db/postgresql' matches more than one slot: [ 9.0, 9.1, 9.2, 9.3, 9.4, 9.5, 9.6 ]
+  MissingSlotDep: version 0.18.2: 'dev-db/postgresql' matches more than one slot: [ 9.0, 9.1, 9.2, 9.3, 9.4, 9.5, 9.6 ]
+  MissingSlotDep: version 0.18.3: 'dev-db/postgresql' matches more than one slot: [ 9.0, 9.1, 9.2, 9.3, 9.4, 9.5, 9.6 ]
+  MissingSlotDep: version 0.18.4: 'dev-db/postgresql' matches more than one slot: [ 9.0, 9.1, 9.2, 9.3, 9.4, 9.5, 9.6 ]
+
 dev-ruby/rack-cache
   DroppedKeywordWarning: version 1.5.1: keywords dropped: ppc, x86
 
@@ -144,6 +151,11 @@ dev-ruby/rspec-rails
 dev-ruby/rspec-support
   DroppedKeywordWarning: version 3.4.0: keywords dropped: alpha, ia64, ppc, sparc, x86
 
+dev-ruby/ruby-clutter-gstreamer
+  MissingSlotDep: version 2.2.3: 'media-libs/clutter-gst' matches more than one slot: [ 2.0, 3.0 ]
+  MissingSlotDep: version 2.2.3-r1: 'media-libs/clutter-gst' matches more than one slot: [ 2.0, 3.0 ]
+  MissingSlotDep: version 2.2.5: 'media-libs/clutter-gst' matches more than one slot: [ 2.0, 3.0 ]
+
 dev-ruby/ruby-elf
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
@@ -175,9 +187,17 @@ WARNING pkgcore: metadata.dtd cannot be opened from
 net-analyzer/alive
   DeprecatedEAPI: version 2.0.1: uses deprecated EAPI: 4
 
+net-analyzer/argus-clients
+  MissingSlotDep: version 3.0.8: 'sys-libs/readline' matches more than one slot: [ 0, 4, 5 ]
+  MissingSlotDep: version 3.0.8: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
+
 net-analyzer/arpon
   DeprecatedEAPI: version 2.7-r1: uses deprecated EAPI: 4
   DeprecatedEAPI: version 2.7.2: uses deprecated EAPI: 4
+
+net-analyzer/arpwatch
+  MissingSlotDep: version 2.1.15-r6: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
+  MissingSlotDep: version 2.1.15-r7: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
 
 net-analyzer/authforce
   DeprecatedEAPI: version 0.9.9-r1: uses deprecated EAPI: 4
@@ -195,6 +215,12 @@ net-analyzer/bsnmp
   DeprecatedEAPI: version 1.11a: uses deprecated EAPI: 0
   DeprecatedEAPI: version 1.12: uses deprecated EAPI: 0
   DeprecatedEAPI: version 1.12-r1: uses deprecated EAPI: 0
+
+net-analyzer/bwmon
+  MissingSlotDep: version 1.3-r2: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
+
+net-analyzer/cbm
+  MissingSlotDep: version 0.1-r1: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
 
 net-analyzer/chaosreader
   DeprecatedEAPI: version 0.94: uses deprecated EAPI: 2
@@ -215,11 +241,32 @@ net-analyzer/dietsniff
 net-analyzer/dnsenum
   DeprecatedEAPI: version 1.2.2: uses deprecated EAPI: 4
 
+net-analyzer/driftnet
+  MissingSlotDep: version 0.1.6_p20090401: 'media-libs/libpng' matches more than one slot: [ 0, 1.2, 1.5 ]
+  MissingSlotDep: version 0.1.6_p20090401: 'virtual/jpeg' matches more than one slot: [ 0, 62 ]
+
 net-analyzer/dsniff
   DeprecatedEAPI: version 2.4_beta1-r4: uses deprecated EAPI: 0
 
+net-analyzer/echoping
+  MissingSlotDep: version 6.0.2_p434: 'dev-db/postgresql' matches more than one slot: [ 9.0, 9.1, 9.2, 9.3, 9.4, 9.5, 9.6 ]
+  MissingSlotDep: version 6.0.2_p434-r1: 'dev-db/postgresql' matches more than one slot: [ 9.0, 9.1, 9.2, 9.3, 9.4, 9.5, 9.6 ]
+
+net-analyzer/ettercap
+  MissingSlotDep: version 0.8.2: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+  MissingSlotDep: version 9999: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+
+net-analyzer/ffp
+  MissingSlotDep: version 0.0.8-r1: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+
 net-analyzer/flow-tools
   DeprecatedEAPI: version 0.68.5.1-r2: uses deprecated EAPI: 4
+  MissingSlotDep: version 0.68.5.1-r4: 'dev-db/postgresql' matches more than one slot: [ 9.0, 9.1, 9.2, 9.3, 9.4, 9.5, 9.6 ]
+  MissingSlotDep: version 0.68.5.1-r4: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+  MissingSlotDep: version 0.68.5.1-r5: 'dev-db/postgresql' matches more than one slot: [ 9.0, 9.1, 9.2, 9.3, 9.4, 9.5, 9.6 ]
+  MissingSlotDep: version 0.68.5.1-r5: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+  MissingSlotDep: version 0.68.5.1-r6: 'dev-db/postgresql' matches more than one slot: [ 9.0, 9.1, 9.2, 9.3, 9.4, 9.5, 9.6 ]
+  MissingSlotDep: version 0.68.5.1-r6: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
 
 net-analyzer/fprobe
   DeprecatedEAPI: version 1.1: uses deprecated EAPI: 0
@@ -236,6 +283,14 @@ net-analyzer/gspoof
 net-analyzer/hping
   DeprecatedEAPI: version 3_pre20051105-r3: uses deprecated EAPI: 2
 
+net-analyzer/httping
+  MissingSlotDep: version 2.4: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+
+net-analyzer/hydra
+  MissingSlotDep: version 8.1: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+  MissingSlotDep: version 8.1: 'dev-db/postgresql' matches more than one slot: [ 9.0, 9.1, 9.2, 9.3, 9.4, 9.5, 9.6 ]
+  MissingSlotDep: version 8.1: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
+
 net-analyzer/icinga2
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
@@ -251,6 +306,9 @@ net-analyzer/ike-scan
 net-analyzer/ipaudit
   DeprecatedEAPI: version 1.0_beta2: uses deprecated EAPI: 0
 
+net-analyzer/ipguard
+  MissingSlotDep: version 1.04: 'net-libs/libnet' matches more than one slot: [ 1.0, 1.1 ]
+
 net-analyzer/ippl
   DeprecatedEAPI: version 1.4.14-r3: uses deprecated EAPI: 4
 
@@ -258,13 +316,28 @@ net-analyzer/ipv6-toolkit
   DeprecatedEAPI: version 1.3.1: uses deprecated EAPI: 4
   DeprecatedEAPI: version 1.4.1: uses deprecated EAPI: 4
 
+net-analyzer/jnettop
+  MissingSlotDep: version 0.13.0-r1: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
+
 net-analyzer/knocker
   DeprecatedEAPI: version 0.7.1-r2: uses deprecated EAPI: 4
+
+net-analyzer/mbrowse
+  MissingSlotDep: version 0.4.3: 'dev-libs/glib' matches more than one slot: [ 1, 2 ]
+
+net-analyzer/monitoring-plugins
+  MissingSlotDep: version 2.1.1: 'dev-db/postgresql' matches more than one slot: [ 9.0, 9.1, 9.2, 9.3, 9.4, 9.5, 9.6 ]
+  MissingSlotDep: version 2.1.1: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
 
 net-analyzer/multimon-ng
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
 net-analyzer/munin
+  MissingSlotDep: version 2.0.19: 'dev-db/postgresql' matches more than one slot: [ 9.0, 9.1, 9.2, 9.3, 9.4, 9.5, 9.6 ]
+  MissingSlotDep: version 2.0.19-r1: 'dev-db/postgresql' matches more than one slot: [ 9.0, 9.1, 9.2, 9.3, 9.4, 9.5, 9.6 ]
+  MissingSlotDep: version 2.0.25: 'dev-db/postgresql' matches more than one slot: [ 9.0, 9.1, 9.2, 9.3, 9.4, 9.5, 9.6 ]
+  MissingSlotDep: version 2.0.25-r1: 'dev-db/postgresql' matches more than one slot: [ 9.0, 9.1, 9.2, 9.3, 9.4, 9.5, 9.6 ]
+  MissingSlotDep: version 2.1.9999: 'dev-db/postgresql' matches more than one slot: [ 9.0, 9.1, 9.2, 9.3, 9.4, 9.5, 9.6 ]
   DeprecatedEclass: version 2.1.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
 net-analyzer/nagios-check_dnssec
@@ -283,6 +356,9 @@ net-analyzer/nagios-check_rbl
   DeprecatedEAPI: version 1.3.0: uses deprecated EAPI: 4
   DroppedKeywordWarning: version 1.3.7: keywords dropped: x86
 
+net-analyzer/nagios-core
+  MissingSlotDep: version 4.0.8-r2: 'dev-libs/libltdl' matches more than one slot: [ 0, 1.3, 1.5 ]
+
 net-analyzer/nagios-plugins-flameeyes
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
@@ -298,6 +374,11 @@ net-analyzer/nagircbot
 net-analyzer/nagtrap
   DeprecatedEAPI: version 0.1.3: uses deprecated EAPI: 2
 
+net-analyzer/nbwmon
+  MissingSlotDep: version 0.4.3: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
+  MissingSlotDep: version 0.5.1: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
+  MissingSlotDep: version 0.5.2: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
+
 net-analyzer/ncrack
   DeprecatedEAPI: version 0.3_alpha: uses deprecated EAPI: 2
   DeprecatedEAPI: version 0.4_alpha: uses deprecated EAPI: 2
@@ -311,16 +392,16 @@ net-analyzer/nessus
 net-analyzer/nessus-bin
   DeprecatedEAPI: version 4.4.1: uses deprecated EAPI: 0
   DeprecatedEAPI: version 5.0.1: uses deprecated EAPI: 0
-  MissingChksum: version 4.4.1: "Nessus-4.4.1-es6.i686.rpm" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 4.4.1: "Nessus-4.4.1-es6.x86_64.rpm" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 4.4.1: "Nessus-4.4.1-es6.i686.rpm" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 net-analyzer/nessus-client
   DeprecatedEAPI: version 1.0.2-r1: uses deprecated EAPI: 2
 
 net-analyzer/nessus-core
-  DeprecatedEAPI: version 2.2.9-r1: uses deprecated EAPI: 4
   NonExistentDeps: version 2.2.9-r1: depset depends: nonexistent atoms [ dev-libs/libprelude ]
   NonExistentDeps: version 2.2.9-r1: depset rdepends: nonexistent atoms [ dev-libs/libprelude ]
+  DeprecatedEAPI: version 2.2.9-r1: uses deprecated EAPI: 4
 
 net-analyzer/nessus-libraries
   DeprecatedEAPI: version 2.2.9-r1: uses deprecated EAPI: 4
@@ -334,6 +415,12 @@ net-analyzer/neti
 net-analyzer/netsniff-ng
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
+net-analyzer/netwag
+  MissingSlotDep: version 5.39.0: 'kde-apps/konsole' matches more than one slot: [ 4, 5 ]
+
+net-analyzer/netwatch
+  MissingSlotDep: version 1.3.0.1-r3: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
+
 net-analyzer/nikto
   DeprecatedEAPI: version 1.36: uses deprecated EAPI: 0
 
@@ -343,12 +430,24 @@ net-analyzer/nipper
 net-analyzer/nmbscan
   DeprecatedEAPI: version 1.2.5: uses deprecated EAPI: 2
 
+net-analyzer/nrpe
+  MissingSlotDep: version 2.15-r2: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+
+net-analyzer/nsat
+  MissingSlotDep: version 1.5-r3: 'dev-lang/tk' matches more than one slot: [ 0, 8.5 ]
+
 net-analyzer/nsca
   DeprecatedEAPI: version 2.7.2-r103: uses deprecated EAPI: 4
+
+net-analyzer/nstats
+  MissingSlotDep: version 0.4-r2: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
 
 net-analyzer/ntop
   DeprecatedEAPI: version 4.0.3: uses deprecated EAPI: 2
   DeprecatedEAPI: version 4.1.0: uses deprecated EAPI: 2
+  MissingSlotDep: version 5.0.1-r1: 'media-libs/libpng' matches more than one slot: [ 0, 1.2, 1.5 ]
+  MissingSlotDep: version 5.0.1-r1: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+  MissingSlotDep: version 5.0.1-r1: 'dev-lang/lua' matches more than one slot: [ 0, 5.1, 5.2 ]
 
 net-analyzer/openbsd-netcat
   DeprecatedEAPI: version 1.84: uses deprecated EAPI: 4
@@ -358,6 +457,10 @@ net-analyzer/p0f
 
 net-analyzer/pchar
   DeprecatedEAPI: version 1.5-r1: uses deprecated EAPI: 4
+
+net-analyzer/pinger
+  MissingSlotDep: version 0.32e: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
+  MissingSlotDep: version 0.33: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
 
 net-analyzer/pmacct
   DroppedKeywordWarning: version 1.5.3_pre20150925-r1: keywords dropped: ppc
@@ -380,8 +483,16 @@ net-analyzer/raddump
 net-analyzer/rrdtool
   DroppedKeywordWarning: version 1.5.3-r1: keywords dropped: alpha, ia64, sparc
 
+net-analyzer/scli
+  MissingSlotDep: version 0.4.0-r1: 'sys-libs/readline' matches more than one slot: [ 0, 4, 5 ]
+  MissingSlotDep: version 0.4.0-r1: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
+
+net-analyzer/sinfo
+  MissingSlotDep: version 0.0.48: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
+
 net-analyzer/slurm
   DeprecatedEAPI: version 0.3.3-r1: uses deprecated EAPI: 4
+  MissingSlotDep: version 0.3.3-r2: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
 
 net-analyzer/snips
   DeprecatedEAPI: version 1.2-r2: uses deprecated EAPI: 0
@@ -399,8 +510,15 @@ net-analyzer/squidview
 net-analyzer/sslscan
   DeprecatedEAPI: version 1.8.2: uses deprecated EAPI: 4
 
+net-analyzer/sslsniff
+  MissingSlotDep: version 0.8-r1: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+
 net-analyzer/suricata
   NoFinalNewline: version 2.0.10: ebuild lacks an ending newline
+
+net-analyzer/tcpflow
+  MissingSlotDep: version 1.4.4_p3: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+  MissingSlotDep: version 1.4.5_p1: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
 
 net-analyzer/tcping
   DeprecatedEAPI: version 1.3.5: uses deprecated EAPI: 4
@@ -409,6 +527,13 @@ net-analyzer/tcpstat
   DeprecatedEAPI: version 1.5: uses deprecated EAPI: 0
   DeprecatedEAPI: version 1.5-r1: uses deprecated EAPI: 0
 
+net-analyzer/tcptraceroute
+  MissingSlotDep: version 1.5_beta7-r1: 'net-libs/libnet' matches more than one slot: [ 1.0, 1.1 ]
+  MissingSlotDep: version 1.5_beta7-r2: 'net-libs/libnet' matches more than one slot: [ 1.0, 1.1 ]
+
+net-analyzer/tcptrack
+  MissingSlotDep: version 1.4.2: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
+
 net-analyzer/thc-ipv6
   DeprecatedEAPI: version 2.3: uses deprecated EAPI: 4
   DeprecatedEAPI: version 2.5: uses deprecated EAPI: 4
@@ -416,6 +541,12 @@ net-analyzer/thc-ipv6
 
 net-analyzer/thrulay
   DeprecatedEAPI: version 0.9-r1: uses deprecated EAPI: 4
+
+net-analyzer/tracebox
+  MissingSlotDep: version 0.2: 'dev-lang/lua' matches more than one slot: [ 0, 5.1, 5.2 ]
+
+net-analyzer/traceproto
+  MissingSlotDep: version 1.1.2_beta1: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
 
 net-analyzer/traceroute
   DeprecatedEAPI: version 2.0.18: uses deprecated EAPI: 3
@@ -428,6 +559,16 @@ net-analyzer/tsung
 
 net-analyzer/w3af
   DroppedKeywordWarning: version 1.5: keywords dropped: amd64, x86
+
+net-analyzer/zmap
+  MissingSlotDep: version 1.1.1: 'dev-libs/gmp' matches more than one slot: [ 0, 3 ]
+  MissingSlotDep: version 1.1.2: 'dev-libs/gmp' matches more than one slot: [ 0, 3 ]
+  MissingSlotDep: version 1.2.0: 'dev-libs/gmp' matches more than one slot: [ 0, 3 ]
+  MissingSlotDep: version 1.2.1: 'dev-libs/gmp' matches more than one slot: [ 0, 3 ]
+  MissingSlotDep: version 9999: 'dev-libs/gmp' matches more than one slot: [ 0, 3 ]
+
+net-analyzer/zniper
+  MissingSlotDep: version 1.0-r1: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
@@ -441,6 +582,10 @@ dev-ml/dose3
 dev-ml/extlib
   DroppedKeywordWarning: version 1.7.0-r1: keywords dropped: ppc, x86
 
+dev-ml/gd4o
+  MissingSlotDep: version 1.0_alpha5: 'media-libs/libpng' matches more than one slot: [ 0, 1.2, 1.5 ]
+  MissingSlotDep: version 1.0_alpha5: 'virtual/jpeg' matches more than one slot: [ 0, 62 ]
+
 dev-ml/lwt
   DroppedKeywordWarning: version 2.4.6: keywords dropped: x86
 
@@ -452,6 +597,11 @@ dev-ml/ocaml-doc
 
 dev-ml/ocaml-make
   DeprecatedEAPI: version 6.37.0: uses deprecated EAPI: 4
+
+dev-ml/ocaml-ssl
+  MissingSlotDep: version 0.4.6: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+  MissingSlotDep: version 0.5.1: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+  MissingSlotDep: version 0.5.2: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
 
 dev-ml/ocurl
   DroppedKeywordWarning: version 0.7.4: keywords dropped: ppc
@@ -475,28 +625,31 @@ sci-chemistry/PyMca
   DeprecatedEclass: version 4.6.2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 sci-chemistry/acpype
-  DeprecatedEAPI: version 366: uses deprecated EAPI: 3
   DeprecatedEclass: version 366: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 374: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 366: uses deprecated EAPI: 3
+  DeprecatedEclass: version 374: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 374: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
   NonExistentDeps: version 374: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
-  DeprecatedEclass: version 374: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 374: uses deprecated EAPI: 4
 
 sci-chemistry/ambertools
   DeprecatedEAPI: version 1.5-r1: uses deprecated EAPI: 4
-  MissingChksum: version 1.5-r1: "AmberTools-1.5.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1.5-r1: "ambertools-1.5-bugfix_1-10.patch.xz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.5-r1: "AmberTools-1.5.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 sci-chemistry/aqua
   DeprecatedEAPI: version 3.2-r2: uses deprecated EAPI: 4
   MissingChksum: version 3.2-r2: "aqua-3.2-nmr_manual.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
+sci-chemistry/aria
+  MissingSlotDep: version 2.3.2_p20130826: 'dev-lang/tk' matches more than one slot: [ 0, 8.5 ]
+
 sci-chemistry/avogadro
   DroppedKeywordWarning: version 1.1.0: keywords dropped: ppc
 
 sci-chemistry/azara
-  DeprecatedEAPI: version 2.8-r4: uses deprecated EAPI: 3
   DeprecatedEclass: version 2.8-r4: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 2.8-r4: uses deprecated EAPI: 3
 
 sci-chemistry/chemical-mime-data
   DeprecatedEAPI: version 0.1.94: uses deprecated EAPI: 2
@@ -511,14 +664,17 @@ sci-chemistry/clashlist
 sci-chemistry/cluster
   DeprecatedEAPI: version 1.3.081231: uses deprecated EAPI: 4
 
+sci-chemistry/coot
+  UnknownManifest: unknown distfiles in Manifest: [ coot-0.7.1.tar.gz, coot-0.7.2.tar.gz, coot-0.7.tar.gz, greg-data-0.7.1.tar.gz, greg-data-0.7.2.tar.gz, greg-data-0.7.tar.gz ]
+
 sci-chemistry/elem
   DeprecatedEAPI: version 1.0.3-r1: uses deprecated EAPI: 0
   DeprecatedEAPI: version 1.0.3-r2: uses deprecated EAPI: 0
 
 sci-chemistry/gamess
   DeprecatedEAPI: version 20110811.1: uses deprecated EAPI: 4
-  MissingChksum: version 20110811.1: "gamess-20110811.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 20110811.1: "tinker.tar.Z" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 20110811.1: "gamess-20110811.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 sci-chemistry/gelemental
   DeprecatedEAPI: version 1.2.0: uses deprecated EAPI: 4
@@ -529,8 +685,10 @@ sci-chemistry/ghemical
   DeprecatedEAPI: version 3.0.0: uses deprecated EAPI: 3
 
 sci-chemistry/gopenmol
-  DeprecatedEAPI: version 3.00-r2: uses deprecated EAPI: 4
   DeprecatedEclass: version 3.00-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 3.00-r2: uses deprecated EAPI: 4
+  MissingSlotDep: version 3.00-r3: 'dev-lang/tk' matches more than one slot: [ 0, 8.5 ]
+  MissingSlotDep: version 3.00-r3: 'virtual/jpeg' matches more than one slot: [ 0, 62 ]
 
 sci-chemistry/gperiodic
   DeprecatedEAPI: version 2.0.10: uses deprecated EAPI: 4
@@ -561,6 +719,8 @@ sci-chemistry/moldy
 sci-chemistry/molmol
   DeprecatedEAPI: version 2k_p2-r2: uses deprecated EAPI: 4
   DeprecatedEAPI: version 2k_p2-r3: uses deprecated EAPI: 4
+  MissingSlotDep: version 2k_p2-r4: 'virtual/jpeg' matches more than one slot: [ 0, 62 ]
+  MissingSlotDep: version 2k_p2-r5: 'virtual/jpeg' matches more than one slot: [ 0, 62 ]
   SizeViolation: "files/wild.patch" exceeds 20k in size; 50572 bytes total
 
 sci-chemistry/mopac7
@@ -582,10 +742,10 @@ sci-chemistry/ortep3
   DeprecatedEAPI: version 1.0.3-r1: uses deprecated EAPI: 4
 
 sci-chemistry/p3d
-  DeprecatedEAPI: version 0.4.3: uses deprecated EAPI: 3
   DeprecatedEclass: version 0.4.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 0.4.3: uses deprecated EAPI: 3
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), git-2 (migrate to git-r3), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
 
 sci-chemistry/pdbcat
   DeprecatedEAPI: version 1.3: uses deprecated EAPI: 4
@@ -598,6 +758,7 @@ sci-chemistry/pdbmat
 
 sci-chemistry/povscript+
   DeprecatedEAPI: version 2.1.2.2.19: uses deprecated EAPI: 4
+  MissingSlotDep: version 2.1.2.2.20: 'virtual/jpeg' matches more than one slot: [ 0, 62 ]
 
 sci-chemistry/prekin
   DeprecatedEAPI: version 6.51.081122-r1: uses deprecated EAPI: 2
@@ -613,28 +774,28 @@ sci-chemistry/psi
   DeprecatedEAPI: version 3.4.0-r2: uses deprecated EAPI: 4
 
 sci-chemistry/pymol-apbs-plugin
-  DeprecatedEAPI: version 0_p15: uses deprecated EAPI: 3
   DeprecatedEclass: version 0_p15: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0_p18: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 0_p15: uses deprecated EAPI: 3
   DeprecatedEclass: version 0_p18: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 2.1_p24: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 0_p18: uses deprecated EAPI: 3
   DeprecatedEclass: version 2.1_p24: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 2.1_p24: uses deprecated EAPI: 3
 
 sci-chemistry/pymol-plugins-bni-tools
-  DeprecatedEAPI: version 0.25.1: uses deprecated EAPI: 3
   DeprecatedEclass: version 0.25.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.25.1: uses deprecated EAPI: 3
 
 sci-chemistry/pymol-plugins-dssp
-  DeprecatedEAPI: version 110430: uses deprecated EAPI: 3
   DeprecatedEclass: version 110430: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 110430: uses deprecated EAPI: 3
 
 sci-chemistry/pymol-plugins-emovie
-  DeprecatedEAPI: version 1.0.4: uses deprecated EAPI: 3
   DeprecatedEclass: version 1.0.4: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.0.4: uses deprecated EAPI: 3
 
 sci-chemistry/pymol-plugins-msms
-  DeprecatedEAPI: version 100415: uses deprecated EAPI: 3
   DeprecatedEclass: version 100415: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 100415: uses deprecated EAPI: 3
 
 sci-chemistry/raster3d
   DeprecatedEAPI: version 3.0.2: uses deprecated EAPI: 4
@@ -654,12 +815,13 @@ sci-chemistry/threeV
   DeprecatedEAPI: version 1.2: uses deprecated EAPI: 3
 
 sci-chemistry/viewmol
-  DeprecatedEAPI: version 2.4.1-r2: uses deprecated EAPI: 3
   DeprecatedEclass: version 2.4.1-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 2.4.1-r2: uses deprecated EAPI: 3
 
 sci-chemistry/votca-csg
-  DeprecatedEAPI: version 1.2.2: uses deprecated EAPI: 4
   NonExistentDeps: version 1.2.2: depset depends: nonexistent atoms [ <app-doc/doxygen-1.7.6.1 ]
+  DeprecatedEAPI: version 1.2.2: uses deprecated EAPI: 4
+  MissingSlotDep: version 1.2.4-r1: 'app-shells/bash' matches more than one slot: [ 0, 2.05b, 3.0, 3.1, 3.2, 4.0, 4.1 ]
   NonExistentDeps: version 1.2.4-r1: depset depends: nonexistent atoms [ <app-doc/doxygen-1.7.6.1 ]
 
 sci-chemistry/votca-csgapps
@@ -735,8 +897,8 @@ sys-block/iscsitarget
   DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
 
 sys-block/lio-utils
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), git-2 (migrate to git-r3), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
 
 sys-block/mbuffer
   DeprecatedEAPI: version 20090113: uses deprecated EAPI: 0
@@ -800,8 +962,8 @@ sys-block/rts_pstor
   DeprecatedEAPI: version 1.10-r5: uses deprecated EAPI: 4
 
 sys-block/rtsadmin
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), git-2 (migrate to git-r3), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
 
 sys-block/scsiadd
   DeprecatedEAPI: version 1.97: uses deprecated EAPI: 2
@@ -818,8 +980,8 @@ sys-block/seekwatcher
   DeprecatedEAPI: version 0.6: uses deprecated EAPI: 0
   DeprecatedEAPI: version 0.9: uses deprecated EAPI: 0
   DeprecatedEAPI: version 0.12: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.12_p20091015: uses deprecated EAPI: 4
   DeprecatedEclass: version 0.12_p20091015: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.12_p20091015: uses deprecated EAPI: 4
 
 sys-block/smp_utils
   DeprecatedEAPI: version 0.97: uses deprecated EAPI: 4
@@ -832,8 +994,8 @@ sys-block/tapecat
   DeprecatedEAPI: version 1.0.0: uses deprecated EAPI: 0
 
 sys-block/targetcli
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), git-2 (migrate to git-r3), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
 
 sys-block/tgt
   DeprecatedEAPI: version 1.0.19: uses deprecated EAPI: 4
@@ -875,8 +1037,8 @@ sys-block/viaideinfo
 sys-block/whdd
   DeprecatedEAPI: version 2.1: uses deprecated EAPI: 4
   DeprecatedEAPI: version 2.2: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
@@ -1031,15 +1193,33 @@ sci-visualization/ggobi
   DeprecatedEAPI: version 2.1.8: uses deprecated EAPI: 2
   DeprecatedEAPI: version 2.1.9-r1: uses deprecated EAPI: 4
 
+sci-visualization/gle
+  MissingSlotDep: version 4.2.4c: 'media-libs/libpng' matches more than one slot: [ 0, 1.2, 1.5 ]
+  MissingSlotDep: version 4.2.4c: 'media-libs/tiff' matches more than one slot: [ 0, 3 ]
+  MissingSlotDep: version 4.2.4c: 'virtual/jpeg' matches more than one slot: [ 0, 62 ]
+  MissingSlotDep: version 4.2.4c: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
+  MissingSlotDep: version 4.2.5: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
+
+sci-visualization/gnuplot
+  MissingSlotDep: version 4.6.5: 'dev-lang/lua' matches more than one slot: [ 0, 5.1, 5.2 ]
+  MissingSlotDep: version 4.6.5: 'sys-libs/readline' matches more than one slot: [ 0, 4, 5 ]
+
 sci-visualization/grace
   DeprecatedEAPI: version 5.1.22-r2: uses deprecated EAPI: 4
   DeprecatedEAPI: version 5.1.22-r3: uses deprecated EAPI: 4
+  MissingSlotDep: version 5.1.23: 'media-libs/libpng' matches more than one slot: [ 0, 1.2, 1.5 ]
+  MissingSlotDep: version 5.1.23: 'media-libs/tiff' matches more than one slot: [ 0, 3 ]
+  MissingSlotDep: version 5.1.23: 'virtual/jpeg' matches more than one slot: [ 0, 62 ]
+  MissingSlotDep: version 5.1.23-r1: 'media-libs/libpng' matches more than one slot: [ 0, 1.2, 1.5 ]
+  MissingSlotDep: version 5.1.23-r1: 'media-libs/tiff' matches more than one slot: [ 0, 3 ]
+  MissingSlotDep: version 5.1.23-r1: 'virtual/jpeg' matches more than one slot: [ 0, 62 ]
 
 sci-visualization/gri
   DeprecatedEAPI: version 2.12.19: uses deprecated EAPI: 2
 
 sci-visualization/opendx
   DeprecatedEAPI: version 4.4.4-r4: uses deprecated EAPI: 4
+  MissingSlotDep: version 4.4.4-r5: 'media-libs/tiff' matches more than one slot: [ 0, 3 ]
 
 sci-visualization/opendx-samples
   DeprecatedEAPI: version 4.4.0-r1: uses deprecated EAPI: 4
@@ -1052,8 +1232,8 @@ sci-visualization/spyview
   DroppedKeywordWarning: version 20130823: keywords dropped: amd64
 
 sci-visualization/veusz
-  DeprecatedEAPI: version 1.11: uses deprecated EAPI: 3
   DeprecatedEclass: version 1.11: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.11: uses deprecated EAPI: 3
 
 sci-visualization/xd3d
   DeprecatedEAPI: version 8.3.1: uses deprecated EAPI: 4
@@ -1123,11 +1303,14 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : refetch
 
 sci-misc/gato
-  DeprecatedEAPI: version 1.1.2: uses deprecated EAPI: 4
   DeprecatedEclass: version 1.1.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.1.2: uses deprecated EAPI: 4
 
 sci-misc/gt-itm
   DeprecatedEAPI: version 19961004-r1: uses deprecated EAPI: 0
+
+sci-misc/h5utils
+  MissingSlotDep: version 1.12.1-r2: 'virtual/jpeg' matches more than one slot: [ 0, 62 ]
 
 sci-misc/lttoolbox
   DeprecatedEAPI: version 3.1.0: uses deprecated EAPI: 4
@@ -1148,7 +1331,7 @@ sci-misc/repsnapper
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
 sci-misc/vitables
-  DeprecatedEAPI: version 2.1: uses deprecated EAPI: 4
+  DeprecatedEclass: version 2.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 2.1: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
   NonExistentDeps: version 2.1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
-  DeprecatedEclass: version 2.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 2.1: uses deprecated EAPI: 4

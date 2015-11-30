@@ -26,6 +26,9 @@ WARNING pkgcore: metadata.dtd cannot be opened from
 kde-apps/amor
   DroppedKeywordWarning: version 15.08.2: keywords dropped: arm, ppc, ppc64
 
+kde-apps/analitza
+  MissingSlotDep: version 4.14.3: 'sys-libs/readline' matches more than one slot: [ 0, 4, 5 ]
+
 kde-apps/attica
   DroppedKeywordWarning: version 15.08.2: keywords dropped: arm, ppc, ppc64
 
@@ -54,6 +57,9 @@ kde-apps/juk
 
 kde-apps/kate
   DroppedKeywordWarning: version 15.08.2: keywords dropped: arm, ppc, ppc64
+
+kde-apps/kcalc
+  MissingSlotDep: version 4.14.3: 'dev-libs/gmp' matches more than one slot: [ 0, 3 ]
 
 kde-apps/kcmshell
   DroppedKeywordWarning: version 15.08.2: keywords dropped: arm, ppc, ppc64
@@ -265,6 +271,9 @@ kde-apps/mplayerthumbs
 kde-apps/nsplugins
   DroppedKeywordWarning: version 15.08.2: keywords dropped: arm, ppc, ppc64
 
+kde-apps/okular
+  MissingSlotDep: version 4.14.3: 'media-libs/tiff' matches more than one slot: [ 0, 3 ]
+
 kde-apps/pairs
   DroppedKeywordWarning: version 15.04.3: keywords dropped: arm, ppc, ppc64
 
@@ -379,8 +388,8 @@ sci-biology/clustalw-mpi
 
 sci-biology/consed
   DeprecatedEAPI: version 19-r2: uses deprecated EAPI: 3
-  MissingChksum: version 19-r2: "consed-19-sources.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 19-r2: "consed-19-linux.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 19-r2: "consed-19-sources.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 sci-biology/cufflinks
   SizeViolation: "files/cufflinks-1.3.0-boost.patch" exceeds 20k in size; 52005 bytes total
@@ -425,12 +434,12 @@ sci-biology/goby-cpp
   SizeViolation: "files/Alignments.proto" exceeds 20k in size; 26192 bytes total
 
 sci-biology/hmmer
-  DeprecatedEAPI: version 2.3.2-r1: uses deprecated EAPI: 0
   NonExistentDeps: version 2.3.2-r1: depset depends: nonexistent atoms [ sys-cluster/pvm ]
   NonExistentDeps: version 2.3.2-r1: depset rdepends: nonexistent atoms [ sys-cluster/pvm ]
-  DeprecatedEAPI: version 2.3.2-r2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.3.2-r1: uses deprecated EAPI: 0
   NonExistentDeps: version 2.3.2-r2: depset depends: nonexistent atoms [ sys-cluster/pvm ]
   NonExistentDeps: version 2.3.2-r2: depset rdepends: nonexistent atoms [ sys-cluster/pvm ]
+  DeprecatedEAPI: version 2.3.2-r2: uses deprecated EAPI: 0
   DeprecatedEAPI: version 3.0: uses deprecated EAPI: 4
   DroppedKeywordWarning: version 3.0: keywords dropped: alpha, ia64, ppc, ppc64, sparc
 
@@ -474,8 +483,8 @@ sci-biology/mcl
   DeprecatedEAPI: version 12.135: uses deprecated EAPI: 4
 
 sci-biology/meme
-  DeprecatedEAPI: version 4.8.1-r2: uses deprecated EAPI: 4
   DeprecatedEclass: version 4.8.1-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 4.8.1-r2: uses deprecated EAPI: 4
 
 sci-biology/mosaik
   DeprecatedEAPI: version 1.0.1367: uses deprecated EAPI: 2
@@ -483,6 +492,7 @@ sci-biology/mosaik
 
 sci-biology/mrbayes
   DeprecatedEAPI: version 3.1.2-r1: uses deprecated EAPI: 4
+  MissingSlotDep: version 3.1.2-r2: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
 
 sci-biology/mummer
   DeprecatedEAPI: version 3.20: uses deprecated EAPI: 0
@@ -537,14 +547,14 @@ sci-biology/prosite
   DeprecatedEAPI: version 20.72: uses deprecated EAPI: 0
 
 sci-biology/psipred
-  DeprecatedEAPI: version 3.1: uses deprecated EAPI: 3
   NonExistentDeps: version 3.1: depset rdepends: nonexistent atoms [ sci-biology/ncbi-tools++ ]
-  DeprecatedEAPI: version 3.2: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.1: uses deprecated EAPI: 3
   NonExistentDeps: version 3.2: depset rdepends: nonexistent atoms [ sci-biology/ncbi-tools++ ]
-  DeprecatedEAPI: version 3.2.1: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 3.2: uses deprecated EAPI: 3
   NonExistentDeps: version 3.2.1: depset rdepends: nonexistent atoms [ sci-biology/ncbi-tools++ ]
-  DeprecatedEAPI: version 3.3: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 3.2.1: uses deprecated EAPI: 4
   NonExistentDeps: version 3.3: depset rdepends: nonexistent atoms [ sci-biology/ncbi-tools++ ]
+  DeprecatedEAPI: version 3.3: uses deprecated EAPI: 4
   NonExistentDeps: version 3.4: depset rdepends: nonexistent atoms [ sci-biology/ncbi-tools++ ]
   NonExistentDeps: version 3.5: depset rdepends: nonexistent atoms [ sci-biology/ncbi-tools++ ]
 
@@ -565,6 +575,11 @@ sci-biology/rnaview
 
 sci-biology/samtools
   DeprecatedEAPI: version 0.1.12: uses deprecated EAPI: 2
+  MissingSlotDep: version 0.1.19-r2: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
+  MissingSlotDep: version 1.0: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
+  MissingSlotDep: version 1.0-r1: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
+  MissingSlotDep: version 1.1: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
+  MissingSlotDep: version 1.2: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
 
 sci-biology/shrimp
   DeprecatedEAPI: version 2.0.1: uses deprecated EAPI: 4
@@ -607,12 +622,16 @@ sci-biology/unafold
 sci-biology/velvet
   DeprecatedEAPI: version 1.0.18-r1: uses deprecated EAPI: 4
 
+sci-biology/vienna-rna
+  MissingSlotDep: version 2.1.1: 'dev-lang/swig' matches more than one slot: [ 0, 1 ]
+  MissingSlotDep: version 2.1.8: 'dev-lang/swig' matches more than one slot: [ 0, 1 ]
+
 sci-biology/wgs-assembler
   DeprecatedEAPI: version 5.4: uses deprecated EAPI: 2
   DeprecatedEAPI: version 6.1: uses deprecated EAPI: 2
   DeprecatedEAPI: version 7.0: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 7.0-r1: uses deprecated EAPI: 4
   DeprecatedEclass: version 7.0-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 7.0-r1: uses deprecated EAPI: 4
 
 sci-biology/wise
   SizeViolation: "files/wise-2.4.0_alpha-cflags.patch" exceeds 20k in size; 27241 bytes total
@@ -641,29 +660,61 @@ sci-mathematics/calc
   DeprecatedEAPI: version 2.12.2.2: uses deprecated EAPI: 0
   DeprecatedEAPI: version 2.12.4.3: uses deprecated EAPI: 3
   DeprecatedEAPI: version 2.12.4.4: uses deprecated EAPI: 4
+  MissingSlotDep: version 2.12.4.13: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
+  MissingSlotDep: version 2.12.4.13: 'sys-libs/readline' matches more than one slot: [ 0, 4, 5 ]
+
+sci-mathematics/cvc3
+  MissingSlotDep: version 2.4.1: 'dev-libs/gmp' matches more than one slot: [ 0, 3 ]
 
 sci-mathematics/diagrtb
   DeprecatedEAPI: version 2.64: uses deprecated EAPI: 4
 
 sci-mathematics/drgeo
-  DeprecatedEAPI: version 1.1.0: uses deprecated EAPI: 4
   NonExistentDeps: version 1.1.0: depset depends: nonexistent atoms [ =dev-scheme/guile-1.6* ]
   NonExistentDeps: version 1.1.0: depset rdepends: nonexistent atoms [ =dev-scheme/guile-1.6* ]
+  DeprecatedEAPI: version 1.1.0: uses deprecated EAPI: 4
 
 sci-mathematics/factmsieve
-  DeprecatedEAPI: version 76: uses deprecated EAPI: 4
   NonExistentDeps: version 76: depset rdepends: nonexistent atoms [ dev-lang/python:2.6 ]
+  DeprecatedEAPI: version 76: uses deprecated EAPI: 4
 
 sci-mathematics/fann
-  DeprecatedEAPI: version 2.1.0_beta-r1: uses deprecated EAPI: 2
   DeprecatedEclass: version 2.1.0_beta-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 2.1.0_beta-r1: uses deprecated EAPI: 2
   DeprecatedEAPI: version 2.2.0: uses deprecated EAPI: 4
 
 sci-mathematics/flint
+  MissingSlotDep: version 2.3: 'dev-libs/mpfr' matches more than one slot: [ 0, 1 ]
+  MissingSlotDep: version 2.4.3: 'dev-libs/gmp' matches more than one slot: [ 0, 3 ]
+  MissingSlotDep: version 2.4.3: 'dev-libs/mpfr' matches more than one slot: [ 0, 1 ]
+  MissingSlotDep: version 2.4.4-r1: 'dev-libs/gmp' matches more than one slot: [ 0, 3 ]
+  MissingSlotDep: version 2.4.4-r1: 'dev-libs/mpfr' matches more than one slot: [ 0, 1 ]
+  MissingSlotDep: version 2.4.5: 'dev-libs/gmp' matches more than one slot: [ 0, 3 ]
+  MissingSlotDep: version 2.4.5: 'dev-libs/mpfr' matches more than one slot: [ 0, 1 ]
   DroppedKeywordWarning: version 2.4.5: keywords dropped: ppc
+
+sci-mathematics/form
+  MissingSlotDep: version 4.1: 'dev-libs/gmp' matches more than one slot: [ 0, 3 ]
+
+sci-mathematics/freemat
+  MissingSlotDep: version 4.2: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
+
+sci-mathematics/fricas
+  MissingSlotDep: version 1.2.6: 'dev-libs/gmp' matches more than one slot: [ 0, 3 ]
+  MissingSlotDep: version 1.2.7: 'dev-libs/gmp' matches more than one slot: [ 0, 3 ]
 
 sci-mathematics/frobby
   DeprecatedEAPI: version 0.9.0-r1: uses deprecated EAPI: 4
+
+sci-mathematics/genius
+  MissingSlotDep: version 1.0.17: 'dev-libs/gmp' matches more than one slot: [ 0, 3 ]
+  MissingSlotDep: version 1.0.17: 'sys-libs/readline' matches more than one slot: [ 0, 4, 5 ]
+  MissingSlotDep: version 1.0.17: 'dev-libs/mpfr' matches more than one slot: [ 0, 1 ]
+  MissingSlotDep: version 1.0.17: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
+  MissingSlotDep: version 1.0.19: 'dev-libs/gmp' matches more than one slot: [ 0, 3 ]
+  MissingSlotDep: version 1.0.19: 'sys-libs/readline' matches more than one slot: [ 0, 4, 5 ]
+  MissingSlotDep: version 1.0.19: 'dev-libs/mpfr' matches more than one slot: [ 0, 1 ]
+  MissingSlotDep: version 1.0.19: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
 
 sci-mathematics/gfan
   DeprecatedEAPI: version 0.5: uses deprecated EAPI: 3
@@ -684,6 +735,13 @@ sci-mathematics/gmm
 
 sci-mathematics/gmp-ecm
   DeprecatedEAPI: version 6.4.3-r5: uses deprecated EAPI: 4
+  MissingSlotDep: version 6.4.4-r1: 'dev-libs/gmp' matches more than one slot: [ 0, 3 ]
+  MissingSlotDep: version 9999: 'dev-libs/gmp' matches more than one slot: [ 0, 3 ]
+
+sci-mathematics/gretl
+  MissingSlotDep: version 1.9.14: 'sys-libs/readline' matches more than one slot: [ 0, 4, 5 ]
+  MissingSlotDep: version 1.9.14: 'dev-libs/gmp' matches more than one slot: [ 0, 3 ]
+  MissingSlotDep: version 1.9.14: 'dev-libs/mpfr' matches more than one slot: [ 0, 1 ]
 
 sci-mathematics/gsl-shell
   DeprecatedEAPI: version 2.2.0: uses deprecated EAPI: 4
@@ -698,8 +756,8 @@ sci-mathematics/lpsolve
   DeprecatedEAPI: version 5.5.2.0: uses deprecated EAPI: 4
 
 sci-mathematics/lybniz
-  DeprecatedEAPI: version 1.3.2: uses deprecated EAPI: 3
   DeprecatedEclass: version 1.3.2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.3.2: uses deprecated EAPI: 3
 
 sci-mathematics/mathomatic
   DeprecatedEAPI: version 15.8.5: uses deprecated EAPI: 4
@@ -725,6 +783,9 @@ sci-mathematics/nusmv
   DeprecatedEAPI: version 2.5.4: uses deprecated EAPI: 0
 
 sci-mathematics/octave
+  MissingSlotDep: version 3.6.4: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
+  MissingSlotDep: version 3.6.4-r1: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
+  MissingSlotDep: version 3.8.1: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
   DroppedKeywordWarning: version 3.8.1: keywords dropped: arm
 
 sci-mathematics/octave-epstk
@@ -742,39 +803,91 @@ sci-mathematics/pari
   DeprecatedEAPI: version 2.5.1-r1: uses deprecated EAPI: 4
   DeprecatedEAPI: version 2.5.2: uses deprecated EAPI: 4
   DeprecatedEAPI: version 2.5.3: uses deprecated EAPI: 4
+  MissingSlotDep: version 2.5.4: 'dev-libs/gmp' matches more than one slot: [ 0, 3 ]
+  MissingSlotDep: version 2.5.4: 'sys-libs/readline' matches more than one slot: [ 0, 4, 5 ]
   SizeViolation: "files/pari-2.5.4-polred.patch" exceeds 20k in size; 23409 bytes total
 
 sci-mathematics/pari-data
   DeprecatedEAPI: version 20120726: uses deprecated EAPI: 4
 
+sci-mathematics/polymake
+  MissingSlotDep: version 2.13: 'dev-libs/gmp' matches more than one slot: [ 0, 3 ]
+  MissingSlotDep: version 2.14: 'dev-libs/gmp' matches more than one slot: [ 0, 3 ]
+  MissingSlotDep: version 2.14-r1: 'dev-libs/gmp' matches more than one slot: [ 0, 3 ]
+  MissingSlotDep: version 2.14-r1: 'dev-libs/mpfr' matches more than one slot: [ 0, 1 ]
+
 sci-mathematics/prng
   DeprecatedEAPI: version 3.0.2: uses deprecated EAPI: 4
 
+sci-mathematics/pspp
+  MissingSlotDep: version 0.8.1-r1: 'sys-libs/readline' matches more than one slot: [ 0, 4, 5 ]
+  MissingSlotDep: version 0.8.1-r1: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
+  MissingSlotDep: version 0.8.3: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
+
 sci-mathematics/pymc
-  DeprecatedEAPI: version 2.2: uses deprecated EAPI: 4
   DeprecatedEclass: version 2.2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 2.2: uses deprecated EAPI: 4
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), git-2 (migrate to git-r3), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
 
 sci-mathematics/qtoctave
   NonExistentDeps: version 0.10.1-r1: depset depends: nonexistent atoms [ <dev-qt/qtgui-4.8.5:4 ]
   NonExistentDeps: version 0.10.1-r1: depset rdepends: nonexistent atoms [ <dev-qt/qtgui-4.8.5:4 ]
 
 sci-mathematics/relational
-  DeprecatedEAPI: version 0.11: uses deprecated EAPI: 3
   DeprecatedEclass: version 0.11: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.11: uses deprecated EAPI: 3
 
 sci-mathematics/rngstreams
   DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 4
 
 sci-mathematics/snns
-  DeprecatedEAPI: version 4.2-r8: uses deprecated EAPI: 3
-  DeprecatedEclass: version 4.2-r8: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   MetadataError: version 4.2-r8: attr(fetchables): error- Metadata Exception: pkg ebuild src: sci-mathematics/snns-4.2-r8, attr fetchables
 error: http://www-ra.informatik.uni-tuebingen.de/downloads/SNNS/SNNSv4.2.tar.gz mirror://berlios/snns-dev/snns-4.2-20040227.patch.gz doc? ( http://www-ra.informatik.uni-tuebingen.de/downloads/SNNS/SNNSv4.2.Manual.pdf ) python? ( mirror://berlios/snns-dev/PySNNS-20040605.tar.gz mirror://berlios/snns-dev/PythonFunctionSupport-20050210.patch.gz ) is unparseable
 flagged token- uri mirror://berlios/snns-dev/snns-4.2-20040227.patch.gz isn't a known mirror tier
-  DeprecatedEAPI: version 4.2-r9: uses deprecated EAPI: 3
+  DeprecatedEclass: version 4.2-r8: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 4.2-r8: uses deprecated EAPI: 3
   DeprecatedEclass: version 4.2-r9: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 4.2-r9: uses deprecated EAPI: 3
+ERROR root: check <pkgcheck.repo_metadata.ManifestReport object at
+          : 0x7f60687934d0> raised
+ERROR root: Traceback (most recent call last):
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/bas
+          : e.py", line 337, in feed
+ERROR root:     check.feed(item, reporter)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/rep
+          : o_metadata.py", line 242, in feed
+ERROR root:     pkg._get_attr['fetchables'](pkg, allow_missing_checksums=True),
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 89, in generate_fetchables
+ERROR root:    
+          : allow_src_uri_file_renames=self.eapi_obj.options.src_uri_renames)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/conditionals.py", line 188, in parse
+ERROR root:     raise_from(ParseError(dep_str, e))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/conditionals.py", line 167, in parse
+ERROR root:     depsets[-1].append(element_func(k))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 121, in create_fetchable_from_uri
+ERROR root:     raise UnknownMirror(tier, remaining_uri)
+ERROR root: ParseError:
+          : http://www-ra.informatik.uni-tuebingen.de/downloads/SNNS/SNNSv4.2.t
+          : ar.gz mirror://berlios/snns-dev/snns-4.2-20040227.patch.gz doc? (
+          : http://www-ra.informatik.uni-tuebingen.de/downloads/SNNS/SNNSv4.2.M
+          : anual.pdf ) python? (
+          : mirror://berlios/snns-dev/PySNNS-20040605.tar.gz
+          : mirror://berlios/snns-dev/PythonFunctionSupport-20050210.patch.gz
+          : ) is unparseable
+ERROR root: flagged token- uri
+          : mirror://berlios/snns-dev/snns-4.2-20040227.patch.gz isn't a known
+          : mirror tier
 
 sci-mathematics/spin
   DeprecatedEAPI: version 6.2.1: uses deprecated EAPI: 4
@@ -792,6 +905,10 @@ sci-mathematics/xmds
 sci-mathematics/yacas
   DeprecatedEAPI: version 1.3.2: uses deprecated EAPI: 4
   DeprecatedEAPI: version 1.3.3: uses deprecated EAPI: 4
+
+sci-mathematics/yafu
+  MissingSlotDep: version 1.34.3: 'dev-libs/gmp' matches more than one slot: [ 0, 3 ]
+  MissingSlotDep: version 9999: 'dev-libs/gmp' matches more than one slot: [ 0, 3 ]
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
@@ -815,14 +932,14 @@ net-p2p/bitflu
   DeprecatedEAPI: version 1.50: uses deprecated EAPI: 4
 
 net-p2p/bittornado
-  DeprecatedEAPI: version 0.3.18-r2: uses deprecated EAPI: 3
   DeprecatedEclass: version 0.3.18-r2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.3.18-r2: uses deprecated EAPI: 3
 
 net-p2p/bittorrent
-  DeprecatedEAPI: version 4.4.0-r2: uses deprecated EAPI: 3
+  DeprecatedEclass: version 4.4.0-r2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 4.4.0-r2: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
   NonExistentDeps: version 4.4.0-r2: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
-  DeprecatedEclass: version 4.4.0-r2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 4.4.0-r2: uses deprecated EAPI: 3
 
 net-p2p/btpd
   DeprecatedEAPI: version 0.15: uses deprecated EAPI: 0
@@ -843,26 +960,78 @@ net-p2p/dclib
   DeprecatedEAPI: version 0.3.23: uses deprecated EAPI: 2
 
 net-p2p/deluge
-  DeprecatedEAPI: version 1.3.6: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.3.6: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 1.3.6: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
   NonExistentDeps: version 1.3.6: depset rdepends: nonexistent atoms [ dev-lang/python:2.6, =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
-  DeprecatedEclass: version 1.3.6: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.3.6: uses deprecated EAPI: 3
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
 net-p2p/gift
   DeprecatedEAPI: version 0.11.8.1-r1: uses deprecated EAPI: 0
 
 net-p2p/gift-ares
-  DeprecatedEAPI: version 0.3.0-r1: uses deprecated EAPI: 0
   MetadataError: version 0.3.0-r1: attr(fetchables): error- Metadata Exception: pkg ebuild src: net-p2p/gift-ares-0.3.0-r1, attr fetchables
 error: mirror://berlios/gift-ares/gift-ares-0.3.0.tar.bz2 is unparseable: uri mirror://berlios/gift-ares/gift-ares-0.3.0.tar.bz2 isn't a known mirror tier
 flagged token- mirror://berlios/gift-ares/gift-ares-0.3.0.tar.bz2
+  DeprecatedEAPI: version 0.3.0-r1: uses deprecated EAPI: 0
+ERROR root: check <pkgcheck.repo_metadata.ManifestReport object at
+          : 0x7f60687934d0> raised
+ERROR root: Traceback (most recent call last):
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/bas
+          : e.py", line 337, in feed
+ERROR root:     check.feed(item, reporter)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/rep
+          : o_metadata.py", line 242, in feed
+ERROR root:     pkg._get_attr['fetchables'](pkg, allow_missing_checksums=True),
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 89, in generate_fetchables
+ERROR root:    
+          : allow_src_uri_file_renames=self.eapi_obj.options.src_uri_renames)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/conditionals.py", line 88, in parse
+ERROR root:     element_func, operators.get(""), operators.get("||"))
+ERROR root: ParseError: mirror://berlios/gift-ares/gift-ares-0.3.0.tar.bz2 is
+          : unparseable: uri
+          : mirror://berlios/gift-ares/gift-ares-0.3.0.tar.bz2 isn't a known
+          : mirror tier
+ERROR root: flagged token- mirror://berlios/gift-ares/gift-ares-0.3.0.tar.bz2
 
 net-p2p/gift-fasttrack
-  DeprecatedEAPI: version 0.8.9-r1: uses deprecated EAPI: 0
   MetadataError: version 0.8.9-r1: attr(fetchables): error- Metadata Exception: pkg ebuild src: net-p2p/gift-fasttrack-0.8.9-r1, attr fetchables
 error: mirror://berlios/gift-fasttrack/giFT-FastTrack-0.8.9.tar.gz is unparseable: uri mirror://berlios/gift-fasttrack/giFT-FastTrack-0.8.9.tar.gz isn't a known mirror tier
 flagged token- mirror://berlios/gift-fasttrack/giFT-FastTrack-0.8.9.tar.gz
+  DeprecatedEAPI: version 0.8.9-r1: uses deprecated EAPI: 0
+ERROR root: check <pkgcheck.repo_metadata.ManifestReport object at
+          : 0x7f60687934d0> raised
+ERROR root: Traceback (most recent call last):
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/bas
+          : e.py", line 337, in feed
+ERROR root:     check.feed(item, reporter)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/rep
+          : o_metadata.py", line 242, in feed
+ERROR root:     pkg._get_attr['fetchables'](pkg, allow_missing_checksums=True),
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 89, in generate_fetchables
+ERROR root:    
+          : allow_src_uri_file_renames=self.eapi_obj.options.src_uri_renames)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/conditionals.py", line 88, in parse
+ERROR root:     element_func, operators.get(""), operators.get("||"))
+ERROR root: ParseError:
+          : mirror://berlios/gift-fasttrack/giFT-FastTrack-0.8.9.tar.gz is
+          : unparseable: uri
+          : mirror://berlios/gift-fasttrack/giFT-FastTrack-0.8.9.tar.gz isn't
+          : a known mirror tier
+ERROR root: flagged token-
+          : mirror://berlios/gift-fasttrack/giFT-FastTrack-0.8.9.tar.gz
 
 net-p2p/gift-gnutella
   DeprecatedEAPI: version 0.0.11: uses deprecated EAPI: 0
@@ -912,8 +1081,8 @@ net-p2p/ncdc
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
 net-p2p/nicotine+
-  DeprecatedEAPI: version 1.2.16: uses deprecated EAPI: 3
   DeprecatedEclass: version 1.2.16: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.2.16: uses deprecated EAPI: 3
 
 net-p2p/phex
   DeprecatedEAPI: version 3.2.0.102-r1: uses deprecated EAPI: 2
@@ -925,10 +1094,10 @@ net-p2p/rtorrent
   DeprecatedEAPI: version 0.9.3: uses deprecated EAPI: 4
 
 net-p2p/saku
-  DeprecatedEAPI: version 3.11.0-r1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 3.11.0-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 3.11.0-r1: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
   NonExistentDeps: version 3.11.0-r1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
-  DeprecatedEclass: version 3.11.0-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 3.11.0-r1: uses deprecated EAPI: 3
 
 net-p2p/smet2html
   DeprecatedEAPI: version 0.1: uses deprecated EAPI: 0
@@ -941,8 +1110,9 @@ net-p2p/transmission-remote-gtk
   DeprecatedEAPI: version 1.1.1: uses deprecated EAPI: 4
 
 net-p2p/tribler
-  DeprecatedEAPI: version 6.0.3: uses deprecated EAPI: 4
   DeprecatedEclass: version 6.0.3: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 6.0.3: uses deprecated EAPI: 4
+  MissingSlotDep: version 6.3.3-r1: 'dev-python/wxpython' matches more than one slot: [ 2.8, 2.9, 3.0 ]
 
 net-p2p/tvrss
   DeprecatedEAPI: version 1.8_beta: uses deprecated EAPI: 2
@@ -974,8 +1144,8 @@ dev-cpp/asio
   SizeViolation: "files/asio-1.4.8_declarations.patch" exceeds 20k in size; 29773 bytes total
 
 dev-cpp/ctemplate
-  DeprecatedEAPI: version 2.2: uses deprecated EAPI: 4
   DeprecatedEclass: version 2.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 2.2: uses deprecated EAPI: 4
 
 dev-cpp/eigen
   DeprecatedEAPI: version 2.0.17: uses deprecated EAPI: 4
@@ -1001,10 +1171,10 @@ dev-cpp/gmock
   DeprecatedEAPI: version 1.7.0-r1: uses deprecated EAPI: 4
 
 dev-cpp/gtest
-  DeprecatedEAPI: version 1.6.0: uses deprecated EAPI: 4
   DeprecatedEclass: version 1.6.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 1.6.0-r1: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.6.0: uses deprecated EAPI: 4
   DeprecatedEclass: version 1.6.0-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.6.0-r1: uses deprecated EAPI: 4
 
 dev-cpp/gtkmm-utils
   DeprecatedEAPI: version 0.4.1: uses deprecated EAPI: 4
@@ -1032,6 +1202,9 @@ dev-cpp/libgnomemm
 
 dev-cpp/libmcpp
   DeprecatedEAPI: version 2.7.2-r1: uses deprecated EAPI: 3
+
+dev-cpp/luabind
+  MissingSlotDep: version 0.9.1: 'dev-lang/lua' matches more than one slot: [ 0, 5.1, 5.2 ]
 
 dev-cpp/muParser
   DeprecatedEAPI: version 2.2.2: uses deprecated EAPI: 4
@@ -1065,11 +1238,20 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
+games-strategy/asc
+  MissingSlotDep: version 2.6.0.0: 'media-libs/libpng' matches more than one slot: [ 0, 1.2, 1.5 ]
+
 games-strategy/attal
   DeprecatedEAPI: version 0.10.1: uses deprecated EAPI: 2
 
+games-strategy/boswars
+  MissingSlotDep: version 2.7-r1: 'dev-lang/lua' matches more than one slot: [ 0, 5.1, 5.2 ]
+
 games-strategy/coldwar
   MissingChksum: version 1.0.1-r1: "coldwar-1.0-1.0.1-x86.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+games-strategy/hedgewars
+  MissingSlotDep: version 0.9.21.1: 'dev-lang/lua' matches more than one slot: [ 0, 5.1, 5.2 ]
 
 games-strategy/ja2-stracciatella
   DeprecatedEAPI: version 0.12.1_p7072: uses deprecated EAPI: 4
@@ -1077,9 +1259,18 @@ games-strategy/ja2-stracciatella
 games-strategy/ja2-stracciatella-data
   DeprecatedEAPI: version 1: uses deprecated EAPI: 4
 
+games-strategy/liquidwar6
+  MissingSlotDep: version 0.4.3681: 'sys-libs/readline' matches more than one slot: [ 0, 4, 5 ]
+  MissingSlotDep: version 0.4.3681: 'virtual/jpeg' matches more than one slot: [ 0, 62 ]
+  MissingSlotDep: version 0.4.3681: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
+  MissingSlotDep: version 0.4.3681: 'dev-scheme/guile' matches more than one slot: [ 12, 2 ]
+
+games-strategy/megaglest
+  MissingSlotDep: version 3.9.1-r1: 'virtual/jpeg' matches more than one slot: [ 0, 62 ]
+
 games-strategy/openra
-  DeprecatedEAPI: version 20120630-r1: uses deprecated EAPI: 4
   DeprecatedEclass: version 20120630-r1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 20120630-r1: uses deprecated EAPI: 4
 
 games-strategy/revenge-of-the-titans
   MissingChksum: version 1.80.12: "revenge-of-the-titans-1.80.12-amd64.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
@@ -1090,6 +1281,10 @@ games-strategy/spaz
 
 games-strategy/wargus-data
   DeprecatedEAPI: version 0: uses deprecated EAPI: 4
+
+games-strategy/widelands
+  MissingSlotDep: version 0.17: 'dev-lang/lua' matches more than one slot: [ 0, 5.1, 5.2 ]
+  MissingSlotDep: version 0.17: 'media-libs/libpng' matches more than one slot: [ 0, 1.2, 1.5 ]
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
@@ -1196,7 +1391,24 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
+net-voip/gnugk
+  MissingSlotDep: version 3.4: 'dev-lang/lua' matches more than one slot: [ 0, 5.1, 5.2 ]
+  MissingSlotDep: version 3.4: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+  MissingSlotDep: version 3.4: 'dev-db/postgresql' matches more than one slot: [ 9.0, 9.1, 9.2, 9.3, 9.4, 9.5, 9.6 ]
+
 net-voip/homer
   NonExistentDeps: version 0.24.1-r1: depset depends: nonexistent atoms [ <media-video/ffmpeg-2 ]
   NonExistentDeps: version 0.24.1-r1: depset rdepends: nonexistent atoms [ <media-video/ffmpeg-2 ]
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+net-voip/linphone
+  MissingSlotDep: version 3.5.2: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
+  MissingSlotDep: version 3.6.1: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
+
+net-voip/yate
+  MissingSlotDep: version 5.4.0-r1: 'dev-db/postgresql' matches more than one slot: [ 9.0, 9.1, 9.2, 9.3, 9.4, 9.5, 9.6 ]
+  MissingSlotDep: version 5.4.0-r1: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+  MissingSlotDep: version 5.5.0-r1: 'dev-db/postgresql' matches more than one slot: [ 9.0, 9.1, 9.2, 9.3, 9.4, 9.5, 9.6 ]
+  MissingSlotDep: version 5.5.0-r1: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+  MissingSlotDep: version 9999: 'dev-db/postgresql' matches more than one slot: [ 9.0, 9.1, 9.2, 9.3, 9.4, 9.5, 9.6 ]
+  MissingSlotDep: version 9999: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]

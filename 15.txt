@@ -69,21 +69,21 @@ app-text/cedilla
   DeprecatedEAPI: version 0.6: uses deprecated EAPI: 4
 
 app-text/chm2pdf
-  DeprecatedEAPI: version 0.9.1-r1: uses deprecated EAPI: 2
-  NonExistentDeps: version 0.9.1-r1: depset rdepends: nonexistent atoms [ <dev-libs/chmlib-0.40-r1 ]
   DeprecatedEclass: version 0.9.1-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 0.9.1-r1: depset rdepends: nonexistent atoms [ <dev-libs/chmlib-0.40-r1 ]
+  DeprecatedEAPI: version 0.9.1-r1: uses deprecated EAPI: 2
 
 app-text/clara
   DeprecatedEAPI: version 20031214: uses deprecated EAPI: 0
 
 app-text/cmigemo
-  DeprecatedEAPI: version 1.3c: uses deprecated EAPI: 0
   NonExistentDeps: version 1.3c: depset rdepends: nonexistent atoms [ >=app-text/migemo-0.40-r1 ]
-  DeprecatedEAPI: version 1.3c-r1: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 1.3c: uses deprecated EAPI: 0
   NonExistentDeps: version 1.3c-r1: depset rdepends: nonexistent atoms [ >=app-text/migemo-0.40-r1 ]
-  DeprecatedEAPI: version 1.3c-r2: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 1.3c-r1: uses deprecated EAPI: 2
   NonExistentDeps: version 1.3c-r2: depset depends: nonexistent atoms [ net-misc/fetch ]
   NonExistentDeps: version 1.3c-r2: depset rdepends: nonexistent atoms [ >=app-text/migemo-0.40-r1 ]
+  DeprecatedEAPI: version 1.3c-r2: uses deprecated EAPI: 2
 
 app-text/code2html
   DeprecatedEAPI: version 0.9.1-r1: uses deprecated EAPI: 3
@@ -165,8 +165,8 @@ app-text/docx2txt
   DeprecatedEAPI: version 1.2: uses deprecated EAPI: 4
 
 app-text/duali
-  DeprecatedEAPI: version 0.2.0: uses deprecated EAPI: 3
   DeprecatedEclass: version 0.2.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.2.0: uses deprecated EAPI: 3
 
 app-text/dvibook
   DeprecatedEAPI: version 20001129: uses deprecated EAPI: 0
@@ -177,6 +177,9 @@ app-text/dvipdfm
 
 app-text/dvipdfmx
   DeprecatedEAPI: version 20110311-r1: uses deprecated EAPI: 3
+
+app-text/dvipng
+  MissingSlotDep: version 1.14: 'media-libs/libpng' matches more than one slot: [ 0, 1.2, 1.5 ]
 
 app-text/dvipsk
   DeprecatedEAPI: version 5.992_p20120701: uses deprecated EAPI: 4
@@ -218,6 +221,10 @@ app-text/expander
 app-text/fbless
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
+app-text/fbreader
+  MissingSlotDep: version 0.99.4-r1: 'dev-db/sqlite' matches more than one slot: [ 0, 3 ]
+  MissingSlotDep: version 0.99.4-r2: 'dev-db/sqlite' matches more than one slot: [ 0, 3 ]
+
 app-text/fdftk
   DeprecatedEAPI: version 6.0-r1: uses deprecated EAPI: 0
 
@@ -237,6 +244,9 @@ app-text/gocr
   DeprecatedEAPI: version 0.49: uses deprecated EAPI: 4
   DeprecatedEAPI: version 0.50: uses deprecated EAPI: 4
 
+app-text/groonga
+  MissingSlotDep: version 4.0.7-r1: 'dev-lang/ruby' matches more than one slot: [ 1.9, 2.0, 2.1, 2.2 ]
+
 app-text/gtkspell
   DeprecatedEAPI: version 2.0.16: uses deprecated EAPI: 4
 
@@ -254,6 +264,13 @@ app-text/highlight
   DeprecatedEAPI: version 3.3: uses deprecated EAPI: 4
   DeprecatedEAPI: version 3.9: uses deprecated EAPI: 4
   DeprecatedEAPI: version 3.12: uses deprecated EAPI: 4
+  MissingSlotDep: version 3.16: 'dev-lang/lua' matches more than one slot: [ 0, 5.1, 5.2 ]
+  MissingSlotDep: version 3.17: 'dev-lang/lua' matches more than one slot: [ 0, 5.1, 5.2 ]
+  MissingSlotDep: version 3.18: 'dev-lang/lua' matches more than one slot: [ 0, 5.1, 5.2 ]
+  MissingSlotDep: version 3.24: 'dev-lang/lua' matches more than one slot: [ 0, 5.1, 5.2 ]
+
+app-text/hnb
+  MissingSlotDep: version 1.9.18-r1: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
 
 app-text/html2text
   DeprecatedEAPI: version 1.3.2a: uses deprecated EAPI: 4
@@ -273,6 +290,10 @@ app-text/htmlrecode
 app-text/htmltidy
   DeprecatedEAPI: version 20090325-r1: uses deprecated EAPI: 4
 
+app-text/hunspell
+  MissingSlotDep: version 1.3.3: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
+  MissingSlotDep: version 1.3.3: 'sys-libs/readline' matches more than one slot: [ 0, 4, 5 ]
+
 app-text/hyperestraier
   DeprecatedEAPI: version 1.4.13: uses deprecated EAPI: 0
 
@@ -286,8 +307,8 @@ app-text/jmupdf
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
 app-text/landslide
-  DeprecatedEAPI: version 1.1.1: uses deprecated EAPI: 3
   DeprecatedEclass: version 1.1.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.1.1: uses deprecated EAPI: 3
 
 app-text/lcdf-typetools
   DeprecatedEAPI: version 2.97: uses deprecated EAPI: 2
@@ -305,6 +326,14 @@ app-text/libebook
 app-text/libetonyek
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
   DroppedKeywordWarning: version 0.1.1: keywords dropped: ppc
+
+app-text/libgxps
+  MissingSlotDep: version 0.2.2: 'virtual/jpeg' matches more than one slot: [ 0, 62 ]
+
+app-text/liblangtag
+  MissingSlotDep: version 0.5.1: 'dev-libs/glib' matches more than one slot: [ 1, 2 ]
+  MissingSlotDep: version 0.5.2: 'dev-libs/glib' matches more than one slot: [ 1, 2 ]
+  MissingSlotDep: version 0.5.6: 'dev-libs/glib' matches more than one slot: [ 1, 2 ]
 
 app-text/libmspub
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
@@ -339,10 +368,10 @@ app-text/llpp
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
 app-text/lodgeit
-  DeprecatedEAPI: version 0.3_p20120507: uses deprecated EAPI: 4
   DeprecatedEclass: version 0.3_p20120507: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.3_p20120618-r1: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.3_p20120507: uses deprecated EAPI: 4
   DeprecatedEclass: version 0.3_p20120618-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.3_p20120618-r1: uses deprecated EAPI: 4
 
 app-text/lout
   DeprecatedEAPI: version 3.38-r1: uses deprecated EAPI: 3
@@ -358,8 +387,8 @@ app-text/mbtpdfasm
   DeprecatedEAPI: version 1.0.28-r1: uses deprecated EAPI: 2
 
 app-text/mftrace
-  DeprecatedEAPI: version 1.2.18: uses deprecated EAPI: 4
   DeprecatedEclass: version 1.2.18: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.2.18: uses deprecated EAPI: 4
 
 app-text/mht-rip
   DeprecatedEAPI: version 0.8: uses deprecated EAPI: 0
@@ -372,13 +401,15 @@ app-text/mupdf
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
 app-text/namazu
+  MissingSlotDep: version 2.0.21: 'dev-lang/tk' matches more than one slot: [ 0, 8.5 ]
+  MissingSlotDep: version 2.0.22_p1: 'dev-lang/tk' matches more than one slot: [ 0, 8.5 ]
   DroppedKeywordWarning: version 2.0.22_p1: keywords dropped: amd64, ppc, ppc64, x86
 
 app-text/nfoview
-  DeprecatedEAPI: version 1.10: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.10: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 1.10: depset depends: nonexistent atoms [ =dev-lang/python-3.2* ]
   NonExistentDeps: version 1.10: depset rdepends: nonexistent atoms [ =dev-lang/python-3.2* ]
-  DeprecatedEclass: version 1.10: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.10: uses deprecated EAPI: 3
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
 app-text/noweb
@@ -403,8 +434,8 @@ app-text/pdfjam
   DeprecatedEAPI: version 2.08: uses deprecated EAPI: 0
 
 app-text/pdfshuffler
-  DeprecatedEAPI: version 0.6.0: uses deprecated EAPI: 4
   DeprecatedEclass: version 0.6.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.6.0: uses deprecated EAPI: 4
 
 app-text/pep
   DeprecatedEAPI: version 2.8-r1: uses deprecated EAPI: 2
@@ -432,23 +463,26 @@ app-text/psutils
   DeprecatedEAPI: version 1.17-r2: uses deprecated EAPI: 3
 
 app-text/pybookreader
-  DeprecatedEAPI: version 0.5.0: uses deprecated EAPI: 3
   DeprecatedEclass: version 0.5.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.5.0: uses deprecated EAPI: 3
 
 app-text/pytextile
   DroppedKeywordWarning: version 2.2.1: keywords dropped: ppc, sparc
 
 app-text/queequeg
-  DeprecatedEAPI: version 0.91: uses deprecated EAPI: 3
   DeprecatedEclass: version 0.91: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.91: uses deprecated EAPI: 3
 
 app-text/rarian
   DeprecatedEAPI: version 0.8.1-r2: uses deprecated EAPI: 4
 
+app-text/reed
+  MissingSlotDep: version 5.4: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
+
 app-text/refbase
-  DeprecatedEAPI: version 0.9.5: uses deprecated EAPI: 2
   NonExistentDeps: version 0.9.5: depset depends: nonexistent atoms [ <dev-lang/php-5.3 ]
   NonExistentDeps: version 0.9.5: depset rdepends: nonexistent atoms [ <dev-lang/php-5.3 ]
+  DeprecatedEAPI: version 0.9.5: uses deprecated EAPI: 2
 
 app-text/referencer
   DeprecatedEclass: version 1.2.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
@@ -462,12 +496,12 @@ app-text/rhyme
 
 app-text/rnv
   DeprecatedEAPI: version 1.7.11: uses deprecated EAPI: 4
-  UnusedLocalFlags: metadata.xml unused local use flag: [ scheme ]
   DroppedKeywordWarning: version 1.7.11-r1: keywords dropped: ppc
+  UnusedLocalFlags: metadata.xml unused local use flag: [ scheme ]
 
 app-text/rpl
-  DeprecatedEAPI: version 1.5.5: uses deprecated EAPI: 3
   DeprecatedEclass: version 1.5.5: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.5.5: uses deprecated EAPI: 3
 
 app-text/rtf2html
   DeprecatedEAPI: version 0.2.0-r1: uses deprecated EAPI: 4
@@ -498,8 +532,8 @@ app-text/sgrep
   DeprecatedEAPI: version 1.94a: uses deprecated EAPI: 4
 
 app-text/silvercity
-  DeprecatedEAPI: version 0.9.7: uses deprecated EAPI: 3
   DeprecatedEclass: version 0.9.7: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.9.7: uses deprecated EAPI: 3
 
 app-text/skribe
   DeprecatedEAPI: version 1.2l: uses deprecated EAPI: 3
@@ -553,8 +587,9 @@ app-text/txt2man
   DeprecatedEAPI: version 1.5.6: uses deprecated EAPI: 4
 
 app-text/txt2tags
-  DeprecatedEAPI: version 2.6: uses deprecated EAPI: 2
   DeprecatedEclass: version 2.6: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 2.6: uses deprecated EAPI: 2
+  MissingSlotDep: version 2.6-r1: 'dev-lang/tk' matches more than one slot: [ 0, 8.5 ]
 
 app-text/unpaper
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
@@ -568,20 +603,55 @@ app-text/uvconv
 app-text/vlna
   DeprecatedEAPI: version 1.5: uses deprecated EAPI: 0
 
+app-text/wdiff
+  MissingSlotDep: version 1.2.2: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
+
 app-text/wgetpaste
   DeprecatedEAPI: version 2.22: uses deprecated EAPI: 4
 
 app-text/winefish
-  DeprecatedEAPI: version 1.3.3-r1: uses deprecated EAPI: 3
   MetadataError: version 1.3.3-r1: attr(fetchables): error- Metadata Exception: pkg ebuild src: app-text/winefish-1.3.3-r1, attr fetchables
 error: mirror://berlios/winefish/winefish-1.3.3.tgz is unparseable
 flagged token- uri mirror://berlios/winefish/winefish-1.3.3.tgz isn't a known mirror tier
+  DeprecatedEAPI: version 1.3.3-r1: uses deprecated EAPI: 3
+ERROR root: check <pkgcheck.repo_metadata.ManifestReport object at
+          : 0x7f38677af9d0> raised
+ERROR root: Traceback (most recent call last):
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/bas
+          : e.py", line 337, in feed
+ERROR root:     check.feed(item, reporter)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/rep
+          : o_metadata.py", line 242, in feed
+ERROR root:     pkg._get_attr['fetchables'](pkg, allow_missing_checksums=True),
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 89, in generate_fetchables
+ERROR root:    
+          : allow_src_uri_file_renames=self.eapi_obj.options.src_uri_renames)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/conditionals.py", line 188, in parse
+ERROR root:     raise_from(ParseError(dep_str, e))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/conditionals.py", line 164, in parse
+ERROR root:     depsets[-1].append(element_func(k))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 121, in create_fetchable_from_uri
+ERROR root:     raise UnknownMirror(tier, remaining_uri)
+ERROR root: ParseError: mirror://berlios/winefish/winefish-1.3.3.tgz is
+          : unparseable
+ERROR root: flagged token- uri mirror://berlios/winefish/winefish-1.3.3.tgz
+          : isn't a known mirror tier
 
 app-text/wklej
-  DeprecatedEAPI: version 0.2.0: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.2.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 0.2.0: depset depends: nonexistent atoms [ =dev-lang/python-2.6*, =dev-lang/python-3.1*, =dev-lang/python-3.2* ]
   NonExistentDeps: version 0.2.0: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6*, =dev-lang/python-3.1*, =dev-lang/python-3.2* ]
-  DeprecatedEclass: version 0.2.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.2.0: uses deprecated EAPI: 3
 
 app-text/writerperfect
   DeprecatedEAPI: version 0.8.1: uses deprecated EAPI: 4
@@ -590,6 +660,9 @@ app-text/writerperfect
 
 app-text/wv
   DeprecatedEAPI: version 1.2.9-r1: uses deprecated EAPI: 3
+
+app-text/wv2
+  MissingSlotDep: version 0.4.2-r2: 'dev-libs/glib' matches more than one slot: [ 1, 2 ]
 
 app-text/xapian-omega
   DroppedKeywordWarning: version 1.3.3: keywords dropped: alpha, ia64, sparc
@@ -614,8 +687,8 @@ app-text/xml2doc
   DeprecatedEAPI: version 20030510-r1: uses deprecated EAPI: 4
 
 app-text/xmldiff
-  DeprecatedEAPI: version 0.6.10: uses deprecated EAPI: 3
   DeprecatedEclass: version 0.6.10: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.6.10: uses deprecated EAPI: 3
 
 app-text/xmlstarlet
   DeprecatedEAPI: version 1.4.2: uses deprecated EAPI: 4
@@ -623,6 +696,8 @@ app-text/xmlstarlet
   DeprecatedEAPI: version 1.6.1: uses deprecated EAPI: 4
 
 app-text/xournal
+  MissingSlotDep: version 0.4.8: 'dev-libs/glib' matches more than one slot: [ 1, 2 ]
+  MissingSlotDep: version 9999: 'dev-libs/glib' matches more than one slot: [ 1, 2 ]
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
 app-text/zathura
@@ -984,6 +1059,38 @@ app-dicts/qvortaro
   MetadataError: version 0.4.1: attr(fetchables): error- Metadata Exception: pkg ebuild src: app-dicts/qvortaro-0.4.1, attr fetchables
 error: mirror://berlios/qvortaro/qvortaro-0.4.1.tar.gz is unparseable
 flagged token- uri mirror://berlios/qvortaro/qvortaro-0.4.1.tar.gz isn't a known mirror tier
+ERROR root: check <pkgcheck.repo_metadata.ManifestReport object at
+          : 0x7f38677af9d0> raised
+ERROR root: Traceback (most recent call last):
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/bas
+          : e.py", line 337, in feed
+ERROR root:     check.feed(item, reporter)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/rep
+          : o_metadata.py", line 242, in feed
+ERROR root:     pkg._get_attr['fetchables'](pkg, allow_missing_checksums=True),
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 89, in generate_fetchables
+ERROR root:    
+          : allow_src_uri_file_renames=self.eapi_obj.options.src_uri_renames)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/conditionals.py", line 188, in parse
+ERROR root:     raise_from(ParseError(dep_str, e))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/conditionals.py", line 164, in parse
+ERROR root:     depsets[-1].append(element_func(k))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 121, in create_fetchable_from_uri
+ERROR root:     raise UnknownMirror(tier, remaining_uri)
+ERROR root: ParseError: mirror://berlios/qvortaro/qvortaro-0.4.1.tar.gz is
+          : unparseable
+ERROR root: flagged token- uri mirror://berlios/qvortaro/qvortaro-0.4.1.tar.gz
+          : isn't a known mirror tier
 
 app-dicts/stardict-cdict-en-zh-big5
   DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
@@ -1203,8 +1310,8 @@ app-vim/eselect-syntax
 app-vim/exheres-syntax
   DeprecatedEAPI: version 20080908: uses deprecated EAPI: 0
   DeprecatedEAPI: version 20090310: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 99999999: uses deprecated EAPI: 0
   DeprecatedEclass: version 99999999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEAPI: version 99999999: uses deprecated EAPI: 0
 
 app-vim/extra-syntax
   DeprecatedEAPI: version 2: uses deprecated EAPI: 0
@@ -1429,8 +1536,8 @@ app-vim/vimoutliner
   DeprecatedEAPI: version 0.3.4-r2: uses deprecated EAPI: 0
 
 app-vim/vimpress
-  DeprecatedEAPI: version 2.1.5: uses deprecated EAPI: 4
   NonExistentDeps: version 2.1.5: depset rdepends: nonexistent atoms [ dev-lang/python:2.6 ]
+  DeprecatedEAPI: version 2.1.5: uses deprecated EAPI: 4
 
 app-vim/vimpython
   DeprecatedEAPI: version 1.13: uses deprecated EAPI: 0
@@ -1473,24 +1580,35 @@ www-client/jumanji
 
 www-client/luakit
   DeprecatedEAPI: version 2012.09.13_p1-r1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
+
+www-client/netrik
+  MissingSlotDep: version 1.16.1-r1: 'sys-libs/readline' matches more than one slot: [ 0, 4, 5 ]
 
 www-client/opera
   DeprecatedEAPI: version 12.16_p1860-r1: uses deprecated EAPI: 4
   DroppedKeywordWarning: version 33.0.1990.43: keywords dropped: x86
+
+www-client/phantomjs
+  MissingSlotDep: version 1.9.8: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
 
 www-client/seamonkey-bin
   DeprecatedEAPI: version 2.35: uses deprecated EAPI: 4
   DeprecatedEAPI: version 2.38: uses deprecated EAPI: 4
 
 www-client/surf
+  MissingSlotDep: version 0.6-r1: 'dev-libs/glib' matches more than one slot: [ 1, 2 ]
+  MissingSlotDep: version 0.6-r2: 'dev-libs/glib' matches more than one slot: [ 1, 2 ]
+  MissingSlotDep: version 9999: 'dev-libs/glib' matches more than one slot: [ 1, 2 ]
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
 www-client/uget
   DeprecatedEAPI: version 1.8.0: uses deprecated EAPI: 4
   DeprecatedEAPI: version 1.10.3: uses deprecated EAPI: 4
   DeprecatedEAPI: version 1.10.3-r1: uses deprecated EAPI: 4
+  MissingSlotDep: version 1.10.4: 'dev-libs/libgcrypt' matches more than one slot: [ 0, 11 ]
+  MissingSlotDep: version 9999: 'dev-libs/libgcrypt' matches more than one slot: [ 0, 11 ]
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
 www-client/uzbl
@@ -1520,15 +1638,33 @@ WARNING pkgcore: metadata.dtd cannot be opened from
 
 app-backup/amanda
   BadInsIntoDir: version 3.3.3: ebuild uses insinto /etc/cron.daily on line 332
+  MissingSlotDep: version 3.3.3: 'sys-libs/readline' matches more than one slot: [ 0, 4, 5 ]
   BadInsIntoDir: version 3.3.3-r1: ebuild uses insinto /etc/cron.daily on line 338
+  MissingSlotDep: version 3.3.3-r1: 'sys-libs/readline' matches more than one slot: [ 0, 4, 5 ]
   BadInsIntoDir: version 3.3.5: ebuild uses insinto /etc/cron.daily on line 338
+  MissingSlotDep: version 3.3.5: 'sys-libs/readline' matches more than one slot: [ 0, 4, 5 ]
   BadInsIntoDir: version 3.3.7: ebuild uses insinto /etc/cron.daily on line 335
+  MissingSlotDep: version 3.3.7: 'sys-libs/readline' matches more than one slot: [ 0, 4, 5 ]
 
 app-backup/backup-manager
   DeprecatedEAPI: version 0.7.5: uses deprecated EAPI: 0
 
 app-backup/backuppc
   SizeViolation: "files/02-fix-config.pl-formatting.patch" exceeds 20k in size; 23353 bytes total
+
+app-backup/bacula
+  MissingSlotDep: version 5.0.3-r4: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+  MissingSlotDep: version 5.0.3-r4: 'dev-libs/gmp' matches more than one slot: [ 0, 3 ]
+  MissingSlotDep: version 5.0.3-r4: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
+  MissingSlotDep: version 5.2.13-r3: 'dev-libs/gmp' matches more than one slot: [ 0, 3 ]
+  MissingSlotDep: version 5.2.13-r3: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+  MissingSlotDep: version 5.2.13-r3: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
+  MissingSlotDep: version 7.0.5-r1: 'dev-libs/gmp' matches more than one slot: [ 0, 3 ]
+  MissingSlotDep: version 7.0.5-r1: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+  MissingSlotDep: version 7.0.5-r1: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
+  MissingSlotDep: version 7.2.0: 'dev-libs/gmp' matches more than one slot: [ 0, 3 ]
+  MissingSlotDep: version 7.2.0: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+  MissingSlotDep: version 7.2.0: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
 
 app-backup/bareos
   DroppedKeywordWarning: version 15.2.1: keywords dropped: amd64, x86
@@ -1592,10 +1728,10 @@ app-backup/obnam
   NonExistentDeps: version 1.17: depset rdepends: nonexistent atoms [ <dev-python/paramiko-1.13.0 ]
 
 app-backup/rdiff-backup
-  DeprecatedEAPI: version 1.2.8-r1: uses deprecated EAPI: 3
   DeprecatedEclass: version 1.2.8-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 1.3.3: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 1.2.8-r1: uses deprecated EAPI: 3
   DeprecatedEclass: version 1.3.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.3.3: uses deprecated EAPI: 3
 
 app-backup/reoback
   BadInsIntoDir: version 1.0_p3-r1: ebuild uses insinto /etc/cron.daily on line 36
@@ -1629,21 +1765,32 @@ media-tv/dvbstreamer
   DeprecatedEAPI: version 2.0.0_rc1: uses deprecated EAPI: 2
 
 media-tv/freevo
-  DeprecatedEAPI: version 1.9.0: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.9.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 1.9.0: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
   NonExistentDeps: version 1.9.0: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
-  DeprecatedEclass: version 1.9.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.9.0: uses deprecated EAPI: 3
 
 media-tv/ivtv-utils
   DeprecatedEAPI: version 1.4.1: uses deprecated EAPI: 4
 
 media-tv/ivtvplayer
   WrongIndentFound: version 0.1.3-r1: ebuild has whitespace in indentation on line 18
-  DeprecatedEAPI: version 0.1.3-r1: uses deprecated EAPI: 2
   NonExistentDeps: version 0.1.3-r1: depset rdepends: nonexistent atoms [ media-tv/ivtv ]
+  DeprecatedEAPI: version 0.1.3-r1: uses deprecated EAPI: 2
 
 media-tv/kodi
+  MissingSlotDep: version 14.1: 'media-libs/tiff' matches more than one slot: [ 0, 3 ]
+  MissingSlotDep: version 14.1: 'media-libs/libpng' matches more than one slot: [ 0, 1.2, 1.5 ]
+  MissingSlotDep: version 14.1: 'virtual/jpeg' matches more than one slot: [ 0, 62 ]
+  MissingSlotDep: version 14.1: 'virtual/libusb' matches more than one slot: [ 0, 1 ]
+  MissingSlotDep: version 15.1: 'media-libs/tiff' matches more than one slot: [ 0, 3 ]
+  MissingSlotDep: version 15.1: 'media-libs/libpng' matches more than one slot: [ 0, 1.2, 1.5 ]
+  MissingSlotDep: version 15.1: 'virtual/libusb' matches more than one slot: [ 0, 1 ]
+  MissingSlotDep: version 15.1: 'virtual/jpeg' matches more than one slot: [ 0, 62 ]
   ExecutableFile: "files/generate.sh" has unnecessary executable bit
+
+media-tv/linuxtv-dvb-apps
+  MissingSlotDep: version 1.1.1.20100223-r1: 'media-libs/libpng' matches more than one slot: [ 0, 1.2, 1.5 ]
 
 media-tv/linuxtv-dvb-firmware
   DeprecatedEAPI: version 2009.07.06-r1: uses deprecated EAPI: 0
@@ -1653,12 +1800,12 @@ media-tv/me-tv
   DeprecatedEAPI: version 1.4.0.10: uses deprecated EAPI: 4
 
 media-tv/mythtv
+  DeprecatedEclass: version 0.26.0_p20130922: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 0.26.0_p20130922: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
   NonExistentDeps: version 0.26.0_p20130922: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
-  DeprecatedEclass: version 0.26.0_p20130922: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 0.27_p20140321: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 0.27_p20140321: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
   NonExistentDeps: version 0.27_p20140321: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
-  DeprecatedEclass: version 0.27_p20140321: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEclass: version 0.27.5_p20150627: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 media-tv/nvtv
@@ -1683,10 +1830,38 @@ media-tv/xawtv
   DeprecatedEAPI: version 3.95-r2: uses deprecated EAPI: 1
 
 media-tv/xbmc
-  DeprecatedEAPI: version 11.0: uses deprecated EAPI: 4
+  DeprecatedEclass: version 11.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 11.0: depset depends: nonexistent atoms [ =dev-lang/python-2.6*, <media-video/libav-0.8.2-r1 ]
   NonExistentDeps: version 11.0: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6*, <media-video/libav-0.8.2-r1 ]
-  DeprecatedEclass: version 11.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 11.0: uses deprecated EAPI: 4
+  MissingSlotDep: version 12.1-r1: 'media-libs/tiff' matches more than one slot: [ 0, 3 ]
+  MissingSlotDep: version 12.1-r1: 'media-libs/libpng' matches more than one slot: [ 0, 1.2, 1.5 ]
+  MissingSlotDep: version 12.1-r1: 'virtual/jpeg' matches more than one slot: [ 0, 62 ]
+  MissingSlotDep: version 12.1-r1: 'virtual/libusb' matches more than one slot: [ 0, 1 ]
+  MissingSlotDep: version 12.2-r1: 'media-libs/tiff' matches more than one slot: [ 0, 3 ]
+  MissingSlotDep: version 12.2-r1: 'media-libs/libpng' matches more than one slot: [ 0, 1.2, 1.5 ]
+  MissingSlotDep: version 12.2-r1: 'virtual/jpeg' matches more than one slot: [ 0, 62 ]
+  MissingSlotDep: version 12.2-r1: 'virtual/libusb' matches more than one slot: [ 0, 1 ]
+  MissingSlotDep: version 12.3: 'media-libs/tiff' matches more than one slot: [ 0, 3 ]
+  MissingSlotDep: version 12.3: 'media-libs/libpng' matches more than one slot: [ 0, 1.2, 1.5 ]
+  MissingSlotDep: version 12.3: 'virtual/jpeg' matches more than one slot: [ 0, 62 ]
+  MissingSlotDep: version 12.3: 'virtual/libusb' matches more than one slot: [ 0, 1 ]
+  MissingSlotDep: version 13.0_p2: 'media-libs/tiff' matches more than one slot: [ 0, 3 ]
+  MissingSlotDep: version 13.0_p2: 'media-libs/libpng' matches more than one slot: [ 0, 1.2, 1.5 ]
+  MissingSlotDep: version 13.0_p2: 'virtual/jpeg' matches more than one slot: [ 0, 62 ]
+  MissingSlotDep: version 13.0_p2: 'virtual/libusb' matches more than one slot: [ 0, 1 ]
+  MissingSlotDep: version 13.1: 'media-libs/tiff' matches more than one slot: [ 0, 3 ]
+  MissingSlotDep: version 13.1: 'media-libs/libpng' matches more than one slot: [ 0, 1.2, 1.5 ]
+  MissingSlotDep: version 13.1: 'virtual/jpeg' matches more than one slot: [ 0, 62 ]
+  MissingSlotDep: version 13.1: 'virtual/libusb' matches more than one slot: [ 0, 1 ]
+  MissingSlotDep: version 13.2: 'media-libs/tiff' matches more than one slot: [ 0, 3 ]
+  MissingSlotDep: version 13.2: 'media-libs/libpng' matches more than one slot: [ 0, 1.2, 1.5 ]
+  MissingSlotDep: version 13.2: 'virtual/jpeg' matches more than one slot: [ 0, 62 ]
+  MissingSlotDep: version 13.2: 'virtual/libusb' matches more than one slot: [ 0, 1 ]
+  MissingSlotDep: version 13.2-r1: 'media-libs/tiff' matches more than one slot: [ 0, 3 ]
+  MissingSlotDep: version 13.2-r1: 'media-libs/libpng' matches more than one slot: [ 0, 1.2, 1.5 ]
+  MissingSlotDep: version 13.2-r1: 'virtual/jpeg' matches more than one slot: [ 0, 62 ]
+  MissingSlotDep: version 13.2-r1: 'virtual/libusb' matches more than one slot: [ 0, 1 ]
   ExecutableFile: "files/generate.sh" has unnecessary executable bit
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
@@ -1694,6 +1869,9 @@ WARNING pkgcore: metadata.dtd cannot be opened from
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
+
+dev-tcltk/ck
+  MissingSlotDep: version 8.0-r4: 'dev-lang/tk' matches more than one slot: [ 0, 8.5 ]
 
 dev-tcltk/expect
   DeprecatedEAPI: version 5.44.1.15: uses deprecated EAPI: 3
@@ -1729,8 +1907,8 @@ dev-tcltk/scwoop
   DeprecatedEAPI: version 4.1: uses deprecated EAPI: 0
 
 dev-tcltk/snack
-  DeprecatedEAPI: version 2.2.10-r5: uses deprecated EAPI: 4
   DeprecatedEclass: version 2.2.10-r5: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 2.2.10-r5: uses deprecated EAPI: 4
 
 dev-tcltk/tcllib
   DroppedKeywordWarning: version 1.16: keywords dropped: ia64, ppc64, s390, sparc
@@ -1747,6 +1925,7 @@ dev-tcltk/tkcon
 
 dev-tcltk/tkdnd
   DeprecatedEAPI: version 2.2: uses deprecated EAPI: 4
+  MissingSlotDep: version 2.6: 'dev-lang/tk' matches more than one slot: [ 0, 8.5 ]
 
 dev-tcltk/tkpiechart
   DeprecatedEAPI: version 6.5-r1: uses deprecated EAPI: 0
@@ -1758,6 +1937,9 @@ dev-tcltk/tktreectrl
   DeprecatedEAPI: version 2.2.9: uses deprecated EAPI: 3
   DeprecatedEAPI: version 2.2.10: uses deprecated EAPI: 4
   DeprecatedEAPI: version 2.4.1: uses deprecated EAPI: 4
+
+dev-tcltk/tkzinc
+  MissingSlotDep: version 3.3.6: 'dev-lang/tk' matches more than one slot: [ 0, 8.5 ]
 
 dev-tcltk/togl
   DeprecatedEAPI: version 2.0-r2: uses deprecated EAPI: 4
@@ -1778,6 +1960,7 @@ sys-freebsd/boot0
 sys-freebsd/freebsd-bin
   DeprecatedEAPI: version 8.2: uses deprecated EAPI: 0
   DeprecatedEAPI: version 9.1: uses deprecated EAPI: 0
+  MissingSlotDep: version 10.2: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
 
 sys-freebsd/freebsd-cddl
   DeprecatedEAPI: version 8.2: uses deprecated EAPI: 0
@@ -1791,8 +1974,11 @@ sys-freebsd/freebsd-lib
   WhitespaceFound: version 8.2-r1: ebuild has leading whitespace on lines 368, 369, 370, 371, 372
   DeprecatedEAPI: version 8.2-r1: uses deprecated EAPI: 2
   WhitespaceFound: version 9.1-r10: ebuild has leading whitespace on lines 413, 414, 415, 416, 417, 441, 442, 443, 446, 448, 450
+  MissingSlotDep: version 9.1-r10: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
   WhitespaceFound: version 9.1-r11: ebuild has leading whitespace on lines 415, 416, 417, 418, 419, 443, 444, 445, 448, 450, 452
+  MissingSlotDep: version 9.1-r11: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
   WhitespaceFound: version 10.2-r1: ebuild has leading whitespace on lines 426, 427, 428, 429, 430, 454, 455, 456, 459, 461, 463
+  MissingSlotDep: version 10.2-r1: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
 
 sys-freebsd/freebsd-libexec
   DeprecatedEAPI: version 8.2: uses deprecated EAPI: 2
@@ -1805,6 +1991,7 @@ sys-freebsd/freebsd-mk-defs
 sys-freebsd/freebsd-pam-modules
   DeprecatedEAPI: version 8.2: uses deprecated EAPI: 0
   DeprecatedEAPI: version 9.1-r1: uses deprecated EAPI: 0
+  MissingSlotDep: version 10.2: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
 
 sys-freebsd/freebsd-pf
   DeprecatedEAPI: version 8.2: uses deprecated EAPI: 0
@@ -1820,6 +2007,8 @@ sys-freebsd/freebsd-sbin
   BadInsIntoDir: version 9.1: ebuild uses insinto /etc/cron.d on line 79
   DeprecatedEAPI: version 9.1: uses deprecated EAPI: 2
   BadInsIntoDir: version 10.2: ebuild uses insinto /etc/cron.d on line 85
+  MissingSlotDep: version 10.2: 'sys-libs/readline' matches more than one slot: [ 0, 4, 5 ]
+  MissingSlotDep: version 10.2: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
 
 sys-freebsd/freebsd-share
   DeprecatedEAPI: version 8.2: uses deprecated EAPI: 0
@@ -1832,6 +2021,9 @@ sys-freebsd/freebsd-sources
 
 sys-freebsd/freebsd-ubin
   DeprecatedEAPI: version 8.2-r1: uses deprecated EAPI: 2
+  MissingSlotDep: version 9.1-r2: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+  MissingSlotDep: version 9.1-r3: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+  MissingSlotDep: version 10.2-r1: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
 
 sys-freebsd/freebsd-usbin
   DeprecatedEAPI: version 8.2-r2: uses deprecated EAPI: 2
@@ -1850,8 +2042,18 @@ net-nntp/brag
   DeprecatedEAPI: version 1.4.3: uses deprecated EAPI: 4
 
 net-nntp/hellanzb
-  DeprecatedEAPI: version 0.13-r8: uses deprecated EAPI: 3
   DeprecatedEclass: version 0.13-r8: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.13-r8: uses deprecated EAPI: 3
+
+net-nntp/inn
+  MissingSlotDep: version 2.5.3-r1: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+  MissingSlotDep: version 2.5.3-r1: 'sys-libs/db' matches more than one slot: [ 1, 3, 4.2, 4.3, 4.4, 4.5, 4.6, 4.7, 4.8, 5.1, 5.3, 6.0, 6.1 ]
+  MissingSlotDep: version 2.5.3-r2: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+  MissingSlotDep: version 2.5.3-r2: 'sys-libs/db' matches more than one slot: [ 1, 3, 4.2, 4.3, 4.4, 4.5, 4.6, 4.7, 4.8, 5.1, 5.3, 6.0, 6.1 ]
+  MissingSlotDep: version 2.5.4: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+  MissingSlotDep: version 2.5.4: 'sys-libs/db' matches more than one slot: [ 1, 3, 4.2, 4.3, 4.4, 4.5, 4.6, 4.7, 4.8, 5.1, 5.3, 6.0, 6.1 ]
+  MissingSlotDep: version 2.5.5: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+  MissingSlotDep: version 2.5.5: 'sys-libs/db' matches more than one slot: [ 1, 3, 4.2, 4.3, 4.4, 4.5, 4.6, 4.7, 4.8, 5.1, 5.3, 6.0, 6.1 ]
 
 net-nntp/leafnode
   DeprecatedEAPI: version 1.11.8: uses deprecated EAPI: 4
@@ -1860,30 +2062,39 @@ net-nntp/leafnode
 net-nntp/nzb
   DeprecatedEAPI: version 0.2: uses deprecated EAPI: 4
 
+net-nntp/nzbget
+  MissingSlotDep: version 14.1: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+  MissingSlotDep: version 14.1: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
+  MissingSlotDep: version 14.2: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+  MissingSlotDep: version 14.2: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
+
 net-nntp/pan
   DeprecatedEAPI: version 0.139: uses deprecated EAPI: 4
 
 net-nntp/sabnzbd
-  DeprecatedEAPI: version 0.7.16: uses deprecated EAPI: 4
+  DeprecatedEclass: version 0.7.16: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 0.7.16: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
   NonExistentDeps: version 0.7.16: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
-  DeprecatedEclass: version 0.7.16: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.7.17: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.7.16: uses deprecated EAPI: 4
+  DeprecatedEclass: version 0.7.17: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 0.7.17: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
   NonExistentDeps: version 0.7.17: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
-  DeprecatedEclass: version 0.7.17: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.7.18: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.7.17: uses deprecated EAPI: 4
+  DeprecatedEclass: version 0.7.18: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 0.7.18: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
   NonExistentDeps: version 0.7.18: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
-  DeprecatedEclass: version 0.7.18: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.7.19: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.7.18: uses deprecated EAPI: 4
+  DeprecatedEclass: version 0.7.19: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 0.7.19: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
   NonExistentDeps: version 0.7.19: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
-  DeprecatedEclass: version 0.7.19: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.7.20: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.7.19: uses deprecated EAPI: 4
+  DeprecatedEclass: version 0.7.20: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 0.7.20: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
   NonExistentDeps: version 0.7.20: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
-  DeprecatedEclass: version 0.7.20: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.7.20: uses deprecated EAPI: 4
+
+net-nntp/slrn
+  MissingSlotDep: version 1.0.2: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
 
 net-nntp/slrnconf
   DeprecatedEAPI: version 0.8.4: uses deprecated EAPI: 0

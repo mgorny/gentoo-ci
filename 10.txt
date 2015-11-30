@@ -20,6 +20,9 @@ dev-util/ald
   DeprecatedEAPI: version 0.1.7: uses deprecated EAPI: 0
   DeprecatedEAPI: version 0.1.7-r1: uses deprecated EAPI: 4
 
+dev-util/alleyoop
+  MissingSlotDep: version 0.9.8: 'sys-devel/binutils' matches more than one slot: [ 0, 2.21.1, 2.22, 2.23.2, 2.24, git ]
+
 dev-util/android-ndk
   DeprecatedEAPI: version 8b: uses deprecated EAPI: 3
   DeprecatedEAPI: version 8c: uses deprecated EAPI: 3
@@ -50,8 +53,8 @@ dev-util/astyle
 
 dev-util/atomic-install
   DeprecatedEAPI: version 0.1.1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
 
 dev-util/autoproject
   DeprecatedEAPI: version 0.20: uses deprecated EAPI: 0
@@ -63,8 +66,8 @@ dev-util/bcpp
 
 dev-util/bdelta
   DeprecatedEAPI: version 0.3.1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
 
 dev-util/biew
   DeprecatedEAPI: version 6.1.0-r3: uses deprecated EAPI: 4
@@ -146,19 +149,19 @@ dev-util/cmocka
   DroppedKeywordWarning: version 0.4.1: keywords dropped: alpha
 
 dev-util/coccigrep
-  DeprecatedEAPI: version 1.10: uses deprecated EAPI: 4
   DeprecatedEclass: version 1.10: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 1.11: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.10: uses deprecated EAPI: 4
   DeprecatedEclass: version 1.11: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.11: uses deprecated EAPI: 4
 
 dev-util/cocom
   DeprecatedEAPI: version 0.996-r1: uses deprecated EAPI: 2
 
 dev-util/comparator
-  DeprecatedEAPI: version 2.5: uses deprecated EAPI: 3
   DeprecatedEclass: version 2.5: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 2.9: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 2.5: uses deprecated EAPI: 3
   DeprecatedEclass: version 2.9: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 2.9: uses deprecated EAPI: 4
 
 dev-util/confix-wrapper
   DeprecatedEAPI: version 0: uses deprecated EAPI: 0
@@ -194,6 +197,7 @@ dev-util/ctags
 
 dev-util/cunit
   DeprecatedEAPI: version 2.1-r1: uses deprecated EAPI: 3
+  MissingSlotDep: version 2.1_p2: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
 
 dev-util/cutils
   DeprecatedEAPI: version 1.6-r4: uses deprecated EAPI: 4
@@ -226,8 +230,8 @@ dev-util/difffilter
   DeprecatedEAPI: version 0.3.3: uses deprecated EAPI: 4
 
 dev-util/diffuse
-  DeprecatedEAPI: version 0.4.6: uses deprecated EAPI: 2
   DeprecatedEclass: version 0.4.6: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.4.6: uses deprecated EAPI: 2
 
 dev-util/dissembler
   DeprecatedEAPI: version 0.9: uses deprecated EAPI: 0
@@ -252,16 +256,16 @@ dev-util/elfkickers
   DroppedKeywordWarning: version 3.0a: keywords dropped: ppc, ppc64
 
 dev-util/eric
-  DeprecatedEAPI: version 4.5.25-r1: uses deprecated EAPI: 4
   DeprecatedEclass: version 4.5.25-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 4.5.25-r1: uses deprecated EAPI: 4
 
 dev-util/exmap
   DeprecatedEAPI: version 0.10: uses deprecated EAPI: 2
   DeprecatedEAPI: version 0.10-r1: uses deprecated EAPI: 2
 
 dev-util/fatrace
-  DeprecatedEAPI: version 0.4: uses deprecated EAPI: 4
   DeprecatedEclass: version 0.4: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.4: uses deprecated EAPI: 4
 
 dev-util/febootstrap
   DeprecatedEAPI: version 2.11: uses deprecated EAPI: 2
@@ -278,8 +282,8 @@ dev-util/fix-la-relink-command
   DeprecatedEAPI: version 0.1.1: uses deprecated EAPI: 4
 
 dev-util/flawfinder
-  DeprecatedEAPI: version 1.27-r2: uses deprecated EAPI: 3
   DeprecatedEclass: version 1.27-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.27-r2: uses deprecated EAPI: 3
 
 dev-util/ftjam
   DeprecatedEAPI: version 2.5.3_rc2-r1: uses deprecated EAPI: 0
@@ -291,13 +295,18 @@ dev-util/fuzz
   DeprecatedEAPI: version 0.6: uses deprecated EAPI: 0
 
 dev-util/ghh
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 9999: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
   NonExistentDeps: version 9999: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
 
 dev-util/google-perftools
   DeprecatedEAPI: version 1.8.3: uses deprecated EAPI: 4
+
+dev-util/gource
+  MissingSlotDep: version 0.39: 'virtual/jpeg' matches more than one slot: [ 0, 62 ]
+  MissingSlotDep: version 0.40: 'virtual/jpeg' matches more than one slot: [ 0, 62 ]
+  MissingSlotDep: version 0.43: 'virtual/jpeg' matches more than one slot: [ 0, 62 ]
 
 dev-util/gperf
   DeprecatedEAPI: version 3.0.4: uses deprecated EAPI: 4
@@ -340,8 +349,8 @@ dev-util/jarwizard
   DeprecatedEAPI: version 2.50: uses deprecated EAPI: 0
 
 dev-util/jay
-  DeprecatedEAPI: version 1.1.1-r2: uses deprecated EAPI: 4
   DeprecatedEclass: version 1.1.1-r2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 1.1.1-r2: uses deprecated EAPI: 4
 
 dev-util/jconfig
   DeprecatedEAPI: version 2.8-r3: uses deprecated EAPI: 0
@@ -365,8 +374,8 @@ dev-util/ketchup
   DeprecatedEAPI: version 0.9.8: uses deprecated EAPI: 0
   DeprecatedEAPI: version 1.0: uses deprecated EAPI: 4
   DeprecatedEAPI: version 1.1_beta3: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
 
 dev-util/kup
   DeprecatedEAPI: version 0.3.4: uses deprecated EAPI: 0
@@ -401,8 +410,8 @@ dev-util/makepp
   DeprecatedEAPI: version 2.0.98.5: uses deprecated EAPI: 4
 
 dev-util/metro
-  DeprecatedEAPI: version 1.5.1: uses deprecated EAPI: 3
   DeprecatedEclass: version 1.5.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.5.1: uses deprecated EAPI: 3
 
 dev-util/mingw-runtime
   DeprecatedEAPI: version 3.18: uses deprecated EAPI: 0
@@ -415,32 +424,34 @@ dev-util/mock
   DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 2
 
 dev-util/molecule
-  DeprecatedEAPI: version 0.9.24.6: uses deprecated EAPI: 3
   DeprecatedEclass: version 0.9.24.6: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.9.24.8: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 0.9.24.6: uses deprecated EAPI: 3
   DeprecatedEclass: version 0.9.24.8: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.9.24.8: uses deprecated EAPI: 3
 
 dev-util/molecule-core
+  MissingSlotDep: version 1.0.2: 'dev-lang/python' matches more than one slot: [ 2.7, 3.3, 3.4, 3.5 ]
   DeprecatedEclass: version 1.0.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-util/molecule-plugins
+  MissingSlotDep: version 1.0.2: 'dev-lang/python' matches more than one slot: [ 2.7, 3.3, 3.4, 3.5 ]
   DeprecatedEclass: version 1.0.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-util/mono-debugger
-  DeprecatedEAPI: version 2.10: uses deprecated EAPI: 4
   DeprecatedEclass: version 2.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 2.10: uses deprecated EAPI: 4
 
 dev-util/monodevelop
-  DeprecatedEAPI: version 3.0.2-r1: uses deprecated EAPI: 4
   DeprecatedEclass: version 3.0.2-r1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 3.0.2-r1: uses deprecated EAPI: 4
 
 dev-util/monodevelop-database
-  DeprecatedEAPI: version 3.0.2: uses deprecated EAPI: 4
   DeprecatedEclass: version 3.0.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 3.0.2: uses deprecated EAPI: 4
 
 dev-util/monodevelop-debugger-gdb
-  DeprecatedEAPI: version 3.0.2: uses deprecated EAPI: 4
   DeprecatedEclass: version 3.0.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 3.0.2: uses deprecated EAPI: 4
 
 dev-util/netbeans
   DeprecatedEAPI: version 8.0.2: uses deprecated EAPI: 4
@@ -462,9 +473,15 @@ dev-util/par
   DeprecatedEAPI: version 00.05.01: uses deprecated EAPI: 0
 
 dev-util/perf
-  DeprecatedEAPI: version 3.8-r1: uses deprecated EAPI: 4
   DeprecatedEclass: version 3.8-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 3.8-r1: uses deprecated EAPI: 4
+  MissingSlotDep: version 3.12: 'sys-devel/binutils' matches more than one slot: [ 0, 2.21.1, 2.22, 2.23.2, 2.24, git ]
+  MissingSlotDep: version 3.13.1-r1: 'sys-devel/binutils' matches more than one slot: [ 0, 2.21.1, 2.22, 2.23.2, 2.24, git ]
+  MissingSlotDep: version 3.15.5: 'sys-devel/binutils' matches more than one slot: [ 0, 2.21.1, 2.22, 2.23.2, 2.24, git ]
   DroppedKeywordWarning: version 3.15.5: keywords dropped: mips
+
+dev-util/piklab
+  MissingSlotDep: version 0.16.2: 'sys-libs/readline' matches more than one slot: [ 0, 4, 5 ]
 
 dev-util/pkgconf
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
@@ -487,16 +504,16 @@ dev-util/pscan
   DeprecatedEAPI: version 20000721-r1: uses deprecated EAPI: 0
 
 dev-util/qdevelop
-  DeprecatedEAPI: version 0.28: uses deprecated EAPI: 4
   NonExistentDeps: version 0.28: depset depends: nonexistent atoms [ <dev-qt/qtgui-4.8.5:4 ]
   NonExistentDeps: version 0.28: depset rdepends: nonexistent atoms [ <dev-qt/qtgui-4.8.5:4 ]
+  DeprecatedEAPI: version 0.28: uses deprecated EAPI: 4
 
 dev-util/qfsm
   DeprecatedEAPI: version 0.53.0: uses deprecated EAPI: 4
 
 dev-util/qmtest
-  DeprecatedEAPI: version 2.4.1: uses deprecated EAPI: 3
   DeprecatedEclass: version 2.4.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 2.4.1: uses deprecated EAPI: 3
 
 dev-util/quilt
   DeprecatedEAPI: version 0.50: uses deprecated EAPI: 0
@@ -533,8 +550,8 @@ dev-util/reswrap
 
 dev-util/rootstrap
   DeprecatedEAPI: version 0.3.24: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.3.24_p5-r1: uses deprecated EAPI: 3
   DeprecatedEclass: version 0.3.24_p5-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.3.24_p5-r1: uses deprecated EAPI: 3
 
 dev-util/rpmdevtools
   DeprecatedEAPI: version 8.3: uses deprecated EAPI: 4
@@ -550,9 +567,9 @@ dev-util/sel
   DeprecatedEAPI: version 0.08.4-r1: uses deprecated EAPI: 4
 
 dev-util/sgb
-  DeprecatedEAPI: version 20030623: uses deprecated EAPI: 0
   NonExistentDeps: version 20030623: depset depends: nonexistent atoms [ >=dev-util/cweb-3.00 ]
   NonExistentDeps: version 20030623: depset rdepends: nonexistent atoms [ >=dev-util/cweb-3.00 ]
+  DeprecatedEAPI: version 20030623: uses deprecated EAPI: 0
 
 dev-util/shc
   DeprecatedEAPI: version 3.8.9: uses deprecated EAPI: 4
@@ -575,8 +592,8 @@ dev-util/source-highlight
 dev-util/strace
   DeprecatedEAPI: version 4.9: uses deprecated EAPI: 4
   DeprecatedEAPI: version 4.10: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
 
 dev-util/stressapptest
   DeprecatedEAPI: version 1.0.4: uses deprecated EAPI: 4
@@ -614,8 +631,8 @@ dev-util/unifdef
   DeprecatedEAPI: version 2.10: uses deprecated EAPI: 4
 
 dev-util/universalindentgui
-  DeprecatedEAPI: version 1.2.0-r1: uses deprecated EAPI: 4
   DeprecatedEclass: version 1.2.0-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.2.0-r1: uses deprecated EAPI: 4
 
 dev-util/usb-robot
   DeprecatedEAPI: version 0.2.0: uses deprecated EAPI: 2
@@ -645,15 +662,15 @@ dev-util/weblint
   DeprecatedEAPI: version 1.020: uses deprecated EAPI: 0
 
 dev-util/wxglade
-  DeprecatedEAPI: version 0.6.3-r1: uses deprecated EAPI: 2
+  DeprecatedEclass: version 0.6.3-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 0.6.3-r1: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
   NonExistentDeps: version 0.6.3-r1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
-  DeprecatedEclass: version 0.6.3-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.6.3-r1: uses deprecated EAPI: 2
 
 dev-util/xdelta
   DeprecatedEAPI: version 1.1.4-r1: uses deprecated EAPI: 0
-  NonExistentDeps: version 3.0.5: depset depends: nonexistent atoms [ dev-lang/python:2.6 ]
   DeprecatedEclass: version 3.0.5: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 3.0.5: depset depends: nonexistent atoms [ dev-lang/python:2.6 ]
   NonExistentDeps: version 3.0.6: depset depends: nonexistent atoms [ dev-lang/python:2.6 ]
   NonExistentDeps: version 3.0.8: depset depends: nonexistent atoms [ dev-lang/python:2.6 ]
 
@@ -670,6 +687,11 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
+dev-lang/ats
+  MissingSlotDep: version 0.2.9: 'dev-libs/gmp' matches more than one slot: [ 0, 3 ]
+  MissingSlotDep: version 0.2.9: 'dev-libs/glib' matches more than one slot: [ 1, 2 ]
+  MissingSlotDep: version 0.2.9: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
+
 dev-lang/bas
   DeprecatedEAPI: version 2.4: uses deprecated EAPI: 4
 
@@ -678,6 +700,9 @@ dev-lang/bashforth
 
 dev-lang/bff
   DeprecatedEAPI: version 1.0.3.1: uses deprecated EAPI: 0
+
+dev-lang/blassic
+  MissingSlotDep: version 0.10.2: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
 
 dev-lang/c-intercal
   DeprecatedEAPI: version 29.0: uses deprecated EAPI: 4
@@ -699,12 +724,12 @@ dev-lang/confluence
   DeprecatedEAPI: version 0.10.6: uses deprecated EAPI: 2
 
 dev-lang/crystal
-  MissingChksum: version 0.7.7: "crystal-0.7.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 0.7.7: "crystal-0.7.7-1-linux-x86_64.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 0.7.7: "crystal-0.7.7-1-linux-i686.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.7.7: "crystal-0.7.7-1-linux-x86_64.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.7.7: "crystal-0.7.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 0.8.0: "crystal-0.8.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 0.8.0: "crystal-0.8.0-1-linux-x86_64.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 0.8.0: "crystal-0.8.0-1-linux-i686.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.8.0: "crystal-0.8.0-1-linux-x86_64.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 dev-lang/dmd-bin
   DeprecatedEAPI: version 1.016: uses deprecated EAPI: 0
@@ -719,6 +744,9 @@ dev-lang/erlang
   DeprecatedEAPI: version 17.5: uses deprecated EAPI: 4
   DeprecatedEAPI: version 18.0: uses deprecated EAPI: 4
   DeprecatedEAPI: version 18.0-r1: uses deprecated EAPI: 4
+
+dev-lang/esco
+  MissingSlotDep: version 0.512: 'dev-libs/gmp' matches more than one slot: [ 0, 3 ]
 
 dev-lang/execline
   WhitespaceFound: version 2.1.1.0: ebuild has leading whitespace on lines 37, 38, 39, 40, 41, 42, 43
@@ -788,6 +816,10 @@ dev-lang/jimtcl
   DeprecatedEAPI: version 0.73: uses deprecated EAPI: 4
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
+dev-lang/julia
+  MissingSlotDep: version 0.2.0: 'sys-libs/readline' matches more than one slot: [ 0, 4, 5 ]
+  MissingSlotDep: version 0.2.0-r1: 'sys-libs/readline' matches more than one slot: [ 0, 4, 5 ]
+
 dev-lang/lisaac
   DeprecatedEAPI: version 0.13.1-r2: uses deprecated EAPI: 4
 
@@ -799,6 +831,9 @@ dev-lang/lua
   DeprecatedEAPI: version 5.1.4-r8: uses deprecated EAPI: 4
   DeprecatedEAPI: version 5.1.5: uses deprecated EAPI: 4
   DeprecatedEAPI: version 5.1.5-r1: uses deprecated EAPI: 4
+  MissingSlotDep: version 5.1.5-r2: 'sys-libs/readline' matches more than one slot: [ 0, 4, 5 ]
+  MissingSlotDep: version 5.2.3: 'sys-libs/readline' matches more than one slot: [ 0, 4, 5 ]
+  MissingSlotDep: version 5.2.3-r1: 'sys-libs/readline' matches more than one slot: [ 0, 4, 5 ]
 
 dev-lang/luajit
   DeprecatedEAPI: version 1.1.6: uses deprecated EAPI: 2
@@ -821,13 +856,16 @@ dev-lang/mercury-extras
   DeprecatedEAPI: version 13.05.1: uses deprecated EAPI: 2
   DeprecatedEAPI: version 13.05.2: uses deprecated EAPI: 2
 
+dev-lang/mlton
+  MissingSlotDep: version 20130715: 'dev-libs/gmp' matches more than one slot: [ 0, 3 ]
+
 dev-lang/mono
-  DeprecatedEAPI: version 2.10.9-r2: uses deprecated EAPI: 4
   DeprecatedEclass: version 2.10.9-r2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 2.10.9-r2: uses deprecated EAPI: 4
 
 dev-lang/mono-basic
-  DeprecatedEAPI: version 2.10: uses deprecated EAPI: 2
   DeprecatedEclass: version 2.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 2.10: uses deprecated EAPI: 2
 
 dev-lang/mozart-stdlib
   DeprecatedEAPI: version 1.4.0-r1: uses deprecated EAPI: 2
@@ -837,8 +875,8 @@ dev-lang/niecza
   DeprecatedEAPI: version 21: uses deprecated EAPI: 4
   DeprecatedEAPI: version 22: uses deprecated EAPI: 4
   DeprecatedEAPI: version 24: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
 
 dev-lang/niecza-bin
   DeprecatedEAPI: version 20: uses deprecated EAPI: 4
@@ -851,6 +889,7 @@ dev-lang/nqc
 
 dev-lang/ocaml
   DeprecatedEAPI: version 3.12.1: uses deprecated EAPI: 1
+  MissingSlotDep: version 4.02.3: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
 
 dev-lang/open-cobol
   DeprecatedEAPI: version 1.1: uses deprecated EAPI: 0
@@ -859,8 +898,8 @@ dev-lang/opendylan
   DeprecatedEAPI: version 2013.1-r1: uses deprecated EAPI: 4
   DeprecatedEAPI: version 2013.2: uses deprecated EAPI: 4
   DeprecatedEAPI: version 2014.1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
 
 dev-lang/opendylan-bin
   DeprecatedEAPI: version 2011.1: uses deprecated EAPI: 4
@@ -868,16 +907,36 @@ dev-lang/opendylan-bin
   DeprecatedEAPI: version 2013.1: uses deprecated EAPI: 4
   DeprecatedEAPI: version 2013.2: uses deprecated EAPI: 4
 
+dev-lang/parrot
+  MissingSlotDep: version 7.0.2: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+  MissingSlotDep: version 7.0.2: 'sys-libs/readline' matches more than one slot: [ 0, 4, 5 ]
+  MissingSlotDep: version 7.1.0: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+  MissingSlotDep: version 7.1.0: 'sys-libs/readline' matches more than one slot: [ 0, 4, 5 ]
+  MissingSlotDep: version 7.2.0: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+  MissingSlotDep: version 7.2.0: 'sys-libs/readline' matches more than one slot: [ 0, 4, 5 ]
+  MissingSlotDep: version 7.3.0: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+  MissingSlotDep: version 7.3.0: 'sys-libs/readline' matches more than one slot: [ 0, 4, 5 ]
+  MissingSlotDep: version 7.5.0: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+  MissingSlotDep: version 7.5.0: 'sys-libs/readline' matches more than one slot: [ 0, 4, 5 ]
+
 dev-lang/pasm
   DeprecatedEAPI: version 1.7: uses deprecated EAPI: 0
 
+dev-lang/php
+  MissingSlotDep: version 5.4.45: 'dev-db/postgresql' matches more than one slot: [ 9.0, 9.1, 9.2, 9.3, 9.4, 9.5, 9.6 ]
+  MissingSlotDep: version 5.4.45: 'sys-libs/readline' matches more than one slot: [ 0, 4, 5 ]
+  MissingSlotDep: version 5.5.30: 'dev-db/postgresql' matches more than one slot: [ 9.0, 9.1, 9.2, 9.3, 9.4, 9.5, 9.6 ]
+  MissingSlotDep: version 5.5.30: 'sys-libs/readline' matches more than one slot: [ 0, 4, 5 ]
+  MissingSlotDep: version 5.6.14: 'dev-db/postgresql' matches more than one slot: [ 9.0, 9.1, 9.2, 9.3, 9.4, 9.5, 9.6 ]
+  MissingSlotDep: version 5.6.14: 'sys-libs/readline' matches more than one slot: [ 0, 4, 5 ]
+
 dev-lang/python
-  DeprecatedEAPI: version 2.7.10-r1: uses deprecated EAPI: 4
   NonExistentDeps: version 2.7.10-r1: depset depends: nonexistent atoms [ sys-libs/db:5.2, sys-libs/db:5.0 ]
   NonExistentDeps: version 2.7.10-r1: depset rdepends: nonexistent atoms [ sys-libs/db:5.2, sys-libs/db:5.0 ]
-  DeprecatedEAPI: version 2.7.10-r3: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 2.7.10-r1: uses deprecated EAPI: 4
   NonExistentDeps: version 2.7.10-r3: depset depends: nonexistent atoms [ sys-libs/db:5.2, sys-libs/db:5.0 ]
   NonExistentDeps: version 2.7.10-r3: depset rdepends: nonexistent atoms [ sys-libs/db:5.2, sys-libs/db:5.0 ]
+  DeprecatedEAPI: version 2.7.10-r3: uses deprecated EAPI: 4
   NonExistentDeps: version 2.7.10-r4: depset depends: nonexistent atoms [ sys-libs/db:5.2, sys-libs/db:5.0 ]
   NonExistentDeps: version 2.7.10-r4: depset rdepends: nonexistent atoms [ sys-libs/db:5.2, sys-libs/db:5.0 ]
   DeprecatedEAPI: version 3.3.5-r1: uses deprecated EAPI: 4
@@ -889,14 +948,18 @@ dev-lang/qu-prolog
   DeprecatedEAPI: version 9.1: uses deprecated EAPI: 2
 
 dev-lang/rebol
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
 
 dev-lang/rebol-bin
   DeprecatedEAPI: version 3_pre111: uses deprecated EAPI: 4
 
 dev-lang/regina-rexx
   DeprecatedEAPI: version 3.6-r2: uses deprecated EAPI: 4
+
+dev-lang/rubinius
+  MissingSlotDep: version 2.5.3: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
+  MissingSlotDep: version 2.5.5: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
 
 dev-lang/ruby
   DeprecatedEAPI: version 1.9.3_p551-r1: uses deprecated EAPI: 4
@@ -1045,8 +1108,8 @@ sys-cluster/feedbackd-master
   DeprecatedEAPI: version 0.4: uses deprecated EAPI: 0
 
 sys-cluster/ganglia
-  DeprecatedEAPI: version 3.5.0: uses deprecated EAPI: 3
   DeprecatedEclass: version 3.5.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 3.5.0: uses deprecated EAPI: 3
 
 sys-cluster/ganglia-web
   DeprecatedEAPI: version 3.5.8-r1: uses deprecated EAPI: 4
@@ -1062,8 +1125,8 @@ sys-cluster/glusterfs
   SizeViolation: "files/glusterfs-3.6.5-build-shared-only.patch" exceeds 20k in size; 27261 bytes total
 
 sys-cluster/heartbeat
-  DeprecatedEAPI: version 3.0.5-r2: uses deprecated EAPI: 2
   DeprecatedEclass: version 3.0.5-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 3.0.5-r2: uses deprecated EAPI: 2
 
 sys-cluster/hpl
   DeprecatedEAPI: version 2.0-r3: uses deprecated EAPI: 4
@@ -1123,14 +1186,18 @@ sys-cluster/maui
   MissingChksum: version 3.2.6_p21: "maui-3.2.6p21.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 3.3: "maui-3.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
+sys-cluster/moosefs
+  MissingSlotDep: version 1.6.26-r1: 'dev-lang/python' matches more than one slot: [ 2.7, 3.3, 3.4, 3.5 ]
+  MissingSlotDep: version 1.6.27: 'dev-lang/python' matches more than one slot: [ 2.7, 3.3, 3.4, 3.5 ]
+
 sys-cluster/mpe2
   DeprecatedEAPI: version 1.0.6_p1: uses deprecated EAPI: 2
   DeprecatedEAPI: version 1.0.6_p1-r1: uses deprecated EAPI: 2
 
 sys-cluster/mvapich2
-  DeprecatedEAPI: version 1.6: uses deprecated EAPI: 4
   NonExistentDeps: version 1.6: depset depends: nonexistent atoms [ sys-infiniband/openib-userspace ]
   NonExistentDeps: version 1.6: depset rdepends: nonexistent atoms [ sys-infiniband/openib-userspace ]
+  DeprecatedEAPI: version 1.6: uses deprecated EAPI: 4
 
 sys-cluster/native-mpi
   DeprecatedEAPI: version 0: uses deprecated EAPI: 3
@@ -1155,6 +1222,19 @@ sys-cluster/openais
   DeprecatedEAPI: version 1.1.4-r1: uses deprecated EAPI: 2
 
 sys-cluster/openmpi
+  MissingSlotDep: version 1.6.5-r1: 'sys-infiniband/ofed' matches more than one slot: [ 3.12, 3.5 ]
+  MissingSlotDep: version 1.6.5-r1: 'sys-infiniband/infinipath-psm' matches more than one slot: [ 3.12, 3.5 ]
+  MissingSlotDep: version 1.6.5-r1: 'sys-infiniband/librdmacm' matches more than one slot: [ 3.12, 3.5 ]
+  MissingSlotDep: version 1.6.5-r1: 'sys-infiniband/dapl' matches more than one slot: [ 3.12, 3.5 ]
+  MissingSlotDep: version 1.7.5-r1: 'sys-infiniband/ofed' matches more than one slot: [ 3.12, 3.5 ]
+  MissingSlotDep: version 1.7.5-r1: 'sys-infiniband/infinipath-psm' matches more than one slot: [ 3.12, 3.5 ]
+  MissingSlotDep: version 1.7.5-r1: 'sys-infiniband/librdmacm' matches more than one slot: [ 3.12, 3.5 ]
+  MissingSlotDep: version 1.8.4-r4: 'sys-infiniband/infinipath-psm' matches more than one slot: [ 3.12, 3.5 ]
+  MissingSlotDep: version 1.8.4-r4: 'sys-infiniband/librdmacm' matches more than one slot: [ 3.12, 3.5 ]
+  MissingSlotDep: version 1.8.4-r4: 'sys-infiniband/ofed' matches more than one slot: [ 3.12, 3.5 ]
+  MissingSlotDep: version 1.8.7-r1: 'sys-infiniband/infinipath-psm' matches more than one slot: [ 3.12, 3.5 ]
+  MissingSlotDep: version 1.8.7-r1: 'sys-infiniband/librdmacm' matches more than one slot: [ 3.12, 3.5 ]
+  MissingSlotDep: version 1.8.7-r1: 'sys-infiniband/ofed' matches more than one slot: [ 3.12, 3.5 ]
   DroppedKeywordWarning: version 1.8.4-r4: keywords dropped: ia64
   DroppedKeywordWarning: version 1.8.7-r1: keywords dropped: alpha, sparc
 
@@ -1162,8 +1242,8 @@ sys-cluster/osc-mpiexec
   DeprecatedEAPI: version 0.83: uses deprecated EAPI: 0
 
 sys-cluster/pacemaker-gui
-  DeprecatedEAPI: version 2.1.2: uses deprecated EAPI: 4
   DeprecatedEclass: version 2.1.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 2.1.2: uses deprecated EAPI: 4
 
 sys-cluster/pconsole
   DeprecatedEAPI: version 1.0-r3: uses deprecated EAPI: 2
@@ -1180,6 +1260,11 @@ sys-cluster/rgmanager
 sys-cluster/rgmanager-agents
   DeprecatedEAPI: version 3.9.2: uses deprecated EAPI: 4
 
+sys-cluster/slurm
+  MissingSlotDep: version 2.6.3: 'dev-lang/lua' matches more than one slot: [ 0, 5.1, 5.2 ]
+  MissingSlotDep: version 2.6.3: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+  MissingSlotDep: version 2.6.3: 'dev-db/postgresql' matches more than one slot: [ 9.0, 9.1, 9.2, 9.3, 9.4, 9.5, 9.6 ]
+
 sys-cluster/swift
   WhitespaceFound: version 2.3.0-r1: ebuild has leading whitespace on line 100
   WhitespaceFound: version 2.5.0-r1: ebuild has leading whitespace on line 100
@@ -1187,6 +1272,10 @@ sys-cluster/swift
 
 sys-cluster/torque
   DeprecatedEAPI: version 2.5.13: uses deprecated EAPI: 4
+  MissingSlotDep: version 4.1.7: 'dev-lang/tk' matches more than one slot: [ 0, 8.5 ]
+  MissingSlotDep: version 4.1.7: 'sys-libs/readline' matches more than one slot: [ 0, 4, 5 ]
+  MissingSlotDep: version 4.1.7: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
+  MissingSlotDep: version 4.2.9-r4: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
 
 sys-cluster/util-vserver
   DeprecatedEAPI: version 0.30.216_pre3025: uses deprecated EAPI: 4
@@ -1273,10 +1362,10 @@ x11-drivers/xf86-video-i128
   DeprecatedEAPI: version 1.3.6: uses deprecated EAPI: 4
 
 x11-drivers/xf86-video-intel
-  DeprecatedEAPI: version 2.9.1: uses deprecated EAPI: 0
+  DeprecatedEclass: version 2.9.1: uses deprecated eclass(es): [ x-modular (migrate to xorg-2) ]
   NonExistentDeps: version 2.9.1: depset depends: nonexistent atoms [ <x11-libs/libdrm-2.4.21 ]
   NonExistentDeps: version 2.9.1: depset rdepends: nonexistent atoms [ <x11-libs/libdrm-2.4.21 ]
-  DeprecatedEclass: version 2.9.1: uses deprecated eclass(es): [ x-modular (migrate to xorg-2) ]
+  DeprecatedEAPI: version 2.9.1: uses deprecated EAPI: 0
   DeprecatedEAPI: version 2.19.0: uses deprecated EAPI: 4
   DeprecatedEAPI: version 2.20.13: uses deprecated EAPI: 4
 
@@ -1316,45 +1405,45 @@ x11-drivers/xf86-video-sisusb
   DeprecatedEAPI: version 0.9.6: uses deprecated EAPI: 4
 
 x11-drivers/xf86-video-suncg14
-  DeprecatedEAPI: version 1.1.1: uses deprecated EAPI: 0
   DeprecatedEclass: version 1.1.1: uses deprecated eclass(es): [ x-modular (migrate to xorg-2) ]
-  DeprecatedEAPI: version 1.1.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.1.1: uses deprecated EAPI: 0
   DeprecatedEclass: version 1.1.2: uses deprecated eclass(es): [ x-modular (migrate to xorg-2) ]
+  DeprecatedEAPI: version 1.1.2: uses deprecated EAPI: 0
 
 x11-drivers/xf86-video-suncg3
-  DeprecatedEAPI: version 1.1.1: uses deprecated EAPI: 0
   DeprecatedEclass: version 1.1.1: uses deprecated eclass(es): [ x-modular (migrate to xorg-2) ]
-  DeprecatedEAPI: version 1.1.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.1.1: uses deprecated EAPI: 0
   DeprecatedEclass: version 1.1.2: uses deprecated eclass(es): [ x-modular (migrate to xorg-2) ]
+  DeprecatedEAPI: version 1.1.2: uses deprecated EAPI: 0
 
 x11-drivers/xf86-video-suncg6
-  DeprecatedEAPI: version 1.1.1: uses deprecated EAPI: 0
   DeprecatedEclass: version 1.1.1: uses deprecated eclass(es): [ x-modular (migrate to xorg-2) ]
-  DeprecatedEAPI: version 1.1.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.1.1: uses deprecated EAPI: 0
   DeprecatedEclass: version 1.1.2: uses deprecated eclass(es): [ x-modular (migrate to xorg-2) ]
+  DeprecatedEAPI: version 1.1.2: uses deprecated EAPI: 0
 
 x11-drivers/xf86-video-sunffb
-  DeprecatedEAPI: version 1.2.1: uses deprecated EAPI: 0
   DeprecatedEclass: version 1.2.1: uses deprecated eclass(es): [ x-modular (migrate to xorg-2) ]
+  DeprecatedEAPI: version 1.2.1: uses deprecated EAPI: 0
 
 x11-drivers/xf86-video-sunleo
-  DeprecatedEAPI: version 1.2.0: uses deprecated EAPI: 0
   DeprecatedEclass: version 1.2.0: uses deprecated eclass(es): [ x-modular (migrate to xorg-2) ]
-  DeprecatedEAPI: version 1.2.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.2.0: uses deprecated EAPI: 0
   DeprecatedEclass: version 1.2.1: uses deprecated eclass(es): [ x-modular (migrate to xorg-2) ]
+  DeprecatedEAPI: version 1.2.1: uses deprecated EAPI: 0
 
 x11-drivers/xf86-video-suntcx
-  DeprecatedEAPI: version 1.1.1: uses deprecated EAPI: 0
   DeprecatedEclass: version 1.1.1: uses deprecated eclass(es): [ x-modular (migrate to xorg-2) ]
-  DeprecatedEAPI: version 1.1.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.1.1: uses deprecated EAPI: 0
   DeprecatedEclass: version 1.1.2: uses deprecated eclass(es): [ x-modular (migrate to xorg-2) ]
+  DeprecatedEAPI: version 1.1.2: uses deprecated EAPI: 0
 
 x11-drivers/xf86-video-tga
   DeprecatedEAPI: version 1.2.2: uses deprecated EAPI: 4
 
 x11-drivers/xf86-video-v4l
-  DeprecatedEAPI: version 0.2.0: uses deprecated EAPI: 0
   DeprecatedEclass: version 0.2.0: uses deprecated eclass(es): [ x-modular (migrate to xorg-2) ]
+  DeprecatedEAPI: version 0.2.0: uses deprecated EAPI: 0
 
 x11-drivers/xf86-video-voodoo
   DeprecatedEAPI: version 1.2.5: uses deprecated EAPI: 4
@@ -1394,15 +1483,15 @@ dev-tex/cpp2latex
   DeprecatedEAPI: version 2.3-r1: uses deprecated EAPI: 0
 
 dev-tex/crosstex
-  DeprecatedEAPI: version 0.6: uses deprecated EAPI: 3
   DeprecatedEclass: version 0.6: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.6: uses deprecated EAPI: 3
 
 dev-tex/csindex
   DeprecatedEAPI: version 2.11c-r1: uses deprecated EAPI: 3
 
 dev-tex/culmus-latex
-  DeprecatedEAPI: version 0.7: uses deprecated EAPI: 2
   NonExistentDeps: version 0.7: depset depends: nonexistent atoms [ <media-fonts/culmus-0.110 ]
+  DeprecatedEAPI: version 0.7: uses deprecated EAPI: 2
 
 dev-tex/currvita
   DeprecatedEAPI: version 0.9i-r1: uses deprecated EAPI: 0
@@ -1414,8 +1503,8 @@ dev-tex/detex
   DeprecatedEAPI: version 2.8-r1: uses deprecated EAPI: 0
 
 dev-tex/dot2tex
-  DeprecatedEAPI: version 2.8.7: uses deprecated EAPI: 3
   DeprecatedEclass: version 2.8.7: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 2.8.7: uses deprecated EAPI: 3
 
 dev-tex/dot2texi
   DeprecatedEAPI: version 3.0: uses deprecated EAPI: 0
@@ -1551,10 +1640,10 @@ dev-tex/revtex
   DeprecatedEAPI: version 4.1_p2-r1: uses deprecated EAPI: 2
 
 dev-tex/rubber
-  DeprecatedEAPI: version 1.1_p20090819: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.1_p20090819: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 1.1_p20090819: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
   NonExistentDeps: version 1.1_p20090819: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
-  DeprecatedEclass: version 1.1_p20090819: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.1_p20090819: uses deprecated EAPI: 3
 
 dev-tex/serienbrief
   DeprecatedEAPI: version 0.2.4: uses deprecated EAPI: 4
@@ -1578,8 +1667,8 @@ dev-tex/tex4ht
   DeprecatedEAPI: version 20090611_p1038-r3: uses deprecated EAPI: 4
 
 dev-tex/texamator
-  DeprecatedEAPI: version 1.7.5: uses deprecated EAPI: 4
   DeprecatedEclass: version 1.7.5: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.7.5: uses deprecated EAPI: 4
 
 dev-tex/texmfind
   DeprecatedEAPI: version 2010.1: uses deprecated EAPI: 0
@@ -1622,16 +1711,16 @@ sys-process/atop
   DeprecatedEAPI: version 2.2: uses deprecated EAPI: 4
 
 sys-process/audit
-  DeprecatedEAPI: version 1.7.18: uses deprecated EAPI: 3
   DeprecatedEclass: version 1.7.18: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 2.0.5: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 1.7.18: uses deprecated EAPI: 3
+  DeprecatedEclass: version 2.0.5: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 2.0.5: depset depends: nonexistent atoms [ dev-libs/libprelude ]
   NonExistentDeps: version 2.0.5: depset rdepends: nonexistent atoms [ dev-libs/libprelude ]
-  DeprecatedEclass: version 2.0.5: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 2.1.3-r1: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 2.0.5: uses deprecated EAPI: 3
+  DeprecatedEclass: version 2.1.3-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 2.1.3-r1: depset depends: nonexistent atoms [ dev-libs/libprelude ]
   NonExistentDeps: version 2.1.3-r1: depset rdepends: nonexistent atoms [ dev-libs/libprelude ]
-  DeprecatedEclass: version 2.1.3-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 2.1.3-r1: uses deprecated EAPI: 3
   NonExistentDeps: version 2.2.2-r2: depset depends: nonexistent atoms [ dev-libs/libprelude ]
   NonExistentDeps: version 2.2.2-r2: depset rdepends: nonexistent atoms [ dev-libs/libprelude ]
   NonExistentDeps: version 2.2.2-r3: depset depends: nonexistent atoms [ dev-libs/libprelude ]
@@ -1665,6 +1754,10 @@ sys-process/dcron
   BadInsIntoDir: version 4.5-r1: ebuild uses insinto /etc/cron.d on line 38
   DeprecatedEAPI: version 4.5-r1: uses deprecated EAPI: 4
 
+sys-process/fcron
+  MissingSlotDep: version 3.1.1: 'sys-libs/readline' matches more than one slot: [ 0, 4, 5 ]
+  MissingSlotDep: version 3.1.2-r2: 'sys-libs/readline' matches more than one slot: [ 0, 4, 5 ]
+
 sys-process/fuser-bsd
   DeprecatedEAPI: version 1142334561: uses deprecated EAPI: 2
 
@@ -1680,9 +1773,15 @@ sys-process/lsof
   DeprecatedEAPI: version 4.88-r1: uses deprecated EAPI: 4
   DeprecatedEAPI: version 4.89: uses deprecated EAPI: 4
 
+sys-process/memwatch
+  MissingSlotDep: version 0.0.2: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
+
 sys-process/minit
   DeprecatedEAPI: version 0.9.1: uses deprecated EAPI: 0
   DeprecatedEAPI: version 0.10: uses deprecated EAPI: 0
+
+sys-process/nmon
+  MissingSlotDep: version 15g: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
 
 sys-process/numactl
   DeprecatedEAPI: version 2.0.9: uses deprecated EAPI: 4
@@ -1726,6 +1825,10 @@ sys-process/time
   DeprecatedEAPI: version 1.7-r1: uses deprecated EAPI: 4
   DeprecatedEAPI: version 1.7-r2: uses deprecated EAPI: 4
 
+sys-process/tiptop
+  MissingSlotDep: version 2.2: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
+  MissingSlotDep: version 2.3: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
+
 sys-process/unixtop
   DeprecatedEAPI: version 3.8_beta1-r3: uses deprecated EAPI: 0
 
@@ -1742,207 +1845,207 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : refetch
 
 dev-dotnet/art-sharp
-  DeprecatedEAPI: version 2.24.2: uses deprecated EAPI: 2
   DeprecatedEclass: version 2.24.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 2.24.2: uses deprecated EAPI: 2
 
 dev-dotnet/atk-sharp
-  DeprecatedEAPI: version 2.12.10: uses deprecated EAPI: 2
   DeprecatedEclass: version 2.12.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 2.12.10: uses deprecated EAPI: 2
 
 dev-dotnet/dbus-sharp
-  DeprecatedEAPI: version 0.7.0-r1: uses deprecated EAPI: 4
   DeprecatedEclass: version 0.7.0-r1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 0.7.0-r1: uses deprecated EAPI: 4
 
 dev-dotnet/dbus-sharp-glib
-  DeprecatedEAPI: version 0.5.0: uses deprecated EAPI: 4
   DeprecatedEclass: version 0.5.0: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 0.5.0: uses deprecated EAPI: 4
 
 dev-dotnet/flickrnet-bin
-  DeprecatedEAPI: version 2.2-r1: uses deprecated EAPI: 2
   DeprecatedEclass: version 2.2-r1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 2.2-r1: uses deprecated EAPI: 2
 
 dev-dotnet/gconf-sharp
-  DeprecatedEAPI: version 2.24.2: uses deprecated EAPI: 2
   DeprecatedEclass: version 2.24.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 2.24.2: uses deprecated EAPI: 2
 
 dev-dotnet/gdk-sharp
-  DeprecatedEAPI: version 2.12.10: uses deprecated EAPI: 2
   DeprecatedEclass: version 2.12.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 2.12.10: uses deprecated EAPI: 2
 
 dev-dotnet/gio-sharp
-  DeprecatedEAPI: version 0.3: uses deprecated EAPI: 4
   DeprecatedEclass: version 0.3: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 0.3: uses deprecated EAPI: 4
   DeprecatedEAPI: version 0.3-r1: uses deprecated EAPI: 4
 
 dev-dotnet/gkeyfile-sharp
-  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 2
   DeprecatedEclass: version 0.1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 2
 
 dev-dotnet/glade-sharp
-  DeprecatedEAPI: version 2.12.10: uses deprecated EAPI: 2
   DeprecatedEclass: version 2.12.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 2.12.10: uses deprecated EAPI: 2
 
 dev-dotnet/glib-sharp
-  DeprecatedEAPI: version 2.12.10: uses deprecated EAPI: 4
   DeprecatedEclass: version 2.12.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 2.12.10: uses deprecated EAPI: 4
 
 dev-dotnet/gnome-desktop-sharp
-  DeprecatedEAPI: version 2.26.0-r1: uses deprecated EAPI: 2
   DeprecatedEclass: version 2.26.0-r1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 2.26.0-r1: uses deprecated EAPI: 2
 
 dev-dotnet/gnome-keyring-sharp
-  DeprecatedEAPI: version 1.0.2: uses deprecated EAPI: 2
   DeprecatedEclass: version 1.0.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 1.0.2: uses deprecated EAPI: 2
 
 dev-dotnet/gnome-sharp
-  DeprecatedEAPI: version 2.24.2: uses deprecated EAPI: 2
   DeprecatedEclass: version 2.24.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 2.24.2: uses deprecated EAPI: 2
 
 dev-dotnet/gnomevfs-sharp
-  DeprecatedEAPI: version 2.24.2: uses deprecated EAPI: 2
   DeprecatedEclass: version 2.24.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 2.24.2: uses deprecated EAPI: 2
 
 dev-dotnet/google-gdata-sharp
-  DeprecatedEAPI: version 1.4.0.2-r2: uses deprecated EAPI: 3
   DeprecatedEclass: version 1.4.0.2-r2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 1.4.0.2-r2: uses deprecated EAPI: 3
 
 dev-dotnet/gsf-sharp
-  DeprecatedEAPI: version 0.8.1: uses deprecated EAPI: 0
   DeprecatedEclass: version 0.8.1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 0.8.1: uses deprecated EAPI: 0
 
 dev-dotnet/gtk-dotnet-sharp
-  DeprecatedEAPI: version 2.12.10: uses deprecated EAPI: 2
   DeprecatedEclass: version 2.12.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 2.12.10: uses deprecated EAPI: 2
 
 dev-dotnet/gtk-sharp
-  DeprecatedEAPI: version 2.12.10: uses deprecated EAPI: 2
   DeprecatedEclass: version 2.12.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 2.12.10: uses deprecated EAPI: 2
 
 dev-dotnet/gtk-sharp-beans
-  DeprecatedEAPI: version 2.14.0: uses deprecated EAPI: 2
   DeprecatedEclass: version 2.14.0: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 2.14.0: uses deprecated EAPI: 2
 
 dev-dotnet/gtk-sharp-docs
-  DeprecatedEAPI: version 2.12.10: uses deprecated EAPI: 2
   DeprecatedEclass: version 2.12.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 2.12.10: uses deprecated EAPI: 2
 
 dev-dotnet/gtk-sharp-gapi
-  DeprecatedEAPI: version 2.12.10: uses deprecated EAPI: 2
   DeprecatedEclass: version 2.12.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 2.12.10: uses deprecated EAPI: 2
 
 dev-dotnet/gtksourceview-sharp
-  DeprecatedEAPI: version 2.24.0-r10: uses deprecated EAPI: 2
   DeprecatedEclass: version 2.24.0-r10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 2.24.0-r10: uses deprecated EAPI: 2
 
 dev-dotnet/gudev-sharp
-  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 2
   DeprecatedEclass: version 0.1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 2
 
 dev-dotnet/ikvm
-  DeprecatedEAPI: version 0.46.0.1: uses deprecated EAPI: 4
   DeprecatedEclass: version 0.46.0.1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DeprecatedEAPI: version 0.46.0.2: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.46.0.1: uses deprecated EAPI: 4
   DeprecatedEclass: version 0.46.0.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DeprecatedEAPI: version 7.1.4532.2: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.46.0.2: uses deprecated EAPI: 4
   DeprecatedEclass: version 7.1.4532.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 7.1.4532.2: uses deprecated EAPI: 4
   DroppedKeywordWarning: version 7.1.4532.2: keywords dropped: ppc
 
 dev-dotnet/ikvm-bin
-  DeprecatedEAPI: version 0.46.0.2: uses deprecated EAPI: 4
   DeprecatedEclass: version 0.46.0.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DeprecatedEAPI: version 7.1.4532.2: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.46.0.2: uses deprecated EAPI: 4
   DeprecatedEclass: version 7.1.4532.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 7.1.4532.2: uses deprecated EAPI: 4
 
 dev-dotnet/libgdiplus
-  DeprecatedEAPI: version 2.10.9: uses deprecated EAPI: 2
   DeprecatedEclass: version 2.10.9: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 2.10.9: uses deprecated EAPI: 2
   DeprecatedEclass: version 2.10.9-r1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
   DeprecatedEclass: version 2.10.9-r2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
   DroppedKeywordWarning: version 3.12: keywords dropped: arm
 
 dev-dotnet/log4net
-  DeprecatedEAPI: version 1.2.11: uses deprecated EAPI: 4
   DeprecatedEclass: version 1.2.11: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 1.2.11: uses deprecated EAPI: 4
 
 dev-dotnet/mono-addins
-  DeprecatedEAPI: version 0.6.2: uses deprecated EAPI: 4
   DeprecatedEclass: version 0.6.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 0.6.2: uses deprecated EAPI: 4
 
 dev-dotnet/mono-nat
-  DeprecatedEAPI: version 1.1.0: uses deprecated EAPI: 4
   DeprecatedEclass: version 1.1.0: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 1.1.0: uses deprecated EAPI: 4
 
 dev-dotnet/mono-zeroconf
-  DeprecatedEAPI: version 0.9.0: uses deprecated EAPI: 2
   DeprecatedEclass: version 0.9.0: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 0.9.0: uses deprecated EAPI: 2
 
 dev-dotnet/monocalendar
-  DeprecatedEAPI: version 0.7.2: uses deprecated EAPI: 0
   DeprecatedEclass: version 0.7.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 0.7.2: uses deprecated EAPI: 0
 
 dev-dotnet/monotorrent
-  DeprecatedEAPI: version 0.80: uses deprecated EAPI: 2
   DeprecatedEclass: version 0.80: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 0.80: uses deprecated EAPI: 2
 
 dev-dotnet/nant
-  DeprecatedEAPI: version 0.92: uses deprecated EAPI: 4
   DeprecatedEclass: version 0.92: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 0.92: uses deprecated EAPI: 4
 
 dev-dotnet/ndesk-dbus
-  DeprecatedEAPI: version 0.6.1a: uses deprecated EAPI: 0
   DeprecatedEclass: version 0.6.1a: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 0.6.1a: uses deprecated EAPI: 0
 
 dev-dotnet/ndesk-dbus-glib
-  DeprecatedEAPI: version 0.4.1: uses deprecated EAPI: 3
   DeprecatedEclass: version 0.4.1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 0.4.1: uses deprecated EAPI: 3
 
 dev-dotnet/nini
-  DeprecatedEAPI: version 1.1.0-r2: uses deprecated EAPI: 2
   DeprecatedEclass: version 1.1.0-r2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 1.1.0-r2: uses deprecated EAPI: 2
 
 dev-dotnet/notify-sharp
-  DeprecatedEAPI: version 0.4.0_pre20090305: uses deprecated EAPI: 4
   DeprecatedEclass: version 0.4.0_pre20090305: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 0.4.0_pre20090305: uses deprecated EAPI: 4
 
 dev-dotnet/nuget
   WhitespaceFound: version 2.8.3: ebuild has trailing whitespace on line 29
 
 dev-dotnet/pango-sharp
-  DeprecatedEAPI: version 2.12.10: uses deprecated EAPI: 2
   DeprecatedEclass: version 2.12.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 2.12.10: uses deprecated EAPI: 2
 
 dev-dotnet/pe-format
   DeprecatedEAPI: version 2.1.2: uses deprecated EAPI: 4
 
 dev-dotnet/rsvg-sharp
-  DeprecatedEAPI: version 2.24.0-r10: uses deprecated EAPI: 2
   DeprecatedEclass: version 2.24.0-r10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 2.24.0-r10: uses deprecated EAPI: 2
 
 dev-dotnet/taglib-sharp
-  DeprecatedEAPI: version 2.0.4.0: uses deprecated EAPI: 4
   DeprecatedEclass: version 2.0.4.0: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DeprecatedEAPI: version 2.1.0.0: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 2.0.4.0: uses deprecated EAPI: 4
   DeprecatedEclass: version 2.1.0.0: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 2.1.0.0: uses deprecated EAPI: 4
 
 dev-dotnet/vte-sharp
-  DeprecatedEAPI: version 2.24.0-r10: uses deprecated EAPI: 2
   DeprecatedEclass: version 2.24.0-r10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 2.24.0-r10: uses deprecated EAPI: 2
 
 dev-dotnet/webkit-sharp
-  DeprecatedEAPI: version 0.3-r1: uses deprecated EAPI: 4
   DeprecatedEclass: version 0.3-r1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 0.3-r1: uses deprecated EAPI: 4
 
 dev-dotnet/wnck-sharp
-  DeprecatedEAPI: version 2.24.0-r10: uses deprecated EAPI: 2
   DeprecatedEclass: version 2.24.0-r10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 2.24.0-r10: uses deprecated EAPI: 2
 
 dev-dotnet/xsp
-  DeprecatedEAPI: version 2.10.2-r2: uses deprecated EAPI: 4
   DeprecatedEclass: version 2.10.2-r2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 2.10.2-r2: uses deprecated EAPI: 4
 
 dev-dotnet/zeitgeist-sharp
-  DeprecatedEAPI: version 0.8.0.0-r1: uses deprecated EAPI: 4
   DeprecatedEclass: version 0.8.0.0-r1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 0.8.0.0-r1: uses deprecated EAPI: 4
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
@@ -1992,8 +2095,8 @@ app-benchmarks/nbench
   DeprecatedEAPI: version 2.2.3-r1: uses deprecated EAPI: 2
 
 app-benchmarks/os-autoinst
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
 
 app-benchmarks/phoronix-test-suite
   DeprecatedEAPI: version 4.8.5: uses deprecated EAPI: 4
@@ -2110,6 +2213,7 @@ gnustep-libs/netclasses
 
 gnustep-libs/pantomime
   DeprecatedEAPI: version 1.2.0: uses deprecated EAPI: 4
+  MissingSlotDep: version 1.2.2: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
 
 gnustep-libs/prefsmodule
   DeprecatedEAPI: version 1.1.1_pre20061204-r1: uses deprecated EAPI: 0
@@ -2119,3 +2223,6 @@ gnustep-libs/renaissance
 
 gnustep-libs/smbkit
   DeprecatedEAPI: version 0.0.1.20061010: uses deprecated EAPI: 0
+
+gnustep-libs/sqlclient
+  MissingSlotDep: version 1.7.0: 'dev-db/postgresql' matches more than one slot: [ 9.0, 9.1, 9.2, 9.3, 9.4, 9.5, 9.6 ]

@@ -22,11 +22,37 @@ dev-perl/Convert-BinHex
 dev-perl/Convert-UUlib
   DroppedKeywordWarning: version 1.500.0: keywords dropped: m68k, s390, sh
 
+dev-perl/Crypt-OpenSSL-Bignum
+  MissingSlotDep: version 0.40.0-r1: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+
+dev-perl/Crypt-OpenSSL-RSA
+  MissingSlotDep: version 0.280.0-r1: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+
+dev-perl/Crypt-OpenSSL-Random
+  MissingSlotDep: version 0.40.0-r1: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+
+dev-perl/Crypt-SMIME
+  MissingSlotDep: version 0.100.0-r1: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+
+dev-perl/DBD-Pg
+  MissingSlotDep: version 2.19.3-r1: 'dev-db/postgresql' matches more than one slot: [ 9.0, 9.1, 9.2, 9.3, 9.4, 9.5, 9.6 ]
+  MissingSlotDep: version 3.3.0: 'dev-db/postgresql' matches more than one slot: [ 9.0, 9.1, 9.2, 9.3, 9.4, 9.5, 9.6 ]
+  MissingSlotDep: version 3.4.2: 'dev-db/postgresql' matches more than one slot: [ 9.0, 9.1, 9.2, 9.3, 9.4, 9.5, 9.6 ]
+
 dev-perl/Eval-Closure
   DroppedKeywordWarning: version 0.130.0: keywords dropped: arm, ppc64
 
+dev-perl/GD
+  MissingSlotDep: version 2.460.0-r1: 'media-libs/libpng' matches more than one slot: [ 0, 1.2, 1.5 ]
+  MissingSlotDep: version 2.460.0-r1: 'virtual/jpeg' matches more than one slot: [ 0, 62 ]
+  MissingSlotDep: version 2.500.0-r1: 'media-libs/libpng' matches more than one slot: [ 0, 1.2, 1.5 ]
+  MissingSlotDep: version 2.500.0-r1: 'virtual/jpeg' matches more than one slot: [ 0, 62 ]
+
 dev-perl/HTTP-Message
   DroppedKeywordWarning: version 6.40.0-r1: keywords dropped: mips, ppc, ppc64
+
+dev-perl/Image-Scale
+  MissingSlotDep: version 0.80.0-r1: 'virtual/jpeg' matches more than one slot: [ 0, 62 ]
 
 dev-perl/JSON-RPC
   DroppedKeywordWarning: version 1.30.0-r1: keywords dropped: alpha, ia64, ppc, ppc64, sparc
@@ -37,8 +63,14 @@ dev-perl/List-MoreUtils
 dev-perl/Mail-SpamAssassin-Plugin-GoogleSafeBrowsing
   BadInsIntoDir: version 1.30.0-r1: ebuild uses insinto /etc/cron.d on line 31
 
+dev-perl/Math-GMP
+  MissingSlotDep: version 2.60.0-r1: 'dev-libs/gmp' matches more than one slot: [ 0, 3 ]
+
 dev-perl/Module-Info
   DroppedKeywordWarning: version 0.370.0: keywords dropped: alpha, hppa, ppc64
+
+dev-perl/PDL
+  MissingSlotDep: version 2.4.11: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
 
 dev-perl/SQL-Statement
   DroppedKeywordWarning: version 1.407.0: keywords dropped: arm, ppc, ppc64
@@ -49,11 +81,21 @@ dev-perl/Test-TCP
 dev-perl/Test-Trap
   DroppedKeywordWarning: version 0.3.0: keywords dropped: ppc
 
+dev-perl/Tk-JPEG-Lite
+  MissingSlotDep: version 2.14.30-r1: 'virtual/jpeg' matches more than one slot: [ 0, 62 ]
+
 dev-perl/WWW-Mechanize
   NonExistentDeps: version 1.730.0-r1: depset depends: nonexistent atoms [ <dev-perl/libwww-perl-6 ]
   NonExistentDeps: version 1.730.0-r1: depset rdepends: nonexistent atoms [ <dev-perl/libwww-perl-6 ]
   NonExistentDeps: version 1.750.0: depset depends: nonexistent atoms [ <dev-perl/libwww-perl-6 ]
   NonExistentDeps: version 1.750.0: depset rdepends: nonexistent atoms [ <dev-perl/libwww-perl-6 ]
+
+dev-perl/crypt-dh
+  MissingSlotDep: version 0.70.0-r1: 'dev-libs/gmp' matches more than one slot: [ 0, 3 ]
+
+dev-perl/perl-tk
+  MissingSlotDep: version 804.32.0-r1: 'virtual/jpeg' matches more than one slot: [ 0, 62 ]
+  MissingSlotDep: version 804.33.0: 'virtual/jpeg' matches more than one slot: [ 0, 62 ]
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
@@ -194,6 +236,9 @@ x11-misc/evolvotron
   NonExistentDeps: version 0.6.2: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
   NonExistentDeps: version 0.6.2: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
 
+x11-misc/fbdesk
+  MissingSlotDep: version 1.4.1: 'media-libs/libpng' matches more than one slot: [ 0, 1.2, 1.5 ]
+
 x11-misc/fbpager
   DeprecatedEAPI: version 20090221: uses deprecated EAPI: 2
 
@@ -234,7 +279,9 @@ x11-misc/gromit
   DeprecatedEAPI: version 20041213-r1: uses deprecated EAPI: 2
 
 x11-misc/growl-for-linux
+  MissingSlotDep: version 0.6.7: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  MissingSlotDep: version 9999: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
 
 x11-misc/gtk2fontsel
   DeprecatedEAPI: version 0.1: uses deprecated EAPI: 2
@@ -362,10 +409,13 @@ x11-misc/oroborus-keylaunch
 
 x11-misc/outwiker
   DeprecatedEclass: version 1.7.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  MissingSlotDep: version 1.7.0: 'dev-python/wxpython' matches more than one slot: [ 2.8, 2.9, 3.0 ]
 
 x11-misc/pathfinder
   DeprecatedEAPI: version 1.6.36: uses deprecated EAPI: 1
   DeprecatedEAPI: version 1.7.45: uses deprecated EAPI: 4
+  MissingSlotDep: version 1.7.47: 'virtual/jpeg' matches more than one slot: [ 0, 62 ]
+  MissingSlotDep: version 1.7.49: 'virtual/jpeg' matches more than one slot: [ 0, 62 ]
 
 x11-misc/pcmanfm
   DeprecatedEAPI: version 0.9.10: uses deprecated EAPI: 4
@@ -376,6 +426,10 @@ x11-misc/pcmanfm-qt
 x11-misc/peksystray
   DeprecatedEAPI: version 0.2.1: uses deprecated EAPI: 0
   DeprecatedEAPI: version 0.4.0: uses deprecated EAPI: 2
+
+x11-misc/piedock
+  MissingSlotDep: version 1.6.6: 'media-libs/libpng' matches more than one slot: [ 0, 1.2, 1.5 ]
+  MissingSlotDep: version 1.6.6: 'dev-libs/glib' matches more than one slot: [ 1, 2 ]
 
 x11-misc/pypanel
   DeprecatedEAPI: version 2.4-r1: uses deprecated EAPI: 3
@@ -417,6 +471,8 @@ x11-misc/shutter
 x11-misc/shutterbug
   DeprecatedEAPI: version 1.6.36: uses deprecated EAPI: 1
   DeprecatedEAPI: version 1.7.45: uses deprecated EAPI: 4
+  MissingSlotDep: version 1.7.47: 'virtual/jpeg' matches more than one slot: [ 0, 62 ]
+  MissingSlotDep: version 1.7.49: 'virtual/jpeg' matches more than one slot: [ 0, 62 ]
 
 x11-misc/simpleswitcher
   DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
@@ -446,6 +502,9 @@ x11-misc/superswitcher
 
 x11-misc/sw-notify-send
   DeprecatedEAPI: version 1.2.1: uses deprecated EAPI: 4
+
+x11-misc/synergy
+  MissingSlotDep: version 1.7.4: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
 
 x11-misc/tintwizard
   DeprecatedEAPI: version 0.3.4-r1: uses deprecated EAPI: 3
@@ -521,6 +580,9 @@ x11-misc/xbatt
 x11-misc/xbattbar
   DeprecatedEAPI: version 1.4.3: uses deprecated EAPI: 2
 
+x11-misc/xbindkeys
+  MissingSlotDep: version 1.8.6: 'dev-lang/tk' matches more than one slot: [ 0, 8.5 ]
+
 x11-misc/xbitmaps
   DeprecatedEAPI: version 1.1.1: uses deprecated EAPI: 3
 
@@ -592,14 +654,10 @@ x11-misc/xosview
 x11-misc/xplanet
   DeprecatedEAPI: version 1.3.0: uses deprecated EAPI: 4
   DeprecatedEAPI: version 1.3.0-r1: uses deprecated EAPI: 4
-
-x11-misc/xplanetFX
-  BadInsIntoDir: version 2.6.4: ebuild uses insinto /usr/share/applications on line 43
-
-x11-misc/xplanet
   SizeViolation: "files/xplanet-1.3.0-giflib.patch" exceeds 20k in size; 25824 bytes total
 
 x11-misc/xplanetFX
+  BadInsIntoDir: version 2.6.4: ebuild uses insinto /usr/share/applications on line 43
   BadInsIntoDir: version 2.6.6: ebuild uses insinto /usr/share/applications on line 43
 
 x11-misc/xrmap
@@ -1003,6 +1061,17 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
+app-office/calcurse
+  MissingSlotDep: version 3.1.4: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
+  MissingSlotDep: version 3.2.1: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
+
+app-office/calligra
+  MissingSlotDep: version 2.8.5: 'media-libs/libpng' matches more than one slot: [ 0, 1.2, 1.5 ]
+  MissingSlotDep: version 2.8.5: 'dev-db/postgresql' matches more than one slot: [ 9.0, 9.1, 9.2, 9.3, 9.4, 9.5, 9.6 ]
+  MissingSlotDep: version 2.8.5: 'media-libs/tiff' matches more than one slot: [ 0, 3 ]
+  MissingSlotDep: version 2.8.5: 'app-text/libwpd' matches more than one slot: [ 0.10, 0.9 ]
+  MissingSlotDep: version 2.8.5: 'app-text/libwpg' matches more than one slot: [ 0.2, 0.3 ]
+
 app-office/eqe
   DeprecatedEAPI: version 1.3.0: uses deprecated EAPI: 0
 
@@ -1016,6 +1085,9 @@ app-office/gtimelog
 app-office/ledger
   DeprecatedEAPI: version 2.6.3-r1: uses deprecated EAPI: 4
 
+app-office/lotus-notes
+  MissingSlotDep: version 8.5.3: 'dev-java/swt' matches more than one slot: [ 3.5, 3.6, 3.7, 3.8, 4.2 ]
+
 app-office/lyx
   DeprecatedEAPI: version 1.6.10: uses deprecated EAPI: 2
   DeprecatedEclass: version 1.6.10: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
@@ -1024,6 +1096,10 @@ app-office/lyx
 
 app-office/magicpoint
   DeprecatedEAPI: version 1.13a: uses deprecated EAPI: 4
+
+app-office/mdbtools
+  MissingSlotDep: version 0.7.1: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
+  MissingSlotDep: version 0.7.1-r1: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
 
 app-office/odeskteam
   DeprecatedEAPI: version 3.6.1: uses deprecated EAPI: 4
@@ -1048,6 +1124,38 @@ app-office/rubrica
   MetadataError: version 2.1.6-r1: attr(fetchables): error- Metadata Exception: pkg ebuild src: app-office/rubrica-2.1.6-r1, attr fetchables
 error: mirror://berlios/rubrica/rubrica2-2.1.6.tar.bz2 mirror://gentoo/rubrica-2.1.6-hu.po.bz2 is unparseable
 flagged token- uri mirror://berlios/rubrica/rubrica2-2.1.6.tar.bz2 isn't a known mirror tier
+ERROR root: check <pkgcheck.repo_metadata.ManifestReport object at
+          : 0x7f8109a89450> raised
+ERROR root: Traceback (most recent call last):
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/bas
+          : e.py", line 337, in feed
+ERROR root:     check.feed(item, reporter)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/rep
+          : o_metadata.py", line 242, in feed
+ERROR root:     pkg._get_attr['fetchables'](pkg, allow_missing_checksums=True),
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 89, in generate_fetchables
+ERROR root:    
+          : allow_src_uri_file_renames=self.eapi_obj.options.src_uri_renames)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/conditionals.py", line 188, in parse
+ERROR root:     raise_from(ParseError(dep_str, e))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/conditionals.py", line 167, in parse
+ERROR root:     depsets[-1].append(element_func(k))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 121, in create_fetchable_from_uri
+ERROR root:     raise UnknownMirror(tier, remaining_uri)
+ERROR root: ParseError: mirror://berlios/rubrica/rubrica2-2.1.6.tar.bz2
+          : mirror://gentoo/rubrica-2.1.6-hu.po.bz2 is unparseable
+ERROR root: flagged token- uri mirror://berlios/rubrica/rubrica2-2.1.6.tar.bz2
+          : isn't a known mirror tier
 
 app-office/scribus
   DroppedKeywordWarning: version 1.5.0-r1: keywords dropped: hppa, ppc, ppc64, sparc
@@ -1119,6 +1227,9 @@ gnome-extra/gnome-web-photo
 gnome-extra/gucharmap
   DeprecatedEAPI: version 3.0.1-r200: uses deprecated EAPI: 4
 
+gnome-extra/libgda
+  MissingSlotDep: version 5.2.2: 'sys-libs/db' matches more than one slot: [ 1, 3, 4.2, 4.3, 4.4, 4.5, 4.6, 4.7, 4.8, 5.1, 5.3, 6.0, 6.1 ]
+
 gnome-extra/nautilus-share
   DeprecatedEAPI: version 0.7.3-r1: uses deprecated EAPI: 4
 
@@ -1146,6 +1257,8 @@ mail-client/biabam
 
 mail-client/claws-mail
   DeprecatedEAPI: version 3.9.0: uses deprecated EAPI: 4
+  MissingSlotDep: version 3.9.3: 'dev-libs/glib' matches more than one slot: [ 1, 2 ]
+  MissingSlotDep: version 3.10.1: 'dev-libs/glib' matches more than one slot: [ 1, 2 ]
 
 mail-client/claws-mail-acpi-notifier
   DeprecatedEAPI: version 1.0.28: uses deprecated EAPI: 0
@@ -1212,6 +1325,7 @@ mail-client/cone
   DeprecatedEAPI: version 0.89: uses deprecated EAPI: 4
   DeprecatedEAPI: version 0.90: uses deprecated EAPI: 4
   DeprecatedEAPI: version 0.90-r1: uses deprecated EAPI: 4
+  MissingSlotDep: version 0.92: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
 
 mail-client/drac
   DeprecatedEAPI: version 1.12-r1: uses deprecated EAPI: 0
@@ -1250,6 +1364,43 @@ flagged token- uri mirror://bitbucket/mutt/mutt/downloads/mutt-1.5.24.tar.gz isn
   MetadataError: version 1.5.24-r2: attr(fetchables): error- Metadata Exception: pkg ebuild src: mail-client/mutt-1.5.24-r2, attr fetchables
 error: mirror://sourceforge/mutt/mutt-1.5.24.tar.gz mirror://bitbucket/mutt/mutt/downloads/mutt-1.5.24.tar.gz ftp://ftp.mutt.org/pub/mutt/mutt-1.5.24.tar.gz mirror://gentoo/mutt-1.5.24-gentoo-patches-r1.tar.bz2 https://dev.gentoo.org/~grobian/distfiles/mutt-1.5.24-gentoo-patches-r1.tar.bz2 is unparseable
 flagged token- uri mirror://bitbucket/mutt/mutt/downloads/mutt-1.5.24.tar.gz isn't a known mirror tier
+ERROR root: check <pkgcheck.repo_metadata.ManifestReport object at
+          : 0x7f8109a89450> raised
+ERROR root: Traceback (most recent call last):
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/bas
+          : e.py", line 337, in feed
+ERROR root:     check.feed(item, reporter)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/rep
+          : o_metadata.py", line 242, in feed
+ERROR root:     pkg._get_attr['fetchables'](pkg, allow_missing_checksums=True),
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 89, in generate_fetchables
+ERROR root:    
+          : allow_src_uri_file_renames=self.eapi_obj.options.src_uri_renames)
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/conditionals.py", line 188, in parse
+ERROR root:     raise_from(ParseError(dep_str, e))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/conditionals.py", line 167, in parse
+ERROR root:     depsets[-1].append(element_func(k))
+ERROR root:   File
+          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
+          : ld/ebuild_src.py", line 121, in create_fetchable_from_uri
+ERROR root:     raise UnknownMirror(tier, remaining_uri)
+ERROR root: ParseError: mirror://sourceforge/mutt/mutt-1.5.23.tar.gz
+          : mirror://bitbucket/mutt/mutt/downloads/mutt-1.5.23.tar.gz
+          : ftp://ftp.mutt.org/mutt/devel/mutt-1.5.23.tar.gz
+          : mirror://gentoo/mutt-1.5.23-gentoo-patches-r5.tar.bz2
+          : https://dev.gentoo.org/~grobian/distfiles/mutt-1.5.23-gentoo-patche
+          : s-r5.tar.bz2 is unparseable
+ERROR root: flagged token- uri
+          : mirror://bitbucket/mutt/mutt/downloads/mutt-1.5.23.tar.gz isn't a
+          : known mirror tier
 
 mail-client/nail
   DeprecatedEAPI: version 12.4: uses deprecated EAPI: 3
@@ -1262,6 +1413,9 @@ mail-client/pinepgp
   DeprecatedEAPI: version 0.18.0-r1: uses deprecated EAPI: 0
   NonExistentDeps: version 0.18.0-r1: depset depends: nonexistent atoms [ mail-client/pine ]
   NonExistentDeps: version 0.18.0-r1: depset rdepends: nonexistent atoms [ mail-client/pine ]
+
+mail-client/sylpheed
+  MissingSlotDep: version 3.4.2: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
 
 mail-client/trojita
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
@@ -1383,11 +1537,23 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : refetch
 
 dev-games/aseprite
+  MissingSlotDep: version 0.9.5-r1: 'virtual/jpeg' matches more than one slot: [ 0, 62 ]
+  MissingSlotDep: version 1.0.6: 'virtual/jpeg' matches more than one slot: [ 0, 62 ]
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  MissingSlotDep: version 9999: 'virtual/jpeg' matches more than one slot: [ 0, 62 ]
   DroppedKeywordWarning: version 1.0.6: keywords dropped: amd64, x86
 
+dev-games/cegui
+  MissingSlotDep: version 0.6.2b: 'dev-lang/lua' matches more than one slot: [ 0, 5.1, 5.2 ]
+  MissingSlotDep: version 0.8.4: 'dev-lang/lua' matches more than one slot: [ 0, 5.1, 5.2 ]
+
 dev-games/clanlib
+  MissingSlotDep: version 0.8.1: 'media-libs/libpng' matches more than one slot: [ 0, 1.2, 1.5 ]
+  MissingSlotDep: version 0.8.1: 'virtual/jpeg' matches more than one slot: [ 0, 62 ]
   DeprecatedEAPI: version 2.3.7: uses deprecated EAPI: 4
+
+dev-games/crystalspace
+  MissingSlotDep: version 2.0: 'virtual/jpeg' matches more than one slot: [ 0, 62 ]
 
 dev-games/etrophy
   DeprecatedEAPI: version 0.5.1: uses deprecated EAPI: 3
@@ -1400,6 +1566,10 @@ dev-games/irrlicht
 
 dev-games/ois
   DeprecatedEAPI: version 1.3: uses deprecated EAPI: 4
+
+dev-games/openscenegraph
+  MissingSlotDep: version 3.2.1: 'virtual/jpeg' matches more than one slot: [ 0, 62 ]
+  MissingSlotDep: version 3.2.1-r1: 'virtual/jpeg' matches more than one slot: [ 0, 62 ]
 
 dev-games/wfmath
   DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 4
@@ -1414,6 +1584,11 @@ x11-base/xorg-drivers
   DeprecatedEAPI: version 1.12: uses deprecated EAPI: 4
   DeprecatedEAPI: version 1.13: uses deprecated EAPI: 4
 
+x11-base/xorg-server
+  MissingSlotDep: version 1.12.4-r5: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+  MissingSlotDep: version 1.15.2-r2: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+  MissingSlotDep: version 1.16.4: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+
 x11-base/xorg-x11
   DeprecatedEAPI: version 7.4-r2: uses deprecated EAPI: 2
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1422,3 +1597,10 @@ WARNING pkgcore: metadata.dtd cannot be opened from
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
+
+app-antivirus/clamav
+  MissingSlotDep: version 0.98.5: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+  MissingSlotDep: version 0.98.5: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
+  MissingSlotDep: version 0.98.6: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+  MissingSlotDep: version 0.98.6: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
+  MissingSlotDep: version 0.98.7: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
