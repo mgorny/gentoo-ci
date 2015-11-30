@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 5 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-libs/*' 'app-misc/*' 'app-leechcraft/*' 'net-wireless/*' 'games-fps/*' 'sci-electronics/*' 'gnome-base/*' 'app-forensics/*' 'sci-astronomy/*' 'net-news/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-libs/*' 'app-misc/*' 'app-leechcraft/*' 'net-wireless/*' 'games-fps/*' 'net-irc/*' 'gnome-base/*' 'app-forensics/*' 'sci-astronomy/*' 'net-news/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 WARNING:pkgcore:disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
@@ -1313,7 +1313,7 @@ error: mirror://berlios/lcd-stuff/lcd-stuff-0.1.6.tar.bz2 is unparseable
 flagged token- uri mirror://berlios/lcd-stuff/lcd-stuff-0.1.6.tar.bz2 isn't a known mirror tier
   DeprecatedEAPI: version 0.1.6: uses deprecated EAPI: 2
 ERROR root: check <pkgcheck.repo_metadata.ManifestReport object at
-          : 0x7f2c8dcb8a10> raised
+          : 0x7f0600a109d0> raised
 ERROR root: Traceback (most recent call last):
 ERROR root:   File
           : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/bas
@@ -2105,7 +2105,7 @@ error: mirror://berlios/bcm43xx/bcm43xx-fwcutter-006.tar.bz2 is unparseable: uri
 flagged token- mirror://berlios/bcm43xx/bcm43xx-fwcutter-006.tar.bz2
   DeprecatedEAPI: version 006: uses deprecated EAPI: 0
 ERROR root: check <pkgcheck.repo_metadata.ManifestReport object at
-          : 0x7f2c8dcb8a10> raised
+          : 0x7f0600a109d0> raised
 ERROR root: Traceback (most recent call last):
 ERROR root:   File
           : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/bas
@@ -2233,7 +2233,7 @@ flagged token- uri mirror://berlios/pythonwifi/python-wifi-0.5.0.tar.bz2 isn't a
   DeprecatedEclass: version 0.5.0-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.5.0-r1: uses deprecated EAPI: 3
 ERROR root: check <pkgcheck.repo_metadata.ManifestReport object at
-          : 0x7f2c8dcb8a10> raised
+          : 0x7f0600a109d0> raised
 ERROR root: Traceback (most recent call last):
 ERROR root:   File
           : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/bas
@@ -2335,8 +2335,8 @@ games-fps/doom3-eventhorizon
 
 games-fps/doom3-hellcampaign
   DeprecatedEAPI: version 1-r1: uses deprecated EAPI: 2
-  MissingChksum: version 1-r1: "hardcorehellcampaign_patch.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1-r1: "sp_hc_final.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1-r1: "hardcorehellcampaign_patch.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 games-fps/doom3-inhell
   DeprecatedEAPI: version 1.1-r1: uses deprecated EAPI: 2
@@ -2348,8 +2348,8 @@ games-fps/doom3-lms
 
 games-fps/doom3-mitm
   DeprecatedEAPI: version 20070129: uses deprecated EAPI: 2
-  MissingChksum: version 20070129: "mitm_4.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 20070129: "mitm5.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 20070129: "mitm_4.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 games-fps/doom3-roe
   DeprecatedEAPI: version 1: uses deprecated EAPI: 0
@@ -2506,9 +2506,9 @@ games-fps/ut2004-airbuccaneers
 games-fps/ut2004-alienswarm
   DeprecatedEAPI: version 1.32: uses deprecated EAPI: 2
   MissingChksum: version 1.32: "phalanxaswcampaign10.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 1.32: "AlienSwarm-v13.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 1.32: "TelicCampaign_1_1.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 1.32: "AlienSwarm_13_or_131_to_132_Patch.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 1.32: "TelicCampaign_1_1.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 1.32: "AlienSwarm-v13.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 games-fps/ut2004-bonuspack-cbp1
   DeprecatedEAPI: version 1-r2: uses deprecated EAPI: 2
@@ -2567,8 +2567,8 @@ games-fps/ut2004-ultraduel
 
 games-fps/ut2004-unwheel
   DeprecatedEAPI: version 0_beta5: uses deprecated EAPI: 2
-  MissingChksum: version 0_beta5: "UnWheel-R5_BonusPack-Volume_1.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 0_beta5: "unwheel_r5.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0_beta5: "UnWheel-R5_BonusPack-Volume_1.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 games-fps/warsow
   MissingSlotDep: version 1.5.1-r1: 'virtual/jpeg' matches more than one slot: [ 0, 62 ]
@@ -2586,136 +2586,176 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-sci-electronics/alliance
-  DeprecatedEAPI: version 5.0.20110203: uses deprecated EAPI: 4
+net-irc/anope
+  DeprecatedEAPI: version 1.8.7-r2: uses deprecated EAPI: 4
 
-sci-electronics/drawtiming
-  DeprecatedEAPI: version 0.7.1: uses deprecated EAPI: 3
+net-irc/asuka
+  DeprecatedEAPI: version 1.2.1: uses deprecated EAPI: 0
 
-sci-electronics/electric
-  DeprecatedEAPI: version 8.09: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 8.11: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 9.02: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 9.03: uses deprecated EAPI: 0
-
-sci-electronics/electronics-menu
-  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 3
-
-sci-electronics/freehdl
-  DeprecatedEAPI: version 0.0.7: uses deprecated EAPI: 0
-
-sci-electronics/geda
-  DeprecatedEAPI: version 1.8.1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.8.2: uses deprecated EAPI: 4
-
-sci-electronics/geda-suite
-  DeprecatedEAPI: version 20110427: uses deprecated EAPI: 0
-
-sci-electronics/geda-xgsch2pcb
-  DeprecatedEclass: version 0.1.3-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.1.3-r2: uses deprecated EAPI: 3
-
-sci-electronics/gerbv
-  DeprecatedEAPI: version 2.6.0: uses deprecated EAPI: 4
-
-sci-electronics/ghdl
-  DeprecatedEAPI: version 0.29: uses deprecated EAPI: 3
-
-sci-electronics/gnetman
-  DeprecatedEAPI: version 0.0.1_pre20110124: uses deprecated EAPI: 4
-
-sci-electronics/gnucap
-  DeprecatedEAPI: version 0.35.20091207: uses deprecated EAPI: 2
-
-sci-electronics/gplcver
-  DeprecatedEAPI: version 2.11a: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.12a: uses deprecated EAPI: 0
-
-sci-electronics/gresistor
-  DeprecatedEclass: version 0.0.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  NonExistentDeps: version 0.0.1: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
-  NonExistentDeps: version 0.0.1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
-  DeprecatedEAPI: version 0.0.1: uses deprecated EAPI: 3
-  DeprecatedEclass: version 0.0.1-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  NonExistentDeps: version 0.0.1-r1: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
-  NonExistentDeps: version 0.0.1-r1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
-  DeprecatedEAPI: version 0.0.1-r1: uses deprecated EAPI: 4
-
-sci-electronics/gspeakers
-  DeprecatedEAPI: version 0.11-r1: uses deprecated EAPI: 4
-
-sci-electronics/gspiceui
-  DeprecatedEAPI: version 0.9.99: uses deprecated EAPI: 2
-
-sci-electronics/gtkwave
-  DeprecatedEAPI: version 3.3.45: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 3.3.47: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 3.3.59: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 3.3.64: uses deprecated EAPI: 4
-
-sci-electronics/irsim
-  DeprecatedEAPI: version 9.7.79: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 9.7.87: uses deprecated EAPI: 4
-
-sci-electronics/iverilog
-  DeprecatedEAPI: version 0.9.6: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.9.7: uses deprecated EAPI: 4
-
-sci-electronics/kicad
-  WhitespaceFound: version 4.0.0_rc1: ebuild has trailing whitespace on lines 98, 111
-  WhitespaceFound: version 4.0.0_rc2: ebuild has trailing whitespace on lines 98, 111
-
-sci-electronics/magic
-  MissingSlotDep: version 7.5.202-r1: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
-  MissingSlotDep: version 7.5.231: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
-  MissingSlotDep: version 8.0.138: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
-  MissingSlotDep: version 8.0.207: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
-
-sci-electronics/netgen
-  DeprecatedEAPI: version 1.3.11: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.4.52: uses deprecated EAPI: 4
-
-sci-electronics/ngspice
-  DeprecatedEAPI: version 26: uses deprecated EAPI: 3
-
-sci-electronics/oregano
-  DeprecatedEAPI: version 0.82: uses deprecated EAPI: 4
-
-sci-electronics/osqoop
-  DeprecatedEAPI: version 1.1.1: uses deprecated EAPI: 4
-
-sci-electronics/plcedit
-  DeprecatedEAPI: version 2.2.1: uses deprecated EAPI: 2
-
-sci-electronics/puff
-  DeprecatedEAPI: version 20100127: uses deprecated EAPI: 2
-
-sci-electronics/sigrok-cli
+net-irc/atheme-services
+  MissingSlotDep: version 6.0.11-r1: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+  MissingSlotDep: version 7.0.6-r1: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+  MissingSlotDep: version 9999: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-sci-electronics/spice
-  DeprecatedEAPI: version 3.5.5-r1: uses deprecated EAPI: 0
+net-irc/bip
+  DeprecatedEAPI: version 0.8.8-r1: uses deprecated EAPI: 2
 
-sci-electronics/systemc
-  DeprecatedEAPI: version 2.2.0-r2: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 2.3.0: uses deprecated EAPI: 4
+net-irc/bnc
+  DeprecatedEAPI: version 2.9.4: uses deprecated EAPI: 0
 
-sci-electronics/vbs
-  DeprecatedEAPI: version 1.4.0: uses deprecated EAPI: 2
+net-irc/bobotpp
+  DeprecatedEAPI: version 2.2.3: uses deprecated EAPI: 4
 
-sci-electronics/voacapl
-  DeprecatedEAPI: version 0.5.8: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.6.4: uses deprecated EAPI: 4
+net-irc/charybdis
+  DeprecatedEAPI: version 3.3.0: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 3.4.2: uses deprecated EAPI: 4
 
-sci-electronics/xcircuit
-  DeprecatedEAPI: version 3.7.48: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 3.7.49: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 3.7.50: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 3.8.39: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 3.8.40: uses deprecated EAPI: 4
+net-irc/dccserver
+  DeprecatedEAPI: version 0.5: uses deprecated EAPI: 0
 
-sci-electronics/xnec2c
-  DeprecatedEAPI: version 2.8: uses deprecated EAPI: 4
+net-irc/dircproxy
+  DeprecatedEAPI: version 1.2.0_rc1: uses deprecated EAPI: 0
+
+net-irc/eggdrop
+  DeprecatedEAPI: version 1.6.21-r1: uses deprecated EAPI: 4
+
+net-irc/eiwic
+  DeprecatedEAPI: version 1.1.4: uses deprecated EAPI: 4
+
+net-irc/epic4
+  DeprecatedEAPI: version 2.10.1: uses deprecated EAPI: 4
+
+net-irc/epic5
+  DeprecatedEAPI: version 1.1.10: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.1.10-r1: uses deprecated EAPI: 4
+
+net-irc/hexchat
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+net-irc/ii
+  DeprecatedEAPI: version 1.6: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.7: uses deprecated EAPI: 4
+
+net-irc/iip
+  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 2
+
+net-irc/irc-client
+  MetadataError: version 2.10.3_p7: attr(rdepends): blocks itself
+  DeprecatedEAPI: version 2.10.3_p7: uses deprecated EAPI: 0
+
+net-irc/irc-server
+  DeprecatedEAPI: version 2.11.1_p1-r2: uses deprecated EAPI: 0
+
+net-irc/ircii
+  DeprecatedEAPI: version 20110228: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 20111115: uses deprecated EAPI: 4
+
+net-irc/ircmap
+  DeprecatedEAPI: version 0.99: uses deprecated EAPI: 0
+
+net-irc/ircservices
+  DeprecatedEAPI: version 5.1.24: uses deprecated EAPI: 4
+
+net-irc/irker
+  DeprecatedEclass: version 1.19: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.19: uses deprecated EAPI: 4
+  DeprecatedEclass: version 1.20: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.20: uses deprecated EAPI: 4
+
+net-irc/iroffer-dinoex
+  MissingSlotDep: version 3.29: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+  MissingSlotDep: version 3.29: 'dev-lang/ruby' matches more than one slot: [ 1.9, 2.0, 2.1, 2.2 ]
+
+net-irc/irssi
+  MissingSlotDep: version 0.8.17: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
+  MissingSlotDep: version 9999: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
+
+net-irc/irssi-xmpp
+  DeprecatedEAPI: version 0.52: uses deprecated EAPI: 4
+
+net-irc/irssistats
+  DeprecatedEAPI: version 0.75: uses deprecated EAPI: 0
+
+net-irc/jircii
+  DeprecatedEAPI: version 41: uses deprecated EAPI: 0
+
+net-irc/kvirc
+  MissingSlotDep: version 4.4_pre6250: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+  DeprecatedEclass: version 4.4_pre6250: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  MissingSlotDep: version 9999: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+net-irc/loqui
+  DeprecatedEAPI: version 0.5.4: uses deprecated EAPI: 4
+
+net-irc/miau
+  DeprecatedEAPI: version 0.6.6: uses deprecated EAPI: 0
+
+net-irc/muh
+  DeprecatedEAPI: version 2.2a: uses deprecated EAPI: 0
+
+net-irc/nebula
+  DeprecatedEAPI: version 0.5: uses deprecated EAPI: 4
+
+net-irc/ngircd
+  MissingSlotDep: version 20.3: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+
+net-irc/ninja
+  MissingSlotDep: version 1.5.9_pre14-r1: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
+  MissingSlotDep: version 1.5.9_pre14-r1: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+
+net-irc/onis
+  DeprecatedEAPI: version 0.8.2: uses deprecated EAPI: 0
+
+net-irc/psybnc
+  DeprecatedEAPI: version 2.3.2.9-r2: uses deprecated EAPI: 2
+
+net-irc/ptlink-opm
+  DeprecatedEAPI: version 1.3.1: uses deprecated EAPI: 0
+
+net-irc/quassel
+  MissingSlotDep: version 0.12.2: 'kde-frameworks/oxygen-icons' matches more than one slot: [ 4, 5 ]
+  MissingSlotDep: version 0.12.2-r2: 'kde-frameworks/oxygen-icons' matches more than one slot: [ 4, 5 ]
+  MissingSlotDep: version 9999: 'kde-frameworks/oxygen-icons' matches more than one slot: [ 4, 5 ]
+
+net-irc/rhapsody
+  DeprecatedEAPI: version 0.28b: uses deprecated EAPI: 0
+
+net-irc/scrollz
+  DeprecatedEAPI: version 2.1: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 2.2: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 2.2.1: uses deprecated EAPI: 4
+
+net-irc/shadowircd
+  DeprecatedEAPI: version 6.3.3: uses deprecated EAPI: 4
+
+net-irc/sic
+  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 4
+
+net-irc/smuxi
+  DeprecatedEclass: version 0.8.10.1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 0.8.10.1: uses deprecated EAPI: 4
+
+net-irc/srvx
+  DeprecatedEAPI: version 1.3.1: uses deprecated EAPI: 0
+
+net-irc/ultimate
+  DeprecatedEAPI: version 3.0.2-r2: uses deprecated EAPI: 4
+
+net-irc/unrealircd
+  DeprecatedEAPI: version 3.2.10.4: uses deprecated EAPI: 4
+
+net-irc/weechat
+  MissingSlotDep: version 1.1.1: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
+  MissingSlotDep: version 1.2: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
+  MissingSlotDep: version 1.3: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
+  MissingSlotDep: version 9999: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
+
+net-irc/xaric
+  MissingSlotDep: version 0.13.6: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
+  MissingSlotDep: version 0.13.6: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch

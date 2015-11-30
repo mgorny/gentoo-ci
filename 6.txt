@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 6 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-java/*' 'media-video/*' 'media-fonts/*' 'net-mail/*' 'x11-wm/*' 'net-irc/*' 'net-print/*' 'net-nds/*' 'mail-mta/*' 'games-simulation/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-java/*' 'media-video/*' 'media-fonts/*' 'net-mail/*' 'x11-wm/*' 'www-servers/*' 'net-print/*' 'net-nds/*' 'mail-mta/*' 'games-simulation/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 WARNING:pkgcore:disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
@@ -469,31 +469,31 @@ dev-java/jdbc-oracle-bin
   DeprecatedEAPI: version 10.2.0.3: uses deprecated EAPI: 0
   DeprecatedEAPI: version 10.2.0.4: uses deprecated EAPI: 0
   MissingChksum: version 9.2.0.8: "jdbc-oracle-bin-9.2.0.8-ocrs12.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 9.2.0.8: "jdbc-oracle-bin-9.2.0.8-ojdbc14_g.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 9.2.0.8: "jdbc-oracle-bin-9.2.0.8-ojdbc14.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 9.2.0.8: "jdbc-oracle-bin-9.2.0.8-ojdbc14_g.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 9.2.0.8: "jdbc-oracle-bin-9.2.0.8-javadoc.tar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 10.1.0.5: "jdbc-oracle-bin-10.1.0.5-ojdbc14_g.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 10.1.0.5: "jdbc-oracle-bin-10.1.0.5-demo.tar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 10.1.0.5: "jdbc-oracle-bin-10.1.0.5-orai18n.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 10.1.0.5: "jdbc-oracle-bin-10.1.0.5-demo.tar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 10.1.0.5: "jdbc-oracle-bin-10.1.0.5-ojdbc14dms.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 10.1.0.5: "jdbc-oracle-bin-10.1.0.5-ocrs12.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 10.1.0.5: "jdbc-oracle-bin-10.1.0.5-javadoc.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 10.1.0.5: "jdbc-oracle-bin-10.1.0.5-ojdbc14.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 10.1.0.5: "jdbc-oracle-bin-10.1.0.5-ojdbc14dms_g.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 10.1.0.5: "jdbc-oracle-bin-10.1.0.5-javadoc.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 10.2.0.3: "jdbc-oracle-bin-10.2.0.3-ojdbc14dms.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 10.2.0.3: "jdbc-oracle-bin-10.2.0.1-javadoc.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 10.2.0.3: "jdbc-oracle-bin-10.2.0.3-ojdbc14.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 10.2.0.3: "jdbc-oracle-bin-10.2.0.3-demo.tar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 10.2.0.3: "jdbc-oracle-bin-10.2.0.3-ojdbc14_g.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 10.2.0.3: "jdbc-oracle-bin-10.2.0.3-ons.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 10.2.0.3: "jdbc-oracle-bin-10.2.0.3-ojdbc14dms_g.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 10.1.0.5: "jdbc-oracle-bin-10.1.0.5-ojdbc14_g.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 10.1.0.5: "jdbc-oracle-bin-10.1.0.5-ocrs12.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 10.2.0.3: "jdbc-oracle-bin-10.2.0.3-orai18n.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 10.2.0.4: "jdbc-oracle-bin-10.2.0.4-ojdbc14dms_g.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 10.2.0.3: "jdbc-oracle-bin-10.2.0.3-ojdbc14dms_g.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 10.2.0.3: "jdbc-oracle-bin-10.2.0.3-ojdbc14_g.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 10.2.0.3: "jdbc-oracle-bin-10.2.0.1-javadoc.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 10.2.0.3: "jdbc-oracle-bin-10.2.0.3-ojdbc14dms.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 10.2.0.3: "jdbc-oracle-bin-10.2.0.3-demo.tar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 10.2.0.3: "jdbc-oracle-bin-10.2.0.3-ons.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 10.2.0.3: "jdbc-oracle-bin-10.2.0.3-ojdbc14.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 10.2.0.4: "jdbc-oracle-bin-10.2.0.4-ojdbc14dms.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 10.2.0.4: "jdbc-oracle-bin-10.2.0.4-ojdbc14_g.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 10.2.0.4: "jdbc-oracle-bin-10.2.0.4-demo.tar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 10.2.0.4: "jdbc-oracle-bin-10.2.0.4-orai18n.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 10.2.0.4: "jdbc-oracle-bin-10.2.0.4-ojdbc14.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 10.2.0.4: "jdbc-oracle-bin-10.2.0.4-ojdbc14_g.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 10.2.0.4: "jdbc-oracle-bin-10.2.0.4-orai18n.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 10.2.0.4: "jdbc-oracle-bin-10.2.0.4-ojdbc14dms_g.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 dev-java/jdbm
   DeprecatedEAPI: version 0.12-r2: uses deprecated EAPI: 0
@@ -1033,8 +1033,8 @@ dev-java/sun-dtdparser
 
 dev-java/sun-j2ee-deployment-bin
   DeprecatedEAPI: version 1.1-r2: uses deprecated EAPI: 0
-  MissingChksum: version 1.1-r2: "j2ee_deployment-1_1-fr-class.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 1.1-r2: "j2ee_deployment-1_1-fr-doc.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 1.1-r2: "j2ee_deployment-1_1-fr-class.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 dev-java/sun-jacc-api
   DeprecatedEAPI: version 20070102: uses deprecated EAPI: 0
@@ -1050,8 +1050,8 @@ dev-java/sun-jai-bin
 dev-java/sun-java3d-bin
   DeprecatedEAPI: version 1.3.2-r1: uses deprecated EAPI: 0
   DeprecatedEAPI: version 1.4.0_pre5-r1: uses deprecated EAPI: 0
-  MissingChksum: version 1.3.2-r1: "java3d-1_3_2-linux-amd64.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1.3.2-r1: "java3d-1_3_2-linux-i586.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.3.2-r1: "java3d-1_3_2-linux-amd64.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1.4.0_pre5-r1: "java3d-1_4_0-build5-linux-i586.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 dev-java/sun-javamail
@@ -2566,176 +2566,41 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-net-irc/anope
-  DeprecatedEAPI: version 1.8.7-r2: uses deprecated EAPI: 4
+www-servers/bozohttpd
+  MissingSlotDep: version 20140708: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
 
-net-irc/asuka
-  DeprecatedEAPI: version 1.2.1: uses deprecated EAPI: 0
+www-servers/fnord
+  DeprecatedEAPI: version 1.10-r2: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 1.11: uses deprecated EAPI: 3
 
-net-irc/atheme-services
-  MissingSlotDep: version 6.0.11-r1: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
-  MissingSlotDep: version 7.0.6-r1: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
-  MissingSlotDep: version 9999: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+www-servers/gatling
+  DeprecatedEAPI: version 0.12-r2: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.13: uses deprecated EAPI: 4
+
+www-servers/lighttpd
+  DeprecatedEAPI: version 1.4.35: uses deprecated EAPI: 4
+  SizeViolation: "files/lighttpd-1.4.29-mod_uploadprogress.patch" exceeds 20k in size; 22472 bytes total
+
+www-servers/monkeyd
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-net-irc/bip
-  DeprecatedEAPI: version 0.8.8-r1: uses deprecated EAPI: 2
+www-servers/pound
+  DeprecatedEAPI: version 2.6: uses deprecated EAPI: 2
+  MissingSlotDep: version 2.7d: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+  MissingSlotDep: version 2.7f: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
 
-net-irc/bnc
-  DeprecatedEAPI: version 2.9.4: uses deprecated EAPI: 0
+www-servers/spawn-fcgi
+  DeprecatedEAPI: version 1.6.3-r1: uses deprecated EAPI: 4
 
-net-irc/bobotpp
-  DeprecatedEAPI: version 2.2.3: uses deprecated EAPI: 4
-
-net-irc/charybdis
-  DeprecatedEAPI: version 3.3.0: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 3.4.2: uses deprecated EAPI: 4
-
-net-irc/dccserver
-  DeprecatedEAPI: version 0.5: uses deprecated EAPI: 0
-
-net-irc/dircproxy
-  DeprecatedEAPI: version 1.2.0_rc1: uses deprecated EAPI: 0
-
-net-irc/eggdrop
-  DeprecatedEAPI: version 1.6.21-r1: uses deprecated EAPI: 4
-
-net-irc/eiwic
-  DeprecatedEAPI: version 1.1.4: uses deprecated EAPI: 4
-
-net-irc/epic4
-  DeprecatedEAPI: version 2.10.1: uses deprecated EAPI: 4
-
-net-irc/epic5
-  DeprecatedEAPI: version 1.1.10: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.1.10-r1: uses deprecated EAPI: 4
-
-net-irc/hexchat
+www-servers/thttpd
+  DeprecatedEAPI: version 2.26.4-r3: uses deprecated EAPI: 4
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-net-irc/ii
-  DeprecatedEAPI: version 1.6: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.7: uses deprecated EAPI: 4
+www-servers/tomcat
+  DroppedKeywordWarning: version 8.0.26: keywords dropped: ppc, ppc64
 
-net-irc/iip
-  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 2
-
-net-irc/irc-client
-  MetadataError: version 2.10.3_p7: attr(rdepends): blocks itself
-  DeprecatedEAPI: version 2.10.3_p7: uses deprecated EAPI: 0
-
-net-irc/irc-server
-  DeprecatedEAPI: version 2.11.1_p1-r2: uses deprecated EAPI: 0
-
-net-irc/ircii
-  DeprecatedEAPI: version 20110228: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 20111115: uses deprecated EAPI: 4
-
-net-irc/ircmap
-  DeprecatedEAPI: version 0.99: uses deprecated EAPI: 0
-
-net-irc/ircservices
-  DeprecatedEAPI: version 5.1.24: uses deprecated EAPI: 4
-
-net-irc/irker
-  DeprecatedEclass: version 1.19: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 1.19: uses deprecated EAPI: 4
-  DeprecatedEclass: version 1.20: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 1.20: uses deprecated EAPI: 4
-
-net-irc/iroffer-dinoex
-  MissingSlotDep: version 3.29: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
-  MissingSlotDep: version 3.29: 'dev-lang/ruby' matches more than one slot: [ 1.9, 2.0, 2.1, 2.2 ]
-
-net-irc/irssi
-  MissingSlotDep: version 0.8.17: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
-  MissingSlotDep: version 9999: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
-
-net-irc/irssi-xmpp
-  DeprecatedEAPI: version 0.52: uses deprecated EAPI: 4
-
-net-irc/irssistats
-  DeprecatedEAPI: version 0.75: uses deprecated EAPI: 0
-
-net-irc/jircii
-  DeprecatedEAPI: version 41: uses deprecated EAPI: 0
-
-net-irc/kvirc
-  MissingSlotDep: version 4.4_pre6250: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
-  DeprecatedEclass: version 4.4_pre6250: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  MissingSlotDep: version 9999: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-
-net-irc/loqui
-  DeprecatedEAPI: version 0.5.4: uses deprecated EAPI: 4
-
-net-irc/miau
-  DeprecatedEAPI: version 0.6.6: uses deprecated EAPI: 0
-
-net-irc/muh
-  DeprecatedEAPI: version 2.2a: uses deprecated EAPI: 0
-
-net-irc/nebula
-  DeprecatedEAPI: version 0.5: uses deprecated EAPI: 4
-
-net-irc/ngircd
-  MissingSlotDep: version 20.3: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
-
-net-irc/ninja
-  MissingSlotDep: version 1.5.9_pre14-r1: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
-  MissingSlotDep: version 1.5.9_pre14-r1: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
-
-net-irc/onis
-  DeprecatedEAPI: version 0.8.2: uses deprecated EAPI: 0
-
-net-irc/psybnc
-  DeprecatedEAPI: version 2.3.2.9-r2: uses deprecated EAPI: 2
-
-net-irc/ptlink-opm
-  DeprecatedEAPI: version 1.3.1: uses deprecated EAPI: 0
-
-net-irc/quassel
-  MissingSlotDep: version 0.12.2: 'kde-frameworks/oxygen-icons' matches more than one slot: [ 4, 5 ]
-  MissingSlotDep: version 0.12.2-r2: 'kde-frameworks/oxygen-icons' matches more than one slot: [ 4, 5 ]
-  MissingSlotDep: version 9999: 'kde-frameworks/oxygen-icons' matches more than one slot: [ 4, 5 ]
-
-net-irc/rhapsody
-  DeprecatedEAPI: version 0.28b: uses deprecated EAPI: 0
-
-net-irc/scrollz
-  DeprecatedEAPI: version 2.1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 2.2: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 2.2.1: uses deprecated EAPI: 4
-
-net-irc/shadowircd
-  DeprecatedEAPI: version 6.3.3: uses deprecated EAPI: 4
-
-net-irc/sic
-  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 4
-
-net-irc/smuxi
-  DeprecatedEclass: version 0.8.10.1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DeprecatedEAPI: version 0.8.10.1: uses deprecated EAPI: 4
-
-net-irc/srvx
-  DeprecatedEAPI: version 1.3.1: uses deprecated EAPI: 0
-
-net-irc/ultimate
-  DeprecatedEAPI: version 3.0.2-r2: uses deprecated EAPI: 4
-
-net-irc/unrealircd
-  DeprecatedEAPI: version 3.2.10.4: uses deprecated EAPI: 4
-
-net-irc/weechat
-  MissingSlotDep: version 1.1.1: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
-  MissingSlotDep: version 1.2: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
-  MissingSlotDep: version 1.3: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
-  MissingSlotDep: version 9999: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
-
-net-irc/xaric
-  MissingSlotDep: version 0.13.6: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
-  MissingSlotDep: version 0.13.6: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+www-servers/xsp
+  WhitespaceFound: version 2014.12-r2014120900: ebuild has trailing whitespace on lines 82, 84
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch

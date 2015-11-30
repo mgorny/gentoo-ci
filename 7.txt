@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 7 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'media-libs/*' 'sci-libs/*' 'app-emacs/*' 'app-editors/*' 'games-arcade/*' 'www-servers/*' 'net-dialup/*' 'app-pda/*' 'perl-core/*' 'games-roguelike/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'media-libs/*' 'sci-libs/*' 'app-emacs/*' 'app-editors/*' 'games-arcade/*' 'sci-electronics/*' 'net-dialup/*' 'app-pda/*' 'perl-core/*' 'games-roguelike/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 WARNING:pkgcore:disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
@@ -146,7 +146,7 @@ flagged token- uri mirror://bitbucket/libgd/gd-libgd/downloads/libgd-2.1.1.tar.x
 error: mirror://bitbucket/libgd/gd-libgd/downloads/libgd-2.1.1.tar.xz is unparseable
 flagged token- uri mirror://bitbucket/libgd/gd-libgd/downloads/libgd-2.1.1.tar.xz isn't a known mirror tier
 ERROR root: check <pkgcheck.repo_metadata.ManifestReport object at
-          : 0x7fea32829290> raised
+          : 0x7fd47fcbd2d0> raised
 ERROR root: Traceback (most recent call last):
 ERROR root:   File
           : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/bas
@@ -662,7 +662,7 @@ error: mirror://berlios/phat/phat-0.4.1.tar.gz is unparseable
 flagged token- uri mirror://berlios/phat/phat-0.4.1.tar.gz isn't a known mirror tier
   DeprecatedEAPI: version 0.4.1: uses deprecated EAPI: 2
 ERROR root: check <pkgcheck.repo_metadata.ManifestReport object at
-          : 0x7fea32829290> raised
+          : 0x7fd47fcbd2d0> raised
 ERROR root: Traceback (most recent call last):
 ERROR root:   File
           : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/bas
@@ -859,11 +859,11 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : refetch
 
 sci-libs/acml
+  MissingChksum: version 4.1.0-r2: "acml-4-1-0-gfortran-64bit.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 4.1.0-r2: "acml-4-1-0-gfortran-32bit.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 4.1.0-r2: "acml-4-1-0-ifort-64bit.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 4.1.0-r2: "acml-4-1-0-ifort-32bit.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 4.1.0-r2: "acml-4-1-0-gfortran-64bit.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 4.1.0-r2: "acml-4-1-0-gfortran-64bit-int64.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 4.1.0-r2: "acml-4-1-0-ifort-32bit.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 4.1.0-r2: "acml-4-1-0-ifort-64bit-int64.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 sci-libs/armadillo
@@ -1674,41 +1674,130 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-www-servers/bozohttpd
-  MissingSlotDep: version 20140708: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+sci-electronics/alliance
+  DeprecatedEAPI: version 5.0.20110203: uses deprecated EAPI: 4
 
-www-servers/fnord
-  DeprecatedEAPI: version 1.10-r2: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 1.11: uses deprecated EAPI: 3
+sci-electronics/drawtiming
+  DeprecatedEAPI: version 0.7.1: uses deprecated EAPI: 3
 
-www-servers/gatling
-  DeprecatedEAPI: version 0.12-r2: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.13: uses deprecated EAPI: 4
+sci-electronics/electric
+  DeprecatedEAPI: version 8.09: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 8.11: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.02: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.03: uses deprecated EAPI: 0
 
-www-servers/lighttpd
-  DeprecatedEAPI: version 1.4.35: uses deprecated EAPI: 4
-  SizeViolation: "files/lighttpd-1.4.29-mod_uploadprogress.patch" exceeds 20k in size; 22472 bytes total
+sci-electronics/electronics-menu
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 3
 
-www-servers/monkeyd
+sci-electronics/freehdl
+  DeprecatedEAPI: version 0.0.7: uses deprecated EAPI: 0
+
+sci-electronics/geda
+  DeprecatedEAPI: version 1.8.1: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.8.2: uses deprecated EAPI: 4
+
+sci-electronics/geda-suite
+  DeprecatedEAPI: version 20110427: uses deprecated EAPI: 0
+
+sci-electronics/geda-xgsch2pcb
+  DeprecatedEclass: version 0.1.3-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.1.3-r2: uses deprecated EAPI: 3
+
+sci-electronics/gerbv
+  DeprecatedEAPI: version 2.6.0: uses deprecated EAPI: 4
+
+sci-electronics/ghdl
+  DeprecatedEAPI: version 0.29: uses deprecated EAPI: 3
+
+sci-electronics/gnetman
+  DeprecatedEAPI: version 0.0.1_pre20110124: uses deprecated EAPI: 4
+
+sci-electronics/gnucap
+  DeprecatedEAPI: version 0.35.20091207: uses deprecated EAPI: 2
+
+sci-electronics/gplcver
+  DeprecatedEAPI: version 2.11a: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.12a: uses deprecated EAPI: 0
+
+sci-electronics/gresistor
+  DeprecatedEclass: version 0.0.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 0.0.1: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  NonExistentDeps: version 0.0.1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  DeprecatedEAPI: version 0.0.1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.0.1-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 0.0.1-r1: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  NonExistentDeps: version 0.0.1-r1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  DeprecatedEAPI: version 0.0.1-r1: uses deprecated EAPI: 4
+
+sci-electronics/gspeakers
+  DeprecatedEAPI: version 0.11-r1: uses deprecated EAPI: 4
+
+sci-electronics/gspiceui
+  DeprecatedEAPI: version 0.9.99: uses deprecated EAPI: 2
+
+sci-electronics/irsim
+  DeprecatedEAPI: version 9.7.79: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 9.7.87: uses deprecated EAPI: 4
+
+sci-electronics/iverilog
+  DeprecatedEAPI: version 0.9.6: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.9.7: uses deprecated EAPI: 4
+
+sci-electronics/kicad
+  WhitespaceFound: version 4.0.0_rc1: ebuild has trailing whitespace on lines 98, 111
+  WhitespaceFound: version 4.0.0_rc2: ebuild has trailing whitespace on lines 98, 111
+
+sci-electronics/magic
+  MissingSlotDep: version 7.5.202-r1: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
+  MissingSlotDep: version 7.5.231: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
+  MissingSlotDep: version 8.0.138: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
+  MissingSlotDep: version 8.0.207: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
+
+sci-electronics/netgen
+  DeprecatedEAPI: version 1.3.11: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.4.52: uses deprecated EAPI: 4
+
+sci-electronics/ngspice
+  DeprecatedEAPI: version 26: uses deprecated EAPI: 3
+
+sci-electronics/oregano
+  DeprecatedEAPI: version 0.82: uses deprecated EAPI: 4
+
+sci-electronics/osqoop
+  DeprecatedEAPI: version 1.1.1: uses deprecated EAPI: 4
+
+sci-electronics/plcedit
+  DeprecatedEAPI: version 2.2.1: uses deprecated EAPI: 2
+
+sci-electronics/puff
+  DeprecatedEAPI: version 20100127: uses deprecated EAPI: 2
+
+sci-electronics/sigrok-cli
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-www-servers/pound
-  DeprecatedEAPI: version 2.6: uses deprecated EAPI: 2
-  MissingSlotDep: version 2.7d: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
-  MissingSlotDep: version 2.7f: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+sci-electronics/spice
+  DeprecatedEAPI: version 3.5.5-r1: uses deprecated EAPI: 0
 
-www-servers/spawn-fcgi
-  DeprecatedEAPI: version 1.6.3-r1: uses deprecated EAPI: 4
+sci-electronics/systemc
+  DeprecatedEAPI: version 2.2.0-r2: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 2.3.0: uses deprecated EAPI: 4
 
-www-servers/thttpd
-  DeprecatedEAPI: version 2.26.4-r3: uses deprecated EAPI: 4
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+sci-electronics/vbs
+  DeprecatedEAPI: version 1.4.0: uses deprecated EAPI: 2
 
-www-servers/tomcat
-  DroppedKeywordWarning: version 8.0.26: keywords dropped: ppc, ppc64
+sci-electronics/voacapl
+  DeprecatedEAPI: version 0.5.8: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.4: uses deprecated EAPI: 4
 
-www-servers/xsp
-  WhitespaceFound: version 2014.12-r2014120900: ebuild has trailing whitespace on lines 82, 84
+sci-electronics/xcircuit
+  DeprecatedEAPI: version 3.7.48: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 3.7.49: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 3.7.50: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 3.8.39: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 3.8.40: uses deprecated EAPI: 4
+
+sci-electronics/xnec2c
+  DeprecatedEAPI: version 2.8: uses deprecated EAPI: 4
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
