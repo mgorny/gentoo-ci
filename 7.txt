@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 7 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'media-libs/*' 'sci-libs/*' 'app-emacs/*' 'app-editors/*' 'games-arcade/*' 'sci-electronics/*' 'net-dialup/*' 'app-pda/*' 'perl-core/*' 'games-roguelike/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'media-libs/*' 'sci-libs/*' 'app-emacs/*' 'app-editors/*' 'games-arcade/*' 'sci-electronics/*' 'net-dialup/*' 'app-pda/*' 'mail-mta/*' 'games-roguelike/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 WARNING:pkgcore:disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
@@ -146,7 +146,7 @@ flagged token- uri mirror://bitbucket/libgd/gd-libgd/downloads/libgd-2.1.1.tar.x
 error: mirror://bitbucket/libgd/gd-libgd/downloads/libgd-2.1.1.tar.xz is unparseable
 flagged token- uri mirror://bitbucket/libgd/gd-libgd/downloads/libgd-2.1.1.tar.xz isn't a known mirror tier
 ERROR root: check <pkgcheck.repo_metadata.ManifestReport object at
-          : 0x7f5ae2208a50> raised
+          : 0x7fe17cc44310> raised
 ERROR root: Traceback (most recent call last):
 ERROR root:   File
           : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/bas
@@ -661,7 +661,7 @@ error: mirror://berlios/phat/phat-0.4.1.tar.gz is unparseable
 flagged token- uri mirror://berlios/phat/phat-0.4.1.tar.gz isn't a known mirror tier
   DeprecatedEAPI: version 0.4.1: uses deprecated EAPI: 2
 ERROR root: check <pkgcheck.repo_metadata.ManifestReport object at
-          : 0x7f5ae2208a50> raised
+          : 0x7fe17cc44310> raised
 ERROR root: Traceback (most recent call last):
 ERROR root:   File
           : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/bas
@@ -858,12 +858,12 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : refetch
 
 sci-libs/acml
-  MissingChksum: version 4.1.0-r2: "acml-4-1-0-ifort-32bit.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 4.1.0-r2: "acml-4-1-0-ifort-64bit-int64.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 4.1.0-r2: "acml-4-1-0-gfortran-64bit.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 4.1.0-r2: "acml-4-1-0-ifort-64bit.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 4.1.0-r2: "acml-4-1-0-gfortran-64bit-int64.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 4.1.0-r2: "acml-4-1-0-gfortran-32bit.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 4.1.0-r2: "acml-4-1-0-ifort-64bit.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 4.1.0-r2: "acml-4-1-0-ifort-64bit-int64.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 4.1.0-r2: "acml-4-1-0-ifort-32bit.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 4.1.0-r2: "acml-4-1-0-gfortran-64bit-int64.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 sci-libs/armadillo
   DeprecatedEAPI: version 3.4.4: uses deprecated EAPI: 4
@@ -2038,6 +2038,62 @@ WARNING pkgcore: metadata.dtd cannot be opened from
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
+
+mail-mta/courier
+  DeprecatedEAPI: version 0.71: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.74.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.74.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.74.1-r1: uses deprecated EAPI: 0
+  DroppedKeywordWarning: version 0.74.0: keywords dropped: alpha, ia64, ppc, sparc
+
+mail-mta/esmtp
+  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 0
+
+mail-mta/exim
+  MissingSlotDep: version 4.84: 'dev-db/postgresql' matches more than one slot: [ 9.0, 9.1, 9.2, 9.3, 9.4, 9.5, 9.6 ]
+  MissingSlotDep: version 4.84: 'dev-db/sqlite' matches more than one slot: [ 0, 3 ]
+  MissingSlotDep: version 4.84: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+  MissingSlotDep: version 4.85: 'dev-db/postgresql' matches more than one slot: [ 9.0, 9.1, 9.2, 9.3, 9.4, 9.5, 9.6 ]
+  MissingSlotDep: version 4.85: 'dev-db/sqlite' matches more than one slot: [ 0, 3 ]
+  MissingSlotDep: version 4.85: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+  MissingSlotDep: version 4.86: 'dev-db/postgresql' matches more than one slot: [ 9.0, 9.1, 9.2, 9.3, 9.4, 9.5, 9.6 ]
+  MissingSlotDep: version 4.86: 'dev-db/sqlite' matches more than one slot: [ 0, 3 ]
+  MissingSlotDep: version 4.86: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+  MissingSlotDep: version 4.86-r1: 'dev-db/postgresql' matches more than one slot: [ 9.0, 9.1, 9.2, 9.3, 9.4, 9.5, 9.6 ]
+  MissingSlotDep: version 4.86-r1: 'dev-db/sqlite' matches more than one slot: [ 0, 3 ]
+  MissingSlotDep: version 4.86-r2: 'dev-db/postgresql' matches more than one slot: [ 9.0, 9.1, 9.2, 9.3, 9.4, 9.5, 9.6 ]
+  MissingSlotDep: version 4.86-r2: 'dev-db/sqlite' matches more than one slot: [ 0, 3 ]
+  DroppedKeywordWarning: version 4.86-r2: keywords dropped: alpha, ia64, ppc, sparc
+
+mail-mta/mini-qmail
+  DeprecatedEAPI: version 1.05: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.05-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.06: uses deprecated EAPI: 0
+
+mail-mta/msmtp
+  MissingSlotDep: version 1.6.1: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+  MissingSlotDep: version 1.6.2: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+
+mail-mta/netqmail
+  DeprecatedEAPI: version 1.06: uses deprecated EAPI: 0
+  MissingSlotDep: version 1.06-r1: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+  MissingSlotDep: version 1.06-r2: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+
+mail-mta/postfix
+  DroppedKeywordWarning: version 2.11.7: keywords dropped: mips, s390
+
+mail-mta/qmail-ldap
+  DeprecatedEAPI: version 1.03-r8: uses deprecated EAPI: 0
+
+mail-mta/qpsmtpd
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DroppedKeywordWarning: version 0.95: keywords dropped: amd64, x86
+
+mail-mta/sendmail
+  MissingSlotDep: version 8.14.9: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+
+mail-mta/ssmtp
+  DeprecatedEAPI: version 2.64-r2: uses deprecated EAPI: 4
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
