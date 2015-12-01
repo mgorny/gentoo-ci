@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 9 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'net-misc/*' 'app-admin/*' 'sys-libs/*' 'x11-themes/*' 'net-dns/*' 'app-shells/*' 'net-firewall/*' 'app-accessibility/*' 'xfce-base/*' 'java-virtuals/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'net-misc/*' 'app-admin/*' 'sys-libs/*' 'x11-themes/*' 'net-dns/*' 'app-shells/*' 'net-proxy/*' 'app-accessibility/*' 'xfce-base/*' 'java-virtuals/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 WARNING:pkgcore:disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
@@ -335,9 +335,9 @@ net-misc/italc
 
 net-misc/ixp4xx
   DeprecatedEAPI: version 2.1: uses deprecated EAPI: 0
+  MissingChksum: version 2.1: "GPL_ixp400LinuxEthernetDriverPatch-1_5.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 2.1: "IPL_ixp400AccessLibrary-2_1.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 2.1: "IPL_ixp400NpeLibrary-2_1.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 2.1: "GPL_ixp400LinuxEthernetDriverPatch-1_5.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 net-misc/jigdo
   DeprecatedEAPI: version 0.7.3-r2: uses deprecated EAPI: 4
@@ -702,7 +702,7 @@ error: mirror://berlios/sipsak/sipsak-0.9.6-1.tar.gz is unparseable
 flagged token- uri mirror://berlios/sipsak/sipsak-0.9.6-1.tar.gz isn't a known mirror tier
   DeprecatedEAPI: version 0.9.6_p1: uses deprecated EAPI: 2
 ERROR root: check <pkgcheck.repo_metadata.ManifestReport object at
-          : 0x7fb2d95e87d0> raised
+          : 0x7fb2f0ff9210> raised
 ERROR root: Traceback (most recent call last):
 ERROR root:   File
           : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/bas
@@ -2059,72 +2059,75 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-net-firewall/arno-iptables-firewall
-  NonExistentDeps: version 2.0.1e: depset rdepends: nonexistent atoms [ <sys-apps/coreutils-8.20 ]
+net-proxy/3proxy
+  DeprecatedEAPI: version 0.5.3k: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.6.1: uses deprecated EAPI: 2
 
-net-firewall/arptables
-  DeprecatedEAPI: version 0.0.3.4-r2: uses deprecated EAPI: 2
+net-proxy/bfilter
+  DeprecatedEAPI: version 1.1.4-r1: uses deprecated EAPI: 4
 
-net-firewall/conntrack-tools
-  DroppedKeywordWarning: version 1.4.3: keywords dropped: alpha
+net-proxy/c-icap
+  MissingSlotDep: version 0.2.6: 'sys-libs/db' matches more than one slot: [ 1, 3, 4.2, 4.3, 4.4, 4.5, 4.6, 4.7, 4.8, 5.1, 5.3, 6.0, 6.1 ]
 
-net-firewall/dshieldpy
-  DeprecatedEclass: version 3.2-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 3.2-r1: uses deprecated EAPI: 4
+net-proxy/c-icap-modules
+  MissingSlotDep: version 0.2.4: 'sys-libs/db' matches more than one slot: [ 1, 3, 4.2, 4.3, 4.4, 4.5, 4.6, 4.7, 4.8, 5.1, 5.3, 6.0, 6.1 ]
 
-net-firewall/ebtables
-  DeprecatedEAPI: version 2.0.10.4: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 2.0.10.4-r1: uses deprecated EAPI: 4
+net-proxy/dante
+  DeprecatedEAPI: version 1.1.19-r4: uses deprecated EAPI: 0
 
-net-firewall/fwanalog
-  DeprecatedEAPI: version 0.6.4: uses deprecated EAPI: 0
+net-proxy/dnsproxy
+  DeprecatedEAPI: version 1.16-r1: uses deprecated EAPI: 4
 
-net-firewall/fwbuilder
-  DeprecatedEAPI: version 5.0.1.3592-r1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 5.1.0.3599: uses deprecated EAPI: 4
+net-proxy/haproxy
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-net-firewall/fwipsec
-  DeprecatedEAPI: version 0.4.2-r1: uses deprecated EAPI: 0
+net-proxy/http-replicator
+  DeprecatedEclass: version 3.0-r4: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 3.0-r4: uses deprecated EAPI: 4
 
-net-firewall/ipkungfu
-  DeprecatedEAPI: version 0.5.2-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.6.1: uses deprecated EAPI: 0
+net-proxy/httpush
+  DeprecatedEAPI: version 0.9_beta11-r1: uses deprecated EAPI: 0
 
-net-firewall/ipsec-tools
-  DeprecatedEAPI: version 0.8.0-r5: uses deprecated EAPI: 4
-  MissingSlotDep: version 0.8.1-r1: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
-  MissingSlotDep: version 0.8.1-r1: 'sys-libs/readline' matches more than one slot: [ 0, 4, 5 ]
+net-proxy/nylon
+  DeprecatedEAPI: version 1.21-r1: uses deprecated EAPI: 4
 
-net-firewall/ipset
-  DeprecatedEAPI: version 6.15: uses deprecated EAPI: 4
+net-proxy/oops
+  DeprecatedEAPI: version 1.5.24_pre20050503-r4: uses deprecated EAPI: 2
 
-net-firewall/iptables
-  DeprecatedEAPI: version 1.4.17: uses deprecated EAPI: 4
-  ExecutableFile: "files/iptables.init" has unnecessary executable bit
+net-proxy/piper
+  DeprecatedEAPI: version 1.14: uses deprecated EAPI: 0
 
-net-firewall/nfacct
-  DeprecatedEAPI: version 1.0.0: uses deprecated EAPI: 4
+net-proxy/ratproxy
+  DeprecatedEAPI: version 1.58: uses deprecated EAPI: 0
 
-net-firewall/nftables
-  MissingSlotDep: version 0.5: 'dev-libs/gmp' matches more than one slot: [ 0, 3 ]
-  MissingSlotDep: version 0.5: 'sys-libs/readline' matches more than one slot: [ 0, 4, 5 ]
-  ExecutableFile: "files/libexec/nftables.sh" has unnecessary executable bit
+net-proxy/rejik
+  DeprecatedEAPI: version 3.2.10: uses deprecated EAPI: 4
 
-net-firewall/nufw
-  NonExistentDeps: version 2.2.22-r1: depset depends: nonexistent atoms [ dev-libs/libprelude ]
-  NonExistentDeps: version 2.2.22-r1: depset rdepends: nonexistent atoms [ dev-libs/libprelude ]
+net-proxy/squidclamav
+  DeprecatedEAPI: version 6.8: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 6.10: uses deprecated EAPI: 4
 
-net-firewall/pftop
-  DeprecatedEAPI: version 0.5: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.7: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.7-r1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.7-r2: uses deprecated EAPI: 4
+net-proxy/squidguard
+  DeprecatedEAPI: version 1.4-r4: uses deprecated EAPI: 2
 
-net-firewall/quicktables
-  DeprecatedEAPI: version 2.3: uses deprecated EAPI: 0
+net-proxy/tayga
+  DeprecatedEAPI: version 0.9.2: uses deprecated EAPI: 3
 
-net-firewall/shapecfg
-  DeprecatedEAPI: version 36: uses deprecated EAPI: 0
+net-proxy/torsocks
+  DeprecatedEAPI: version 1.2-r2: uses deprecated EAPI: 4
+
+net-proxy/ufdbguard
+  DeprecatedEAPI: version 1.24-r1: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 1.29: uses deprecated EAPI: 4
+
+net-proxy/webscarab
+  DeprecatedEAPI: version 20070504: uses deprecated EAPI: 0
+
+net-proxy/wwwoffle
+  DeprecatedEAPI: version 2.9i: uses deprecated EAPI: 4
+
+net-proxy/ziproxy
+  MissingSlotDep: version 3.3.1: 'virtual/jpeg' matches more than one slot: [ 0, 62 ]
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
