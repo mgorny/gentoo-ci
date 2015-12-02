@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 6 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-java/*' 'media-video/*' 'media-fonts/*' 'net-mail/*' 'x11-wm/*' 'www-servers/*' 'net-dialup/*' 'net-nds/*' 'perl-core/*' 'games-simulation/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-java/*' 'media-video/*' 'media-fonts/*' 'net-mail/*' 'x11-wm/*' 'www-servers/*' 'net-dialup/*' 'net-nds/*' 'perl-core/*' 'games-roguelike/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 WARNING:pkgcore:disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
@@ -468,32 +468,32 @@ dev-java/jdbc-oracle-bin
   DeprecatedEAPI: version 10.1.0.5: uses deprecated EAPI: 0
   DeprecatedEAPI: version 10.2.0.3: uses deprecated EAPI: 0
   DeprecatedEAPI: version 10.2.0.4: uses deprecated EAPI: 0
-  MissingChksum: version 9.2.0.8: "jdbc-oracle-bin-9.2.0.8-ojdbc14.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 9.2.0.8: "jdbc-oracle-bin-9.2.0.8-ojdbc14_g.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 9.2.0.8: "jdbc-oracle-bin-9.2.0.8-ocrs12.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 9.2.0.8: "jdbc-oracle-bin-9.2.0.8-ojdbc14.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 9.2.0.8: "jdbc-oracle-bin-9.2.0.8-javadoc.tar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 10.1.0.5: "jdbc-oracle-bin-10.1.0.5-ojdbc14dms.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 9.2.0.8: "jdbc-oracle-bin-9.2.0.8-ojdbc14_g.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 10.1.0.5: "jdbc-oracle-bin-10.1.0.5-orai18n.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 10.1.0.5: "jdbc-oracle-bin-10.1.0.5-ocrs12.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 10.1.0.5: "jdbc-oracle-bin-10.1.0.5-demo.tar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 10.1.0.5: "jdbc-oracle-bin-10.1.0.5-ojdbc14dms.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 10.1.0.5: "jdbc-oracle-bin-10.1.0.5-ojdbc14dms_g.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 10.1.0.5: "jdbc-oracle-bin-10.1.0.5-javadoc.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 10.1.0.5: "jdbc-oracle-bin-10.1.0.5-demo.tar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 10.1.0.5: "jdbc-oracle-bin-10.1.0.5-ocrs12.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 10.1.0.5: "jdbc-oracle-bin-10.1.0.5-ojdbc14_g.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 10.1.0.5: "jdbc-oracle-bin-10.1.0.5-ojdbc14.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 10.1.0.5: "jdbc-oracle-bin-10.1.0.5-javadoc.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 10.2.0.3: "jdbc-oracle-bin-10.2.0.3-ojdbc14dms_g.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 10.2.0.3: "jdbc-oracle-bin-10.2.0.3-ojdbc14.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 10.2.0.3: "jdbc-oracle-bin-10.2.0.3-ojdbc14dms.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 10.2.0.3: "jdbc-oracle-bin-10.2.0.3-orai18n.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 10.2.0.3: "jdbc-oracle-bin-10.2.0.3-ojdbc14.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 10.2.0.3: "jdbc-oracle-bin-10.2.0.3-ojdbc14dms_g.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 10.2.0.3: "jdbc-oracle-bin-10.2.0.3-ojdbc14_g.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 10.2.0.3: "jdbc-oracle-bin-10.2.0.3-ons.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 10.2.0.3: "jdbc-oracle-bin-10.2.0.3-demo.tar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 10.2.0.3: "jdbc-oracle-bin-10.2.0.1-javadoc.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 10.2.0.3: "jdbc-oracle-bin-10.2.0.3-ons.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 10.2.0.4: "jdbc-oracle-bin-10.2.0.4-demo.tar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 10.2.0.3: "jdbc-oracle-bin-10.2.0.3-ojdbc14dms.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 10.2.0.4: "jdbc-oracle-bin-10.2.0.4-ojdbc14_g.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 10.2.0.4: "jdbc-oracle-bin-10.2.0.4-demo.tar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 10.2.0.4: "jdbc-oracle-bin-10.2.0.4-ojdbc14dms.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 10.2.0.4: "jdbc-oracle-bin-10.2.0.4-orai18n.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 10.2.0.4: "jdbc-oracle-bin-10.2.0.4-ojdbc14dms_g.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 10.2.0.4: "jdbc-oracle-bin-10.2.0.4-ojdbc14.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 10.2.0.4: "jdbc-oracle-bin-10.2.0.4-ojdbc14dms.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 dev-java/jdbm
   DeprecatedEAPI: version 0.12-r2: uses deprecated EAPI: 0
@@ -1030,8 +1030,8 @@ dev-java/sun-dtdparser
 
 dev-java/sun-j2ee-deployment-bin
   DeprecatedEAPI: version 1.1-r2: uses deprecated EAPI: 0
-  MissingChksum: version 1.1-r2: "j2ee_deployment-1_1-fr-class.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 1.1-r2: "j2ee_deployment-1_1-fr-doc.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 1.1-r2: "j2ee_deployment-1_1-fr-class.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 dev-java/sun-jacc-api
   DeprecatedEAPI: version 20070102: uses deprecated EAPI: 0
@@ -2820,3 +2820,20 @@ WARNING pkgcore: metadata.dtd cannot be opened from
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
+
+games-roguelike/angband
+  MissingSlotDep: version 3.4.1: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
+
+games-roguelike/crossfire-client
+  MissingSlotDep: version 1.70.0: 'dev-lang/lua' matches more than one slot: [ 0, 5.1, 5.2 ]
+  MissingSlotDep: version 1.71.0: 'dev-lang/lua' matches more than one slot: [ 0, 5.1, 5.2 ]
+
+games-roguelike/slashem
+  DeprecatedEAPI: version 0.0.772: uses deprecated EAPI: 0
+
+games-roguelike/stone-soup
+  MissingSlotDep: version 0.14.2-r1: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
+  MissingSlotDep: version 0.16.2: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
+
+games-roguelike/tomenet
+  MissingSlotDep: version 4.5.9: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]

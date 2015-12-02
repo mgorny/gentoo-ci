@@ -51,7 +51,7 @@
 </pre></td></tr>
             <tr class="" id="l6"><td><a href="#l6"><span>6</span></a></td><td><pre>+ set +x
 </pre></td></tr>
-            <tr class="" id="l7"><td><a href="#l7"><span>7</span></a></td><td><pre>+ exec pkgcheck -r gentoo --reporter FancyReporter 'media-libs/*' 'sci-libs/*' 'app-emacs/*' 'app-editors/*' 'games-arcade/*' 'sci-electronics/*' 'net-print/*' 'app-pda/*' 'mail-mta/*' 'games-roguelike/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
+            <tr class="" id="l7"><td><a href="#l7"><span>7</span></a></td><td><pre>+ exec pkgcheck -r gentoo --reporter FancyReporter 'media-libs/*' 'sci-libs/*' 'app-emacs/*' 'app-editors/*' 'games-arcade/*' 'sci-electronics/*' 'net-print/*' 'app-pda/*' 'mail-mta/*' 'games-simulation/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 </pre></td></tr>
             <tr class="" id="l8"><td><a href="#l8"><span>8</span></a></td><td><pre>WARNING:pkgcore:disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
 </pre></td></tr>
@@ -335,7 +335,7 @@
 </pre></td></tr>
             <tr class="" id="l148"><td><a href="#l148"><span>148</span></a></td><td><pre>ERROR root: check &lt;pkgcheck.repo_metadata.ManifestReport object at
 </pre></td></tr>
-            <tr class="" id="l149"><td><a href="#l149"><span>149</span></a></td><td><pre>          : 0x7fbd9cfa92d0&gt; raised
+            <tr class="" id="l149"><td><a href="#l149"><span>149</span></a></td><td><pre>          : 0x7f73def12c90&gt; raised
 </pre></td></tr>
             <tr class="" id="l150"><td><a href="#l150"><span>150</span></a></td><td><pre>ERROR root: Traceback (most recent call last):
 </pre></td></tr>
@@ -1365,7 +1365,7 @@
 </pre></td></tr>
             <tr class="" id="l663"><td><a href="#l663"><span>663</span></a></td><td><pre>ERROR root: check &lt;pkgcheck.repo_metadata.ManifestReport object at
 </pre></td></tr>
-            <tr class="" id="l664"><td><a href="#l664"><span>664</span></a></td><td><pre>          : 0x7fbd9cfa92d0&gt; raised
+            <tr class="" id="l664"><td><a href="#l664"><span>664</span></a></td><td><pre>          : 0x7f73def12c90&gt; raised
 </pre></td></tr>
             <tr class="" id="l665"><td><a href="#l665"><span>665</span></a></td><td><pre>ERROR root: Traceback (most recent call last):
 </pre></td></tr>
@@ -1765,11 +1765,11 @@
 </pre></td></tr>
             <tr class="" id="l863"><td><a href="#l863"><span>863</span></a></td><td><pre>  MissingChksum: version 4.1.0-r2: "acml-4-1-0-gfortran-64bit-int64.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l864"><td><a href="#l864"><span>864</span></a></td><td><pre>  MissingChksum: version 4.1.0-r2: "acml-4-1-0-ifort-64bit-int64.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+            <tr class="" id="l864"><td><a href="#l864"><span>864</span></a></td><td><pre>  MissingChksum: version 4.1.0-r2: "acml-4-1-0-gfortran-32bit.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
             <tr class="" id="l865"><td><a href="#l865"><span>865</span></a></td><td><pre>  MissingChksum: version 4.1.0-r2: "acml-4-1-0-ifort-32bit.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
-            <tr class="" id="l866"><td><a href="#l866"><span>866</span></a></td><td><pre>  MissingChksum: version 4.1.0-r2: "acml-4-1-0-gfortran-32bit.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+            <tr class="" id="l866"><td><a href="#l866"><span>866</span></a></td><td><pre>  MissingChksum: version 4.1.0-r2: "acml-4-1-0-ifort-64bit-int64.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 </pre></td></tr>
             <tr class="" id="l867"><td><a href="#l867"><span>867</span></a></td><td><pre>
 </pre></td></tr>
@@ -4175,43 +4175,9 @@
 </pre></td></tr>
             <tr class="" id="l2068"><td><a href="#l2068"><span>2068</span></a></td><td><pre>               : refetch
 </pre></td></tr>
-            <tr class="" id="l2069"><td><a href="#l2069"><span>2069</span></a></td><td><pre>
-</pre></td></tr>
-            <tr class="" id="l2070"><td><a href="#l2070"><span>2070</span></a></td><td><pre>games-roguelike/angband
-</pre></td></tr>
-            <tr class="" id="l2071"><td><a href="#l2071"><span>2071</span></a></td><td><pre>  MissingSlotDep: version 3.4.1: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
-</pre></td></tr>
-            <tr class="" id="l2072"><td><a href="#l2072"><span>2072</span></a></td><td><pre>
-</pre></td></tr>
-            <tr class="" id="l2073"><td><a href="#l2073"><span>2073</span></a></td><td><pre>games-roguelike/crossfire-client
-</pre></td></tr>
-            <tr class="" id="l2074"><td><a href="#l2074"><span>2074</span></a></td><td><pre>  MissingSlotDep: version 1.70.0: 'dev-lang/lua' matches more than one slot: [ 0, 5.1, 5.2 ]
-</pre></td></tr>
-            <tr class="" id="l2075"><td><a href="#l2075"><span>2075</span></a></td><td><pre>  MissingSlotDep: version 1.71.0: 'dev-lang/lua' matches more than one slot: [ 0, 5.1, 5.2 ]
-</pre></td></tr>
-            <tr class="" id="l2076"><td><a href="#l2076"><span>2076</span></a></td><td><pre>
-</pre></td></tr>
-            <tr class="" id="l2077"><td><a href="#l2077"><span>2077</span></a></td><td><pre>games-roguelike/slashem
-</pre></td></tr>
-            <tr class="" id="l2078"><td><a href="#l2078"><span>2078</span></a></td><td><pre>  DeprecatedEAPI: version 0.0.772: uses deprecated EAPI: 0
-</pre></td></tr>
-            <tr class="" id="l2079"><td><a href="#l2079"><span>2079</span></a></td><td><pre>
-</pre></td></tr>
-            <tr class="" id="l2080"><td><a href="#l2080"><span>2080</span></a></td><td><pre>games-roguelike/stone-soup
-</pre></td></tr>
-            <tr class="" id="l2081"><td><a href="#l2081"><span>2081</span></a></td><td><pre>  MissingSlotDep: version 0.14.2-r1: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
-</pre></td></tr>
-            <tr class="" id="l2082"><td><a href="#l2082"><span>2082</span></a></td><td><pre>  MissingSlotDep: version 0.16.2: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
-</pre></td></tr>
-            <tr class="" id="l2083"><td><a href="#l2083"><span>2083</span></a></td><td><pre>
-</pre></td></tr>
-            <tr class="" id="l2084"><td><a href="#l2084"><span>2084</span></a></td><td><pre>games-roguelike/tomenet
-</pre></td></tr>
-            <tr class="" id="l2085"><td><a href="#l2085"><span>2085</span></a></td><td><pre>  MissingSlotDep: version 4.5.9: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
-</pre></td></tr>
 
         </table>
 
-        <address>Generated based on results from 2015-12-02 06:16:51 UTC</address>
+        <address>Generated based on results from 2015-12-02 06:27:07 UTC</address>
     </body>
 </html>
