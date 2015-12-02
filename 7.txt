@@ -145,40 +145,6 @@ flagged token- uri mirror://bitbucket/libgd/gd-libgd/downloads/libgd-2.1.1.tar.x
   MetadataError: version 2.1.1-r1: attr(fetchables): error- Metadata Exception: pkg ebuild src: media-libs/gd-2.1.1-r1, attr fetchables
 error: mirror://bitbucket/libgd/gd-libgd/downloads/libgd-2.1.1.tar.xz is unparseable
 flagged token- uri mirror://bitbucket/libgd/gd-libgd/downloads/libgd-2.1.1.tar.xz isn't a known mirror tier
-ERROR root: check <pkgcheck.repo_metadata.ManifestReport object at
-          : 0x7f3f65337710> raised
-ERROR root: Traceback (most recent call last):
-ERROR root:   File
-          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/bas
-          : e.py", line 337, in feed
-ERROR root:     check.feed(item, reporter)
-ERROR root:   File
-          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/rep
-          : o_metadata.py", line 242, in feed
-ERROR root:     pkg._get_attr['fetchables'](pkg, allow_missing_checksums=True),
-ERROR root:   File
-          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
-          : ld/ebuild_src.py", line 89, in generate_fetchables
-ERROR root:    
-          : allow_src_uri_file_renames=self.eapi_obj.options.src_uri_renames)
-ERROR root:   File
-          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
-          : ld/conditionals.py", line 188, in parse
-ERROR root:     raise_from(ParseError(dep_str, e))
-ERROR root:   File
-          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
-          : ld/conditionals.py", line 164, in parse
-ERROR root:     depsets[-1].append(element_func(k))
-ERROR root:   File
-          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
-          : ld/ebuild_src.py", line 121, in create_fetchable_from_uri
-ERROR root:     raise UnknownMirror(tier, remaining_uri)
-ERROR root: ParseError:
-          : mirror://bitbucket/libgd/gd-libgd/downloads/libgd-2.1.1.tar.xz is
-          : unparseable
-ERROR root: flagged token- uri
-          : mirror://bitbucket/libgd/gd-libgd/downloads/libgd-2.1.1.tar.xz
-          : isn't a known mirror tier
 
 media-libs/giblib
   DeprecatedEAPI: version 1.2.4: uses deprecated EAPI: 2
@@ -660,37 +626,6 @@ media-libs/phat
 error: mirror://berlios/phat/phat-0.4.1.tar.gz is unparseable
 flagged token- uri mirror://berlios/phat/phat-0.4.1.tar.gz isn't a known mirror tier
   DeprecatedEAPI: version 0.4.1: uses deprecated EAPI: 2
-ERROR root: check <pkgcheck.repo_metadata.ManifestReport object at
-          : 0x7f3f65337710> raised
-ERROR root: Traceback (most recent call last):
-ERROR root:   File
-          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/bas
-          : e.py", line 337, in feed
-ERROR root:     check.feed(item, reporter)
-ERROR root:   File
-          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/rep
-          : o_metadata.py", line 242, in feed
-ERROR root:     pkg._get_attr['fetchables'](pkg, allow_missing_checksums=True),
-ERROR root:   File
-          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
-          : ld/ebuild_src.py", line 89, in generate_fetchables
-ERROR root:    
-          : allow_src_uri_file_renames=self.eapi_obj.options.src_uri_renames)
-ERROR root:   File
-          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
-          : ld/conditionals.py", line 188, in parse
-ERROR root:     raise_from(ParseError(dep_str, e))
-ERROR root:   File
-          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
-          : ld/conditionals.py", line 164, in parse
-ERROR root:     depsets[-1].append(element_func(k))
-ERROR root:   File
-          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
-          : ld/ebuild_src.py", line 121, in create_fetchable_from_uri
-ERROR root:     raise UnknownMirror(tier, remaining_uri)
-ERROR root: ParseError: mirror://berlios/phat/phat-0.4.1.tar.gz is unparseable
-ERROR root: flagged token- uri mirror://berlios/phat/phat-0.4.1.tar.gz isn't a
-          : known mirror tier
 
 media-libs/phonon-qt7
   DeprecatedEAPI: version 0_pre20110424: uses deprecated EAPI: 4
@@ -859,11 +794,11 @@ WARNING pkgcore: metadata.dtd cannot be opened from
 
 sci-libs/acml
   MissingChksum: version 4.1.0-r2: "acml-4-1-0-gfortran-32bit.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 4.1.0-r2: "acml-4-1-0-ifort-64bit.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 4.1.0-r2: "acml-4-1-0-gfortran-64bit.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 4.1.0-r2: "acml-4-1-0-gfortran-64bit-int64.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 4.1.0-r2: "acml-4-1-0-ifort-64bit-int64.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 4.1.0-r2: "acml-4-1-0-ifort-32bit.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 4.1.0-r2: "acml-4-1-0-ifort-64bit.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 4.1.0-r2: "acml-4-1-0-ifort-64bit-int64.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 sci-libs/armadillo
   DeprecatedEAPI: version 3.4.4: uses deprecated EAPI: 4

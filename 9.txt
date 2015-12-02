@@ -701,38 +701,6 @@ net-misc/sipsak
 error: mirror://berlios/sipsak/sipsak-0.9.6-1.tar.gz is unparseable
 flagged token- uri mirror://berlios/sipsak/sipsak-0.9.6-1.tar.gz isn't a known mirror tier
   DeprecatedEAPI: version 0.9.6_p1: uses deprecated EAPI: 2
-ERROR root: check <pkgcheck.repo_metadata.ManifestReport object at
-          : 0x7f7aee5b3750> raised
-ERROR root: Traceback (most recent call last):
-ERROR root:   File
-          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/bas
-          : e.py", line 337, in feed
-ERROR root:     check.feed(item, reporter)
-ERROR root:   File
-          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/rep
-          : o_metadata.py", line 242, in feed
-ERROR root:     pkg._get_attr['fetchables'](pkg, allow_missing_checksums=True),
-ERROR root:   File
-          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
-          : ld/ebuild_src.py", line 89, in generate_fetchables
-ERROR root:    
-          : allow_src_uri_file_renames=self.eapi_obj.options.src_uri_renames)
-ERROR root:   File
-          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
-          : ld/conditionals.py", line 188, in parse
-ERROR root:     raise_from(ParseError(dep_str, e))
-ERROR root:   File
-          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
-          : ld/conditionals.py", line 164, in parse
-ERROR root:     depsets[-1].append(element_func(k))
-ERROR root:   File
-          : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcore/ebui
-          : ld/ebuild_src.py", line 121, in create_fetchable_from_uri
-ERROR root:     raise UnknownMirror(tier, remaining_uri)
-ERROR root: ParseError: mirror://berlios/sipsak/sipsak-0.9.6-1.tar.gz is
-          : unparseable
-ERROR root: flagged token- uri mirror://berlios/sipsak/sipsak-0.9.6-1.tar.gz
-          : isn't a known mirror tier
 
 net-misc/sitecopy
   WhitespaceFound: version 0.16.6-r1: ebuild has leading whitespace on line 52
