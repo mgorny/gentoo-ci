@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 13 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'media-plugins/*' 'virtual/*' 'dev-vcs/*' 'sys-auth/*' 'xfce-extra/*' 'games-misc/*' 'gnustep-apps/*' 'games-util/*' 'www-misc/*' 'mate-extra/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'media-plugins/*' 'dev-php/*' 'dev-vcs/*' 'sys-auth/*' 'xfce-extra/*' 'games-misc/*' 'gnustep-apps/*' 'games-util/*' 'www-misc/*' 'mate-extra/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 WARNING:pkgcore:disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
@@ -385,506 +385,372 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-virtual/acl
-  DeprecatedEAPI: version 0: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0-r1: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 0-r2: uses deprecated EAPI: 4
+dev-php/File_Iterator
+  DeprecatedEAPI: version 1.3.1: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.3.4: uses deprecated EAPI: 4
 
-virtual/ada
-  DeprecatedEAPI: version 1995: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2005: uses deprecated EAPI: 0
+dev-php/PEAR-Auth
+  DeprecatedEAPI: version 1.6.4: uses deprecated EAPI: 4
 
-virtual/awk
-  DeprecatedEAPI: version 0: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1: uses deprecated EAPI: 0
+dev-php/PEAR-Auth_HTTP
+  DeprecatedEAPI: version 2.1.6-r1: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 2.1.8: uses deprecated EAPI: 4
 
-virtual/blas
-  NonExistentDeps: version 1.0: depset rdepends: nonexistent atoms [ sci-libs/blas-goto ]
-  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+dev-php/PEAR-Auth_SASL
+  DeprecatedEAPI: version 1.0.6: uses deprecated EAPI: 0
 
-virtual/cblas
-  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 2
+dev-php/PEAR-Benchmark
+  DeprecatedEAPI: version 1.2.9: uses deprecated EAPI: 4
 
-virtual/cdrtools
-  DeprecatedEAPI: version 0: uses deprecated EAPI: 0
+dev-php/PEAR-Cache
+  DeprecatedEAPI: version 1.5.6: uses deprecated EAPI: 0
 
-virtual/checkpassword
-  NonExistentDeps: version 0: depset rdepends: nonexistent atoms [ net-mail/vmailmgr ]
-  DeprecatedEAPI: version 0: uses deprecated EAPI: 0
+dev-php/PEAR-Calendar
+  DeprecatedEAPI: version 0.5.5: uses deprecated EAPI: 4
 
-virtual/commonlisp
-  NonExistentDeps: version 0: depset rdepends: nonexistent atoms [ dev-lisp/openmcl ]
-
-virtual/cron
-  DeprecatedEAPI: version 0: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0-r1: uses deprecated EAPI: 4
-
-virtual/daemontools
-  DeprecatedEAPI: version 0: uses deprecated EAPI: 0
-
-virtual/dev-manager
-  DeprecatedEAPI: version 0: uses deprecated EAPI: 2
-
-virtual/eject
-  DeprecatedEAPI: version 0: uses deprecated EAPI: 0
-
-virtual/emacs
-  DeprecatedEAPI: version 23: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 24: uses deprecated EAPI: 4
-
-virtual/emacs-flim
-  DeprecatedEAPI: version 0: uses deprecated EAPI: 4
-
-virtual/fam
-  DeprecatedEAPI: version 0: uses deprecated EAPI: 2
-
-virtual/ffmpeg
-  DeprecatedEAPI: version 0.10.3: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.10.3-r1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 9: uses deprecated EAPI: 4
-  UncheckableDep: version 9-r1: depset rdepends: could not be checked due to pkgcore limitation
-  UncheckableDep: version 9-r2: depset rdepends: could not be checked due to pkgcore limitation
-
-virtual/fortran
-  DeprecatedEAPI: version 0: uses deprecated EAPI: 4
-
-virtual/freedesktop-icon-theme
-  DeprecatedEAPI: version 0: uses deprecated EAPI: 4
-
-virtual/glu
-  DeprecatedEAPI: version 9.0: uses deprecated EAPI: 0
-
-virtual/gnat
-  DeprecatedEAPI: version 3.4: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.3: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.4: uses deprecated EAPI: 0
-  DroppedKeywordWarning: version 4.4: keywords dropped: ppc
-
-virtual/gnustep-back
-  DeprecatedEAPI: version 0.22.0: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.23.0: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.24.0: uses deprecated EAPI: 0
-
-virtual/gsasl
-  DeprecatedEAPI: version 2: uses deprecated EAPI: 2
-
-virtual/httpd-php
-  DeprecatedEAPI: version 5.4-r1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 5.4-r2: uses deprecated EAPI: 4
-
-virtual/imap-c-client
-  DeprecatedEAPI: version 0: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 1: uses deprecated EAPI: 3
-
-virtual/inetd
-  DeprecatedEAPI: version 0: uses deprecated EAPI: 0
-
-virtual/jdk
-  DeprecatedEAPI: version 1.6.0-r2: uses deprecated EAPI: 4
-  DroppedKeywordWarning: version 1.8.0: keywords dropped: arm, ppc, ppc64
-
-virtual/jre
-  DroppedKeywordWarning: version 1.8.0: keywords dropped: arm, ppc, ppc64
-
-virtual/krb5
-  DeprecatedEAPI: version 0: uses deprecated EAPI: 3
-
-virtual/lapack
-  DeprecatedEAPI: version 3.0: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 3.1: uses deprecated EAPI: 0
-
-virtual/latex-base
-  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
-
-virtual/leechcraft-browser
-  DeprecatedEAPI: version 0.6.60: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.6.65: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.6.70: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
-
-virtual/leechcraft-downloader-http
-  DeprecatedEAPI: version 0.6.60: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.6.65: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.6.70: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
-
-virtual/leechcraft-quark-sideprovider
-  DeprecatedEAPI: version 0.6.60: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.6.65: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.6.70: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
-
-virtual/leechcraft-search-show
-  DeprecatedEAPI: version 0.6.60: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.6.65: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.6.70: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
-
-virtual/leechcraft-storage-device-manager
-  DeprecatedEAPI: version 0.6.60: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.6.65: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.6.70: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
-
-virtual/leechcraft-task-show
-  DeprecatedEAPI: version 0.6.60: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.6.65: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.6.70: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
-
-virtual/leechcraft-trayarea
-  DeprecatedEAPI: version 0.6.60: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.6.65: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.6.70: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
-
-virtual/leechcraft-wysiwyg-editor
-  DeprecatedEAPI: version 0.6.60: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.6.65: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.6.70: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
-
-virtual/libffi
-  DeprecatedEAPI: version 3.0.10: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 3.0.11: uses deprecated EAPI: 0
-
-virtual/libiconv
-  DeprecatedEAPI: version 0: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0-r1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0-r2: uses deprecated EAPI: 4
-
-virtual/libintl
-  DeprecatedEAPI: version 0: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0-r1: uses deprecated EAPI: 4
-
-virtual/libstdc++
-  DeprecatedEAPI: version 3.3: uses deprecated EAPI: 0
-
-virtual/linux-sources
-  NonExistentDeps: version 0: depset rdepends: nonexistent atoms [ sys-kernel/usermode-sources ]
-  NonExistentDeps: version 1: depset rdepends: nonexistent atoms [ sys-kernel/usermode-sources ]
-
-virtual/linuxtv-dvb-headers
-  DeprecatedEAPI: version 5.3: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 5.8: uses deprecated EAPI: 0
-
-virtual/logger
-  DeprecatedEAPI: version 0: uses deprecated EAPI: 3
-
-virtual/mailx
-  DeprecatedEAPI: version 0: uses deprecated EAPI: 3
-
-virtual/man
-  DeprecatedEAPI: version 0-r1: uses deprecated EAPI: 3
-
-virtual/mda
-  NonExistentDeps: version 0: depset rdepends: nonexistent atoms [ mail-mta/citadel ]
-  DeprecatedEAPI: version 0: uses deprecated EAPI: 3
-
-virtual/mta
-  NonExistentDeps: version 0: depset rdepends: nonexistent atoms [ mail-mta/citadel, <mail-mta/msmtp-1.4.19-r1, <mail-mta/ssmtp-2.64-r2 ]
-  DeprecatedEAPI: version 0: uses deprecated EAPI: 3
-  NonExistentDeps: version 1: depset rdepends: nonexistent atoms [ mail-mta/citadel ]
-  DeprecatedEAPI: version 1: uses deprecated EAPI: 4
-
-virtual/ooo
-  DeprecatedEAPI: version 0: uses deprecated EAPI: 4
-
-virtual/opencl
-  DeprecatedEAPI: version 0: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0-r2: uses deprecated EAPI: 4
-
-virtual/opengl
-  DeprecatedEAPI: version 7.0: uses deprecated EAPI: 0
-
-virtual/pam
-  DeprecatedEAPI: version 0: uses deprecated EAPI: 3
+dev-php/PEAR-Console_Color
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 4
 
-virtual/perl-Archive-Tar
-  NonExistentDeps: version 1.960.0: depset rdepends: nonexistent atoms [ ~perl-core/Archive-Tar-1.960.0 ]
-  NonExistentDeps: version 2.40.0: depset rdepends: nonexistent atoms [ ~perl-core/Archive-Tar-2.40.0 ]
+dev-php/PEAR-Console_CommandLine
+  DeprecatedEAPI: version 1.2.0: uses deprecated EAPI: 4
 
-virtual/perl-Attribute-Handlers
-  NonExistentDeps: version 0.960.0: depset rdepends: nonexistent atoms [ ~perl-core/Attribute-Handlers-0.960.0 ]
-  NonExistentDeps: version 0.970.0: depset rdepends: nonexistent atoms [ ~perl-core/Attribute-Handlers-0.970.0 ]
+dev-php/PEAR-Console_Getargs
+  DeprecatedEAPI: version 1.3.5: uses deprecated EAPI: 4
 
-virtual/perl-AutoLoader
-  NonExistentDeps: version 5.740.0-r1: depset rdepends: nonexistent atoms [ ~perl-core/AutoLoader-5.740.0 ]
+dev-php/PEAR-Console_Getopt
+  NonExistentDeps: version 1.3.1: depset depends: nonexistent atoms [ <dev-lang/php-5.3 ]
+  NonExistentDeps: version 1.3.1: depset rdepends: nonexistent atoms [ <dev-lang/php-5.3 ]
+  DeprecatedEAPI: version 1.3.1: uses deprecated EAPI: 2
 
-virtual/perl-B-Debug
-  NonExistentDeps: version 1.190.0: depset rdepends: nonexistent atoms [ ~perl-core/B-Debug-1.190.0 ]
-  NonExistentDeps: version 1.230.0: depset rdepends: nonexistent atoms [ ~perl-core/B-Debug-1.230.0 ]
+dev-php/PEAR-Console_Table
+  DeprecatedEAPI: version 1.1.6: uses deprecated EAPI: 4
 
-virtual/perl-CPAN
-  NonExistentDeps: version 2.90.0-r1: depset rdepends: nonexistent atoms [ ~perl-core/CPAN-2.90.0 ]
+dev-php/PEAR-Crypt_CHAP
+  DeprecatedEAPI: version 1.5.0: uses deprecated EAPI: 4
 
-virtual/perl-CPAN-Meta
-  NonExistentDeps: version 2.140.640: depset rdepends: nonexistent atoms [ ~perl-core/CPAN-Meta-2.140.640 ]
-  NonExistentDeps: version 2.150.1: depset rdepends: nonexistent atoms [ ~perl-core/CPAN-Meta-2.150.1 ]
+dev-php/PEAR-Crypt_GPG
+  DeprecatedEAPI: version 1.3.2: uses deprecated EAPI: 4
 
-virtual/perl-CPAN-Meta-Requirements
-  NonExistentDeps: version 2.132.0: depset rdepends: nonexistent atoms [ ~perl-core/CPAN-Meta-Requirements-2.132.0 ]
+dev-php/PEAR-Crypt_HMAC2
+  DeprecatedEAPI: version 1.0.0: uses deprecated EAPI: 4
 
-virtual/perl-CPAN-Meta-YAML
-  NonExistentDeps: version 0.12.0-r1: depset rdepends: nonexistent atoms [ ~perl-core/CPAN-Meta-YAML-0.12.0 ]
+dev-php/PEAR-Crypt_RC4
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 4
 
-virtual/perl-Carp
-  NonExistentDeps: version 1.330.100: depset rdepends: nonexistent atoms [ ~perl-core/Carp-1.330.100 ]
-  NonExistentDeps: version 1.360.0: depset rdepends: nonexistent atoms [ ~perl-core/Carp-1.360.0 ]
+dev-php/PEAR-DB_DataObject
+  DeprecatedEAPI: version 1.9.6: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.10.0: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.11.2: uses deprecated EAPI: 4
 
-virtual/perl-Compress-Raw-Bzip2
-  NonExistentDeps: version 2.64.0: depset rdepends: nonexistent atoms [ ~perl-core/Compress-Raw-Bzip2-2.64.0 ]
-  NonExistentDeps: version 2.68.0: depset rdepends: nonexistent atoms [ ~perl-core/Compress-Raw-Bzip2-2.68.0 ]
+dev-php/PEAR-Date
+  DeprecatedEAPI: version 1.4.7: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.5.0_alpha1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.5.0_alpha4: uses deprecated EAPI: 0
 
-virtual/perl-Compress-Raw-Zlib
-  NonExistentDeps: version 2.65.0: depset rdepends: nonexistent atoms [ ~perl-core/Compress-Raw-Zlib-2.65.0 ]
-  NonExistentDeps: version 2.68.0: depset rdepends: nonexistent atoms [ ~perl-core/Compress-Raw-Zlib-2.68.0 ]
+dev-php/PEAR-File
+  DeprecatedEAPI: version 1.4.1: uses deprecated EAPI: 4
 
-virtual/perl-DB_File
-  NonExistentDeps: version 1.831.0: depset rdepends: nonexistent atoms [ ~perl-core/DB_File-1.831.0 ]
-  NonExistentDeps: version 1.835.0: depset rdepends: nonexistent atoms [ ~perl-core/DB_File-1.835.0 ]
+dev-php/PEAR-File_Archive
+  DeprecatedEAPI: version 1.5.4-r1: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.5.5: uses deprecated EAPI: 4
 
-virtual/perl-Data-Dumper
-  NonExistentDeps: version 2.158.0: depset rdepends: nonexistent atoms [ ~perl-core/Data-Dumper-2.158.0 ]
-  DroppedKeywordWarning: version 2.158.0: keywords dropped: arm64
+dev-php/PEAR-File_Gettext
+  DeprecatedEAPI: version 0.4.2: uses deprecated EAPI: 4
 
-virtual/perl-Devel-PPPort
-  NonExistentDeps: version 3.210.0: depset rdepends: nonexistent atoms [ ~perl-core/Devel-PPPort-3.210.0 ]
-  NonExistentDeps: version 3.310.0: depset rdepends: nonexistent atoms [ ~perl-core/Devel-PPPort-3.310.0 ]
+dev-php/PEAR-File_SMBPasswd
+  NonExistentDeps: version 1.0.3: depset rdepends: nonexistent atoms [ <dev-lang/php-5.3 ]
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 2
 
-virtual/perl-Digest-MD5
-  NonExistentDeps: version 2.540.0: depset rdepends: nonexistent atoms [ ~perl-core/Digest-MD5-2.540.0 ]
+dev-php/PEAR-HTML_Common
+  DeprecatedEAPI: version 1.2.5: uses deprecated EAPI: 0
 
-virtual/perl-Digest-SHA
-  NonExistentDeps: version 5.950.0: depset rdepends: nonexistent atoms [ ~perl-core/Digest-SHA-5.950.0 ]
+dev-php/PEAR-HTML_Common2
+  DeprecatedEAPI: version 2.1.0: uses deprecated EAPI: 4
 
-virtual/perl-Encode
-  NonExistentDeps: version 2.600.0: depset rdepends: nonexistent atoms [ ~perl-core/Encode-2.600.0 ]
+dev-php/PEAR-HTML_Javascript
+  DeprecatedEAPI: version 1.1.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.1.2: uses deprecated EAPI: 0
 
-virtual/perl-Exporter
-  NonExistentDeps: version 5.710.0-r2: depset rdepends: nonexistent atoms [ ~perl-core/Exporter-5.710.0 ]
-  NonExistentDeps: version 5.720.0: depset rdepends: nonexistent atoms [ ~perl-core/Exporter-5.720.0 ]
+dev-php/PEAR-HTML_QuickForm
+  DeprecatedEAPI: version 3.2.13: uses deprecated EAPI: 4
 
-virtual/perl-ExtUtils-CBuilder
-  NonExistentDeps: version 0.280.217-r2: depset rdepends: nonexistent atoms [ ~perl-core/ExtUtils-CBuilder-0.280.217 ]
-  NonExistentDeps: version 0.280.221: depset rdepends: nonexistent atoms [ ~perl-core/ExtUtils-CBuilder-0.280.221 ]
+dev-php/PEAR-HTML_QuickForm_advmultiselect
+  DeprecatedEAPI: version 1.5.1: uses deprecated EAPI: 0
 
-virtual/perl-ExtUtils-Command
-  NonExistentDeps: version 1.200.0: depset rdepends: nonexistent atoms [ ~perl-core/ExtUtils-Command-1.200.0 ]
+dev-php/PEAR-HTML_Table
+  DeprecatedEAPI: version 1.8.3: uses deprecated EAPI: 0
 
-virtual/perl-ExtUtils-Install
-  NonExistentDeps: version 1.670.0: depset rdepends: nonexistent atoms [ ~perl-core/ExtUtils-Install-1.670.0 ]
-  NonExistentDeps: version 2.40.0: depset rdepends: nonexistent atoms [ ~perl-core/ExtUtils-Install-2.40.0 ]
+dev-php/PEAR-HTML_Table_Matrix
+  DeprecatedEAPI: version 1.0.9: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0.10: uses deprecated EAPI: 0
 
-virtual/perl-ExtUtils-MakeMaker
-  NonExistentDeps: version 6.980.0: depset rdepends: nonexistent atoms [ ~perl-core/ExtUtils-MakeMaker-6.980.0 ]
-  NonExistentDeps: version 7.40.100_rc: depset rdepends: nonexistent atoms [ ~perl-core/ExtUtils-MakeMaker-7.40.100_rc ]
+dev-php/PEAR-HTML_Template_Flexy
+  DeprecatedEAPI: version 1.3.12: uses deprecated EAPI: 0
 
-virtual/perl-ExtUtils-ParseXS
-  NonExistentDeps: version 3.240.0: depset rdepends: nonexistent atoms [ ~perl-core/ExtUtils-ParseXS-3.240.0 ]
-  NonExistentDeps: version 3.280.0: depset rdepends: nonexistent atoms [ ~perl-core/ExtUtils-ParseXS-3.280.0 ]
+dev-php/PEAR-HTML_Template_Sigma
+  DeprecatedEAPI: version 1.2.0-r1: uses deprecated EAPI: 4
 
-virtual/perl-File-Spec
-  NonExistentDeps: version 3.480.100-r1: depset rdepends: nonexistent atoms [ ~perl-core/File-Spec-3.480.100 ]
-  NonExistentDeps: version 3.560.0: depset rdepends: nonexistent atoms [ ~perl-core/File-Spec-3.560.0 ]
+dev-php/PEAR-HTML_TreeMenu
+  DeprecatedEAPI: version 1.2.2: uses deprecated EAPI: 0
 
-virtual/perl-Filter-Simple
-  NonExistentDeps: version 0.910.0: depset rdepends: nonexistent atoms [ ~perl-core/Filter-Simple-0.910.0 ]
-  NonExistentDeps: version 0.920.0: depset rdepends: nonexistent atoms [ ~perl-core/Filter-Simple-0.920.0 ]
+dev-php/PEAR-HTTP_Client
+  DeprecatedEAPI: version 1.2.1: uses deprecated EAPI: 0
 
-virtual/perl-Getopt-Long
-  NonExistentDeps: version 2.450.0: depset rdepends: nonexistent atoms [ ~perl-core/Getopt-Long-2.450.0 ]
+dev-php/PEAR-HTTP_Download
+  DeprecatedEAPI: version 1.1.4: uses deprecated EAPI: 4
 
-virtual/perl-HTTP-Tiny
-  NonExistentDeps: version 0.54.0: depset rdepends: nonexistent atoms [ ~perl-core/HTTP-Tiny-0.54.0 ]
+dev-php/PEAR-HTTP_Request
+  DeprecatedEAPI: version 1.4.4: uses deprecated EAPI: 0
 
-virtual/perl-I18N-LangTags
-  NonExistentDeps: version 0.400.0-r1: depset rdepends: nonexistent atoms [ ~perl-core/I18N-LangTags-0.400.0 ]
+dev-php/PEAR-HTTP_Request2
+  DeprecatedEAPI: version 2.0.0: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 2.1.1: uses deprecated EAPI: 4
 
-virtual/perl-IO
-  NonExistentDeps: version 1.310.0: depset rdepends: nonexistent atoms [ ~perl-core/IO-1.310.0 ]
-  NonExistentDeps: version 1.350.0: depset rdepends: nonexistent atoms [ ~perl-core/IO-1.350.0 ]
+dev-php/PEAR-Image_Color2
+  DeprecatedEAPI: version 0.1.5: uses deprecated EAPI: 4
 
-virtual/perl-IO-Compress
-  NonExistentDeps: version 2.64.0: depset rdepends: nonexistent atoms [ ~perl-core/IO-Compress-2.64.0 ]
-  NonExistentDeps: version 2.68.0: depset rdepends: nonexistent atoms [ ~perl-core/IO-Compress-2.68.0 ]
+dev-php/PEAR-Image_IPTC
+  DeprecatedEAPI: version 1.0.2-r1: uses deprecated EAPI: 0
 
-virtual/perl-IO-Socket-IP
-  NonExistentDeps: version 0.290.0: depset rdepends: nonexistent atoms [ ~perl-core/IO-Socket-IP-0.290.0 ]
-  NonExistentDeps: version 0.370.0: depset rdepends: nonexistent atoms [ ~perl-core/IO-Socket-IP-0.370.0 ]
+dev-php/PEAR-Image_Text
+  DeprecatedEAPI: version 0.6.1: uses deprecated EAPI: 4
 
-virtual/perl-IPC-Cmd
-  NonExistentDeps: version 0.920.0-r1: depset rdepends: nonexistent atoms [ ~perl-core/IPC-Cmd-0.920.0 ]
+dev-php/PEAR-Log
+  DeprecatedEAPI: version 1.12.7-r1: uses deprecated EAPI: 4
 
-virtual/perl-JSON-PP
-  NonExistentDeps: version 2.272.30: depset rdepends: nonexistent atoms [ ~perl-core/JSON-PP-2.272.30 ]
-  NonExistentDeps: version 2.273.0: depset rdepends: nonexistent atoms [ ~perl-core/JSON-PP-2.273.0 ]
+dev-php/PEAR-MDB
+  DeprecatedEAPI: version 1.3.0-r1: uses deprecated EAPI: 0
 
-virtual/perl-Locale-Maketext
-  NonExistentDeps: version 1.250.0: depset rdepends: nonexistent atoms [ ~perl-core/Locale-Maketext-1.250.0 ]
-  NonExistentDeps: version 1.260.0: depset rdepends: nonexistent atoms [ ~perl-core/Locale-Maketext-1.260.0 ]
+dev-php/PEAR-MDB2
+  NonExistentDeps: version 2.5.0_beta3: depset post_rdepends: nonexistent atoms [ >=dev-php/PEAR-MDB2_Driver_ibase-1.5.0_beta3 ]
+  DeprecatedEAPI: version 2.5.0_beta3: uses deprecated EAPI: 2
 
-virtual/perl-MIME-Base64
-  NonExistentDeps: version 3.150.0: depset rdepends: nonexistent atoms [ ~perl-core/MIME-Base64-3.150.0 ]
+dev-php/PEAR-MDB2_Driver_mssql
+  DeprecatedEAPI: version 1.5.0_beta3: uses deprecated EAPI: 2
 
-virtual/perl-Math-BigInt
-  NonExistentDeps: version 1.999.700: depset rdepends: nonexistent atoms [ ~perl-core/Math-BigInt-1.999.700 ]
+dev-php/PEAR-MDB2_Driver_mysql
+  DeprecatedEAPI: version 1.5.0_beta3: uses deprecated EAPI: 2
 
-virtual/perl-Math-BigInt-FastCalc
-  NonExistentDeps: version 0.310.0-r1: depset rdepends: nonexistent atoms [ ~perl-core/Math-BigInt-FastCalc-0.310.0 ]
+dev-php/PEAR-MDB2_Driver_mysqli
+  DeprecatedEAPI: version 1.5.0_beta3: uses deprecated EAPI: 2
 
-virtual/perl-Math-BigRat
-  NonExistentDeps: version 0.260.600: depset rdepends: nonexistent atoms [ ~perl-core/Math-BigRat-0.260.600 ]
-  NonExistentDeps: version 0.260.800: depset rdepends: nonexistent atoms [ ~perl-core/Math-BigRat-0.260.800 ]
+dev-php/PEAR-MDB2_Driver_oci8
+  DeprecatedEAPI: version 1.5.0_beta3: uses deprecated EAPI: 2
 
-virtual/perl-Module-Load
-  NonExistentDeps: version 0.320.0-r1: depset rdepends: nonexistent atoms [ ~perl-core/Module-Load-0.320.0 ]
+dev-php/PEAR-MDB2_Driver_pgsql
+  DeprecatedEAPI: version 1.5.0_beta3: uses deprecated EAPI: 2
 
-virtual/perl-Module-Load-Conditional
-  NonExistentDeps: version 0.620.0: depset rdepends: nonexistent atoms [ ~perl-core/Module-Load-Conditional-0.620.0 ]
-  NonExistentDeps: version 0.640.0: depset rdepends: nonexistent atoms [ ~perl-core/Module-Load-Conditional-0.640.0 ]
+dev-php/PEAR-MIME_Type
+  DeprecatedEAPI: version 1.3.1: uses deprecated EAPI: 4
 
-virtual/perl-Module-Metadata
-  NonExistentDeps: version 1.0.19: depset rdepends: nonexistent atoms [ ~perl-core/Module-Metadata-1.0.19 ]
-  NonExistentDeps: version 1.0.26: depset rdepends: nonexistent atoms [ ~perl-core/Module-Metadata-1.0.26 ]
+dev-php/PEAR-Mail
+  DeprecatedEAPI: version 1.2.0: uses deprecated EAPI: 0
 
-virtual/perl-Net-Ping
-  NonExistentDeps: version 2.430.0-r1: depset rdepends: nonexistent atoms [ ~perl-core/Net-Ping-2.430.0 ]
+dev-php/PEAR-Mail_mimeDecode
+  DeprecatedEAPI: version 1.5.5: uses deprecated EAPI: 4
 
-virtual/perl-Package-Constants
-  NonExistentDeps: version 0.40.0: depset rdepends: nonexistent atoms [ ~perl-core/Package-Constants-0.40.0 ]
+dev-php/PEAR-Math_Stats
+  DeprecatedEAPI: version 0.9.1: uses deprecated EAPI: 4
 
-virtual/perl-Parse-CPAN-Meta
-  NonExistentDeps: version 1.441.400-r1: depset rdepends: nonexistent atoms [ ~perl-core/Parse-CPAN-Meta-1.441.400 ]
+dev-php/PEAR-Net_DIME
+  DeprecatedEAPI: version 1.0.2: uses deprecated EAPI: 4
 
-virtual/perl-Perl-OSType
-  NonExistentDeps: version 1.7.0: depset rdepends: nonexistent atoms [ ~perl-core/Perl-OSType-1.7.0 ]
-  NonExistentDeps: version 1.8.0: depset rdepends: nonexistent atoms [ ~perl-core/Perl-OSType-1.8.0 ]
+dev-php/PEAR-Net_DNS
+  DeprecatedEAPI: version 1.0.7: uses deprecated EAPI: 0
 
-virtual/perl-Pod-Escapes
-  NonExistentDeps: version 1.60.0: depset rdepends: nonexistent atoms [ ~perl-core/Pod-Escapes-1.60.0 ]
-  NonExistentDeps: version 1.70.0: depset rdepends: nonexistent atoms [ ~perl-core/Pod-Escapes-1.70.0 ]
+dev-php/PEAR-Net_DNS2
+  DeprecatedEAPI: version 1.2.5: uses deprecated EAPI: 4
 
-virtual/perl-Pod-Parser
-  NonExistentDeps: version 1.620.0: depset rdepends: nonexistent atoms [ ~perl-core/Pod-Parser-1.620.0 ]
-  NonExistentDeps: version 1.630.0: depset rdepends: nonexistent atoms [ ~perl-core/Pod-Parser-1.630.0 ]
+dev-php/PEAR-Net_FTP
+  DeprecatedEAPI: version 1.3.7-r1: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.4.0_alpha3: uses deprecated EAPI: 4
 
-virtual/perl-Pod-Simple
-  NonExistentDeps: version 3.290.0: depset rdepends: nonexistent atoms [ ~perl-core/Pod-Simple-3.290.0 ]
+dev-php/PEAR-Net_IDNA2
+  DeprecatedEAPI: version 0.1.1: uses deprecated EAPI: 0
 
-virtual/perl-Safe
-  NonExistentDeps: version 2.370.0: depset rdepends: nonexistent atoms [ ~perl-core/Safe-2.370.0 ]
-  NonExistentDeps: version 2.390.0: depset rdepends: nonexistent atoms [ ~perl-core/Safe-2.390.0 ]
+dev-php/PEAR-Net_IMAP
+  DeprecatedEAPI: version 1.1.1: uses deprecated EAPI: 4
 
-virtual/perl-Scalar-List-Utils
-  NonExistentDeps: version 1.380.0: depset rdepends: nonexistent atoms [ ~perl-core/Scalar-List-Utils-1.380.0 ]
-  NonExistentDeps: version 1.410.0: depset rdepends: nonexistent atoms [ ~perl-core/Scalar-List-Utils-1.410.0 ]
+dev-php/PEAR-Net_IPv4
+  DeprecatedEAPI: version 1.3.4: uses deprecated EAPI: 0
 
-virtual/perl-Socket
-  NonExistentDeps: version 2.13.0: depset rdepends: nonexistent atoms [ ~perl-core/Socket-2.13.0 ]
-  NonExistentDeps: version 2.18.0: depset rdepends: nonexistent atoms [ ~perl-core/Socket-2.18.0 ]
+dev-php/PEAR-Net_LDAP
+  DeprecatedEAPI: version 1.1.5: uses deprecated EAPI: 4
 
-virtual/perl-Storable
-  NonExistentDeps: version 2.490.100-r1: depset rdepends: nonexistent atoms [ ~perl-core/Storable-2.490.100 ]
-  NonExistentDeps: version 2.530.0: depset rdepends: nonexistent atoms [ ~perl-core/Storable-2.530.0 ]
+dev-php/PEAR-Net_LDAP2
+  DeprecatedEAPI: version 2.0.12: uses deprecated EAPI: 4
 
-virtual/perl-Term-ANSIColor
-  NonExistentDeps: version 4.30.0: depset rdepends: nonexistent atoms [ ~perl-core/Term-ANSIColor-4.30.0 ]
+dev-php/PEAR-Net_POP3
+  DeprecatedEAPI: version 1.3.8: uses deprecated EAPI: 0
 
-virtual/perl-Term-ReadLine
-  NonExistentDeps: version 1.140.0: depset rdepends: nonexistent atoms [ ~perl-core/Term-ReadLine-1.140.0 ]
-  NonExistentDeps: version 1.150.0: depset rdepends: nonexistent atoms [ ~perl-core/Term-ReadLine-1.150.0 ]
+dev-php/PEAR-Net_Server
+  DeprecatedEAPI: version 1.0.2-r1: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 4
 
-virtual/perl-Test-Harness
-  NonExistentDeps: version 3.330.0: depset rdepends: nonexistent atoms [ ~perl-core/Test-Harness-3.330.0 ]
-  NonExistentDeps: version 3.350.0: depset rdepends: nonexistent atoms [ ~perl-core/Test-Harness-3.350.0 ]
+dev-php/PEAR-Net_Sieve
+  DeprecatedEAPI: version 1.3.2: uses deprecated EAPI: 4
 
-virtual/perl-Test-Simple
-  NonExistentDeps: version 1.1.2: depset rdepends: nonexistent atoms [ ~perl-core/Test-Simple-1.1.2 ]
-  NonExistentDeps: version 1.1.14: depset rdepends: nonexistent atoms [ ~perl-core/Test-Simple-1.1.14 ]
+dev-php/PEAR-Net_Socket
+  DeprecatedEAPI: version 1.0.14: uses deprecated EAPI: 4
 
-virtual/perl-Text-Balanced
-  NonExistentDeps: version 2.30.0: depset rdepends: nonexistent atoms [ ~perl-core/Text-Balanced-2.30.0 ]
+dev-php/PEAR-Net_Traceroute
+  DeprecatedEAPI: version 0.21.3: uses deprecated EAPI: 0
 
-virtual/perl-Text-ParseWords
-  NonExistentDeps: version 3.300.0: depset rdepends: nonexistent atoms [ ~perl-core/Text-ParseWords-3.300.0 ]
+dev-php/PEAR-Net_URL
+  DeprecatedEAPI: version 1.0.15: uses deprecated EAPI: 0
 
-virtual/perl-Thread-Queue
-  NonExistentDeps: version 3.50.0-r1: depset rdepends: nonexistent atoms [ ~perl-core/Thread-Queue-3.50.0 ]
+dev-php/PEAR-Net_URL2
+  DeprecatedEAPI: version 2.0.0: uses deprecated EAPI: 4
 
-virtual/perl-Tie-RefHash
-  NonExistentDeps: version 1.390.0-r4: depset rdepends: nonexistent atoms [ ~perl-core/Tie-RefHash-1.390.0 ]
+dev-php/PEAR-Net_UserAgent_Detect
+  DeprecatedEAPI: version 2.5.2: uses deprecated EAPI: 0
 
-virtual/perl-Time-Piece
-  NonExistentDeps: version 1.270.0: depset rdepends: nonexistent atoms [ ~perl-core/Time-Piece-1.270.0 ]
-  NonExistentDeps: version 1.290.0: depset rdepends: nonexistent atoms [ ~perl-core/Time-Piece-1.290.0 ]
+dev-php/PEAR-Numbers_Roman
+  DeprecatedEAPI: version 1.0.2: uses deprecated EAPI: 0
 
-virtual/perl-XSLoader
-  NonExistentDeps: version 0.170.0: depset rdepends: nonexistent atoms [ ~perl-core/XSLoader-0.170.0 ]
-  NonExistentDeps: version 0.200.0: depset rdepends: nonexistent atoms [ ~perl-core/XSLoader-0.200.0 ]
+dev-php/PEAR-Numbers_Words
+  DeprecatedEAPI: version 0.16.4: uses deprecated EAPI: 0
+  DroppedKeywordWarning: version 0.18.1: keywords dropped: ppc
 
-virtual/perl-autodie
-  NonExistentDeps: version 2.230.0: depset rdepends: nonexistent atoms [ ~perl-core/autodie-2.230.0 ]
-  NonExistentDeps: version 2.260.0: depset rdepends: nonexistent atoms [ ~perl-core/autodie-2.260.0 ]
+dev-php/PEAR-OLE
+  DeprecatedEAPI: version 0.6.1: uses deprecated EAPI: 0
 
-virtual/perl-bignum
-  NonExistentDeps: version 0.370.0: depset rdepends: nonexistent atoms [ ~perl-core/bignum-0.370.0 ]
-  NonExistentDeps: version 0.390.0: depset rdepends: nonexistent atoms [ ~perl-core/bignum-0.390.0 ]
+dev-php/PEAR-PEAR
+  NonExistentDeps: version 1.9.4: depset depends: nonexistent atoms [ <dev-lang/php-5.3 ]
+  NonExistentDeps: version 1.9.4: depset rdepends: nonexistent atoms [ <dev-lang/php-5.3 ]
+  DeprecatedEAPI: version 1.9.4: uses deprecated EAPI: 4
 
-virtual/perl-if
-  NonExistentDeps: version 0.60.300: depset rdepends: nonexistent atoms [ ~perl-core/if-0.60.300 ]
-  NonExistentDeps: version 0.60.400: depset rdepends: nonexistent atoms [ ~perl-core/if-0.60.400 ]
+dev-php/PEAR-PEAR_Info
+  DeprecatedEAPI: version 1.7.0: uses deprecated EAPI: 0
+  DroppedKeywordWarning: version 1.9.2-r3: keywords dropped: hppa, ppc, ppc64
 
-virtual/perl-libnet
-  NonExistentDeps: version 3.50.0: depset rdepends: nonexistent atoms [ ~perl-core/libnet-3.50.0 ]
+dev-php/PEAR-PEAR_PackageFileManager
+  DeprecatedEAPI: version 1.6.3: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.7.0: uses deprecated EAPI: 4
 
-virtual/perl-parent
-  NonExistentDeps: version 0.232.0: depset rdepends: nonexistent atoms [ ~perl-core/parent-0.232.0 ]
+dev-php/PEAR-PHP_CodeSniffer
+  DeprecatedEAPI: version 1.3.5: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.4.7: uses deprecated EAPI: 4
 
-virtual/perl-threads
-  NonExistentDeps: version 1.930.0: depset rdepends: nonexistent atoms [ ~perl-core/threads-1.930.0 ]
-  NonExistentDeps: version 2.10.0: depset rdepends: nonexistent atoms [ ~perl-core/threads-2.10.0 ]
+dev-php/PEAR-PHP_CompatInfo
+  DeprecatedEAPI: version 1.9.0: uses deprecated EAPI: 4
 
-virtual/perl-threads-shared
-  NonExistentDeps: version 1.460.0: depset rdepends: nonexistent atoms [ ~perl-core/threads-shared-1.460.0 ]
-  NonExistentDeps: version 1.480.0: depset rdepends: nonexistent atoms [ ~perl-core/threads-shared-1.480.0 ]
+dev-php/PEAR-PHP_Debug
+  DeprecatedEAPI: version 1.0.3-r1: uses deprecated EAPI: 4
 
-virtual/perl-version
-  NonExistentDeps: version 0.990.900-r2: depset rdepends: nonexistent atoms [ ~perl-core/version-0.990.900 ]
+dev-php/PEAR-Pager
+  DeprecatedEAPI: version 2.4.8: uses deprecated EAPI: 0
 
-virtual/pmake
-  NonExistentDeps: version 0: depset rdepends: nonexistent atoms [ sys-devel/bsdmake ]
-  DeprecatedEAPI: version 0: uses deprecated EAPI: 0
+dev-php/PEAR-PhpDocumentor
+  DeprecatedEAPI: version 1.4.3-r1: uses deprecated EAPI: 2
 
-virtual/qmail
-  NonExistentDeps: version 1.03: depset rdepends: nonexistent atoms [ ~mail-mta/netqmail-1.05 ]
-  DeprecatedEAPI: version 1.03: uses deprecated EAPI: 0
+dev-php/PEAR-SOAP
+  DeprecatedEAPI: version 0.13.0: uses deprecated EAPI: 4
 
-virtual/ruby-ffi
-  DeprecatedEAPI: version 2: uses deprecated EAPI: 2
+dev-php/PEAR-Services_TinyURL
+  DeprecatedEAPI: version 0.1.2: uses deprecated EAPI: 4
 
-virtual/service-manager
-  DeprecatedEAPI: version 0: uses deprecated EAPI: 0
+dev-php/PEAR-Services_W3C_CSSValidator
+  DeprecatedEAPI: version 0.2.2-r1: uses deprecated EAPI: 4
 
-virtual/shadow
-  DeprecatedEAPI: version 0: uses deprecated EAPI: 0
+dev-php/PEAR-Services_W3C_HTMLValidator
+  DeprecatedEAPI: version 1.0.0-r1: uses deprecated EAPI: 4
 
-virtual/skkserv
-  DeprecatedEAPI: version 0: uses deprecated EAPI: 3
+dev-php/PEAR-Services_Weather
+  DeprecatedEAPI: version 1.4.6: uses deprecated EAPI: 4
 
-virtual/tex-base
-  DeprecatedEAPI: version 0: uses deprecated EAPI: 0
+dev-php/PEAR-Text_Figlet
+  DeprecatedEAPI: version 1.0.2: uses deprecated EAPI: 0
 
-virtual/ttf-fonts
-  DeprecatedEAPI: version 1: uses deprecated EAPI: 0
+dev-php/PEAR-Text_Password
+  DeprecatedEAPI: version 1.1.1: uses deprecated EAPI: 0
 
-virtual/w3m
-  DeprecatedEAPI: version 0: uses deprecated EAPI: 3
+dev-php/PEAR-Translation2
+  DeprecatedEAPI: version 2.0.4: uses deprecated EAPI: 2
 
-virtual/yacc
-  DeprecatedEAPI: version 0: uses deprecated EAPI: 0
+dev-php/PEAR-XML_Serializer
+  DeprecatedEAPI: version 0.20.2: uses deprecated EAPI: 2
+
+dev-php/PHP_CodeCoverage
+  DeprecatedEAPI: version 1.1.2: uses deprecated EAPI: 4
+
+dev-php/PHP_TokenStream
+  DeprecatedEAPI: version 1.1.3: uses deprecated EAPI: 4
+
+dev-php/SabreAMF
+  DeprecatedEAPI: version 1.3.234: uses deprecated EAPI: 4
+
+dev-php/Savant3-Plugin-Form
+  DeprecatedEAPI: version 0.2.1: uses deprecated EAPI: 4
+
+dev-php/Text_Template
+  DeprecatedEAPI: version 1.1.1: uses deprecated EAPI: 4
+
+dev-php/adodb
+  DeprecatedEAPI: version 5.18: uses deprecated EAPI: 4
+
+dev-php/agavi
+  DeprecatedEAPI: version 1.0.7: uses deprecated EAPI: 4
+
+dev-php/cphplib
+  DeprecatedEAPI: version 0.51: uses deprecated EAPI: 4
+
+dev-php/jpgraph
+  DeprecatedEAPI: version 3.0.7-r1: uses deprecated EAPI: 4
+
+dev-php/libchart
+  DeprecatedEAPI: version 1.2.2: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.3: uses deprecated EAPI: 4
+
+dev-php/mmslib
+  DeprecatedEAPI: version 0.97: uses deprecated EAPI: 4
+
+dev-php/onphp
+  DeprecatedEAPI: version 1.0.10: uses deprecated EAPI: 4
+
+dev-php/pecl-event
+  DeprecatedEAPI: version 1.7.8: uses deprecated EAPI: 4
+
+dev-php/pecl-memcached
+  DeprecatedEAPI: version 2.1.0-r2: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 2.1.0-r3: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 2.2.0: uses deprecated EAPI: 4
+
+dev-php/pecl-xdiff
+  DeprecatedEAPI: version 1.5.2-r2: uses deprecated EAPI: 4
+
+dev-php/php-codebrowser
+  DeprecatedEAPI: version 1.0.2: uses deprecated EAPI: 4
+
+dev-php/propel
+  DeprecatedEAPI: version 1.6.4: uses deprecated EAPI: 4
+
+dev-php/propel-generator
+  DeprecatedEAPI: version 1.6.4: uses deprecated EAPI: 4
+
+dev-php/propel-runtime
+  DeprecatedEAPI: version 1.6.4: uses deprecated EAPI: 4
+
+dev-php/securimage
+  DeprecatedEAPI: version 3.0.1: uses deprecated EAPI: 4
+
+dev-php/simpletest
+  DeprecatedEAPI: version 1.1.0: uses deprecated EAPI: 4
+
+dev-php/stringparser_bbcode
+  DeprecatedEAPI: version 0.3.3: uses deprecated EAPI: 4
+
+dev-php/tcpdf
+  DeprecatedEAPI: version 5.9.149: uses deprecated EAPI: 4
+
+dev-php/xcache
+  MissingSlotDep: version 3.0.4: 'virtual/httpd-php' matches more than one slot: [ 5.4, 5.5, 5.6, 7.0 ]
+  MissingSlotDep: version 3.1.2: 'virtual/httpd-php' matches more than one slot: [ 5.4, 5.5, 5.6, 7.0 ]
+  MissingSlotDep: version 3.2.0: 'virtual/httpd-php' matches more than one slot: [ 5.4, 5.5, 5.6, 7.0 ]
+
+dev-php/xdebug-client
+  DeprecatedEAPI: version 2.2.2: uses deprecated EAPI: 4
+  DroppedKeywordWarning: version 2.2.3: keywords dropped: alpha, ia64, sparc
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch

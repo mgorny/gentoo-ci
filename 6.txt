@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 6 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-java/*' 'media-video/*' 'media-fonts/*' 'net-mail/*' 'x11-wm/*' 'www-servers/*' 'net-dialup/*' 'net-nds/*' 'perl-core/*' 'games-roguelike/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-java/*' 'media-video/*' 'media-fonts/*' 'net-mail/*' 'x11-wm/*' 'www-servers/*' 'net-dialup/*' 'sys-power/*' 'perl-core/*' 'games-roguelike/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 WARNING:pkgcore:disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
@@ -468,32 +468,32 @@ dev-java/jdbc-oracle-bin
   DeprecatedEAPI: version 10.1.0.5: uses deprecated EAPI: 0
   DeprecatedEAPI: version 10.2.0.3: uses deprecated EAPI: 0
   DeprecatedEAPI: version 10.2.0.4: uses deprecated EAPI: 0
-  MissingChksum: version 9.2.0.8: "jdbc-oracle-bin-9.2.0.8-javadoc.tar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 9.2.0.8: "jdbc-oracle-bin-9.2.0.8-ocrs12.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 9.2.0.8: "jdbc-oracle-bin-9.2.0.8-ojdbc14_g.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 9.2.0.8: "jdbc-oracle-bin-9.2.0.8-ojdbc14.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 9.2.0.8: "jdbc-oracle-bin-9.2.0.8-javadoc.tar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 9.2.0.8: "jdbc-oracle-bin-9.2.0.8-ojdbc14_g.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 10.1.0.5: "jdbc-oracle-bin-10.1.0.5-ojdbc14.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 10.1.0.5: "jdbc-oracle-bin-10.1.0.5-ojdbc14dms_g.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 10.1.0.5: "jdbc-oracle-bin-10.1.0.5-orai18n.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 10.1.0.5: "jdbc-oracle-bin-10.1.0.5-ocrs12.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 10.1.0.5: "jdbc-oracle-bin-10.1.0.5-ojdbc14dms.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 10.1.0.5: "jdbc-oracle-bin-10.1.0.5-ojdbc14_g.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 10.1.0.5: "jdbc-oracle-bin-10.1.0.5-ocrs12.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 10.1.0.5: "jdbc-oracle-bin-10.1.0.5-ojdbc14.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 10.1.0.5: "jdbc-oracle-bin-10.1.0.5-javadoc.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 10.1.0.5: "jdbc-oracle-bin-10.1.0.5-orai18n.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 10.1.0.5: "jdbc-oracle-bin-10.1.0.5-demo.tar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 10.1.0.5: "jdbc-oracle-bin-10.1.0.5-ojdbc14dms_g.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 10.2.0.3: "jdbc-oracle-bin-10.2.0.3-ojdbc14.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 10.2.0.3: "jdbc-oracle-bin-10.2.0.1-javadoc.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 10.2.0.3: "jdbc-oracle-bin-10.2.0.3-ojdbc14_g.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 10.2.0.3: "jdbc-oracle-bin-10.2.0.3-demo.tar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 10.2.0.3: "jdbc-oracle-bin-10.2.0.3-orai18n.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 10.2.0.3: "jdbc-oracle-bin-10.2.0.3-ojdbc14dms.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 10.2.0.3: "jdbc-oracle-bin-10.2.0.3-ons.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 10.1.0.5: "jdbc-oracle-bin-10.1.0.5-javadoc.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 10.2.0.3: "jdbc-oracle-bin-10.2.0.3-ojdbc14dms_g.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 10.2.0.4: "jdbc-oracle-bin-10.2.0.4-orai18n.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 10.2.0.4: "jdbc-oracle-bin-10.2.0.4-ojdbc14_g.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 10.2.0.4: "jdbc-oracle-bin-10.2.0.4-demo.tar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 10.2.0.4: "jdbc-oracle-bin-10.2.0.4-ojdbc14.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 10.2.0.4: "jdbc-oracle-bin-10.2.0.4-ojdbc14dms_g.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 10.2.0.3: "jdbc-oracle-bin-10.2.0.3-ojdbc14dms.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 10.2.0.3: "jdbc-oracle-bin-10.2.0.3-orai18n.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 10.2.0.3: "jdbc-oracle-bin-10.2.0.3-ojdbc14_g.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 10.2.0.3: "jdbc-oracle-bin-10.2.0.1-javadoc.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 10.2.0.3: "jdbc-oracle-bin-10.2.0.3-ojdbc14.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 10.2.0.3: "jdbc-oracle-bin-10.2.0.3-ons.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 10.2.0.3: "jdbc-oracle-bin-10.2.0.3-demo.tar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 10.2.0.4: "jdbc-oracle-bin-10.2.0.4-ojdbc14dms.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 10.2.0.4: "jdbc-oracle-bin-10.2.0.4-ojdbc14dms_g.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 10.2.0.4: "jdbc-oracle-bin-10.2.0.4-orai18n.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 10.2.0.4: "jdbc-oracle-bin-10.2.0.4-demo.tar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 10.2.0.4: "jdbc-oracle-bin-10.2.0.4-ojdbc14_g.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 10.2.0.4: "jdbc-oracle-bin-10.2.0.4-ojdbc14.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 dev-java/jdbm
   DeprecatedEAPI: version 0.12-r2: uses deprecated EAPI: 0
@@ -1047,8 +1047,8 @@ dev-java/sun-jai-bin
 dev-java/sun-java3d-bin
   DeprecatedEAPI: version 1.3.2-r1: uses deprecated EAPI: 0
   DeprecatedEAPI: version 1.4.0_pre5-r1: uses deprecated EAPI: 0
-  MissingChksum: version 1.3.2-r1: "java3d-1_3_2-linux-i586.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1.3.2-r1: "java3d-1_3_2-linux-amd64.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.3.2-r1: "java3d-1_3_2-linux-i586.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1.4.0_pre5-r1: "java3d-1_4_0-build5-linux-i586.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 dev-java/sun-javamail
@@ -2720,93 +2720,123 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-net-nds/389-admin
-  NonExistentDeps: version 1.1.31: depset depends: nonexistent atoms [ <=dev-libs/nspr-4.8.3-r3 ]
-  NonExistentDeps: version 1.1.31: depset rdepends: nonexistent atoms [ <=dev-libs/nspr-4.8.3-r3 ]
+sys-power/acpi_call
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-net-nds/adtool
-  DeprecatedEAPI: version 1.3.3: uses deprecated EAPI: 4
+sys-power/apcupsd
+  DeprecatedEAPI: version 3.14.8-r2: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.14.10-r6: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 3.14.12: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 3.14.12-r1: uses deprecated EAPI: 4
 
-net-nds/gosa-core
-  DeprecatedEAPI: version 2.6.10: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 2.6.11: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 2.6.12: uses deprecated EAPI: 4
+sys-power/athcool
+  DeprecatedEAPI: version 0.3.12: uses deprecated EAPI: 3
 
-net-nds/gosa-plugin-mail
-  DeprecatedEAPI: version 2.6.10: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 2.6.11: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 2.6.12: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 2.6.12-r1: uses deprecated EAPI: 4
+sys-power/cpudyn
+  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 0
 
-net-nds/gosa-plugin-samba
-  DeprecatedEAPI: version 2.6.10: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 2.6.11: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 2.6.12: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 2.6.12-r1: uses deprecated EAPI: 4
+sys-power/cpuspeedy
+  DeprecatedEclass: version 0.4.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.4.1: uses deprecated EAPI: 3
 
-net-nds/gosa-plugin-systems
-  DeprecatedEAPI: version 2.6.10: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 2.6.11: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 2.6.12: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 2.6.12-r1: uses deprecated EAPI: 4
+sys-power/iasl
+  DeprecatedEAPI: version 20121018: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 20130117-r1: uses deprecated EAPI: 4
 
-net-nds/jxplorer
-  DeprecatedEAPI: version 3.2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 3.2-r2: uses deprecated EAPI: 4
+sys-power/nvclock
+  DeprecatedEAPI: version 0.8_p20110102-r2: uses deprecated EAPI: 4
 
-net-nds/lat
-  DeprecatedEclass: version 1.2.3: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DeprecatedEAPI: version 1.2.3: uses deprecated EAPI: 4
+sys-power/nvram-reboot
+  DeprecatedEAPI: version 2004.10.03: uses deprecated EAPI: 0
 
-net-nds/ldapvi
-  DeprecatedEAPI: version 1.7-r1: uses deprecated EAPI: 2
-  MissingSlotDep: version 1.7_p20101214: 'sys-libs/readline' matches more than one slot: [ 0, 4, 5 ]
+sys-power/nvram-wakeup
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 4
 
-net-nds/led
-  DeprecatedEAPI: version 1.111: uses deprecated EAPI: 0
+sys-power/phc-intel
+  SizeViolation: "files/phc-intel-0.3.2-rev12-trailing-space-misc.patch" exceeds 20k in size; 33960 bytes total
 
-net-nds/nsscache
-  DeprecatedEclass: version 0.23: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+sys-power/phc-k8
+  DeprecatedEAPI: version 0.4.3: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.4.4: uses deprecated EAPI: 4
 
-net-nds/openldap
-  NonExistentDeps: version 2.3.43-r3: depset depends: nonexistent atoms [ <dev-lang/perl-5.16 ]
-  NonExistentDeps: version 2.3.43-r3: depset rdepends: nonexistent atoms [ <dev-lang/perl-5.16 ]
-  DeprecatedEAPI: version 2.3.43-r3: uses deprecated EAPI: 2
-  NonExistentDeps: version 2.3.43-r4: depset depends: nonexistent atoms [ <dev-lang/perl-5.16 ]
-  NonExistentDeps: version 2.3.43-r4: depset rdepends: nonexistent atoms [ <dev-lang/perl-5.16 ]
-  DeprecatedEAPI: version 2.3.43-r4: uses deprecated EAPI: 2
-  MissingSlotDep: version 2.4.38-r2: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
-  MissingSlotDep: version 2.4.38-r2: 'sys-libs/db' matches more than one slot: [ 1, 3, 4.2, 4.3, 4.4, 4.5, 4.6, 4.7, 4.8, 5.1, 5.3, 6.0, 6.1 ]
-  MissingSlotDep: version 2.4.39: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
-  MissingSlotDep: version 2.4.39: 'sys-libs/db' matches more than one slot: [ 1, 3, 4.2, 4.3, 4.4, 4.5, 4.6, 4.7, 4.8, 5.1, 5.3, 6.0, 6.1 ]
-  MissingSlotDep: version 2.4.40: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
-  MissingSlotDep: version 2.4.40: 'sys-libs/db' matches more than one slot: [ 1, 3, 4.2, 4.3, 4.4, 4.5, 4.6, 4.7, 4.8, 5.1, 5.3, 6.0, 6.1 ]
-  MissingSlotDep: version 2.4.40-r2: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
-  MissingSlotDep: version 2.4.40-r4: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
-  MissingSlotDep: version 2.4.42: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+sys-power/phctool
+  DeprecatedEclass: version 0.5.2.2-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.5.2.2-r1: uses deprecated EAPI: 2
+  DeprecatedEclass: version 0.5.2.2-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.5.2.2-r2: uses deprecated EAPI: 4
 
-net-nds/phpldapadmin
-  NonExistentDeps: version 1.2.3: depset rdepends: nonexistent atoms [ <dev-lang/php-5.3 ]
-  NonExistentDeps: version 1.2.3-r1: depset rdepends: nonexistent atoms [ <dev-lang/php-5.3 ]
+sys-power/pm-quirks
+  DeprecatedEAPI: version 20100619: uses deprecated EAPI: 3
 
-net-nds/portmap
-  DeprecatedEAPI: version 6.0: uses deprecated EAPI: 0
+sys-power/pmtools
+  DeprecatedEAPI: version 20071116: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 20110323: uses deprecated EAPI: 2
+  DroppedKeywordWarning: version 20110323: keywords dropped: ppc
 
-net-nds/rpcbind
-  DeprecatedEAPI: version 0.2.0-r1: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.2.1-r1: uses deprecated EAPI: 4
+sys-power/powertop
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-net-nds/smbldap-tools
-  DeprecatedEAPI: version 0.9.8: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.9.9: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.9.10: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.9.10-r1: uses deprecated EAPI: 4
+sys-power/sispmctl
+  DeprecatedEAPI: version 2.7: uses deprecated EAPI: 2
 
-net-nds/tac_plus
-  DeprecatedEAPI: version 4.0.4.19-r3: uses deprecated EAPI: 4
+sys-power/suspend
+  NonExistentDeps: version 1.0: depset depends: nonexistent atoms [ <dev-libs/libgcrypt-1.6.0:0 ]
+  NonExistentDeps: version 1.0: depset rdepends: nonexistent atoms [ <dev-libs/libgcrypt-1.6.0:0 ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/developer): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome/systemd): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde/systemd): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma/systemd): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/systemd): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/no-multilib): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/selinux): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/developer): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome/systemd): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde/systemd): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma/systemd): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(depends) keyword(x86) profile (hardened/linux/x86): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(depends) keyword(x86) profile (hardened/linux/x86/selinux): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/developer): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome/systemd): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde/systemd): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma/systemd): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/systemd): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64/no-multilib): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64/selinux): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/developer): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome/systemd): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde/systemd): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma/systemd): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(rdepends) keyword(x86) profile (hardened/linux/x86): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(rdepends) keyword(x86) profile (hardened/linux/x86/selinux): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 4
 
-net-nds/ypserv
-  DeprecatedEAPI: version 2.26: uses deprecated EAPI: 4
+sys-power/yacpi
+  DeprecatedEAPI: version 3.0.1: uses deprecated EAPI: 3
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
