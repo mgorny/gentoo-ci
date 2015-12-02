@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 11 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'app-emulation/*' 'sys-fs/*' 'app-crypt/*' 'kde-base/*' 'games-puzzle/*' 'sys-boot/*' 'dev-dotnet/*' 'dev-lisp/*' 'sci-calculators/*' 'mate-base/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'app-emulation/*' 'sys-fs/*' 'app-crypt/*' 'kde-base/*' 'dev-embedded/*' 'sys-boot/*' 'dev-dotnet/*' 'dev-lisp/*' 'sci-calculators/*' 'mate-base/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 WARNING:pkgcore:disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
@@ -801,28 +801,226 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-games-puzzle/enigma
-  MissingSlotDep: version 1.21-r1: 'net-libs/enet' matches more than one slot: [ 0, 1.3 ]
+dev-embedded/arduino
+  DeprecatedEAPI: version 1.0.5-r1: uses deprecated EAPI: 4
 
-games-puzzle/freesweep
-  MissingSlotDep: version 0.92: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
+dev-embedded/avarice
+  DeprecatedEAPI: version 2.11: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 2.12: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 2.13: uses deprecated EAPI: 4
 
-games-puzzle/greedy
-  MissingSlotDep: version 0.2.0-r1: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
+dev-embedded/avr-libc
+  DeprecatedEAPI: version 1.6.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.6.4: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.6.8: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.7.0: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 1.7.1: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.8.0: uses deprecated EAPI: 4
 
-games-puzzle/kiki
-  DeprecatedEclass: version 1.0.2-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+dev-embedded/avra
+  DeprecatedEAPI: version 1.3.0: uses deprecated EAPI: 4
 
-games-puzzle/krystaldrop
-  DeprecatedEAPI: version 0.7.2: uses deprecated EAPI: 4
+dev-embedded/avrdude
+  DeprecatedEAPI: version 5.11.1: uses deprecated EAPI: 4
+  MissingSlotDep: version 6.0.1: 'sys-libs/readline' matches more than one slot: [ 0, 4, 5 ]
+  MissingSlotDep: version 6.0.1: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
+  MissingSlotDep: version 6.1: 'sys-libs/readline' matches more than one slot: [ 0, 4, 5 ]
+  MissingSlotDep: version 6.1: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
 
-games-puzzle/neverball
-  DeprecatedEAPI: version 1.5.4: uses deprecated EAPI: 2
-  MissingSlotDep: version 1.6.0: 'virtual/jpeg' matches more than one slot: [ 0, 62 ]
-  DroppedKeywordWarning: version 1.6.0: keywords dropped: ppc
+dev-embedded/bitbake
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-games-puzzle/ngstar
-  MissingSlotDep: version 2.1.8-r2: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
+dev-embedded/dc-tool-ip
+  DeprecatedEAPI: version 1.0.4: uses deprecated EAPI: 4
+
+dev-embedded/dfu-programmer
+  DeprecatedEAPI: version 0.5.4-r1: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.1: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.2: uses deprecated EAPI: 4
+
+dev-embedded/ftdi_eeprom
+  DeprecatedEAPI: version 0.3-r1: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 4
+
+dev-embedded/gnap
+  DeprecatedEAPI: version 2.0: uses deprecated EAPI: 0
+
+dev-embedded/gnap-dev
+  DeprecatedEAPI: version 2.0: uses deprecated EAPI: 0
+
+dev-embedded/gnap-ext
+  DeprecatedEAPI: version 2.0: uses deprecated EAPI: 0
+
+dev-embedded/gnusim8085
+  DeprecatedEAPI: version 1.3.7: uses deprecated EAPI: 4
+
+dev-embedded/gpsim
+  DeprecatedEAPI: version 0.26.1: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.27.0: uses deprecated EAPI: 4
+
+dev-embedded/gputils
+  DeprecatedEAPI: version 0.13.6-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.13.7: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.14.0: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.14.1: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.14.2: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.2.0: uses deprecated EAPI: 4
+
+dev-embedded/icdprog
+  DeprecatedEAPI: version 0.5: uses deprecated EAPI: 4
+
+dev-embedded/include
+  DeprecatedEAPI: version 0.4.2: uses deprecated EAPI: 4
+
+dev-embedded/jal
+  DeprecatedEAPI: version 0.4.60: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.4.62: uses deprecated EAPI: 4
+
+dev-embedded/jtag
+  DeprecatedEAPI: version 0.5.1-r1: uses deprecated EAPI: 4
+
+dev-embedded/kobs-ng
+  DeprecatedEAPI: version 3.0.35.4.1.0: uses deprecated EAPI: 4
+
+dev-embedded/libdisasm
+  DeprecatedEAPI: version 0.23: uses deprecated EAPI: 4
+
+dev-embedded/libftdi
+  DeprecatedEAPI: version 0.19: uses deprecated EAPI: 2
+  DeprecatedEclass: version 0.20: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.20: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 4
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
+
+dev-embedded/mspdebug
+  MissingSlotDep: version 0.22: 'sys-libs/readline' matches more than one slot: [ 0, 4, 5 ]
+
+dev-embedded/openocd
+  DeprecatedEAPI: version 0.5.0: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.6.1: uses deprecated EAPI: 4
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+dev-embedded/parapin
+  DeprecatedEAPI: version 1.0.0: uses deprecated EAPI: 0
+
+dev-embedded/picasm
+  DeprecatedEAPI: version 1.14: uses deprecated EAPI: 4
+
+dev-embedded/picp
+  DeprecatedEAPI: version 0.6.8: uses deprecated EAPI: 4
+
+dev-embedded/picprog
+  DeprecatedEAPI: version 1.9.1: uses deprecated EAPI: 4
+
+dev-embedded/pista
+  DeprecatedEAPI: version 0.70: uses deprecated EAPI: 0
+
+dev-embedded/powersoftplus-libftdi
+  DeprecatedEAPI: version 0.1.8-r1: uses deprecated EAPI: 4
+
+dev-embedded/scratchbox
+  DeprecatedEAPI: version 1.0.19: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0.20: uses deprecated EAPI: 0
+
+dev-embedded/scratchbox-devkit-apt-https
+  DeprecatedEAPI: version 1.0.10: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0.11: uses deprecated EAPI: 0
+
+dev-embedded/scratchbox-devkit-cputransp
+  DeprecatedEAPI: version 1.0.7: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0.9: uses deprecated EAPI: 0
+
+dev-embedded/scratchbox-devkit-debian
+  DeprecatedEAPI: version 1.0.10: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0.11: uses deprecated EAPI: 0
+
+dev-embedded/scratchbox-devkit-debian-squeeze
+  DeprecatedEAPI: version 1.0.4: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0.5: uses deprecated EAPI: 0
+
+dev-embedded/scratchbox-devkit-doctools
+  DeprecatedEAPI: version 1.0.9: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0.13: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0.14: uses deprecated EAPI: 0
+
+dev-embedded/scratchbox-devkit-git
+  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0.2: uses deprecated EAPI: 0
+
+dev-embedded/scratchbox-devkit-maemo3
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 0
+
+dev-embedded/scratchbox-devkit-perl
+  DeprecatedEAPI: version 1.0.4: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0.5: uses deprecated EAPI: 0
+
+dev-embedded/scratchbox-devkit-qemu
+  DeprecatedEAPI: version 0.10.0.0.10: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.11.50.0.5: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.12.50.0.3: uses deprecated EAPI: 0
+
+dev-embedded/scratchbox-devkit-svn
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+
+dev-embedded/scratchbox2
+  DeprecatedEAPI: version 2.0-r1: uses deprecated EAPI: 2
+
+dev-embedded/sdcc
+  DeprecatedEAPI: version 2.5.0_p20060502: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.6.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.7.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.8.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.9.0: uses deprecated EAPI: 2
+
+dev-embedded/sgpp-lite-arm-eabi-bin
+  DeprecatedEAPI: version 2010.09.51: uses deprecated EAPI: 0
+
+dev-embedded/sgpp-lite-arm-linux-bin
+  DeprecatedEAPI: version 2010.09.50: uses deprecated EAPI: 0
+
+dev-embedded/sgpp-lite-arm-uclinux-bin
+  DeprecatedEAPI: version 2010.09.58: uses deprecated EAPI: 0
+
+dev-embedded/smdk-dltool
+  DeprecatedEAPI: version 0.20-r3: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.20-r4: uses deprecated EAPI: 4
+
+dev-embedded/srecord
+  DeprecatedEAPI: version 1.59: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.60: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.61: uses deprecated EAPI: 4
+
+dev-embedded/tavrasm
+  DeprecatedEAPI: version 1.22-r1: uses deprecated EAPI: 2
+
+dev-embedded/tigcc
+  DeprecatedEAPI: version 0.96_beta7: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.96_beta8-r1: uses deprecated EAPI: 0
+
+dev-embedded/uisp
+  DeprecatedEAPI: version 20050207-r1: uses deprecated EAPI: 4
+
+dev-embedded/upslug2
+  DeprecatedEAPI: version 11: uses deprecated EAPI: 0
+
+dev-embedded/urjtag
+  DeprecatedEAPI: version 0.10: uses deprecated EAPI: 0
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
+
+dev-embedded/usbprog
+  MetadataError: version 0.2.0: attr(fetchables): error- Metadata Exception: pkg ebuild src: dev-embedded/usbprog-0.2.0, attr fetchables
+error: mirror://berlios/usbprog/usbprog-0.2.0.tar.bz2 is unparseable
+flagged token- uri mirror://berlios/usbprog/usbprog-0.2.0.tar.bz2 isn't a known mirror tier
+  DeprecatedEAPI: version 0.2.0: uses deprecated EAPI: 4
+  MetadataError: version 0.2.0-r1: attr(fetchables): error- Metadata Exception: pkg ebuild src: dev-embedded/usbprog-0.2.0-r1, attr fetchables
+error: mirror://berlios/usbprog/usbprog-0.2.0.tar.bz2 is unparseable
+flagged token- uri mirror://berlios/usbprog/usbprog-0.2.0.tar.bz2 isn't a known mirror tier
+
+dev-embedded/zmac
+  DeprecatedEAPI: version 1.3: uses deprecated EAPI: 0
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
