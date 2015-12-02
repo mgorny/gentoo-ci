@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 2 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-perl/*' 'x11-misc/*' 'sys-devel/*' 'app-office/*' 'gnome-extra/*' 'mail-client/*' 'sci-physics/*' 'x11-terms/*' 'dev-games/*' 'x11-base/*' 'app-antivirus/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-perl/*' 'x11-misc/*' 'sys-devel/*' 'app-office/*' 'gnome-extra/*' 'mail-client/*' 'sci-physics/*' 'sys-power/*' 'dev-games/*' 'x11-base/*' 'app-antivirus/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 WARNING:pkgcore:disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
@@ -1125,7 +1125,7 @@ app-office/rubrica
 error: mirror://berlios/rubrica/rubrica2-2.1.6.tar.bz2 mirror://gentoo/rubrica-2.1.6-hu.po.bz2 is unparseable
 flagged token- uri mirror://berlios/rubrica/rubrica2-2.1.6.tar.bz2 isn't a known mirror tier
 ERROR root: check <pkgcheck.repo_metadata.ManifestReport object at
-          : 0x7fb51fd59f90> raised
+          : 0x7fa578212350> raised
 ERROR root: Traceback (most recent call last):
 ERROR root:   File
           : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/bas
@@ -1365,7 +1365,7 @@ flagged token- uri mirror://bitbucket/mutt/mutt/downloads/mutt-1.5.24.tar.gz isn
 error: mirror://sourceforge/mutt/mutt-1.5.24.tar.gz mirror://bitbucket/mutt/mutt/downloads/mutt-1.5.24.tar.gz ftp://ftp.mutt.org/pub/mutt/mutt-1.5.24.tar.gz mirror://gentoo/mutt-1.5.24-gentoo-patches-r1.tar.bz2 https://dev.gentoo.org/~grobian/distfiles/mutt-1.5.24-gentoo-patches-r1.tar.bz2 is unparseable
 flagged token- uri mirror://bitbucket/mutt/mutt/downloads/mutt-1.5.24.tar.gz isn't a known mirror tier
 ERROR root: check <pkgcheck.repo_metadata.ManifestReport object at
-          : 0x7fb51fd59f90> raised
+          : 0x7fa578212350> raised
 ERROR root: Traceback (most recent call last):
 ERROR root:   File
           : "/home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/bas
@@ -1475,60 +1475,124 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-x11-terms/aterm
-  DeprecatedEAPI: version 1.0.1-r2: uses deprecated EAPI: 3
-
-x11-terms/eterm
-  DeprecatedEAPI: version 0.9.5: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.9.6: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
-
-x11-terms/evilvte
-  DeprecatedEAPI: version 0.5.1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 0.5.2_pre1: uses deprecated EAPI: 4
-
-x11-terms/gnome-terminal
-  SizeViolation: "files/gnome-terminal-3.16.2-restore-transparency.patch" exceeds 20k in size; 54792 bytes total
-
-x11-terms/hanterm
-  DeprecatedEAPI: version 3.1.6-r2: uses deprecated EAPI: 0
-
-x11-terms/kterm
-  DeprecatedEAPI: version 6.2.0-r5: uses deprecated EAPI: 4
-
-x11-terms/mrxvt
-  DeprecatedEAPI: version 0.5.4: uses deprecated EAPI: 4
-
-x11-terms/multi-aterm
-  DeprecatedEAPI: version 0.2.1-r1: uses deprecated EAPI: 4
-
-x11-terms/qterminal
-  DeprecatedEAPI: version 0.4.0: uses deprecated EAPI: 4
-
-x11-terms/root-tail
-  DeprecatedEAPI: version 1.2-r3: uses deprecated EAPI: 2
-
-x11-terms/roxterm
-  DeprecatedEAPI: version 2.6.3: uses deprecated EAPI: 4
-  DeprecatedEclass: version 2.6.3: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 2.6.5: uses deprecated EAPI: 4
-  DeprecatedEclass: version 2.6.5: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DroppedKeywordWarning: version 2.9.3-r1: keywords dropped: ppc
-
-x11-terms/terminology
+sys-power/acpi_call
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-x11-terms/tilda
-  DeprecatedEAPI: version 0.9.6: uses deprecated EAPI: 4
+sys-power/apcupsd
+  DeprecatedEAPI: version 3.14.8-r2: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.14.10-r6: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 3.14.12: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 3.14.12-r1: uses deprecated EAPI: 4
 
-x11-terms/valaterm
-  DeprecatedEAPI: version 0.6: uses deprecated EAPI: 4
+sys-power/athcool
+  DeprecatedEAPI: version 0.3.12: uses deprecated EAPI: 3
 
-x11-terms/xvt
-  DeprecatedEAPI: version 2.1-r3: uses deprecated EAPI: 2
+sys-power/cpudyn
+  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 0
 
-x11-terms/yeahconsole
-  DeprecatedEAPI: version 0.3.4-r1: uses deprecated EAPI: 2
+sys-power/cpuspeedy
+  DeprecatedEAPI: version 0.4.1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.4.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+sys-power/iasl
+  DeprecatedEAPI: version 20121018: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 20130117-r1: uses deprecated EAPI: 4
+
+sys-power/nvclock
+  DeprecatedEAPI: version 0.8_p20110102-r2: uses deprecated EAPI: 4
+
+sys-power/nvram-reboot
+  DeprecatedEAPI: version 2004.10.03: uses deprecated EAPI: 0
+
+sys-power/nvram-wakeup
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 4
+
+sys-power/phc-intel
+  SizeViolation: "files/phc-intel-0.3.2-rev12-trailing-space-misc.patch" exceeds 20k in size; 33960 bytes total
+
+sys-power/phc-k8
+  DeprecatedEAPI: version 0.4.3: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.4.4: uses deprecated EAPI: 4
+
+sys-power/phctool
+  DeprecatedEAPI: version 0.5.2.2-r1: uses deprecated EAPI: 2
+  DeprecatedEclass: version 0.5.2.2-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.5.2.2-r2: uses deprecated EAPI: 4
+  DeprecatedEclass: version 0.5.2.2-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+sys-power/pm-quirks
+  DeprecatedEAPI: version 20100619: uses deprecated EAPI: 3
+
+sys-power/pmtools
+  DeprecatedEAPI: version 20071116: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 20110323: uses deprecated EAPI: 2
+  DroppedKeywordWarning: version 20110323: keywords dropped: ppc
+
+sys-power/powertop
+  DeprecatedEAPI: version 1.13: uses deprecated EAPI: 3
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+sys-power/sispmctl
+  DeprecatedEAPI: version 2.7: uses deprecated EAPI: 2
+
+sys-power/suspend
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 4
+  NonExistentDeps: version 1.0: depset depends: nonexistent atoms [ <dev-libs/libgcrypt-1.6.0:0 ]
+  NonExistentDeps: version 1.0: depset rdepends: nonexistent atoms [ <dev-libs/libgcrypt-1.6.0:0 ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/developer): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome/systemd): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde/systemd): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma/systemd): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/systemd): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/no-multilib): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/selinux): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/developer): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome/systemd): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde/systemd): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma/systemd): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(depends) keyword(x86) profile (hardened/linux/x86): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(depends) keyword(x86) profile (hardened/linux/x86/selinux): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/developer): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome/systemd): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde/systemd): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma/systemd): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/systemd): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64/no-multilib): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64/selinux): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/developer): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome/systemd): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde/systemd): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma/systemd): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(rdepends) keyword(x86) profile (hardened/linux/x86): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+  NonsolvableDeps: version 1.0: nonsolvable depset(rdepends) keyword(x86) profile (hardened/linux/x86/selinux): solutions: [ <dev-libs/libgcrypt-1.6.0:0[static-libs] ]
+
+sys-power/yacpi
+  DeprecatedEAPI: version 3.0.1: uses deprecated EAPI: 3
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
