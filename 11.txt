@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 11 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'app-emulation/*' 'sys-fs/*' 'app-crypt/*' 'kde-base/*' 'dev-embedded/*' 'sys-boot/*' 'dev-dotnet/*' 'dev-lisp/*' 'sci-calculators/*' 'mate-base/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'app-emulation/*' 'sys-fs/*' 'www-apps/*' 'kde-base/*' 'dev-embedded/*' 'sys-boot/*' 'dev-dotnet/*' 'dev-lisp/*' 'sci-calculators/*' 'mate-base/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 WARNING:pkgcore:disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
@@ -543,241 +543,310 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-app-crypt/acr38u
-  DeprecatedEAPI: version 1.7.11-r1: uses deprecated EAPI: 4
+www-apps/ampache
+  DeprecatedEAPI: version 3.4.3: uses deprecated EAPI: 0
+  NonExistentDeps: version 3.5.3-r1: depset rdepends: nonexistent atoms [ <dev-lang/php-5.3 ]
+  DeprecatedEAPI: version 3.5.3-r1: uses deprecated EAPI: 2
+  NonExistentDeps: version 3.5.4: depset rdepends: nonexistent atoms [ <dev-lang/php-5.3 ]
+  DeprecatedEAPI: version 3.5.4: uses deprecated EAPI: 2
 
-app-crypt/aescrypt
-  DeprecatedEAPI: version 3.0.6b: uses deprecated EAPI: 4
+www-apps/b2evolution
+  MissingSlotDep: version 4.1.7: 'virtual/httpd-php' matches more than one slot: [ 5.4, 5.5, 5.6, 7.0 ]
 
-app-crypt/aespipe
-  DeprecatedEAPI: version 2.3e: uses deprecated EAPI: 0
-
-app-crypt/af_alg
-  MissingSlotDep: version 0_pre20120229: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
-
-app-crypt/asedriveiiie-serial
-  DeprecatedEAPI: version 3.5: uses deprecated EAPI: 0
-
-app-crypt/asedriveiiie-usb
-  DeprecatedEAPI: version 3.5: uses deprecated EAPI: 0
-
-app-crypt/asekey
-  DeprecatedEAPI: version 3.7: uses deprecated EAPI: 4
-
-app-crypt/bcrypt
-  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 0
-
-app-crypt/bcwipe
-  DeprecatedEAPI: version 1.9.8: uses deprecated EAPI: 3
-
-app-crypt/bestcrypt
-  DeprecatedEAPI: version 2.0.0: uses deprecated EAPI: 4
-
-app-crypt/bsign
-  DeprecatedEAPI: version 0.4.5: uses deprecated EAPI: 2
-
-app-crypt/cardpeek
-  MissingSlotDep: version 0.7.1: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
-  MissingSlotDep: version 0.7.2: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
-  MissingSlotDep: version 0.8.2: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
-  DroppedKeywordWarning: version 0.8.2: keywords dropped: amd64
-
-app-crypt/ccrypt
-  DeprecatedEAPI: version 1.9: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 1.10: uses deprecated EAPI: 3
-
-app-crypt/chntpw
-  DeprecatedEAPI: version 110511: uses deprecated EAPI: 4
-
-app-crypt/codecrypt
-  MissingSlotDep: version 1.4.1: 'dev-libs/gmp' matches more than one slot: [ 0, 3 ]
-  MissingSlotDep: version 1.6: 'dev-libs/gmp' matches more than one slot: [ 0, 3 ]
-
-app-crypt/codegroup
-  DeprecatedEAPI: version 20080907-r1: uses deprecated EAPI: 2
-
-app-crypt/coolkey
-  DeprecatedEAPI: version 1.1.0-r6: uses deprecated EAPI: 3
-
-app-crypt/crackpkcs12
-  DeprecatedEAPI: version 0.2.9: uses deprecated EAPI: 4
-
-app-crypt/dieharder
-  DeprecatedEAPI: version 2.28.1: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 3.31.1: uses deprecated EAPI: 4
-
-app-crypt/easy-rsa
-  DeprecatedEAPI: version 2.2.0-r1: uses deprecated EAPI: 4
-
-app-crypt/efitools
-  DeprecatedEAPI: version 1.4.1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.4.1-r1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.4.1-r2: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.4.2: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.4.2-r1: uses deprecated EAPI: 4
-
-app-crypt/eid-mw
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-app-crypt/ekeyd
-  DeprecatedEAPI: version 1.1.4-r2: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.1.5: uses deprecated EAPI: 4
-
-app-crypt/elettra
-  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
-
-app-crypt/fcrackzip
-  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 3
-
-app-crypt/gifshuffle
-  DeprecatedEAPI: version 2.0: uses deprecated EAPI: 0
-
-app-crypt/gnupg
-  MissingSlotDep: version 1.4.19: 'sys-libs/readline' matches more than one slot: [ 0, 4, 5 ]
-  MissingSlotDep: version 2.0.26-r3: 'sys-libs/readline' matches more than one slot: [ 0, 4, 5 ]
-  MissingSlotDep: version 2.0.27: 'sys-libs/readline' matches more than one slot: [ 0, 4, 5 ]
-  MissingSlotDep: version 2.0.27-r1: 'sys-libs/readline' matches more than one slot: [ 0, 4, 5 ]
-  MissingSlotDep: version 2.0.28: 'sys-libs/readline' matches more than one slot: [ 0, 4, 5 ]
-  MissingSlotDep: version 2.0.29: 'sys-libs/readline' matches more than one slot: [ 0, 4, 5 ]
-  MissingSlotDep: version 2.0.29-r1: 'sys-libs/readline' matches more than one slot: [ 0, 4, 5 ]
-  DroppedKeywordWarning: version 2.1.8: keywords dropped: arm64, ia64, s390, sh
-
-app-crypt/gnupg-pkcs11-scd
-  DeprecatedEAPI: version 0.7.3: uses deprecated EAPI: 4
-
-app-crypt/gpg-ringmgr
-  DeprecatedEAPI: version 1.12: uses deprecated EAPI: 0
-
-app-crypt/gpgstats
-  DeprecatedEAPI: version 0.5-r1: uses deprecated EAPI: 2
-
-app-crypt/hashalot
-  DeprecatedEAPI: version 0.3-r2: uses deprecated EAPI: 0
-
-app-crypt/hashcat-bin
-  DeprecatedEAPI: version 0.46: uses deprecated EAPI: 4
-
-app-crypt/hashcat-gui
-  DeprecatedEAPI: version 0.5.1: uses deprecated EAPI: 4
-
-app-crypt/ima-evm-utils
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-app-crypt/jacksum
-  DeprecatedEAPI: version 1.7.0: uses deprecated EAPI: 0
-
-app-crypt/johntheripper
-  DeprecatedEAPI: version 1.7.9-r6: uses deprecated EAPI: 4
-
-app-crypt/keylookup
-  DeprecatedEAPI: version 2.2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.2-r9999: uses deprecated EAPI: 0
-
-app-crypt/keynote
-  MissingSlotDep: version 2.3-r3: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
-
-app-crypt/kstart
-  DeprecatedEAPI: version 4.1: uses deprecated EAPI: 4
-
-app-crypt/loop-aes-losetup
-  DeprecatedEAPI: version 2.21: uses deprecated EAPI: 4
-
-app-crypt/mcrypt
-  DeprecatedEAPI: version 2.6.8-r2: uses deprecated EAPI: 2
-
-app-crypt/md5deep
-  DeprecatedEAPI: version 4.3: uses deprecated EAPI: 4
-
-app-crypt/mdcrack
-  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 2
-
-app-crypt/mhash
-  DeprecatedEAPI: version 0.9.9.9-r1: uses deprecated EAPI: 4
-
-app-crypt/mit-krb5
-  SizeViolation: "files/CVE-2015-2696.patch" exceeds 20k in size; 27537 bytes total
-
-app-crypt/mit-krb5-appl
-  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 4
-
-app-crypt/nasty
-  DeprecatedEAPI: version 0.6-r1: uses deprecated EAPI: 2
-
-app-crypt/nistp224
-  DeprecatedEAPI: version 0.75-r1: uses deprecated EAPI: 2
-
-app-crypt/onak
-  DeprecatedEAPI: version 0.4.0: uses deprecated EAPI: 2
-
-app-crypt/openssl-tpm-engine
-  DeprecatedEAPI: version 0.4.1: uses deprecated EAPI: 4
-
-app-crypt/ophcrack
-  MissingSlotDep: version 3.1.0-r2: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
-  MissingSlotDep: version 3.3.0: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
-  DeprecatedEAPI: version 3.3.1: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 3.4.0: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 3.6.0: uses deprecated EAPI: 3
-
-app-crypt/osslsigncode
-  DeprecatedEAPI: version 1.4: uses deprecated EAPI: 4
-
-app-crypt/pkcrack
-  DeprecatedEAPI: version 1.2.2: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.2.2-r1: uses deprecated EAPI: 4
-
-app-crypt/pkcs11-data
-  DeprecatedEAPI: version 0.7.4: uses deprecated EAPI: 4
-
-app-crypt/pkcs11-dump
-  DeprecatedEAPI: version 0.3.4: uses deprecated EAPI: 4
-
-app-crypt/quickcrypt
-  DeprecatedEAPI: version 0.9.2b: uses deprecated EAPI: 0
-
-app-crypt/sbsigntool
-  DeprecatedEAPI: version 0.6: uses deprecated EAPI: 4
+www-apps/bitten
+  DeprecatedEclass: version 0.6-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.6-r1: uses deprecated EAPI: 4
 
-app-crypt/scl011-bin
-  DeprecatedEAPI: version 2.06: uses deprecated EAPI: 4
+www-apps/blazeblogger
+  DeprecatedEAPI: version 1.2.0: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.2.0-r1: uses deprecated EAPI: 4
 
-app-crypt/scute
-  DeprecatedEAPI: version 1.4.0: uses deprecated EAPI: 4
+www-apps/browser-config
+  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 0
 
-app-crypt/sgeps
-  DeprecatedEAPI: version 0_pre15: uses deprecated EAPI: 4
+www-apps/cgit
+  DeprecatedEAPI: version 0.10.1: uses deprecated EAPI: 4
+  MissingSlotDep: version 0.10.2: 'dev-lang/luajit' matches more than one slot: [ 1, 2 ]
+  MissingSlotDep: version 0.10.2: 'dev-lang/lua' matches more than one slot: [ 0, 5.1, 5.2 ]
+  MissingSlotDep: version 0.11.1-r1: 'dev-lang/luajit' matches more than one slot: [ 1, 2 ]
+  MissingSlotDep: version 0.11.1-r1: 'dev-lang/lua' matches more than one slot: [ 0, 5.1, 5.2 ]
+  MissingSlotDep: version 0.11.2: 'dev-lang/luajit' matches more than one slot: [ 1, 2 ]
+  MissingSlotDep: version 0.11.2: 'dev-lang/lua' matches more than one slot: [ 0, 5.1, 5.2 ]
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 4
 
-app-crypt/shishi
-  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 4
-  DeprecatedEAPI: version 1.0.1-r1: uses deprecated EAPI: 4
+www-apps/collectd-web
+  DeprecatedEAPI: version 0.4.0: uses deprecated EAPI: 3
 
-app-crypt/sign
-  DeprecatedEAPI: version 1.0.7: uses deprecated EAPI: 4
+www-apps/coppermine
+  DeprecatedEAPI: version 1.5.20: uses deprecated EAPI: 4
 
-app-crypt/signing-party
-  DeprecatedEAPI: version 1.1.4: uses deprecated EAPI: 4
-  DroppedKeywordWarning: version 1.1.11-r1: keywords dropped: ppc
+www-apps/curator
+  DeprecatedEclass: version 3.0_p20110120: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 3.0_p20110120: uses deprecated EAPI: 4
 
-app-crypt/ssh-multiadd
-  DeprecatedEclass: version 1.3.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 1.3.2: uses deprecated EAPI: 4
+www-apps/cvsweb
+  DeprecatedEAPI: version 1.112: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 3.0.5: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 3.0.6: uses deprecated EAPI: 0
 
-app-crypt/stan
-  DeprecatedEAPI: version 0.4.1: uses deprecated EAPI: 2
+www-apps/dokuwiki
+  MissingSlotDep: version 20140929d: 'virtual/httpd-php' matches more than one slot: [ 5.4, 5.5, 5.6, 7.0 ]
 
-app-crypt/tpm-emulator
-  MissingSlotDep: version 0.7.4-r1: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+www-apps/dotproject
+  MissingSlotDep: version 2.1.7-r1: 'virtual/httpd-php' matches more than one slot: [ 5.4, 5.5, 5.6, 7.0 ]
 
-app-crypt/tpm-tools
-  DeprecatedEAPI: version 1.3.8: uses deprecated EAPI: 4
+www-apps/dragonflycms
+  DeprecatedEAPI: version 9.3.3.1: uses deprecated EAPI: 4
+  MissingChksum: version 9.3.3.1: "Dragonfly9.3.3.1.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-app-crypt/truecrypt
-  DeprecatedEAPI: version 7.1a: uses deprecated EAPI: 4
-  DroppedKeywordWarning: version 7.2: keywords dropped: amd64, ppc, x86
+www-apps/drraw
+  DeprecatedEAPI: version 2.0.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.1.3: uses deprecated EAPI: 0
 
-app-crypt/xor-analyze
-  DeprecatedEAPI: version 0.5: uses deprecated EAPI: 0
+www-apps/dspam-web
+  DeprecatedEAPI: version 3.10.1: uses deprecated EAPI: 4
+
+www-apps/egroupware
+  DeprecatedEAPI: version 1.8.004.20120613: uses deprecated EAPI: 4
+
+www-apps/freeradius-dialupadmin
+  DeprecatedEAPI: version 1.70.3: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.80: uses deprecated EAPI: 0
+
+www-apps/gitit
+  WhitespaceFound: version 0.10.3.1-r3: ebuild has leading whitespace on line 73
+
+www-apps/gnopaste
+  DeprecatedEAPI: version 0.5.5: uses deprecated EAPI: 4
+
+www-apps/groupoffice
+  DeprecatedEAPI: version 3.7.52: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 4.0.47: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 4.0.97: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 4.0.144: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 4.1.7: uses deprecated EAPI: 4
+
+www-apps/guacamole
+  DeprecatedEAPI: version 0.8.3: uses deprecated EAPI: 4
+  MissingSlotDep: version 0.9.0: 'dev-java/maven-bin' matches more than one slot: [ 1.1, 2.0, 2.2, 3.0, 3.1, 3.2, 3.3 ]
+  MissingSlotDep: version 0.9.2: 'dev-java/maven-bin' matches more than one slot: [ 1.1, 2.0, 2.2, 3.0, 3.1, 3.2, 3.3 ]
+  MissingSlotDep: version 0.9.3: 'dev-java/maven-bin' matches more than one slot: [ 1.1, 2.0, 2.2, 3.0, 3.1, 3.2, 3.3 ]
+
+www-apps/horde
+  DeprecatedEAPI: version 3.3.9: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 3.3.11: uses deprecated EAPI: 0
+
+www-apps/horde-chora
+  NonExistentDeps: version 2.0.2: depset rdepends: nonexistent atoms [ >=www-apps/horde-groupware-1, >=www-apps/horde-webmail-1 ]
+  DeprecatedEAPI: version 2.0.2: uses deprecated EAPI: 0
+
+www-apps/horde-dimp
+  NonExistentDeps: version 1.1.5: depset rdepends: nonexistent atoms [ >=www-apps/horde-groupware-1 ]
+  DeprecatedEAPI: version 1.1.5: uses deprecated EAPI: 0
+
+www-apps/horde-gollem
+  NonExistentDeps: version 1.1.2: depset rdepends: nonexistent atoms [ >=www-apps/horde-groupware-1, >=www-apps/horde-webmail-1 ]
+  DeprecatedEAPI: version 1.1.2: uses deprecated EAPI: 0
+
+www-apps/horde-hermes
+  NonExistentDeps: version 1.0.1: depset rdepends: nonexistent atoms [ >=www-apps/horde-groupware-1 ]
+  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 0
+
+www-apps/horde-imp
+  NonExistentDeps: version 4.3.8: depset rdepends: nonexistent atoms [ >=www-apps/horde-groupware-1 ]
+  DeprecatedEAPI: version 4.3.8: uses deprecated EAPI: 0
+  NonExistentDeps: version 4.3.9: depset rdepends: nonexistent atoms [ >=www-apps/horde-groupware-1 ]
+  DeprecatedEAPI: version 4.3.9: uses deprecated EAPI: 0
+
+www-apps/horde-ingo
+  DeprecatedEAPI: version 1.1.2: uses deprecated EAPI: 0
+  NonExistentDeps: version 1.2.3: depset rdepends: nonexistent atoms [ >=www-apps/horde-groupware-1 ]
+  DeprecatedEAPI: version 1.2.3: uses deprecated EAPI: 0
+  NonExistentDeps: version 1.2.5: depset rdepends: nonexistent atoms [ >=www-apps/horde-groupware-1 ]
+  DeprecatedEAPI: version 1.2.5: uses deprecated EAPI: 0
+
+www-apps/horde-jeta
+  NonExistentDeps: version 1.0: depset rdepends: nonexistent atoms [ >=www-apps/horde-groupware-1, >=www-apps/horde-webmail-1 ]
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+
+www-apps/horde-kronolith
+  DeprecatedEAPI: version 2.1.8: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.3.4: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.3.5: uses deprecated EAPI: 0
+
+www-apps/horde-mimp
+  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 0
+  NonExistentDeps: version 1.1.2: depset rdepends: nonexistent atoms [ >=www-apps/horde-groupware-1, >=www-apps/horde-webmail-1 ]
+  DeprecatedEAPI: version 1.1.2: uses deprecated EAPI: 0
+  NonExistentDeps: version 1.1.3: depset rdepends: nonexistent atoms [ >=www-apps/horde-groupware-1, >=www-apps/horde-webmail-1 ]
+  DeprecatedEAPI: version 1.1.3: uses deprecated EAPI: 0
+
+www-apps/horde-mnemo
+  DeprecatedEAPI: version 2.2.3: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.2.4: uses deprecated EAPI: 0
+
+www-apps/horde-nag
+  DeprecatedEAPI: version 2.3.4: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.3.6: uses deprecated EAPI: 0
+
+www-apps/horde-passwd
+  NonExistentDeps: version 3.1.3: depset rdepends: nonexistent atoms [ >=www-apps/horde-groupware-1, >=www-apps/horde-webmail-1 ]
+  DeprecatedEAPI: version 3.1.3: uses deprecated EAPI: 0
+
+www-apps/horde-pear
+  DeprecatedEAPI: version 1.3-r3: uses deprecated EAPI: 0
+
+www-apps/horde-turba
+  DeprecatedEAPI: version 2.3.4: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.3.5: uses deprecated EAPI: 0
+
+www-apps/icingaweb2-module-pnp4nagios
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+www-apps/ikiwiki
+  DroppedKeywordWarning: version 3.20150107: keywords dropped: x86
+
+www-apps/liquid_feedback_core
+  DeprecatedEAPI: version 2.2.3: uses deprecated EAPI: 4
+  MissingSlotDep: version 2.2.6: 'dev-db/postgresql' matches more than one slot: [ 9.0, 9.1, 9.2, 9.3, 9.4, 9.5, 9.6 ]
+  DeprecatedEAPI: version 3.0.4: uses deprecated EAPI: 4
+
+www-apps/liquid_feedback_frontend
+  DeprecatedEAPI: version 2.2.2: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 2.2.7: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 3.0.6: uses deprecated EAPI: 4
+
+www-apps/metadot
+  DeprecatedEAPI: version 6.1.6: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 6.4.5.4: uses deprecated EAPI: 0
+
+www-apps/mirmon
+  DeprecatedEAPI: version 1.38-r4: uses deprecated EAPI: 0
+
+www-apps/mod_survey
+  DeprecatedEAPI: version 3.2.5: uses deprecated EAPI: 0
+
+www-apps/mypictures
+  DeprecatedEAPI: version 20040202: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 20040202-r1: uses deprecated EAPI: 0
+
+www-apps/mythweb
+  DeprecatedEAPI: version 0.26.0: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.27: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 0.27.5: uses deprecated EAPI: 4
+
+www-apps/nanoblogger
+  DeprecatedEAPI: version 3.2.3: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 3.3: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 3.5_rc1: uses deprecated EAPI: 4
+
+www-apps/nanoc
+  DroppedKeywordWarning: version 3.8.0: keywords dropped: x86
+
+www-apps/novnc
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+www-apps/openwebstats
+  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 0
+
+www-apps/pcgi
+  DeprecatedEAPI: version 2.0_alpha5: uses deprecated EAPI: 0
+
+www-apps/phpBB
+  DeprecatedEAPI: version 3.0.10: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 3.0.11: uses deprecated EAPI: 4
+
+www-apps/phpmp
+  DeprecatedEAPI: version 0.11.0: uses deprecated EAPI: 0
+  NonExistentDeps: version 0.11.0-r1: depset rdepends: nonexistent atoms [ <dev-lang/php-5.3 ]
+  DeprecatedEAPI: version 0.11.0-r1: uses deprecated EAPI: 2
+
+www-apps/phprojekt
+  DeprecatedEAPI: version 6.1.2: uses deprecated EAPI: 4
+
+www-apps/phpwebsite
+  DeprecatedEAPI: version 0.10.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.7.2: uses deprecated EAPI: 4
+
+www-apps/polarblog
+  DeprecatedEAPI: version 1.11.1: uses deprecated EAPI: 4
+
+www-apps/postfixadmin
+  DeprecatedEAPI: version 2.3.8: uses deprecated EAPI: 4
+
+www-apps/pyblosxom
+  DeprecatedEclass: version 1.4.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.4.3: uses deprecated EAPI: 3
+
+www-apps/rocketwiki-lqfb
+  DeprecatedEAPI: version 0.4: uses deprecated EAPI: 4
+
+www-apps/roundup
+  DeprecatedEclass: version 1.4.20: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.4.20: uses deprecated EAPI: 4
+
+www-apps/rutorrent
+  DeprecatedEAPI: version 3.4-r1: uses deprecated EAPI: 4
+
+www-apps/scgi
+  DeprecatedEclass: version 1.14: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.14: uses deprecated EAPI: 3
+
+www-apps/sitebar
+  DeprecatedEAPI: version 3.3.9-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 3.3.9-r2: uses deprecated EAPI: 4
+
+www-apps/sugarcrm
+  DeprecatedEAPI: version 6.5.9: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 6.5.10: uses deprecated EAPI: 2
+
+www-apps/trac-accountmanager
+  DeprecatedEclass: version 0.3_p9766: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.3_p9766: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.4_p10645: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.4_p10645: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.4.2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.4.2: uses deprecated EAPI: 4
+
+www-apps/trac-downloads
+  DeprecatedEclass: version 0.3_p9282: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 0.3_p9282: depset rdepends: nonexistent atoms [ =www-apps/trac-0.12* ]
+  DeprecatedEAPI: version 0.3_p9282: uses deprecated EAPI: 3
+
+www-apps/trac-mercurial
+  DeprecatedEclass: version 0.12.0.29_pre10899: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.12.0.29_pre10899: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.0.0.3_pre20130206: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.0.0.3_pre20130206: uses deprecated EAPI: 4
+  DroppedKeywordWarning: version 1.0.0.3_pre20130206: keywords dropped: amd64, x86
+
+www-apps/trac-tags
+  DeprecatedEclass: version 0.6: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.6: uses deprecated EAPI: 3
+
+www-apps/venus
+  DeprecatedEclass: version 20100911: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 20100911: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  NonExistentDeps: version 20100911: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  DeprecatedEAPI: version 20100911: uses deprecated EAPI: 3
+
+www-apps/viewvc
+  DeprecatedEclass: version 1.1.20: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+www-apps/webdavcgi
+  DeprecatedEAPI: version 0.8.3: uses deprecated EAPI: 4
+
+www-apps/webmcp
+  DeprecatedEAPI: version 1.2.5: uses deprecated EAPI: 4
+  DeprecatedEAPI: version 1.2.6: uses deprecated EAPI: 4
+
+www-apps/websvn
+  DeprecatedEAPI: version 2.3.2: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 2.3.3: uses deprecated EAPI: 2
+
+www-apps/wiliki
+  DeprecatedEAPI: version 0.6.1: uses deprecated EAPI: 3
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
