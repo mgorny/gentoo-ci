@@ -43,7 +43,7 @@
 </pre></td></tr>
             <tr class="" id="l6"><td><a href="#l6"><span>6</span></a></td><td><pre>+ set +x
 </pre></td></tr>
-            <tr class="" id="l7"><td><a href="#l7"><span>7</span></a></td><td><pre>+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-ruby/*' 'net-analyzer/*' 'dev-ml/*' 'sci-chemistry/*' 'sys-block/*' 'ros-meta/*' 'app-eselect/*' 'app-forensics/*' 'x11-proto/*' 'sci-misc/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
+            <tr class="" id="l7"><td><a href="#l7"><span>7</span></a></td><td><pre>+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-ruby/*' 'net-analyzer/*' 'dev-ml/*' 'sci-chemistry/*' 'sys-block/*' 'ros-meta/*' 'app-eselect/*' 'net-fs/*' 'x11-proto/*' 'sci-misc/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 </pre></td></tr>
             <tr class="" id="l8"><td><a href="#l8"><span>8</span></a></td><td><pre>WARNING:pkgcore:disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
 </pre></td></tr>
@@ -2377,353 +2377,253 @@
 </pre></td></tr>
             <tr class="" id="l1173"><td><a href="#l1173"><span>1173</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1174"><td><a href="#l1174"><span>1174</span></a></td><td><pre>app-forensics/afflib
+            <tr class="" id="l1174"><td><a href="#l1174"><span>1174</span></a></td><td><pre>net-fs/cifs-utils
 </pre></td></tr>
-            <tr class="" id="l1175"><td><a href="#l1175"><span>1175</span></a></td><td><pre>  DeprecatedEclass: version 3.7.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+            <tr class="" id="l1175"><td><a href="#l1175"><span>1175</span></a></td><td><pre>  DeprecatedEAPI: version 5.9-r1: uses deprecated EAPI: 4
 </pre></td></tr>
-            <tr class="" id="l1176"><td><a href="#l1176"><span>1176</span></a></td><td><pre>  DeprecatedEAPI: version 3.7.1: uses deprecated EAPI: 4
+            <tr class="" id="l1176"><td><a href="#l1176"><span>1176</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1177"><td><a href="#l1177"><span>1177</span></a></td><td><pre>  MissingSlotDep: version 3.7.3: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
+            <tr class="" id="l1177"><td><a href="#l1177"><span>1177</span></a></td><td><pre>net-fs/davfs2
 </pre></td></tr>
-            <tr class="" id="l1178"><td><a href="#l1178"><span>1178</span></a></td><td><pre>  MissingSlotDep: version 3.7.4: 'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]
+            <tr class="" id="l1178"><td><a href="#l1178"><span>1178</span></a></td><td><pre>  DeprecatedEAPI: version 1.4.5-r1: uses deprecated EAPI: 2
 </pre></td></tr>
-            <tr class="" id="l1179"><td><a href="#l1179"><span>1179</span></a></td><td><pre>
+            <tr class="" id="l1179"><td><a href="#l1179"><span>1179</span></a></td><td><pre>  DeprecatedEAPI: version 1.4.7: uses deprecated EAPI: 4
 </pre></td></tr>
-            <tr class="" id="l1180"><td><a href="#l1180"><span>1180</span></a></td><td><pre>app-forensics/afl
+            <tr class="" id="l1180"><td><a href="#l1180"><span>1180</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1181"><td><a href="#l1181"><span>1181</span></a></td><td><pre>  MissingSlotDep: version 1.45b: 'sys-devel/gcc' matches more than one slot: [ 2.95.3, 3.3.6, 3.4.6, 4.0.4, 4.1.2, 4.2.4, 4.3.6, 4.4.7, 4.5.4, 4.6.4, 4.7, 4.8, 4.9, 5 ]
+            <tr class="" id="l1181"><td><a href="#l1181"><span>1181</span></a></td><td><pre>net-fs/libnfs
 </pre></td></tr>
-            <tr class="" id="l1182"><td><a href="#l1182"><span>1182</span></a></td><td><pre>  MissingSlotDep: version 1.57b: 'sys-devel/gcc' matches more than one slot: [ 2.95.3, 3.3.6, 3.4.6, 4.0.4, 4.1.2, 4.2.4, 4.3.6, 4.4.7, 4.5.4, 4.6.4, 4.7, 4.8, 4.9, 5 ]
+            <tr class="" id="l1182"><td><a href="#l1182"><span>1182</span></a></td><td><pre>  DeprecatedEAPI: version 1.3.0: uses deprecated EAPI: 4
 </pre></td></tr>
-            <tr class="" id="l1183"><td><a href="#l1183"><span>1183</span></a></td><td><pre>
+            <tr class="" id="l1183"><td><a href="#l1183"><span>1183</span></a></td><td><pre>  DeprecatedEAPI: version 1.5.0: uses deprecated EAPI: 4
 </pre></td></tr>
-            <tr class="" id="l1184"><td><a href="#l1184"><span>1184</span></a></td><td><pre>app-forensics/aide
+            <tr class="" id="l1184"><td><a href="#l1184"><span>1184</span></a></td><td><pre>  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 </pre></td></tr>
-            <tr class="" id="l1185"><td><a href="#l1185"><span>1185</span></a></td><td><pre>  DeprecatedEAPI: version 0.13.1: uses deprecated EAPI: 0
+            <tr class="" id="l1185"><td><a href="#l1185"><span>1185</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1186"><td><a href="#l1186"><span>1186</span></a></td><td><pre>  DeprecatedEAPI: version 0.13.1-r3: uses deprecated EAPI: 0
+            <tr class="" id="l1186"><td><a href="#l1186"><span>1186</span></a></td><td><pre>net-fs/ncpfs
 </pre></td></tr>
-            <tr class="" id="l1187"><td><a href="#l1187"><span>1187</span></a></td><td><pre>  DeprecatedEAPI: version 0.13.1-r5: uses deprecated EAPI: 0
+            <tr class="" id="l1187"><td><a href="#l1187"><span>1187</span></a></td><td><pre>  MissingSlotDep: version 2.2.6-r3: 'dev-lang/php' matches more than one slot: [ 5.4, 5.5, 5.6, 7.0 ]
 </pre></td></tr>
-            <tr class="" id="l1188"><td><a href="#l1188"><span>1188</span></a></td><td><pre>  DeprecatedEAPI: version 0.14.2: uses deprecated EAPI: 3
+            <tr class="" id="l1188"><td><a href="#l1188"><span>1188</span></a></td><td><pre>  MissingSlotDep: version 2.2.6-r3: 'virtual/httpd-php' matches more than one slot: [ 5.4, 5.5, 5.6, 7.0 ]
 </pre></td></tr>
-            <tr class="" id="l1189"><td><a href="#l1189"><span>1189</span></a></td><td><pre>  DeprecatedEAPI: version 0.15.1: uses deprecated EAPI: 3
+            <tr class="" id="l1189"><td><a href="#l1189"><span>1189</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1190"><td><a href="#l1190"><span>1190</span></a></td><td><pre>
+            <tr class="" id="l1190"><td><a href="#l1190"><span>1190</span></a></td><td><pre>net-fs/nfs-utils
 </pre></td></tr>
-            <tr class="" id="l1191"><td><a href="#l1191"><span>1191</span></a></td><td><pre>app-forensics/air
+            <tr class="" id="l1191"><td><a href="#l1191"><span>1191</span></a></td><td><pre>  DeprecatedEAPI: version 1.2.9-r3: uses deprecated EAPI: 4
 </pre></td></tr>
-            <tr class="" id="l1192"><td><a href="#l1192"><span>1192</span></a></td><td><pre>  DeprecatedEAPI: version 2.0.0-r1: uses deprecated EAPI: 4
+            <tr class="" id="l1192"><td><a href="#l1192"><span>1192</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1193"><td><a href="#l1193"><span>1193</span></a></td><td><pre>
+            <tr class="" id="l1193"><td><a href="#l1193"><span>1193</span></a></td><td><pre>net-fs/nfs4-acl-tools
 </pre></td></tr>
-            <tr class="" id="l1194"><td><a href="#l1194"><span>1194</span></a></td><td><pre>app-forensics/autopsy
+            <tr class="" id="l1194"><td><a href="#l1194"><span>1194</span></a></td><td><pre>  DeprecatedEAPI: version 0.3.3: uses deprecated EAPI: 4
 </pre></td></tr>
-            <tr class="" id="l1195"><td><a href="#l1195"><span>1195</span></a></td><td><pre>  DeprecatedEAPI: version 2.24-r1: uses deprecated EAPI: 4
+            <tr class="" id="l1195"><td><a href="#l1195"><span>1195</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1196"><td><a href="#l1196"><span>1196</span></a></td><td><pre>
+            <tr class="" id="l1196"><td><a href="#l1196"><span>1196</span></a></td><td><pre>net-fs/samba
 </pre></td></tr>
-            <tr class="" id="l1197"><td><a href="#l1197"><span>1197</span></a></td><td><pre>app-forensics/chkrootkit
+            <tr class="" id="l1197"><td><a href="#l1197"><span>1197</span></a></td><td><pre>  DeprecatedEAPI: version 3.5.21: uses deprecated EAPI: 4
 </pre></td></tr>
-            <tr class="" id="l1198"><td><a href="#l1198"><span>1198</span></a></td><td><pre>  DeprecatedEAPI: version 0.48-r1: uses deprecated EAPI: 0
+            <tr class="" id="l1198"><td><a href="#l1198"><span>1198</span></a></td><td><pre>  DeprecatedEAPI: version 3.5.22: uses deprecated EAPI: 4
 </pre></td></tr>
-            <tr class="" id="l1199"><td><a href="#l1199"><span>1199</span></a></td><td><pre>  DeprecatedEAPI: version 0.49: uses deprecated EAPI: 4
+            <tr class="" id="l1199"><td><a href="#l1199"><span>1199</span></a></td><td><pre>  DroppedKeywordWarning: version 4.2.5: keywords dropped: arm64
 </pre></td></tr>
-            <tr class="" id="l1200"><td><a href="#l1200"><span>1200</span></a></td><td><pre>
+            <tr class="" id="l1200"><td><a href="#l1200"><span>1200</span></a></td><td><pre>  DroppedKeywordWarning: version 3.6.25: keywords dropped: s390, sh
 </pre></td></tr>
-            <tr class="" id="l1201"><td><a href="#l1201"><span>1201</span></a></td><td><pre>app-forensics/cmospwd
+            <tr class="" id="l1201"><td><a href="#l1201"><span>1201</span></a></td><td><pre>  DroppedKeywordWarning: version 4.0.26-r1: keywords dropped: alpha, arm, ia64, mips, ppc, ppc64, sparc
 </pre></td></tr>
-            <tr class="" id="l1202"><td><a href="#l1202"><span>1202</span></a></td><td><pre>  DeprecatedEAPI: version 5.1: uses deprecated EAPI: 4
+            <tr class="" id="l1202"><td><a href="#l1202"><span>1202</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1203"><td><a href="#l1203"><span>1203</span></a></td><td><pre>
+            <tr class="" id="l1203"><td><a href="#l1203"><span>1203</span></a></td><td><pre>net-fs/smbtad
 </pre></td></tr>
-            <tr class="" id="l1204"><td><a href="#l1204"><span>1204</span></a></td><td><pre>app-forensics/examiner
+            <tr class="" id="l1204"><td><a href="#l1204"><span>1204</span></a></td><td><pre>  DeprecatedEAPI: version 1.2.6: uses deprecated EAPI: 4
 </pre></td></tr>
-            <tr class="" id="l1205"><td><a href="#l1205"><span>1205</span></a></td><td><pre>  DeprecatedEAPI: version 0.5-r2: uses deprecated EAPI: 4
+            <tr class="" id="l1205"><td><a href="#l1205"><span>1205</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1206"><td><a href="#l1206"><span>1206</span></a></td><td><pre>
+            <tr class="" id="l1206"><td><a href="#l1206"><span>1206</span></a></td><td><pre>net-fs/smbtatools
 </pre></td></tr>
-            <tr class="" id="l1207"><td><a href="#l1207"><span>1207</span></a></td><td><pre>app-forensics/foremost
+            <tr class="" id="l1207"><td><a href="#l1207"><span>1207</span></a></td><td><pre>  DeprecatedEAPI: version 1.2.6: uses deprecated EAPI: 4
 </pre></td></tr>
-            <tr class="" id="l1208"><td><a href="#l1208"><span>1208</span></a></td><td><pre>  DeprecatedEAPI: version 0.69: uses deprecated EAPI: 0
+            <tr class="" id="l1208"><td><a href="#l1208"><span>1208</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1209"><td><a href="#l1209"><span>1209</span></a></td><td><pre>  DeprecatedEAPI: version 1.5.7-r1: uses deprecated EAPI: 4
+            <tr class="" id="l1209"><td><a href="#l1209"><span>1209</span></a></td><td><pre>net-fs/wdfs
 </pre></td></tr>
-            <tr class="" id="l1210"><td><a href="#l1210"><span>1210</span></a></td><td><pre>  DeprecatedEAPI: version 1.5.7-r2: uses deprecated EAPI: 4
+            <tr class="" id="l1210"><td><a href="#l1210"><span>1210</span></a></td><td><pre>  DeprecatedEAPI: version 1.4.2: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l1211"><td><a href="#l1211"><span>1211</span></a></td><td><pre>
+            <tr class="" id="l1211"><td><a href="#l1211"><span>1211</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
 </pre></td></tr>
-            <tr class="" id="l1212"><td><a href="#l1212"><span>1212</span></a></td><td><pre>app-forensics/galleta
+            <tr class="" id="l1212"><td><a href="#l1212"><span>1212</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
 </pre></td></tr>
-            <tr class="" id="l1213"><td><a href="#l1213"><span>1213</span></a></td><td><pre>  DeprecatedEAPI: version 20040505_p1: uses deprecated EAPI: 0
+            <tr class="" id="l1213"><td><a href="#l1213"><span>1213</span></a></td><td><pre>               : refetch
 </pre></td></tr>
-            <tr class="" id="l1214"><td><a href="#l1214"><span>1214</span></a></td><td><pre>
+            <tr class="" id="l1214"><td><a href="#l1214"><span>1214</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
 </pre></td></tr>
-            <tr class="" id="l1215"><td><a href="#l1215"><span>1215</span></a></td><td><pre>app-forensics/libbfio
+            <tr class="" id="l1215"><td><a href="#l1215"><span>1215</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
 </pre></td></tr>
-            <tr class="" id="l1216"><td><a href="#l1216"><span>1216</span></a></td><td><pre>  DroppedKeywordWarning: version 0.0.20130609_alpha: keywords dropped: hppa
+            <tr class="" id="l1216"><td><a href="#l1216"><span>1216</span></a></td><td><pre>               : refetch
 </pre></td></tr>
             <tr class="" id="l1217"><td><a href="#l1217"><span>1217</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1218"><td><a href="#l1218"><span>1218</span></a></td><td><pre>app-forensics/libewf
+            <tr class="" id="l1218"><td><a href="#l1218"><span>1218</span></a></td><td><pre>x11-proto/bigreqsproto
 </pre></td></tr>
-            <tr class="" id="l1219"><td><a href="#l1219"><span>1219</span></a></td><td><pre>  MissingSlotDep: version 20130128: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+            <tr class="" id="l1219"><td><a href="#l1219"><span>1219</span></a></td><td><pre>  DeprecatedEAPI: version 1.1.2: uses deprecated EAPI: 4
 </pre></td></tr>
-            <tr class="" id="l1220"><td><a href="#l1220"><span>1220</span></a></td><td><pre>  MissingSlotDep: version 20130416: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+            <tr class="" id="l1220"><td><a href="#l1220"><span>1220</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1221"><td><a href="#l1221"><span>1221</span></a></td><td><pre>  MissingSlotDep: version 20130416-r1: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+            <tr class="" id="l1221"><td><a href="#l1221"><span>1221</span></a></td><td><pre>x11-proto/dmxproto
 </pre></td></tr>
-            <tr class="" id="l1222"><td><a href="#l1222"><span>1222</span></a></td><td><pre>  MissingSlotDep: version 20131210: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+            <tr class="" id="l1222"><td><a href="#l1222"><span>1222</span></a></td><td><pre>  DeprecatedEAPI: version 2.3.1: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l1223"><td><a href="#l1223"><span>1223</span></a></td><td><pre>  MissingSlotDep: version 20140227: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+            <tr class="" id="l1223"><td><a href="#l1223"><span>1223</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1224"><td><a href="#l1224"><span>1224</span></a></td><td><pre>  MissingSlotDep: version 20140406: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+            <tr class="" id="l1224"><td><a href="#l1224"><span>1224</span></a></td><td><pre>x11-proto/evieext
 </pre></td></tr>
-            <tr class="" id="l1225"><td><a href="#l1225"><span>1225</span></a></td><td><pre>  MissingSlotDep: version 20140427: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+            <tr class="" id="l1225"><td><a href="#l1225"><span>1225</span></a></td><td><pre>  DeprecatedEAPI: version 1.1.1: uses deprecated EAPI: 3
 </pre></td></tr>
-            <tr class="" id="l1226"><td><a href="#l1226"><span>1226</span></a></td><td><pre>  MissingSlotDep: version 20140608: 'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]
+            <tr class="" id="l1226"><td><a href="#l1226"><span>1226</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1227"><td><a href="#l1227"><span>1227</span></a></td><td><pre>
+            <tr class="" id="l1227"><td><a href="#l1227"><span>1227</span></a></td><td><pre>x11-proto/fixesproto
 </pre></td></tr>
-            <tr class="" id="l1228"><td><a href="#l1228"><span>1228</span></a></td><td><pre>app-forensics/mac-robber
+            <tr class="" id="l1228"><td><a href="#l1228"><span>1228</span></a></td><td><pre>  DeprecatedEAPI: version 5.0: uses deprecated EAPI: 4
 </pre></td></tr>
-            <tr class="" id="l1229"><td><a href="#l1229"><span>1229</span></a></td><td><pre>  DeprecatedEAPI: version 1.02: uses deprecated EAPI: 4
+            <tr class="" id="l1229"><td><a href="#l1229"><span>1229</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1230"><td><a href="#l1230"><span>1230</span></a></td><td><pre>
+            <tr class="" id="l1230"><td><a href="#l1230"><span>1230</span></a></td><td><pre>x11-proto/fontcacheproto
 </pre></td></tr>
-            <tr class="" id="l1231"><td><a href="#l1231"><span>1231</span></a></td><td><pre>app-forensics/magicrescue
+            <tr class="" id="l1231"><td><a href="#l1231"><span>1231</span></a></td><td><pre>  DeprecatedEAPI: version 0.1.3: uses deprecated EAPI: 4
 </pre></td></tr>
-            <tr class="" id="l1232"><td><a href="#l1232"><span>1232</span></a></td><td><pre>  DeprecatedEAPI: version 1.1.9: uses deprecated EAPI: 4
+            <tr class="" id="l1232"><td><a href="#l1232"><span>1232</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1233"><td><a href="#l1233"><span>1233</span></a></td><td><pre>
+            <tr class="" id="l1233"><td><a href="#l1233"><span>1233</span></a></td><td><pre>x11-proto/fontsproto
 </pre></td></tr>
-            <tr class="" id="l1234"><td><a href="#l1234"><span>1234</span></a></td><td><pre>app-forensics/memdump
+            <tr class="" id="l1234"><td><a href="#l1234"><span>1234</span></a></td><td><pre>  DeprecatedEAPI: version 2.1.2: uses deprecated EAPI: 4
 </pre></td></tr>
-            <tr class="" id="l1235"><td><a href="#l1235"><span>1235</span></a></td><td><pre>  DeprecatedEAPI: version 1.01: uses deprecated EAPI: 4
+            <tr class="" id="l1235"><td><a href="#l1235"><span>1235</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1236"><td><a href="#l1236"><span>1236</span></a></td><td><pre>
+            <tr class="" id="l1236"><td><a href="#l1236"><span>1236</span></a></td><td><pre>x11-proto/inputproto
 </pre></td></tr>
-            <tr class="" id="l1237"><td><a href="#l1237"><span>1237</span></a></td><td><pre>app-forensics/openscap
+            <tr class="" id="l1237"><td><a href="#l1237"><span>1237</span></a></td><td><pre>  DroppedKeywordWarning: version 2.3.1: keywords dropped: arm64, m68k
 </pre></td></tr>
-            <tr class="" id="l1238"><td><a href="#l1238"><span>1238</span></a></td><td><pre>  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+            <tr class="" id="l1238"><td><a href="#l1238"><span>1238</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1239"><td><a href="#l1239"><span>1239</span></a></td><td><pre>
+            <tr class="" id="l1239"><td><a href="#l1239"><span>1239</span></a></td><td><pre>x11-proto/resourceproto
 </pre></td></tr>
-            <tr class="" id="l1240"><td><a href="#l1240"><span>1240</span></a></td><td><pre>app-forensics/ovaldi
+            <tr class="" id="l1240"><td><a href="#l1240"><span>1240</span></a></td><td><pre>  DeprecatedEAPI: version 1.2.0: uses deprecated EAPI: 4
 </pre></td></tr>
-            <tr class="" id="l1241"><td><a href="#l1241"><span>1241</span></a></td><td><pre>  DeprecatedEAPI: version 5.9.1: uses deprecated EAPI: 3
+            <tr class="" id="l1241"><td><a href="#l1241"><span>1241</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1242"><td><a href="#l1242"><span>1242</span></a></td><td><pre>  DeprecatedEAPI: version 5.10.1.2: uses deprecated EAPI: 3
+            <tr class="" id="l1242"><td><a href="#l1242"><span>1242</span></a></td><td><pre>x11-proto/trapproto
 </pre></td></tr>
-            <tr class="" id="l1243"><td><a href="#l1243"><span>1243</span></a></td><td><pre>
+            <tr class="" id="l1243"><td><a href="#l1243"><span>1243</span></a></td><td><pre>  DeprecatedEAPI: version 3.4.3: uses deprecated EAPI: 4
 </pre></td></tr>
-            <tr class="" id="l1244"><td><a href="#l1244"><span>1244</span></a></td><td><pre>app-forensics/pasco
+            <tr class="" id="l1244"><td><a href="#l1244"><span>1244</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1245"><td><a href="#l1245"><span>1245</span></a></td><td><pre>  DeprecatedEAPI: version 20040505_p1: uses deprecated EAPI: 0
+            <tr class="" id="l1245"><td><a href="#l1245"><span>1245</span></a></td><td><pre>x11-proto/xcalibrateproto
 </pre></td></tr>
-            <tr class="" id="l1246"><td><a href="#l1246"><span>1246</span></a></td><td><pre>
+            <tr class="" id="l1246"><td><a href="#l1246"><span>1246</span></a></td><td><pre>  DeprecatedEAPI: version 0.1_pre20081210: uses deprecated EAPI: 4
 </pre></td></tr>
-            <tr class="" id="l1247"><td><a href="#l1247"><span>1247</span></a></td><td><pre>app-forensics/rifiuti
+            <tr class="" id="l1247"><td><a href="#l1247"><span>1247</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1248"><td><a href="#l1248"><span>1248</span></a></td><td><pre>  DeprecatedEAPI: version 20040505_p1: uses deprecated EAPI: 0
+            <tr class="" id="l1248"><td><a href="#l1248"><span>1248</span></a></td><td><pre>x11-proto/xcmiscproto
 </pre></td></tr>
-            <tr class="" id="l1249"><td><a href="#l1249"><span>1249</span></a></td><td><pre>
+            <tr class="" id="l1249"><td><a href="#l1249"><span>1249</span></a></td><td><pre>  DeprecatedEAPI: version 1.2.2: uses deprecated EAPI: 4
 </pre></td></tr>
-            <tr class="" id="l1250"><td><a href="#l1250"><span>1250</span></a></td><td><pre>app-forensics/rkhunter
+            <tr class="" id="l1250"><td><a href="#l1250"><span>1250</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1251"><td><a href="#l1251"><span>1251</span></a></td><td><pre>  DeprecatedEAPI: version 1.4.0: uses deprecated EAPI: 4
+            <tr class="" id="l1251"><td><a href="#l1251"><span>1251</span></a></td><td><pre>x11-proto/xf86miscproto
 </pre></td></tr>
-            <tr class="" id="l1252"><td><a href="#l1252"><span>1252</span></a></td><td><pre>
+            <tr class="" id="l1252"><td><a href="#l1252"><span>1252</span></a></td><td><pre>  DeprecatedEAPI: version 0.9.3: uses deprecated EAPI: 4
 </pre></td></tr>
-            <tr class="" id="l1253"><td><a href="#l1253"><span>1253</span></a></td><td><pre>app-forensics/scalpel
+            <tr class="" id="l1253"><td><a href="#l1253"><span>1253</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1254"><td><a href="#l1254"><span>1254</span></a></td><td><pre>  DeprecatedEAPI: version 2.0: uses deprecated EAPI: 4
+            <tr class="" id="l1254"><td><a href="#l1254"><span>1254</span></a></td><td><pre>x11-proto/xf86rushproto
 </pre></td></tr>
-            <tr class="" id="l1255"><td><a href="#l1255"><span>1255</span></a></td><td><pre>
+            <tr class="" id="l1255"><td><a href="#l1255"><span>1255</span></a></td><td><pre>  DeprecatedEAPI: version 1.1.2-r1: uses deprecated EAPI: 4
 </pre></td></tr>
-            <tr class="" id="l1256"><td><a href="#l1256"><span>1256</span></a></td><td><pre>app-forensics/unhide
+            <tr class="" id="l1256"><td><a href="#l1256"><span>1256</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
 </pre></td></tr>
-            <tr class="" id="l1257"><td><a href="#l1257"><span>1257</span></a></td><td><pre>  DeprecatedEAPI: version 20121229: uses deprecated EAPI: 4
+            <tr class="" id="l1257"><td><a href="#l1257"><span>1257</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
 </pre></td></tr>
-            <tr class="" id="l1258"><td><a href="#l1258"><span>1258</span></a></td><td><pre>
+            <tr class="" id="l1258"><td><a href="#l1258"><span>1258</span></a></td><td><pre>               : refetch
 </pre></td></tr>
-            <tr class="" id="l1259"><td><a href="#l1259"><span>1259</span></a></td><td><pre>app-forensics/zzuf
+            <tr class="" id="l1259"><td><a href="#l1259"><span>1259</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
 </pre></td></tr>
-            <tr class="" id="l1260"><td><a href="#l1260"><span>1260</span></a></td><td><pre>  DeprecatedEAPI: version 0.13-r1: uses deprecated EAPI: 4
+            <tr class="" id="l1260"><td><a href="#l1260"><span>1260</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
 </pre></td></tr>
-            <tr class="" id="l1261"><td><a href="#l1261"><span>1261</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
+            <tr class="" id="l1261"><td><a href="#l1261"><span>1261</span></a></td><td><pre>               : refetch
 </pre></td></tr>
-            <tr class="" id="l1262"><td><a href="#l1262"><span>1262</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+            <tr class="" id="l1262"><td><a href="#l1262"><span>1262</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1263"><td><a href="#l1263"><span>1263</span></a></td><td><pre>               : refetch
+            <tr class="" id="l1263"><td><a href="#l1263"><span>1263</span></a></td><td><pre>sci-misc/gato
 </pre></td></tr>
-            <tr class="" id="l1264"><td><a href="#l1264"><span>1264</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
+            <tr class="" id="l1264"><td><a href="#l1264"><span>1264</span></a></td><td><pre>  DeprecatedEclass: version 1.1.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
-            <tr class="" id="l1265"><td><a href="#l1265"><span>1265</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+            <tr class="" id="l1265"><td><a href="#l1265"><span>1265</span></a></td><td><pre>  DeprecatedEAPI: version 1.1.2: uses deprecated EAPI: 4
 </pre></td></tr>
-            <tr class="" id="l1266"><td><a href="#l1266"><span>1266</span></a></td><td><pre>               : refetch
+            <tr class="" id="l1266"><td><a href="#l1266"><span>1266</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1267"><td><a href="#l1267"><span>1267</span></a></td><td><pre>
+            <tr class="" id="l1267"><td><a href="#l1267"><span>1267</span></a></td><td><pre>sci-misc/gt-itm
 </pre></td></tr>
-            <tr class="" id="l1268"><td><a href="#l1268"><span>1268</span></a></td><td><pre>x11-proto/bigreqsproto
+            <tr class="" id="l1268"><td><a href="#l1268"><span>1268</span></a></td><td><pre>  DeprecatedEAPI: version 19961004-r1: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l1269"><td><a href="#l1269"><span>1269</span></a></td><td><pre>  DeprecatedEAPI: version 1.1.2: uses deprecated EAPI: 4
+            <tr class="" id="l1269"><td><a href="#l1269"><span>1269</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1270"><td><a href="#l1270"><span>1270</span></a></td><td><pre>
+            <tr class="" id="l1270"><td><a href="#l1270"><span>1270</span></a></td><td><pre>sci-misc/h5utils
 </pre></td></tr>
-            <tr class="" id="l1271"><td><a href="#l1271"><span>1271</span></a></td><td><pre>x11-proto/dmxproto
+            <tr class="" id="l1271"><td><a href="#l1271"><span>1271</span></a></td><td><pre>  MissingSlotDep: version 1.12.1-r2: 'virtual/jpeg' matches more than one slot: [ 0, 62 ]
 </pre></td></tr>
-            <tr class="" id="l1272"><td><a href="#l1272"><span>1272</span></a></td><td><pre>  DeprecatedEAPI: version 2.3.1: uses deprecated EAPI: 3
+            <tr class="" id="l1272"><td><a href="#l1272"><span>1272</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1273"><td><a href="#l1273"><span>1273</span></a></td><td><pre>
+            <tr class="" id="l1273"><td><a href="#l1273"><span>1273</span></a></td><td><pre>sci-misc/lttoolbox
 </pre></td></tr>
-            <tr class="" id="l1274"><td><a href="#l1274"><span>1274</span></a></td><td><pre>x11-proto/evieext
+            <tr class="" id="l1274"><td><a href="#l1274"><span>1274</span></a></td><td><pre>  DeprecatedEAPI: version 3.1.0: uses deprecated EAPI: 4
 </pre></td></tr>
-            <tr class="" id="l1275"><td><a href="#l1275"><span>1275</span></a></td><td><pre>  DeprecatedEAPI: version 1.1.1: uses deprecated EAPI: 3
+            <tr class="" id="l1275"><td><a href="#l1275"><span>1275</span></a></td><td><pre>  DeprecatedEAPI: version 3.2.0: uses deprecated EAPI: 4
 </pre></td></tr>
             <tr class="" id="l1276"><td><a href="#l1276"><span>1276</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1277"><td><a href="#l1277"><span>1277</span></a></td><td><pre>x11-proto/fixesproto
+            <tr class="" id="l1277"><td><a href="#l1277"><span>1277</span></a></td><td><pre>sci-misc/nco
 </pre></td></tr>
-            <tr class="" id="l1278"><td><a href="#l1278"><span>1278</span></a></td><td><pre>  DeprecatedEAPI: version 5.0: uses deprecated EAPI: 4
+            <tr class="" id="l1278"><td><a href="#l1278"><span>1278</span></a></td><td><pre>  DeprecatedEAPI: version 3.9.9: uses deprecated EAPI: 2
 </pre></td></tr>
             <tr class="" id="l1279"><td><a href="#l1279"><span>1279</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1280"><td><a href="#l1280"><span>1280</span></a></td><td><pre>x11-proto/fontcacheproto
+            <tr class="" id="l1280"><td><a href="#l1280"><span>1280</span></a></td><td><pre>sci-misc/ncview
 </pre></td></tr>
-            <tr class="" id="l1281"><td><a href="#l1281"><span>1281</span></a></td><td><pre>  DeprecatedEAPI: version 0.1.3: uses deprecated EAPI: 4
+            <tr class="" id="l1281"><td><a href="#l1281"><span>1281</span></a></td><td><pre>  DeprecatedEAPI: version 2.1.1: uses deprecated EAPI: 4
 </pre></td></tr>
-            <tr class="" id="l1282"><td><a href="#l1282"><span>1282</span></a></td><td><pre>
+            <tr class="" id="l1282"><td><a href="#l1282"><span>1282</span></a></td><td><pre>  DeprecatedEAPI: version 2.1.2: uses deprecated EAPI: 4
 </pre></td></tr>
-            <tr class="" id="l1283"><td><a href="#l1283"><span>1283</span></a></td><td><pre>x11-proto/fontsproto
+            <tr class="" id="l1283"><td><a href="#l1283"><span>1283</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1284"><td><a href="#l1284"><span>1284</span></a></td><td><pre>  DeprecatedEAPI: version 2.1.2: uses deprecated EAPI: 4
+            <tr class="" id="l1284"><td><a href="#l1284"><span>1284</span></a></td><td><pre>sci-misc/netlogo-bin
 </pre></td></tr>
-            <tr class="" id="l1285"><td><a href="#l1285"><span>1285</span></a></td><td><pre>
+            <tr class="" id="l1285"><td><a href="#l1285"><span>1285</span></a></td><td><pre>  DeprecatedEAPI: version 3.0.2: uses deprecated EAPI: 0
 </pre></td></tr>
-            <tr class="" id="l1286"><td><a href="#l1286"><span>1286</span></a></td><td><pre>x11-proto/inputproto
+            <tr class="" id="l1286"><td><a href="#l1286"><span>1286</span></a></td><td><pre>  DeprecatedEAPI: version 4.0.4: uses deprecated EAPI: 4
 </pre></td></tr>
-            <tr class="" id="l1287"><td><a href="#l1287"><span>1287</span></a></td><td><pre>  DroppedKeywordWarning: version 2.3.1: keywords dropped: arm64, m68k
+            <tr class="" id="l1287"><td><a href="#l1287"><span>1287</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1288"><td><a href="#l1288"><span>1288</span></a></td><td><pre>
+            <tr class="" id="l1288"><td><a href="#l1288"><span>1288</span></a></td><td><pre>sci-misc/repsnapper
 </pre></td></tr>
-            <tr class="" id="l1289"><td><a href="#l1289"><span>1289</span></a></td><td><pre>x11-proto/resourceproto
+            <tr class="" id="l1289"><td><a href="#l1289"><span>1289</span></a></td><td><pre>  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 </pre></td></tr>
-            <tr class="" id="l1290"><td><a href="#l1290"><span>1290</span></a></td><td><pre>  DeprecatedEAPI: version 1.2.0: uses deprecated EAPI: 4
+            <tr class="" id="l1290"><td><a href="#l1290"><span>1290</span></a></td><td><pre>
 </pre></td></tr>
-            <tr class="" id="l1291"><td><a href="#l1291"><span>1291</span></a></td><td><pre>
+            <tr class="" id="l1291"><td><a href="#l1291"><span>1291</span></a></td><td><pre>sci-misc/vitables
 </pre></td></tr>
-            <tr class="" id="l1292"><td><a href="#l1292"><span>1292</span></a></td><td><pre>x11-proto/trapproto
+            <tr class="" id="l1292"><td><a href="#l1292"><span>1292</span></a></td><td><pre>  DeprecatedEclass: version 2.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 </pre></td></tr>
-            <tr class="" id="l1293"><td><a href="#l1293"><span>1293</span></a></td><td><pre>  DeprecatedEAPI: version 3.4.3: uses deprecated EAPI: 4
+            <tr class="" id="l1293"><td><a href="#l1293"><span>1293</span></a></td><td><pre>  NonExistentDeps: version 2.1: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
 </pre></td></tr>
-            <tr class="" id="l1294"><td><a href="#l1294"><span>1294</span></a></td><td><pre>
+            <tr class="" id="l1294"><td><a href="#l1294"><span>1294</span></a></td><td><pre>  NonExistentDeps: version 2.1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
 </pre></td></tr>
-            <tr class="" id="l1295"><td><a href="#l1295"><span>1295</span></a></td><td><pre>x11-proto/xcalibrateproto
-</pre></td></tr>
-            <tr class="" id="l1296"><td><a href="#l1296"><span>1296</span></a></td><td><pre>  DeprecatedEAPI: version 0.1_pre20081210: uses deprecated EAPI: 4
-</pre></td></tr>
-            <tr class="" id="l1297"><td><a href="#l1297"><span>1297</span></a></td><td><pre>
-</pre></td></tr>
-            <tr class="" id="l1298"><td><a href="#l1298"><span>1298</span></a></td><td><pre>x11-proto/xcmiscproto
-</pre></td></tr>
-            <tr class="" id="l1299"><td><a href="#l1299"><span>1299</span></a></td><td><pre>  DeprecatedEAPI: version 1.2.2: uses deprecated EAPI: 4
-</pre></td></tr>
-            <tr class="" id="l1300"><td><a href="#l1300"><span>1300</span></a></td><td><pre>
-</pre></td></tr>
-            <tr class="" id="l1301"><td><a href="#l1301"><span>1301</span></a></td><td><pre>x11-proto/xf86miscproto
-</pre></td></tr>
-            <tr class="" id="l1302"><td><a href="#l1302"><span>1302</span></a></td><td><pre>  DeprecatedEAPI: version 0.9.3: uses deprecated EAPI: 4
-</pre></td></tr>
-            <tr class="" id="l1303"><td><a href="#l1303"><span>1303</span></a></td><td><pre>
-</pre></td></tr>
-            <tr class="" id="l1304"><td><a href="#l1304"><span>1304</span></a></td><td><pre>x11-proto/xf86rushproto
-</pre></td></tr>
-            <tr class="" id="l1305"><td><a href="#l1305"><span>1305</span></a></td><td><pre>  DeprecatedEAPI: version 1.1.2-r1: uses deprecated EAPI: 4
-</pre></td></tr>
-            <tr class="" id="l1306"><td><a href="#l1306"><span>1306</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
-</pre></td></tr>
-            <tr class="" id="l1307"><td><a href="#l1307"><span>1307</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
-</pre></td></tr>
-            <tr class="" id="l1308"><td><a href="#l1308"><span>1308</span></a></td><td><pre>               : refetch
-</pre></td></tr>
-            <tr class="" id="l1309"><td><a href="#l1309"><span>1309</span></a></td><td><pre>WARNING pkgcore: metadata.dtd cannot be opened from
-</pre></td></tr>
-            <tr class="" id="l1310"><td><a href="#l1310"><span>1310</span></a></td><td><pre>               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
-</pre></td></tr>
-            <tr class="" id="l1311"><td><a href="#l1311"><span>1311</span></a></td><td><pre>               : refetch
-</pre></td></tr>
-            <tr class="" id="l1312"><td><a href="#l1312"><span>1312</span></a></td><td><pre>
-</pre></td></tr>
-            <tr class="" id="l1313"><td><a href="#l1313"><span>1313</span></a></td><td><pre>sci-misc/gato
-</pre></td></tr>
-            <tr class="" id="l1314"><td><a href="#l1314"><span>1314</span></a></td><td><pre>  DeprecatedEclass: version 1.1.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-</pre></td></tr>
-            <tr class="" id="l1315"><td><a href="#l1315"><span>1315</span></a></td><td><pre>  DeprecatedEAPI: version 1.1.2: uses deprecated EAPI: 4
-</pre></td></tr>
-            <tr class="" id="l1316"><td><a href="#l1316"><span>1316</span></a></td><td><pre>
-</pre></td></tr>
-            <tr class="" id="l1317"><td><a href="#l1317"><span>1317</span></a></td><td><pre>sci-misc/gt-itm
-</pre></td></tr>
-            <tr class="" id="l1318"><td><a href="#l1318"><span>1318</span></a></td><td><pre>  DeprecatedEAPI: version 19961004-r1: uses deprecated EAPI: 0
-</pre></td></tr>
-            <tr class="" id="l1319"><td><a href="#l1319"><span>1319</span></a></td><td><pre>
-</pre></td></tr>
-            <tr class="" id="l1320"><td><a href="#l1320"><span>1320</span></a></td><td><pre>sci-misc/h5utils
-</pre></td></tr>
-            <tr class="" id="l1321"><td><a href="#l1321"><span>1321</span></a></td><td><pre>  MissingSlotDep: version 1.12.1-r2: 'virtual/jpeg' matches more than one slot: [ 0, 62 ]
-</pre></td></tr>
-            <tr class="" id="l1322"><td><a href="#l1322"><span>1322</span></a></td><td><pre>
-</pre></td></tr>
-            <tr class="" id="l1323"><td><a href="#l1323"><span>1323</span></a></td><td><pre>sci-misc/lttoolbox
-</pre></td></tr>
-            <tr class="" id="l1324"><td><a href="#l1324"><span>1324</span></a></td><td><pre>  DeprecatedEAPI: version 3.1.0: uses deprecated EAPI: 4
-</pre></td></tr>
-            <tr class="" id="l1325"><td><a href="#l1325"><span>1325</span></a></td><td><pre>  DeprecatedEAPI: version 3.2.0: uses deprecated EAPI: 4
-</pre></td></tr>
-            <tr class="" id="l1326"><td><a href="#l1326"><span>1326</span></a></td><td><pre>
-</pre></td></tr>
-            <tr class="" id="l1327"><td><a href="#l1327"><span>1327</span></a></td><td><pre>sci-misc/nco
-</pre></td></tr>
-            <tr class="" id="l1328"><td><a href="#l1328"><span>1328</span></a></td><td><pre>  DeprecatedEAPI: version 3.9.9: uses deprecated EAPI: 2
-</pre></td></tr>
-            <tr class="" id="l1329"><td><a href="#l1329"><span>1329</span></a></td><td><pre>
-</pre></td></tr>
-            <tr class="" id="l1330"><td><a href="#l1330"><span>1330</span></a></td><td><pre>sci-misc/ncview
-</pre></td></tr>
-            <tr class="" id="l1331"><td><a href="#l1331"><span>1331</span></a></td><td><pre>  DeprecatedEAPI: version 2.1.1: uses deprecated EAPI: 4
-</pre></td></tr>
-            <tr class="" id="l1332"><td><a href="#l1332"><span>1332</span></a></td><td><pre>  DeprecatedEAPI: version 2.1.2: uses deprecated EAPI: 4
-</pre></td></tr>
-            <tr class="" id="l1333"><td><a href="#l1333"><span>1333</span></a></td><td><pre>
-</pre></td></tr>
-            <tr class="" id="l1334"><td><a href="#l1334"><span>1334</span></a></td><td><pre>sci-misc/netlogo-bin
-</pre></td></tr>
-            <tr class="" id="l1335"><td><a href="#l1335"><span>1335</span></a></td><td><pre>  DeprecatedEAPI: version 3.0.2: uses deprecated EAPI: 0
-</pre></td></tr>
-            <tr class="" id="l1336"><td><a href="#l1336"><span>1336</span></a></td><td><pre>  DeprecatedEAPI: version 4.0.4: uses deprecated EAPI: 4
-</pre></td></tr>
-            <tr class="" id="l1337"><td><a href="#l1337"><span>1337</span></a></td><td><pre>
-</pre></td></tr>
-            <tr class="" id="l1338"><td><a href="#l1338"><span>1338</span></a></td><td><pre>sci-misc/repsnapper
-</pre></td></tr>
-            <tr class="" id="l1339"><td><a href="#l1339"><span>1339</span></a></td><td><pre>  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-</pre></td></tr>
-            <tr class="" id="l1340"><td><a href="#l1340"><span>1340</span></a></td><td><pre>
-</pre></td></tr>
-            <tr class="" id="l1341"><td><a href="#l1341"><span>1341</span></a></td><td><pre>sci-misc/vitables
-</pre></td></tr>
-            <tr class="" id="l1342"><td><a href="#l1342"><span>1342</span></a></td><td><pre>  DeprecatedEclass: version 2.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-</pre></td></tr>
-            <tr class="" id="l1343"><td><a href="#l1343"><span>1343</span></a></td><td><pre>  NonExistentDeps: version 2.1: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
-</pre></td></tr>
-            <tr class="" id="l1344"><td><a href="#l1344"><span>1344</span></a></td><td><pre>  NonExistentDeps: version 2.1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
-</pre></td></tr>
-            <tr class="" id="l1345"><td><a href="#l1345"><span>1345</span></a></td><td><pre>  DeprecatedEAPI: version 2.1: uses deprecated EAPI: 4
+            <tr class="" id="l1295"><td><a href="#l1295"><span>1295</span></a></td><td><pre>  DeprecatedEAPI: version 2.1: uses deprecated EAPI: 4
 </pre></td></tr>
 
         </table>
 
-        <address>Generated based on results from 2015-12-03 17:42:01 UTC</address>
+        <address>Generated based on results from 2015-12-03 18:08:23 UTC</address>
     </body>
 </html>
