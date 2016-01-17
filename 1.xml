@@ -160,8 +160,8 @@
 <result><category>kde-apps</category><package>kuiserver</package><version>15.08.3</version><class>DroppedKeywordWarning</class><msg>keywords dropped: arm, ppc, ppc64</msg></result>
 <result><category>kde-apps</category><package>kurifilter-plugins</package><version>15.08.3</version><class>DroppedKeywordWarning</class><msg>keywords dropped: arm, ppc, ppc64</msg></result>
 <result><category>kde-apps</category><package>kuser</package><version>15.08.3</version><class>DroppedKeywordWarning</class><msg>keywords dropped: arm, ppc, ppc64</msg></result>
-<result><category>kde-apps</category><package>kwalletd</package><version>15.08.3</version><class>DroppedKeywordWarning</class><msg>keywords dropped: arm, ppc, ppc64</msg></result>
 <result><category>kde-apps</category><package>kwalletd</package><class>SizeViolation</class><msg>"files/kwalletd-4.14.3-CVE-2013-7252.patch" exceeds 20k in size; 21806 bytes total</msg></result>
+<result><category>kde-apps</category><package>kwalletd</package><version>15.08.3</version><class>DroppedKeywordWarning</class><msg>keywords dropped: arm, ppc, ppc64</msg></result>
 <result><category>kde-apps</category><package>kwalletmanager</package><version>15.04.3</version><class>NoFinalNewline</class><msg>ebuild lacks an ending newline</msg></result>
 <result><category>kde-apps</category><package>kwalletmanager</package><version>15.04.3</version><class>DroppedKeywordWarning</class><msg>keywords dropped: arm, ppc, ppc64</msg></result>
 <result><category>kde-apps</category><package>kwrite</package><version>15.08.3</version><class>DroppedKeywordWarning</class><msg>keywords dropped: arm, ppc, ppc64</msg></result>
@@ -204,6 +204,7 @@
 <result><category>x11-plugins</category><package>qled</package><version>0.6.2</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent atoms [ &lt;dev-qt/qtgui-4.8.5:4 ]</msg></result>
 <result><category>x11-plugins</category><package>wmifs</package><version>1.6</version><class>DroppedKeywordWarning</class><msg>keywords dropped: alpha, hppa, ia64</msg></result>
 <result><category>sys-cluster</category><package>cinder</package><version>2015.1.9999</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent atoms [ &lt;dev-python/oslo-vmware-0.12.0 ]</msg></result>
+<result><category>sys-cluster</category><package>gearmand</package><version>0.34-r1</version><class>MissingSlotDep</class><msg>'&gt;=dev-db/postgresql-9.0' matches more than one slot: [ 9.0, 9.1, 9.2, 9.3, 9.4, 9.5, 9.6 ]</msg></result>
 <result><category>sys-cluster</category><package>glusterfs</package><class>SizeViolation</class><msg>"files/glusterfs-3.4.0-build-shared-only.patch" exceeds 20k in size; 22147 bytes total</msg></result>
 <result><category>sys-cluster</category><package>glusterfs</package><class>SizeViolation</class><msg>"files/glusterfs-3.5.1-build-shared-only.patch" exceeds 20k in size; 25227 bytes total</msg></result>
 <result><category>sys-cluster</category><package>glusterfs</package><class>SizeViolation</class><msg>"files/glusterfs-3.6.5-build-shared-only.patch" exceeds 20k in size; 27261 bytes total</msg></result>
@@ -251,6 +252,9 @@
 <result><category>sys-auth</category><package>nss_ldap</package><version>265-r4</version><class>MissingSlotDep</class><msg>'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]</msg></result>
 <result><category>sys-auth</category><package>otpcalc</package><version>0.97-r6</version><class>MissingSlotDep</class><msg>'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]</msg></result>
 <result><category>sys-auth</category><package>otpcalc</package><version>0.97-r8</version><class>BadInsIntoDir</class><msg>ebuild uses insinto /usr/share/applications on line 47</msg></result>
+<result><category>sys-auth</category><package>pam_abl</package><version>0.5.0</version><class>MissingSlotDep</class><msg>'&gt;=sys-libs/db-4.2.52_p2' matches more than one slot: [ 4.2, 4.3, 4.4, 4.5, 4.6, 4.7, 4.8, 5.1, 5.3, 6.0, 6.1 ]</msg></result>
+<result><category>sys-auth</category><package>pam_abl</package><version>0.6.0</version><class>MissingSlotDep</class><msg>'&gt;=sys-libs/db-4.2.52_p2' matches more than one slot: [ 4.2, 4.3, 4.4, 4.5, 4.6, 4.7, 4.8, 5.1, 5.3, 6.0, 6.1 ]</msg></result>
+<result><category>sys-auth</category><package>pam_mount</package><version>2.15</version><class>MissingSlotDep</class><msg>'&gt;=dev-libs/openssl-0.9.8' matches more than one slot: [ 0, 0.9.8 ]</msg></result>
 <result><category>sys-auth</category><package>pam_ssh_agent_auth</package><version>0.9.4</version><class>MissingSlotDep</class><msg>'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]</msg></result>
 <result><category>sys-auth</category><package>pam_ssh_agent_auth</package><version>0.10.2</version><class>MissingSlotDep</class><msg>'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]</msg></result>
 <result><category>sys-auth</category><package>pambase</package><version>20101024-r2</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent atoms [ sys-netbsd/netbsd-pam-modules ]</msg></result>
@@ -278,6 +282,7 @@
 <result><category>media-tv</category><package>mythtv</package><version>0.27_p20140321</version><class>NonExistentDeps</class><msg>depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]</msg></result>
 <result><category>media-tv</category><package>mythtv</package><version>0.27_p20140321</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]</msg></result>
 <result><category>media-tv</category><package>tvbrowser</package><class>SizeViolation</class><msg>"files/tvbrowser-9999-build.xml" exceeds 20k in size; 37346 bytes total</msg></result>
+<result><category>media-tv</category><package>xawtv</package><version>3.95-r3</version><class>MissingSlotDep</class><msg>'&gt;=sys-libs/ncurses-5.1' matches more than one slot: [ 0, 5 ]</msg></result>
 <result><category>media-tv</category><package>xbmc</package><version>11.0</version><class>NonExistentDeps</class><msg>depset depends: nonexistent atoms [ =dev-lang/python-2.6*, &lt;media-video/libav-0.8.2-r1 ]</msg></result>
 <result><category>media-tv</category><package>xbmc</package><version>11.0</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent atoms [ =dev-lang/python-2.6*, &lt;media-video/libav-0.8.2-r1 ]</msg></result>
 <result><category>media-tv</category><package>xbmc</package><version>12.1-r1</version><class>MissingSlotDep</class><msg>'media-libs/tiff' matches more than one slot: [ 0, 3 ]</msg></result>
@@ -320,6 +325,7 @@
 <result><category>app-mobilephone</category><package>obexftp</package><version>0.24</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent atoms [ dev-lang/ruby:1.9 ]</msg></result>
 <result><category>app-mobilephone</category><package>yaps</package><version>0.96-r5</version><class>MissingSlotDep</class><msg>'dev-lang/lua' matches more than one slot: [ 0, 5.1, 5.2 ]</msg></result>
 <result><category>sci-misc</category><package>h5utils</package><version>1.12.1-r2</version><class>MissingSlotDep</class><msg>'virtual/jpeg' matches more than one slot: [ 0, 62 ]</msg></result>
+<result><category>sci-misc</category><package>repsnapper</package><version>9999</version><class>MissingSlotDep</class><msg>'&gt;=dev-cpp/gtkmm-2.4' matches more than one slot: [ 2.4, 3.0 ]</msg></result>
 <result><category>sci-misc</category><package>vitables</package><version>2.1</version><class>NonExistentDeps</class><msg>depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]</msg></result>
 <result><category>sci-misc</category><package>vitables</package><version>2.1</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]</msg></result>
 </checks>
