@@ -13,6 +13,7 @@
 <result><category>dev-python</category><package>bsddb3</package><version>6.1.0</version><class>DroppedKeywordWarning</class><msg>keywords dropped: hppa</msg></result>
 <result><category>dev-python</category><package>cvxopt</package><class>SizeViolation</class><msg>"files/cvxopt-1.1.6-glpk.patch" exceeds 20k in size; 32201 bytes total</msg></result>
 <result><category>dev-python</category><package>cvxopt</package><class>SizeViolation</class><msg>"files/cvxopt-1.1.6-glpk449.patch" exceeds 20k in size; 39362 bytes total</msg></result>
+<result><category>dev-python</category><package>decorator</package><version>4.0.9</version><class>DroppedKeywordWarning</class><msg>keywords dropped: arm64</msg></result>
 <result><category>dev-python</category><package>django</package><version>1.4.22</version><class>VulnerablePackage</class><msg>vulnerable via glsa(201406-26) ( ver &lt; 1.6.5 &amp;&amp; ver not = 1.5.8 &amp;&amp; ver not = 1.4.13 &amp;&amp; ver not = 1.5.10 &amp;&amp; ver not = 1.4.15 ), keywords ('amd64', 'amd64-linux', 'ia64', 'ppc', 'ppc-macos', 'ppc64', 'sparc', 'x64-macos', 'x86', 'x86-fbsd', 'x86-linux', 'x86-macos')</msg></result>
 <result><category>dev-python</category><package>django</package><version>1.4.22</version><class>VulnerablePackage</class><msg>vulnerable via glsa(201412-22) ( ver &lt; 1.6.7 &amp;&amp; ver not = 1.5.10 &amp;&amp; ver not = 1.4.15 ), keywords ('amd64', 'amd64-linux', 'ia64', 'ppc', 'ppc-macos', 'ppc64', 'sparc', 'x64-macos', 'x86', 'x86-fbsd', 'x86-linux', 'x86-macos')</msg></result>
 <result><category>dev-python</category><package>django</package><version>1.4.22</version><class>VulnerablePackage</class><msg>vulnerable via glsa(201510-06) ( ver &lt; 1.8.3 &amp;&amp; ver not = 1.7.9 &amp;&amp; ver not = 1.4.21 ), keywords ('amd64', 'amd64-linux', 'ia64', 'ppc', 'ppc-macos', 'ppc64', 'sparc', 'x64-macos', 'x86', 'x86-fbsd', 'x86-linux', 'x86-macos')</msg></result>
@@ -28,6 +29,7 @@
 <result><category>dev-python</category><package>django-treebeard</package><version>3.0</version><class>NoFinalNewline</class><msg>ebuild lacks an ending newline</msg></result>
 <result><category>dev-python</category><package>drpython</package><version>3.11.4</version><class>MissingSlotDep</class><msg>'&gt;=dev-python/wxpython-2.6' matches more than one slot: [ 2.8, 2.9, 3.0 ]</msg></result>
 <result><category>dev-python</category><package>elasticsearch-py</package><version>2.1.0</version><class>DroppedKeywordWarning</class><msg>keywords dropped: arm</msg></result>
+<result><category>dev-python</category><package>eventlet</package><version>0.18.3</version><class>DroppedKeywordWarning</class><msg>keywords dropped: arm64</msg></result>
 <result><category>dev-python</category><package>fixtures</package><version>1.2.0</version><class>DroppedKeywordWarning</class><msg>keywords dropped: sparc</msg></result>
 <result><category>dev-python</category><package>flake8</package><version>2.4.1-r1</version><class>DroppedKeywordWarning</class><msg>keywords dropped: sparc</msg></result>
 <result><category>dev-python</category><package>foolscap</package><version>0.8.0</version><class>DroppedKeywordWarning</class><msg>keywords dropped: sparc</msg></result>
@@ -81,6 +83,7 @@
 <result><category>dev-python</category><package>python-docs</package><version>3.2.5</version><class>DroppedKeywordWarning</class><msg>keywords dropped: arm64</msg></result>
 <result><category>dev-python</category><package>python-neutronclient</package><version>3.0.0</version><class>WhitespaceFound</class><msg>ebuild has trailing whitespace on line 61</msg></result>
 <result><category>dev-python</category><package>python-neutronclient</package><version>3.1.1</version><class>WhitespaceFound</class><msg>ebuild has trailing whitespace on line 64</msg></result>
+<result><category>dev-python</category><package>python-neutronclient</package><version>3.1.1</version><class>DroppedKeywordWarning</class><msg>keywords dropped: arm64</msg></result>
 <result><category>dev-python</category><package>python-sqlparse</package><version>0.1.14</version><class>DroppedKeywordWarning</class><msg>keywords dropped: sparc</msg></result>
 <result><category>dev-python</category><package>pyusb</package><version>1.0.0_beta2</version><class>MissingSlotDep</class><msg>'virtual/libusb' matches more than one slot: [ 0, 1 ]</msg></result>
 <result><category>dev-python</category><package>pyzor</package><version>0.7.0</version><class>DroppedKeywordWarning</class><msg>keywords dropped: ppc, ppc64</msg></result>
@@ -152,7 +155,6 @@
 <result><category>app-emulation</category><package>libguestfs</package><version>1.28.5</version><class>MissingSlotDep</class><msg>'dev-lang/lua' matches more than one slot: [ 0, 5.1, 5.2 ]</msg></result>
 <result><category>app-emulation</category><package>libguestfs</package><version>1.28.5</version><class>MissingSlotDep</class><msg>'&gt;=sys-libs/db-4.6' matches more than one slot: [ 4.6, 4.7, 4.8, 5.1, 5.3, 6.0, 6.1 ]</msg></result>
 <result><category>app-emulation</category><package>libguestfs</package><version>1.28.5-r1</version><class>MissingSlotDep</class><msg>'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]</msg></result>
-<result><category>app-emulation</category><package>libvirt-glib</package><version>0.2.2</version><class>NonExistentDeps</class><msg>depset depends: nonexistent atoms [ dev-lang/vala:0.24 ]</msg></result>
 <result><category>app-emulation</category><package>libvirt-glib</package><version>0.2.3</version><class>NonExistentDeps</class><msg>depset depends: nonexistent atoms [ dev-lang/vala:0.24 ]</msg></result>
 <result><category>app-emulation</category><package>libvirt-glib</package><version>0.2.3-r1</version><class>NonExistentDeps</class><msg>depset depends: nonexistent atoms [ dev-lang/vala:0.24 ]</msg></result>
 <result><category>app-emulation</category><package>lxc</package><version>1.1.0-r6</version><class>DroppedKeywordWarning</class><msg>keywords dropped: arm64, ppc64, x86</msg></result>
