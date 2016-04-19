@@ -95,7 +95,7 @@
 <result><category>dev-util</category><package>monodevelop</package><version>5.9.5.9-r1</version><class>VisibleVcsPkg</class><msg>VCS version visible for arch amd64, profile hardened/linux/amd64/selinux</msg></result>
 <result><category>dev-util</category><package>monodevelop</package><version>5.9.5.9-r1</version><class>VisibleVcsPkg</class><msg>VCS version visible for arch amd64, profile default/linux/amd64/13.0</msg></result>
 <result><category>dev-util</category><package>nvidia-cuda-sdk</package><version>7.5.18</version><class>DroppedKeywordWarning</class><msg>keywords dropped: x86</msg></result>
-<result><category>dev-util</category><package>nvidia-cuda-toolkit</package><class>PkgUnknownPackageRef</class><msg>dev-util/nvidia-cuda-toolkit metadata.xml &lt;pkg/&gt; references unknown/invalid package name 'dev-util/eclipse-sdk'</msg></result>
+<result><category>dev-util</category><package>nvidia-cuda-toolkit</package><class>PkgMetadataXmlInvalidPkgRef</class><msg>dev-util/nvidia-cuda-toolkit metadata.xml &lt;pkg/&gt; references unknown/invalid package 'dev-util/eclipse-sdk'</msg></result>
 <result><category>dev-util</category><package>nvidia-cuda-toolkit</package><version>7.5.18-r2</version><class>DroppedKeywordWarning</class><msg>keywords dropped: x86</msg></result>
 <result><category>dev-util</category><package>omake</package><version>0.9.8.6.0_rc1</version><class>MissingSlotDep</class><msg>'&gt;=sys-libs/ncurses-5.3' matches more than one slot: [ 0, 5 ]</msg></result>
 <result><category>dev-util</category><package>omake</package><version>0.9.8.6.0_rc1</version><class>MissingSlotDep</class><msg>'&gt;=sys-libs/readline-4.3' matches more than one slot: [ 0, 4, 5 ]</msg></result>
@@ -133,15 +133,15 @@
 <result><category>dev-lang</category><package>ghc</package><version>7.10.2</version><class>DroppedKeywordWarning</class><msg>keywords dropped: alpha, ia64, ppc, ppc64, sparc</msg></result>
 <result><category>dev-lang</category><package>gnat-gcc</package><version>4.4.7</version><class>DroppedKeywordWarning</class><msg>keywords dropped: ppc</msg></result>
 <result><category>dev-lang</category><package>helium</package><version>1.8.1</version><class>DroppedKeywordWarning</class><msg>keywords dropped: ppc</msg></result>
-<result><category>dev-lang</category><package>icc</package><class>PkgUnknownPackageRef</class><msg>dev-lang/icc metadata.xml &lt;pkg/&gt; references unknown/invalid package name 'dev-util/eclipse-sdk'</msg></result>
 <result><category>dev-lang</category><package>icc</package><version>13.1.5.192</version><class>NonExistentDeps</class><msg>depset depends: nonexistent atoms [ dev-util/eclipse-sdk ]</msg></result>
 <result><category>dev-lang</category><package>icc</package><version>13.1.5.192</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent atoms [ dev-util/eclipse-sdk ]</msg></result>
+<result><category>dev-lang</category><package>icc</package><class>PkgMetadataXmlInvalidPkgRef</class><msg>dev-lang/icc metadata.xml &lt;pkg/&gt; references unknown/invalid package 'dev-util/eclipse-sdk'</msg></result>
 <result><category>dev-lang</category><package>icc</package><version>14.0.3.174</version><class>NonExistentDeps</class><msg>depset depends: nonexistent atoms [ dev-util/eclipse-sdk ]</msg></result>
 <result><category>dev-lang</category><package>icc</package><version>14.0.3.174</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent atoms [ dev-util/eclipse-sdk ]</msg></result>
 <result><category>dev-lang</category><package>icc</package><version>15.0.6.233</version><class>NonExistentDeps</class><msg>depset depends: nonexistent atoms [ dev-util/eclipse-sdk ]</msg></result>
 <result><category>dev-lang</category><package>icc</package><version>15.0.6.233</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent atoms [ dev-util/eclipse-sdk ]</msg></result>
-<result><category>dev-lang</category><package>idb</package><class>PkgUnknownPackageRef</class><msg>dev-lang/idb metadata.xml &lt;pkg/&gt; references unknown/invalid package name 'dev-util/eclipse-sdk'</msg></result>
 <result><category>dev-lang</category><package>idb</package><version>13.0.5.192</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent atoms [ dev-util/eclipse-sdk ]</msg></result>
+<result><category>dev-lang</category><package>idb</package><class>PkgMetadataXmlInvalidPkgRef</class><msg>dev-lang/idb metadata.xml &lt;pkg/&gt; references unknown/invalid package 'dev-util/eclipse-sdk'</msg></result>
 <result><category>dev-lang</category><package>idb</package><version>14.0.3.174</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent atoms [ dev-util/eclipse-sdk ]</msg></result>
 <result><category>dev-lang</category><package>lazarus</package><version>1.6.0-r1</version><class>DroppedKeywordWarning</class><msg>keywords dropped: ppc</msg></result>
 <result><category>dev-lang</category><package>lua</package><version>5.1.5-r2</version><class>MissingSlotDep</class><msg>'sys-libs/readline' matches more than one slot: [ 0, 4, 5 ]</msg></result>
@@ -204,7 +204,7 @@
 <result><category>dev-lang</category><package>tcc</package><version>0.9.26-r1</version><class>WhitespaceFound</class><msg>ebuild has leading whitespace on lines 43, 44, 45, 46, 47, 48</msg></result>
 <result><category>dev-lang</category><package>teyjus</package><version>2.0.2</version><class>MissingSlotDep</class><msg>'&gt;=sys-devel/binutils-2.17' matches more than one slot: [ 2.21.1, 2.22, 2.23.2, 2.24, 2.25, 2.25.1, git ]</msg></result>
 <result><category>dev-lang</category><package>teyjus</package><version>2.0.2</version><class>MissingSlotDep</class><msg>'&gt;=sys-devel/gcc-2.95.3' matches more than one slot: [ 2.95.3, 3.3.6, 3.4.6, 4.0.4, 4.1.2, 4.2.4, 4.3.6, 4.4.7, 4.5.4, 4.6.4, 4.7.4, 4.8.5, 4.9.3, 5.1.0, 5.2.0, 5.3.0 ]</msg></result>
-<result><category>app-i18n</category><package>anthy</package><class>PkgUnknownPackageRef</class><msg>app-i18n/anthy metadata.xml &lt;pkg/&gt; references unknown/invalid package name 'app-i18n/jmode'</msg></result>
+<result><category>app-i18n</category><package>anthy</package><class>PkgMetadataXmlInvalidPkgRef</class><msg>app-i18n/anthy metadata.xml &lt;pkg/&gt; references unknown/invalid package 'app-i18n/jmode'</msg></result>
 <result><category>app-i18n</category><package>canna</package><version>3.7_p3-r2</version><class>DroppedKeywordWarning</class><msg>keywords dropped: ia64</msg></result>
 <result><category>app-i18n</category><package>fcitx</package><version>4.2.7</version><class>MissingSlotDep</class><msg>'dev-lang/lua' matches more than one slot: [ 0, 5.1, 5.2 ]</msg></result>
 <result><category>app-i18n</category><package>fcitx</package><version>4.2.9</version><class>DroppedKeywordWarning</class><msg>keywords dropped: hppa, ppc, ppc64</msg></result>
@@ -229,14 +229,14 @@
 <result><category>app-i18n</category><package>ibus-pinyin</package><version>1.4.0</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]</msg></result>
 <result><category>app-i18n</category><package>ibus-pinyin</package><version>1.4.0-r1</version><class>NonExistentDeps</class><msg>depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]</msg></result>
 <result><category>app-i18n</category><package>ibus-pinyin</package><version>1.4.0-r1</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]</msg></result>
-<result><category>app-i18n</category><package>ibus-pinyin</package><version>1.5.0</version><class>MissingSlotDep</class><msg>'&gt;=dev-lang/lua-5.1' matches more than one slot: [ 0, 5.1, 5.2 ]</msg></result>
-<result><category>app-i18n</category><package>ibus-pinyin</package><version>1.5.0</version><class>MissingSlotDep</class><msg>'&lt;dev-lang/lua-5.2' matches more than one slot: [ 0, 5.1 ]</msg></result>
 <result><category>app-i18n</category><package>ibus-pinyin</package><version>1.5.0</version><class>NonExistentDeps</class><msg>depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]</msg></result>
 <result><category>app-i18n</category><package>ibus-pinyin</package><version>1.5.0</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]</msg></result>
-<result><category>app-i18n</category><package>ibus-pinyin</package><version>1.5.0-r1</version><class>MissingSlotDep</class><msg>'&gt;=dev-lang/lua-5.1' matches more than one slot: [ 0, 5.1, 5.2 ]</msg></result>
-<result><category>app-i18n</category><package>ibus-pinyin</package><version>1.5.0-r1</version><class>MissingSlotDep</class><msg>'&lt;dev-lang/lua-5.2' matches more than one slot: [ 0, 5.1 ]</msg></result>
+<result><category>app-i18n</category><package>ibus-pinyin</package><version>1.5.0</version><class>MissingSlotDep</class><msg>'&gt;=dev-lang/lua-5.1' matches more than one slot: [ 0, 5.1, 5.2 ]</msg></result>
+<result><category>app-i18n</category><package>ibus-pinyin</package><version>1.5.0</version><class>MissingSlotDep</class><msg>'&lt;dev-lang/lua-5.2' matches more than one slot: [ 0, 5.1 ]</msg></result>
 <result><category>app-i18n</category><package>ibus-pinyin</package><version>1.5.0-r1</version><class>NonExistentDeps</class><msg>depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]</msg></result>
 <result><category>app-i18n</category><package>ibus-pinyin</package><version>1.5.0-r1</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]</msg></result>
+<result><category>app-i18n</category><package>ibus-pinyin</package><version>1.5.0-r1</version><class>MissingSlotDep</class><msg>'&gt;=dev-lang/lua-5.1' matches more than one slot: [ 0, 5.1, 5.2 ]</msg></result>
+<result><category>app-i18n</category><package>ibus-pinyin</package><version>1.5.0-r1</version><class>MissingSlotDep</class><msg>'&lt;dev-lang/lua-5.2' matches more than one slot: [ 0, 5.1 ]</msg></result>
 <result><category>app-i18n</category><package>ibus-pinyin</package><version>1.5.0-r2</version><class>MissingSlotDep</class><msg>'&gt;=dev-lang/lua-5.1' matches more than one slot: [ 0, 5.1, 5.2 ]</msg></result>
 <result><category>app-i18n</category><package>ibus-pinyin</package><version>1.5.0-r2</version><class>MissingSlotDep</class><msg>'&lt;dev-lang/lua-5.2' matches more than one slot: [ 0, 5.1 ]</msg></result>
 <result><category>app-i18n</category><package>ibus-skk</package><version>1.3.9</version><class>NonExistentDeps</class><msg>depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]</msg></result>
@@ -323,20 +323,20 @@
 <result><category>net-im</category><package>mcabber</package><version>0.10.3</version><class>MissingSlotDep</class><msg>'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]</msg></result>
 <result><category>net-im</category><package>mcabber</package><version>1.0.0</version><class>MissingSlotDep</class><msg>'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]</msg></result>
 <result><category>net-im</category><package>pork</package><version>0.99.8.1</version><class>MissingSlotDep</class><msg>'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]</msg></result>
-<result><category>net-im</category><package>qutim</package><class>PkgUnknownPackageRef</class><msg>net-im/qutim metadata.xml &lt;pkg/&gt; references unknown/invalid package name 'net-im/telepathy'</msg></result>
 <result><category>net-im</category><package>qutim</package><version>0.3.2</version><class>NonExistentDeps</class><msg>depset depends: nonexistent atoms [ &lt;net-libs/libotr-4.0.0 ]</msg></result>
 <result><category>net-im</category><package>qutim</package><version>0.3.2</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent atoms [ &lt;net-libs/libotr-4.0.0 ]</msg></result>
+<result><category>net-im</category><package>qutim</package><class>PkgMetadataXmlInvalidPkgRef</class><msg>net-im/qutim metadata.xml &lt;pkg/&gt; references unknown/invalid package 'net-im/telepathy'</msg></result>
 <result><category>net-im</category><package>qutim</package><version>0.3.3_p1</version><class>NonExistentDeps</class><msg>depset depends: nonexistent atoms [ &lt;net-libs/libotr-4.0.0 ]</msg></result>
 <result><category>net-im</category><package>qutim</package><version>0.3.3_p1</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent atoms [ &lt;net-libs/libotr-4.0.0 ]</msg></result>
 <result><category>net-im</category><package>skypetab-ng</package><version>0.5.2</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent atoms [ &lt;net-im/skype-4.1 ]</msg></result>
 <result><category>net-im</category><package>skypetab-ng</package><version>0.5.2_p20150201</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent atoms [ &lt;net-im/skype-4.1 ]</msg></result>
 <result><category>net-im</category><package>skypetab-ng</package><version>9999</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent atoms [ &lt;net-im/skype-4.1 ]</msg></result>
 <result><category>kde-base</category><package>kcheckpass</package><version>4.11.22-r1</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent atoms [ &lt;kde-plasma/plasma-workspace-5.4.50 ]</msg></result>
-<result><category>kde-base</category><package>kdeplasma-addons</package><class>PkgUnknownPackageRef</class><msg>kde-base/kdeplasma-addons metadata.xml &lt;pkg/&gt; references unknown/invalid package name 'kde-base/marble'</msg></result>
-<result><category>kde-base</category><package>korundum</package><class>PkgUnknownPackageRef</class><msg>kde-base/korundum metadata.xml &lt;pkg/&gt; references unknown/invalid package name 'kde-base/okular'</msg></result>
+<result><category>kde-base</category><package>kdeplasma-addons</package><class>PkgMetadataXmlInvalidPkgRef</class><msg>kde-base/kdeplasma-addons metadata.xml &lt;pkg/&gt; references unknown/invalid package 'kde-base/marble'</msg></result>
+<result><category>kde-base</category><package>korundum</package><class>PkgMetadataXmlInvalidPkgRef</class><msg>kde-base/korundum metadata.xml &lt;pkg/&gt; references unknown/invalid package 'kde-base/okular'</msg></result>
 <result><category>kde-base</category><package>krossjava</package><version>4.14.3</version><class>MissingSlotDep</class><msg>'&gt;=virtual/jdk-1.5' matches more than one slot: [ 1.7, 1.8 ]</msg></result>
-<result><category>kde-base</category><package>perlkde</package><class>PkgUnknownPackageRef</class><msg>kde-base/perlkde metadata.xml &lt;pkg/&gt; references unknown/invalid package name 'kde-base/okular'</msg></result>
-<result><category>kde-base</category><package>smokekde</package><class>PkgUnknownPackageRef</class><msg>kde-base/smokekde metadata.xml &lt;pkg/&gt; references unknown/invalid package name 'kde-base/okular'</msg></result>
+<result><category>kde-base</category><package>perlkde</package><class>PkgMetadataXmlInvalidPkgRef</class><msg>kde-base/perlkde metadata.xml &lt;pkg/&gt; references unknown/invalid package 'kde-base/okular'</msg></result>
+<result><category>kde-base</category><package>smokekde</package><class>PkgMetadataXmlInvalidPkgRef</class><msg>kde-base/smokekde metadata.xml &lt;pkg/&gt; references unknown/invalid package 'kde-base/okular'</msg></result>
 <result><category>net-firewall</category><package>arno-iptables-firewall</package><version>2.0.1e</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent atoms [ &lt;sys-apps/coreutils-8.20 ]</msg></result>
 <result><category>net-firewall</category><package>conntrack-tools</package><version>1.4.3</version><class>DroppedKeywordWarning</class><msg>keywords dropped: alpha</msg></result>
 <result><category>net-firewall</category><package>firehol</package><version>3.0.1</version><class>DroppedKeywordWarning</class><msg>keywords dropped: ppc, sparc, x86</msg></result>
@@ -348,7 +348,7 @@
 <result><category>sci-astronomy</category><package>celestia</package><version>1.6.1-r1</version><class>MissingSlotDep</class><msg>'virtual/jpeg' matches more than one slot: [ 0, 62 ]</msg></result>
 <result><category>sci-astronomy</category><package>celestia</package><version>1.6.1-r1</version><class>MissingSlotDep</class><msg>'&lt;dev-lang/lua-5.2' matches more than one slot: [ 0, 5.1 ]</msg></result>
 <result><category>sci-astronomy</category><package>ds9-bin</package><version>7.4</version><class>DroppedKeywordWarning</class><msg>keywords dropped: x86</msg></result>
-<result><category>sci-astronomy</category><package>psfex</package><class>PkgUnknownPackageRef</class><msg>sci-astronomy/psfex metadata.xml &lt;pkg/&gt; references unknown/invalid package name 'sci-libs/sextractor'</msg></result>
+<result><category>sci-astronomy</category><package>psfex</package><class>PkgMetadataXmlInvalidPkgRef</class><msg>sci-astronomy/psfex metadata.xml &lt;pkg/&gt; references unknown/invalid package 'sci-libs/sextractor'</msg></result>
 <result><category>sci-astronomy</category><package>xephem</package><version>3.7.6</version><class>MissingSlotDep</class><msg>'virtual/jpeg' matches more than one slot: [ 0, 62 ]</msg></result>
 <result><category>lxde-base</category><package>lxde-meta</package><version>0.5.5-r4</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent atoms [ &lt;=lxde-base/lxsession-0.4.6.1 ]</msg></result>
 <result><category>lxde-base</category><package>lxsession</package><version>0.5.2</version><class>NonExistentDeps</class><msg>depset depends: nonexistent atoms [ dev-lang/vala:0.24 ]</msg></result>
