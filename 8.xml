@@ -94,8 +94,8 @@
 <result><category>net-analyzer</category><package>nbwmon</package><version>0.4.3</version><class>MissingSlotDep</class><msg>'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]</msg></result>
 <result><category>net-analyzer</category><package>nbwmon</package><version>0.5.1</version><class>MissingSlotDep</class><msg>'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]</msg></result>
 <result><category>net-analyzer</category><package>nbwmon</package><version>0.5.2</version><class>MissingSlotDep</class><msg>'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]</msg></result>
-<result><category>net-analyzer</category><package>nessus-bin</package><version>4.4.1</version><class>MissingChksum</class><msg>"Nessus-4.4.1-es6.i686.rpm" missing required chksums: sha512, whirlpool; has chksums: sha256, size</msg></result>
 <result><category>net-analyzer</category><package>nessus-bin</package><version>4.4.1</version><class>MissingChksum</class><msg>"Nessus-4.4.1-es6.x86_64.rpm" missing required chksums: sha512, whirlpool; has chksums: sha256, size</msg></result>
+<result><category>net-analyzer</category><package>nessus-bin</package><version>4.4.1</version><class>MissingChksum</class><msg>"Nessus-4.4.1-es6.i686.rpm" missing required chksums: sha512, whirlpool; has chksums: sha256, size</msg></result>
 <result><category>net-analyzer</category><package>nessus-core</package><version>2.2.9-r1</version><class>NonExistentDeps</class><msg>depset depends: nonexistent dep: [ dev-libs/libprelude ]</msg></result>
 <result><category>net-analyzer</category><package>nessus-core</package><version>2.2.9-r1</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent dep: [ dev-libs/libprelude ]</msg></result>
 <result><category>net-analyzer</category><package>neti</package><version>2.0-r1</version><class>MissingSlotDep</class><msg>'&gt;=virtual/jdk-1.2' matches more than one slot: [ 1.7, 1.8 ]</msg></result>
@@ -334,10 +334,16 @@
 <result><category>net-print</category><package>gutenprint</package><version>5.2.10</version><class>MissingSlotDep</class><msg>'sys-libs/readline' matches more than one slot: [ 0, 4, 5 ]</msg></result>
 <result><category>net-print</category><package>hplip</package><version>3.16.5-r1</version><class>DroppedKeyword</class><msg>keywords dropped: ppc64</msg></result>
 <result><category>net-print</category><package>kyocera-mita-ppds</package><version>8.4</version><class>MissingChksum</class><msg>"Linux_PPDs_KSL8_4.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size</msg></result>
-<result><category>www-apache</category><package>mod_auth_kerb</package><class>SizeViolation</class><msg>"files/mod_auth_kerb-5.4-s4u2proxy-r3.patch" exceeds 20k in size; 20.5 KiB total</msg></result>
-<result><category>www-apache</category><package>mod_gnutls</package><version>0.7.3</version><class>DroppedKeyword</class><msg>keywords dropped: sparc</msg></result>
-<result><category>www-apache</category><package>mod_ldap_userdir</package><version>1.1.19</version><class>MissingSlotDep</class><msg>'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]</msg></result>
-<result><category>www-apache</category><package>mod_spdy</package><class>ExecutableFile</class><msg>unnecessary executable bit: 'files/make-snapshot.sh'</msg></result>
+<result><category>mail-mta</category><package>courier</package><version>0.74.0</version><class>DroppedKeyword</class><msg>keywords dropped: alpha, ia64, ppc, sparc</msg></result>
+<result><category>mail-mta</category><package>exim</package><version>4.86.2</version><class>DroppedKeyword</class><msg>keywords dropped: ia64, sparc</msg></result>
+<result><category>mail-mta</category><package>msmtp</package><version>1.6.1</version><class>MissingSlotDep</class><msg>'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]</msg></result>
+<result><category>mail-mta</category><package>netqmail</package><version>1.06-r1</version><class>MissingSlotDep</class><msg>'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]</msg></result>
+<result><category>mail-mta</category><package>netqmail</package><version>1.06-r2</version><class>MissingSlotDep</class><msg>'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]</msg></result>
+<result><category>mail-mta</category><package>postfix</package><version>3.0.2</version><class>DroppedKeyword</class><msg>keywords dropped: mips, s390</msg></result>
+<result><category>mail-mta</category><package>qpsmtpd</package><version>0.95</version><class>DroppedKeyword</class><msg>keywords dropped: amd64, x86</msg></result>
+<result><category>mail-mta</category><package>sendmail</package><version>8.14.9</version><class>MissingSlotDep</class><msg>'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]</msg></result>
+<result><category>mail-mta</category><package>sendmail</package><version>8.14.9</version><class>MissingSlotDep</class><msg>'&gt;=sys-libs/db-3.2' matches more than one slot: [ 3, 4.2, 4.3, 4.4, 4.5, 4.6, 4.7, 4.8, 5.1, 5.3, 6.0, 6.1, 6.2 ]</msg></result>
+<result><category>mail-mta</category><package>sendmail</package><version>8.14.9-r1</version><class>MissingSlotDep</class><msg>'&gt;=sys-libs/db-3.2' matches more than one slot: [ 3, 4.2, 4.3, 4.4, 4.5, 4.6, 4.7, 4.8, 5.1, 5.3, 6.0, 6.1, 6.2 ]</msg></result>
 <result><category>dev-games</category><package>irrlicht</package><class>SizeViolation</class><msg>"files/irrlicht-1.8.1-demoMake.patch" exceeds 20k in size; 26.7 KiB total</msg></result>
 <result><category>dev-games</category><package>openscenegraph</package><version>3.2.1</version><class>MissingSlotDep</class><msg>'virtual/jpeg' matches more than one slot: [ 0, 62 ]</msg></result>
 <result><category>dev-games</category><package>openscenegraph</package><version>3.2.1-r1</version><class>MissingSlotDep</class><msg>'virtual/jpeg' matches more than one slot: [ 0, 62 ]</msg></result>
