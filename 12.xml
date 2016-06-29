@@ -57,22 +57,9 @@
 <result><category>sys-cluster</category><package>ipvsadm</package><version>1.24</version><class>DroppedKeyword</class><msg>keywords dropped: ppc</msg></result>
 <result><category>sys-cluster</category><package>moosefs</package><version>1.6.26-r1</version><class>MissingSlotDep</class><msg>'dev-lang/python' matches more than one slot: [ 2.7, 3.3, 3.4, 3.5 ]</msg></result>
 <result><category>sys-cluster</category><package>moosefs</package><version>1.6.27</version><class>MissingSlotDep</class><msg>'dev-lang/python' matches more than one slot: [ 2.7, 3.3, 3.4, 3.5 ]</msg></result>
-<result><category>sys-cluster</category><package>mvapich2</package><version>1.6</version><class>NonExistentDeps</class><msg>depset depends: nonexistent dep: [ sys-infiniband/openib-userspace ]</msg></result>
-<result><category>sys-cluster</category><package>mvapich2</package><version>1.6</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent dep: [ sys-infiniband/openib-userspace ]</msg></result>
+<result><category>sys-cluster</category><package>mvapich2</package><version>1.6</version><class>NonExistentDeps</class><msg>depset depends: nonexistent dep: [ sys-fabric/openib-userspace ]</msg></result>
+<result><category>sys-cluster</category><package>mvapich2</package><version>1.6</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent dep: [ sys-fabric/openib-userspace ]</msg></result>
 <result><category>sys-cluster</category><package>nova</package><class>SizeViolation</class><msg>"files/policy.json" exceeds 20k in size; 22.9 KiB total</msg></result>
-<result><category>sys-cluster</category><package>openmpi</package><version>1.6.5-r1</version><class>MissingSlotDep</class><msg>'sys-infiniband/ofed' matches more than one slot: [ 3.12, 3.5 ]</msg></result>
-<result><category>sys-cluster</category><package>openmpi</package><version>1.6.5-r1</version><class>MissingSlotDep</class><msg>'sys-infiniband/infinipath-psm' matches more than one slot: [ 3.12, 3.5 ]</msg></result>
-<result><category>sys-cluster</category><package>openmpi</package><version>1.6.5-r1</version><class>MissingSlotDep</class><msg>'sys-infiniband/librdmacm' matches more than one slot: [ 3.12, 3.5 ]</msg></result>
-<result><category>sys-cluster</category><package>openmpi</package><version>1.6.5-r1</version><class>MissingSlotDep</class><msg>'sys-infiniband/dapl' matches more than one slot: [ 3.12, 3.5 ]</msg></result>
-<result><category>sys-cluster</category><package>openmpi</package><version>1.7.5-r1</version><class>MissingSlotDep</class><msg>'sys-infiniband/ofed' matches more than one slot: [ 3.12, 3.5 ]</msg></result>
-<result><category>sys-cluster</category><package>openmpi</package><version>1.7.5-r1</version><class>MissingSlotDep</class><msg>'sys-infiniband/infinipath-psm' matches more than one slot: [ 3.12, 3.5 ]</msg></result>
-<result><category>sys-cluster</category><package>openmpi</package><version>1.7.5-r1</version><class>MissingSlotDep</class><msg>'sys-infiniband/librdmacm' matches more than one slot: [ 3.12, 3.5 ]</msg></result>
-<result><category>sys-cluster</category><package>openmpi</package><version>1.8.4-r4</version><class>MissingSlotDep</class><msg>'sys-infiniband/infinipath-psm' matches more than one slot: [ 3.12, 3.5 ]</msg></result>
-<result><category>sys-cluster</category><package>openmpi</package><version>1.8.4-r4</version><class>MissingSlotDep</class><msg>'sys-infiniband/librdmacm' matches more than one slot: [ 3.12, 3.5 ]</msg></result>
-<result><category>sys-cluster</category><package>openmpi</package><version>1.8.4-r4</version><class>MissingSlotDep</class><msg>'sys-infiniband/ofed' matches more than one slot: [ 3.12, 3.5 ]</msg></result>
-<result><category>sys-cluster</category><package>openmpi</package><version>1.8.7-r1</version><class>MissingSlotDep</class><msg>'sys-infiniband/infinipath-psm' matches more than one slot: [ 3.12, 3.5 ]</msg></result>
-<result><category>sys-cluster</category><package>openmpi</package><version>1.8.7-r1</version><class>MissingSlotDep</class><msg>'sys-infiniband/librdmacm' matches more than one slot: [ 3.12, 3.5 ]</msg></result>
-<result><category>sys-cluster</category><package>openmpi</package><version>1.8.7-r1</version><class>MissingSlotDep</class><msg>'sys-infiniband/ofed' matches more than one slot: [ 3.12, 3.5 ]</msg></result>
 <result><category>sys-cluster</category><package>openmpi</package><version>1.8.4-r4</version><class>DroppedKeyword</class><msg>keywords dropped: ia64</msg></result>
 <result><category>sys-cluster</category><package>openmpi</package><version>1.8.7-r1</version><class>DroppedKeyword</class><msg>keywords dropped: alpha, sparc</msg></result>
 <result><category>sys-cluster</category><package>rgmanager</package><version>2.03.09</version><class>VulnerablePackage</class><msg>vulnerable via glsa(201110-18) ( ver-rev &lt; 2.03.09-r1 ), keywords ('amd64', 'x86')</msg></result>
@@ -137,18 +124,6 @@
 <result><category>www-plugins</category><package>gnash</package><version>0.8.10_p20131019</version><class>MissingSlotDep</class><msg>'virtual/jpeg' matches more than one slot: [ 0, 62 ]</msg></result>
 <result><category>www-plugins</category><package>lightspark</package><version>0.7.2_p20150318</version><class>MissingSlotDep</class><msg>'media-libs/libpng' matches more than one slot: [ 0, 1.2, 1.5 ]</msg></result>
 <result><category>www-plugins</category><package>lightspark</package><version>0.7.2_p20150318</version><class>MissingSlotDep</class><msg>'virtual/jpeg' matches more than one slot: [ 0, 62 ]</msg></result>
-<result><category>dev-lua</category><package>LuaBitOp</package><version>1.0.1-r1</version><class>MissingSlotDep</class><msg>'=dev-lang/lua-5.1*' matches more than one slot: [ 0, 5.1 ]</msg></result>
-<result><category>dev-lua</category><package>LuaBitOp</package><version>1.0.2</version><class>MissingSlotDep</class><msg>'dev-lang/lua' matches more than one slot: [ 0, 5.1, 5.2 ]</msg></result>
-<result><category>dev-lua</category><package>lanes</package><version>3.10.0</version><class>MissingSlotDep</class><msg>'&gt;=dev-lang/lua-5.1' matches more than one slot: [ 0, 5.1, 5.2 ]</msg></result>
-<result><category>dev-lua</category><package>lpeg</package><version>0.12</version><class>MissingSlotDep</class><msg>'&gt;=dev-lang/lua-5.1' matches more than one slot: [ 0, 5.1, 5.2 ]</msg></result>
-<result><category>dev-lua</category><package>lpeg</package><version>0.12.1</version><class>MissingSlotDep</class><msg>'&gt;=dev-lang/lua-5.1' matches more than one slot: [ 0, 5.1, 5.2 ]</msg></result>
-<result><category>dev-lua</category><package>lpeg</package><version>0.12.2</version><class>MissingSlotDep</class><msg>'&gt;=dev-lang/lua-5.1' matches more than one slot: [ 0, 5.1, 5.2 ]</msg></result>
-<result><category>dev-lua</category><package>lpeg</package><version>1.0.0-r1</version><class>DroppedKeyword</class><msg>keywords dropped: mips, ppc64, sparc</msg></result>
-<result><category>dev-lua</category><package>luadbi</package><version>0.5-r5</version><class>MissingSlotDep</class><msg>'&gt;=dev-lang/lua-5.1' matches more than one slot: [ 0, 5.1, 5.2 ]</msg></result>
-<result><category>dev-lua</category><package>luadbi</package><version>0.5-r5</version><class>MissingSlotDep</class><msg>'dev-db/postgresql' matches more than one slot: [ 9.0, 9.1, 9.2, 9.3, 9.4, 9.5, 9.6, 9.7 ]</msg></result>
-<result><category>dev-lua</category><package>luaevent</package><version>0.4.3</version><class>MissingSlotDep</class><msg>'&gt;=dev-lang/lua-5.1' matches more than one slot: [ 0, 5.1, 5.2 ]</msg></result>
-<result><category>dev-lua</category><package>luaexpat</package><version>1.3.0</version><class>DroppedKeyword</class><msg>keywords dropped: mips</msg></result>
-<result><category>dev-lua</category><package>luafilesystem</package><version>1.5.0</version><class>MissingSlotDep</class><msg>'&gt;=dev-lang/lua-5.1' matches more than one slot: [ 0, 5.1, 5.2 ]</msg></result>
-<result><category>dev-lua</category><package>luafilesystem</package><version>1.6.2</version><class>MissingSlotDep</class><msg>'&gt;=dev-lang/lua-5.1' matches more than one slot: [ 0, 5.1, 5.2 ]</msg></result>
-<result><category>dev-lua</category><package>luafilesystem</package><version>1.6.2</version><class>DroppedKeyword</class><msg>keywords dropped: sparc</msg></result>
+<result><category>app-pda</category><package>pilot-link</package><version>0.12.5-r1</version><class>MissingSlotDep</class><msg>'&gt;=sys-libs/ncurses-5.7-r7' matches more than one slot: [ 0, 5 ]</msg></result>
+<result><category>app-pda</category><package>pilot-link</package><class>SizeViolation</class><msg>"files/pilot-link-0.12.5-perl514.patch" exceeds 20k in size; 22.2 KiB total</msg></result>
 </checks>
