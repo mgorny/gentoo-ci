@@ -71,10 +71,12 @@
 <result><category>sys-cluster</category><package>ipvsadm</package><version>1.24</version><class>DroppedKeyword</class><msg>keywords dropped: ppc</msg></result>
 <result><category>sys-cluster</category><package>moosefs</package><version>1.6.26-r1</version><class>MissingSlotDep</class><msg>'dev-lang/python' matches more than one slot: [ 2.7, 3.3, 3.4, 3.5 ]</msg></result>
 <result><category>sys-cluster</category><package>moosefs</package><version>1.6.27</version><class>MissingSlotDep</class><msg>'dev-lang/python' matches more than one slot: [ 2.7, 3.3, 3.4, 3.5 ]</msg></result>
+<result><category>sys-cluster</category><package>mpich</package><version>3.2-r1</version><class>DroppedKeyword</class><msg>keywords dropped: amd64, hppa, ppc, ppc64, x86</msg></result>
 <result><category>sys-cluster</category><package>mvapich2</package><version>1.6</version><class>NonExistentDeps</class><msg>depset depends: nonexistent dep: [ sys-fabric/openib-userspace ]</msg></result>
 <result><category>sys-cluster</category><package>mvapich2</package><version>1.6</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent dep: [ sys-fabric/openib-userspace ]</msg></result>
 <result><category>sys-cluster</category><package>nova</package><class>SizeViolation</class><msg>"files/policy.json" exceeds 20k in size; 22.9 KiB total</msg></result>
 <result><category>sys-cluster</category><package>openmpi</package><version>1.8.4-r4</version><class>DroppedKeyword</class><msg>keywords dropped: ia64</msg></result>
+<result><category>sys-cluster</category><package>openmpi</package><version>1.10.2-r1</version><class>DroppedKeyword</class><msg>keywords dropped: amd64, ppc, ppc64, x86</msg></result>
 <result><category>sys-cluster</category><package>openmpi</package><version>1.8.7-r1</version><class>DroppedKeyword</class><msg>keywords dropped: alpha, sparc</msg></result>
 <result><category>sys-cluster</category><package>openstack-meta</package><version>2016.1.9999</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent dep: [ ~sys-cluster/swift-2.7.0 ]</msg></result>
 <result><category>sys-cluster</category><package>rgmanager</package><version>2.03.09</version><class>VulnerablePackage</class><msg>vulnerable via glsa(201110-18) ( ver-rev &lt; 2.03.09-r1 ), keywords ('amd64', 'x86')</msg></result>
@@ -140,27 +142,9 @@
 <result><category>app-shells</category><package>zsh</package><version>5.0.7-r1</version><class>MissingSlotDep</class><msg>'&gt;=sys-libs/ncurses-5.1' matches more than one slot: [ 0, 5 ]</msg></result>
 <result><category>app-shells</category><package>zsh</package><version>5.0.7-r2</version><class>MissingSlotDep</class><msg>'&gt;=sys-libs/ncurses-5.1' matches more than one slot: [ 0, 5 ]</msg></result>
 <result><category>app-shells</category><package>zsh</package><version>5.0.8</version><class>MissingSlotDep</class><msg>'&gt;=sys-libs/ncurses-5.1' matches more than one slot: [ 0, 5 ]</msg></result>
-<result><category>sys-freebsd</category><package>freebsd-bin</package><version>10.2</version><class>MissingSlotDep</class><msg>'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]</msg></result>
-<result><category>sys-freebsd</category><package>freebsd-lib</package><version>8.2-r1</version><class>WhitespaceFound</class><msg>ebuild has leading whitespace on lines 368, 369, 370, 371, 372</msg></result>
-<result><category>sys-freebsd</category><package>freebsd-lib</package><version>9.1-r10</version><class>WhitespaceFound</class><msg>ebuild has leading whitespace on lines 413, 414, 415, 416, 417, 441, 442, 443, 446, 448, 450</msg></result>
-<result><category>sys-freebsd</category><package>freebsd-lib</package><version>9.1-r10</version><class>MissingSlotDep</class><msg>'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]</msg></result>
-<result><category>sys-freebsd</category><package>freebsd-lib</package><version>9.1-r11</version><class>WhitespaceFound</class><msg>ebuild has leading whitespace on lines 415, 416, 417, 418, 419, 443, 444, 445, 448, 450, 452</msg></result>
-<result><category>sys-freebsd</category><package>freebsd-lib</package><version>9.1-r11</version><class>MissingSlotDep</class><msg>'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]</msg></result>
-<result><category>sys-freebsd</category><package>freebsd-lib</package><version>10.2-r2</version><class>WhitespaceFound</class><msg>ebuild has leading whitespace on lines 430, 431, 432, 433, 434, 458, 459, 460, 463, 465, 467</msg></result>
-<result><category>sys-freebsd</category><package>freebsd-lib</package><version>10.3-r1</version><class>WhitespaceFound</class><msg>ebuild has leading whitespace on lines 433, 434, 435, 436, 437, 461, 462, 463, 466, 468, 470</msg></result>
-<result><category>sys-freebsd</category><package>freebsd-pam-modules</package><version>10.2</version><class>MissingSlotDep</class><msg>'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]</msg></result>
-<result><category>sys-freebsd</category><package>freebsd-sbin</package><version>8.2-r1</version><class>BadInsIntoDir</class><msg>ebuild uses insinto /etc/cron.d on line 78</msg></result>
-<result><category>sys-freebsd</category><package>freebsd-sbin</package><version>9.1</version><class>BadInsIntoDir</class><msg>ebuild uses insinto /etc/cron.d on line 79</msg></result>
-<result><category>sys-freebsd</category><package>freebsd-sbin</package><version>10.2</version><class>BadInsIntoDir</class><msg>ebuild uses insinto /etc/cron.d on line 85</msg></result>
-<result><category>sys-freebsd</category><package>freebsd-sbin</package><version>10.2</version><class>MissingSlotDep</class><msg>'sys-libs/readline' matches more than one slot: [ 0, 4, 5 ]</msg></result>
-<result><category>sys-freebsd</category><package>freebsd-sbin</package><version>10.2</version><class>MissingSlotDep</class><msg>'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]</msg></result>
-<result><category>sys-freebsd</category><package>freebsd-sbin</package><version>10.3</version><class>BadInsIntoDir</class><msg>ebuild uses insinto /etc/cron.d on line 85</msg></result>
-<result><category>sys-freebsd</category><package>freebsd-ubin</package><version>9.1-r2</version><class>MissingSlotDep</class><msg>'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]</msg></result>
-<result><category>sys-freebsd</category><package>freebsd-ubin</package><version>9.1-r2</version><class>MissingSlotDep</class><msg>'&gt;=sys-libs/ncurses-5.9' matches more than one slot: [ 0, 5 ]</msg></result>
-<result><category>sys-freebsd</category><package>freebsd-ubin</package><version>9.1-r3</version><class>MissingSlotDep</class><msg>'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]</msg></result>
-<result><category>sys-freebsd</category><package>freebsd-ubin</package><version>9.1-r3</version><class>MissingSlotDep</class><msg>'&gt;=sys-libs/ncurses-5.9' matches more than one slot: [ 0, 5 ]</msg></result>
-<result><category>sys-freebsd</category><package>freebsd-ubin</package><version>10.2-r2</version><class>MissingSlotDep</class><msg>'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]</msg></result>
-<result><category>sys-freebsd</category><package>freebsd-ubin</package><version>10.2-r2</version><class>MissingSlotDep</class><msg>'&gt;=sys-libs/ncurses-5.9' matches more than one slot: [ 0, 5 ]</msg></result>
+<result><category>sys-boot</category><package>plymouth</package><version>0.8.8-r4</version><class>MissingSlotDep</class><msg>'&gt;=media-libs/libpng-1.2.16' matches more than one slot: [ 0, 1.2, 1.5 ]</msg></result>
+<result><category>sys-boot</category><package>plymouth</package><version>0.8.8-r5</version><class>MissingSlotDep</class><msg>'&gt;=media-libs/libpng-1.2.16' matches more than one slot: [ 0, 1.2, 1.5 ]</msg></result>
+<result><category>sys-boot</category><package>plymouth</package><version>0.9.0</version><class>MissingSlotDep</class><msg>'&gt;=media-libs/libpng-1.2.16' matches more than one slot: [ 0, 1.2, 1.5 ]</msg></result>
 <result><category>dev-lisp</category><package>asdf</package><version>3.0.3</version><class>DroppedKeyword</class><msg>keywords dropped: alpha, ia64, mips, ppc64, s390</msg></result>
 <result><category>dev-lisp</category><package>clisp</package><version>2.49-r8</version><class>MissingSlotDep</class><msg>'&gt;=dev-db/postgresql-8.0' matches more than one slot: [ 9.0, 9.1, 9.2, 9.3, 9.4, 9.5, 9.6, 9.7 ]</msg></result>
 <result><category>dev-lisp</category><package>clisp</package><version>2.49-r8</version><class>MissingSlotDep</class><msg>'&gt;=sys-libs/readline-5.0' matches more than one slot: [ 0, 5 ]</msg></result>

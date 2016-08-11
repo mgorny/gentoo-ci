@@ -101,6 +101,7 @@
 <result><category>virtual</category><package>linux-sources</package><version>0</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent deps: [ sys-kernel/usermode-sources, sys-kernel/rsbac-sources ]</msg></result>
 <result><category>virtual</category><package>linux-sources</package><version>1</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent deps: [ sys-kernel/usermode-sources, sys-kernel/rsbac-sources ]</msg></result>
 <result><category>virtual</category><package>mda</package><version>0</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent dep: [ mail-mta/citadel ]</msg></result>
+<result><category>virtual</category><package>mpi</package><version>2.0-r4</version><class>DroppedKeyword</class><msg>keywords dropped: alpha, amd64, hppa, ia64, ppc, ppc64, sparc, x86</msg></result>
 <result><category>virtual</category><package>mta</package><version>0</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent deps: [ mail-mta/citadel, &lt;mail-mta/msmtp-1.4.19-r1, &lt;mail-mta/ssmtp-2.64-r2 ]</msg></result>
 <result><category>virtual</category><package>mta</package><version>1</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent dep: [ mail-mta/citadel ]</msg></result>
 <result><category>virtual</category><package>perl-Archive-Tar</package><version>1.960.0</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent dep: [ ~perl-core/Archive-Tar-1.960.0 ]</msg></result>
@@ -286,13 +287,13 @@
 <result><category>games-strategy</category><package>widelands</package><version>0.17</version><class>MissingSlotDep</class><msg>'media-libs/glew' matches more than one slot: [ 0, 1.10, 1.6 ]</msg></result>
 <result><category>games-strategy</category><package>widelands</package><version>0.18</version><class>MissingSlotDep</class><msg>'media-libs/glew' matches more than one slot: [ 0, 1.10, 1.6 ]</msg></result>
 <result><category>games-strategy</category><package>widelands</package><version>0.18-r1</version><class>MissingSlotDep</class><msg>'media-libs/glew' matches more than one slot: [ 0, 1.10, 1.6 ]</msg></result>
-<result><category>mail-mta</category><package>msmtp</package><version>1.6.1</version><class>MissingSlotDep</class><msg>'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]</msg></result>
-<result><category>mail-mta</category><package>netqmail</package><version>1.06-r1</version><class>MissingSlotDep</class><msg>'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]</msg></result>
-<result><category>mail-mta</category><package>netqmail</package><version>1.06-r2</version><class>MissingSlotDep</class><msg>'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]</msg></result>
-<result><category>mail-mta</category><package>postfix</package><version>3.0.2</version><class>DroppedKeyword</class><msg>keywords dropped: mips, s390</msg></result>
-<result><category>mail-mta</category><package>qpsmtpd</package><version>0.95</version><class>DroppedKeyword</class><msg>keywords dropped: amd64, x86</msg></result>
-<result><category>mail-mta</category><package>sendmail</package><version>8.14.9</version><class>MissingSlotDep</class><msg>'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]</msg></result>
-<result><category>mail-mta</category><package>sendmail</package><version>8.14.9</version><class>MissingSlotDep</class><msg>'&gt;=sys-libs/db-3.2' matches more than one slot: [ 3, 4.2, 4.3, 4.4, 4.5, 4.6, 4.7, 4.8, 5.1, 5.3, 6.0, 6.1, 6.2 ]</msg></result>
-<result><category>mail-mta</category><package>sendmail</package><version>8.14.9-r1</version><class>MissingSlotDep</class><msg>'&gt;=sys-libs/db-3.2' matches more than one slot: [ 3, 4.2, 4.3, 4.4, 4.5, 4.6, 4.7, 4.8, 5.1, 5.3, 6.0, 6.1, 6.2 ]</msg></result>
+<result><category>dev-games</category><package>cegui</package><version>0.6.2b</version><class>MissingSlotDep</class><msg>'media-libs/glew' matches more than one slot: [ 0, 1.10, 1.6 ]</msg></result>
+<result><category>dev-games</category><package>cegui</package><version>0.8.4</version><class>MissingSlotDep</class><msg>'media-libs/glew' matches more than one slot: [ 0, 1.10, 1.6 ]</msg></result>
+<result><category>dev-games</category><package>cegui</package><version>0.8.7</version><class>MissingSlotDep</class><msg>'media-libs/glew' matches more than one slot: [ 0, 1.10, 1.6 ]</msg></result>
+<result><category>dev-games</category><package>irrlicht</package><class>SizeViolation</class><msg>"files/irrlicht-1.8.1-demoMake.patch" exceeds 20k in size; 26.7 KiB total</msg></result>
+<result><category>dev-games</category><package>mygui</package><version>3.2.2</version><class>MissingSlotDep</class><msg>'media-libs/glew' matches more than one slot: [ 0, 1.10, 1.6 ]</msg></result>
+<result><category>dev-games</category><package>openscenegraph</package><version>3.2.1</version><class>MissingSlotDep</class><msg>'virtual/jpeg' matches more than one slot: [ 0, 62 ]</msg></result>
+<result><category>dev-games</category><package>openscenegraph</package><version>3.2.1-r1</version><class>MissingSlotDep</class><msg>'virtual/jpeg' matches more than one slot: [ 0, 62 ]</msg></result>
+<result><category>dev-games</category><package>openscenegraph</package><version>3.4.0</version><class>DroppedKeyword</class><msg>keywords dropped: ppc</msg></result>
 <result><category>xfce-base</category><package>xfce4-session</package><version>4.12.1</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent dep: [ gnome-extra/gnome-screensaver ]</msg></result>
 </checks>
