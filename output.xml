@@ -876,8 +876,8 @@
 <result><category>app-backup</category><package>amanda</package><version>3.3.7</version><class>BadInsIntoDir</class><msg>ebuild uses insinto /etc/cron.daily on line 335</msg></result>
 <result><category>app-backup</category><package>amanda</package><version>3.3.7</version><class>MissingSlotDep</class><msg>'sys-libs/readline' matches more than one slot: [ 0, 4, 5 ]</msg></result>
 <result><category>app-backup</category><package>amanda</package><version>3.3.9</version><class>BadInsIntoDir</class><msg>ebuild uses insinto /etc/cron.daily on line 336</msg></result>
-<result><category>app-backup</category><package>backuppc</package><version>3.3.1-r2</version><class>DroppedKeyword</class><msg>keywords dropped: arm</msg></result>
 <result><category>app-backup</category><package>backuppc</package><class>SizeViolation</class><msg>"files/02-fix-config.pl-formatting.patch" exceeds 20k in size; 22.8 KiB total</msg></result>
+<result><category>app-backup</category><package>backuppc</package><version>3.3.1-r2</version><class>DroppedKeyword</class><msg>keywords dropped: arm</msg></result>
 <result><category>app-backup</category><package>reoback</package><version>1.0_p3-r1</version><class>BadInsIntoDir</class><msg>ebuild uses insinto /etc/cron.daily on line 36</msg></result>
 <result><category>net-irc</category><package>atheme-services</package><version>6.0.11-r1</version><class>MissingSlotDep</class><msg>'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]</msg></result>
 <result><category>net-irc</category><package>atheme-services</package><version>7.0.6-r1</version><class>MissingSlotDep</class><msg>'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]</msg></result>
@@ -1028,8 +1028,8 @@
 <result><category>sys-libs</category><package>libcxx</package><version>3.8.1</version><class>WhitespaceFound</class><msg>ebuild has leading whitespace on line 118</msg></result>
 <result><category>sys-libs</category><package>libcxx</package><version>3.9.0</version><class>WhitespaceFound</class><msg>ebuild has leading whitespace on line 172</msg></result>
 <result><category>sys-libs</category><package>libcxx</package><version>9999</version><class>WhitespaceFound</class><msg>ebuild has leading whitespace on line 169</msg></result>
-<result><category>sys-libs</category><package>libcxx</package><version>3.9.0</version><class>DroppedKeyword</class><msg>keywords dropped: mips</msg></result>
 <result><category>sys-libs</category><package>libcxx</package><class>ExecutableFile</class><msg>unnecessary executable bit: 'files/prepare_snapshot.sh'</msg></result>
+<result><category>sys-libs</category><package>libcxx</package><version>3.9.0</version><class>DroppedKeyword</class><msg>keywords dropped: mips</msg></result>
 <result><category>sys-libs</category><package>libcxxrt</package><class>ExecutableFile</class><msg>unnecessary executable bit: 'files/prepare_snapshot.sh'</msg></result>
 <result><category>sys-libs</category><package>libstatgrab</package><version>0.91</version><class>MissingSlotDep</class><msg>'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]</msg></result>
 <result><category>sys-libs</category><package>newlib</package><version>2.2.0.20150423</version><class>DroppedKeyword</class><msg>keywords dropped: arm, hppa, m68k, mips, ppc, ppc64, sh, sparc, x86</msg></result>
@@ -2369,10 +2369,12 @@
 <result><category>net-im</category><package>skypetab-ng</package><version>0.5.2</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent dep: [ &lt;net-im/skype-4.1 ]</msg></result>
 <result><category>net-im</category><package>skypetab-ng</package><version>0.5.2_p20150201</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent dep: [ &lt;net-im/skype-4.1 ]</msg></result>
 <result><category>net-im</category><package>skypetab-ng</package><version>9999</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent dep: [ &lt;net-im/skype-4.1 ]</msg></result>
-<result><category>www-apache</category><package>mod_auth_kerb</package><class>SizeViolation</class><msg>"files/mod_auth_kerb-5.4-s4u2proxy.patch" exceeds 20k in size; 20.3 KiB total</msg></result>
-<result><category>www-apache</category><package>mod_gnutls</package><version>0.7.3</version><class>DroppedKeyword</class><msg>keywords dropped: sparc</msg></result>
-<result><category>www-apache</category><package>mod_ldap_userdir</package><version>1.1.19</version><class>MissingSlotDep</class><msg>'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]</msg></result>
-<result><category>www-apache</category><package>mod_perl</package><version>2.0.10_rc1-r1</version><class>DroppedKeyword</class><msg>keywords dropped: alpha, arm, hppa, ia64, ppc, ppc64, sparc</msg></result>
+<result><category>net-firewall</category><package>arno-iptables-firewall</package><version>2.0.1e</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent dep: [ &lt;sys-apps/coreutils-8.20 ]</msg></result>
+<result><category>net-firewall</category><package>conntrack-tools</package><version>1.4.3</version><class>DroppedKeyword</class><msg>keywords dropped: alpha</msg></result>
+<result><category>net-firewall</category><package>firehol</package><version>3.0.1</version><class>DroppedKeyword</class><msg>keywords dropped: ppc, sparc, x86</msg></result>
+<result><category>net-firewall</category><package>fwbuilder</package><version>5.3.6</version><class>DroppedKeyword</class><msg>keywords dropped: ppc</msg></result>
+<result><category>net-firewall</category><package>iptables</package><class>ExecutableFile</class><msg>unnecessary executable bit: 'files/iptables.init'</msg></result>
+<result><category>net-firewall</category><package>nftables</package><class>ExecutableFile</class><msg>unnecessary executable bit: 'files/libexec/nftables.sh'</msg></result>
 <result><category>www-plugins</category><package>gnash</package><version>0.8.10_p20131019</version><class>MissingSlotDep</class><msg>'media-libs/libpng' matches more than one slot: [ 0, 1.2, 1.5 ]</msg></result>
 <result><category>www-plugins</category><package>gnash</package><version>0.8.10_p20131019</version><class>MissingSlotDep</class><msg>'media-plugins/gst-plugins-meta' matches more than one slot: [ 0.10, 1.0 ]</msg></result>
 <result><category>www-plugins</category><package>gnash</package><version>0.8.10_p20131019</version><class>MissingSlotDep</class><msg>'media-plugins/gst-plugins-mad' matches more than one slot: [ 0.10, 1.0 ]</msg></result>
@@ -2496,12 +2498,10 @@
 <result><category>games-fps</category><package>duke3d-data</package><version>1.0-r3</version><class>MissingUri</class><msg>file gog_duke_nukem_3d_atomic_edition_2.0.0.8.sh is unfetchable- no URI available, and RESTRICT=fetch isn't set</msg></result>
 <result><category>games-emulation</category><package>daphne</package><version>1.0</version><class>MissingSlotDep</class><msg>'media-libs/glew' matches more than one slot: [ 0, 1.10, 1.6 ]</msg></result>
 <result><category>games-emulation</category><package>openmsx</package><version>0.9.1</version><class>MissingSlotDep</class><msg>'media-libs/glew' matches more than one slot: [ 0, 1.10, 1.6 ]</msg></result>
-<result><category>net-firewall</category><package>arno-iptables-firewall</package><version>2.0.1e</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent dep: [ &lt;sys-apps/coreutils-8.20 ]</msg></result>
-<result><category>net-firewall</category><package>conntrack-tools</package><version>1.4.3</version><class>DroppedKeyword</class><msg>keywords dropped: alpha</msg></result>
-<result><category>net-firewall</category><package>firehol</package><version>3.0.1</version><class>DroppedKeyword</class><msg>keywords dropped: ppc, sparc, x86</msg></result>
-<result><category>net-firewall</category><package>fwbuilder</package><version>5.3.6</version><class>DroppedKeyword</class><msg>keywords dropped: ppc</msg></result>
-<result><category>net-firewall</category><package>iptables</package><class>ExecutableFile</class><msg>unnecessary executable bit: 'files/iptables.init'</msg></result>
-<result><category>net-firewall</category><package>nftables</package><class>ExecutableFile</class><msg>unnecessary executable bit: 'files/libexec/nftables.sh'</msg></result>
+<result><category>x11-terms</category><package>gnome-terminal</package><class>SizeViolation</class><msg>"files/gnome-terminal-3.20.2-transparency.patch" exceeds 20k in size; 20.9 KiB total</msg></result>
+<result><category>x11-terms</category><package>gnome-terminal</package><class>SizeViolation</class><msg>"files/gnome-terminal-3.22.0-transparency.patch" exceeds 20k in size; 20.8 KiB total</msg></result>
+<result><category>x11-terms</category><package>roxterm</package><version>2.9.3-r1</version><class>DroppedKeyword</class><msg>keywords dropped: ppc</msg></result>
+<result><category>x11-terms</category><package>rxvt-unicode</package><version>9.21</version><class>MissingSlotDep</class><msg>'&gt;=sys-libs/ncurses-5.7-r6' matches more than one slot: [ 0, 5 ]</msg></result>
 <result><category>sys-firmware</category><package>iwl1000-ucode</package><version>128.50.3.1</version><class>DroppedKeyword</class><msg>keywords dropped: amd64, x86</msg></result>
 <result><category>sys-firmware</category><package>vgabios</package><version>0.7a</version><class>DroppedKeyword</class><msg>keywords dropped: amd64-fbsd, ppc, ppc64</msg></result>
 <result><category>games-simulation</category><package>corsix-th</package><version>0.30</version><class>MissingSlotDep</class><msg>'&gt;=dev-lang/lua-5.1' matches more than one slot: [ 0, 5.1, 5.2 ]</msg></result>
@@ -2593,10 +2593,10 @@
 <result><category>games-rpg</category><package>arx-fatalis-data</package><version>1.21-r3</version><class>MissingUri</class><msg>file setup_arx_fatalis_2.0.0.7.exe is unfetchable- no URI available, and RESTRICT=fetch isn't set</msg></result>
 <result><category>games-rpg</category><package>arx-libertatis</package><version>1.1.2</version><class>MissingSlotDep</class><msg>'media-libs/glew' matches more than one slot: [ 0, 1.10, 1.6 ]</msg></result>
 <result><category>games-rpg</category><package>runescape-launcher</package><version>2.2.2</version><class>BadInsIntoDir</class><msg>ebuild uses insinto /usr/share/applications on line 59</msg></result>
-<result><category>x11-terms</category><package>gnome-terminal</package><class>SizeViolation</class><msg>"files/gnome-terminal-3.20.2-transparency.patch" exceeds 20k in size; 20.9 KiB total</msg></result>
-<result><category>x11-terms</category><package>gnome-terminal</package><class>SizeViolation</class><msg>"files/gnome-terminal-3.22.0-transparency.patch" exceeds 20k in size; 20.8 KiB total</msg></result>
-<result><category>x11-terms</category><package>roxterm</package><version>2.9.3-r1</version><class>DroppedKeyword</class><msg>keywords dropped: ppc</msg></result>
-<result><category>x11-terms</category><package>rxvt-unicode</package><version>9.21</version><class>MissingSlotDep</class><msg>'&gt;=sys-libs/ncurses-5.7-r6' matches more than one slot: [ 0, 5 ]</msg></result>
+<result><category>www-apache</category><package>mod_auth_kerb</package><class>SizeViolation</class><msg>"files/mod_auth_kerb-5.4-s4u2proxy.patch" exceeds 20k in size; 20.3 KiB total</msg></result>
+<result><category>www-apache</category><package>mod_gnutls</package><version>0.7.3</version><class>DroppedKeyword</class><msg>keywords dropped: sparc</msg></result>
+<result><category>www-apache</category><package>mod_ldap_userdir</package><version>1.1.19</version><class>MissingSlotDep</class><msg>'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]</msg></result>
+<result><category>www-apache</category><package>mod_perl</package><version>2.0.10_rc1-r1</version><class>DroppedKeyword</class><msg>keywords dropped: alpha, arm, hppa, ia64, ppc, ppc64, sparc</msg></result>
 <result><category>dev-lisp</category><package>asdf</package><version>3.0.3</version><class>DroppedKeyword</class><msg>keywords dropped: alpha, amd64-linux, ia64, mips, ppc-macos, ppc64, s390, x64-macos, x86-linux, x86-macos, x86-solaris</msg></result>
 <result><category>dev-lisp</category><package>cl-ppcre</package><version>2.0.11</version><class>DroppedKeyword</class><msg>keywords dropped: amd64-linux, x86-linux, x86-macos</msg></result>
 <result><category>dev-lisp</category><package>clisp</package><version>2.49-r8</version><class>MissingSlotDep</class><msg>'&gt;=dev-db/postgresql-8.0' matches more than one slot: [ 9.1, 9.2, 9.3, 9.4, 9.5, 9.6, 9.7 ]</msg></result>
