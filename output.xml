@@ -513,7 +513,6 @@
 <result><category>media-video</category><package>smplayer</package><version>16.1.0</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: ^^ ( contains [qt4] contains [qt5] )</msg></result>
 <result><category>media-video</category><package>sswf</package><version>1.8.2-r1</version><class>MissingSlotDep</class><msg>'virtual/jpeg' matches more than one slot: [ 0, 62 ]</msg></result>
 <result><category>media-video</category><package>sswf</package><version>1.8.4-r1</version><class>MissingSlotDep</class><msg>'virtual/jpeg' matches more than one slot: [ 0, 62 ]</msg></result>
-<result><category>media-video</category><package>totem</package><version>3.22.1-r1</version><class>DroppedKeywords</class><msg>ia64</msg></result>
 <result><category>media-video</category><package>transcode</package><class>SizeViolation</class><msg>"files/transcode-1.1.7-ffmpeg2.patch" exceeds 20k in size; 21.3 KiB total</msg></result>
 <result><category>dev-ruby</category><package>actioncable</package><version>5.0.0.1</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: ( contains [ruby_targets_ruby22] || contains [ruby_targets_ruby23] )</msg></result>
 <result><category>dev-ruby</category><package>actioncable</package><version>5.0.1</version><class>DroppedKeywords</class><msg>arm</msg></result>
@@ -1173,13 +1172,13 @@
 <result><category>gnome-base</category><package>gnome-control-center</package><class>SizeViolation</class><msg>"files/gnome-control-center-3.23.91-optional.patch" exceeds 20k in size; 20.1 KiB total</msg></result>
 <result><category>gnome-base</category><package>gnome-core-apps</package><version>3.22.2</version><class>DroppedKeywords</class><msg>ppc, ppc64</msg></result>
 <result><category>gnome-base</category><package>gnome-core-apps</package><version>3.22.0</version><class>DroppedKeywords</class><msg>arm, ia64</msg></result>
-<result><category>gnome-base</category><package>gnome-light</package><version>3.22.2</version><class>DroppedKeywords</class><msg>alpha, arm, ia64, ppc, ppc64</msg></result>
+<result><category>gnome-base</category><package>gnome-light</package><version>3.22.2</version><class>DroppedKeywords</class><msg>alpha, arm, ppc, ppc64</msg></result>
 <result><category>gnome-base</category><package>gnome-session</package><version>3.22.3</version><class>BadInsIntoDir</class><msg>ebuild uses insinto /usr/share/applications on line 108</msg></result>
 <result><category>gnome-base</category><package>gnome-session</package><version>3.24.1</version><class>BadInsIntoDir</class><msg>ebuild uses insinto /usr/share/applications on line 98</msg></result>
 <result><category>gnome-base</category><package>gnome-shell</package><version>3.22.3-r2</version><class>DroppedKeywords</class><msg>alpha, arm, ia64, ppc, ppc64</msg></result>
 <result><category>gnome-base</category><package>gvfs</package><version>1.28.3-r1</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: contains [udisks]</msg></result>
 <result><category>gnome-base</category><package>gvfs</package><version>1.30.4</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: contains [udisks]</msg></result>
-<result><category>gnome-base</category><package>nautilus</package><version>3.22.3</version><class>DroppedKeywords</class><msg>alpha, arm, ia64, ppc, ppc64, sh, sparc</msg></result>
+<result><category>gnome-base</category><package>nautilus</package><version>3.22.3</version><class>DroppedKeywords</class><msg>alpha, arm, ppc, ppc64, sh, sparc</msg></result>
 <result><category>dev-util</category><package>alleyoop</package><version>0.9.8</version><class>MissingSlotDep</class><msg>'sys-devel/binutils' matches more than one slot: [ 2.25.1, 2.26.1, 2.27, 2.28, git ]</msg></result>
 <result><category>dev-util</category><package>android-ndk</package><version>10e</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent dep: [ sys-libs/ncurses:0 ]</msg></result>
 <result><category>dev-util</category><package>android-ndk</package><version>11c</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent dep: [ sys-libs/ncurses:0 ]</msg></result>
@@ -2203,7 +2202,7 @@
 <result><category>mail-client</category><package>balsa</package><version>2.5.3</version><class>DroppedKeywords</class><msg>alpha, ppc, sparc</msg></result>
 <result><category>mail-client</category><package>claws-mail</package><version>3.15.0</version><class>DroppedKeywords</class><msg>arm, mips, sparc, x86-fbsd</msg></result>
 <result><category>mail-client</category><package>cone</package><version>0.92</version><class>MissingSlotDep</class><msg>'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]</msg></result>
-<result><category>mail-client</category><package>evolution</package><version>3.22.6</version><class>DroppedKeywords</class><msg>arm, ia64, ppc, ppc64, x86-fbsd</msg></result>
+<result><category>mail-client</category><package>evolution</package><version>3.22.6</version><class>DroppedKeywords</class><msg>arm, ppc, ppc64, x86-fbsd</msg></result>
 <result><category>mail-client</category><package>mail-notification</package><class>SizeViolation</class><msg>"files/mail-notification-aarch64.patch" exceeds 20k in size; 48.2 KiB total</msg></result>
 <result><category>mail-client</category><package>mutt</package><version>1.8.2</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: ^^ ( contains [berkdb] contains [gdbm] contains [lmdb] contains [qdbm] contains [tokyocabinet] )</msg></result>
 <result><category>mail-client</category><package>mutt</package><version>1.8.3</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: ^^ ( contains [berkdb] contains [gdbm] contains [lmdb] contains [qdbm] contains [tokyocabinet] )</msg></result>
