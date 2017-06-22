@@ -378,8 +378,8 @@
 <result><category>net-libs</category><package>gloox</package><version>1.0.9</version><class>MissingSlotDep</class><msg>'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]</msg></result>
 <result><category>net-libs</category><package>libeXosip</package><version>4.0.0</version><class>MissingSlotDep</class><msg>'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]</msg></result>
 <result><category>net-libs</category><package>libesmtp</package><version>1.0.6-r1</version><class>MissingSlotDep</class><msg>'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]</msg></result>
-<result><category>net-libs</category><package>libgadu</package><version>1.11.4</version><class>MissingSlotDep</class><msg>'&gt;=dev-libs/openssl-0.9.6m' matches more than one slot: [ 0, 0.9.8 ]</msg></result>
 <result><category>net-libs</category><package>libgadu</package><version>1.11.4</version><class>VulnerablePackage</class><msg>vulnerable via glsa(201508-02) ( ver &lt; 1.12.0 ), keywords: alpha, amd64, amd64-linux, arm, ia64, mips, ppc, ppc-macos, ppc64, sparc, x86, x86-fbsd, x86-linux</msg></result>
+<result><category>net-libs</category><package>libgadu</package><version>1.11.4</version><class>MissingSlotDep</class><msg>'&gt;=dev-libs/openssl-0.9.6m' matches more than one slot: [ 0, 0.9.8 ]</msg></result>
 <result><category>net-libs</category><package>libgadu</package><version>1.12.0</version><class>MissingSlotDep</class><msg>'&gt;=dev-libs/openssl-0.9.6m' matches more than one slot: [ 0, 0.9.8 ]</msg></result>
 <result><category>net-libs</category><package>libgadu</package><version>1.12.1</version><class>MissingSlotDep</class><msg>'&gt;=dev-libs/openssl-0.9.6m' matches more than one slot: [ 0, 0.9.8 ]</msg></result>
 <result><category>net-libs</category><package>libgadu</package><version>1.12.0</version><class>DroppedKeywords</class><msg>alpha, ia64, sparc</msg></result>
@@ -1377,6 +1377,7 @@
 <result><category>app-text</category><package>docbook-xml-dtd</package><version>4.3-r1</version><class>DroppedKeywords</class><msg>sparc-fbsd</msg></result>
 <result><category>app-text</category><package>docbook-xml-simple-dtd</package><version>4.1.2.5-r2</version><class>DroppedKeywords</class><msg>amd64-fbsd</msg></result>
 <result><category>app-text</category><package>dvipsk</package><version>5.995_p20150521</version><class>DroppedKeywords</class><msg>ia64, sparc</msg></result>
+<result><category>app-text</category><package>gtkspell</package><version>3.0.7</version><class>DroppedKeywords</class><msg>arm64</msg></result>
 <result><category>app-text</category><package>highlight</package><version>3.17</version><class>MissingSlotDep</class><msg>'dev-lang/lua' matches more than one slot: [ 0, 5.1, 5.2, 5.3 ]</msg></result>
 <result><category>app-text</category><package>hnb</package><version>1.9.18-r1</version><class>MissingSlotDep</class><msg>'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]</msg></result>
 <result><category>app-text</category><package>jabref-bin</package><version>2.11</version><class>DroppedKeywords</class><msg>x86</msg></result>
@@ -1600,13 +1601,12 @@
 <result><category>dev-ml</category><package>camldbm</package><version>1.0</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent dep: [ &lt;sys-libs/gdbm-1.9.1-r2 ]</msg></result>
 <result><category>dev-ml</category><package>cryptokit</package><version>1.11</version><class>DroppedKeywords</class><msg>ppc, x86</msg></result>
 <result><category>dev-ml</category><package>extlib</package><version>1.7.2</version><class>DroppedKeywords</class><msg>arm</msg></result>
-<result><category>dev-ml</category><package>kaputt</package><version>1.2</version><class>NonExistentDeps</class><msg>depset depends: nonexistent dep: [ &lt;dev-lang/ocaml-4.02.3-r1 ]</msg></result>
+<result><category>dev-ml</category><package>js_of_ocaml</package><version>3.0.0</version><class>DroppedKeywords</class><msg>amd64</msg></result>
 <result><category>dev-ml</category><package>llvm-ocaml</package><version>4.0.0</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: ( contains [llvm_targets_AArch64] || contains [llvm_targets_AMDGPU] || contains [llvm_targets_ARM] || contains [llvm_targets_BPF] || contains [llvm_targets_Hexagon] || contains [llvm_targets_Lanai] || contains [llvm_targets_Mips] || contains [llvm_targets_MSP430] || contains [llvm_targets_NVPTX] || contains [llvm_targets_PowerPC] || contains [llvm_targets_RISCV] || contains [llvm_targets_Sparc] || contains [llvm_targets_SystemZ] || contains [llvm_targets_X86] || contains [llvm_targets_XCore] )</msg></result>
 <result><category>dev-ml</category><package>ocaml-ctypes</package><version>0.11.3-r1</version><class>DroppedKeywords</class><msg>x86</msg></result>
 <result><category>dev-ml</category><package>ocurl</package><version>0.7.9</version><class>DroppedKeywords</class><msg>ppc</msg></result>
 <result><category>dev-ml</category><package>react</package><version>1.2.1</version><class>DroppedKeywords</class><msg>arm</msg></result>
 <result><category>dev-ml</category><package>react</package><version>1.2.0</version><class>DroppedKeywords</class><msg>x86</msg></result>
-<result><category>dev-ml</category><package>ulex</package><version>1.1</version><class>NonExistentDeps</class><msg>depset depends: nonexistent dep: [ &lt;dev-lang/ocaml-4.02.3-r1 ]</msg></result>
 <result><category>net-analyzer</category><package>amap</package><version>5.4</version><class>MissingSlotDep</class><msg>'&gt;=dev-libs/openssl-0.9.6j' matches more than one slot: [ 0, 0.9.8 ]</msg></result>
 <result><category>net-analyzer</category><package>argus-clients</package><version>3.0.8</version><class>MissingSlotDep</class><msg>'sys-libs/readline' matches more than one slot: [ 0, 4, 5 ]</msg></result>
 <result><category>net-analyzer</category><package>argus-clients</package><version>3.0.8</version><class>MissingSlotDep</class><msg>'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]</msg></result>
