@@ -243,12 +243,12 @@
 <result><category>dev-libs</category><package>weston</package><version>1.12.0</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: contains [dbus]</msg></result>
 <result><category>dev-libs</category><package>weston</package><version>1.12.0</version><class>GLEP73Immutability</class><msg>REQUIRED_USE violates immutability rules: [screen-sharing] requires [rdp] while the opposite value is enforced by use.force/mask (in profiles: [('~arm', 'default/linux/arm/13.0')])</msg></result>
 <result><category>dev-libs</category><package>xapian</package><version>1.4.3</version><class>DroppedKeywords</class><msg>arm64</msg></result>
+<result><category>dev-libs</category><package>xapian-bindings</package><version>1.2.22</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: ( contains [java] || contains [lua] || contains [perl] || contains [php] || contains [python] || contains [ruby] || contains [tcl] )</msg></result>
 <result><category>dev-libs</category><package>xapian-bindings</package><version>1.2.22</version><class>NonExistentDeps</class><msg>depset depends: nonexistent dep: [ dev-lang/php:5.5 ]</msg></result>
 <result><category>dev-libs</category><package>xapian-bindings</package><version>1.2.22</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent dep: [ dev-lang/php:5.5 ]</msg></result>
-<result><category>dev-libs</category><package>xapian-bindings</package><version>1.2.22</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: ( contains [java] || contains [lua] || contains [perl] || contains [php] || contains [python] || contains [ruby] || contains [tcl] )</msg></result>
+<result><category>dev-libs</category><package>xapian-bindings</package><version>1.2.24</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: ( contains [java] || contains [lua] || contains [perl] || contains [php] || contains [python] || contains [ruby] || contains [tcl] )</msg></result>
 <result><category>dev-libs</category><package>xapian-bindings</package><version>1.2.24</version><class>NonExistentDeps</class><msg>depset depends: nonexistent dep: [ dev-lang/php:5.5 ]</msg></result>
 <result><category>dev-libs</category><package>xapian-bindings</package><version>1.2.24</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent dep: [ dev-lang/php:5.5 ]</msg></result>
-<result><category>dev-libs</category><package>xapian-bindings</package><version>1.2.24</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: ( contains [java] || contains [lua] || contains [perl] || contains [php] || contains [python] || contains [ruby] || contains [tcl] )</msg></result>
 <result><category>dev-libs</category><package>xapian-bindings</package><version>1.4.3</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: ( contains [java] || contains [lua] || contains [perl] || contains [php] || contains [python] || contains [ruby] || contains [tcl] )</msg></result>
 <result><category>dev-libs</category><package>xapian-bindings</package><version>1.4.4</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: ( contains [java] || contains [lua] || contains [mono] || contains [perl] || contains [php] || contains [python] || contains [ruby] || contains [tcl] )</msg></result>
 <result><category>x11-libs</category><package>agg</package><version>2.5-r2</version><class>NonExistentDeps</class><msg>depset depends: nonexistent dep: [ &lt;x11-libs/libX11-1.3.99.901 ]</msg></result>
@@ -1064,7 +1064,7 @@
 <result><category>dev-perl</category><package>Exporter-Tiny</package><version>1.0.0</version><class>DroppedKeywords</class><msg>amd64-fbsd, mips, sparc-solaris</msg></result>
 <result><category>dev-perl</category><package>File-BaseDir</package><version>0.70.0</version><class>DroppedKeywords</class><msg>amd64-fbsd, hppa, m68k, mips, s390, sh, x86-fbsd</msg></result>
 <result><category>dev-perl</category><package>File-Slurper</package><version>0.9.0</version><class>DroppedKeywords</class><msg>m68k, s390, sh</msg></result>
-<result><category>dev-perl</category><package>File-Which</package><version>1.210.0</version><class>DroppedKeywords</class><msg>amd64-fbsd, arm64, mips, s390, sh, x86-fbsd</msg></result>
+<result><category>dev-perl</category><package>File-Which</package><version>1.210.0</version><class>DroppedKeywords</class><msg>amd64-fbsd, mips, s390, sh, x86-fbsd</msg></result>
 <result><category>dev-perl</category><package>Fuse</package><version>0.16.1</version><class>MissingSlotDep</class><msg>'sys-fs/fuse' matches more than one slot: [ 0, 3 ]</msg></result>
 <result><category>dev-perl</category><package>JSON</package><version>2.940.0</version><class>DroppedKeywords</class><msg>amd64-fbsd, hppa, x86-fbsd</msg></result>
 <result><category>dev-perl</category><package>LWP-Protocol-https</package><version>6.70.0</version><class>DroppedKeywords</class><msg>amd64-fbsd, mips, x86-fbsd</msg></result>
@@ -1560,7 +1560,8 @@
 <result><category>dev-java</category><package>antlr</package><version>3.5.2</version><class>DroppedKeywords</class><msg>arm64</msg></result>
 <result><category>dev-java</category><package>asm</package><version>5.0.3</version><class>DroppedKeywords</class><msg>sparc-solaris, x86-fbsd, x86-solaris</msg></result>
 <result><category>dev-java</category><package>asm</package><version>5.1</version><class>DroppedKeywords</class><msg>arm64</msg></result>
-<result><category>dev-java</category><package>bcmail</package><version>1.50-r3</version><class>DroppedKeywords</class><msg>ppc-macos, x86-macos</msg></result>
+<result><category>dev-java</category><package>bcmail</package><version>1.50-r3</version><class>DroppedKeywords</class><msg>arm64, ppc-macos, x86-macos</msg></result>
+<result><category>dev-java</category><package>bcprov</package><version>1.48-r2</version><class>DroppedKeywords</class><msg>arm64</msg></result>
 <result><category>dev-java</category><package>commons-collections</package><version>4.1</version><class>DroppedKeywords</class><msg>amd64-linux, x64-macos, x86-fbsd, x86-linux, x86-macos</msg></result>
 <result><category>dev-java</category><package>commons-dbcp</package><version>2.1</version><class>MissingSlotDep</class><msg>'&gt;=virtual/jdk-1.7' matches more than one slot: [ 1.7, 1.8 ]</msg></result>
 <result><category>dev-java</category><package>commons-digester</package><version>3.2-r2</version><class>DroppedKeywords</class><msg>x86-fbsd</msg></result>
@@ -1626,6 +1627,7 @@
 <result><category>dev-java</category><package>trove</package><version>3.0.2</version><class>DroppedKeywords</class><msg>x64-macos</msg></result>
 <result><category>dev-java</category><package>typesafe-config</package><version>1.3.0-r2</version><class>DroppedKeywords</class><msg>ppc64</msg></result>
 <result><category>dev-java</category><package>xerces</package><version>2.11.0-r1</version><class>DroppedKeywords</class><msg>amd64-fbsd, amd64-linux, ppc-aix, ppc-macos, sparc-solaris, sparc64-solaris, x64-macos, x64-solaris, x86-fbsd, x86-linux, x86-macos, x86-solaris</msg></result>
+<result><category>dev-java</category><package>xml-commons-external</package><version>1.4.01</version><class>DroppedKeywords</class><msg>arm64</msg></result>
 <result><category>app-crypt</category><package>cardpeek</package><version>0.8.4</version><class>DroppedKeywords</class><msg>amd64</msg></result>
 <result><category>app-crypt</category><package>monkeysphere</package><version>0.38</version><class>WhitespaceFound</class><msg>ebuild has leading whitespace on lines 43, 44</msg></result>
 <result><category>app-crypt</category><package>pinentry</package><version>0.9.7-r1</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: ?? ( contains [qt4] contains [qt5] )</msg></result>
