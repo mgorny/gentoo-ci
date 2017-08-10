@@ -312,7 +312,6 @@
 <result><category>dev-python</category><package>boto</package><version>2.41.0</version><class>DroppedKeywords</class><msg>arm64</msg></result>
 <result><category>dev-python</category><package>clang-python</package><version>5.0.9999</version><class>MissingSlotDep</class><msg>'&gt;=sys-devel/clang-5.0.9999' matches more than one slot: [ 5, 6 ]</msg></result>
 <result><category>dev-python</category><package>configparser</package><version>3.5.0-r1</version><class>DroppedKeywords</class><msg>arm64</msg></result>
-<result><category>dev-python</category><package>cryptography</package><version>2.0.2</version><class>DroppedKeywords</class><msg>ppc, ppc64</msg></result>
 <result><category>dev-python</category><package>cryptography</package><version>1.8.1</version><class>DroppedKeywords</class><msg>alpha, amd64-linux, m68k, s390, sh, sparc, x64-cygwin, x86-linux</msg></result>
 <result><category>dev-python</category><package>cvxopt</package><class>SizeViolation</class><msg>"files/cvxopt-1.1.6-glpk449.patch" exceeds 20k in size; 38.4 KiB total</msg></result>
 <result><category>dev-python</category><package>django</package><version>1.4.22</version><class>VulnerablePackage</class><msg>vulnerable via glsa(201406-26) ( ver &lt; 1.6.5 &amp;&amp; ver not = 1.5.8 &amp;&amp; ver not = 1.4.13 &amp;&amp; ver not = 1.5.10 &amp;&amp; ver not = 1.4.15 ), keywords: </msg></result>
@@ -1191,9 +1190,8 @@
 <result><category>media-sound</category><package>xwax</package><version>1.5</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: ( contains [alsa] || contains [jack] || contains [oss] )</msg></result>
 <result><category>media-sound</category><package>xwax</package><version>1.6</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: ( contains [alsa] || contains [jack] || contains [oss] )</msg></result>
 <result><category>media-sound</category><package>zynaddsubfx</package><version>3.0.1-r1</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: contains [jack]</msg></result>
-<result><category>net-fs</category><package>btfs</package><version>2.11</version><class>MissingSlotDep</class><msg>'&gt;=sys-fs/fuse-2.8.0' matches more than one slot: [ 0, 3 ]</msg></result>
-<result><category>net-fs</category><package>btfs</package><version>2.12</version><class>MissingSlotDep</class><msg>'&gt;=sys-fs/fuse-2.8.0' matches more than one slot: [ 0, 3 ]</msg></result>
 <result><category>net-fs</category><package>btfs</package><version>2.13</version><class>MissingSlotDep</class><msg>'&gt;=sys-fs/fuse-2.8.0' matches more than one slot: [ 0, 3 ]</msg></result>
+<result><category>net-fs</category><package>btfs</package><version>2.15</version><class>MissingSlotDep</class><msg>'&gt;=sys-fs/fuse-2.8.0' matches more than one slot: [ 0, 3 ]</msg></result>
 <result><category>net-fs</category><package>cifs-utils</package><version>6.4</version><class>NonExistentDeps</class><msg>depset post_rdepends: nonexistent dep: [ =net-fs/samba-3.6* ]</msg></result>
 <result><category>net-fs</category><package>cifs-utils</package><version>6.6-r2</version><class>NonExistentDeps</class><msg>depset post_rdepends: nonexistent dep: [ =net-fs/samba-3.6* ]</msg></result>
 <result><category>net-fs</category><package>curlftpfs</package><version>0.9.2-r3</version><class>MissingSlotDep</class><msg>'&gt;=sys-fs/fuse-2.2' matches more than one slot: [ 0, 3 ]</msg></result>
@@ -1541,6 +1539,7 @@
 <result><category>app-text</category><package>docbook-xml-dtd</package><version>4.3-r1</version><class>DroppedKeywords</class><msg>sparc-fbsd</msg></result>
 <result><category>app-text</category><package>docbook-xml-simple-dtd</package><version>4.1.2.5-r2</version><class>DroppedKeywords</class><msg>amd64-fbsd</msg></result>
 <result><category>app-text</category><package>dvipsk</package><version>5.995_p20150521</version><class>DroppedKeywords</class><msg>ia64, sparc</msg></result>
+<result><category>app-text</category><package>gspell</package><version>1.4.1</version><class>DroppedKeywords</class><msg>ppc</msg></result>
 <result><category>app-text</category><package>gtkspell</package><version>3.0.7</version><class>DroppedKeywords</class><msg>arm64</msg></result>
 <result><category>app-text</category><package>highlight</package><version>3.17</version><class>MissingSlotDep</class><msg>'dev-lang/lua' matches more than one slot: [ 0, 5.1, 5.2, 5.3 ]</msg></result>
 <result><category>app-text</category><package>hnb</package><version>1.9.18-r1</version><class>MissingSlotDep</class><msg>'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]</msg></result>
@@ -1748,7 +1747,7 @@
 <result><category>www-client</category><package>jd</package><version>2.8.5_p120826</version><class>MissingSlotDep</class><msg>'&gt;=dev-libs/openssl-0.9' matches more than one slot: [ 0, 0.9.8 ]</msg></result>
 <result><category>www-client</category><package>netrik</package><version>1.16.1-r1</version><class>MissingSlotDep</class><msg>'sys-libs/readline' matches more than one slot: [ 0, 4, 5 ]</msg></result>
 <result><category>www-client</category><package>netsurf</package><version>3.6</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: ( contains [fbcon] || contains [gtk] || contains [gtk2] || contains [gtk3] )</msg></result>
-<result><category>www-client</category><package>opera</package><version>46.0.2597.46</version><class>DroppedKeywords</class><msg>amd64-fbsd, x86, x86-fbsd</msg></result>
+<result><category>www-client</category><package>opera</package><version>46.0.2597.57</version><class>DroppedKeywords</class><msg>amd64-fbsd, x86, x86-fbsd</msg></result>
 <result><category>www-client</category><package>phantomjs</package><version>1.9.8</version><class>MissingSlotDep</class><msg>'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]</msg></result>
 <result><category>www-client</category><package>uget</package><version>1.10.4</version><class>MissingSlotDep</class><msg>'dev-libs/libgcrypt' matches more than one slot: [ 0, 11 ]</msg></result>
 <result><category>www-client</category><package>uget</package><version>9999</version><class>MissingSlotDep</class><msg>'dev-libs/libgcrypt' matches more than one slot: [ 0, 11 ]</msg></result>
@@ -1792,7 +1791,6 @@
 <result><category>dev-ml</category><package>llvm-ocaml</package><version>4.0.1</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: ( contains [llvm_targets_AArch64] || contains [llvm_targets_AMDGPU] || contains [llvm_targets_ARM] || contains [llvm_targets_BPF] || contains [llvm_targets_Hexagon] || contains [llvm_targets_Lanai] || contains [llvm_targets_Mips] || contains [llvm_targets_MSP430] || contains [llvm_targets_NVPTX] || contains [llvm_targets_PowerPC] || contains [llvm_targets_RISCV] || contains [llvm_targets_Sparc] || contains [llvm_targets_SystemZ] || contains [llvm_targets_X86] || contains [llvm_targets_XCore] )</msg></result>
 <result><category>dev-ml</category><package>ocaml-ctypes</package><version>0.11.3</version><class>DroppedKeywords</class><msg>ppc</msg></result>
 <result><category>dev-ml</category><package>ocaml-ctypes</package><version>0.11.3-r1</version><class>DroppedKeywords</class><msg>x86</msg></result>
-<result><category>dev-ml</category><package>ocurl</package><version>0.7.9</version><class>DroppedKeywords</class><msg>ppc</msg></result>
 <result><category>net-analyzer</category><package>amap</package><version>5.4</version><class>MissingSlotDep</class><msg>'&gt;=dev-libs/openssl-0.9.6j' matches more than one slot: [ 0, 0.9.8 ]</msg></result>
 <result><category>net-analyzer</category><package>argus-clients</package><version>3.0.8</version><class>MissingSlotDep</class><msg>'sys-libs/readline' matches more than one slot: [ 0, 4, 5 ]</msg></result>
 <result><category>net-analyzer</category><package>argus-clients</package><version>3.0.8</version><class>MissingSlotDep</class><msg>'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]</msg></result>
@@ -1974,7 +1972,7 @@
 <result><category>sys-fs</category><package>squashfs-tools</package><version>3.4</version><class>VulnerablePackage</class><msg>vulnerable via glsa(201701-73) ( ver-rev &lt; 4.3-r1 ), keywords: alpha, amd64, arm, hppa, ia64, m68k, mips, ppc, ppc64, s390, sh, sparc, x86</msg></result>
 <result><category>sys-fs</category><package>udev</package><version>234</version><class>DroppedKeywords</class><msg>alpha, arm64, hppa, m68k, mips, s390, sh, sparc</msg></result>
 <result><category>sys-fs</category><package>udftools</package><version>1.0.0b-r10</version><class>MissingSlotDep</class><msg>'sys-libs/readline' matches more than one slot: [ 0, 4, 5 ]</msg></result>
-<result><category>sys-fs</category><package>udisks</package><version>2.7.1</version><class>DroppedKeywords</class><msg>alpha, arm, arm64, ia64, mips, ppc, ppc64, sh, sparc</msg></result>
+<result><category>sys-fs</category><package>udisks</package><version>2.7.2</version><class>DroppedKeywords</class><msg>alpha, arm, arm64, ia64, mips, ppc, ppc64, sh, sparc</msg></result>
 <result><category>sys-fs</category><package>unionfs-fuse</package><version>1.0</version><class>MissingSlotDep</class><msg>'sys-fs/fuse' matches more than one slot: [ 0, 3 ]</msg></result>
 <result><category>sys-fs</category><package>unionfs-fuse</package><version>9999</version><class>MissingSlotDep</class><msg>'sys-fs/fuse' matches more than one slot: [ 0, 3 ]</msg></result>
 <result><category>sys-fs</category><package>zfs</package><version>0.6.5.6</version><class>DroppedKeywords</class><msg>arm, ppc, ppc64</msg></result>
@@ -2441,7 +2439,7 @@
 <result><category>app-backup</category><package>cdbackup</package><version>0.7.1-r1</version><class>WhitespaceFound</class><msg>ebuild has leading whitespace on line 22</msg></result>
 <result><category>app-backup</category><package>duplicity</package><version>0.7.13.1</version><class>DroppedKeywords</class><msg>ppc, sparc</msg></result>
 <result><category>app-backup</category><package>reoback</package><version>1.0_p3-r1</version><class>BadInsIntoDir</class><msg>ebuild uses insinto /etc/cron.daily on line 35</msg></result>
-<result><category>mail-client</category><package>balsa</package><version>2.5.3</version><class>DroppedKeywords</class><msg>alpha, ppc, sparc</msg></result>
+<result><category>mail-client</category><package>balsa</package><version>2.5.3</version><class>DroppedKeywords</class><msg>alpha, sparc</msg></result>
 <result><category>mail-client</category><package>claws-mail</package><version>3.15.0</version><class>DroppedKeywords</class><msg>arm, mips, sparc, x86-fbsd</msg></result>
 <result><category>mail-client</category><package>cone</package><version>0.92</version><class>MissingSlotDep</class><msg>'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]</msg></result>
 <result><category>mail-client</category><package>evolution</package><version>3.22.6</version><class>DroppedKeywords</class><msg>arm, ppc, ppc64, x86-fbsd</msg></result>
