@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf8'?>
 <checks>
-<result><category>app-emulation</category><package>cloud-init</package><version>0.7.6_p1212</version><class>DroppedKeywords</class><msg>ppc64</msg></result>
 <result><category>app-emulation</category><package>cloud-init</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
+<result><category>app-emulation</category><package>cloud-init</package><version>0.7.6_p1212</version><class>DroppedKeywords</class><msg>ppc64</msg></result>
 <result><category>app-emulation</category><package>crossover-bin</package><version>12.5.0-r2</version><class>AbsoluteSymlink</class><msg>'dosym /opt/cxoffice/bin/crossover ...' uses absolute path on line 101</msg></result>
 <result><category>app-emulation</category><package>crossover-bin</package><version>12.5.0-r2</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent dep: [ net-dialup/capi4k-utils ]</msg></result>
 <result><category>app-emulation</category><package>crossover-bin</package><version>12.5.1-r2</version><class>AbsoluteSymlink</class><msg>'dosym /opt/cxoffice/bin/crossover ...' uses absolute path on line 101</msg></result>
@@ -46,12 +46,12 @@
 <result><category>app-emulation</category><package>ganeti</package><version>2.17.0_beta1</version><class>BadInsIntoDir</class><msg>ebuild uses insinto /etc/cron.d on line 318</msg></result>
 <result><category>app-emulation</category><package>ganeti</package><version>2.17.0_beta1</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: ( contains [kvm] || contains [xen] || contains [lxc] )</msg></result>
 <result><category>app-emulation</category><package>hercules</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
-<result><category>app-emulation</category><package>libvirt</package><version>3.3.0</version><class>GLEP73BackAlteration</class><msg>REQUIRED_USE causes a preceding condition to start applying: [virt-network] enforces [libvirtd] which may cause preceding [libvirtd &amp;&amp; !qemu &amp;&amp; !uml &amp;&amp; !virtualbox &amp;&amp; !openvz &amp;&amp; !xen] enforcing [lxc] to evaluate to true</msg></result>
 <result><category>app-emulation</category><package>libvirt</package><version>3.3.0</version><class>MissingSlotDep</class><msg>'&gt;=sys-fs/fuse-2.8.6' matches more than one slot: [ 0, 3 ]</msg></result>
+<result><category>app-emulation</category><package>libvirt</package><version>3.3.0</version><class>GLEP73BackAlteration</class><msg>REQUIRED_USE causes a preceding condition to start applying: [virt-network] enforces [libvirtd] which may cause preceding [libvirtd &amp;&amp; !qemu &amp;&amp; !uml &amp;&amp; !virtualbox &amp;&amp; !openvz &amp;&amp; !xen] enforcing [lxc] to evaluate to true</msg></result>
 <result><category>app-emulation</category><package>libvirt</package><version>3.6.0</version><class>GLEP73BackAlteration</class><msg>REQUIRED_USE causes a preceding condition to start applying: [virt-network] enforces [libvirtd] which may cause preceding [libvirtd &amp;&amp; !qemu &amp;&amp; !uml &amp;&amp; !virtualbox &amp;&amp; !openvz &amp;&amp; !xen] enforcing [lxc] to evaluate to true</msg></result>
-<result><category>app-emulation</category><package>lxc</package><version>2.0.3-r1</version><class>DroppedKeywords</class><msg>ppc64, x86</msg></result>
 <result><category>app-emulation</category><package>lxc</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: ['files/lxc-2.0.4-omit-sysconfig.patch', 'files/lxc-2.0.5-omit-sysconfig.patch']</msg></result>
 <result><category>app-emulation</category><package>lxc</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: ['files/lxc-2.0.4-bash-completion.patch', 'files/lxc-2.0.5-bash-completion.patch']</msg></result>
+<result><category>app-emulation</category><package>lxc</package><version>2.0.3-r1</version><class>DroppedKeywords</class><msg>ppc64, x86</msg></result>
 <result><category>app-emulation</category><package>lxd</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: ['files/lxd-2.14.initd', 'files/lxd-2.16.initd']</msg></result>
 <result><category>app-emulation</category><package>lxd</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: ['files/lxd-2.14.service', 'files/lxd-2.16.service']</msg></result>
 <result><category>app-emulation</category><package>lxd</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: ['files/lxd-2.14.confd', 'files/lxd-2.16.confd']</msg></result>
@@ -64,8 +64,8 @@
 <result><category>app-emulation</category><package>vice</package><version>2.4.27-r3</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: ?? ( contains [gtk] contains [sdl] )</msg></result>
 <result><category>app-emulation</category><package>vice</package><version>2.4.31</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: ?? ( contains [gtk] contains [sdl] )</msg></result>
 <result><category>app-emulation</category><package>vice</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: ['files/vice-2.4.22-autotools.patch', 'files/vice-2.4.27-autotools.patch']</msg></result>
-<result><category>app-emulation</category><package>virtualbox</package><version>5.0.16-r1</version><class>GLEP73BackAlteration</class><msg>REQUIRED_USE causes a preceding condition to start applying: [vboxwebsrv] enforces [java] which may cause preceding [java] enforcing [sdk] to evaluate to true</msg></result>
 <result><category>app-emulation</category><package>virtualbox</package><version>5.0.16-r1</version><class>VulnerablePackage</class><msg>vulnerable via glsa(201702-08) ( ver &lt; 5.0.32 ), keywords: amd64, x86</msg></result>
+<result><category>app-emulation</category><package>virtualbox</package><version>5.0.16-r1</version><class>GLEP73BackAlteration</class><msg>REQUIRED_USE causes a preceding condition to start applying: [vboxwebsrv] enforces [java] which may cause preceding [java] enforcing [sdk] to evaluate to true</msg></result>
 <result><category>app-emulation</category><package>virtualbox</package><version>5.0.40</version><class>GLEP73BackAlteration</class><msg>REQUIRED_USE causes a preceding condition to start applying: [vboxwebsrv] enforces [java] which may cause preceding [java] enforcing [sdk] to evaluate to true</msg></result>
 <result><category>app-emulation</category><package>virtualbox</package><version>5.1.24</version><class>GLEP73BackAlteration</class><msg>REQUIRED_USE causes a preceding condition to start applying: [vboxwebsrv] enforces [java] which may cause preceding [java] enforcing [sdk] to evaluate to true</msg></result>
 <result><category>app-emulation</category><package>virtualbox</package><version>5.1.26</version><class>GLEP73BackAlteration</class><msg>REQUIRED_USE causes a preceding condition to start applying: [vboxwebsrv] enforces [java] which may cause preceding [java] enforcing [sdk] to evaluate to true</msg></result>
@@ -73,7 +73,6 @@
 <result><category>app-emulation</category><package>vmware-modules</package><version>271.3-r1</version><class>NonExistentDeps</class><msg>depset depends: nonexistent dep: [ =app-emulation/vmware-player-5.0.3* ]</msg></result>
 <result><category>app-emulation</category><package>vmware-modules</package><version>279.6</version><class>NonExistentDeps</class><msg>depset depends: nonexistent dep: [ =app-emulation/vmware-player-6.0.6* ]</msg></result>
 <result><category>app-emulation</category><package>vmware-modules</package><version>304.3-r1</version><class>NonExistentDeps</class><msg>depset depends: nonexistent dep: [ =app-emulation/vmware-player-7.1.3* ]</msg></result>
-<result><category>app-emulation</category><package>vmware-modules</package><version>304.2</version><class>DroppedKeywords</class><msg>x86</msg></result>
 <result><category>app-emulation</category><package>vmware-modules</package><class>SizeViolation</class><msg>"files/271-3.10.0.patch" exceeds 20k in size; 22.9 KiB total</msg></result>
 <result><category>app-emulation</category><package>vmware-modules</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: ['files/271-hardened.patch', 'files/hardened.patch']</msg></result>
 <result><category>app-emulation</category><package>vmware-modules</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: ['files/304-3.10-01-inode.patch', 'files/308-3.10-01-inode.patch']</msg></result>
@@ -108,6 +107,7 @@
 <result><category>app-emulation</category><package>vmware-modules</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: ['files/271-3.10-06-inode.patch', 'files/279-3.10-05-inode.patch']</msg></result>
 <result><category>app-emulation</category><package>vmware-modules</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: ['files/271-apic.patch', 'files/279-apic.patch', 'files/304-apic.patch', 'files/308-apic.patch']</msg></result>
 <result><category>app-emulation</category><package>vmware-modules</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
+<result><category>app-emulation</category><package>vmware-modules</package><version>304.2</version><class>DroppedKeywords</class><msg>x86</msg></result>
 <result><category>app-emulation</category><package>vmware-player</package><version>12.1.0.3272444-r2</version><class>AbsoluteSymlink</class><msg>'dosym /usr/$(get_libdir)/libglib-2.0.so.0 ...' uses absolute path on line 281</msg></result>
 <result><category>app-emulation</category><package>vmware-player</package><version>12.1.0.3272444-r2</version><class>AbsoluteSymlink</class><msg>'dosym /usr/$(get_libdir)/libcrypto.so.1.0.0 ...' uses absolute path on line 284</msg></result>
 <result><category>app-emulation</category><package>vmware-player</package><version>12.1.0.3272444-r2</version><class>AbsoluteSymlink</class><msg>'dosym /usr/$(get_libdir)/libssl.so.1.0.0 ...' uses absolute path on line 286</msg></result>
@@ -123,10 +123,10 @@
 <result><category>app-emulation</category><package>vmware-workstation</package><version>12.1.0.3272444-r2</version><class>AbsoluteSymlink</class><msg>'dosym /usr/$(get_libdir)/libcrypto.so.1.0.0 ...' uses absolute path on line 301</msg></result>
 <result><category>app-emulation</category><package>vmware-workstation</package><version>12.1.0.3272444-r2</version><class>AbsoluteSymlink</class><msg>'dosym /usr/$(get_libdir)/libssl.so.1.0.0 ...' uses absolute path on line 303</msg></result>
 <result><category>app-emulation</category><package>vmware-workstation</package><version>12.1.0.3272444-r2</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent dep: [ dev-libs/nettle:0 ]</msg></result>
-<result><category>app-emulation</category><package>vmware-workstation</package><version>11.1.2.2780323-r4</version><class>DroppedKeywords</class><msg>x86</msg></result>
 <result><category>app-emulation</category><package>vmware-workstation</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: ['files/vmware-server-10.0.rc', 'files/vmware-server-11.1.rc', 'files/vmware-server-12.1.rc']</msg></result>
 <result><category>app-emulation</category><package>vmware-workstation</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: ['files/vmware-10.0.rc', 'files/vmware-9.0.rc']</msg></result>
 <result><category>app-emulation</category><package>vmware-workstation</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: ['files/vmware-11.1.rc', 'files/vmware-12.1.rc']</msg></result>
+<result><category>app-emulation</category><package>vmware-workstation</package><version>11.1.2.2780323-r4</version><class>DroppedKeywords</class><msg>x86</msg></result>
 <result><category>app-emulation</category><package>xen</package><version>4.7.2-r1</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: contains [debug]</msg></result>
 <result><category>app-emulation</category><package>xen</package><version>4.7.3</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: contains [debug]</msg></result>
 <result><category>app-emulation</category><package>xen</package><version>4.8.1-r1</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: contains [debug]</msg></result>
@@ -204,14 +204,14 @@
 <result><category>media-libs</category><package>mediastreamer</package><version>2.7.3-r3</version><class>GLEP73BackAlteration</class><msg>REQUIRED_USE causes a preceding condition to start applying: [v4l] enforces [video] which may cause preceding [video &amp;&amp; !X] enforcing [sdl] to evaluate to true</msg></result>
 <result><category>media-libs</category><package>mediastreamer</package><version>2.8.2</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: contains [video]</msg></result>
 <result><category>media-libs</category><package>mediastreamer</package><version>2.8.2</version><class>GLEP73BackAlteration</class><msg>REQUIRED_USE causes a preceding condition to start applying: [v4l] enforces [video] which may cause preceding [video &amp;&amp; !X] enforcing [sdl] to evaluate to true</msg></result>
-<result><category>media-libs</category><package>mediastreamer</package><version>2.9.0</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: contains [video]</msg></result>
-<result><category>media-libs</category><package>mediastreamer</package><version>2.9.0</version><class>GLEP73BackAlteration</class><msg>REQUIRED_USE causes a preceding condition to start applying: [v4l] enforces [video] which may cause preceding [video &amp;&amp; !sdl &amp;&amp; !X] enforcing [opengl] to evaluate to true</msg></result>
 <result><category>media-libs</category><package>mediastreamer</package><version>2.9.0</version><class>MissingSlotDep</class><msg>'net-libs/libupnp' matches more than one slot: [ 0, 1.8 ]</msg></result>
 <result><category>media-libs</category><package>mediastreamer</package><version>2.9.0</version><class>MissingSlotDep</class><msg>'media-libs/glew' matches more than one slot: [ 0, 1.10, 1.6 ]</msg></result>
-<result><category>media-libs</category><package>mediastreamer</package><version>2.9.0-r1</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: contains [video]</msg></result>
-<result><category>media-libs</category><package>mediastreamer</package><version>2.9.0-r1</version><class>GLEP73BackAlteration</class><msg>REQUIRED_USE causes a preceding condition to start applying: [v4l] enforces [video] which may cause preceding [video &amp;&amp; !sdl &amp;&amp; !X] enforcing [opengl] to evaluate to true</msg></result>
+<result><category>media-libs</category><package>mediastreamer</package><version>2.9.0</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: contains [video]</msg></result>
+<result><category>media-libs</category><package>mediastreamer</package><version>2.9.0</version><class>GLEP73BackAlteration</class><msg>REQUIRED_USE causes a preceding condition to start applying: [v4l] enforces [video] which may cause preceding [video &amp;&amp; !sdl &amp;&amp; !X] enforcing [opengl] to evaluate to true</msg></result>
 <result><category>media-libs</category><package>mediastreamer</package><version>2.9.0-r1</version><class>MissingSlotDep</class><msg>'net-libs/libupnp' matches more than one slot: [ 0, 1.8 ]</msg></result>
 <result><category>media-libs</category><package>mediastreamer</package><version>2.9.0-r1</version><class>MissingSlotDep</class><msg>'media-libs/glew' matches more than one slot: [ 0, 1.10, 1.6 ]</msg></result>
+<result><category>media-libs</category><package>mediastreamer</package><version>2.9.0-r1</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: contains [video]</msg></result>
+<result><category>media-libs</category><package>mediastreamer</package><version>2.9.0-r1</version><class>GLEP73BackAlteration</class><msg>REQUIRED_USE causes a preceding condition to start applying: [v4l] enforces [video] which may cause preceding [video &amp;&amp; !sdl &amp;&amp; !X] enforcing [opengl] to evaluate to true</msg></result>
 <result><category>media-libs</category><package>mediastreamer</package><version>2.8.2</version><class>DroppedKeywords</class><msg>x64-macos, x86-macos</msg></result>
 <result><category>media-libs</category><package>mesa</package><version>13.0.5</version><class>GLEP73BackAlteration</class><msg>REQUIRED_USE causes a preceding condition to start applying: [video_cards_vmware] enforces [gallium] which may cause preceding [video_cards_radeon &amp;&amp; gallium &amp;&amp; amd64] enforcing [llvm] to evaluate to true</msg></result>
 <result><category>media-libs</category><package>mesa</package><version>13.0.6</version><class>GLEP73BackAlteration</class><msg>REQUIRED_USE causes a preceding condition to start applying: [video_cards_vmware] enforces [gallium] which may cause preceding [video_cards_radeon &amp;&amp; gallium &amp;&amp; amd64] enforcing [llvm] to evaluate to true</msg></result>
@@ -252,9 +252,9 @@
 <result><category>media-libs</category><package>sdl-gfx</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
 <result><category>media-libs</category><package>sdl-image</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
 <result><category>media-libs</category><package>sdl2-image</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
+<result><category>media-libs</category><package>sg</package><version>1.5</version><class>MissingSlotDep</class><msg>'x11-libs/motif' matches more than one slot: [ 0, 2.2 ]</msg></result>
 <result><category>media-libs</category><package>sg</package><version>1.5</version><class>NonExistentDeps</class><msg>depset depends: nonexistent dep: [ media-libs/opengl-apple ]</msg></result>
 <result><category>media-libs</category><package>sg</package><version>1.5</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent dep: [ media-libs/opengl-apple ]</msg></result>
-<result><category>media-libs</category><package>sg</package><version>1.5</version><class>MissingSlotDep</class><msg>'x11-libs/motif' matches more than one slot: [ 0, 2.2 ]</msg></result>
 <result><category>media-libs</category><package>slv2</package><version>0.6.6-r2</version><class>NonExistentDeps</class><msg>depset depends: nonexistent dep: [ media-libs/lv2core ]</msg></result>
 <result><category>media-libs</category><package>slv2</package><version>0.6.6-r2</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent dep: [ media-libs/lv2core ]</msg></result>
 <result><category>media-libs</category><package>spandsp</package><version>0.0.6_pre21</version><class>MissingSlotDep</class><msg>'media-libs/tiff' matches more than one slot: [ 0, 3 ]</msg></result>
@@ -268,11 +268,11 @@
 <result><category>media-libs</category><package>tiff</package><version>3.9.7-r1</version><class>VulnerablePackage</class><msg>vulnerable via glsa(201701-16) ( ver &lt; 4.0.7 ), keywords: alpha, amd64, amd64-linux, arm, arm64, hppa, ia64, m68k, mips, ppc, ppc-macos, ppc64, s390, sh, sparc, sparc-fbsd, sparc-solaris, x64-macos, x64-solaris, x86, x86-fbsd, x86-linux, x86-macos, x86-solaris</msg></result>
 <result><category>media-libs</category><package>tiff</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
 <result><category>media-libs</category><package>urt</package><version>3.1b-r1</version><class>MissingSlotDep</class><msg>'media-libs/tiff' matches more than one slot: [ 0, 3 ]</msg></result>
-<result><category>media-libs</category><package>vigra</package><version>1.9.0</version><class>GLEP73BackAlteration</class><msg>REQUIRED_USE causes a preceding condition to start applying: [test] enforces [python] which may cause preceding [python] enforcing [python_targets_python2_7] to evaluate to true</msg></result>
 <result><category>media-libs</category><package>vigra</package><version>1.9.0</version><class>MissingSlotDep</class><msg>'virtual/jpeg' matches more than one slot: [ 0, 62 ]</msg></result>
+<result><category>media-libs</category><package>vigra</package><version>1.9.0</version><class>GLEP73BackAlteration</class><msg>REQUIRED_USE causes a preceding condition to start applying: [test] enforces [python] which may cause preceding [python] enforcing [python_targets_python2_7] to evaluate to true</msg></result>
 <result><category>media-libs</category><package>vigra</package><version>1.11.0</version><class>GLEP73BackAlteration</class><msg>REQUIRED_USE causes a preceding condition to start applying: [test] enforces [python] which may cause preceding [python] enforcing [python_targets_python2_7] to evaluate to true</msg></result>
-<result><category>media-libs</category><package>vips</package><version>7.38.5-r1</version><class>AbsoluteSymlink</class><msg>'dosym /usr/share/doc/${PF} ...' uses absolute path on line 72</msg></result>
 <result><category>media-libs</category><package>vigra</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
+<result><category>media-libs</category><package>vips</package><version>7.38.5-r1</version><class>AbsoluteSymlink</class><msg>'dosym /usr/share/doc/${PF} ...' uses absolute path on line 72</msg></result>
 <result><category>media-libs</category><package>x264</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
 <result><category>dev-perl</category><package>Apache-AuthCookie</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
 <result><category>dev-perl</category><package>Apache-Test</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
@@ -3895,12 +3895,12 @@
 <result><category>dev-libs</category><package>weston</package><version>1.11.0</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: contains [dbus]</msg></result>
 <result><category>dev-libs</category><package>weston</package><version>1.12.0</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: contains [dbus]</msg></result>
 <result><category>dev-libs</category><package>xapian</package><version>1.4.3</version><class>DroppedKeywords</class><msg>arm64</msg></result>
+<result><category>dev-libs</category><package>xapian-bindings</package><version>1.2.22</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: ( contains [java] || contains [lua] || contains [perl] || contains [php] || contains [python] || contains [ruby] || contains [tcl] )</msg></result>
 <result><category>dev-libs</category><package>xapian-bindings</package><version>1.2.22</version><class>NonExistentDeps</class><msg>depset depends: nonexistent dep: [ dev-lang/php:5.5 ]</msg></result>
 <result><category>dev-libs</category><package>xapian-bindings</package><version>1.2.22</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent dep: [ dev-lang/php:5.5 ]</msg></result>
-<result><category>dev-libs</category><package>xapian-bindings</package><version>1.2.22</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: ( contains [java] || contains [lua] || contains [perl] || contains [php] || contains [python] || contains [ruby] || contains [tcl] )</msg></result>
+<result><category>dev-libs</category><package>xapian-bindings</package><version>1.2.24</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: ( contains [java] || contains [lua] || contains [perl] || contains [php] || contains [python] || contains [ruby] || contains [tcl] )</msg></result>
 <result><category>dev-libs</category><package>xapian-bindings</package><version>1.2.24</version><class>NonExistentDeps</class><msg>depset depends: nonexistent dep: [ dev-lang/php:5.5 ]</msg></result>
 <result><category>dev-libs</category><package>xapian-bindings</package><version>1.2.24</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent dep: [ dev-lang/php:5.5 ]</msg></result>
-<result><category>dev-libs</category><package>xapian-bindings</package><version>1.2.24</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: ( contains [java] || contains [lua] || contains [perl] || contains [php] || contains [python] || contains [ruby] || contains [tcl] )</msg></result>
 <result><category>dev-libs</category><package>xapian-bindings</package><version>1.4.3</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: ( contains [java] || contains [lua] || contains [perl] || contains [php] || contains [python] || contains [ruby] || contains [tcl] )</msg></result>
 <result><category>dev-libs</category><package>xapian-bindings</package><version>1.4.4</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: ( contains [java] || contains [lua] || contains [mono] || contains [perl] || contains [php] || contains [python] || contains [ruby] || contains [tcl] )</msg></result>
 <result><category>dev-libs</category><package>xplc</package><version>0.3.13-r1</version><class>AbsoluteSymlink</class><msg>'dosym /usr/lib/pkgconfig/${P}.pc ...' uses absolute path on line 39</msg></result>
@@ -5021,153 +5021,6 @@
 <result><category>net-libs</category><package>xrootd</package><version>4.5.0</version><class>MissingSlotDep</class><msg>'sys-fs/fuse' matches more than one slot: [ 0, 3 ]</msg></result>
 <result><category>net-libs</category><package>zeromq</package><version>3.2.3</version><class>DroppedKeywords</class><msg>x86-fbsd</msg></result>
 <result><category>net-libs</category><package>zeromq</package><version>4.1.1</version><class>DroppedKeywords</class><msg>ppc-macos, x64-macos, x86-macos</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-apps/kdeartwork-weatherwallpapers' unavailable: old update line: 'move kde-base/kdeartwork-weatherwallpapers kde-apps/kdeartwork-weatherwallpapers'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'dev-ruby/zoom' unavailable: old update line: 'move dev-ruby/ruby-zoom dev-ruby/zoom'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-plasma/kephal' unavailable: old update line: 'move kde-base/kephal kde-plasma/kephal'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'app-leechcraft/lc-tabpp' unavailable: old update line: 'move net-misc/leechcraft-tabpp app-leechcraft/lc-tabpp'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'app-eselect/eselect-maven' unavailable: old update line: 'move app-admin/eselect-maven app-eselect/eselect-maven'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-base/print-manager' unavailable: old update line: 'move kde-misc/print-manager kde-base/print-manager'</msg></result>
-<result><class>MultiMovePackageUpdate</class><msg>multi-move update 'kde-misc/print-manager': kde-misc/print-manager -&gt; kde-base/print-manager -&gt; kde-apps/print-manager</msg></result>
-<result><class>OldPackageUpdate</class><msg>'sys-firmware/rt61-firmware' unavailable: old update line: 'move net-wireless/rt61-firmware sys-firmware/rt61-firmware'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'razorqt-base/razorqt-meta' unavailable: old update line: 'move x11-wm/razorqt razorqt-base/razorqt-meta'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'net-misc/leechcraft-lemon' unavailable: old update line: 'move media-sound/leechcraft-lemon net-misc/leechcraft-lemon'</msg></result>
-<result><class>MultiMovePackageUpdate</class><msg>multi-move update 'media-sound/leechcraft-lemon': media-sound/leechcraft-lemon -&gt; net-misc/leechcraft-lemon -&gt; app-leechcraft/lc-lemon</msg></result>
-<result><class>OldPackageUpdate</class><msg>'sys-firmware/iwl2030-ucode' unavailable: old update line: 'move net-wireless/iwl2030-ucode sys-firmware/iwl2030-ucode'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'sci-biology/biojava' unavailable: old update line: 'move dev-java/biojava sci-biology/biojava'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-apps/mplayerthumbs' unavailable: old update line: 'move kde-base/mplayerthumbs kde-apps/mplayerthumbs'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'app-eselect/eselect-ecj' unavailable: old update line: 'move app-admin/eselect-ecj app-eselect/eselect-ecj'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-plasma/libkgreeter' unavailable: old update line: 'move kde-base/libkgreeter kde-plasma/libkgreeter'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-apps/kdetoys-meta' unavailable: old update line: 'move kde-base/kdetoys-meta kde-apps/kdetoys-meta'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-apps/ktux' unavailable: old update line: 'move kde-base/ktux kde-apps/ktux'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-plasma/kcminit' unavailable: old update line: 'move kde-base/kcminit kde-plasma/kcminit'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-apps/kdeartwork-iconthemes' unavailable: old update line: 'move kde-base/kdeartwork-iconthemes kde-apps/kdeartwork-iconthemes'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-apps/kde-base-artwork' unavailable: old update line: 'slotmove =kde-apps/kde-base-artwork-15.08.0 5 4'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-apps/pairs' unavailable: old update line: 'move kde-base/pairs kde-apps/pairs'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-plasma/ksmserver' unavailable: old update line: 'move kde-base/ksmserver kde-plasma/ksmserver'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-apps/kdepim-icons' unavailable: old update line: 'move kde-base/kdepim-icons kde-apps/kdepim-icons'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'dev-php/PHPUnit_Selenium' unavailable: old update line: 'move dev-php/phpunit-selenium dev-php/PHPUnit_Selenium'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'dev-python/neutronclient' unavailable: old update line: 'move dev-python/quantumclient dev-python/neutronclient'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'sys-fabric/compat-dapl' unavailable: old update line: 'move sys-infiniband/compat-dapl sys-fabric/compat-dapl'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-apps/superkaramba' unavailable: old update line: 'move kde-base/superkaramba kde-apps/superkaramba'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-plasma/liboxygenstyle' unavailable: old update line: 'move kde-base/liboxygenstyle kde-plasma/liboxygenstyle'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-plasma/kdebase-startkde' unavailable: old update line: 'move kde-base/kdebase-startkde kde-plasma/kdebase-startkde'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-apps/kglobalaccel' unavailable: old update line: 'move kde-base/kglobalaccel kde-apps/kglobalaccel'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-apps/kdebase-desktoptheme' unavailable: old update line: 'move kde-base/kdebase-desktoptheme kde-apps/kdebase-desktoptheme'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-misc/kio-upnp-ms' unavailable: old update line: 'slotmove kde-misc/kio-upnp-ms 0 4'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-apps/plasma-apps' unavailable: old update line: 'move kde-base/plasma-apps kde-apps/plasma-apps'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-apps/kdeartwork-styles' unavailable: old update line: 'move kde-base/kdeartwork-styles kde-apps/kdeartwork-styles'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'app-leechcraft/lc-laure' unavailable: old update line: 'move media-video/leechcraft-laure app-leechcraft/lc-laure'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'dev-ruby/postgres' unavailable: old update line: 'move dev-ruby/ruby-postgres dev-ruby/postgres'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-apps/kquitapp' unavailable: old update line: 'move kde-base/kquitapp kde-apps/kquitapp'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'mail-client/claws-mail-tnef-parse' unavailable: old update line: 'move mail-client/claws-mail-tnef_parse mail-client/claws-mail-tnef-parse'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-apps/nepomuk' unavailable: old update line: 'move kde-base/nepomuk kde-apps/nepomuk'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-plasma/ksystraycmd' unavailable: old update line: 'move kde-base/ksystraycmd kde-plasma/ksystraycmd'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-apps/kstart' unavailable: old update line: 'move kde-base/kstart kde-apps/kstart'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'app-mobilephone/freesmee' unavailable: old update line: 'move app-mobilephone/jacksms-desktop app-mobilephone/freesmee'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-apps/kgamma' unavailable: old update line: 'move kde-base/kgamma kde-apps/kgamma'</msg></result>
-<result><class>MultiMovePackageUpdate</class><msg>multi-move update 'kde-base/kgamma': kde-base/kgamma -&gt; kde-apps/kgamma -&gt; kde-plasma/kgamma</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-apps/libkonq' unavailable: old update line: 'move kde-base/libkonq kde-apps/libkonq'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'sys-firmware/iwl5150-ucode' unavailable: old update line: 'move net-wireless/iwl5150-ucode sys-firmware/iwl5150-ucode'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-misc/kde-gtk-config' unavailable: old update line: 'move kde-misc/kcm-gtk-config kde-misc/kde-gtk-config'</msg></result>
-<result><class>MultiMovePackageUpdate</class><msg>multi-move update 'kde-misc/kcm-gtk-config': kde-misc/kcm-gtk-config -&gt; kde-misc/kde-gtk-config -&gt; kde-plasma/kde-gtk-config</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-plasma/freespacenotifier' unavailable: old update line: 'move kde-base/freespacenotifier kde-plasma/freespacenotifier'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'sys-cluster/sx' unavailable: old update line: 'move net-misc/sx sys-cluster/sx'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-apps/libkdeedu' unavailable: old update line: 'move kde-base/libkdeedu kde-apps/libkdeedu'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-plasma/kstartupconfig' unavailable: old update line: 'move kde-base/kstartupconfig kde-plasma/kstartupconfig'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'perl-core/Net-Ping' unavailable: old update line: 'move perl-core/net-ping perl-core/Net-Ping'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-apps/kdeartwork-colorschemes' unavailable: old update line: 'move kde-base/kdeartwork-colorschemes kde-apps/kdeartwork-colorschemes'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-plasma/libplasmagenericshell' unavailable: old update line: 'move kde-base/libplasmagenericshell kde-plasma/libplasmagenericshell'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-apps/knetattach' unavailable: old update line: 'move kde-base/knetattach kde-apps/knetattach'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-apps/kdeartwork-kscreensaver' unavailable: old update line: 'move kde-base/kdeartwork-kscreensaver kde-apps/kdeartwork-kscreensaver'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-apps/kde-base-artwork' unavailable: old update line: 'move kde-base/kde-base-artwork kde-apps/kde-base-artwork'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-apps/kde-base-artwork' unavailable: old update line: 'slotmove =kde-apps/kde-base-artwork-15.08.0 5 4'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-apps/oxygen-icons' unavailable: old update line: 'move kde-base/oxygen-icons kde-apps/oxygen-icons'</msg></result>
-<result><class>MultiMovePackageUpdate</class><msg>multi-move update 'kde-base/oxygen-icons': kde-base/oxygen-icons -&gt; kde-apps/oxygen-icons -&gt; kde-frameworks/oxygen-icons</msg></result>
-<result><class>OldPackageUpdate</class><msg>'sys-firmware/iwl5000-ucode' unavailable: old update line: 'move net-wireless/iwl5000-ucode sys-firmware/iwl5000-ucode'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'app-eselect/eselect-esd' unavailable: old update line: 'move app-admin/eselect-esd app-eselect/eselect-esd'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-apps/kuser' unavailable: old update line: 'move kde-base/kuser kde-apps/kuser'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'app-leechcraft/lc-lcftp' unavailable: old update line: 'move net-ftp/leechcraft-lcftp app-leechcraft/lc-lcftp'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-apps/kcontrol' unavailable: old update line: 'move kde-base/kcontrol kde-apps/kcontrol'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'dev-libs/kirigami' unavailable: old update line: 'slotmove dev-libs/kirigami 5 1'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-apps/kimgio' unavailable: old update line: 'move kde-base/kimgio kde-apps/kimgio'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-apps/attica' unavailable: old update line: 'move kde-base/attica kde-apps/attica'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'x11-misc/ardesia' unavailable: old update line: 'move x11-apps/ardesia x11-misc/ardesia'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'dev-php/PHPUnit_MockObject' unavailable: old update line: 'move dev-php/phpunit-mockobject dev-php/PHPUnit_MockObject'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'perl-core/I18N-LangTags' unavailable: old update line: 'move perl-core/i18n-langtags perl-core/I18N-LangTags'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'app-leechcraft/lc-eiskaltdcpp' unavailable: old update line: 'move net-p2p/leechcraft-eiskaltdcpp app-leechcraft/lc-eiskaltdcpp'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'x11-drivers/ati-drivers' unavailable: old update line: 'slotmove =x11-drivers/ati-drivers-12.6_beta_pre897 1 legacy'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-plasma/kdebase-cursors' unavailable: old update line: 'move kde-base/kdebase-cursors kde-plasma/kdebase-cursors'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-apps/kpasswdserver' unavailable: old update line: 'move kde-base/kpasswdserver kde-apps/kpasswdserver'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'sys-firmware/iwl6000-ucode' unavailable: old update line: 'move net-wireless/iwl6000-ucode sys-firmware/iwl6000-ucode'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'dev-ruby/dbi' unavailable: old update line: 'move dev-ruby/ruby-dbi dev-ruby/dbi'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-plasma/kdm' unavailable: old update line: 'move kde-base/kdm kde-plasma/kdm'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-apps/drkonqi' unavailable: old update line: 'move kde-base/drkonqi kde-apps/drkonqi'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-apps/kdepasswd' unavailable: old update line: 'move kde-base/kdepasswd kde-apps/kdepasswd'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'perl-core/Locale-Maketext' unavailable: old update line: 'move perl-core/locale-maketext perl-core/Locale-Maketext'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'dev-ruby/RubyInline' unavailable: old update line: 'move dev-ruby/ruby-inline dev-ruby/RubyInline'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-apps/nsplugins' unavailable: old update line: 'move kde-base/nsplugins kde-apps/nsplugins'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-apps/ksnapshot' unavailable: old update line: 'move kde-base/ksnapshot kde-apps/ksnapshot'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-plasma/kdebase-pam' unavailable: old update line: 'move kde-base/kdebase-pam kde-plasma/kdebase-pam'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-misc/kbstateapplet' unavailable: old update line: 'slotmove kde-misc/kbstateapplet 0 4'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-apps/amor' unavailable: old update line: 'move kde-base/amor kde-apps/amor'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-apps/kurifilter-plugins' unavailable: old update line: 'move kde-base/kurifilter-plugins kde-apps/kurifilter-plugins'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-plasma/klipper' unavailable: old update line: 'move kde-base/klipper kde-plasma/klipper'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-apps/kdeartwork-emoticons' unavailable: old update line: 'move kde-base/kdeartwork-emoticons kde-apps/kdeartwork-emoticons'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-apps/kiconfinder' unavailable: old update line: 'move kde-base/kiconfinder kde-apps/kiconfinder'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'app-office/akonadi-server' unavailable: old update line: 'slotmove app-office/akonadi-server 0 4'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-plasma/ksplash' unavailable: old update line: 'move kde-base/ksplash kde-plasma/ksplash'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-apps/solid-runtime' unavailable: old update line: 'move kde-base/solid-runtime kde-apps/solid-runtime'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-apps/kdeartwork-desktopthemes' unavailable: old update line: 'move kde-base/kdeartwork-desktopthemes kde-apps/kdeartwork-desktopthemes'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-misc/plasma-mpd-nowplaying' unavailable: old update line: 'slotmove kde-misc/plasma-mpd-nowplaying 0 4'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-apps/kfmclient' unavailable: old update line: 'move kde-base/kfmclient kde-apps/kfmclient'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-misc/wicd-client-kde' unavailable: old update line: 'slotmove kde-misc/wicd-client-kde 0 4'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-apps/konq-plugins' unavailable: old update line: 'move kde-base/konq-plugins kde-apps/konq-plugins'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-misc/kio-ftps' unavailable: old update line: 'slotmove kde-misc/kio-ftps 0 4'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'sys-firmware/iwl4965-ucode' unavailable: old update line: 'move net-wireless/iwl4965-ucode sys-firmware/iwl4965-ucode'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-apps/kuiserver' unavailable: old update line: 'move kde-base/kuiserver kde-apps/kuiserver'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'sys-firmware/iwl3945-ucode' unavailable: old update line: 'move net-wireless/iwl3945-ucode sys-firmware/iwl3945-ucode'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-apps/kde-wallpapers' unavailable: old update line: 'move kde-base/kde-wallpapers kde-apps/kde-wallpapers'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'dev-php/DBUnit' unavailable: old update line: 'move dev-php/dbunit dev-php/DBUnit'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-plasma/solid-actions-kcm' unavailable: old update line: 'move kde-base/solid-actions-kcm kde-plasma/solid-actions-kcm'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-misc/eventlist' unavailable: old update line: 'slotmove kde-misc/eventlist 0 4'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-apps/renamedlg-plugins' unavailable: old update line: 'move kde-base/renamedlg-plugins kde-apps/renamedlg-plugins'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'mail-client/claws-mail-spam-report' unavailable: old update line: 'move mail-client/claws-mail-spam_report mail-client/claws-mail-spam-report'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-apps/kdebase-menu-icons' unavailable: old update line: 'move kde-base/kdebase-menu-icons kde-apps/kdebase-menu-icons'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-plasma/kstyles' unavailable: old update line: 'move kde-base/kstyles kde-plasma/kstyles'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'media-sound/leechcraft-lmp' unavailable: old update line: 'move media-video/leechcraft-lmp media-sound/leechcraft-lmp'</msg></result>
-<result><class>MultiMovePackageUpdate</class><msg>multi-move update 'media-video/leechcraft-lmp': media-video/leechcraft-lmp -&gt; media-sound/leechcraft-lmp -&gt; app-leechcraft/lc-lmp</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-plasma/libplasmaclock' unavailable: old update line: 'move kde-base/libplasmaclock kde-plasma/libplasmaclock'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-base/konq-plugins' unavailable: old update line: 'move kde-misc/konq-plugins kde-base/konq-plugins'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-apps/konq-plugins' unavailable: old update line: 'move kde-base/konq-plugins kde-apps/konq-plugins'</msg></result>
-<result><class>MultiMovePackageUpdate</class><msg>multi-move update 'kde-misc/konq-plugins': kde-misc/konq-plugins -&gt; kde-base/konq-plugins -&gt; kde-apps/konq-plugins</msg></result>
-<result><class>OldPackageUpdate</class><msg>'razorqt-base/razorqt-lightdm-greeter' unavailable: old update line: 'move x11-misc/lightdm-razorqt-greeter razorqt-base/razorqt-lightdm-greeter'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-apps/kdebindings-meta' unavailable: old update line: 'move kde-base/kdebindings-meta kde-apps/kdebindings-meta'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-plasma/libtaskmanager' unavailable: old update line: 'move kde-base/libtaskmanager kde-plasma/libtaskmanager'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'sys-firmware/radeon-ucode' unavailable: old update line: 'move x11-drivers/radeon-ucode sys-firmware/radeon-ucode'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-plasma/kscreensaver' unavailable: old update line: 'move kde-base/kscreensaver kde-plasma/kscreensaver'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'net-libs/libkfbapi' unavailable: old update line: 'move kde-misc/libkfbapi net-libs/libkfbapi'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'sys-fs/leechcraft-vrooby' unavailable: old update line: 'move net-fs/leechcraft-vrooby sys-fs/leechcraft-vrooby'</msg></result>
-<result><class>MultiMovePackageUpdate</class><msg>multi-move update 'net-fs/leechcraft-vrooby': net-fs/leechcraft-vrooby -&gt; sys-fs/leechcraft-vrooby -&gt; app-leechcraft/lc-vrooby</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-misc/kcm-grub2' unavailable: old update line: 'slotmove kde-misc/kcm-grub2 0 4'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-apps/kdeartwork-meta' unavailable: old update line: 'move kde-base/kdeartwork-meta kde-apps/kdeartwork-meta'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'net-im/emesene' unavailable: old update line: 'slotmove net-im/emesene 2 0'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'sys-fs/sshfs' unavailable: old update line: 'move sys-fs/sshfs-fuse sys-fs/sshfs'</msg></result>
-<result><class>MultiMovePackageUpdate</class><msg>multi-move update 'sys-fs/sshfs-fuse': sys-fs/sshfs-fuse -&gt; sys-fs/sshfs -&gt; net-fs/sshfs</msg></result>
-<result><class>OldPackageUpdate</class><msg>'perl-core/Pod-Parser' unavailable: old update line: 'move perl-core/PodParser perl-core/Pod-Parser'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-apps/kdeartwork-wallpapers' unavailable: old update line: 'move kde-base/kdeartwork-wallpapers kde-apps/kdeartwork-wallpapers'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-apps/kdesu' unavailable: old update line: 'move kde-base/kdesu kde-apps/kdesu'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-apps/kdesdk-strigi-analyzer' unavailable: old update line: 'move kde-base/kdesdk-strigi-analyzer kde-apps/kdesdk-strigi-analyzer'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'dev-util/kdevelop-qmake' unavailable: old update line: 'slotmove dev-util/kdevelop-qmake 0 4'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'app-leechcraft/lc-sidebar' unavailable: old update line: 'move net-misc/leechcraft-sidebar app-leechcraft/lc-sidebar'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-plasma/krunner' unavailable: old update line: 'move kde-base/krunner kde-plasma/krunner'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-apps/kdebase-menu' unavailable: old update line: 'move kde-base/kdebase-menu kde-apps/kdebase-menu'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-plasma/kcheckpass' unavailable: old update line: 'move kde-base/kcheckpass kde-plasma/kcheckpass'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'kde-apps/kdebugdialog' unavailable: old update line: 'move kde-base/kdebugdialog kde-apps/kdebugdialog'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'perl-core/IO-Socket-IP' unavailable: old update line: 'move dev-perl/IO-Socket-IP perl-core/IO-Socket-IP'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'dev-php/pecl-zendopcache' unavailable: old update line: 'move dev-php/pecl-zendoptimizerplus dev-php/pecl-zendopcache'</msg></result>
-<result><class>OldPackageUpdate</class><msg>'app-leechcraft/leechraft-meta' unavailable: old update line: 'move net-misc/leechcraft-full app-leechcraft/leechraft-meta'</msg></result>
-<result><class>MultiMovePackageUpdate</class><msg>multi-move update 'net-misc/leechcraft-full': net-misc/leechcraft-full -&gt; app-leechcraft/leechraft-meta -&gt; app-leechcraft/leechcraft-meta</msg></result>
-<result><class>OldPackageUpdate</class><msg>'sys-firmware/amd-ucode' unavailable: old update line: 'move sys-kernel/amd-ucode sys-firmware/amd-ucode'</msg></result>
 <result><class>UnusedProfileDirs</class><msg>[ arch/arm64/big-endian, arch/x86/xbox, default/linux/amd64/17.0, default/linux/amd64/17.0/desktop, default/linux/amd64/17.0/desktop/gnome, default/linux/amd64/17.0/desktop/gnome/systemd, default/linux/amd64/17.0/desktop/plasma, default/linux/amd64/17.0/desktop/plasma/systemd, default/linux/amd64/17.0/developer, default/linux/amd64/17.0/no-multilib, default/linux/amd64/17.0/selinux, default/linux/amd64/17.0/systemd, default/linux/amd64/17.0/x32, default/linux/amd64/dev, default/linux/amd64/dev/32bit-userland, default/linux/arm/13.0/armv4/desktop/plasma, default/linux/arm/13.0/armv4t/desktop/plasma, default/linux/arm/13.0/armv5te/desktop/plasma, default/linux/arm/13.0/armv6j/desktop/plasma, default/linux/arm/13.0/armv7a/desktop/plasma, default/linux/arm/13.0/desktop/plasma, default/linux/arm/13.0/desktop/plasma/systemd, default/linux/mips/13.0/mipsel/o32/developer, default/linux/powerpc/ppc64/13.0/desktop, default/linux/powerpc/ppc64/13.0/desktop/gnome, default/linux/powerpc/ppc64/13.0/desktop/gnome/systemd, default/linux/powerpc/ppc64/13.0/developer, default/linux/riscv/13.0/desktop, default/linux/riscv/13.0/developer, default/linux/sparc/experimental, default/linux/sparc/experimental/multilib, default/linux/sparc/experimental/multilib/desktop, default/linux/sparc/experimental/multilib/developer, default/linux/uclibc/arm/armv6j, hardened/linux/arm/armv4, hardened/linux/arm/armv4t, hardened/linux/arm/armv5te, hardened/linux/arm/armv7a/selinux, hardened/linux/uclibc/arm/armv6j, releases/17.0, uclibc, uclibc/amd64, uclibc/arm, uclibc/arm/2.4, uclibc/mips, uclibc/mips/hardened, uclibc/ppc, uclibc/ppc/2.4, uclibc/ppc/hardened, uclibc/ppc/hardened/2.4, uclibc/sh, uclibc/sh/2.4, uclibc/x86, uclibc/x86/2.4, uclibc/x86/2005.1, uclibc/x86/2005.1/2.4, uclibc/x86/hardened, uclibc/x86/hardened/2.4 ]</msg></result>
 <result><class>UnusedLicenses</class><msg>GMGPL</msg></result>
 <result><class>UnusedEclasses</class><msg>gnatbuild, gnatbuild-r1</msg></result>
