@@ -52,9 +52,9 @@
 <result><category>app-emulation</category><package>libvirt</package><version>3.3.0</version><class>MissingSlotDep</class><msg>'&gt;=sys-fs/fuse-2.8.6' matches more than one slot: [ 0, 3 ]</msg></result>
 <result><category>app-emulation</category><package>libvirt</package><version>3.3.0</version><class>GLEP73BackAlteration</class><msg>REQUIRED_USE causes a preceding condition to start applying: [virt-network] enforces [libvirtd] which may cause preceding [libvirtd &amp;&amp; !qemu &amp;&amp; !uml &amp;&amp; !virtualbox &amp;&amp; !openvz &amp;&amp; !xen] enforcing [lxc] to evaluate to true</msg></result>
 <result><category>app-emulation</category><package>libvirt</package><version>3.6.0</version><class>GLEP73BackAlteration</class><msg>REQUIRED_USE causes a preceding condition to start applying: [virt-network] enforces [libvirtd] which may cause preceding [libvirtd &amp;&amp; !qemu &amp;&amp; !uml &amp;&amp; !virtualbox &amp;&amp; !openvz &amp;&amp; !xen] enforcing [lxc] to evaluate to true</msg></result>
+<result><category>app-emulation</category><package>lxc</package><version>2.0.3-r1</version><class>DroppedKeywords</class><msg>ppc64, x86</msg></result>
 <result><category>app-emulation</category><package>lxc</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: ('files/lxc-2.0.4-omit-sysconfig.patch', 'files/lxc-2.0.5-omit-sysconfig.patch')</msg></result>
 <result><category>app-emulation</category><package>lxc</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: ('files/lxc-2.0.4-bash-completion.patch', 'files/lxc-2.0.5-bash-completion.patch')</msg></result>
-<result><category>app-emulation</category><package>lxc</package><version>2.0.3-r1</version><class>DroppedKeywords</class><msg>ppc64, x86</msg></result>
 <result><category>app-emulation</category><package>lxd</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: ('files/lxd-2.14.initd', 'files/lxd-2.16.initd')</msg></result>
 <result><category>app-emulation</category><package>lxd</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: ('files/lxd-2.14.service', 'files/lxd-2.16.service')</msg></result>
 <result><category>app-emulation</category><package>lxd</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: ('files/lxd-2.14.confd', 'files/lxd-2.16.confd')</msg></result>
@@ -77,6 +77,8 @@
 <result><category>app-emulation</category><package>vmware-modules</package><version>271.3-r1</version><class>NonExistentDeps</class><msg>depset depends: nonexistent dep: [ =app-emulation/vmware-player-5.0.3* ]</msg></result>
 <result><category>app-emulation</category><package>vmware-modules</package><version>279.6</version><class>NonExistentDeps</class><msg>depset depends: nonexistent dep: [ =app-emulation/vmware-player-6.0.6* ]</msg></result>
 <result><category>app-emulation</category><package>vmware-modules</package><version>304.3-r1</version><class>NonExistentDeps</class><msg>depset depends: nonexistent dep: [ =app-emulation/vmware-player-7.1.3* ]</msg></result>
+<result><category>app-emulation</category><package>vmware-modules</package><version>304.2</version><class>DroppedKeywords</class><msg>x86</msg></result>
+<result><category>app-emulation</category><package>vmware-modules</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
 <result><category>app-emulation</category><package>vmware-modules</package><class>SizeViolation</class><msg>"files/271-3.10.0.patch" exceeds 20k in size; 22.9 KiB total</msg></result>
 <result><category>app-emulation</category><package>vmware-modules</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: ('files/271-hardened.patch', 'files/hardened.patch')</msg></result>
 <result><category>app-emulation</category><package>vmware-modules</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: ('files/304-3.10-01-inode.patch', 'files/308-3.10-01-inode.patch')</msg></result>
@@ -110,8 +112,6 @@
 <result><category>app-emulation</category><package>vmware-modules</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: ('files/271-3.11-00-readdir.patch', 'files/304-3.11-00-readdir.patch', 'files/308-3.11-00-readdir.patch')</msg></result>
 <result><category>app-emulation</category><package>vmware-modules</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: ('files/271-3.10-06-inode.patch', 'files/279-3.10-05-inode.patch')</msg></result>
 <result><category>app-emulation</category><package>vmware-modules</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: ('files/271-apic.patch', 'files/279-apic.patch', 'files/304-apic.patch', 'files/308-apic.patch')</msg></result>
-<result><category>app-emulation</category><package>vmware-modules</package><version>304.2</version><class>DroppedKeywords</class><msg>x86</msg></result>
-<result><category>app-emulation</category><package>vmware-modules</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
 <result><category>app-emulation</category><package>vmware-player</package><version>7.1.2.2780323-r1</version><class>PortageInternals</class><msg>'env-update' used on line 115</msg></result>
 <result><category>app-emulation</category><package>vmware-player</package><version>12.1.0.3272444-r2</version><class>AbsoluteSymlink</class><msg>'dosym /usr/$(get_libdir)/libglib-2.0.so.0 ...' uses absolute path on line 281</msg></result>
 <result><category>app-emulation</category><package>vmware-player</package><version>12.1.0.3272444-r2</version><class>AbsoluteSymlink</class><msg>'dosym /usr/$(get_libdir)/libcrypto.so.1.0.0 ...' uses absolute path on line 284</msg></result>
@@ -133,10 +133,10 @@
 <result><category>app-emulation</category><package>vmware-workstation</package><version>12.1.0.3272444-r2</version><class>AbsoluteSymlink</class><msg>'dosym /usr/$(get_libdir)/libssl.so.1.0.0 ...' uses absolute path on line 303</msg></result>
 <result><category>app-emulation</category><package>vmware-workstation</package><version>12.1.0.3272444-r2</version><class>PortageInternals</class><msg>'env-update' used on line 272</msg></result>
 <result><category>app-emulation</category><package>vmware-workstation</package><version>12.1.0.3272444-r2</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent dep: [ dev-libs/nettle:0 ]</msg></result>
+<result><category>app-emulation</category><package>vmware-workstation</package><version>11.1.2.2780323-r4</version><class>DroppedKeywords</class><msg>x86</msg></result>
 <result><category>app-emulation</category><package>vmware-workstation</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: ('files/vmware-server-10.0.rc', 'files/vmware-server-11.1.rc', 'files/vmware-server-12.1.rc')</msg></result>
 <result><category>app-emulation</category><package>vmware-workstation</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: ('files/vmware-10.0.rc', 'files/vmware-9.0.rc')</msg></result>
 <result><category>app-emulation</category><package>vmware-workstation</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: ('files/vmware-11.1.rc', 'files/vmware-12.1.rc')</msg></result>
-<result><category>app-emulation</category><package>vmware-workstation</package><version>11.1.2.2780323-r4</version><class>DroppedKeywords</class><msg>x86</msg></result>
 <result><category>app-emulation</category><package>xcpc</package><version>20070122</version><class>HttpsAvailable</class><msg>'http://sourceforge.net/' link should use https:// on line: 8</msg></result>
 <result><category>app-emulation</category><package>xen</package><version>4.7.2-r1</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: contains [debug]</msg></result>
 <result><category>app-emulation</category><package>xen</package><version>4.7.3</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: contains [debug]</msg></result>
@@ -237,8 +237,6 @@
 <result><category>media-libs</category><package>openctm</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
 <result><category>media-libs</category><package>opencv</package><version>2.4.13</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: ?? ( contains [qt4] contains [qt5] )</msg></result>
 <result><category>media-libs</category><package>opencv</package><version>2.4.13-r2</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: ?? ( contains [qt4] contains [qt5] )</msg></result>
-<result><category>media-libs</category><package>opencv</package><version>3.2.0-r2</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on line: 14</msg></result>
-<result><category>media-libs</category><package>opencv</package><version>3.2.0-r3</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on line: 15</msg></result>
 <result><category>media-libs</category><package>openglide</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
 <result><category>media-libs</category><package>openh264</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
 <result><category>media-libs</category><package>openicc</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
@@ -246,7 +244,6 @@
 <result><category>media-libs</category><package>opensubdiv</package><version>3.1.0</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent dep: [ x11-drivers/ati-drivers ]</msg></result>
 <result><category>media-libs</category><package>opensubdiv</package><version>3.1.1</version><class>NonExistentDeps</class><msg>depset depends: nonexistent dep: [ x11-drivers/ati-drivers ]</msg></result>
 <result><category>media-libs</category><package>opensubdiv</package><version>3.1.1</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent dep: [ x11-drivers/ati-drivers ]</msg></result>
-<result><category>media-libs</category><package>oyranos</package><version>0.9.6</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on line: 17</msg></result>
 <result><category>media-libs</category><package>phonon</package><version>4.9.1-r1</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: ( contains [qt4] || contains [qt5] )</msg></result>
 <result><category>media-libs</category><package>phonon-gstreamer</package><version>4.9.0-r1</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: ( contains [qt4] || contains [qt5] )</msg></result>
 <result><category>media-libs</category><package>phonon-qt7</package><version>0_pre20110424</version><class>NonExistentDeps</class><msg>depset depends: nonexistent dep: [ media-libs/opengl-apple ]</msg></result>
@@ -329,7 +326,6 @@
 <result><category>dev-perl</category><package>Mo</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
 <result><category>dev-perl</category><package>Module-Install</package><version>1.180.0</version><class>DroppedKeywords</class><msg>alpha, hppa, sparc, x86-fbsd</msg></result>
 <result><category>dev-perl</category><package>Mojolicious</package><version>7.320.0</version><class>DroppedKeywords</class><msg>arm</msg></result>
-<result><category>dev-perl</category><package>Mozilla-CA</package><version>20999999</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on line: 7</msg></result>
 <result><category>dev-perl</category><package>Net-DNS</package><version>1.80.0</version><class>DroppedKeywords</class><msg>ppc64</msg></result>
 <result><category>dev-perl</category><package>Net-DNS</package><version>1.70.0</version><class>DroppedKeywords</class><msg>amd64-linux, m68k, mips, ppc-aix, ppc-macos, s390, sh, sparc, sparc-solaris, x86-fbsd, x86-linux, x86-macos, x86-solaris</msg></result>
 <result><category>dev-perl</category><package>Net-HTTP</package><version>6.120.0</version><class>DroppedKeywords</class><msg>amd64-fbsd</msg></result>
@@ -340,7 +336,6 @@
 <result><category>dev-perl</category><package>Plack</package><version>1.4.300</version><class>DroppedKeywords</class><msg>alpha, ia64, ppc, ppc64, sparc</msg></result>
 <result><category>dev-perl</category><package>Quota</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
 <result><category>dev-perl</category><package>Regexp-Common</package><version>2016060801.0.0</version><class>DroppedKeywords</class><msg>amd64-linux, ppc-macos, sparc-solaris, x86-linux, x86-macos</msg></result>
-<result><category>dev-perl</category><package>SNMP_Session</package><version>1.13-r2</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on line: 9</msg></result>
 <result><category>dev-perl</category><package>Search-Xapian</package><version>1.2.23.0-r1</version><class>DroppedKeywords</class><msg>mips</msg></result>
 <result><category>dev-perl</category><package>Sort-Naturally</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
 <result><category>dev-perl</category><package>Sort-Tree</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
@@ -386,7 +381,6 @@
 <result><category>dev-perl</category><package>libwww-perl</package><version>6.260.0</version><class>AbsoluteSymlink</class><msg>'dosym /usr/bin/lwp-request ...' uses absolute path on line 67</msg></result>
 <result><category>dev-perl</category><package>libwww-perl</package><version>6.260.0</version><class>AbsoluteSymlink</class><msg>'dosym /usr/bin/lwp-request ...' uses absolute path on line 68</msg></result>
 <result><category>dev-perl</category><package>libwww-perl</package><version>6.160.0</version><class>DroppedKeywords</class><msg>amd64-fbsd, arm-linux, m68k, mips, s390, sh, x86-fbsd</msg></result>
-<result><category>dev-perl</category><package>mecab-perl</package><version>0.996</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on line: 10</msg></result>
 <result><category>dev-perl</category><package>txt2html</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
 <result><category>sys-libs</category><package>binutils-libs</package><version>2.29</version><class>DroppedKeywords</class><msg>alpha, amd64, amd64-fbsd, amd64-linux, arm, arm64, hppa, ia64, m68k, mips, ppc, ppc-macos, ppc64, s390, sh, sparc, sparc-solaris, sparc64-solaris, x64-macos, x64-solaris, x86, x86-fbsd, x86-linux, x86-macos, x86-solaris</msg></result>
 <result><category>sys-libs</category><package>db</package><version>4.4.20_p4-r1</version><class>DroppedKeywords</class><msg>alpha, hppa, sparc-fbsd</msg></result>
@@ -429,9 +423,6 @@
 <result><category>sys-libs</category><package>libosinfo</package><version>1.0.0-r1</version><class>DroppedKeywords</class><msg>sparc</msg></result>
 <result><category>sys-libs</category><package>libstatgrab</package><version>0.91</version><class>MissingSlotDep</class><msg>'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]</msg></result>
 <result><category>sys-libs</category><package>libxcrypt</package><version>2.4</version><class>HttpsAvailable</class><msg>'http://packages.debian.org/' link should use https:// on line: 9</msg></result>
-<result><category>sys-libs</category><package>musl</package><version>1.1.15-r2</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on lines: 11, 12, 13, 17, 18, 19</msg></result>
-<result><category>sys-libs</category><package>musl</package><version>1.1.16</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on lines: 11, 12, 13, 17, 18, 19</msg></result>
-<result><category>sys-libs</category><package>musl</package><version>9999</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on lines: 11, 12, 13, 17, 18, 19</msg></result>
 <result><category>sys-libs</category><package>newlib</package><version>2.2.0.20150423</version><class>DroppedKeywords</class><msg>arm, hppa, m68k, mips, ppc, ppc64, sh, sparc, x86</msg></result>
 <result><category>sys-libs</category><package>uclibc</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
 <result><category>sys-libs</category><package>uclibc-ng</package><version>1.0.26</version><class>DroppedKeywords</class><msg>mips</msg></result>
@@ -613,8 +604,8 @@
 <result><category>dev-haskell</category><package>base-unicode-symbols</package><version>0.2.2.4</version><class>HttpsAvailable</class><msg>'http://haskell.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-haskell</category><package>bencode</package><version>0.5-r1</version><class>HttpsAvailable</class><msg>'http://hackage.haskell.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-haskell</category><package>bencode</package><version>0.6.0.0</version><class>HttpsAvailable</class><msg>'http://hackage.haskell.org/' link should use https:// on line: 12</msg></result>
-<result><category>dev-haskell</category><package>bifunctors</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
 <result><category>dev-haskell</category><package>binary</package><version>0.5.1.1</version><class>HttpsAvailable</class><msg>'http://code.haskell.org/' link should use https:// on line: 12</msg></result>
+<result><category>dev-haskell</category><package>bifunctors</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
 <result><category>dev-haskell</category><package>binary</package><version>0.8.3.0</version><class>DroppedKeywords</class><msg>ia64, ppc, ppc64, sparc</msg></result>
 <result><category>dev-haskell</category><package>binary</package><version>0.7.5.0</version><class>DroppedKeywords</class><msg>alpha, ppc-macos, sparc-solaris, x86-fbsd, x86-macos, x86-solaris</msg></result>
 <result><category>dev-haskell</category><package>biocore</package><version>0.3.1</version><class>HttpsAvailable</class><msg>'http://hackage.haskell.org/' link should use https:// on line: 12</msg></result>
@@ -628,8 +619,8 @@
 <result><category>dev-haskell</category><package>bytestring-show</package><version>0.3.5.6</version><class>HttpsAvailable</class><msg>'http://code.haskell.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-haskell</category><package>bytestring-show</package><version>0.3.5.6-r1</version><class>HttpsAvailable</class><msg>'http://code.haskell.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-haskell</category><package>bzlib</package><version>0.5.0.5</version><class>HttpsAvailable</class><msg>'http://hackage.haskell.org/' link should use https:// on line: 12</msg></result>
-<result><category>dev-haskell</category><package>c2hs</package><version>0.17.2</version><class>DroppedKeywords</class><msg>alpha, ia64, ppc, ppc64, sparc</msg></result>
 <result><category>dev-haskell</category><package>cabal</package><version>1.18.1.2</version><class>HttpsAvailable</class><msg>'http://www.haskell.org/' link should use https:// on line: 13</msg></result>
+<result><category>dev-haskell</category><package>c2hs</package><version>0.17.2</version><class>DroppedKeywords</class><msg>alpha, ia64, ppc, ppc64, sparc</msg></result>
 <result><category>dev-haskell</category><package>cabal</package><version>1.18.1.3</version><class>HttpsAvailable</class><msg>'http://www.haskell.org/' link should use https:// on line: 16</msg></result>
 <result><category>dev-haskell</category><package>cabal</package><version>1.18.1.5</version><class>HttpsAvailable</class><msg>'http://www.haskell.org/' link should use https:// on line: 16</msg></result>
 <result><category>dev-haskell</category><package>cabal</package><version>1.20.0.2</version><class>HttpsAvailable</class><msg>'http://www.haskell.org/' link should use https:// on line: 16</msg></result>
@@ -643,8 +634,8 @@
 <result><category>dev-haskell</category><package>cabal-install</package><version>1.20.0.3-r2</version><class>HttpsAvailable</class><msg>'http://www.haskell.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-haskell</category><package>cabal-install</package><version>1.22.7.0</version><class>HttpsAvailable</class><msg>'http://www.haskell.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-haskell</category><package>cabal-install</package><version>1.24.0.2</version><class>HttpsAvailable</class><msg>'http://www.haskell.org/' link should use https:// on line: 12</msg></result>
-<result><category>dev-haskell</category><package>cabal-install</package><version>1.24.0.2</version><class>DroppedKeywords</class><msg>alpha, ia64, ppc, ppc64, sparc</msg></result>
 <result><category>dev-haskell</category><package>cairo</package><version>0.12.5.3</version><class>HttpsAvailable</class><msg>'http://projects.haskell.org/' link should use https:// on line: 12</msg></result>
+<result><category>dev-haskell</category><package>cabal-install</package><version>1.24.0.2</version><class>DroppedKeywords</class><msg>alpha, ia64, ppc, ppc64, sparc</msg></result>
 <result><category>dev-haskell</category><package>cairo</package><version>0.13.1.1</version><class>HttpsAvailable</class><msg>'http://projects.haskell.org/' link should use https:// on line: 13</msg></result>
 <result><category>dev-haskell</category><package>cairo</package><version>0.13.3.1</version><class>HttpsAvailable</class><msg>'http://projects.haskell.org/' link should use https:// on line: 13</msg></result>
 <result><category>dev-haskell</category><package>cereal</package><version>0.3.5.2</version><class>HttpsAvailable</class><msg>'http://hackage.haskell.org/' link should use https:// on line: 12</msg></result>
@@ -710,15 +701,15 @@
 <result><category>dev-haskell</category><package>errorcall-eq-instance</package><version>0.1.0</version><class>HttpsAvailable</class><msg>'http://hackage.haskell.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-haskell</category><package>errors</package><version>1.4.7</version><class>HttpsAvailable</class><msg>'http://hackage.haskell.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-haskell</category><package>errors</package><version>2.1.3</version><class>HttpsAvailable</class><msg>'http://hackage.haskell.org/' link should use https:// on line: 12</msg></result>
-<result><category>dev-haskell</category><package>exceptions</package><version>0.8.0.2</version><class>DroppedKeywords</class><msg>alpha, ppc, sparc</msg></result>
 <result><category>dev-haskell</category><package>executable-path</package><version>0.0.3-r1</version><class>HttpsAvailable</class><msg>'http://code.haskell.org/' link should use https:// on line: 12</msg></result>
+<result><category>dev-haskell</category><package>exceptions</package><version>0.8.0.2</version><class>DroppedKeywords</class><msg>alpha, ppc, sparc</msg></result>
 <result><category>dev-haskell</category><package>extensible-exceptions</package><version>0.1.1.4</version><class>HttpsAvailable</class><msg>'http://hackage.haskell.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-haskell</category><package>failure</package><version>0.2.0.3</version><class>HttpsAvailable</class><msg>'http://www.haskell.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-haskell</category><package>fast-logger</package><version>2.4.6</version><class>HttpsAvailable</class><msg>'http://hackage.haskell.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-haskell</category><package>fgl</package><version>5.5.2.3</version><class>HttpsAvailable</class><msg>'http://hackage.haskell.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-haskell</category><package>fgl</package><version>5.5.3.0</version><class>HttpsAvailable</class><msg>'http://hackage.haskell.org/' link should use https:// on line: 12</msg></result>
-<result><category>dev-haskell</category><package>fgl</package><version>5.5.2.3</version><class>DroppedKeywords</class><msg>alpha, ia64, ppc, ppc64, sparc, x86-fbsd</msg></result>
 <result><category>dev-haskell</category><package>fgl-arbitrary</package><version>0.2.0.1</version><class>HttpsAvailable</class><msg>'http://hackage.haskell.org/' link should use https:// on line: 12</msg></result>
+<result><category>dev-haskell</category><package>fgl</package><version>5.5.2.3</version><class>DroppedKeywords</class><msg>alpha, ia64, ppc, ppc64, sparc, x86-fbsd</msg></result>
 <result><category>dev-haskell</category><package>fgl-arbitrary</package><version>0.2.0.2</version><class>HttpsAvailable</class><msg>'http://hackage.haskell.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-haskell</category><package>filestore</package><version>0.6.1</version><class>HttpsAvailable</class><msg>'http://hackage.haskell.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-haskell</category><package>filestore</package><version>0.6.2</version><class>HttpsAvailable</class><msg>'http://hackage.haskell.org/' link should use https:// on line: 12</msg></result>
@@ -748,8 +739,8 @@
 <result><category>dev-haskell</category><package>gluraw</package><version>1.4.0.1</version><class>HttpsAvailable</class><msg>'http://www.haskell.org/' link should use https:// on line: 16</msg></result>
 <result><category>dev-haskell</category><package>gluraw</package><version>1.5.0.1</version><class>HttpsAvailable</class><msg>'http://www.haskell.org/' link should use https:// on line: 16</msg></result>
 <result><category>dev-haskell</category><package>gluraw</package><version>2.0.0.3</version><class>HttpsAvailable</class><msg>'http://www.haskell.org/' link should use https:// on line: 16</msg></result>
-<result><category>dev-haskell</category><package>gluraw</package><version>2.0.0.3</version><class>DroppedKeywords</class><msg>sparc</msg></result>
 <result><category>dev-haskell</category><package>glut</package><version>2.1.1.2</version><class>HttpsAvailable</class><msg>'http://www.haskell.org/' link should use https:// on line: 11</msg></result>
+<result><category>dev-haskell</category><package>gluraw</package><version>2.0.0.3</version><class>DroppedKeywords</class><msg>sparc</msg></result>
 <result><category>dev-haskell</category><package>glut</package><version>2.3.1.0</version><class>HttpsAvailable</class><msg>'http://www.haskell.org/' link should use https:// on line: 15</msg></result>
 <result><category>dev-haskell</category><package>glut</package><version>2.4.0.0</version><class>HttpsAvailable</class><msg>'http://www.haskell.org/' link should use https:// on line: 15</msg></result>
 <result><category>dev-haskell</category><package>glut</package><version>2.5.1.1</version><class>HttpsAvailable</class><msg>'http://www.haskell.org/' link should use https:// on line: 16</msg></result>
@@ -769,8 +760,8 @@
 <result><category>dev-haskell</category><package>haddock</package><version>2.14.3.0.7.8.3</version><class>HttpsAvailable</class><msg>'http://www.haskell.org/' link should use https:// on line: 13</msg></result>
 <result><category>dev-haskell</category><package>haddock</package><version>2.16.1</version><class>HttpsAvailable</class><msg>'http://www.haskell.org/' link should use https:// on line: 13</msg></result>
 <result><category>dev-haskell</category><package>haddock</package><version>2.17.2</version><class>HttpsAvailable</class><msg>'http://www.haskell.org/' link should use https:// on line: 13</msg></result>
-<result><category>dev-haskell</category><package>haddock</package><version>2.16.1</version><class>DroppedKeywords</class><msg>alpha, ia64, ppc, ppc64, sparc</msg></result>
 <result><category>dev-haskell</category><package>haddock-api</package><version>2.16.1</version><class>HttpsAvailable</class><msg>'http://www.haskell.org/' link should use https:// on line: 12</msg></result>
+<result><category>dev-haskell</category><package>haddock</package><version>2.16.1</version><class>DroppedKeywords</class><msg>alpha, ia64, ppc, ppc64, sparc</msg></result>
 <result><category>dev-haskell</category><package>haddock-api</package><version>2.17.3</version><class>HttpsAvailable</class><msg>'http://www.haskell.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-haskell</category><package>haddock-library</package><version>1.1.1</version><class>HttpsAvailable</class><msg>'http://www.haskell.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-haskell</category><package>haddock-library</package><version>1.2.1</version><class>HttpsAvailable</class><msg>'http://www.haskell.org/' link should use https:// on line: 12</msg></result>
@@ -779,8 +770,8 @@
 <result><category>dev-haskell</category><package>happy</package><version>1.19.5</version><class>HttpsAvailable</class><msg>'http://www.haskell.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-haskell</category><package>hashable-time</package><version>0.2</version><class>HttpsAvailable</class><msg>'http://hackage.haskell.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-haskell</category><package>hashed-storage</package><version>0.5.11</version><class>HttpsAvailable</class><msg>'http://hackage.haskell.org/' link should use https:// on line: 12</msg></result>
-<result><category>dev-haskell</category><package>haskeline</package><version>0.7.2.3</version><class>DroppedKeywords</class><msg>alpha, ia64, ppc, ppc-macos, ppc64, sparc</msg></result>
 <result><category>dev-haskell</category><package>haskell-lexer</package><version>1.0-r1</version><class>HttpsAvailable</class><msg>'http://hackage.haskell.org/' link should use https:// on line: 12</msg></result>
+<result><category>dev-haskell</category><package>haskeline</package><version>0.7.2.3</version><class>DroppedKeywords</class><msg>alpha, ia64, ppc, ppc-macos, ppc64, sparc</msg></result>
 <result><category>dev-haskell</category><package>haskell-lexer</package><version>1.0.1</version><class>HttpsAvailable</class><msg>'http://hackage.haskell.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-haskell</category><package>haskell-platform</package><version>2012.4.0.0</version><class>HttpsAvailable</class><msg>'http://haskell.org/' link should use https:// on line: 7</msg></result>
 <result><category>dev-haskell</category><package>haskell-platform</package><version>2013.2.0.0-r2</version><class>HttpsAvailable</class><msg>'http://haskell.org/' link should use https:// on line: 7</msg></result>
@@ -813,8 +804,8 @@
 <result><category>dev-haskell</category><package>hsql</package><version>1.8.2-r1</version><class>HttpsAvailable</class><msg>'http://hackage.haskell.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-haskell</category><package>hsql-mysql</package><version>1.8.2</version><class>HttpsAvailable</class><msg>'http://hackage.haskell.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-haskell</category><package>hsql-mysql</package><version>1.8.3</version><class>HttpsAvailable</class><msg>'http://hackage.haskell.org/' link should use https:// on line: 12</msg></result>
-<result><category>dev-haskell</category><package>hsql-mysql</package><version>1.8.3</version><class>DroppedKeywords</class><msg>amd64, ppc, ppc64, sparc, x86</msg></result>
 <result><category>dev-haskell</category><package>hsql-odbc</package><version>1.8.2</version><class>HttpsAvailable</class><msg>'http://hackage.haskell.org/' link should use https:// on line: 12</msg></result>
+<result><category>dev-haskell</category><package>hsql-mysql</package><version>1.8.3</version><class>DroppedKeywords</class><msg>amd64, ppc, ppc64, sparc, x86</msg></result>
 <result><category>dev-haskell</category><package>hsql-postgresql</package><version>1.8.2</version><class>HttpsAvailable</class><msg>'http://hackage.haskell.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-haskell</category><package>hsql-sqlite3</package><version>1.8.2-r1</version><class>HttpsAvailable</class><msg>'http://hackage.haskell.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-haskell</category><package>hstringtemplate</package><version>0.7.3</version><class>HttpsAvailable</class><msg>'http://hackage.haskell.org/' link should use https:// on line: 15</msg></result>
@@ -842,8 +833,8 @@
 <result><category>dev-haskell</category><package>language-css</package><version>0.0.3</version><class>HttpsAvailable</class><msg>'http://hackage.haskell.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-haskell</category><package>language-dot</package><version>0.1.0</version><class>HttpsAvailable</class><msg>'http://hackage.haskell.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-haskell</category><package>language-glsl</package><version>0.2.0</version><class>HttpsAvailable</class><msg>'http://hackage.haskell.org/' link should use https:// on line: 12</msg></result>
-<result><category>dev-haskell</category><package>lens</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
 <result><category>dev-haskell</category><package>lens-family</package><version>1.2.1</version><class>HttpsAvailable</class><msg>'http://hackage.haskell.org/' link should use https:// on line: 12</msg></result>
+<result><category>dev-haskell</category><package>lens</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
 <result><category>dev-haskell</category><package>lens-family-core</package><version>1.2.1</version><class>HttpsAvailable</class><msg>'http://hackage.haskell.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-haskell</category><package>libxml</package><version>0.1.1</version><class>HttpsAvailable</class><msg>'http://hackage.haskell.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-haskell</category><package>linear</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
@@ -894,16 +885,16 @@
 <result><category>dev-haskell</category><package>opengl</package><version>2.9.2.0</version><class>HttpsAvailable</class><msg>'http://www.haskell.org/' link should use https:// on line: 15</msg></result>
 <result><category>dev-haskell</category><package>opengl</package><version>2.12.0.1</version><class>HttpsAvailable</class><msg>'http://www.haskell.org/' link should use https:// on line: 15</msg></result>
 <result><category>dev-haskell</category><package>opengl</package><version>3.0.1.0</version><class>HttpsAvailable</class><msg>'http://www.haskell.org/' link should use https:// on line: 15</msg></result>
-<result><category>dev-haskell</category><package>opengl</package><version>3.0.1.0</version><class>DroppedKeywords</class><msg>sparc</msg></result>
 <result><category>dev-haskell</category><package>openglraw</package><version>1.2.0.0</version><class>HttpsAvailable</class><msg>'http://www.haskell.org/' link should use https:// on line: 15</msg></result>
+<result><category>dev-haskell</category><package>opengl</package><version>3.0.1.0</version><class>DroppedKeywords</class><msg>sparc</msg></result>
 <result><category>dev-haskell</category><package>openglraw</package><version>1.3.0.0</version><class>HttpsAvailable</class><msg>'http://www.haskell.org/' link should use https:// on line: 15</msg></result>
 <result><category>dev-haskell</category><package>openglraw</package><version>1.5.0.0</version><class>HttpsAvailable</class><msg>'http://www.haskell.org/' link should use https:// on line: 16</msg></result>
 <result><category>dev-haskell</category><package>openglraw</package><version>2.5.1.0</version><class>HttpsAvailable</class><msg>'http://www.haskell.org/' link should use https:// on line: 16</msg></result>
 <result><category>dev-haskell</category><package>openglraw</package><version>3.2.4.0</version><class>HttpsAvailable</class><msg>'http://www.haskell.org/' link should use https:// on line: 16</msg></result>
-<result><category>dev-haskell</category><package>openglraw</package><version>3.2.4.0</version><class>DroppedKeywords</class><msg>sparc</msg></result>
 <result><category>dev-haskell</category><package>openssl-streams</package><version>1.2.1.0</version><class>HttpsAvailable</class><msg>'http://hackage.haskell.org/' link should use https:// on line: 12</msg></result>
-<result><category>dev-haskell</category><package>optparse-applicative</package><version>0.13.0.0</version><class>DroppedKeywords</class><msg>ppc, ppc64, sparc</msg></result>
+<result><category>dev-haskell</category><package>openglraw</package><version>3.2.4.0</version><class>DroppedKeywords</class><msg>sparc</msg></result>
 <result><category>dev-haskell</category><package>optparse-simple</package><version>0.0.3</version><class>HttpsAvailable</class><msg>'http://hackage.haskell.org/' link should use https:// on line: 12</msg></result>
+<result><category>dev-haskell</category><package>optparse-applicative</package><version>0.13.0.0</version><class>DroppedKeywords</class><msg>ppc, ppc64, sparc</msg></result>
 <result><category>dev-haskell</category><package>pandoc-citeproc</package><version>0.1.2.1</version><class>HttpsAvailable</class><msg>'http://hackage.haskell.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-haskell</category><package>pandoc-citeproc</package><version>0.2</version><class>HttpsAvailable</class><msg>'http://hackage.haskell.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-haskell</category><package>pandoc-citeproc</package><version>0.3.1</version><class>HttpsAvailable</class><msg>'http://hackage.haskell.org/' link should use https:// on line: 13</msg></result>
@@ -997,8 +988,8 @@
 <result><category>dev-haskell</category><package>tar</package><version>0.4.0.1</version><class>HttpsAvailable</class><msg>'http://hackage.haskell.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-haskell</category><package>tar</package><version>0.4.2.1</version><class>HttpsAvailable</class><msg>'http://hackage.haskell.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-haskell</category><package>tar</package><version>0.5.0.3</version><class>HttpsAvailable</class><msg>'http://hackage.haskell.org/' link should use https:// on line: 12</msg></result>
-<result><category>dev-haskell</category><package>tar</package><version>0.4.2.1</version><class>DroppedKeywords</class><msg>alpha, ia64, ppc, ppc64, sparc, x86-fbsd</msg></result>
 <result><category>dev-haskell</category><package>tasty</package><version>0.3.1</version><class>HttpsAvailable</class><msg>'http://hackage.haskell.org/' link should use https:// on line: 12</msg></result>
+<result><category>dev-haskell</category><package>tar</package><version>0.4.2.1</version><class>DroppedKeywords</class><msg>alpha, ia64, ppc, ppc64, sparc, x86-fbsd</msg></result>
 <result><category>dev-haskell</category><package>tasty</package><version>0.5.2</version><class>HttpsAvailable</class><msg>'http://hackage.haskell.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-haskell</category><package>tasty</package><version>0.8.1.2</version><class>DroppedKeywords</class><msg>ppc, ppc64, sparc</msg></result>
 <result><category>dev-haskell</category><package>tasty-hunit</package><version>0.2</version><class>HttpsAvailable</class><msg>'http://hackage.haskell.org/' link should use https:// on line: 12</msg></result>
@@ -1038,8 +1029,8 @@
 <result><category>dev-haskell</category><package>url</package><version>2.1.3-r1</version><class>HttpsAvailable</class><msg>'http://www.haskell.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-haskell</category><package>utf8-light</package><version>0.4.2</version><class>HttpsAvailable</class><msg>'http://hackage.haskell.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-haskell</category><package>uuagc</package><version>0.9.52.1</version><class>DroppedKeywords</class><msg>ppc, ppc64, sparc</msg></result>
-<result><category>dev-haskell</category><package>vector</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
 <result><category>dev-haskell</category><package>vector-algorithms</package><version>0.5.4.2</version><class>HttpsAvailable</class><msg>'http://code.haskell.org/' link should use https:// on line: 12</msg></result>
+<result><category>dev-haskell</category><package>vector</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
 <result><category>dev-haskell</category><package>vector-algorithms</package><version>0.6.0.4</version><class>HttpsAvailable</class><msg>'http://code.haskell.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-haskell</category><package>vector-algorithms</package><version>0.7.0.1</version><class>HttpsAvailable</class><msg>'http://code.haskell.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-haskell</category><package>vector-space</package><version>0.10.4</version><class>HttpsAvailable</class><msg>'http://hackage.haskell.org/' link should use https:// on line: 12</msg></result>
@@ -1094,10 +1085,10 @@
 <result><category>dev-db</category><package>mysql</package><version>5.5.57</version><class>VulnerablePackage</class><msg>vulnerable via glsa(201702-17) ( ver &lt; 5.6.35 ), keywords: alpha, amd64, amd64-linux, arm, hppa, ia64, mips, ppc, ppc-macos, ppc64, s390, sh, sparc, sparc-fbsd, x64-macos, x64-solaris, x86, x86-fbsd, x86-linux, x86-macos, x86-solaris</msg></result>
 <result><category>dev-db</category><package>mysql-workbench</package><version>6.3.9</version><class>DroppedKeywords</class><msg>ppc</msg></result>
 <result><category>dev-db</category><package>opendbx</package><version>1.5.0-r1</version><class>DroppedKeywords</class><msg>amd64, x86</msg></result>
-<result><category>dev-db</category><package>oracle-instantclient</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
 <result><category>dev-db</category><package>oracle-instantclient-basic</package><version>10.2.0.3-r1</version><class>AbsoluteSymlink</class><msg>'dosym /usr/$(get_libdir)/oracle/${PV}/client/lib/libocci.so.10.1 ...' uses absolute path on line 73</msg></result>
 <result><category>dev-db</category><package>oracle-instantclient-basic</package><version>10.2.0.3-r1</version><class>AbsoluteSymlink</class><msg>'dosym /usr/$(get_libdir)/oracle/${PV}/client/lib/libclntsh.so.10.1 ...' uses absolute path on line 74</msg></result>
 <result><category>dev-db</category><package>oracle-instantclient-basic</package><version>10.2.0.3-r1</version><class>AbsoluteSymlink</class><msg>'dosym /usr/$(get_libdir)/oracle/${PV}/client/include ...' uses absolute path on line 75</msg></result>
+<result><category>dev-db</category><package>oracle-instantclient</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
 <result><category>dev-db</category><package>oracle-instantclient-basic</package><version>11.2.0.2</version><class>AbsoluteSymlink</class><msg>'dosym /usr/$(get_libdir)/oracle/${PV}/client/lib/libocci.so.11.1 ...' uses absolute path on line 72</msg></result>
 <result><category>dev-db</category><package>oracle-instantclient-basic</package><version>11.2.0.2</version><class>AbsoluteSymlink</class><msg>'dosym /usr/$(get_libdir)/oracle/${PV}/client/lib/libclntsh.so.11.1 ...' uses absolute path on line 73</msg></result>
 <result><category>dev-db</category><package>oracle-instantclient-basic</package><version>11.2.0.2</version><class>AbsoluteSymlink</class><msg>'dosym /usr/$(get_libdir)/oracle/${PV}/client/include ...' uses absolute path on line 74</msg></result>
@@ -1307,7 +1298,6 @@
 <result><category>dev-java</category><package>ant-ivy</package><version>2.3.0-r2</version><class>HttpsAvailable</class><msg>'http://ant.apache.org/' link should use https:// on line: 20</msg></result>
 <result><category>dev-java</category><package>antlr</package><version>3.2</version><class>DroppedKeywords</class><msg>amd64-fbsd, x86-fbsd</msg></result>
 <result><category>dev-java</category><package>antlr</package><version>3.5.2</version><class>DroppedKeywords</class><msg>arm64</msg></result>
-<result><category>dev-java</category><package>appframework</package><version>1.03-r5</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on line: 15</msg></result>
 <result><category>dev-java</category><package>appframework</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
 <result><category>dev-java</category><package>asm</package><version>5.0.3</version><class>DroppedKeywords</class><msg>sparc-solaris, x86-fbsd, x86-solaris</msg></result>
 <result><category>dev-java</category><package>asm</package><version>5.1</version><class>DroppedKeywords</class><msg>arm64</msg></result>
@@ -1320,7 +1310,6 @@
 <result><category>dev-java</category><package>bcel</package><version>6.0_rc3</version><class>HttpsAvailable</class><msg>'http://commons.apache.org/' link should use https:// on line: 15</msg></result>
 <result><category>dev-java</category><package>bcmail</package><version>1.50-r3</version><class>DroppedKeywords</class><msg>arm64, ppc-macos, x86-macos</msg></result>
 <result><category>dev-java</category><package>bcprov</package><version>1.48-r2</version><class>DroppedKeywords</class><msg>arm64</msg></result>
-<result><category>dev-java</category><package>beansbinding</package><version>1.2.1-r3</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-java</category><package>bsf</package><version>2.4.0-r2</version><class>HttpsAvailable</class><msg>'http://commons.apache.org/' link should use https:// on line: 10</msg></result>
 <result><category>dev-java</category><package>codemodel</package><version>2.6</version><class>HttpsAvailable</class><msg>'http://repo.maven.apache.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-java</category><package>commons-beanutils</package><version>1.9.2</version><class>HttpsAvailable</class><msg>'http://commons.apache.org/' link should use https:// on line: 10</msg></result>
@@ -1344,7 +1333,6 @@
 <result><category>dev-java</category><package>commons-el</package><version>1.0-r3</version><class>HttpsAvailable</class><msg>'http://commons.apache.org/' link should use https:// on line: 11</msg></result>
 <result><category>dev-java</category><package>commons-email</package><version>1.4</version><class>HttpsAvailable</class><msg>'http://commons.apache.org/' link should use https:// on line: 10</msg></result>
 <result><category>dev-java</category><package>commons-fileupload</package><version>1.3</version><class>HttpsAvailable</class><msg>'http://commons.apache.org/' link should use https:// on line: 11</msg></result>
-<result><category>dev-java</category><package>commons-graph</package><version>0.1</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on line: 11</msg></result>
 <result><category>dev-java</category><package>commons-httpclient</package><version>3.1-r1</version><class>HttpsAvailable</class><msg>'http://hc.apache.org/' link should use https:// on line: 11</msg></result>
 <result><category>dev-java</category><package>commons-io</package><version>2.4</version><class>HttpsAvailable</class><msg>'http://commons.apache.org/' link should use https:// on line: 11</msg></result>
 <result><category>dev-java</category><package>commons-jelly</package><version>1.0-r8</version><class>HttpsAvailable</class><msg>'http://commons.apache.org/' link should use https:// on line: 12</msg></result>
@@ -1378,7 +1366,6 @@
 <result><category>dev-java</category><package>commons-vfs</package><version>2.0-r1</version><class>DroppedKeywords</class><msg>ppc64</msg></result>
 <result><category>dev-java</category><package>ecs</package><version>1.4.2-r2</version><class>HttpsAvailable</class><msg>'http://jakarta.apache.org/' link should use https:// on line: 11</msg></result>
 <result><category>dev-java</category><package>ezmorph</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
-<result><category>dev-java</category><package>fec</package><version>1.0.4-r2</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on line: 11</msg></result>
 <result><category>dev-java</category><package>felix-bundlerepository</package><version>1.6.6</version><class>HttpsAvailable</class><msg>'http://felix.apache.org/' link should use https:// on line: 9</msg></result>
 <result><category>dev-java</category><package>felix-gogo-command</package><version>0.12.0</version><class>HttpsAvailable</class><msg>'http://felix.apache.org/' link should use https:// on line: 9</msg></result>
 <result><category>dev-java</category><package>felix-gogo-runtime</package><version>0.10.0</version><class>HttpsAvailable</class><msg>'http://felix.apache.org/' link should use https:// on line: 9</msg></result>
@@ -1422,7 +1409,6 @@
 <result><category>dev-java</category><package>jakarta-regexp</package><version>1.3-r5</version><class>HttpsAvailable</class><msg>'http://jakarta.apache.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-java</category><package>jakarta-regexp</package><version>1.4-r2</version><class>HttpsAvailable</class><msg>'http://jakarta.apache.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-java</category><package>jakarta-regexp</package><version>1.5</version><class>HttpsAvailable</class><msg>'http://jakarta.apache.org/' link should use https:// on line: 12</msg></result>
-<result><category>dev-java</category><package>jal</package><version>20031117-r5</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-java</category><package>jamvm</package><version>2.0.0-r1</version><class>AbsoluteSymlink</class><msg>'dosym /usr/bin/jamvm ...' uses absolute path on line 86</msg></result>
 <result><category>dev-java</category><package>jamvm</package><version>2.0.0-r1</version><class>AbsoluteSymlink</class><msg>'dosym /usr/share/classpath/glibj.zip ...' uses absolute path on line 97</msg></result>
 <result><category>dev-java</category><package>jamvm</package><version>2.0.0-r1</version><class>AbsoluteSymlink</class><msg>'dosym /usr/share/classpath/tools.zip ...' uses absolute path on line 99</msg></result>
@@ -1478,101 +1464,81 @@
 <result><category>dev-java</category><package>netbeans-apisupport</package><version>8.0.2</version><class>HttpsAvailable</class><msg>'http://download.netbeans.org/' link should use https:// on line: 10</msg></result>
 <result><category>dev-java</category><package>netbeans-apisupport</package><version>8.0.2</version><class>HttpsAvailable</class><msg>'http://netbeans.org/' link should use https:// on line: 8</msg></result>
 <result><category>dev-java</category><package>netbeans-apisupport</package><version>8.1</version><class>HttpsAvailable</class><msg>'http://download.netbeans.org/' link should use https:// on line: 10</msg></result>
-<result><category>dev-java</category><package>netbeans-apisupport</package><version>8.1</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-java</category><package>netbeans-apisupport</package><version>8.1</version><class>HttpsAvailable</class><msg>'http://netbeans.org/' link should use https:// on line: 8</msg></result>
 <result><category>dev-java</category><package>netbeans-apisupport</package><version>8.2</version><class>HttpsAvailable</class><msg>'http://download.netbeans.org/' link should use https:// on line: 10</msg></result>
-<result><category>dev-java</category><package>netbeans-apisupport</package><version>8.2</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-java</category><package>netbeans-apisupport</package><version>8.2</version><class>HttpsAvailable</class><msg>'http://netbeans.org/' link should use https:// on line: 8</msg></result>
 <result><category>dev-java</category><package>netbeans-cnd</package><version>8.0.2</version><class>HttpsAvailable</class><msg>'http://download.netbeans.org/' link should use https:// on line: 10</msg></result>
 <result><category>dev-java</category><package>netbeans-cnd</package><version>8.0.2</version><class>HttpsAvailable</class><msg>'http://hg.netbeans.org/' link should use https:// on lines: 13, 14, 15, 16, 17</msg></result>
 <result><category>dev-java</category><package>netbeans-cnd</package><version>8.0.2</version><class>HttpsAvailable</class><msg>'http://netbeans.org/' link should use https:// on line: 8</msg></result>
 <result><category>dev-java</category><package>netbeans-cnd</package><version>8.1</version><class>HttpsAvailable</class><msg>'http://download.netbeans.org/' link should use https:// on line: 10</msg></result>
 <result><category>dev-java</category><package>netbeans-cnd</package><version>8.1</version><class>HttpsAvailable</class><msg>'http://hg.netbeans.org/' link should use https:// on lines: 13, 14, 15, 16, 17, 18</msg></result>
-<result><category>dev-java</category><package>netbeans-cnd</package><version>8.1</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-java</category><package>netbeans-cnd</package><version>8.1</version><class>HttpsAvailable</class><msg>'http://netbeans.org/' link should use https:// on line: 8</msg></result>
 <result><category>dev-java</category><package>netbeans-cnd</package><version>8.2</version><class>HttpsAvailable</class><msg>'http://download.netbeans.org/' link should use https:// on line: 10</msg></result>
 <result><category>dev-java</category><package>netbeans-cnd</package><version>8.2</version><class>HttpsAvailable</class><msg>'http://hg.netbeans.org/' link should use https:// on lines: 13, 14, 15, 16, 17, 18</msg></result>
-<result><category>dev-java</category><package>netbeans-cnd</package><version>8.2</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-java</category><package>netbeans-cnd</package><version>8.2</version><class>HttpsAvailable</class><msg>'http://netbeans.org/' link should use https:// on line: 8</msg></result>
 <result><category>dev-java</category><package>netbeans-dlight</package><version>8.0.2</version><class>HttpsAvailable</class><msg>'http://download.netbeans.org/' link should use https:// on line: 10</msg></result>
 <result><category>dev-java</category><package>netbeans-dlight</package><version>8.0.2</version><class>HttpsAvailable</class><msg>'http://hg.netbeans.org/' link should use https:// on line: 13</msg></result>
 <result><category>dev-java</category><package>netbeans-dlight</package><version>8.0.2</version><class>HttpsAvailable</class><msg>'http://netbeans.org/' link should use https:// on line: 8</msg></result>
 <result><category>dev-java</category><package>netbeans-dlight</package><version>8.1</version><class>HttpsAvailable</class><msg>'http://download.netbeans.org/' link should use https:// on line: 10</msg></result>
 <result><category>dev-java</category><package>netbeans-dlight</package><version>8.1</version><class>HttpsAvailable</class><msg>'http://hg.netbeans.org/' link should use https:// on line: 13</msg></result>
-<result><category>dev-java</category><package>netbeans-dlight</package><version>8.1</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-java</category><package>netbeans-dlight</package><version>8.1</version><class>HttpsAvailable</class><msg>'http://netbeans.org/' link should use https:// on line: 8</msg></result>
 <result><category>dev-java</category><package>netbeans-dlight</package><version>8.2</version><class>HttpsAvailable</class><msg>'http://download.netbeans.org/' link should use https:// on line: 10</msg></result>
 <result><category>dev-java</category><package>netbeans-dlight</package><version>8.2</version><class>HttpsAvailable</class><msg>'http://hg.netbeans.org/' link should use https:// on line: 13</msg></result>
-<result><category>dev-java</category><package>netbeans-dlight</package><version>8.2</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-java</category><package>netbeans-dlight</package><version>8.2</version><class>HttpsAvailable</class><msg>'http://netbeans.org/' link should use https:// on line: 8</msg></result>
 <result><category>dev-java</category><package>netbeans-enterprise</package><version>8.0.2-r1</version><class>HttpsAvailable</class><msg>'http://download.netbeans.org/' link should use https:// on line: 10</msg></result>
 <result><category>dev-java</category><package>netbeans-enterprise</package><version>8.0.2-r1</version><class>HttpsAvailable</class><msg>'http://hg.netbeans.org/' link should use https:// on lines: 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44</msg></result>
 <result><category>dev-java</category><package>netbeans-enterprise</package><version>8.0.2-r1</version><class>HttpsAvailable</class><msg>'http://netbeans.org/' link should use https:// on line: 8</msg></result>
 <result><category>dev-java</category><package>netbeans-enterprise</package><version>8.1-r1</version><class>HttpsAvailable</class><msg>'http://download.netbeans.org/' link should use https:// on line: 10</msg></result>
 <result><category>dev-java</category><package>netbeans-enterprise</package><version>8.1-r1</version><class>HttpsAvailable</class><msg>'http://hg.netbeans.org/' link should use https:// on lines: 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43</msg></result>
-<result><category>dev-java</category><package>netbeans-enterprise</package><version>8.1-r1</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-java</category><package>netbeans-enterprise</package><version>8.1-r1</version><class>HttpsAvailable</class><msg>'http://netbeans.org/' link should use https:// on line: 8</msg></result>
 <result><category>dev-java</category><package>netbeans-enterprise</package><version>8.2</version><class>HttpsAvailable</class><msg>'http://download.netbeans.org/' link should use https:// on line: 10</msg></result>
 <result><category>dev-java</category><package>netbeans-enterprise</package><version>8.2</version><class>HttpsAvailable</class><msg>'http://hg.netbeans.org/' link should use https:// on lines: 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43</msg></result>
-<result><category>dev-java</category><package>netbeans-enterprise</package><version>8.2</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-java</category><package>netbeans-enterprise</package><version>8.2</version><class>HttpsAvailable</class><msg>'http://netbeans.org/' link should use https:// on line: 8</msg></result>
 <result><category>dev-java</category><package>netbeans-enterprise</package><version>8.2-r1</version><class>HttpsAvailable</class><msg>'http://download.netbeans.org/' link should use https:// on line: 10</msg></result>
 <result><category>dev-java</category><package>netbeans-enterprise</package><version>8.2-r1</version><class>HttpsAvailable</class><msg>'http://hg.netbeans.org/' link should use https:// on lines: 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43</msg></result>
-<result><category>dev-java</category><package>netbeans-enterprise</package><version>8.2-r1</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-java</category><package>netbeans-enterprise</package><version>8.2-r1</version><class>HttpsAvailable</class><msg>'http://netbeans.org/' link should use https:// on line: 8</msg></result>
 <result><category>dev-java</category><package>netbeans-ergonomics</package><version>8.0.2</version><class>HttpsAvailable</class><msg>'http://download.netbeans.org/' link should use https:// on line: 10</msg></result>
 <result><category>dev-java</category><package>netbeans-ergonomics</package><version>8.0.2</version><class>HttpsAvailable</class><msg>'http://netbeans.org/' link should use https:// on line: 8</msg></result>
 <result><category>dev-java</category><package>netbeans-ergonomics</package><version>8.1</version><class>HttpsAvailable</class><msg>'http://download.netbeans.org/' link should use https:// on line: 10</msg></result>
-<result><category>dev-java</category><package>netbeans-ergonomics</package><version>8.1</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-java</category><package>netbeans-ergonomics</package><version>8.1</version><class>HttpsAvailable</class><msg>'http://netbeans.org/' link should use https:// on line: 8</msg></result>
 <result><category>dev-java</category><package>netbeans-ergonomics</package><version>8.2</version><class>HttpsAvailable</class><msg>'http://download.netbeans.org/' link should use https:// on line: 10</msg></result>
-<result><category>dev-java</category><package>netbeans-ergonomics</package><version>8.2</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-java</category><package>netbeans-ergonomics</package><version>8.2</version><class>HttpsAvailable</class><msg>'http://netbeans.org/' link should use https:// on line: 8</msg></result>
 <result><category>dev-java</category><package>netbeans-extide</package><version>8.0.2</version><class>HttpsAvailable</class><msg>'http://download.netbeans.org/' link should use https:// on line: 10</msg></result>
 <result><category>dev-java</category><package>netbeans-extide</package><version>8.0.2</version><class>HttpsAvailable</class><msg>'http://hg.netbeans.org/' link should use https:// on lines: 13, 14</msg></result>
 <result><category>dev-java</category><package>netbeans-extide</package><version>8.0.2</version><class>HttpsAvailable</class><msg>'http://netbeans.org/' link should use https:// on line: 8</msg></result>
 <result><category>dev-java</category><package>netbeans-extide</package><version>8.1</version><class>HttpsAvailable</class><msg>'http://download.netbeans.org/' link should use https:// on line: 10</msg></result>
 <result><category>dev-java</category><package>netbeans-extide</package><version>8.1</version><class>HttpsAvailable</class><msg>'http://hg.netbeans.org/' link should use https:// on lines: 13, 14</msg></result>
-<result><category>dev-java</category><package>netbeans-extide</package><version>8.1</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-java</category><package>netbeans-extide</package><version>8.1</version><class>HttpsAvailable</class><msg>'http://netbeans.org/' link should use https:// on line: 8</msg></result>
 <result><category>dev-java</category><package>netbeans-extide</package><version>8.2</version><class>HttpsAvailable</class><msg>'http://download.netbeans.org/' link should use https:// on line: 10</msg></result>
 <result><category>dev-java</category><package>netbeans-extide</package><version>8.2</version><class>HttpsAvailable</class><msg>'http://hg.netbeans.org/' link should use https:// on lines: 13, 14</msg></result>
-<result><category>dev-java</category><package>netbeans-extide</package><version>8.2</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-java</category><package>netbeans-extide</package><version>8.2</version><class>HttpsAvailable</class><msg>'http://netbeans.org/' link should use https:// on line: 8</msg></result>
 <result><category>dev-java</category><package>netbeans-groovy</package><version>8.0.2</version><class>HttpsAvailable</class><msg>'http://download.netbeans.org/' link should use https:// on line: 10</msg></result>
 <result><category>dev-java</category><package>netbeans-groovy</package><version>8.0.2</version><class>HttpsAvailable</class><msg>'http://hg.netbeans.org/' link should use https:// on line: 13</msg></result>
 <result><category>dev-java</category><package>netbeans-groovy</package><version>8.0.2</version><class>HttpsAvailable</class><msg>'http://netbeans.org/' link should use https:// on line: 8</msg></result>
 <result><category>dev-java</category><package>netbeans-groovy</package><version>8.1</version><class>HttpsAvailable</class><msg>'http://download.netbeans.org/' link should use https:// on line: 10</msg></result>
 <result><category>dev-java</category><package>netbeans-groovy</package><version>8.1</version><class>HttpsAvailable</class><msg>'http://hg.netbeans.org/' link should use https:// on line: 13</msg></result>
-<result><category>dev-java</category><package>netbeans-groovy</package><version>8.1</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-java</category><package>netbeans-groovy</package><version>8.1</version><class>HttpsAvailable</class><msg>'http://netbeans.org/' link should use https:// on line: 8</msg></result>
 <result><category>dev-java</category><package>netbeans-groovy</package><version>8.2</version><class>HttpsAvailable</class><msg>'http://download.netbeans.org/' link should use https:// on line: 10</msg></result>
 <result><category>dev-java</category><package>netbeans-groovy</package><version>8.2</version><class>HttpsAvailable</class><msg>'http://hg.netbeans.org/' link should use https:// on line: 13</msg></result>
-<result><category>dev-java</category><package>netbeans-groovy</package><version>8.2</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-java</category><package>netbeans-groovy</package><version>8.2</version><class>HttpsAvailable</class><msg>'http://netbeans.org/' link should use https:// on line: 8</msg></result>
 <result><category>dev-java</category><package>netbeans-harness</package><version>8.0.2</version><class>HttpsAvailable</class><msg>'http://download.netbeans.org/' link should use https:// on line: 10</msg></result>
 <result><category>dev-java</category><package>netbeans-harness</package><version>8.0.2</version><class>HttpsAvailable</class><msg>'http://hg.netbeans.org/' link should use https:// on lines: 13, 14, 15, 16, 17</msg></result>
 <result><category>dev-java</category><package>netbeans-harness</package><version>8.0.2</version><class>HttpsAvailable</class><msg>'http://netbeans.org/' link should use https:// on line: 8</msg></result>
 <result><category>dev-java</category><package>netbeans-harness</package><version>8.1</version><class>HttpsAvailable</class><msg>'http://download.netbeans.org/' link should use https:// on line: 10</msg></result>
 <result><category>dev-java</category><package>netbeans-harness</package><version>8.1</version><class>HttpsAvailable</class><msg>'http://hg.netbeans.org/' link should use https:// on lines: 13, 14, 15, 16, 17</msg></result>
-<result><category>dev-java</category><package>netbeans-harness</package><version>8.1</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-java</category><package>netbeans-harness</package><version>8.1</version><class>HttpsAvailable</class><msg>'http://netbeans.org/' link should use https:// on line: 8</msg></result>
 <result><category>dev-java</category><package>netbeans-harness</package><version>8.2</version><class>HttpsAvailable</class><msg>'http://download.netbeans.org/' link should use https:// on line: 10</msg></result>
 <result><category>dev-java</category><package>netbeans-harness</package><version>8.2</version><class>HttpsAvailable</class><msg>'http://hg.netbeans.org/' link should use https:// on lines: 13, 14, 15, 16, 17</msg></result>
-<result><category>dev-java</category><package>netbeans-harness</package><version>8.2</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-java</category><package>netbeans-harness</package><version>8.2</version><class>HttpsAvailable</class><msg>'http://netbeans.org/' link should use https:// on line: 8</msg></result>
 <result><category>dev-java</category><package>netbeans-ide</package><version>8.0.2-r2</version><class>HttpsAvailable</class><msg>'http://download.netbeans.org/' link should use https:// on line: 10</msg></result>
 <result><category>dev-java</category><package>netbeans-ide</package><version>8.0.2-r2</version><class>HttpsAvailable</class><msg>'http://hg.netbeans.org/' link should use https:// on lines: 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87</msg></result>
-<result><category>dev-java</category><package>netbeans-ide</package><version>8.0.2-r2</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-java</category><package>netbeans-ide</package><version>8.0.2-r2</version><class>HttpsAvailable</class><msg>'http://netbeans.org/' link should use https:// on line: 8</msg></result>
 <result><category>dev-java</category><package>netbeans-ide</package><version>8.1-r2</version><class>HttpsAvailable</class><msg>'http://download.netbeans.org/' link should use https:// on line: 10</msg></result>
 <result><category>dev-java</category><package>netbeans-ide</package><version>8.1-r2</version><class>HttpsAvailable</class><msg>'http://hg.netbeans.org/' link should use https:// on lines: 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87</msg></result>
-<result><category>dev-java</category><package>netbeans-ide</package><version>8.1-r2</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-java</category><package>netbeans-ide</package><version>8.1-r2</version><class>HttpsAvailable</class><msg>'http://netbeans.org/' link should use https:// on line: 8</msg></result>
 <result><category>dev-java</category><package>netbeans-ide</package><version>8.1-r2</version><class>MissingSlotDep</class><msg>'&gt;=virtual/jdk-1.7' matches more than one slot: [ 1.7, 1.8 ]</msg></result>
 <result><category>dev-java</category><package>netbeans-ide</package><version>8.2</version><class>HttpsAvailable</class><msg>'http://download.netbeans.org/' link should use https:// on line: 10</msg></result>
 <result><category>dev-java</category><package>netbeans-ide</package><version>8.2</version><class>HttpsAvailable</class><msg>'http://hg.netbeans.org/' link should use https:// on lines: 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83</msg></result>
-<result><category>dev-java</category><package>netbeans-ide</package><version>8.2</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-java</category><package>netbeans-ide</package><version>8.2</version><class>HttpsAvailable</class><msg>'http://netbeans.org/' link should use https:// on line: 8</msg></result>
 <result><category>dev-java</category><package>netbeans-java</package><version>8.0.2-r5</version><class>HttpsAvailable</class><msg>'http://download.netbeans.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-java</category><package>netbeans-java</package><version>8.0.2-r5</version><class>HttpsAvailable</class><msg>'http://hg.netbeans.org/' link should use https:// on lines: 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35</msg></result>
@@ -1582,60 +1548,48 @@
 <result><category>dev-java</category><package>netbeans-java</package><version>8.0.2-r6</version><class>HttpsAvailable</class><msg>'http://netbeans.org/' link should use https:// on line: 10</msg></result>
 <result><category>dev-java</category><package>netbeans-java</package><version>8.1-r2</version><class>HttpsAvailable</class><msg>'http://download.netbeans.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-java</category><package>netbeans-java</package><version>8.1-r2</version><class>HttpsAvailable</class><msg>'http://hg.netbeans.org/' link should use https:// on lines: 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38</msg></result>
-<result><category>dev-java</category><package>netbeans-java</package><version>8.1-r2</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on line: 15</msg></result>
 <result><category>dev-java</category><package>netbeans-java</package><version>8.1-r2</version><class>HttpsAvailable</class><msg>'http://netbeans.org/' link should use https:// on line: 10</msg></result>
 <result><category>dev-java</category><package>netbeans-java</package><version>8.1-r3</version><class>HttpsAvailable</class><msg>'http://download.netbeans.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-java</category><package>netbeans-java</package><version>8.1-r3</version><class>HttpsAvailable</class><msg>'http://hg.netbeans.org/' link should use https:// on lines: 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38</msg></result>
-<result><category>dev-java</category><package>netbeans-java</package><version>8.1-r3</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on line: 15</msg></result>
 <result><category>dev-java</category><package>netbeans-java</package><version>8.1-r3</version><class>HttpsAvailable</class><msg>'http://netbeans.org/' link should use https:// on line: 10</msg></result>
 <result><category>dev-java</category><package>netbeans-java</package><version>8.2</version><class>HttpsAvailable</class><msg>'http://download.netbeans.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-java</category><package>netbeans-java</package><version>8.2</version><class>HttpsAvailable</class><msg>'http://hg.netbeans.org/' link should use https:// on lines: 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41</msg></result>
-<result><category>dev-java</category><package>netbeans-java</package><version>8.2</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on line: 15</msg></result>
 <result><category>dev-java</category><package>netbeans-java</package><version>8.2</version><class>HttpsAvailable</class><msg>'http://netbeans.org/' link should use https:// on line: 10</msg></result>
 <result><category>dev-java</category><package>netbeans-java</package><version>8.2-r1</version><class>HttpsAvailable</class><msg>'http://download.netbeans.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-java</category><package>netbeans-java</package><version>8.2-r1</version><class>HttpsAvailable</class><msg>'http://hg.netbeans.org/' link should use https:// on lines: 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41</msg></result>
-<result><category>dev-java</category><package>netbeans-java</package><version>8.2-r1</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on line: 15</msg></result>
 <result><category>dev-java</category><package>netbeans-java</package><version>8.2-r1</version><class>HttpsAvailable</class><msg>'http://netbeans.org/' link should use https:// on line: 10</msg></result>
 <result><category>dev-java</category><package>netbeans-javacard</package><version>8.0.2</version><class>HttpsAvailable</class><msg>'http://download.netbeans.org/' link should use https:// on line: 10</msg></result>
 <result><category>dev-java</category><package>netbeans-javacard</package><version>8.0.2</version><class>HttpsAvailable</class><msg>'http://hg.netbeans.org/' link should use https:// on lines: 13, 14, 15</msg></result>
 <result><category>dev-java</category><package>netbeans-javacard</package><version>8.0.2</version><class>HttpsAvailable</class><msg>'http://netbeans.org/' link should use https:// on line: 8</msg></result>
 <result><category>dev-java</category><package>netbeans-javacard</package><version>8.1</version><class>HttpsAvailable</class><msg>'http://download.netbeans.org/' link should use https:// on line: 10</msg></result>
 <result><category>dev-java</category><package>netbeans-javacard</package><version>8.1</version><class>HttpsAvailable</class><msg>'http://hg.netbeans.org/' link should use https:// on lines: 13, 14, 15</msg></result>
-<result><category>dev-java</category><package>netbeans-javacard</package><version>8.1</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-java</category><package>netbeans-javacard</package><version>8.1</version><class>HttpsAvailable</class><msg>'http://netbeans.org/' link should use https:// on line: 8</msg></result>
 <result><category>dev-java</category><package>netbeans-javacard</package><version>8.2</version><class>HttpsAvailable</class><msg>'http://download.netbeans.org/' link should use https:// on line: 10</msg></result>
 <result><category>dev-java</category><package>netbeans-javacard</package><version>8.2</version><class>HttpsAvailable</class><msg>'http://hg.netbeans.org/' link should use https:// on lines: 13, 14, 15</msg></result>
-<result><category>dev-java</category><package>netbeans-javacard</package><version>8.2</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-java</category><package>netbeans-javacard</package><version>8.2</version><class>HttpsAvailable</class><msg>'http://netbeans.org/' link should use https:// on line: 8</msg></result>
 <result><category>dev-java</category><package>netbeans-javadoc</package><version>8.0.2</version><class>HttpsAvailable</class><msg>'http://download.netbeans.org/' link should use https:// on line: 10</msg></result>
 <result><category>dev-java</category><package>netbeans-javadoc</package><version>8.0.2</version><class>HttpsAvailable</class><msg>'http://hg.netbeans.org/' link should use https:// on line: 13</msg></result>
 <result><category>dev-java</category><package>netbeans-javadoc</package><version>8.0.2</version><class>HttpsAvailable</class><msg>'http://netbeans.org/' link should use https:// on line: 8</msg></result>
 <result><category>dev-java</category><package>netbeans-javadoc</package><version>8.1</version><class>HttpsAvailable</class><msg>'http://download.netbeans.org/' link should use https:// on line: 10</msg></result>
 <result><category>dev-java</category><package>netbeans-javadoc</package><version>8.1</version><class>HttpsAvailable</class><msg>'http://hg.netbeans.org/' link should use https:// on line: 13</msg></result>
-<result><category>dev-java</category><package>netbeans-javadoc</package><version>8.1</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-java</category><package>netbeans-javadoc</package><version>8.1</version><class>HttpsAvailable</class><msg>'http://netbeans.org/' link should use https:// on line: 8</msg></result>
 <result><category>dev-java</category><package>netbeans-javadoc</package><version>8.2</version><class>HttpsAvailable</class><msg>'http://download.netbeans.org/' link should use https:// on line: 10</msg></result>
 <result><category>dev-java</category><package>netbeans-javadoc</package><version>8.2</version><class>HttpsAvailable</class><msg>'http://hg.netbeans.org/' link should use https:// on line: 13</msg></result>
-<result><category>dev-java</category><package>netbeans-javadoc</package><version>8.2</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-java</category><package>netbeans-javadoc</package><version>8.2</version><class>HttpsAvailable</class><msg>'http://netbeans.org/' link should use https:// on line: 8</msg></result>
 <result><category>dev-java</category><package>netbeans-javafx</package><version>8.0.2</version><class>HttpsAvailable</class><msg>'http://download.netbeans.org/' link should use https:// on line: 10</msg></result>
 <result><category>dev-java</category><package>netbeans-javafx</package><version>8.0.2</version><class>HttpsAvailable</class><msg>'http://hg.netbeans.org/' link should use https:// on lines: 13, 14, 15, 16, 17, 18</msg></result>
 <result><category>dev-java</category><package>netbeans-javafx</package><version>8.0.2</version><class>HttpsAvailable</class><msg>'http://netbeans.org/' link should use https:// on line: 8</msg></result>
 <result><category>dev-java</category><package>netbeans-javafx</package><version>8.1</version><class>HttpsAvailable</class><msg>'http://download.netbeans.org/' link should use https:// on line: 10</msg></result>
 <result><category>dev-java</category><package>netbeans-javafx</package><version>8.1</version><class>HttpsAvailable</class><msg>'http://hg.netbeans.org/' link should use https:// on lines: 13, 14, 15, 16, 17, 18</msg></result>
-<result><category>dev-java</category><package>netbeans-javafx</package><version>8.1</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-java</category><package>netbeans-javafx</package><version>8.1</version><class>HttpsAvailable</class><msg>'http://netbeans.org/' link should use https:// on line: 8</msg></result>
 <result><category>dev-java</category><package>netbeans-javafx</package><version>8.2</version><class>HttpsAvailable</class><msg>'http://download.netbeans.org/' link should use https:// on line: 10</msg></result>
 <result><category>dev-java</category><package>netbeans-javafx</package><version>8.2</version><class>HttpsAvailable</class><msg>'http://hg.netbeans.org/' link should use https:// on lines: 13, 14, 15, 16, 17, 18</msg></result>
-<result><category>dev-java</category><package>netbeans-javafx</package><version>8.2</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-java</category><package>netbeans-javafx</package><version>8.2</version><class>HttpsAvailable</class><msg>'http://netbeans.org/' link should use https:// on line: 8</msg></result>
 <result><category>dev-java</category><package>netbeans-mobility</package><version>8.0.2</version><class>HttpsAvailable</class><msg>'http://download.netbeans.org/' link should use https:// on line: 10</msg></result>
 <result><category>dev-java</category><package>netbeans-mobility</package><version>8.0.2</version><class>HttpsAvailable</class><msg>'http://netbeans.org/' link should use https:// on line: 8</msg></result>
 <result><category>dev-java</category><package>netbeans-mobility</package><version>8.1</version><class>HttpsAvailable</class><msg>'http://download.netbeans.org/' link should use https:// on line: 10</msg></result>
-<result><category>dev-java</category><package>netbeans-mobility</package><version>8.1</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-java</category><package>netbeans-mobility</package><version>8.1</version><class>HttpsAvailable</class><msg>'http://netbeans.org/' link should use https:// on line: 8</msg></result>
 <result><category>dev-java</category><package>netbeans-mobility</package><version>8.2</version><class>HttpsAvailable</class><msg>'http://download.netbeans.org/' link should use https:// on line: 10</msg></result>
-<result><category>dev-java</category><package>netbeans-mobility</package><version>8.2</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-java</category><package>netbeans-mobility</package><version>8.2</version><class>HttpsAvailable</class><msg>'http://netbeans.org/' link should use https:// on line: 8</msg></result>
 <result><category>dev-java</category><package>netbeans-nb</package><version>8.0.2</version><class>AbsoluteSymlink</class><msg>'dosym /etc/netbeans-${SLOT} ...' uses absolute path on line 112</msg></result>
 <result><category>dev-java</category><package>netbeans-nb</package><version>8.0.2</version><class>AbsoluteSymlink</class><msg>'dosym /usr/share/icons/hicolor/128x128/apps/netbeans-${SLOT}.png ...' uses absolute path on line 124</msg></result>
@@ -1644,12 +1598,10 @@
 <result><category>dev-java</category><package>netbeans-nb</package><version>8.1</version><class>AbsoluteSymlink</class><msg>'dosym /etc/netbeans-${SLOT} ...' uses absolute path on line 107</msg></result>
 <result><category>dev-java</category><package>netbeans-nb</package><version>8.1</version><class>AbsoluteSymlink</class><msg>'dosym /usr/share/icons/hicolor/128x128/apps/netbeans-${SLOT}.png ...' uses absolute path on line 119</msg></result>
 <result><category>dev-java</category><package>netbeans-nb</package><version>8.1</version><class>HttpsAvailable</class><msg>'http://download.netbeans.org/' link should use https:// on line: 10</msg></result>
-<result><category>dev-java</category><package>netbeans-nb</package><version>8.1</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on lines: 12, 13</msg></result>
 <result><category>dev-java</category><package>netbeans-nb</package><version>8.1</version><class>HttpsAvailable</class><msg>'http://netbeans.org/' link should use https:// on line: 8</msg></result>
 <result><category>dev-java</category><package>netbeans-nb</package><version>8.2</version><class>AbsoluteSymlink</class><msg>'dosym /etc/netbeans-${SLOT} ...' uses absolute path on line 94</msg></result>
 <result><category>dev-java</category><package>netbeans-nb</package><version>8.2</version><class>AbsoluteSymlink</class><msg>'dosym /usr/share/icons/hicolor/128x128/apps/netbeans-${SLOT}.png ...' uses absolute path on line 106</msg></result>
 <result><category>dev-java</category><package>netbeans-nb</package><version>8.2</version><class>HttpsAvailable</class><msg>'http://download.netbeans.org/' link should use https:// on line: 10</msg></result>
-<result><category>dev-java</category><package>netbeans-nb</package><version>8.2</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on lines: 12, 13</msg></result>
 <result><category>dev-java</category><package>netbeans-nb</package><version>8.2</version><class>HttpsAvailable</class><msg>'http://netbeans.org/' link should use https:// on line: 8</msg></result>
 <result><category>dev-java</category><package>netbeans-nb</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: ('files/7.2/keychain-support.patch', 'files/8.0/keychain-support.patch')</msg></result>
 <result><category>dev-java</category><package>netbeans-php</package><version>8.0.2</version><class>HttpsAvailable</class><msg>'http://download.netbeans.org/' link should use https:// on line: 10</msg></result>
@@ -1657,11 +1609,9 @@
 <result><category>dev-java</category><package>netbeans-php</package><version>8.0.2</version><class>HttpsAvailable</class><msg>'http://netbeans.org/' link should use https:// on line: 8</msg></result>
 <result><category>dev-java</category><package>netbeans-php</package><version>8.1</version><class>HttpsAvailable</class><msg>'http://download.netbeans.org/' link should use https:// on line: 10</msg></result>
 <result><category>dev-java</category><package>netbeans-php</package><version>8.1</version><class>HttpsAvailable</class><msg>'http://hg.netbeans.org/' link should use https:// on lines: 13, 14, 15</msg></result>
-<result><category>dev-java</category><package>netbeans-php</package><version>8.1</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-java</category><package>netbeans-php</package><version>8.1</version><class>HttpsAvailable</class><msg>'http://netbeans.org/' link should use https:// on line: 8</msg></result>
 <result><category>dev-java</category><package>netbeans-php</package><version>8.2</version><class>HttpsAvailable</class><msg>'http://download.netbeans.org/' link should use https:// on line: 10</msg></result>
 <result><category>dev-java</category><package>netbeans-php</package><version>8.2</version><class>HttpsAvailable</class><msg>'http://hg.netbeans.org/' link should use https:// on lines: 13, 14, 15</msg></result>
-<result><category>dev-java</category><package>netbeans-php</package><version>8.2</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-java</category><package>netbeans-php</package><version>8.2</version><class>HttpsAvailable</class><msg>'http://netbeans.org/' link should use https:// on line: 8</msg></result>
 <result><category>dev-java</category><package>netbeans-platform</package><version>8.0.2</version><class>AbsoluteSymlink</class><msg>'dosym /usr/share/swing-layout-1/sources/swing-layout-src.zip ...' uses absolute path on line 105</msg></result>
 <result><category>dev-java</category><package>netbeans-platform</package><version>8.0.2</version><class>HttpsAvailable</class><msg>'http://download.netbeans.org/' link should use https:// on line: 10</msg></result>
@@ -1671,40 +1621,32 @@
 <result><category>dev-java</category><package>netbeans-platform</package><version>8.1</version><class>AbsoluteSymlink</class><msg>'dosym /usr/share/swing-layout-1/sources/swing-layout-src.zip ...' uses absolute path on line 139</msg></result>
 <result><category>dev-java</category><package>netbeans-platform</package><version>8.1</version><class>HttpsAvailable</class><msg>'http://download.netbeans.org/' link should use https:// on line: 10</msg></result>
 <result><category>dev-java</category><package>netbeans-platform</package><version>8.1</version><class>HttpsAvailable</class><msg>'http://hg.netbeans.org/' link should use https:// on lines: 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26</msg></result>
-<result><category>dev-java</category><package>netbeans-platform</package><version>8.1</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-java</category><package>netbeans-platform</package><version>8.1</version><class>HttpsAvailable</class><msg>'http://netbeans.org/' link should use https:// on line: 8</msg></result>
 <result><category>dev-java</category><package>netbeans-platform</package><version>8.2</version><class>AbsoluteSymlink</class><msg>'dosym /usr/share/junit-4/sources/junit-src.zip ...' uses absolute path on line 128</msg></result>
 <result><category>dev-java</category><package>netbeans-platform</package><version>8.2</version><class>AbsoluteSymlink</class><msg>'dosym /usr/share/swing-layout-1/sources/swing-layout-src.zip ...' uses absolute path on line 130</msg></result>
 <result><category>dev-java</category><package>netbeans-platform</package><version>8.2</version><class>HttpsAvailable</class><msg>'http://download.netbeans.org/' link should use https:// on line: 10</msg></result>
 <result><category>dev-java</category><package>netbeans-platform</package><version>8.2</version><class>HttpsAvailable</class><msg>'http://hg.netbeans.org/' link should use https:// on lines: 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27</msg></result>
-<result><category>dev-java</category><package>netbeans-platform</package><version>8.2</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-java</category><package>netbeans-platform</package><version>8.2</version><class>HttpsAvailable</class><msg>'http://netbeans.org/' link should use https:// on line: 8</msg></result>
 <result><category>dev-java</category><package>netbeans-profiler</package><version>8.0.2</version><class>HttpsAvailable</class><msg>'http://download.netbeans.org/' link should use https:// on line: 10</msg></result>
 <result><category>dev-java</category><package>netbeans-profiler</package><version>8.0.2</version><class>HttpsAvailable</class><msg>'http://netbeans.org/' link should use https:// on line: 8</msg></result>
 <result><category>dev-java</category><package>netbeans-profiler</package><version>8.1</version><class>HttpsAvailable</class><msg>'http://download.netbeans.org/' link should use https:// on line: 10</msg></result>
-<result><category>dev-java</category><package>netbeans-profiler</package><version>8.1</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-java</category><package>netbeans-profiler</package><version>8.1</version><class>HttpsAvailable</class><msg>'http://netbeans.org/' link should use https:// on line: 8</msg></result>
 <result><category>dev-java</category><package>netbeans-profiler</package><version>8.2</version><class>HttpsAvailable</class><msg>'http://download.netbeans.org/' link should use https:// on line: 10</msg></result>
-<result><category>dev-java</category><package>netbeans-profiler</package><version>8.2</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-java</category><package>netbeans-profiler</package><version>8.2</version><class>HttpsAvailable</class><msg>'http://netbeans.org/' link should use https:// on line: 8</msg></result>
 <result><category>dev-java</category><package>netbeans-webcommon</package><version>8.0.2</version><class>HttpsAvailable</class><msg>'http://download.netbeans.org/' link should use https:// on line: 10</msg></result>
 <result><category>dev-java</category><package>netbeans-webcommon</package><version>8.0.2</version><class>HttpsAvailable</class><msg>'http://hg.netbeans.org/' link should use https:// on lines: 13, 14, 15, 16, 17, 18, 19, 20</msg></result>
 <result><category>dev-java</category><package>netbeans-webcommon</package><version>8.0.2</version><class>HttpsAvailable</class><msg>'http://netbeans.org/' link should use https:// on line: 8</msg></result>
 <result><category>dev-java</category><package>netbeans-webcommon</package><version>8.1</version><class>HttpsAvailable</class><msg>'http://download.netbeans.org/' link should use https:// on line: 10</msg></result>
 <result><category>dev-java</category><package>netbeans-webcommon</package><version>8.1</version><class>HttpsAvailable</class><msg>'http://hg.netbeans.org/' link should use https:// on lines: 13, 14, 15, 16, 17, 18, 19</msg></result>
-<result><category>dev-java</category><package>netbeans-webcommon</package><version>8.1</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-java</category><package>netbeans-webcommon</package><version>8.1</version><class>HttpsAvailable</class><msg>'http://netbeans.org/' link should use https:// on line: 8</msg></result>
 <result><category>dev-java</category><package>netbeans-webcommon</package><version>8.2</version><class>HttpsAvailable</class><msg>'http://download.netbeans.org/' link should use https:// on line: 10</msg></result>
 <result><category>dev-java</category><package>netbeans-webcommon</package><version>8.2</version><class>HttpsAvailable</class><msg>'http://hg.netbeans.org/' link should use https:// on lines: 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26</msg></result>
-<result><category>dev-java</category><package>netbeans-webcommon</package><version>8.2</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-java</category><package>netbeans-webcommon</package><version>8.2</version><class>HttpsAvailable</class><msg>'http://netbeans.org/' link should use https:// on line: 8</msg></result>
 <result><category>dev-java</category><package>netbeans-websvccommon</package><version>8.0.2</version><class>HttpsAvailable</class><msg>'http://download.netbeans.org/' link should use https:// on line: 10</msg></result>
 <result><category>dev-java</category><package>netbeans-websvccommon</package><version>8.0.2</version><class>HttpsAvailable</class><msg>'http://netbeans.org/' link should use https:// on line: 8</msg></result>
 <result><category>dev-java</category><package>netbeans-websvccommon</package><version>8.1</version><class>HttpsAvailable</class><msg>'http://download.netbeans.org/' link should use https:// on line: 10</msg></result>
-<result><category>dev-java</category><package>netbeans-websvccommon</package><version>8.1</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-java</category><package>netbeans-websvccommon</package><version>8.1</version><class>HttpsAvailable</class><msg>'http://netbeans.org/' link should use https:// on line: 8</msg></result>
 <result><category>dev-java</category><package>netbeans-websvccommon</package><version>8.2</version><class>HttpsAvailable</class><msg>'http://download.netbeans.org/' link should use https:// on line: 10</msg></result>
-<result><category>dev-java</category><package>netbeans-websvccommon</package><version>8.2</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-java</category><package>netbeans-websvccommon</package><version>8.2</version><class>HttpsAvailable</class><msg>'http://netbeans.org/' link should use https:// on line: 8</msg></result>
 <result><category>dev-java</category><package>oracle-jdk-bin</package><version>1.8.0.144</version><class>BadRestricts</class><msg>unknown restricts: preserve-libs</msg></result>
 <result><category>dev-java</category><package>oracle-jre-bin</package><version>1.8.0.144</version><class>BadRestricts</class><msg>unknown restricts: preserve-libs</msg></result>
@@ -1980,10 +1922,8 @@
 <result><category>dev-util</category><package>netbeans</package><version>8.0.2</version><class>HttpsAvailable</class><msg>'http://download.netbeans.org/' link should use https:// on line: 10</msg></result>
 <result><category>dev-util</category><package>netbeans</package><version>8.0.2</version><class>HttpsAvailable</class><msg>'http://netbeans.org/' link should use https:// on line: 8</msg></result>
 <result><category>dev-util</category><package>netbeans</package><version>8.1</version><class>HttpsAvailable</class><msg>'http://download.netbeans.org/' link should use https:// on line: 10</msg></result>
-<result><category>dev-util</category><package>netbeans</package><version>8.1</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on lines: 11, 12</msg></result>
 <result><category>dev-util</category><package>netbeans</package><version>8.1</version><class>HttpsAvailable</class><msg>'http://netbeans.org/' link should use https:// on line: 8</msg></result>
 <result><category>dev-util</category><package>netbeans</package><version>8.2</version><class>HttpsAvailable</class><msg>'http://download.netbeans.org/' link should use https:// on line: 10</msg></result>
-<result><category>dev-util</category><package>netbeans</package><version>8.2</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on lines: 11, 12</msg></result>
 <result><category>dev-util</category><package>netbeans</package><version>8.2</version><class>HttpsAvailable</class><msg>'http://netbeans.org/' link should use https:// on line: 8</msg></result>
 <result><category>dev-util</category><package>numdiff</package><version>5.9.0</version><class>HttpsAvailable</class><msg>'http://savannah.nongnu.org/' link should use https:// on line: 10</msg></result>
 <result><category>dev-util</category><package>nvidia-cuda-sdk</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
@@ -2405,7 +2345,6 @@
 <result><category>kde-apps</category><package>okular</package><version>17.08.0</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent dep: [ &gt;=dev-qt/qtspeech-5.7.1:5 ]</msg></result>
 <result><category>app-misc</category><package>anki</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
 <result><category>app-misc</category><package>binwalk</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
-<result><category>app-misc</category><package>blink1</package><version>1.98</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on line: 19</msg></result>
 <result><category>app-misc</category><package>ca-certificates</package><version>20161102.3.27.2-r2</version><class>HttpsAvailable</class><msg>'http://packages.debian.org/' link should use https:// on line: 47</msg></result>
 <result><category>app-misc</category><package>ca-certificates</package><version>20161130.3.29.3</version><class>HttpsAvailable</class><msg>'http://packages.debian.org/' link should use https:// on line: 47</msg></result>
 <result><category>app-misc</category><package>ca-certificates</package><version>20161130.3.30-r1</version><class>HttpsAvailable</class><msg>'http://packages.debian.org/' link should use https:// on line: 47</msg></result>
@@ -2428,7 +2367,6 @@
 <result><category>app-misc</category><package>g15composer</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: ('files/g15composer-3.1.confd', 'files/g15composer-3.2.confd')</msg></result>
 <result><category>app-misc</category><package>g15daemon</package><version>1.9.5.3-r21</version><class>DroppedKeywords</class><msg>amd64, ppc, ppc64, x86</msg></result>
 <result><category>app-misc</category><package>g15message</package><version>1.0.0</version><class>PortageInternals</class><msg>'prepalldocs' used on line 24</msg></result>
-<result><category>app-misc</category><package>geneweb</package><version>6.08-r1</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on line: 10</msg></result>
 <result><category>app-misc</category><package>geoclue</package><version>2.4.4</version><class>DroppedKeywords</class><msg>arm64</msg></result>
 <result><category>app-misc</category><package>gnutu</package><version>2.5-r1</version><class>NonExistentDeps</class><msg>depset depends: nonexistent dep: [ &gt;=dev-dotnet/glade-sharp-2.10.0 ]</msg></result>
 <result><category>app-misc</category><package>gnutu</package><version>2.5-r1</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent dep: [ &gt;=dev-dotnet/glade-sharp-2.10.0 ]</msg></result>
@@ -2759,46 +2697,32 @@
 <result><category>sys-devel</category><package>automake</package><version>1.15.1</version><class>MissingSlotDep</class><msg>'&gt;=sys-devel/autoconf-2.69' matches more than one slot: [ 2.5, 2.69, 9999 ]</msg></result>
 <result><category>sys-devel</category><package>automake</package><version>1.15</version><class>DroppedKeywords</class><msg>amd64-linux, m68k-mint, ppc-aix, ppc-macos, sparc-solaris, sparc64-solaris, x64-cygwin, x64-macos, x64-solaris, x86-linux, x86-macos, x86-solaris</msg></result>
 <result><category>sys-devel</category><package>binutils</package><version>2.29</version><class>DroppedKeywords</class><msg>alpha, amd64, amd64-fbsd, arm, arm64, hppa, ia64, m68k, mips, ppc, ppc64, s390, sh, sparc, x86, x86-fbsd</msg></result>
-<result><category>sys-devel</category><package>binutils-apple</package><version>4.3-r2</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on line: 22</msg></result>
 <result><category>sys-devel</category><package>binutils-apple</package><version>4.3-r2</version><class>BadInsIntoDir</class><msg>ebuild uses insinto /etc/env.d on line 326</msg></result>
 <result><category>sys-devel</category><package>binutils-apple</package><version>4.3-r2</version><class>MissingSlotDep</class><msg>'sys-devel/llvm' matches more than one slot: [ 0, 4, 5, 6 ]</msg></result>
-<result><category>sys-devel</category><package>binutils-apple</package><version>5.1-r1</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on lines: 20, 21</msg></result>
 <result><category>sys-devel</category><package>binutils-apple</package><version>5.1-r1</version><class>BadInsIntoDir</class><msg>ebuild uses insinto /etc/env.d on line 373</msg></result>
 <result><category>sys-devel</category><package>binutils-apple</package><version>5.1-r1</version><class>MissingSlotDep</class><msg>'sys-devel/llvm' matches more than one slot: [ 0, 4, 5, 6 ]</msg></result>
-<result><category>sys-devel</category><package>binutils-apple</package><version>6.1-r1</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on lines: 20, 21, 22</msg></result>
 <result><category>sys-devel</category><package>binutils-apple</package><version>6.1-r1</version><class>BadInsIntoDir</class><msg>ebuild uses insinto /etc/env.d on line 374</msg></result>
 <result><category>sys-devel</category><package>binutils-apple</package><version>6.1-r1</version><class>MissingSlotDep</class><msg>'sys-devel/llvm' matches more than one slot: [ 0, 4, 5, 6 ]</msg></result>
-<result><category>sys-devel</category><package>binutils-apple</package><version>6.3-r1</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on lines: 20, 21, 22, 23</msg></result>
 <result><category>sys-devel</category><package>binutils-apple</package><version>6.3-r1</version><class>BadInsIntoDir</class><msg>ebuild uses insinto /etc/env.d on line 367</msg></result>
 <result><category>sys-devel</category><package>binutils-apple</package><version>6.3-r1</version><class>MissingSlotDep</class><msg>'sys-devel/llvm' matches more than one slot: [ 0, 4, 5, 6 ]</msg></result>
-<result><category>sys-devel</category><package>binutils-apple</package><version>7.0</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on lines: 20, 21, 22, 23, 24</msg></result>
 <result><category>sys-devel</category><package>binutils-apple</package><version>7.0</version><class>BadInsIntoDir</class><msg>ebuild uses insinto /etc/env.d on line 355</msg></result>
 <result><category>sys-devel</category><package>binutils-apple</package><version>7.0</version><class>MissingSlotDep</class><msg>'sys-devel/llvm' matches more than one slot: [ 0, 4, 5, 6 ]</msg></result>
-<result><category>sys-devel</category><package>binutils-apple</package><version>7.0-r1</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on lines: 20, 21, 22, 23, 24</msg></result>
 <result><category>sys-devel</category><package>binutils-apple</package><version>7.0-r1</version><class>BadInsIntoDir</class><msg>ebuild uses insinto /etc/env.d on line 358</msg></result>
 <result><category>sys-devel</category><package>binutils-apple</package><version>7.0-r1</version><class>MissingSlotDep</class><msg>'sys-devel/llvm' matches more than one slot: [ 0, 4, 5, 6 ]</msg></result>
-<result><category>sys-devel</category><package>binutils-apple</package><version>7.1</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on lines: 20, 21, 22, 23, 24</msg></result>
 <result><category>sys-devel</category><package>binutils-apple</package><version>7.1</version><class>BadInsIntoDir</class><msg>ebuild uses insinto /etc/env.d on line 355</msg></result>
 <result><category>sys-devel</category><package>binutils-apple</package><version>7.1</version><class>MissingSlotDep</class><msg>'sys-devel/llvm' matches more than one slot: [ 0, 4, 5, 6 ]</msg></result>
-<result><category>sys-devel</category><package>binutils-apple</package><version>7.1-r1</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on lines: 20, 21, 22, 23, 24</msg></result>
 <result><category>sys-devel</category><package>binutils-apple</package><version>7.1-r1</version><class>BadInsIntoDir</class><msg>ebuild uses insinto /etc/env.d on line 358</msg></result>
 <result><category>sys-devel</category><package>binutils-apple</package><version>7.1-r1</version><class>MissingSlotDep</class><msg>'sys-devel/llvm' matches more than one slot: [ 0, 4, 5, 6 ]</msg></result>
-<result><category>sys-devel</category><package>binutils-apple</package><version>7.2</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on lines: 20, 21, 22, 23, 24</msg></result>
 <result><category>sys-devel</category><package>binutils-apple</package><version>7.2</version><class>BadInsIntoDir</class><msg>ebuild uses insinto /etc/env.d on line 355</msg></result>
 <result><category>sys-devel</category><package>binutils-apple</package><version>7.2</version><class>MissingSlotDep</class><msg>'sys-devel/llvm' matches more than one slot: [ 0, 4, 5, 6 ]</msg></result>
-<result><category>sys-devel</category><package>binutils-apple</package><version>7.2-r1</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on lines: 20, 21, 22, 23, 24, 25</msg></result>
 <result><category>sys-devel</category><package>binutils-apple</package><version>7.2-r1</version><class>BadInsIntoDir</class><msg>ebuild uses insinto /etc/env.d on line 359</msg></result>
 <result><category>sys-devel</category><package>binutils-apple</package><version>7.2-r1</version><class>MissingSlotDep</class><msg>'sys-devel/llvm' matches more than one slot: [ 0, 4, 5, 6 ]</msg></result>
-<result><category>sys-devel</category><package>binutils-apple</package><version>7.3</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on lines: 20, 21, 22, 23, 24, 25, 26</msg></result>
 <result><category>sys-devel</category><package>binutils-apple</package><version>7.3</version><class>BadInsIntoDir</class><msg>ebuild uses insinto /etc/env.d on line 375</msg></result>
 <result><category>sys-devel</category><package>binutils-apple</package><version>7.3</version><class>MissingSlotDep</class><msg>'sys-devel/llvm' matches more than one slot: [ 0, 4, 5, 6 ]</msg></result>
-<result><category>sys-devel</category><package>binutils-apple</package><version>7.3.1</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on lines: 20, 21, 22, 23, 24, 25, 26</msg></result>
 <result><category>sys-devel</category><package>binutils-apple</package><version>7.3.1</version><class>BadInsIntoDir</class><msg>ebuild uses insinto /etc/env.d on line 382</msg></result>
 <result><category>sys-devel</category><package>binutils-apple</package><version>7.3.1</version><class>MissingSlotDep</class><msg>'sys-devel/llvm' matches more than one slot: [ 0, 4, 5, 6 ]</msg></result>
-<result><category>sys-devel</category><package>binutils-apple</package><version>8.1</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on lines: 18, 19, 20, 21, 22</msg></result>
 <result><category>sys-devel</category><package>binutils-apple</package><version>8.1</version><class>BadInsIntoDir</class><msg>ebuild uses insinto /etc/env.d on line 323</msg></result>
 <result><category>sys-devel</category><package>binutils-apple</package><version>8.1</version><class>MissingSlotDep</class><msg>'sys-devel/llvm' matches more than one slot: [ 0, 4, 5, 6 ]</msg></result>
-<result><category>sys-devel</category><package>binutils-apple</package><version>8.2.1</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on lines: 18, 19, 20, 21, 22</msg></result>
 <result><category>sys-devel</category><package>binutils-apple</package><version>8.2.1</version><class>BadInsIntoDir</class><msg>ebuild uses insinto /etc/env.d on line 323</msg></result>
 <result><category>sys-devel</category><package>binutils-apple</package><version>8.2.1</version><class>MissingSlotDep</class><msg>'sys-devel/llvm' matches more than one slot: [ 0, 4, 5, 6 ]</msg></result>
 <result><category>sys-devel</category><package>binutils-apple</package><version>8.1</version><class>DroppedKeywords</class><msg>ppc-macos</msg></result>
@@ -3471,7 +3395,6 @@
 <result><category>media-fonts</category><package>sil-gentium</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
 <result><category>media-fonts</category><package>wqy-microhei</package><version>0.2.0_beta-r1</version><class>DroppedKeywords</class><msg>arm</msg></result>
 <result><category>media-fonts</category><class>CatMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
-<result><category>x11-plugins</category><package>compiz-plugins-unsupported</package><version>0.8.8</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on line: 8</msg></result>
 <result><category>x11-plugins</category><package>docker</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
 <result><category>x11-plugins</category><package>fsviewer</package><version>0.2.6</version><class>AbsoluteSymlink</class><msg>'dosym /usr/$(get_libdir)/GNUstep/FSViewer.app/FSViewer ...' uses absolute path on line 43</msg></result>
 <result><category>x11-plugins</category><package>fsviewer</package><version>0.2.6-r1</version><class>AbsoluteSymlink</class><msg>'dosym /usr/$(get_libdir)/GNUstep/FSViewer.app/FSViewer ...' uses absolute path on line 45</msg></result>
@@ -3483,7 +3406,6 @@
 <result><category>x11-plugins</category><package>wmSpaceWeather</package><version>1.04_p19</version><class>HttpsAvailable</class><msg>'http://packages.debian.org/' link should use https:// on line: 13</msg></result>
 <result><category>x11-plugins</category><package>wmmisc</package><version>1.1</version><class>HttpsAvailable</class><msg>'http://packages.qa.debian.org/' link should use https:// on line: 7</msg></result>
 <result><category>x11-plugins</category><package>wmtime</package><version>1.0_beta2_p9</version><class>HttpsAvailable</class><msg>'http://packages.qa.debian.org/' link should use https:// on line: 18</msg></result>
-<result><category>sci-mathematics</category><package>Macaulay2</package><version>1.8.2.1-r1</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on line: 14</msg></result>
 <result><category>sci-mathematics</category><package>axiom</package><version>200805</version><class>AbsoluteSymlink</class><msg>'dosym /opt/axiom/bin/axiom ...' uses absolute path on line 89</msg></result>
 <result><category>sci-mathematics</category><package>drgeo</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
 <result><category>sci-mathematics</category><package>flint</package><version>2.4.5</version><class>DroppedKeywords</class><msg>ppc</msg></result>
@@ -3492,7 +3414,6 @@
 <result><category>sci-mathematics</category><package>ginac</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
 <result><category>sci-mathematics</category><package>glpk</package><version>4.54</version><class>DroppedKeywords</class><msg>alpha, ppc-aix, x64-macos, x86-macos</msg></result>
 <result><category>sci-mathematics</category><package>gretl</package><version>1.9.90</version><class>GLEP73Conflict</class><msg>REQUIRED_USE can request conflicting states: [emacs] requires [gtk] while [!curl] requires [!gtk]</msg></result>
-<result><category>sci-mathematics</category><package>isabelle</package><version>2016.1</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on lines: 74, 79, 81</msg></result>
 <result><category>sci-mathematics</category><package>isabelle</package><version>2016.1</version><class>AbsoluteSymlink</class><msg>'dosym /usr/share/doc/${PF}/doc ...' uses absolute path on line 257</msg></result>
 <result><category>sci-mathematics</category><package>isabelle</package><version>2016.1</version><class>AbsoluteSymlink</class><msg>'dosym /etc/isabelle ...' uses absolute path on line 279</msg></result>
 <result><category>sci-mathematics</category><package>minisat</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
@@ -3703,7 +3624,6 @@
 <result><category>app-portage</category><package>mirrorselect</package><version>2.2.2</version><class>DroppedKeywords</class><msg>amd64-linux, m68k, s390, sh</msg></result>
 <result><category>app-portage</category><package>repo-commit</package><version>0.4.1</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent dep: [ &lt;sys-apps/portage-2.2.0_alpha ]</msg></result>
 <result><category>app-portage</category><package>repo-commit</package><version>9999</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent dep: [ &lt;sys-apps/portage-2.2.0_alpha ]</msg></result>
-<result><category>app-portage</category><package>unsandbox</package><version>1</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on lines: 9, 10</msg></result>
 <result><category>app-dicts</category><package>gwaei</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
 <result><category>app-dicts</category><package>myspell-ru</package><version>20150711-r2</version><class>DroppedKeywords</class><msg>arm64</msg></result>
 <result><category>app-dicts</category><package>prime-dict</package><version>1.0.0-r3</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: ( contains [ruby_targets_ruby22] || contains [ruby_targets_ruby23] )</msg></result>
@@ -3965,7 +3885,6 @@
 <result><category>dev-vcs</category><package>git</package><version>9999-r1</version><class>AbsoluteSymlink</class><msg>'dosym /usr/share/gitweb ...' uses absolute path on line 526</msg></result>
 <result><category>dev-vcs</category><package>git</package><version>9999-r2</version><class>AbsoluteSymlink</class><msg>'dosym /usr/share/gitweb ...' uses absolute path on line 526</msg></result>
 <result><category>dev-vcs</category><package>git</package><version>9999-r3</version><class>AbsoluteSymlink</class><msg>'dosym /usr/share/gitweb ...' uses absolute path on line 526</msg></result>
-<result><category>dev-vcs</category><package>git-bz</package><version>0.2015.09.08</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on line: 12</msg></result>
 <result><category>dev-vcs</category><package>git-remote-hg</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
 <result><category>dev-vcs</category><package>git-sh</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
 <result><category>dev-vcs</category><package>git-tools</package><version>2015_p20151225-r2</version><class>AbsoluteSymlink</class><msg>'dosym /usr/bin/$i ...' uses absolute path on line 45</msg></result>
@@ -4014,8 +3933,6 @@
 <result><category>dev-vcs</category><package>subversion</package><version>1.9.7</version><class>HttpsAvailable</class><msg>'http://mail-archives.apache.org/' link should use https:// on line: 123</msg></result>
 <result><category>dev-vcs</category><package>subversion</package><version>1.9.7</version><class>HttpsAvailable</class><msg>'http://subversion.apache.org/' link should use https:// on line: 15</msg></result>
 <result><category>dev-vcs</category><package>subversion</package><class>SizeViolation</class><msg>"files/subversion-1.8.5-swig-python-no-gnome-keyring.patch" exceeds 20k in size; 38.5 KiB total</msg></result>
-<result><category>app-vim</category><package>autoalign</package><version>14</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on line: 16</msg></result>
-<result><category>app-vim</category><package>detectindent</package><version>1.0_p20150908</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on line: 16</msg></result>
 <result><category>app-vim</category><package>pydiction</package><version>1.2.3-r2</version><class>WhitespaceFound</class><msg>ebuild has trailing whitespace on line 27</msg></result>
 <result><category>app-vim</category><package>vimoutliner</package><version>0.3.6-r1</version><class>DroppedKeywords</class><msg>alpha, ia64, mips, ppc, sparc</msg></result>
 <result><category>app-vim</category><package>vimpress</package><version>2.1.5</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent dep: [ dev-lang/python:2.6 ]</msg></result>
@@ -4093,7 +4010,6 @@
 <result><category>dev-php</category><package>PEAR-Net_DNSBL</package><version>1.3.7-r1</version><class>HttpsAvailable</class><msg>'http://pear.php.net/' link should use https:// on line: 10</msg></result>
 <result><category>dev-php</category><package>PEAR-Net_LDAP2</package><version>2.2.0-r1</version><class>HttpsAvailable</class><msg>'http://download.pear.php.net/' link should use https:// on line: 10</msg></result>
 <result><category>dev-php</category><package>PEAR-Net_LDAP2</package><version>2.2.0-r1</version><class>DroppedKeywords</class><msg>sparc</msg></result>
-<result><category>dev-php</category><package>PEAR-Net_LDAP3</package><version>1.0.5_pre20160405</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on line: 8</msg></result>
 <result><category>dev-php</category><package>PEAR-Net_Ping</package><version>2.4.5-r2</version><class>HttpsAvailable</class><msg>'http://download.pear.php.net/' link should use https:// on line: 11</msg></result>
 <result><category>dev-php</category><package>PEAR-Net_Ping</package><version>2.4.5-r2</version><class>HttpsAvailable</class><msg>'http://pear.php.net/' link should use https:// on line: 10</msg></result>
 <result><category>dev-php</category><package>PEAR-Net_SMTP</package><version>1.7.2-r3</version><class>HttpsAvailable</class><msg>'http://download.pear.php.net/' link should use https:// on line: 11</msg></result>
@@ -4150,7 +4066,6 @@
 <result><category>dev-php</category><package>pecl-crack</package><version>0.4-r5</version><class>HttpsAvailable</class><msg>'http://pecl.php.net/' link should use https:// on line: 22</msg></result>
 <result><category>dev-php</category><package>pecl-crack</package><version>0.4-r6</version><class>HttpsAvailable</class><msg>'http://pecl.php.net/' link should use https:// on line: 22</msg></result>
 <result><category>dev-php</category><package>pecl-mysqlnd_ms</package><version>1.6.0_pre20141127</version><class>HttpsAvailable</class><msg>'http://pecl.php.net/' link should use https:// on line: 15</msg></result>
-<result><category>dev-php</category><package>pecl-ncurses</package><version>1.0.2-r3</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on line: 10</msg></result>
 <result><category>dev-php</category><package>pecl-ssh2</package><version>0.12-r3</version><class>NonExistentDeps</class><msg>depset depends: nonexistent deps: [ dev-lang/php:5.4, dev-lang/php:5.5 ]</msg></result>
 <result><category>dev-php</category><package>pecl-ssh2</package><version>0.12-r3</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent deps: [ dev-lang/php:5.4, dev-lang/php:5.5 ]</msg></result>
 <result><category>dev-php</category><package>pecl-taint</package><version>2.0.2</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: ( contains [php_targets_php7-0] || contains [php_targets_php7-1] )</msg></result>
@@ -4232,8 +4147,6 @@
 <result><category>x11-libs</category><package>libva</package><version>1.8.3</version><class>NonExistentDeps</class><msg>depset post_rdepends: nonexistent deps: [ &gt;=x11-libs/xvba-video-0.8.0-r1, &gt;=x11-drivers/ati-drivers-14.12-r3 ]</msg></result>
 <result><category>x11-libs</category><package>libva</package><version>9999</version><class>NonExistentDeps</class><msg>depset post_rdepends: nonexistent deps: [ &gt;=x11-libs/xvba-video-0.8.0-r1, &gt;=x11-drivers/ati-drivers-14.12-r3 ]</msg></result>
 <result><category>x11-libs</category><package>libwnck</package><version>3.20.1</version><class>DroppedKeywords</class><msg>hppa</msg></result>
-<result><category>x11-libs</category><package>motif</package><version>2.3.6-r1</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on line: 12</msg></result>
-<result><category>x11-libs</category><package>motif</package><version>2.3.7</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on line: 12</msg></result>
 <result><category>x11-libs</category><package>qscintilla</package><version>2.9.4</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: ^^ ( contains [qt4] contains [qt5] )</msg></result>
 <result><category>x11-libs</category><package>qwt</package><version>6.1.3-r1</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: ( contains [qt4] || contains [qt5] )</msg></result>
 <result><category>x11-libs</category><package>qwtplot3d</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
@@ -4242,7 +4155,6 @@
 <result><category>x11-libs</category><package>wxGTK</package><version>3.0.2.0-r300</version><class>DroppedKeywords</class><msg>arm64</msg></result>
 <result><category>x11-libs</category><package>wxGTK</package><version>3.0.2.0-r1</version><class>DroppedKeywords</class><msg>amd64-fbsd</msg></result>
 <result><category>x11-libs</category><package>xbae</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
-<result><category>x11-libs</category><package>xforms</package><version>1.2.4</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on line: 12</msg></result>
 <result><category>app-cdr</category><package>cdrdao</package><version>1.2.3-r1</version><class>NonExistentDeps</class><msg>depset depends: nonexistent dep: [ &gt;=dev-cpp/libgnomeuimm-2.6:2.6 ]</msg></result>
 <result><category>app-cdr</category><package>cdrdao</package><version>1.2.3-r1</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent dep: [ &gt;=dev-cpp/libgnomeuimm-2.6:2.6 ]</msg></result>
 <result><category>app-cdr</category><package>cdrdao</package><version>1.2.3-r2</version><class>NonExistentDeps</class><msg>depset depends: nonexistent dep: [ &gt;=dev-cpp/libgnomeuimm-2.6:2.6 ]</msg></result>
@@ -4563,7 +4475,6 @@
 <result><category>dev-tex</category><package>rail</package><version>1.2_p1</version><class>HttpsAvailable</class><msg>'http://www.ctan.org/' link should use https:// on line: 9</msg></result>
 <result><category>dev-tex</category><package>rcsinfo</package><version>1.9</version><class>HttpsAvailable</class><msg>'http://www.ctan.org/' link should use https:// on line: 9</msg></result>
 <result><category>dev-tex</category><package>rcsinfo</package><version>1.11</version><class>HttpsAvailable</class><msg>'http://www.ctan.org/' link should use https:// on line: 9</msg></result>
-<result><category>dev-tex</category><package>vc</package><version>0.5</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on line: 11</msg></result>
 <result><category>mail-client</category><package>balsa</package><version>2.5.3</version><class>DroppedKeywords</class><msg>alpha, sparc</msg></result>
 <result><category>mail-client</category><package>claws-mail</package><version>3.15.0-r2</version><class>DroppedKeywords</class><msg>arm, mips, sparc, x86-fbsd</msg></result>
 <result><category>mail-client</category><package>clawsker</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
@@ -5209,7 +5120,6 @@
 <result><category>net-misc</category><package>ntp</package><class>ExecutableFile</class><msg>unnecessary executable bit: 'files/man-pages/genmans.sh'</msg></result>
 <result><category>net-misc</category><package>ntp</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: ('files/ntpdate.service.conf', 'files/sntp.service.conf')</msg></result>
 <result><category>net-misc</category><package>openntpd</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
-<result><category>net-misc</category><package>openssh</package><version>7.3_p1-r7</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on line: 25</msg></result>
 <result><category>net-misc</category><package>openssh-blacklist</package><version>0.4.1</version><class>HttpsAvailable</class><msg>'http://packages.qa.debian.org/' link should use https:// on line: 7</msg></result>
 <result><category>net-misc</category><package>pipes</package><version>1.16.1</version><class>AbsoluteSymlink</class><msg>'dosym /usr/bin/plis ...' uses absolute path on line 27</msg></result>
 <result><category>net-misc</category><package>pulseaudio-dlna</package><version>0.5.2</version><class>BadInsIntoDir</class><msg>ebuild uses insinto /usr/share/applications on line 53</msg></result>
@@ -5431,7 +5341,6 @@
 <result><category>java-virtuals</category><package>servlet-api</package><version>3.0-r2</version><class>DroppedKeywords</class><msg>amd64-linux, arm, x64-macos, x64-solaris, x86-linux</msg></result>
 <result><category>games-server</category><package>mtavc</package><version>0.5-r1</version><class>AbsoluteSymlink</class><msg>'dosym /etc/${PN}/${f} ...' uses absolute path on line 44</msg></result>
 <result><category>app-antivirus</category><package>clamav</package><version>0.98.7</version><class>MissingSlotDep</class><msg>'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]</msg></result>
-<result><category>app-antivirus</category><package>skyldav</package><version>0.7</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on line: 19</msg></result>
 <result><category>app-antivirus</category><package>skyldav</package><class>ExecutableFile</class><msg>unnecessary executable bit: 'files/skyldav.initd'</msg></result>
 <result><category>games-mud</category><package>trebuchet</package><version>1.075-r1</version><class>WhitespaceFound</class><msg>ebuild has leading whitespace on line 26</msg></result>
 <result><category>app-pda</category><package>barry</package><version>0.18.3</version><class>MissingSlotDep</class><msg>'&gt;=sys-fs/fuse-2.5' matches more than one slot: [ 0, 3 ]</msg></result>
@@ -5468,8 +5377,6 @@
 <result><category>lxqt-base</category><package>lxqt-meta</package><version>0.11.0</version><class>DroppedKeywords</class><msg>arm</msg></result>
 <result><category>lxqt-base</category><package>lxqt-panel</package><class>SizeViolation</class><msg>"files/lxqt-panel-0.10.0-autohide.patch" exceeds 20k in size; 20.2 KiB total</msg></result>
 <result><category>gnustep-apps</category><package>ftp</package><version>0.5</version><class>HttpsAvailable</class><msg>'http://savannah.nongnu.org/' link should use https:// on line: 11</msg></result>
-<result><category>gnustep-apps</category><package>pikopixel</package><version>1.0_beta7</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on line: 12</msg></result>
-<result><category>gnustep-apps</category><package>pikopixel</package><version>1.0_beta8</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on line: 12</msg></result>
 <result><category>gnustep-apps</category><package>sogo</package><version>3.2.9</version><class>BadInsIntoDir</class><msg>ebuild uses insinto /etc/cron.d on line 85</msg></result>
 <result><category>gnustep-apps</category><package>sogo</package><version>3.2.10</version><class>BadInsIntoDir</class><msg>ebuild uses insinto /etc/cron.d on line 85</msg></result>
 <result><category>gnustep-apps</category><package>talksoup</package><version>1.1</version><class>HttpsAvailable</class><msg>'http://savannah.nongnu.org/' link should use https:// on line: 11</msg></result>
@@ -5650,7 +5557,6 @@
 <result><category>x11-base</category><package>xorg-server</package><version>1.15.2-r4</version><class>VulnerablePackage</class><msg>vulnerable via glsa(201701-64) ( ver &lt; 1.18.4 ), keywords: alpha, amd64, amd64-fbsd, amd64-linux, arm, arm-linux, hppa, ia64, mips, ppc, ppc64, s390, sh, sparc, x86, x86-fbsd, x86-linux</msg></result>
 <result><category>x11-base</category><package>xorg-server</package><version>1.15.2-r4</version><class>VulnerablePackage</class><msg>vulnerable via glsa(201704-03) ( ver &lt; 1.19.2 ), keywords: alpha, amd64, amd64-fbsd, amd64-linux, arm, arm-linux, hppa, ia64, mips, ppc, ppc64, s390, sh, sparc, x86, x86-fbsd, x86-linux</msg></result>
 <result><category>x11-base</category><package>xorg-server</package><version>1.18.4</version><class>VulnerablePackage</class><msg>vulnerable via glsa(201704-03) ( ver &lt; 1.19.2 ), keywords: alpha, amd64, amd64-fbsd, amd64-linux, arm, arm-linux, arm64, hppa, ia64, mips, ppc, ppc64, s390, sh, sparc, x86, x86-fbsd, x86-linux</msg></result>
-<result><category>net-dialup</category><package>accel-ppp</package><version>1.11.1_p20170508</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on line: 10</msg></result>
 <result><category>net-dialup</category><package>cutecom</package><version>0.40.0-r1</version><class>DroppedKeywords</class><msg>ppc</msg></result>
 <result><category>net-dialup</category><package>mgetty</package><version>1.1.37-r1</version><class>AbsoluteSymlink</class><msg>'dosym /sbin/mgetty ...' uses absolute path on line 103</msg></result>
 <result><category>net-dialup</category><package>minicom</package><version>2.6</version><class>HttpsAvailable</class><msg>'http://alioth.debian.org/' link should use https:// on lines: 11, 12</msg></result>
@@ -5713,7 +5619,6 @@
 <result><category>xfce-base</category><package>xfce4-session</package><version>4.13.0</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: contains [policykit]</msg></result>
 <result><category>xfce-base</category><package>xfce4-session</package><version>4.13.0</version><class>DroppedKeywords</class><msg>hppa</msg></result>
 <result><category>xfce-base</category><package>xfdesktop</package><version>4.13.1</version><class>DroppedKeywords</class><msg>hppa</msg></result>
-<result><category>kde-misc</category><package>kdiff3</package><version>0.9.98_p20170219-r1</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on line: 11</msg></result>
 <result><category>kde-misc</category><package>kdiff3</package><version>0.9.98_p20170219-r1</version><class>DroppedKeywords</class><msg>amd64-linux</msg></result>
 <result><category>kde-misc</category><package>krcstat</package><version>0.7.6-r1</version><class>NonExistentDeps</class><msg>depset depends: nonexistent dep: [ &gt;=kde-apps/konsole-4.4:4 ]</msg></result>
 <result><category>kde-misc</category><package>krcstat</package><version>0.7.6-r1</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent dep: [ &gt;=kde-apps/konsole-4.4:4 ]</msg></result>
@@ -5869,7 +5774,6 @@
 <result><category>games-rpg</category><package>arx-fatalis-data</package><version>1.21-r3</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: ^^ ( contains [cdinstall] contains [gog] )</msg></result>
 <result><category>games-rpg</category><package>arx-fatalis-data</package><version>1.21-r3</version><class>MissingUri</class><msg>file setup_arx_fatalis_2.0.0.7.exe is unfetchable- no URI available, and RESTRICT=fetch isn't set</msg></result>
 <result><category>games-rpg</category><package>arx-libertatis</package><version>1.1.2</version><class>MissingSlotDep</class><msg>'media-libs/glew' matches more than one slot: [ 0, 1.10, 1.6 ]</msg></result>
-<result><category>games-rpg</category><package>comi</package><version>1</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on line: 10</msg></result>
 <result><category>games-rpg</category><package>dungeon-defenders</package><version>20130305</version><class>AbsoluteSymlink</class><msg>'dosym /usr/bin/xdg-open ...' uses absolute path on line 78</msg></result>
 <result><category>games-rpg</category><package>eternal-lands</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
 <result><category>games-rpg</category><package>eternal-lands-data</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
@@ -6513,7 +6417,6 @@
 <result><category>dev-ruby</category><package>yard</package><version>0.9.8</version><class>DroppedKeywords</class><msg>ia64, sparc</msg></result>
 <result><category>dev-ruby</category><package>zentest</package><version>4.11.0</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: ( contains [ruby_targets_ruby22] || contains [ruby_targets_ruby23] )</msg></result>
 <result><category>dev-ruby</category><package>zentest</package><version>4.11.1</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: ( contains [ruby_targets_ruby22] || contains [ruby_targets_ruby23] || contains [ruby_targets_ruby24] )</msg></result>
-<result><category>net-libs</category><package>accounts-qt</package><version>1.13</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on line: 10</msg></result>
 <result><category>net-libs</category><package>biblesync</package><version>1.1.2</version><class>HttpsAvailable</class><msg>'http://www.crosswire.org/' link should use https:// on line: 8</msg></result>
 <result><category>net-libs</category><package>biblesync</package><version>1.1.2-r2</version><class>HttpsAvailable</class><msg>'http://www.crosswire.org/' link should use https:// on line: 8</msg></result>
 <result><category>net-libs</category><package>c-client</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
@@ -6569,8 +6472,6 @@
 <result><category>net-libs</category><package>pjproject</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
 <result><category>net-libs</category><package>ptlib</package><version>2.10.11</version><class>MissingSlotDep</class><msg>'dev-lang/lua' matches more than one slot: [ 0, 5.1, 5.2, 5.3 ]</msg></result>
 <result><category>net-libs</category><package>ptlib</package><version>2.10.11</version><class>MissingSlotDep</class><msg>'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]</msg></result>
-<result><category>net-libs</category><package>signon-oauth2</package><version>0.21-r1</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on line: 10</msg></result>
-<result><category>net-libs</category><package>telepathy-accounts-signon</package><version>1.0</version><class>HttpsAvailable</class><msg>'http://dev.gentoo.org/' link should use https:// on line: 10</msg></result>
 <result><category>net-libs</category><package>telepathy-qt</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
 <result><category>net-libs</category><package>webkit-gtk</package><version>2.4.11-r1</version><class>GLEP73BackAlteration</class><msg>REQUIRED_USE causes a preceding condition to start applying: [webgl &amp;&amp; !opengl] enforces [gles2] which may cause preceding [gles2] enforcing [egl] to evaluate to true</msg></result>
 <result><category>net-libs</category><package>webkit-gtk</package><version>2.4.11-r1</version><class>VulnerablePackage</class><msg>vulnerable via glsa(201706-15) ( ver &lt; 2.16.3 ), keywords: alpha, amd64, amd64-fbsd, amd64-linux, arm, ia64, ppc, ppc64, sparc, x86, x86-fbsd, x86-linux, x86-macos</msg></result>
