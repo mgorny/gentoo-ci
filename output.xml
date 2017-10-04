@@ -2604,8 +2604,8 @@
 <result><category>sys-cluster</category><package>swift</package><version>2.15.1-r1</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: ( contains [proxy] || contains [account] || contains [container] || contains [object] )</msg></result>
 <result><category>sys-cluster</category><package>swift</package><version>2017.1.9999</version><class>WhitespaceFound</class><msg>ebuild has leading whitespace on line: 88</msg></result>
 <result><category>sys-cluster</category><package>swift</package><version>2017.2.9999</version><class>WhitespaceFound</class><msg>ebuild has leading whitespace on line: 88</msg></result>
-<result><category>sys-cluster</category><package>zetcd</package><class>PkgMetadataXmlEmptyElement</class><msg>metadata.xml has empty element 'longdescription' on line 4</msg></result>
 <result><category>sys-cluster</category><package>zookeeper-bin</package><version>3.4.10</version><class>HttpsAvailable</class><msg>'http://zookeeper.apache.org/' link should use https:// on line: 13</msg></result>
+<result><category>sys-cluster</category><package>zetcd</package><class>PkgMetadataXmlEmptyElement</class><msg>metadata.xml has empty element 'longdescription' on line 4</msg></result>
 <result><category>sys-devel</category><package>automake</package><version>1.4_p6-r2</version><class>VulnerablePackage</class><msg>vulnerable via glsa(201310-15) ( ver &lt; 1.11.6 ), keywords: alpha, amd64, arm, arm64, hppa, ia64, m68k, mips, ppc, ppc64, s390, sh, sparc, sparc-fbsd, x86, x86-fbsd</msg></result>
 <result><category>sys-devel</category><package>automake</package><version>1.5-r2</version><class>VulnerablePackage</class><msg>vulnerable via glsa(201310-15) ( ver &lt; 1.11.6 ), keywords: alpha, amd64, arm, arm64, hppa, ia64, m68k, mips, ppc, ppc64, s390, sh, sparc, sparc-fbsd, x86, x86-fbsd</msg></result>
 <result><category>sys-devel</category><package>automake</package><version>1.6.3-r2</version><class>VulnerablePackage</class><msg>vulnerable via glsa(201310-15) ( ver &lt; 1.11.6 ), keywords: alpha, amd64, arm, arm64, hppa, ia64, m68k, mips, ppc, ppc64, s390, sh, sparc, sparc-fbsd, x86, x86-fbsd</msg></result>
@@ -5079,9 +5079,9 @@
 <result><category>gnome-base</category><package>gnome-session</package><version>3.22.3</version><class>BadInsIntoDir</class><msg>ebuild uses insinto /usr/share/applications on line 108</msg></result>
 <result><category>gnome-base</category><package>gnome-session</package><version>3.24.1</version><class>BadInsIntoDir</class><msg>ebuild uses insinto /usr/share/applications on line 98</msg></result>
 <result><category>gnome-base</category><package>gnome-shell</package><version>3.22.3-r2</version><class>DroppedKeywords</class><msg>alpha, arm, ppc, ppc64</msg></result>
-<result><category>gnome-base</category><package>gvfs</package><version>1.30.4</version><class>MissingSlotDep</class><msg>'&gt;=sys-fs/fuse-2.8.0' matches more than one slot: [ 0, 3 ]</msg></result>
 <result><category>gnome-base</category><package>gvfs</package><version>1.30.4</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: contains [udisks]</msg></result>
 <result><category>gnome-base</category><package>gvfs</package><version>1.30.4</version><class>GLEP73BackAlteration</class><msg>REQUIRED_USE causes a preceding condition to start applying: [systemd] enforces [udisks] which may cause preceding [udisks] enforcing [udev] to evaluate to true</msg></result>
+<result><category>gnome-base</category><package>gvfs</package><version>1.30.4</version><class>MissingSlotDep</class><msg>'&gt;=sys-fs/fuse-2.8.0' matches more than one slot: [ 0, 3 ]</msg></result>
 <result><category>gnome-base</category><package>gvfs</package><version>1.32.1</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: contains [udisks]</msg></result>
 <result><category>gnome-base</category><package>gvfs</package><version>1.32.1</version><class>GLEP73BackAlteration</class><msg>REQUIRED_USE causes a preceding condition to start applying: [systemd] enforces [udisks] which may cause preceding [udisks] enforcing [udev] to evaluate to true</msg></result>
 <result><category>gnome-base</category><package>nautilus</package><version>3.22.3</version><class>DroppedKeywords</class><msg>arm, sh, sparc</msg></result>
@@ -5208,7 +5208,6 @@
 <result><category>net-misc</category><package>uftp</package><version>3.7.1</version><class>MissingSlotDep</class><msg>'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]</msg></result>
 <result><category>net-misc</category><package>urlview</package><version>0.9</version><class>MissingSlotDep</class><msg>'&gt;=sys-libs/ncurses-5.2' matches more than one slot: [ 0, 5 ]</msg></result>
 <result><category>net-misc</category><package>whatportis</package><version>0.6</version><class>HttpsAvailable</class><msg>'http://pypi.python.org/' link should use https:// on line: 11</msg></result>
-<result><category>net-misc</category><package>wicd</package><version>1.7.4-r2</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent dep: [ kde-apps/kdesu ]</msg></result>
 <result><category>net-misc</category><package>x11-ssh-askpass</package><version>1.2.4.1-r1</version><class>AbsoluteSymlink</class><msg>'dosym /usr/bin/x11-ssh-askpass ...' uses absolute path on line 36</msg></result>
 <result><category>net-misc</category><package>x2goserver</package><version>4.0.1.19</version><class>AbsoluteSymlink</class><msg>'dosym /usr/share/applications ...' uses absolute path on line 65</msg></result>
 <result><category>net-misc</category><package>x2goserver</package><version>4.0.1.19-r2</version><class>AbsoluteSymlink</class><msg>'dosym /usr/share/applications ...' uses absolute path on line 69</msg></result>
