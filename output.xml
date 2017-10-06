@@ -4262,9 +4262,9 @@
 <result><category>mail-client</category><package>clawsker</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
 <result><category>mail-client</category><package>cone</package><version>0.92</version><class>MissingSlotDep</class><msg>'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]</msg></result>
 <result><category>mail-client</category><package>evolution</package><version>3.22.6</version><class>DroppedKeywords</class><msg>arm, x86-fbsd</msg></result>
-<result><category>mail-client</category><package>mail-notification</package><class>SizeViolation</class><msg>"files/mail-notification-aarch64.patch" exceeds 20k in size; 48.2 KiB total</msg></result>
 <result><category>mail-client</category><package>mailx</package><version>8.1.2.20050715-r6</version><class>HttpsAvailable</class><msg>'http://www.debian.org/' link should use https:// on line: 13</msg></result>
 <result><category>mail-client</category><package>mailx</package><version>8.1.2.20050715-r6</version><class>AbsoluteSymlink</class><msg>'dosym /usr/bin/mail ...' uses absolute path on line 63</msg></result>
+<result><category>mail-client</category><package>mail-notification</package><class>SizeViolation</class><msg>"files/mail-notification-aarch64.patch" exceeds 20k in size; 48.2 KiB total</msg></result>
 <result><category>mail-client</category><package>mailx</package><version>8.1.2.20050715-r7</version><class>HttpsAvailable</class><msg>'http://www.debian.org/' link should use https:// on line: 15</msg></result>
 <result><category>mail-client</category><package>mutt</package><version>1.7.2</version><class>AbsoluteSymlink</class><msg>'dosym /etc/mime.types ...' uses absolute path on line 225</msg></result>
 <result><category>mail-client</category><package>mutt</package><version>1.9.0-r2</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: ^^ ( contains [berkdb] contains [gdbm] contains [lmdb] contains [qdbm] contains [tokyocabinet] )</msg></result>
@@ -4375,8 +4375,8 @@
 <result><category>dev-dotnet</category><package>gnome-keyring-sharp</package><version>1.0.2-r2</version><class>NonExistentDeps</class><msg>depset depends: nonexistent dep: [ dev-dotnet/glib-sharp ]</msg></result>
 <result><category>dev-dotnet</category><package>gnome-keyring-sharp</package><version>1.0.2-r2</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent dep: [ dev-dotnet/glib-sharp ]</msg></result>
 <result><category>dev-dotnet</category><package>gtksourceview-sharp</package><version>2.24.0-r10</version><class>NonExistentDeps</class><msg>depset depends: nonexistent dep: [ =dev-dotnet/gtk-sharp-gapi-2.12* ]</msg></result>
-<result><category>dev-dotnet</category><package>libgdiplus</package><version>2.10.9-r3</version><class>DroppedKeywords</class><msg>amd64-fbsd, arm</msg></result>
 <result><category>dev-dotnet</category><package>log4net</package><version>1.2.11</version><class>HttpsAvailable</class><msg>'http://logging.apache.org/' link should use https:// on line: 11</msg></result>
+<result><category>dev-dotnet</category><package>libgdiplus</package><version>2.10.9-r3</version><class>DroppedKeywords</class><msg>amd64-fbsd, arm</msg></result>
 <result><category>dev-dotnet</category><package>referenceassemblies-pcl</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
 <result><category>dev-dotnet</category><package>rsvg-sharp</package><version>2.24.0-r10</version><class>NonExistentDeps</class><msg>depset depends: nonexistent dep: [ =dev-dotnet/gtk-sharp-gapi-2.12* ]</msg></result>
 <result><category>dev-dotnet</category><package>vte-sharp</package><version>2.24.0-r10</version><class>NonExistentDeps</class><msg>depset depends: nonexistent dep: [ =dev-dotnet/gtk-sharp-gapi-2.12* ]</msg></result>
@@ -4463,7 +4463,6 @@
 <result><category>www-servers</category><package>pound</package><version>2.7d</version><class>MissingSlotDep</class><msg>'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]</msg></result>
 <result><category>www-servers</category><package>pound</package><version>2.7f</version><class>MissingSlotDep</class><msg>'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]</msg></result>
 <result><category>www-servers</category><package>pound</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
-<result><category>www-servers</category><package>puma</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
 <result><category>www-servers</category><package>resin</package><version>4.0.46</version><class>AbsoluteSymlink</class><msg>'dosym /etc/resin ...' uses absolute path on line 96</msg></result>
 <result><category>www-servers</category><package>resin</package><version>4.0.46</version><class>AbsoluteSymlink</class><msg>'dosym /var/log/resin ...' uses absolute path on line 107</msg></result>
 <result><category>www-servers</category><package>resin</package><version>4.0.46</version><class>AbsoluteSymlink</class><msg>'dosym /usr/share/resin/lib ...' uses absolute path on line 122</msg></result>
@@ -4471,6 +4470,7 @@
 <result><category>www-servers</category><package>resin</package><version>4.0.46</version><class>AbsoluteSymlink</class><msg>'dosym /var/lib/resin/hosts ...' uses absolute path on line 135</msg></result>
 <result><category>www-servers</category><package>resin</package><version>4.0.46</version><class>AbsoluteSymlink</class><msg>'dosym /var/lib/resin/resin-data ...' uses absolute path on line 136</msg></result>
 <result><category>www-servers</category><package>resin</package><version>4.0.46</version><class>AbsoluteSymlink</class><msg>'dosym /var/lib/resin/watchdog-data ...' uses absolute path on line 137</msg></result>
+<result><category>www-servers</category><package>puma</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
 <result><category>www-servers</category><package>resin</package><version>4.0.48</version><class>AbsoluteSymlink</class><msg>'dosym /etc/resin ...' uses absolute path on line 99</msg></result>
 <result><category>www-servers</category><package>resin</package><version>4.0.48</version><class>AbsoluteSymlink</class><msg>'dosym /var/log/resin ...' uses absolute path on line 110</msg></result>
 <result><category>www-servers</category><package>resin</package><version>4.0.48</version><class>AbsoluteSymlink</class><msg>'dosym /usr/share/resin/lib ...' uses absolute path on line 125</msg></result>
@@ -4747,8 +4747,8 @@
 <result><category>dev-lang</category><package>python</package><version>2.7.14</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent deps: [ sys-libs/db:5.2, sys-libs/db:5.0 ]</msg></result>
 <result><category>dev-lang</category><package>rubinius</package><version>3.43</version><class>MissingSlotDep</class><msg>'&gt;=sys-devel/llvm-3.6' matches more than one slot: [ 0, 4, 5, 6 ]</msg></result>
 <result><category>dev-lang</category><package>rubinius</package><version>3.43</version><class>MissingSlotDep</class><msg>'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]</msg></result>
-<result><category>dev-lang</category><package>ruby</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
 <result><category>dev-lang</category><package>rust</package><version>1.15.1</version><class>BadInsIntoDir</class><msg>ebuild uses insinto /etc/env.d on line 128</msg></result>
+<result><category>dev-lang</category><package>ruby</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
 <result><category>dev-lang</category><package>rust</package><version>1.16.0</version><class>BadInsIntoDir</class><msg>ebuild uses insinto /etc/env.d on line 124</msg></result>
 <result><category>dev-lang</category><package>rust</package><version>1.19.0</version><class>BadInsIntoDir</class><msg>ebuild uses insinto /etc/env.d on line 141</msg></result>
 <result><category>dev-lang</category><package>rust-bin</package><version>1.12.1</version><class>BadInsIntoDir</class><msg>ebuild uses insinto /etc/env.d on line 76</msg></result>
@@ -4796,9 +4796,9 @@
 <result><category>gnome-base</category><package>gnome-session</package><version>3.22.3</version><class>BadInsIntoDir</class><msg>ebuild uses insinto /usr/share/applications on line 108</msg></result>
 <result><category>gnome-base</category><package>gnome-session</package><version>3.24.1</version><class>BadInsIntoDir</class><msg>ebuild uses insinto /usr/share/applications on line 98</msg></result>
 <result><category>gnome-base</category><package>gnome-shell</package><version>3.22.3-r2</version><class>DroppedKeywords</class><msg>alpha, arm, ppc, ppc64</msg></result>
+<result><category>gnome-base</category><package>gvfs</package><version>1.30.4</version><class>MissingSlotDep</class><msg>'&gt;=sys-fs/fuse-2.8.0' matches more than one slot: [ 0, 3 ]</msg></result>
 <result><category>gnome-base</category><package>gvfs</package><version>1.30.4</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: contains [udisks]</msg></result>
 <result><category>gnome-base</category><package>gvfs</package><version>1.30.4</version><class>GLEP73BackAlteration</class><msg>REQUIRED_USE causes a preceding condition to start applying: [systemd] enforces [udisks] which may cause preceding [udisks] enforcing [udev] to evaluate to true</msg></result>
-<result><category>gnome-base</category><package>gvfs</package><version>1.30.4</version><class>MissingSlotDep</class><msg>'&gt;=sys-fs/fuse-2.8.0' matches more than one slot: [ 0, 3 ]</msg></result>
 <result><category>gnome-base</category><package>gvfs</package><version>1.32.1</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: contains [udisks]</msg></result>
 <result><category>gnome-base</category><package>gvfs</package><version>1.32.1</version><class>GLEP73BackAlteration</class><msg>REQUIRED_USE causes a preceding condition to start applying: [systemd] enforces [udisks] which may cause preceding [udisks] enforcing [udev] to evaluate to true</msg></result>
 <result><category>gnome-base</category><package>nautilus</package><version>3.22.3</version><class>DroppedKeywords</class><msg>arm, sh, sparc</msg></result>
@@ -5308,8 +5308,8 @@
 <result><category>net-dialup</category><package>minicom</package><version>2.6</version><class>HttpsAvailable</class><msg>'http://alioth.debian.org/' link should use https:// on lines: 11, 12</msg></result>
 <result><category>net-dialup</category><package>minicom</package><version>2.6</version><class>VulnerablePackage</class><msg>vulnerable via glsa(201706-13) ( ver &lt; 2.7.1 ), keywords: alpha, amd64, amd64-linux, arm, arm64, hppa, ia64, mips, ppc, ppc64, s390, sh, sparc, x86, x86-fbsd, x86-linux</msg></result>
 <result><category>net-dialup</category><package>minicom</package><version>2.7</version><class>HttpsAvailable</class><msg>'http://alioth.debian.org/' link should use https:// on line: 9</msg></result>
-<result><category>net-dialup</category><package>minicom</package><version>2.7</version><class>MissingSlotDep</class><msg>'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]</msg></result>
 <result><category>net-dialup</category><package>minicom</package><version>2.7</version><class>VulnerablePackage</class><msg>vulnerable via glsa(201706-13) ( ver &lt; 2.7.1 ), keywords: alpha, amd64, amd64-linux, arm, arm64, hppa, ia64, mips, ppc, ppc64, s390, sh, sparc, x86, x86-fbsd, x86-linux</msg></result>
+<result><category>net-dialup</category><package>minicom</package><version>2.7</version><class>MissingSlotDep</class><msg>'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]</msg></result>
 <result><category>net-dialup</category><package>minicom</package><version>2.7-r1</version><class>HttpsAvailable</class><msg>'http://alioth.debian.org/' link should use https:// on line: 9</msg></result>
 <result><category>net-dialup</category><package>minicom</package><version>2.7-r1</version><class>VulnerablePackage</class><msg>vulnerable via glsa(201706-13) ( ver &lt; 2.7.1 ), keywords: alpha, amd64, amd64-linux, arm, arm64, hppa, ia64, mips, ppc, ppc64, s390, sh, sparc, x86, x86-fbsd, x86-linux</msg></result>
 <result><category>net-dialup</category><package>minicom</package><version>2.7.1</version><class>HttpsAvailable</class><msg>'http://alioth.debian.org/' link should use https:// on line: 9</msg></result>
@@ -5868,8 +5868,8 @@
 <result><category>net-libs</category><package>libeXosip</package><version>4.0.0</version><class>MissingSlotDep</class><msg>'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]</msg></result>
 <result><category>net-libs</category><package>libesmtp</package><version>1.0.6-r1</version><class>MissingSlotDep</class><msg>'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]</msg></result>
 <result><category>net-libs</category><package>libetpan</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
-<result><category>net-libs</category><package>libgadu</package><version>1.11.4</version><class>MissingSlotDep</class><msg>'&gt;=dev-libs/openssl-0.9.6m' matches more than one slot: [ 0, 0.9.8 ]</msg></result>
 <result><category>net-libs</category><package>libgadu</package><version>1.11.4</version><class>VulnerablePackage</class><msg>vulnerable via glsa(201508-02) ( ver &lt; 1.12.0 ), keywords: alpha, amd64, amd64-linux, arm, ia64, mips, ppc, ppc-macos, ppc64, sparc, x86, x86-fbsd, x86-linux</msg></result>
+<result><category>net-libs</category><package>libgadu</package><version>1.11.4</version><class>MissingSlotDep</class><msg>'&gt;=dev-libs/openssl-0.9.6m' matches more than one slot: [ 0, 0.9.8 ]</msg></result>
 <result><category>net-libs</category><package>libgadu</package><version>1.12.0</version><class>MissingSlotDep</class><msg>'&gt;=dev-libs/openssl-0.9.6m' matches more than one slot: [ 0, 0.9.8 ]</msg></result>
 <result><category>net-libs</category><package>libgadu</package><version>1.12.1</version><class>MissingSlotDep</class><msg>'&gt;=dev-libs/openssl-0.9.6m' matches more than one slot: [ 0, 0.9.8 ]</msg></result>
 <result><category>net-libs</category><package>libgadu</package><version>1.12.0</version><class>DroppedKeywords</class><msg>alpha, ia64</msg></result>
