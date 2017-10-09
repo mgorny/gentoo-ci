@@ -3953,8 +3953,8 @@
 <result><category>net-firewall</category><package>conntrack-tools</package><version>1.4.3</version><class>DroppedKeywords</class><msg>alpha</msg></result>
 <result><category>net-firewall</category><package>fwknop</package><version>2.6.9-r1</version><class>GLEP73BackAlteration</class><msg>REQUIRED_USE causes a preceding condition to start applying: [udp-server] enforces [server] which may cause preceding [server &amp;&amp; firewalld] enforcing [!iptables] to evaluate to true</msg></result>
 <result><category>net-firewall</category><package>gshield</package><version>2.8-r4</version><class>AbsoluteSymlink</class><msg>'dosym /usr/share/gshield/$q ...' uses absolute path on line 36</msg></result>
-<result><category>net-firewall</category><package>iptables</package><class>ExecutableFile</class><msg>unnecessary executable bit: 'files/iptables.init'</msg></result>
 <result><category>net-firewall</category><package>iptables</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
+<result><category>net-firewall</category><package>iptables</package><class>ExecutableFile</class><msg>unnecessary executable bit: 'files/iptables.init'</msg></result>
 <result><category>net-firewall</category><package>nftables</package><class>ExecutableFile</class><msg>unnecessary executable bit: 'files/libexec/nftables.sh'</msg></result>
 <result><category>net-firewall</category><package>pglinux</package><version>2.3.1</version><class>NonExistentDeps</class><msg>depset depends: nonexistent dep: [ kde-apps/kdesu ]</msg></result>
 <result><category>net-firewall</category><package>pglinux</package><version>2.3.1</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent dep: [ kde-apps/kdesu ]</msg></result>
@@ -4236,9 +4236,9 @@
 <result><category>mail-client</category><package>clawsker</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
 <result><category>mail-client</category><package>cone</package><version>0.92</version><class>MissingSlotDep</class><msg>'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]</msg></result>
 <result><category>mail-client</category><package>evolution</package><version>3.22.6</version><class>DroppedKeywords</class><msg>arm, x86-fbsd</msg></result>
-<result><category>mail-client</category><package>mail-notification</package><class>SizeViolation</class><msg>"files/mail-notification-aarch64.patch" exceeds 20k in size; 48.2 KiB total</msg></result>
 <result><category>mail-client</category><package>mailx</package><version>8.1.2.20050715-r6</version><class>HttpsAvailable</class><msg>'http://www.debian.org/' link should use https:// on line: 13</msg></result>
 <result><category>mail-client</category><package>mailx</package><version>8.1.2.20050715-r6</version><class>AbsoluteSymlink</class><msg>'dosym /usr/bin/mail ...' uses absolute path on line 63</msg></result>
+<result><category>mail-client</category><package>mail-notification</package><class>SizeViolation</class><msg>"files/mail-notification-aarch64.patch" exceeds 20k in size; 48.2 KiB total</msg></result>
 <result><category>mail-client</category><package>mailx</package><version>8.1.2.20050715-r7</version><class>HttpsAvailable</class><msg>'http://www.debian.org/' link should use https:// on line: 15</msg></result>
 <result><category>mail-client</category><package>mutt</package><version>1.7.2</version><class>AbsoluteSymlink</class><msg>'dosym /etc/mime.types ...' uses absolute path on line 225</msg></result>
 <result><category>mail-client</category><package>mutt</package><version>1.9.0-r2</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: ^^ ( contains [berkdb] contains [gdbm] contains [lmdb] contains [qdbm] contains [tokyocabinet] )</msg></result>
@@ -4363,9 +4363,9 @@
 <result><category>dev-lisp</category><package>clisp</package><version>2.49-r8</version><class>MissingSlotDep</class><msg>'&gt;=sys-libs/readline-5.0' matches more than one slot: [ 0, 5 ]</msg></result>
 <result><category>dev-lisp</category><package>clisp</package><version>2.49-r8</version><class>MissingSlotDep</class><msg>'&gt;=x11-libs/gtk+-2.10' matches more than one slot: [ 2, 3 ]</msg></result>
 <result><category>dev-lisp</category><package>clisp</package><version>2.49-r8</version><class>DroppedKeywords</class><msg>alpha, ia64</msg></result>
+<result><category>dev-lisp</category><package>common-lisp-controller</package><version>4.27</version><class>HttpsAvailable</class><msg>'http://packages.debian.org/' link should use https:// on line: 7</msg></result>
 <result><category>dev-lisp</category><package>cmucl</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: 'files/20e-execstack-fixes.patch', 'files/21a-execstack-fixes.patch'</msg></result>
 <result><category>dev-lisp</category><package>cmucl</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: 'files/20e-customize-lisp-implementation-version.patch', 'files/21a-customize-lisp-implementation-version.patch'</msg></result>
-<result><category>dev-lisp</category><package>common-lisp-controller</package><version>4.27</version><class>HttpsAvailable</class><msg>'http://packages.debian.org/' link should use https:// on line: 7</msg></result>
 <result><category>dev-lisp</category><package>common-lisp-controller</package><version>5.13-r1</version><class>HttpsAvailable</class><msg>'http://packages.debian.org/' link should use https:// on line: 8</msg></result>
 <result><category>dev-lisp</category><package>common-lisp-controller</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: 'files/4.27/lisp-config.lisp', 'files/5.13/lisp-config.lisp'</msg></result>
 <result><category>dev-lisp</category><package>ecls</package><version>13.5.1-r1</version><class>MissingSlotDep</class><msg>'dev-libs/gmp' matches more than one slot: [ 0, 3 ]</msg></result>
@@ -4380,8 +4380,8 @@
 <result><category>dev-lisp</category><package>gcl</package><version>2.6.12</version><class>MissingSlotDep</class><msg>'&gt;=dev-libs/gmp-4.1' matches more than one slot: [ 0, 3 ]</msg></result>
 <result><category>dev-lisp</category><package>gcl</package><version>2.6.12</version><class>MissingSlotDep</class><msg>'dev-lang/tk' matches more than one slot: [ 0, 8.5 ]</msg></result>
 <result><category>dev-lisp</category><package>gcl</package><version>2.6.12</version><class>MissingSlotDep</class><msg>'sys-libs/readline' matches more than one slot: [ 0, 4, 5 ]</msg></result>
-<result><category>dev-lisp</category><package>gentoo-init</package><version>1.0</version><class>DroppedKeywords</class><msg>alpha, ia64, ppc64</msg></result>
 <result><category>dev-lisp</category><package>hyperspec</package><version>7.0-r1</version><class>AbsoluteSymlink</class><msg>'dosym /usr/share/doc/${P} ...' uses absolute path on line 23</msg></result>
+<result><category>dev-lisp</category><package>gentoo-init</package><version>1.0</version><class>DroppedKeywords</class><msg>alpha, ia64, ppc64</msg></result>
 <result><category>dev-lisp</category><package>sbcl</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
 <result><category>dev-lisp</category><package>uiop</package><version>3.0.3</version><class>AbsoluteSymlink</class><msg>'dosym /usr/share/common-lisp/source/${PN}/uiop.asd ...' uses absolute path on line 24</msg></result>
 <result><category>dev-lisp</category><package>uiop</package><version>3.0.3</version><class>AbsoluteSymlink</class><msg>'dosym /usr/share/common-lisp/source/${PN}/asdf-driver.asd ...' uses absolute path on line 25</msg></result>
@@ -4459,20 +4459,20 @@
 <result><category>www-servers</category><package>resin</package><version>4.0.48-r1</version><class>AbsoluteSymlink</class><msg>'dosym /var/lib/resin/hosts ...' uses absolute path on line 134</msg></result>
 <result><category>www-servers</category><package>resin</package><version>4.0.48-r1</version><class>AbsoluteSymlink</class><msg>'dosym /var/lib/resin/resin-data ...' uses absolute path on line 135</msg></result>
 <result><category>www-servers</category><package>resin</package><version>4.0.48-r1</version><class>AbsoluteSymlink</class><msg>'dosym /var/lib/resin/watchdog-data ...' uses absolute path on line 136</msg></result>
+<result><category>www-servers</category><package>resin</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
 <result><category>www-servers</category><package>resin</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: 'files/4.0.46/resin.conf', 'files/4.0.48/resin.conf'</msg></result>
 <result><category>www-servers</category><package>resin</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: 'files/4.0.46/resin.init', 'files/4.0.48/resin.init'</msg></result>
 <result><category>www-servers</category><package>resin</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: 'files/4.0.46/build.xml.patch', 'files/4.0.48/build.xml.patch'</msg></result>
-<result><category>www-servers</category><package>resin</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
 <result><category>www-servers</category><package>spawn-fcgi</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
 <result><category>www-servers</category><package>tomcat</package><version>7.0.79</version><class>HttpsAvailable</class><msg>'http://tomcat.apache.org/' link should use https:// on line: 13</msg></result>
 <result><category>www-servers</category><package>tomcat</package><version>7.0.81</version><class>HttpsAvailable</class><msg>'http://tomcat.apache.org/' link should use https:// on line: 13</msg></result>
 <result><category>www-servers</category><package>tomcat</package><version>8.0.45</version><class>HttpsAvailable</class><msg>'http://tomcat.apache.org/' link should use https:// on line: 13</msg></result>
 <result><category>www-servers</category><package>tomcat</package><version>8.5.20</version><class>HttpsAvailable</class><msg>'http://tomcat.apache.org/' link should use https:// on line: 13</msg></result>
 <result><category>www-servers</category><package>tomcat</package><version>9.0.0_alpha26</version><class>HttpsAvailable</class><msg>'http://tomcat.apache.org/' link should use https:// on line: 14</msg></result>
-<result><category>www-servers</category><package>tomcat</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: 'files/tomcat-7.0.79-build.xml.patch', 'files/tomcat-7.0.81-build.xml.patch'</msg></result>
-<result><category>www-servers</category><package>tomcat</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: 'files/tomcat-8.0.45-build.xml.patch', 'files/tomcat-8.0.46-build.xml.patch'</msg></result>
 <result><category>www-servers</category><package>tomcat</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
 <result><category>www-servers</category><package>tomcat</package><version>8.0.45</version><class>DroppedKeywords</class><msg>ppc64</msg></result>
+<result><category>www-servers</category><package>tomcat</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: 'files/tomcat-7.0.79-build.xml.patch', 'files/tomcat-7.0.81-build.xml.patch'</msg></result>
+<result><category>www-servers</category><package>tomcat</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: 'files/tomcat-8.0.45-build.xml.patch', 'files/tomcat-8.0.46-build.xml.patch'</msg></result>
 <result><category>www-servers</category><package>uwsgi</package><version>2.0.15</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: ( contains [cgi] || contains [mono] || contains [perl] || contains [go] || contains [lua] || contains [php] || contains [pypy] || contains [python] || contains [python_asyncio] || contains [python_gevent] || contains [ruby] )</msg></result>
 <result><category>www-servers</category><package>uwsgi</package><version>2.0.15</version><class>GLEP73BackAlteration</class><msg>REQUIRED_USE causes a preceding condition to start applying: [python_gevent] enforces [python] which may cause preceding [python &amp;&amp; !python_targets_python2_7 &amp;&amp; !python_targets_python3_4 &amp;&amp; !python_targets_python3_5] enforcing [python_targets_pypy] to evaluate to true</msg></result>
 <result><category>www-servers</category><package>uwsgi</package><version>2.0.15-r1</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: ( contains [cgi] || contains [mono] || contains [perl] || contains [go] || contains [lua] || contains [php] || contains [pypy] || contains [python] || contains [python_asyncio] || contains [python_gevent] || contains [ruby] )</msg></result>
@@ -4826,12 +4826,12 @@
 <result><category>net-misc</category><package>kafka-bin</package><version>0.11.0.0</version><class>HttpsAvailable</class><msg>'http://kafka.apache.org/' link should use https:// on line: 9</msg></result>
 <result><category>net-misc</category><package>kafka-bin</package><version>0.11.0.0-r1</version><class>HttpsAvailable</class><msg>'http://kafka.apache.org/' link should use https:// on line: 9</msg></result>
 <result><category>net-misc</category><package>kafka-bin</package><version>0.11.0.1</version><class>HttpsAvailable</class><msg>'http://kafka.apache.org/' link should use https:// on line: 9</msg></result>
-<result><category>net-misc</category><package>kafka-bin</package><class>ExecutableFile</class><msg>unnecessary executable bit: 'files/kafka.init.d.2'</msg></result>
 <result><category>net-misc</category><package>kafka-bin</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
+<result><category>net-misc</category><package>kafka-bin</package><class>ExecutableFile</class><msg>unnecessary executable bit: 'files/kafka.init.d.2'</msg></result>
 <result><category>net-misc</category><package>knock</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
 <result><category>net-misc</category><package>lcr</package><version>9999</version><class>MissingSlotDep</class><msg>'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]</msg></result>
-<result><category>net-misc</category><package>mediatomb</package><class>SizeViolation</class><msg>"files/mediatomb-0.12.1-libextractor.patch" exceeds 20k in size; 20.6 KiB total</msg></result>
 <result><category>net-misc</category><package>mediatomb</package><version>0.12.2_pre20160522</version><class>DroppedKeywords</class><msg>ppc</msg></result>
+<result><category>net-misc</category><package>mediatomb</package><class>SizeViolation</class><msg>"files/mediatomb-0.12.1-libextractor.patch" exceeds 20k in size; 20.6 KiB total</msg></result>
 <result><category>net-misc</category><package>megatools</package><version>1.9.97</version><class>MissingSlotDep</class><msg>'sys-fs/fuse' matches more than one slot: [ 0, 3 ]</msg></result>
 <result><category>net-misc</category><package>megatools</package><version>1.9.98</version><class>MissingSlotDep</class><msg>'sys-fs/fuse' matches more than one slot: [ 0, 3 ]</msg></result>
 <result><category>net-misc</category><package>minidlna</package><version>1.1.5-r1</version><class>AbsoluteSymlink</class><msg>'dosym /usr/sbin/${PN}d ...' uses absolute path on line 71</msg></result>
@@ -4914,8 +4914,8 @@
 <result><category>dev-libs</category><package>bglibs</package><version>1.106-r1</version><class>AbsoluteSymlink</class><msg>'dosym /usr/include/bglibs ...' uses absolute path on line 56</msg></result>
 <result><category>dev-libs</category><package>bglibs</package><version>1.104</version><class>DroppedKeywords</class><msg>arm</msg></result>
 <result><category>dev-libs</category><package>blitz</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
-<result><category>dev-libs</category><package>boehm-gc</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: 'files/boehm-gc-7.2d-automake-1.13.patch', 'files/boehm-gc-7.2e-automake-1.13.patch'</msg></result>
 <result><category>dev-libs</category><package>boost</package><version>1.62.0-r1</version><class>AbsoluteSymlink</class><msg>'dosym /usr/include/boost ...' uses absolute path on line 308</msg></result>
+<result><category>dev-libs</category><package>boehm-gc</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: 'files/boehm-gc-7.2d-automake-1.13.patch', 'files/boehm-gc-7.2e-automake-1.13.patch'</msg></result>
 <result><category>dev-libs</category><package>boost</package><version>1.63.0</version><class>AbsoluteSymlink</class><msg>'dosym /usr/include/boost ...' uses absolute path on line 304</msg></result>
 <result><category>dev-libs</category><package>boost</package><version>1.65.0</version><class>AbsoluteSymlink</class><msg>'dosym /usr/include/boost ...' uses absolute path on line 303</msg></result>
 <result><category>dev-libs</category><package>botan</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
