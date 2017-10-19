@@ -133,7 +133,6 @@
 <result><category>app-emulation</category><package>xen</package><version>4.8.2-r1</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: contains [debug]</msg></result>
 <result><category>app-emulation</category><package>xen-pvgrub</package><version>4.7.2</version><class>VulnerablePackage</class><msg>vulnerable via glsa(201710-17) ( ver &lt; 4.7.3 ), keywords: amd64, x86</msg></result>
 <result><category>app-emulation</category><package>xen-tools</package><version>4.7.2</version><class>VulnerablePackage</class><msg>vulnerable via glsa(201710-17) ( ver &lt; 4.7.3 ), keywords: amd64, arm, arm64, x86</msg></result>
-<result><category>app-emulation</category><package>xen-tools</package><version>4.8.2-r2</version><class>NonsolvableDeps</class><msg>nonsolvable depset(depends) keyword(~arm) profile (default/linux/arm/13.0): solutions: [ app-text/pandoc ]</msg></result>
 <result><category>media-libs</category><package>allegro</package><version>5.0.11</version><class>DroppedKeywords</class><msg>arm64, mips</msg></result>
 <result><category>media-libs</category><package>avidemux-core</package><version>2.6.8</version><class>NonExistentDeps</class><msg>depset depends: nonexistent deps: [ &gt;=x11-drivers/ati-drivers-14.12-r3, x11-libs/xvba-video:0 ]</msg></result>
 <result><category>media-libs</category><package>avidemux-core</package><version>2.6.8</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent deps: [ &gt;=x11-drivers/ati-drivers-14.12-r3, x11-libs/xvba-video:0 ]</msg></result>
@@ -275,7 +274,9 @@
 <result><category>dev-perl</category><package>Cookie-Baker</package><version>0.70.0</version><class>DroppedKeywords</class><msg>alpha, sparc</msg></result>
 <result><category>dev-perl</category><package>Crypt-DES</package><version>2.70.0-r1</version><class>DroppedKeywords</class><msg>arm</msg></result>
 <result><category>dev-perl</category><package>Crypt-DH</package><version>0.70.0-r1</version><class>MissingSlotDep</class><msg>'dev-libs/gmp' matches more than one slot: [ 0, 3 ]</msg></result>
+<result><category>dev-perl</category><package>Crypt-DH</package><version>0.70.0-r2</version><class>MissingSlotDep</class><msg>'dev-libs/gmp' matches more than one slot: [ 0, 3 ]</msg></result>
 <result><category>dev-perl</category><package>CursesWidgets</package><version>1.997.0-r1</version><class>MissingSlotDep</class><msg>'&gt;=sys-libs/ncurses-5' matches more than one slot: [ 0, 5 ]</msg></result>
+<result><category>dev-perl</category><package>CursesWidgets</package><version>1.997.0-r2</version><class>MissingSlotDep</class><msg>'&gt;=sys-libs/ncurses-5' matches more than one slot: [ 0, 5 ]</msg></result>
 <result><category>dev-perl</category><package>Cwd-Guard</package><version>0.50.0</version><class>DroppedKeywords</class><msg>x86</msg></result>
 <result><category>dev-perl</category><package>DBD-mysql</package><version>4.32.0-r2</version><class>VulnerablePackage</class><msg>vulnerable via glsa(201701-51) ( ver &lt; 4.41.0 ), keywords: alpha, amd64, amd64-linux, arm, hppa, ia64, mips, ppc, ppc-macos, ppc64, s390, sh, sparc, sparc-solaris, x64-macos, x64-solaris, x86, x86-fbsd, x86-linux, x86-macos, x86-solaris</msg></result>
 <result><category>dev-perl</category><package>DBD-mysql</package><version>4.37.0</version><class>VulnerablePackage</class><msg>vulnerable via glsa(201701-51) ( ver &lt; 4.41.0 ), keywords: alpha, amd64, amd64-linux, arm, hppa, ia64, mips, ppc, ppc-macos, ppc64, s390, sh, sparc, sparc-solaris, x64-macos, x64-solaris, x86, x86-fbsd, x86-linux, x86-macos, x86-solaris</msg></result>
@@ -5290,9 +5291,9 @@
 <result><category>dev-games</category><package>irrlicht</package><class>SizeViolation</class><msg>"files/irrlicht-1.8.4-demoMake.patch" exceeds 20k in size; 27.4 KiB total</msg></result>
 <result><category>dev-games</category><package>libmaitretarot</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
 <result><category>dev-games</category><package>libmt_client</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
-<result><category>dev-games</category><package>mygui</package><version>3.2.2</version><class>MissingSlotDep</class><msg>'media-libs/glew' matches more than one slot: [ 0, 1.10, 1.6 ]</msg></result>
 <result><category>dev-games</category><package>mygui</package><version>3.2.2</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: not contains [opengl]</msg></result>
 <result><category>dev-games</category><package>mygui</package><version>3.2.2</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: not contains [ogre]</msg></result>
+<result><category>dev-games</category><package>mygui</package><version>3.2.2</version><class>MissingSlotDep</class><msg>'media-libs/glew' matches more than one slot: [ 0, 1.10, 1.6 ]</msg></result>
 <result><category>dev-games</category><package>ogre</package><version>1.9.0-r1</version><class>GLEP73BackAlteration</class><msg>REQUIRED_USE causes a preceding condition to start applying: [tbb] enforces [threads] which may cause preceding [threads &amp;&amp; poco] enforcing [!tbb] to evaluate to true</msg></result>
 <result><category>dev-games</category><package>openscenegraph</package><version>3.5.5</version><class>DroppedKeywords</class><msg>ia64, ppc</msg></result>
 <result><category>dev-games</category><package>openscenegraph</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
@@ -5827,8 +5828,8 @@
 <result><category>net-libs</category><package>libeXosip</package><version>4.0.0</version><class>MissingSlotDep</class><msg>'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]</msg></result>
 <result><category>net-libs</category><package>libesmtp</package><version>1.0.6-r1</version><class>MissingSlotDep</class><msg>'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]</msg></result>
 <result><category>net-libs</category><package>libetpan</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
-<result><category>net-libs</category><package>libgadu</package><version>1.11.4</version><class>MissingSlotDep</class><msg>'&gt;=dev-libs/openssl-0.9.6m' matches more than one slot: [ 0, 0.9.8 ]</msg></result>
 <result><category>net-libs</category><package>libgadu</package><version>1.11.4</version><class>VulnerablePackage</class><msg>vulnerable via glsa(201508-02) ( ver &lt; 1.12.0 ), keywords: alpha, amd64, amd64-linux, arm, ia64, mips, ppc, ppc-macos, ppc64, sparc, x86, x86-fbsd, x86-linux</msg></result>
+<result><category>net-libs</category><package>libgadu</package><version>1.11.4</version><class>MissingSlotDep</class><msg>'&gt;=dev-libs/openssl-0.9.6m' matches more than one slot: [ 0, 0.9.8 ]</msg></result>
 <result><category>net-libs</category><package>libgadu</package><version>1.12.0</version><class>MissingSlotDep</class><msg>'&gt;=dev-libs/openssl-0.9.6m' matches more than one slot: [ 0, 0.9.8 ]</msg></result>
 <result><category>net-libs</category><package>libgadu</package><version>1.12.1</version><class>MissingSlotDep</class><msg>'&gt;=dev-libs/openssl-0.9.6m' matches more than one slot: [ 0, 0.9.8 ]</msg></result>
 <result><category>net-libs</category><package>libgadu</package><version>1.12.0</version><class>DroppedKeywords</class><msg>alpha, ia64</msg></result>
