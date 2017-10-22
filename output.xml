@@ -109,8 +109,8 @@
 <result><category>app-emulation</category><package>vmware-player</package><version>12.1.0.3272444-r2</version><class>AbsoluteSymlink</class><msg>'dosym /usr/$(get_libdir)/libglib-2.0.so.0 ...' uses absolute path on line 281</msg></result>
 <result><category>app-emulation</category><package>vmware-player</package><version>12.1.0.3272444-r2</version><class>AbsoluteSymlink</class><msg>'dosym /usr/$(get_libdir)/libcrypto.so.1.0.0 ...' uses absolute path on line 284</msg></result>
 <result><category>app-emulation</category><package>vmware-player</package><version>12.1.0.3272444-r2</version><class>AbsoluteSymlink</class><msg>'dosym /usr/$(get_libdir)/libssl.so.1.0.0 ...' uses absolute path on line 286</msg></result>
-<result><category>app-emulation</category><package>vmware-player</package><version>12.1.0.3272444-r2</version><class>BadRestricts</class><msg>unknown restricts: preserve-libs</msg></result>
 <result><category>app-emulation</category><package>vmware-player</package><version>12.1.0.3272444-r2</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent dep: [ dev-libs/nettle:0 ]</msg></result>
+<result><category>app-emulation</category><package>vmware-player</package><version>12.1.0.3272444-r2</version><class>BadRestricts</class><msg>unknown restricts: preserve-libs</msg></result>
 <result><category>app-emulation</category><package>vmware-player</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: 'files/vmware-11.0.rc', 'files/vmware-11.2.rc', 'files/vmware-12.1.rc'</msg></result>
 <result><category>app-emulation</category><package>vmware-tools</package><version>9.9.3.2780323</version><class>DroppedKeywords</class><msg>x86</msg></result>
 <result><category>app-emulation</category><package>vmware-workstation</package><version>10.0.6.2700073-r1</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent dep: [ dev-libs/libgcrypt:0 ]</msg></result>
@@ -3261,7 +3261,7 @@
 <result><category>app-office</category><package>pybliographer</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
 <result><category>app-office</category><package>scribus</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: 'files/scribus-1.5.3-docdir.patch', 'files/scribus-9999-docdir.patch'</msg></result>
 <result><category>app-office</category><package>scribus</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: 'files/scribus-1.5.3-fpic.patch', 'files/scribus-9999-fpic.patch'</msg></result>
-<result><category>app-office</category><package>scribus</package><version>1.5.0-r1</version><class>DroppedKeywords</class><msg>hppa, ppc, ppc64, sparc</msg></result>
+<result><category>app-office</category><package>scribus</package><version>1.5.3</version><class>DroppedKeywords</class><msg>sparc</msg></result>
 <result><category>app-office</category><package>upwork</package><version>4.1.134</version><class>AbsoluteSymlink</class><msg>'dosym /usr/lib/libudev.so ...' uses absolute path on line 44</msg></result>
 <result><category>app-office</category><package>worklog-assistant-bin</package><version>2.1.3580</version><class>AbsoluteSymlink</class><msg>'dosym /opt/Worklog ...' uses absolute path on line 37</msg></result>
 <result><category>gnome-extra</category><package>chrome-gnome-shell</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
@@ -5877,6 +5877,7 @@
 <result><class>UnknownProfilePackages</class><msg>'arch/arm/package.use.stable.mask': unknown packages: [ '&lt;=dev-util/valgrind-3.10.1', '&lt;=dev-libs/boost-1.56.0-r1' ]</msg></result>
 <result><class>UnknownProfilePackages</class><msg>'arch/arm/package.use.mask': unknown packages: [ 'dev-qt/qt-mobility', '=media-gfx/graphviz-2.26.3-r4' ]</msg></result>
 <result><class>UnknownProfilePackages</class><msg>'arch/ia64/package.use.stable.mask': unknown packages: [ '~media-libs/elementary-1.15.2', '~dev-libs/efl-1.15.2' ]</msg></result>
+<result><class>UnknownProfilePackages</class><msg>'arch/powerpc/ppc64/package.use.mask': unknown package: [ '=app-office/scribus-1.5.0-r1' ]</msg></result>
 <result><class>UnknownProfilePackages</class><msg>'arch/sparc/package.use.stable.mask': unknown packages: [ '~media-libs/elementary-1.15.2', '~dev-libs/efl-1.15.2' ]</msg></result>
 <result><class>UnknownProfilePackages</class><msg>'arch/x86/package.mask': unknown package: [ '=sys-apps/systemd-232' ]</msg></result>
 <result><class>UnknownProfilePackages</class><msg>'arch/x86/package.use.mask': unknown package: [ '=sys-cluster/glusterfs-3.1.2' ]</msg></result>
