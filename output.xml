@@ -109,8 +109,8 @@
 <result><category>app-emulation</category><package>vmware-player</package><version>12.1.0.3272444-r2</version><class>AbsoluteSymlink</class><msg>'dosym /usr/$(get_libdir)/libglib-2.0.so.0 ...' uses absolute path on line 281</msg></result>
 <result><category>app-emulation</category><package>vmware-player</package><version>12.1.0.3272444-r2</version><class>AbsoluteSymlink</class><msg>'dosym /usr/$(get_libdir)/libcrypto.so.1.0.0 ...' uses absolute path on line 284</msg></result>
 <result><category>app-emulation</category><package>vmware-player</package><version>12.1.0.3272444-r2</version><class>AbsoluteSymlink</class><msg>'dosym /usr/$(get_libdir)/libssl.so.1.0.0 ...' uses absolute path on line 286</msg></result>
-<result><category>app-emulation</category><package>vmware-player</package><version>12.1.0.3272444-r2</version><class>BadRestricts</class><msg>unknown restricts: preserve-libs</msg></result>
 <result><category>app-emulation</category><package>vmware-player</package><version>12.1.0.3272444-r2</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent dep: [ dev-libs/nettle:0 ]</msg></result>
+<result><category>app-emulation</category><package>vmware-player</package><version>12.1.0.3272444-r2</version><class>BadRestricts</class><msg>unknown restricts: preserve-libs</msg></result>
 <result><category>app-emulation</category><package>vmware-player</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: 'files/vmware-11.0.rc', 'files/vmware-11.2.rc', 'files/vmware-12.1.rc'</msg></result>
 <result><category>app-emulation</category><package>vmware-tools</package><version>9.9.3.2780323</version><class>DroppedKeywords</class><msg>x86</msg></result>
 <result><category>app-emulation</category><package>vmware-workstation</package><version>10.0.6.2700073-r1</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent dep: [ dev-libs/libgcrypt:0 ]</msg></result>
@@ -3220,7 +3220,6 @@
 <result><category>sci-mathematics</category><package>singular</package><version>4.0.2</version><class>DroppedKeywords</class><msg>amd64-linux, ppc-macos, x64-macos</msg></result>
 <result><category>sci-mathematics</category><package>spass</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
 <result><category>sci-mathematics</category><package>unuran</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
-<result><category>sci-mathematics</category><package>why3-for-spark</package><version>2017</version><class>MissingUri</class><msg>file https//mirrors.cdn.adacore.com/art/591c45e2c7a447af2deed055 is unfetchable- no URI available, and RESTRICT=fetch isn't set</msg></result>
 <result><category>sci-mathematics</category><package>wxmaxima</package><version>15.08.2</version><class>AbsoluteSymlink</class><msg>'dosym /usr/share/${PN}/README ...' uses absolute path on line 60</msg></result>
 <result><category>sci-mathematics</category><package>wxmaxima</package><version>16.04.2</version><class>AbsoluteSymlink</class><msg>'dosym /usr/share/${PN}/README ...' uses absolute path on line 60</msg></result>
 <result><category>sci-mathematics</category><package>wxmaxima</package><version>16.12.0</version><class>AbsoluteSymlink</class><msg>'dosym /usr/share/${PN}/README ...' uses absolute path on line 60</msg></result>
@@ -4593,8 +4592,6 @@
 <result><category>dev-lang</category><package>ghc</package><version>8.0.2</version><class>DroppedKeywords</class><msg>ia64, ppc, ppc64</msg></result>
 <result><category>dev-lang</category><package>ghc</package><version>8.2.1</version><class>DroppedKeywords</class><msg>alpha, amd64, x86</msg></result>
 <result><category>dev-lang</category><package>gnuprologjava</package><version>0.2.6</version><class>HttpsAvailable</class><msg>'http://www.gnu.org/' link should use https:// on line: 9</msg></result>
-<result><category>dev-lang</category><package>go</package><version>1.8.3</version><class>VulnerablePackage</class><msg>vulnerable via glsa(201710-23) ( ver &lt; 1.9.1 ), keywords: amd64, amd64-fbsd, arm, arm64, ppc64, x64-macos, x64-solaris, x86, x86-fbsd</msg></result>
-<result><category>dev-lang</category><package>go</package><version>1.9</version><class>VulnerablePackage</class><msg>vulnerable via glsa(201710-23) ( ver &lt; 1.9.1 ), keywords: amd64, amd64-fbsd, arm, arm64, ppc64, x64-macos, x64-solaris, x86, x86-fbsd</msg></result>
 <result><category>dev-lang</category><package>helium</package><version>1.6</version><class>AbsoluteSymlink</class><msg>'dosym /usr/bin/helium-wrapper ...' uses absolute path on line 101</msg></result>
 <result><category>dev-lang</category><package>helium</package><version>1.6</version><class>AbsoluteSymlink</class><msg>'dosym /usr/bin/helium-wrapper ...' uses absolute path on line 102</msg></result>
 <result><category>dev-lang</category><package>helium</package><version>1.6</version><class>AbsoluteSymlink</class><msg>'dosym /usr/bin/helium-wrapper ...' uses absolute path on line 103</msg></result>
@@ -5907,6 +5904,7 @@
 <result><class>UnknownProfilePackages</class><msg>'prefix/darwin/macos/10.8/package.mask': unknown package: [ 'media-libs/opengl-apple' ]</msg></result>
 <result><class>UnknownProfilePackages</class><msg>'prefix/darwin/macos/10.9/package.mask': unknown package: [ 'media-libs/opengl-apple' ]</msg></result>
 <result><class>UnknownProfilePackages</class><msg>'prefix/sunos/solaris/package.mask': unknown package: [ '=app-portage/portage-utils-0.56' ]</msg></result>
+<result><class>UnknownProfilePackages</class><msg>'prefix/windows/cygwin/package.mask': unknown package: [ '~net-dns/libidn2-0.16' ]</msg></result>
 <result><class>UnknownProfilePackages</class><msg>'releases/freebsd-10.3/package.mask': unknown package: [ '&gt;sys-freebsd/freebsd-contrib-10.3.99' ]</msg></result>
 <result><class>UnknownProfilePackages</class><msg>'releases/freebsd-11.0/package.mask': unknown packages: [ '&gt;sys-freebsd/freebsd-libexec-11.0.99', '&gt;sys-freebsd/freebsd-contrib-11.0.99' ]</msg></result>
 <result><class>UnknownProfilePackages</class><msg>'releases/freebsd-11.1/package.mask': unknown packages: [ '&gt;sys-freebsd/freebsd-pam-modules-11.1.99', '&gt;sys-freebsd/freebsd-rescue-11.1.99', '&gt;sys-freebsd/freebsd-pf-11.1.99', '&gt;sys-freebsd/freebsd-mk-defs-11.1.99', '&gt;sys-freebsd/freebsd-lib-11.1.99', '&gt;sys-freebsd/freebsd-libexec-11.1.99', '&gt;sys-freebsd/freebsd-bin-11.1.99', '&gt;sys-freebsd/freebsd-sbin-11.1.99', '&gt;sys-freebsd/freebsd-ubin-11.1.99', '&gt;sys-freebsd/freebsd-usbin-11.1.99', '&gt;sys-freebsd/freebsd-share-11.1.99', '&gt;sys-freebsd/freebsd-contrib-11.1.99', '&gt;sys-freebsd/freebsd-cddl-11.1.99', '&gt;sys-freebsd/boot0-11.1.99', '&gt;sys-freebsd/freebsd-sources-11.1.99' ]</msg></result>
