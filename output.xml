@@ -68,8 +68,8 @@
 <result><category>app-emulation</category><package>virtualbox</package><version>5.1.30</version><class>GLEP73BackAlteration</class><msg>REQUIRED_USE causes a preceding condition to start applying: [vboxwebsrv] enforces [java] which may cause preceding [java] enforcing [sdk] to evaluate to true</msg></result>
 <result><category>app-emulation</category><package>virtualbox-modules</package><class>ExecutableFile</class><msg>unnecessary executable bit: 'files/create_vbox_modules_tarball.sh'</msg></result>
 <result><category>app-emulation</category><package>xcpc</package><version>20070122</version><class>HttpsAvailable</class><msg>'http://sourceforge.net/' link should use https:// on line: 8</msg></result>
-<result><category>app-emulation</category><package>xen</package><version>4.7.2-r1</version><class>VulnerablePackage</class><msg>vulnerable via glsa(201710-17) ( ver &lt; 4.7.3 ), keywords: amd64, arm, x86</msg></result>
 <result><category>app-emulation</category><package>xen</package><version>4.7.2-r1</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: contains [debug]</msg></result>
+<result><category>app-emulation</category><package>xen</package><version>4.7.2-r1</version><class>VulnerablePackage</class><msg>vulnerable via glsa(201710-17) ( ver &lt; 4.7.3 ), keywords: amd64, arm, x86</msg></result>
 <result><category>app-emulation</category><package>xen</package><version>4.7.3</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: contains [debug]</msg></result>
 <result><category>app-emulation</category><package>xen</package><version>4.8.2</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: contains [debug]</msg></result>
 <result><category>app-emulation</category><package>xen</package><version>4.8.2-r1</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: contains [debug]</msg></result>
@@ -209,13 +209,9 @@
 <result><category>media-libs</category><package>vips</package><version>7.38.5-r1</version><class>AbsoluteSymlink</class><msg>'dosym /usr/share/doc/${PF} ...' uses absolute path on line 72</msg></result>
 <result><category>media-libs</category><package>vigra</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
 <result><category>media-libs</category><package>x264</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
-<result><category>dev-perl</category><package>App-pwhich</package><version>1.150.0</version><class>DroppedKeywords</class><msg>alpha, arm, arm64, hppa, ia64, ppc, ppc64</msg></result>
-<result><category>dev-perl</category><package>Archive-Zip</package><version>1.560.0</version><class>DroppedKeywords</class><msg>ia64, ppc-aix, ppc64, sparc, x86-fbsd</msg></result>
-<result><category>dev-perl</category><package>CGI</package><version>4.310.0</version><class>DroppedKeywords</class><msg>amd64-fbsd, m68k</msg></result>
-<result><category>dev-perl</category><package>CGI-Fast</package><version>2.110.0</version><class>DroppedKeywords</class><msg>m68k, mips, s390, sh</msg></result>
-<result><category>dev-perl</category><package>Class-Load</package><version>0.230.0</version><class>DroppedKeywords</class><msg>amd64-linux, m68k, ppc-aix, ppc-macos, s390, sh, x64-macos, x86-fbsd, x86-linux, x86-macos, x86-solaris</msg></result>
-<result><category>dev-perl</category><package>Convert-UUlib</package><version>1.500.0-r1</version><class>DroppedKeywords</class><msg>m68k, s390, sh</msg></result>
-<result><category>dev-perl</category><package>Cookie-Baker</package><version>0.70.0</version><class>DroppedKeywords</class><msg>alpha, sparc</msg></result>
+<result><category>dev-perl</category><package>App-pwhich</package><version>1.150.0</version><class>DroppedKeywords</class><msg>alpha, arm, hppa, ia64, ppc, ppc64</msg></result>
+<result><category>dev-perl</category><package>Archive-Zip</package><version>1.560.0</version><class>DroppedKeywords</class><msg>ia64, ppc64</msg></result>
+<result><category>dev-perl</category><package>Cookie-Baker</package><version>0.70.0</version><class>DroppedKeywords</class><msg>alpha</msg></result>
 <result><category>dev-perl</category><package>Crypt-DES</package><version>2.70.0-r1</version><class>DroppedKeywords</class><msg>arm</msg></result>
 <result><category>dev-perl</category><package>Crypt-DH</package><version>0.70.0-r1</version><class>MissingSlotDep</class><msg>'dev-libs/gmp' matches more than one slot: [ 0, 3 ]</msg></result>
 <result><category>dev-perl</category><package>Crypt-DH</package><version>0.70.0-r2</version><class>MissingSlotDep</class><msg>'dev-libs/gmp' matches more than one slot: [ 0, 3 ]</msg></result>
@@ -224,53 +220,32 @@
 <result><category>dev-perl</category><package>Cwd-Guard</package><version>0.50.0</version><class>DroppedKeywords</class><msg>x86</msg></result>
 <result><category>dev-perl</category><package>DBD-mysql</package><version>4.32.0-r2</version><class>VulnerablePackage</class><msg>vulnerable via glsa(201701-51) ( ver &lt; 4.41.0 ), keywords: alpha, amd64, amd64-linux, arm, hppa, ia64, mips, ppc, ppc-macos, ppc64, s390, sh, sparc, sparc-solaris, x64-macos, x64-solaris, x86, x86-fbsd, x86-linux, x86-macos, x86-solaris</msg></result>
 <result><category>dev-perl</category><package>DBD-mysql</package><version>4.37.0</version><class>VulnerablePackage</class><msg>vulnerable via glsa(201701-51) ( ver &lt; 4.41.0 ), keywords: alpha, amd64, amd64-linux, arm, hppa, ia64, mips, ppc, ppc-macos, ppc64, s390, sh, sparc, sparc-solaris, x64-macos, x64-solaris, x86, x86-fbsd, x86-linux, x86-macos, x86-solaris</msg></result>
-<result><category>dev-perl</category><package>DBD-mysql</package><version>4.42.0</version><class>DroppedKeywords</class><msg>mips, ppc64, sparc, x86-fbsd</msg></result>
-<result><category>dev-perl</category><package>Data-Validate-Domain</package><version>0.140.0</version><class>DroppedKeywords</class><msg>hppa, sparc</msg></result>
-<result><category>dev-perl</category><package>Data-Validate-IP</package><version>0.260.0</version><class>DroppedKeywords</class><msg>sparc</msg></result>
-<result><category>dev-perl</category><package>DateTime</package><version>1.360.0</version><class>DroppedKeywords</class><msg>m68k, s390, sh</msg></result>
-<result><category>dev-perl</category><package>DateTime</package><version>1.420.0</version><class>DroppedKeywords</class><msg>alpha, arm, arm64, hppa, ia64, ppc, ppc64, sparc, x86-fbsd</msg></result>
-<result><category>dev-perl</category><package>DateTime-Format-Strptime</package><version>1.730.0</version><class>DroppedKeywords</class><msg>alpha, arm, hppa, ia64, ppc, ppc64, sparc</msg></result>
-<result><category>dev-perl</category><package>DateTime-Locale</package><version>1.160.0</version><class>DroppedKeywords</class><msg>alpha, arm, arm64, hppa, ia64, ppc, ppc64, s390, sh, sparc, x86-fbsd</msg></result>
-<result><category>dev-perl</category><package>DateTime-TimeZone</package><version>2.110.0</version><class>DroppedKeywords</class><msg>alpha, arm, arm64, hppa, ia64, m68k, ppc, ppc64, s390, sh, sparc, x86-fbsd</msg></result>
+<result><category>dev-perl</category><package>DBD-mysql</package><version>4.42.0</version><class>DroppedKeywords</class><msg>ppc64</msg></result>
+<result><category>dev-perl</category><package>Data-Validate-Domain</package><version>0.140.0</version><class>DroppedKeywords</class><msg>hppa</msg></result>
+<result><category>dev-perl</category><package>DateTime</package><version>1.420.0</version><class>DroppedKeywords</class><msg>alpha, arm, hppa, ia64, ppc, ppc64</msg></result>
+<result><category>dev-perl</category><package>DateTime-Format-Strptime</package><version>1.730.0</version><class>DroppedKeywords</class><msg>alpha, arm, hppa, ia64, ppc, ppc64</msg></result>
+<result><category>dev-perl</category><package>DateTime-Locale</package><version>1.160.0</version><class>DroppedKeywords</class><msg>alpha, arm, hppa, ia64, ppc, ppc64</msg></result>
+<result><category>dev-perl</category><package>DateTime-TimeZone</package><version>2.110.0</version><class>DroppedKeywords</class><msg>alpha, arm, hppa, ia64, ppc, ppc64</msg></result>
 <result><category>dev-perl</category><package>Email-MIME</package><version>1.946.0</version><class>DroppedKeywords</class><msg>ppc, ppc64</msg></result>
-<result><category>dev-perl</category><package>Expect</package><version>1.330.0</version><class>DroppedKeywords</class><msg>mips</msg></result>
-<result><category>dev-perl</category><package>Exporter-Tiny</package><version>1.0.0</version><class>DroppedKeywords</class><msg>amd64-fbsd, mips, sparc-solaris</msg></result>
-<result><category>dev-perl</category><package>File-BaseDir</package><version>0.70.0</version><class>DroppedKeywords</class><msg>amd64-fbsd, hppa, m68k, s390, sh, x86-fbsd</msg></result>
-<result><category>dev-perl</category><package>File-Slurper</package><version>0.9.0</version><class>DroppedKeywords</class><msg>m68k, s390, sh</msg></result>
-<result><category>dev-perl</category><package>File-Which</package><version>1.210.0</version><class>DroppedKeywords</class><msg>amd64-fbsd, mips, s390, sh, x86-fbsd</msg></result>
+<result><category>dev-perl</category><package>File-BaseDir</package><version>0.70.0</version><class>DroppedKeywords</class><msg>hppa</msg></result>
 <result><category>dev-perl</category><package>Fuse</package><version>0.16.1</version><class>MissingSlotDep</class><msg>'sys-fs/fuse' matches more than one slot: [ 0, 3 ]</msg></result>
-<result><category>dev-perl</category><package>JSON</package><version>2.940.0</version><class>DroppedKeywords</class><msg>amd64-fbsd, hppa, x86-fbsd</msg></result>
-<result><category>dev-perl</category><package>LWP-Protocol-https</package><version>6.70.0</version><class>DroppedKeywords</class><msg>amd64-fbsd, x86-fbsd</msg></result>
-<result><category>dev-perl</category><package>Lingua-EN-Inflect</package><version>1.901.0</version><class>DroppedKeywords</class><msg>sparc</msg></result>
-<result><category>dev-perl</category><package>List-AllUtils</package><version>0.140.0</version><class>DroppedKeywords</class><msg>amd64-fbsd, x86-fbsd</msg></result>
-<result><category>dev-perl</category><package>Log-Dispatch</package><version>2.630.0</version><class>DroppedKeywords</class><msg>alpha, ia64, ppc, ppc64, sparc</msg></result>
+<result><category>dev-perl</category><package>JSON</package><version>2.940.0</version><class>DroppedKeywords</class><msg>hppa</msg></result>
+<result><category>dev-perl</category><package>Log-Dispatch</package><version>2.630.0</version><class>DroppedKeywords</class><msg>alpha, ia64, ppc, ppc64</msg></result>
 <result><category>dev-perl</category><package>Mail-DKIM</package><version>0.440.0</version><class>DroppedKeywords</class><msg>alpha, arm, hppa</msg></result>
 <result><category>dev-perl</category><package>Mail-IMAPClient</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: 'files/3.38-makefilepl.patch', 'files/3.39-makefilepl.patch'</msg></result>
 <result><category>dev-perl</category><package>Math-GMP</package><version>2.60.0-r1</version><class>MissingSlotDep</class><msg>'dev-libs/gmp' matches more than one slot: [ 0, 3 ]</msg></result>
-<result><category>dev-perl</category><package>Math-GMP</package><version>2.110.0</version><class>DroppedKeywords</class><msg>mips</msg></result>
-<result><category>dev-perl</category><package>Module-Install</package><version>1.180.0</version><class>DroppedKeywords</class><msg>alpha, x86-fbsd</msg></result>
+<result><category>dev-perl</category><package>Module-Install</package><version>1.180.0</version><class>DroppedKeywords</class><msg>alpha</msg></result>
 <result><category>dev-perl</category><package>Mojolicious</package><version>7.320.0</version><class>DroppedKeywords</class><msg>arm</msg></result>
-<result><category>dev-perl</category><package>Moose</package><version>2.180.600</version><class>DroppedKeywords</class><msg>sparc</msg></result>
 <result><category>dev-perl</category><package>Net-DNS</package><version>1.80.0</version><class>DroppedKeywords</class><msg>ppc64</msg></result>
-<result><category>dev-perl</category><package>Net-DNS</package><version>1.70.0</version><class>DroppedKeywords</class><msg>amd64-linux, m68k, mips, ppc-aix, ppc-macos, s390, sh, sparc, sparc-solaris, x86-fbsd, x86-linux, x86-macos, x86-solaris</msg></result>
-<result><category>dev-perl</category><package>Net-HTTP</package><version>6.120.0</version><class>DroppedKeywords</class><msg>amd64-fbsd</msg></result>
-<result><category>dev-perl</category><package>Net-SSH-Perl</package><version>2.90.0_p1-r2</version><class>DroppedKeywords</class><msg>mips</msg></result>
-<result><category>dev-perl</category><package>PDF-Create</package><version>1.370.0</version><class>DroppedKeywords</class><msg>ia64, ppc, sparc</msg></result>
-<result><category>dev-perl</category><package>Package-DeprecationManager</package><version>0.170.0</version><class>DroppedKeywords</class><msg>m68k</msg></result>
-<result><category>dev-perl</category><package>Plack</package><version>1.4.300</version><class>DroppedKeywords</class><msg>alpha, ia64, ppc, ppc64, sparc</msg></result>
-<result><category>dev-perl</category><package>Regexp-Common</package><version>2016060801.0.0</version><class>DroppedKeywords</class><msg>amd64-linux, ppc-macos, sparc-solaris, x86-linux, x86-macos</msg></result>
-<result><category>dev-perl</category><package>Search-Xapian</package><version>1.2.23.0-r1</version><class>DroppedKeywords</class><msg>mips</msg></result>
-<result><category>dev-perl</category><package>Specio</package><version>0.350.0</version><class>DroppedKeywords</class><msg>x86-fbsd</msg></result>
-<result><category>dev-perl</category><package>Test-Warnings</package><version>0.26.0</version><class>DroppedKeywords</class><msg>m68k, s390, sh</msg></result>
-<result><category>dev-perl</category><package>Test-YAML</package><version>1.60.0</version><class>DroppedKeywords</class><msg>m68k</msg></result>
+<result><category>dev-perl</category><package>PDF-Create</package><version>1.370.0</version><class>DroppedKeywords</class><msg>ia64, ppc</msg></result>
+<result><category>dev-perl</category><package>Plack</package><version>1.4.300</version><class>DroppedKeywords</class><msg>alpha, ia64, ppc, ppc64</msg></result>
 <result><category>dev-perl</category><package>Tie-Cycle</package><version>1.224.0</version><class>DroppedKeywords</class><msg>arm</msg></result>
 <result><category>dev-perl</category><package>Tk</package><version>804.33.0</version><class>MissingSlotDep</class><msg>'virtual/jpeg' matches more than one slot: [ 0, 62 ]</msg></result>
 <result><category>dev-perl</category><package>Tk-JPEG-Lite</package><version>2.14.30-r1</version><class>MissingSlotDep</class><msg>'virtual/jpeg' matches more than one slot: [ 0, 62 ]</msg></result>
-<result><category>dev-perl</category><package>Tk-JPEG-Lite</package><version>2.15.0</version><class>DroppedKeywords</class><msg>ia64, ppc, sparc</msg></result>
+<result><category>dev-perl</category><package>Tk-JPEG-Lite</package><version>2.15.0</version><class>DroppedKeywords</class><msg>ia64, ppc</msg></result>
 <result><category>dev-perl</category><package>Type-Tiny</package><version>1.2.0</version><class>DroppedKeywords</class><msg>hppa</msg></result>
-<result><category>dev-perl</category><package>XML-Simple</package><version>2.220.0</version><class>DroppedKeywords</class><msg>arm-linux, s390, sh, x64-solaris, x86-linux</msg></result>
-<result><category>dev-perl</category><package>XML-XPath</package><version>1.360.0</version><class>DroppedKeywords</class><msg>alpha, arm64, hppa, ia64, mips, ppc, ppc64, sparc</msg></result>
-<result><category>dev-perl</category><package>YAML-Tiny</package><version>1.700.0</version><class>DroppedKeywords</class><msg>alpha, hppa, ia64, ppc64, sparc</msg></result>
+<result><category>dev-perl</category><package>XML-XPath</package><version>1.360.0</version><class>DroppedKeywords</class><msg>alpha, hppa, ia64, ppc, ppc64</msg></result>
+<result><category>dev-perl</category><package>YAML-Tiny</package><version>1.700.0</version><class>DroppedKeywords</class><msg>alpha, hppa, ia64, ppc64</msg></result>
 <result><category>dev-perl</category><package>libwww-perl</package><version>6.150.0</version><class>AbsoluteSymlink</class><msg>'dosym /usr/bin/lwp-request ...' uses absolute path on line 53</msg></result>
 <result><category>dev-perl</category><package>libwww-perl</package><version>6.150.0</version><class>AbsoluteSymlink</class><msg>'dosym /usr/bin/lwp-request ...' uses absolute path on line 54</msg></result>
 <result><category>dev-perl</category><package>libwww-perl</package><version>6.150.0</version><class>AbsoluteSymlink</class><msg>'dosym /usr/bin/lwp-request ...' uses absolute path on line 55</msg></result>
@@ -283,12 +258,10 @@
 <result><category>dev-perl</category><package>libwww-perl</package><version>6.250.0</version><class>AbsoluteSymlink</class><msg>'dosym /usr/bin/lwp-request ...' uses absolute path on line 66</msg></result>
 <result><category>dev-perl</category><package>libwww-perl</package><version>6.250.0</version><class>AbsoluteSymlink</class><msg>'dosym /usr/bin/lwp-request ...' uses absolute path on line 67</msg></result>
 <result><category>dev-perl</category><package>libwww-perl</package><version>6.250.0</version><class>AbsoluteSymlink</class><msg>'dosym /usr/bin/lwp-request ...' uses absolute path on line 68</msg></result>
-<result><category>dev-perl</category><package>libwww-perl</package><version>6.160.0</version><class>DroppedKeywords</class><msg>amd64-fbsd, arm-linux, m68k, mips, s390, sh, x86-fbsd</msg></result>
+<result><category>sys-libs</category><package>db</package><version>4.4.20_p4-r1</version><class>DroppedKeywords</class><msg>alpha, hppa</msg></result>
 <result><category>sys-libs</category><package>db</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: 'files/db-4.4-libtool.patch', 'files/db-4.5-libtool.patch', 'files/db-4.6-libtool.patch'</msg></result>
 <result><category>sys-libs</category><package>db</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: 'files/db-4.2-listen-to-java-options.patch', 'files/db-4.3-listen-to-java-options.patch'</msg></result>
 <result><category>sys-libs</category><package>db</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: 'files/db-4.2-jni-check-prefix-first.patch', 'files/db-4.3-jni-check-prefix-first.patch'</msg></result>
-<result><category>sys-libs</category><package>db</package><version>4.4.20_p4-r1</version><class>DroppedKeywords</class><msg>alpha, hppa, sparc-fbsd</msg></result>
-<result><category>sys-libs</category><package>db</package><version>5.1.29-r1</version><class>DroppedKeywords</class><msg>amd64-fbsd, mips</msg></result>
 <result><category>sys-libs</category><package>glibc</package><version>2.17</version><class>VulnerablePackage</class><msg>vulnerable via glsa(201503-04) ( ver-rev &lt; 2.19-r1 ), keywords: alpha, amd64, arm, arm64, hppa, ia64, m68k, mips, ppc, ppc64, s390, sh, sparc, x86</msg></result>
 <result><category>sys-libs</category><package>glibc</package><version>2.17</version><class>VulnerablePackage</class><msg>vulnerable via glsa(201602-02) ( ver-rev &lt; 2.21-r2 ), keywords: alpha, amd64, arm, arm64, hppa, ia64, m68k, mips, ppc, ppc64, s390, sh, sparc, x86</msg></result>
 <result><category>sys-libs</category><package>glibc</package><version>2.17</version><class>VulnerablePackage</class><msg>vulnerable via glsa(201702-11) ( ver-rev &lt; 2.23-r3 ), keywords: alpha, amd64, arm, arm64, hppa, ia64, m68k, mips, ppc, ppc64, s390, sh, sparc, x86</msg></result>
@@ -317,15 +290,11 @@
 <result><category>sys-libs</category><package>libcxx</package><version>5.0.9999</version><class>WhitespaceFound</class><msg>ebuild has leading whitespace on line: 165</msg></result>
 <result><category>sys-libs</category><package>libcxx</package><version>9999</version><class>WhitespaceFound</class><msg>ebuild has leading whitespace on line: 162</msg></result>
 <result><category>sys-libs</category><package>libcxx</package><class>ExecutableFile</class><msg>unnecessary executable bit: 'files/prepare_snapshot.sh'</msg></result>
-<result><category>sys-libs</category><package>libcxx</package><version>4.0.1</version><class>DroppedKeywords</class><msg>amd64-fbsd, amd64-linux, x86-fbsd, x86-linux</msg></result>
-<result><category>sys-libs</category><package>libcxx</package><version>3.9.0</version><class>DroppedKeywords</class><msg>mips</msg></result>
 <result><category>sys-libs</category><package>libcxxrt</package><class>ExecutableFile</class><msg>unnecessary executable bit: 'files/prepare_snapshot.sh'</msg></result>
-<result><category>sys-libs</category><package>libomp</package><version>4.0.1</version><class>DroppedKeywords</class><msg>amd64-linux, ppc-macos, x64-macos, x86-linux, x86-macos</msg></result>
 <result><category>sys-libs</category><package>libstatgrab</package><version>0.91</version><class>MissingSlotDep</class><msg>'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]</msg></result>
 <result><category>sys-libs</category><package>libxcrypt</package><version>2.4</version><class>HttpsAvailable</class><msg>'http://packages.debian.org/' link should use https:// on line: 9</msg></result>
-<result><category>sys-libs</category><package>newlib</package><version>2.2.0.20150423</version><class>DroppedKeywords</class><msg>arm, hppa, m68k, mips, ppc, ppc64, sh, sparc, x86</msg></result>
+<result><category>sys-libs</category><package>newlib</package><version>2.2.0.20150423</version><class>DroppedKeywords</class><msg>arm, hppa, ppc, ppc64, x86</msg></result>
 <result><category>sys-libs</category><package>uclibc</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
-<result><category>sys-libs</category><package>uclibc-ng</package><version>1.0.24</version><class>DroppedKeywords</class><msg>mips</msg></result>
 <result><category>media-plugins</category><package>audacious-plugins</package><version>3.6.2-r1</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: ( contains [alsa] || contains [flac] || contains [lame] || contains [jack] || contains [pulseaudio] || contains [qt5] || contains [sdl] )</msg></result>
 <result><category>media-plugins</category><package>audacious-plugins</package><version>3.7.1</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: ?? ( contains [gtk] contains [gtk3] contains [qt5] )</msg></result>
 <result><category>media-plugins</category><package>audacious-plugins</package><version>3.7.1-r1</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: ^^ ( contains [gtk] contains [gtk3] contains [qt5] )</msg></result>
@@ -335,16 +304,14 @@
 <result><category>media-plugins</category><package>audacious-plugins</package><version>3.9-r1</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: ( contains [alsa] || contains [jack] || contains [pulseaudio] || contains [sdl] )</msg></result>
 <result><category>media-plugins</category><package>audacious-plugins</package><version>3.9-r1</version><class>GLEP73Conflict</class><msg>REQUIRED_USE can request conflicting states: [gtk3] requires [!qt5] while [ampache] requires [qt5]</msg></result>
 <result><category>media-plugins</category><package>audacious-plugins</package><version>3.9-r1</version><class>GLEP73BackAlteration</class><msg>REQUIRED_USE causes a preceding condition to start applying: [ampache] enforces [qt5] which may cause preceding [qt5] enforcing [!libnotify] to evaluate to true</msg></result>
-<result><category>media-plugins</category><package>audacious-plugins</package><version>3.9-r1</version><class>DroppedKeywords</class><msg>alpha, amd64-linux, arm, hppa, ppc, ppc64, x86-fbsd, x86-linux</msg></result>
+<result><category>media-plugins</category><package>audacious-plugins</package><version>3.9-r1</version><class>DroppedKeywords</class><msg>alpha, arm, hppa, ppc, ppc64</msg></result>
 <result><category>media-plugins</category><package>gmpc-lyrics</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
 <result><category>media-plugins</category><package>grilo-plugins</package><version>0.3.5</version><class>DroppedKeywords</class><msg>x86</msg></result>
 <result><category>media-plugins</category><package>gst-plugins-dts</package><version>1.10.3</version><class>DroppedKeywords</class><msg>arm</msg></result>
 <result><category>media-plugins</category><package>gst-plugins-dv</package><version>1.10.3</version><class>DroppedKeywords</class><msg>arm</msg></result>
 <result><category>media-plugins</category><package>gst-plugins-libvisual</package><version>1.10.3</version><class>DroppedKeywords</class><msg>arm</msg></result>
-<result><category>media-plugins</category><package>gst-plugins-meta</package><version>1.12.3</version><class>DroppedKeywords</class><msg>alpha, amd64-fbsd, amd64-linux, arm, hppa, sh, x64-macos, x86-linux, x86-solaris</msg></result>
-<result><category>media-plugins</category><package>gst-plugins-meta</package><version>1.10.3</version><class>DroppedKeywords</class><msg>mips, sparc, x86-fbsd</msg></result>
+<result><category>media-plugins</category><package>gst-plugins-meta</package><version>1.12.3</version><class>DroppedKeywords</class><msg>alpha, arm, hppa</msg></result>
 <result><category>media-plugins</category><package>gst-plugins-mplex</package><version>1.10.3</version><class>DroppedKeywords</class><msg>arm</msg></result>
-<result><category>media-plugins</category><package>gst-plugins-shout2</package><version>1.10.3</version><class>DroppedKeywords</class><msg>sh</msg></result>
 <result><category>media-plugins</category><package>gst-plugins-srtp</package><version>1.10.5</version><class>DroppedKeywords</class><msg>x86</msg></result>
 <result><category>media-plugins</category><package>gst-plugins-wavpack</package><version>1.10.3</version><class>DroppedKeywords</class><msg>arm</msg></result>
 <result><category>media-plugins</category><package>hexter</package><version>1.0.3</version><class>MissingSlotDep</class><msg>'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]</msg></result>
@@ -365,8 +332,8 @@
 <result><category>media-plugins</category><package>vdr-graphlcd</package><version>0.1.9</version><class>AbsoluteSymlink</class><msg>'dosym /etc/graphlcd.conf ...' uses absolute path on line 75</msg></result>
 <result><category>media-plugins</category><package>vdr-graphlcd</package><version>0.1.9</version><class>AbsoluteSymlink</class><msg>'dosym /etc/vdr/plugins/${VDRPLUGIN}/logonames.alias.1.3 ...' uses absolute path on line 77</msg></result>
 <result><category>media-plugins</category><package>vdr-graphtft</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
-<result><category>media-plugins</category><package>vdr-image</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: 'files/vdr-image-0.3.1-gentoo.diff', 'files/vdr-image-0.4.0-gentoo.diff'</msg></result>
 <result><category>media-plugins</category><package>vdr-image</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
+<result><category>media-plugins</category><package>vdr-image</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: 'files/vdr-image-0.3.1-gentoo.diff', 'files/vdr-image-0.4.0-gentoo.diff'</msg></result>
 <result><category>media-plugins</category><package>vdr-lcdproc</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
 <result><category>media-plugins</category><package>vdr-lcr</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
 <result><category>media-plugins</category><package>vdr-loadepg</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
@@ -1500,8 +1467,8 @@
 <result><category>media-gfx</category><package>exact-image</package><version>0.8.1-r3</version><class>MissingSlotDep</class><msg>'dev-lang/lua' matches more than one slot: [ 0, 5.1, 5.2, 5.3 ]</msg></result>
 <result><category>media-gfx</category><package>fbgrab</package><version>1.0-r2</version><class>MissingSlotDep</class><msg>'media-libs/libpng' matches more than one slot: [ 0, 1.2, 1.5 ]</msg></result>
 <result><category>media-gfx</category><package>fontforge</package><version>20170731</version><class>GLEP73BackAlteration</class><msg>REQUIRED_USE causes a preceding condition to start applying: [test] enforces [python] which may cause preceding [python &amp;&amp; python_single_target_python3_5] enforcing [python_targets_python3_5] to evaluate to true</msg></result>
-<result><category>media-gfx</category><package>fotoxx</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
 <result><category>media-gfx</category><package>fotoxx</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: 'files/fotoxx-15.04.1.patch', 'files/fotoxx-15.05.patch'</msg></result>
+<result><category>media-gfx</category><package>fotoxx</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
 <result><category>media-gfx</category><package>freepv</package><version>0.3.0-r4</version><class>MissingSlotDep</class><msg>'virtual/jpeg' matches more than one slot: [ 0, 62 ]</msg></result>
 <result><category>media-gfx</category><package>freewrl</package><version>1.22.13-r5</version><class>AbsoluteSymlink</class><msg>'dosym /usr/share/${PN}/lib/vrml.jar ...' uses absolute path on line 120</msg></result>
 <result><category>media-gfx</category><package>freewrl</package><version>2.3.3-r2</version><class>AbsoluteSymlink</class><msg>'dosym /usr/share/${PN}/lib/vrml.jar ...' uses absolute path on line 117</msg></result>
@@ -1544,8 +1511,8 @@
 <result><category>media-gfx</category><package>nomacs</package><version>3.6.1</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: contains [opencv]</msg></result>
 <result><category>media-gfx</category><package>nomacs</package><version>3.6.1-r1</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: contains [opencv]</msg></result>
 <result><category>media-gfx</category><package>povray</package><version>3.7.0.0</version><class>MissingSlotDep</class><msg>'virtual/jpeg' matches more than one slot: [ 0, 62 ]</msg></result>
-<result><category>media-gfx</category><package>printrun</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
 <result><category>media-gfx</category><package>printrun</package><class>SizeViolation</class><msg>"files/printrun-gtk3.patch" exceeds 20k in size; 21.0 KiB total</msg></result>
+<result><category>media-gfx</category><package>printrun</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
 <result><category>media-gfx</category><package>replicatorg</package><version>40-r1</version><class>DroppedKeywords</class><msg>amd64, x86</msg></result>
 <result><category>media-gfx</category><package>sane-frontends</package><version>1.0.14</version><class>AbsoluteSymlink</class><msg>'dosym /usr/bin/xscanimage ...' uses absolute path on line 49</msg></result>
 <result><category>media-gfx</category><package>sane-frontends</package><version>1.0.14-r1</version><class>AbsoluteSymlink</class><msg>'dosym /usr/bin/xscanimage ...' uses absolute path on line 48</msg></result>
@@ -1693,18 +1660,18 @@
 <result><category>net-fs</category><package>samba</package><version>4.5.10-r1</version><class>GLEP73BackAlteration</class><msg>REQUIRED_USE causes a preceding condition to start applying: [gpg] enforces [addc] which may cause preceding [addc] enforcing [!system-mitkrb5] to evaluate to true</msg></result>
 <result><category>net-fs</category><package>samba</package><version>4.5.13</version><class>AbsoluteSymlink</class><msg>'dosym /usr/bin/smbspool ...' uses absolute path on line 237</msg></result>
 <result><category>net-fs</category><package>samba</package><version>4.5.13</version><class>GLEP73BackAlteration</class><msg>REQUIRED_USE causes a preceding condition to start applying: [gpg] enforces [addc] which may cause preceding [addc] enforcing [!system-mitkrb5] to evaluate to true</msg></result>
-<result><category>net-fs</category><package>samba</package><version>4.5.14</version><class>AbsoluteSymlink</class><msg>'dosym /usr/bin/smbspool ...' uses absolute path on line 237</msg></result>
 <result><category>net-fs</category><package>samba</package><version>4.5.14</version><class>WhitespaceFound</class><msg>ebuild has trailing whitespace on line: 142</msg></result>
+<result><category>net-fs</category><package>samba</package><version>4.5.14</version><class>AbsoluteSymlink</class><msg>'dosym /usr/bin/smbspool ...' uses absolute path on line 237</msg></result>
 <result><category>net-fs</category><package>samba</package><version>4.5.14</version><class>GLEP73BackAlteration</class><msg>REQUIRED_USE causes a preceding condition to start applying: [gpg] enforces [addc] which may cause preceding [addc] enforcing [!system-mitkrb5] to evaluate to true</msg></result>
 <result><category>net-fs</category><package>samba</package><version>4.6.8-r1</version><class>AbsoluteSymlink</class><msg>'dosym /usr/bin/smbspool ...' uses absolute path on line 260</msg></result>
 <result><category>net-fs</category><package>samba</package><version>4.6.8-r1</version><class>GLEP73BackAlteration</class><msg>REQUIRED_USE causes a preceding condition to start applying: [gpg] enforces [addc] which may cause preceding [addc] enforcing [!system-mitkrb5] to evaluate to true</msg></result>
-<result><category>net-fs</category><package>samba</package><version>4.6.9</version><class>AbsoluteSymlink</class><msg>'dosym /usr/bin/smbspool ...' uses absolute path on line 264</msg></result>
 <result><category>net-fs</category><package>samba</package><version>4.6.9</version><class>WhitespaceFound</class><msg>ebuild has trailing whitespace on line: 165</msg></result>
+<result><category>net-fs</category><package>samba</package><version>4.6.9</version><class>AbsoluteSymlink</class><msg>'dosym /usr/bin/smbspool ...' uses absolute path on line 264</msg></result>
 <result><category>net-fs</category><package>samba</package><version>4.6.9</version><class>GLEP73BackAlteration</class><msg>REQUIRED_USE causes a preceding condition to start applying: [gpg] enforces [addc] which may cause preceding [addc] enforcing [!system-mitkrb5] to evaluate to true</msg></result>
 <result><category>net-fs</category><package>samba</package><version>4.7.0-r1</version><class>AbsoluteSymlink</class><msg>'dosym /usr/bin/smbspool ...' uses absolute path on line 259</msg></result>
 <result><category>net-fs</category><package>samba</package><version>4.7.0-r1</version><class>GLEP73BackAlteration</class><msg>REQUIRED_USE causes a preceding condition to start applying: [gpg] enforces [addc] which may cause preceding [addc] enforcing [gnutls] to evaluate to true</msg></result>
-<result><category>net-fs</category><package>samba</package><version>4.7.1</version><class>AbsoluteSymlink</class><msg>'dosym /usr/bin/smbspool ...' uses absolute path on line 260</msg></result>
 <result><category>net-fs</category><package>samba</package><version>4.7.1</version><class>WhitespaceFound</class><msg>ebuild has trailing whitespace on line: 161</msg></result>
+<result><category>net-fs</category><package>samba</package><version>4.7.1</version><class>AbsoluteSymlink</class><msg>'dosym /usr/bin/smbspool ...' uses absolute path on line 260</msg></result>
 <result><category>net-fs</category><package>samba</package><version>4.7.1</version><class>GLEP73BackAlteration</class><msg>REQUIRED_USE causes a preceding condition to start applying: [gpg] enforces [addc] which may cause preceding [addc] enforcing [gnutls] to evaluate to true</msg></result>
 <result><category>net-fs</category><package>samba</package><version>4.5.10-r1</version><class>DroppedKeywords</class><msg>hppa</msg></result>
 <result><category>net-fs</category><package>samba</package><version>4.6.8-r1</version><class>DroppedKeywords</class><msg>alpha, arm, ia64, ppc, ppc64</msg></result>
@@ -1787,15 +1754,15 @@
 <result><category>media-video</category><package>dcpomatic</package><version>2.11.7</version><class>DroppedKeywords</class><msg>amd64</msg></result>
 <result><category>media-video</category><package>dv2sub</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
 <result><category>media-video</category><package>emovix</package><version>0.9.0</version><class>AbsoluteSymlink</class><msg>'dosym /usr/lib/win32 ...' uses absolute path on line 19</msg></result>
-<result><category>media-video</category><package>ffdiaporama</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
 <result><category>media-video</category><package>ffdiaporama</package><class>SizeViolation</class><msg>"files/ffdiaporama-2.1-libav10.patch" exceeds 20k in size; 24.2 KiB total</msg></result>
+<result><category>media-video</category><package>ffdiaporama</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
 <result><category>media-video</category><package>ffmpeg</package><version>3.3.3</version><class>DroppedKeywords</class><msg>alpha</msg></result>
 <result><category>media-video</category><package>gnome-mplayer</package><version>1.0.8</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent dep: [ media-video/mplayer2 ]</msg></result>
 <result><category>media-video</category><package>gnome-mplayer</package><version>1.0.9</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent dep: [ media-video/mplayer2 ]</msg></result>
 <result><category>media-video</category><package>handbrake</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
+<result><category>media-video</category><package>libav</package><version>9.17</version><class>VulnerablePackage</class><msg>vulnerable via glsa(201705-08) ( ver &lt; 11.8 ), keywords: alpha, amd64, amd64-linux, arm, hppa, ia64, mips, ppc, ppc-macos, ppc64, sparc, x64-macos, x64-solaris, x86, x86-fbsd, x86-linux, x86-macos, x86-solaris</msg></result>
 <result><category>media-video</category><package>libav</package><version>9.17</version><class>NonExistentDeps</class><msg>depset depends: nonexistent dep: [ &lt;dev-libs/libcdio-0.90 ]</msg></result>
 <result><category>media-video</category><package>libav</package><version>9.17</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent dep: [ &lt;dev-libs/libcdio-0.90 ]</msg></result>
-<result><category>media-video</category><package>libav</package><version>9.17</version><class>VulnerablePackage</class><msg>vulnerable via glsa(201705-08) ( ver &lt; 11.8 ), keywords: alpha, amd64, amd64-linux, arm, hppa, ia64, mips, ppc, ppc-macos, ppc64, sparc, x64-macos, x64-solaris, x86, x86-fbsd, x86-linux, x86-macos, x86-solaris</msg></result>
 <result><category>media-video</category><package>libav</package><version>11.3</version><class>VulnerablePackage</class><msg>vulnerable via glsa(201705-08) ( ver &lt; 11.8 ), keywords: alpha, amd64, amd64-linux, arm, hppa, ia64, mips, ppc, ppc-macos, ppc64, sparc, x64-macos, x64-solaris, x86, x86-fbsd, x86-linux, x86-macos, x86-solaris</msg></result>
 <result><category>media-video</category><package>libav</package><version>11.3-r1</version><class>VulnerablePackage</class><msg>vulnerable via glsa(201705-08) ( ver &lt; 11.8 ), keywords: alpha, amd64, amd64-linux, arm, hppa, ia64, mips, ppc, ppc-macos, ppc64, sparc, x64-macos, x64-solaris, x86, x86-fbsd, x86-linux, x86-macos, x86-solaris</msg></result>
 <result><category>media-video</category><package>libav</package><version>11.4</version><class>VulnerablePackage</class><msg>vulnerable via glsa(201705-08) ( ver &lt; 11.8 ), keywords: alpha, amd64, amd64-linux, arm, hppa, ia64, mips, ppc, ppc-macos, ppc64, sparc, x64-macos, x64-solaris, x86, x86-fbsd, x86-linux, x86-macos, x86-solaris</msg></result>
@@ -1951,8 +1918,8 @@
 <result><category>app-arch</category><package>unrar-gpl</package><version>0.0.1_p20080417-r2</version><class>NonExistentDeps</class><msg>depset depends: nonexistent dep: [ dev-libs/argp ]</msg></result>
 <result><category>app-arch</category><package>unrpa</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
 <result><category>app-arch</category><package>xar</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
-<result><category>app-misc</category><package>anki</package><version>2.1.0_beta25</version><class>DroppedKeywords</class><msg>amd64, x86</msg></result>
 <result><category>app-misc</category><package>anki</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
+<result><category>app-misc</category><package>anki</package><version>2.1.0_beta25</version><class>DroppedKeywords</class><msg>amd64, x86</msg></result>
 <result><category>app-misc</category><package>binwalk</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
 <result><category>app-misc</category><package>ca-certificates</package><version>20161130.3.30-r1</version><class>HttpsAvailable</class><msg>'http://packages.debian.org/' link should use https:// on line: 47</msg></result>
 <result><category>app-misc</category><package>ca-certificates</package><version>20161130.3.30.2</version><class>HttpsAvailable</class><msg>'http://packages.debian.org/' link should use https:// on line: 47</msg></result>
@@ -2039,8 +2006,8 @@
 <result><category>sci-libs</category><package>cxsparse</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
 <result><category>sci-libs</category><package>deap</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
 <result><category>sci-libs</category><package>gsl</package><class>SizeViolation</class><msg>"files/gsl-2.3-cblas.patch" exceeds 20k in size; 56.9 KiB total</msg></result>
-<result><category>sci-libs</category><package>hdf</package><version>4.2.9</version><class>DroppedKeywords</class><msg>ia64</msg></result>
 <result><category>sci-libs</category><package>hdf</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
+<result><category>sci-libs</category><package>hdf</package><version>4.2.9</version><class>DroppedKeywords</class><msg>ia64</msg></result>
 <result><category>sci-libs</category><package>hdf5</package><version>1.8.18</version><class>GLEP73Conflict</class><msg>REQUIRED_USE can request conflicting states: [threads] requires [!fortran] while [fortran2003] requires [fortran]</msg></result>
 <result><category>sci-libs</category><package>idlmarkwardt</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
 <result><category>sci-libs</category><package>io_lib</package><version>1.12.5</version><class>DroppedKeywords</class><msg>alpha, ia64</msg></result>
@@ -2334,8 +2301,8 @@
 <result><category>sys-devel</category><package>clang</package><version>3.8.1-r100</version><class>DroppedKeywords</class><msg>arm</msg></result>
 <result><category>sys-devel</category><package>distcc</package><version>3.1-r10</version><class>AbsoluteSymlink</class><msg>'dosym /usr/bin/distcc ...' uses absolute path on line 110</msg></result>
 <result><category>sys-devel</category><package>distcc</package><version>3.1-r10</version><class>AbsoluteSymlink</class><msg>'dosym /usr/bin/distcc ...' uses absolute path on line 112</msg></result>
-<result><category>sys-devel</category><package>distcc</package><version>3.2_rc1-r5</version><class>DroppedKeywords</class><msg>alpha, arm, hppa, ia64, ppc, ppc64</msg></result>
 <result><category>sys-devel</category><package>distcc</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
+<result><category>sys-devel</category><package>distcc</package><version>3.2_rc1-r5</version><class>DroppedKeywords</class><msg>alpha, arm, hppa, ia64, ppc, ppc64</msg></result>
 <result><category>sys-devel</category><package>distcc</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: 'files/3.0/conf', 'files/3.2/conf'</msg></result>
 <result><category>sys-devel</category><package>distcc</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: 'files/3.1/init', 'files/3.2/init'</msg></result>
 <result><category>sys-devel</category><package>gcc</package><version>3.3.6-r1</version><class>MissingSlotDep</class><msg>'&gt;=sys-devel/binutils-2.14.90.0.6-r1' matches more than one slot: [ 2.25.1, 2.26.1, 2.27, 2.28.1, 2.29.1, git ]</msg></result>
@@ -2450,8 +2417,8 @@
 <result><category>app-admin</category><package>puppet-lint</package><version>2.2.1</version><class>DroppedKeywords</class><msg>x86</msg></result>
 <result><category>app-admin</category><package>qtpass</package><version>1.1.6</version><class>BadInsIntoDir</class><msg>ebuild uses insinto /usr/share/applications on line 39</msg></result>
 <result><category>app-admin</category><package>qtpass</package><version>9999</version><class>BadInsIntoDir</class><msg>ebuild uses insinto /usr/share/applications on line 36</msg></result>
-<result><category>app-admin</category><package>r10k</package><version>1.5.1-r1</version><class>DroppedKeywords</class><msg>x86</msg></result>
 <result><category>app-admin</category><package>r10k</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
+<result><category>app-admin</category><package>r10k</package><version>1.5.1-r1</version><class>DroppedKeywords</class><msg>x86</msg></result>
 <result><category>app-admin</category><package>sagan</package><version>0.2.3</version><class>MissingSlotDep</class><msg>'dev-db/postgresql' matches more than one slot: [ 10, 11, 9.2, 9.3, 9.4, 9.5, 9.6 ]</msg></result>
 <result><category>app-admin</category><package>sagan-rules</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
 <result><category>app-admin</category><package>salt</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: 'files/api-confd-1', 'files/master-confd-1'</msg></result>
@@ -2797,20 +2764,20 @@
 <result><category>net-wireless</category><package>wavemon</package><version>0.7.6</version><class>MissingSlotDep</class><msg>'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]</msg></result>
 <result><category>net-wireless</category><package>wepattack</package><version>0.1.3-r3</version><class>MissingSlotDep</class><msg>'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]</msg></result>
 <result><category>net-wireless</category><package>wpa_supplicant</package><version>2.6-r3</version><class>GLEP73Conflict</class><msg>REQUIRED_USE can request conflicting states: [fasteap] requires [!ssl] while [smartcard] requires [ssl]</msg></result>
-<result><category>app-backup</category><package>amanda</package><version>3.3.9</version><class>BadInsIntoDir</class><msg>ebuild uses insinto /etc/cron.daily on line 335</msg></result>
 <result><category>app-backup</category><package>amanda</package><version>3.3.9</version><class>AbsoluteSymlink</class><msg>'dosym /etc/amanda/amandahosts ...' uses absolute path on line 348</msg></result>
-<result><category>app-backup</category><package>amanda</package><version>3.4.1</version><class>BadInsIntoDir</class><msg>ebuild uses insinto /etc/cron.daily on line 342</msg></result>
+<result><category>app-backup</category><package>amanda</package><version>3.3.9</version><class>BadInsIntoDir</class><msg>ebuild uses insinto /etc/cron.daily on line 335</msg></result>
 <result><category>app-backup</category><package>amanda</package><version>3.4.1</version><class>AbsoluteSymlink</class><msg>'dosym /etc/amanda/amandahosts ...' uses absolute path on line 355</msg></result>
-<result><category>app-backup</category><package>amanda</package><version>3.4.2</version><class>BadInsIntoDir</class><msg>ebuild uses insinto /etc/cron.daily on line 339</msg></result>
+<result><category>app-backup</category><package>amanda</package><version>3.4.1</version><class>BadInsIntoDir</class><msg>ebuild uses insinto /etc/cron.daily on line 342</msg></result>
 <result><category>app-backup</category><package>amanda</package><version>3.4.2</version><class>AbsoluteSymlink</class><msg>'dosym /etc/amanda/amandahosts ...' uses absolute path on line 352</msg></result>
-<result><category>app-backup</category><package>amanda</package><version>3.4.3</version><class>BadInsIntoDir</class><msg>ebuild uses insinto /etc/cron.daily on line 339</msg></result>
+<result><category>app-backup</category><package>amanda</package><version>3.4.2</version><class>BadInsIntoDir</class><msg>ebuild uses insinto /etc/cron.daily on line 339</msg></result>
 <result><category>app-backup</category><package>amanda</package><version>3.4.3</version><class>AbsoluteSymlink</class><msg>'dosym /etc/amanda/amandahosts ...' uses absolute path on line 352</msg></result>
-<result><category>app-backup</category><package>amanda</package><version>3.4.4</version><class>BadInsIntoDir</class><msg>ebuild uses insinto /etc/cron.daily on line 339</msg></result>
+<result><category>app-backup</category><package>amanda</package><version>3.4.3</version><class>BadInsIntoDir</class><msg>ebuild uses insinto /etc/cron.daily on line 339</msg></result>
 <result><category>app-backup</category><package>amanda</package><version>3.4.4</version><class>AbsoluteSymlink</class><msg>'dosym /etc/amanda/amandahosts ...' uses absolute path on line 352</msg></result>
-<result><category>app-backup</category><package>amanda</package><version>3.4.5</version><class>BadInsIntoDir</class><msg>ebuild uses insinto /etc/cron.daily on line 339</msg></result>
+<result><category>app-backup</category><package>amanda</package><version>3.4.4</version><class>BadInsIntoDir</class><msg>ebuild uses insinto /etc/cron.daily on line 339</msg></result>
 <result><category>app-backup</category><package>amanda</package><version>3.4.5</version><class>AbsoluteSymlink</class><msg>'dosym /etc/amanda/amandahosts ...' uses absolute path on line 352</msg></result>
-<result><category>app-backup</category><package>amanda</package><version>3.5-r1</version><class>BadInsIntoDir</class><msg>ebuild uses insinto /etc/cron.daily on line 346</msg></result>
+<result><category>app-backup</category><package>amanda</package><version>3.4.5</version><class>BadInsIntoDir</class><msg>ebuild uses insinto /etc/cron.daily on line 339</msg></result>
 <result><category>app-backup</category><package>amanda</package><version>3.5-r1</version><class>AbsoluteSymlink</class><msg>'dosym /etc/amanda/amandahosts ...' uses absolute path on line 355</msg></result>
+<result><category>app-backup</category><package>amanda</package><version>3.5-r1</version><class>BadInsIntoDir</class><msg>ebuild uses insinto /etc/cron.daily on line 346</msg></result>
 <result><category>app-backup</category><package>backintime</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
 <result><category>app-backup</category><package>bacula</package><class>ExecutableFile</class><msg>unnecessary executable bit: 'files/newscripts/bacula-dir.initd'</msg></result>
 <result><category>app-backup</category><package>bacula</package><class>ExecutableFile</class><msg>unnecessary executable bit: 'files/newscripts/bacula-fd.initd'</msg></result>
@@ -3398,10 +3365,10 @@
 <result><category>dev-vcs</category><package>rcs</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
 <result><category>dev-vcs</category><package>subversion</package><version>1.8.18</version><class>HttpsAvailable</class><msg>'http://mail-archives.apache.org/' link should use https:// on lines: 120, 160</msg></result>
 <result><category>dev-vcs</category><package>subversion</package><version>1.8.18</version><class>HttpsAvailable</class><msg>'http://subversion.apache.org/' link should use https:// on line: 15</msg></result>
-<result><category>dev-vcs</category><package>subversion</package><version>1.8.18</version><class>VulnerablePackage</class><msg>vulnerable via glsa(201709-09) ( ver &lt; 1.9.7 &amp;&amp; not ( ver = 1.8.18 &amp;&amp; ver &gt; 1.8.18 ) ), keywords: alpha, amd64, amd64-fbsd, amd64-linux, arm, arm-linux, arm64, hppa, ia64, m68k-mint, mips, ppc, ppc-aix, ppc-macos, ppc64, s390, sh, sparc, sparc-solaris, sparc64-solaris, x64-macos, x64-solaris, x86, x86-fbsd, x86-linux, x86-macos, x86-solaris</msg></result>
-<result><category>dev-vcs</category><package>subversion</package><version>1.8.18</version><class>VulnerablePackage</class><msg>vulnerable via glsa(201610-05) ( ver &lt; 1.9.4 &amp;&amp; not ( ver = 1.8.16 &amp;&amp; ver &gt; 1.8.16 ) ), keywords: alpha, amd64, amd64-fbsd, amd64-linux, arm, arm-linux, arm64, hppa, ia64, m68k-mint, mips, ppc, ppc-aix, ppc-macos, ppc64, s390, sh, sparc, sparc-solaris, sparc64-solaris, x64-macos, x64-solaris, x86, x86-fbsd, x86-linux, x86-macos, x86-solaris</msg></result>
 <result><category>dev-vcs</category><package>subversion</package><version>1.8.18</version><class>NonExistentDeps</class><msg>depset depends: nonexistent dep: [ dev-lang/ruby:2.1 ]</msg></result>
 <result><category>dev-vcs</category><package>subversion</package><version>1.8.18</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent dep: [ dev-lang/ruby:2.1 ]</msg></result>
+<result><category>dev-vcs</category><package>subversion</package><version>1.8.18</version><class>VulnerablePackage</class><msg>vulnerable via glsa(201709-09) ( ver &lt; 1.9.7 &amp;&amp; not ( ver = 1.8.18 &amp;&amp; ver &gt; 1.8.18 ) ), keywords: alpha, amd64, amd64-fbsd, amd64-linux, arm, arm-linux, arm64, hppa, ia64, m68k-mint, mips, ppc, ppc-aix, ppc-macos, ppc64, s390, sh, sparc, sparc-solaris, sparc64-solaris, x64-macos, x64-solaris, x86, x86-fbsd, x86-linux, x86-macos, x86-solaris</msg></result>
+<result><category>dev-vcs</category><package>subversion</package><version>1.8.18</version><class>VulnerablePackage</class><msg>vulnerable via glsa(201610-05) ( ver &lt; 1.9.4 &amp;&amp; not ( ver = 1.8.16 &amp;&amp; ver &gt; 1.8.16 ) ), keywords: alpha, amd64, amd64-fbsd, amd64-linux, arm, arm-linux, arm64, hppa, ia64, m68k-mint, mips, ppc, ppc-aix, ppc-macos, ppc64, s390, sh, sparc, sparc-solaris, sparc64-solaris, x64-macos, x64-solaris, x86, x86-fbsd, x86-linux, x86-macos, x86-solaris</msg></result>
 <result><category>dev-vcs</category><package>subversion</package><version>1.9.7</version><class>HttpsAvailable</class><msg>'http://mail-archives.apache.org/' link should use https:// on line: 120</msg></result>
 <result><category>dev-vcs</category><package>subversion</package><version>1.9.7</version><class>HttpsAvailable</class><msg>'http://subversion.apache.org/' link should use https:// on line: 15</msg></result>
 <result><category>dev-vcs</category><package>subversion</package><version>1.9.7</version><class>NonExistentDeps</class><msg>depset depends: nonexistent dep: [ dev-lang/ruby:2.1 ]</msg></result>
@@ -3424,8 +3391,8 @@
 <result><category>x11-drivers</category><package>nvidia-drivers</package><version>173.14.39-r2</version><class>VulnerablePackage</class><msg>vulnerable via glsa(201206-19) ( ver &lt; 295.40 ), keywords: amd64, x86, x86-fbsd</msg></result>
 <result><category>x11-drivers</category><package>nvidia-drivers</package><version>173.14.39-r2</version><class>VulnerablePackage</class><msg>vulnerable via glsa(201304-01) ( ver &lt; 304.88 ), keywords: amd64, x86, x86-fbsd</msg></result>
 <result><category>x11-drivers</category><package>nvidia-drivers</package><version>173.14.39-r2</version><class>VulnerablePackage</class><msg>vulnerable via glsa(201402-02) ( ver &lt; 331.20 &amp;&amp; ver not = 319.76 &amp;&amp; ver not = 304.116 &amp;&amp; ver not = 304.119 &amp;&amp; ver not = 304.121 ), keywords: amd64, x86, x86-fbsd</msg></result>
-<result><category>x11-drivers</category><package>nvidia-drivers</package><version>304.137</version><class>VulnerablePackage</class><msg>vulnerable via glsa(201402-02) ( ver &lt; 331.20 &amp;&amp; ver not = 319.76 &amp;&amp; ver not = 304.116 &amp;&amp; ver not = 304.119 &amp;&amp; ver not = 304.121 ), keywords: amd64, amd64-fbsd, x86, x86-fbsd</msg></result>
 <result><category>x11-drivers</category><package>nvidia-drivers</package><version>304.137</version><class>GLEP73BackAlteration</class><msg>REQUIRED_USE causes a preceding condition to start applying: [static-libs] enforces [tools] which may cause preceding [tools] enforcing [X] to evaluate to true</msg></result>
+<result><category>x11-drivers</category><package>nvidia-drivers</package><version>304.137</version><class>VulnerablePackage</class><msg>vulnerable via glsa(201402-02) ( ver &lt; 331.20 &amp;&amp; ver not = 319.76 &amp;&amp; ver not = 304.116 &amp;&amp; ver not = 304.119 &amp;&amp; ver not = 304.121 ), keywords: amd64, amd64-fbsd, x86, x86-fbsd</msg></result>
 <result><category>x11-drivers</category><package>nvidia-drivers</package><version>375.82</version><class>GLEP73BackAlteration</class><msg>REQUIRED_USE causes a preceding condition to start applying: [static-libs] enforces [tools] which may cause preceding [tools] enforcing [X] to evaluate to true</msg></result>
 <result><category>x11-drivers</category><package>nvidia-drivers</package><version>378.13</version><class>GLEP73BackAlteration</class><msg>REQUIRED_USE causes a preceding condition to start applying: [static-libs] enforces [tools] which may cause preceding [tools] enforcing [X] to evaluate to true</msg></result>
 <result><category>x11-drivers</category><package>nvidia-drivers</package><version>378.13-r1</version><class>GLEP73BackAlteration</class><msg>REQUIRED_USE causes a preceding condition to start applying: [static-libs] enforces [tools] which may cause preceding [tools] enforcing [X] to evaluate to true</msg></result>
@@ -4692,8 +4659,8 @@
 <result><category>dev-libs</category><package>xplc</package><version>0.3.13-r1</version><class>AbsoluteSymlink</class><msg>'dosym /usr/lib/pkgconfig/${P}.pc ...' uses absolute path on line 39</msg></result>
 <result><category>dev-ada</category><package>asis</package><version>2016</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: ^^ ( contains [gnat_2016] contains [gnat_2017] )</msg></result>
 <result><category>dev-ada</category><package>asis</package><version>2017</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: contains [gnat_2017]</msg></result>
-<result><category>dev-ada</category><package>aunit</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: 'files/aunit-2016-gentoo.patch', 'files/aunit-2017-gentoo.patch'</msg></result>
 <result><category>dev-ada</category><package>aunit</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
+<result><category>dev-ada</category><package>aunit</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: 'files/aunit-2016-gentoo.patch', 'files/aunit-2017-gentoo.patch'</msg></result>
 <result><category>dev-ada</category><package>aws</package><version>2016</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: ^^ ( contains [gnat_2016] contains [gnat_2017] )</msg></result>
 <result><category>dev-ada</category><package>aws</package><version>2017</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: ^^ ( contains [gnat_2016] contains [gnat_2017] )</msg></result>
 <result><category>dev-ada</category><package>aws</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: 'files/aws-2016-gentoo.patch', 'files/aws-2017-gentoo.patch'</msg></result>
@@ -4798,15 +4765,15 @@
 <result><category>net-voip</category><package>linphone</package><version>3.5.2</version><class>MissingSlotDep</class><msg>'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]</msg></result>
 <result><category>net-voip</category><package>linphone</package><version>3.6.1</version><class>MissingSlotDep</class><msg>'net-libs/libupnp' matches more than one slot: [ 0, 1.8 ]</msg></result>
 <result><category>net-voip</category><package>linphone</package><version>3.6.1</version><class>MissingSlotDep</class><msg>'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]</msg></result>
+<result><category>net-voip</category><package>yate</package><version>5.4.0-r1</version><class>NonExistentDeps</class><msg>depset depends: nonexistent dep: [ dev-util/kdoc ]</msg></result>
 <result><category>net-voip</category><package>yate</package><version>5.4.0-r1</version><class>MissingSlotDep</class><msg>'dev-db/postgresql' matches more than one slot: [ 10, 11, 9.2, 9.3, 9.4, 9.5, 9.6 ]</msg></result>
 <result><category>net-voip</category><package>yate</package><version>5.4.0-r1</version><class>MissingSlotDep</class><msg>'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]</msg></result>
-<result><category>net-voip</category><package>yate</package><version>5.4.0-r1</version><class>NonExistentDeps</class><msg>depset depends: nonexistent dep: [ dev-util/kdoc ]</msg></result>
+<result><category>net-voip</category><package>yate</package><version>5.5.0-r1</version><class>NonExistentDeps</class><msg>depset depends: nonexistent dep: [ dev-util/kdoc ]</msg></result>
 <result><category>net-voip</category><package>yate</package><version>5.5.0-r1</version><class>MissingSlotDep</class><msg>'dev-db/postgresql' matches more than one slot: [ 10, 11, 9.2, 9.3, 9.4, 9.5, 9.6 ]</msg></result>
 <result><category>net-voip</category><package>yate</package><version>5.5.0-r1</version><class>MissingSlotDep</class><msg>'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]</msg></result>
-<result><category>net-voip</category><package>yate</package><version>5.5.0-r1</version><class>NonExistentDeps</class><msg>depset depends: nonexistent dep: [ dev-util/kdoc ]</msg></result>
+<result><category>net-voip</category><package>yate</package><version>9999</version><class>NonExistentDeps</class><msg>depset depends: nonexistent dep: [ dev-util/kdoc ]</msg></result>
 <result><category>net-voip</category><package>yate</package><version>9999</version><class>MissingSlotDep</class><msg>'dev-db/postgresql' matches more than one slot: [ 10, 11, 9.2, 9.3, 9.4, 9.5, 9.6 ]</msg></result>
 <result><category>net-voip</category><package>yate</package><version>9999</version><class>MissingSlotDep</class><msg>'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]</msg></result>
-<result><category>net-voip</category><package>yate</package><version>9999</version><class>NonExistentDeps</class><msg>depset depends: nonexistent dep: [ dev-util/kdoc ]</msg></result>
 <result><category>lxde-base</category><package>lxde-meta</package><version>0.5.5-r4</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent dep: [ &lt;=lxde-base/lxsession-0.4.6.1 ]</msg></result>
 <result><category>lxde-base</category><package>lxterminal</package><version>0.2.0-r1</version><class>DroppedKeywords</class><msg>arm64</msg></result>
 <result><category>gnustep-base</category><package>gnustep-make</package><version>2.6.8</version><class>MissingSlotDep</class><msg>'sys-devel/clang' matches more than one slot: [ 0, 4, 5, 6 ]</msg></result>
@@ -4823,8 +4790,8 @@
 <result><category>games-util</category><package>wit</package><version>2.40a</version><class>MissingSlotDep</class><msg>'sys-fs/fuse' matches more than one slot: [ 0, 3 ]</msg></result>
 <result><category>sci-astronomy</category><package>casa-data</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
 <result><category>sci-astronomy</category><package>cdsclient</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
-<result><category>sci-astronomy</category><package>ds9-bin</package><version>7.4</version><class>DroppedKeywords</class><msg>x86, x86-linux</msg></result>
 <result><category>sci-astronomy</category><package>ds9-bin</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
+<result><category>sci-astronomy</category><package>ds9-bin</package><version>7.4</version><class>DroppedKeywords</class><msg>x86, x86-linux</msg></result>
 <result><category>sci-astronomy</category><package>esorex</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
 <result><category>sci-astronomy</category><package>galaxy</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
 <result><category>sci-astronomy</category><package>gasgano</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
@@ -4930,8 +4897,8 @@
 <result><category>dev-games</category><package>mygui</package><version>3.2.2</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: not contains [ogre]</msg></result>
 <result><category>dev-games</category><package>mygui</package><version>3.2.2</version><class>MissingSlotDep</class><msg>'media-libs/glew' matches more than one slot: [ 0, 1.10, 1.6 ]</msg></result>
 <result><category>dev-games</category><package>ogre</package><version>1.9.0-r1</version><class>GLEP73BackAlteration</class><msg>REQUIRED_USE causes a preceding condition to start applying: [tbb] enforces [threads] which may cause preceding [threads &amp;&amp; poco] enforcing [!tbb] to evaluate to true</msg></result>
-<result><category>dev-games</category><package>openscenegraph</package><version>3.5.5</version><class>DroppedKeywords</class><msg>ia64, ppc</msg></result>
 <result><category>dev-games</category><package>openscenegraph</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
+<result><category>dev-games</category><package>openscenegraph</package><version>3.5.5</version><class>DroppedKeywords</class><msg>ia64, ppc</msg></result>
 <result><category>dev-games</category><package>openscenegraph-qt</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
 <result><category>dev-games</category><package>t4k-common</package><version>0.1.1</version><class>HttpsAvailable</class><msg>'http://alioth.debian.org/' link should use https:// on line: 9</msg></result>
 <result><category>net-ftp</category><package>atftp</package><version>0.7-r3</version><class>MissingSlotDep</class><msg>'sys-libs/readline' matches more than one slot: [ 0, 4, 5 ]</msg></result>
@@ -5420,9 +5387,9 @@
 <result><category>dev-ruby</category><package>multi_json</package><version>1.12.1</version><class>DroppedKeywords</class><msg>sparc</msg></result>
 <result><category>dev-ruby</category><package>multi_xml</package><version>0.5.5</version><class>DroppedKeywords</class><msg>ppc</msg></result>
 <result><category>dev-ruby</category><package>net-http-pipeline</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
+<result><category>dev-ruby</category><package>net-ssh</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
 <result><category>dev-ruby</category><package>net-ssh</package><version>3.2.0</version><class>DroppedKeywords</class><msg>arm</msg></result>
 <result><category>dev-ruby</category><package>net-ssh</package><version>4.1.0</version><class>DroppedKeywords</class><msg>amd64-linux, ppc, ppc-macos, ppc64, x64-solaris, x86, x86-linux, x86-macos, x86-solaris</msg></result>
-<result><category>dev-ruby</category><package>net-ssh</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
 <result><category>dev-ruby</category><package>net-ssh-gateway</package><version>2.0.0</version><class>DroppedKeywords</class><msg>amd64-linux, ppc, ppc-macos, ppc64, sparc-solaris, x64-solaris, x86, x86-linux, x86-macos, x86-solaris</msg></result>
 <result><category>dev-ruby</category><package>nio4r</package><version>2.0.0</version><class>DroppedKeywords</class><msg>ppc, x86</msg></result>
 <result><category>dev-ruby</category><package>ox</package><version>2.7.0</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: ( contains [ruby_targets_ruby23] || contains [ruby_targets_ruby24] )</msg></result>
@@ -5508,8 +5475,8 @@
 <result><category>net-libs</category><package>libeXosip</package><version>4.0.0</version><class>MissingSlotDep</class><msg>'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]</msg></result>
 <result><category>net-libs</category><package>libesmtp</package><version>1.0.6-r1</version><class>MissingSlotDep</class><msg>'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]</msg></result>
 <result><category>net-libs</category><package>libetpan</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
-<result><category>net-libs</category><package>libgadu</package><version>1.11.4</version><class>MissingSlotDep</class><msg>'&gt;=dev-libs/openssl-0.9.6m' matches more than one slot: [ 0, 0.9.8 ]</msg></result>
 <result><category>net-libs</category><package>libgadu</package><version>1.11.4</version><class>VulnerablePackage</class><msg>vulnerable via glsa(201508-02) ( ver &lt; 1.12.0 ), keywords: alpha, amd64, amd64-linux, arm, ia64, mips, ppc, ppc-macos, ppc64, sparc, x86, x86-fbsd, x86-linux</msg></result>
+<result><category>net-libs</category><package>libgadu</package><version>1.11.4</version><class>MissingSlotDep</class><msg>'&gt;=dev-libs/openssl-0.9.6m' matches more than one slot: [ 0, 0.9.8 ]</msg></result>
 <result><category>net-libs</category><package>libgadu</package><version>1.12.0</version><class>MissingSlotDep</class><msg>'&gt;=dev-libs/openssl-0.9.6m' matches more than one slot: [ 0, 0.9.8 ]</msg></result>
 <result><category>net-libs</category><package>libgadu</package><version>1.12.1</version><class>MissingSlotDep</class><msg>'&gt;=dev-libs/openssl-0.9.6m' matches more than one slot: [ 0, 0.9.8 ]</msg></result>
 <result><category>net-libs</category><package>libgadu</package><version>1.12.0</version><class>DroppedKeywords</class><msg>alpha, ia64, sparc</msg></result>
@@ -5545,15 +5512,15 @@
 <result><category>net-libs</category><package>ptlib</package><version>2.10.11</version><class>MissingSlotDep</class><msg>'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]</msg></result>
 <result><category>net-libs</category><package>rpcsvc-proto</package><version>1.2-r1</version><class>DroppedKeywords</class><msg>amd64-linux, arm-linux, x86-linux</msg></result>
 <result><category>net-libs</category><package>telepathy-qt</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
-<result><category>net-libs</category><package>webkit-gtk</package><version>2.4.11-r1</version><class>GLEP73BackAlteration</class><msg>REQUIRED_USE causes a preceding condition to start applying: [webgl &amp;&amp; !opengl] enforces [gles2] which may cause preceding [gles2] enforcing [egl] to evaluate to true</msg></result>
 <result><category>net-libs</category><package>webkit-gtk</package><version>2.4.11-r1</version><class>VulnerablePackage</class><msg>vulnerable via glsa(201709-03) ( ver &lt; 2.16.5 ), keywords: alpha, amd64, amd64-fbsd, amd64-linux, arm, ia64, ppc, ppc64, sparc, x86, x86-fbsd, x86-linux, x86-macos</msg></result>
 <result><category>net-libs</category><package>webkit-gtk</package><version>2.4.11-r1</version><class>VulnerablePackage</class><msg>vulnerable via glsa(201706-15) ( ver &lt; 2.16.3 ), keywords: alpha, amd64, amd64-fbsd, amd64-linux, arm, ia64, ppc, ppc64, sparc, x86, x86-fbsd, x86-linux, x86-macos</msg></result>
 <result><category>net-libs</category><package>webkit-gtk</package><version>2.4.11-r1</version><class>VulnerablePackage</class><msg>vulnerable via glsa(201710-14) ( ver &lt; 2.16.6 ), keywords: alpha, amd64, amd64-fbsd, amd64-linux, arm, ia64, ppc, ppc64, sparc, x86, x86-fbsd, x86-linux, x86-macos</msg></result>
+<result><category>net-libs</category><package>webkit-gtk</package><version>2.4.11-r1</version><class>GLEP73BackAlteration</class><msg>REQUIRED_USE causes a preceding condition to start applying: [webgl &amp;&amp; !opengl] enforces [gles2] which may cause preceding [gles2] enforcing [egl] to evaluate to true</msg></result>
 <result><category>net-libs</category><package>webkit-gtk</package><version>2.4.11-r1</version><class>NonExistentDeps</class><msg>depset depends: nonexistent dep: [ dev-lang/ruby:2.1 ]</msg></result>
-<result><category>net-libs</category><package>webkit-gtk</package><version>2.4.11-r200</version><class>GLEP73BackAlteration</class><msg>REQUIRED_USE causes a preceding condition to start applying: [webgl &amp;&amp; !opengl] enforces [gles2] which may cause preceding [gles2] enforcing [egl] to evaluate to true</msg></result>
 <result><category>net-libs</category><package>webkit-gtk</package><version>2.4.11-r200</version><class>VulnerablePackage</class><msg>vulnerable via glsa(201709-03) ( ver &lt; 2.16.5 ), keywords: alpha, amd64, amd64-fbsd, amd64-linux, arm, ia64, mips, ppc, ppc64, sparc, x86, x86-fbsd, x86-linux, x86-macos</msg></result>
 <result><category>net-libs</category><package>webkit-gtk</package><version>2.4.11-r200</version><class>VulnerablePackage</class><msg>vulnerable via glsa(201706-15) ( ver &lt; 2.16.3 ), keywords: alpha, amd64, amd64-fbsd, amd64-linux, arm, ia64, mips, ppc, ppc64, sparc, x86, x86-fbsd, x86-linux, x86-macos</msg></result>
 <result><category>net-libs</category><package>webkit-gtk</package><version>2.4.11-r200</version><class>VulnerablePackage</class><msg>vulnerable via glsa(201710-14) ( ver &lt; 2.16.6 ), keywords: alpha, amd64, amd64-fbsd, amd64-linux, arm, ia64, mips, ppc, ppc64, sparc, x86, x86-fbsd, x86-linux, x86-macos</msg></result>
+<result><category>net-libs</category><package>webkit-gtk</package><version>2.4.11-r200</version><class>GLEP73BackAlteration</class><msg>REQUIRED_USE causes a preceding condition to start applying: [webgl &amp;&amp; !opengl] enforces [gles2] which may cause preceding [gles2] enforcing [egl] to evaluate to true</msg></result>
 <result><category>net-libs</category><package>webkit-gtk</package><version>2.4.11-r200</version><class>NonExistentDeps</class><msg>depset depends: nonexistent dep: [ dev-lang/ruby:2.1 ]</msg></result>
 <result><category>net-libs</category><package>webkit-gtk</package><version>2.18.2</version><class>GLEP73BackAlteration</class><msg>REQUIRED_USE causes a preceding condition to start applying: [webgl &amp;&amp; !opengl] enforces [gles2] which may cause preceding [gles2] enforcing [egl] to evaluate to true</msg></result>
 <result><category>net-libs</category><package>webkit-gtk</package><version>2.18.2</version><class>DroppedKeywords</class><msg>mips</msg></result>
@@ -5711,7 +5678,7 @@
 <result><class>UnknownProfileUse</class><msg>'prefix/darwin/macos/10.9/x86/use.mask': unknown USE flag: [ '-ifc' ]</msg></result>
 <result><class>UnknownProfileUse</class><msg>'prefix/sunos/solaris/arch/sparc/use.force': unknown USE flag: [ 'abi_sparc_32' ]</msg></result>
 <result><class>UnknownProfileUse</class><msg>'prefix/windows/winnt/use.mask': unknown USE flag: [ 'ifc' ]</msg></result>
+<result><class>UnusedLicenses</class><msg>skype-4.0.0.7-copyright</msg></result>
 <result><class>UnusedGlobalFlags</class><msg>use.desc unused flags: calligra_features_braindump, calligra_features_flow, calligra_features_kexi, calligra_features_krita, calligra_features_stage, cpu_flags_arm_aes, cpu_flags_arm_crc32, cpu_flags_arm_edsp, cpu_flags_arm_iwmmxt, cpu_flags_arm_sha1, cpu_flags_arm_sha2, cpu_flags_arm_v7, cpu_flags_arm_vfp-d32, cpu_flags_arm_vfpv4, crosscompile_opts_bootstrap, l10n_sr-ME, l10n_ur-PK, linguas_ach, linguas_brx, linguas_dgo, linguas_doi, linguas_ee, linguas_en_EN, linguas_en_ZA, linguas_ga_IE, linguas_gug, linguas_hne, linguas_hsb, linguas_ks, linguas_mni, linguas_nl_BE, linguas_nr, linguas_pa_IN, linguas_sa_IN, linguas_sah, linguas_sat, linguas_sd, linguas_son, linguas_ss, linguas_st, linguas_sw_TZ, linguas_syc, linguas_ta_LK, linguas_tn, postgres_targets_postgres11, python_single_target_jython2_7, vmware_guest_freebsd, vmware_guest_linux, vmware_guest_netware, vmware_guest_solaris, vmware_guest_winPre2k, vmware_guest_windows, xtables_addons_checksum, xtables_addons_rawnat, xtables_addons_steal, xtables_addons_tee</msg></result>
 <result><class>UnusedEclasses</class><msg>gnatbuild, gnatbuild-r1, mozconfig-v6.55, mozconfig-v6.56, mysql-multilib, php-ext-pecl-r2</msg></result>
-<result><class>UnusedLicenses</class><msg>skype-4.0.0.7-copyright</msg></result>
 </checks>
