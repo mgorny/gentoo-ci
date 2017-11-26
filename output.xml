@@ -48,9 +48,9 @@
 <result><category>app-emulation</category><package>lxc</package><version>2.0.4</version><class>VulnerablePackage</class><msg>vulnerable via glsa(201711-09) ( ver &lt; 2.0.7 ), keywords: amd64, arm, arm64</msg></result>
 <result><category>app-emulation</category><package>lxc</package><version>2.0.5</version><class>VulnerablePackage</class><msg>vulnerable via glsa(201711-09) ( ver &lt; 2.0.7 ), keywords: amd64, arm, arm64</msg></result>
 <result><category>app-emulation</category><package>lxc</package><version>2.0.6-r1</version><class>VulnerablePackage</class><msg>vulnerable via glsa(201711-09) ( ver &lt; 2.0.7 ), keywords: amd64, arm, arm64</msg></result>
+<result><category>app-emulation</category><package>lxc</package><version>2.0.3-r1</version><class>DroppedKeywords</class><msg>ppc64, x86</msg></result>
 <result><category>app-emulation</category><package>lxc</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: 'files/lxc-2.0.4-omit-sysconfig.patch', 'files/lxc-2.0.5-omit-sysconfig.patch'</msg></result>
 <result><category>app-emulation</category><package>lxc</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: 'files/lxc-2.0.4-bash-completion.patch', 'files/lxc-2.0.5-bash-completion.patch'</msg></result>
-<result><category>app-emulation</category><package>lxc</package><version>2.0.3-r1</version><class>DroppedKeywords</class><msg>ppc64, x86</msg></result>
 <result><category>app-emulation</category><package>lxd</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: 'files/lxd-2.14-dont-go-get.patch', 'files/lxd-2.17-dont-go-get.patch', 'files/lxd-2.18-dont-go-get.patch'</msg></result>
 <result><category>app-emulation</category><package>lxd</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: 'files/lxd-2.17.initd', 'files/lxd-2.18.initd'</msg></result>
 <result><category>app-emulation</category><package>lxd</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: 'files/lxd-2.14.confd', 'files/lxd-2.17.confd', 'files/lxd-2.18.confd'</msg></result>
@@ -193,8 +193,8 @@
 <result><category>media-libs</category><package>spandsp</package><version>0.0.6_pre21</version><class>MissingSlotDep</class><msg>'media-libs/tiff' matches more than one slot: [ 0, 3 ]</msg></result>
 <result><category>media-libs</category><package>spandsp</package><version>0.0.6</version><class>MissingSlotDep</class><msg>'virtual/jpeg' matches more than one slot: [ 0, 62 ]</msg></result>
 <result><category>media-libs</category><package>spandsp</package><version>0.0.6</version><class>MissingSlotDep</class><msg>'media-libs/tiff' matches more than one slot: [ 0, 3 ]</msg></result>
-<result><category>media-libs</category><package>spandsp</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
 <result><category>media-libs</category><package>spandsp</package><version>0.0.6_pre21</version><class>DroppedKeywords</class><msg>ia64</msg></result>
+<result><category>media-libs</category><package>spandsp</package><class>PkgMetadataXmlIndentation</class><msg>metadata.xml has inconsistent indentation</msg></result>
 <result><category>media-libs</category><package>stk</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: 'files/stk-4.5.0/020_all_noExamplesOrDemo.patch', 'files/stk-4.5.1/020_all_noExamplesOrDemo.patch'</msg></result>
 <result><category>media-libs</category><package>stk</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: 'files/stk-4.4.4/010_all_removeForcedFlags.patch', 'files/stk-4.5.0/010_all_removeForcedFlags.patch', 'files/stk-4.5.1/010_all_removeForcedFlags.patch'</msg></result>
 <result><category>media-libs</category><package>stk</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: 'files/stk-4.4.4/040_all_sharedliblink.patch', 'files/stk-4.5.0/040_all_sharedliblink.patch'</msg></result>
@@ -1082,6 +1082,8 @@
 <result><category>app-text</category><package>wklej</package><version>0.2.1-r1</version><class>GLEP73BackAlteration</class><msg>REQUIRED_USE causes a preceding condition to start applying: [vim] enforces [python_single_target_python2_7] which may cause preceding [python_single_target_python2_7] enforcing [python_targets_python2_7] to evaluate to true</msg></result>
 <result><category>app-text</category><package>wklej</package><version>0.2.1-r1</version><class>GLEP73Conflict</class><msg>REQUIRED_USE can request conflicting states: [python_single_target_pypy3] requires [!python_single_target_python2_7] while [vim] requires [python_single_target_python2_7]</msg></result>
 <result><category>app-text</category><package>wv</package><version>1.2.9-r2</version><class>AbsoluteSymlink</class><msg>'dosym /usr/share/man/man1/wvWare.1 ...' uses absolute path on line 60</msg></result>
+<result><category>app-text</category><package>xindy</package><version>2.4</version><class>WhitespaceFound</class><msg>ebuild has trailing whitespace on line: 12</msg></result>
+<result><category>app-text</category><package>xindy</package><version>2.4-r1</version><class>WhitespaceFound</class><msg>ebuild has trailing whitespace on line: 12</msg></result>
 <result><category>app-text</category><package>xlhtml</package><version>0.5.1_p6</version><class>HttpsAvailable</class><msg>'http://packages.debian.org/' link should use https:// on line: 12</msg></result>
 <result><category>app-text</category><package>xmlformat</package><version>1.04</version><class>NonExistentDeps</class><msg>depset depends: nonexistent dep: [ dev-lang/ruby:2.1 ]</msg></result>
 <result><category>app-text</category><package>xmlformat</package><version>1.04</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent dep: [ dev-lang/ruby:2.1 ]</msg></result>
@@ -3996,34 +3998,34 @@
 <result><category>dev-lang</category><package>rust</package><version>1.15.1</version><class>BadInsIntoDir</class><msg>ebuild uses insinto /etc/env.d on line 128</msg></result>
 <result><category>dev-lang</category><package>rust</package><version>1.16.0</version><class>BadInsIntoDir</class><msg>ebuild uses insinto /etc/env.d on line 124</msg></result>
 <result><category>dev-lang</category><package>rust</package><version>1.19.0</version><class>BadInsIntoDir</class><msg>ebuild uses insinto /etc/env.d on line 141</msg></result>
+<result><category>dev-lang</category><package>rust-bin</package><version>1.12.1</version><class>BadInsIntoDir</class><msg>ebuild uses insinto /etc/env.d on line 76</msg></result>
 <result><category>dev-lang</category><package>rust-bin</package><version>1.12.1</version><class>AbsoluteSymlink</class><msg>'dosym /opt/${P}/bin/${rustc}" ...' uses absolute path on line 61</msg></result>
 <result><category>dev-lang</category><package>rust-bin</package><version>1.12.1</version><class>AbsoluteSymlink</class><msg>'dosym /opt/${P}/bin/${rustdoc}" ...' uses absolute path on line 62</msg></result>
 <result><category>dev-lang</category><package>rust-bin</package><version>1.12.1</version><class>AbsoluteSymlink</class><msg>'dosym /opt/${P}/bin/${rustgdb}" ...' uses absolute path on line 63</msg></result>
-<result><category>dev-lang</category><package>rust-bin</package><version>1.12.1</version><class>BadInsIntoDir</class><msg>ebuild uses insinto /etc/env.d on line 76</msg></result>
+<result><category>dev-lang</category><package>rust-bin</package><version>1.13.0</version><class>BadInsIntoDir</class><msg>ebuild uses insinto /etc/env.d on line 76</msg></result>
 <result><category>dev-lang</category><package>rust-bin</package><version>1.13.0</version><class>AbsoluteSymlink</class><msg>'dosym /opt/${P}/bin/${rustc}" ...' uses absolute path on line 61</msg></result>
 <result><category>dev-lang</category><package>rust-bin</package><version>1.13.0</version><class>AbsoluteSymlink</class><msg>'dosym /opt/${P}/bin/${rustdoc}" ...' uses absolute path on line 62</msg></result>
 <result><category>dev-lang</category><package>rust-bin</package><version>1.13.0</version><class>AbsoluteSymlink</class><msg>'dosym /opt/${P}/bin/${rustgdb}" ...' uses absolute path on line 63</msg></result>
-<result><category>dev-lang</category><package>rust-bin</package><version>1.13.0</version><class>BadInsIntoDir</class><msg>ebuild uses insinto /etc/env.d on line 76</msg></result>
+<result><category>dev-lang</category><package>rust-bin</package><version>1.14.0</version><class>BadInsIntoDir</class><msg>ebuild uses insinto /etc/env.d on line 76</msg></result>
 <result><category>dev-lang</category><package>rust-bin</package><version>1.14.0</version><class>AbsoluteSymlink</class><msg>'dosym /opt/${P}/bin/${rustc}" ...' uses absolute path on line 61</msg></result>
 <result><category>dev-lang</category><package>rust-bin</package><version>1.14.0</version><class>AbsoluteSymlink</class><msg>'dosym /opt/${P}/bin/${rustdoc}" ...' uses absolute path on line 62</msg></result>
 <result><category>dev-lang</category><package>rust-bin</package><version>1.14.0</version><class>AbsoluteSymlink</class><msg>'dosym /opt/${P}/bin/${rustgdb}" ...' uses absolute path on line 63</msg></result>
-<result><category>dev-lang</category><package>rust-bin</package><version>1.14.0</version><class>BadInsIntoDir</class><msg>ebuild uses insinto /etc/env.d on line 76</msg></result>
+<result><category>dev-lang</category><package>rust-bin</package><version>1.15.0</version><class>BadInsIntoDir</class><msg>ebuild uses insinto /etc/env.d on line 76</msg></result>
 <result><category>dev-lang</category><package>rust-bin</package><version>1.15.0</version><class>AbsoluteSymlink</class><msg>'dosym /opt/${P}/bin/${rustc}" ...' uses absolute path on line 61</msg></result>
 <result><category>dev-lang</category><package>rust-bin</package><version>1.15.0</version><class>AbsoluteSymlink</class><msg>'dosym /opt/${P}/bin/${rustdoc}" ...' uses absolute path on line 62</msg></result>
 <result><category>dev-lang</category><package>rust-bin</package><version>1.15.0</version><class>AbsoluteSymlink</class><msg>'dosym /opt/${P}/bin/${rustgdb}" ...' uses absolute path on line 63</msg></result>
-<result><category>dev-lang</category><package>rust-bin</package><version>1.15.0</version><class>BadInsIntoDir</class><msg>ebuild uses insinto /etc/env.d on line 76</msg></result>
+<result><category>dev-lang</category><package>rust-bin</package><version>1.15.1</version><class>BadInsIntoDir</class><msg>ebuild uses insinto /etc/env.d on line 76</msg></result>
 <result><category>dev-lang</category><package>rust-bin</package><version>1.15.1</version><class>AbsoluteSymlink</class><msg>'dosym /opt/${P}/bin/${rustc}" ...' uses absolute path on line 61</msg></result>
 <result><category>dev-lang</category><package>rust-bin</package><version>1.15.1</version><class>AbsoluteSymlink</class><msg>'dosym /opt/${P}/bin/${rustdoc}" ...' uses absolute path on line 62</msg></result>
 <result><category>dev-lang</category><package>rust-bin</package><version>1.15.1</version><class>AbsoluteSymlink</class><msg>'dosym /opt/${P}/bin/${rustgdb}" ...' uses absolute path on line 63</msg></result>
-<result><category>dev-lang</category><package>rust-bin</package><version>1.15.1</version><class>BadInsIntoDir</class><msg>ebuild uses insinto /etc/env.d on line 76</msg></result>
+<result><category>dev-lang</category><package>rust-bin</package><version>1.16.0</version><class>BadInsIntoDir</class><msg>ebuild uses insinto /etc/env.d on line 76</msg></result>
 <result><category>dev-lang</category><package>rust-bin</package><version>1.16.0</version><class>AbsoluteSymlink</class><msg>'dosym /opt/${P}/bin/${rustc}" ...' uses absolute path on line 61</msg></result>
 <result><category>dev-lang</category><package>rust-bin</package><version>1.16.0</version><class>AbsoluteSymlink</class><msg>'dosym /opt/${P}/bin/${rustdoc}" ...' uses absolute path on line 62</msg></result>
 <result><category>dev-lang</category><package>rust-bin</package><version>1.16.0</version><class>AbsoluteSymlink</class><msg>'dosym /opt/${P}/bin/${rustgdb}" ...' uses absolute path on line 63</msg></result>
-<result><category>dev-lang</category><package>rust-bin</package><version>1.16.0</version><class>BadInsIntoDir</class><msg>ebuild uses insinto /etc/env.d on line 76</msg></result>
+<result><category>dev-lang</category><package>rust-bin</package><version>1.19.0</version><class>BadInsIntoDir</class><msg>ebuild uses insinto /etc/env.d on line 76</msg></result>
 <result><category>dev-lang</category><package>rust-bin</package><version>1.19.0</version><class>AbsoluteSymlink</class><msg>'dosym /opt/${P}/bin/${rustc}" ...' uses absolute path on line 61</msg></result>
 <result><category>dev-lang</category><package>rust-bin</package><version>1.19.0</version><class>AbsoluteSymlink</class><msg>'dosym /opt/${P}/bin/${rustdoc}" ...' uses absolute path on line 62</msg></result>
 <result><category>dev-lang</category><package>rust-bin</package><version>1.19.0</version><class>AbsoluteSymlink</class><msg>'dosym /opt/${P}/bin/${rustgdb}" ...' uses absolute path on line 63</msg></result>
-<result><category>dev-lang</category><package>rust-bin</package><version>1.19.0</version><class>BadInsIntoDir</class><msg>ebuild uses insinto /etc/env.d on line 76</msg></result>
 <result><category>dev-lang</category><package>scala</package><version>2.11.4-r1</version><class>NonExistentDeps</class><msg>depset depends: nonexistent dep: [ =virtual/jdk-1.6* ]</msg></result>
 <result><category>dev-lang</category><package>scala</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: 'files/scala-2.11.11-no-git.patch', 'files/scala-2.11.8-no-git.patch'</msg></result>
 <result><category>dev-lang</category><package>spidermonkey</package><version>17.0.0-r4</version><class>DroppedKeywords</class><msg>amd64-fbsd, arm64, x64-macos</msg></result>
@@ -4298,9 +4300,9 @@
 <result><category>dev-libs</category><package>weston</package><version>1.11.0</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: contains [dbus]</msg></result>
 <result><category>dev-libs</category><package>weston</package><version>3.0.0</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: contains [dbus]</msg></result>
 <result><category>dev-libs</category><package>xalan-c</package><version>1.11.0_pre1153059</version><class>HttpsAvailable</class><msg>'http://xml.apache.org/' link should use https:// on line: 9</msg></result>
+<result><category>dev-libs</category><package>xapian-bindings</package><version>1.2.24</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: ( contains [java] || contains [lua] || contains [perl] || contains [php] || contains [python] || contains [ruby] || contains [tcl] )</msg></result>
 <result><category>dev-libs</category><package>xapian-bindings</package><version>1.2.24</version><class>NonExistentDeps</class><msg>depset depends: nonexistent dep: [ dev-lang/php:5.5 ]</msg></result>
 <result><category>dev-libs</category><package>xapian-bindings</package><version>1.2.24</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent dep: [ dev-lang/php:5.5 ]</msg></result>
-<result><category>dev-libs</category><package>xapian-bindings</package><version>1.2.24</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: ( contains [java] || contains [lua] || contains [perl] || contains [php] || contains [python] || contains [ruby] || contains [tcl] )</msg></result>
 <result><category>dev-libs</category><package>xapian-bindings</package><version>1.2.25</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: ( contains [java] || contains [lua] || contains [perl] || contains [php] || contains [python] || contains [ruby] || contains [tcl] )</msg></result>
 <result><category>dev-libs</category><package>xapian-bindings</package><version>1.4.4</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: ( contains [java] || contains [lua] || contains [mono] || contains [perl] || contains [php] || contains [python] || contains [ruby] || contains [tcl] )</msg></result>
 <result><category>dev-libs</category><package>xapian-bindings</package><version>1.4.5</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: ( contains [java] || contains [lua] || contains [mono] || contains [perl] || contains [php] || contains [python] || contains [ruby] || contains [tcl] )</msg></result>
