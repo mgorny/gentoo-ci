@@ -199,6 +199,8 @@
 <result><category>dev-python</category><package>boto</package><version>2.41.0</version><class>DroppedKeywords</class><msg>arm64</msg></result>
 <result><category>dev-python</category><package>clang-python</package><version>5.0.1_rc2</version><class>DroppedKeywords</class><msg>amd64, arm64, x86</msg></result>
 <result><category>dev-python</category><package>configparser</package><version>3.5.0-r1</version><class>DroppedKeywords</class><msg>arm64</msg></result>
+<result><category>dev-python</category><package>cryptography</package><version>2.1.2-r1</version><class>NonExistentDeps</class><msg>depset depends: nonexistent dep: [ =dev-libs/openssl-1.1.0f-r1:0 ]</msg></result>
+<result><category>dev-python</category><package>cryptography</package><version>2.1.2-r1</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent dep: [ =dev-libs/openssl-1.1.0f-r1:0 ]</msg></result>
 <result><category>dev-python</category><package>cryptography</package><version>1.8.1</version><class>DroppedKeywords</class><msg>alpha, amd64-linux, m68k, s390, sh, sparc, x64-cygwin, x86-linux</msg></result>
 <result><category>dev-python</category><package>cvxopt</package><class>SizeViolation</class><msg>"files/cvxopt-1.1.6-glpk449.patch" exceeds 20k in size; 38.4 KiB total</msg></result>
 <result><category>dev-python</category><package>django</package><version>1.4.22</version><class>VulnerablePackage</class><msg>vulnerable via glsa(201406-26) ( ver &lt; 1.6.5 &amp;&amp; ver not = 1.5.8 &amp;&amp; ver not = 1.4.13 &amp;&amp; ver not = 1.5.10 &amp;&amp; ver not = 1.4.15 ), keywords: </msg></result>
@@ -738,11 +740,11 @@
 <result><category>dev-libs</category><package>collada-dom</package><class>ExecutableFile</class><msg>unnecessary executable bit: 'files/take_snapshot.sh'</msg></result>
 <result><category>dev-libs</category><package>cyberjack</package><version>3.99.5_p03-r1</version><class>MissingSlotDep</class><msg>'&gt;=x11-libs/fox-1.6' matches more than one slot: [ 1.6, 1.7 ]</msg></result>
 <result><category>dev-libs</category><package>efl</package><version>1.17.0-r1</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: contains [sound]</msg></result>
-<result><category>dev-libs</category><package>efl</package><version>1.17.0-r1</version><class>GLEP73BackAlteration</class><msg>REQUIRED_USE causes a preceding condition to start applying: [wayland] enforces [gles] which may cause preceding [gles] enforcing [!sdl] to evaluate to true</msg></result>
 <result><category>dev-libs</category><package>efl</package><version>1.17.0-r1</version><class>GLEP73Conflict</class><msg>REQUIRED_USE can request conflicting states: [sdl] requires [opengl] while [wayland] requires [!opengl]</msg></result>
+<result><category>dev-libs</category><package>efl</package><version>1.17.0-r1</version><class>GLEP73BackAlteration</class><msg>REQUIRED_USE causes a preceding condition to start applying: [wayland] enforces [gles] which may cause preceding [gles] enforcing [!sdl] to evaluate to true</msg></result>
 <result><category>dev-libs</category><package>efl</package><version>1.18.4</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: contains [sound]</msg></result>
-<result><category>dev-libs</category><package>efl</package><version>1.18.4</version><class>GLEP73BackAlteration</class><msg>REQUIRED_USE causes a preceding condition to start applying: [wayland] enforces [gles] which may cause preceding [gles] enforcing [!sdl] to evaluate to true</msg></result>
 <result><category>dev-libs</category><package>efl</package><version>1.18.4</version><class>GLEP73Conflict</class><msg>REQUIRED_USE can request conflicting states: [sdl] requires [opengl] while [wayland] requires [!opengl]</msg></result>
+<result><category>dev-libs</category><package>efl</package><version>1.18.4</version><class>GLEP73BackAlteration</class><msg>REQUIRED_USE causes a preceding condition to start applying: [wayland] enforces [gles] which may cause preceding [gles] enforcing [!sdl] to evaluate to true</msg></result>
 <result><category>dev-libs</category><package>folks</package><version>0.11.3</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: contains [eds]</msg></result>
 <result><category>dev-libs</category><package>folks</package><version>0.11.4</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: contains [eds]</msg></result>
 <result><category>dev-libs</category><package>hyperscan</package><version>4.4.1</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: contains [cpu_flags_x86_ssse3]</msg></result>
@@ -822,9 +824,9 @@
 <result><category>dev-libs</category><package>ucommon</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: 'files/6.1/install_gcrypt.m4_file.patch', 'files/install_gcrypt.m4_file.patch'</msg></result>
 <result><category>dev-libs</category><package>weston</package><version>1.11.0</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: contains [dbus]</msg></result>
 <result><category>dev-libs</category><package>weston</package><version>3.0.0</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: contains [dbus]</msg></result>
+<result><category>dev-libs</category><package>xapian-bindings</package><version>1.2.24</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: ( contains [java] || contains [lua] || contains [perl] || contains [php] || contains [python] || contains [ruby] || contains [tcl] )</msg></result>
 <result><category>dev-libs</category><package>xapian-bindings</package><version>1.2.24</version><class>NonExistentDeps</class><msg>depset depends: nonexistent dep: [ dev-lang/php:5.5 ]</msg></result>
 <result><category>dev-libs</category><package>xapian-bindings</package><version>1.2.24</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent dep: [ dev-lang/php:5.5 ]</msg></result>
-<result><category>dev-libs</category><package>xapian-bindings</package><version>1.2.24</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: ( contains [java] || contains [lua] || contains [perl] || contains [php] || contains [python] || contains [ruby] || contains [tcl] )</msg></result>
 <result><category>dev-libs</category><package>xapian-bindings</package><version>1.2.25</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: ( contains [java] || contains [lua] || contains [perl] || contains [php] || contains [python] || contains [ruby] || contains [tcl] )</msg></result>
 <result><category>dev-libs</category><package>xapian-bindings</package><version>1.4.4</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: ( contains [java] || contains [lua] || contains [mono] || contains [perl] || contains [php] || contains [python] || contains [ruby] || contains [tcl] )</msg></result>
 <result><category>dev-libs</category><package>xapian-bindings</package><version>1.4.5</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: ( contains [java] || contains [lua] || contains [mono] || contains [perl] || contains [php] || contains [python] || contains [ruby] || contains [tcl] )</msg></result>
@@ -1010,8 +1012,8 @@
 <result><category>sys-devel</category><package>parity</package><version>1.2.6</version><class>DroppedKeywords</class><msg>x86-winnt</msg></result>
 <result><category>x11-wm</category><package>awesome</package><version>4.0</version><class>DroppedKeywords</class><msg>arm, ppc, ppc64, x86-fbsd</msg></result>
 <result><category>x11-wm</category><package>compiz</package><version>0.8.8-r3</version><class>MissingSlotDep</class><msg>'sys-fs/fuse' matches more than one slot: [ 0, 3 ]</msg></result>
-<result><category>x11-wm</category><package>enlightenment</package><class>PkgMetadataXmlEmptyElement</class><msg>metadata.xml has empty element 'flag' on line 34</msg></result>
 <result><category>x11-wm</category><package>enlightenment</package><version>1.0.17</version><class>DroppedKeywords</class><msg>amd64-fbsd, amd64-linux, mips, ppc-macos, x64-solaris, x86-linux, x86-macos, x86-solaris</msg></result>
+<result><category>x11-wm</category><package>enlightenment</package><class>PkgMetadataXmlEmptyElement</class><msg>metadata.xml has empty element 'flag' on line 34</msg></result>
 <result><category>x11-wm</category><package>i3</package><version>4.14.1</version><class>DroppedKeywords</class><msg>arm</msg></result>
 <result><category>x11-wm</category><package>icewm</package><version>1.3.12-r1</version><class>DroppedKeywords</class><msg>alpha, ppc64, sparc</msg></result>
 <result><category>x11-wm</category><package>notion</package><version>3_p2015061300-r1</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: contains [xinerama]</msg></result>
@@ -1676,9 +1678,9 @@
 <result><category>dev-java</category><package>commons-pool</package><version>2.2</version><class>DroppedKeywords</class><msg>ppc64</msg></result>
 <result><category>dev-java</category><package>commons-vfs</package><version>2.0-r1</version><class>DroppedKeywords</class><msg>ppc64</msg></result>
 <result><category>dev-java</category><package>icedtea</package><version>3.6.0</version><class>NonExistentDeps</class><msg>depset depends: nonexistent deps: [ dev-java/icedtea-bin:7, dev-java/icedtea:7 ]</msg></result>
+<result><category>dev-java</category><package>icedtea-bin</package><version>3.6.0</version><class>BadRestricts</class><msg>unknown restricts: preserve-libs</msg></result>
 <result><category>dev-java</category><package>icedtea-bin</package><version>3.6.0</version><class>VulnerablePackage</class><msg>vulnerable via glsa(201707-01) ( ( ver &lt; 7.2.6.10 || ver &lt; 3.4.0 ) ), keywords: amd64, arm, arm64, ppc64, x86</msg></result>
 <result><category>dev-java</category><package>icedtea-bin</package><version>3.6.0</version><class>VulnerablePackage</class><msg>vulnerable via glsa(201709-22) ( ( ver &lt; 7.2.6.11 || ver &lt; 3.5.0 ) ), keywords: amd64, arm, arm64, ppc64, x86</msg></result>
-<result><category>dev-java</category><package>icedtea-bin</package><version>3.6.0</version><class>BadRestricts</class><msg>unknown restricts: preserve-libs</msg></result>
 <result><category>dev-java</category><package>itext</package><version>5.5.4-r2</version><class>DroppedKeywords</class><msg>ppc64</msg></result>
 <result><category>dev-java</category><package>jansi</package><version>1.11-r1</version><class>DroppedKeywords</class><msg>ppc64</msg></result>
 <result><category>dev-java</category><package>jcs</package><version>2.0</version><class>NonExistentDeps</class><msg>depset depends: nonexistent dep: [ dev-java/commons-dbcp:0 ]</msg></result>
@@ -1704,9 +1706,9 @@
 <result><category>dev-java</category><package>spring-core</package><version>3.2.4</version><class>NonExistentDeps</class><msg>depset rdepends: nonexistent dep: [ dev-java/jopt-simple:4.4 ]</msg></result>
 <result><category>dev-java</category><package>sun-jai-bin</package><version>1.1.3-r1</version><class>DroppedKeywords</class><msg>ppc64, x86</msg></result>
 <result><category>dev-java</category><package>swt</package><version>3.5.2</version><class>NonExistentDeps</class><msg>depset depends: nonexistent dep: [ &lt;x11-proto/xextproto-7.1 ]</msg></result>
+<result><category>dev-java</category><package>tomcat-servlet-api</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: 'files/3.1-build.xml', 'files/4.0-build.xml'</msg></result>
 <result><category>dev-java</category><package>tomcat-servlet-api</package><version>7.0.82</version><class>DroppedKeywords</class><msg>arm</msg></result>
 <result><category>dev-java</category><package>tomcat-servlet-api</package><version>9.0.2_beta</version><class>DroppedKeywords</class><msg>ppc64</msg></result>
-<result><category>dev-java</category><package>tomcat-servlet-api</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: 'files/3.1-build.xml', 'files/4.0-build.xml'</msg></result>
 <result><category>dev-java</category><package>typesafe-config</package><version>1.3.0-r2</version><class>DroppedKeywords</class><msg>ppc64</msg></result>
 <result><category>gnome-base</category><package>gnome</package><version>3.22.2</version><class>DroppedKeywords</class><msg>arm, ia64</msg></result>
 <result><category>gnome-base</category><package>gnome-control-center</package><class>SizeViolation</class><msg>"files/gnome-control-center-3.22.0-optional.patch" exceeds 20k in size; 20.9 KiB total</msg></result>
@@ -1715,9 +1717,9 @@
 <result><category>gnome-base</category><package>gnome-session</package><version>3.22.3</version><class>BadInsIntoDir</class><msg>ebuild uses insinto /usr/share/applications on line 108</msg></result>
 <result><category>gnome-base</category><package>gnome-session</package><version>3.24.1</version><class>BadInsIntoDir</class><msg>ebuild uses insinto /usr/share/applications on line 98</msg></result>
 <result><category>gnome-base</category><package>gnome-shell</package><version>3.22.3-r2</version><class>DroppedKeywords</class><msg>alpha, arm, ppc, ppc64</msg></result>
+<result><category>gnome-base</category><package>gvfs</package><version>1.30.4</version><class>MissingSlotDep</class><msg>'&gt;=sys-fs/fuse-2.8.0' matches more than one slot: [ 0, 3 ]</msg></result>
 <result><category>gnome-base</category><package>gvfs</package><version>1.30.4</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: contains [udisks]</msg></result>
 <result><category>gnome-base</category><package>gvfs</package><version>1.30.4</version><class>GLEP73BackAlteration</class><msg>REQUIRED_USE causes a preceding condition to start applying: [systemd] enforces [udisks] which may cause preceding [udisks] enforcing [udev] to evaluate to true</msg></result>
-<result><category>gnome-base</category><package>gvfs</package><version>1.30.4</version><class>MissingSlotDep</class><msg>'&gt;=sys-fs/fuse-2.8.0' matches more than one slot: [ 0, 3 ]</msg></result>
 <result><category>gnome-base</category><package>gvfs</package><version>1.32.1</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: contains [udisks]</msg></result>
 <result><category>gnome-base</category><package>gvfs</package><version>1.32.1</version><class>GLEP73BackAlteration</class><msg>REQUIRED_USE causes a preceding condition to start applying: [systemd] enforces [udisks] which may cause preceding [udisks] enforcing [udev] to evaluate to true</msg></result>
 <result><category>gnome-base</category><package>nautilus</package><version>3.22.3</version><class>DroppedKeywords</class><msg>arm</msg></result>
@@ -1745,8 +1747,8 @@
 <result><category>app-admin</category><package>salt</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: 'files/api-confd-1', 'files/master-confd-1'</msg></result>
 <result><category>app-admin</category><package>salt</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: 'files/minion-confd-1', 'files/syndic-confd-1'</msg></result>
 <result><category>app-admin</category><package>setools</package><version>4.0.1</version><class>DroppedKeywords</class><msg>arm</msg></result>
-<result><category>app-admin</category><package>syslog-ng</package><version>3.12.1</version><class>DroppedKeywords</class><msg>alpha, arm, hppa, ia64, ppc, ppc64</msg></result>
 <result><category>app-admin</category><package>syslog-ng</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: 'files/3.12/syslog-ng.confd', 'files/3.7/syslog-ng.confd'</msg></result>
+<result><category>app-admin</category><package>syslog-ng</package><version>3.12.1</version><class>DroppedKeywords</class><msg>alpha, arm, hppa, ia64, ppc, ppc64</msg></result>
 <result><category>app-admin</category><package>testdisk</package><version>7.0-r3</version><class>MissingSlotDep</class><msg>'&gt;=sys-libs/ncurses-5.2' matches more than one slot: [ 0, 5 ]</msg></result>
 <result><category>app-admin</category><package>webalizer</package><version>2.23.08</version><class>MissingSlotDep</class><msg>'&gt;=sys-libs/db-4.2' matches more than one slot: [ 4.2, 4.3, 4.4, 4.5, 4.6, 4.7, 4.8, 5.1, 5.3, 6.0, 6.1, 6.2 ]</msg></result>
 <result><category>app-admin</category><package>xstow</package><version>1.0.1</version><class>MissingSlotDep</class><msg>'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]</msg></result>
@@ -1983,23 +1985,23 @@
 <result><category>dev-lang</category><package>tuprolog</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: 'files/build-2.9.2.xml', 'files/build-3.0.0.xml'</msg></result>
 <result><category>dev-lang</category><package>tuprolog</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: 'files/build-3.0.1.xml', 'files/build-3.1.0.xml'</msg></result>
 <result><category>net-dns</category><package>bind</package><version>9.11.1_p1</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: contains [dlz]</msg></result>
-<result><category>net-dns</category><package>bind</package><version>9.11.1_p1</version><class>GLEP73BackAlteration</class><msg>REQUIRED_USE causes a preceding condition to start applying: [dnstap] enforces [threads] which may cause preceding [threads] enforcing [caps] to evaluate to true</msg></result>
 <result><category>net-dns</category><package>bind</package><version>9.11.1_p1</version><class>GLEP73Conflict</class><msg>REQUIRED_USE can request conflicting states: [mysql] requires [!threads] while [dnstap] requires [threads]</msg></result>
+<result><category>net-dns</category><package>bind</package><version>9.11.1_p1</version><class>GLEP73BackAlteration</class><msg>REQUIRED_USE causes a preceding condition to start applying: [dnstap] enforces [threads] which may cause preceding [threads] enforcing [caps] to evaluate to true</msg></result>
 <result><category>net-dns</category><package>bind</package><version>9.11.1_p3</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: contains [dlz]</msg></result>
-<result><category>net-dns</category><package>bind</package><version>9.11.1_p3</version><class>GLEP73BackAlteration</class><msg>REQUIRED_USE causes a preceding condition to start applying: [dnstap] enforces [threads] which may cause preceding [threads] enforcing [caps] to evaluate to true</msg></result>
 <result><category>net-dns</category><package>bind</package><version>9.11.1_p3</version><class>GLEP73Conflict</class><msg>REQUIRED_USE can request conflicting states: [mysql] requires [!threads] while [dnstap] requires [threads]</msg></result>
+<result><category>net-dns</category><package>bind</package><version>9.11.1_p3</version><class>GLEP73BackAlteration</class><msg>REQUIRED_USE causes a preceding condition to start applying: [dnstap] enforces [threads] which may cause preceding [threads] enforcing [caps] to evaluate to true</msg></result>
 <result><category>net-dns</category><package>bind</package><version>9.11.2</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: contains [dlz]</msg></result>
-<result><category>net-dns</category><package>bind</package><version>9.11.2</version><class>GLEP73BackAlteration</class><msg>REQUIRED_USE causes a preceding condition to start applying: [dnstap] enforces [threads] which may cause preceding [threads] enforcing [caps] to evaluate to true</msg></result>
 <result><category>net-dns</category><package>bind</package><version>9.11.2</version><class>GLEP73Conflict</class><msg>REQUIRED_USE can request conflicting states: [mysql] requires [!threads] while [dnstap] requires [threads]</msg></result>
+<result><category>net-dns</category><package>bind</package><version>9.11.2</version><class>GLEP73BackAlteration</class><msg>REQUIRED_USE causes a preceding condition to start applying: [dnstap] enforces [threads] which may cause preceding [threads] enforcing [caps] to evaluate to true</msg></result>
 <result><category>net-dns</category><package>ddclient</package><version>3.8.3</version><class>DroppedKeywords</class><msg>alpha, arm, hppa, ia64, ppc, ppc64</msg></result>
 <result><category>net-dns</category><package>dnsmasq</package><version>2.76</version><class>VulnerablePackage</class><msg>vulnerable via glsa(201710-27) ( ver &lt; 2.78 ), keywords: alpha, amd64, arm, arm64, hppa, ia64, mips, ppc, ppc64, s390, sh, sparc, sparc-fbsd, x86, x86-fbsd</msg></result>
 <result><category>net-dns</category><package>dnsmasq</package><version>2.76-r1</version><class>VulnerablePackage</class><msg>vulnerable via glsa(201710-27) ( ver &lt; 2.78 ), keywords: alpha, amd64, arm, arm64, hppa, ia64, mips, ppc, ppc64, s390, sh, sparc, sparc-fbsd, x86, x86-fbsd</msg></result>
 <result><category>net-dns</category><package>dnsmasq</package><version>2.77</version><class>VulnerablePackage</class><msg>vulnerable via glsa(201710-27) ( ver &lt; 2.78 ), keywords: alpha, amd64, arm, arm64, hppa, ia64, mips, ppc, ppc64, s390, sh, sparc, sparc-fbsd, x86, x86-fbsd</msg></result>
 <result><category>net-dns</category><package>dnsmasq</package><version>2.77-r1</version><class>VulnerablePackage</class><msg>vulnerable via glsa(201710-27) ( ver &lt; 2.78 ), keywords: alpha, amd64, arm, arm64, hppa, ia64, mips, ppc, ppc64, s390, sh, sparc, sparc-fbsd, x86, x86-fbsd</msg></result>
 <result><category>net-dns</category><package>dnstop</package><version>20140915</version><class>MissingSlotDep</class><msg>'sys-libs/ncurses' matches more than one slot: [ 0, 5 ]</msg></result>
-<result><category>net-dns</category><package>mydns</package><version>1.2.8.31-r1</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: ^^ ( contains [mysql] contains [postgres] )</msg></result>
 <result><category>net-dns</category><package>mydns</package><version>1.2.8.31-r1</version><class>MissingSlotDep</class><msg>'dev-db/postgresql' matches more than one slot: [ 10, 11, 9.2, 9.3, 9.4, 9.5, 9.6 ]</msg></result>
 <result><category>net-dns</category><package>mydns</package><version>1.2.8.31-r1</version><class>MissingSlotDep</class><msg>'dev-libs/openssl' matches more than one slot: [ 0, 0.9.8 ]</msg></result>
+<result><category>net-dns</category><package>mydns</package><version>1.2.8.31-r1</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: ^^ ( contains [mysql] contains [postgres] )</msg></result>
 <result><category>net-dns</category><package>nsd</package><class>ExecutableFile</class><msg>unnecessary executable bit: 'files/nsd.initd-r1'</msg></result>
 <result><category>net-dns</category><package>unbound</package><version>1.5.10</version><class>DroppedKeywords</class><msg>alpha</msg></result>
 <result><category>dev-php</category><package>PEAR-Crypt_GPG</package><version>1.4.2</version><class>DroppedKeywords</class><msg>hppa</msg></result>
@@ -2288,8 +2290,8 @@
 <result><category>games-strategy</category><package>scorched3d</package><version>44-r1</version><class>MissingSlotDep</class><msg>'media-libs/glew' matches more than one slot: [ 0, 1.10, 1.6 ]</msg></result>
 <result><category>net-proxy</category><package>c-icap</package><version>0.2.6</version><class>MissingSlotDep</class><msg>'sys-libs/db' matches more than one slot: [ 1, 3, 4.2, 4.3, 4.4, 4.5, 4.6, 4.7, 4.8, 5.1, 5.3, 6.0, 6.1, 6.2 ]</msg></result>
 <result><category>net-proxy</category><package>c-icap-modules</package><version>0.2.4</version><class>MissingSlotDep</class><msg>'sys-libs/db' matches more than one slot: [ 1, 3, 4.2, 4.3, 4.4, 4.5, 4.6, 4.7, 4.8, 5.1, 5.3, 6.0, 6.1, 6.2 ]</msg></result>
-<result><category>net-proxy</category><package>haproxy</package><version>1.8.1</version><class>GLEP73BackAlteration</class><msg>REQUIRED_USE causes a preceding condition to start applying: [device-atlas] enforces [pcre] which may cause preceding [pcre] enforcing [!pcre2] to evaluate to true</msg></result>
 <result><category>net-proxy</category><package>haproxy</package><version>1.8.1</version><class>GLEP73Conflict</class><msg>REQUIRED_USE can request conflicting states: [pcre2-jit] requires [pcre2] while [pcre] requires [!pcre2]</msg></result>
+<result><category>net-proxy</category><package>haproxy</package><version>1.8.1</version><class>GLEP73BackAlteration</class><msg>REQUIRED_USE causes a preceding condition to start applying: [device-atlas] enforces [pcre] which may cause preceding [pcre] enforcing [!pcre2] to evaluate to true</msg></result>
 <result><category>x11-terms</category><package>gnome-terminal</package><class>SizeViolation</class><msg>"files/gnome-terminal-3.22.0-transparency.patch" exceeds 20k in size; 20.8 KiB total</msg></result>
 <result><category>x11-terms</category><package>mlterm</package><version>3.8.1</version><class>DroppedKeywords</class><msg>hppa</msg></result>
 <result><category>x11-terms</category><package>roxterm</package><version>3.1.5-r1</version><class>DroppedKeywords</class><msg>ppc</msg></result>
@@ -2312,10 +2314,10 @@
 <result><category>media-tv</category><package>tvbrowser</package><class>SizeViolation</class><msg>"files/tvbrowser-9999-build.xml" exceeds 20k in size; 36.4 KiB total</msg></result>
 <result><category>media-tv</category><package>tvbrowser</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: 'files/3.4.1.0-remove-registrykey.patch', 'files/3.4.3-remove-registrykey.patch'</msg></result>
 <result><category>media-tv</category><package>tvbrowser</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: 'files/3.4.1.0-build.xml.patch', 'files/3.4.3-build.xml.patch'</msg></result>
-<result><category>games-rpg</category><package>arx-fatalis-data</package><version>1.21-r2</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: ^^ ( contains [cdinstall] contains [gog] )</msg></result>
 <result><category>games-rpg</category><package>arx-fatalis-data</package><version>1.21-r2</version><class>MissingUri</class><msg>file setup_arx_fatalis.exe is unfetchable- no URI available, and RESTRICT=fetch isn't set</msg></result>
-<result><category>games-rpg</category><package>arx-fatalis-data</package><version>1.21-r3</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: ^^ ( contains [cdinstall] contains [gog] )</msg></result>
+<result><category>games-rpg</category><package>arx-fatalis-data</package><version>1.21-r2</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: ^^ ( contains [cdinstall] contains [gog] )</msg></result>
 <result><category>games-rpg</category><package>arx-fatalis-data</package><version>1.21-r3</version><class>MissingUri</class><msg>file setup_arx_fatalis_2.0.0.7.exe is unfetchable- no URI available, and RESTRICT=fetch isn't set</msg></result>
+<result><category>games-rpg</category><package>arx-fatalis-data</package><version>1.21-r3</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: ^^ ( contains [cdinstall] contains [gog] )</msg></result>
 <result><category>games-rpg</category><package>arx-libertatis</package><version>1.1.2</version><class>MissingSlotDep</class><msg>'media-libs/glew' matches more than one slot: [ 0, 1.10, 1.6 ]</msg></result>
 <result><category>games-rpg</category><package>runescape-launcher</package><version>2.2.4</version><class>BadInsIntoDir</class><msg>ebuild uses insinto /usr/share/applications on line 58</msg></result>
 <result><category>games-rpg</category><package>runescape-launcher</package><version>2.2.4-r1</version><class>BadInsIntoDir</class><msg>ebuild uses insinto /usr/share/applications on line 58</msg></result>
@@ -2397,9 +2399,9 @@
 <result><category>sys-boot</category><package>quik</package><version>2.1.6</version><class>PortageInternals</class><msg>'prepman' used on line 42</msg></result>
 <result><category>dev-games</category><package>irrlicht</package><class>SizeViolation</class><msg>"files/irrlicht-1.8.1-demoMake.patch" exceeds 20k in size; 26.7 KiB total</msg></result>
 <result><category>dev-games</category><package>irrlicht</package><class>SizeViolation</class><msg>"files/irrlicht-1.8.4-demoMake.patch" exceeds 20k in size; 27.4 KiB total</msg></result>
+<result><category>dev-games</category><package>mygui</package><version>3.2.2</version><class>MissingSlotDep</class><msg>'media-libs/glew' matches more than one slot: [ 0, 1.10, 1.6 ]</msg></result>
 <result><category>dev-games</category><package>mygui</package><version>3.2.2</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: not contains [opengl]</msg></result>
 <result><category>dev-games</category><package>mygui</package><version>3.2.2</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: not contains [ogre]</msg></result>
-<result><category>dev-games</category><package>mygui</package><version>3.2.2</version><class>MissingSlotDep</class><msg>'media-libs/glew' matches more than one slot: [ 0, 1.10, 1.6 ]</msg></result>
 <result><category>dev-games</category><package>ogre</package><version>1.9.0-r1</version><class>GLEP73BackAlteration</class><msg>REQUIRED_USE causes a preceding condition to start applying: [tbb] enforces [threads] which may cause preceding [threads &amp;&amp; poco] enforcing [!tbb] to evaluate to true</msg></result>
 <result><category>dev-games</category><package>openscenegraph</package><version>3.5.5</version><class>DroppedKeywords</class><msg>ia64, ppc</msg></result>
 <result><category>sci-mathematics</category><package>flint</package><version>2.4.5</version><class>DroppedKeywords</class><msg>ppc</msg></result>
@@ -2960,7 +2962,7 @@
 <result><class>UnknownProfileUse</class><msg>'prefix/darwin/macos/10.9/x86/use.mask': unknown USE flag: [ '-ifc' ]</msg></result>
 <result><class>UnknownProfileUse</class><msg>'prefix/sunos/solaris/arch/sparc/use.force': unknown USE flag: [ 'abi_sparc_32' ]</msg></result>
 <result><class>UnknownProfileUse</class><msg>'prefix/windows/winnt/use.mask': unknown USE flag: [ 'ifc' ]</msg></result>
-<result><class>UnusedLicenses</class><msg>Vidyo-EULA, vmware</msg></result>
 <result><class>UnusedEclasses</class><msg>gnatbuild, gnatbuild-r1, mozconfig-v6.55, mozconfig-v6.56, mysql-multilib, php-ext-pecl-r2, vmware-bundle</msg></result>
+<result><class>UnusedLicenses</class><msg>Vidyo-EULA, vmware</msg></result>
 <result><class>UnusedGlobalFlags</class><msg>use.desc unused flags: calligra_features_braindump, calligra_features_flow, calligra_features_kexi, calligra_features_krita, calligra_features_stage, cpu_flags_arm_aes, cpu_flags_arm_crc32, cpu_flags_arm_edsp, cpu_flags_arm_iwmmxt, cpu_flags_arm_sha1, cpu_flags_arm_sha2, cpu_flags_arm_v7, cpu_flags_arm_vfp-d32, cpu_flags_arm_vfpv4, crosscompile_opts_bootstrap, l10n_sr-ME, l10n_ur-PK, l10n_uz-Cyrl, linguas_ach, linguas_brx, linguas_dgo, linguas_doi, linguas_ee, linguas_en_EN, linguas_ga_IE, linguas_gug, linguas_hne, linguas_hsb, linguas_ks, linguas_mni, linguas_nl_BE, linguas_nr, linguas_pa_IN, linguas_sa_IN, linguas_sah, linguas_sat, linguas_sd, linguas_son, linguas_ss, linguas_st, linguas_sw_TZ, linguas_syc, linguas_ta_LK, linguas_tn, postgres_targets_postgres11, python_single_target_jython2_7, video_cards_epson, video_cards_modesetting, vmware_guest_freebsd, vmware_guest_linux, vmware_guest_netware, vmware_guest_solaris, vmware_guest_winPre2k, vmware_guest_windows, xtables_addons_checksum, xtables_addons_rawnat, xtables_addons_steal, xtables_addons_tee</msg></result>
 </checks>
