@@ -140,9 +140,9 @@
 <result><category>app-emulation</category><package>lxc</package><version>2.0.4</version><class>VulnerablePackage</class><msg>vulnerable via glsa(201711-09) ( ver &lt; 2.0.7 ), keywords: amd64, arm, arm64</msg></result>
 <result><category>app-emulation</category><package>lxc</package><version>2.0.5</version><class>VulnerablePackage</class><msg>vulnerable via glsa(201711-09) ( ver &lt; 2.0.7 ), keywords: amd64, arm, arm64</msg></result>
 <result><category>app-emulation</category><package>lxc</package><version>2.0.6-r1</version><class>VulnerablePackage</class><msg>vulnerable via glsa(201711-09) ( ver &lt; 2.0.7 ), keywords: amd64, arm, arm64</msg></result>
-<result><category>app-emulation</category><package>lxc</package><version>2.0.3-r1</version><class>DroppedKeywords</class><msg>ppc64, x86</msg></result>
 <result><category>app-emulation</category><package>lxc</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: 'files/lxc-2.0.4-omit-sysconfig.patch', 'files/lxc-2.0.5-omit-sysconfig.patch'</msg></result>
 <result><category>app-emulation</category><package>lxc</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: 'files/lxc-2.0.4-bash-completion.patch', 'files/lxc-2.0.5-bash-completion.patch'</msg></result>
+<result><category>app-emulation</category><package>lxc</package><version>2.0.3-r1</version><class>DroppedKeywords</class><msg>ppc64, x86</msg></result>
 <result><category>app-emulation</category><package>lxd</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: 'files/lxd-2.14-dont-go-get.patch', 'files/lxd-2.18-dont-go-get.patch', 'files/lxd-2.19-dont-go-get.patch'</msg></result>
 <result><category>app-emulation</category><package>lxd</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: 'files/lxd-2.18.initd', 'files/lxd.initd'</msg></result>
 <result><category>app-emulation</category><package>lxd</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: 'files/lxd-2.14.confd', 'files/lxd-2.18.confd', 'files/lxd.confd'</msg></result>
@@ -169,8 +169,8 @@
 <result><category>media-plugins</category><package>audacious-plugins</package><version>3.9-r1</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: not contains [libnotify]</msg></result>
 <result><category>media-plugins</category><package>audacious-plugins</package><version>3.9-r1</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: ( contains [alsa] || contains [jack] || contains [pulseaudio] || contains [sdl] )</msg></result>
 <result><category>media-plugins</category><package>audacious-plugins</package><version>3.9-r1</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: ^^ ( contains [gtk] contains [gtk3] contains [qt5] )</msg></result>
-<result><category>media-plugins</category><package>audacious-plugins</package><version>3.9-r1</version><class>GLEP73Conflict</class><msg>REQUIRED_USE can request conflicting states: [gtk3] requires [!qt5] while [ampache] requires [qt5]</msg></result>
 <result><category>media-plugins</category><package>audacious-plugins</package><version>3.9-r1</version><class>GLEP73BackAlteration</class><msg>REQUIRED_USE causes a preceding condition to start applying: [ampache] enforces [qt5] which may cause preceding [qt5] enforcing [!libnotify] to evaluate to true</msg></result>
+<result><category>media-plugins</category><package>audacious-plugins</package><version>3.9-r1</version><class>GLEP73Conflict</class><msg>REQUIRED_USE can request conflicting states: [gtk3] requires [!qt5] while [ampache] requires [qt5]</msg></result>
 <result><category>media-plugins</category><package>audacious-plugins</package><version>3.9-r1</version><class>DroppedKeywords</class><msg>alpha, amd64-linux, arm, hppa, ppc, ppc64, x86-fbsd, x86-linux</msg></result>
 <result><category>media-plugins</category><package>grilo-plugins</package><version>0.3.5</version><class>DroppedKeywords</class><msg>x86</msg></result>
 <result><category>media-plugins</category><package>gst-plugins-dts</package><version>1.10.3</version><class>DroppedKeywords</class><msg>arm</msg></result>
@@ -2292,8 +2292,8 @@
 <result><category>games-strategy</category><package>scorched3d</package><version>44-r1</version><class>MissingSlotDep</class><msg>'media-libs/glew' matches more than one slot: [ 0, 1.10, 1.6 ]</msg></result>
 <result><category>net-proxy</category><package>c-icap</package><version>0.2.6</version><class>MissingSlotDep</class><msg>'sys-libs/db' matches more than one slot: [ 1, 3, 4.2, 4.3, 4.4, 4.5, 4.6, 4.7, 4.8, 5.1, 5.3, 6.0, 6.1, 6.2 ]</msg></result>
 <result><category>net-proxy</category><package>c-icap-modules</package><version>0.2.4</version><class>MissingSlotDep</class><msg>'sys-libs/db' matches more than one slot: [ 1, 3, 4.2, 4.3, 4.4, 4.5, 4.6, 4.7, 4.8, 5.1, 5.3, 6.0, 6.1, 6.2 ]</msg></result>
-<result><category>net-proxy</category><package>haproxy</package><version>1.8.1</version><class>GLEP73Conflict</class><msg>REQUIRED_USE can request conflicting states: [pcre2-jit] requires [pcre2] while [pcre] requires [!pcre2]</msg></result>
 <result><category>net-proxy</category><package>haproxy</package><version>1.8.1</version><class>GLEP73BackAlteration</class><msg>REQUIRED_USE causes a preceding condition to start applying: [device-atlas] enforces [pcre] which may cause preceding [pcre] enforcing [!pcre2] to evaluate to true</msg></result>
+<result><category>net-proxy</category><package>haproxy</package><version>1.8.1</version><class>GLEP73Conflict</class><msg>REQUIRED_USE can request conflicting states: [pcre2-jit] requires [pcre2] while [pcre] requires [!pcre2]</msg></result>
 <result><category>x11-terms</category><package>gnome-terminal</package><class>SizeViolation</class><msg>"files/gnome-terminal-3.22.0-transparency.patch" exceeds 20k in size; 20.8 KiB total</msg></result>
 <result><category>x11-terms</category><package>mlterm</package><version>3.8.1</version><class>DroppedKeywords</class><msg>hppa</msg></result>
 <result><category>x11-terms</category><package>roxterm</package><version>3.1.5-r1</version><class>DroppedKeywords</class><msg>ppc</msg></result>
@@ -2316,10 +2316,10 @@
 <result><category>media-tv</category><package>tvbrowser</package><class>SizeViolation</class><msg>"files/tvbrowser-9999-build.xml" exceeds 20k in size; 36.4 KiB total</msg></result>
 <result><category>media-tv</category><package>tvbrowser</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: 'files/3.4.1.0-remove-registrykey.patch', 'files/3.4.3-remove-registrykey.patch'</msg></result>
 <result><category>media-tv</category><package>tvbrowser</package><class>DuplicateFiles</class><msg>duplicate identical files in FILESDIR: 'files/3.4.1.0-build.xml.patch', 'files/3.4.3-build.xml.patch'</msg></result>
-<result><category>games-rpg</category><package>arx-fatalis-data</package><version>1.21-r2</version><class>MissingUri</class><msg>file setup_arx_fatalis.exe is unfetchable- no URI available, and RESTRICT=fetch isn't set</msg></result>
 <result><category>games-rpg</category><package>arx-fatalis-data</package><version>1.21-r2</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: ^^ ( contains [cdinstall] contains [gog] )</msg></result>
-<result><category>games-rpg</category><package>arx-fatalis-data</package><version>1.21-r3</version><class>MissingUri</class><msg>file setup_arx_fatalis_2.0.0.7.exe is unfetchable- no URI available, and RESTRICT=fetch isn't set</msg></result>
+<result><category>games-rpg</category><package>arx-fatalis-data</package><version>1.21-r2</version><class>MissingUri</class><msg>file setup_arx_fatalis.exe is unfetchable- no URI available, and RESTRICT=fetch isn't set</msg></result>
 <result><category>games-rpg</category><package>arx-fatalis-data</package><version>1.21-r3</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: ^^ ( contains [cdinstall] contains [gog] )</msg></result>
+<result><category>games-rpg</category><package>arx-fatalis-data</package><version>1.21-r3</version><class>MissingUri</class><msg>file setup_arx_fatalis_2.0.0.7.exe is unfetchable- no URI available, and RESTRICT=fetch isn't set</msg></result>
 <result><category>games-rpg</category><package>arx-libertatis</package><version>1.1.2</version><class>MissingSlotDep</class><msg>'media-libs/glew' matches more than one slot: [ 0, 1.10, 1.6 ]</msg></result>
 <result><category>games-rpg</category><package>runescape-launcher</package><version>2.2.4</version><class>BadInsIntoDir</class><msg>ebuild uses insinto /usr/share/applications on line 58</msg></result>
 <result><category>games-rpg</category><package>runescape-launcher</package><version>2.2.4-r1</version><class>BadInsIntoDir</class><msg>ebuild uses insinto /usr/share/applications on line 58</msg></result>
@@ -2401,9 +2401,9 @@
 <result><category>sys-boot</category><package>quik</package><version>2.1.6</version><class>PortageInternals</class><msg>'prepman' used on line 42</msg></result>
 <result><category>dev-games</category><package>irrlicht</package><class>SizeViolation</class><msg>"files/irrlicht-1.8.1-demoMake.patch" exceeds 20k in size; 26.7 KiB total</msg></result>
 <result><category>dev-games</category><package>irrlicht</package><class>SizeViolation</class><msg>"files/irrlicht-1.8.4-demoMake.patch" exceeds 20k in size; 27.4 KiB total</msg></result>
-<result><category>dev-games</category><package>mygui</package><version>3.2.2</version><class>MissingSlotDep</class><msg>'media-libs/glew' matches more than one slot: [ 0, 1.10, 1.6 ]</msg></result>
 <result><category>dev-games</category><package>mygui</package><version>3.2.2</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: not contains [opengl]</msg></result>
 <result><category>dev-games</category><package>mygui</package><version>3.2.2</version><class>RequiredUseDefaults</class><msg>failed REQUIRED_USE: not contains [ogre]</msg></result>
+<result><category>dev-games</category><package>mygui</package><version>3.2.2</version><class>MissingSlotDep</class><msg>'media-libs/glew' matches more than one slot: [ 0, 1.10, 1.6 ]</msg></result>
 <result><category>dev-games</category><package>ogre</package><version>1.9.0-r1</version><class>GLEP73BackAlteration</class><msg>REQUIRED_USE causes a preceding condition to start applying: [tbb] enforces [threads] which may cause preceding [threads &amp;&amp; poco] enforcing [!tbb] to evaluate to true</msg></result>
 <result><category>dev-games</category><package>openscenegraph</package><version>3.5.5</version><class>DroppedKeywords</class><msg>ia64, ppc</msg></result>
 <result><category>sci-mathematics</category><package>flint</package><version>2.4.5</version><class>DroppedKeywords</class><msg>ppc</msg></result>
